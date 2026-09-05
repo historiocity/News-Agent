@@ -70,14 +70,19 @@ their own merits.
 
 | Thread | Status | Wake trigger | Last appeared |
 |---|---|---|---|
-| Fed September decision | active | 11 Sep CPI print; 16 Sep FOMC statement | 2026-09-05 |
-| Hormuz closure & EU energy response | active | Sustained change in daily transit counts; EU price-cap decision; gas storage below prior-year path | 2026-09-05 |
-| Central bank gold custody | active | Another central bank discloses relocation, or Bundesbank / Banca d'Italia comment | 2026-09-05 |
-| Bank stablecoin consortium | active | JPMorgan statement; first GENIUS Act licence; consortium entity formation | 2026-09-05 |
-| USPS mail ballot rule | active | Supreme Court order on the emergency application (expected on or after 8 Sep) | 2026-09-05 |
-| Birthright citizenship order | active | Appeal filed to the Fourth Circuit, or emergency application to SCOTUS | 2026-09-05 |
-| AI gated-capability tiers | active | A lab publishes tier criteria or access lists, or a regulator demands them | 2026-09-05 |
-| AARO records contract | active | Award notice on sam.gov, or a public tranche drawing on the NUFOHRC collection | 2026-09-05 |
-| Ukraine–Russia negotiations | active | US negotiators actually travel to Moscow or Kyiv; a signed document; a ceasefire taking effect. Not commentary. | — (held 2026-09-05) |
-| Tampa Bay dengue | active | State arbovirus report showing a first Pasco local case, or a weekly rise above current trend | 2026-09-05 |
-| Waymo Tampa Bay | active | Service-area expansion into Pinellas or Pasco, or published incident data | 2026-09-05 |
+| Ukraine–Russia negotiations | active | Russian reciprocity for the 5–8 Sep pause; the Kyiv leg actually happening; a signed document; a ceasefire taking effect. Not commentary. | 2026-09-05 |
+| Hormuz closure & EU energy response | active | A vessel name, IMO number, CENTCOM statement or tracking data on the alleged Kharg tanker strike; sustained change in daily transit counts; EU price-cap decision | 2026-09-05 |
+| Gulf states & Article 51 | active | Kuwait or the UAE restricting US use of the bases struck; a collective GCC statement rather than individual condemnations | 2026-09-05 (new) |
+| Fed September decision | active | 11 Sep CPI print; 16 Sep FOMC statement | — (suppressed 2026-09-05: no new fact since Jackson Hole) |
+| US fuel prices | active | The 8 Sep EIA weekly print, the first official reading that can contain the alleged $5.85 record; distillate stock builds | 2026-09-05 (new) |
+| Missouri congressional map | active | A federal court taking the case; ballot-access or residency litigation over nominees from the voided primaries | 2026-09-05 (new) |
+| USPS mail ballot rule | active | Supreme Court order on application No. 26A297; TRO expiry 10 Sep | — (dormant 2026-09-05) |
+| Birthright citizenship order | active | Appeal filed to the Fourth Circuit, or emergency application to SCOTUS | — (dormant 2026-09-05) |
+| AI gated-capability tiers | active | Published tier criteria or an access list for GPT-6 Astra's restricted cyber capabilities, or a regulator demanding them | 2026-09-05 |
+| UAP disclosure implementation | active | ODNI's detailed implementing guidance, and whether it closes the contractor gap left by the 31 Jul preliminary guidance | 2026-09-05 (new) |
+| AARO records contract | active | Award notice on sam.gov, or a public tranche drawing on the NUFOHRC collection | — (dormant 2026-09-05) |
+| Central bank gold custody | active | Another central bank discloses relocation, or Bundesbank / Banca d'Italia comment | — (dormant 2026-09-05) |
+| Bank stablecoin consortium | active | JPMorgan statement; first GENIUS Act licence; consortium entity formation; OCC final rules targeted Nov 2026 | — (dormant 2026-09-05) |
+| Tampa Bay dengue | active | Weekly arbovirus report: whether Pasco stays at one case, and the regional trend line | 2026-09-05 |
+| Florida Amendment 3 | active | Revised ballot language after the Leon County ruling; county-level revenue estimates for Pasco and Pinellas | 2026-09-05 (new) |
+| Waymo Tampa Bay | active | Service-area expansion into Pinellas or Pasco, or published incident data | — (dormant 2026-09-05) |

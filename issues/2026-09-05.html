@@ -16,725 +16,601 @@
   * { box-sizing: border-box; }
   body {
     margin: 0; background: var(--bg); color: var(--fg);
-    font: 17px/1.7 Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font: 17px/1.65 Georgia, "Iowan Old Style", "Times New Roman", serif;
     -webkit-text-size-adjust: 100%;
   }
-  .wrap { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.1rem 4rem; }
-  header.masthead { border-bottom: 3px double var(--fg); padding-bottom: 1rem; margin-bottom: 1.6rem; }
-  h1 { margin: 0; font-size: 2.1rem; letter-spacing: -0.02em; line-height: 1.1; }
-  .issueline {
-    color: var(--muted); font-size: 0.85rem; margin-top: 0.5rem;
-    text-transform: uppercase; letter-spacing: 0.06em;
-  }
-  .charline { margin-top: 0.9rem; font-size: 1.02rem; }
-  .provenance {
-    margin-top: 1rem; font-size: 0.85rem; color: var(--muted);
-    background: var(--box); border-left: 3px solid var(--rule); padding: 0.7rem 0.85rem;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.5;
-  }
-  nav.jump { margin: 0 0 2.4rem; }
-  nav.jump h2 {
-    font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em;
-    color: var(--muted); margin: 0 0 0.6rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  }
-  nav.jump ol { margin: 0; padding-left: 1.4rem; }
-  nav.jump li { margin-bottom: 0.4rem; line-height: 1.45; }
-  nav.jump .sect {
-    list-style: none; margin-left: -1.4rem; margin-top: 0.9rem; font-size: 0.78rem;
-    text-transform: uppercase; letter-spacing: 0.09em; color: var(--muted);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  }
-  h2.sectionhead {
-    font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted);
-    border-bottom: 1px solid var(--fg); padding-bottom: 0.35rem; margin: 3rem 0 1.8rem;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  }
-  article { margin-bottom: 3rem; scroll-margin-top: 1rem; }
-  article h3 { font-size: 1.35rem; line-height: 1.25; margin: 0 0 0.6rem; letter-spacing: -0.01em; }
-  article h3 a.anchor { color: var(--muted); text-decoration: none; font-size: 0.85rem; opacity: 0; }
-  article:hover h3 a.anchor { opacity: 0.6; }
+  .wrap { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  header { border-bottom: 2px solid var(--fg); padding-bottom: 1rem; margin-bottom: 1.75rem; }
+  h1 { margin: 0; font-size: 2rem; letter-spacing: -0.02em; line-height: 1.15; }
+  .issue-no { color: var(--muted); font-size: 0.85rem; text-transform: uppercase;
+              letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+  .dek { margin-top: 0.7rem; font-size: 1.05rem; line-height: 1.5; }
+  .provenance { margin-top: 0.9rem; font-size: 0.82rem; color: var(--muted);
+                line-height: 1.5; border-left: 2px solid var(--rule); padding-left: 0.75rem; }
+  nav.jump { background: var(--box); border-radius: 4px; padding: 1rem 1.15rem; margin-bottom: 2.5rem; }
+  nav.jump h2 { margin: 0 0 0.6rem; font-size: 0.8rem; text-transform: uppercase;
+                letter-spacing: 0.08em; color: var(--muted); font-weight: normal; }
+  nav.jump ol { margin: 0; padding-left: 1.2rem; }
+  nav.jump li { margin: 0.35rem 0; line-height: 1.4; }
+  nav.jump .loc { margin-top: 0.75rem; padding-top: 0.6rem; border-top: 1px solid var(--rule); }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  article { border-top: 1px solid var(--rule); padding-top: 1.75rem; margin-top: 2.25rem; }
+  article:first-of-type { border-top: none; }
+  h3 { margin: 0 0 0.55rem; font-size: 1.32rem; line-height: 1.25; letter-spacing: -0.01em; }
+  h3 em { font-style: italic; }
+  .anchor { color: var(--rule); font-size: 0.8rem; margin-left: 0.35rem; }
+  .anchor:hover { color: var(--link); }
   .meta { margin-bottom: 0.9rem; display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
   .tag {
-    font: 600 0.68rem/1 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    text-transform: uppercase; letter-spacing: 0.07em; padding: 0.32rem 0.5rem;
-    background: var(--tag-bg); color: var(--muted); border-radius: 2px; white-space: nowrap;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em;
+    background: var(--tag-bg); color: var(--muted); padding: 0.22rem 0.5rem; border-radius: 3px;
   }
-  .tag.conf { border-left: 3px solid var(--muted); }
-  .tag.conf-primary { border-left-color: #2e7d5b; color: #2e7d5b; }
-  .tag.conf-corrob { border-left-color: #3a6ea5; color: #3a6ea5; }
-  .tag.conf-single { border-left-color: #b07d2b; color: #b07d2b; }
+  .conf { border: 1px solid var(--rule); background: transparent; }
+  .conf.primary { color: #2c6e49; border-color: #2c6e49; }
+  .conf.corrob { color: #3a5a8a; border-color: #3a5a8a; }
+  .conf.single { color: #8a6d24; border-color: #8a6d24; }
+  .conf.unconf { color: var(--accent); border-color: var(--accent); font-weight: bold; }
   @media (prefers-color-scheme: dark) {
-    .tag.conf-primary { border-left-color: #6cc39a; color: #6cc39a; }
-    .tag.conf-corrob { border-left-color: #7fa9d8; color: #7fa9d8; }
-    .tag.conf-single { border-left-color: #d9ac5e; color: #d9ac5e; }
+    .conf.primary { color: #7fc9a0; border-color: #7fc9a0; }
+    .conf.corrob { color: #9dbbe8; border-color: #9dbbe8; }
+    .conf.single { color: #d4b45e; border-color: #d4b45e; }
   }
-  .tag.under { background: var(--accent); color: #fff; }
-  @media (prefers-color-scheme: dark) { .tag.under { color: #16161a; } }
-  article p { margin: 0 0 0.95rem; }
+  .under { background: var(--accent); color: #fff; }
+  p { margin: 0 0 0.9rem; }
+  .divergence { background: var(--box); border-radius: 4px; padding: 0.85rem 1rem; margin: 1rem 0; }
+  .divergence strong { font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--muted); display: block; margin-bottom: 0.35rem; }
+  .divergence p:last-child { margin-bottom: 0; }
+  details { margin: 1.1rem 0; border: 1px solid var(--rule); border-radius: 4px; }
+  summary {
+    cursor: pointer; padding: 0.7rem 1rem; list-style: none;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 0.85rem; font-weight: 600; color: var(--link);
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: "▸ "; }
+  details[open] summary::before { content: "▾ "; }
+  details[open] summary { border-bottom: 1px solid var(--rule); }
+  .deeper { padding: 1rem 1rem 0.4rem; font-size: 0.97rem; }
   .sources {
-    font-size: 0.82rem; color: var(--muted); line-height: 1.6;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    border-top: 1px solid var(--rule); padding-top: 0.6rem; margin-top: 1.1rem;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 0.8rem; color: var(--muted); line-height: 1.7; margin-top: 0.9rem;
   }
-  .sources strong { color: var(--muted); font-weight: 600; }
-  a { color: var(--link); }
-  a:hover { text-decoration: underline; }
-  details.deeper {
-    margin: 1.1rem 0 0; background: var(--box); border-radius: 3px; padding: 0 0.9rem;
+  .sources b { color: var(--muted); font-weight: 600; }
+  fieldset {
+    border: 1px solid var(--rule); border-radius: 4px; margin: 1.2rem 0 0; padding: 0.85rem 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 0.84rem;
   }
-  details.deeper > summary {
-    cursor: pointer; padding: 0.75rem 0; list-style: none;
-    font: 600 0.82rem/1.3 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    text-transform: uppercase; letter-spacing: 0.07em; color: var(--link);
+  legend { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.07em;
+           color: var(--muted); padding: 0 0.35rem; }
+  .q { margin-bottom: 0.75rem; }
+  .q:last-child { margin-bottom: 0; }
+  .q p { margin: 0 0 0.35rem; font-weight: 600; }
+  .q label { display: inline-block; margin-right: 0.9rem; font-weight: normal; cursor: pointer; }
+  .q input { margin-right: 0.25rem; }
+  h2.section {
+    font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted);
+    border-top: 2px solid var(--fg); padding-top: 0.9rem; margin: 3.5rem 0 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   }
-  details.deeper > summary::-webkit-details-marker { display: none; }
-  details.deeper > summary::before { content: "▸ "; }
-  details.deeper[open] > summary::before { content: "▾ "; }
-  details.deeper .body { padding-bottom: 0.9rem; font-size: 0.97rem; }
-  details.deeper .body p:last-child { margin-bottom: 0; }
-  .fb {
-    margin-top: 1.2rem; padding: 0.9rem 1rem; border: 1px solid var(--rule); border-radius: 3px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 0.85rem;
+  .section-note { color: var(--muted); font-size: 0.85rem; margin: 0.3rem 0 0; font-style: italic; }
+  #send {
+    display: block; width: 100%; margin: 3rem 0 0; padding: 0.9rem;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 0.95rem; font-weight: 600;
+    background: var(--fg); color: var(--bg); border: none; border-radius: 4px; cursor: pointer;
   }
-  .fb .fbhead {
-    font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted);
-    margin-bottom: 0.7rem; font-weight: 600;
-  }
-  .fb .q { margin-bottom: 0.75rem; }
-  .fb .q:last-child { margin-bottom: 0; }
-  .fb .qt { display: block; margin-bottom: 0.3rem; }
-  .fb label {
-    display: inline-block; margin: 0 0.9rem 0.15rem 0; cursor: pointer; color: var(--muted);
-  }
-  .fb input[type=radio] { margin-right: 0.25rem; vertical-align: -1px; }
-  .submitbar { margin: 3rem 0 0; padding-top: 1.6rem; border-top: 3px double var(--fg); text-align: center; }
-  .submitbar button {
-    font: 600 0.95rem/1 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    padding: 0.85rem 1.4rem; border: 1px solid var(--fg); border-radius: 3px;
-    background: var(--fg); color: var(--bg); cursor: pointer; width: 100%; max-width: 26rem;
-  }
-  .submitbar button:hover { opacity: 0.86; }
-  .submitbar .note {
-    font-size: 0.78rem; color: var(--muted); margin-top: 0.7rem; line-height: 1.5;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  }
-  footer.brief {
-    margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--rule);
-    color: var(--muted); font-size: 0.85rem; line-height: 1.6;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  }
-  footer.brief h4 {
-    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; margin: 1.4rem 0 0.5rem;
-  }
-  footer.brief ul { padding-left: 1.1rem; margin: 0; }
-  footer.brief li { margin-bottom: 0.35rem; }
-  figure.chart { margin: 1.2rem 0; }
-  figure.chart svg { width: 100%; height: auto; display: block; }
-  figure.chart figcaption {
-    font-size: 0.78rem; color: var(--muted); margin-top: 0.4rem;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  }
-  @media (max-width: 420px) {
-    .wrap { padding: 1.8rem 0.95rem 3rem; }
-    h1 { font-size: 1.75rem; }
-    article h3 { font-size: 1.2rem; }
-  }
+  #send:hover { opacity: 0.85; }
+  #sendnote { font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+              font-size: 0.78rem; color: var(--muted); text-align: center; margin-top: 0.6rem; }
+  footer { margin-top: 3.5rem; padding-top: 1.2rem; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: 0.85rem; }
+  footer h4 { font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+              font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.07em;
+              margin: 1.2rem 0 0.4rem; color: var(--muted); }
+  footer ul { padding-left: 1.1rem; margin: 0; }
+  footer li { margin: 0.25rem 0; }
 </style>
 </head>
 <body>
 <div class="wrap">
 
-<header class="masthead">
-  <h1>The Brief</h1>
-  <div class="issueline">Issue No. 1 &middot; Saturday, 5 September 2026</div>
-  <p class="charline">A jobs number strong enough to put a rate <em>hike</em> back on the table, a Dutch central bank quietly moving gold out of New York, and the Supreme Court asked to referee how ballots get delivered eight weeks before the midterms.</p>
-  <div class="provenance">
-    <strong>Provenance.</strong> First issue. Beats and the local section come from <code>config.md</code>; the archive is empty, so nothing here is cross-linked to a prior issue and there are no follow-ups — every story below is new. No reader feedback had been filed yet. The wildcard beat is still unset. Watchlist threads seeded by this issue are listed in the footer.
-  </div>
+<header>
+  <div class="issue-no">The Brief · Issue No. 1</div>
+  <h1>Saturday, 5 September 2026</h1>
+  <p class="dek">American envoys landed in Moscow this morning and Ukraine stopped shooting for four days; in the Gulf, the same war that has kept Hormuz shut for six months is now being fought at Kuwaiti and Emirati air bases, and at a tanker nobody will admit to hitting.</p>
+  <p class="provenance">Rebuilt on request at 08:40 EDT, replacing the 07:08 scheduled edition of the same date. Config and watchlist loaded; the archive holds no earlier issue, so nothing in here is cross-linked to a prior edition and no continuity is claimed beyond the eleven watchlist threads. Nine stories cleared the bar. Four are follow-ups, at the cap.</p>
 </header>
 
 <nav class="jump">
   <h2>In this issue</h2>
   <ol>
-    <li><a href="#fed-hike">A rate <em>hike</em> becomes the base case for 16 September</a></li>
-    <li><a href="#hormuz-oil">Hormuz is still shut, and Europe's answer to it contradicts itself</a></li>
-    <li><a href="#dnb-gold">The Dutch central bank moved 86 tonnes of gold out of North America</a></li>
-    <li><a href="#bank-stablecoin">Twenty-one banks are building a dollar stablecoin. JPMorgan isn't one of them</a></li>
-    <li><a href="#usps-ballots">The Supreme Court is asked to let the Postal Service police mail ballots</a></li>
-    <li><a href="#birthright-order">A judge blocks the narrowed birthright citizenship order</a></li>
-    <li><a href="#frontier-models">Three frontier models in seventy-two hours, all with locked cyber tiers</a></li>
-    <li><a href="#aaro-archive">The Pentagon moves to buy the largest private UFO archive in North America</a></li>
-    <li class="sect">Florida &amp; Tampa Bay</li>
-    <li><a href="#local-dengue">Hillsborough is the epicenter of Florida's worst local dengue year in decades</a></li>
-    <li><a href="#local-waymo">Waymo is now driving Tampa without anyone in the front seat</a></li>
+    <li><a href="#ukraine-moscow">Witkoff and Kushner are in Moscow, and Ukraine has stopped shooting until Tuesday</a></li>
+    <li><a href="#kharg-tanker">Iran says four American missiles hit a tanker off Kharg. Nobody else will say anything</a></li>
+    <li><a href="#gulf-article51">Iran hit air bases in Kuwait and the UAE, and Kuwait reached for Article 51</a></li>
+    <li><a href="#diesel-record">Diesel set a record this week — but the government's own series says it fell</a></li>
+    <li><a href="#missouri-map">Missouri's high court threw out the new map and handed it to the voters</a></li>
+    <li><a href="#astra-cyber">OpenAI shipped its most capable model to the public with the cyber tier locked</a></li>
+    <li><a href="#odni-uap-ndas">The intelligence community has been told its UAP secrecy agreements are unenforceable</a></li>
   </ol>
+  <div class="loc">
+    <ol start="8">
+      <li><a href="#dengue-pasco">Pasco has its first local dengue case, and the Bay area's count doubled in a week</a></li>
+      <li><a href="#amendment-3">The property tax you would stop paying, and the ballot language a judge threw out</a></li>
+    </ol>
+  </div>
 </nav>
 
-<!-- ============================ LEAD STORIES ============================ -->
+<article id="ukraine-moscow">
+  <h3>Witkoff and Kushner are in Moscow, and Ukraine has stopped shooting until Tuesday <a class="anchor" href="#ukraine-moscow">#</a></h3>
+  <div class="meta">
+    <span class="tag">Geopolitics</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+    <span class="tag">Follow-up</span>
+  </div>
+  <p>Steve Witkoff and Jared Kushner landed in Moscow on Saturday morning and were met at the airport by Kirill Dmitriev, the Russian sovereign wealth fund head who has served as Moscow's back channel to Washington throughout. Russian state agency TASS reported the arrival; CNN and CNBC confirmed it independently. The envoys are expected in Kyiv on Sunday.</p>
+  <p>Volodymyr Zelensky ordered Ukrainian long-range strikes halted from midnight on 5 September through the end of 8 September — a unilateral four-day pause covering the envoys' shuttle — and publicly urged Russia to match it. As of this writing Moscow has not responded to that invitation, which is the single most informative fact in the story.</p>
+  <p>This thread has been on the watchlist since it opened, deliberately dormant, with a wake trigger that excluded commentary and required one of three things: negotiators physically traveling, a signed document, or a ceasefire actually taking effect. Two of the three have now happened. That is why it leads today and did not lead yesterday.</p>
+  <p>What has not changed is the substance. Russia continues to require Ukrainian withdrawal from the parts of Donetsk and Luhansk it does not hold, plus formal recognition of annexed territory. Ukraine continues to refuse both. Security guarantees and control of the Zaporizhzhia plant remain unresolved. Putin said on 3 September there was a realistic chance of a settlement; he has said versions of that before.</p>
+  <p><b>What to watch:</b> whether Russia reciprocates the pause before 8 September, and whether the Kyiv leg on Sunday actually happens.</p>
+  <details>
+    <summary>Dig deeper — why this trip is different from the last four, and what would make it fail</summary>
+    <div class="deeper">
+      <p>Three previous 2026 pauses — the 32-hour Orthodox Easter truce on 11 April, the 9–11 May Victory Day truce, and the mid-year contacts — shared a structural feature: they were commemorative, time-boxed, and required nothing of either party beyond not shooting for a named holiday. None of them touched the disputed questions. They expired on schedule and fighting resumed on schedule. Reading those as evidence about this trip would be a mistake in both directions: they neither prove that truces fail nor that this one will hold.</p>
+      <p>What distinguishes 5 September is sequencing. Witkoff and Kushner are traveling to Moscow <em>first</em> and Kyiv <em>second</em>, carrying a proposal rather than collecting positions. That order matters. It implies Washington believes the binding constraint sits in Moscow, and that whatever the envoys bring to Zelensky on Sunday will already have been shaped by what Putin said on Saturday. It also puts Ukraine in the position of responding to a text it did not draft — a position Zelensky has resisted since the failed Jeddah framework of 2025, and one his unilateral halt-fire is partly designed to offset. By stopping first and publicly, he buys standing to say no to the paper without being blamed for the shooting.</p>
+      <p>The tell to watch is Russian reciprocity. Moscow's silence on the pause is cheap and reversible; matching it would cost something and would signal that the Kremlin wants the talks to produce an outcome rather than a photograph. If Russian strikes continue through the weekend while the envoys sit in Moscow, that is the answer, and it will be visible before the Kyiv leg concludes.</p>
+      <p>The second-order stake is energy, which is why this story and the Gulf stories in this issue are not separate. A Russia–Ukraine settlement that restored any meaningful volume of Russian crude and refined product to Atlantic markets would relieve exactly the diesel shortage now setting records in the United States. Nothing in the public framework suggests sanctions relief is on the table this weekend. But the market will price the possibility, and that is the channel through which a Moscow airport photograph reaches a Florida fuel pump.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnbc.com/2026/09/05/witkoff-kushner-moscow-russia-ukraine.html">CNBC</a> ·
+    <a href="https://abc17news.com/news/national-world/cnn-world/2026/09/05/witkoff-and-kushner-arrive-in-moscow-with-plan-to-end-war-ahead-of-visit-to-kyiv/">CNN</a> ·
+    <a href="https://en.wikipedia.org/wiki/2026_Russo-Ukrainian_truce">Truce chronology</a> ·
+    <a href="https://www.foxnews.com/politics/witkoff-kushner-scheduled-meet-putin-moscow.amp">Fox News</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="ukraine-moscow">
+      <p>This thread stayed dormant for weeks and woke on a movement trigger. Was that the right call?</p>
+      <label><input type="radio" name="fb-ukraine-1" value="yes-dormancy-right"> Yes, wake only on movement</label>
+      <label><input type="radio" name="fb-ukraine-1" value="want-more-often"> No, I want it more often</label>
+      <label><input type="radio" name="fb-ukraine-1" value="no-opinion"> No opinion</label>
+    </div>
+    <div class="q" data-sid="ukraine-moscow">
+      <p>Cadence from here?</p>
+      <label><input type="radio" name="fb-ukraine-2" value="daily-until-resolved"> Daily until it resolves</label>
+      <label><input type="radio" name="fb-ukraine-2" value="movement-only"> Movement only</label>
+      <label><input type="radio" name="fb-ukraine-2" value="stop-following"> Stop following</label>
+    </div>
+  </fieldset>
+</article>
 
-<article id="fed-hike">
-  <h3>A rate <em>hike</em> becomes the base case for 16 September <a class="anchor" href="#fed-hike">#</a></h3>
+<article id="kharg-tanker">
+  <h3>Iran says four American missiles hit a tanker off Kharg. Nobody else will say anything <a class="anchor" href="#kharg-tanker">#</a></h3>
+  <div class="meta">
+    <span class="tag">Geopolitics</span>
+    <span class="tag conf unconf">Unconfirmed</span>
+    <span class="tag">Follow-up</span>
+  </div>
+  <p>Iranian state broadcasting reported on Saturday that four US missiles struck a tanker roughly ten kilometres from Kharg Island, Iran's main oil export terminal. The semi-official SNN agency said an Iranian tanker was targeted by the United States. Fars, also semi-official, reported that blasts were heard but that no smoke was visible. Crew evacuation was said to be under way with no casualties.</p>
+  <p>US Central Command did not respond to requests for comment. No Iranian official has commented on the record. No imagery, vessel name, IMO number, or independent maritime tracking has surfaced. That combination — state media asserting a specific strike, semi-official media contradicting each other on whether anything is visibly burning, and total silence from the party accused — is why this story carries an <em>Unconfirmed</em> marker rather than a softer one.</p>
+  <p>It is reported here anyway because the claim is consequential if true and because the pattern is itself information. The US struck military installations on Kharg on 13 March and returned to Iranian targets this week after a roughly month-long pause, including strikes in Kermanshah that Iran says killed five IRGC Aerospace Force personnel. Kharg handles the overwhelming majority of Iranian crude exports. Washington has repeatedly threatened the terminal and repeatedly stopped short of destroying it.</p>
+  <p><b>What to watch:</b> a vessel name, a CENTCOM statement, or tanker-tracking data showing a stationary hull off Kharg. Any of the three converts this from allegation to fact. None had appeared by publication.</p>
+  <div class="divergence">
+    <strong>Where the sources split</strong>
+    <p>IRIB and SNN assert a US strike on a tanker. Fars — also Iranian, also semi-official — reports audible blasts and explicitly notes no visible smoke, which is difficult to reconcile with four missiles hitting a loaded vessel. This is a disagreement about facts, not significance, and it is happening <em>inside</em> the Iranian information space rather than between Iranian and Western outlets. The likeliest readings are that something was struck that is not a laden tanker, that air defenses engaged something, or that the account is being shaped for a domestic audience. The evidence does not currently distinguish between them, and I am not going to pretend it does.</p>
+  </div>
+  <details>
+    <summary>Dig deeper — what a closed strait has already cost, and why Kharg is the thing nobody bombs</summary>
+    <div class="deeper">
+      <p>The economic backdrop is now measurable. The Centre for Research on Energy and Clean Air put the additional global fossil-fuel import bill from the Hormuz crisis at more than $330bn in its first six months — roughly €282bn, of which about €140bn is crude alone. European buyers absorbed close to €41bn of that. French reporting breaks the European share down further: the Netherlands, Italy, France and Spain together carried about €41bn in extra cost between March and August without importing a single additional volume. They paid more for the same molecules.</p>
+      <p>The price channel is not oil so much as everything refined from it. CREA's figures show Asian LNG averaging about 75% above pre-war expectations over the period, European LNG about 60%, diesel about 59%, and crude about 35%. That ordering is the story: the strait's closure hurts refined products and gas far more than it hurts crude, because the tankers that cannot move are disproportionately product carriers and LNG vessels. It is the direct mechanism behind the American diesel record covered further down this issue, and behind the 5.6% jump in French regulated gas prices that hit six million households on 1 September.</p>
+      <p>Which brings us back to Kharg. The terminal is the single most valuable target in the Iranian energy system and the one the United States has consistently declined to destroy, striking military installations on the island in March while leaving the export infrastructure intact. The restraint is not sentimental. Destroying Kharg would remove Iranian crude from a market already short of product, at a moment when the American administration is trying to bring fuel prices down before a midterm election. The threat of hitting Kharg is worth more than hitting it. That asymmetry is precisely what makes an unverified claim of a strike near Kharg worth reporting carefully rather than ignoring — and worth refusing to confirm until someone produces a hull number.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.local10.com/news/world/2026/09/05/iran-accuses-the-us-of-targeting-a-tanker-near-kharg-island-and-other-mideast-news/">AP via Local10</a> ·
+    <a href="https://www.timesofisrael.com/liveblog-september-05-2026/">Times of Israel liveblog</a> ·
+    <a href="https://www.euronews.com/my-europe/2026/08/26/eu-countries-face-nearly-41bn-in-extra-fossil-fuel-costs-as-hormuz-crisis-exposes-energy-v">Euronews on CREA</a> ·
+    <a href="https://www.downtoearth.org.in/energy/fossil-fuel-import-bills-surge-over-330-billion-in-six-months-since-hormuz-crisis-crea">CREA findings</a> ·
+    <a href="https://tankermap.com/news/hormuz-transits-stay-near-lows-as-iran-us-talks-continue">TankerMap transit data</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="kharg-tanker">
+      <p>I ran an unverified claim and labelled it Unconfirmed rather than holding it. Right call?</p>
+      <label><input type="radio" name="fb-kharg-1" value="run-and-label"> Yes, run it labelled</label>
+      <label><input type="radio" name="fb-kharg-1" value="hold-until-verified"> No, hold until verified</label>
+      <label><input type="radio" name="fb-kharg-1" value="depends"> Depends on the story</label>
+    </div>
+    <div class="q" data-sid="kharg-tanker">
+      <p>Was the divergence box — Iranian outlets contradicting each other — useful?</p>
+      <label><input type="radio" name="fb-kharg-2" value="more-divergence"> Yes, more of these</label>
+      <label><input type="radio" name="fb-kharg-2" value="fine"> Fine as is</label>
+      <label><input type="radio" name="fb-kharg-2" value="too-much"> Too much detail</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="gulf-article51">
+  <h3>Iran hit air bases in Kuwait and the UAE, and Kuwait reached for Article 51 <a class="anchor" href="#gulf-article51">#</a></h3>
+  <div class="meta">
+    <span class="tag">Geopolitics</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+  </div>
+  <p>On 3 September Iran's Artesh — the regular army, not the IRGC — fired missiles and drones at Ahmad al-Jaber Air Base in Kuwait and Al Minhad Air Base in the UAE. The Artesh said it targeted satellite communications, equipment warehouses and fighter hangars in Kuwait, and troop positions and radar at Al Minhad. Kuwait's military confirmed its air defenses engaged hostile targets and that explosions heard were interceptions. Iran framed the attack as retaliation for a US bombardment that killed at least nineteen people.</p>
+  <p>The significant part is not the damage, which appears limited, but the response. Kuwait's foreign ministry condemned the strikes as a breach of the UN Charter and Security Council Resolution 2817 and said the country reserves its full right to take all necessary measures — the standard diplomatic formula for invoking Article 51 self-defense rights. The UAE, which had condemned the 1–2 September attacks on its neighbours as a violation of sovereignty, had not publicly addressed Iran's claim to have struck Al Minhad.</p>
+  <p>For six months the Gulf monarchies have worked to remain hosts to American forces without becoming belligerents. Iran has now struck bases in two of them in a single night and named them publicly. Kuwait's Article 51 language is the first formal move away from that posture.</p>
+  <p><b>What to watch:</b> whether Kuwait or the UAE restricts American use of the bases hit, and whether the GCC issues a collective statement rather than individual condemnations.</p>
+  <details>
+    <summary>Dig deeper — the bind the Gulf states are in, and why the Artesh rather than the IRGC matters</summary>
+    <div class="deeper">
+      <p>Two details in this story carry more weight than the strike itself.</p>
+      <p>The first is which Iranian force conducted it. Iran's military is split between the Artesh, the conventional army inherited from the imperial period, and the Islamic Revolutionary Guard Corps, which owns most of the ballistic missile inventory and nearly all of the deniable regional operations. Attacks on Gulf states have historically been IRGC business, often through proxies, precisely because that structure preserves deniability. An operation claimed by the Artesh against named bases in two named countries is the opposite of deniable. It is a state announcing a state act, which forecloses the diplomatic off-ramp where everyone agrees the militia did it.</p>
+      <p>The second is the position it puts Kuwait and the UAE in. Both host American forces under agreements that predate this war by decades and neither has any interest in it. Their calculation since February has been that hosting is survivable so long as Iran treats them as terrain rather than as parties. That calculation has now failed twice in one week. But the alternatives are all bad: restricting American access invites US pressure and removes the air defense umbrella that just intercepted the missiles, while doing nothing invites more strikes. Kuwait's Article 51 language is best read as an attempt to raise the cost to Iran rhetorically without actually changing anything material — the cheapest available move.</p>
+      <p>Watch the GCC. The Gulf Cooperation Council has a mutual defense provision it has never meaningfully activated. A collective statement would signal the monarchies intend to be treated as a bloc; continued individual condemnations would signal they still think their best protection is not being seen to act together. The difference determines whether Iran's next escalation is aimed at one capital or six, and it is the sort of thing that gets decided quietly and becomes visible only in the wording of a communiqué.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.washingtonpost.com/world/2026/09/03/iran-fires-missiles-drones-kuwait-strikes-resume-us-war/">Washington Post</a> ·
+    <a href="https://www.criticalthreats.org/analysis/iran-update-september-3-2026">Critical Threats Iran Update</a> ·
+    <a href="https://www.globalsecurity.org/wmd/library/news/iran/2026/09/iran-260903-rferl10.htm">RFE/RL via GlobalSecurity</a> ·
+    <a href="https://en.wikipedia.org/wiki/2026_Iranian_strikes_on_Kuwait">Strike chronology</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="gulf-article51">
+      <p>Follow the Gulf states' alignment as its own thread?</p>
+      <label><input type="radio" name="fb-gulf-1" value="follow"> Yes, follow it</label>
+      <label><input type="radio" name="fb-gulf-1" value="fold-into-iran"> Fold into the Iran war thread</label>
+      <label><input type="radio" name="fb-gulf-1" value="skip"> Not interested</label>
+    </div>
+    <div class="q" data-sid="gulf-article51">
+      <p>More like this — order-of-battle and alliance mechanics rather than casualty counts?</p>
+      <label><input type="radio" name="fb-gulf-2" value="more"> More like this</label>
+      <label><input type="radio" name="fb-gulf-2" value="balanced"> Balance is right</label>
+      <label><input type="radio" name="fb-gulf-2" value="less"> Less like this</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="diesel-record">
+  <h3>Diesel set a record this week — but the government's own series says it fell <a class="anchor" href="#diesel-record">#</a></h3>
   <div class="meta">
     <span class="tag">Macro &amp; markets</span>
-    <span class="tag conf conf-primary">Primary source</span>
+    <span class="tag conf primary">Primary source</span>
   </div>
-
-  <p>The August employment report, released Friday at 8:30 a.m., landed almost three times above consensus: 162,000 nonfarm jobs against roughly 53,000 expected, unemployment steady at 4.1%, and — the part that mattered more — upward revisions of 55,000 to June and July. July had been reported as a loss of 23,000 jobs. It is now a gain of 21,000. The soft patch that had been the argument against tightening was substantially revised away.</p>
-
-  <p>That reframes the 15–16 September FOMC meeting. The Committee has held at 3.50–3.75% since at least July, when Beth Hammack, Neel Kashkari and Lorie Logan all dissented in favor of a 25-basis-point increase. Three dissents is a large minority, and Friday's data moves the argument their way. Inflation is the reason: July CPI ran 3.4% year over year, and Chair Kevin Warsh has pointed to PCE at 3.7% over twelve months and 4.1% annualized over six — accelerating, not cooling, largely on energy.</p>
-
-  <p>Markets took it as tightening. The S&amp;P 500 closed down 0.38% at 7,718.41, the Dow off 0.51% to 53,413.60, the Nasdaq down 0.29% to 26,506.99.</p>
-
-  <p><strong>What to watch:</strong> the August CPI print on 11 September. It arrives five days before the decision and is the last major input. A core reading that holds above 3% makes the hike very hard to avoid.</p>
-
-  <details class="deeper">
-    <summary>Dig deeper</summary>
-    <div class="body">
-      <p><strong>Be careful with the "odds."</strong> Coverage on Friday quoted CME FedWatch at 58.4% for a September hike, up from 49.4% the day before. Other outlets the same week quoted 60.4% and, on 31 August, 66%. These are not contradictions so much as timestamps — FedWatch is a live read of fed funds futures and moves through the session. The honest summary is that the market has spent two weeks oscillating around a coin flip and Friday nudged it onto the hawkish side of it. Anyone citing a single precise percentage without a timestamp is reporting noise.</p>
-      <p><strong>The disagreement inside the Fed is about persistence, not level.</strong> Nobody on the Committee disputes that inflation is elevated. The July minutes show most participants expecting it to decline later in 2026 as tariff and energy effects fade, with "many" worried it lasts longer. Participants also judged that tariff pass-through into prices was <em>largely complete</em> — which matters, because it removes the "this is a one-off price level shift, look through it" argument that justified holding. If tariffs are done passing through and inflation is still 3.4%, what's left is energy and services, and only one of those is a supply shock the Fed can reasonably look past.</p>
-      <p><strong>The labor detail is less rosy than the headline.</strong> Of the 162,000, food services and drinking places contributed 59,000 and local government education 42,000 — over sixty percent from two seasonally noisy categories. The information sector <em>lost</em> 23,000. Manufacturing added 16,000. Average hourly earnings rose 3.1% year over year, which is below inflation: real wages fell again. Labor force participation at 61.6% is up from 61.1% in January, so the flat unemployment rate is absorbing returning workers rather than masking weakness. That is a genuinely healthy signal, and it is also exactly the kind of signal that gives a hawkish Committee cover.</p>
-      <p><strong>The political overhang.</strong> Warsh is Trump's appointee and has so far declined to deliver the rate cuts the President has publicly demanded; a hike would be a sharper break still. The administration's revived effort to remove Governor Lisa Cook is unresolved after the Supreme Court ruled against the first attempt on procedural grounds. None of that changes the September arithmetic, but it is the reason a 25bp hike would be read internationally as a statement about the Fed's independence as much as about prices — see the gold story below.</p>
+  <p>Wire coverage on Friday reported US retail diesel hitting an all-time high of $5.85 a gallon, with regular gasoline averaging $4.15, up from $2.98 before the Iran war. The framing was that six months of disrupted fuel flows have finally broken through to the pump, with distillate stockpiles at the lowest level on record for this time of year.</p>
+  <p>The Energy Information Administration's own weekly survey, the official series, tells a different story. For the week ending 31 August, released 1 September, EIA put on-highway diesel at $5.599 and regular gasoline at $4.071 — and had both <em>falling</em> week over week, diesel by 5.3 cents and gasoline by 1.4 cents.</p>
+  <p>Both can be true. EIA surveys Monday and publishes a weekly national average; the $5.85 figure comes from daily retail trackers reading four days later. A record set on Thursday or Friday would not appear in an EIA print dated the previous Monday. But it means the widely repeated record is not yet in the official series, and anyone reconciling the two should know that.</p>
+  <p>What is not in dispute is the year-over-year move. EIA has diesel up $1.865 a gallon and gasoline up 89.4 cents against the same week in 2025. That is a genuine primary-source measurement of a fuel shock, and it is roughly a 50% increase in the cost of moving every physical good in the country.</p>
+  <p><b>What to watch:</b> the EIA weekly print on Tuesday 8 September, which is the first official reading that can contain the alleged record.</p>
+  <div class="divergence">
+    <strong>Where the sources split</strong>
+    <p>This is a disagreement about facts with a mundane explanation — different series, different survey dates — rather than a dispute about significance. It is included because the two numbers are being reported interchangeably. The honest formulation is that daily trackers show a record and the official weekly series has not yet confirmed it. Note also that $4.15 gasoline, while up sharply, remains below the 2022 peak of roughly $5.02; the record is specific to diesel.</p>
+  </div>
+  <details>
+    <summary>Dig deeper — why diesel and not gasoline, and what this does to the Fed on 16 September</summary>
+    <div class="deeper">
+      <p>The split between diesel and gasoline is the whole mechanism. Gasoline is up about 39% from pre-war levels; diesel has set an outright record. That gap exists because the Hormuz closure is not primarily a crude event. CREA's six-month accounting has crude averaging about 35% above pre-war expectations while diesel ran about 59% higher and LNG higher still. What cannot get through the strait is refined product and gas, and the global refining system has been unable to compensate because Middle Eastern and Russian refineries have themselves been damaged. Mitsui O.S.K. Lines, the largest tanker operator in the world, said in August it expects the disruption to outlast previous estimates and to keep fuel prices elevated into next year.</p>
+      <p>Diesel is the input to freight, rail, agriculture and construction. It reaches consumer prices through the cost of moving things rather than the cost of making them, which is why the near-term visible effect shows up in groceries — produce, meat and anything refrigerated, restocked frequently and hauled far. Some retailers have already added order and delivery surcharges rather than reprice inventory.</p>
+      <p>This lands eleven days before the FOMC. Fed Chair Kevin Warsh's Jackson Hole remarks on 28 August were read as unexpectedly hawkish: he said the Committee must be confident inflation is returning to target, and that otherwise, in his phrase, "we have work to do." He also declined to give forward guidance. Futures pricing moved from roughly 56% to about 60% odds of a quarter-point hike immediately after, and subsequent readings have run around 66%.</p>
+      <p>The analytical difficulty is that an energy supply shock is exactly the kind of inflation monetary policy handles badly. Raising rates does not reopen a strait or rebuild a refinery. The case for hiking anyway rests on preventing an energy shock from becoming an expectations problem — which is close to what Warsh said when he pointed at underlying trends rather than headline prints. The 11 September CPI release is the input that matters, and a hot core reading with fuel visibly feeding through would make 16 September close to settled.</p>
     </div>
   </details>
-
-  <div class="sources">
-    <strong>Sources:</strong>
-    <a href="https://www.bls.gov/news.release/empsit.nr0.htm">BLS Employment Situation, August 2026</a> ·
-    <a href="https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm">FOMC minutes, 28–29 July 2026</a> ·
-    <a href="https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html">CNBC</a> ·
-    <a href="https://www.upi.com/Top_News/US/2026/09/04/nonfarm-payrolls-bureau-labor-statistics-august-2026/8801788532242/">UPI</a> ·
-    <a href="https://www.marketplace.org/story/2026/08/31/will-the-fed-raise-rates-at-september-fomc-meeting">Marketplace</a>
-  </div>
-
-  <div class="fb" data-story="fed-hike" data-title="Fed hike base case">
-    <div class="fbhead">Tune this</div>
-    <div class="q"><span class="qt">Track the Fed decision through to 16 September?</span>
-      <label><input type="radio" name="fb-fed-hike-follow" value="Follow this"> Follow this</label>
-      <label><input type="radio" name="fb-fed-hike-follow" value="Don't follow"> Don't follow</label>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.eia.gov/petroleum/gasdiesel/">EIA weekly retail prices (primary)</a> ·
+    <a href="https://www.usnews.com/news/business/articles/2026-09-04/us-diesel-prices-hit-a-record-high-of-5-85-on-average-as-the-iran-war-disrupts-the-flow-of-fuel">AP via US News</a> ·
+    <a href="https://fortune.com/2026/09/04/diesel-record-price-groceries/">Fortune on grocery pass-through</a> ·
+    <a href="https://www.npr.org/2026/08/28/nx-s1-5947903/federal-reserve-inflation-jackson-hole-interest-rates">NPR on Warsh at Jackson Hole</a> ·
+    <a href="https://www.cnbc.com/2026/08/31/markets-see-warsh-endorsing-a-rate-hike-in-september-not-everyone-is-convinced.html">CNBC on hike pricing</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="diesel-record">
+      <p>I led with the discrepancy between the wire number and the official series. Useful or pedantic?</p>
+      <label><input type="radio" name="fb-diesel-1" value="useful"> Useful — do this more</label>
+      <label><input type="radio" name="fb-diesel-1" value="pedantic"> Pedantic — just give the number</label>
+      <label><input type="radio" name="fb-diesel-1" value="neutral"> No strong view</label>
     </div>
-    <div class="q"><span class="qt">Depth on macro data releases?</span>
-      <label><input type="radio" name="fb-fed-hike-depth" value="More like this"> More</label>
-      <label><input type="radio" name="fb-fed-hike-depth" value="About right"> About right</label>
-      <label><input type="radio" name="fb-fed-hike-depth" value="Less like this"> Less</label>
+    <div class="q" data-sid="diesel-record">
+      <p>Should the Fed thread and the fuel-price thread be merged?</p>
+      <label><input type="radio" name="fb-diesel-2" value="merge"> Merge them</label>
+      <label><input type="radio" name="fb-diesel-2" value="separate"> Keep separate</label>
+      <label><input type="radio" name="fb-diesel-2" value="no-opinion"> No opinion</label>
     </div>
-    <div class="q"><span class="qt">Was the breakdown of the payroll internals useful, or noise?</span>
-      <label><input type="radio" name="fb-fed-hike-detail" value="Useful detail"> Useful</label>
-      <label><input type="radio" name="fb-fed-hike-detail" value="Too granular"> Too granular</label>
-    </div>
-  </div>
+  </fieldset>
 </article>
 
-<article id="hormuz-oil">
-  <h3>Hormuz is still shut, and Europe's answer to it contradicts itself <a class="anchor" href="#hormuz-oil">#</a></h3>
-  <div class="meta">
-    <span class="tag">World economy</span>
-    <span class="tag">Geopolitics</span>
-    <span class="tag conf conf-corrob">Independent corroboration</span>
-  </div>
-
-  <p>Six months after the United States and Israel began striking Iran on 28 February, the Strait of Hormuz is still effectively closed. Ship-tracking data cited by Al Jazeera put transits at eight to fifteen vessels a day in early August against roughly 130 before the war — a reduction of about ninety percent through a channel that carries around a fifth of world oil consumption. The IEA has called it the largest supply disruption in the history of the oil market. OPEC output is down more than 30% since February.</p>
-
-  <p>Brent nonetheless settled at $95.23 on Friday, down slightly on the day. That number is the story's most interesting fact: a ninety percent chokepoint closure has produced a price in the mid-nineties rather than the mid-hundreds, which tells you demand destruction, strategic reserves and re-routing have absorbed more than most February forecasts assumed. It does not tell you the shock is over.</p>
-
-  <p>Europe is where it bites hardest. EU governments have now committed more than €11.8 billion in fiscal measures to cushion energy bills, with Spain and Germany accounting for most of it — Spain alone nearly half. The Commission has convened an energy crisis task force while declining to impose price caps, favoring electricity tax cuts and gas storage instead.</p>
-
-  <p><strong>What to watch:</strong> European gas storage entering winter. The continent started 2026 at 46 bcm against 60 bcm in 2025 and 77 bcm in 2024. That gap, not the oil price, is the winter risk.</p>
-
-  <details class="deeper">
-    <summary>Dig deeper</summary>
-    <div class="body">
-      <p><strong>The disagreement here is about significance, not facts.</strong> Nobody contests the transit counts or the storage figures. The split is over whether Europe is in a crisis or merely an expensive year. The Commission's revealed position — task force yes, price caps no, targeted tax relief instead — is a bet that the shock is manageable and that intervening harder would distort the market and delay the adjustment that high prices are supposed to produce. Bruegel and IEEFA read the same data as evidence of structural vulnerability that fiscal patches don't touch. Both can be right on their own timescale: the Commission is probably correct about this quarter and probably wrong about the next cold winter, because nothing in a tax cut on electricity replenishes storage.</p>
-      <p><strong>The contradiction is real and worth naming.</strong> €11.8 billion in subsidies suppresses the price signal that would otherwise cut demand, at the same moment the Commission says it wants markets to adjust. Spain's outsized share reflects both its exposure and its politics, not a proportionate assessment of risk. A fiscal response distributed by national fiscal capacity rather than by exposure is how the 2022 crisis fragmented the single market, and it is happening again with less money and less attention.</p>
-      <p><strong>The LNG channel is the one to watch, not crude.</strong> Oil is fungible and re-routable; the world found workarounds within months. LNG is contracted, shipped in specialized vessels, and physically constrained. Qatari volumes transit Hormuz. When those are curtailed, global spot tightens immediately and Europe — which replaced Russian pipeline gas with exactly this market — competes directly with Asian buyers for the remainder. That competition is what turns an energy <em>price</em> problem into an industrial <em>output</em> problem, and it is the mechanism by which this story would show up in euro-area growth data rather than just in household bills.</p>
-      <p><strong>The toll.</strong> Reporting indicates a small number of vessels are transiting after paying the IRGC for safe passage. If that hardens into a standing arrangement, the strait stops being closed and becomes a tariffed channel under Iranian administration — a materially different outcome, better for prices and considerably worse for the principle that a chokepoint used by a fifth of world oil is not any one state's to charge for.</p>
-    </div>
-  </details>
-
-  <div class="sources">
-    <strong>Sources:</strong>
-    <a href="https://www.aljazeera.com/economy/2026/8/10/oil-prices-climb-as-iranian-demands-cloud-outlook-for-strait-of-hormuz">Al Jazeera</a> ·
-    <a href="https://www.bruegel.org/dataset/2026-european-energy-crisis-fiscal-response-tracker">Bruegel fiscal response tracker</a> ·
-    <a href="https://ieefa.org/resources/one-hundred-days-disruption-how-iran-war-exposes-europes-energy-vulnerabilities">IEEFA</a> ·
-    <a href="https://www.congress.gov/crs-product/R45281">CRS, Strait of Hormuz</a> ·
-    <a href="https://tradingeconomics.com/commodity/brent-crude-oil">Brent price</a>
-  </div>
-
-  <div class="fb" data-story="hormuz-oil" data-title="Hormuz closure and Europe's response">
-    <div class="fbhead">Tune this</div>
-    <div class="q"><span class="qt">Keep this as a running thread?</span>
-      <label><input type="radio" name="fb-hormuz-follow" value="Follow this"> Follow this</label>
-      <label><input type="radio" name="fb-hormuz-follow" value="Don't follow"> Don't follow</label>
-    </div>
-    <div class="q"><span class="qt">Angle preference on the Iran war?</span>
-      <label><input type="radio" name="fb-hormuz-angle" value="Economic consequences"> Economic</label>
-      <label><input type="radio" name="fb-hormuz-angle" value="Military and diplomatic"> Military/diplomatic</label>
-      <label><input type="radio" name="fb-hormuz-angle" value="Both"> Both</label>
-    </div>
-    <div class="q"><span class="qt">European policy detail at this depth?</span>
-      <label><input type="radio" name="fb-hormuz-eu" value="More like this"> More</label>
-      <label><input type="radio" name="fb-hormuz-eu" value="About right"> About right</label>
-      <label><input type="radio" name="fb-hormuz-eu" value="Less like this"> Less</label>
-    </div>
-  </div>
-</article>
-
-<article id="dnb-gold">
-  <h3>The Dutch central bank moved 86 tonnes of gold out of North America <a class="anchor" href="#dnb-gold">#</a></h3>
-  <div class="meta">
-    <span class="tag">World economy</span>
-    <span class="tag">US financials</span>
-    <span class="tag conf conf-primary">Primary source</span>
-    <span class="tag under">Underreported</span>
-  </div>
-
-  <p>De Nederlandsche Bank disclosed on Wednesday that between March and August it relocated roughly 86 tonnes of gold from New York and Ottawa to London. The share of Dutch reserves held in New York fell from 31.3% to 18.5%; Ottawa went from 19.7% to 18.5%; London rose from 18.1% to 32.1%. Total reserves are 612.4 tonnes, valued at €72.2 billion at end-2025. The mechanics are instructive: about 27 tonnes moved physically, while 59 tonnes were sold in New York and repurchased in London — a swap, not a convoy, avoiding remelting costs.</p>
-
-  <p>DNB's stated reason is tradability. Gold at the Bank of England meets modern bar standards and can be mobilised fastest in a crisis; New York and Ottawa holdings, in its words, cannot be used as quickly. Governor Olaf Sleijpen framed it as resilience: they expect never to need the reserves, but want them ready.</p>
-
-  <p><strong>Divergence.</strong> DNB's own release cites "increasing geopolitical unrest" without naming a country. Handelsblatt's coverage goes further, tying the move to President Trump's pressure on the Federal Reserve and consequent international unease about gold vaulted there. That causal claim is Handelsblatt's, not DNB's.</p>
-
-  <p><strong>What to watch:</strong> whether Germany's Bundesbank, which holds far more gold in New York, discloses anything similar.</p>
-
-  <details class="deeper">
-    <summary>Dig deeper</summary>
-    <div class="body">
-      <p><strong>Which reading does the evidence support?</strong> Partly both, and the technical explanation is not a cover story. London genuinely is the deepest gold market; the New York Fed vault is a custody facility, not a trading venue, and bars held there are often in older formats that need recasting to meet London Good Delivery standards. A central bank that wants to be able to <em>sell or swap</em> gold in an emergency rather than merely own it has a real operational reason to prefer London. DNB's own method proves the point — it didn't ship most of the metal, it sold and rebought, which only works where there's liquidity.</p>
-      <p>But the timing is not neutral, and DNB chose to include the phrase "increasing geopolitical unrest" when it could have said nothing beyond tradability. A central bank writing that sentence about the jurisdiction holding a third of its gold knows how it will read. The honest position: the operational rationale is sufficient to explain the action, and insufficient to explain why it was done now, over six months, and announced. Handelsblatt's Fed-pressure framing is an inference, and a reasonable one, but no Dutch official has confirmed it and I would not report it as established.</p>
-      <p><strong>Why this matters beyond the Netherlands.</strong> The New York Fed vaults gold for dozens of foreign central banks and governments; the service is a quiet load-bearing element of dollar centrality. Custody is stickier than reserve currency composition — moving it is expensive, slow, and diplomatically legible, which is precisely why a move is informative. Germany repatriated substantial gold from New York and Paris over 2013–2017 after domestic political pressure, so there is precedent for this happening without a crisis. What would make the Dutch move a trend rather than an episode is a second European central bank doing it and saying why. Watch the Bundesbank, which holds roughly a third of its reserves in New York and faces recurring domestic calls to bring them home, and the Banca d'Italia, which holds a large share there too.</p>
-      <p><strong>The scale check.</strong> 86 tonnes is worth roughly $10 billion at current prices — real money, and trivial against the several thousand tonnes vaulted in Manhattan. This is a signal, not a run. Treat anyone describing it as the start of a stampede as ahead of the evidence.</p>
-    </div>
-  </details>
-
-  <div class="sources">
-    <strong>Sources:</strong>
-    <a href="https://www.dnb.nl/en/general-news/press-release-2026/dnb-improves-tradability-of-gold-reserves/">DNB press release</a> ·
-    <a href="https://www.handelsblatt.com/politik/deutschland/krisenvorsorge-staerken-niederlande-ziehen-teil-von-goldreserve-aus-den-usa-ab/100251591.html">Handelsblatt</a> (German; paraphrased) ·
-    <a href="https://www.cnbc.com/2026/09/03/netherlands-gold-transfer-us-canada-uk.html">CNBC</a> ·
-    <a href="https://www.aljazeera.com/news/2026/9/3/why-has-the-netherlands-moved-10bn-of-its-gold-from-the-us">Al Jazeera</a>
-  </div>
-
-  <div class="fb" data-story="dnb-gold" data-title="DNB moves gold out of New York">
-    <div class="fbhead">Tune this</div>
-    <div class="q"><span class="qt">This one was thinly covered in US media. Want more finds like it?</span>
-      <label><input type="radio" name="fb-gold-under" value="More underreported finds"> Yes, more</label>
-      <label><input type="radio" name="fb-gold-under" value="Fewer underreported finds"> Prefer front-page stories</label>
-    </div>
-    <div class="q"><span class="qt">Open a thread on central bank reserve custody?</span>
-      <label><input type="radio" name="fb-gold-follow" value="Follow this"> Follow this</label>
-      <label><input type="radio" name="fb-gold-follow" value="Don't follow"> Don't follow</label>
-    </div>
-    <div class="q"><span class="qt">Was the source-divergence section worth the space?</span>
-      <label><input type="radio" name="fb-gold-div" value="Divergence analysis valuable"> Yes</label>
-      <label><input type="radio" name="fb-gold-div" value="Divergence analysis unnecessary"> Cut it</label>
-    </div>
-  </div>
-</article>
-
-<article id="bank-stablecoin">
-  <h3>Twenty-one banks are building a dollar stablecoin. JPMorgan isn't one of them <a class="anchor" href="#bank-stablecoin">#</a></h3>
-  <div class="meta">
-    <span class="tag">US financials</span>
-    <span class="tag conf conf-corrob">Independent corroboration</span>
-  </div>
-
-  <p>On 1 September, twenty-one financial institutions — Bank of America, Citi, Goldman Sachs, Wells Fargo, PNC, Capital One and UBS among them — committed to form a joint company to issue a dollar stablecoin, targeting a launch in the first half of 2027, subject to closing conditions. The stated market is wholesale, institutional and retail, aimed at cross-border payments and digital asset settlement, and the consortium says it intends to comply with the GENIUS Act, the 2025 federal stablecoin statute that requires one-to-one backing in eligible liquid reserves and imposes licensing and supervision on issuers.</p>
-
-  <p>JPMorgan is conspicuously absent. It has said it holds no active launch plan and would assess customer demand and regulation, having instead built out Kinexys and JPM Coin — permissioned, bank-internal rails rather than a public-chain token.</p>
-
-  <p>That absence is the substance. A consortium exists because no single bank's token achieves network effects; JPMorgan's calculation is that its own deposit and payments franchise is large enough to be its own network, and that sharing an issuer means sharing economics and governance with direct competitors. It is a defensible bet and a revealing one. If the consortium token gets traction in cross-border settlement, JPMorgan is outside the standard it would otherwise have set.</p>
-
-  <p><strong>What to watch:</strong> whether JPMorgan joins, launches its own public token, or says nothing — and which regulator issues the first GENIUS Act licence.</p>
-
-  <details class="deeper">
-    <summary>Dig deeper</summary>
-    <div class="body">
-      <p><strong>What a bank consortium stablecoin is actually for.</strong> Not retail crypto. The target is the correspondent banking chain — the multi-day, multi-intermediary process by which a payment crosses a border today. A token issued by an entity these banks jointly own, backed one-to-one and redeemable at par at any of them, could collapse that to minutes. The commercial prize is the float and the fee capture currently sitting with correspondent networks and with crypto-native issuers, and the defensive motive is that those issuers have been eating into dollar settlement while banks watched.</p>
-      <p><strong>The governance problem is why this is hard.</strong> Twenty-one owners means twenty-one views on reserve management, redemption priority in a stress event, which chains to deploy on, and who bears loss if a reserve asset gaps. Bank consortia in payments have a long history of announcing and then moving slowly for exactly these reasons. "Subject to closing conditions" and an H1 2027 target are doing a lot of work in that press release; treat the announcement as a strong signal of direction and a weak signal of timing.</p>
-      <p><strong>Reading JPMorgan's position honestly.</strong> The generous interpretation is strategic confidence: Kinexys already moves substantial daily volume on permissioned rails for institutional clients, JPMorgan keeps the full economics, and it avoids being bound to a consortium's slowest member. The less generous one is that it is a classic incumbent choice to defend a proprietary network against an open standard, which is the wager that has failed repeatedly in payments history — and the bank's stated reason, that it would "assess customer demand," is the kind of thing institutions say when they have not decided. Both readings are consistent with the public facts. What would discriminate between them is whether JPMorgan's clients start asking for interoperability with the consortium token; that demand, if it appears, will not be visible in press releases.</p>
-      <p><strong>Regulatory watch item.</strong> The GENIUS Act framework is roughly a year into implementation and no consortium of this size has tested it. The interesting questions are whether a jointly owned issuer is treated as a bank affiliate for capital purposes, and how reserve assets are treated in resolution. Those answers will shape the economics more than any product decision.</p>
-    </div>
-  </details>
-
-  <div class="sources">
-    <strong>Sources:</strong>
-    <a href="https://www.bankingdive.com/news/bofa-wells-fargo-citi-back-upcoming-stablecoin-goldman-pnc-capital-one/829318/">Banking Dive</a> ·
-    <a href="https://www.paymentsdive.com/news/bofa-wells-fargo-citi-back-upcoming-stablecoin-goldman-pnc-capital-one/829388/">Payments Dive</a> ·
-    <a href="https://decrypt.co/377216/goldman-sachs-bofa-banks-stablecoin">Decrypt</a> ·
-    <a href="https://crypto.news/bank-of-america-citi-join-21-firm-stablecoin-plan/">crypto.news</a>
-  </div>
-
-  <div class="fb" data-story="bank-stablecoin" data-title="Bank stablecoin consortium; JPMorgan absent">
-    <div class="fbhead">Tune this</div>
-    <div class="q"><span class="qt">Track the consortium to launch?</span>
-      <label><input type="radio" name="fb-stable-follow" value="Follow this"> Follow this</label>
-      <label><input type="radio" name="fb-stable-follow" value="Don't follow"> Don't follow</label>
-    </div>
-    <div class="q"><span class="qt">JPMorgan coverage in general?</span>
-      <label><input type="radio" name="fb-stable-jpm" value="More like this"> More</label>
-      <label><input type="radio" name="fb-stable-jpm" value="About right"> About right</label>
-      <label><input type="radio" name="fb-stable-jpm" value="Less like this"> Less</label>
-    </div>
-    <div class="q"><span class="qt">Digital assets and payments infrastructure as a standing beat?</span>
-      <label><input type="radio" name="fb-stable-beat" value="Add as beat"> Add it</label>
-      <label><input type="radio" name="fb-stable-beat" value="Only when consequential"> Only when consequential</label>
-      <label><input type="radio" name="fb-stable-beat" value="Skip it"> Skip it</label>
-    </div>
-  </div>
-</article>
-
-<article id="usps-ballots">
-  <h3>The Supreme Court is asked to let the Postal Service police mail ballots <a class="anchor" href="#usps-ballots">#</a></h3>
+<article id="missouri-map">
+  <h3>Missouri's high court threw out the new map and handed it to the voters <a class="anchor" href="#missouri-map">#</a></h3>
   <div class="meta">
     <span class="tag">US politics &amp; policy</span>
-    <span class="tag conf conf-corrob">Independent corroboration</span>
+    <span class="tag conf primary">Primary source</span>
   </div>
-
-  <p>The Justice Department filed an emergency application at the Supreme Court this week seeking to implement a Postal Service rule governing mail ballots before the 3 November midterms. The rule, issued under a 31 March executive order titled "Ensuring Citizen Verification and Integrity in Federal Elections," would require state and local election officials to submit ballot envelope designs to USPS for approval, carry specified barcodes and an official logo, and upload the names and addresses of mail voters to a federal portal. Ballots failing the specification, or from voters not on the uploaded list, would not be delivered.</p>
-
-  <p>Two courts have blocked it. In <em>League of Women Voters of Massachusetts v. Trump</em>, a Boston federal court enjoined the approved-voter-list provision on 11 August. On Friday, Judge Indira Talwani granted a preliminary injunction against the ballot-design rule, finding it likely both unlawful and unconstitutional. A related restraining order expires 10 September; a Supreme Court response was not expected before 8 September.</p>
-
-  <p>The constitutional question is narrow and large at once: the Elections Clause assigns the times, places and manner of federal elections to state legislatures and Congress, not to an executive agency. USPS conditioning delivery on compliance with its own design and registration requirements is a novel assertion of federal control over state ballot administration.</p>
-
-  <p><strong>What to watch:</strong> 8–10 September. Mail balloting has already begun in at least one state.</p>
-
-  <details class="deeper">
-    <summary>Dig deeper</summary>
-    <div class="body">
-      <p><strong>The posture matters more than the merits right now.</strong> This is an emergency application on the shadow docket, not a merits case. The Court is being asked whether to let a rule operate while litigation continues — which, given that ballots are already going out, functionally decides the question for this election regardless of how the merits come out in 2027. The government's strongest argument is institutional: that lower courts should not enjoin federal agency operations weeks before an election. The challengers' strongest argument is the mirror image, the <em>Purcell</em> principle — that courts should not permit disruptive changes to election rules close to an election. Both sides are invoking the same instinct against late change, pointed in opposite directions, and which one prevails depends on what the Court treats as the status quo: the rule, or its absence.</p>
-      <p><strong>Two rulings, not one.</strong> Reporting has tended to blur them. The 11 August order concerned Section 3 of the executive order — the "approved mail voter" list and the direction to refuse delivery to voters not on it. Friday's preliminary injunction concerns the separate USPS rule specifying envelope design, barcodes and logo. They rest on related but distinct theories, and the Supreme Court could plausibly treat them differently: a design specification is easier to defend as ordinary postal administration than a delivery-refusal list keyed to voter identity.</p>
-      <p><strong>The operational stake.</strong> Election administration in the United States is run by thousands of county and municipal offices with heterogeneous ballot formats and printing vendors, most of whom finalize designs months ahead. A federal design-approval requirement introduced in September cannot be complied with on time by many of them, which means the practical effect of granting the application is not uniform compliance but variable non-delivery. That asymmetry — the burden falling on whichever jurisdictions are least resourced — is the part with the clearest consequences for actual voters, and it is largely absent from the legal briefing on both sides.</p>
-      <p><strong>What I can't tell you.</strong> Whether any Justice has signaled a view. Emergency applications are frequently resolved without argument and sometimes without reasoning, so a Monday order with no opinion is a realistic outcome.</p>
+  <p>The Missouri Supreme Court ruled unanimously on 3 September that the congressional map Republicans redrew in 2025 cannot be used in the November election, and that a citizen referendum on it must go on the ballot. The 2022 map governs the midterms.</p>
+  <p>The mechanism is procedural rather than constitutional, which makes it harder to unwind. A group called People Not Politicians gathered more than 330,000 signatures — over double the requirement — to force a referendum on the new map, HB 1. Secretary of State Denny Hoskins rejected the petition. The court held that rejection was wrong. Judge Ginger Gooch wrote that the referendum petition "was legal, sufficient, and timely, and the secretary incorrectly concluded otherwise," and that HB 1 accordingly never took effect and will not unless voters approve it.</p>
+  <p>That reasoning matters. The court did not rule the map unconstitutional or gerrymandered. It ruled that under the Missouri constitution a validly petitioned referendum suspends the law it targets, and that the map was therefore never in force — even though it had already been used to run primaries. Attorney General Katherine Hanaway said she will go to federal court, calling the decision "a full-fledged constitutional crisis."</p>
+  <p><b>What to watch:</b> whether a federal court will touch it. The holding rests entirely on Missouri's own referendum provisions, which is exactly the territory federal courts are least willing to enter.</p>
+  <details>
+    <summary>Dig deeper — the primaries problem, and why the federal appeal is a harder sell than it sounds</summary>
+    <div class="deeper">
+      <p>The awkward fact at the centre of this case is that Missouri already ran its 2026 primaries under HB 1's districts. Candidates filed, campaigned and won nominations in seats that the Supreme Court has now declared never legally existed. The court's answer is that the referendum petition suspended the law on the day it was validly filed, and that the Secretary of State's erroneous rejection cannot retroactively give the map force it never had. The error, in this framing, was the Secretary's, and the voters should not lose a constitutional right because a state officer got the sufficiency determination wrong.</p>
+      <p>That is coherent, but it leaves real disruption. Reverting to the 2022 lines means some nominees now live in or ran for districts whose boundaries have changed under them. Expect litigation about ballot access and candidate residency to follow within days, and note that this is the kind of downstream mess that sometimes persuades courts to let an unlawful map stand for one cycle rather than unwind a completed primary.</p>
+      <p>The federal appeal faces a structural problem. Hanaway's constitutional-crisis framing implies a federal question, but the ruling interprets Missouri's referendum provisions and Missouri's petition-sufficiency statute. Federal courts treat a state supreme court as the final word on state law. The usual route in is the Elections Clause argument that a state court has displaced the legislature's authority over federal election rules — the theory the US Supreme Court substantially narrowed in <em>Moore v. Harper</em> in 2023, which held that state courts do review state legislatures on election law, subject to an ill-defined outer limit. Getting relief would require arguing that the Missouri court exceeded that limit, which is a high bar and one no litigant has yet cleared.</p>
+      <p>The timing cuts the other way too. Federal courts apply the <em>Purcell</em> principle against changing election rules close to an election. Here that principle argues for leaving the state court's order alone, since the 2022 map is the status quo ante and reinstating HB 1 in September would itself be the late change.</p>
     </div>
   </details>
-
-  <div class="sources">
-    <strong>Sources:</strong>
-    <a href="https://www.npr.org/2026/09/03/nx-s1-5955614/trump-mail-in-voting-ruling-court-usps">NPR</a> ·
-    <a href="https://www.aclu.org/press-releases/federal-court-blocks-u-s-postal-service-from-implementing-executive-order-restricting-mail-voting">ACLU (party to the case)</a> ·
-    <a href="https://www.jurist.org/news/2026/09/supreme-court-asked-to-review-usps-mail-ballot-rule-ahead-of-midterm-elections/">JURIST</a> ·
-    <a href="https://www.nbcnews.com/politics/trump-administration/justice-department-usps-supreme-court-action-mail-ballots-elections-rcna595924">NBC News</a> ·
-    <a href="https://thehill.com/regulation/court-battles/6070171-supreme-court-justice-department-mail-voting-usps/">The Hill</a>
-  </div>
-
-  <div class="fb" data-story="usps-ballots" data-title="SCOTUS emergency application on USPS mail ballot rule">
-    <div class="fbhead">Tune this</div>
-    <div class="q"><span class="qt">Follow this to the Supreme Court's order?</span>
-      <label><input type="radio" name="fb-usps-follow" value="Follow this"> Follow this</label>
-      <label><input type="radio" name="fb-usps-follow" value="Don't follow"> Don't follow</label>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://missouriindependent.com/2026/09/03/missouri-supreme-court-blocks-gerrymandered-congressional-map-orders-referendum-vote/">Missouri Independent</a> ·
+    <a href="https://www.cnn.com/2026/09/03/politics/missouri-supreme-court-blocks-trump-backed-map-midterms">CNN</a> ·
+    <a href="https://www.nbcnews.com/politics/2026-election/missouri-supreme-court-rules-gop-drawn-map-cant-used-november-election-rcna595688">NBC News</a> ·
+    <a href="https://www.stlpr.org/government-politics-issues/2026-09-03/missouri-supreme-court-referendum-congressional-map">STLPR</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="missouri-map">
+      <p>Follow this through the federal appeal?</p>
+      <label><input type="radio" name="fb-mo-1" value="follow"> Yes, add to watchlist</label>
+      <label><input type="radio" name="fb-mo-1" value="outcome-only"> Only if it reaches SCOTUS</label>
+      <label><input type="radio" name="fb-mo-1" value="skip"> Skip it</label>
     </div>
-    <div class="q"><span class="qt">Election-administration coverage through the midterms?</span>
-      <label><input type="radio" name="fb-usps-elect" value="More like this"> More</label>
-      <label><input type="radio" name="fb-usps-elect" value="Substance only, no horse race"> Substance only</label>
-      <label><input type="radio" name="fb-usps-elect" value="Less like this"> Less</label>
+    <div class="q" data-sid="missouri-map">
+      <p>Depth on the legal mechanism versus the political stakes?</p>
+      <label><input type="radio" name="fb-mo-2" value="more-legal"> More legal mechanism</label>
+      <label><input type="radio" name="fb-mo-2" value="right"> Mix is right</label>
+      <label><input type="radio" name="fb-mo-2" value="more-political"> More political stakes</label>
     </div>
-    <div class="q"><span class="qt">Legal-procedure explanation at this level?</span>
-      <label><input type="radio" name="fb-usps-legal" value="Right level"> Right level</label>
-      <label><input type="radio" name="fb-usps-legal" value="Too much procedure"> Too much</label>
-      <label><input type="radio" name="fb-usps-legal" value="Want more procedure"> Want more</label>
-    </div>
-  </div>
+  </fieldset>
 </article>
 
-<article id="birthright-order">
-  <h3>A judge blocks the narrowed birthright citizenship order <a class="anchor" href="#birthright-order">#</a></h3>
-  <div class="meta">
-    <span class="tag">US politics &amp; policy</span>
-    <span class="tag conf conf-corrob">Independent corroboration</span>
-  </div>
-
-  <p>US District Judge Deborah Boardman on Wednesday partially enjoined the administration's August executive order restricting birthright citizenship — the successor to the sweeping order the Supreme Court struck down last year. The new version is narrower by design: it directs federal agencies to withhold recognition of citizenship for children born in the United States where either parent is an "alien enemy," a foreign government employee, or engaged in what the order calls birth tourism.</p>
-
-  <p>Boardman held the administration could not enforce the policy, writing that if left in place the order could deny citizenship to children the Supreme Court has already declared to be citizens. She did allow agencies to continue developing implementation guidance, which is a meaningful carve-out: the machinery may be built, it just may not be used.</p>
-
-  <p>The narrowing is the point of the litigation. By carving out categories rather than asserting a general power, the order is engineered to present the Fourteenth Amendment question in its most sympathetic form — birth tourism and foreign officials — and to test whether "subject to the jurisdiction thereof" admits of exceptions the Court has never recognised. Boardman's ruling says the narrowing does not save it. That question is now on a track back to the Supreme Court.</p>
-
-  <p><strong>What to watch:</strong> whether the government appeals to the Fourth Circuit or goes straight to an emergency application, as it did on mail ballots.</p>
-
-  <div class="sources">
-    <strong>Sources:</strong>
-    <a href="https://www.cnn.com/2026/09/02/politics/judge-blocks-trumps-latest-birthright-citizenship-order">CNN</a> ·
-    <a href="https://www.tribuneindia.com/news/unconstitutional/us-federal-court-blocks-trumps-latest-bid-to-restrict-birthright-citizenship">The Tribune</a> ·
-    <a href="https://en.wikipedia.org/wiki/Trump_v._CASA">Background: Trump v. CASA</a>
-  </div>
-
-  <div class="fb" data-story="birthright-order" data-title="Birthright citizenship order enjoined">
-    <div class="fbhead">Tune this</div>
-    <div class="q"><span class="qt">Follow this case?</span>
-      <label><input type="radio" name="fb-birth-follow" value="Follow this"> Follow this</label>
-      <label><input type="radio" name="fb-birth-follow" value="Don't follow"> Don't follow</label>
-    </div>
-    <div class="q"><span class="qt">This ran short with no expansion. Right call?</span>
-      <label><input type="radio" name="fb-birth-len" value="Short was right"> Right call</label>
-      <label><input type="radio" name="fb-birth-len" value="Wanted more depth"> Wanted more</label>
-    </div>
-  </div>
-</article>
-
-<article id="frontier-models">
-  <h3>Three frontier models in seventy-two hours, all with locked cyber tiers <a class="anchor" href="#frontier-models">#</a></h3>
+<article id="astra-cyber">
+  <h3>OpenAI shipped its most capable model to the public with the cyber tier locked <a class="anchor" href="#astra-cyber">#</a></h3>
   <div class="meta">
     <span class="tag">AI &amp; tech industry</span>
-    <span class="tag conf conf-corrob">Independent corroboration</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+    <span class="tag">Follow-up</span>
   </div>
-
-  <p>Anthropic shipped Claude Fable 5.1 on 1 September, alongside Mythos 5.1 — the same underlying model released without production safeguards to vetted cybersecurity and life-sciences organisations — and cut cache-read pricing 75% to $0.25 per million tokens. Google DeepMind followed on 2 September with Gemini 3.8 Flash plus a defenders-only Cyber variant. OpenAI released GPT-6 Astra on 3 September at $10 per million input and $50 per million output tokens, limited to a small set of enterprise customers because it is the first OpenAI model to reach the Critical cybersecurity tier under the company's Preparedness Framework. Its headline capability is computer use; OpenAI reports 72.6% on an offline OSWorld 2.0 subset against 65.7% for its predecessor.</p>
-
-  <p>The pattern across three labs in three days is the story, not any individual model. Each shipped a gated variant with cyber capability held back from general release, and each is the arbiter of its own gate. There is no external verification of these tiers, no shared definition of "Critical," and no disclosure of who receives access. That is self-regulation with the evidence withheld, and it should be described that way — including for Anthropic, which built the model writing this brief.</p>
-
-  <p><strong>What to watch:</strong> whether any lab publishes the criteria or the access list. Absent that, capability claims and safety claims both rest on vendor assertion.</p>
-
-  <details class="deeper">
-    <summary>Dig deeper</summary>
-    <div class="body">
-      <p><strong>The benchmark numbers deserve less weight than the pricing.</strong> A 72.6% versus 65.7% gap on a self-selected offline subset of an agentic benchmark, reported by the vendor, is not independently meaningful — the subset choice, the scaffolding, and the number of attempts all move that figure more than the model does, and none of it is externally reproducible. What <em>is</em> hard to fake is price. Anthropic cutting cache reads by 75% and OpenAI pricing Astra at $10/$50 per million tokens are commitments with margin consequences, and they tell you where the labs think the volume is: long-context, tool-using, repeated-prefix agent workloads, where cache economics dominate the bill. The industry is competing on cost-per-agent-hour now, not on chat quality.</p>
-      <p><strong>The gating pattern has a specific shape worth naming.</strong> In each case the capability is not withheld — it is redistributed. Mythos, the Gemini Cyber variant, and Astra's enterprise preview all put the ungated model in the hands of a selected group while the public gets the safeguarded one. The security argument for this is real: offensive capability released broadly favors attackers, who need one working exploit, over defenders, who must cover everything. The unexamined part is that "vetted defender" is a category each vendor defines privately, and it maps closely onto "large customer." A safety architecture that consistently resolves to giving the strongest tools to the best-resourced organisations is a defensible policy and a significant distributional choice, and no lab has argued for it as such in public.</p>
-      <p><strong>The market is not buying the story.</strong> Semiconductor stocks rose 3.4% on Friday but remain down 17.8% for the quarter, after a mid-year selloff that erased more than a trillion dollars of chip market value on doubts about whether AI revenue can justify capital spending. So: the densest cluster of frontier releases of the year lands in the same quarter that investors marked down the infrastructure underneath it by nearly a fifth. Either capability gains are not converting to revenue at the rate capex assumed, or the market is early. Friday's data point — an expected rate hike hitting long-duration growth assets hardest — suggests part of that drawdown is discount rates rather than an AI verdict. Do not read the chip selloff as a judgment on the models, or the models as a refutation of the selloff.</p>
-      <p><strong>One structural note.</strong> Reporting attributes the biggest recent capability gains to post-training environment scaling rather than new base architectures. If that holds, the competitive moat shifts from pretraining compute toward evaluation and environment engineering, which is cheaper to replicate — an argument for capability convergence and against the winner-take-all framing that underwrites much of the capex.</p>
+  <p>OpenAI released GPT-6 Astra to trusted partners on 3 September and to paying users on 4 September. The company called it a generational leap for cybersecurity, software engineering and science; president Greg Brockman suggested it may eventually be seen as the arrival of AGI. Specifications include a roughly 1,050,000-token context window, 128K maximum output, and an April 2026 knowledge cutoff. Its headline feature is computer use — navigating spreadsheets, forms and web pages directly, at speeds the company describes as superhuman.</p>
+  <p>The part that matters for the watchlist thread is what the public version cannot do. Access to the most advanced cybersecurity capabilities is deliberately restricted; the general release rejects certain prompts in that domain outright, with broader access routed through a separate defensive programme. This is a capability tier in the open — a single model shipping with different ceilings for different customers, on stated security grounds.</p>
+  <p>That thread has been on the watchlist waiting for exactly this: a lab publishing tier criteria or access lists rather than merely alluding to gating. Astra is a partial trigger. The gate is now public and acknowledged; the criteria governing who passes it are not.</p>
+  <p>One safety detail deserves flagging. Astra uses a recurrent-depth reasoning technique that obscures its chain of thought, which researchers have noted cuts against monitorability — the ability to inspect a model's reasoning for signs of misbehaviour.</p>
+  <p><b>What to watch:</b> published tier criteria, an access list, or a regulator demanding either.</p>
+  <details>
+    <summary>Dig deeper — what tiering actually implies, and the monitorability trade</summary>
+    <div class="deeper">
+      <p>Capability tiering is a genuine shift in how frontier models are sold, and it is worth being precise about what it does and does not mean. It does not mean two models. It means one set of weights with access controls layered on top: refusal behaviour tuned differently for different accounts, and in some designs capability elicitation that is only unlocked for vetted customers. The security argument is straightforward — offensive cyber capability is the clearest current case of a capability that is directly harmful in general release and directly useful to defenders. Restricting it while routing vetted defensive users through a separate programme is a defensible response to that asymmetry.</p>
+      <p>The concerns are equally concrete. First, the vetting criteria are unpublished, so there is no way to evaluate whether the gate tracks demonstrated defensive need or simply commercial relationship. Second, tiering creates a capability gap that is invisible from the outside: benchmark results and safety evaluations published for a model may not describe the version any particular customer is using, in either direction. Third, a gate maintained by policy rather than by the weights is only as strong as the refusal training holding it, and refusal training has historically been the least durable safety property in deployed systems.</p>
+      <p>The monitorability point is separate and arguably larger. Chain-of-thought inspection has been one of the few practical tools for catching a model reasoning its way toward something it should not do. A technique that improves capability by making the reasoning trace less legible trades away exactly that. The trade may well be worth making — the capability gains are real, and chain-of-thought was never a guaranteed window into what a model was actually doing. But it should be named as a trade rather than reported as a feature, and OpenAI's own materials do not frame it that way.</p>
+      <p>Note the July 2026 Hugging Face incident sits behind this release as context for the added safeguards. That reads as a company responding to a specific failure rather than to a general principle, which is worth remembering when assessing how much the tier is likely to bind.</p>
     </div>
   </details>
-
-  <div class="sources">
-    <strong>Sources:</strong>
-    <a href="https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads">VentureBeat</a> ·
+  <p class="sources"><b>Sources:</b>
+    <a href="https://en.wikipedia.org/wiki/GPT-6_Astra">GPT-6 Astra overview</a> ·
     <a href="https://fortune.com/2026/09/03/openai-debuts-gpt-6-astra-computer-use-greg-brockman-says-start-of-agi/">Fortune</a> ·
-    <a href="https://www.macrumors.com/2026/09/01/anthropic-claude-fable-5-1/">MacRumors</a> ·
-    <a href="https://www.cnbc.com/2026/07/29/chip-selloff-sk-hynix-samsung-softbank.html">CNBC (chip selloff)</a>
-  </div>
-
-  <div class="fb" data-story="frontier-models" data-title="Three frontier model releases with gated cyber tiers">
-    <div class="fbhead">Tune this</div>
-    <div class="q"><span class="qt">Coverage of model releases?</span>
-      <label><input type="radio" name="fb-models-cadence" value="Every release"> Every release</label>
-      <label><input type="radio" name="fb-models-cadence" value="Only when a pattern or consequence emerges"> Only when it matters</label>
-      <label><input type="radio" name="fb-models-cadence" value="Less like this"> Less</label>
+    <a href="https://9to5mac.com/2026/09/04/openai-releasing-major-upgrade-to-chatgpt-and-codex-with-gpt-6-astra-details-here/">9to5Mac on rollout</a> ·
+    <a href="https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html">CNBC (headline only — see footer)</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="astra-cyber">
+      <p>Model releases: cover every frontier launch, or only when governance changes?</p>
+      <label><input type="radio" name="fb-astra-1" value="governance-only"> Only on governance change</label>
+      <label><input type="radio" name="fb-astra-1" value="every-launch"> Every major launch</label>
+      <label><input type="radio" name="fb-astra-1" value="capability-only"> Only on capability jumps</label>
     </div>
-    <div class="q"><span class="qt">Follow AI safety governance and gated access as a thread?</span>
-      <label><input type="radio" name="fb-models-follow" value="Follow this"> Follow this</label>
-      <label><input type="radio" name="fb-models-follow" value="Don't follow"> Don't follow</label>
+    <div class="q" data-sid="astra-cyber">
+      <p>Was the monitorability discussion worth the space?</p>
+      <label><input type="radio" name="fb-astra-2" value="more"> Yes, more AI safety detail</label>
+      <label><input type="radio" name="fb-astra-2" value="right"> About right</label>
+      <label><input type="radio" name="fb-astra-2" value="less"> Less of this</label>
     </div>
-    <div class="q"><span class="qt">Was the skepticism toward Anthropic here appropriate?</span>
-      <label><input type="radio" name="fb-models-skept" value="Appropriately skeptical"> Yes</label>
-      <label><input type="radio" name="fb-models-skept" value="Too harsh"> Too harsh</label>
-      <label><input type="radio" name="fb-models-skept" value="Not skeptical enough"> Not enough</label>
-    </div>
-  </div>
+  </fieldset>
 </article>
 
-<article id="aaro-archive">
-  <h3>The Pentagon moves to buy the largest private UFO archive in North America <a class="anchor" href="#aaro-archive">#</a></h3>
+<article id="odni-uap-ndas">
+  <h3>The intelligence community has been told its UAP secrecy agreements are unenforceable <a class="anchor" href="#odni-uap-ndas">#</a></h3>
   <div class="meta">
     <span class="tag">UAP disclosure</span>
-    <span class="tag conf conf-primary">Primary source</span>
+    <span class="tag conf primary">Primary source</span>
     <span class="tag under">Underreported</span>
   </div>
-
-  <p>A sole-source contracting notice posted to sam.gov reveals that the All-domain Anomaly Resolution Office intends to buy a subscription to the archives of the National UFO Historic Records Center, a private collection assembled by the researcher David Marler. The government's justification is unusually direct: no other organisation, it says, has the historical depth, volume of unique records and analytical expertise to meet its minimum needs. The structure is a one-year base with four one-year options. The Pentagon declined to give a cost estimate.</p>
-
-  <p>The collection holds material predating 1990, including the personal papers of J. Allen Hynek — the astronomer who ran scientific consulting for Project Blue Book — and files from early civilian research organisations. AARO's congressional mandate requires it to review the federal government's UAP record back to 1945, and this is an admission that the government's own holdings are insufficient for that task and that a private citizen's archive fills the gap.</p>
-
-  <p>That admission is the news, and it is more interesting than most of what the disclosure debate produces. It also arrives amid an active release effort: a Department of War task force stood up on 1 May has published five tranches of records since 8 May, and ODNI issued preliminary disclosure guidance on 31 July.</p>
-
-  <p><strong>What to watch:</strong> whether the contract is awarded, and whether anything from the collection surfaces in a public tranche.</p>
-
-  <div class="sources">
-    <strong>Sources:</strong>
-    <a href="https://defensescoop.com/2026/09/02/pentagon-seeks-access-to-vast-private-ufo-records-collection/">DefenseScoop, on the sam.gov notice</a> ·
-    <a href="https://www.dlapiper.com/en-us/insights/publications/2026/08/odni-issues-preliminary-guidance-on-disclosure-of-unidentified-anomalous-phenomena">DLA Piper on the ODNI guidance</a> ·
-    <a href="https://oversight.house.gov/wp-content/uploads/2026/03/UAP-Request-Letter-FINAL.pdf">House Oversight UAP request letter (March 2026)</a>
-  </div>
-
-  <div class="fb" data-story="aaro-archive" data-title="AARO seeks private UFO archive subscription">
-    <div class="fbhead">Tune this</div>
-    <div class="q"><span class="qt">Another thinly covered story. Keep hunting these?</span>
-      <label><input type="radio" name="fb-aaro-under" value="More underreported finds"> Yes</label>
-      <label><input type="radio" name="fb-aaro-under" value="Fewer underreported finds"> Less often</label>
+  <p>On 31 July the Office of the Director of National Intelligence issued preliminary guidance directing the Department of War and the intelligence community to establish channels through which current and former employees and contractors may report unidentified anomalous phenomena information to designated representatives of AARO or the PURSUE Task Force — in the guidance's own words, "notwithstanding prior non-disclosure agreements (NDAs), oaths, or commitments."</p>
+  <p>Agencies were given thirty days from receipt to name PURSUE designees and to inform their workforces that NDAs barring such disclosure are no longer enforceable. That window has now closed, which is why this belongs in a September issue rather than a July one.</p>
+  <p>The authority is not new. The FY2023 National Defense Authorization Act already authorised disclosures to AARO notwithstanding any NDA or other legal restraint, and barred retaliation by agencies and contractors. What was missing for three years was implementation. This guidance is that implementation, and it is narrower than the statute: it addresses NDAs but not the other legal restraints the statute covers, and it gives contractors no procedural route distinct from IC employees.</p>
+  <p>It also explicitly does not authorise public disclosure of classified information, or disclosure to Congress outside existing channels. This is a mechanism for moving information into a government office, not into public view.</p>
+  <p><b>What to watch:</b> the detailed implementing guidance ODNI says is forthcoming, and whether it resolves the contractor gap.</p>
+  <details>
+    <summary>Dig deeper — why the contractor gap is the whole story, and how to read this against the AARO records purchase</summary>
+    <div class="deeper">
+      <p>The persistent claim in this area — made to Congress under oath by several witnesses since 2023 — is that the relevant programmes have lived with defence contractors rather than inside government, and that NDAs signed with private companies are what has kept participants silent. If that claim is true, then guidance that establishes a clear disclosure route for intelligence community employees while leaving contractors without a distinct procedure addresses the smaller half of the problem. The DLA Piper analysis makes this point carefully: the preliminary guidance offers no direction on how contractors specifically may make authorised disclosures, and the practical effect may be to encourage people to wait for the follow-on guidance rather than come forward now.</p>
+      <p>There is a second gap. The guidance addresses NDAs. The FY2023 statute is broader, reaching essentially every other legal restraint on disclosure. Someone weighing whether to speak is not usually worried only about a civil NDA; they are worried about classification, about the Espionage Act, about clearance revocation and about their employability. Guidance that voids the NDA and is silent on the rest leaves the actual deterrents intact. Contract language matters here too — NDAs permitting disclosure "in accordance with Applicable Law" should already incorporate the statute, while agreements that define applicable law to include agency guidance may now have more room.</p>
+      <p>Read alongside the other September development in this area, a shape emerges. AARO moved on 2 September to issue a sole-source contract to the National UFO Historic Records Center, a New Mexico nonprofit, for subscription access to its proprietary holdings with emphasis on pre-1990 material. So within roughly five weeks the government has opened a channel for insiders to talk and moved to buy the largest private documentary archive in North America. Both serve the same congressional mandate — the FY2023 NDAA's requirement of a comprehensive historical review back to 1945 — and both are the government gathering material inward.</p>
+      <p>Neither is disclosure in the sense the public means it. The distinction between a government collecting its own history and a government publishing it is the one to hold onto, and it is the distinction most coverage of this beat collapses.</p>
     </div>
-    <div class="q"><span class="qt">UAP coverage threshold?</span>
-      <label><input type="radio" name="fb-aaro-bar" value="Government actions and documents only"> Documents and official acts only</label>
-      <label><input type="radio" name="fb-aaro-bar" value="Include credible sightings and imagery"> Include sightings/imagery</label>
-      <label><input type="radio" name="fb-aaro-bar" value="Less like this"> Less</label>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.dlapiper.com/en-us/insights/publications/2026/08/odni-issues-preliminary-guidance-on-disclosure-of-unidentified-anomalous-phenomena">DLA Piper analysis of the ODNI guidance</a> ·
+    <a href="https://defensescoop.com/2026/09/02/pentagon-seeks-access-to-vast-private-ufo-records-collection/">DefenseScoop on the NUFOHRC contract</a> ·
+    <a href="https://www.aaro.mil/UAP-Records/">AARO UAP Records (primary)</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="odni-uap-ndas">
+      <p>This was flagged Underreported — a document story the front pages skipped. Want more finds like this?</p>
+      <label><input type="radio" name="fb-uap-1" value="more-underreported"> Yes, prioritise these</label>
+      <label><input type="radio" name="fb-uap-1" value="occasional"> Occasionally is fine</label>
+      <label><input type="radio" name="fb-uap-1" value="fewer"> Fewer of these</label>
     </div>
-    <div class="q"><span class="qt">Follow the contract award?</span>
-      <label><input type="radio" name="fb-aaro-follow" value="Follow this"> Follow this</label>
-      <label><input type="radio" name="fb-aaro-follow" value="Don't follow"> Don't follow</label>
+    <div class="q" data-sid="odni-uap-ndas">
+      <p>On this beat, prefer documents and process or claims and imagery?</p>
+      <label><input type="radio" name="fb-uap-2" value="documents"> Documents and process</label>
+      <label><input type="radio" name="fb-uap-2" value="both"> Both</label>
+      <label><input type="radio" name="fb-uap-2" value="imagery"> Claims and imagery</label>
     </div>
-  </div>
+  </fieldset>
 </article>
 
-<!-- ============================ LOCAL ============================ -->
+<h2 class="section">Florida &amp; Tampa Bay</h2>
+<p class="section-note">Judged on a local bar: consequence measured against Pasco, Pinellas and Tallahassee, not Washington.</p>
 
-<h2 class="sectionhead">Florida &amp; Tampa Bay</h2>
-
-<article id="local-dengue">
-  <h3>Hillsborough is the epicenter of Florida's worst local dengue year in decades <a class="anchor" href="#local-dengue">#</a></h3>
+<article id="dengue-pasco">
+  <h3>Pasco has its first local dengue case, and the Bay area's count doubled in a week <a class="anchor" href="#dengue-pasco">#</a></h3>
   <div class="meta">
     <span class="tag">Public health</span>
-    <span class="tag">Local</span>
-    <span class="tag conf conf-primary">Primary source</span>
+    <span class="tag conf primary">Primary source</span>
+    <span class="tag">Follow-up</span>
   </div>
-
-  <p>Hillsborough County has recorded 59 locally acquired dengue infections this year as of Friday, with state health officials describing an unusual increase and Surgeon General Joseph Ladapo naming the county Florida's epicenter for transmission. The trajectory is steep: the state arbovirus surveillance report for the week of 9–15 August counted 23 locally acquired cases statewide, of which 15 were in Hillsborough. Three weeks later Hillsborough alone is at 59.</p>
-
-  <p>"Locally acquired" is the operative phrase — these are infections transmitted by mosquitoes in Florida, not brought back from travel. Pinellas has recorded three, its first in more than fifteen years by CDC data. Pasco has no confirmed locally acquired dengue cases in the state reporting; sentinel chickens there have tested positive for West Nile antibodies, which is a separate surveillance signal.</p>
-
-  <p>Both counties are under mosquito-borne illness alerts. Hillsborough's health department reports visiting nearly 4,000 residences and 400 businesses with repellent and materials; Pinellas has expanded ground inspection and dawn fogging in Palm Harbor and St. Petersburg. The standing guidance is drain standing water, cover skin, and use an EPA-registered repellent — DEET, picaridin, IR3535 or oil of lemon eucalyptus.</p>
-
-  <p><strong>What to watch:</strong> the weekly state arbovirus report, and whether Pasco records a first local case. Transmission season runs through the warm months; this one has not peaked.</p>
-
-  <div class="sources">
-    <strong>Sources:</strong>
-    <a href="https://www.floridahealth.gov/wp-content/uploads/2026/08/fl-arbovirus-report-w32-2026.pdf">Florida DOH arbovirus surveillance, week 32</a> ·
-    <a href="https://www.wusf.org/health-news-florida/2026-09-04/hillsborough-experiences-dengue-cases-how-to-protect-yourself">WUSF</a> ·
-    <a href="https://hillsborough.floridahealth.gov/2026/08/12/doh-hillsborough-county-issues-mosquito-borne-illness-alert-update-4/">DOH-Hillsborough alert</a> ·
-    <a href="https://pinellas.floridahealth.gov/2026/08/11/mosquito-borne-illness-alert/">DOH-Pinellas alert</a>
-  </div>
-
-  <div class="fb" data-story="local-dengue" data-title="Tampa Bay locally acquired dengue surge">
-    <div class="fbhead">Tune this</div>
-    <div class="q"><span class="qt">Track this weekly while the season runs?</span>
-      <label><input type="radio" name="fb-dengue-follow" value="Follow this"> Follow this</label>
-      <label><input type="radio" name="fb-dengue-follow" value="Only on significant change"> Only on big changes</label>
-      <label><input type="radio" name="fb-dengue-follow" value="Don't follow"> Don't follow</label>
+  <p>Florida Department of Health arbovirus surveillance as of 4 September records 65 locally acquired dengue cases across the Tampa Bay area: 59 in Hillsborough, 5 in Pinellas and 1 in Pasco. The regional total was 33 earlier in the same week. Every identified Bay area case is DENV-2, and fourteen mosquito pools in Hillsborough have tested positive for the same serotype.</p>
+  <p>The Pasco case is the specific event this thread was waiting for. The watchlist wake trigger was a state arbovirus report showing a first local Pasco case or a weekly rise above trend. Both fired at once.</p>
+  <p>Locally acquired means the person did not travel — the transmission happened here, from local mosquitoes. That is the distinction that separates an imported-case count from an outbreak, and 65 local cases makes this the worst local dengue year in Florida in decades.</p>
+  <p>Hillsborough Mosquito Management has flown aerial Dibrom applications over Hyde Park, South Tampa and Ybor City. Pasco County Mosquito Control is providing aerial assistance in coordination with Hillsborough, alongside ground inspections, Bti helicopter treatments and door-to-door property checks. Surgeon General Joseph Ladapo said the state expects more cases.</p>
+  <p>The uniform DENV-2 serotype across all three counties is consistent with a single introduction spreading outward rather than separate introductions, which is the more tractable scenario for control — and the one that argues for treating Pasco's single case as an early edge rather than an isolated event.</p>
+  <p><b>What to watch:</b> the next weekly arbovirus report, and whether Pasco's count stays at one.</p>
+  <details>
+    <summary>Dig deeper — what DENV-2 means for anyone who has had dengue before</summary>
+    <div class="deeper">
+      <p>Dengue has four serotypes. Infection with one confers lasting immunity to that serotype and only brief cross-protection against the others. The complication is that a second infection with a <em>different</em> serotype carries materially higher risk of severe dengue than a first infection does, through a mechanism called antibody-dependent enhancement: antibodies from the first infection bind the new serotype without neutralising it and can help it enter cells more efficiently.</p>
+      <p>This is why the uniform DENV-2 finding is worth stating plainly rather than burying as a technical detail. For the large majority of Tampa Bay residents who have never had dengue, a DENV-2 infection is a first infection — typically a week of fever, severe muscle and joint pain and headache, unpleasant enough to earn the name break-bone fever, but usually not dangerous. For a smaller group — people who have lived in or travelled extensively through dengue-endemic regions and had a prior infection with a different serotype — this outbreak carries a different risk profile, and warning signs after the fever breaks (persistent vomiting, abdominal pain, bleeding gums, lethargy) warrant immediate care rather than waiting.</p>
+      <p>The vector is <em>Aedes aegypti</em>, which is a domestic mosquito rather than a swamp one. It breeds in small containers of clean water close to houses — plant saucers, bromeliads, buckets, clogged gutters, tarps, bird baths, boat covers — and bites during the day, most actively in the hours after dawn and before dusk. That biology is why aerial spraying alone does not end an outbreak: the adults get knocked down, but the larval habitat is in individual yards, which is what the door-to-door inspections are actually for.</p>
+      <p>For a Pasco household the practical implications are narrow and cheap: dump standing water weekly, including saucers and anything holding rainwater after the afternoon storms; use a repellent with DEET, picaridin or IR3535 during daylight hours; and take a high fever with severe body aches seriously enough to get tested rather than assuming it is flu.</p>
     </div>
-    <div class="q"><span class="qt">Local section scope — is Hillsborough close enough to matter?</span>
-      <label><input type="radio" name="fb-dengue-scope" value="Scope is right"> Right scope</label>
-      <label><input type="radio" name="fb-dengue-scope" value="Tighten to Pasco and Pinellas"> Tighten to Pasco/Pinellas</label>
-      <label><input type="radio" name="fb-dengue-scope" value="Widen to statewide Florida"> Widen to statewide</label>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.floridahealth.gov/wp-content/uploads/2026/02/fl-arbovirus-report_w5-2026.pdf">Florida DOH arbovirus surveillance (primary)</a> ·
+    <a href="https://www.fox35orlando.com/news/dengue-fever-local-cases-tampa-bay-area">FOX 35</a> ·
+    <a href="https://www.tampabay28.com/news/local-news/wesley-chapel-and-surrounding-area/dengue-fever-cases-rise-in-tampa-bay-area-as-pasco-county-ramps-up-mosquito-control-efforts">Tampa Bay 28 on Pasco response</a> ·
+    <a href="https://www.wfla.com/news/hillsborough-county/hillsborough-county-leads-florida-dengue-fever-cases-as-total-doubles-in-1-week/">WFLA (headline only — see footer)</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="dengue-pasco">
+      <p>Cadence for this thread now that Pasco is on the board?</p>
+      <label><input type="radio" name="fb-dengue-1" value="weekly"> Weekly while it grows</label>
+      <label><input type="radio" name="fb-dengue-1" value="movement"> Only on movement</label>
+      <label><input type="radio" name="fb-dengue-1" value="stop"> Stop following</label>
     </div>
-  </div>
+    <div class="q" data-sid="dengue-pasco">
+      <p>Was the practical health guidance in the expansion wanted, or should I stick to the news?</p>
+      <label><input type="radio" name="fb-dengue-2" value="wanted"> Wanted — keep it</label>
+      <label><input type="radio" name="fb-dengue-2" value="news-only"> News only</label>
+      <label><input type="radio" name="fb-dengue-2" value="no-opinion"> No opinion</label>
+    </div>
+  </fieldset>
 </article>
 
-<article id="local-waymo">
-  <h3>Waymo is now driving Tampa without anyone in the front seat <a class="anchor" href="#local-waymo">#</a></h3>
+<article id="amendment-3">
+  <h3>The property tax you would stop paying, and the ballot language a judge threw out <a class="anchor" href="#amendment-3">#</a></h3>
   <div class="meta">
-    <span class="tag">Local</span>
-    <span class="tag">Tech</span>
-    <span class="tag conf conf-corrob">Independent corroboration</span>
+    <span class="tag">Florida policy</span>
+    <span class="tag conf primary">Primary source</span>
   </div>
-
-  <p>Waymo opened paid, fully driverless service to public riders in Tampa on 1 September, one of three launches that day alongside Denver and San Diego, bringing the company to fourteen cities. The Tampa service area covers roughly 50 square miles including Hyde Park, Westshore, Water Street and Ybor City, served by a mixed fleet of Ojai minivans and older Jaguar I-Pace vehicles. Access is rolling rather than open — riders are being admitted in batches from a waitlist the company says tens of thousands have joined.</p>
-
-  <p>The service area is the thing to read. Fifty square miles centered on downtown, Westshore and Ybor covers the employment core and the entertainment districts and stops well short of Pasco. For a reader in New Port Richey this is not yet a transportation option; it is a leading indicator. The relevant question over the next year is not whether the cars work but how far north and west the polygon extends, because the boundary is where the commercial case and the regulatory comfort currently end.</p>
-
-  <p>Florida's permissive autonomous vehicle statute means there is no county-level approval step to watch — expansion is Waymo's call, not Pasco's or Pinellas's.</p>
-
-  <p><strong>What to watch:</strong> service-area expansions toward Pinellas and the airport, and the first reported incident data from the Tampa deployment.</p>
-
-  <div class="sources">
-    <strong>Sources:</strong>
-    <a href="https://waymo.com/blog/2026/09/ride-in-denver-san-diego-tampa/">Waymo</a> ·
-    <a href="https://www.tampabay.com/news/business/2026/09/01/waymo-driverless-cars-launch-tampa/">Tampa Bay Times</a> ·
-    <a href="https://www.wusf.org/transportation/2026-09-01/waymo-driverless-taxi-service-now-in-tampa">WUSF</a> ·
-    <a href="https://electrek.co/2026/09/01/waymo-public-robotaxi-denver-san-diego-tampa/">Electrek</a>
-  </div>
-
-  <div class="fb" data-story="local-waymo" data-title="Waymo launches driverless service in Tampa">
-    <div class="fbhead">Tune this</div>
-    <div class="q"><span class="qt">Follow Waymo's Tampa Bay expansion?</span>
-      <label><input type="radio" name="fb-waymo-follow" value="Follow this"> Follow this</label>
-      <label><input type="radio" name="fb-waymo-follow" value="Don't follow"> Don't follow</label>
+  <p>Ron DeSantis said this week he will actively campaign for Amendment 3, the constitutional amendment on Florida's 3 November ballot that would sharply raise the homestead exemption. He had previously said he supported it but would not campaign for it, which makes this a real change in posture in his final months in office.</p>
+  <p>What the amendment does: raise the non-school homestead exemption to $150,000 in 2027 and $250,000 in 2028, indexed to inflation from 2029. It does not touch school district taxes, which are the largest single line on most Pasco tax bills — so this reduces, rather than eliminates, what a homesteaded owner pays. There is also a residency condition worth knowing: to get the larger exemptions you must be a permanent Florida resident as of 31 December 2026. Anyone establishing residency after that date starts at the current $50,000 exemption and waits five years to reach $250,000.</p>
+  <p>Passage requires 60% approval. Constitutional amendments in Florida frequently poll well above that and land below it.</p>
+  <p>One complication is already on the record. In August a Leon County circuit judge ruled the original ballot title and summary were promotional and potentially misleading. State officials said they will not appeal and are drafting revised language.</p>
+  <p><b>What to watch:</b> the revised ballot language, and county-level revenue estimates from Pasco and Pinellas.</p>
+  <details>
+    <summary>Dig deeper — who pays for it, and the residency clause nobody is campaigning on</summary>
+    <div class="deeper">
+      <p>Non-school property taxes are what fund county and municipal government: sheriff's deputies, fire and EMS, roads, parks, libraries, stormwater. Removing $250,000 of taxable value per homesteaded property does not reduce what those services cost. It changes who pays for them. The three available adjustments are raising millage rates, shifting the burden onto property classes that keep no expanded exemption — commercial property, rentals, second homes and vacant land — or cutting services.</p>
+      <p>The distributional effect within homesteads is worth stating. A $250,000 exemption is worth the same dollar amount to a modest New Port Richey house as to a waterfront property, which means proportionally far more to the modest one. On a home assessed near or below $250,000, the non-school portion of the bill approaches zero. That is a genuinely large change for a retiree on fixed income in Pasco, and it is the strongest argument for the amendment.</p>
+      <p>The counterweight is that Pasco and Pinellas are not identically situated. Counties with more commercial base can shift the burden sideways; counties that are predominantly residential have fewer places to move it, and are likelier to end up raising millage or cutting services. This is why county-level revenue estimates matter more than the statewide number, and why they are worth reading before voting rather than after.</p>
+      <p>The residency clause deserves more attention than it is getting. Tying the full exemption to permanent residency established by 31 December 2026, with a five-year ramp for newcomers, creates a two-tier property tax system based on arrival date. Existing residents get the benefit immediately; people who move to Florida in 2027 pay materially more tax on an identical house for five years. Whatever one thinks of that as policy, it is a durability question: differential treatment of new arrivals has drawn constitutional challenge in other states, and a provision embedded in the state constitution is far harder to fix than a statute if a court finds a problem with it.</p>
+      <p>Finally, the ballot-language ruling is a live variable, not a footnote. Florida voters read the summary in the booth, and a judge has already found this one promotional. The revised text will materially affect the 60% threshold.</p>
     </div>
-    <div class="q"><span class="qt">Local stories like this one?</span>
-      <label><input type="radio" name="fb-waymo-more" value="More like this"> More</label>
-      <label><input type="radio" name="fb-waymo-more" value="About right"> About right</label>
-      <label><input type="radio" name="fb-waymo-more" value="Less like this"> Less</label>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.pcpao.gov/amendment3">Pinellas County Property Appraiser FAQ (primary)</a> ·
+    <a href="https://www.floridapolicy.org/posts/florida-property-tax-amendment-ballot-language-summary">Florida Policy Institute on ballot language</a> ·
+    <a href="https://www.newsweek.com/ron-desantis-updates-florida-2026-plan-property-tax-vote-2119994">Newsweek on the campaign shift</a> ·
+    <a href="https://barneswalker.com/florida-property-tax-update-what-actually-happened-in-the-2026-legislative-session/">Session summary</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="amendment-3">
+      <p>Ballot measures affecting your tax bill — cover these through November?</p>
+      <label><input type="radio" name="fb-amd-1" value="follow-all"> Yes, all of them</label>
+      <label><input type="radio" name="fb-amd-1" value="major-only"> Only the major ones</label>
+      <label><input type="radio" name="fb-amd-1" value="skip"> Skip ballot measures</label>
     </div>
-  </div>
+    <div class="q" data-sid="amendment-3">
+      <p>I laid out who bears the cost rather than staying neutral. Right approach?</p>
+      <label><input type="radio" name="fb-amd-2" value="yes-analysis"> Yes, analyse the trade-offs</label>
+      <label><input type="radio" name="fb-amd-2" value="just-facts"> Just describe the measure</label>
+      <label><input type="radio" name="fb-amd-2" value="no-opinion"> No opinion</label>
+    </div>
+  </fieldset>
 </article>
 
-<!-- ============================ SUBMIT ============================ -->
+<button id="send">Send my feedback →</button>
+<p id="sendnote">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
 
-<div class="submitbar">
-  <button id="sendfb" type="button">Send my answers &rarr;</button>
-  <div class="note">
-    Opens a prefilled GitHub issue in a new tab. Nothing is submitted until you press
-    “Create” there. Answers are assembled in your browser; this page sends nothing on its own.
-  </div>
-</div>
-
-<footer class="brief">
-  <p><strong>Editorial notes for this issue.</strong> Eight lead stories and two local ones cleared the bar; no others were added to reach a number. Five stories carry an expansion — the birthright citizenship ruling, the AARO archive contract, and both local items were complete at length and got none. There are no follow-ups because there is no archive yet.</p>
-
-  <h4>Held, and why</h4>
+<footer>
+  <h4>Watchlist — dormant</h4>
   <ul>
-    <li><strong>Putin's peace remarks at the Eastern Economic Forum (3 Sept).</strong> Statements about willingness to reach an agreement, plus Zelensky saying US negotiators will visit both capitals. Real, but it is talk about a possible future deal rather than a verifiable change — the brief's own anti-signal against speculation. Seeded as a watchlist thread instead, with a concrete wake trigger.</li>
-    <li><strong>Science and public health nationally.</strong> Nothing this week met the standard of research that changes how something works and comes with an accessible study. Rather than run a "new study finds" item, the beat sits out.</li>
-    <li><strong>China macro.</strong> Only general 2026 policy framing was reachable; no specific development from this week stood up.</li>
+    <li><b>Central bank gold custody</b> — wakes when another central bank discloses a relocation, or the Bundesbank or Banca d'Italia comments.</li>
+    <li><b>Bank stablecoin consortium</b> — wakes on a JPMorgan statement, the first GENIUS Act licence, or the consortium entity actually forming. OCC final rules are targeted for November 2026.</li>
+    <li><b>Birthright citizenship order</b> — wakes on an appeal to the Fourth Circuit or an emergency application to the Supreme Court. Judge Boardman's 2 September classwide injunction stands unappealed so far.</li>
+    <li><b>USPS mail ballot rule</b> — wakes on a Supreme Court order. The government's emergency application (No. 26A297) was filed 3 September seeking an administrative stay; the district court TRO expires 10 September. No order had issued at publication.</li>
+    <li><b>AARO records contract</b> — wakes on an award notice on sam.gov or a public tranche from the NUFOHRC collection.</li>
+    <li><b>Waymo Tampa Bay</b> — wakes on service-area expansion into Pinellas or Pasco, or published incident data. The 1 September Tampa launch has not been followed by either.</li>
+    <li><b>Fed September decision</b> — active but suppressed today: no new fact since Jackson Hole. Wakes on the 11 September CPI print and the 16 September FOMC statement.</li>
   </ul>
-
-  <h4>Watchlist seeded by this issue</h4>
+  <h4>Sources I could not reach</h4>
   <ul>
-    <li><strong>Fed September decision</strong> — active. Wake: 11 Sept CPI print; 16 Sept FOMC statement.</li>
-    <li><strong>Hormuz closure and Europe's energy response</strong> — active. Wake: sustained change in daily transit counts; EU price-cap decision; gas storage below prior-year path.</li>
-    <li><strong>Central bank gold custody</strong> — active. Wake: another central bank discloses relocation, or Bundesbank/Banca d'Italia comment.</li>
-    <li><strong>Bank stablecoin consortium</strong> — active. Wake: JPMorgan statement, first GENIUS Act licence, or consortium entity formation.</li>
-    <li><strong>USPS mail ballot rule</strong> — active. Wake: Supreme Court order (expected on or after 8 Sept).</li>
-    <li><strong>Birthright citizenship order</strong> — active. Wake: appeal filed or emergency application.</li>
-    <li><strong>AI gated-capability tiers</strong> — active. Wake: a lab publishes tier criteria or access lists, or a regulator demands them.</li>
-    <li><strong>AARO records contract</strong> — active. Wake: award notice on sam.gov, or a public tranche drawing on the collection.</li>
-    <li><strong>Ukraine–Russia negotiations</strong> — active. Wake: US negotiators actually travel to Moscow or Kyiv; a signed document; or a ceasefire taking effect. Not commentary.</li>
-    <li><strong>Tampa Bay dengue</strong> — active. Wake: state arbovirus report showing a first Pasco local case, or a weekly increase above the current trend.</li>
-    <li><strong>Waymo Tampa Bay</strong> — active. Wake: service-area expansion into Pinellas or Pasco, or published incident data.</li>
+    <li>CNBC, WFLA and Business Standard returned HTTP 403 to direct fetches. Each claim drawn from them is corroborated elsewhere in the source lists above; the links are retained for the reader.</li>
+    <li>The Supreme Court's own PDF of application 26A297 could not be parsed to text. The USPS entry above therefore rests on the docket number and filing date only, with substance from SCOTUSblog and NBC rather than the filing itself.</li>
+    <li>No science story cleared the bar. Searches returned trend listicles and studies without accessible papers, both of which are on the anti-topics list. The section is omitted rather than padded.</li>
   </ul>
-
-  <h4>Sources not reached this run</h4>
+  <h4>About this issue</h4>
   <ul>
-    <li>CNBC and TheStreet live market blogs returned HTTP 403; Friday's closing levels are taken from Reuters wire coverage instead and are consistent across outlets.</li>
-    <li>A Senate Banking letter on jobs data surfaced in search as a PDF that could not be parsed. It was not used and is not characterised here.</li>
-    <li>Paywalled outlets (WSJ, FT, Bloomberg, NYT) were treated as existence signals only; nothing in this issue rests on a paywalled source.</li>
+    <li>Rebuilt on request at 08:40 EDT on 5 September 2026, replacing the 07:08 scheduled edition. Roughly 24 searches and fetches. Nine stories cleared; four are follow-ups, which is the cap.</li>
+    <li>Everything from a non-English source — the French reporting on European energy costs — is paraphrase, never quotation.</li>
+    <li>No cross-links: the archive contains no issue earlier than this one.</li>
   </ul>
-
-  <p style="margin-top:1.6rem">Issue No. 1 &middot; generated 5 September 2026 &middot; The Brief</p>
 </footer>
-
-</div>
 
 <script>
 (function () {
-  var OWNER = "historiocity", REPO = "News-Agent";
-  var btn = document.getElementById("sendfb");
-  if (!btn) return;
-
-  btn.addEventListener("click", function () {
-    var blocks = document.querySelectorAll(".fb");
-    var lines = ["Feedback on **The Brief**, Issue No. 1 — 2026-09-05.", ""];
-    var answered = 0;
-
-    for (var i = 0; i < blocks.length; i++) {
-      var b = blocks[i];
-      var picked = b.querySelectorAll("input[type=radio]:checked");
-      if (!picked.length) continue;
-      answered += picked.length;
-      lines.push("### `" + b.getAttribute("data-story") + "` — " + b.getAttribute("data-title"));
-      for (var j = 0; j < picked.length; j++) {
-        var input = picked[j];
-        var q = input.closest(".q");
-        var label = q ? q.querySelector(".qt").textContent.trim() : "";
-        lines.push("- " + label + " → **" + input.value + "**");
-      }
-      lines.push("");
-    }
-
+  var OWNER = "historiocity", REPO = "news-agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    var sets = {};
+    document.querySelectorAll("fieldset .q").forEach(function (q) {
+      var sid = q.getAttribute("data-sid");
+      var input = q.querySelector("input:checked");
+      var prompt = q.querySelector("p") ? q.querySelector("p").textContent.trim() : "";
+      if (!input) return;
+      answered++;
+      if (!sets[sid]) sets[sid] = [];
+      sets[sid].push("- " + prompt + "\n  → **" + input.value + "**");
+    });
     if (!answered) {
-      alert("No answers selected yet. Pick at least one option, then press the button again.");
+      alert("Nothing selected yet — pick at least one answer, then send.");
       return;
     }
-
+    lines.push("Feedback on **Issue No. 1 — 5 September 2026**");
+    lines.push("");
+    Object.keys(sets).forEach(function (sid) {
+      lines.push("### `" + sid + "`");
+      lines.push(sets[sid].join("\n"));
+      lines.push("");
+    });
     lines.push("---");
+    lines.push("_Anything else you want more or less of:_");
     lines.push("");
-    lines.push("**Anything else?** (add notes below — they are recorded for the reader to act on, not executed automatically)");
-    lines.push("");
-
-    var title = "Brief feedback — 2026-09-05";
     var url = "https://github.com/" + OWNER + "/" + REPO + "/issues/new"
       + "?labels=brief-feedback"
-      + "&title=" + encodeURIComponent(title)
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-09-05")
       + "&body=" + encodeURIComponent(lines.join("\n"));
-
     window.open(url, "_blank", "noopener");
   });
 })();
 </script>
 
+</div>
 </body>
 </html>
