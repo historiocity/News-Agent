@@ -70,4 +70,14 @@ their own merits.
 
 | Thread | Status | Wake trigger | Last appeared |
 |---|---|---|---|
-| — | — | — | — |
+| Fed September decision | active | 11 Sep CPI print; 16 Sep FOMC statement | 2026-09-05 |
+| Hormuz closure & EU energy response | active | Sustained change in daily transit counts; EU price-cap decision; gas storage below prior-year path | 2026-09-05 |
+| Central bank gold custody | active | Another central bank discloses relocation, or Bundesbank / Banca d'Italia comment | 2026-09-05 |
+| Bank stablecoin consortium | active | JPMorgan statement; first GENIUS Act licence; consortium entity formation | 2026-09-05 |
+| USPS mail ballot rule | active | Supreme Court order on the emergency application (expected on or after 8 Sep) | 2026-09-05 |
+| Birthright citizenship order | active | Appeal filed to the Fourth Circuit, or emergency application to SCOTUS | 2026-09-05 |
+| AI gated-capability tiers | active | A lab publishes tier criteria or access lists, or a regulator demands them | 2026-09-05 |
+| AARO records contract | active | Award notice on sam.gov, or a public tranche drawing on the NUFOHRC collection | 2026-09-05 |
+| Ukraine–Russia negotiations | active | US negotiators actually travel to Moscow or Kyiv; a signed document; a ceasefire taking effect. Not commentary. | — (held 2026-09-05) |
+| Tampa Bay dengue | active | State arbovirus report showing a first Pasco local case, or a weekly rise above current trend | 2026-09-05 |
+| Waymo Tampa Bay | active | Service-area expansion into Pinellas or Pasco, or published incident data | 2026-09-05 |
