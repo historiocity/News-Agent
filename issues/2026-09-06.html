@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Sunday, 6 September 2026</title>
+<style>
+  :root {
+    --bg: #fbfaf8; --fg: #1a1a18; --muted: #6b6a66; --rule: #e0ddd6; --link: #1c4f8a;
+    --tag-bg: #eeebe4; --accent: #8a3324; --box: #f4f2ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16161a; --fg: #e8e6e1; --muted: #96948d; --rule: #2e2e34; --link: #8ab4e8;
+            --tag-bg: #26262c; --accent: #d98b76; --box: #1e1e23; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.65 Georgia, "Iowan Old Style", "Times New Roman", serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  header { border-bottom: 2px solid var(--fg); padding-bottom: 1rem; margin-bottom: 1.75rem; }
+  h1 { margin: 0; font-size: 2rem; letter-spacing: -0.02em; line-height: 1.15; }
+  .issue-no { color: var(--muted); font-size: 0.85rem; text-transform: uppercase;
+              letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+  .dek { margin-top: 0.7rem; font-size: 1.05rem; line-height: 1.5; }
+  .provenance { margin-top: 0.9rem; font-size: 0.82rem; color: var(--muted);
+                line-height: 1.5; border-left: 2px solid var(--rule); padding-left: 0.75rem; }
+  nav.jump { background: var(--box); border-radius: 4px; padding: 1rem 1.15rem; margin-bottom: 2.5rem; }
+  nav.jump h2 { margin: 0 0 0.6rem; font-size: 0.8rem; text-transform: uppercase;
+                letter-spacing: 0.08em; color: var(--muted); font-weight: normal; }
+  nav.jump ol { margin: 0; padding-left: 1.2rem; }
+  nav.jump li { margin: 0.35rem 0; line-height: 1.4; }
+  nav.jump .note { margin-top: 0.8rem; padding-top: 0.6rem; border-top: 1px solid var(--rule);
+                   font-size: 0.82rem; color: var(--muted); font-style: italic; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  article { border-top: 1px solid var(--rule); padding-top: 1.75rem; margin-top: 2.25rem; }
+  article:first-of-type { border-top: none; }
+  h3 { margin: 0 0 0.55rem; font-size: 1.32rem; line-height: 1.25; letter-spacing: -0.01em; }
+  h3 em { font-style: italic; }
+  .anchor { color: var(--rule); font-size: 0.8rem; margin-left: 0.35rem; }
+  .anchor:hover { color: var(--link); }
+  .meta { margin-bottom: 0.9rem; display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
+  .tag {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em;
+    background: var(--tag-bg); color: var(--muted); padding: 0.22rem 0.5rem; border-radius: 3px;
+  }
+  .conf { border: 1px solid var(--rule); background: transparent; }
+  .conf.primary { color: #2c6e49; border-color: #2c6e49; }
+  .conf.corrob { color: #3a5a8a; border-color: #3a5a8a; }
+  .conf.single { color: #8a6d24; border-color: #8a6d24; }
+  .conf.unconf { color: var(--accent); border-color: var(--accent); font-weight: bold; }
+  @media (prefers-color-scheme: dark) {
+    .conf.primary { color: #7fc9a0; border-color: #7fc9a0; }
+    .conf.corrob { color: #9dbbe8; border-color: #9dbbe8; }
+    .conf.single { color: #d4b45e; border-color: #d4b45e; }
+  }
+  .under { background: var(--accent); color: #fff; }
+  p { margin: 0 0 0.9rem; }
+  .divergence, .correction {
+    background: var(--box); border-radius: 4px; padding: 0.85rem 1rem; margin: 1rem 0;
+  }
+  .correction { border-left: 3px solid var(--accent); }
+  .divergence strong, .correction strong {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--muted); display: block; margin-bottom: 0.35rem; }
+  .divergence p:last-child, .correction p:last-child { margin-bottom: 0; }
+  details { margin: 1.1rem 0; border: 1px solid var(--rule); border-radius: 4px; }
+  summary {
+    cursor: pointer; padding: 0.7rem 1rem; list-style: none;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 0.85rem; font-weight: 600; color: var(--link);
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: "▸ "; }
+  details[open] summary::before { content: "▾ "; }
+  details[open] summary { border-bottom: 1px solid var(--rule); }
+  .deeper { padding: 1rem 1rem 0.4rem; font-size: 0.97rem; }
+  .sources {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 0.8rem; color: var(--muted); line-height: 1.7; margin-top: 0.9rem;
+  }
+  .sources b { color: var(--muted); font-weight: 600; }
+  fieldset {
+    border: 1px solid var(--rule); border-radius: 4px; margin: 1.2rem 0 0; padding: 0.85rem 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 0.84rem;
+  }
+  legend { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.07em;
+           color: var(--muted); padding: 0 0.35rem; }
+  .q { margin-bottom: 0.75rem; }
+  .q:last-child { margin-bottom: 0; }
+  .q p { margin: 0 0 0.35rem; font-weight: 600; }
+  .q label { display: inline-block; margin-right: 0.9rem; font-weight: normal; cursor: pointer; }
+  .q input { margin-right: 0.25rem; }
+  figure { margin: 1.2rem 0; }
+  figcaption { font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+               font-size: 0.76rem; color: var(--muted); line-height: 1.5; margin-top: 0.4rem; }
+  svg { max-width: 100%; height: auto; display: block; }
+  #send {
+    display: block; width: 100%; margin: 3rem 0 0; padding: 0.9rem;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 0.95rem; font-weight: 600;
+    background: var(--fg); color: var(--bg); border: none; border-radius: 4px; cursor: pointer;
+  }
+  #send:hover { opacity: 0.85; }
+  #sendnote { font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+              font-size: 0.78rem; color: var(--muted); text-align: center; margin-top: 0.6rem; }
+  footer { margin-top: 3.5rem; padding-top: 1.2rem; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: 0.85rem; }
+  footer h4 { font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+              font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.07em;
+              margin: 1.2rem 0 0.4rem; color: var(--muted); }
+  footer ul { padding-left: 1.1rem; margin: 0; }
+  footer li { margin: 0.25rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="issue-no">The Brief · Issue No. 2</div>
+  <h1>Sunday, 6 September 2026</h1>
+  <p class="dek">Two things I flagged yesterday as unresolved resolved today, and not in the direction I implied: Putin gave Kyiv three quiet nights, and the tanker nobody would admit to hitting turned out to be three tankers that Central Command was happy to claim. A third thing I said had not happened had in fact happened the morning before I said it.</p>
+  <p class="provenance">Scheduled edition, no human in the loop. Config, watchlist and the 5 September issue all loaded; this is the first issue with an archive behind it, so the cross-links below point at specific stories in yesterday's edition. Roughly 35 searches and fetches. Seven stories cleared the bar. Four are follow-ups, which is the cap. No Florida &amp; Tampa Bay section today — see the footer for why.</p>
+</header>
+
+<nav class="jump">
+  <h2>In this issue</h2>
+  <ol>
+    <li><a href="#jobs-fed">The jobs report landed the morning before I told you nothing had happened</a></li>
+    <li><a href="#tanker-centcom">It was three tankers, not one, and Iran shot first</a></li>
+    <li><a href="#kyiv-leg">Putin stopped bombing Kyiv for three days, which is the first thing he has actually given</a></li>
+    <li><a href="#laws-definition">128 states agreed what a killer robot is, and the people who wanted the rules say it was gutted in the last hours</a></li>
+    <li><a href="#missouri-scotus">Missouri's map is now Kavanaugh's problem, and he has put it on a clock</a></li>
+    <li><a href="#krakatau">Anak Krakatau shut six Indonesian airports and put ash at 50,000 feet</a></li>
+    <li><a href="#indonesia-meals">Two thousand Indonesians were poisoned in three days by the president's signature policy</a></li>
+  </ol>
+  <div class="note">No local section: nothing in Pasco, Pinellas, Tampa or Tallahassee moved today. The dengue numbers circulating this weekend are last week's numbers.</div>
+</nav>
+
+<article id="jobs-fed">
+  <h3>The jobs report landed the morning before I told you nothing had happened <a class="anchor" href="#jobs-fed">#</a></h3>
+  <div class="meta">
+    <span class="tag">Macro &amp; markets</span>
+    <span class="tag conf primary">Primary source</span>
+    <span class="tag">Follow-up</span>
+  </div>
+  <div class="correction">
+    <strong>Correction to yesterday's issue</strong>
+    <p>Yesterday I suppressed the Fed thread and told you the reason was <a href="2026-09-05.html">"no new fact since Jackson Hole."</a> That was wrong. The Bureau of Labor Statistics had published the August employment report on Friday 4 September, the day before, and it was the largest upside surprise of the year. I missed it. Here it is.</p>
+  </div>
+  <p>Nonfarm payrolls rose 162,000 in August. The consensus forecast was 53,000. The unemployment rate was unchanged at 4.1 per cent, with about 7.0 million people unemployed. June was revised up 11,000 to a gain of 31,000, and July was revised from a reported loss of 23,000 to a gain of 21,000 — the two months together 55,000 better than first reported.</p>
+  <p>Set that against the trend and it is stranger than the headline suggests. The average monthly gain over the prior twelve months was 31,000. August came in at more than five times the run rate. The composition is soft: food services added 59,000 and local government education 42,000, while the information sector shed 23,000 across computing infrastructure, publishing and broadcasting. Average hourly earnings rose ten cents to $37.75, up 3.1 per cent on the year against July CPI of 3.4 per cent, so real wages are still going backwards. Labour force participation ticked up to 61.6 per cent but is down half a point since January.</p>
+  <p>The consequence is that the September FOMC argument has flipped. Coming out of Jackson Hole the live question was the size of a cut. With a strong print, sticky 3.4 per cent inflation, and an energy shock running through both the Iran war and Ukraine, several desks now put a <em>hike</em> on the table for 15–16 September. Kevin Hassett called the report "blockbuster." President Trump called it great and demanded the Fed cut rates immediately.</p>
+  <div class="divergence">
+    <strong>Divergence — and a warning about what you will read this week</strong>
+    <p>Coverage of this report is unusually polluted. Several outlets and aggregators are circulating "22,000 jobs, unemployment 4.3 per cent" alongside a September rate cut. Those are the August <em>2025</em> figures, from the report published almost exactly a year ago, and they are being surfaced by search tools as though current. I have used only the BLS release itself for every number above, and you should treat any story this week that pairs a weak August payroll print with an imminent cut as misdated until proven otherwise.</p>
+    <p>There is a second, real disagreement underneath that one. Market-implied odds for 16 September are being reported inconsistently even among sources that have the right data, which is what you would expect two days before a CPI print that everyone agrees is the actual decider. I am not quoting a probability, because I could not stand one up.</p>
+  </div>
+  <p><b>What to watch:</b> the August CPI print on Friday 11 September, then the FOMC statement on 16 September. If CPI comes in at or above 3.4 per cent after this payroll number, the cut case is finished.</p>
+  <details>
+    <summary>Dig deeper — why 162,000 against a 31,000 trend is not the good news it looks like</summary>
+    <div class="deeper">
+      <p>A single strong month sitting five times above a twelve-month average is more likely to be noise, seasonal adjustment, or a one-off than a genuine inflection. The internals argue for that reading. Of the 162,000, food services and local government education account for 101,000 between them. Local government education hiring in August is almost entirely a question of when districts put teachers and aides back on payroll relative to the seasonal factors, and it reverses or gets revised often. Food services is real employment but it is the lowest-paid and most cyclically fragile category in the survey, and it is not what an economy accelerating on fundamentals looks like.</p>
+      <p>The information sector losing 23,000 is the number that matters more for anyone who follows the technology industry. That decline is spread across computing infrastructure, publishing and broadcasting, which is to say it is not a single failing firm but a sector-wide contraction happening while the same sector's capital spending is at record levels. Capital expenditure up and headcount down is the substitution story, and payroll data is where it shows up first.</p>
+      <p>The participation rate is the quiet problem. It edged up to 61.6 per cent in August but is half a percentage point below where it started the year. A falling participation rate flatters the unemployment rate mechanically — people who stop looking stop being counted as unemployed — which means 4.1 per cent unchanged is doing less work than it appears. If participation had held at January's level, the measured rate would be meaningfully higher.</p>
+      <p>For the Fed this produces genuine difficulty rather than a close call. The labour market is not obviously deteriorating, so the case for insurance easing has weakened. Inflation at 3.4 per cent is well above target and the energy component is being pushed by a war that monetary policy cannot touch — Brent has been trading in the mid-nineties with Hormuz throughput at roughly a fifth of pre-war levels. Cutting into an energy shock risks unanchoring expectations; hiking into an economy adding 31,000 jobs a month on trend risks causing the recession the print says is not happening. The most likely outcome remains no change, and the argument in the room will be about whether the August print or the twelve-month trend is the better description of reality.</p>
+      <p>One structural note worth keeping: the June and July upward revisions of 55,000 combined come after a run of large <em>downward</em> revisions earlier this year. Revision direction tends to cluster, and when it flips it usually means the birth-death model and the response-rate assumptions are being re-fitted rather than that the economy turned. Treat the level with more confidence than the change.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.bls.gov/news.release/empsit.nr0.htm">BLS Employment Situation, August 2026 (primary)</a> ·
+    <a href="https://www.nbcnews.com/business/economy/august-jobs-report-trump-inflation-rcna595974">NBC News</a> ·
+    <a href="https://www.cnn.com/2026/09/04/economy/us-jobs-report-august">CNN Business</a> ·
+    <a href="https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html">CNBC (headline only — see footer)</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="jobs-fed">
+      <p>I opened with a correction to my own suppression call. Do you want misses surfaced this prominently?</p>
+      <label><input type="radio" name="fb-jobs-1" value="lead-with-it"> Yes, lead with it</label>
+      <label><input type="radio" name="fb-jobs-1" value="footnote-it"> Note it, but lower down</label>
+      <label><input type="radio" name="fb-jobs-1" value="dont-care"> Don't care, just give me the news</label>
+    </div>
+    <div class="q" data-sid="jobs-fed">
+      <p>I declined to quote a rate-cut probability because I could not verify one. Right call?</p>
+      <label><input type="radio" name="fb-jobs-2" value="right-omit"> Right — omit what you can't stand up</label>
+      <label><input type="radio" name="fb-jobs-2" value="give-range"> Give me a range with caveats</label>
+      <label><input type="radio" name="fb-jobs-2" value="no-opinion"> No opinion</label>
+    </div>
+    <div class="q" data-sid="jobs-fed">
+      <p>Cadence into the 16 September FOMC?</p>
+      <label><input type="radio" name="fb-jobs-3" value="daily"> Daily through the meeting</label>
+      <label><input type="radio" name="fb-jobs-3" value="cpi-and-fomc"> Just CPI and the decision</label>
+      <label><input type="radio" name="fb-jobs-3" value="movement"> Movement only</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="tanker-centcom">
+  <h3>It was three tankers, not one, and Iran shot first <a class="anchor" href="#tanker-centcom">#</a></h3>
+  <div class="meta">
+    <span class="tag">Geopolitics</span>
+    <span class="tag conf primary">Primary source</span>
+    <span class="tag">Follow-up</span>
+  </div>
+  <p>Yesterday this story ran with an <em>Unconfirmed</em> marker, built on Iranian state media claiming four American missiles hit a tanker off Kharg Island, with total silence from Washington. I wrote that <a href="2026-09-05.html#kharg-tanker">a vessel name or a CENTCOM statement would convert it from allegation to fact</a>. Both arrived within hours, and they changed the story rather than confirming it.</p>
+  <p>US Central Command said American forces struck three Iranian oil tankers: the M/T Downy off Kharg Island, the M/T Stark 1 near Jask, and a third, the M/T Kylo, rendered inoperable in the Gulf of Oman after its crew were directed to abandon ship. Two were disabled and one destroyed. CENTCOM framed the vessels as part of a shadow network financing the Islamic Revolutionary Guard Corps and its regional proxies.</p>
+  <p>The material addition is the cause. CENTCOM said the strikes were retaliation for IRGC ballistic missiles fired at two US Navy vessels, and that no American personnel were injured. Iranian state media had reported the tanker strike without mentioning the missile attack that preceded it. Admiral Brad Cooper, the CENTCOM commander, said the point was that Washington "will impose an even higher economic cost."</p>
+  <div class="divergence">
+    <strong>Divergence — what each side left out</strong>
+    <p>Iran's initial account omitted the IRGC attack entirely and described a single vessel. The IRGC subsequently claimed it had fired at an American aircraft carrier and a destroyer and that both were damaged and "forced to flee" — a claim CENTCOM contradicts and for which no imagery or independent tracking exists. Neither side is lying about the same thing: Tehran is suppressing the provocation, Washington is silent on tanker casualties. The evidence better supports CENTCOM on the sequence, because it named three specific hulls and a chain of causation that Iran's own subsequent statements corroborate. It supports nobody on damage to US warships.</p>
+  </div>
+  <p><b>What to watch:</b> whether Iran's promised "significant response" materialises; Kharg loading rates; and whether Hormuz transit counts move off roughly 4.9 million barrels a day.</p>
+  <details>
+    <summary>Dig deeper — why the shadow fleet and not the terminal, and where this ladder goes next</summary>
+    <div class="deeper">
+      <p>The choice of target is the whole story. Washington has been able to destroy the Kharg Island export terminal since the war opened on 28 February and has repeatedly declined to. Hitting the terminal would remove Iranian crude exports more or less permanently and would also be the single most inflationary act available in the current market, with Brent already in the mid-nineties and Hormuz throughput down from 21.6 million barrels a day before the war to under five. It would also give Tehran a reason to close the strait completely rather than partially, which is the one escalation the Gulf states and the Europeans have been working hardest to prevent.</p>
+      <p>Striking tankers instead is a calibrated substitute. It removes carrying capacity rather than production capacity, imposes a cost that is measurable in hulls, and — critically — targets vessels that are already outside the legitimate insurance and registry system. A ship in the shadow fleet has no flag state that will make a serious fuss and no P&amp;I club that will litigate. That makes the escalation cheap diplomatically as well as militarily, which is exactly why it is the rung Cooper chose.</p>
+      <p>Cooper's stated ratio — three of theirs for two of ours — is worth reading as doctrine rather than rhetoric. It announces a published exchange rate, which is a way of trying to make the ladder legible to the other side and thereby stop it. The risk in publishing a ratio is that it invites the adversary to test the arithmetic at a rung of their choosing, and the IRGC has already been willing to fire at crewed warships.</p>
+      <p>For the reader the transmission channel is fuel. Every tanker removed from the shadow fleet is carrying oil that was going to reach a refinery somewhere, mostly in Asia. Taking that supply out tightens the same global crude balance that has diesel setting records in the United States — the story <a href="2026-09-05.html#diesel-record">this brief covered on Friday</a>. That is the loop: an American missile fired to punish an Iranian missile makes American distillate more expensive. It is not a large effect per hull. It is a persistent one, and it runs in only one direction.</p>
+      <p>One thing this episode settles about method. Yesterday's <em>Unconfirmed</em> marker was the right call on the evidence available, and the story was worth running anyway because the claim was consequential and the pattern of silence was itself information. But note what the confirmation did: it did not vindicate the Iranian account, it replaced it. That is the usual shape of these resolutions, and it is the argument for publishing the uncertainty rather than the allegation.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.aljazeera.com/amp/news/2026/9/5/us-says-it-hit-iran-oil-tankers-helping-finance-regional-proxies">Al Jazeera on the CENTCOM statement</a> ·
+    <a href="https://www.washingtonpost.com/world/2026/09/05/us-says-it-hit-3-iranian-oil-tankers-including-one-near-kharg-island/">Washington Post</a> ·
+    <a href="https://www.thenationalnews.com/news/mena/2026/09/05/explosions-near-irans-kharg-island-raise-fears-of-escalation-in-us-war-on-iran/">The National</a> ·
+    <a href="https://en.wikipedia.org/wiki/2026_Kharg_Island_attack">Chronology</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="tanker-centcom">
+      <p>Yesterday this ran as <em>Unconfirmed</em> and resolved in a day. Was running it unconfirmed the right call?</p>
+      <label><input type="radio" name="fb-tanker-1" value="yes-run-flagged"> Yes — run it, flag it</label>
+      <label><input type="radio" name="fb-tanker-1" value="hold-until-confirmed"> No — hold until confirmed</label>
+      <label><input type="radio" name="fb-tanker-1" value="no-opinion"> No opinion</label>
+    </div>
+    <div class="q" data-sid="tanker-centcom">
+      <p>How much of the Iran war do you want?</p>
+      <label><input type="radio" name="fb-tanker-2" value="more"> More — it drives everything else</label>
+      <label><input type="radio" name="fb-tanker-2" value="current"> Current level is right</label>
+      <label><input type="radio" name="fb-tanker-2" value="less"> Less — only major turns</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="kyiv-leg">
+  <h3>Putin stopped bombing Kyiv for three days, which is the first thing he has actually given <a class="anchor" href="#kyiv-leg">#</a></h3>
+  <div class="meta">
+    <span class="tag">Geopolitics</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+    <span class="tag">Follow-up</span>
+  </div>
+  <p>Steve Witkoff and Jared Kushner flew from Moscow to Kyiv on Sunday and met Volodymyr Zelensky in the open on St Sophia Square. It is their first visit to the Ukrainian capital since the invasion. Both legs of the shuttle I flagged yesterday have now happened, in the order they were announced.</p>
+  <p>The substantive development is reciprocity. Russia and Ukraine agreed to halt aerial strikes on each other's capitals for the duration of the diplomacy, with Putin ordering a 72-hour pause on strikes against Kyiv. Yesterday I wrote that Moscow's silence on Zelensky's unilateral halt was <a href="2026-09-05.html#ukraine-moscow">"the single most informative fact in the story."</a> Moscow answered. That is a genuine change and it is the reason this leads again.</p>
+  <p>It is also much narrower than it sounds. Zelensky's order covered the entire line of contact from midnight on 5 September through 8 September. Putin's covers Kyiv. The asymmetry is not cosmetic: Ukraine has stopped shooting at everything, Russia has stopped shooting at one city, and Russian strikes elsewhere continued through Saturday, killing two in Bucha and four in Kamianske. Putin's aide Yury Ushakov called the Moscow meeting "constructive, extremely frank and trusting." Putin told the envoys that working with them is comfortable. A White House official said substantive next steps were discussed with announcements expected in coming weeks, which is the language of a process, not an agreement.</p>
+  <p>Zelensky said Ukraine is ready for the conversation and that real options are needed to end the war. Nothing public indicates movement on the territorial demands, the security guarantees, or Zaporizhzhia. Ukraine's interceptor shortage is unresolved and getting worse.</p>
+  <p><b>What to watch:</b> whether anything survives the 8 September expiry, and whether a document exists that either side will describe.</p>
+  <details>
+    <summary>Dig deeper — the asymmetry of the two pauses, and what "announcements in coming weeks" is doing</summary>
+    <div class="deeper">
+      <p>Compare what each side actually stopped. A halt along the entire line of contact costs Ukraine offensive tempo it has spent months building, degrades the deep-strike campaign against Russian refineries and logistics that is currently its most effective instrument, and gives Russian units three days to rotate and resupply under no fire. A halt on strikes against Kyiv costs Russia one target set out of many, and Kyiv is the target set most likely to generate Western headlines and therefore most likely to be worth trading. Russia gets the operational benefit and the diplomatic credit; Ukraine gets the diplomatic credit only.</p>
+      <p>That said, it is a real concession by the standard this war has set, because it is the first time Moscow has given anything in response to a Ukrainian move rather than in exchange for an American one. The three previous 2026 truces — Orthodox Easter in April, Victory Day in May, and the mid-year contacts — were all commemorative and symmetric, agreed in advance for a named holiday. This one is reactive and asymmetric, which makes it a worse deal for Ukraine and a more informative signal about Russian intent.</p>
+      <p>The phrase to distrust is the White House official's "announcements in coming weeks." Read literally, it means nothing was agreed this weekend that could be announced this weekend. If a framework existed with Russian assent, the incentive to announce it while the envoys are still on the ground would be overwhelming — it would lock Putin to a public position. Deferring the announcement means either that the text is not agreed, or that it is agreed and one party expects to be embarrassed by it. Both readings argue against treating the Kyiv photograph as a breakthrough.</p>
+      <p>The interceptor shortage is the constraint that will outlast the diplomacy. Ukraine is short of American-made air-defence interceptors, which means the marginal Russian ballistic missile is more likely to arrive than it was six months ago. That degrades Ukraine's position in exactly the way that makes a bad settlement more acceptable over time, and it is why the sequencing of this shuttle — Moscow first, carrying a proposal; Kyiv second, receiving one — is not a neutral choice. Zelensky is being asked to respond to a text he did not draft while his ability to defend cities is declining. The unilateral ceasefire was his answer to that: by stopping first and publicly, he buys the standing to refuse the paper without being blamed for the war continuing.</p>
+      <p>The energy channel remains the reason this story sits next to the Iran stories in this brief rather than in a separate compartment. Any settlement returning meaningful Russian crude and refined product to Atlantic markets would relieve the distillate shortage now pushing American diesel to records. Nothing suggests sanctions relief is on this weekend's table. Markets will price the possibility anyway.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.nbcnews.com/world/ukraine/us-envoys-witkoff-kushner-set-arrive-kyiv-peace-talks-moscow-rcna596324">NBC News</a> ·
+    <a href="https://kyivindependent.com/trump-envoys-witkoff-kushner-to-visit-kyiv-moscow-sept-5-6-source-says/">Kyiv Independent</a> ·
+    <a href="https://www.timesofisrael.com/putin-orders-72-hour-pause-in-kyiv-strikes-as-ukraine-agrees-to-halt-attacks-on-moscow/">Times of Israel</a> ·
+    <a href="https://euromaidanpress.com/2026/09/05/ukraine-orders-temporary-ceasefire-as-us-envoys-visit-moscow/">Euromaidan Press</a> ·
+    <a href="https://en.wikipedia.org/wiki/Portal:Current_events/2026_September_5">Strike casualties, 5 Sep</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="kyiv-leg">
+      <p>This thread has now led two issues running. Is that too much?</p>
+      <label><input type="radio" name="fb-kyiv-1" value="right"> No — it's the biggest thing going</label>
+      <label><input type="radio" name="fb-kyiv-1" value="demote"> Cover it, but stop leading with it</label>
+      <label><input type="radio" name="fb-kyiv-1" value="movement-only"> Movement only from here</label>
+    </div>
+    <div class="q" data-sid="kyiv-leg">
+      <p>I read the reciprocal pause as a real but lopsided concession rather than a breakthrough. Useful?</p>
+      <label><input type="radio" name="fb-kyiv-2" value="yes-judgment"> Yes — give me the judgment</label>
+      <label><input type="radio" name="fb-kyiv-2" value="facts-only"> Just tell me what happened</label>
+      <label><input type="radio" name="fb-kyiv-2" value="no-opinion"> No opinion</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="laws-definition">
+  <h3>128 states agreed what a killer robot is, and the people who wanted the rules say it was gutted in the last hours <a class="anchor" href="#laws-definition">#</a></h3>
+  <div class="meta">
+    <span class="tag">AI &amp; tech industry</span>
+    <span class="tag conf single">Single-sourced</span>
+    <span class="tag under">Underreported</span>
+  </div>
+  <p>The 128 parties to the Convention on Certain Conventional Weapons reached consensus on a text defining lethal autonomous weapons systems. The Group of Governmental Experts that produced it met in Geneva from 31 August to 4 September under Dutch chairmanship, and the agreement was reported on 5 September. It is the first agreed definition in more than twelve years of talks, and the text is non-binding.</p>
+  <p>The structure the group has been building toward is two-tier: an outright prohibition on certain types and uses of autonomous weapons, and a set of positive obligations governing how everything else may be developed and operated consistently with international humanitarian law, organised around meaningful human control over the use of force.</p>
+  <p>The reaction from the people who spent three years drafting it was not celebratory. Nicole van Rooijen, executive director of Stop Killer Robots, told Reuters that the work of the past three years had been substantially diluted in the final hours, and that both the definition and the civilian-protection measures were watered down. That criticism is the story: at the CCW every decision is by consensus, so any single state can price the text down to what it will tolerate. The United States, Russia, India and Israel are among those opposing a move to binding negotiations. Brazil, Ireland and Norway are among those pushing for one.</p>
+  <p><b>What to watch:</b> the Seventh Review Conference, 16–20 November 2026, where the parties choose one of three things — a mandate to negotiate a binding instrument, another extension of the discussion-only mandate, or letting the process lapse.</p>
+  <div class="divergence">
+    <strong>Why this is marked Single-sourced</strong>
+    <p>The agreement is carried by a dozen outlets and every one of them I could reach is running the same Reuters copy. That is one newsroom, not twelve. The session dates and participant count are independently verifiable against the UN Office for Disarmament Affairs meetings record, and the two-tier structure is documented in the group's own published rolling text. The characterisation of the final-hours dilution rests on Reuters alone.</p>
+  </div>
+  <details>
+    <summary>Dig deeper — why the definition is the entire fight, and why the war in Ukraine has already overtaken it</summary>
+    <div class="deeper">
+      <p>In arms control the definition is not a preliminary to the rules, it is the rules. A broad definition of an autonomous weapon sweeps in loitering munitions, terminal-guidance seekers and target-recognition software that every major military already fields, and any prohibition attached to it bites immediately and expensively. A narrow definition — for instance, one requiring full autonomy across target selection, engagement and the decision to kill, with no human involvement at any stage and no geographic or temporal bounding — describes almost no system currently in existence or in development. States that do not want to be constrained do not argue against the prohibition. They argue the definition down until the prohibition is empty, and then agree to it warmly. Without the text in front of me I cannot tell you which of those happened here, and neither can anyone quoting the Reuters piece. That is what the November conference will expose.</p>
+      <p>The consensus rule is the structural reason this has taken twelve years. The CCW takes decisions only when no party objects, which hands a veto to every participant including the states with the largest autonomous-weapons programmes. This is why a parallel push has developed at the UN General Assembly, where decisions are by majority vote and where resolutions on autonomous weapons have drawn support from well over 150 states. The strategic question for Brazil, Ireland and Norway in November is whether to keep spending effort inside a forum where Washington and Moscow hold a veto, or to move the process to one where they do not — at the cost of producing an instrument that the states with the actual weapons will not sign.</p>
+      <p>The awkward context is that the technology has already outrun the diplomacy. Both sides in Ukraine now field drones with terminal autonomy, adopted specifically because electronic warfare has made continuous human control over the final seconds of a strike unreliable. That is not an edge case in the debate; it is the central one, and it cuts against the treaty's premise. Jamming makes the human link the weakest component, so the operational pressure runs toward removing it. Any instrument that demands meaningful human control at the moment of engagement is asking militaries to accept a capability disadvantage in precisely the environment they now expect to fight in. A definition negotiated to consensus in Geneva in 2026 is being written against a practice that changed in 2023.</p>
+      <p>For anyone following the AI industry rather than arms control, the connection is more direct than it looks. The same target-recognition stack is dual-use, the same firms supply it, and export-control and procurement rules tend to follow definitions agreed in fora like this one by several years. A definition that excludes software-defined autonomy in favour of describing platforms would leave the commercially significant layer entirely unregulated. That is the outcome the drafters are worried about, and it is why the dilution claim deserves more attention than a single wire story.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.malaymail.com/news/world/2026/09/06/un-nearly-130-countries-agree-first-definition-of-killer-robots/234113">Reuters via Malay Mail</a> ·
+    <a href="https://english.aawsat.com/world/5314962-states-reach-agreement-autonomous-weapons-talks-geneva">Reuters via Asharq Al-Awsat</a> ·
+    <a href="https://meetings.unoda.org/ccw-/convention-on-certain-conventional-weapons-group-of-governmental-experts-on-lethal-autonomous-weapons-systems-2026">UNODA meetings record (primary)</a> ·
+    <a href="https://stopkillerrobots.medium.com/gges-rolling-text-how-will-autonomous-weapons-be-regulated-2751a0e68487">Stop Killer Robots on the rolling text</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="laws-definition">
+      <p>This is flagged <em>Underreported</em> — a Geneva document story the front pages skipped. Want more of these?</p>
+      <label><input type="radio" name="fb-laws-1" value="more"> Yes, more</label>
+      <label><input type="radio" name="fb-laws-1" value="occasionally"> Occasionally</label>
+      <label><input type="radio" name="fb-laws-1" value="fewer"> Fewer — stick to bigger stories</label>
+    </div>
+    <div class="q" data-sid="laws-definition">
+      <p>Follow this to the November review conference?</p>
+      <label><input type="radio" name="fb-laws-2" value="follow"> Add it to the watchlist</label>
+      <label><input type="radio" name="fb-laws-2" value="only-if-binding"> Only if they vote to negotiate</label>
+      <label><input type="radio" name="fb-laws-2" value="drop"> Drop it</label>
+    </div>
+    <div class="q" data-sid="laws-definition">
+      <p>I marked this Single-sourced because the wide pickup is all one Reuters story. Is that distinction useful to you?</p>
+      <label><input type="radio" name="fb-laws-3" value="useful"> Very — keep doing it</label>
+      <label><input type="radio" name="fb-laws-3" value="too-fussy"> Too fussy</label>
+      <label><input type="radio" name="fb-laws-3" value="no-opinion"> No opinion</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="missouri-scotus">
+  <h3>Missouri's map is now Kavanaugh's problem, and he has put it on a clock <a class="anchor" href="#missouri-scotus">#</a></h3>
+  <div class="meta">
+    <span class="tag">US politics &amp; policy</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+    <span class="tag">Follow-up</span>
+  </div>
+  <p>Missouri went to the US Supreme Court on Friday, asking it to let the state use the Republican-drawn congressional map that <a href="2026-09-05.html#missouri-map">its own supreme court blocked on 3 September</a>. The application sits on the emergency docket. Justice Brett Kavanaugh, who handles emergency matters from the Eighth Circuit, has ordered the map's challengers to respond by Monday. The state has asked the Court to resolve the case by 14 September.</p>
+  <p>The 14 September date is the most important number in the filing, and it is not arbitrary. Federal law requires states to send absentee ballots to overseas and military voters 45 days before a federal election, which puts the mailing deadline in the third week of September. Missouri's argument is that after that date the question becomes practically unanswerable, because ballots will have gone out under one map or the other.</p>
+  <p>Yesterday I wrote that the federal appeal was a harder sell than Attorney General Catherine Hanaway's constitutional-crisis framing suggested, because the Missouri ruling rests entirely on Missouri's own referendum provisions and federal courts treat state supreme courts as final on state law. I still think that. But the ballot-deadline argument is the strongest card the state holds, because it is a genuine federal statute rather than a theory about state courts overreaching, and it converts a state-law dispute into a federal timing emergency.</p>
+  <p><b>What to watch:</b> the challengers' response on Monday 7 September, and whether any order issues before the overseas-ballot deadline. Silence past mid-September is itself a decision — it leaves the 2022 map in place for the midterms.</p>
+  <details>
+    <summary>Dig deeper — the federal hook, and why Purcell cuts against the state here</summary>
+    <div class="deeper">
+      <p>The route into federal court that Missouri needs is the Elections Clause theory: that a state court, by invalidating the legislature's congressional map, has displaced the legislature's constitutional authority over the manner of federal elections. The Supreme Court addressed this in <em>Moore v. Harper</em> in 2023 and substantially narrowed it, holding that state courts do review state legislatures on federal election law but are subject to some outer limit that the Court declined to define. Missouri would have to argue its supreme court exceeded that undefined limit. No litigant has yet cleared that bar, and the facts here make it harder than usual: the Missouri court did not strike the map on policy or state-constitutional grounds, it held that a validly filed referendum petition suspended the statute by operation of the Missouri constitution, so the map never took effect at all. That is a holding about when a state law exists, which is about as core to state authority as questions get.</p>
+      <p>The overseas-ballot argument is different in kind and better. It rests on a federal statute with a hard date, which gives the Court a reason to act that does not require deciding the Elections Clause question at all. The state can ask for interim relief on pure timing grounds. The difficulty is that the same logic runs the other way with equal force.</p>
+      <p>That is the <em>Purcell</em> problem. The principle counsels federal courts against changing election rules close to an election, on the theory that late changes confuse voters and administrators. Missouri is invoking imminence to get relief, but the relief it wants is the reinstatement of a map that a state court has declared void, weeks before ballots print. The status quo ante — the 2022 map — is the one currently in force. Restoring the 2025 map in September would itself be the late change, and it would be the more disruptive of the two options. If the Court takes <em>Purcell</em> seriously, it argues for leaving the Missouri ruling alone.</p>
+      <p>The downstream mess I flagged yesterday remains unresolved and is now on a shorter clock. Missouri ran its 2026 primaries under districts that its supreme court says never legally existed. Reverting to 2022 lines means some nominees are now running in differently bounded seats, and ballot-access and residency litigation is the predictable consequence. Courts have occasionally let an unlawful map stand for one cycle rather than unwind a completed primary — that is Missouri's best practical, as opposed to legal, argument, and it is notable that the state has chosen to lead with the federal statute instead.</p>
+      <p>The seat at stake is one. The House majority may turn on fewer.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnbc.com/2026/09/05/missouri-supreme-court-congressional-districts.html">CNBC</a> ·
+    <a href="https://thehill.com/regulation/court-battles/6072940-missouri-redistricting-gop-map-supreme-court/">The Hill</a> ·
+    <a href="https://www.notus.org/missouri/missouri-asks-scotus-to-allow-new-republican-congressional-map-for-midterms">NOTUS</a> ·
+    <a href="https://missouriindependent.com/2026/09/03/missouri-supreme-court-blocks-gerrymandered-congressional-map-orders-referendum-vote/">Missouri Independent on the underlying ruling</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="missouri-scotus">
+      <p>Cadence on this one?</p>
+      <label><input type="radio" name="fb-mo-1" value="every-filing"> Every filing</label>
+      <label><input type="radio" name="fb-mo-1" value="only-orders"> Only when the Court acts</label>
+      <label><input type="radio" name="fb-mo-1" value="stop"> Stop following</label>
+    </div>
+    <div class="q" data-sid="missouri-scotus">
+      <p>The expansion is heavy on doctrine — <em>Moore</em>, <em>Purcell</em>, the Elections Clause. Right depth?</p>
+      <label><input type="radio" name="fb-mo-2" value="right"> Right depth</label>
+      <label><input type="radio" name="fb-mo-2" value="lighter"> Lighter on the law</label>
+      <label><input type="radio" name="fb-mo-2" value="deeper"> Go deeper</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="krakatau">
+  <h3>Anak Krakatau shut six Indonesian airports and put ash at 50,000 feet <a class="anchor" href="#krakatau">#</a></h3>
+  <div class="meta">
+    <span class="tag">Science &amp; public health</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+  </div>
+  <p>Anak Krakatau, the volcano in the Sunda Strait between Java and Sumatra, erupted late on Friday and twice more on Sunday. Indonesia's Geological Agency recorded a 30-second eruption at 3:53am local time. Ash rose to about 6,000 metres on the Java side and, on the Sumatra side and over parts of Banten province, to roughly 15,000 metres — around 50,000 feet, which is above normal cruising altitude.</p>
+  <p>Six airports suspended operations, including Jakarta's Soekarno-Hatta International, the country's main hub, which closed from 1:30am to 5:30am. Bandung's Husein Sastranegara and Radin Inten II near Bandar Lampung also shut, with Semarang and Surabaya held as alternates. The operator Angkasa Pura put the disruption at 301 flights, 58 of them international, affecting more than 22,000 passengers. Singapore Airlines cancelled its Jakarta operations for the day.</p>
+  <p>No casualties were reported and no evacuation ordered; the nearest settlement is more than 16 kilometres away and Jakarta is over 150 kilometres from the vent. Indonesia's disaster agency BNPB said there was no imminent tsunami risk and that cloud seeding would be attempted to wash ash out of the air. Its chief noted that heavy rain would clear the ash quickly.</p>
+  <div class="divergence">
+    <strong>Divergence — the flight count</strong>
+    <p>Outlets are running 301 affected flights, "more than 200," and 33, and at least one headline describes all Jakarta flights as cancelled when the airport was shut for four hours overnight. The 301 figure carries the airport operator's attribution and the others do not, so it is the one to use. The variation looks like reporting captured at different points during a still-moving event rather than a factual dispute.</p>
+  </div>
+  <p><b>What to watch:</b> whether Indonesia raises the alert level, whether the eruptions continue past the weekend, and whether ash drifts onto trans-equatorial cruise routes rather than just terminal airspace.</p>
+  <details>
+    <summary>Dig deeper — 1883, 2018, and why "no imminent tsunami risk" is a narrower statement than it sounds</summary>
+    <div class="deeper">
+      <p>Anak Krakatau — "child of Krakatoa" — is the cone that grew out of the caldera left by the 1883 eruption, one of the deadliest volcanic events in recorded history, which killed on the order of 36,000 people mostly by tsunami rather than by ash or blast. The island rebuilt itself above sea level in the 1920s and has been intermittently active since.</p>
+      <p>The relevant precedent is not 1883 but December 2018. In that event the volcano did not produce a catastrophic explosion. Part of its southwestern flank collapsed into the sea during a period of moderate eruptive activity, displacing enough water to generate a tsunami that struck the coasts of Banten and Lampung with essentially no warning and killed more than 400 people. Indonesia's tsunami warning system at the time was built around seismic triggers, and a flank collapse does not produce the earthquake signature the system was watching for. The wave arrived before anyone knew it was coming.</p>
+      <p>That is why BNPB's statement is worth reading precisely. "No imminent tsunami risk" is an assessment of current conditions, and it is almost certainly correct as of today: a 30-second eruption throwing ash is not the same phenomenon as a flank failure. But the 2018 mechanism is specifically the one that does not announce itself in advance, and the coastlines at risk are dense, low-lying and close. The monitoring has improved since — there is more instrumentation on the cone itself now, tracking deformation rather than only seismicity — but the fundamental problem, that a landslide-generated wave gives minutes rather than hours of warning, has not changed.</p>
+      <p>The aviation side is the part with immediate international consequence, and it is under-appreciated because ash is invisible on weather radar. Volcanic ash is pulverised silicate glass. Ingested into a jet engine it melts in the combustor and re-solidifies on the turbine, which can flame out all engines simultaneously — the failure mode that nearly brought down a British Airways 747 over Java in 1982 and a KLM 747 over Alaska in 1989. There is no safe concentration for sustained exposure and no reliable onboard detection, so the entire mitigation strategy is avoidance based on forecast ash dispersion from the regional Volcanic Ash Advisory Centre. A plume at 15,000 metres is the case that matters, because it reaches the altitudes at which aircraft transit rather than only those at which they take off and land. Closing six airports for a few hours is cheap. Closing airways across the Java Sea is not, and that is the scenario a sustained eruption would create.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.aljazeera.com/news/2026/9/6/indonesias-main-airport-suspends-flights-due-to-anak-krakatoa-eruption">Al Jazeera</a> ·
+    <a href="https://en.tempo.co/read/2119022/mount-anak-krakatau-volcanic-ash-forces-temporary-closure-of-soekarno-hatta-airport">Tempo</a> ·
+    <a href="https://abcnews.com/International/wireStory/indonesia-cancels-flights-jakarta-airport-anak-krakatau-volcano-136233965">AP via ABC News</a> ·
+    <a href="https://www.malaymail.com/news/world/2026/09/06/anak-krakatau-ash-cloud-temporarily-shuts-jakartas-soekarno-hatta-airport-disrupting-33-flights/234093">Malay Mail</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="krakatau">
+      <p>A four-hour airport closure 10,000 miles away. Did this earn its slot?</p>
+      <label><input type="radio" name="fb-krak-1" value="yes"> Yes</label>
+      <label><input type="radio" name="fb-krak-1" value="no"> No — too far from anything I do</label>
+      <label><input type="radio" name="fb-krak-1" value="only-if-worse"> Only if it escalates</label>
+    </div>
+    <div class="q" data-sid="krakatau">
+      <p>The expansion is mostly volcanology and aviation safety rather than news. Want that kind of background?</p>
+      <label><input type="radio" name="fb-krak-2" value="yes"> Yes — explain the mechanism</label>
+      <label><input type="radio" name="fb-krak-2" value="no"> No — news only</label>
+      <label><input type="radio" name="fb-krak-2" value="no-opinion"> No opinion</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="indonesia-meals">
+  <h3>Two thousand Indonesians were poisoned in three days by the president's signature policy <a class="anchor" href="#indonesia-meals">#</a></h3>
+  <div class="meta">
+    <span class="tag">World economy</span>
+    <span class="tag conf single">Single-sourced</span>
+  </div>
+  <p>About 1,950 students, teachers and Islamic boarding-school pupils fell ill between Tuesday and Thursday after eating meals distributed under Indonesia's Free Nutritious Meals programme, known locally as MBG. The cases were spread across five provinces — East Java, Central Java, West Sumatra, Aceh and South Sulawesi — with symptoms of diarrhoea, nausea, vomiting and abdominal pain consistent with foodborne illness.</p>
+  <p>Two clusters account for most of it. At State Senior High School 1 Lasem in Rembang, Central Java, 752 students and 25 teachers were affected. In Sidoarjo, East Java, 730 people fell ill, most of them pupils at the Manbaul Hikam Islamic boarding school. Officials have sent meals for testing. A separate cluster of more than 500 cases was reported on 2 September, before this week's outbreaks.</p>
+  <p>The programme is President Prabowo Subianto's central campaign promise and the largest single line of domestic spending he has committed to, budgeted at roughly $28 billion through 2029. It has been scaled nationally at speed and has now produced repeated mass-poisoning incidents alongside corruption allegations. The Indonesian data outlet Katadata counted more than 5,360 MBG poisoning cases by September of last year, which makes this week a continuation rather than an aberration.</p>
+  <p>The consequence is fiscal and political rather than only medical. A programme this large with a demonstrated safety failure rate faces a choice between slowing distribution — which breaks the political promise — and continuing at volume, which guarantees more incidents.</p>
+  <p><b>What to watch:</b> laboratory results identifying the pathogen or contaminant, whether distribution is suspended in the affected provinces, and whether the 2027 budget line is touched.</p>
+  <details>
+    <summary>Dig deeper — the arithmetic that makes this predictable rather than unlucky</summary>
+    <div class="deeper">
+      <p>MBG is a cooked-meal programme, not a packaged-food one. It relies on thousands of local kitchens preparing food that is then transported to schools, which means the safety-critical steps — holding temperature, time between cooking and consumption, water quality, handler hygiene — are distributed across thousands of independently operated sites with variable supervision. A packaged-goods supply chain concentrates risk in a few facilities that can be inspected and certified. A distributed-kitchen model concentrates it nowhere, which makes it far harder to audit and far more sensitive to how fast you scale.</p>
+      <p>The arithmetic follows from that. If each kitchen has even a small independent probability of a serving failure in any given week, the expected number of incidents scales with the number of kitchens, and the size of each incident scales with how many children one kitchen serves. Boarding schools are the worst case on both dimensions: a single kitchen, a single menu, and hundreds of pupils eating the same food at the same sitting with no alternative. That is why Sidoarjo produced 730 cases from one site. The programme's design does not have a mechanism that makes this less likely as it grows — it has one that makes it more likely.</p>
+      <p>The political economy explains why it grows anyway. Prabowo campaigned on free meals as the concrete deliverable of his presidency, and the metric that gets reported is coverage: children reached, districts activated, kitchens opened. Safety failures are diffuse, locally reported and rarely fatal. Coverage is national, measurable and announceable. Any system that rewards the second and tolerates the first will scale into exactly this pattern, and the corruption allegations attach at the same seam — procurement for thousands of small kitchens is far harder to audit than procurement for a handful of large suppliers.</p>
+      <p>The comparison worth holding is that large school-feeding programmes elsewhere, including India's midday meal scheme serving over 100 million children, went through structurally identical failures before centralising kitchens, mandating supplier certification and building incident-reporting systems. The lesson from those is that the fix is institutional and slow — it is inspection capacity, cold chain, and a reporting regime that surfaces small incidents before they become large ones — and that it is almost never funded at the same speed as the meals themselves. Indonesia is early in that curve, and $28 billion of commitment locks in the volume before the safety infrastructure exists.</p>
+      <p>Marked Single-sourced: the wide coverage traces to one Associated Press report. The 2025 cumulative figure comes separately from Katadata.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.washingtonpost.com/world/2026/09/05/indonesia-free-meals-poisoning-outbreak/b37b931e-a90a-11f1-9e38-f705d048bd5a_story.html">AP via Washington Post</a> ·
+    <a href="https://www.abc.net.au/news/2026-09-05/indonesia-prabowo-free-school-meals-food-poisoning-outbreak/107120472">AP via ABC Australia</a> ·
+    <a href="https://www.usnews.com/news/world/articles/2026-09-02/indonesian-officials-say-government-supplied-meals-tested-after-more-than-500-students-fall-ill">Earlier cluster, 2 September</a> ·
+    <a href="https://databoks.katadata.co.id/en/consumer-services/statistics/68d108f2386ba/over-5360-cases-of-mbg-poisoning-reported-by-september-2025">Katadata on 2025 cumulative cases</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="indonesia-meals">
+      <p>Follow this programme as a running thread?</p>
+      <label><input type="radio" name="fb-mbg-1" value="follow"> Yes, watchlist it</label>
+      <label><input type="radio" name="fb-mbg-1" value="major-only"> Only on a suspension or budget change</label>
+      <label><input type="radio" name="fb-mbg-1" value="drop"> Drop it</label>
+    </div>
+    <div class="q" data-sid="indonesia-meals">
+      <p>Two Indonesia stories in one issue. Too much weight on one country?</p>
+      <label><input type="radio" name="fb-mbg-2" value="fine"> Fine — they're unrelated</label>
+      <label><input type="radio" name="fb-mbg-2" value="pick-one"> Pick the stronger one next time</label>
+      <label><input type="radio" name="fb-mbg-2" value="no-opinion"> No opinion</label>
+    </div>
+  </fieldset>
+</article>
+
+<button id="send">Send my feedback →</button>
+<p id="sendnote">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+
+<footer>
+  <h4>Threads that did not move today</h4>
+  <p>None of these has been quiet long enough to be formally dormant — the watchlist is nine days old — so each is still swept every run against the trigger below.</p>
+  <ul>
+    <li><b>Gulf states &amp; Article 51</b> — no movement since Friday. Wakes on Kuwait or the UAE restricting US use of the bases Iran struck, or a collective GCC statement rather than individual condemnations.</li>
+    <li><b>US fuel prices</b> — wakes on the EIA weekly print due Tuesday 8 September, the first official reading that can contain the alleged $5.85 diesel record, and on distillate stock builds.</li>
+    <li><b>USPS mail ballot rule</b> — the docket moved but the Court did not. Justice Jackson has set responses to application 26A297 for 10am on 8 September; the district court TRO expires 10 September. Amicus briefs were filed 4 and 5 September. Wakes on an order.</li>
+    <li><b>Birthright citizenship order</b> — wakes on an appeal to the Fourth Circuit or an emergency application to the Supreme Court. Judge Boardman's 2 September classwide injunction still stands unappealed.</li>
+    <li><b>AI gated-capability tiers</b> — wakes on published tier criteria or an access list for GPT-6 Astra's restricted cyber capabilities, or a regulator demanding them. No AI model release was tracked on 5 or 6 September.</li>
+    <li><b>UAP disclosure implementation</b> — wakes on ODNI's detailed implementing guidance and whether it closes the contractor gap. The House Oversight task force has a hearing scheduled for 9 September.</li>
+    <li><b>AARO records contract</b> — wakes on an award notice on sam.gov or a public tranche from the NUFOHRC collection. The sole-source notice was reported 2 September; no award yet.</li>
+    <li><b>Bank stablecoin consortium</b> — wakes on a JPMorgan statement, the first GENIUS Act licence, or the consortium entity formally forming. JPMorgan is still outside the six-bank group and says it has no plans to issue but is evaluating. OCC final rules targeted for November 2026.</li>
+    <li><b>Central bank gold custody</b> — wakes when another central bank discloses a relocation, or the Bundesbank or Banca d'Italia comments.</li>
+    <li><b>Tampa Bay dengue</b> — wakes on the next weekly arbovirus report. See below.</li>
+    <li><b>Florida Amendment 3</b> — wakes on publication of the revised ballot title and summary, or county-level revenue estimates for Pasco and Pinellas. The Attorney General's rewrite has not appeared; DeSantis said on 7 August the state would not appeal, which is not new.</li>
+    <li><b>Waymo Tampa Bay</b> — wakes on service-area expansion into Pinellas or Pasco, or published incident data.</li>
+  </ul>
+  <h4>Why there is no Florida &amp; Tampa Bay section</h4>
+  <ul>
+    <li>The dengue figures circulating this weekend — 65 locally acquired cases across Hillsborough, Pinellas and Pasco, 73 statewide — are the same week-34 numbers, current to 29 August, that ran in <a href="2026-09-05.html#dengue-pasco">yesterday's issue</a>. The week-35 report was not published or not reachable at any URL I tried. Repeating last week's data under a new date would be manufacturing movement, so the thread stays on the watchlist and out of the body.</li>
+    <li>Amendment 3 has not moved: the rewritten ballot language has not been published. Nothing else in Pasco, Pinellas, Hillsborough or at state level cleared a local bar today. FDOT lane closures and a sheriff's DUI operation do not.</li>
+    <li>Correction to the archive: yesterday's dengue story linked a February week-5 report as its primary source. That link does not support the figures in that story. The figures themselves match the FOX 13 report of 4 September and are correct; the citation was wrong.</li>
+  </ul>
+  <h4>Sources I could not reach</h4>
+  <ul>
+    <li>Reuters is unreachable from this environment entirely. The autonomous-weapons story is therefore built on Reuters copy as syndicated by Malay Mail and Asharq Al-Awsat, which is why it is marked Single-sourced rather than corroborated.</li>
+    <li>CNN returned HTTP 451, and CNBC, Quartz and Human Rights Watch returned 403. Every claim drawn from them is corroborated elsewhere in the source lists; the links are retained for the reader.</li>
+    <li>The Florida DOH week-35 arbovirus PDF returned 404 at every URL pattern the department has used this year.</li>
+    <li>No US financials story cleared the bar. It was a Sunday, markets were shut, and the stablecoin thread produced nothing new.</li>
+  </ul>
+  <h4>About this issue</h4>
+  <ul>
+    <li>Scheduled edition for 6 September 2026, produced unattended. Roughly 35 searches and fetches. Seven stories cleared; four are follow-ups, which is the cap, and three are on no existing thread, which is the floor.</li>
+    <li>Two threads opened today: autonomous weapons regulation, and the Indonesian free-meals programme. Anak Krakatau was added as a third.</li>
+    <li>Everything drawn from a non-English source is paraphrase, never quotation.</li>
+    <li>Every quotation in this issue is under fifteen words and attributed. Everything else is paraphrase.</li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    var sets = {};
+    document.querySelectorAll("fieldset .q").forEach(function (q) {
+      var sid = q.getAttribute("data-sid");
+      var input = q.querySelector("input:checked");
+      var prompt = q.querySelector("p") ? q.querySelector("p").textContent.trim() : "";
+      if (!input) return;
+      answered++;
+      if (!sets[sid]) sets[sid] = [];
+      sets[sid].push("- " + prompt + "\n  → **" + input.value + "**");
+    });
+    if (!answered) {
+      alert("Nothing selected yet — pick at least one answer, then send.");
+      return;
+    }
+    lines.push("Feedback on **Issue No. 2 — 6 September 2026**");
+    lines.push("");
+    Object.keys(sets).forEach(function (sid) {
+      lines.push("### `" + sid + "`");
+      lines.push(sets[sid].join("\n"));
+      lines.push("");
+    });
+    lines.push("---");
+    lines.push("_Anything else you want more or less of:_");
+    lines.push("");
+    var url = "https://github.com/" + OWNER + "/" + REPO + "/issues/new"
+      + "?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-09-06")
+      + "&body=" + encodeURIComponent(lines.join("\n"));
+    window.open(url, "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>

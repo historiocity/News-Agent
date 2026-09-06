@@ -70,19 +70,24 @@ their own merits.
 
 | Thread | Status | Wake trigger | Last appeared |
 |---|---|---|---|
-| Ukraine–Russia negotiations | active | Russian reciprocity for the 5–8 Sep pause; the Kyiv leg actually happening; a signed document; a ceasefire taking effect. Not commentary. | 2026-09-05 |
-| Hormuz closure & EU energy response | active | A vessel name, IMO number, CENTCOM statement or tracking data on the alleged Kharg tanker strike; sustained change in daily transit counts; EU price-cap decision | 2026-09-05 |
-| Gulf states & Article 51 | active | Kuwait or the UAE restricting US use of the bases struck; a collective GCC statement rather than individual condemnations | 2026-09-05 (new) |
-| Fed September decision | active | 11 Sep CPI print; 16 Sep FOMC statement | — (suppressed 2026-09-05: no new fact since Jackson Hole) |
-| US fuel prices | active | The 8 Sep EIA weekly print, the first official reading that can contain the alleged $5.85 record; distillate stock builds | 2026-09-05 (new) |
-| Missouri congressional map | active | A federal court taking the case; ballot-access or residency litigation over nominees from the voided primaries | 2026-09-05 (new) |
-| USPS mail ballot rule | active | Supreme Court order on application No. 26A297; TRO expiry 10 Sep | — (dormant 2026-09-05) |
-| Birthright citizenship order | active | Appeal filed to the Fourth Circuit, or emergency application to SCOTUS | — (dormant 2026-09-05) |
+| Ukraine–Russia negotiations | active | Whether anything survives the 8 Sep expiry of the reciprocal capital-strike pause; a text either side will describe; a front-line ceasefire beyond the two capitals. Not commentary. | 2026-09-06 |
+| Hormuz closure & EU energy response | active | Iran's promised "significant response" to the 5 Sep tanker strikes; Kharg loading rates; sustained change in daily Hormuz transit counts off ~4.9 mb/d; EU price-cap decision | 2026-09-06 |
+| Gulf states & Article 51 | active | Kuwait or the UAE restricting US use of the bases struck; a collective GCC statement rather than individual condemnations | 2026-09-05 |
+| Fed September decision | active | 11 Sep CPI print; 16 Sep FOMC statement. Post-Aug-payrolls the live question is a hike, not the size of a cut. | 2026-09-06 |
+| US fuel prices | active | The 8 Sep EIA weekly print, the first official reading that can contain the alleged $5.85 record; distillate stock builds | 2026-09-05 |
+| Missouri congressional map | active | Challengers' response to SCOTUS application, due Mon 7 Sep; any order from Justice Kavanaugh before the UOCAVA overseas-ballot deadline; the state's requested 14 Sep resolution date; ballot-access or residency litigation over nominees from the voided primaries | 2026-09-06 |
+| Autonomous weapons regulation | active | CCW Seventh Review Conference, 16–20 Nov 2026: negotiate / extend / lapse. Publication of the agreed definition text. Corroboration of the "diluted in the final hours" claim from a newsroom other than Reuters. | 2026-09-06 (new) |
+| Indonesia free-meals programme (MBG) | active | Lab results identifying the pathogen; suspension of distribution in affected provinces; any change to the 2027 budget line | 2026-09-06 (new) |
+| Anak Krakatau | active | Alert level raised; renewed multi-airport closure; ash affecting cruise-altitude airways rather than terminal airspace; any tsunami advisory | 2026-09-06 (new) |
+| USPS mail ballot rule | active | Supreme Court order on application No. 26A297. Responses due 10am 8 Sep per Justice Jackson; TRO expiry 10 Sep | — (no movement 2026-09-06) |
+| Birthright citizenship order | active | Appeal filed to the Fourth Circuit, or emergency application to SCOTUS | — (no movement 2026-09-06) |
 | AI gated-capability tiers | active | Published tier criteria or an access list for GPT-6 Astra's restricted cyber capabilities, or a regulator demanding them | 2026-09-05 |
-| UAP disclosure implementation | active | ODNI's detailed implementing guidance, and whether it closes the contractor gap left by the 31 Jul preliminary guidance | 2026-09-05 (new) |
-| AARO records contract | active | Award notice on sam.gov, or a public tranche drawing on the NUFOHRC collection | — (dormant 2026-09-05) |
-| Central bank gold custody | active | Another central bank discloses relocation, or Bundesbank / Banca d'Italia comment | — (dormant 2026-09-05) |
-| Bank stablecoin consortium | active | JPMorgan statement; first GENIUS Act licence; consortium entity formation; OCC final rules targeted Nov 2026 | — (dormant 2026-09-05) |
-| Tampa Bay dengue | active | Weekly arbovirus report: whether Pasco stays at one case, and the regional trend line | 2026-09-05 |
-| Florida Amendment 3 | active | Revised ballot language after the Leon County ruling; county-level revenue estimates for Pasco and Pinellas | 2026-09-05 (new) |
-| Waymo Tampa Bay | active | Service-area expansion into Pinellas or Pasco, or published incident data | — (dormant 2026-09-05) |
+| UAP disclosure implementation | active | ODNI's detailed implementing guidance, and whether it closes the contractor gap left by the 31 Jul preliminary guidance. House Oversight task force hearing 9 Sep. | 2026-09-05 |
+| AARO records contract | active | Award notice on sam.gov, or a public tranche drawing on the NUFOHRC collection | — (no movement 2026-09-06) |
+| Central bank gold custody | active | Another central bank discloses relocation, or Bundesbank / Banca d'Italia comment | — (no movement 2026-09-06) |
+| Bank stablecoin consortium | active | JPMorgan statement; first GENIUS Act licence; consortium entity formation; OCC final rules targeted Nov 2026 | — (no movement 2026-09-06) |
+| Tampa Bay dengue | active | The week-35 arbovirus report (not published/reachable as of 6 Sep): whether Pasco stays at one case, and the regional trend line past 65 | 2026-09-05 |
+| Florida Amendment 3 | active | Publication of the AG's revised ballot title and summary; county-level revenue estimates for Pasco and Pinellas. State declined to appeal on 7 Aug — not a trigger. | 2026-09-05 |
+| Waymo Tampa Bay | active | Service-area expansion into Pinellas or Pasco, or published incident data | — (no movement 2026-09-06) |
+
+*Dormancy note: the 6-month dormancy clock has not expired for any thread — this watchlist opened 5 September 2026. "No movement" means swept and no trigger fired.*
