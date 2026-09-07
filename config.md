@@ -70,15 +70,15 @@ their own merits.
 
 | Thread | Status | Wake trigger | Last appeared |
 |---|---|---|---|
-| Ukraine–Russia negotiations | active | Whether anything survives the 8 Sep expiry of the reciprocal capital-strike pause; a text either side will describe; a front-line ceasefire beyond the two capitals. Not commentary. | 2026-09-06 |
-| Hormuz closure & EU energy response | active | Iran's promised "significant response" to the 5 Sep tanker strikes; Kharg loading rates; sustained change in daily Hormuz transit counts off ~4.9 mb/d; EU price-cap decision | 2026-09-06 |
+| Ukraine–Russia negotiations | active | Whether anything survives the 8 Sep expiry of the reciprocal capital-strike pause; a text either side will describe; a front-line ceasefire beyond the two capitals. Not commentary — Peskov declined on 7 Sep to say how the Witkoff proposals differ from Anchorage. | 2026-09-06 (no movement 7 Sep) |
+| Hormuz closure & EU energy response | active | Whether Iran publishes coordinates for the "restricted zone" announced 7 Sep; whether the Iran–Oman corridor is actually signed and whether Muscat confirms; daily Hormuz transit counts holding in single digits off the ~10/day Kpler average; SPR level below 290 mb; EU price-cap decision | 2026-09-07 |
 | Gulf states & Article 51 | active | Kuwait or the UAE restricting US use of the bases struck; a collective GCC statement rather than individual condemnations | 2026-09-05 |
 | Fed September decision | active | 11 Sep CPI print; 16 Sep FOMC statement. Post-Aug-payrolls the live question is a hike, not the size of a cut. | 2026-09-06 |
 | US fuel prices | active | The 8 Sep EIA weekly print, the first official reading that can contain the alleged $5.85 record; distillate stock builds | 2026-09-05 |
-| Missouri congressional map | active | Challengers' response to SCOTUS application, due Mon 7 Sep; any order from Justice Kavanaugh before the UOCAVA overseas-ballot deadline; the state's requested 14 Sep resolution date; ballot-access or residency litigation over nominees from the voided primaries | 2026-09-06 |
+| Missouri congressional map | active | An order from Justice Kavanaugh alone or a referral to the full Court; the state-law ballot-change cutoff this week (sources give 8 or 9 Sep); the 19 Sep overseas-ballot mailing date; the state's requested 14 Sep resolution date; ballot-access or residency litigation over nominees from the voided primaries | 2026-09-07 |
 | Autonomous weapons regulation | active | CCW Seventh Review Conference, 16–20 Nov 2026: negotiate / extend / lapse. Publication of the agreed definition text. Corroboration of the "diluted in the final hours" claim from a newsroom other than Reuters. | 2026-09-06 (new) |
 | Indonesia free-meals programme (MBG) | active | Lab results identifying the pathogen; suspension of distribution in affected provinces; any change to the 2027 budget line | 2026-09-06 (new) |
-| Anak Krakatau | active | Alert level raised; renewed multi-airport closure; ash affecting cruise-altitude airways rather than terminal airspace; any tsunami advisory | 2026-09-06 (new) |
+| Anak Krakatau | active | Movement off alert level III in either direction; Jakarta schools reopening; ash affecting cruise-altitude airways rather than terminal airspace; any tsunami advisory | 2026-09-07 |
 | USPS mail ballot rule | active | Supreme Court order on application No. 26A297. Responses due 10am 8 Sep per Justice Jackson; TRO expiry 10 Sep | — (no movement 2026-09-06) |
 | Birthright citizenship order | active | Appeal filed to the Fourth Circuit, or emergency application to SCOTUS | — (no movement 2026-09-06) |
 | AI gated-capability tiers | active | Published tier criteria or an access list for GPT-6 Astra's restricted cyber capabilities, or a regulator demanding them | 2026-09-05 |
@@ -88,6 +88,13 @@ their own merits.
 | Bank stablecoin consortium | active | JPMorgan statement; first GENIUS Act licence; consortium entity formation; OCC final rules targeted Nov 2026 | — (no movement 2026-09-06) |
 | Tampa Bay dengue | active | The week-35 arbovirus report (not published/reachable as of 6 Sep): whether Pasco stays at one case, and the regional trend line past 65 | 2026-09-05 |
 | Florida Amendment 3 | active | Publication of the AG's revised ballot title and summary; county-level revenue estimates for Pasco and Pinellas. State declined to appeal on 7 Aug — not a trigger. | 2026-09-05 |
-| Waymo Tampa Bay | active | Service-area expansion into Pinellas or Pasco, or published incident data | — (no movement 2026-09-06) |
+| Waymo Tampa Bay | active | Service-area expansion into Pinellas or Pasco, or published incident data | — (no movement 2026-09-07) |
+| Saxony-Anhalt government formation | active | A Minister-President vote in the Landtag; a coalition agreement; fresh elections. AfD holds 39 of 83, majority is 42. | 2026-09-07 (new) |
+| Miami 767 overrun (21 Air / Amazon) | active | NTSB preliminary report or flight-recorder readout; FAA action against 21 Air's certificate; any finding on the runway safety area at MIA runway 30 | 2026-09-07 (new) |
+| Nepal–Tibet glacial flood & Loss and Damage | active | A Loss and Damage Fund board decision on Nepal's claim, and at what figure; the search being called off; the ~5,000 missing being converted to presumed dead; whether the UN's $50m appeal is funded | 2026-09-07 (new) |
+| Israel–Lebanon June framework | active | Formal abandonment of the framework; an Israeli withdrawal from a pilot zone; Hezbollah action beyond drone launches; a UN or ICRC response to the 135 healthcare-worker deaths | 2026-09-07 (new) |
+| EU–Greenland partnership | active | A US response to the 7 Sep Nuuk signing; whether the €530m survives the 2028–34 MFF negotiation; any actual critical-minerals project reaching a decision | 2026-09-07 (new) |
+| Florida school vaccine rule | active | Close of comment ~14 Sep; whether a public hearing is granted; adoption as drafted; any legal challenge. The broadened "moral or ethical" exemption applies to the statutory measles and polio requirements too. | 2026-09-07 (new) |
+| Florida emergency management funding | active | Joint Legislative Budget Commission action on the $250m request; accounting for the ~70% of FY26-27 budget already spent; any storm landfall that tests it | 2026-09-07 (new) |
 
 *Dormancy note: the 6-month dormancy clock has not expired for any thread — this watchlist opened 5 September 2026. "No movement" means swept and no trigger fired.*

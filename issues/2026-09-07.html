@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Monday, 7 September 2026</title>
+<style>
+  :root {
+    --bg: #fbfaf8; --fg: #1a1a18; --muted: #6b6a66; --rule: #e0ddd6; --link: #1c4f8a;
+    --tag-bg: #eeebe4; --accent: #8a3324; --box: #f4f2ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16161a; --fg: #e8e6e1; --muted: #96948d; --rule: #2e2e34; --link: #8ab4e8;
+            --tag-bg: #26262c; --accent: #d98b76; --box: #1e1e23; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.65 Georgia, "Iowan Old Style", "Times New Roman", serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  header { border-bottom: 2px solid var(--fg); padding-bottom: 1rem; margin-bottom: 1.75rem; }
+  h1 { margin: 0; font-size: 2rem; letter-spacing: -0.02em; line-height: 1.15; }
+  .issue-no { color: var(--muted); font-size: 0.85rem; text-transform: uppercase;
+              letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+  .dek { margin-top: 0.7rem; font-size: 1.05rem; line-height: 1.5; }
+  .provenance { margin-top: 0.9rem; font-size: 0.82rem; color: var(--muted);
+                line-height: 1.5; border-left: 2px solid var(--rule); padding-left: 0.75rem; }
+  nav.jump { background: var(--box); border-radius: 4px; padding: 1rem 1.15rem; margin-bottom: 2.5rem; }
+  nav.jump h2 { margin: 0 0 0.6rem; font-size: 0.8rem; text-transform: uppercase;
+                letter-spacing: 0.08em; color: var(--muted); font-weight: normal; }
+  nav.jump ol { margin: 0; padding-left: 1.2rem; }
+  nav.jump li { margin: 0.35rem 0; line-height: 1.4; }
+  nav.jump .sec { margin-top: 0.8rem; padding-top: 0.6rem; border-top: 1px solid var(--rule);
+                  font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.07em;
+                  color: var(--muted); }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  article { border-top: 1px solid var(--rule); padding-top: 1.75rem; margin-top: 2.25rem; }
+  article:first-of-type { border-top: none; }
+  h2.section { font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+               font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em;
+               color: var(--muted); margin: 3.5rem 0 0; padding-top: 1.5rem;
+               border-top: 2px solid var(--fg); }
+  h3 { margin: 0 0 0.55rem; font-size: 1.32rem; line-height: 1.25; letter-spacing: -0.01em; }
+  h3 em { font-style: italic; }
+  .anchor { color: var(--rule); font-size: 0.8rem; margin-left: 0.35rem; }
+  .anchor:hover { color: var(--link); }
+  .meta { margin-bottom: 0.9rem; display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
+  .tag {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em;
+    background: var(--tag-bg); color: var(--muted); padding: 0.22rem 0.5rem; border-radius: 3px;
+  }
+  .conf { border: 1px solid var(--rule); background: transparent; }
+  .conf.primary { color: #2c6e49; border-color: #2c6e49; }
+  .conf.corrob { color: #3a5a8a; border-color: #3a5a8a; }
+  .conf.single { color: #8a6d24; border-color: #8a6d24; }
+  .conf.unconf { color: var(--accent); border-color: var(--accent); font-weight: bold; }
+  @media (prefers-color-scheme: dark) {
+    .conf.primary { color: #7fc9a0; border-color: #7fc9a0; }
+    .conf.corrob { color: #9dbbe8; border-color: #9dbbe8; }
+    .conf.single { color: #d4b45e; border-color: #d4b45e; }
+  }
+  .under { background: var(--accent); color: #fff; }
+  p { margin: 0 0 0.9rem; }
+  .divergence, .correction {
+    background: var(--box); border-radius: 4px; padding: 0.85rem 1rem; margin: 1rem 0;
+  }
+  .correction { border-left: 3px solid var(--accent); }
+  .divergence strong, .correction strong {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--muted); display: block; margin-bottom: 0.35rem; }
+  .divergence p:last-child, .correction p:last-child { margin-bottom: 0; }
+  details { margin: 1.1rem 0; border: 1px solid var(--rule); border-radius: 4px; }
+  summary {
+    cursor: pointer; padding: 0.7rem 1rem; list-style: none;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 0.85rem; font-weight: 600; color: var(--link);
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: "▸ "; }
+  details[open] summary::before { content: "▾ "; }
+  details[open] summary { border-bottom: 1px solid var(--rule); }
+  .deeper { padding: 1rem 1rem 0.4rem; font-size: 0.97rem; }
+  .sources {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 0.8rem; color: var(--muted); line-height: 1.7; margin-top: 0.9rem;
+  }
+  .sources b { color: var(--muted); font-weight: 600; }
+  fieldset {
+    border: 1px solid var(--rule); border-radius: 4px; margin: 1.2rem 0 0; padding: 0.85rem 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 0.84rem;
+  }
+  legend { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.07em;
+           color: var(--muted); padding: 0 0.35rem; }
+  .q { margin-bottom: 0.75rem; }
+  .q:last-child { margin-bottom: 0; }
+  .q p { margin: 0 0 0.35rem; font-weight: 600; }
+  .q label { display: inline-block; margin-right: 0.9rem; font-weight: normal; cursor: pointer; }
+  .q input { margin-right: 0.25rem; }
+  figure { margin: 1.2rem 0; }
+  figcaption { font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+               font-size: 0.76rem; color: var(--muted); line-height: 1.5; margin-top: 0.4rem; }
+  svg { max-width: 100%; height: auto; display: block; }
+  #send {
+    display: block; width: 100%; margin: 3rem 0 0; padding: 0.9rem;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 0.95rem; font-weight: 600;
+    background: var(--fg); color: var(--bg); border: none; border-radius: 4px; cursor: pointer;
+  }
+  #send:hover { opacity: 0.85; }
+  #sendnote { font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+              font-size: 0.78rem; color: var(--muted); text-align: center; margin-top: 0.6rem; }
+  footer { margin-top: 3.5rem; padding-top: 1.2rem; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: 0.85rem; }
+  footer h4 { font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+              font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.07em;
+              margin: 1.2rem 0 0.4rem; color: var(--muted); }
+  footer ul { padding-left: 1.1rem; margin: 0; }
+  footer li { margin: 0.25rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="issue-no">The Brief · Issue No. 3</div>
+  <h1>Monday, 7 September 2026</h1>
+  <p class="dek">Iran answered the tanker strikes not with missiles but with a map: a &ldquo;restricted zone&rdquo; beyond Hormuz, and Brent at a six-week high. In Saxony-Anhalt the AfD took 43.8 per cent and finished three seats short of governing a German state. And a cargo 767 ran off a runway in Miami and killed people who were driving down a public road.</p>
+  <p class="provenance">Scheduled edition, no human in the loop. Config, watchlist and the 5 and 6 September issues all loaded. Roughly 38 searches and fetches. Eight stories cleared the national bar and two cleared the Florida bar. Three are follow-ups, under the cap of four. US markets were shut for Labor Day, so there is no markets story today and no US financials story. Several sources refused this environment — see the footer.</p>
+</header>
+
+<nav class="jump">
+  <h2>In this issue</h2>
+  <ol>
+    <li><a href="#hormuz-zone">Iran's answer to the tanker strikes is a line on a map, and it moved oil more than the missiles did</a></li>
+    <li><a href="#afd-sachsen-anhalt">The AfD won 43.8 per cent in Saxony-Anhalt and finished three seats short of a German state government</a></li>
+    <li><a href="#mia-767">A cargo 767 left the runway at Miami at 128 mph and killed people in cars on a public street</a></li>
+    <li><a href="#nepal-glacier">Nearly 6,000 people are dead or missing under a Himalayan glacier, and Nepal has sent the bill to the UN</a></li>
+    <li><a href="#lebanon-strikes">Israel killed eleven in south Lebanon, two of them medics, under a truce that is a truce in name only</a></li>
+    <li><a href="#eu-greenland">Brussels put &euro;200 million on the table in Nuuk, which is about eight per cent of Greenland's economy</a></li>
+    <li><a href="#missouri-kavanaugh">Missouri's map ran out of runway today, and the deadline nobody agrees on is tomorrow or Wednesday</a></li>
+    <li><a href="#krakatau-jakarta">Krakatau's disruption is not 301 flights, it is 2,300, and Jakarta's schools went remote today</a></li>
+  </ol>
+  <div class="sec">Florida &amp; Tampa Bay</div>
+  <ol start="9">
+    <li><a href="#fl-dem-money">Florida's emergency management division has spent 70 per cent of its year in ten weeks, at the peak of hurricane season</a></li>
+    <li><a href="#fl-vaccine-rule">The state is one week from making four childhood vaccines optional for school, by rule rather than by law</a></li>
+  </ol>
+</nav>
+
+<article id="hormuz-zone">
+  <h3>Iran's answer to the tanker strikes is a line on a map, and it moved oil more than the missiles did <a class="anchor" href="#hormuz-zone">#</a></h3>
+  <div class="meta">
+    <span class="tag">Geopolitics</span>
+    <span class="tag">Macro &amp; markets</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+    <span class="tag">Follow-up</span>
+  </div>
+  <p>Mohsen Rezaei, secretary of Iran's Supreme National Security Council, said on state television late Sunday that Iran will declare a new &ldquo;restricted&rdquo; maritime zone <em>outside</em> the Strait of Hormuz, beginning at the line of the US Navy blockade and extending into parts of the Gulf. He said it takes effect within days and that <span>&ldquo;any ship entering the new zone will be added to a sanctions list.&rdquo;</span> He gave no coordinates and described no enforcement mechanism. He also said maps for a new shipping corridor through Iranian and Omani waters have been agreed and are due to be signed shortly.</p>
+  <p>This is the &ldquo;significant response&rdquo; <a href="2026-09-06.html#tanker-centcom">yesterday's issue named as the thing to watch</a> after CENTCOM destroyed or disabled three Iranian tankers. It arrived alongside an IRGC claim to have struck three tankers and three US-affiliated vessels, which CENTCOM has not confirmed and for which no shipping-industry report has surfaced.</p>
+  <p>The market took the map seriously. Brent traded at about $97.22 on Monday, up roughly one per cent on the day and the highest since July. Kpler transit data has commodity-ship movements through the strait averaging about ten a day over the past ten days, down from more than fifteen on Friday, with two on Saturday. The US Strategic Petroleum Reserve is under 290 million barrels, its lowest since 1982.</p>
+  <p><b>What to watch:</b> whether coordinates are ever published; whether the Iran&ndash;Oman corridor is actually signed; Tuesday's EIA weekly print; and whether transits stay in single digits.</p>
+  <div class="divergence">
+    <strong>Divergence &mdash; is the strait open or closed?</strong>
+    <p>Rezaei says Hormuz is completely closed and under Iranian armed-forces control. President Trump says it remains open. Energy Secretary Chris Wright says the US will maintain the naval blockade limiting Iranian exports. The transit data supports neither claim cleanly: about ten commodity ships a day is not closure, and it is not an open waterway either &mdash; it is roughly a third of where traffic sat on Friday and the thinnest since May. Iran has an incentive to overstate control, because control is what it is selling; Washington has an incentive to understate disruption, because disruption is what it is being blamed for. The number is the only honest arbiter here, and the number says badly degraded.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; what a &ldquo;restricted zone&rdquo; actually is, and why the SPR figure is the one to keep</summary>
+    <div class="deeper">
+      <p>Start with what Rezaei did not announce. He did not announce a blockade, a mine barrage, or a rule of engagement. A blockade is an act that has to be enforced hull by hull, and Iran's navy has spent six months demonstrating that it can hit ships but not that it can police a sea area against a US carrier group. What he announced was a <em>list</em>: a threat to add vessels to an Iranian sanctions register. That is an administrative weapon aimed at the one part of the shipping business that has no appetite for risk at all &mdash; the owners, charterers and insurers who have to decide, from an office in Athens or Singapore, whether a voyage is worth writing.</p>
+      <p>This is why the announcement moved the price when the actual missiles largely did not. Ordnance destroys a finite number of hulls. Ambiguity taxes every hull. A zone with no published coordinates is more effective at suppressing traffic than a zone with them, because a master who does not know where the line is has to assume it is wherever he happens to be. War-risk underwriters price exactly that uncertainty, and their premium is what converts a televised statement into a supply constraint. Iran has, in effect, chosen the cheapest available instrument: it costs nothing to declare and it cannot be destroyed by an airstrike.</p>
+      <p>The Oman corridor is the other half of the design and it is the more interesting half. Routing traffic through Iranian and Omani waters under an agreed chart would let Tehran distinguish between shipping it blesses and shipping it does not, which is a way of building a toll booth rather than a wall. If that corridor is signed and used, Iran acquires something it has never had: a legible mechanism for granting passage, and therefore for withholding it. Watch whether Oman confirms. Muscat has spent the entire war refusing to be an instrument of either side, and a signature would be a real change in the Gulf's diplomatic geometry.</p>
+      <p>Now the number I would keep from this story. The US Strategic Petroleum Reserve at under 290 million barrels is the lowest since 1982, when the reserve was still being filled for the first time. The SPR is the instrument an American administration reaches for when a supply shock threatens to become a price shock, and it has been the reason the last six months of this war have not been worse at the pump than they have. A reserve at 1982 levels is a reserve that can absorb one more disruption, not three. That matters far more to the reader's fuel bill and to the September FOMC argument than any individual tanker, and it is the constraint that is quietly tightening while the headlines follow the missiles.</p>
+      <p>China's behaviour is the counterweight and the reason prices are at $97 rather than well past $100. Chinese crude imports and refinery runs have been cut back, and major economies are drawing on inventory rather than bidding for cargoes. That is demand destruction doing the work sanctions were supposed to do, and it is not a stable equilibrium: inventories that are drawn down have to be rebuilt, usually into a tighter market at a worse price. The relief is real and it is borrowed.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.thenationalnews.com/news/gulf/2026/09/07/iran-threatens-to-impose-restricted-zone-outside-strait-of-hormuz/">The National on Rezaei's announcement</a> &middot;
+    <a href="https://armenpress.am/en/article/1259806">Armenpress</a> &middot;
+    <a href="https://www.globalsecurity.org/wmd/library/news/iran/2026/09/iran-260907-pdo01.htm">GlobalSecurity transcript summary</a> &middot;
+    <a href="https://tradingeconomics.com/commodity/brent-crude-oil">Brent price and SPR level</a> &middot;
+    <a href="https://northeasttimes.com/2026/09/07/iran-sets-new-restricted-zone-near-hormuz-as-tanker-traffic-falls-to-four-month/">Kpler transit data, via Times of Israel</a> &middot;
+    <a href="https://www.jpost.com/middle-east/iran-news/article-907652">Jerusalem Post on the unconfirmed IRGC claims</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="hormuz-zone">
+      <p>I led on the shipping and price data rather than on the military exchange. Right emphasis?</p>
+      <label><input type="radio" name="fb-hz-1" value="yes-economics"> Yes &mdash; the economics is the story</label>
+      <label><input type="radio" name="fb-hz-1" value="more-military"> More on the military side</label>
+      <label><input type="radio" name="fb-hz-1" value="no-opinion"> No opinion</label>
+    </div>
+    <div class="q" data-sid="hormuz-zone">
+      <p>Cadence on the Hormuz thread from here?</p>
+      <label><input type="radio" name="fb-hz-2" value="daily"> Daily &mdash; it drives fuel and the Fed</label>
+      <label><input type="radio" name="fb-hz-2" value="movement"> Movement only</label>
+      <label><input type="radio" name="fb-hz-2" value="weekly"> A weekly summary would do</label>
+    </div>
+    <div class="q" data-sid="hormuz-zone">
+      <p>Should I track the SPR level as a standing indicator in every issue?</p>
+      <label><input type="radio" name="fb-hz-3" value="yes"> Yes, add it</label>
+      <label><input type="radio" name="fb-hz-3" value="only-if-moves"> Only when it moves materially</label>
+      <label><input type="radio" name="fb-hz-3" value="no"> No</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="afd-sachsen-anhalt">
+  <h3>The AfD won 43.8 per cent in Saxony-Anhalt and finished three seats short of a German state government <a class="anchor" href="#afd-sachsen-anhalt">#</a></h3>
+  <div class="meta">
+    <span class="tag">Geopolitics</span>
+    <span class="tag">World economy</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+  </div>
+  <p>Alternative f&uuml;r Deutschland took 43.8 per cent of the vote in Sunday's Saxony-Anhalt state election, on 576,037 votes, winning 39 of the 83 seats in the Landtag. A majority is 42. The party gained 23 percentage points and 16 seats on 2021.</p>
+  <p>The collapse on the other side is as large as the surge. Friedrich Merz's CDU, which has governed the state continuously since 1990 reunification, fell to 17.2 per cent and 15 seats, down 19.9 points and 25 seats. The SPD took 9.3 per cent, the Greens 8.9, the Left 8.6 &mdash; eight seats each &mdash; and the BSW entered on 5.3 per cent and five seats. The FDP took 2.6 per cent and no seats. Turnout was 77.8 per cent, up 17.5 points, which means the AfD's result was built on mobilisation rather than on a shrinking electorate.</p>
+  <p>The AfD's lead candidate, Ulrich Siegmund, said the party had <span>&ldquo;written history&rdquo;</span> and claimed a mandate to govern; co-leader Alice Weidel called the result sensational. The CDU's national general secretary ruled out cooperation, calling the AfD a right-wing extremist party &mdash; the term Germany's domestic intelligence service has itself applied.</p>
+  <p><b>What to watch:</b> whether any governing majority can be assembled without either the AfD or the Left, and whether Siegmund stands for Minister-President anyway and forces the Landtag to vote him down in public.</p>
+  <figure>
+    <svg viewBox="0 0 600 92" role="img" aria-label="Seat distribution in the 83-seat Saxony-Anhalt Landtag: AfD 39, CDU 15, SPD 8, Greens 8, Left 8, BSW 5. A majority requires 42 seats.">
+      <rect x="0" y="14" width="282" height="30" fill="#009ee0"></rect>
+      <rect x="282" y="14" width="108" height="30" fill="#32302c"></rect>
+      <rect x="390" y="14" width="58" height="30" fill="#e3000f"></rect>
+      <rect x="448" y="14" width="58" height="30" fill="#46962b"></rect>
+      <rect x="506" y="14" width="58" height="30" fill="#be3075"></rect>
+      <rect x="564" y="14" width="36" height="30" fill="#7d254f"></rect>
+      <line x1="304" y1="6" x2="304" y2="52" stroke="#8a3324" stroke-width="2.5"></line>
+      <text x="308" y="66" font-family="sans-serif" font-size="13" fill="#8a3324">majority = 42 seats</text>
+      <text x="4" y="34" font-family="sans-serif" font-size="14" fill="#ffffff" font-weight="bold">AfD 39</text>
+      <text x="288" y="34" font-family="sans-serif" font-size="13" fill="#ffffff">CDU 15</text>
+      <text x="396" y="34" font-family="sans-serif" font-size="12" fill="#ffffff">SPD 8</text>
+      <text x="454" y="34" font-family="sans-serif" font-size="12" fill="#ffffff">Gr&uuml;ne 8</text>
+      <text x="512" y="34" font-family="sans-serif" font-size="12" fill="#ffffff">Linke 8</text>
+      <text x="568" y="34" font-family="sans-serif" font-size="12" fill="#ffffff">BSW 5</text>
+      <text x="0" y="86" font-family="sans-serif" font-size="12" fill="#6b6a66">83 seats &middot; preliminary official result, 6 September 2026</text>
+    </svg>
+    <figcaption>Bar drawn to the preliminary official seat allocation. The AfD is three seats short; every other party combined is 44, but that arithmetic requires the CDU to sit in a majority that depends on the Left.</figcaption>
+  </figure>
+  <details>
+    <summary>Dig deeper &mdash; the firewall arithmetic, and why 43.8 per cent in one state is a national problem</summary>
+    <div class="deeper">
+      <p>Work through the coalition maths, because it is the whole story. The AfD has 39. Everyone else has 44. A majority is 42. So a government excluding the AfD is arithmetically available &mdash; but only if the CDU, SPD, Greens and Left all sit inside it, or if one of them supports it without joining. The CDU operates two firewalls, not one: a hard exclusion of the AfD, and a longstanding party-congress rule against coalitions with the Left. Honouring both leaves the CDU short. Dropping the second to honour the first means Merz's party governs a state on Left votes while its own vote share sits at 17.2 per cent, a quarter of what the AfD won and a fraction of what the CDU held for three decades. The BSW, which took five seats, has signalled openness to talking to the AfD without formally coalescing, which is precisely the arrangement the firewall was built to prevent.</p>
+      <p>There is no comfortable exit. A four-party anti-AfD coalition spanning the CDU to the Left would be ideologically incoherent and would hand the AfD the argument it wants most: that every other party is interchangeable and that only it stands outside a cartel. A minority CDU government would need AfD abstentions to pass a budget. Fresh elections would most likely produce a larger AfD. This is what it looks like when a party crosses roughly forty per cent under a proportional system designed on the assumption that no anti-system party ever would.</p>
+      <p>The national stakes are the reason this is in a brief that is not otherwise about German state politics. Saxony-Anhalt has 2.1 million people and no independent foreign policy. But Merz's governing coalition in Berlin rests on the proposition that the firewall is durable and that the CDU can win back eastern voters by adopting harder positions on migration without adopting the AfD itself. Sunday tested both halves of that proposition and both failed: the CDU lost 19.9 points while running to the right, and the firewall is now mathematically load-bearing rather than symbolic. The next federal election is not due until 2029, but German coalitions have not reliably lasted four years, and every state result between now and then will be read as a forecast.</p>
+      <p>For a reader whose interest in Germany is economic rather than electoral, the transmission channel is European policy, not Magdeburg. The AfD campaigns on withdrawal from the euro and on restoring relations with Russia. It is nowhere near being able to deliver either. But a party at this level in state parliaments changes what the governable parties can do &mdash; on Ukraine funding, on the EU's fiscal rules, on energy policy that is currently under strain from the same Hormuz disruption leading this issue. Germany is the largest guarantor in every European fiscal arrangement that matters. A German government that has to spend its authority domestically has less of it to spend in Brussels, and that shows up in EU-level decisions long before it shows up in a federal election result.</p>
+      <p>One caution about the number itself. These are preliminary official results, not the certified final count, and vote shares of this size in a single eastern state have historically overstated national standing &mdash; the AfD's federal polling is well below 43.8 per cent. The correct reading is not that Germany is 44 per cent AfD. It is that in a region of Germany the AfD is now the default party of government, and no mechanism exists to translate that into governing.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://en.wikipedia.org/wiki/2026_Saxony-Anhalt_state_election">Preliminary official results table</a> &middot;
+    <a href="https://www.cbsnews.com/news/afd-german-election-saxony-anhalt/">CBS News</a> &middot;
+    <a href="https://www.npr.org/2026/09/06/nx-s1-5955677/german-afd-far-right-exit">NPR</a> &middot;
+    <a href="https://www.euronews.com/my-europe/2026/09/06/german-far-right-afd-wins-by-a-landslide-in-saxony-anhalt-exit-polls">Euronews</a> &middot;
+    <a href="https://www.france24.com/en/europe/20260906-germany-s-far-right-afd-takes-huge-lead-in-key-vote-early-results-suggest">France 24</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="afd-sachsen-anhalt">
+      <p>Follow German coalition formation as a running thread?</p>
+      <label><input type="radio" name="fb-afd-1" value="follow"> Yes, watchlist it</label>
+      <label><input type="radio" name="fb-afd-1" value="only-govt"> Only if a government forms or fails</label>
+      <label><input type="radio" name="fb-afd-1" value="drop"> Drop it</label>
+    </div>
+    <div class="q" data-sid="afd-sachsen-anhalt">
+      <p>I spent most of the expansion on seat arithmetic rather than on the politics of the far right. Useful?</p>
+      <label><input type="radio" name="fb-afd-2" value="yes-mechanics"> Yes &mdash; mechanics over commentary</label>
+      <label><input type="radio" name="fb-afd-2" value="more-context"> More on what the party actually is</label>
+      <label><input type="radio" name="fb-afd-2" value="no-opinion"> No opinion</label>
+    </div>
+    <div class="q" data-sid="afd-sachsen-anhalt">
+      <p>How much European domestic politics do you want in general?</p>
+      <label><input type="radio" name="fb-afd-3" value="more"> More</label>
+      <label><input type="radio" name="fb-afd-3" value="current"> This is about right</label>
+      <label><input type="radio" name="fb-afd-3" value="less"> Less &mdash; only when it hits policy or markets</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="mia-767">
+  <h3>A cargo 767 left the runway at Miami at 128 mph and killed people in cars on a public street <a class="anchor" href="#mia-767">#</a></h3>
+  <div class="meta">
+    <span class="tag">US politics &amp; policy</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+  </div>
+  <p>Prime Air flight 7598, a Boeing 767-300 freighter operated by 21 Air on behalf of Amazon, overran runway 30 at Miami International Airport at about 2pm Sunday, inbound from Luis Mu&ntilde;oz Mar&iacute;n International in San Juan. It crossed Northwest 67th Avenue, struck vehicles, caught fire and came to rest in a field outside the airport perimeter. Five people were killed and five injured, three of them critically. Several of the dead were on the ground rather than aboard. Miami-Dade Fire Rescue freed one person pinned beneath a car; a fuel leak persisted for hours. The pilot and copilot were trapped in the aircraft.</p>
+  <p>The airframe is 32 years old and spent more than two decades in passenger service before conversion to freight in 2015. Reporting puts the aircraft's speed at roughly 128 mph as it left the paved surface, which is not a landing that went slightly long &mdash; it is an aircraft that was still at flying speed with the runway behind it.</p>
+  <p>The NTSB is leading, with a go-team headed by chairwoman Jennifer Homendy, who was due to hold a news conference Monday. The FAA says the cause is unknown. A full ground stop was ordered at Miami on Sunday.</p>
+  <p><b>What to watch:</b> the flight data and cockpit voice recorder readout, whether the investigation turns toward braking, thrust reverser or runway condition, and whether the FAA acts against 21 Air's operating certificate.</p>
+  <div class="divergence">
+    <strong>Divergence &mdash; who died</strong>
+    <p>Outlets agree on five dead and five injured, but differ on the split between aircraft occupants and people on the ground, and one early wire ran &ldquo;three dead&rdquo; before the figure settled. The reporting that specifies says several of the fatalities were ground-level, and that the two pilots were trapped in the wreckage rather than confirmed dead. That is not a contradiction so much as an event still being counted, and I would not treat any crew/ground breakdown as final until the NTSB gives one. What is firm: people died on a public road next to an airport, which is a different kind of accident from an aircraft that kills only its own occupants.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; runway overruns, the ageing converted-freighter fleet, and what the NTSB will actually look at</summary>
+    <div class="deeper">
+      <p>Runway overruns are the most common serious accident category in commercial aviation and they are almost never caused by one thing. The chain is usually: an approach that arrives fast or high, a touchdown beyond the intended point, a surface with less friction than assumed, and a deceleration system that underperforms. Each link on its own is survivable. Together they consume the margin. The 128 mph figure is what makes this one grim &mdash; a normal 767 landing rollout should have the aircraft well below that speed long before the far end, so either the deceleration did not happen or the touchdown happened much too far down the runway.</p>
+      <p>The NTSB's first substantive question will be the recorders. A 767 carries a flight data recorder capturing hundreds of parameters and a cockpit voice recorder; between them they will establish touchdown point, airspeed, thrust reverser deployment, spoiler extension, brake pressure and autobrake setting, and whether the crew attempted a go-around. That readout typically produces a preliminary report within about thirty days. The second question will be the runway: whether it was wet, whether braking action reports had been filed by earlier arrivals, and what the reported wind was. Miami in early September is a thunderstorm environment and a contaminated-surface landing is exactly the scenario where a small misjudgement stops being recoverable.</p>
+      <p>The structural issue behind the accident is the converted freighter fleet, and it is worth understanding because it is the direct consequence of the way parcel delivery now works. Air cargo growth over the last decade has been absorbed almost entirely by passenger aircraft retired and converted, not by new-build freighters, because a new-build costs several times more and cargo yields do not support it. That means a large share of the aircraft flying overnight parcels are three decades old, operated by small specialist carriers under contract to a retailer whose name is on the tail but which does not hold the operating certificate. 21 Air is the operator here; Amazon is the customer. Regulatory responsibility sits with the former, commercial pressure originates with the latter, and that gap is the thing safety regulators have struggled with in contracted air cargo generally.</p>
+      <p>Two precedents will be raised and both are instructive. Atlas Air 3591, a 767 freighter flying for Amazon, crashed into Trinity Bay in 2019 killing three, and the NTSB found a crew response to an inadvertent go-around mode input, with the first officer's history of performance difficulties a contributing factor &mdash; a finding about hiring and records-checking in the contract cargo sector. Emirates 521 in Dubai in 2016 was a 777 that ran off and burned with everyone aboard surviving. Neither is a template for this one. I raise them because the questions they generated &mdash; crew screening at contract carriers, and survivability once an airframe comes to rest and fuel ignites &mdash; are the questions this investigation will land on if the recorders show no mechanical failure.</p>
+      <p>The last point is about geography and it is the reason this is a policy story rather than only an accident story. Runway 30 at Miami ends near Northwest 67th Avenue, a public road. The Runway Safety Area standard exists to give an overrunning aircraft somewhere to stop, and where land is unavailable, engineered material arresting systems &mdash; crushable concrete beds that swallow landing gear &mdash; are the substitute. Whether Miami's runway 30 has one, and whether it functioned, is a question the NTSB will answer and that airports with roads at the end of their runways across the country will be asked about afterwards.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://abcnews.com/US/cargo-plane-overruns-runway-miami-international-airport-faa/story?id=136242081">ABC News</a> &middot;
+    <a href="https://www.nbcnews.com/news/us-news/amazon-plane-crash-miami-rcna596369">NBC News</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/9/6/amazon-cargo-plane-crashes-in-us-while-landing-at-miami-airport">Al Jazeera</a> &middot;
+    <a href="https://www.local10.com/news/florida/2026/09/07/investigators-hunt-for-what-went-wrong-after-cargo-plane-crash-in-miami-kills-at-least-5/">Local 10 on the investigation</a> &middot;
+    <a href="https://time.com/article/2026/09/07/miami-airport-plane-overshoot-runway-amazon-cargo/">TIME</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="mia-767">
+      <p>Follow this to the NTSB preliminary report?</p>
+      <label><input type="radio" name="fb-mia-1" value="follow"> Yes, watchlist it</label>
+      <label><input type="radio" name="fb-mia-1" value="final-only"> Only the final finding</label>
+      <label><input type="radio" name="fb-mia-1" value="drop"> Drop it</label>
+    </div>
+    <div class="q" data-sid="mia-767">
+      <p>This is in Florida but I filed it as a national story, not in the local section. Right call?</p>
+      <label><input type="radio" name="fb-mia-2" value="right"> Right &mdash; it's national</label>
+      <label><input type="radio" name="fb-mia-2" value="local"> Should have been local</label>
+      <label><input type="radio" name="fb-mia-2" value="no-opinion"> No opinion</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="nepal-glacier">
+  <h3>Nearly 6,000 people are dead or missing under a Himalayan glacier, and Nepal has sent the bill to the UN <a class="anchor" href="#nepal-glacier">#</a></h3>
+  <div class="meta">
+    <span class="tag">Science &amp; public health</span>
+    <span class="tag">World economy</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+    <span class="tag under">Underreported</span>
+  </div>
+  <p>Twelve days after a glacier collapsed near Langtang Lirung and sent flash floods and debris flows down 72 kilometres of the Trishuli valley, Nepal has recovered 1,341 bodies and is still searching for about 4,996 people. In the Tibet Autonomous Region across the border, China reports 43 dead and 519 missing. Roughly 800 of the missing are foreign nationals. Nepal has deployed 19,000 security personnel and 16 helicopters and has rescued more than 11,000 people. Four survivors have been found since Friday, three of them inside hydropower tunnels where officials initially hoped around 100 people might be sheltering.</p>
+  <p>The collapse was violent enough to be recorded on seismometers worldwide at magnitudes reaching Ms 5.2. Reporting published on 1 September found the glacier had shown visible signs of instability days before it failed.</p>
+  <p>The consequential development is financial. The UN has appealed for $50 million to reach more than 84,000 people, and Nepal has formally applied to the UN-backed Loss and Damage Fund, arguing that the emitters responsible for the warming owe compensation. Glacial outburst floods are now roughly five times more frequent than in 1950; Hindu Kush Himalaya glaciers lost ice 65 per cent faster in 2011&ndash;2020 than in the preceding decade.</p>
+  <p><b>What to watch:</b> whether the Loss and Damage Fund board accepts the claim and at what figure, when Nepal converts the missing to presumed dead, and whether the $50 million appeal is funded.</p>
+  <div class="divergence">
+    <strong>Divergence &mdash; the toll is unstable and will stay that way</strong>
+    <p>Figures reported over the past ten days range from 1,114 to 1,342 dead in Nepal and from 3,916 to about 4,996 missing. This is not sources disagreeing; it is a count moving daily as bodies are recovered and as families register absences. The one number I would not treat as soft is the direction: the missing figure has risen, not fallen, which in a debris-flow event usually means the eventual death toll approaches the missing count rather than the recovered one. Marking this <em>Underreported</em> is a judgement about American coverage, not global coverage &mdash; Al Jazeera, CNN and Time have all carried it. It has not led a US front page in a fortnight, and on any measure of scale it should have.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; why a glacier fell, and why the Loss and Damage claim matters more than the appeal</summary>
+    <div class="deeper">
+      <p>The mechanism here is not the monsoon flooding Nepal gets most years. A glacial lake outburst flood happens when meltwater impounded behind an unstable dam of ice or moraine is released suddenly, or when a mass of ice or rock falls into a lake and displaces it. The result is not a river rising; it is a wall of water carrying boulders and mud moving down a confined valley at speeds no warning system built for rainfall can outrun. The Trishuli is a steep gorge with hydropower infrastructure and settlements strung along it, which is the worst possible geometry: nowhere to go laterally, and a debris flow that scours the valley floor rather than merely inundating it. That is why the missing outnumber the recovered by nearly four to one. In a flood you find bodies; in a debris flow you often do not.</p>
+      <p>The warming link is direct and physically simple, which is not true of every attributed disaster. Glaciers lose mass, meltwater ponds behind moraines that were never engineered dams, permafrost that cements rock faces thaws, and slopes that were stable for centuries stop being stable. Each of those is a measured trend rather than a model output. The 65 per cent acceleration in Hindu Kush Himalaya ice loss between the 2000s and the 2010s is observational. That is what makes this specific disaster a stronger candidate for a compensation claim than, say, an individual hurricane, where attribution is statistical rather than mechanical.</p>
+      <p>Which is the real story. The Loss and Damage Fund was agreed at COP27 in 2022 and operationalised at COP28, on the principle that vulnerable countries suffering climate harm they did not cause should be compensated by those that did. It has been chronically underfunded relative to the scale of the harm it was created to address, and it has spent its short life on procedural questions &mdash; who is eligible, who decides, what counts. Nepal is now asking it to do the thing it was built for, in a case where the causal chain is about as clean as it will ever get, at a scale that cannot be handled by a $50 million humanitarian appeal. If the fund pays meaningfully, it establishes that the instrument is real. If it does not, the next country in this position will draw the conclusion and act on it &mdash; in litigation, or in the next round of climate negotiations, where developing-country cooperation on emissions is the leverage.</p>
+      <p>There is a warning question underneath all of this and it is the one with the most immediate life-saving value. Reporting says the glacier showed visible instability in the days before it failed. If that is right, the question is not whether the collapse could have been predicted &mdash; it is whether the monitoring existed, whether anyone was looking, and whether an alert could have reached a valley with poor connectivity in time. The Himalaya has thousands of glacial lakes and a small number of instrumented ones. Instrumenting the rest is cheap relative to the cost of a single event like this, and it is the kind of thing that gets funded after a disaster and defunded before the next.</p>
+      <p>For a reader whose lens is economic: Nepal is a small economy with hydropower as its principal export ambition, and the infrastructure destroyed here is that ambition's physical form. A disaster of this scale in a country of this size is not a humanitarian line item, it is a sovereign fiscal event, and it will show up in Nepal's borrowing terms and in Chinese and Indian offers of reconstruction finance long before it shows up in a UN appeal ledger.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.aljazeera.com/news/2026/9/6/china-nepal-race-to-find-thousands-still-missing-12-days-after-floods">Al Jazeera, day 12</a> &middot;
+    <a href="https://en.wikipedia.org/wiki/2026_Nepal_floods">Chronology and toll</a> &middot;
+    <a href="https://abcnews.com/International/nepal-tibet-flood-death-toll-tops-1100-tens/story?id=136136947">ABC News</a> &middot;
+    <a href="https://www.cnn.com/2026/09/01/world/live-news/nepal-china-flood">CNN on the pre-collapse warning signs (unreachable here &mdash; see footer)</a> &middot;
+    <a href="https://time.com/article/2026/09/01/flood-deaths-trishuli-tibet-himalayas-china-nepal/">TIME on the warming link</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="nepal-glacier">
+      <p>This has been running twelve days and I never covered it. Should I have picked it up sooner?</p>
+      <label><input type="radio" name="fb-nep-1" value="yes-sooner"> Yes &mdash; catch big running stories earlier</label>
+      <label><input type="radio" name="fb-nep-1" value="fine"> Fine &mdash; you covered it when it developed</label>
+      <label><input type="radio" name="fb-nep-1" value="no-opinion"> No opinion</label>
+    </div>
+    <div class="q" data-sid="nepal-glacier">
+      <p>I marked it <em>Underreported</em> on American coverage even though it's well covered abroad. Is that a fair use of the tag?</p>
+      <label><input type="radio" name="fb-nep-2" value="fair"> Fair &mdash; keep using it that way</label>
+      <label><input type="radio" name="fb-nep-2" value="strict"> Reserve the tag for genuinely obscure stories</label>
+      <label><input type="radio" name="fb-nep-2" value="no-opinion"> No opinion</label>
+    </div>
+    <div class="q" data-sid="nepal-glacier">
+      <p>Follow the Loss and Damage Fund decision?</p>
+      <label><input type="radio" name="fb-nep-3" value="follow"> Yes, watchlist it</label>
+      <label><input type="radio" name="fb-nep-3" value="drop"> No</label>
+      <label><input type="radio" name="fb-nep-3" value="no-opinion"> No opinion</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="lebanon-strikes">
+  <h3>Israel killed eleven in south Lebanon, two of them medics, under a truce that is a truce in name only <a class="anchor" href="#lebanon-strikes">#</a></h3>
+  <div class="meta">
+    <span class="tag">Geopolitics</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+  </div>
+  <p>Israeli aircraft struck the southern Lebanese village of Kfar Reman and nearby Deir al-Zahrani and Arab Salim, in the Nabatieh district, early on Monday. Lebanon's health ministry put the toll at eleven killed, including two children, and five wounded. A residential building was hit; a separate drone strike on a civilian vehicle in the same town killed two paramedics inside it.</p>
+  <p>The Israeli military said it targeted a building near a Hezbollah facility it said had been used to launch an explosive drone from Deir al-Zahrani. It has not publicly addressed the strike on the ambulance crew.</p>
+  <p>The context is a ceasefire that has not held in any meaningful sense. Israel and Lebanon signed a US-mediated framework in June under which the Lebanese army would disarm Hezbollah in designated pilot zones in exchange for Israeli withdrawal from the south. Little of it has been implemented: Israeli forces still occupy dozens of villages and have declined further withdrawals, and Hezbollah &mdash; which is not a party to the Lebanon&ndash;Israel talks &mdash; says it will not disarm anywhere north of the Litani. Since the escalation began in early March, Lebanon's health ministry counts more than 4,350 killed and 12,300 wounded, and 179 Israeli attacks on ambulance crews killing 135 healthcare workers.</p>
+  <p><b>What to watch:</b> whether the June framework is formally abandoned, whether Hezbollah responds beyond drone launches, and whether the medic figures draw a UN or ICRC response.</p>
+  <div class="divergence">
+    <strong>Divergence &mdash; facts versus framing</strong>
+    <p>The dispute here is not really about what happened. Both sides agree strikes occurred in these three villages on Monday morning. Israel's account is about the <em>target</em> &mdash; a Hezbollah drone-launch facility &mdash; and is silent on the civilian building and the ambulance. Lebanon's account is about the <em>result</em> &mdash; a residential block, two children, two medics &mdash; and is silent on whether anything military was present. Both can be true simultaneously, and usually are. What is not resolvable from open sources is whether the vehicle struck was identifiable as an ambulance at the moment of the strike, which is the question that determines whether it was a targeting failure or a targeting decision. The casualty counts also drift: early reports gave nine dead, later ones eleven, one wire ran ten. That is a toll rising as the wounded die, not a dispute.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; why the June framework was always going to stall, and what the medic numbers mean legally</summary>
+    <div class="deeper">
+      <p>The June framework's design flaw is visible in a single sentence: it required Hezbollah to disarm, and Hezbollah was not a signatory. The agreement is between the Israeli and Lebanese states, and it assigns the disarmament task to the Lebanese Armed Forces. The LAF is a genuine national institution but it is not, and has never been, capable of disarming Hezbollah by force; attempting it would risk the sectarian fracture of the army itself, which is the outcome every Lebanese government since 1990 has organised its politics to avoid. So the framework asks a party that cannot deliver to deliver, in exchange for a withdrawal the other side has conditioned on that delivery. Each side then points at the other's non-performance as justification for its own. That is not a peace process failing; it is a peace process operating exactly as its structure dictates.</p>
+      <p>The pilot-zone mechanism was the attempt to escape that trap &mdash; carve out small areas, demonstrate the exchange works, then expand. Pilot schemes of this kind fail when the first zone becomes the whole negotiation, because neither side will let a precedent be set on unfavourable terms. Israel's continued occupation of villages beyond the agreed lines and its refusal of further withdrawal means the exchange has never actually been tested. Hezbollah's position north of the Litani means it never will be, on the current text.</p>
+      <p>The medic figures deserve to be read carefully rather than as an atrocity tally. Under international humanitarian law, medical personnel and ambulances have specific protected status: they may not be attacked, and they lose protection only if used to commit acts harmful to the enemy outside their humanitarian function, and then only after a warning with a reasonable time limit. One hundred and thirty-five healthcare workers killed across 179 incidents in six months is a pattern rather than a series of accidents, and a pattern is what triggers the legal question of whether protection is being systematically disregarded or whether medical facilities are being systematically misused. Israel has consistently argued the latter in Gaza and Lebanon; establishing it requires evidence per incident, which is precisely what does not exist for most of these strikes. I cannot adjudicate it from open sources and neither can anyone else without access to targeting records.</p>
+      <p>What I can say is what the numbers do to the ceasefire's survival. A truce degrades in a predictable way: the strikes continue, the casualty count normalises, the diplomatic cost of each individual strike falls because it is no longer novel, and eventually the agreement exists only as a name that both sides use for the current level of violence. Lebanon&ndash;Israel is at that stage now. The framework is three months old and its implementation has not begun.</p>
+      <p>The connection to the rest of this issue is Iran. Hezbollah is the most capable of Iran's regional partners and the one whose activation would most change the calculus of the Hormuz confrontation leading this brief. It has not been activated &mdash; drone launches at Israeli troops are far below its capability &mdash; and the most plausible reading of that restraint is that Tehran is holding it in reserve rather than that it is unable to act. Six months into a war with the United States, the fact that Hezbollah is still firing single drones is one of the more informative facts available about how Iran assesses its own position.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.aljazeera.com/news/2026/9/7/israeli-air-attack-kills-at-least-10-people-in-southern-lebanon">Al Jazeera</a> &middot;
+    <a href="https://www.nbcnews.com/world/lebanon/israeli-strikes-southern-lebanese-town-kill-11-state-news-agency-says-rcna596433">NBC News</a> &middot;
+    <a href="https://www.local10.com/news/world/2026/09/07/israeli-airstrikes-hit-a-lebanese-village-killing-9-and-other-mideast-developments/">AP via Local 10</a> &middot;
+    <a href="https://www.wpri.com/news/us-and-world/ap-israeli-airstrikes-on-a-village-in-southern-lebanon-kill-9-people-wound-13/">AP via WPRI</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="lebanon-strikes">
+      <p>Add Israel&ndash;Lebanon as a standing thread, or cover only on major escalation?</p>
+      <label><input type="radio" name="fb-leb-1" value="thread"> Standing thread</label>
+      <label><input type="radio" name="fb-leb-1" value="major"> Major escalation only</label>
+      <label><input type="radio" name="fb-leb-1" value="drop"> Drop it</label>
+    </div>
+    <div class="q" data-sid="lebanon-strikes">
+      <p>I said I can't adjudicate the medic strikes without targeting records, rather than picking a side. Right call?</p>
+      <label><input type="radio" name="fb-leb-2" value="right"> Right &mdash; say what you can't know</label>
+      <label><input type="radio" name="fb-leb-2" value="judgment"> Give me your judgement anyway</label>
+      <label><input type="radio" name="fb-leb-2" value="no-opinion"> No opinion</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="eu-greenland">
+  <h3>Brussels put &euro;200 million on the table in Nuuk, which is about eight per cent of Greenland's economy <a class="anchor" href="#eu-greenland">#</a></h3>
+  <div class="meta">
+    <span class="tag">World economy</span>
+    <span class="tag">Geopolitics</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+  </div>
+  <p>European Commission President Ursula von der Leyen, Danish Prime Minister Mette Frederiksen and Greenland's Premier Jens-Frederik Nielsen signed an updated EU&ndash;Greenland&ndash;Denmark Joint Partnership in Nuuk on Monday, at the end of a two-day visit. It carries up to &euro;200 million for 2026&ndash;27 and a Commission proposal for up to &euro;530 million across the 2028&ndash;34 EU budget, roughly double the current allocation. Denmark's annual block grant of about &euro;123 million continues alongside it.</p>
+  <p>The money is directed at satellite and cable connectivity for northern and eastern Greenland, hydropower, critical raw materials extraction, tourism, housing and small business. A satellite-connectivity project with the Greenlandic operator Tusass was launched during the visit. Von der Leyen described Greenland as Europe's <span>&ldquo;trusted friend, strategic ally&rdquo;</span> and part of the European family.</p>
+  <p>The subtext is not subtext. This follows President Trump's campaign to acquire Greenland, including threats earlier this year to take it by force, which Copenhagen and Nuuk have both rejected. Greenland holds an estimated 25 of the 34 raw materials the EU classifies as critical. Against a GDP in the region of &euro;2.5 billion, &euro;200 million is on the order of eight per cent of the island's economy.</p>
+  <p><b>What to watch:</b> whether Washington responds; whether the &euro;530 million survives the 2028&ndash;34 budget negotiation; and whether any of it is spent on anything a mining company would recognise as a project.</p>
+  <details>
+    <summary>Dig deeper &mdash; what &euro;200 million buys, and why this is a sovereignty document dressed as a development grant</summary>
+    <div class="deeper">
+      <p>Take the money seriously first, because the percentage is what makes this unusual. Eight per cent of GDP in a single external commitment is not development assistance in the ordinary sense; for comparison, that is a multiple of what most aid relationships deliver, and it arrives in an economy of about 57,000 people whose public finances rest heavily on the Danish block grant and on fishing. What Greenland has wanted for two decades is a path to reducing dependence on that grant, because the grant is the practical obstacle to full independence from Denmark. Anything that diversifies Greenland's revenue base is, in Greenlandic politics, an independence instrument. The EU almost certainly understands that, and is offering it anyway, which tells you how much Brussels wants the relationship.</p>
+      <p>The spending list is the giveaway on strategy. Satellite and subsea connectivity for the north and east is dual-use infrastructure &mdash; it serves settlements and it serves surveillance of the Arctic approaches. Hydropower is what makes energy-intensive mineral processing viable in a place with no fossil generation. Critical raw materials is stated outright. Put together, this is a plan to make Greenland's minerals extractable and its territory monitored, funded by an EU that has spent three years discovering how badly it needs non-Chinese sources of the inputs its industry runs on. The 25-of-34 figure is the reason Greenland is on any strategic map at all.</p>
+      <p>But the binding constraint on Greenlandic mining is not capital, it is economics and consent. Deposits have been identified for decades; very few have become mines. The reasons are the cost of operating with no roads between settlements, short ice-free shipping windows, a small labour force, and a domestic politics that has repeatedly rejected specific projects &mdash; the Kvanefjeld uranium-and-rare-earths deposit was effectively stopped by a Greenlandic election and a subsequent ban on uranium mining. &euro;200 million funds enabling infrastructure. It does not resolve whether Greenlanders want the mines, and nothing signed on Monday changes who decides that.</p>
+      <p>The sovereignty function is the real content. When the United States raises the possibility of acquiring territory belonging to a NATO ally, the ally's most effective available response is not military &mdash; Denmark cannot defend Greenland against the United States and everyone involved knows it. It is to make the territory's international status so thickly documented, so financially entangled with the European Union, and so publicly affirmed by heads of government standing next to each other in Nuuk, that acquisition would require repudiating a signed partnership with the entire EU rather than pressuring a country of six million. That is what a joint declaration signed by a Commission president, a prime minister and a premier is for. It converts a bilateral vulnerability into a bloc-level one.</p>
+      <p>Two things I could not stand up and am flagging rather than glossing. The Council of the EU published a document dated 7 September 2026 that appears to be the partnership text; it returned as unparseable binary in this environment, so everything above is drawn from reporting rather than from the instrument itself. And one summary of Frederiksen's remarks contained an obvious transcription error, so I have not quoted her at all. If the reader wants the actual commitments rather than the coverage of them, the Council document reference is ST-12802-2026-INIT.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.rte.ie/news/europe/2026/0907/1590522-eu-funding-greenland/">RT&Eacute;</a> &middot;
+    <a href="https://www.scmp.com/news/world/europe/article/3366565/eu-commission-chief-von-der-leyen-visits-greenland-sign-new-partnership-deal">South China Morning Post</a> &middot;
+    <a href="https://www.spokesman.com/stories/2026/sep/06/eu-to-give-greenland-a-cash-boost-amid-trump-annex/">The Spokesman-Review</a> &middot;
+    <a href="https://data.consilium.europa.eu/doc/document/ST-12802-2026-INIT/en/pdf">Council of the EU, ST-12802-2026-INIT (primary, unparseable here)</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="eu-greenland">
+      <p>This is US&ndash;EU policy filed as a Greenland story. Want more of this angle?</p>
+      <label><input type="radio" name="fb-grn-1" value="more"> More</label>
+      <label><input type="radio" name="fb-grn-1" value="current"> About right</label>
+      <label><input type="radio" name="fb-grn-1" value="less"> Less</label>
+    </div>
+    <div class="q" data-sid="eu-greenland">
+      <p>Follow the critical-raw-materials angle as its own thread?</p>
+      <label><input type="radio" name="fb-grn-2" value="follow"> Yes, watchlist it</label>
+      <label><input type="radio" name="fb-grn-2" value="only-projects"> Only if a real project moves</label>
+      <label><input type="radio" name="fb-grn-2" value="drop"> Drop it</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="missouri-kavanaugh">
+  <h3>Missouri's map ran out of runway today, and the deadline nobody agrees on is tomorrow or Wednesday <a class="anchor" href="#missouri-kavanaugh">#</a></h3>
+  <div class="meta">
+    <span class="tag">US politics &amp; policy</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+    <span class="tag">Follow-up</span>
+  </div>
+  <p>The response Justice Kavanaugh ordered was due at noon Eastern today &mdash; on Labor Day, which is the tell. He directed Richard von Glahn of People Not Politicians, the referendum campaign, to answer Missouri's emergency application by then, and the fact that he set a federal holiday deadline is the clearest available signal that the Court intends to move before ballots print rather than let the clock decide.</p>
+  <p>Two new details sharpen <a href="2026-09-06.html#missouri-scotus">yesterday's account</a>. First, Missouri's own state-law cutoff for changes to the November ballot falls this week &mdash; which compresses the timeline far more than the 19 September overseas-ballot mailing date I emphasised yesterday. Second, the state's Elections Clause argument now has a specific shape: Solicitor General Louis Capozzi frames it as whether 3.3 per cent of a state's voters can suspend a congressional map by filing a referendum petition, and separately argues the state court disenfranchised hundreds of thousands of voters by returning them to old districts.</p>
+  <p>Legal observers quoted in Missouri coverage still expect Kavanaugh to deny the stay, on the ground that federal courts have limited authority over state election procedure. That was my read yesterday and it has not changed.</p>
+  <p><b>What to watch:</b> an order from Kavanaugh alone, or a referral to the full Court, before the state cutoff passes.</p>
+  <div class="divergence">
+    <strong>Divergence &mdash; when is the state deadline?</strong>
+    <p>SCOTUSblog describes Kavanaugh's Monday noon deadline as falling one day before the state-law cutoff for finalising November ballot changes, which puts that cutoff on Tuesday 8 September. Missouri public-radio coverage gives Wednesday 9 September. One day is not a rounding error when the entire application is built on timing, and I could not resolve it against the statute itself. Treat the cutoff as this week and do not rely on the specific date. If the Court acts, it will almost certainly act before either.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.scotusblog.com/2026/09/missouri-urges-supreme-court-to-allow-for-use-of-congressional-map-expected-to-aid-republicans/">SCOTUSblog</a> &middot;
+    <a href="https://www.kcur.org/politics-elections-and-government/2026-09-07/missouri-redistricting-lawsuit-referendum-november-supreme-court">KCUR</a> &middot;
+    <a href="https://missouriindependent.com/2026/09/06/looming-ballot-deadline-complicates-gop-appeal-of-missouri-redistricting-decision/">Missouri Independent</a> &middot;
+    <a href="https://www.stlpr.org/government-politics-issues/2026-09-05/republican-officials-ask-us-supreme-court-to-overturn-missouri-redistricting-ruling">STLPR</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="missouri-kavanaugh">
+      <p>Yesterday this ran long with a doctrinal expansion; today it's 250 words and no expansion because there was less to say. Is that variation good?</p>
+      <label><input type="radio" name="fb-mo2-1" value="yes"> Yes &mdash; length should track substance</label>
+      <label><input type="radio" name="fb-mo2-1" value="consistent"> I'd rather each story were consistent</label>
+      <label><input type="radio" name="fb-mo2-1" value="no-opinion"> No opinion</label>
+    </div>
+    <div class="q" data-sid="missouri-kavanaugh">
+      <p>Cadence from here?</p>
+      <label><input type="radio" name="fb-mo2-2" value="only-orders"> Only when the Court acts</label>
+      <label><input type="radio" name="fb-mo2-2" value="every-filing"> Every filing</label>
+      <label><input type="radio" name="fb-mo2-2" value="stop"> Stop following</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="krakatau-jakarta">
+  <h3>Krakatau's disruption is not 301 flights, it is 2,300, and Jakarta's schools went remote today <a class="anchor" href="#krakatau-jakarta">#</a></h3>
+  <div class="meta">
+    <span class="tag">Science &amp; public health</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+    <span class="tag">Follow-up</span>
+  </div>
+  <p>The Jakarta provincial government moved all public and private schools at every level to remote learning from Monday until further notice, citing children's vulnerability to volcanic ash. Several Indonesian airports remain closed. InJourney Airports, which runs four of the affected airports, puts cumulative disruption at about 2,300 flights and 268,539 passengers.</p>
+  <p>Anak Krakatau's continuous eruption &mdash; which began late on 4 September, produced lava fountains and a detonation audible 700 kilometres away &mdash; ran for 25 hours and ended on Sunday. The volcano remains at alert level III of Indonesia's four, with moderate intermittent eruptions, dark ash emissions and small local earthquakes continuing on Monday. Seismicity has fallen sharply, but the geological agency warns it remains highly active and could erupt again.</p>
+  <p><b>What to watch:</b> whether the alert level moves in either direction, when Jakarta schools reopen, and whether ash returns to cruise altitudes rather than terminal airspace.</p>
+  <div class="correction">
+    <strong>Scale correction to yesterday's issue</strong>
+    <p><a href="2026-09-06.html#krakatau">Yesterday I reported 301 flights and more than 22,000 passengers</a>, attributed to Angkasa Pura. That figure was a single operator's snapshot of one day. The running total across the four InJourney airports is 2,300 flights and 268,539 passengers &mdash; an order of magnitude larger. The 301 number was not wrong when I published it; it was far narrower than the sentence around it implied, and I should have said so. I also wrote that the ash cloud reaching 50,000 feet made cruise-altitude disruption the scenario to watch. The disruption arrived as sustained terminal closures instead, which is the cheaper of the two, and the schools order is a public-health consequence I did not anticipate.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://en.tempo.co/read/2119059/jakarta-shifts-to-remote-learning-over-anak-krakatau-ash">Tempo on the schools order</a> &middot;
+    <a href="https://www.euronews.com/2026/09/07/volcano-in-indonesia-erupts-canceling-hundreds-of-flights-and-stranding-thousands">Euronews</a> &middot;
+    <a href="https://abcnews.com/Technology/wireStory/indonesia-airports-closed-volcanic-eruption-easing-136248926">AP via ABC News</a> &middot;
+    <a href="https://asianews.network/jakarta-airport-closure-extended-as-anak-krakatau-volcano-eruption-disrupts-flights/">Asia News Network</a> &middot;
+    <a href="https://id.usembassy.gov/natural-disaster-alert-mt-anak-krakatau-eruption-september-6-2026/">US Embassy Jakarta alert</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="krakatau-jakarta">
+      <p>I corrected the scale of my own figure at the top. Want that surfaced this prominently?</p>
+      <label><input type="radio" name="fb-krak2-1" value="prominent"> Yes, keep it prominent</label>
+      <label><input type="radio" name="fb-krak2-1" value="footnote"> A footnote is enough</label>
+      <label><input type="radio" name="fb-krak2-1" value="no-opinion"> No opinion</label>
+    </div>
+    <div class="q" data-sid="krakatau-jakarta">
+      <p>No expansion on this one &mdash; the volcanology ran yesterday and repeating it would be padding. Agree?</p>
+      <label><input type="radio" name="fb-krak2-2" value="agree"> Agree</label>
+      <label><input type="radio" name="fb-krak2-2" value="always-expand"> I'd rather every story had one</label>
+      <label><input type="radio" name="fb-krak2-2" value="no-opinion"> No opinion</label>
+    </div>
+  </fieldset>
+</article>
+
+<h2 class="section">Florida &amp; Tampa Bay</h2>
+
+<article id="fl-dem-money">
+  <h3>Florida's emergency management division has spent 70 per cent of its year in ten weeks, at the peak of hurricane season <a class="anchor" href="#fl-dem-money">#</a></h3>
+  <div class="meta">
+    <span class="tag">Florida</span>
+    <span class="tag conf single">Single-sourced</span>
+  </div>
+  <p>The Florida Division of Emergency Management has asked the Legislature for another $250 million to pay contractors who built and ran the state's immigration detention facilities, including the Everglades site known as Alligator Alcatraz. The division has spent close to 70 per cent of its budget for the fiscal year that began 1 July &mdash; roughly ten weeks in. A budget analyst for the Joint Legislative Budget Commission recorded the division's own finding that there is insufficient budget authority in the relevant categories to process payments.</p>
+  <p>Behind the request sits a larger hole. Florida's emergency managers still owe more than $600 million to those contractors. The state has sought and been awarded federal reimbursement in the region of $608 million for the facility, and a federal judge has ordered the site shut down, with reporting putting potential unrecovered state costs at around $218 million.</p>
+  <p>Representative Anna Eskamani said the division has not accounted for what it has already spent and is asking for more, calling it absurd.</p>
+  <p>The reason this belongs in a Tampa Bay brief rather than a Tallahassee one: this is the agency that funds county emergency operations, debris removal and post-storm reimbursement for Pasco, Pinellas and Hillsborough, and the statistical peak of the Atlantic hurricane season is 10 September.</p>
+  <details>
+    <summary>Dig deeper &mdash; what &ldquo;budget authority&rdquo; means here, and why the timing is the risk</summary>
+    <div class="deeper">
+      <p>The technical phrase is doing real work. &ldquo;Insufficient budget authority in requisite categories&rdquo; does not mean the state has no money; Florida's general revenue position is not the issue. It means the Legislature appropriated funds to specific categories and the division has exhausted the categories it can lawfully pay these invoices from. The remedy is a budget amendment through the Joint Legislative Budget Commission, a body of House and Senate members that can move money between categories between sessions. That is a low-visibility process by design, and it is how large sums get reallocated in Florida without a floor vote.</p>
+      <p>The reason to care about the mechanism is that it determines who is accountable. A JLBC amendment is not the Legislature debating whether the immigration detention programme was worth $600 million. It is a technical vote on whether to let the agency pay bills it has already incurred, which is a very difficult vote to cast against &mdash; the contractors did the work. This is the standard shape of appropriations pressure: commit the spending first, seek the authority afterwards, and present the legislature with a choice between ratifying and stiffing vendors. Eskamani's objection is precisely that the accounting for the first tranche has not been produced, and without it the commission is being asked to approve the next tranche blind.</p>
+      <p>Now the timing, which is the part that should concern anyone in Pasco or Pinellas. The Division of Emergency Management is not primarily an immigration agency. It is the state's hurricane agency: it runs the state emergency operations centre, administers the state's share of debris removal and emergency protective measures, and is the conduit through which FEMA public assistance reaches county governments and, eventually, local reimbursement. Consuming 70 per cent of its annual budget authority by early September &mdash; three days before the climatological peak of the season, with roughly two months of meaningful risk remaining &mdash; means that if a storm makes landfall on this coast in the next eight weeks, the response will be funded through emergency amendments and a Governor's executive order rather than through appropriations already in place.</p>
+      <p>That is not the same as saying the response would fail. Florida has never lacked the ability to move money after a storm, and a declared emergency unlocks both state transfers and federal cost-share. But there is a difference between an agency entering peak season with its authority intact and one entering it already in deficit and already asking. It compresses the margin, it makes every subsequent request a negotiation, and it puts a county emergency manager in Pasco in the position of billing a state agency that is behind on $600 million of other invoices.</p>
+      <p>Marked <em>Single-sourced</em>: the $250 million request and the 70 per cent figure trace to one Florida statehouse reporting operation as carried by public radio. The related $600 million outstanding, the $608 million federal award and the shutdown order are separately reported and independently sourced. I could not reach the Joint Legislative Budget Commission's own agenda to verify the request as filed, and the reader should treat the two specific numbers in the first paragraph as un-corroborated until a second newsroom carries them.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.wfit.org/podcast/local-state-news/2026-09-07/wfit-local-state-news-september-7-2026-am">WFIT state news bulletin, 7 September</a> &middot;
+    <a href="https://www.islandernews.com/news/florida/florida-owes-603-million-on-alligator-alcatraz-contracts/article_8f3c1018-d462-4204-abc9-31a337eab9a0.html">Islander News on the $603m outstanding</a> &middot;
+    <a href="https://www.cbsnews.com/amp/miami/news/trump-awards-florida-608-million-for-alligator-alcatraz-amid-environmental-lawsuit-battle">CBS Miami on the federal award</a> &middot;
+    <a href="https://www.pbs.org/newshour/nation/florida-taxpayers-may-lose-218m-on-alligator-alcatraz-as-judge-orders-shutdown">PBS NewsHour on the shutdown order</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="fl-dem-money">
+      <p>Is state-level Florida budget mechanics the right use of the local slot?</p>
+      <label><input type="radio" name="fb-dem-1" value="yes"> Yes &mdash; it reaches Pasco and Pinellas</label>
+      <label><input type="radio" name="fb-dem-1" value="closer"> Keep it closer to home</label>
+      <label><input type="radio" name="fb-dem-1" value="no-opinion"> No opinion</label>
+    </div>
+    <div class="q" data-sid="fl-dem-money">
+      <p>Follow the Joint Legislative Budget Commission decision?</p>
+      <label><input type="radio" name="fb-dem-2" value="follow"> Yes, watchlist it</label>
+      <label><input type="radio" name="fb-dem-2" value="storm-only"> Only if a storm makes it matter</label>
+      <label><input type="radio" name="fb-dem-2" value="drop"> Drop it</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="fl-vaccine-rule">
+  <h3>The state is one week from making four childhood vaccines optional for school, by rule rather than by law <a class="anchor" href="#fl-vaccine-rule">#</a></h3>
+  <div class="meta">
+    <span class="tag">Florida</span>
+    <span class="tag">Science &amp; public health</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+  </div>
+  <p>Surgeon General Joseph Ladapo approved a proposed Department of Health rule on 20 August that would remove hepatitis B, varicella, <em>Haemophilus influenzae</em> type b and pneumococcal conjugate vaccines from Florida's requirements for public and private school and daycare attendance. The rule also broadens the religious exemption to cover moral and ethical beliefs, and lets parents and college students keep their records out of the state immunisation registry. The public comment period runs to around 14 September, after which the rule can be finalised.</p>
+  <p>The route matters as much as the content. Florida's remaining school vaccine requirements &mdash; measles, polio and others &mdash; are written into statute, and legislators declined to introduce repeal bills in the 2026 sessions despite DeSantis and Ladapo asking for it in September 2025. This rule does administratively what the Legislature would not do legislatively, and it reaches exactly the four vaccines that sit in rule rather than in law.</p>
+  <p>Florida has recorded 142 measles cases this year, fifth-highest of any state &mdash; a disease the rule does not touch. The Florida Chapter of the American Academy of Pediatrics has filed formal opposition. The issue is live in the governor's race: Republican candidate Byron Donalds says he wants to study repeal before committing; Democratic nominee David Jolly's campaign has pledged to remove Ladapo.</p>
+  <p><b>What to watch:</b> the close of comment around 14 September, whether a public hearing is granted, whether the rule is adopted as drafted, and any legal challenge.</p>
+  <details>
+    <summary>Dig deeper &mdash; which four, why these four, and what the exemption change does that the repeal does not</summary>
+    <div class="deeper">
+      <p>Look at the specific list, because it is not arbitrary and it is not the list a public-health argument would produce. Hepatitis B is given at birth and prevents a chronic infection that causes liver cancer decades later; the school requirement is a backstop for children who missed the birth dose. Hib vaccination all but eliminated a bacterium that was the leading cause of childhood bacterial meningitis in the pre-vaccine era, with a case-fatality rate around 5 per cent and permanent neurological damage in a substantial fraction of survivors. Pneumococcal conjugate prevents invasive disease in the under-fives. Varicella prevents chickenpox, which is usually mild and occasionally is not. What unites them is not that they are low-value. It is that all four sit in Department of Health rule rather than in statute, which is to say the list was assembled by what the executive could reach, not by any assessment of risk.</p>
+      <p>The herd-immunity structure differs across the four in a way that changes what repeal means. Hib and pneumococcal vaccination work substantially through reducing nasopharyngeal carriage, so falling coverage raises risk for infants too young to be vaccinated and for immunocompromised children who cannot be &mdash; the harm lands on people who never made a choice. Hepatitis B is bloodborne and transmission in a school setting is rare, so the individual-protection case is stronger than the community one. Varicella sits in between. A serious argument for changing the requirements would engage with those differences. Removing all four in one rule does not.</p>
+      <p>The exemption change may matter more than the removals, and it has drawn less attention. Broadening the religious exemption to include &ldquo;moral or ethical beliefs&rdquo; effectively converts a narrow exemption into a personal-belief exemption, which applies to <em>every</em> remaining requirement including the statutory ones for measles and polio. States that have adopted personal-belief exemptions have generally seen exemption rates rise and coverage fall, and the effect concentrates geographically &mdash; it does not spread evenly, it clusters, and clusters are what outbreaks need. Letting families opt out of the immunisation registry compounds it by degrading the data public health departments use to find undervaccinated pockets before an outbreak rather than after.</p>
+      <p>Which brings the 142 measles cases into focus. Measles is the most transmissible of these diseases and requires roughly 95 per cent coverage to prevent sustained transmission. Its school requirement is statutory and survives this rule untouched. But the exemption broadening applies to it, so the rule can lower measles coverage without ever mentioning measles. Florida already has the fifth-highest case count in the country. That is the mechanism by which a rule about four other vaccines becomes a measles story.</p>
+      <p>For Pasco and Pinellas specifically, the number to want is county-level kindergarten coverage and exemption rates, which the Department of Health publishes annually. I could not retrieve current county figures this run. If the rule is adopted, those two series are the ones that will show whether it changed behaviour, and they are worth asking for by county rather than reading at state level, because state averages hide exactly the clustering that matters.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.wusf.org/politics-issues/2026-09-01/public-can-weigh-in-on-floridas-proposal-to-make-4-vaccines-optional-in-schools-daycares">WUSF on the comment period</a> &middot;
+    <a href="https://news.wfsu.org/state-news/2026-08-25/florida-seeks-to-repeal-four-vaccines-from-school-entry-requirements">WFSU</a> &middot;
+    <a href="https://www.fox13news.com/news/florida-proposes-dropping-4-vaccines-from-school-entry-requirements">FOX 13 Tampa Bay</a> &middot;
+    <a href="https://www.fcaap.org/posts/news/press-releases/8-2026rule/">Florida Chapter, American Academy of Pediatrics &mdash; formal response</a> &middot;
+    <a href="https://www.nbcnews.com/news/us-news/floridas-plan-drop-school-vaccine-rule-wont-cover-diseases-rcna229748">NBC News on what the rule does not cover</a> &middot;
+    <a href="https://www.wfit.org/podcast/local-state-news/2026-09-07/wfit-local-state-news-september-7-2026-am">WFIT on the governor's race and the measles count</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="fl-vaccine-rule">
+      <p>Follow this to the rule's adoption?</p>
+      <label><input type="radio" name="fb-vax-1" value="follow"> Yes, watchlist it</label>
+      <label><input type="radio" name="fb-vax-1" value="adoption-only"> Only if it's adopted</label>
+      <label><input type="radio" name="fb-vax-1" value="drop"> Drop it</label>
+    </div>
+    <div class="q" data-sid="fl-vaccine-rule">
+      <p>I argued the exemption change matters more than the four removals. Is that the kind of call you want me making?</p>
+      <label><input type="radio" name="fb-vax-2" value="yes"> Yes &mdash; tell me what's load-bearing</label>
+      <label><input type="radio" name="fb-vax-2" value="facts"> Just lay out the rule</label>
+      <label><input type="radio" name="fb-vax-2" value="no-opinion"> No opinion</label>
+    </div>
+    <div class="q" data-sid="fl-vaccine-rule">
+      <p>Should I chase county-level Pasco and Pinellas vaccination data for a follow-up?</p>
+      <label><input type="radio" name="fb-vax-3" value="yes"> Yes</label>
+      <label><input type="radio" name="fb-vax-3" value="state-level"> State level is fine</label>
+      <label><input type="radio" name="fb-vax-3" value="no-opinion"> No opinion</label>
+    </div>
+  </fieldset>
+</article>
+
+<button id="send">Send my feedback &rarr;</button>
+<p id="sendnote">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+
+<footer>
+  <h4>Threads swept, no trigger fired</h4>
+  <p>The watchlist opened on 5 September, so nothing is old enough to be formally dormant. Each of these was checked against its wake trigger this run.</p>
+  <ul>
+    <li><b>Ukraine&ndash;Russia negotiations</b> &mdash; swept, held out of the body deliberately. Zelensky met the negotiating team after Sunday's Kyiv talks, called for a resumption of trilateral negotiations, and discussed air defence and a winter package; the Kremlin said it does not rule the format out. But Dmitry Peskov specifically declined to say how the Witkoff&ndash;Kushner proposals differ from the 2025 Anchorage understandings. My stated trigger was a document either side would describe, or something surviving the 8 September expiry. Neither happened. Reaction to Sunday is not movement.</li>
+    <li><b>Fed September decision</b> &mdash; US markets were closed for Labor Day. Wakes on the 11 September CPI print and the 16 September FOMC statement.</li>
+    <li><b>US fuel prices</b> &mdash; wakes on the EIA weekly print due Tuesday 8 September, the first official reading that could contain the alleged $5.85 diesel record. Brent at $97 makes that print more interesting than it was on Friday.</li>
+    <li><b>Gulf states &amp; Article 51</b> &mdash; no movement. Wakes on Kuwait or the UAE restricting US use of the bases Iran struck, or a collective GCC statement.</li>
+    <li><b>USPS mail ballot rule</b> &mdash; no order. Responses to application 26A297 are due at 10am on 8 September per Justice Jackson; the district court TRO expires 10 September.</li>
+    <li><b>Birthright citizenship order</b> &mdash; no appeal filed to the Fourth Circuit and no emergency application to the Supreme Court.</li>
+    <li><b>AI gated-capability tiers</b> &mdash; no published tier criteria or access list for the restricted cyber tiers shipped alongside the recent frontier releases, and no regulator has demanded them.</li>
+    <li><b>UAP disclosure implementation</b> &mdash; ODNI's detailed implementing guidance has not appeared. The House Oversight declassification task force hearing is set for 9 September.</li>
+    <li><b>AARO records contract</b> &mdash; no award notice on sam.gov, no public tranche from the NUFOHRC collection.</li>
+    <li><b>Bank stablecoin consortium</b> &mdash; no JPMorgan statement, no GENIUS Act licence, no consortium entity formed. Recent trade coverage describes a considerably larger bank grouping than the six I reported on 5 September, with JPMorgan pursuing tokenised deposits through The Clearing House instead. I could not date that reporting precisely enough to correct the earlier figure, so I am flagging it rather than restating it. Licensing opens 18 January 2027.</li>
+    <li><b>Central bank gold custody</b> &mdash; no further disclosure, no Bundesbank or Banca d'Italia comment.</li>
+    <li><b>Autonomous weapons regulation</b> &mdash; no corroboration of the &ldquo;diluted in the final hours&rdquo; claim from any newsroom other than Reuters, and no agreed definition text published. Review Conference 16&ndash;20 November.</li>
+    <li><b>Indonesia free-meals programme (MBG)</b> &mdash; no laboratory results, no suspension, no budget change.</li>
+    <li><b>Tampa Bay dengue</b> &mdash; the week-35 arbovirus report returned 404 at two further URL patterns today, making three days running. The thread stays out of the body rather than recycling week-34 numbers a third time.</li>
+    <li><b>Florida Amendment 3</b> &mdash; the Attorney General's revised ballot title and summary has still not been published.</li>
+    <li><b>Waymo Tampa Bay</b> &mdash; no service-area expansion into Pinellas or Pasco, no published incident data.</li>
+  </ul>
+  <h4>Threads opened today</h4>
+  <ul>
+    <li><b>Saxony-Anhalt government formation</b> &mdash; wakes on a Minister-President vote in the Landtag, a coalition agreement, or fresh elections.</li>
+    <li><b>Miami 767 overrun</b> &mdash; wakes on the NTSB preliminary report or recorder readout, or FAA action against 21 Air.</li>
+    <li><b>Nepal&ndash;Tibet glacial flood and Loss and Damage</b> &mdash; wakes on a Loss and Damage Fund board decision on Nepal's request, the search being called off, or the missing being converted to presumed dead.</li>
+    <li><b>Israel&ndash;Lebanon June framework</b> &mdash; wakes on formal abandonment of the framework, an Israeli withdrawal from a pilot zone, or Hezbollah action beyond drone launches.</li>
+    <li><b>EU&ndash;Greenland partnership</b> &mdash; wakes on a US response, or the &euro;530 million surviving or failing the 2028&ndash;34 budget negotiation.</li>
+    <li><b>Florida school vaccine rule</b> &mdash; wakes on the close of comment around 14 September, adoption, or a legal challenge.</li>
+    <li><b>Florida emergency management funding</b> &mdash; wakes on a Joint Legislative Budget Commission decision on the $250 million request.</li>
+  </ul>
+  <h4>Sources I could not reach</h4>
+  <ul>
+    <li>CNN returned HTTP 451 again, so the Saxony-Anhalt result was built from Wikipedia's preliminary results table cross-checked against CBS, NPR and Euronews, and the Nepal warning-signs reporting is cited but was read only through other outlets' summaries.</li>
+    <li>Malay Mail and the Jakarta Globe both returned 403 for the Krakatau follow-ups; the figures used come from Tempo, Euronews and AP instead.</li>
+    <li>The Council of the EU's Greenland partnership document ST-12802-2026-INIT returned as unparseable binary. The Greenland story is therefore built on reporting, not on the instrument.</li>
+    <li>The Florida DOH week-35 arbovirus PDF returned 404 at two more URL patterns, and the department's surveillance index page does not list a current report.</li>
+    <li>Reuters remains unreachable from this environment entirely.</li>
+  </ul>
+  <h4>About this issue</h4>
+  <ul>
+    <li>Scheduled edition for 7 September 2026, produced unattended. Roughly 38 searches and fetches.</li>
+    <li>Ten stories cleared: eight on the national bar, two on the Florida bar. Three are follow-ups, under the cap of four; five lead stories are on no existing thread, above the floor of three.</li>
+    <li>Two of the ten carry no &ldquo;Dig deeper&rdquo; expansion, because there was not 500 words of new substance to put in one. That is the rule working, not an omission.</li>
+    <li>No US financials or markets story: it was Labor Day and US markets were shut.</li>
+    <li>Everything drawn from a non-English source is paraphrase, never quotation. Every quotation here is under fifteen words and attributed; everything else is paraphrase.</li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    var sets = {};
+    document.querySelectorAll("fieldset .q").forEach(function (q) {
+      var sid = q.getAttribute("data-sid");
+      var input = q.querySelector("input:checked");
+      var prompt = q.querySelector("p") ? q.querySelector("p").textContent.trim() : "";
+      if (!input) return;
+      answered++;
+      if (!sets[sid]) sets[sid] = [];
+      sets[sid].push("- " + prompt + "\n  → **" + input.value + "**");
+    });
+    if (!answered) {
+      alert("Nothing selected yet — pick at least one answer, then send.");
+      return;
+    }
+    lines.push("Feedback on **Issue No. 3 — 7 September 2026**");
+    lines.push("");
+    Object.keys(sets).forEach(function (sid) {
+      lines.push("### `" + sid + "`");
+      lines.push(sets[sid].join("\n"));
+      lines.push("");
+    });
+    lines.push("---");
+    lines.push("_Anything else you want more or less of:_");
+    lines.push("");
+    var url = "https://github.com/" + OWNER + "/" + REPO + "/issues/new"
+      + "?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-09-07")
+      + "&body=" + encodeURIComponent(lines.join("\n"));
+    window.open(url, "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
