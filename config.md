@@ -96,5 +96,7 @@ their own merits.
 | EU–Greenland partnership | active | A US response to the 7 Sep Nuuk signing; whether the €530m survives the 2028–34 MFF negotiation; any actual critical-minerals project reaching a decision | 2026-09-07 (new) |
 | Florida school vaccine rule | active | Close of comment ~14 Sep; whether a public hearing is granted; adoption as drafted; any legal challenge. The broadened "moral or ethical" exemption applies to the statutory measles and polio requirements too. | 2026-09-07 (new) |
 | Florida emergency management funding | active | Joint Legislative Budget Commission action on the $250m request; accounting for the ~70% of FY26-27 budget already spent; any storm landfall that tests it | 2026-09-07 (new) |
+| JLR restructuring & European autos | active | Close of the voluntary redundancy window 4 Oct; compulsory notices; outcome of the Reynolds meeting; whether cash break-even actually reaches 300,000 units by FY27; any reprofiling of the £15–18bn investment line | 2026-09-07 (new) |
+| Acton attack prosecution | active | Tuesday 8 Sep arraignment and whether the two felony assault counts survive it; any charge added relating to the weapons or to Acton herself; the Ohio State Highway Patrol threat assessment; a change in candidate security posture before November | 2026-09-07 (new) |
 
 *Dormancy note: the 6-month dormancy clock has not expired for any thread — this watchlist opened 5 September 2026. "No movement" means swept and no trigger fired.*
