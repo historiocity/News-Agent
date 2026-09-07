@@ -8,17 +8,47 @@ permanent — the point is that it's cheap to change.
 Candidate pool, not a daily quota. Stories compete on merit; a beat with nothing
 worth saying simply doesn't appear.
 
+**Weighting (set 7 Sep 2026 after the reader judged that issue's first edition badly
+off the mark).** The beats marked **Core** below are why this brief exists. They lead
+the issue and they get the benefit of the doubt in a close call. Everything else is
+secondary and has to earn its slot against them — see *Altitude bar*.
+
 | Beat | Scope |
 |---|---|
-| AI & tech industry | Model releases, agent tooling, the business and policy fights around them |
-| Macro & markets | Fed path, inflation, employment, market-moving earnings |
-| World economy | US, EU, China, Middle East — **especially US policy toward and interaction with each** |
-| US financials | Top US banks, asset managers, payments. JPMorgan and its direct competitors get standing attention |
-| US politics & policy | Legislation, courts, regulation. Substance only |
-| Geopolitics | Conflicts and rivalries with real second-order consequences |
+| **Core** — AI & tech industry | Model releases, agent tooling, capex and the physical constraints on it, the business and policy fights around them |
+| **Core** — Macro & markets | Fed path, rates, inflation, employment, market-moving earnings |
+| World economy | US, EU, China, Middle East — **only through the lens of US policy toward and interaction with each** |
+| **Core** — US debt & fiscal | Deficit, Treasury issuance and buybacks, debt service, CBO projections, the long end of the curve |
+| **Core** — US financials | Top US banks, asset managers, payments. JPMorgan and its direct competitors get standing attention |
+| **Core** — US politics & policy | Legislation, courts, regulation. Substance only |
+| Geopolitics | Conflicts and rivalries with real second-order consequences **for the US**. A foreign conflict with no US channel is not this brief's business |
 | Science & public health | Research that changes how something works |
-| UAP disclosure | Government disclosure, credible releases, new imagery from state or public sources. Lumpy cadence — appears when something real happens |
+| **Core** — UAP disclosure | Government disclosure, implementing guidance, credible releases, new imagery from state or public sources. Track the paperwork, not just the imagery |
+| Energy & grid | Generation, transmission, interconnection, transformers, retail power prices. Added 7 Sep 2026 — it is where AI capex becomes a household bill |
 | *Wildcard* | **Unset — tell the skill what this is** |
+
+## Altitude bar
+
+*Set 7 Sep 2026, from reader feedback on that day's first edition.*
+
+The failure being corrected: the brief filled with foreign spot news — a European
+election, a volcano's flight disruption, a foreign carmaker's redundancies, a local
+arrest — while the Fed, the debt, AI and UAP got a single line each in a footer
+marked "no movement". Accurate reporting, wrong altitude.
+
+Three rules follow from it:
+
+1. **A Core beat with a scheduled catalyst inside two weeks is a story, even with no
+   new fact today.** An FOMC meeting nine days out, a CPI print, a filing deadline, a
+   Treasury operation — these belong in the body, labelled *Where things stand*, not
+   swept into the footer. The movement-only rule governs watchlist *threads*; it must
+   never be the reason a Core beat is absent from the issue.
+2. **Foreign stories need a US channel.** Ask what changes for this reader. A price
+   they pay, a rate they borrow at, a policy their government must answer, a company
+   they own. If the answer is "it is interesting", it does not run.
+3. **Disruption is not consequence.** Cancelled flights, a factory's headcount, a
+   single arrest — these are events, not developments, unless something structural
+   moves behind them.
 
 ## Local section
 
@@ -41,6 +71,10 @@ national one. Leave the name blank to omit the section entirely.
 - Personnel churn with no policy effect
 - Product launches that are only marketing
 - "New study finds" pieces with no accessible study
+- Foreign corporate restructuring with no US channel *(added 7 Sep 2026)*
+- Natural-disaster disruption — flights, closures, transit — with no US effect *(added 7 Sep 2026)*
+- Individual acts of political violence with no policy consequence *(added 7 Sep 2026)*
+- Foreign elections, unless the result changes a US relationship *(added 7 Sep 2026)*
 
 ## Sources
 
@@ -73,16 +107,16 @@ their own merits.
 | Ukraine–Russia negotiations | active | Whether anything survives the 8 Sep expiry of the reciprocal capital-strike pause; a text either side will describe; a front-line ceasefire beyond the two capitals. Not commentary — Peskov declined on 7 Sep to say how the Witkoff proposals differ from Anchorage. | 2026-09-06 (no movement 7 Sep) |
 | Hormuz closure & EU energy response | active | Whether Iran publishes coordinates for the "restricted zone" announced 7 Sep; whether the Iran–Oman corridor is actually signed and whether Muscat confirms; daily Hormuz transit counts holding in single digits off the ~10/day Kpler average; SPR level below 290 mb; EU price-cap decision | 2026-09-07 |
 | Gulf states & Article 51 | active | Kuwait or the UAE restricting US use of the bases struck; a collective GCC statement rather than individual condemnations | 2026-09-05 |
-| Fed September decision | active | 11 Sep CPI print; 16 Sep FOMC statement. Post-Aug-payrolls the live question is a hike, not the size of a cut. | 2026-09-06 |
+| Fed September decision | active | 11 Sep CPI print; 16 Sep statement, dot plot and dissent column. The live question is a hike, not the size of a cut. Also: whether any official dissents *against* a hike, which would make the independence argument concrete. | 2026-09-07 (in body) |
 | US fuel prices | active | The 8 Sep EIA weekly print, the first official reading that can contain the alleged $5.85 record; distillate stock builds | 2026-09-05 |
 | Missouri congressional map | active | An order from Justice Kavanaugh alone or a referral to the full Court; the state-law ballot-change cutoff this week (sources give 8 or 9 Sep); the 19 Sep overseas-ballot mailing date; the state's requested 14 Sep resolution date; ballot-access or residency litigation over nominees from the voided primaries | 2026-09-07 |
 | Autonomous weapons regulation | active | CCW Seventh Review Conference, 16–20 Nov 2026: negotiate / extend / lapse. Publication of the agreed definition text. Corroboration of the "diluted in the final hours" claim from a newsroom other than Reuters. | 2026-09-06 (new) |
 | Indonesia free-meals programme (MBG) | active | Lab results identifying the pathogen; suspension of distribution in affected provinces; any change to the 2027 budget line | 2026-09-06 (new) |
-| Anak Krakatau | active | Movement off alert level III in either direction; Jakarta schools reopening; ash affecting cruise-altitude airways rather than terminal airspace; any tsunami advisory | 2026-09-07 |
+| Anak Krakatau | low priority | Demoted 7 Sep per reader feedback — flight disruption is not consequence. Returns to the body only on a fatality, a tsunami advisory, or US airline operations being affected. | 2026-09-07 (demoted) |
 | USPS mail ballot rule | active | Supreme Court order on application No. 26A297. Responses due 10am 8 Sep per Justice Jackson; TRO expiry 10 Sep | — (no movement 2026-09-06) |
 | Birthright citizenship order | active | Appeal filed to the Fourth Circuit, or emergency application to SCOTUS | — (no movement 2026-09-06) |
 | AI gated-capability tiers | active | Published tier criteria or an access list for GPT-6 Astra's restricted cyber capabilities, or a regulator demanding them | 2026-09-05 |
-| UAP disclosure implementation | active | ODNI's detailed implementing guidance, and whether it closes the contractor gap left by the 31 Jul preliminary guidance. House Oversight task force hearing 9 Sep. | 2026-09-05 |
+| UAP disclosure implementation | active | ODNI's detailed implementing guidance, and whether it closes the contractor gap left by the 31 Jul preliminary guidance; production of any of the 46 videos Luna named (DoW missed the April deadline); the next file tranche. **Corrected 7 Sep: there is no 9 Sep 2026 hearing — that date was carried forward from the 9 Sep 2025 hearing. The task force's 2026 UAP hearing was 25 Jun.** | 2026-09-07 (in body) |
 | AARO records contract | active | Award notice on sam.gov, or a public tranche drawing on the NUFOHRC collection | — (no movement 2026-09-06) |
 | Central bank gold custody | active | Another central bank discloses relocation, or Bundesbank / Banca d'Italia comment | — (no movement 2026-09-06) |
 | Bank stablecoin consortium | active | JPMorgan statement; first GENIUS Act licence; consortium entity formation; OCC final rules targeted Nov 2026 | — (no movement 2026-09-06) |
@@ -96,7 +130,9 @@ their own merits.
 | EU–Greenland partnership | active | A US response to the 7 Sep Nuuk signing; whether the €530m survives the 2028–34 MFF negotiation; any actual critical-minerals project reaching a decision | 2026-09-07 (new) |
 | Florida school vaccine rule | active | Close of comment ~14 Sep; whether a public hearing is granted; adoption as drafted; any legal challenge. The broadened "moral or ethical" exemption applies to the statutory measles and polio requirements too. | 2026-09-07 (new) |
 | Florida emergency management funding | active | Joint Legislative Budget Commission action on the $250m request; accounting for the ~70% of FY26-27 budget already spent; any storm landfall that tests it | 2026-09-07 (new) |
-| JLR restructuring & European autos | active | Close of the voluntary redundancy window 4 Oct; compulsory notices; outcome of the Reynolds meeting; whether cash break-even actually reaches 300,000 units by FY27; any reprofiling of the £15–18bn investment line | 2026-09-07 (new) |
-| Acton attack prosecution | active | Tuesday 8 Sep arraignment and whether the two felony assault counts survive it; any charge added relating to the weapons or to Acton herself; the Ohio State Highway Patrol threat assessment; a change in candidate security posture before November | 2026-09-07 (new) |
+
+| Treasury buybacks & debt service | active | The enlarged 9 Sep operation and what it takes down; the 30-year breaking either side of 5.2%; the 4 Nov refunding, when future buyback sizes are set; any TGA drawdown used to fund buybacks | 2026-09-07 (new) |
+| AI power & grid constraint | active | Hyperscaler capex guidance being reprofiled; a major project cancellation confirmed by a company or filing rather than an analyst; a state utility commission ruling on who pays for interconnection; federal action on transformer manufacturing capacity | 2026-09-07 (new) |
+| AI preemption litigation | active | The first DOJ AI Litigation Task Force case to produce a district court ruling; preemption language attaching to must-pass legislation; movement on the Blackwell export bill | 2026-09-07 (new) |
 
 *Dormancy note: the 6-month dormancy clock has not expired for any thread — this watchlist opened 5 September 2026. "No movement" means swept and no trigger fired.*

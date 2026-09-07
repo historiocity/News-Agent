@@ -120,38 +120,446 @@
               margin: 1.2rem 0 0.4rem; color: var(--muted); }
   footer ul { padding-left: 1.1rem; margin: 0; }
   footer li { margin: 0.25rem 0; }
+  .calibrate { border: 2px solid var(--accent); border-radius: 4px; padding: 1.1rem 1.15rem;
+               margin: 0 0 2.5rem; background: var(--box); }
+  .calibrate h2 { margin: 0 0 0.3rem; font-size: 1.05rem;
+                  font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
+  .calibrate .why { font-size: 0.85rem; color: var(--muted); margin-bottom: 0.9rem;
+                    font-family: -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.5; }
+  .calibrate fieldset { margin: 0 0 0.8rem; background: var(--bg); }
+  .calibrate fieldset:last-of-type { margin-bottom: 0; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); gap: 0.15rem 0.6rem; }
+  .grid label { display: block; font-weight: normal; cursor: pointer; line-height: 1.5; }
+  .keepdrop { display: grid; grid-template-columns: 1fr auto; gap: 0.3rem 0.7rem;
+              align-items: baseline; }
+  .keepdrop .t { font-weight: normal; line-height: 1.35; }
+  .keepdrop .c { white-space: nowrap; }
+  .keepdrop .c label { margin-right: 0.5rem; }
+  @media (max-width: 30rem) {
+    .keepdrop { grid-template-columns: 1fr; }
+    .keepdrop .c { margin-bottom: 0.4rem; }
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
 
 <header>
-  <div class="issue-no">The Brief · Issue No. 3</div>
+  <div class="issue-no">The Brief &middot; Issue No. 3 &middot; Third edition</div>
   <h1>Monday, 7 September 2026</h1>
-  <p class="dek">Iran answered the tanker strikes not with missiles but with a map: a &ldquo;restricted zone&rdquo; beyond Hormuz, and Brent at a six-week high. In Saxony-Anhalt the AfD took 43.8 per cent and finished three seats short of governing a German state. And a cargo 767 ran off a runway in Miami and killed people who were driving down a public road.</p>
-  <p class="provenance">Scheduled edition, no human in the loop. Config, watchlist and the 5 and 6 September issues all loaded. Roughly 38 searches and fetches. Ten stories cleared the national bar and two cleared the Florida bar. Three are follow-ups, under the cap of four. US markets were shut for Labor Day, so there is no markets story today and no US financials story. Several sources refused this environment — see the footer. <b>Amended at 15:20 UTC</b> in an interactive run: two stories the scheduled edition missed — Jaguar Land Rover and the attack on Amy Acton — were added at positions 9 and 10. Nothing else was changed.</p>
+  <p class="dek">The Fed is nine days from raising rates into a 4.1 per cent unemployment rate, and the President, the Vice President and the Treasury Secretary have all said publicly that it shouldn't. Treasury doubles its long-bond buybacks on Wednesday. The thing actually rationing AI build-out turns out to be high-voltage transformers. And the UAP disclosure order still has no implementing guidance behind it.</p>
+  <p class="provenance"><b>Re-edited after reader feedback.</b> The 05:00 edition led on the Strait of Hormuz, a German state election, a cargo aircraft overrun and a Himalayan flood, and carried nothing on the Fed, the debt, AI or UAP &mdash; the domestic beats this brief exists for. The reader's verdict was that the altitude was wrong, not that the reporting was. So the foreign and Florida stories stay; five US domestic stories have been added and now lead; and three that were below the bar &mdash; Jaguar Land Rover, Anak Krakatau's flight disruption, and the Canfield Fair arrest &mdash; have been removed. Fourteen stories, twelve national and two Florida. The calibration box below is new, and it is the most useful thing on this page: it exists so a miss like this gets caught in a day rather than a week. A correction to the UAP watchlist entry runs in story 5.</p>
 </header>
 
 <nav class="jump">
   <h2>In this issue</h2>
   <ol>
-    <li><a href="#hormuz-zone">Iran's answer to the tanker strikes is a line on a map, and it moved oil more than the missiles did</a></li>
-    <li><a href="#afd-sachsen-anhalt">The AfD won 43.8 per cent in Saxony-Anhalt and finished three seats short of a German state government</a></li>
-    <li><a href="#mia-767">A cargo 767 left the runway at Miami at 128 mph and killed people in cars on a public street</a></li>
-    <li><a href="#nepal-glacier">Nearly 6,000 people are dead or missing under a Himalayan glacier, and Nepal has sent the bill to the UN</a></li>
-    <li><a href="#lebanon-strikes">Israel killed eleven in south Lebanon, two of them medics, under a truce that is a truce in name only</a></li>
-    <li><a href="#eu-greenland">Brussels put &euro;200 million on the table in Nuuk, which is about eight per cent of Greenland's economy</a></li>
+    <li><a href="#fed-hike-pressure">The Fed is nine days from a hike, and the administration is leaning on Warsh in public</a></li>
+    <li><a href="#treasury-buybacks">Treasury doubles its long-bond buybacks on Wednesday, which tells you what the 30-year is doing</a></li>
+    <li><a href="#ai-transformers">What is rationing AI is not chips and not money &mdash; it is high-voltage transformers</a></li>
+    <li><a href="#ai-preemption">The federal plan to override state AI law is a litigation strategy, not a bill</a></li>
+    <li><a href="#uap-implementation">The UAP disclosure order exists; the records still don't</a></li>
     <li><a href="#missouri-kavanaugh">Missouri's map ran out of runway today, and the deadline nobody agrees on is tomorrow or Wednesday</a></li>
-    <li><a href="#krakatau-jakarta">Krakatau's disruption is not 301 flights, it is 2,300, and Jakarta's schools went remote today</a></li>
-    <li><a href="#jlr-4000">Jaguar Land Rover put a headcount on a savings target it announced months ago, and the number is 4,000 people</a></li>
-    <li><a href="#acton-canfield">An armed man charged the Democratic nominee for governor of Ohio, and the charges filed are for the bystanders he knocked down</a></li>
+    <li><a href="#hormuz-zone">Iran's answer to the tanker strikes is a line on a map, and it moved oil more than the missiles did</a></li>
+    <li><a href="#lebanon-strikes">Israel killed eleven in south Lebanon, two of them medics, under a truce that is a truce in name only</a></li>
+    <li><a href="#afd-sachsen-anhalt">The AfD won 43.8 per cent in Saxony-Anhalt and finished three seats short of a German state government</a></li>
+    <li><a href="#eu-greenland">Brussels put &euro;200 million on the table in Nuuk, which is about eight per cent of Greenland's economy</a></li>
+    <li><a href="#nepal-glacier">Nearly 6,000 people are dead or missing under a Himalayan glacier, and Nepal has sent the bill to the UN</a></li>
+    <li><a href="#mia-767">A cargo 767 left the runway at Miami at 128 mph and killed people in cars on a public street</a></li>
   </ol>
   <div class="sec">Florida &amp; Tampa Bay</div>
-  <ol start="11">
+  <ol start="13">
     <li><a href="#fl-dem-money">Florida's emergency management division has spent 70 per cent of its year in ten weeks, at the peak of hurricane season</a></li>
     <li><a href="#fl-vaccine-rule">The state is one week from making four childhood vaccines optional for school, by rule rather than by law</a></li>
   </ol>
 </nav>
+
+<section class="calibrate">
+  <h2>Is this the right altitude?</h2>
+  <p class="why">The first edition of this issue was well off the mark on selection, and nothing on the page let you say so except a free-text box at the bottom. This block is the fix. It asks about <em>what clears the bar</em>, not about how a story was written. Answer as much or as little as you like &mdash; it rides along with the per-story questions when you hit send.</p>
+
+  <fieldset>
+    <legend>Level</legend>
+    <div class="q" data-sid="CALIBRATION">
+      <p>Overall, is this issue pitched at the right level now?</p>
+      <label><input type="radio" name="cal-level" value="right"> About right</label>
+      <label><input type="radio" name="cal-level" value="still-too-low"> Still too low &mdash; more consequential stories</label>
+      <label><input type="radio" name="cal-level" value="too-abstract"> Too abstract &mdash; more concrete, dated events</label>
+    </div>
+    <div class="q" data-sid="CALIBRATION">
+      <p>US domestic versus foreign: what's the right split?</p>
+      <label><input type="radio" name="cal-split" value="us-only"> Basically all US</label>
+      <label><input type="radio" name="cal-split" value="mostly-us"> Mostly US, foreign only where it hits the US</label>
+      <label><input type="radio" name="cal-split" value="this-is-right"> This issue's split is about right</label>
+      <label><input type="radio" name="cal-split" value="more-foreign"> I want more foreign than this</label>
+    </div>
+    <div class="q" data-sid="CALIBRATION">
+      <p>Fourteen stories is long. Would you rather have fewer, harder-selected?</p>
+      <label><input type="radio" name="cal-count" value="fewer"> Fewer &mdash; eight or so, only the best</label>
+      <label><input type="radio" name="cal-count" value="this-length"> This length is fine</label>
+      <label><input type="radio" name="cal-count" value="more"> More is better, I'll skim</label>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Beats &mdash; give me MORE of</legend>
+    <div class="q" data-sid="CALIBRATION">
+      <p>Tick anything you want weighted up.</p>
+      <div class="grid">
+        <label><input type="checkbox" name="cal-more" value="fed-rates"> Fed &amp; interest rates</label>
+        <label><input type="checkbox" name="cal-more" value="debt-deficit"> Debt &amp; deficit</label>
+        <label><input type="checkbox" name="cal-more" value="markets"> Markets &amp; earnings</label>
+        <label><input type="checkbox" name="cal-more" value="us-financials"> US banks &amp; financials</label>
+        <label><input type="checkbox" name="cal-more" value="ai-industry"> AI industry</label>
+        <label><input type="checkbox" name="cal-more" value="ai-policy"> AI policy &amp; regulation</label>
+        <label><input type="checkbox" name="cal-more" value="energy-grid"> Energy, power &amp; grid</label>
+        <label><input type="checkbox" name="cal-more" value="us-politics"> US politics &amp; courts</label>
+        <label><input type="checkbox" name="cal-more" value="uap"> UAP disclosure</label>
+        <label><input type="checkbox" name="cal-more" value="science"> Science &amp; public health</label>
+        <label><input type="checkbox" name="cal-more" value="geopolitics"> Geopolitics</label>
+        <label><input type="checkbox" name="cal-more" value="florida"> Florida &amp; Tampa Bay</label>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Beats &mdash; give me LESS of</legend>
+    <div class="q" data-sid="CALIBRATION">
+      <p>Tick anything you want weighted down or dropped entirely.</p>
+      <div class="grid">
+        <label><input type="checkbox" name="cal-less" value="foreign-elections"> Foreign elections</label>
+        <label><input type="checkbox" name="cal-less" value="foreign-conflict"> Foreign conflict</label>
+        <label><input type="checkbox" name="cal-less" value="disasters"> Disasters &amp; accidents</label>
+        <label><input type="checkbox" name="cal-less" value="foreign-corporate"> Foreign corporate news</label>
+        <label><input type="checkbox" name="cal-less" value="political-violence"> Political violence &amp; crime</label>
+        <label><input type="checkbox" name="cal-less" value="eu-institutions"> EU institutions</label>
+        <label><input type="checkbox" name="cal-less" value="local"> Florida &amp; local</label>
+        <label><input type="checkbox" name="cal-less" value="uap"> UAP disclosure</label>
+        <label><input type="checkbox" name="cal-less" value="science"> Science &amp; public health</label>
+        <label><input type="checkbox" name="cal-less" value="standing"> &ldquo;Where things stand&rdquo; pieces</label>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>The five stories added in this edition</legend>
+    <div class="q" data-sid="CALIBRATION">
+      <p>Did each of these clear your bar?</p>
+      <div class="keepdrop">
+        <span class="t">1. Fed nine days from a hike</span>
+        <span class="c"><label><input type="radio" name="kd-fed" value="keep"> Keep</label><label><input type="radio" name="kd-fed" value="drop"> Drop</label></span>
+        <span class="t">2. Treasury long-bond buybacks</span>
+        <span class="c"><label><input type="radio" name="kd-tsy" value="keep"> Keep</label><label><input type="radio" name="kd-tsy" value="drop"> Drop</label></span>
+        <span class="t">3. Transformers as the AI constraint</span>
+        <span class="c"><label><input type="radio" name="kd-xfmr" value="keep"> Keep</label><label><input type="radio" name="kd-xfmr" value="drop"> Drop</label></span>
+        <span class="t">4. Federal preemption of state AI law</span>
+        <span class="c"><label><input type="radio" name="kd-preempt" value="keep"> Keep</label><label><input type="radio" name="kd-preempt" value="drop"> Drop</label></span>
+        <span class="t">5. UAP disclosure implementation</span>
+        <span class="c"><label><input type="radio" name="kd-uap" value="keep"> Keep</label><label><input type="radio" name="kd-uap" value="drop"> Drop</label></span>
+      </div>
+    </div>
+    <div class="q" data-sid="CALIBRATION">
+      <p>I removed Jaguar Land Rover, Krakatau's flight disruption and the Canfield Fair arrest as below the bar. Right removals?</p>
+      <label><input type="radio" name="cal-removals" value="right"> All three, right call</label>
+      <label><input type="radio" name="cal-removals" value="too-many"> I'd have kept one of them</label>
+      <label><input type="radio" name="cal-removals" value="more"> Cut more than that</label>
+    </div>
+    <div class="q" data-sid="CALIBRATION">
+      <p>Anything still here that shouldn't be, or missing that should?</p>
+      <label><input type="radio" name="cal-gaps" value="write-below"> Yes &mdash; I'll write it in the box that opens</label>
+      <label><input type="radio" name="cal-gaps" value="no"> No, this is the right set</label>
+    </div>
+  </fieldset>
+</section>
+
+<article id="fed-hike-pressure">
+  <h3>The Fed is nine days from a hike, and the administration is leaning on Warsh in public <a class="anchor" href="#fed-hike-pressure">#</a></h3>
+  <div class="meta">
+    <span class="tag">Macro &amp; markets</span>
+    <span class="tag">US politics &amp; policy</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+  </div>
+  <p>The FOMC meets 15&ndash;16 September with the funds rate at 3.50&ndash;3.75 per cent and the live question being whether to raise it. That is a reversal of the argument the market was having in the spring. Headline CPI ran 3.4 per cent year on year in July with energy still carrying the Middle East supply shock; August payrolls came in at 162,000 with unemployment steady at 4.1 per cent. At the July meeting three officials &mdash; Beth Hammack, Neel Kashkari and Lorie Logan &mdash; dissented in favour of a quarter-point hike. Chair Kevin Warsh used Jackson Hole to say his priority is restoring confidence that inflation returns to 2 per cent.</p>
+  <p>What makes this a political story as well as a monetary one is who is arguing the other side. In the ten days to the meeting the President, the Vice President, the Treasury Secretary and a senior White House economic counselor have all publicly urged the Fed not to raise. Warsh has told lawmakers he will do the job regardless, citing the Supreme Court's recent reaffirmation of the Fed's independence in setting policy &mdash; an unusually direct thing for a sitting chair to say about a sitting president.</p>
+  <p>Market-implied odds of a September move sit somewhere between 53 and 65 per cent depending on which day and which instrument you read. That is not a market that knows.</p>
+  <p><b>What to watch:</b> the August CPI print on 11 September; the statement, the dot plot and the dissent column on 16 September. If anyone dissents against a hike, the independence argument stops being rhetorical.</p>
+  <div class="divergence">
+    <strong>Divergence &mdash; is this ordinary presidential grumbling or a coordinated campaign?</strong>
+    <p><b>What is disputed.</b> Not a fact but a characterisation, which is the harder kind. PBS on 31 August has Trump sounding permissive &mdash; he has <span>&ldquo;a lot of respect&rdquo;</span> for Warsh, who <span>&ldquo;will do what he has to do&rdquo;</span> &mdash; alongside his standing view that rates are too high. CNBC on 5 September describes four named principals mounting a full-court press to stop the hike outright. Nobody disputes that Trump wants lower rates. The dispute is whether that preference has been organised into an operation aimed at a specific meeting.</p>
+    <p><b>Why they differ.</b> Mostly six days, and both are probably accurate to their moment. A president's offhand remark in late August and a concerted effort as a decision closes in are different events, not contradictory reports of one event. The rest is house style: PBS quoted what Trump said in front of a camera, CNBC worked sources on what officials were doing away from one. Neither outlet has an obvious stake here &mdash; this is a difference of method and timing, not of interest.</p>
+    <p><b>What it means for you.</b> Treat the escalation as real and the word &ldquo;coordinated&rdquo; as unconfirmed. A president complaining about rates is constitutionally unremarkable and about forty years of precedent; an administration organising four principals to lean on a specific meeting inside the blackout window is a genuine institutional event, and only the first is documented on the record. That distinction matters because it changes what a hike would signify: against the first, a hike is a normal decision, and against the second it is a demonstration that the constraint held. Two things would settle it &mdash; whether other principals go on record before the 16th, and whether Warsh's post-meeting press conference is asked about it and how he answers. Until then, do not let one outlet's characterisation harden into the thing you think you know.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; why hike into 4.1 per cent unemployment, and what it costs the Treasury</summary>
+    <div class="deeper">
+      <p>Start with why this is even a question. A central bank raising rates while unemployment sits at 4.1 per cent and payrolls are adding 162,000 a month is not responding to an overheating labour market. It is responding to an inflation rate that has stopped falling. Headline CPI at 3.4 per cent is not a crisis number, but it is a number that has failed to converge on 2 for long enough that the credibility argument starts doing the work: if the target is missed year after year without response, expectations drift, and re-anchoring them later costs far more than acting now. That is the Hammack&ndash;Kashkari&ndash;Logan position in July, and Warsh's Jackson Hole language put him closer to it than to the hold.</p>
+      <p>The complication is that a meaningful part of the 3.4 per cent is energy, and energy is being set in the Strait of Hormuz rather than in the American economy. Monetary policy cannot produce oil. A central bank that tightens into a supply shock gets the disinflation eventually, but it gets it by suppressing demand in an economy that did not cause the problem. The counter-argument &mdash; and it is the stronger one &mdash; is that supply shocks stop being supply shocks once they are in wages and rents, and that the second-round effects are exactly what a credible central bank is supposed to prevent.</p>
+      <p>Now the part that connects to the next story. Every basis point of policy rate is a basis point on the cost of financing a federal debt whose net interest bill is running near $1 trillion a year and is already 3.2 per cent of GDP &mdash; above the previous record set in 1991. CBO has net interest at $16.2 trillion over the next decade, rising to $2.1 trillion a year by 2036. A quarter-point on the front end does not reprice the whole stock at once; it reprices what rolls, and a great deal rolls. This is the mechanism by which a monetary decision becomes a fiscal one, and it is the honest reason an administration might want the Fed to hold that has nothing to do with the election calendar. Nobody has made that argument publicly this week, which is itself telling &mdash; it is the respectable version of the case, and they are making the other one instead.</p>
+      <p>On independence: Warsh invoking a Supreme Court reaffirmation is not a throwaway. It converts a norm into a holding, and a chair who cites it in testimony is signalling that he expects to need it. Watch whether the September statement language changes at all from July's. A committee under genuine external pressure tends to over-explain itself, and the tell is usually in the paragraph nobody reports.</p>
+      <p>One number to keep: the odds spread. Between 53 and 65 per cent across sources in the same week is an enormous range for a decision nine days out. In a normal cycle the market has this pinned to within a few points by now. It doesn't, which means the committee has not signalled, which means the 16th is a genuine event rather than a ratification.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnbc.com/2026/09/05/trump-warsh-fed-september-rate-hike.html">CNBC on the administration's push against a hike</a> &middot;
+    <a href="https://www.pbs.org/newshour/politics/watch-trump-says-fed-chair-warsh-will-do-what-he-has-to-do-on-possible-rate-hikes">PBS NewsHour on Trump's 31 August remarks</a> &middot;
+    <a href="https://www.detroitnews.com/story/business/2026/07/14/fed-chair-kevin-warsh-vows-to-do-my-job-if-challenged-by-trump/90916707007/">Detroit News on Warsh's independence testimony</a> &middot;
+    <a href="https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm">FOMC minutes, 28&ndash;29 July</a> &middot;
+    <a href="https://www.schwab.com/learn/story/fomc-meeting">Schwab on the July dissents</a> &middot;
+    <a href="https://www.forbes.com/sites/billconerly/2026/08/12/why-the-fed-will-raise-rates-in-september-despite-cooler-cpi/">Forbes on the case for a September hike</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="fed-hike-pressure">
+      <p>Cadence on the Fed between now and the 16th?</p>
+      <label><input type="radio" name="fb-fed-1" value="daily"> Every issue</label>
+      <label><input type="radio" name="fb-fed-1" value="cpi-fomc"> Just the CPI print and the decision</label>
+      <label><input type="radio" name="fb-fed-1" value="movement"> Movement only</label>
+    </div>
+    <div class="q" data-sid="fed-hike-pressure">
+      <p>Should I carry a standing rates-and-debt indicator box in every issue &mdash; funds rate, 10s, 30s, CPI, net interest?</p>
+      <label><input type="radio" name="fb-fed-2" value="yes"> Yes</label>
+      <label><input type="radio" name="fb-fed-2" value="no"> No, keep it in prose</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="treasury-buybacks">
+  <h3>Treasury doubles its long-bond buybacks on Wednesday, which tells you what the 30-year is doing <a class="anchor" href="#treasury-buybacks">#</a></h3>
+  <div class="meta">
+    <span class="tag">Macro &amp; markets</span>
+    <span class="tag">US politics &amp; policy</span>
+    <span class="tag conf primary">Primary source</span>
+    <span class="tag under">Underreported</span>
+  </div>
+  <p>Treasury has announced that from 9 September its liquidity-support buyback operations in the 10-to-20-year and 20-to-30-year sectors go from a maximum of $2 billion per operation to a minimum of $4 billion. The increase runs through 4 November, the end of the current refunding quarter. The stated reason is to <span>&ldquo;provide greater liquidity support in longer-dated nominal sectors&rdquo;</span> where Treasury says it sees consistent strong sponsorship and a substantial volume of quality offers.</p>
+  <p>The context is a long end that has been struggling. The 30-year is at 5.196 per cent, the 10-year at 4.647. Treasury expects to borrow $739 billion in privately-held net marketable debt this quarter against a $950 billion end-September cash balance. The FY26 deficit stood at $1.4 trillion through June, 3 per cent higher than the same point last year. Net interest is running near $1 trillion a year and is now 3.2 per cent of GDP, above the record set in 1991. Reporting in late August had Secretary Bessent weighing the near-$1 trillion Treasury General Account as a funding source for larger buybacks.</p>
+  <p>This got almost no coverage. It is a technical release on a Friday about an operational parameter, and it is also the government of the United States deciding to become a much larger buyer of its own long bonds nine days before a Fed meeting that may raise rates.</p>
+  <p><b>What to watch:</b> Wednesday's first enlarged operation and what it actually takes down; whether the 30-year holds above 5.2 per cent through it; the 4 November refunding, when Treasury says it will set future buyback sizes.</p>
+  <div class="divergence">
+    <strong>Divergence &mdash; liquidity support, or leaning on the long end?</strong>
+    <p><b>What is disputed.</b> A question of significance, not of fact: everyone agrees Treasury is doubling buyback sizes in the 10-to-30-year sectors from 9 September. The disagreement is what the operation is <em>for</em>. Treasury's release says liquidity support in sectors with strong sponsorship, justified by the volume of quality offers received. The market reading is that doubling official demand for long paper while the 30-year sits above 5.2 per cent is yield management wearing a liquidity label.</p>
+    <p><b>Why they differ.</b> Each side is reading the same action through the institution it is used to holding accountable. Treasury's debt managers genuinely do run a market-function programme, it has existed since 2024, and buying illiquid off-the-run paper genuinely does improve trading conditions &mdash; the stated rationale is not a cover story invented for this release. But Treasury also has an unmistakable interest in a lower long yield, because it funds at that yield, and an issuer explaining its own market operation is not a disinterested narrator. The two readings are not really competing hypotheses about intent so much as competing judgements about whether a stated motive is the whole motive when the incidental benefit is this large.</p>
+    <p><b>What it means for you.</b> The two readings predict exactly the same announcement, so the release cannot separate them and neither can anyone quoting it. Behaviour can. A liquidity operation takes what is offered fairly evenly across the eligible sectors; a yield operation concentrates purchases where the selling pressure is worst. Wednesday's operation publishes what it actually bought and at what spread &mdash; look at the distribution, not the headline size. Read Treasury's stated purpose as true but incomplete, and until Wednesday's results are out, do not use this announcement as evidence for either a benign or a sinister story about the long end. The 30-year's level through the operation is the number that will tell you which one you were in.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; what a buyback is, and why the long end is the thing that actually binds</summary>
+    <div class="deeper">
+      <p>A Treasury buyback is the government purchasing its own outstanding debt in the secondary market before maturity, funded by issuing new debt elsewhere on the curve or by drawing down cash. It is not debt reduction and it is not quantitative easing. Nothing is retired on net and no money is created &mdash; the Federal Reserve is not involved. What changes is the composition of what the public holds: older, less liquid, off-the-run bonds come out of the market and newer, more liquid paper goes in. The programme has existed since 2024 as a market-function tool. Doubling it is a change of degree, not of kind, which is exactly why it drew no headlines.</p>
+      <p>The reason to care is that the long end is where the fiscal position becomes visible. The front of the curve is the Fed's; the 30-year is the market's opinion of whether the United States can fund itself at a reasonable price for a generation. A 30-year at 5.2 per cent is not a crisis level, but it is a level at which the arithmetic gets unpleasant fast, because every new long bond issued at that yield locks in that cost for thirty years. With net interest already near $1 trillion annually and CBO projecting $2.1 trillion by 2036, the difference between funding at 4.5 and funding at 5.2 compounds into real money &mdash; the kind that crowds out everything else in the budget without a single vote being taken.</p>
+      <p>Which is why the timing matters. If the Fed raises on the 16th, the front end reprices upward immediately. The interesting question is what the long end does in response, and there are two possibilities that mean opposite things. If long yields <em>fall</em> on a hike, the market is saying it believes the Fed will get inflation down, and the credibility trade is working. If long yields <em>rise</em> on a hike, the market is saying it is worried about something the Fed cannot fix &mdash; the supply of paper, the deficit path, the term premium &mdash; and that is the genuinely bad outcome. Treasury standing in the market with $4 billion operations that week makes the signal harder to read, which is a cost of the policy whatever its motive.</p>
+      <p>On the Treasury General Account: the TGA is the government's checking account at the Fed, and at roughly $1 trillion it is unusually large. Spending it down is not free money &mdash; it drains cash from the account and adds reserves to the banking system, which is stimulative at the margin and works against a Fed that is trying to tighten. An administration that cannot persuade the Fed to hold rates has, in the TGA and in the buyback schedule, two instruments that operate on financial conditions without the Fed's consent. I am not asserting that is the intent. I am pointing out that the instruments exist, that they are being enlarged this week, and that nobody has asked the question in public.</p>
+      <p>The thing I would keep from this story is the ratio, not the yield. Net interest at 3.2 per cent of GDP is above 1991, and 1991 was the previous worst on record. That is the constraint under everything else in American fiscal policy for the rest of the decade, and it moves on the 30-year rather than on anything a politician says.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://home.treasury.gov/news/press-releases/sb0607">Treasury announcement of increased buyback sizes (primary)</a> &middot;
+    <a href="https://home.treasury.gov/news/press-releases/sb0584">Treasury marketable borrowing estimates (primary)</a> &middot;
+    <a href="https://home.treasury.gov/news/press-releases/sb0590">Quarterly refunding statement (primary)</a> &middot;
+    <a href="https://www.cnbc.com/2026/08/24/bessent-1-trillion-treasury-general-account-bond-buybacks.html">CNBC on the TGA and buybacks</a> &middot;
+    <a href="https://www.cbo.gov/publication/62105">CBO Budget and Economic Outlook 2026&ndash;2036</a> &middot;
+    <a href="https://www.pgpf.org/programs-and-projects/fiscal-policy/monthly-interest-tracker-national-debt/">Peterson Foundation interest tracker</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="treasury-buybacks">
+      <p>This is plumbing with large consequences. Is that a kind of story you want?</p>
+      <label><input type="radio" name="fb-tsy-1" value="yes"> Yes &mdash; more of exactly this</label>
+      <label><input type="radio" name="fb-tsy-1" value="only-when-moves"> Only when it moves a price I can see</label>
+      <label><input type="radio" name="fb-tsy-1" value="too-technical"> Too technical</label>
+    </div>
+    <div class="q" data-sid="treasury-buybacks">
+      <p>Follow the debt-service arithmetic as a standing thread?</p>
+      <label><input type="radio" name="fb-tsy-2" value="follow"> Yes, watchlist it</label>
+      <label><input type="radio" name="fb-tsy-2" value="quarterly"> Quarterly is enough</label>
+      <label><input type="radio" name="fb-tsy-2" value="no"> No</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="ai-transformers">
+  <h3>What is rationing AI is not chips and not money &mdash; it is high-voltage transformers <a class="anchor" href="#ai-transformers">#</a></h3>
+  <div class="meta">
+    <span class="tag">AI &amp; tech industry</span>
+    <span class="tag">Macro &amp; markets</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+    <span class="tag under">Underreported</span>
+  </div>
+  <p>The five largest hyperscalers are on track to spend somewhere around $775&ndash;800 billion on AI infrastructure this year, roughly 64 per cent above 2025. The constraint on turning that money into working compute is no longer capital and is no longer GPUs. It is the electrical equipment between the grid and the building.</p>
+  <p>Lead times for large high-voltage transformers now run 24 to 36 months and reach four years at the top end; units above 100 MVA are quoted at 90 to 130 weeks. Wood Mackenzie data has demand for generator step-up transformers up 274 per cent between 2019 and 2025 and substation transformers up 116 per cent, against manufacturing capacity that has not moved remotely as fast. Interconnection queues, not construction schedules, are the binding path in the regions data centres actually want &mdash; Virginia, Texas, the Southeast, parts of the Midwest. Trade analysis circulating this month estimates 30 to 50 per cent of US data centre projects planned for 2026 will slip or be cancelled outright.</p>
+  <p>The bill lands on ordinary ratepayers. EIA has retail electricity prices rising another 4.2 per cent this year. A 2026 modelling study from NC State, Carnegie Mellon and others put demand-weighted wholesale prices as much as 57 per cent higher by 2030 in the worst-affected regions. Polling has 78 per cent of Americans worried that data centres will raise their bills.</p>
+  <p><b>What to watch:</b> whether hyperscaler capex guidance holds at the next earnings round or quietly reprofiles; state utility commission dockets on who pays for interconnection upgrades; any federal move on transformer manufacturing capacity.</p>
+  <div class="divergence">
+    <strong>Divergence &mdash; is announced capacity delayed, or was it never real?</strong>
+    <p><b>What is disputed.</b> A factual question hiding inside a reporting convention. Everyone agrees transformer lead times run years and that a large share of 2026 US data centre projects will not energise on schedule. The dispute is what that share represents: capacity arriving late, or capacity that was never going to be built. The published figure &mdash; 30 to 50 per cent &mdash; reports &ldquo;delayed <em>or</em> cancelled&rdquo; as a single bucket, so the number that matters most is the one nobody has separated.</p>
+    <p><b>Why they differ.</b> The bucket is doing the work, and it is doing it for a reason. Nobody in the chain benefits from splitting it. A developer prefers &ldquo;delayed&rdquo; to &ldquo;cancelled&rdquo; because a delay is a supply-chain problem and a cancellation is an admission about demand. An analyst selling infrastructure research has little reason to force the distinction and some reason not to. And a genuine ambiguity sits underneath: a project waiting four years on a transformer is not formally cancelled even when everyone involved knows it will not proceed. So the two camps are not looking at different evidence &mdash; they are choosing different defaults about what an unsplit bucket contains, and their priors about the AI cycle supply the default.</p>
+    <p><b>What it means for you.</b> Grade the numbers on this page unevenly. The transformer lead times, the Wood Mackenzie demand series and the EIA retail price forecast are solid and independently sourced. The 30-to-50 per cent traces to aggregator and consultancy analysis rather than to any company disclosure or regulatory filing, and I could not reach the underlying document &mdash; it is the weakest figure here and I would not build a position on it. What resolves this is disclosure, not analysis: watch for a hyperscaler writing down or reprofiling committed capex in an earnings statement, or an interconnection request formally withdrawn from a queue. Those are filings, they are public, and they are the point at which &ldquo;delayed&rdquo; becomes falsifiable. Until one appears, treat the direction as established and the magnitude as unknown.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; why this is the constraint, and why it shows up on your power bill</summary>
+    <div class="deeper">
+      <p>The mental model most coverage uses is that AI is gated by chips. That was true in 2023 and 2024 and it is not true now. A data centre needs three things to produce compute: silicon, capital, and electricity delivered at the right voltage in the right place. Silicon supply has broadened. Capital is abundant to the point of embarrassment. What has not scaled is the physical apparatus that steps grid voltage down to something a building can use &mdash; high-voltage transformers, medium-voltage switchgear, substations &mdash; and the transmission capacity to reach the site at all.</p>
+      <p>These are not exotic components, which is precisely why the shortage is durable. They are heavy, custom-engineered, built to order in a small number of factories, and they require grain-oriented electrical steel and skilled winding labour that cannot be conjured. A manufacturer facing a four-year backlog does not build a new plant on the strength of it, because the demand curve that produced the backlog is the same demand curve that might evaporate. That reluctance is rational and it is why lead times stay long even with obvious excess demand. Meanwhile the same transformers are wanted by utilities doing routine grid hardening and by every renewable project in an interconnection queue, so data centres are not bidding against each other &mdash; they are bidding against the maintenance of the existing grid.</p>
+      <p>The consequence for the reader is the part that gets least attention. When a utility upgrades transmission and substations to serve a new large load, it recovers that cost through rates, and the mechanism for allocating it between the new customer and everybody else is decided in state utility commission proceedings that almost nobody watches. Get that allocation wrong and a hyperscaler's interconnection is socialised across residential ratepayers who receive no benefit from it. That is the actual policy fight, it is happening in dockets rather than in Congress, and it is why the 78 per cent concern figure is not merely a vibe &mdash; the concern is well-founded and the venue for resolving it is obscure.</p>
+      <p>The Department of Energy has estimated 100 GW of additional peak generating capacity needed by 2030, about half of it driven by data centres. Set that against a transformer supply chain quoting four years and an interconnection queue measured in years, and the arithmetic does not close. Something gives: either the build-out is slower than the capex implies, or power gets materially more expensive, or both. The market has been pricing the first as a timing issue. The ratepayer is already paying for the second.</p>
+      <p>For anyone holding the AI trade, the useful discipline is to stop reading capex announcements as capacity and start reading energised megawatts. Capital committed is a press release. Power delivered is a fact, and it is the only one of the two that produces revenue.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://about.bnef.com/insights/data-centers/ai-data-center-build-advances-at-full-speed-five-things-to-know/">BloombergNEF on capacity under construction</a> &middot;
+    <a href="https://atkenergygroup.com/blog/grid-interconnection-data-centers/">ATK Energy on interconnection as the critical path</a> &middot;
+    <a href="https://www.datacenterknowledge.com/energy-power-supply/gridlocked-how-power-constraints-are-shaping-the-future-of-data-centers">Data Center Knowledge on power constraints</a> &middot;
+    <a href="https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/">Futurum on 2026 capex</a> &middot;
+    <a href="https://www.cnbc.com/2026/03/13/ai-data-centers-electricity-prices-backlash-ratepayer-protection.html">CNBC on who pays for data centre electricity</a> &middot;
+    <a href="https://www.consumerreports.org/data-centers/ai-data-centers-impact-on-electric-bills-water-and-more-a1040338678/">Consumer Reports on bills and polling</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="ai-transformers">
+      <p>I flagged my weakest number rather than dropping it or using it silently. Right call?</p>
+      <label><input type="radio" name="fb-xfmr-1" value="flag"> Yes &mdash; flag and keep</label>
+      <label><input type="radio" name="fb-xfmr-1" value="drop"> Drop weak numbers entirely</label>
+      <label><input type="radio" name="fb-xfmr-1" value="no-opinion"> No opinion</label>
+    </div>
+    <div class="q" data-sid="ai-transformers">
+      <p>Track power and grid constraints as their own beat, separate from AI industry?</p>
+      <label><input type="radio" name="fb-xfmr-2" value="yes"> Yes, add the beat</label>
+      <label><input type="radio" name="fb-xfmr-2" value="under-ai"> Keep it under AI</label>
+      <label><input type="radio" name="fb-xfmr-2" value="no"> Not interested</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="ai-preemption">
+  <h3>The federal plan to override state AI law is a litigation strategy, not a bill <a class="anchor" href="#ai-preemption">#</a></h3>
+  <div class="meta">
+    <span class="tag">AI &amp; tech industry</span>
+    <span class="tag">US politics &amp; policy</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+    <span class="tag">Where things stand</span>
+  </div>
+  <p>No new fact today &mdash; this is a state-of-play piece on a beat that has been running without a headline, which is exactly how a structural change gets missed.</p>
+  <p>The executive order of 11 December 2025, &ldquo;Ensuring a National Policy Framework for Artificial Intelligence,&rdquo; set out to replace the state-by-state patchwork with a single minimally burdensome federal standard. The instrument for getting there is not legislation. It is an AI Litigation Task Force inside the Justice Department, operational since 10 January 2026, whose job is to sue states in federal court over their own AI statutes &mdash; on the theory that those laws unconstitutionally burden interstate commerce, are preempted by federal regulation, or are otherwise unlawful. The broader AI Action Plan runs to more than ninety federal actions, nearly all of them executed through agencies rather than through Congress.</p>
+  <p>Running alongside it, and pointing the opposite way on federal power, is a bill that would treat advanced semiconductor exports like weapons sales and bar sales of Nvidia's Blackwell parts to entities of concern in China, Iran, North Korea, Russia and Venezuela for two years.</p>
+  <p><b>What to watch:</b> the first Task Force challenge to produce a district court ruling, which is when the theory stops being a theory; whether any preemption language is attached to must-pass legislation this autumn; whether the chip export bill advances or dies quietly.</p>
+  <details>
+    <summary>Dig deeper &mdash; why the venue choice matters more than the policy</summary>
+    <div class="deeper">
+      <p>Preemption by litigation and preemption by statute produce similar-sounding outcomes and are constitutionally very different animals. A statute that preempts state AI law is durable, debated, and amendable: Congress decides the scope, and a later Congress can change it. A litigation campaign produces a patchwork of district and circuit rulings, binding in some places and not others, with the scope set by whichever cases the executive chose to bring and whichever facts those cases happened to present. It is faster and it requires nobody's vote, which is the appeal. It is also reversible by the next administration simply declining to bring the cases, which means the certainty it offers industry is thinner than it looks.</p>
+      <p>The legal theory is the interesting part. The dormant commerce clause argument &mdash; that a state law unduly burdens interstate commerce &mdash; is real but has been read narrowly in recent Supreme Court practice, and states have had considerable success defending regulations with genuine in-state justifications. Express preemption is stronger where a federal regulatory scheme actually occupies the field, but that is the difficulty here: there is not much federal AI regulation to occupy it with. An executive order directing agencies to write a minimal standard does not by itself create the comprehensive scheme that preemption doctrine usually requires. Which is why the strongest version of this campaign is not really about winning cases &mdash; it is about making state AI enforcement expensive and uncertain enough that companies can behave as though the state laws are not there.</p>
+      <p>The reason to hold this in view without a news hook is that the effect arrives gradually and then is simply the environment. If you are trying to work out what compliance obligations an American AI deployment will actually face in 2027, the answer is being determined right now in cases nobody is covering, rather than in a bill anyone can read.</p>
+      <p>The chip export bill sits oddly beside all this and the tension is worth naming. The same policy posture that says state governments must not burden AI with rules also says the federal government should treat AI hardware as munitions. Both are coherent on their own terms &mdash; deregulate domestically, control externally &mdash; but they place opposite bets on whether AI is a normal commercial technology or a strategic one, and the second bet is the one with the export-control apparatus behind it.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.paulhastings.com/insights/client-alerts/president-trump-signs-executive-order-challenging-state-ai-laws">Paul Hastings on the executive order</a> &middot;
+    <a href="https://www.lw.com/en/insights/ai-executive-order-targets-state-laws-and-seeks-uniform-federal-standards">Latham &amp; Watkins on the preemption push</a> &middot;
+    <a href="https://www.ropesgray.com/en/insights/alerts/2026/03/examining-the-landscape-and-limitations-of-the-federal-push-to-override-state-ai-regulation">Ropes &amp; Gray on the limits of the strategy</a> &middot;
+    <a href="https://www.jdsupra.com/legalnews/2026-ai-policy-and-semiconductor-1640306/">Mintz / ML Strategies 2026 AI policy and semiconductor outlook</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="ai-preemption">
+      <p>This ran with no news hook, labelled &ldquo;Where things stand.&rdquo; Useful, or filler?</p>
+      <label><input type="radio" name="fb-pre-1" value="useful"> Useful &mdash; do this on quiet beats</label>
+      <label><input type="radio" name="fb-pre-1" value="only-weekly"> Only as a weekly round-up</label>
+      <label><input type="radio" name="fb-pre-1" value="filler"> Filler &mdash; news hooks only</label>
+    </div>
+    <div class="q" data-sid="ai-preemption">
+      <p>Track the AI Litigation Task Force docket?</p>
+      <label><input type="radio" name="fb-pre-2" value="follow"> Yes, watchlist it</label>
+      <label><input type="radio" name="fb-pre-2" value="rulings-only"> Only when a court rules</label>
+      <label><input type="radio" name="fb-pre-2" value="no"> No</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="uap-implementation">
+  <h3>The UAP disclosure order exists; the records still don't <a class="anchor" href="#uap-implementation">#</a></h3>
+  <div class="meta">
+    <span class="tag">UAP disclosure</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+    <span class="tag">Where things stand</span>
+  </div>
+  <p>On 31 July the Office of the Director of National Intelligence issued preliminary guidance directing the Department of War and the intelligence community to build a process letting their workforce disclose UAP information to designated government representatives regardless of prior non-disclosure agreements, oaths or commitments. That is the load-bearing piece of the whole disclosure project: without it, anyone with something to say is choosing between telling Congress and keeping their clearance.</p>
+  <p>Five weeks on, the detailed implementing guidance that would actually operationalise it has not appeared. Nor has the question of contractor employees been resolved &mdash; the preliminary guidance addresses government workforce, and a large share of the relevant programme history sits with contractors whose NDAs are commercial instruments rather than classification obligations.</p>
+  <p>The record elsewhere is mixed. The PURSUE task force has released five tranches of files since 8 May. Against that, Representative Anna Paulina Luna's Task Force on the Declassification of Federal Secrets set the Department of War an April deadline to produce 46 specifically named videos &mdash; identified by title, date and location, including transmedium encounters, formations near warships and submarines, and the 2023 Lake Huron shoot-down &mdash; and the department missed it. AARO's case file passed 2,400 reports as of April.</p>
+  <p><b>What to watch:</b> ODNI's detailed implementing guidance and whether it closes the contractor gap; whether any of the 46 named videos are produced; the next file tranche; the next task force hearing, whenever it is actually scheduled.</p>
+  <div class="correction">
+    <strong>Correction to yesterday's issue</strong>
+    <p>The 6 and 7 September issues both stated in the footer that a House Oversight task force hearing was set for 9 September 2026, and the watchlist carried it as a wake trigger. I can find no such hearing on the 2026 calendar. The 9 September hearing was in 2025; the task force's 2026 hearing on this subject was held on 25 June. The error looks like a date carried forward from last year's hearing without being re-checked against the committee schedule. I have removed the 9 September trigger from the watchlist. Nothing else in those issues depended on it.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; why the NDA question is the whole game</summary>
+    <div class="deeper">
+      <p>Almost every serious dispute in this area reduces to a question about who is permitted to speak. Claims about recovered materials, reverse-engineering programmes and unacknowledged special access programmes are, by their nature, claims that can only be substantiated by people who signed something promising not to substantiate them. That is why the ODNI guidance matters far more than any individual video release: a video is an artefact that an agency chooses to declassify, and it can be released in a form that settles nothing. A functioning disclosure channel changes who controls the flow.</p>
+      <p>The contractor gap is the specific reason to be sceptical that the current instrument is sufficient. A government employee's non-disclosure obligation is ultimately a creature of the classification system, and the executive branch can lift it by directing that it be lifted. A contractor employee typically has that plus a commercial agreement with a private employer, enforceable in ordinary civil courts, covering proprietary information. Telling the intelligence community to stand down its NDAs does not touch the second category. If the substantive programme history sits with contractors &mdash; which is the claim the whistleblower testimony has consistently made &mdash; then guidance aimed at the government workforce reaches past the people who would actually have something to disclose. Whether the detailed guidance addresses this is the single most informative thing to watch, and it is why &ldquo;preliminary&rdquo; is doing a lot of work in that 31 July document.</p>
+      <p>On the 46 videos: the significance of Luna's list is that it is specific. A general request for UAP material can be answered with a search and a null result. A list naming individual files by title, date and location cannot &mdash; either the file exists and is produced, or the department has to say on the record that a file it has been told the title of does not exist. Missing the deadline is a third option that avoids both, and it has now been the operative posture since April. Congressional deadlines have no automatic enforcement, so the remedies available are subpoena, appropriations leverage, or public pressure, and the task force has so far used the third.</p>
+      <p>The reason this runs today with no news hook is that the absence <em>is</em> the state of play. Five weeks without implementing guidance on a preliminary directive is not yet a scandal, but it is the interval in which a disclosure initiative either becomes machinery or becomes an announcement. On a beat this prone to enthusiasm, the useful discipline is to track the paperwork rather than the imagery, because the paperwork is what determines whether anything further arrives.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.dlapiper.com/en-us/insights/publications/2026/08/odni-issues-preliminary-guidance-on-disclosure-of-unidentified-anomalous-phenomena">DLA Piper on the 31 July ODNI preliminary guidance</a> &middot;
+    <a href="https://oversight.house.gov/category/declassification-of-federal-secrets">House Oversight task force page</a> &middot;
+    <a href="https://oversight.house.gov/hearing/restoring-public-trust-through-uap-transparency-and-whistleblower-protection/">Task force hearing record</a> &middot;
+    <a href="https://oversight.house.gov/wp-content/uploads/2026/03/UAP-Request-Letter-FINAL.pdf">Luna's records request letter (primary)</a> &middot;
+    <a href="https://defensescoop.com/2026/06/17/new-science-advisory-council-forms-to-help-us-government-resolve-the-uap-mystery/">DefenseScoop on the science advisory council</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="uap-implementation">
+      <p>I ran this on process and paperwork rather than on sightings or imagery. Right approach for this beat?</p>
+      <label><input type="radio" name="fb-uap-1" value="process"> Yes &mdash; process is the real story</label>
+      <label><input type="radio" name="fb-uap-1" value="both"> Cover imagery releases too</label>
+      <label><input type="radio" name="fb-uap-1" value="events-only"> Only when something concrete drops</label>
+    </div>
+    <div class="q" data-sid="uap-implementation">
+      <p>I ran a correction prominently rather than quietly fixing the watchlist. Right call?</p>
+      <label><input type="radio" name="fb-uap-2" value="prominent"> Yes &mdash; always surface corrections</label>
+      <label><input type="radio" name="fb-uap-2" value="footer"> Footer is enough</label>
+      <label><input type="radio" name="fb-uap-2" value="no-opinion"> No opinion</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="missouri-kavanaugh">
+  <h3>Missouri's map ran out of runway today, and the deadline nobody agrees on is tomorrow or Wednesday <a class="anchor" href="#missouri-kavanaugh">#</a></h3>
+  <div class="meta">
+    <span class="tag">US politics &amp; policy</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+    <span class="tag">Follow-up</span>
+  </div>
+  <p>The response Justice Kavanaugh ordered was due at noon Eastern today &mdash; on Labor Day, which is the tell. He directed Richard von Glahn of People Not Politicians, the referendum campaign, to answer Missouri's emergency application by then, and the fact that he set a federal holiday deadline is the clearest available signal that the Court intends to move before ballots print rather than let the clock decide.</p>
+  <p>Two new details sharpen <a href="2026-09-06.html#missouri-scotus">yesterday's account</a>. First, Missouri's own state-law cutoff for changes to the November ballot falls this week &mdash; which compresses the timeline far more than the 19 September overseas-ballot mailing date I emphasised yesterday. Second, the state's Elections Clause argument now has a specific shape: Solicitor General Louis Capozzi frames it as whether 3.3 per cent of a state's voters can suspend a congressional map by filing a referendum petition, and separately argues the state court disenfranchised hundreds of thousands of voters by returning them to old districts.</p>
+  <p>Legal observers quoted in Missouri coverage still expect Kavanaugh to deny the stay, on the ground that federal courts have limited authority over state election procedure. That was my read yesterday and it has not changed.</p>
+  <p><b>What to watch:</b> an order from Kavanaugh alone, or a referral to the full Court, before the state cutoff passes.</p>
+  <div class="divergence">
+    <strong>Divergence &mdash; when is the state deadline, and why can't anyone say?</strong>
+    <p><b>What is disputed.</b> A fact, and a load-bearing one. SCOTUSblog puts the state-law cutoff for finalising November ballot changes on Tuesday 8 September, describing Kavanaugh's noon Monday deadline as falling one day before it. Missouri public-radio coverage puts it on Wednesday 9 September. The entire emergency application is an argument about running out of time, so the date the clock runs out on is not a detail.</p>
+    <p><b>Why they differ.</b> Almost certainly because there is no single deadline to report. An election calendar is a stack of administrative steps &mdash; the point at which ballot content is certified, the point at which it goes to county election authorities, the point at which those authorities must have ballots printed, and the federal UOCAVA requirement to transmit to overseas voters 45 days out, which lands on 19 September. Each of those is a defensible answer to &ldquo;when is the deadline&rdquo; and they fall on different days. Reporters working from different officials get different steps, and each reports the one they were given without noting it is one of several. I could not resolve it against the statute directly, so I am describing the mechanism rather than asserting which step each outlet picked up.</p>
+    <p><b>What it means for you.</b> Do not attach significance to either date, and be sceptical of any coverage that treats a missed Tuesday or Wednesday as dispositive &mdash; the state's position needs the whole stack to be impossible, not one step. The date that is firm and federal is 19 September, and it is the one the Court will actually reason from, because UOCAVA is the federal hook that gets a state redistricting dispute in front of a Justice at all. Watch for whether Kavanaugh's order engages the state-law calendar or goes straight to the 45-day requirement: if it is the latter, the Tuesday-versus-Wednesday question was never the real constraint, and the state's timing argument is doing less work than its filing suggests.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.scotusblog.com/2026/09/missouri-urges-supreme-court-to-allow-for-use-of-congressional-map-expected-to-aid-republicans/">SCOTUSblog</a> &middot;
+    <a href="https://www.kcur.org/politics-elections-and-government/2026-09-07/missouri-redistricting-lawsuit-referendum-november-supreme-court">KCUR</a> &middot;
+    <a href="https://missouriindependent.com/2026/09/06/looming-ballot-deadline-complicates-gop-appeal-of-missouri-redistricting-decision/">Missouri Independent</a> &middot;
+    <a href="https://www.stlpr.org/government-politics-issues/2026-09-05/republican-officials-ask-us-supreme-court-to-overturn-missouri-redistricting-ruling">STLPR</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="missouri-kavanaugh">
+      <p>Yesterday this ran long with a doctrinal expansion; today it's 250 words and no expansion because there was less to say. Is that variation good?</p>
+      <label><input type="radio" name="fb-mo2-1" value="yes"> Yes &mdash; length should track substance</label>
+      <label><input type="radio" name="fb-mo2-1" value="consistent"> I'd rather each story were consistent</label>
+      <label><input type="radio" name="fb-mo2-1" value="no-opinion"> No opinion</label>
+    </div>
+    <div class="q" data-sid="missouri-kavanaugh">
+      <p>Cadence from here?</p>
+      <label><input type="radio" name="fb-mo2-2" value="only-orders"> Only when the Court acts</label>
+      <label><input type="radio" name="fb-mo2-2" value="every-filing"> Every filing</label>
+      <label><input type="radio" name="fb-mo2-2" value="stop"> Stop following</label>
+    </div>
+  </fieldset>
+</article>
 
 <article id="hormuz-zone">
   <h3>Iran's answer to the tanker strikes is a line on a map, and it moved oil more than the missiles did <a class="anchor" href="#hormuz-zone">#</a></h3>
@@ -206,6 +614,53 @@
       <label><input type="radio" name="fb-hz-3" value="yes"> Yes, add it</label>
       <label><input type="radio" name="fb-hz-3" value="only-if-moves"> Only when it moves materially</label>
       <label><input type="radio" name="fb-hz-3" value="no"> No</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="lebanon-strikes">
+  <h3>Israel killed eleven in south Lebanon, two of them medics, under a truce that is a truce in name only <a class="anchor" href="#lebanon-strikes">#</a></h3>
+  <div class="meta">
+    <span class="tag">Geopolitics</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+  </div>
+  <p>Israeli aircraft struck the southern Lebanese village of Kfar Reman and nearby Deir al-Zahrani and Arab Salim, in the Nabatieh district, early on Monday. Lebanon's health ministry put the toll at eleven killed, including two children, and five wounded. A residential building was hit; a separate drone strike on a civilian vehicle in the same town killed two paramedics inside it.</p>
+  <p>The Israeli military said it targeted a building near a Hezbollah facility it said had been used to launch an explosive drone from Deir al-Zahrani. It has not publicly addressed the strike on the ambulance crew.</p>
+  <p>The context is a ceasefire that has not held in any meaningful sense. Israel and Lebanon signed a US-mediated framework in June under which the Lebanese army would disarm Hezbollah in designated pilot zones in exchange for Israeli withdrawal from the south. Little of it has been implemented: Israeli forces still occupy dozens of villages and have declined further withdrawals, and Hezbollah &mdash; which is not a party to the Lebanon&ndash;Israel talks &mdash; says it will not disarm anywhere north of the Litani. Since the escalation began in early March, Lebanon's health ministry counts more than 4,350 killed and 12,300 wounded, and 179 Israeli attacks on ambulance crews killing 135 healthcare workers.</p>
+  <p><b>What to watch:</b> whether the June framework is formally abandoned, whether Hezbollah responds beyond drone launches, and whether the medic figures draw a UN or ICRC response.</p>
+  <div class="divergence">
+    <strong>Divergence &mdash; facts versus framing</strong>
+    <p>The dispute here is not really about what happened. Both sides agree strikes occurred in these three villages on Monday morning. Israel's account is about the <em>target</em> &mdash; a Hezbollah drone-launch facility &mdash; and is silent on the civilian building and the ambulance. Lebanon's account is about the <em>result</em> &mdash; a residential block, two children, two medics &mdash; and is silent on whether anything military was present. Both can be true simultaneously, and usually are. What is not resolvable from open sources is whether the vehicle struck was identifiable as an ambulance at the moment of the strike, which is the question that determines whether it was a targeting failure or a targeting decision. The casualty counts also drift: early reports gave nine dead, later ones eleven, one wire ran ten. That is a toll rising as the wounded die, not a dispute.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; why the June framework was always going to stall, and what the medic numbers mean legally</summary>
+    <div class="deeper">
+      <p>The June framework's design flaw is visible in a single sentence: it required Hezbollah to disarm, and Hezbollah was not a signatory. The agreement is between the Israeli and Lebanese states, and it assigns the disarmament task to the Lebanese Armed Forces. The LAF is a genuine national institution but it is not, and has never been, capable of disarming Hezbollah by force; attempting it would risk the sectarian fracture of the army itself, which is the outcome every Lebanese government since 1990 has organised its politics to avoid. So the framework asks a party that cannot deliver to deliver, in exchange for a withdrawal the other side has conditioned on that delivery. Each side then points at the other's non-performance as justification for its own. That is not a peace process failing; it is a peace process operating exactly as its structure dictates.</p>
+      <p>The pilot-zone mechanism was the attempt to escape that trap &mdash; carve out small areas, demonstrate the exchange works, then expand. Pilot schemes of this kind fail when the first zone becomes the whole negotiation, because neither side will let a precedent be set on unfavourable terms. Israel's continued occupation of villages beyond the agreed lines and its refusal of further withdrawal means the exchange has never actually been tested. Hezbollah's position north of the Litani means it never will be, on the current text.</p>
+      <p>The medic figures deserve to be read carefully rather than as an atrocity tally. Under international humanitarian law, medical personnel and ambulances have specific protected status: they may not be attacked, and they lose protection only if used to commit acts harmful to the enemy outside their humanitarian function, and then only after a warning with a reasonable time limit. One hundred and thirty-five healthcare workers killed across 179 incidents in six months is a pattern rather than a series of accidents, and a pattern is what triggers the legal question of whether protection is being systematically disregarded or whether medical facilities are being systematically misused. Israel has consistently argued the latter in Gaza and Lebanon; establishing it requires evidence per incident, which is precisely what does not exist for most of these strikes. I cannot adjudicate it from open sources and neither can anyone else without access to targeting records.</p>
+      <p>What I can say is what the numbers do to the ceasefire's survival. A truce degrades in a predictable way: the strikes continue, the casualty count normalises, the diplomatic cost of each individual strike falls because it is no longer novel, and eventually the agreement exists only as a name that both sides use for the current level of violence. Lebanon&ndash;Israel is at that stage now. The framework is three months old and its implementation has not begun.</p>
+      <p>The connection to the rest of this issue is Iran. Hezbollah is the most capable of Iran's regional partners and the one whose activation would most change the calculus of the Hormuz confrontation leading this brief. It has not been activated &mdash; drone launches at Israeli troops are far below its capability &mdash; and the most plausible reading of that restraint is that Tehran is holding it in reserve rather than that it is unable to act. Six months into a war with the United States, the fact that Hezbollah is still firing single drones is one of the more informative facts available about how Iran assesses its own position.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.aljazeera.com/news/2026/9/7/israeli-air-attack-kills-at-least-10-people-in-southern-lebanon">Al Jazeera</a> &middot;
+    <a href="https://www.nbcnews.com/world/lebanon/israeli-strikes-southern-lebanese-town-kill-11-state-news-agency-says-rcna596433">NBC News</a> &middot;
+    <a href="https://www.local10.com/news/world/2026/09/07/israeli-airstrikes-hit-a-lebanese-village-killing-9-and-other-mideast-developments/">AP via Local 10</a> &middot;
+    <a href="https://www.wpri.com/news/us-and-world/ap-israeli-airstrikes-on-a-village-in-southern-lebanon-kill-9-people-wound-13/">AP via WPRI</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="lebanon-strikes">
+      <p>Add Israel&ndash;Lebanon as a standing thread, or cover only on major escalation?</p>
+      <label><input type="radio" name="fb-leb-1" value="thread"> Standing thread</label>
+      <label><input type="radio" name="fb-leb-1" value="major"> Major escalation only</label>
+      <label><input type="radio" name="fb-leb-1" value="drop"> Drop it</label>
+    </div>
+    <div class="q" data-sid="lebanon-strikes">
+      <p>I said I can't adjudicate the medic strikes without targeting records, rather than picking a side. Right call?</p>
+      <label><input type="radio" name="fb-leb-2" value="right"> Right &mdash; say what you can't know</label>
+      <label><input type="radio" name="fb-leb-2" value="judgment"> Give me your judgement anyway</label>
+      <label><input type="radio" name="fb-leb-2" value="no-opinion"> No opinion</label>
     </div>
   </fieldset>
 </article>
@@ -281,50 +736,46 @@
   </fieldset>
 </article>
 
-<article id="mia-767">
-  <h3>A cargo 767 left the runway at Miami at 128 mph and killed people in cars on a public street <a class="anchor" href="#mia-767">#</a></h3>
+<article id="eu-greenland">
+  <h3>Brussels put &euro;200 million on the table in Nuuk, which is about eight per cent of Greenland's economy <a class="anchor" href="#eu-greenland">#</a></h3>
   <div class="meta">
-    <span class="tag">US politics &amp; policy</span>
+    <span class="tag">World economy</span>
+    <span class="tag">Geopolitics</span>
     <span class="tag conf corrob">Independent corroboration</span>
   </div>
-  <p>Prime Air flight 7598, a Boeing 767-300 freighter operated by 21 Air on behalf of Amazon, overran runway 30 at Miami International Airport at about 2pm Sunday, inbound from Luis Mu&ntilde;oz Mar&iacute;n International in San Juan. It crossed Northwest 67th Avenue, struck vehicles, caught fire and came to rest in a field outside the airport perimeter. Five people were killed and five injured, three of them critically. Several of the dead were on the ground rather than aboard. Miami-Dade Fire Rescue freed one person pinned beneath a car; a fuel leak persisted for hours. The pilot and copilot were trapped in the aircraft.</p>
-  <p>The airframe is 32 years old and spent more than two decades in passenger service before conversion to freight in 2015. Reporting puts the aircraft's speed at roughly 128 mph as it left the paved surface, which is not a landing that went slightly long &mdash; it is an aircraft that was still at flying speed with the runway behind it.</p>
-  <p>The NTSB is leading, with a go-team headed by chairwoman Jennifer Homendy, who was due to hold a news conference Monday. The FAA says the cause is unknown. A full ground stop was ordered at Miami on Sunday.</p>
-  <p><b>What to watch:</b> the flight data and cockpit voice recorder readout, whether the investigation turns toward braking, thrust reverser or runway condition, and whether the FAA acts against 21 Air's operating certificate.</p>
-  <div class="divergence">
-    <strong>Divergence &mdash; who died</strong>
-    <p>Outlets agree on five dead and five injured, but differ on the split between aircraft occupants and people on the ground, and one early wire ran &ldquo;three dead&rdquo; before the figure settled. The reporting that specifies says several of the fatalities were ground-level, and that the two pilots were trapped in the wreckage rather than confirmed dead. That is not a contradiction so much as an event still being counted, and I would not treat any crew/ground breakdown as final until the NTSB gives one. What is firm: people died on a public road next to an airport, which is a different kind of accident from an aircraft that kills only its own occupants.</p>
-  </div>
+  <p>European Commission President Ursula von der Leyen, Danish Prime Minister Mette Frederiksen and Greenland's Premier Jens-Frederik Nielsen signed an updated EU&ndash;Greenland&ndash;Denmark Joint Partnership in Nuuk on Monday, at the end of a two-day visit. It carries up to &euro;200 million for 2026&ndash;27 and a Commission proposal for up to &euro;530 million across the 2028&ndash;34 EU budget, roughly double the current allocation. Denmark's annual block grant of about &euro;123 million continues alongside it.</p>
+  <p>The money is directed at satellite and cable connectivity for northern and eastern Greenland, hydropower, critical raw materials extraction, tourism, housing and small business. A satellite-connectivity project with the Greenlandic operator Tusass was launched during the visit. Von der Leyen described Greenland as Europe's <span>&ldquo;trusted friend, strategic ally&rdquo;</span> and part of the European family.</p>
+  <p>The subtext is not subtext. This follows President Trump's campaign to acquire Greenland, including threats earlier this year to take it by force, which Copenhagen and Nuuk have both rejected. Greenland holds an estimated 25 of the 34 raw materials the EU classifies as critical. Against a GDP in the region of &euro;2.5 billion, &euro;200 million is on the order of eight per cent of the island's economy.</p>
+  <p><b>What to watch:</b> whether Washington responds; whether the &euro;530 million survives the 2028&ndash;34 budget negotiation; and whether any of it is spent on anything a mining company would recognise as a project.</p>
   <details>
-    <summary>Dig deeper &mdash; runway overruns, the ageing converted-freighter fleet, and what the NTSB will actually look at</summary>
+    <summary>Dig deeper &mdash; what &euro;200 million buys, and why this is a sovereignty document dressed as a development grant</summary>
     <div class="deeper">
-      <p>Runway overruns are the most common serious accident category in commercial aviation and they are almost never caused by one thing. The chain is usually: an approach that arrives fast or high, a touchdown beyond the intended point, a surface with less friction than assumed, and a deceleration system that underperforms. Each link on its own is survivable. Together they consume the margin. The 128 mph figure is what makes this one grim &mdash; a normal 767 landing rollout should have the aircraft well below that speed long before the far end, so either the deceleration did not happen or the touchdown happened much too far down the runway.</p>
-      <p>The NTSB's first substantive question will be the recorders. A 767 carries a flight data recorder capturing hundreds of parameters and a cockpit voice recorder; between them they will establish touchdown point, airspeed, thrust reverser deployment, spoiler extension, brake pressure and autobrake setting, and whether the crew attempted a go-around. That readout typically produces a preliminary report within about thirty days. The second question will be the runway: whether it was wet, whether braking action reports had been filed by earlier arrivals, and what the reported wind was. Miami in early September is a thunderstorm environment and a contaminated-surface landing is exactly the scenario where a small misjudgement stops being recoverable.</p>
-      <p>The structural issue behind the accident is the converted freighter fleet, and it is worth understanding because it is the direct consequence of the way parcel delivery now works. Air cargo growth over the last decade has been absorbed almost entirely by passenger aircraft retired and converted, not by new-build freighters, because a new-build costs several times more and cargo yields do not support it. That means a large share of the aircraft flying overnight parcels are three decades old, operated by small specialist carriers under contract to a retailer whose name is on the tail but which does not hold the operating certificate. 21 Air is the operator here; Amazon is the customer. Regulatory responsibility sits with the former, commercial pressure originates with the latter, and that gap is the thing safety regulators have struggled with in contracted air cargo generally.</p>
-      <p>Two precedents will be raised and both are instructive. Atlas Air 3591, a 767 freighter flying for Amazon, crashed into Trinity Bay in 2019 killing three, and the NTSB found a crew response to an inadvertent go-around mode input, with the first officer's history of performance difficulties a contributing factor &mdash; a finding about hiring and records-checking in the contract cargo sector. Emirates 521 in Dubai in 2016 was a 777 that ran off and burned with everyone aboard surviving. Neither is a template for this one. I raise them because the questions they generated &mdash; crew screening at contract carriers, and survivability once an airframe comes to rest and fuel ignites &mdash; are the questions this investigation will land on if the recorders show no mechanical failure.</p>
-      <p>The last point is about geography and it is the reason this is a policy story rather than only an accident story. Runway 30 at Miami ends near Northwest 67th Avenue, a public road. The Runway Safety Area standard exists to give an overrunning aircraft somewhere to stop, and where land is unavailable, engineered material arresting systems &mdash; crushable concrete beds that swallow landing gear &mdash; are the substitute. Whether Miami's runway 30 has one, and whether it functioned, is a question the NTSB will answer and that airports with roads at the end of their runways across the country will be asked about afterwards.</p>
+      <p>Take the money seriously first, because the percentage is what makes this unusual. Eight per cent of GDP in a single external commitment is not development assistance in the ordinary sense; for comparison, that is a multiple of what most aid relationships deliver, and it arrives in an economy of about 57,000 people whose public finances rest heavily on the Danish block grant and on fishing. What Greenland has wanted for two decades is a path to reducing dependence on that grant, because the grant is the practical obstacle to full independence from Denmark. Anything that diversifies Greenland's revenue base is, in Greenlandic politics, an independence instrument. The EU almost certainly understands that, and is offering it anyway, which tells you how much Brussels wants the relationship.</p>
+      <p>The spending list is the giveaway on strategy. Satellite and subsea connectivity for the north and east is dual-use infrastructure &mdash; it serves settlements and it serves surveillance of the Arctic approaches. Hydropower is what makes energy-intensive mineral processing viable in a place with no fossil generation. Critical raw materials is stated outright. Put together, this is a plan to make Greenland's minerals extractable and its territory monitored, funded by an EU that has spent three years discovering how badly it needs non-Chinese sources of the inputs its industry runs on. The 25-of-34 figure is the reason Greenland is on any strategic map at all.</p>
+      <p>But the binding constraint on Greenlandic mining is not capital, it is economics and consent. Deposits have been identified for decades; very few have become mines. The reasons are the cost of operating with no roads between settlements, short ice-free shipping windows, a small labour force, and a domestic politics that has repeatedly rejected specific projects &mdash; the Kvanefjeld uranium-and-rare-earths deposit was effectively stopped by a Greenlandic election and a subsequent ban on uranium mining. &euro;200 million funds enabling infrastructure. It does not resolve whether Greenlanders want the mines, and nothing signed on Monday changes who decides that.</p>
+      <p>The sovereignty function is the real content. When the United States raises the possibility of acquiring territory belonging to a NATO ally, the ally's most effective available response is not military &mdash; Denmark cannot defend Greenland against the United States and everyone involved knows it. It is to make the territory's international status so thickly documented, so financially entangled with the European Union, and so publicly affirmed by heads of government standing next to each other in Nuuk, that acquisition would require repudiating a signed partnership with the entire EU rather than pressuring a country of six million. That is what a joint declaration signed by a Commission president, a prime minister and a premier is for. It converts a bilateral vulnerability into a bloc-level one.</p>
+      <p>Two things I could not stand up and am flagging rather than glossing. The Council of the EU published a document dated 7 September 2026 that appears to be the partnership text; it returned as unparseable binary in this environment, so everything above is drawn from reporting rather than from the instrument itself. And one summary of Frederiksen's remarks contained an obvious transcription error, so I have not quoted her at all. If the reader wants the actual commitments rather than the coverage of them, the Council document reference is ST-12802-2026-INIT.</p>
     </div>
   </details>
   <p class="sources"><b>Sources:</b>
-    <a href="https://abcnews.com/US/cargo-plane-overruns-runway-miami-international-airport-faa/story?id=136242081">ABC News</a> &middot;
-    <a href="https://www.nbcnews.com/news/us-news/amazon-plane-crash-miami-rcna596369">NBC News</a> &middot;
-    <a href="https://www.aljazeera.com/news/2026/9/6/amazon-cargo-plane-crashes-in-us-while-landing-at-miami-airport">Al Jazeera</a> &middot;
-    <a href="https://www.local10.com/news/florida/2026/09/07/investigators-hunt-for-what-went-wrong-after-cargo-plane-crash-in-miami-kills-at-least-5/">Local 10 on the investigation</a> &middot;
-    <a href="https://time.com/article/2026/09/07/miami-airport-plane-overshoot-runway-amazon-cargo/">TIME</a>
+    <a href="https://www.rte.ie/news/europe/2026/0907/1590522-eu-funding-greenland/">RT&Eacute;</a> &middot;
+    <a href="https://www.scmp.com/news/world/europe/article/3366565/eu-commission-chief-von-der-leyen-visits-greenland-sign-new-partnership-deal">South China Morning Post</a> &middot;
+    <a href="https://www.spokesman.com/stories/2026/sep/06/eu-to-give-greenland-a-cash-boost-amid-trump-annex/">The Spokesman-Review</a> &middot;
+    <a href="https://data.consilium.europa.eu/doc/document/ST-12802-2026-INIT/en/pdf">Council of the EU, ST-12802-2026-INIT (primary, unparseable here)</a>
   </p>
   <fieldset>
     <legend>Tune this story</legend>
-    <div class="q" data-sid="mia-767">
-      <p>Follow this to the NTSB preliminary report?</p>
-      <label><input type="radio" name="fb-mia-1" value="follow"> Yes, watchlist it</label>
-      <label><input type="radio" name="fb-mia-1" value="final-only"> Only the final finding</label>
-      <label><input type="radio" name="fb-mia-1" value="drop"> Drop it</label>
+    <div class="q" data-sid="eu-greenland">
+      <p>This is US&ndash;EU policy filed as a Greenland story. Want more of this angle?</p>
+      <label><input type="radio" name="fb-grn-1" value="more"> More</label>
+      <label><input type="radio" name="fb-grn-1" value="current"> About right</label>
+      <label><input type="radio" name="fb-grn-1" value="less"> Less</label>
     </div>
-    <div class="q" data-sid="mia-767">
-      <p>This is in Florida but I filed it as a national story, not in the local section. Right call?</p>
-      <label><input type="radio" name="fb-mia-2" value="right"> Right &mdash; it's national</label>
-      <label><input type="radio" name="fb-mia-2" value="local"> Should have been local</label>
-      <label><input type="radio" name="fb-mia-2" value="no-opinion"> No opinion</label>
+    <div class="q" data-sid="eu-greenland">
+      <p>Follow the critical-raw-materials angle as its own thread?</p>
+      <label><input type="radio" name="fb-grn-2" value="follow"> Yes, watchlist it</label>
+      <label><input type="radio" name="fb-grn-2" value="only-projects"> Only if a real project moves</label>
+      <label><input type="radio" name="fb-grn-2" value="drop"> Drop it</label>
     </div>
   </fieldset>
 </article>
@@ -385,281 +836,50 @@
   </fieldset>
 </article>
 
-<article id="lebanon-strikes">
-  <h3>Israel killed eleven in south Lebanon, two of them medics, under a truce that is a truce in name only <a class="anchor" href="#lebanon-strikes">#</a></h3>
-  <div class="meta">
-    <span class="tag">Geopolitics</span>
-    <span class="tag conf corrob">Independent corroboration</span>
-  </div>
-  <p>Israeli aircraft struck the southern Lebanese village of Kfar Reman and nearby Deir al-Zahrani and Arab Salim, in the Nabatieh district, early on Monday. Lebanon's health ministry put the toll at eleven killed, including two children, and five wounded. A residential building was hit; a separate drone strike on a civilian vehicle in the same town killed two paramedics inside it.</p>
-  <p>The Israeli military said it targeted a building near a Hezbollah facility it said had been used to launch an explosive drone from Deir al-Zahrani. It has not publicly addressed the strike on the ambulance crew.</p>
-  <p>The context is a ceasefire that has not held in any meaningful sense. Israel and Lebanon signed a US-mediated framework in June under which the Lebanese army would disarm Hezbollah in designated pilot zones in exchange for Israeli withdrawal from the south. Little of it has been implemented: Israeli forces still occupy dozens of villages and have declined further withdrawals, and Hezbollah &mdash; which is not a party to the Lebanon&ndash;Israel talks &mdash; says it will not disarm anywhere north of the Litani. Since the escalation began in early March, Lebanon's health ministry counts more than 4,350 killed and 12,300 wounded, and 179 Israeli attacks on ambulance crews killing 135 healthcare workers.</p>
-  <p><b>What to watch:</b> whether the June framework is formally abandoned, whether Hezbollah responds beyond drone launches, and whether the medic figures draw a UN or ICRC response.</p>
-  <div class="divergence">
-    <strong>Divergence &mdash; facts versus framing</strong>
-    <p>The dispute here is not really about what happened. Both sides agree strikes occurred in these three villages on Monday morning. Israel's account is about the <em>target</em> &mdash; a Hezbollah drone-launch facility &mdash; and is silent on the civilian building and the ambulance. Lebanon's account is about the <em>result</em> &mdash; a residential block, two children, two medics &mdash; and is silent on whether anything military was present. Both can be true simultaneously, and usually are. What is not resolvable from open sources is whether the vehicle struck was identifiable as an ambulance at the moment of the strike, which is the question that determines whether it was a targeting failure or a targeting decision. The casualty counts also drift: early reports gave nine dead, later ones eleven, one wire ran ten. That is a toll rising as the wounded die, not a dispute.</p>
-  </div>
-  <details>
-    <summary>Dig deeper &mdash; why the June framework was always going to stall, and what the medic numbers mean legally</summary>
-    <div class="deeper">
-      <p>The June framework's design flaw is visible in a single sentence: it required Hezbollah to disarm, and Hezbollah was not a signatory. The agreement is between the Israeli and Lebanese states, and it assigns the disarmament task to the Lebanese Armed Forces. The LAF is a genuine national institution but it is not, and has never been, capable of disarming Hezbollah by force; attempting it would risk the sectarian fracture of the army itself, which is the outcome every Lebanese government since 1990 has organised its politics to avoid. So the framework asks a party that cannot deliver to deliver, in exchange for a withdrawal the other side has conditioned on that delivery. Each side then points at the other's non-performance as justification for its own. That is not a peace process failing; it is a peace process operating exactly as its structure dictates.</p>
-      <p>The pilot-zone mechanism was the attempt to escape that trap &mdash; carve out small areas, demonstrate the exchange works, then expand. Pilot schemes of this kind fail when the first zone becomes the whole negotiation, because neither side will let a precedent be set on unfavourable terms. Israel's continued occupation of villages beyond the agreed lines and its refusal of further withdrawal means the exchange has never actually been tested. Hezbollah's position north of the Litani means it never will be, on the current text.</p>
-      <p>The medic figures deserve to be read carefully rather than as an atrocity tally. Under international humanitarian law, medical personnel and ambulances have specific protected status: they may not be attacked, and they lose protection only if used to commit acts harmful to the enemy outside their humanitarian function, and then only after a warning with a reasonable time limit. One hundred and thirty-five healthcare workers killed across 179 incidents in six months is a pattern rather than a series of accidents, and a pattern is what triggers the legal question of whether protection is being systematically disregarded or whether medical facilities are being systematically misused. Israel has consistently argued the latter in Gaza and Lebanon; establishing it requires evidence per incident, which is precisely what does not exist for most of these strikes. I cannot adjudicate it from open sources and neither can anyone else without access to targeting records.</p>
-      <p>What I can say is what the numbers do to the ceasefire's survival. A truce degrades in a predictable way: the strikes continue, the casualty count normalises, the diplomatic cost of each individual strike falls because it is no longer novel, and eventually the agreement exists only as a name that both sides use for the current level of violence. Lebanon&ndash;Israel is at that stage now. The framework is three months old and its implementation has not begun.</p>
-      <p>The connection to the rest of this issue is Iran. Hezbollah is the most capable of Iran's regional partners and the one whose activation would most change the calculus of the Hormuz confrontation leading this brief. It has not been activated &mdash; drone launches at Israeli troops are far below its capability &mdash; and the most plausible reading of that restraint is that Tehran is holding it in reserve rather than that it is unable to act. Six months into a war with the United States, the fact that Hezbollah is still firing single drones is one of the more informative facts available about how Iran assesses its own position.</p>
-    </div>
-  </details>
-  <p class="sources"><b>Sources:</b>
-    <a href="https://www.aljazeera.com/news/2026/9/7/israeli-air-attack-kills-at-least-10-people-in-southern-lebanon">Al Jazeera</a> &middot;
-    <a href="https://www.nbcnews.com/world/lebanon/israeli-strikes-southern-lebanese-town-kill-11-state-news-agency-says-rcna596433">NBC News</a> &middot;
-    <a href="https://www.local10.com/news/world/2026/09/07/israeli-airstrikes-hit-a-lebanese-village-killing-9-and-other-mideast-developments/">AP via Local 10</a> &middot;
-    <a href="https://www.wpri.com/news/us-and-world/ap-israeli-airstrikes-on-a-village-in-southern-lebanon-kill-9-people-wound-13/">AP via WPRI</a>
-  </p>
-  <fieldset>
-    <legend>Tune this story</legend>
-    <div class="q" data-sid="lebanon-strikes">
-      <p>Add Israel&ndash;Lebanon as a standing thread, or cover only on major escalation?</p>
-      <label><input type="radio" name="fb-leb-1" value="thread"> Standing thread</label>
-      <label><input type="radio" name="fb-leb-1" value="major"> Major escalation only</label>
-      <label><input type="radio" name="fb-leb-1" value="drop"> Drop it</label>
-    </div>
-    <div class="q" data-sid="lebanon-strikes">
-      <p>I said I can't adjudicate the medic strikes without targeting records, rather than picking a side. Right call?</p>
-      <label><input type="radio" name="fb-leb-2" value="right"> Right &mdash; say what you can't know</label>
-      <label><input type="radio" name="fb-leb-2" value="judgment"> Give me your judgement anyway</label>
-      <label><input type="radio" name="fb-leb-2" value="no-opinion"> No opinion</label>
-    </div>
-  </fieldset>
-</article>
-
-<article id="eu-greenland">
-  <h3>Brussels put &euro;200 million on the table in Nuuk, which is about eight per cent of Greenland's economy <a class="anchor" href="#eu-greenland">#</a></h3>
-  <div class="meta">
-    <span class="tag">World economy</span>
-    <span class="tag">Geopolitics</span>
-    <span class="tag conf corrob">Independent corroboration</span>
-  </div>
-  <p>European Commission President Ursula von der Leyen, Danish Prime Minister Mette Frederiksen and Greenland's Premier Jens-Frederik Nielsen signed an updated EU&ndash;Greenland&ndash;Denmark Joint Partnership in Nuuk on Monday, at the end of a two-day visit. It carries up to &euro;200 million for 2026&ndash;27 and a Commission proposal for up to &euro;530 million across the 2028&ndash;34 EU budget, roughly double the current allocation. Denmark's annual block grant of about &euro;123 million continues alongside it.</p>
-  <p>The money is directed at satellite and cable connectivity for northern and eastern Greenland, hydropower, critical raw materials extraction, tourism, housing and small business. A satellite-connectivity project with the Greenlandic operator Tusass was launched during the visit. Von der Leyen described Greenland as Europe's <span>&ldquo;trusted friend, strategic ally&rdquo;</span> and part of the European family.</p>
-  <p>The subtext is not subtext. This follows President Trump's campaign to acquire Greenland, including threats earlier this year to take it by force, which Copenhagen and Nuuk have both rejected. Greenland holds an estimated 25 of the 34 raw materials the EU classifies as critical. Against a GDP in the region of &euro;2.5 billion, &euro;200 million is on the order of eight per cent of the island's economy.</p>
-  <p><b>What to watch:</b> whether Washington responds; whether the &euro;530 million survives the 2028&ndash;34 budget negotiation; and whether any of it is spent on anything a mining company would recognise as a project.</p>
-  <details>
-    <summary>Dig deeper &mdash; what &euro;200 million buys, and why this is a sovereignty document dressed as a development grant</summary>
-    <div class="deeper">
-      <p>Take the money seriously first, because the percentage is what makes this unusual. Eight per cent of GDP in a single external commitment is not development assistance in the ordinary sense; for comparison, that is a multiple of what most aid relationships deliver, and it arrives in an economy of about 57,000 people whose public finances rest heavily on the Danish block grant and on fishing. What Greenland has wanted for two decades is a path to reducing dependence on that grant, because the grant is the practical obstacle to full independence from Denmark. Anything that diversifies Greenland's revenue base is, in Greenlandic politics, an independence instrument. The EU almost certainly understands that, and is offering it anyway, which tells you how much Brussels wants the relationship.</p>
-      <p>The spending list is the giveaway on strategy. Satellite and subsea connectivity for the north and east is dual-use infrastructure &mdash; it serves settlements and it serves surveillance of the Arctic approaches. Hydropower is what makes energy-intensive mineral processing viable in a place with no fossil generation. Critical raw materials is stated outright. Put together, this is a plan to make Greenland's minerals extractable and its territory monitored, funded by an EU that has spent three years discovering how badly it needs non-Chinese sources of the inputs its industry runs on. The 25-of-34 figure is the reason Greenland is on any strategic map at all.</p>
-      <p>But the binding constraint on Greenlandic mining is not capital, it is economics and consent. Deposits have been identified for decades; very few have become mines. The reasons are the cost of operating with no roads between settlements, short ice-free shipping windows, a small labour force, and a domestic politics that has repeatedly rejected specific projects &mdash; the Kvanefjeld uranium-and-rare-earths deposit was effectively stopped by a Greenlandic election and a subsequent ban on uranium mining. &euro;200 million funds enabling infrastructure. It does not resolve whether Greenlanders want the mines, and nothing signed on Monday changes who decides that.</p>
-      <p>The sovereignty function is the real content. When the United States raises the possibility of acquiring territory belonging to a NATO ally, the ally's most effective available response is not military &mdash; Denmark cannot defend Greenland against the United States and everyone involved knows it. It is to make the territory's international status so thickly documented, so financially entangled with the European Union, and so publicly affirmed by heads of government standing next to each other in Nuuk, that acquisition would require repudiating a signed partnership with the entire EU rather than pressuring a country of six million. That is what a joint declaration signed by a Commission president, a prime minister and a premier is for. It converts a bilateral vulnerability into a bloc-level one.</p>
-      <p>Two things I could not stand up and am flagging rather than glossing. The Council of the EU published a document dated 7 September 2026 that appears to be the partnership text; it returned as unparseable binary in this environment, so everything above is drawn from reporting rather than from the instrument itself. And one summary of Frederiksen's remarks contained an obvious transcription error, so I have not quoted her at all. If the reader wants the actual commitments rather than the coverage of them, the Council document reference is ST-12802-2026-INIT.</p>
-    </div>
-  </details>
-  <p class="sources"><b>Sources:</b>
-    <a href="https://www.rte.ie/news/europe/2026/0907/1590522-eu-funding-greenland/">RT&Eacute;</a> &middot;
-    <a href="https://www.scmp.com/news/world/europe/article/3366565/eu-commission-chief-von-der-leyen-visits-greenland-sign-new-partnership-deal">South China Morning Post</a> &middot;
-    <a href="https://www.spokesman.com/stories/2026/sep/06/eu-to-give-greenland-a-cash-boost-amid-trump-annex/">The Spokesman-Review</a> &middot;
-    <a href="https://data.consilium.europa.eu/doc/document/ST-12802-2026-INIT/en/pdf">Council of the EU, ST-12802-2026-INIT (primary, unparseable here)</a>
-  </p>
-  <fieldset>
-    <legend>Tune this story</legend>
-    <div class="q" data-sid="eu-greenland">
-      <p>This is US&ndash;EU policy filed as a Greenland story. Want more of this angle?</p>
-      <label><input type="radio" name="fb-grn-1" value="more"> More</label>
-      <label><input type="radio" name="fb-grn-1" value="current"> About right</label>
-      <label><input type="radio" name="fb-grn-1" value="less"> Less</label>
-    </div>
-    <div class="q" data-sid="eu-greenland">
-      <p>Follow the critical-raw-materials angle as its own thread?</p>
-      <label><input type="radio" name="fb-grn-2" value="follow"> Yes, watchlist it</label>
-      <label><input type="radio" name="fb-grn-2" value="only-projects"> Only if a real project moves</label>
-      <label><input type="radio" name="fb-grn-2" value="drop"> Drop it</label>
-    </div>
-  </fieldset>
-</article>
-
-<article id="missouri-kavanaugh">
-  <h3>Missouri's map ran out of runway today, and the deadline nobody agrees on is tomorrow or Wednesday <a class="anchor" href="#missouri-kavanaugh">#</a></h3>
-  <div class="meta">
-    <span class="tag">US politics &amp; policy</span>
-    <span class="tag conf corrob">Independent corroboration</span>
-    <span class="tag">Follow-up</span>
-  </div>
-  <p>The response Justice Kavanaugh ordered was due at noon Eastern today &mdash; on Labor Day, which is the tell. He directed Richard von Glahn of People Not Politicians, the referendum campaign, to answer Missouri's emergency application by then, and the fact that he set a federal holiday deadline is the clearest available signal that the Court intends to move before ballots print rather than let the clock decide.</p>
-  <p>Two new details sharpen <a href="2026-09-06.html#missouri-scotus">yesterday's account</a>. First, Missouri's own state-law cutoff for changes to the November ballot falls this week &mdash; which compresses the timeline far more than the 19 September overseas-ballot mailing date I emphasised yesterday. Second, the state's Elections Clause argument now has a specific shape: Solicitor General Louis Capozzi frames it as whether 3.3 per cent of a state's voters can suspend a congressional map by filing a referendum petition, and separately argues the state court disenfranchised hundreds of thousands of voters by returning them to old districts.</p>
-  <p>Legal observers quoted in Missouri coverage still expect Kavanaugh to deny the stay, on the ground that federal courts have limited authority over state election procedure. That was my read yesterday and it has not changed.</p>
-  <p><b>What to watch:</b> an order from Kavanaugh alone, or a referral to the full Court, before the state cutoff passes.</p>
-  <div class="divergence">
-    <strong>Divergence &mdash; when is the state deadline?</strong>
-    <p>SCOTUSblog describes Kavanaugh's Monday noon deadline as falling one day before the state-law cutoff for finalising November ballot changes, which puts that cutoff on Tuesday 8 September. Missouri public-radio coverage gives Wednesday 9 September. One day is not a rounding error when the entire application is built on timing, and I could not resolve it against the statute itself. Treat the cutoff as this week and do not rely on the specific date. If the Court acts, it will almost certainly act before either.</p>
-  </div>
-  <p class="sources"><b>Sources:</b>
-    <a href="https://www.scotusblog.com/2026/09/missouri-urges-supreme-court-to-allow-for-use-of-congressional-map-expected-to-aid-republicans/">SCOTUSblog</a> &middot;
-    <a href="https://www.kcur.org/politics-elections-and-government/2026-09-07/missouri-redistricting-lawsuit-referendum-november-supreme-court">KCUR</a> &middot;
-    <a href="https://missouriindependent.com/2026/09/06/looming-ballot-deadline-complicates-gop-appeal-of-missouri-redistricting-decision/">Missouri Independent</a> &middot;
-    <a href="https://www.stlpr.org/government-politics-issues/2026-09-05/republican-officials-ask-us-supreme-court-to-overturn-missouri-redistricting-ruling">STLPR</a>
-  </p>
-  <fieldset>
-    <legend>Tune this story</legend>
-    <div class="q" data-sid="missouri-kavanaugh">
-      <p>Yesterday this ran long with a doctrinal expansion; today it's 250 words and no expansion because there was less to say. Is that variation good?</p>
-      <label><input type="radio" name="fb-mo2-1" value="yes"> Yes &mdash; length should track substance</label>
-      <label><input type="radio" name="fb-mo2-1" value="consistent"> I'd rather each story were consistent</label>
-      <label><input type="radio" name="fb-mo2-1" value="no-opinion"> No opinion</label>
-    </div>
-    <div class="q" data-sid="missouri-kavanaugh">
-      <p>Cadence from here?</p>
-      <label><input type="radio" name="fb-mo2-2" value="only-orders"> Only when the Court acts</label>
-      <label><input type="radio" name="fb-mo2-2" value="every-filing"> Every filing</label>
-      <label><input type="radio" name="fb-mo2-2" value="stop"> Stop following</label>
-    </div>
-  </fieldset>
-</article>
-
-<article id="krakatau-jakarta">
-  <h3>Krakatau's disruption is not 301 flights, it is 2,300, and Jakarta's schools went remote today <a class="anchor" href="#krakatau-jakarta">#</a></h3>
-  <div class="meta">
-    <span class="tag">Science &amp; public health</span>
-    <span class="tag conf corrob">Independent corroboration</span>
-    <span class="tag">Follow-up</span>
-  </div>
-  <p>The Jakarta provincial government moved all public and private schools at every level to remote learning from Monday until further notice, citing children's vulnerability to volcanic ash. Several Indonesian airports remain closed. InJourney Airports, which runs four of the affected airports, puts cumulative disruption at about 2,300 flights and 268,539 passengers.</p>
-  <p>Anak Krakatau's continuous eruption &mdash; which began late on 4 September, produced lava fountains and a detonation audible 700 kilometres away &mdash; ran for 25 hours and ended on Sunday. The volcano remains at alert level III of Indonesia's four, with moderate intermittent eruptions, dark ash emissions and small local earthquakes continuing on Monday. Seismicity has fallen sharply, but the geological agency warns it remains highly active and could erupt again.</p>
-  <p><b>What to watch:</b> whether the alert level moves in either direction, when Jakarta schools reopen, and whether ash returns to cruise altitudes rather than terminal airspace.</p>
-  <div class="correction">
-    <strong>Scale correction to yesterday's issue</strong>
-    <p><a href="2026-09-06.html#krakatau">Yesterday I reported 301 flights and more than 22,000 passengers</a>, attributed to Angkasa Pura. That figure was a single operator's snapshot of one day. The running total across the four InJourney airports is 2,300 flights and 268,539 passengers &mdash; an order of magnitude larger. The 301 number was not wrong when I published it; it was far narrower than the sentence around it implied, and I should have said so. I also wrote that the ash cloud reaching 50,000 feet made cruise-altitude disruption the scenario to watch. The disruption arrived as sustained terminal closures instead, which is the cheaper of the two, and the schools order is a public-health consequence I did not anticipate.</p>
-  </div>
-  <p class="sources"><b>Sources:</b>
-    <a href="https://en.tempo.co/read/2119059/jakarta-shifts-to-remote-learning-over-anak-krakatau-ash">Tempo on the schools order</a> &middot;
-    <a href="https://www.euronews.com/2026/09/07/volcano-in-indonesia-erupts-canceling-hundreds-of-flights-and-stranding-thousands">Euronews</a> &middot;
-    <a href="https://abcnews.com/Technology/wireStory/indonesia-airports-closed-volcanic-eruption-easing-136248926">AP via ABC News</a> &middot;
-    <a href="https://asianews.network/jakarta-airport-closure-extended-as-anak-krakatau-volcano-eruption-disrupts-flights/">Asia News Network</a> &middot;
-    <a href="https://id.usembassy.gov/natural-disaster-alert-mt-anak-krakatau-eruption-september-6-2026/">US Embassy Jakarta alert</a>
-  </p>
-  <fieldset>
-    <legend>Tune this story</legend>
-    <div class="q" data-sid="krakatau-jakarta">
-      <p>I corrected the scale of my own figure at the top. Want that surfaced this prominently?</p>
-      <label><input type="radio" name="fb-krak2-1" value="prominent"> Yes, keep it prominent</label>
-      <label><input type="radio" name="fb-krak2-1" value="footnote"> A footnote is enough</label>
-      <label><input type="radio" name="fb-krak2-1" value="no-opinion"> No opinion</label>
-    </div>
-    <div class="q" data-sid="krakatau-jakarta">
-      <p>No expansion on this one &mdash; the volcanology ran yesterday and repeating it would be padding. Agree?</p>
-      <label><input type="radio" name="fb-krak2-2" value="agree"> Agree</label>
-      <label><input type="radio" name="fb-krak2-2" value="always-expand"> I'd rather every story had one</label>
-      <label><input type="radio" name="fb-krak2-2" value="no-opinion"> No opinion</label>
-    </div>
-  </fieldset>
-</article>
-
-<article id="jlr-4000">
-  <h3>Jaguar Land Rover put a headcount on a savings target it announced months ago, and the number is 4,000 people <a class="anchor" href="#jlr-4000">#</a></h3>
-  <div class="meta">
-    <span class="tag">World economy</span>
-    <span class="tag">Macro &amp; markets</span>
-    <span class="tag conf corrob">Independent corroboration</span>
-  </div>
-  <p>JLR confirmed on Monday that it will cut about 4,000 jobs over two years, roughly a tenth of a global workforce of some 43,000 and the majority of them in the UK, where it employs around 34,000. The company says the cuts fall mainly on head office and other non-manufacturing functions rather than on the factory floor. A voluntary redundancy window is open until 4 October; JLR has said it will move to compulsory redundancies on less generous terms if the window does not fill.</p>
-  <p>The savings figure attached to this is &pound;1.7 billion, about $2.3 billion, over two years. That number is not new. JLR set it out at its FY26 results alongside a target of pulling cash break-even volumes down to 300,000 vehicles a year from roughly 350,000. What today added was the headcount required to get there. The arithmetic underneath is the whole story: JLR sold 308,000 vehicles wholesale in FY26 against a break-even of about 350,000, posted a 0.7 per cent EBIT margin and a full-year cash loss of a little over &pound;2.2 billion. Cutting break-even below volume is the only route to profit that does not require selling more cars into a market where it is losing share.</p>
-  <p>Three pressures sit behind it: cheaper Chinese electric vehicles, the 25 per cent US tariff on imported cars, and the September 2025 cyberattack that halted production for about five weeks and took third-quarter wholesales down 43 per cent. Unite's Sharon Graham said it <span>&ldquo;cannot be acceptable that workers again are made to pay the price.&rdquo;</span></p>
-  <p><b>What to watch:</b> whether the 4 October voluntary window fills or compulsory notices follow; the Reynolds meeting with JLR executives this week; and whether break-even actually reaches 300,000 by FY27, when the savings are supposed to land.</p>
-  <div class="divergence">
-    <strong>Divergence &mdash; which cause is doing the work?</strong>
-    <p>Coverage split cleanly along national lines. The Indian business press led on Tata Motors, the &pound;1.7 billion mission and the break-even reset &mdash; a corporate-turnaround story. The UK and US wires led on Chinese competition and Trump's tariff &mdash; a trade story. Both are describing the same balance sheet, and the difference is which pressure each newsroom's readers already care about. The evidence favours the turnaround framing as the proximate cause and the trade framing as the reason a turnaround became necessary: the &pound;1.7 billion target predates today's announcement by months, and the tariff and the cyberattack are what put FY26 volumes below break-even in the first place. One further split worth flagging: several outlets wrote &ldquo;4,000 UK job cuts&rdquo; and others &ldquo;4,000 globally, majority UK.&rdquo; The company's own framing is the latter. The distinction matters for anyone counting British manufacturing jobs, and the outlets that collapsed it were not reading the statement carefully.</p>
-  </div>
-  <details>
-    <summary>Dig deeper &mdash; why break-even, not plants, and what the cyberattack really cost</summary>
-    <div class="deeper">
-      <p>The instinctive reading of a 4,000-job cut at a carmaker is that a factory is closing. That is not what is happening here, and the difference tells you what kind of trouble JLR is in. Closing a plant lowers capacity. JLR does not have a capacity problem; it has a cost-per-unit problem. Its stated aim is to keep building at current volumes while making those volumes profitable, which is why the cuts land on head office, engineering overhead, IT and warranty administration rather than on assembly lines. The named cost missions are end-to-end delivered cost and procurement, warranty and repair, and IT and digital productivity. None of those are shop-floor line items.</p>
-      <p>Break-even volume is the number to hold onto. It is the annual unit count at which a manufacturer covers its fixed costs, and it is the single figure that determines whether a given year's sales produce cash or consume it. JLR's sat near 350,000 in FY26 while it wholesaled 308,000. That gap &mdash; roughly 42,000 vehicles it needed to sell and did not &mdash; is a precise measure of why the year produced a &pound;2.2 billion cash loss rather than a profit. There are two ways to close it. Sell 42,000 more cars into a market where Chinese manufacturers are undercutting you and a 25 per cent tariff sits on your largest premium export market, or take the fixed costs down until 308,000 is enough. Management has chosen the second, and 4,000 people is the price of the second. CFO Dheeman Gupta has described the cost-out missions as the top priority precisely so break-even can come back down to 300,000.</p>
-      <p>The cyberattack deserves more weight than the one-line mention it usually gets. The September 2025 breach stopped production at Britain's largest automotive employer for about five weeks. Third-quarter wholesales fell 43 per cent year on year to 59,200 units, retail sales fell 25.1 per cent to 79,600, and the company booked a &pound;485 million loss across the three months. UK car production fell 27 per cent that September, the worst September for the industry since 1952, and estimates of the cost to the wider UK economy run to about $2.5 billion. Production did not return to normal until mid-November. A firm whose break-even is 350,000 units cannot lose five weeks of output without the year going badly, and much of the gap being closed today was opened by that incident rather than by any strategic error.</p>
-      <p>Then the politics. The government ruled out a bailout &mdash; Business and Trade Secretary Jonathan Reynolds over the weekend, and Prime Minister Andy Burnham's office again on Monday. That is a harder position than it looks, because Burnham took office this summer on an explicit promise to reindustrialise, and JLR is the largest single test of it available. The refusal is probably correct on the merits: this is a cost structure that state money would postpone rather than fix, and Tata Motors is not short of capital. But it means the government has chosen to absorb the political cost of 4,000 redundancies at the country's biggest carmaker rather than the fiscal cost of preventing them, and it has done so in the same week that the tariff driving part of the problem remains entirely in Washington's gift. Reynolds meeting JLR executives this week is a meeting about mitigation, not rescue.</p>
-      <p>One thing this does not tell you: whether &pound;15&ndash;18 billion of planned electrification and digital investment over five years survives contact with a cost-cutting programme. Companies rarely announce that they are trimming the investment line on the same day they announce redundancies. Watch the FY27 half-year, when both the savings and any quiet reprofiling of that spend should become visible.</p>
-    </div>
-  </details>
-  <p class="sources"><b>Sources:</b>
-    <a href="https://abcnews.com/Business/wireStory/jaguar-land-rover-cut-4000-jobs-reduce-costs-136253666">AP wire on the confirmation and workforce figures</a> &middot;
-    <a href="https://www.cnbc.com/2026/09/07/jaguar-land-rover-jlr-job-cuts-autos.html">CNBC on the $2.3bn overhaul</a> &middot;
-    <a href="https://www.autocarpro.in/news/jlr-targets-%C2%A317-billion-savings-as-breakeven-reset-begins-132663">Autocar Professional on the break-even reset and FY26 numbers</a> &middot;
-    <a href="https://www.business-standard.com/world-news/uk-government-rules-out-jaguar-land-rover-bailout-over-4-000-job-cuts-126090700104_1.html">Business Standard on the bailout refusal</a> &middot;
-    <a href="https://www.bnnbloomberg.ca/business/company-news/2026/09/07/jaguar-land-rover-to-cut-4000-jobs-as-european-car-sector-hits-skids/">BNN Bloomberg</a> &middot;
-    <a href="https://www.bleepingcomputer.com/news/security/jaguar-land-rover-wholesale-volumes-down-43-percent-after-cyberattack/">BleepingComputer on the cyberattack volume impact</a>
-  </p>
-  <fieldset>
-    <legend>Tune this story</legend>
-    <div class="q" data-sid="jlr-4000">
-      <p>This is a UK company owned by an Indian one, cut partly by a US tariff. Is that inside your beats?</p>
-      <label><input type="radio" name="fb-jlr-1" value="yes"> Yes &mdash; tariff effects abroad are US policy</label>
-      <label><input type="radio" name="fb-jlr-1" value="us-only"> Only where a US firm is involved</label>
-      <label><input type="radio" name="fb-jlr-1" value="no-opinion"> No opinion</label>
-    </div>
-    <div class="q" data-sid="jlr-4000">
-      <p>I built the story on break-even arithmetic rather than on the redundancies themselves. Right call?</p>
-      <label><input type="radio" name="fb-jlr-2" value="yes-numbers"> Yes &mdash; the numbers are the story</label>
-      <label><input type="radio" name="fb-jlr-2" value="more-human"> More on the workers and the towns</label>
-      <label><input type="radio" name="fb-jlr-2" value="no-opinion"> No opinion</label>
-    </div>
-    <div class="q" data-sid="jlr-4000">
-      <p>Follow the European auto sector as a standing thread &mdash; tariffs, Chinese share, plant decisions?</p>
-      <label><input type="radio" name="fb-jlr-3" value="follow"> Yes, watchlist it</label>
-      <label><input type="radio" name="fb-jlr-3" value="uk-only"> Only JLR</label>
-      <label><input type="radio" name="fb-jlr-3" value="no"> No</label>
-    </div>
-  </fieldset>
-</article>
-
-<article id="acton-canfield">
-  <h3>An armed man charged the Democratic nominee for governor of Ohio, and the charges filed are for the bystanders he knocked down <a class="anchor" href="#acton-canfield">#</a></h3>
+<article id="mia-767">
+  <h3>A cargo 767 left the runway at Miami at 128 mph and killed people in cars on a public street <a class="anchor" href="#mia-767">#</a></h3>
   <div class="meta">
     <span class="tag">US politics &amp; policy</span>
     <span class="tag conf corrob">Independent corroboration</span>
   </div>
-  <p>Patrick Havas, 38, of Canfield, entered the Democratic Party tent at the Canfield Fair in Mahoning County at about 2.30pm on Sunday, recording Amy Acton's visit, then forced through the crowd toward her. Two people were knocked to the ground. Acton's security detail &mdash; Ohio State Highway Patrol troopers &mdash; confronted him and Canfield Fair police took him into custody. He was carrying two handguns, brass knuckles and a Taser. Investigators say he never drew or brandished any of them.</p>
-  <p>Havas was booked into Mahoning County Jail on two counts of felony assault and one count of disorderly conduct, with no bond set and a court appearance expected Tuesday. No motive has been disclosed. The Highway Patrol says it will examine threat-assessment questions separately from the criminal case.</p>
-  <p>Acton, a physician, was not hurt and stayed at the fair to treat one of the injured. She is running against Vivek Ramaswamy in November to succeed the term-limited Mike DeWine, in a race polling close. DeWine called violence at political events <span>&ldquo;always unacceptable&rdquo;</span>; Ramaswamy's campaign said candidates should be able to meet voters without fearing violence; Senator Jon Husted said he was disturbed by the attempted attack. The bipartisan condemnation was immediate and, so far, unqualified.</p>
-  <p><b>What to watch:</b> Tuesday's arraignment and whether the felony assault counts survive it; whether any charge is added relating to the weapons or to Acton herself; and whether either campaign changes how it does retail events in the eight weeks to the election.</p>
+  <p>Prime Air flight 7598, a Boeing 767-300 freighter operated by 21 Air on behalf of Amazon, overran runway 30 at Miami International Airport at about 2pm Sunday, inbound from Luis Mu&ntilde;oz Mar&iacute;n International in San Juan. It crossed Northwest 67th Avenue, struck vehicles, caught fire and came to rest in a field outside the airport perimeter. Five people were killed and five injured, three of them critically. Several of the dead were on the ground rather than aboard. Miami-Dade Fire Rescue freed one person pinned beneath a car; a fuel leak persisted for hours. The pilot and copilot were trapped in the aircraft.</p>
+  <p>The airframe is 32 years old and spent more than two decades in passenger service before conversion to freight in 2015. Reporting puts the aircraft's speed at roughly 128 mph as it left the paved surface, which is not a landing that went slightly long &mdash; it is an aircraft that was still at flying speed with the runway behind it.</p>
+  <p>The NTSB is leading, with a go-team headed by chairwoman Jennifer Homendy, who was due to hold a news conference Monday. The FAA says the cause is unknown. A full ground stop was ordered at Miami on Sunday.</p>
+  <p><b>What to watch:</b> the flight data and cockpit voice recorder readout, whether the investigation turns toward braking, thrust reverser or runway condition, and whether the FAA acts against 21 Air's operating certificate.</p>
   <div class="divergence">
-    <strong>Divergence &mdash; what he was actually charged with</strong>
-    <p>Early wire copy on Sunday evening described the charges as &ldquo;two counts of assault and disorderly conduct&rdquo; without a degree. The Youngstown <em>Vindicator</em>, working the Mahoning County booking directly, has them as two counts of <em>felony</em> assault. That is not a stylistic difference: in Ohio, assault is ordinarily a first-degree misdemeanour, and it rises to a felony only in specific circumstances. National outlets that ran the undifferentiated wire version left readers with a materially lighter picture of the case than the county record supports, and the local paper is the better source here. Treat the felony characterisation as the one to carry forward, and Tuesday's arraignment as the test of it.</p>
+    <strong>Divergence &mdash; who died</strong>
+    <p>Outlets agree on five dead and five injured, but differ on the split between aircraft occupants and people on the ground, and one early wire ran &ldquo;three dead&rdquo; before the figure settled. The reporting that specifies says several of the fatalities were ground-level, and that the two pilots were trapped in the wreckage rather than confirmed dead. That is not a contradiction so much as an event still being counted, and I would not treat any crew/ground breakdown as final until the NTSB gives one. What is firm: people died on a public road next to an airport, which is a different kind of accident from an aircraft that kills only its own occupants.</p>
   </div>
   <details>
-    <summary>Dig deeper &mdash; the gap between what happened and what is chargeable, and why this lands on Acton in particular</summary>
+    <summary>Dig deeper &mdash; runway overruns, the ageing converted-freighter fleet, and what the NTSB will actually look at</summary>
     <div class="deeper">
-      <p>The striking feature of this case is the mismatch between the description and the charge sheet. What is described is a man moving through a crowd toward a candidate for statewide office while armed with two handguns, brass knuckles and a Taser. What is charged is assault on two people he knocked over on the way, plus disorderly conduct. Nothing on the sheet concerns Acton, and nothing concerns the weapons.</p>
-      <p>Both gaps are explicable and neither is an oversight. On the weapons: Ohio has permitted concealed carry without a licence since 2022, so carrying the handguns was very likely lawful in itself. Brass knuckles are a different matter under Ohio's prohibition on carrying certain weapons, and whether the fairgrounds themselves posted a weapons restriction is the open question that would convert lawful carry into a chargeable act. Neither point has been publicly resolved, and I would not assume either way. On Acton: because Havas never drew a weapon and never reached her, the conduct directed at her is closer to menacing or attempted assault than to assault, and both are harder to prove and depend heavily on what the investigation establishes about intent. Prosecutors charge what the booking will support on Sunday night and add counts later. The absence of a charge naming Acton on day one is a statement about evidentiary posture, not about what anyone thinks happened.</p>
-      <p>That is exactly why the Highway Patrol's separate threat-assessment review matters more than the misdemeanour-versus-felony question. Criminal charges answer what can be proved about one afternoon. A threat assessment answers whether this person had been building toward something, which is the question that determines whether the protective posture around both campaigns changes for the next eight weeks. Note also that Acton had a Highway Patrol detail at a county fair in the first place &mdash; a non-incumbent gubernatorial candidate does not automatically get one, and the fact that it was there and closed the distance is why this is a story about two bruised bystanders rather than a much worse one.</p>
-      <p>The reason it lands on Acton specifically is the part national coverage mostly left out. Acton was DeWine's state health director through the first months of the pandemic and became the public face of Ohio's stay-at-home orders. In May 2020 armed protesters gathered outside her home in Bexley; neighbours reported men walking the street with rifles. The criticism turned antisemitic &mdash; Acton is Jewish &mdash; and she was assigned a security detail before resigning that June. Whatever Havas's motive turns out to be, Acton is a candidate with six years of documented armed intimidation behind her, and Sunday is the second time a security detail has been the thing standing between her and someone who came to where she was.</p>
-      <p>The last thing worth saying is about the reaction, because it is the genuinely notable part. DeWine, Ramaswamy and Husted &mdash; the sitting Republican governor, her Republican opponent and a Republican senator &mdash; all condemned it within hours, without hedging and without whataboutery. In a cycle where political violence has repeatedly been metabolised into partisan advantage within the news day, that did not happen here. It is worth marking when the norm holds, if only so there is a baseline to measure the next one against.</p>
+      <p>Runway overruns are the most common serious accident category in commercial aviation and they are almost never caused by one thing. The chain is usually: an approach that arrives fast or high, a touchdown beyond the intended point, a surface with less friction than assumed, and a deceleration system that underperforms. Each link on its own is survivable. Together they consume the margin. The 128 mph figure is what makes this one grim &mdash; a normal 767 landing rollout should have the aircraft well below that speed long before the far end, so either the deceleration did not happen or the touchdown happened much too far down the runway.</p>
+      <p>The NTSB's first substantive question will be the recorders. A 767 carries a flight data recorder capturing hundreds of parameters and a cockpit voice recorder; between them they will establish touchdown point, airspeed, thrust reverser deployment, spoiler extension, brake pressure and autobrake setting, and whether the crew attempted a go-around. That readout typically produces a preliminary report within about thirty days. The second question will be the runway: whether it was wet, whether braking action reports had been filed by earlier arrivals, and what the reported wind was. Miami in early September is a thunderstorm environment and a contaminated-surface landing is exactly the scenario where a small misjudgement stops being recoverable.</p>
+      <p>The structural issue behind the accident is the converted freighter fleet, and it is worth understanding because it is the direct consequence of the way parcel delivery now works. Air cargo growth over the last decade has been absorbed almost entirely by passenger aircraft retired and converted, not by new-build freighters, because a new-build costs several times more and cargo yields do not support it. That means a large share of the aircraft flying overnight parcels are three decades old, operated by small specialist carriers under contract to a retailer whose name is on the tail but which does not hold the operating certificate. 21 Air is the operator here; Amazon is the customer. Regulatory responsibility sits with the former, commercial pressure originates with the latter, and that gap is the thing safety regulators have struggled with in contracted air cargo generally.</p>
+      <p>Two precedents will be raised and both are instructive. Atlas Air 3591, a 767 freighter flying for Amazon, crashed into Trinity Bay in 2019 killing three, and the NTSB found a crew response to an inadvertent go-around mode input, with the first officer's history of performance difficulties a contributing factor &mdash; a finding about hiring and records-checking in the contract cargo sector. Emirates 521 in Dubai in 2016 was a 777 that ran off and burned with everyone aboard surviving. Neither is a template for this one. I raise them because the questions they generated &mdash; crew screening at contract carriers, and survivability once an airframe comes to rest and fuel ignites &mdash; are the questions this investigation will land on if the recorders show no mechanical failure.</p>
+      <p>The last point is about geography and it is the reason this is a policy story rather than only an accident story. Runway 30 at Miami ends near Northwest 67th Avenue, a public road. The Runway Safety Area standard exists to give an overrunning aircraft somewhere to stop, and where land is unavailable, engineered material arresting systems &mdash; crushable concrete beds that swallow landing gear &mdash; are the substitute. Whether Miami's runway 30 has one, and whether it functioned, is a question the NTSB will answer and that airports with roads at the end of their runways across the country will be asked about afterwards.</p>
     </div>
   </details>
   <p class="sources"><b>Sources:</b>
-    <a href="https://www.vindy.com/news/local-news/2026/09/man-arrested-on-assault-charge-at-acton-event-at-canfield-fair/">Youngstown Vindicator on the charges, booking and sheriff's account</a> &middot;
-    <a href="https://www.nbcnews.com/politics/2026-election/armed-person-confronts-ohio-gubernatorial-candidate-amy-acton-event-ca-rcna596395">NBC News</a> &middot;
-    <a href="https://abcnews.com/Politics/wireStory/assailant-lunged-democratic-candidate-ohio-governor-fair-campaign-136244339">AP wire</a> &middot;
-    <a href="https://www.wosu.org/politics-government/2026-09-06/assailant-lunged-at-amy-acton-at-fair-campaign-says">WOSU Public Media</a> &middot;
-    <a href="https://www.cleveland19.com/2026/09/06/multiple-people-injured-following-incident-involving-dr-amy-acton-canfield-fair/">Cleveland 19</a> &middot;
-    <a href="https://www.wosu.org/news/2020-06-11/amy-acton-stepping-down-as-ohio-health-department-director">WOSU on Acton's 2020 resignation</a> &middot;
-    <a href="https://ohiocapitaljournal.com/2021/01/27/pandemic-brings-protests-and-guns-to-officials-personal-homes/">Ohio Capital Journal on the 2020 armed protests</a>
+    <a href="https://abcnews.com/US/cargo-plane-overruns-runway-miami-international-airport-faa/story?id=136242081">ABC News</a> &middot;
+    <a href="https://www.nbcnews.com/news/us-news/amazon-plane-crash-miami-rcna596369">NBC News</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/9/6/amazon-cargo-plane-crashes-in-us-while-landing-at-miami-airport">Al Jazeera</a> &middot;
+    <a href="https://www.local10.com/news/florida/2026/09/07/investigators-hunt-for-what-went-wrong-after-cargo-plane-crash-in-miami-kills-at-least-5/">Local 10 on the investigation</a> &middot;
+    <a href="https://time.com/article/2026/09/07/miami-airport-plane-overshoot-runway-amazon-cargo/">TIME</a>
   </p>
   <fieldset>
     <legend>Tune this story</legend>
-    <div class="q" data-sid="acton-canfield">
-      <p>Your anti-topics rule out crime without policy consequence. Was this the right side of that line?</p>
-      <label><input type="radio" name="fb-act-1" value="yes"> Yes &mdash; political violence is policy</label>
-      <label><input type="radio" name="fb-act-1" value="only-if-injured"> Only if someone is seriously hurt</label>
-      <label><input type="radio" name="fb-act-1" value="skip"> Skip this kind of story</label>
+    <div class="q" data-sid="mia-767">
+      <p>Follow this to the NTSB preliminary report?</p>
+      <label><input type="radio" name="fb-mia-1" value="follow"> Yes, watchlist it</label>
+      <label><input type="radio" name="fb-mia-1" value="final-only"> Only the final finding</label>
+      <label><input type="radio" name="fb-mia-1" value="drop"> Drop it</label>
     </div>
-    <div class="q" data-sid="acton-canfield">
-      <p>I spent the expansion on charging law and the 2020 background rather than on the race itself. Right emphasis?</p>
-      <label><input type="radio" name="fb-act-2" value="yes-mechanics"> Yes &mdash; the mechanics are the value</label>
-      <label><input type="radio" name="fb-act-2" value="more-race"> More on the Ohio race</label>
-      <label><input type="radio" name="fb-act-2" value="no-opinion"> No opinion</label>
-    </div>
-    <div class="q" data-sid="acton-canfield">
-      <p>Track this through arraignment and any added charges?</p>
-      <label><input type="radio" name="fb-act-3" value="follow"> Yes, watchlist it</label>
-      <label><input type="radio" name="fb-act-3" value="outcome-only"> Only the final outcome</label>
-      <label><input type="radio" name="fb-act-3" value="no"> No</label>
+    <div class="q" data-sid="mia-767">
+      <p>This is in Florida but I filed it as a national story, not in the local section. Right call?</p>
+      <label><input type="radio" name="fb-mia-2" value="right"> Right &mdash; it's national</label>
+      <label><input type="radio" name="fb-mia-2" value="local"> Should have been local</label>
+      <label><input type="radio" name="fb-mia-2" value="no-opinion"> No opinion</label>
     </div>
   </fieldset>
 </article>
@@ -760,59 +980,69 @@
     </div>
   </fieldset>
 </article>
-
 <button id="send">Send my feedback &rarr;</button>
 <p id="sendnote">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
 
 <footer>
-  <h4>Threads swept, no trigger fired</h4>
-  <p>The watchlist opened on 5 September, so nothing is old enough to be formally dormant. Each of these was checked against its wake trigger this run.</p>
+  <h4>Selection changes made in this edition</h4>
   <ul>
-    <li><b>Ukraine&ndash;Russia negotiations</b> &mdash; swept, held out of the body deliberately. Zelensky met the negotiating team after Sunday's Kyiv talks, called for a resumption of trilateral negotiations, and discussed air defence and a winter package; the Kremlin said it does not rule the format out. But Dmitry Peskov specifically declined to say how the Witkoff&ndash;Kushner proposals differ from the 2025 Anchorage understandings. My stated trigger was a document either side would describe, or something surviving the 8 September expiry. Neither happened. Reaction to Sunday is not movement.</li>
-    <li><b>Fed September decision</b> &mdash; US markets were closed for Labor Day. Wakes on the 11 September CPI print and the 16 September FOMC statement.</li>
-    <li><b>US fuel prices</b> &mdash; wakes on the EIA weekly print due Tuesday 8 September, the first official reading that could contain the alleged $5.85 diesel record. Brent at $97 makes that print more interesting than it was on Friday.</li>
+    <li><b>Removed as below the bar:</b> Jaguar Land Rover's 4,000 redundancies; Anak Krakatau's flight disruption; the armed man arrested at the Canfield Fair. All three were reported accurately; none of them changed anything the reader has a stake in.</li>
+    <li><b>Added:</b> the September FOMC decision and the pressure around it; Treasury's long-bond buyback increase and the debt-service arithmetic; the transformer and interconnection constraint on AI build-out; the DOJ litigation strategy against state AI law; the state of UAP disclosure implementation.</li>
+    <li><b>Reordered:</b> US domestic stories now lead. The foreign stories that survived the cut run after them, in order of consequence to a US reader.</li>
+    <li><b>Beat weighting changed in <code>config.md</code>:</b> US domestic beats &mdash; Fed and rates, debt, AI industry and policy, US politics and courts, UAP &mdash; now lead the candidate pool. Foreign spot news must clear a materially higher bar, and now needs a direct US consequence to run at all. Energy and grid added as a beat.</li>
+  </ul>
+
+  <h4>Threads swept, no trigger fired</h4>
+  <ul>
+    <li><b>Ukraine&ndash;Russia negotiations</b> &mdash; swept, held out of the body deliberately. Peskov declined on 7 September to say how the Witkoff&ndash;Kushner proposals differ from the 2025 Anchorage understandings. My stated trigger was a document either side would describe, or something surviving the 8 September expiry. Neither happened.</li>
+    <li><b>US fuel prices</b> &mdash; wakes on the EIA weekly print due Tuesday 8 September, the first official reading that could contain the alleged $5.85 diesel record.</li>
     <li><b>Gulf states &amp; Article 51</b> &mdash; no movement. Wakes on Kuwait or the UAE restricting US use of the bases Iran struck, or a collective GCC statement.</li>
     <li><b>USPS mail ballot rule</b> &mdash; no order. Responses to application 26A297 are due at 10am on 8 September per Justice Jackson; the district court TRO expires 10 September.</li>
     <li><b>Birthright citizenship order</b> &mdash; no appeal filed to the Fourth Circuit and no emergency application to the Supreme Court.</li>
     <li><b>AI gated-capability tiers</b> &mdash; no published tier criteria or access list for the restricted cyber tiers shipped alongside the recent frontier releases, and no regulator has demanded them.</li>
-    <li><b>UAP disclosure implementation</b> &mdash; ODNI's detailed implementing guidance has not appeared. The House Oversight declassification task force hearing is set for 9 September.</li>
     <li><b>AARO records contract</b> &mdash; no award notice on sam.gov, no public tranche from the NUFOHRC collection.</li>
-    <li><b>Bank stablecoin consortium</b> &mdash; no JPMorgan statement, no GENIUS Act licence, no consortium entity formed. Recent trade coverage describes a considerably larger bank grouping than the six I reported on 5 September, with JPMorgan pursuing tokenised deposits through The Clearing House instead. I could not date that reporting precisely enough to correct the earlier figure, so I am flagging it rather than restating it. Licensing opens 18 January 2027.</li>
+    <li><b>Bank stablecoin consortium</b> &mdash; no JPMorgan statement, no GENIUS Act licence, no consortium entity formed. Licensing opens 18 January 2027. The correction flagged on 7 September &mdash; that the grouping is larger than the six reported on 5 September, with JPMorgan pursuing tokenised deposits through The Clearing House &mdash; still stands unresolved.</li>
     <li><b>Central bank gold custody</b> &mdash; no further disclosure, no Bundesbank or Banca d'Italia comment.</li>
-    <li><b>Autonomous weapons regulation</b> &mdash; no corroboration of the &ldquo;diluted in the final hours&rdquo; claim from any newsroom other than Reuters, and no agreed definition text published. Review Conference 16&ndash;20 November.</li>
+    <li><b>Autonomous weapons regulation</b> &mdash; no corroboration of the &ldquo;diluted in the final hours&rdquo; claim from any newsroom other than Reuters. Review Conference 16&ndash;20 November.</li>
     <li><b>Indonesia free-meals programme (MBG)</b> &mdash; no laboratory results, no suspension, no budget change.</li>
-    <li><b>Tampa Bay dengue</b> &mdash; the week-35 arbovirus report returned 404 at two further URL patterns today, making three days running. The thread stays out of the body rather than recycling week-34 numbers a third time.</li>
+    <li><b>Tampa Bay dengue</b> &mdash; the week-35 arbovirus report returned 404 at two further URL patterns today, three days running.</li>
     <li><b>Florida Amendment 3</b> &mdash; the Attorney General's revised ballot title and summary has still not been published.</li>
     <li><b>Waymo Tampa Bay</b> &mdash; no service-area expansion into Pinellas or Pasco, no published incident data.</li>
+    <li><b>Anak Krakatau</b> &mdash; demoted to low priority per reader feedback. Still swept; returns to the body only on a fatality, a tsunami advisory, or US airline operations being affected.</li>
   </ul>
-  <h4>Threads opened today</h4>
+
+  <h4>Threads opened or changed today</h4>
   <ul>
-    <li><b>Saxony-Anhalt government formation</b> &mdash; wakes on a Minister-President vote in the Landtag, a coalition agreement, or fresh elections.</li>
-    <li><b>Miami 767 overrun</b> &mdash; wakes on the NTSB preliminary report or recorder readout, or FAA action against 21 Air.</li>
-    <li><b>Nepal&ndash;Tibet glacial flood and Loss and Damage</b> &mdash; wakes on a Loss and Damage Fund board decision on Nepal's request, the search being called off, or the missing being converted to presumed dead.</li>
-    <li><b>Israel&ndash;Lebanon June framework</b> &mdash; wakes on formal abandonment of the framework, an Israeli withdrawal from a pilot zone, or Hezbollah action beyond drone launches.</li>
-    <li><b>EU&ndash;Greenland partnership</b> &mdash; wakes on a US response, or the &euro;530 million surviving or failing the 2028&ndash;34 budget negotiation.</li>
-    <li><b>Florida school vaccine rule</b> &mdash; wakes on the close of comment around 14 September, adoption, or a legal challenge.</li>
-    <li><b>Florida emergency management funding</b> &mdash; wakes on a Joint Legislative Budget Commission decision on the $250 million request.</li>
-    <li><b>JLR restructuring and the European auto sector</b> &mdash; wakes on the close of the voluntary redundancy window on 4 October, compulsory notices, the outcome of the Reynolds meeting, or the FY27 half-year showing whether break-even actually reached 300,000.</li>
-    <li><b>Acton attack prosecution</b> &mdash; wakes on Tuesday's arraignment, any charge added relating to the weapons or to Acton herself, the Highway Patrol threat assessment, or a change in candidate security posture before November.</li>
+    <li><b>Treasury buybacks &amp; debt service</b> &mdash; wakes on the enlarged 9 September operation and what it takes down, the 30-year breaking either side of 5.2 per cent, the 4 November refunding, or any TGA drawdown to fund buybacks.</li>
+    <li><b>AI power &amp; grid constraint</b> &mdash; wakes on hyperscaler capex guidance being reprofiled, a major project cancellation being confirmed by a company rather than an analyst, a state utility commission ruling on who pays for interconnection, or federal action on transformer manufacturing.</li>
+    <li><b>AI preemption litigation</b> &mdash; wakes on the first DOJ AI Litigation Task Force case to produce a district court ruling, or preemption language attaching to must-pass legislation.</li>
+    <li><b>Fed September decision</b> &mdash; promoted from the footer into the body. Wakes on the 11 September CPI print and the 16 September statement, dot plot and dissent column.</li>
+    <li><b>UAP disclosure implementation</b> &mdash; promoted into the body, and its wake trigger corrected (see below). Now wakes on ODNI's detailed implementing guidance, whether the contractor gap is closed, production of any of Luna's 46 named videos, or the next file tranche.</li>
+    <li><b>Saxony-Anhalt government formation</b>, <b>Miami 767 overrun</b>, <b>Nepal&ndash;Tibet glacial flood</b>, <b>Israel&ndash;Lebanon June framework</b>, <b>EU&ndash;Greenland partnership</b>, <b>Florida school vaccine rule</b>, <b>Florida emergency management funding</b> &mdash; all carried forward unchanged from the 05:00 edition.</li>
   </ul>
+
+  <h4>Correction</h4>
+  <ul>
+    <li>The 6 and 7 September issues stated that a House Oversight task force hearing was set for <b>9 September 2026</b>, and the watchlist carried it as a wake trigger. No such hearing appears on the 2026 calendar. The 9 September hearing was in <b>2025</b>; the task force's 2026 hearing on UAP transparency was held on 25 June. The date appears to have been carried forward from last year without being re-checked. The trigger has been removed from <code>config.md</code>. Full note in story 5.</li>
+  </ul>
+
   <h4>Sources I could not reach</h4>
   <ul>
-    <li>CNN returned HTTP 451 again, so the Saxony-Anhalt result was built from Wikipedia's preliminary results table cross-checked against CBS, NPR and Euronews, and the Nepal warning-signs reporting is cited but was read only through other outlets' summaries.</li>
-    <li>Malay Mail and the Jakarta Globe both returned 403 for the Krakatau follow-ups; the figures used come from Tempo, Euronews and AP instead.</li>
-    <li>The Council of the EU's Greenland partnership document ST-12802-2026-INIT returned as unparseable binary. The Greenland story is therefore built on reporting, not on the instrument.</li>
-    <li>The Florida DOH week-35 arbovirus PDF returned 404 at two more URL patterns, and the department's surveillance index page does not list a current report.</li>
+    <li>CNBC returned 403 for the Warsh story, so the administration's push against a September hike is built on the search-result summary plus PBS and Detroit News directly. That is the weakest link in the lead story and it is why the divergence box declines to treat the strongest characterisation as settled.</li>
+    <li>The trade analysis behind the &ldquo;30 to 50 per cent of 2026 data centre projects delayed or cancelled&rdquo; figure returned 403. The figure is used but explicitly flagged in story 3 as the weakest number on the page.</li>
+    <li>CNN returned HTTP 451 again; the Saxony-Anhalt result was built from a preliminary results table cross-checked against CBS, NPR and Euronews.</li>
+    <li>The Council of the EU's Greenland partnership document ST-12802-2026-INIT returned as unparseable binary.</li>
+    <li>The Florida DOH week-35 arbovirus PDF returned 404 at two more URL patterns.</li>
     <li>Reuters remains unreachable from this environment entirely.</li>
   </ul>
+
   <h4>About this issue</h4>
   <ul>
-    <li>Scheduled edition for 7 September 2026, produced unattended. Roughly 38 searches and fetches.</li>
-    <li><b>Amendment.</b> Reopened interactively the same afternoon and two stories added: the JLR redundancies, announced in London while the scheduled run was already gathering, and the attack on Amy Acton at the Canfield Fair, which happened on Sunday afternoon and was simply missed. The Acton story is the more instructive miss &mdash; it was available for eighteen hours before the scheduled run and the sweep did not surface it, because no watchlist thread and no beat query pointed at an Ohio county fair. Roughly 8 further searches and fetches. The original ten stories are unchanged.</li>
-    <li>Twelve stories cleared: ten on the national bar, two on the Florida bar. Three are follow-ups, under the cap of four; seven lead stories are on no existing thread, above the floor of three.</li>
-    <li>Two of the ten carry no &ldquo;Dig deeper&rdquo; expansion, because there was not 500 words of new substance to put in one. That is the rule working, not an omission.</li>
-    <li>No US financials or markets story: it was Labor Day and US markets were shut.</li>
-    <li>Everything drawn from a non-English source is paraphrase, never quotation. Every quotation here is under fifteen words and attributed; everything else is paraphrase.</li>
+    <li>Third edition for 7 September 2026. The first was the scheduled 05:00 run; the second added two stories in an interactive run; this one re-edits the selection after the reader said the altitude was wrong. Roughly 60 searches and fetches across all three.</li>
+    <li>Fourteen stories: twelve national, two Florida. Five are new in this edition and all five are US domestic.</li>
+    <li>Two stories carry no &ldquo;Dig deeper&rdquo; expansion because there was not 500 words of new substance to put in one.</li>
+    <li>Two stories are labelled <b>Where things stand</b>: they run on a beat the reader cares about with no new fact today, and they say so at the top rather than dressing background up as news. That designation is new, and the calibration box asks whether it should survive.</li>
+    <li>Every quotation here is under fifteen words and attributed; everything else is paraphrase. Everything drawn from a non-English source is paraphrase, never quotation.</li>
   </ul>
 </footer>
 
@@ -820,31 +1050,60 @@
 (function () {
   var OWNER = "historiocity", REPO = "News-Agent";
   document.getElementById("send").addEventListener("click", function () {
-    var lines = [], answered = 0;
-    var sets = {};
+    var lines = [], answered = 0, sets = {}, order = [];
     document.querySelectorAll("fieldset .q").forEach(function (q) {
       var sid = q.getAttribute("data-sid");
-      var input = q.querySelector("input:checked");
       var prompt = q.querySelector("p") ? q.querySelector("p").textContent.trim() : "";
-      if (!input) return;
+      var picked = [];
+
+      q.querySelectorAll('input[type="radio"]:checked').forEach(function (input) {
+        var name = input.getAttribute("name");
+        var label = input.closest("label");
+        var text = label ? label.textContent.trim() : input.value;
+        var row = q.querySelector('.keepdrop input[name="' + name + '"]');
+        if (row) {
+          var span = input.closest("span.c");
+          var t = span && span.previousElementSibling ? span.previousElementSibling.textContent.trim() : name;
+          picked.push(t + " → **" + input.value + "**");
+        } else {
+          picked.push("→ **" + input.value + "** (" + text + ")");
+        }
+      });
+
+      var boxes = [];
+      q.querySelectorAll('input[type="checkbox"]:checked').forEach(function (input) {
+        boxes.push(input.value);
+      });
+      if (boxes.length) picked.push("→ **" + boxes.join(", ") + "**");
+
+      if (!picked.length) return;
       answered++;
-      if (!sets[sid]) sets[sid] = [];
-      sets[sid].push("- " + prompt + "\n  → **" + input.value + "**");
+      if (!sets[sid]) { sets[sid] = []; order.push(sid); }
+      sets[sid].push("- " + prompt + "\n  " + picked.join("\n  "));
     });
+
     if (!answered) {
       alert("Nothing selected yet — pick at least one answer, then send.");
       return;
     }
-    lines.push("Feedback on **Issue No. 3 — 7 September 2026**");
+
+    lines.push("Feedback on **Issue No. 3 — 7 September 2026, third edition**");
     lines.push("");
-    Object.keys(sets).forEach(function (sid) {
+    if (sets["CALIBRATION"]) {
+      lines.push("## Selection & altitude");
+      lines.push(sets["CALIBRATION"].join("\n"));
+      lines.push("");
+    }
+    order.forEach(function (sid) {
+      if (sid === "CALIBRATION") return;
       lines.push("### `" + sid + "`");
       lines.push(sets[sid].join("\n"));
       lines.push("");
     });
     lines.push("---");
-    lines.push("_Anything else you want more or less of:_");
+    lines.push("_Anything still here that shouldn't be, or missing that should:_");
     lines.push("");
+
     var url = "https://github.com/" + OWNER + "/" + REPO + "/issues/new"
       + "?labels=brief-feedback"
       + "&title=" + encodeURIComponent("Brief feedback — 2026-09-07")
