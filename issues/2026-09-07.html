@@ -145,10 +145,10 @@
 <div class="wrap">
 
 <header>
-  <div class="issue-no">The Brief &middot; Issue No. 3 &middot; Third edition</div>
+  <div class="issue-no">The Brief &middot; Issue No. 3 &middot; Refreshed 16:00 UTC</div>
   <h1>Monday, 7 September 2026</h1>
-  <p class="dek">The Fed is nine days from raising rates into a 4.1 per cent unemployment rate, and the President, the Vice President and the Treasury Secretary have all said publicly that it shouldn't. Treasury doubles its long-bond buybacks on Wednesday. The thing actually rationing AI build-out turns out to be high-voltage transformers. And the UAP disclosure order still has no implementing guidance behind it.</p>
-  <p class="provenance"><b>Re-edited after reader feedback.</b> The 05:00 edition led on the Strait of Hormuz, a German state election, a cargo aircraft overrun and a Himalayan flood, and carried nothing on the Fed, the debt, AI or UAP &mdash; the domestic beats this brief exists for. The reader's verdict was that the altitude was wrong, not that the reporting was. So the foreign and Florida stories stay; five US domestic stories have been added and now lead; and three that were below the bar &mdash; Jaguar Land Rover, Anak Krakatau's flight disruption, and the Canfield Fair arrest &mdash; have been removed. Fourteen stories, twelve national and two Florida. The calibration box below is new, and it is the most useful thing on this page: it exists so a miss like this gets caught in a day rather than a week. A correction to the UAP watchlist entry runs in story 5.</p>
+  <p class="dek">The Fed is nine days from raising rates and the administration is publicly lobbying against it. Treasury doubles its long-bond buybacks on Wednesday. The Solicitor General is at the Supreme Court for a third time over who controls mail ballots. And the CDC now recommends universal childhood vaccination against eleven diseases while the paediatricians, and 230 other medical bodies, still say eighteen.</p>
+  <p class="provenance"><b>Full re-run against the retuned config.</b> The 05:00 scheduled edition was judged the wrong altitude &mdash; foreign spot news crowding out the domestic beats this brief exists for. <code>config.md</code> now marks core beats, carries a written altitude bar, and requires foreign stories to have a US channel. This issue is the first run under it: the whole engine re-run, not patched. Three stories are new since the last edition &mdash; the mail-ballot application, the split federal and professional vaccine schedules, and the bank stablecoin consortium. Two were refreshed where news moved this afternoon: Missouri is now fully briefed, and Hormuz transits fell to about five a day. Seventeen stories, fifteen national and two Florida. <b>Two corrections run in the body</b> &mdash; a wrong deadline in the mail-ballot watchlist entry, and a two-day-old error putting JPMorgan at the centre of a consortium it is not in. The calibration box below asks whether this is now the right altitude; it is the fastest way to steer the next one.</p>
 </header>
 
 <nav class="jump">
@@ -156,19 +156,22 @@
   <ol>
     <li><a href="#fed-hike-pressure">The Fed is nine days from a hike, and the administration is leaning on Warsh in public</a></li>
     <li><a href="#treasury-buybacks">Treasury doubles its long-bond buybacks on Wednesday, which tells you what the 30-year is doing</a></li>
+    <li><a href="#usps-scotus">The administration is asking the Supreme Court for a third time to let it police mail ballots, with 57 days to go</a></li>
+    <li><a href="#missouri-kavanaugh">Missouri's map is fully briefed at the Supreme Court, and the state's own AG is arguing against its supreme court</a></li>
+    <li><a href="#vaccine-schedule-split">The CDC now recommends universal childhood vaccination against 11 diseases; the pediatricians still say 18</a></li>
+    <li><a href="#bank-stablecoins">Twenty-one banks are building a stablecoin company, and JPMorgan is not one of them</a></li>
     <li><a href="#ai-transformers">What is rationing AI is not chips and not money &mdash; it is high-voltage transformers</a></li>
     <li><a href="#ai-preemption">The federal plan to override state AI law is a litigation strategy, not a bill</a></li>
     <li><a href="#uap-implementation">The UAP disclosure order exists; the records still don't</a></li>
-    <li><a href="#missouri-kavanaugh">Missouri's map ran out of runway today, and the deadline nobody agrees on is tomorrow or Wednesday</a></li>
     <li><a href="#hormuz-zone">Iran's answer to the tanker strikes is a line on a map, and it moved oil more than the missiles did</a></li>
+    <li><a href="#eu-greenland">Brussels put &euro;200 million on the table in Nuuk, which is about eight per cent of Greenland's economy</a></li>
     <li><a href="#lebanon-strikes">Israel killed eleven in south Lebanon, two of them medics, under a truce that is a truce in name only</a></li>
     <li><a href="#afd-sachsen-anhalt">The AfD won 43.8 per cent in Saxony-Anhalt and finished three seats short of a German state government</a></li>
-    <li><a href="#eu-greenland">Brussels put &euro;200 million on the table in Nuuk, which is about eight per cent of Greenland's economy</a></li>
     <li><a href="#nepal-glacier">Nearly 6,000 people are dead or missing under a Himalayan glacier, and Nepal has sent the bill to the UN</a></li>
     <li><a href="#mia-767">A cargo 767 left the runway at Miami at 128 mph and killed people in cars on a public street</a></li>
   </ol>
   <div class="sec">Florida &amp; Tampa Bay</div>
-  <ol start="13">
+  <ol start="16">
     <li><a href="#fl-dem-money">Florida's emergency management division has spent 70 per cent of its year in ten weeks, at the peak of hurricane season</a></li>
     <li><a href="#fl-vaccine-rule">The state is one week from making four childhood vaccines optional for school, by rule rather than by law</a></li>
   </ol>
@@ -181,7 +184,7 @@
   <fieldset>
     <legend>Level</legend>
     <div class="q" data-sid="CALIBRATION">
-      <p>Overall, is this issue pitched at the right level now?</p>
+      <p>This is the first full run under the retuned config. Is the level right now?</p>
       <label><input type="radio" name="cal-level" value="right"> About right</label>
       <label><input type="radio" name="cal-level" value="still-too-low"> Still too low &mdash; more consequential stories</label>
       <label><input type="radio" name="cal-level" value="too-abstract"> Too abstract &mdash; more concrete, dated events</label>
@@ -194,7 +197,7 @@
       <label><input type="radio" name="cal-split" value="more-foreign"> I want more foreign than this</label>
     </div>
     <div class="q" data-sid="CALIBRATION">
-      <p>Fourteen stories is long. Would you rather have fewer, harder-selected?</p>
+      <p>Seventeen stories is long. Would you rather have fewer, harder-selected?</p>
       <label><input type="radio" name="cal-count" value="fewer"> Fewer &mdash; eight or so, only the best</label>
       <label><input type="radio" name="cal-count" value="this-length"> This length is fine</label>
       <label><input type="radio" name="cal-count" value="more"> More is better, I'll skim</label>
@@ -242,7 +245,7 @@
   </fieldset>
 
   <fieldset>
-    <legend>The five stories added in this edition</legend>
+    <legend>The stories added since the scheduled edition</legend>
     <div class="q" data-sid="CALIBRATION">
       <p>Did each of these clear your bar?</p>
       <div class="keepdrop">
@@ -256,13 +259,19 @@
         <span class="c"><label><input type="radio" name="kd-preempt" value="keep"> Keep</label><label><input type="radio" name="kd-preempt" value="drop"> Drop</label></span>
         <span class="t">5. UAP disclosure implementation</span>
         <span class="c"><label><input type="radio" name="kd-uap" value="keep"> Keep</label><label><input type="radio" name="kd-uap" value="drop"> Drop</label></span>
+        <span class="t">6. Mail ballots at the Supreme Court</span>
+        <span class="c"><label><input type="radio" name="kd-usps" value="keep"> Keep</label><label><input type="radio" name="kd-usps" value="drop"> Drop</label></span>
+        <span class="t">7. CDC vs paediatricians on the vaccine schedule</span>
+        <span class="c"><label><input type="radio" name="kd-vax" value="keep"> Keep</label><label><input type="radio" name="kd-vax" value="drop"> Drop</label></span>
+        <span class="t">8. Bank stablecoin consortium</span>
+        <span class="c"><label><input type="radio" name="kd-stbl" value="keep"> Keep</label><label><input type="radio" name="kd-stbl" value="drop"> Drop</label></span>
       </div>
     </div>
     <div class="q" data-sid="CALIBRATION">
-      <p>I removed Jaguar Land Rover, Krakatau's flight disruption and the Canfield Fair arrest as below the bar. Right removals?</p>
-      <label><input type="radio" name="cal-removals" value="right"> All three, right call</label>
-      <label><input type="radio" name="cal-removals" value="too-many"> I'd have kept one of them</label>
-      <label><input type="radio" name="cal-removals" value="more"> Cut more than that</label>
+      <p>The foreign stories you said were fine &mdash; Hormuz, Greenland, Lebanon, Saxony-Anhalt, Nepal &mdash; are still here, below the domestic ones. Right?</p>
+      <label><input type="radio" name="cal-foreign2" value="keep-all"> Yes, keep them where they are</label>
+      <label><input type="radio" name="cal-foreign2" value="us-channel-only"> Keep only the ones with a real US channel</label>
+      <label><input type="radio" name="cal-foreign2" value="footer"> Move them to one-line footer mentions</label>
     </div>
     <div class="q" data-sid="CALIBRATION">
       <p>Anything still here that shouldn't be, or missing that should?</p>
@@ -372,6 +381,213 @@
       <label><input type="radio" name="fb-tsy-2" value="follow"> Yes, watchlist it</label>
       <label><input type="radio" name="fb-tsy-2" value="quarterly"> Quarterly is enough</label>
       <label><input type="radio" name="fb-tsy-2" value="no"> No</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="usps-scotus">
+  <h3>The administration is asking the Supreme Court for a third time to let it police mail ballots, with 57 days to go <a class="anchor" href="#usps-scotus">#</a></h3>
+  <div class="meta">
+    <span class="tag">US politics &amp; policy</span>
+    <span class="tag conf primary">Primary source</span>
+  </div>
+  <p>Solicitor General D. John Sauer has filed an emergency application &mdash; No. 26A297 &mdash; asking the Court to lift Judge Indira Talwani's order blocking a Postal Service rule that would give the federal government control over how mail-in ballots are handled. It is the third time the administration has brought this rule to the Supreme Court. Sauer asked for both a stay pending appeal and an immediate administrative stay while the Court considers it.</p>
+  <p>Talwani has now blocked the rule twice. In Friday's order she found it likely unlawful and unconstitutional for the federal government to dictate how states handle mail ballots, and leaned hard on the calendar: implementing a final rule issued <span>&ldquo;less than seventy days before the November 2026 election&rdquo;</span> threatens, in her words, the disenfranchisement of millions of citizens who seek to vote by mail. Ballots have already begun going out in some states.</p>
+  <p>Justice Ketanji Brown Jackson, who handles emergency applications from the First Circuit, has set 4pm Eastern on Wednesday for the challengers' briefs. The administration has separately asked her to pause Talwani's injunction immediately rather than wait for that.</p>
+  <p><b>What to watch:</b> whether Jackson grants the administrative stay before Wednesday's briefs land, which would be the substantive tell; whether she rules alone or refers it to the full Court; and whether the Court reaches the merits or disposes of it on timing.</p>
+  <div class="correction">
+    <strong>Correction to the watchlist</strong>
+    <p>This brief's watchlist carried the response deadline as 10am on 8 September, with the TRO expiring 10 September. The current schedule is 4pm Eastern on Wednesday 9 September for the challengers' briefs. I have corrected the entry. Either the deadline moved or the earlier figure was wrong; I could not establish which from the docket, and I am flagging it rather than quietly overwriting a date I told you twice.</p>
+  </div>
+  <div class="divergence">
+    <strong>Divergence &mdash; is the timing argument the administration's problem or its weapon?</strong>
+    <p><b>What is disputed.</b> Not the facts &mdash; everyone agrees the rule was issued under seventy days out and that ballots are being printed. The dispute is about significance: whether the proximity to the election is a reason to block the rule or a reason to let it take effect. Talwani treats the compressed calendar as the core defect: a rule this late cannot be absorbed without disenfranchising people. The administration treats it as urgency: precisely because the election is close, the Court must act now rather than let a lower court freeze federal policy through November.</p>
+    <p><b>Why they differ.</b> Both are drawing on the same body of election-law practice and reading it from opposite ends. Courts are genuinely reluctant to change election rules close to an election, and that reluctance cuts in whichever direction preserves the status quo &mdash; which is exactly what is contested here. Is the status quo the existing state-run process the rule would displace, or the federal rule now formally on the books? Talwani's answer is the first, the administration's is the second, and there is no neutral vantage from which one is obviously right. The institutional postures are also doing predictable work: a district judge is close to the operational mechanics of ballots being printed now, while a Solicitor General is defending the executive's authority to make national rules at all.</p>
+    <p><b>What it means for you.</b> The calendar favours the challengers and the administration knows it, which is why the request for an <em>immediate</em> administrative stay matters more than the stay application itself. An administrative stay is nominally a housekeeping device to preserve the Court's options; granting one here would let the rule operate during the very weeks in which ballots go out, making the eventual merits ruling close to moot. So watch the sequencing, not the rhetoric: if Jackson grants an administrative stay before Wednesday's briefs, the administration has effectively won the practical question regardless of what the Court later says about the law. If she waits for the briefs, the rule almost certainly does not touch this election. The third filing is itself informative &mdash; a litigant does not return to the same court twice more unless it believes time, not law, is the binding constraint.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; what the rule actually does, and why the third attempt is the story</summary>
+    <div class="deeper">
+      <p>Elections in the United States are administered by states, not by Washington, and mail ballots are the part of that system where federal and state machinery physically touch: the ballot is a state instrument travelling through a federal carrier. That seam is the whole legal question. A Postal Service rule governing how ballots are handled in transit is, on the administration's reading, ordinary operational rulemaking by the entity that owns the network. On the challengers' reading it is the federal government reaching through the mail system to set election procedure it has no authority to set directly. Both descriptions fit the same rule, which is why this has produced three emergency applications rather than a clean answer.</p>
+      <p>The procedural posture is worth understanding because it explains the urgency. Talwani issued a temporary restraining order, then a further block; the administration went to the First Circuit and then to the Supreme Court, and has now done so repeatedly. Emergency applications of this kind are decided on a compressed record, without full briefing or argument, and are formally about preserving the situation while litigation proceeds. In election cases that formalism collapses, because the litigation cannot proceed faster than the election. Whatever the Court does on the shadow docket in September is, for practical purposes, the final word for November.</p>
+      <p>That is why the count matters. A first emergency application is a party testing whether a lower court got it wrong. A third, on the same rule, weeks from an election, is a party that has concluded the merits will not be resolved in time and is now litigating the calendar. It is a legitimate strategy and it is also an admission: if the administration believed it would win on the law before November, it would not need the Court to intervene three times in a month.</p>
+      <p>The disenfranchisement question is empirical rather than rhetorical, and it is worth holding to that standard. A rule that changes handling procedures midway through an election cycle does not disenfranchise anyone by itself. It does so if election officials, postal workers and voters cannot adapt in the time available &mdash; if ballots are rejected for failing a requirement that did not exist when the voter was instructed, or if processing slows past receipt deadlines. Talwani's finding is that under seventy days is not enough time. Nobody has yet produced the operational evidence either way in public, and that evidence is what a merits proceeding would develop and an emergency application will not.</p>
+      <p>One structural note. The Supreme Court's emergency docket has become the venue where election rules are actually set, on thin records and without reasoned opinions, in the weeks when changes are hardest to absorb. That is true regardless of which side is asking, and it is a more durable development than any single rule. If you want one thing to watch beyond this case: whether the Court explains itself. An unexplained order changes the rules for November and teaches nobody anything about why.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.supremecourt.gov/DocketPDF/26/26A297/422948/20260903154027877_USPS%20Final%20Rule%20Stay%20and%20Appx.pdf">The stay application itself, No. 26A297 (primary)</a> &middot;
+    <a href="https://www.supremecourt.gov/DocketPDF/26/26A297/422992/20260903202033453_26A297%20Admin%20Stay%20Opposition.pdf">Opposition to the administrative stay (primary)</a> &middot;
+    <a href="https://www.scotusblog.com/2026/09/trump-administration-again-appeals-mail-in-ballot-dispute-to-the-supreme-court/">SCOTUSblog on the third appeal</a> &middot;
+    <a href="https://www.nbcnews.com/politics/2026-election/judge-blocks-trump-effort-restrict-voting-mail-ballots-start-going-rcna596097">NBC News on Talwani's second block</a> &middot;
+    <a href="https://www.npr.org/2026/09/03/nx-s1-5955614/trump-mail-in-voting-ruling-court-usps">NPR</a> &middot;
+    <a href="https://www.democracydocket.com/news-alerts/mail-voting-live-updates-judge-weighs-fate-of-trumps-anti-voting-executive-order/">Democracy Docket live updates</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="usps-scotus">
+      <p>Cadence on the shadow docket between now and November?</p>
+      <label><input type="radio" name="fb-usps-1" value="every-filing"> Every filing</label>
+      <label><input type="radio" name="fb-usps-1" value="orders-only"> Only when the Court acts</label>
+      <label><input type="radio" name="fb-usps-1" value="weekly"> A weekly election-law round-up</label>
+    </div>
+    <div class="q" data-sid="usps-scotus">
+      <p>I led on procedure rather than on the politics of mail voting. Right emphasis?</p>
+      <label><input type="radio" name="fb-usps-2" value="procedure"> Yes &mdash; procedure is where it's decided</label>
+      <label><input type="radio" name="fb-usps-2" value="stakes"> More on the practical stakes for voters</label>
+      <label><input type="radio" name="fb-usps-2" value="no-opinion"> No opinion</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="missouri-kavanaugh">
+  <h3>Missouri's map is fully briefed at the Supreme Court, and the state's own AG is arguing against its supreme court <a class="anchor" href="#missouri-kavanaugh">#</a></h3>
+  <div class="meta">
+    <span class="tag">US politics &amp; policy</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+    <span class="tag">Follow-up</span>
+  </div>
+  <p>The response Justice Kavanaugh ordered was due at noon Eastern today &mdash; on Labor Day, which is the tell. He directed Richard von Glahn of People Not Politicians, the referendum campaign, to answer Missouri's emergency application by then, and the fact that he set a federal holiday deadline is the clearest available signal that the Court intends to move before ballots print rather than let the clock decide.</p>
+  <p>Two new details sharpen <a href="2026-09-06.html#missouri-scotus">yesterday's account</a>. First, Missouri's own state-law cutoff for changes to the November ballot falls this week &mdash; which compresses the timeline far more than the 19 September overseas-ballot mailing date I emphasised yesterday. Second, the state's Elections Clause argument now has a specific shape: Solicitor General Louis Capozzi frames it as whether 3.3 per cent of a state's voters can suspend a congressional map by filing a referendum petition, and separately argues the state court disenfranchised hundreds of thousands of voters by returning them to old districts.</p>
+  <p>Legal observers quoted in Missouri coverage still expect Kavanaugh to deny the stay, on the ground that federal courts have limited authority over state election procedure. That was my read yesterday and it has not changed.</p>
+  <p><b>Update, 16:00 UTC.</b> The record is now complete. People Not Politicians filed by Justice Kavanaugh's noon deadline, so the application is fully briefed and an order can come at any hour. One detail from the weekend deserves more weight than it has had: rather than defending the Missouri Supreme Court's order, Attorney General Catherine Hanaway's office filed on behalf of Secretary of State Hoskins <em>agreeing</em> with the challengers that the state court's order <span>&ldquo;patently violates federal law in several respects.&rdquo;</span> The state's chief legal officer is arguing against her own supreme court, which is why it is a private organisation rather than the State of Missouri defending the ruling at all.</p>
+  <p><b>What to watch:</b> an order from Kavanaugh alone, or a referral to the full Court, before the state cutoff passes.</p>
+  <div class="divergence">
+    <strong>Divergence &mdash; when is the state deadline, and why can't anyone say?</strong>
+    <p><b>What is disputed.</b> A fact, and a load-bearing one. SCOTUSblog puts the state-law cutoff for finalising November ballot changes on Tuesday 8 September, describing Kavanaugh's noon Monday deadline as falling one day before it. Missouri public-radio coverage puts it on Wednesday 9 September. The entire emergency application is an argument about running out of time, so the date the clock runs out on is not a detail.</p>
+    <p><b>Why they differ.</b> Almost certainly because there is no single deadline to report. An election calendar is a stack of administrative steps &mdash; the point at which ballot content is certified, the point at which it goes to county election authorities, the point at which those authorities must have ballots printed, and the federal UOCAVA requirement to transmit to overseas voters 45 days out, which lands on 19 September. Each of those is a defensible answer to &ldquo;when is the deadline&rdquo; and they fall on different days. Reporters working from different officials get different steps, and each reports the one they were given without noting it is one of several. I could not resolve it against the statute directly, so I am describing the mechanism rather than asserting which step each outlet picked up.</p>
+    <p><b>What it means for you.</b> Do not attach significance to either date, and be sceptical of any coverage that treats a missed Tuesday or Wednesday as dispositive &mdash; the state's position needs the whole stack to be impossible, not one step. The date that is firm and federal is 19 September, and it is the one the Court will actually reason from, because UOCAVA is the federal hook that gets a state redistricting dispute in front of a Justice at all. Watch for whether Kavanaugh's order engages the state-law calendar or goes straight to the 45-day requirement: if it is the latter, the Tuesday-versus-Wednesday question was never the real constraint, and the state's timing argument is doing less work than its filing suggests.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.scotusblog.com/2026/09/missouri-urges-supreme-court-to-allow-for-use-of-congressional-map-expected-to-aid-republicans/">SCOTUSblog</a> &middot;
+    <a href="https://www.kcur.org/politics-elections-and-government/2026-09-07/missouri-redistricting-lawsuit-referendum-november-supreme-court">KCUR</a> &middot;
+    <a href="https://missouriindependent.com/2026/09/06/looming-ballot-deadline-complicates-gop-appeal-of-missouri-redistricting-decision/">Missouri Independent</a> &middot;
+    <a href="https://www.stlpr.org/government-politics-issues/2026-09-05/republican-officials-ask-us-supreme-court-to-overturn-missouri-redistricting-ruling">STLPR</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="missouri-kavanaugh">
+      <p>Yesterday this ran long with a doctrinal expansion; today it's 250 words and no expansion because there was less to say. Is that variation good?</p>
+      <label><input type="radio" name="fb-mo2-1" value="yes"> Yes &mdash; length should track substance</label>
+      <label><input type="radio" name="fb-mo2-1" value="consistent"> I'd rather each story were consistent</label>
+      <label><input type="radio" name="fb-mo2-1" value="no-opinion"> No opinion</label>
+    </div>
+    <div class="q" data-sid="missouri-kavanaugh">
+      <p>Cadence from here?</p>
+      <label><input type="radio" name="fb-mo2-2" value="only-orders"> Only when the Court acts</label>
+      <label><input type="radio" name="fb-mo2-2" value="every-filing"> Every filing</label>
+      <label><input type="radio" name="fb-mo2-2" value="stop"> Stop following</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="vaccine-schedule-split">
+  <h3>The CDC now recommends universal childhood vaccination against 11 diseases; the pediatricians still say 18 <a class="anchor" href="#vaccine-schedule-split">#</a></h3>
+  <div class="meta">
+    <span class="tag">Science &amp; public health</span>
+    <span class="tag">US politics &amp; policy</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+    <span class="tag under">Underreported</span>
+  </div>
+  <p>The federal childhood immunization schedule has been cut from 18 diseases recommended for universal vaccination to 11. RSV, hepatitis A, hepatitis B, influenza and COVID-19 moved out of the universal category into risk-based or shared-decision-making status. The American Academy of Pediatrics declined to follow: its 2026 schedule, released 26 January, keeps all 18.</p>
+  <p>What makes this structural rather than a technical disagreement is who lined up behind the AAP. More than 230 medical associations and health care organisations have endorsed its schedule, including the American Medical Association, the American College of Obstetricians and Gynecologists and the Infectious Diseases Society of America. New York State and New York City have formally endorsed the AAP schedule over the federal one. The reconstituted ACIP excluded the AAP and other professional bodies from its work groups before making the changes.</p>
+  <p>On money, the fracture has so far been papered over. Federal officials say coverage and liability protection continue for everything on the CDC schedule even where it is no longer routine, and AHIP &mdash; the insurers' trade association &mdash; has agreed to keep covering ACIP-recommended immunisations with no cost sharing through 2027, including shared-decision-making ones. Separately, the AMA and the University of Minnesota's Vaccine Integrity Project have stood up independent reviews of this autumn's flu, COVID and RSV vaccines.</p>
+  <p><b>What to watch:</b> what happens when the AHIP commitment lapses at the end of 2027; whether more states follow New York in adopting the AAP schedule by rule; whether Vaccines for Children programme eligibility tracks the federal schedule or the professional one.</p>
+  <div class="divergence">
+    <strong>Divergence &mdash; a scientific disagreement, or an institutional one?</strong>
+    <p><b>What is disputed.</b> Both a fact and its significance, and they need separating. The factual dispute is narrow and real: whether the evidence supports universal rather than risk-based recommendation for five specific vaccines in healthy children. The significance dispute is much larger &mdash; whether this is ordinary scientific revision within a normal advisory process, or a body whose composition was changed reaching conclusions its excluded predecessors would not have reached.</p>
+    <p><b>Why they differ.</b> The process facts are not seriously contested and they explain most of the split. The AAP and other professional bodies were barred from ACIP work groups before the changes were made; the changes then went against those bodies' standing recommendations. Federal officials describe the revisions as bringing US practice closer to a risk-based model used elsewhere, which is a genuine and defensible position &mdash; several countries do recommend some of these vaccines by risk category. The professional societies read the exclusion as the explanation for the outcome. Neither side is inventing anything; they are weighting the same sequence of events differently, and each has an institutional stake in whose judgement counts as authoritative.</p>
+    <p><b>What it means for you.</b> Do not read this as a dispute you have to adjudicate on the immunology, because the practical consequences run through insurance and school rules rather than through the science. Three concrete things follow. First, coverage is protected but only by a voluntary industry commitment with an expiry date &mdash; end of 2027 is the number to hold, and it is the point at which a recommendation category could start determining what a family pays. Second, the schedule your paediatrician uses may not be the federal one, and asking which is now a reasonable question rather than a paranoid one. Third, for anyone in Florida, this is the national backdrop to the state rule in story 17: a federal schedule that has narrowed the universal category makes a state exemption regime easier to defend, because the state can point to the federal government having moved first. Watch the states, not the journals &mdash; New York has already split, and each additional state that adopts the AAP schedule turns a federal disagreement into a fifty-state patchwork.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; why the schedule is a financial instrument as much as a medical one</summary>
+    <div class="deeper">
+      <p>The childhood immunization schedule looks like a clinical document and functions like a funding statute. Three things in American health care key off it. The Affordable Care Act requires most private insurance to cover ACIP-recommended immunisations without cost sharing. The Vaccines for Children programme, which covers roughly half of American children, purchases what ACIP recommends. And the National Vaccine Injury Compensation Program &mdash; the no-fault system that makes vaccine manufacturing commercially viable at all &mdash; is tied to the same recommendations. Moving a vaccine out of the universal category is therefore never only a clinical judgement; it moves a financing and liability apparatus with it.</p>
+      <p>That is why the coverage assurances matter so much and why their form matters more than their content. Federal officials saying coverage will continue is a statement of intent, not a rule. AHIP's commitment is a trade association agreeing on behalf of members who are not bound by it, through 2027. Both are real and both are the kind of arrangement that holds until it is expensive. The thing that would make coverage durable &mdash; regulation, or a statutory fix decoupling ACA coverage from ACIP's universal category &mdash; has not happened. So the current stability is a bridge, and everyone involved knows roughly when it ends.</p>
+      <p>The professional-society response is the genuinely unusual development and it is worth being precise about what is new. Medical bodies have always published their own guidance, and it has always mostly agreed with ACIP's, because they shared people and evidence review. What is new is a schedule published in explicit divergence, endorsed by 230-odd organisations, and then adopted by state governments as the operative standard. That is the beginning of a parallel authority structure. It is a rational response to being excluded from the first one, and it carries an obvious cost: two schedules means clinicians choosing between them, insurers deciding which to honour, and parents receiving different advice depending on where they live and who they see.</p>
+      <p>On the underlying science, an honest reader should hold two things at once. Risk-based recommendation is not inherently unscientific &mdash; other wealthy countries with good outcomes use it for several of these vaccines, and universal recommendation is a policy choice about simplicity and coverage as much as a claim about individual risk. But the argument for universal schedules in the US has never rested only on per-child benefit; it rests on the fact that risk-based systems require accurate risk assessment at every encounter, and that the children who fall through are disproportionately the ones with the least reliable access to care. Shifting hepatitis B or influenza to shared decision-making does not change any child's biology. It changes how many conversations have to go right.</p>
+      <p>The number I would keep is 230. A federal advisory committee that has lost the endorsement of essentially every relevant professional body has not been overruled &mdash; its recommendations still drive the funding machinery &mdash; but it has lost the thing that made its recommendations self-executing, which was that nobody disagreed with them.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://publications.aap.org/aapnews/news/34141/AAP-s-2026-immunization-schedule-keeps-routine">AAP News on the 2026 schedule keeping 18 diseases</a> &middot;
+    <a href="https://publications.aap.org/pediatrics/article/157/3/e2025075754/206175/Recommended-Childhood-and-Adolescent-Immunization">The AAP schedule policy statement (primary)</a> &middot;
+    <a href="https://thehill.com/policy/healthcare/5706819-aap-2026-immunization-schedule/">The Hill on the AAP departing from CDC</a> &middot;
+    <a href="https://www.congress.gov/crs-product/R48982">Congressional Research Service on the 2026 childhood schedule</a> &middot;
+    <a href="https://www.congress.gov/crs-product/IN12684">CRS on the 2025&ndash;26 recommendation changes</a> &middot;
+    <a href="https://www.nyc.gov/assets/doh/downloads/pdf/letters/2026/nys-nyc-endorse-2026-aap-immunization-schedule.pdf">New York State and City endorsement letter (primary)</a> &middot;
+    <a href="https://www.cdc.gov/flu/season/2026-2027.html">CDC interim influenza guidance</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="vaccine-schedule-split">
+      <p>This is a slow institutional story with no single news event. Worth a slot?</p>
+      <label><input type="radio" name="fb-vax2-1" value="yes"> Yes &mdash; this is exactly the level I want</label>
+      <label><input type="radio" name="fb-vax2-1" value="when-moves"> Only when a state or insurer moves</label>
+      <label><input type="radio" name="fb-vax2-1" value="no"> Not interested</label>
+    </div>
+    <div class="q" data-sid="vaccine-schedule-split">
+      <p>Track the federal-versus-professional schedule split as a standing thread?</p>
+      <label><input type="radio" name="fb-vax2-2" value="follow"> Yes, watchlist it</label>
+      <label><input type="radio" name="fb-vax2-2" value="florida-only"> Only where it touches Florida</label>
+      <label><input type="radio" name="fb-vax2-2" value="no"> No</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="bank-stablecoins">
+  <h3>Twenty-one banks are building a stablecoin company, and JPMorgan is not one of them <a class="anchor" href="#bank-stablecoins">#</a></h3>
+  <div class="meta">
+    <span class="tag">US financials</span>
+    <span class="tag">US politics &amp; policy</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+  </div>
+  <p>On 1 September, twenty-one financial institutions across North America, Europe, Asia, the Middle East and Africa announced a new company to issue stablecoins. Bank of America, Citi, Goldman Sachs, Wells Fargo, Deutsche Bank, UBS and Santander are in it. JPMorgan is not.</p>
+  <p>JPMorgan's absence is a strategy rather than an omission. It told the Wall Street Journal on 26 August that it has no current stablecoin plan but is evaluating one as demand and regulation develop, while its Kinexys platform already moves more than $7 billion a day in tokenised deposits. Separately, JPMorgan, Bank of America, Citigroup and Wells Fargo are building a shared tokenised deposit network operated by The Clearing House, targeted for mid-2027, to move commercial deposits between banks around the clock. So several of the largest banks are simultaneously in a stablecoin venture and in a competing deposit-token venture, which tells you they do not know which instrument wins either.</p>
+  <p>The regulatory floor under all of it is unfinished. The GENIUS Act's one-year statutory deadline for implementing regulations passed on 18 July 2026 with the OCC, Federal Reserve, FDIC and NCUA all short of complete rules. The OCC now targets November. The FDIC and NCUA have issued parallel proposals; Treasury and FinCEN have weighed in on anti-money-laundering obligations.</p>
+  <p><b>What to watch:</b> whether the OCC actually finalises in November; the consortium's entity formation and first licence application; whether JPMorgan joins, stays out, or announces its own coin.</p>
+  <div class="correction">
+    <strong>Correction to the 5 September issue</strong>
+    <p>The 5 September issue reported a six-bank stablecoin consortium. That was wrong, or at best a snapshot of an earlier stage: the grouping announced on 1 September has twenty-one members. The 7 September footer flagged that trade coverage described a larger grouping but said I could not date it precisely enough to correct the figure. I can now: the number is twenty-one, the date is 1 September, and JPMorgan &mdash; which the earlier issue treated as central to the consortium &mdash; is not a member. That is a material error in a story about a company the reader has standing interest in, and it stood for two days.</p>
+  </div>
+  <div class="divergence">
+    <strong>Divergence &mdash; when does the GENIUS Act actually bite?</strong>
+    <p><b>What is disputed.</b> A date, arrived at from the same statutory text. The Act takes effect on the earlier of 18 January 2027 or 120 days after final rules are issued. Some trade coverage reasons that an OCC finalisation in November puts the effective date around March 2027 &mdash; November plus 120 days. That is arithmetically right and legally wrong: if the statute takes the earlier of the two, and one of them is fixed at 18 January 2027, then a November finalisation produces an effective date of 18 January, not March. The March figure only works if the test is <em>later</em>, not earlier.</p>
+    <p><b>Why they differ.</b> This is a misreading rather than a disagreement, and a common one &mdash; dual-trigger effective-date provisions are routinely written both ways, and a reader who has seen more "later of" clauses than "earlier of" clauses will supply the familiar one. It propagates because trade outlets cite each other rather than the statute, and because the two readings differ by only a few weeks, which is small enough not to trip anyone's alarm. I am reasonably confident of the "earlier of" reading because that is what the reporting consistently quotes the provision as saying, but I have not read the enrolled text myself, so treat this as a well-supported correction rather than a settled one.</p>
+    <p><b>What it means for you.</b> Assume the binding date is 18 January 2027 and that the industry has roughly four months, not seven. That matters because it inverts the usual reading of a missed deadline: regulators slipping past 18 July does not push the compliance date back, it compresses the window between final rules and the day the law bites. If the OCC finalises in November, issuers get about eight weeks to comply with rules they have not seen. That is the actual risk in this story, and it is the opposite of the relaxed picture a March date would imply. The thing that would settle it is the OCC's final rule preamble, which will state the effective date explicitly &mdash; read that line first when it lands.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; stablecoins versus tokenised deposits, and why JPMorgan is playing both sides</summary>
+    <div class="deeper">
+      <p>The distinction the industry is betting on is not technical trivia. A stablecoin is a bearer instrument: a token backed by reserves, transferable to anyone who can hold it, and its value depends on the issuer's reserves rather than on any relationship with you. A tokenised deposit is a claim on your bank: a normal deposit, on a normal bank balance sheet, represented in a form that can settle around the clock. It carries deposit insurance and it stays inside the banking system. The two look similar to a user and are entirely different animals in a bank's capital and regulatory treatment.</p>
+      <p>Banks have an obvious institutional preference. Deposits are their funding. A world in which corporate treasurers hold stablecoins instead of bank deposits is a world in which the banking system's liability side shrinks, and a bank that helps build that world is financing its own disintermediation. Tokenised deposits give the same round-the-clock settlement without the deposit ever leaving. That is why the second consortium exists, why The Clearing House is operating it, and why the largest banks are in both: they want the settlement capability regardless, and they would prefer to supply it in the form that keeps the money with them.</p>
+      <p>JPMorgan's position is the clearest expression of that logic. It is the largest US bank, it already runs $7 billion a day through Kinexys, and its comparative advantage is precisely the balance sheet and the client relationships that a bearer token dissolves. Joining a twenty-one-member stablecoin venture would mean contributing that advantage to a shared entity in which it is one voice among many. Staying out and building deposit tokens through The Clearing House keeps the capability and the customer. The internal stablecoin review it is reportedly running is best read as a hedge: if the bearer instrument wins anyway, JPMorgan wants to be able to issue one quickly rather than early.</p>
+      <p>The regulatory gap is what makes the whole thing tense. Both structures depend on rules that do not exist yet. A consortium can form, hire, and build; it cannot obtain a licence under a framework the OCC has not finalised. That is why the November target is the load-bearing date in this story and why the missed July deadline is more than bureaucratic slippage &mdash; it leaves several hundred billion dollars of institutional intent parked, waiting on a rulemaking, with a statutory effective date that does not move to accommodate the delay.</p>
+      <p>For a reader whose standing interest is JPMorgan and its competitors, the useful frame is that this is a fight about who owns the payment rail in 2028, conducted through entities that do not yet have licences under rules that are not yet written. Nobody has committed irreversibly. Watch entity formation and licence applications, not announcements &mdash; an announcement costs a press release, and a licence application costs a strategy.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.pymnts.com/cryptocurrency/2026/how-21-banks-changed-the-conversation-around-stablecoins-and-tokenized-deposits/">PYMNTS on the 21-bank consortium</a> &middot;
+    <a href="https://www.techtimes.com/articles/326384/20260902/major-banks-form-stablecoin-company-circle-takes-second-institutional-hit-one-quarter.htm">TechTimes on the 1 September announcement</a> &middot;
+    <a href="https://www.cryptotimes.io/2026/08/26/jpmorgan-eyes-stablecoin-as-u-s-banks-revisit-blockchain-payments/">Crypto Times on JPMorgan's position and Kinexys volumes</a> &middot;
+    <a href="https://www.forbes.com/sites/digital-assets/2026/07/28/americas-biggest-banks-are-building-one-deposit-token-history-is-the-hard-part/">Forbes on the shared deposit token</a> &middot;
+    <a href="https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-3.html">OCC bulletin on the GENIUS Act proposed rules (primary)</a> &middot;
+    <a href="https://www.federalregister.gov/documents/2026/04/10/2026-06974/genius-act-requirements-and-standards-for-fdic-supervised-permitted-payment-stablecoin-issuers-and">FDIC proposed rule, Federal Register (primary)</a> &middot;
+    <a href="https://cryptobriefing.com/occ-genius-act-stablecoin-rule-november/">Crypto Briefing on the November target</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="bank-stablecoins">
+      <p>Your config gives JPMorgan and its competitors standing attention. Is this the right use of that?</p>
+      <label><input type="radio" name="fb-stbl-1" value="yes"> Yes</label>
+      <label><input type="radio" name="fb-stbl-1" value="earnings"> I'd rather have earnings and credit</label>
+      <label><input type="radio" name="fb-stbl-1" value="less-crypto"> Less crypto-adjacent coverage</label>
+    </div>
+    <div class="q" data-sid="bank-stablecoins">
+      <p>I ran the two-day-old six-versus-twenty-one error as a prominent correction. Right call?</p>
+      <label><input type="radio" name="fb-stbl-2" value="yes"> Yes &mdash; always surface it</label>
+      <label><input type="radio" name="fb-stbl-2" value="quiet"> Fix it quietly next time</label>
+      <label><input type="radio" name="fb-stbl-2" value="no-opinion"> No opinion</label>
     </div>
   </fieldset>
 </article>
@@ -521,46 +737,6 @@
   </fieldset>
 </article>
 
-<article id="missouri-kavanaugh">
-  <h3>Missouri's map ran out of runway today, and the deadline nobody agrees on is tomorrow or Wednesday <a class="anchor" href="#missouri-kavanaugh">#</a></h3>
-  <div class="meta">
-    <span class="tag">US politics &amp; policy</span>
-    <span class="tag conf corrob">Independent corroboration</span>
-    <span class="tag">Follow-up</span>
-  </div>
-  <p>The response Justice Kavanaugh ordered was due at noon Eastern today &mdash; on Labor Day, which is the tell. He directed Richard von Glahn of People Not Politicians, the referendum campaign, to answer Missouri's emergency application by then, and the fact that he set a federal holiday deadline is the clearest available signal that the Court intends to move before ballots print rather than let the clock decide.</p>
-  <p>Two new details sharpen <a href="2026-09-06.html#missouri-scotus">yesterday's account</a>. First, Missouri's own state-law cutoff for changes to the November ballot falls this week &mdash; which compresses the timeline far more than the 19 September overseas-ballot mailing date I emphasised yesterday. Second, the state's Elections Clause argument now has a specific shape: Solicitor General Louis Capozzi frames it as whether 3.3 per cent of a state's voters can suspend a congressional map by filing a referendum petition, and separately argues the state court disenfranchised hundreds of thousands of voters by returning them to old districts.</p>
-  <p>Legal observers quoted in Missouri coverage still expect Kavanaugh to deny the stay, on the ground that federal courts have limited authority over state election procedure. That was my read yesterday and it has not changed.</p>
-  <p><b>What to watch:</b> an order from Kavanaugh alone, or a referral to the full Court, before the state cutoff passes.</p>
-  <div class="divergence">
-    <strong>Divergence &mdash; when is the state deadline, and why can't anyone say?</strong>
-    <p><b>What is disputed.</b> A fact, and a load-bearing one. SCOTUSblog puts the state-law cutoff for finalising November ballot changes on Tuesday 8 September, describing Kavanaugh's noon Monday deadline as falling one day before it. Missouri public-radio coverage puts it on Wednesday 9 September. The entire emergency application is an argument about running out of time, so the date the clock runs out on is not a detail.</p>
-    <p><b>Why they differ.</b> Almost certainly because there is no single deadline to report. An election calendar is a stack of administrative steps &mdash; the point at which ballot content is certified, the point at which it goes to county election authorities, the point at which those authorities must have ballots printed, and the federal UOCAVA requirement to transmit to overseas voters 45 days out, which lands on 19 September. Each of those is a defensible answer to &ldquo;when is the deadline&rdquo; and they fall on different days. Reporters working from different officials get different steps, and each reports the one they were given without noting it is one of several. I could not resolve it against the statute directly, so I am describing the mechanism rather than asserting which step each outlet picked up.</p>
-    <p><b>What it means for you.</b> Do not attach significance to either date, and be sceptical of any coverage that treats a missed Tuesday or Wednesday as dispositive &mdash; the state's position needs the whole stack to be impossible, not one step. The date that is firm and federal is 19 September, and it is the one the Court will actually reason from, because UOCAVA is the federal hook that gets a state redistricting dispute in front of a Justice at all. Watch for whether Kavanaugh's order engages the state-law calendar or goes straight to the 45-day requirement: if it is the latter, the Tuesday-versus-Wednesday question was never the real constraint, and the state's timing argument is doing less work than its filing suggests.</p>
-  </div>
-  <p class="sources"><b>Sources:</b>
-    <a href="https://www.scotusblog.com/2026/09/missouri-urges-supreme-court-to-allow-for-use-of-congressional-map-expected-to-aid-republicans/">SCOTUSblog</a> &middot;
-    <a href="https://www.kcur.org/politics-elections-and-government/2026-09-07/missouri-redistricting-lawsuit-referendum-november-supreme-court">KCUR</a> &middot;
-    <a href="https://missouriindependent.com/2026/09/06/looming-ballot-deadline-complicates-gop-appeal-of-missouri-redistricting-decision/">Missouri Independent</a> &middot;
-    <a href="https://www.stlpr.org/government-politics-issues/2026-09-05/republican-officials-ask-us-supreme-court-to-overturn-missouri-redistricting-ruling">STLPR</a>
-  </p>
-  <fieldset>
-    <legend>Tune this story</legend>
-    <div class="q" data-sid="missouri-kavanaugh">
-      <p>Yesterday this ran long with a doctrinal expansion; today it's 250 words and no expansion because there was less to say. Is that variation good?</p>
-      <label><input type="radio" name="fb-mo2-1" value="yes"> Yes &mdash; length should track substance</label>
-      <label><input type="radio" name="fb-mo2-1" value="consistent"> I'd rather each story were consistent</label>
-      <label><input type="radio" name="fb-mo2-1" value="no-opinion"> No opinion</label>
-    </div>
-    <div class="q" data-sid="missouri-kavanaugh">
-      <p>Cadence from here?</p>
-      <label><input type="radio" name="fb-mo2-2" value="only-orders"> Only when the Court acts</label>
-      <label><input type="radio" name="fb-mo2-2" value="every-filing"> Every filing</label>
-      <label><input type="radio" name="fb-mo2-2" value="stop"> Stop following</label>
-    </div>
-  </fieldset>
-</article>
-
 <article id="hormuz-zone">
   <h3>Iran's answer to the tanker strikes is a line on a map, and it moved oil more than the missiles did <a class="anchor" href="#hormuz-zone">#</a></h3>
   <div class="meta">
@@ -571,7 +747,7 @@
   </div>
   <p>Mohsen Rezaei, secretary of Iran's Supreme National Security Council, said on state television late Sunday that Iran will declare a new &ldquo;restricted&rdquo; maritime zone <em>outside</em> the Strait of Hormuz, beginning at the line of the US Navy blockade and extending into parts of the Gulf. He said it takes effect within days and that <span>&ldquo;any ship entering the new zone will be added to a sanctions list.&rdquo;</span> He gave no coordinates and described no enforcement mechanism. He also said maps for a new shipping corridor through Iranian and Omani waters have been agreed and are due to be signed shortly.</p>
   <p>This is the &ldquo;significant response&rdquo; <a href="2026-09-06.html#tanker-centcom">yesterday's issue named as the thing to watch</a> after CENTCOM destroyed or disabled three Iranian tankers. It arrived alongside an IRGC claim to have struck three tankers and three US-affiliated vessels, which CENTCOM has not confirmed and for which no shipping-industry report has surfaced.</p>
-  <p>The market took the map seriously. Brent traded at about $97.22 on Monday, up roughly one per cent on the day and the highest since July. Kpler transit data has commodity-ship movements through the strait averaging about ten a day over the past ten days, down from more than fifteen on Friday, with two on Saturday. The US Strategic Petroleum Reserve is under 290 million barrels, its lowest since 1982.</p>
+  <p>The market took the map seriously. Brent traded at about $97.22 on Monday, up roughly one per cent on the day and the highest since July, after closing near $95.73 on Friday and gaining more than eight per cent across last week. Kpler transit data has commodity-ship movements through the strait averaging about ten a day over the past ten days, but visible transits fell to about five a day over the weekend &mdash; the thinnest reading of the crisis so far. The US Strategic Petroleum Reserve is under 290 million barrels, its lowest in 44 years.</p>
   <p><b>What to watch:</b> whether coordinates are ever published; whether the Iran&ndash;Oman corridor is actually signed; Tuesday's EIA weekly print; and whether transits stay in single digits.</p>
   <div class="divergence">
     <strong>Divergence &mdash; is the strait open or closed?</strong>
@@ -614,6 +790,50 @@
       <label><input type="radio" name="fb-hz-3" value="yes"> Yes, add it</label>
       <label><input type="radio" name="fb-hz-3" value="only-if-moves"> Only when it moves materially</label>
       <label><input type="radio" name="fb-hz-3" value="no"> No</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="eu-greenland">
+  <h3>Brussels put &euro;200 million on the table in Nuuk, which is about eight per cent of Greenland's economy <a class="anchor" href="#eu-greenland">#</a></h3>
+  <div class="meta">
+    <span class="tag">World economy</span>
+    <span class="tag">Geopolitics</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+  </div>
+  <p>European Commission President Ursula von der Leyen, Danish Prime Minister Mette Frederiksen and Greenland's Premier Jens-Frederik Nielsen signed an updated EU&ndash;Greenland&ndash;Denmark Joint Partnership in Nuuk on Monday, at the end of a two-day visit. It carries up to &euro;200 million for 2026&ndash;27 and a Commission proposal for up to &euro;530 million across the 2028&ndash;34 EU budget, roughly double the current allocation. Denmark's annual block grant of about &euro;123 million continues alongside it.</p>
+  <p>The money is directed at satellite and cable connectivity for northern and eastern Greenland, hydropower, critical raw materials extraction, tourism, housing and small business. A satellite-connectivity project with the Greenlandic operator Tusass was launched during the visit. Von der Leyen described Greenland as Europe's <span>&ldquo;trusted friend, strategic ally&rdquo;</span> and part of the European family.</p>
+  <p>The subtext is not subtext. This follows President Trump's campaign to acquire Greenland, including threats earlier this year to take it by force, which Copenhagen and Nuuk have both rejected. Greenland holds an estimated 25 of the 34 raw materials the EU classifies as critical. Against a GDP in the region of &euro;2.5 billion, &euro;200 million is on the order of eight per cent of the island's economy.</p>
+  <p><b>What to watch:</b> whether Washington responds; whether the &euro;530 million survives the 2028&ndash;34 budget negotiation; and whether any of it is spent on anything a mining company would recognise as a project.</p>
+  <details>
+    <summary>Dig deeper &mdash; what &euro;200 million buys, and why this is a sovereignty document dressed as a development grant</summary>
+    <div class="deeper">
+      <p>Take the money seriously first, because the percentage is what makes this unusual. Eight per cent of GDP in a single external commitment is not development assistance in the ordinary sense; for comparison, that is a multiple of what most aid relationships deliver, and it arrives in an economy of about 57,000 people whose public finances rest heavily on the Danish block grant and on fishing. What Greenland has wanted for two decades is a path to reducing dependence on that grant, because the grant is the practical obstacle to full independence from Denmark. Anything that diversifies Greenland's revenue base is, in Greenlandic politics, an independence instrument. The EU almost certainly understands that, and is offering it anyway, which tells you how much Brussels wants the relationship.</p>
+      <p>The spending list is the giveaway on strategy. Satellite and subsea connectivity for the north and east is dual-use infrastructure &mdash; it serves settlements and it serves surveillance of the Arctic approaches. Hydropower is what makes energy-intensive mineral processing viable in a place with no fossil generation. Critical raw materials is stated outright. Put together, this is a plan to make Greenland's minerals extractable and its territory monitored, funded by an EU that has spent three years discovering how badly it needs non-Chinese sources of the inputs its industry runs on. The 25-of-34 figure is the reason Greenland is on any strategic map at all.</p>
+      <p>But the binding constraint on Greenlandic mining is not capital, it is economics and consent. Deposits have been identified for decades; very few have become mines. The reasons are the cost of operating with no roads between settlements, short ice-free shipping windows, a small labour force, and a domestic politics that has repeatedly rejected specific projects &mdash; the Kvanefjeld uranium-and-rare-earths deposit was effectively stopped by a Greenlandic election and a subsequent ban on uranium mining. &euro;200 million funds enabling infrastructure. It does not resolve whether Greenlanders want the mines, and nothing signed on Monday changes who decides that.</p>
+      <p>The sovereignty function is the real content. When the United States raises the possibility of acquiring territory belonging to a NATO ally, the ally's most effective available response is not military &mdash; Denmark cannot defend Greenland against the United States and everyone involved knows it. It is to make the territory's international status so thickly documented, so financially entangled with the European Union, and so publicly affirmed by heads of government standing next to each other in Nuuk, that acquisition would require repudiating a signed partnership with the entire EU rather than pressuring a country of six million. That is what a joint declaration signed by a Commission president, a prime minister and a premier is for. It converts a bilateral vulnerability into a bloc-level one.</p>
+      <p>Two things I could not stand up and am flagging rather than glossing. The Council of the EU published a document dated 7 September 2026 that appears to be the partnership text; it returned as unparseable binary in this environment, so everything above is drawn from reporting rather than from the instrument itself. And one summary of Frederiksen's remarks contained an obvious transcription error, so I have not quoted her at all. If the reader wants the actual commitments rather than the coverage of them, the Council document reference is ST-12802-2026-INIT.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.rte.ie/news/europe/2026/0907/1590522-eu-funding-greenland/">RT&Eacute;</a> &middot;
+    <a href="https://www.scmp.com/news/world/europe/article/3366565/eu-commission-chief-von-der-leyen-visits-greenland-sign-new-partnership-deal">South China Morning Post</a> &middot;
+    <a href="https://www.spokesman.com/stories/2026/sep/06/eu-to-give-greenland-a-cash-boost-amid-trump-annex/">The Spokesman-Review</a> &middot;
+    <a href="https://data.consilium.europa.eu/doc/document/ST-12802-2026-INIT/en/pdf">Council of the EU, ST-12802-2026-INIT (primary, unparseable here)</a>
+  </p>
+  <fieldset>
+    <legend>Tune this story</legend>
+    <div class="q" data-sid="eu-greenland">
+      <p>This is US&ndash;EU policy filed as a Greenland story. Want more of this angle?</p>
+      <label><input type="radio" name="fb-grn-1" value="more"> More</label>
+      <label><input type="radio" name="fb-grn-1" value="current"> About right</label>
+      <label><input type="radio" name="fb-grn-1" value="less"> Less</label>
+    </div>
+    <div class="q" data-sid="eu-greenland">
+      <p>Follow the critical-raw-materials angle as its own thread?</p>
+      <label><input type="radio" name="fb-grn-2" value="follow"> Yes, watchlist it</label>
+      <label><input type="radio" name="fb-grn-2" value="only-projects"> Only if a real project moves</label>
+      <label><input type="radio" name="fb-grn-2" value="drop"> Drop it</label>
     </div>
   </fieldset>
 </article>
@@ -732,50 +952,6 @@
       <label><input type="radio" name="fb-afd-3" value="more"> More</label>
       <label><input type="radio" name="fb-afd-3" value="current"> This is about right</label>
       <label><input type="radio" name="fb-afd-3" value="less"> Less &mdash; only when it hits policy or markets</label>
-    </div>
-  </fieldset>
-</article>
-
-<article id="eu-greenland">
-  <h3>Brussels put &euro;200 million on the table in Nuuk, which is about eight per cent of Greenland's economy <a class="anchor" href="#eu-greenland">#</a></h3>
-  <div class="meta">
-    <span class="tag">World economy</span>
-    <span class="tag">Geopolitics</span>
-    <span class="tag conf corrob">Independent corroboration</span>
-  </div>
-  <p>European Commission President Ursula von der Leyen, Danish Prime Minister Mette Frederiksen and Greenland's Premier Jens-Frederik Nielsen signed an updated EU&ndash;Greenland&ndash;Denmark Joint Partnership in Nuuk on Monday, at the end of a two-day visit. It carries up to &euro;200 million for 2026&ndash;27 and a Commission proposal for up to &euro;530 million across the 2028&ndash;34 EU budget, roughly double the current allocation. Denmark's annual block grant of about &euro;123 million continues alongside it.</p>
-  <p>The money is directed at satellite and cable connectivity for northern and eastern Greenland, hydropower, critical raw materials extraction, tourism, housing and small business. A satellite-connectivity project with the Greenlandic operator Tusass was launched during the visit. Von der Leyen described Greenland as Europe's <span>&ldquo;trusted friend, strategic ally&rdquo;</span> and part of the European family.</p>
-  <p>The subtext is not subtext. This follows President Trump's campaign to acquire Greenland, including threats earlier this year to take it by force, which Copenhagen and Nuuk have both rejected. Greenland holds an estimated 25 of the 34 raw materials the EU classifies as critical. Against a GDP in the region of &euro;2.5 billion, &euro;200 million is on the order of eight per cent of the island's economy.</p>
-  <p><b>What to watch:</b> whether Washington responds; whether the &euro;530 million survives the 2028&ndash;34 budget negotiation; and whether any of it is spent on anything a mining company would recognise as a project.</p>
-  <details>
-    <summary>Dig deeper &mdash; what &euro;200 million buys, and why this is a sovereignty document dressed as a development grant</summary>
-    <div class="deeper">
-      <p>Take the money seriously first, because the percentage is what makes this unusual. Eight per cent of GDP in a single external commitment is not development assistance in the ordinary sense; for comparison, that is a multiple of what most aid relationships deliver, and it arrives in an economy of about 57,000 people whose public finances rest heavily on the Danish block grant and on fishing. What Greenland has wanted for two decades is a path to reducing dependence on that grant, because the grant is the practical obstacle to full independence from Denmark. Anything that diversifies Greenland's revenue base is, in Greenlandic politics, an independence instrument. The EU almost certainly understands that, and is offering it anyway, which tells you how much Brussels wants the relationship.</p>
-      <p>The spending list is the giveaway on strategy. Satellite and subsea connectivity for the north and east is dual-use infrastructure &mdash; it serves settlements and it serves surveillance of the Arctic approaches. Hydropower is what makes energy-intensive mineral processing viable in a place with no fossil generation. Critical raw materials is stated outright. Put together, this is a plan to make Greenland's minerals extractable and its territory monitored, funded by an EU that has spent three years discovering how badly it needs non-Chinese sources of the inputs its industry runs on. The 25-of-34 figure is the reason Greenland is on any strategic map at all.</p>
-      <p>But the binding constraint on Greenlandic mining is not capital, it is economics and consent. Deposits have been identified for decades; very few have become mines. The reasons are the cost of operating with no roads between settlements, short ice-free shipping windows, a small labour force, and a domestic politics that has repeatedly rejected specific projects &mdash; the Kvanefjeld uranium-and-rare-earths deposit was effectively stopped by a Greenlandic election and a subsequent ban on uranium mining. &euro;200 million funds enabling infrastructure. It does not resolve whether Greenlanders want the mines, and nothing signed on Monday changes who decides that.</p>
-      <p>The sovereignty function is the real content. When the United States raises the possibility of acquiring territory belonging to a NATO ally, the ally's most effective available response is not military &mdash; Denmark cannot defend Greenland against the United States and everyone involved knows it. It is to make the territory's international status so thickly documented, so financially entangled with the European Union, and so publicly affirmed by heads of government standing next to each other in Nuuk, that acquisition would require repudiating a signed partnership with the entire EU rather than pressuring a country of six million. That is what a joint declaration signed by a Commission president, a prime minister and a premier is for. It converts a bilateral vulnerability into a bloc-level one.</p>
-      <p>Two things I could not stand up and am flagging rather than glossing. The Council of the EU published a document dated 7 September 2026 that appears to be the partnership text; it returned as unparseable binary in this environment, so everything above is drawn from reporting rather than from the instrument itself. And one summary of Frederiksen's remarks contained an obvious transcription error, so I have not quoted her at all. If the reader wants the actual commitments rather than the coverage of them, the Council document reference is ST-12802-2026-INIT.</p>
-    </div>
-  </details>
-  <p class="sources"><b>Sources:</b>
-    <a href="https://www.rte.ie/news/europe/2026/0907/1590522-eu-funding-greenland/">RT&Eacute;</a> &middot;
-    <a href="https://www.scmp.com/news/world/europe/article/3366565/eu-commission-chief-von-der-leyen-visits-greenland-sign-new-partnership-deal">South China Morning Post</a> &middot;
-    <a href="https://www.spokesman.com/stories/2026/sep/06/eu-to-give-greenland-a-cash-boost-amid-trump-annex/">The Spokesman-Review</a> &middot;
-    <a href="https://data.consilium.europa.eu/doc/document/ST-12802-2026-INIT/en/pdf">Council of the EU, ST-12802-2026-INIT (primary, unparseable here)</a>
-  </p>
-  <fieldset>
-    <legend>Tune this story</legend>
-    <div class="q" data-sid="eu-greenland">
-      <p>This is US&ndash;EU policy filed as a Greenland story. Want more of this angle?</p>
-      <label><input type="radio" name="fb-grn-1" value="more"> More</label>
-      <label><input type="radio" name="fb-grn-1" value="current"> About right</label>
-      <label><input type="radio" name="fb-grn-1" value="less"> Less</label>
-    </div>
-    <div class="q" data-sid="eu-greenland">
-      <p>Follow the critical-raw-materials angle as its own thread?</p>
-      <label><input type="radio" name="fb-grn-2" value="follow"> Yes, watchlist it</label>
-      <label><input type="radio" name="fb-grn-2" value="only-projects"> Only if a real project moves</label>
-      <label><input type="radio" name="fb-grn-2" value="drop"> Drop it</label>
     </div>
   </fieldset>
 </article>
@@ -980,69 +1156,61 @@
     </div>
   </fieldset>
 </article>
+
 <button id="send">Send my feedback &rarr;</button>
 <p id="sendnote">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
 
 <footer>
-  <h4>Selection changes made in this edition</h4>
+  <h4>What changed in this run</h4>
   <ul>
-    <li><b>Removed as below the bar:</b> Jaguar Land Rover's 4,000 redundancies; Anak Krakatau's flight disruption; the armed man arrested at the Canfield Fair. All three were reported accurately; none of them changed anything the reader has a stake in.</li>
-    <li><b>Added:</b> the September FOMC decision and the pressure around it; Treasury's long-bond buyback increase and the debt-service arithmetic; the transformer and interconnection constraint on AI build-out; the DOJ litigation strategy against state AI law; the state of UAP disclosure implementation.</li>
-    <li><b>Reordered:</b> US domestic stories now lead. The foreign stories that survived the cut run after them, in order of consequence to a US reader.</li>
-    <li><b>Beat weighting changed in <code>config.md</code>:</b> US domestic beats &mdash; Fed and rates, debt, AI industry and policy, US politics and courts, UAP &mdash; now lead the candidate pool. Foreign spot news must clear a materially higher bar, and now needs a direct US consequence to run at all. Energy and grid added as a beat.</li>
+    <li><b>New:</b> the Solicitor General's third emergency application over mail ballots; the split between the federal childhood immunization schedule and the one 230 medical bodies use; the twenty-one-bank stablecoin consortium and the GENIUS Act rulemaking that is late.</li>
+    <li><b>Refreshed:</b> Missouri is fully briefed as of noon, and the state's own Attorney General filed against her supreme court's order. Hormuz transits fell to about five a day over the weekend, the thinnest of the crisis; Brent closed last week up more than eight per cent.</li>
+    <li><b>Corrections:</b> two, both in the body. The mail-ballot response deadline is 4pm Wednesday, not 10am Tuesday as this watchlist twice said. And the stablecoin consortium has twenty-one members, not six &mdash; and JPMorgan, which the 5 September issue put at the centre of it, is not a member.</li>
+    <li><b>Still here on your instruction:</b> Hormuz, Greenland, Lebanon, Saxony-Anhalt and Nepal. Under the new altitude bar, Hormuz and Greenland clear on a US channel and the other three would not have. You said they were fine, so they run, below the domestic set. The calibration box asks whether that stands.</li>
   </ul>
 
   <h4>Threads swept, no trigger fired</h4>
   <ul>
-    <li><b>Ukraine&ndash;Russia negotiations</b> &mdash; swept, held out of the body deliberately. Peskov declined on 7 September to say how the Witkoff&ndash;Kushner proposals differ from the 2025 Anchorage understandings. My stated trigger was a document either side would describe, or something surviving the 8 September expiry. Neither happened.</li>
-    <li><b>US fuel prices</b> &mdash; wakes on the EIA weekly print due Tuesday 8 September, the first official reading that could contain the alleged $5.85 diesel record.</li>
-    <li><b>Gulf states &amp; Article 51</b> &mdash; no movement. Wakes on Kuwait or the UAE restricting US use of the bases Iran struck, or a collective GCC statement.</li>
-    <li><b>USPS mail ballot rule</b> &mdash; no order. Responses to application 26A297 are due at 10am on 8 September per Justice Jackson; the district court TRO expires 10 September.</li>
-    <li><b>Birthright citizenship order</b> &mdash; no appeal filed to the Fourth Circuit and no emergency application to the Supreme Court.</li>
-    <li><b>AI gated-capability tiers</b> &mdash; no published tier criteria or access list for the restricted cyber tiers shipped alongside the recent frontier releases, and no regulator has demanded them.</li>
+    <li><b>Ukraine&ndash;Russia negotiations</b> &mdash; Peskov declined on 7 September to say how the Witkoff&ndash;Kushner proposals differ from the 2025 Anchorage understandings. Trigger was a document either side would describe, or something surviving the 8 September expiry. Neither happened.</li>
+    <li><b>US fuel prices</b> &mdash; wakes on the EIA weekly print due Tuesday 8 September, the first official reading that could contain the alleged $5.85 diesel record. Brent near $97 makes that print more interesting than it was on Friday.</li>
+    <li><b>Gulf states &amp; Article 51</b> &mdash; no movement.</li>
+    <li><b>Birthright citizenship order</b> &mdash; no appeal to the Fourth Circuit, no emergency application to the Supreme Court.</li>
+    <li><b>AI gated-capability tiers</b> &mdash; no published tier criteria or access list for GPT-6 Astra's restricted cyber capabilities, and no regulator has demanded them.</li>
     <li><b>AARO records contract</b> &mdash; no award notice on sam.gov, no public tranche from the NUFOHRC collection.</li>
-    <li><b>Bank stablecoin consortium</b> &mdash; no JPMorgan statement, no GENIUS Act licence, no consortium entity formed. Licensing opens 18 January 2027. The correction flagged on 7 September &mdash; that the grouping is larger than the six reported on 5 September, with JPMorgan pursuing tokenised deposits through The Clearing House &mdash; still stands unresolved.</li>
     <li><b>Central bank gold custody</b> &mdash; no further disclosure, no Bundesbank or Banca d'Italia comment.</li>
     <li><b>Autonomous weapons regulation</b> &mdash; no corroboration of the &ldquo;diluted in the final hours&rdquo; claim from any newsroom other than Reuters. Review Conference 16&ndash;20 November.</li>
     <li><b>Indonesia free-meals programme (MBG)</b> &mdash; no laboratory results, no suspension, no budget change.</li>
-    <li><b>Tampa Bay dengue</b> &mdash; the week-35 arbovirus report returned 404 at two further URL patterns today, three days running.</li>
-    <li><b>Florida Amendment 3</b> &mdash; the Attorney General's revised ballot title and summary has still not been published.</li>
+    <li><b>Tampa Bay dengue</b> &mdash; the week-35 arbovirus report returned 404 again, three days running.</li>
+    <li><b>Florida Amendment 3</b> &mdash; the Attorney General's revised ballot title and summary still unpublished.</li>
     <li><b>Waymo Tampa Bay</b> &mdash; no service-area expansion into Pinellas or Pasco, no published incident data.</li>
-    <li><b>Anak Krakatau</b> &mdash; demoted to low priority per reader feedback. Still swept; returns to the body only on a fatality, a tsunami advisory, or US airline operations being affected.</li>
+    <li><b>Anak Krakatau</b> &mdash; low priority per your feedback. Returns only on a fatality, a tsunami advisory, or US airline operations being affected. Neither fired.</li>
   </ul>
 
-  <h4>Threads opened or changed today</h4>
+  <h4>Threads opened or changed</h4>
   <ul>
-    <li><b>Treasury buybacks &amp; debt service</b> &mdash; wakes on the enlarged 9 September operation and what it takes down, the 30-year breaking either side of 5.2 per cent, the 4 November refunding, or any TGA drawdown to fund buybacks.</li>
-    <li><b>AI power &amp; grid constraint</b> &mdash; wakes on hyperscaler capex guidance being reprofiled, a major project cancellation being confirmed by a company rather than an analyst, a state utility commission ruling on who pays for interconnection, or federal action on transformer manufacturing.</li>
-    <li><b>AI preemption litigation</b> &mdash; wakes on the first DOJ AI Litigation Task Force case to produce a district court ruling, or preemption language attaching to must-pass legislation.</li>
-    <li><b>Fed September decision</b> &mdash; promoted from the footer into the body. Wakes on the 11 September CPI print and the 16 September statement, dot plot and dissent column.</li>
-    <li><b>UAP disclosure implementation</b> &mdash; promoted into the body, and its wake trigger corrected (see below). Now wakes on ODNI's detailed implementing guidance, whether the contractor gap is closed, production of any of Luna's 46 named videos, or the next file tranche.</li>
-    <li><b>Saxony-Anhalt government formation</b>, <b>Miami 767 overrun</b>, <b>Nepal&ndash;Tibet glacial flood</b>, <b>Israel&ndash;Lebanon June framework</b>, <b>EU&ndash;Greenland partnership</b>, <b>Florida school vaccine rule</b>, <b>Florida emergency management funding</b> &mdash; all carried forward unchanged from the 05:00 edition.</li>
-  </ul>
-
-  <h4>Correction</h4>
-  <ul>
-    <li>The 6 and 7 September issues stated that a House Oversight task force hearing was set for <b>9 September 2026</b>, and the watchlist carried it as a wake trigger. No such hearing appears on the 2026 calendar. The 9 September hearing was in <b>2025</b>; the task force's 2026 hearing on UAP transparency was held on 25 June. The date appears to have been carried forward from last year without being re-checked. The trigger has been removed from <code>config.md</code>. Full note in story 5.</li>
+    <li><b>Federal vs professional vaccine schedules</b> &mdash; new. Wakes on another state adopting the AAP schedule by rule, any change to Vaccines for Children eligibility, or movement on the AHIP coverage commitment that expires end of 2027.</li>
+    <li><b>USPS mail ballot rule</b> &mdash; deadline corrected to 4pm Wednesday 9 September. Wakes on an administrative stay granted before the briefs land, an order from Justice Jackson, or a referral to the full Court.</li>
+    <li><b>Bank stablecoin consortium</b> &mdash; corrected to twenty-one members, JPMorgan out. Wakes on the OCC finalising in November, entity formation, a first licence application, or JPMorgan announcing its own coin.</li>
+    <li><b>Treasury buybacks &amp; debt service</b>, <b>AI power &amp; grid constraint</b>, <b>AI preemption litigation</b> &mdash; opened earlier today, carried forward unchanged.</li>
+    <li><b>Missouri congressional map</b> &mdash; now fully briefed; an order can come at any hour. The Tuesday-versus-Wednesday state cutoff remains unresolved; the firm federal date is the 19 September overseas-ballot mailing.</li>
   </ul>
 
   <h4>Sources I could not reach</h4>
   <ul>
-    <li>CNBC returned 403 for the Warsh story, so the administration's push against a September hike is built on the search-result summary plus PBS and Detroit News directly. That is the weakest link in the lead story and it is why the divergence box declines to treat the strongest characterisation as settled.</li>
-    <li>The trade analysis behind the &ldquo;30 to 50 per cent of 2026 data centre projects delayed or cancelled&rdquo; figure returned 403. The figure is used but explicitly flagged in story 3 as the weakest number on the page.</li>
-    <li>CNN returned HTTP 451 again; the Saxony-Anhalt result was built from a preliminary results table cross-checked against CBS, NPR and Euronews.</li>
-    <li>The Council of the EU's Greenland partnership document ST-12802-2026-INIT returned as unparseable binary.</li>
-    <li>The Florida DOH week-35 arbovirus PDF returned 404 at two more URL patterns.</li>
+    <li>CNN returned HTTP 451 for the vaccine guidance story, so that piece is built on AAP's own publications, the Congressional Research Service, The Hill, and the New York State and City endorsement letter instead. That is a better sourcing base than the one I was reaching for.</li>
+    <li>CNBC returned 403 for the Warsh story; the administration's push against a hike rests on the search summary plus PBS and Detroit News directly. Flagged in that story's divergence box.</li>
+    <li>The trade analysis behind &ldquo;30 to 50 per cent of 2026 data centre projects delayed or cancelled&rdquo; returned 403. Used, and flagged as the weakest number on the page.</li>
+    <li>I did not read the enrolled GENIUS Act text directly; the effective-date correction rests on consistent quotation of the provision across trade coverage. Flagged in that story's divergence box.</li>
     <li>Reuters remains unreachable from this environment entirely.</li>
   </ul>
 
   <h4>About this issue</h4>
   <ul>
-    <li>Third edition for 7 September 2026. The first was the scheduled 05:00 run; the second added two stories in an interactive run; this one re-edits the selection after the reader said the altitude was wrong. Roughly 60 searches and fetches across all three.</li>
-    <li>Fourteen stories: twelve national, two Florida. Five are new in this edition and all five are US domestic.</li>
-    <li>Two stories carry no &ldquo;Dig deeper&rdquo; expansion because there was not 500 words of new substance to put in one.</li>
-    <li>Two stories are labelled <b>Where things stand</b>: they run on a beat the reader cares about with no new fact today, and they say so at the top rather than dressing background up as news. That designation is new, and the calibration box asks whether it should survive.</li>
-    <li>Every quotation here is under fifteen words and attributed; everything else is paraphrase. Everything drawn from a non-English source is paraphrase, never quotation.</li>
+    <li>Full re-run at 16:00 UTC against the retuned <code>config.md</code>, replacing the 05:00 scheduled edition. Roughly 24 searches and fetches in this run, about 70 across the day.</li>
+    <li>Seventeen stories: fifteen national, two Florida. Eight of the fifteen are US domestic core beats, against zero in the scheduled edition.</li>
+    <li>Two stories are labelled <b>Where things stand</b>: they run on a core beat with no new fact today and say so in the first line, rather than dressing background up as news. New rule, added after this morning.</li>
+    <li>Two corrections in the body and a third carried in story 9. I would rather run three corrections prominently than have you find them yourself.</li>
+    <li>Every quotation is under fifteen words and attributed; everything else is paraphrase.</li>
   </ul>
 </footer>
 
@@ -1087,7 +1255,7 @@
       return;
     }
 
-    lines.push("Feedback on **Issue No. 3 — 7 September 2026, third edition**");
+    lines.push("Feedback on **Issue No. 3 — 7 September 2026, refreshed 16:00 UTC**");
     lines.push("");
     if (sets["CALIBRATION"]) {
       lines.push("## Selection & altitude");
