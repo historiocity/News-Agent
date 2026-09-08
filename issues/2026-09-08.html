@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Tuesday, 8 September 2026</title>
+<style>
+  :root {
+    --bg: #fbfaf8; --fg: #1a1a18; --muted: #6b6a66; --rule: #e0ddd6; --link: #1c4f8a;
+    --tag-bg: #eeebe4; --accent: #8a3324; --box: #f4f2ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16161a; --fg: #e8e6e1; --muted: #96948d; --rule: #2e2e34; --link: #8ab4e8;
+            --tag-bg: #26262c; --accent: #d98b76; --box: #1e1e23; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.65 Georgia, "Iowan Old Style", "Times New Roman", serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  header { border-bottom: 2px solid var(--fg); padding-bottom: 1rem; margin-bottom: 1.75rem; }
+  h1 { margin: 0; font-size: 2rem; letter-spacing: -0.02em; line-height: 1.15; }
+  .issue-no { color: var(--muted); font-size: 0.85rem; text-transform: uppercase;
+              letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+  .dek { margin-top: 0.7rem; font-size: 1.05rem; line-height: 1.5; }
+  .provenance { margin-top: 0.9rem; font-size: 0.82rem; color: var(--muted);
+                line-height: 1.5; border-left: 2px solid var(--rule); padding-left: 0.75rem; }
+  nav.jump { background: var(--box); border-radius: 4px; padding: 1rem 1.15rem; margin-bottom: 2.5rem; }
+  nav.jump h2 { margin: 0 0 0.6rem; font-size: 0.8rem; text-transform: uppercase;
+                letter-spacing: 0.08em; color: var(--muted); font-weight: normal; }
+  nav.jump ol { margin: 0; padding-left: 1.2rem; }
+  nav.jump li { margin: 0.35rem 0; line-height: 1.4; }
+  nav.jump .sec { margin-top: 0.8rem; padding-top: 0.6rem; border-top: 1px solid var(--rule);
+                  font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.07em;
+                  color: var(--muted); margin-bottom: 0.5rem; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  article { border-top: 1px solid var(--rule); padding-top: 1.75rem; margin-top: 2.25rem; }
+  article:first-of-type { border-top: none; }
+  h2.section { font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+               font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em;
+               color: var(--muted); margin: 3.5rem 0 0; padding-top: 1.5rem;
+               border-top: 2px solid var(--fg); }
+  h3 { margin: 0 0 0.55rem; font-size: 1.32rem; line-height: 1.25; letter-spacing: -0.01em; }
+  h3 em { font-style: italic; }
+  .anchor { color: var(--rule); font-size: 0.8rem; margin-left: 0.35rem; }
+  .anchor:hover { color: var(--link); }
+  .meta { margin-bottom: 0.9rem; display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
+  .tag {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em;
+    background: var(--tag-bg); color: var(--muted); padding: 0.22rem 0.5rem; border-radius: 3px;
+  }
+  .conf { border: 1px solid var(--rule); background: transparent; }
+  .conf.primary { color: #2c6e49; border-color: #2c6e49; }
+  .conf.corrob { color: #3a5a8a; border-color: #3a5a8a; }
+  .conf.single { color: #8a6d24; border-color: #8a6d24; }
+  .conf.unconf { color: var(--accent); border-color: var(--accent); font-weight: bold; }
+  @media (prefers-color-scheme: dark) {
+    .conf.primary { color: #7fc9a0; border-color: #7fc9a0; }
+    .conf.corrob { color: #9dbbe8; border-color: #9dbbe8; }
+    .conf.single { color: #d4b45e; border-color: #d4b45e; }
+  }
+  .under { background: var(--accent); color: #fff; }
+  .wts { background: #3a5a8a; color: #fff; }
+  @media (prefers-color-scheme: dark) { .wts { background: #9dbbe8; color: #16161a; } }
+  p { margin: 0 0 0.9rem; }
+  .divergence, .correction {
+    background: var(--box); border-radius: 4px; padding: 0.85rem 1rem; margin: 1rem 0;
+  }
+  .correction { border-left: 3px solid var(--accent); }
+  .divergence strong, .correction strong {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--muted); display: block; margin-bottom: 0.35rem; }
+  .divergence p:last-child, .correction p:last-child { margin-bottom: 0; }
+  details { margin: 1.1rem 0; border: 1px solid var(--rule); border-radius: 4px; }
+  summary {
+    cursor: pointer; padding: 0.7rem 1rem; list-style: none;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 0.85rem; font-weight: 600; color: var(--link);
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: "\25B8  "; }
+  details[open] summary::before { content: "\25BE  "; }
+  details[open] summary { border-bottom: 1px solid var(--rule); }
+  .deeper { padding: 1rem 1rem 0.4rem; font-size: 0.97rem; }
+  .sources {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 0.8rem; color: var(--muted); line-height: 1.7; margin-top: 0.9rem;
+  }
+  .sources b { color: var(--muted); font-weight: 600; }
+  fieldset {
+    border: 1px solid var(--rule); border-radius: 4px; margin: 1.2rem 0 0; padding: 0.85rem 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 0.84rem;
+  }
+  legend { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.07em;
+           color: var(--muted); padding: 0 0.35rem; }
+  .q { margin-bottom: 0.75rem; }
+  .q:last-child { margin-bottom: 0; }
+  .q p { margin: 0 0 0.25rem; font-weight: 600; }
+  fieldset label { display: block; font-weight: normal; cursor: pointer; line-height: 1.55; }
+  #send {
+    display: block; width: 100%; margin: 3rem 0 0; padding: 0.9rem;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 0.95rem; font-weight: 600;
+    background: var(--fg); color: var(--bg); border: none; border-radius: 4px; cursor: pointer;
+  }
+  #send:hover { opacity: 0.85; }
+  #sendnote { font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+              font-size: 0.78rem; color: var(--muted); text-align: center; margin-top: 0.6rem; }
+  footer { margin-top: 3.5rem; padding-top: 1.2rem; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: 0.85rem; }
+  footer h4 { font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+              font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.07em;
+              margin: 1.2rem 0 0.4rem; color: var(--muted); }
+  footer ul { padding-left: 1.1rem; margin: 0; }
+  footer li { margin: 0.25rem 0; }
+  table.series { border-collapse: collapse; font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+                 font-size: 0.82rem; margin: 0.9rem 0; width: 100%; }
+  table.series th, table.series td { text-align: left; padding: 0.3rem 0.6rem 0.3rem 0;
+                                     border-bottom: 1px solid var(--rule); }
+  table.series th { color: var(--muted); font-weight: 600; text-transform: uppercase;
+                    letter-spacing: 0.05em; font-size: 0.7rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="issue-no">The Brief &middot; Issue No. 4</div>
+  <h1>Tuesday, 8 September 2026</h1>
+  <p class="dek">Canada's counter-tariffs came into force this morning, and the American side of that trade war now stands on a 1930 statute no president has ever used and no court has ever read. Three Fed governors already voted to raise rates in July; the meeting is eight days out and Friday's CPI decides it. Treasury doubles its long-bond buybacks tomorrow. And the mail-ballot case I described yesterday had been withdrawn from the Supreme Court the day before I published.</p>
+  <p class="provenance">Scheduled edition, no human in the loop. Config, watchlist and the 5&ndash;7 September issues all loaded; cross-links below point at specific stories in those editions. Roughly 36 searches and fetches. Nine stories cleared the bar for the body plus one in Florida &amp; Tampa Bay. <b>Two corrections run in the body</b> &mdash; a Supreme Court docket number that was dead before yesterday's issue went out, and a wrong date for this week's EIA fuel print. A third item is late rather than wrong: the September stopgap that funded the government to 11 December has never appeared in this brief and should have. Accounting on the caps, since this is the first issue written under the retuned config: four follow-ups in the body, which is the cap &mdash; the mail-ballot case, Missouri, Kyiv and diesel. Three stories sit on no existing thread. The Fed and Treasury items are core beats with dated catalysts inside two weeks and run as <em>Where things stand</em> under the altitude bar rather than as follow-ups; both say in their first line that there is no new fact today. The Florida item is judged on the local bar and counted separately.</p>
+</header>
+
+<nav class="jump">
+  <h2>In this issue</h2>
+  <ol>
+    <li><a href="#canada-338">Canada's counter-tariffs hit this morning, and the American side rests on a statute nobody has ever litigated</a></li>
+    <li><a href="#fed-september">Three of the Fed's own voted to raise rates in July. The meeting is eight days away</a></li>
+    <li><a href="#treasury-buybacks-2">Treasury doubles its long-end buybacks tomorrow morning, and the number to watch is the take-down</a></li>
+    <li><a href="#cr-december">There will be no shutdown before the midterms. The next cliff is 11 December</a></li>
+    <li><a href="#aivres-loophole">A blacklisted Chinese firm bought $3bn of Blackwell machines through California, and Commerce has done nothing</a></li>
+    <li><a href="#usps-scotus-2">The mail-ballot case at the Supreme Court is not the case I described yesterday</a></li>
+    <li><a href="#missouri-briefed">Missouri's map is fully briefed and the Court has said nothing, on the day the state called too late</a></li>
+    <li><a href="#kyiv-resumed">Russia went back to hitting Kyiv the morning the pause ran out, and I oversold that pause</a></li>
+    <li><a href="#diesel-record-2">The record diesel price everyone is quoting is not in the government's numbers</a></li>
+  </ol>
+  <div class="sec">Florida &amp; Tampa Bay</div>
+  <ol start="10">
+    <li><a href="#dengue-aerial">Helicopters are spraying Tampa, and Pinellas has more dengue in four weeks than in fifteen years</a></li>
+  </ol>
+</nav>
+
+<article id="canada-338">
+  <h3>Canada's counter-tariffs hit this morning, and the American side rests on a statute nobody has ever litigated <a class="anchor" href="#canada-338">#</a></h3>
+  <div class="meta">
+    <span class="tag">World economy</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+  </div>
+  <p>Canada's retaliatory tariffs took effect today. They cover more than 700 American products worth about US$19.9bn (C$27.6bn) at rates between 15 and 50 per cent: steel and aluminium, dairy, appliances, agricultural equipment, pulp and paper, plastics, electronics. Ottawa paired the schedule with a C$5.42bn support package for small and medium-sized businesses. Mark Carney announced the 8 September date on 22 August, the day after bilateral talks collapsed, and described the American action in terms he has not walked back: "You're at war when you get attacked. We got attacked."</p>
+  <p>The tariff schedule is the visible half. The half that will matter for longer is the legal authority on the American side, because it is not the one you are used to.</p>
+  <p>In February the Supreme Court held 6&ndash;3, in <em>Learning Resources v. Trump</em>, that the International Emergency Economic Powers Act does not authorise tariffs at all &mdash; if Congress means to hand tariff power to the executive, it must say so explicitly. The IEEPA tariffs were terminated. The administration then rebuilt the same policy out of older statutes: a 10 per cent, 150-day temporary import surcharge under Section 122 of the Trade Act of 1974, the existing sectoral tariffs under Section 232, and &mdash; for Canada specifically &mdash; three proclamations signed on 20 July invoking <b>Section 338 of the Tariff Act of 1930</b>. Those imposed 50 per cent duties on selected Canadian imports, principally motor vehicles, alcoholic beverages and dairy, to offset what the proclamations call Canadian discrimination against American commerce.</p>
+  <p>Section 338 is 96 years old. It has never been used to impose a tariff, and it has never been construed by any court. One trade lawyer's description of the position is the honest one: the law is a blank canvas.</p>
+  <p><b>What to watch:</b> the first Section 338 complaint filed at the Court of International Trade. None has been filed yet.</p>
+  <div class="divergence">
+    <strong>Divergence &mdash; what is actually in force, and under which law</strong>
+    <p><b>The substance.</b> This is a dispute about facts, not about significance. A large amount of coverage describes "50 per cent tariffs on $20 billion of Canadian goods" as a single August action, and a meaningful slice of it attributes those tariffs to Section 232. The documentary record has at least two layers: proclamations signed 20 July under Section 338, effective 19 August, on vehicles, alcohol and dairy; and then the collapse of talks on 21&ndash;22 August, after which Canada named 8 September for retaliation. The "$20 billion" figure is the size of <em>Canada's</em> countermeasure package, which Ottawa built to mirror the American duties dollar for dollar. It is not a published valuation of the American action.</p>
+    <p><b>The cause.</b> Timing and vantage, and almost certainly not motive. Wire copy compresses a July proclamation and an August negotiating failure into one event because the retaliation date is the news peg and the proclamations were signed in a quiet week. Section 232 is the authority readers learned between 2018 and 2025, it is genuinely still in force for steel, aluminium and autos, and it is therefore an easy and half-right substitution. Canadian outlets, whose readers are the ones paying, track proclamation dates; American general-interest outlets track effective dates. Both are accurate about different things.</p>
+    <p><b>What it means for you.</b> Read "50 per cent on $20bn" as the shape of Canada's mirror, not as a description of the American legal action, and do not assume the Canada tariffs stand on the same footing as the steel and aluminium ones. The distinction is load-bearing. Section 232 survived the IEEPA ruling precisely because the statute expressly mentions duties and requires a Commerce Department investigation and report first; the Court said so. Section 338 has no completed International Trade Commission investigation behind it and no precedent at all. If you want to know which authority is really carrying the Canada tariffs, the thing to watch is the caption on the first complaint at the Court of International Trade &mdash; it will name the statute, and the government's answer will tell you what the administration thinks it can defend.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; what Section 338 actually says, and why nobody has sued yet</summary>
+    <div class="deeper">
+      <p>Section 338 was written into the Smoot&ndash;Hawley Tariff Act of 1930 as a bilateral retaliation weapon for a world with no GATT and no WTO. Its logic is reciprocity: if a foreign country discriminates against American commerce in a way that burdens or disadvantages it, the President may impose new or additional duties of up to 50 per cent on that country's goods, and in the limit may exclude them entirely. The 50 per cent ceiling in the Canada proclamations is not a coincidence &mdash; it is the statutory maximum, which is why the number is what it is.</p>
+      <p>The provision has sat unused for the whole postwar period because the architecture that replaced it was better suited to the job. GATT and then the WTO gave the United States a dispute mechanism; Section 301 gave it a domestic one with a defined investigative process; Section 232 gave it a national-security route. Section 338 asks the International Trade Commission to ascertain and report on the discrimination before the President acts, and that step is where the legal exposure sits. Trade scholars have made three arguments against the Canada proclamations, and they are worth holding separately because they fail or succeed independently: that the ITC never conducted the contemplated investigation; that the goods selected &mdash; vehicles, alcohol, dairy &mdash; bear little relation to the Canadian measures the proclamations complain of, which matters because the statute is framed as an offset rather than as general leverage; and that later trade legislation occupied the field and impliedly repealed it. The first is procedural and the easiest to prove. The third is the most ambitious and the one that would kill the authority permanently.</p>
+      <p>The absence of a lawsuit five weeks in is not evidence that importers think the tariffs are lawful. It is a function of how tariff litigation works. The importer pays the duty at entry and sues to recover, which means the plaintiff finances the case out of cash flow and waits, sometimes years, for a refund it may share with everyone else in the industry once the ruling issues. That is a classic collective-action problem, and it resolves slowly: somebody with enough exposure and enough patience eventually files, usually a mid-sized importer rather than an automaker with a lobbying relationship to protect. The IEEPA litigation followed exactly that pattern, and the refund machinery that followed the February ruling is the template for what a successful Section 338 challenge would look like.</p>
+      <p>There is a second-order effect that belongs in the macro story rather than this one. The Federal Reserve's July minutes record several participants judging that the pass-through of past tariff increases into the price level was "largely complete." A new 50 per cent duty on imported vehicles, plus a Canadian counter-tariff on American steel and agricultural equipment that raises input costs for American manufacturers who buy back their own supply chains, is a live test of that judgment. If the August CPI on Friday shows goods prices reaccelerating, the "largely complete" line is the sentence that will get re-read.</p>
+    </div>
+  </details>
+  <p class="sources">
+    <b>Sources:</b>
+    <a href="https://www.aljazeera.com/economy/2026/8/25/canada-hits-us-with-counter-tariffs-targeting-hundreds-of-products">Al Jazeera on the countermeasure list</a> &middot;
+    <a href="https://www.cnbc.com/2026/08/22/us-canada-trade-talks-collapse-ushering-in-wave-of-new-tariffs.html">CNBC on the talks collapsing</a> &middot;
+    <a href="https://www.npr.org/2026/08/22/nx-s1-5941584/us-canada-tariffs">NPR on Carney's remarks</a> &middot;
+    <a href="https://www.whitehouse.gov/fact-sheets/2026/07/fact-sheet-president-donald-j-trump-imposes-additional-tariffs-on-canada/">White House fact sheet, July proclamations (primary)</a> &middot;
+    <a href="https://www.hklaw.com/en/insights/publications/2026/07/50-percent-opening-bid-canadian-imports-subject-to-section-338-tariffs">Holland &amp; Knight on Section 338</a> &middot;
+    <a href="https://www.pbs.org/newshour/politics/untested-in-court-trumps-new-tariffs-on-canada-raise-legal-questions">PBS/AP on the legal questions</a> &middot;
+    <a href="https://supreme.justia.com/cases/federal/us/607/24-1287/">Learning Resources v. Trump (primary)</a>
+  </p>
+  <fieldset>
+    <legend>On this story</legend>
+    <div class="q" data-sid="canada-338">
+      <p>Should I follow the Section 338 litigation as a standing thread?</p>
+      <label><input type="radio" name="canada-follow" value="yes"> Yes &mdash; track it until a court rules</label>
+      <label><input type="radio" name="canada-follow" value="only-if-filed"> Only once a complaint is actually filed</label>
+      <label><input type="radio" name="canada-follow" value="no"> No</label>
+    </div>
+    <div class="q" data-sid="canada-338">
+      <p>Trade stories: which half do you want more of?</p>
+      <label><input type="radio" name="canada-angle" value="legal"> The legal authority &mdash; what survives court</label>
+      <label><input type="radio" name="canada-angle" value="prices"> The price effect &mdash; what it costs Americans</label>
+      <label><input type="radio" name="canada-angle" value="both"> Both, as here</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="fed-september">
+  <h3>Three of the Fed's own voted to raise rates in July. The meeting is eight days away <a class="anchor" href="#fed-september">#</a></h3>
+  <div class="meta">
+    <span class="tag">Macro &amp; markets</span>
+    <span class="tag conf primary">Primary source</span>
+    <span class="tag wts">Where things stand</span>
+  </div>
+  <p><b>There is no new fact today.</b> This runs because the FOMC meets on 15&ndash;16 September and the print that decides it lands on Friday, and because the most informative document in the file is one that has been public since 19 August and is being described loosely.</p>
+  <p>At the 28&ndash;29 July meeting the Committee held the target range at 3.50&ndash;3.75 per cent on a 9&ndash;3 vote. Beth Hammack, Neel Kashkari and Lorie Logan dissented &mdash; all three preferring to <em>raise</em> the range by a quarter point at that meeting. The minutes record participants describing inflation as elevated and broad-based across goods and services, with particular attention to core services excluding housing. Several judged that the pass-through of past tariff increases into the price level was largely complete. Many flagged upside risks from geopolitical disruption and supply shocks, and many assessed that further tightening would likely prove necessary if inflation did not come down as expected.</p>
+  <p>What has happened since: August payrolls at 162,000 against a consensus near 53,000, which this brief covered on <a href="2026-09-06.html#jobs-fed">6 September</a>. Futures now put roughly a 60 per cent probability on a quarter-point hike. The 10-year note has sat around 4.77&ndash;4.79 per cent, close to three-year highs. The 30-year is near 5.25 per cent after touching 5.33 on 18 August, its highest since 2007.</p>
+  <p>Friday decides it. BLS publishes August CPI at 8:30am ET on <b>Friday 11 September</b>. The July release, which is the baseline: 3.4 per cent over twelve months, 0.1 per cent on the month seasonally adjusted, core 2.5 per cent.</p>
+  <p><b>What to watch:</b> the dissent column on 16 September, not the decision. Three dissents for a hike in July is the highest-information fact in this file. If the Committee holds again, the question is whether anyone now dissents <em>against</em> a hike &mdash; that is what would turn the argument about the Fed's independence from rhetoric into a recorded vote.</p>
+  <div class="divergence">
+    <strong>Divergence &mdash; which July CPI number you are reading</strong>
+    <p><b>The substance.</b> A dispute about facts, and specifically about a baseline. Preview pieces circulating this week describe August CPI as forecast at 2.9 per cent year-on-year "after rising 2.7 per cent in July," with core at 3.1 per cent after 3.1 per cent. The Bureau of Labor Statistics' own July release says 3.4 per cent headline and 2.5 per cent core. Those are not small differences and they are not rounding: the headline baseline is 0.7 points low, and headline and core are transposed relative to the official series.</p>
+    <p><b>The cause.</b> Mundane, not motivated &mdash; and it is the same contamination this brief flagged on <a href="2026-09-06.html#jobs-fed">6 September</a> around the payroll report. A 2.7 per cent headline with 3.1 per cent core is a perfectly plausible reading of the 2025 series, and forecast tables inherit whatever baseline their data feed hands them. Once one vendor's row is stale, every write-up built on that vendor repeats it, and the result looks like corroboration because the bylines differ. Nobody is lying. A year-old row is being carried forward into a week when it changes the meaning of the story.</p>
+    <p><b>What it means for you.</b> Use 3.4 and 2.5, from the BLS release, and discount any preview that opens from 2.7. The direction of the error matters more than its size, because it inverts the argument. On the wrong baseline, headline inflation looks contained while core looks sticky &mdash; a picture of embedded, demand-side inflation that a hike would address but that is also cooling on its own, which reads as a case for patience. On the actual numbers, headline is running well above core, which is the signature of an energy and supply shock rather than of demand, and an energy shock is precisely what the July minutes named as the upside risk. That is a harder call for the Committee, not an easier one: raising rates does very little about a diesel price set in the Strait of Hormuz. This is settled on Friday at 8:30am, in public, by the agency that publishes the series.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; why headline above core is the uncomfortable configuration</summary>
+    <div class="deeper">
+      <p>Core inflation exists because food and energy prices are volatile and mean-reverting, so stripping them out gives a cleaner read on the trend a central bank can actually influence. The usual configuration in an inflationary episode is core at or above headline: demand pressure shows up across services and shelter, and the volatile components add noise around it. The current configuration is the other way round, and by nearly a full point. Headline at 3.4 with core at 2.5 says the price level is being pushed by something outside the basket the Fed's instrument reaches.</p>
+      <p>That "something" is not mysterious. The Strait of Hormuz has been effectively closed for six months, transits are running at a small fraction of pre-war volumes, and diesel is up roughly half from where it began the year (see <a href="#diesel-record-2">the fuel story below</a>). Diesel is the input that converts an oil shock into a consumer price index, because almost everything in the goods basket moves by truck at some point, and freight cost passes through to core goods with a lag of one to two quarters. So the two numbers are not independent: a sustained energy shock eventually stops being a headline story and becomes a core one. Part of what the Committee is arguing about is how much of that transmission has already happened and how much is still in the pipeline.</p>
+      <p>This is why the July dissents are more interesting than the July decision. Hammack, Kashkari and Logan are not obviously a bloc &mdash; they do not sit together on the usual hawk-dove axis, and Kashkari in particular has spent much of the past decade on the other side of it. Three dissents of that composition, all in the same direction, is a signal that the argument inside the Committee has moved off the standard axis and onto a different question: whether a central bank facing a supply shock that is now bleeding into inflation expectations has to demonstrate resolve even when its instrument is poorly matched to the shock. That is the Volcker argument, and it is the argument Chair Warsh has been making in public since Jackson Hole.</p>
+      <p>Against it sits the fiscal channel, which is where this story meets the two below it. The federal government is financing a large deficit at a 30-year yield above 5 per cent, Treasury is intervening in the long end to support liquidity, and every quarter-point of policy tightening raises the cost of the bill stock that is being used to term out the debt. A Fed that hikes into an energy shock while Treasury is buying back long bonds is a government working against itself in one direction and with itself in another, and nobody at either institution will describe it that way. Watch whether any question at the 16 September press conference is about Treasury's buyback programme. The answer, whatever it is, will be carefully constructed.</p>
+    </div>
+  </details>
+  <p class="sources">
+    <b>Sources:</b>
+    <a href="https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm">FOMC minutes, 28&ndash;29 July 2026 (primary)</a> &middot;
+    <a href="https://www.bls.gov/news.release/cpi.nr0.htm">BLS CPI release, July 2026 (primary)</a> &middot;
+    <a href="https://www.cnbc.com/2026/08/31/jackson-hole-fed-chair-kevin-warsh-hawkish-rate-hikes-analysts.html">CNBC on the Jackson Hole reaction</a> &middot;
+    <a href="https://www.cnbc.com/2026/09/02/bond-yields-treasurys-inflation.html">CNBC on the 10-year</a> &middot;
+    <a href="https://www.morningstar.com/economy/august-cpi-report-forecasts-point-sticky-inflation-tariff-pressures">Morningstar preview (the divergent baseline)</a>
+  </p>
+  <fieldset>
+    <legend>On this story</legend>
+    <div class="q" data-sid="fed-september">
+      <p>Is running a core beat with no new fact, labelled <em>Where things stand</em>, the right call?</p>
+      <label><input type="radio" name="fed-wts" value="yes"> Yes &mdash; keep doing this</label>
+      <label><input type="radio" name="fed-wts" value="only-major"> Only for the really major ones</label>
+      <label><input type="radio" name="fed-wts" value="no"> No &mdash; wait for news</label>
+    </div>
+    <div class="q" data-sid="fed-september">
+      <p>How much should I write about wrong numbers circulating in other coverage?</p>
+      <label><input type="radio" name="fed-debunk" value="more"> More &mdash; this is useful</label>
+      <label><input type="radio" name="fed-debunk" value="right"> About this much</label>
+      <label><input type="radio" name="fed-debunk" value="less"> Less &mdash; just give me the right number</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="treasury-buybacks-2">
+  <h3>Treasury doubles its long-end buybacks tomorrow morning, and the number to watch is the take-down <a class="anchor" href="#treasury-buybacks-2">#</a></h3>
+  <div class="meta">
+    <span class="tag">US debt &amp; fiscal</span>
+    <span class="tag conf primary">Primary source</span>
+    <span class="tag wts">Where things stand</span>
+  </div>
+  <p><b>There is no new fact today.</b> The operation is tomorrow. This is the state of the thing before it happens, and what to read off it afterwards.</p>
+  <p>From 9 September, Treasury's liquidity-support buybacks in the 10-to-20-year and 20-to-30-year nominal coupon buckets rise from a maximum of $2bn per operation to at least $4bn, and stay there through 4 November, the end of the refunding quarter. Treasury's stated reason, in its own words, is a desire to provide greater liquidity support in longer-dated sectors "where there is consistent strong sponsorship from market participants," evidenced by the volume of high-quality offers it routinely receives.</p>
+  <p>That is the official reason and it is not false. The market reason is the 30-year, which reached 5.33 per cent on 18 August &mdash; the highest since 2007 &mdash; and shed nine basis points to 5.196 on the announcement the following day. It has been hovering near 5.25 since.</p>
+  <p>It is worth being precise about what this instrument is, because the resemblance to quantitative easing is superficial and misleading. Treasury is not creating money and is not the central bank. It is buying back off-the-run long bonds and funding those purchases by issuing elsewhere, predominantly at the bill end. The net effect is to change the <em>composition</em> of the debt rather than its quantity: less long-dated supply pressing on the long end now, more frequent rollover later, and a weighted-average maturity that shortens at the margin. It is a liquidity operation with a duration side-effect, and the duration side-effect is the point.</p>
+  <p><b>What to watch tomorrow:</b> the take-down, not the announcement. The $4bn is a ceiling, not a commitment. An operation that fills near the cap says the offers really are there and Treasury is willing to pay for them. One that fills well short says either that sponsorship is thinner than the press release implies, or that Treasury is unwilling to bid up prices to hit its own number &mdash; and either reading is more informative than the headline was. Then 4 November, when sizes for the next quarter are set.</p>
+  <details>
+    <summary>Dig deeper &mdash; the bills-for-bonds trade, and what it costs at a 3.75 per cent policy rate</summary>
+    <div class="deeper">
+      <p>Every buyback has to be funded. When Treasury retires a 30-year bond and issues bills to pay for it, it has swapped a long, fixed, known cost for a short, floating, repriced-every-few-weeks one. In a normal cycle that is cheap: the yield curve slopes up, bills cost less than bonds, and shortening the debt saves money in the near term at the price of rollover risk later. The current curve is upward-sloping, so the arithmetic still works in the narrow sense &mdash; but the front end is anchored at a policy rate of 3.50&ndash;3.75 per cent that a majority of the market now expects to go <em>higher</em> next week. Financing at the short end into an expected hiking cycle is the one configuration in which the bills-for-bonds trade turns expensive quickly, and it is the configuration the government is in.</p>
+      <p>There is a second mechanism worth understanding, because it is where the money physically comes from. Treasury's cash balance at the Fed, the Treasury General Account, is the buffer between issuance and spending. A buyback can be funded out of the TGA rather than out of matched new issuance, which is faster and does not require telling the market in advance how much bill supply is coming. Drawing the TGA down adds reserves to the banking system, which is a monetary effect produced by a fiscal agent, and it is one of the few things Treasury can do that moves in the opposite direction to a Fed tightening. Nobody at Treasury will characterise it that way and the amounts here are too small to matter for reserves in aggregate. But if the operations run at the cap for the full quarter and the TGA is visibly the source, that is a fact worth having.</p>
+      <p>The debt-service arithmetic is the reason any of this is in a brief rather than a rates newsletter. Interest is now among the largest single lines in the federal budget, it is compounding, and it responds to the long end with a lag as old low-coupon debt matures and is replaced at current rates. A 30-year at 5.25 per cent rather than 4.25 is, on a rough marginal basis, an extra $10m a year in interest for every billion of new 30-year issuance, forever. That is why a nine-basis-point move on an announcement day is a real number rather than a decoration, and why Treasury is willing to spend balance sheet to get it.</p>
+      <p>The thing this operation cannot do is change why the long end is where it is. Buybacks address liquidity &mdash; the ease of transacting in size in off-the-run issues &mdash; and liquidity problems and term-premium problems look similar on a screen and are not the same thing. If the 30-year is at 5.25 because investors want more compensation for holding 30 years of American inflation and issuance risk, a $4bn operation twice a month does not touch that. It buys an orderly market, which is worth having, and it buys time. The test is simple and arrives quickly: if yields drift back up through 5.33 while the enlarged operations are running, the diagnosis was wrong and everyone will know it by November.</p>
+    </div>
+  </details>
+  <p class="sources">
+    <b>Sources:</b>
+    <a href="https://home.treasury.gov/news/press-releases/sb0607">Treasury announcement of increased buyback sizes (primary)</a> &middot;
+    <a href="https://www.cnbc.com/2026/08/19/treasury-announces-upscaled-buyback-operation-for-longer-term-debt-sending-yields-lower.html">CNBC on the announcement and the 30-year</a> &middot;
+    <a href="https://www.cnbc.com/2026/08/18/treasury-yields-.html">CNBC on the 5.33 per cent high</a> &middot;
+    <a href="https://www.cfr.org/articles/what-the-treasurys-buyback-surprise-says-about-the-bond-market">CFR on what the surprise signals</a> &middot;
+    <a href="2026-09-07.html#treasury-buybacks">This brief, 7 September</a>
+  </p>
+  <fieldset>
+    <legend>On this story</legend>
+    <div class="q" data-sid="treasury-buybacks-2">
+      <p>Should I report the result of tomorrow's operation?</p>
+      <label><input type="radio" name="tsy-report" value="always"> Yes &mdash; every operation this quarter</label>
+      <label><input type="radio" name="tsy-report" value="notable"> Only if the take-down is notable</label>
+      <label><input type="radio" name="tsy-report" value="november"> Just wait for 4 November</label>
+    </div>
+    <div class="q" data-sid="treasury-buybacks-2">
+      <p>Is the level of mechanical detail right?</p>
+      <label><input type="radio" name="tsy-detail" value="more"> More &mdash; I want the plumbing</label>
+      <label><input type="radio" name="tsy-detail" value="right"> About right</label>
+      <label><input type="radio" name="tsy-detail" value="less"> Less &mdash; just the consequence</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="cr-december">
+  <h3>There will be no shutdown before the midterms. The next cliff is 11 December <a class="anchor" href="#cr-december">#</a></h3>
+  <div class="meta">
+    <span class="tag">US debt &amp; fiscal</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+  </div>
+  <div class="correction">
+    <strong>Late, not wrong</strong>
+    <p>This brief has never carried this and should have. It happened a week ago, before the first issue, and three editions have discussed Treasury issuance and the long end without mentioning that the shutdown risk sitting underneath both had been removed. That is a gap in the fiscal beat, not a corrected error, and it is being closed here.</p>
+  </div>
+  <p>H.R. 6500, the Continuing Appropriations and Extensions Act, 2027, was signed on 2 September. The House passed it 370&ndash;48 on Tuesday 1 September &mdash; 193 Republicans, 176 Democrats and one independent in favour. The Senate had already cleared it 90&ndash;6 before the August recess. It funds federal agencies generally at current levels through <b>11 December</b>.</p>
+  <p>Two provisions carry most of the substance. The bill bars the Department of Homeland Security from transferring funds to Border Patrol. And it delays a proposed rule that would give political appointees broader authority to halt federal grants they judge misaligned with the President's agenda. Rosa DeLauro, who backed the bill after the Senate's changes, put the second one in one sentence: "Whether a community receives disaster relief should not depend on who they voted for."</p>
+  <p>Why this belongs on a fiscal beat rather than a politics one: the shutdown tail has been a standing item in rates and Treasury commentary since the 43-day shutdown of autumn 2025 and the 76-day Homeland Security shutdown that followed. It is now off the table until after the election. That removes one identifiable source of term premium and one available excuse for a long end that has been selling off anyway &mdash; which makes the 30-year at 5.25 per cent a cleaner statement about issuance volume and inflation than it would have been three weeks ago. When a risk is priced out and the price does not improve, you have learned something about what was actually driving it.</p>
+  <p><b>What to watch:</b> 11 December, and whether any FY2027 appropriations bills move before then. A funding cliff in December, in a lame-duck session after a midterm, with a new balance of power known but not yet seated, is a materially worse setup than a September one. Both parties have just demonstrated they would rather not have a shutdown during a campaign. Neither has demonstrated anything about their appetite after one.</p>
+  <p class="sources">
+    <b>Sources:</b>
+    <a href="https://www.npr.org/2026/09/01/nx-s1-5951536/house-government-funding-vote-midterms">NPR</a> &middot;
+    <a href="https://rollcall.com/2026/09/01/funding-extension-clears-house-avoiding-shutdown-threat/">Roll Call</a> &middot;
+    <a href="https://federalnewsnetwork.com/congress/2026/09/house-passes-short-term-funding-bill-to-avoid-a-shutdown-before-the-election/">Federal News Network on the riders</a> &middot;
+    <a href="https://thehill.com/homenews/house/6063667-house-government-funding-cr-shutdown-midterms/">The Hill</a> &middot;
+    <a href="https://www.nasfaa.org/news-item/39735/House_Passes_Continuing_Resolution_Funding_Government_Through_December_11">NASFAA on the vote breakdown</a>
+  </p>
+  <fieldset>
+    <legend>On this story</legend>
+    <div class="q" data-sid="cr-december">
+      <p>When I find a gap like this &mdash; consequential, a week old, never covered &mdash; what should I do?</p>
+      <label><input type="radio" name="cr-gap" value="run-it"> Run it and say it is late, as here</label>
+      <label><input type="radio" name="cr-gap" value="footnote"> Fold it into a related story as background</label>
+      <label><input type="radio" name="cr-gap" value="skip"> Skip it &mdash; old news is old news</label>
+    </div>
+    <div class="q" data-sid="cr-december">
+      <p>Should 11 December go on the watchlist as a standing thread?</p>
+      <label><input type="radio" name="cr-watch" value="yes"> Yes</label>
+      <label><input type="radio" name="cr-watch" value="november"> Only from November</label>
+      <label><input type="radio" name="cr-watch" value="no"> No</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="aivres-loophole">
+  <h3>A blacklisted Chinese firm bought $3bn of Blackwell machines through California, and Commerce has done nothing <a class="anchor" href="#aivres-loophole">#</a></h3>
+  <div class="meta">
+    <span class="tag">AI &amp; tech industry</span>
+    <span class="tag conf single">Single-sourced</span>
+  </div>
+  <p>The New York Times reported on 6 September that Aivres, a California server maker one-third owned by the blacklisted Inspur Group, exported about $5.6bn of advanced technology to Southeast Asia between April 2024 and February 2026 &mdash; of which more than $3bn was computers built around Nvidia's Blackwell chips. The end users, according to the reporting, included ByteDance and Alibaba.</p>
+  <p>The mechanism is a corporate-form gap rather than smuggling, and that is what makes it durable. Commerce added Inspur Group to the Entity List in March 2023 over supercomputers built for the Chinese military. Two months later, in May 2023, its American subsidiary quietly renamed itself from Inspur Systems to Aivres Systems. Aivres has never appeared on the Entity List. The parent is restricted; the subsidiary that does the buying is not.</p>
+  <p>Behind that gap sits a second and larger one. Even where a chip cannot be sold to a Chinese firm, <em>access</em> to that chip can be leased. A Chinese company can rent capacity in a Southeast Asian data centre and train on hardware it is forbidden to own, and nothing in the export-control regime as written reaches the transaction, because no controlled item crosses a border. Pending legislation &mdash; the Remote Access Security Act &mdash; would extend controls to remote access. It has not passed.</p>
+  <p>Commerce has announced no enforcement action tied to the report. Six current and former officials described to the Times an agency that has lost its appetite for cases touching China or Nvidia; ten months have passed without a firm being added to the Entity List.</p>
+  <p><b>On confidence, because this one needs it:</b> this is one newsroom. The corporate renaming, the Entity List dates and the cloud-access gap are independently checkable and they check out. The $5.6bn and $3bn figures and the ByteDance and Alibaba end-use rest on the Times alone, and every other account in circulation traces back to it &mdash; including several that read like independent confirmation and are not. Treat the structure as established and the numbers as unconfirmed until a second newsroom or a filing stands them up.</p>
+  <p><b>What to watch:</b> an Entity List addition naming Aivres; any Commerce comment at all; the Remote Access Security Act getting a markup.</p>
+  <div class="divergence">
+    <strong>Divergence &mdash; is there even a summit for this to embarrass?</strong>
+    <p><b>The substance.</b> A factual dispute about whether a scheduled event exists. Reuters, sourced to people familiar with the planning, reported on 5 September that Washington and Beijing are preparing mid-September talks on AI safety led by Treasury Secretary Bessent, with AI-directed cyberattacks at the top of the agenda and a proposal that American and Chinese labs share information to police themselves. A White House official says there is currently no planned AI-related meeting in mid-September. Treasury has said the two sides may meet in October. Chinese state commentary in early September added a precondition: agree what "AI safety" means first. Separately, Xi is reported as due at the White House on 24 September.</p>
+    <p><b>The cause.</b> Access and timing, and probably no deception anywhere. Reuters is describing preparatory work by officials; the White House is describing the public schedule; an unannounced meeting is genuinely not a planned one until somebody announces it, so both statements can be true at once and a spokesperson has no reason to confirm a date that does not yet exist. Treasury's "may meet in October" is the tell &mdash; it is what an official says when the substance is agreed and the calendar is not. The Chinese precondition is the most likely reason no date has been fixed. Demanding agreement on definitions before talks is the standard way of slowing a process one has already accepted in principle, and it costs nothing.</p>
+    <p><b>What it means for you.</b> Assume preparatory contact is real and that a mid-September meeting is not yet fixed. Do not treat either "US&ndash;China AI talks collapse" or "talks confirmed" as news this week; both would be someone reporting the same ambiguity with a different adjective. The harder date is 24 September, and it is the one to hold onto: if AI governance appears on the agenda of an actual head-of-state visit, the separate ministerial matters much less, and if it is deliberately kept off, that tells you the file is stuck. This resolves when Treasury or the Chinese foreign ministry publishes a date, or when the 24 September visit happens and we see the readout.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; why the subsidiary gap and the cloud gap are different problems</summary>
+    <div class="deeper">
+      <p>The Entity List is a list of named parties. That is its strength &mdash; it is precise, legally durable, and gives exporters a checkable obligation &mdash; and it is also the whole of its weakness, because a list of names is defeated by a new name. Adding a subsidiary requires an affirmative decision by Commerce's Bureau of Industry and Security about that specific entity, supported by a record. There is a doctrine for reaching subsidiaries, and BIS has used it, but it is discretionary and it consumes enforcement attention that a resource-constrained bureau has to allocate. A renamed subsidiary is therefore not a loophole in the sense of a drafting error. It is the predictable consequence of a list-based regime meeting a corporate structure that can be reorganised in an afternoon, and it recurs because it works.</p>
+      <p>The cloud gap is a different species and considerably harder. Export controls are built on the physical movement of a controlled item across a border. Remote access does not move the item; the customer moves to the item, virtually, and the compute happens where the hardware already legally sits. Nothing is exported. There is a defensible case that this is fine &mdash; the chips remain under the jurisdiction of a partner government, the data centre is auditable, and denying access pushes demand toward domestic Chinese silicon and accelerates exactly the substitution the controls exist to prevent. There is an equally defensible case that it renders the whole regime decorative for the one use that matters most, which is training frontier models. The Remote Access Security Act picks the second view. Its problem is enforcement: verifying who is renting compute in a third country requires either cooperation from the host government or intrusive know-your-customer obligations on foreign cloud operators, and the United States has limited leverage over either.</p>
+      <p>Set against that, the detail in the Times account that deserves the most weight is the institutional one, not the financial one. Ten months without an Entity List addition is a measurable fact about capacity and will, and it is the variable that determines whether any of the legal architecture above matters. A control regime is only as good as the frequency with which it is updated, because the counterparty's adaptation cycle &mdash; rename, restructure, re-route &mdash; runs in months. If the enforcement cycle runs in years, the regime is a tax on the honest rather than a barrier to the determined.</p>
+      <p>This connects directly to the thread this brief opened on <a href="2026-09-05.html#astra-cyber">5 September</a> about gated cyber-capability tiers. The gating story and the export story are the same story viewed from two ends. Frontier labs are being asked to restrict who can use the most dangerous capabilities of models running on American hardware; the export regime is meant to restrict who can obtain the hardware. If the hardware restriction leaks through renamed subsidiaries and leased capacity, the capability gating at the model layer becomes the only real control, which is to say the control has been privatised to the labs. That is a large policy shift and nobody has argued for it out loud.</p>
+    </div>
+  </details>
+  <p class="sources">
+    <b>Sources:</b>
+    <a href="https://asiatimes.com/2026/09/nvidia-chip-export-loophole-clouds-us-china-ai-summit-talks/">Asia Times, summarising the NYT investigation</a> &middot;
+    <a href="https://www.cnbc.com/2026/09/05/us-china-gear-up-for-mid-september-ai-safety-talks-reuters.html">CNBC on the Reuters report</a> &middot;
+    <a href="https://www.cnbc.com/2026/07/21/us-china-ai-talks-bessent.html">CNBC on the talks being agreed in July</a> &middot;
+    <a href="https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china">BIS on China licence policy (primary)</a> &middot;
+    <a href="https://www.cnbc.com/2026/05/31/us-takes-step-to-halt-nvidia-ai-chip-shipments-to-chinese-firms-outside-china.html">CNBC on the May 2026 subsidiary guidance</a>
+  </p>
+  <fieldset>
+    <legend>On this story</legend>
+    <div class="q" data-sid="aivres-loophole">
+      <p>I ran a single-sourced story and labelled it as such. Right call?</p>
+      <label><input type="radio" name="aivres-single" value="yes"> Yes &mdash; run it with the label</label>
+      <label><input type="radio" name="aivres-single" value="wait"> Wait for a second newsroom</label>
+      <label><input type="radio" name="aivres-single" value="depends"> Only for stories this consequential</label>
+    </div>
+    <div class="q" data-sid="aivres-loophole">
+      <p>Do you want export controls tracked as a standing thread?</p>
+      <label><input type="radio" name="aivres-follow" value="yes"> Yes</label>
+      <label><input type="radio" name="aivres-follow" value="merge"> Yes, merged with the model-gating thread</label>
+      <label><input type="radio" name="aivres-follow" value="no"> No</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="usps-scotus-2">
+  <h3>The mail-ballot case at the Supreme Court is not the case I described yesterday <a class="anchor" href="#usps-scotus-2">#</a></h3>
+  <div class="meta">
+    <span class="tag">US politics &amp; policy</span>
+    <span class="tag conf primary">Primary source</span>
+    <span class="tag">Follow-up</span>
+  </div>
+  <div class="correction">
+    <strong>Correction to yesterday's issue</strong>
+    <p>Yesterday I told you the Solicitor General's application was <a href="2026-09-07.html#usps-scotus">No. 26A297</a> and linked the filing. The Court's docket shows the Solicitor General filed a letter withdrawing that application on 6 September, and it was marked withdrawn the same day &mdash; the day before this brief published. The live application is <b>No. 26A305</b>, filed 6 September. The watchlist entry carried the same error. The 4pm ET Wednesday deadline I gave you is correct, but it attaches to 26A305.</p>
+  </div>
+  <p>The substance moved too, and that is the part worth your attention. Application 26A297 sought a stay of a preliminary injunction the District of Massachusetts entered on 27 August. Justice Jackson's order on the new application records that the Solicitor General withdrew that application and now seeks a stay of a preliminary injunction the same court entered on <b>4 September</b>. The district court, in other words, superseded its own order while the government's application against it was pending, and the government re-filed against the newer one.</p>
+  <p>That sequence changes the posture. The operative injunction is four days old rather than twelve, it was entered after fuller briefing rather than on an emergency footing, and the Court is now reviewing a fresher and probably better-reasoned record than the one it would have had a week ago. It also means the administration has taken this rule to the Supreme Court three times and has not obtained relief from it at any stage.</p>
+  <p>Docket state: application submitted to Justice Jackson on 6 September; responses due 4pm EDT Wednesday 9 September; amicus briefs from the Society for the Rule of Law Institute and from Corey Biazzo were filed on the withdrawn application. No administrative stay has issued.</p>
+  <p><b>What to watch:</b> whether an administrative stay issues before Wednesday's briefs land. It has not. If none issues, then on this application's timeline the rule does not touch the November election regardless of what the eventual order says &mdash; states are already producing ballot material, and a rule that arrives after the process has run is a rule for 2028.</p>
+  <details>
+    <summary>Dig deeper &mdash; three trips to the Supreme Court, and why the administrative stay is the whole game</summary>
+    <div class="deeper">
+      <p>The underlying rule comes out of Executive Order 14,399 and the Postal Service's Ballot Mail for Federal Elections final rule. Its operative provisions put the Postal Service into the ballot-handling chain in ways it has not previously occupied: review of ballot envelopes, a federal ballot-mail portal that election jurisdictions must register with, enrolment of voters in that portal, and associated processing requirements. The objection from the states is structural rather than partisan in form &mdash; elections are administered by states, and a federal mail carrier conditioning the handling of ballots on registration with a federal system is a transfer of administrative control that no statute plainly authorises. Judge Talwani's injunction blocked the mandatory provisions.</p>
+      <p>The three-trip history matters because emergency applications are supposed to be exceptional. An applicant who returns repeatedly is either encountering a lower court that keeps getting it wrong, or is shopping for a procedural posture the Court will accept. The Court's silence so far &mdash; no administrative stay on the first application, none yet on the third &mdash; is itself a signal, though a soft one. Justices who thought the injunction plainly wrong and the election calendar urgent had an easy, low-cost move available: freeze the injunction for a week while briefing completes. Declining to do that three times running is not a ruling, and should not be read as one, but it is not nothing either.</p>
+      <p>This is why the administrative stay, not the eventual order, is the thing to watch. An administrative stay is a housekeeping device with no merits content: it preserves the status quo the applicant wants while the Court reads the papers. In ordinary litigation it is close to costless. In election litigation, decided against a calendar of statutory deadlines, it is frequently decisive, because the status quo it preserves is the one that will still be in place when the deadlines pass. A rule that is administratively stayed into effect in mid-September is a rule that governs November, whatever the Court later concludes about its lawfulness. A rule that is not is a rule for the next cycle.</p>
+      <p>The countervailing consideration the Court has to weigh is the <em>Purcell</em> principle &mdash; the idea that federal courts should not change election rules close to an election, because late changes confuse voters and administrators. Purcell is usually invoked against injunctions that disrupt a settled process. Here the shape is inverted: the injunction preserves the process the states have been running for decades, and the stay would introduce a new federal layer eight weeks out. An applicant asking for a stay in September is asking the Court to make the late change, which is an awkward posture, and the government's briefing has to work around it. Whether the justices see it that way is the question Wednesday's filings will be arguing about.</p>
+    </div>
+  </details>
+  <p class="sources">
+    <b>Sources:</b>
+    <a href="https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/26a305.html">Docket, No. 26A305 (primary)</a> &middot;
+    <a href="https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/26a297.html">Docket, No. 26A297, showing the withdrawal (primary)</a> &middot;
+    <a href="https://www.supremecourt.gov/DocketPDF/26/26A305/423226/20260906094442523_USPS%20v.%20State%20of%20California%20PI%20No.%2026A%20-%20Stay%20App.pdf">The new stay application (primary)</a> &middot;
+    <a href="https://www.nbcnews.com/politics/trump-administration/justice-department-usps-supreme-court-action-mail-ballots-elections-rcna595924">NBC News</a> &middot;
+    <a href="2026-09-07.html#usps-scotus">This brief, 7 September</a>
+  </p>
+  <fieldset>
+    <legend>On this story</legend>
+    <div class="q" data-sid="usps-scotus-2">
+      <p>How should I handle corrections like this one?</p>
+      <label><input type="radio" name="usps-corr" value="top"> A box at the top of the story, as here</label>
+      <label><input type="radio" name="usps-corr" value="own-item"> Its own item so I cannot bury it</label>
+      <label><input type="radio" name="usps-corr" value="footer"> A footer note is enough</label>
+    </div>
+    <div class="q" data-sid="usps-scotus-2">
+      <p>Cadence on this thread while it is live at the Court?</p>
+      <label><input type="radio" name="usps-cadence" value="daily"> Every day until there is an order</label>
+      <label><input type="radio" name="usps-cadence" value="movement"> Only when the docket moves</label>
+      <label><input type="radio" name="usps-cadence" value="order"> Only when the order lands</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="missouri-briefed">
+  <h3>Missouri's map is fully briefed and the Court has said nothing, on the day the state called too late <a class="anchor" href="#missouri-briefed">#</a></h3>
+  <div class="meta">
+    <span class="tag">US politics &amp; policy</span>
+    <span class="tag conf primary">Primary source</span>
+    <span class="tag">Follow-up</span>
+  </div>
+  <p>Secretary of State Hoskins filed his reply this morning. The docket in No. 26A304 is now complete: the stay application went to Justice Kavanaugh on 4 September; von Glahn's opposition and four amicus briefs came in on 7 September &mdash; from the Campaign Legal Center with ACLU entities, from the American Center for Law and Justice, from two Missouri voters, and from the State of Florida; the applicant's reply landed today. <b>No order has issued.</b></p>
+  <p>Today matters because 8 September is one of the two dates cited as Missouri's practical cutoff for finalising ballot issues, and because the state itself asked the Court to resolve this by 13 September, with overseas ballots to go out on 19 September. Every day without an order erodes the applicant's own argument. A stay granted after ballots are printed is worth considerably less than one granted before, and Missouri has been telling the Court exactly that in writing since Friday.</p>
+  <p>The dispute underneath: the Missouri Supreme Court held on 3 September that the veto referendum on HB 1 is constitutional and ordered the state back to the 2022 congressional map, then refused on 4 September to stay its own ruling. HB 1, passed in September 2025 and signed by Governor Kehoe, would give Republicans seven of Missouri's eight House seats. Local reporting describes close to two dozen states filing in support of Missouri; the docket separately records the State of Florida's brief.</p>
+  <p><b>What to watch:</b> an order from Justice Kavanaugh alone, or a referral to the full Court. The referral is the slower route and is informative in itself &mdash; it would suggest at least one justice wants something written down, and in a case turning on the interpretation of a state constitution by that state's own supreme court, a written explanation would be a significant document.</p>
+  <div class="divergence">
+    <strong>Divergence &mdash; is the deadline the 8th, the 9th, or neither?</strong>
+    <p><b>The substance.</b> A factual dispute about which date is Missouri's operative cutoff. Sources give 8 September and 9 September for the point past which ballot issues can no longer be changed; the state's own filings ask for resolution by 13 September; and 19 September appears in the record as the overseas-ballot mailing date. Four dates, all described somewhere as the deadline.</p>
+    <p><b>The cause.</b> This is not disagreement, it is under-specification. State election law contains several distinct deadlines that reporters compress into one word: certification of the ballot by the Secretary of State, the practical cutoff for the printers, the date the state litigant nominates as workable, and the federal mailing requirement. Each is real and they are days apart. Outlets pick whichever their source emphasised, and none of them are wrong about the date they named.</p>
+    <p><b>What it means for you.</b> Weight the 19th. Under the federal overseas-voting law, states must send absentee ballots to military and overseas voters 45 days before a federal election; the election is 3 November, and 45 days before that is 19 September. That one is statutory, federal, and does not move for anyone's convenience, which is why it appears in the state's filings and why it is the date the Court is actually working against. Treat 8&ndash;9 September as the printers' practical cutoff, which can bend if a state chooses to pay for it, and 13 September as an advocate's request rather than a deadline. If no order has issued by the 19th, the 2022 map is the map, and any later ruling is about 2028.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; why this is a hard case for a justice who dislikes federal interference in state courts</summary>
+    <div class="deeper">
+      <p>The awkwardness for the applicant is that Missouri is asking a federal court to overturn a state supreme court's interpretation of the state's own constitution. That is close to the least comfortable posture in which to arrive on the emergency docket. Federal courts do not ordinarily review state courts on questions of state law at all; the state's highest court is the final word on what its constitution means. To get around that, an applicant has to locate a federal question &mdash; typically by arguing that the state court's construction was so far outside the range of plausible readings that it amounts to a federal constitutional violation in itself, usually framed through the Elections Clause and the argument that state legislatures hold a distinct federal function in setting the rules for congressional elections.</p>
+      <p>That argument has been available for a long time and the Court has been notably cool toward its strong form. Its most recent significant engagement rejected the maximal version while leaving room for the proposition that a state court can go too far. The result is a standard with no clear content, and applicants have to argue their case is the extreme one. Election-law commentators reading Missouri's papers have raised the question of whether the state conceded too much on this point in its own framing &mdash; whether, in trying to sound moderate about the scope of the federal question, it argued itself out of the only theory that would let the Court act. I could not read that analysis directly; the site returned a 403 to this brief. I flag the argument as existing without endorsing it, and if it is right it would explain a silence that is otherwise starting to look conspicuous.</p>
+      <p>The referendum dimension makes it harder still. The Missouri Supreme Court did not simply strike the map down; it held that citizens may put HB 1 to a popular vote and ordered the previous map used in the meantime. A federal stay would therefore not merely reinstate a legislature's map, it would override a state court's ruling about the availability of a state constitutional mechanism of direct democracy. Justices who have spent careers writing about federalism and about the limits of federal judicial power over states have to reach past both to grant this.</p>
+      <p>Which leaves the practical question of what the silence means. Two readings fit the facts equally well, and it is worth holding both. One is that the Court is drafting something &mdash; that a case this consequential, arriving with two dozen states on one side and a state supreme court on the other, will not be resolved in an unexplained one-line order, and writing takes days. The other is that the calendar is doing the work for them: if no order issues before the ballots are mailed, the case becomes moot for 2026 without anyone having to decide anything, and the Court is spared a ruling on legislature-versus-state-court in an election year. The second is cheaper and the Court has taken cheaper roads before. Both readings predict the same thing this week, which is nothing, and they diverge only after the 19th.</p>
+    </div>
+  </details>
+  <p class="sources">
+    <b>Sources:</b>
+    <a href="https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/26a304.html">Docket, No. 26A304 (primary)</a> &middot;
+    <a href="https://www.supremecourt.gov/DocketPDF/26/26A304/423214/20260904224734853_1-Hoskins%20v.%20von%20Glahn%20-%20Application%20for%20Stay%20FINAL.pdf">The stay application (primary)</a> &middot;
+    <a href="https://www.scotusblog.com/2026/09/missouri-urges-supreme-court-to-allow-for-use-of-congressional-map-expected-to-aid-republicans/">SCOTUSblog on the application</a> &middot;
+    <a href="https://missouriindependent.com/2026/09/03/missouri-supreme-court-blocks-gerrymandered-congressional-map-orders-referendum-vote/">Missouri Independent on the state ruling</a> &middot;
+    <a href="https://campaignlegal.org/document/amicus-brief-von-glahn-v-hoskins">Campaign Legal Center amicus brief (primary)</a> &middot;
+    <a href="2026-09-07.html#missouri-kavanaugh">This brief, 7 September</a> &middot;
+    <a href="2026-09-06.html#missouri-scotus">6 September</a>
+  </p>
+  <fieldset>
+    <legend>On this story</legend>
+    <div class="q" data-sid="missouri-briefed">
+      <p>Is "nothing has happened, and here is why that is the story" worth a slot?</p>
+      <label><input type="radio" name="mo-silence" value="yes"> Yes &mdash; silence on a clock is news</label>
+      <label><input type="radio" name="mo-silence" value="shorter"> Yes but shorter</label>
+      <label><input type="radio" name="mo-silence" value="no"> No &mdash; wait for the order</label>
+    </div>
+    <div class="q" data-sid="missouri-briefed">
+      <p>Redistricting generally &mdash; more or less than this?</p>
+      <label><input type="radio" name="mo-volume" value="more"> More</label>
+      <label><input type="radio" name="mo-volume" value="right"> About right</label>
+      <label><input type="radio" name="mo-volume" value="less"> Less</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="kyiv-resumed">
+  <h3>Russia went back to hitting Kyiv the morning the pause ran out, and I oversold that pause <a class="anchor" href="#kyiv-resumed">#</a></h3>
+  <div class="meta">
+    <span class="tag">Geopolitics</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+    <span class="tag">Follow-up</span>
+  </div>
+  <div class="correction">
+    <strong>I told you this wrong</strong>
+    <p>On 6 September I wrote that Putin's 72-hour halt was <a href="2026-09-06.html#kyiv-leg">"the first thing he has actually given."</a> It expired this morning and Russia resumed striking Kyiv within hours. The pause was a scheduling courtesy arranged around a visit by American envoys, and it ended on schedule with nothing attached to it. I framed a three-day quiet period as a concession, and it was not one.</p>
+  </div>
+  <p>At least two people were killed and seven wounded in Kyiv on Tuesday morning as explosions were heard across the city, after the halt Putin ordered on Saturday lapsed. Steve Witkoff and Jared Kushner had held roughly three hours of talks at the Kremlin, then made their first visit to Kyiv, and left without announcing anything. Zelensky said on Sunday, hours after they departed, that he expects the war to continue. Both governments have accused the other of failing to observe the pause.</p>
+  <p>The American channel is the reason this is here rather than in a foreign-affairs digest. This was Washington's initiative, run by the President's special envoy and his son-in-law, and its single verifiable deliverable was a three-day quiet over two capitals. That deliverable has now been consumed. Everything else on the Anchorage track remains a set of proposals that neither side will describe: Peskov declined on 7 September to say how the Witkoff proposals differ from what was on the table at Anchorage, and nobody has published a text.</p>
+  <p><b>What to watch:</b> whether either side publishes anything a third party can read. Failing that, a ceasefire on the front line rather than over the capitals would be the first movement that is not theatre. A renewed capitals-only pause around the next visit would not be.</p>
+  <div class="divergence">
+    <strong>Divergence &mdash; was the pause observed or not?</strong>
+    <p><b>The substance.</b> A factual dispute: Russia and Ukraine each say the other kept striking during the 72 hours. Both cannot be describing the same undertaking.</p>
+    <p><b>The cause.</b> They are not describing the same undertaking, and that is the resolution rather than an obstacle to it. What Putin ordered, and what Zelensky reciprocated, was a halt on strikes against the two capitals &mdash; not a ceasefire. Fighting along the front and strikes on other cities were never within its scope. So each side can point at real strikes outside Kyiv and Moscow and truthfully call them strikes, while the other truthfully says it honoured the thing it agreed to. Both governments also have an obvious interest in being seen as the complier while American envoys are in the room, which shapes what each chose to publicise, but no bad faith is required to produce these two statements.</p>
+    <p><b>What it means for you.</b> Treat the pause as observed with respect to the capitals and irrelevant everywhere else &mdash; which was its design, not its failure. The evidence for that reading is the resumption itself: Tuesday morning's strikes on Kyiv were newsworthy precisely because there had been none for three days. Do not read the mutual accusations as a sign the diplomacy collapsed; they are consistent with a narrow arrangement working exactly as narrowly as it was written. The thing worth updating on is not the accusations but the emptiness &mdash; a fortnight of envoy diplomacy has produced no text, no front-line change, and one expired scheduling arrangement.</p>
+  </div>
+  <p class="sources">
+    <b>Sources:</b>
+    <a href="https://www.cbsnews.com/news/ukraine-russia-war-peace-talks-witkoff-kushner-strikes-kyiv/">CBS News on the resumption</a> &middot;
+    <a href="https://www.nbcnews.com/world/russia/us-envoys-witkoff-kushner-visit-moscow-new-push-peace-russia-ukraine-rcna596221">NBC News on the 72-hour pause</a> &middot;
+    <a href="https://www.pbs.org/newshour/amp/politics/trump-envoy-witkoff-meets-putin-ahead-of-russia-ukraine-peace-deadline-the-kremlin-says">PBS on the Kremlin talks</a> &middot;
+    <a href="2026-09-06.html#kyiv-leg">This brief, 6 September</a> &middot;
+    <a href="2026-09-05.html#ukraine-moscow">5 September</a>
+  </p>
+  <fieldset>
+    <legend>On this story</legend>
+    <div class="q" data-sid="kyiv-resumed">
+      <p>When my earlier framing turns out wrong, how much space should saying so get?</p>
+      <label><input type="radio" name="kyiv-ownup" value="prominent"> Prominent, as here</label>
+      <label><input type="radio" name="kyiv-ownup" value="line"> One line inside the story</label>
+      <label><input type="radio" name="kyiv-ownup" value="quiet"> Just fix it and move on</label>
+    </div>
+    <div class="q" data-sid="kyiv-resumed">
+      <p>Ukraine coverage in a brief that is meant to be US-centred:</p>
+      <label><input type="radio" name="kyiv-scope" value="us-only"> Only when the US does something</label>
+      <label><input type="radio" name="kyiv-scope" value="right"> This balance is right</label>
+      <label><input type="radio" name="kyiv-scope" value="more"> More of the war itself</label>
+    </div>
+  </fieldset>
+</article>
+
+<article id="diesel-record-2">
+  <h3>The record diesel price everyone is quoting is not in the government's numbers <a class="anchor" href="#diesel-record-2">#</a></h3>
+  <div class="meta">
+    <span class="tag">Energy &amp; grid</span>
+    <span class="tag conf primary">Primary source</span>
+    <span class="tag under">Underreported</span>
+    <span class="tag">Follow-up</span>
+  </div>
+  <div class="correction">
+    <strong>Correction to the watchlist</strong>
+    <p>I said the next EIA weekly fuel print would land today, 8 September. It lands <b>tomorrow</b>. EIA's release calendar shows 9 September &mdash; the Labor Day holiday pushed the usual Monday publication back two days, not one. My error, and it is the kind that matters, because the whole point of the entry was to name the date that would settle the question.</p>
+  </div>
+  <p>On <a href="2026-09-05.html#diesel-record">5 September</a> this brief flagged a widely repeated claim that American diesel had set a record at $5.85 a gallon, against an official series that showed it falling, and said the next EIA print would resolve it. Here is where that stands.</p>
+  <p>The most recent published week in the Energy Information Administration's weekly survey is the week ending 31 August. US average on-highway diesel: <b>$5.599</b> a gallon, down 5.3 cents on the week. Regular gasoline: $4.071, down 1.4 cents. The high for 2026 in that series is $5.652, set on 24 August. There is no $5.85 anywhere in it.</p>
+  <table class="series">
+    <tr><th>Week ending</th><th>US avg. diesel</th></tr>
+    <tr><td>3 August</td><td>$5.348</td></tr>
+    <tr><td>10 August</td><td>$5.257</td></tr>
+    <tr><td>17 August</td><td>$5.454</td></tr>
+    <tr><td>24 August</td><td>$5.652 &mdash; 2026 high</td></tr>
+    <tr><td>31 August</td><td>$5.599</td></tr>
+  </table>
+  <p>That does not make $5.85 invented. It makes it a different measurement &mdash; a daily average rather than a weekly one, a private survey rather than the federal one, or a regional figure rather than a national one. Several American regions run well above the national average. The defect in the claim is the single word "record," which is an assertion about a series, and no series has been named by anyone repeating it.</p>
+  <p>Why this is in a brief that leads on the Fed: diesel is the input that turns an oil shock into a consumer price index, because nearly everything in the goods basket moves by truck at some point. Diesel is up roughly half from where it started the year. That is a larger macro fact than most of what leads the business pages, and it is running four days ahead of a CPI print that decides a rate decision.</p>
+  <p><b>What to watch:</b> tomorrow's print, published at 5pm ET. Anything above $5.652 is a genuine 2026 record in the series that the statistical agencies and the Fed actually use, and it strengthens the energy-shock reading of Friday's CPI considerably.</p>
+  <div class="divergence">
+    <strong>Divergence &mdash; where $5.85 comes from</strong>
+    <p><b>The substance.</b> This looks like a factual dispute and is really a dispute about significance. Nobody disagrees that diesel is expensive or that it has risen violently this year. The disagreement is entirely about whether a <em>record</em> was set, and that turns on which series you consult &mdash; a question almost nobody repeating the number has asked.</p>
+    <p><b>The cause.</b> Method and timing, in the most ordinary way. EIA surveys a panel of roughly 400 retail outlets on Mondays and publishes a national weekly average, which is a lagging, smoothed, methodologically stable number designed for statistical use. Commercial trackers publish daily national averages built from card-transaction and station-level feeds; those lead EIA on the way up and trail it on the way down, and can differ by 20 cents or more at a turning point. Regional averages diverge further still &mdash; West Coast diesel routinely runs a dollar above the national figure. Aggregators quote all three interchangeably because in a flat market the difference is invisible. In a fast-moving one it is the whole story, and a daily West Coast print of $5.85 alongside a national weekly of $5.60 involves nobody being wrong except the person who put the word "record" in front of it.</p>
+    <p><b>What it means for you.</b> For anything you would act on &mdash; a view on the Fed, on freight costs, on where CPI prints &mdash; use the EIA weekly series, because it is the one the Bureau of Labor Statistics and the Federal Reserve are looking at, and consistency with the decision-makers' data matters more than being first. Believe: diesel is near $5.60 nationally, is roughly $1.80 above where the year began, and has not made a new high since 24 August. Do not believe a national record has been set until a print above $5.652 appears in that series. That is a falsifiable statement with a date on it, and the date is tomorrow at 5pm.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; why diesel and not gasoline is the number that reaches the CPI</summary>
+    <div class="deeper">
+      <p>Gasoline is the price the public notices, because it is posted in six-foot numerals on every corner and most households buy it weekly. Diesel is the price that moves the economy. Almost every physical good in the consumer basket travels part of its journey in a diesel truck, and much of the rest moves by rail or ship burning closely related distillates. Diesel is also the input to agricultural machinery, to construction equipment, and to the backup generation that data centres and hospitals run on. A move in gasoline is a direct hit to household budgets that shows up immediately in the energy component of CPI and then stops. A move in diesel is a cost shock that propagates into the price of everything else over the following two to three quarters, and shows up in <em>core</em> goods long after the energy line has stabilised.</p>
+      <p>That lag is what makes the current configuration awkward for the Federal Reserve, and it is the mechanical link between this story and <a href="#fed-september">the Fed story above</a>. July CPI ran 3.4 per cent headline against 2.5 per cent core &mdash; energy pushing the total up while underlying prices sat lower. The natural reading is that this is a supply shock and will pass. The diesel channel is the reason to be less relaxed: if freight costs have been elevated since the spring, the pass-through into core goods is arriving now and over the next two quarters, which means core drifts up while headline may already be flattening. A committee looking at a falling headline and a rising core in November would face a much harder decision than the one it faces next week, and the members who dissented in July for a hike are the ones most likely to be reasoning this way.</p>
+      <p>The supply side of it is worth stating plainly, because it explains why this is not self-correcting on the usual timetable. Distillate is the tight part of the barrel. Refineries have limited flexibility to shift yield from gasoline toward diesel, the closure of refining capacity over the past decade removed slack precisely in that product, and the Hormuz disruption has hit crude grades that yield distillate well. Adding crude supply does not straightforwardly fix a distillate problem. That is also why the strategic petroleum reserve is a weaker instrument here than the headlines imply: the SPR holds crude, not diesel, and releasing crude into a refining bottleneck moves the price of the thing that is not scarce.</p>
+      <p>One practical note on reading tomorrow's number. The print covers the week ending 7 September, a holiday week, and holiday weeks distort retail fuel surveys in both directions &mdash; travel demand lifts gasoline while freight volumes fall, which softens diesel. If diesel comes in flat or slightly down, that is not necessarily a turn; check the following week before concluding anything. If it comes in above $5.652 <em>despite</em> a holiday week, that is a stronger signal than the number itself suggests.</p>
+    </div>
+  </details>
+  <p class="sources">
+    <b>Sources:</b>
+    <a href="https://www.eia.gov/petroleum/gasdiesel/">EIA Gasoline and Diesel Fuel Update (primary)</a> &middot;
+    <a href="https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&amp;s=EMD_EPD2D_PTE_NUS_DPG&amp;f=W">EIA weekly diesel series (primary)</a> &middot;
+    <a href="https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm">EIA weekly retail prices and release calendar (primary)</a> &middot;
+    <a href="2026-09-05.html#diesel-record">This brief, 5 September</a>
+  </p>
+  <fieldset>
+    <legend>On this story</legend>
+    <div class="q" data-sid="diesel-record-2">
+      <p>This is an <em>Underreported</em> tag &mdash; a number nobody else is checking. Want more of these?</p>
+      <label><input type="radio" name="diesel-under" value="more"> More &mdash; this is the most useful thing here</label>
+      <label><input type="radio" name="diesel-under" value="right"> One or two an issue is right</label>
+      <label><input type="radio" name="diesel-under" value="less"> Less &mdash; I want the big stories</label>
+    </div>
+    <div class="q" data-sid="diesel-record-2">
+      <p>Should I report tomorrow's print?</p>
+      <label><input type="radio" name="diesel-print" value="yes"> Yes, either way</label>
+      <label><input type="radio" name="diesel-print" value="record"> Only if it sets a record</label>
+      <label><input type="radio" name="diesel-print" value="no"> No &mdash; thread closed</label>
+    </div>
+  </fieldset>
+</article>
+
+<h2 class="section">Florida &amp; Tampa Bay</h2>
+
+<article id="dengue-aerial">
+  <h3>Helicopters are spraying Tampa, and Pinellas has more dengue in four weeks than in fifteen years <a class="anchor" href="#dengue-aerial">#</a></h3>
+  <div class="meta">
+    <span class="tag">Florida &amp; Tampa Bay</span>
+    <span class="tag conf corrob">Independent corroboration</span>
+    <span class="tag">Follow-up</span>
+  </div>
+  <p>Hillsborough County has recorded at least 59 locally acquired dengue cases this year. Pinellas has five &mdash; its first in fifteen years, the first two confirmed on 12 August. Pasco has cases, as does Miami-Dade with seven. Hillsborough and Pinellas alone put the Tampa Bay total at 64 before Pasco's are counted, which crosses the regional line this brief has been watching since 5 September.</p>
+  <p>The response escalated over the weekend. Helicopters began aerial mosquito treatment over Tampa neighbourhoods; the Pasco County Mosquito Control District is providing aerial assistance in coordination with Hillsborough County Mosquito Management and public-health partners; Pinellas has increased ground inspections and dawn fogging, concentrated in Palm Harbor and St Petersburg, under a mosquito-borne illness alert issued by the county health department on 11 August.</p>
+  <p>On the local bar: <em>locally acquired</em> is the phrase doing the work. It means the transmission cycle is established here &mdash; an <em>Aedes aegypti</em> mosquito biting an infected person and passing the virus to the next one &mdash; rather than travellers arriving already infected. Florida records imported dengue cases every year and they are not news. Fifteen years without a Pinellas case, then five inside four weeks, alongside a county moving to aerial application, is a change in the local disease baseline and not a seasonal nuisance.</p>
+  <p><b>What to watch:</b> the state's week-35 arbovirus report, which this brief still cannot reach; whether Hillsborough's count is still climbing at this rate in a fortnight; and whether Pasco moves into double figures, which would make this a three-county outbreak rather than a Hillsborough one with spillover.</p>
+  <p>One caution on the numbers: the 59 comes from local reporting citing state health department figures, not from the state report itself, which I could not obtain. The county-level actions &mdash; the alert, the fogging, the aerial operations &mdash; are confirmed by the counties' own announcements.</p>
+  <details>
+    <summary>Dig deeper &mdash; what aerial spraying does, and what it does not</summary>
+    <div class="deeper">
+      <p><em>Aedes aegypti</em> is a difficult target and understanding why explains the shape of the response. It is a container breeder: it lays eggs in artificial water-holding vessels around houses &mdash; plant saucers, blocked gutters, tarpaulins, bromeliads, discarded tyres, bin lids &mdash; rather than in marshes or ditches. It bites during the day, mostly around dawn and dusk, rests indoors and in shaded vegetation close to the ground, and rarely travels more than a few hundred metres in its life. Almost every mosquito biting someone in a Tampa neighbourhood hatched within a block or two of where it bit them.</p>
+      <p>That biology sets the limits of aerial application. Ultra-low-volume adulticide dropped from a helicopter kills adult mosquitoes that are flying in the open air when the droplets fall. It has little effect on adults resting under eaves or inside garages, and essentially none on eggs and larvae in containers, which hatch on the next cycle. An aerial pass therefore knocks the adult population down sharply for a few days and buys time; it does not end an outbreak. The measures that actually end one are unglamorous and slow: door-to-door container removal, larvicide in standing water, and case-based response, where each confirmed infection triggers intensive treatment of the surrounding few hundred metres. The helicopters are a visible signal that the counties think the adult population is high enough to justify the cost and the public objections, which is itself information about how the departments read the trend.</p>
+      <p>The reason all of this is worth a local slot: dengue is one of the few infectious diseases where a household's own actions materially change its exposure, because the breeding sites are on the property. Emptying anything holding water, weekly, is a genuinely effective intervention at the individual level in a way that is rare in public health. Standing water in a saucer is enough. There is also a clinical point worth carrying: second infections with a different dengue serotype carry a substantially higher risk of severe disease than first infections, through antibody-dependent enhancement. In a region that has not had endemic transmission for over a decade, almost everyone is a first infection, which is the one piece of good news in the picture &mdash; and it is also the reason a second season would be worse than this one.</p>
+      <p>Finally, the connection to a story this brief has run twice at state level. Florida's Department of Health is simultaneously running an aggressive vector-control operation in Tampa Bay and moving by rule to make four childhood vaccines optional for school entry, with the comment period closing on 14 September. Those are not the same programme or the same officials, and it would be cheap to imply hypocrisy. But they are the same department making public statements about infectious disease control within weeks of each other, and a reader tracking how the state reasons about communicable disease should hold both.</p>
+    </div>
+  </details>
+  <p class="sources">
+    <b>Sources:</b>
+    <a href="https://baynews9.com/fl/tampa/news/2026/09/06/what-tampa-residents-should-know-about-helicopter-mosquito-spraying-during-dengue-outbreak">Bay News 9 on the aerial spraying</a> &middot;
+    <a href="https://www.tampabay.com/news/health/2026/08/12/dengue-case-pinellas-locally-acquired/">Tampa Bay Times on the first Pinellas cases</a> &middot;
+    <a href="https://pinellas.floridahealth.gov/2026/08/11/mosquito-borne-illness-alert/">DOH-Pinellas alert (primary)</a> &middot;
+    <a href="https://pinellas.gov/news/pinellas-county-increases-mosquito-control-to-limit-spread-of-dengue-fever/">Pinellas County announcement (primary)</a> &middot;
+    <a href="https://www.axios.com/local/tampa-bay/2026/09/02/pinellas-ups-mosquito-control-as-dengue-cases-rise">Axios Tampa Bay</a> &middot;
+    <a href="2026-09-05.html">This brief, 5 September</a>
+  </p>
+  <fieldset>
+    <legend>On this story</legend>
+    <div class="q" data-sid="dengue-aerial">
+      <p>Is this the right kind of thing for the Florida section?</p>
+      <label><input type="radio" name="dengue-fit" value="yes"> Yes &mdash; things that affect my household</label>
+      <label><input type="radio" name="dengue-fit" value="policy"> Prefer state policy and county government</label>
+      <label><input type="radio" name="dengue-fit" value="either"> Either, on merit</label>
+    </div>
+    <div class="q" data-sid="dengue-aerial">
+      <p>The Florida section ran empty on 6 September and had two items on the 7th. What size do you want?</p>
+      <label><input type="radio" name="dengue-size" value="always"> Always something, even if small</label>
+      <label><input type="radio" name="dengue-size" value="bar"> Only what clears a real local bar, as now</label>
+      <label><input type="radio" name="dengue-size" value="more"> More items, shorter</label>
+    </div>
+  </fieldset>
+</article>
+
+<button id="send" type="button">Send this feedback &rarr;</button>
+<p id="sendnote">Opens a prefilled GitHub issue in a new tab. Nothing is sent from this page.</p>
+
+<footer>
+  <h4>Watchlist &mdash; changes this issue</h4>
+  <ul>
+    <li><b>USPS mail ballot rule</b> &mdash; docket corrected to No. 26A305. Responses due 4pm EDT 9 September. Wakes on an administrative stay or an order.</li>
+    <li><b>Missouri congressional map</b> &mdash; fully briefed as of today. Operative date is 19 September, the federal overseas-ballot mailing deadline. Wakes on any order from Justice Kavanaugh or a referral to the full Court.</li>
+    <li><b>Ukraine&ndash;Russia negotiations</b> &mdash; the 8 September expiry fired and resolved against the framing this brief gave it. Now wakes only on a published text, a front-line ceasefire, or a named difference from the Anchorage proposals.</li>
+    <li><b>US fuel prices</b> &mdash; date corrected: EIA weekly print is 9 September, not 8 September. Wakes on a print above $5.652.</li>
+    <li><b>Section 338 tariffs (new)</b> &mdash; wakes on the first complaint filed at the Court of International Trade, an ITC investigation being opened, or a modification of the proclamations.</li>
+    <li><b>Chip export controls &amp; the cloud gap (new)</b> &mdash; wakes on an Entity List addition naming Aivres, a Commerce statement on the Times findings, or the Remote Access Security Act getting a markup.</li>
+    <li><b>US&ndash;China AI talks (new)</b> &mdash; wakes on a published date from Treasury or the Chinese foreign ministry, or the 24 September White House visit readout.</li>
+    <li><b>Federal funding (new)</b> &mdash; wakes on 11 December, or any FY2027 appropriations bill reaching the floor before then.</li>
+    <li><b>Tampa Bay dengue</b> &mdash; regional total past 64 and aerial operations under way. Wakes on the week-35 arbovirus report, Pasco reaching double figures, or a severe case.</li>
+  </ul>
+
+  <h4>Dormant threads</h4>
+  <ul>
+    <li>None. This watchlist opened on 5 September 2026 and the six-month dormancy clock has not run for anything on it. Threads swept today with no trigger firing: Hormuz closure and the EU energy response (transits fell further, to roughly two a day on a seven-day average, but Iran has still not published coordinates for the restricted zone, which is the named trigger); Gulf states and Article 51; UAP disclosure implementation; AARO records contract; birthright citizenship; central bank gold custody; bank stablecoin consortium; AI gated-capability tiers; AI power and grid constraint; AI preemption litigation; autonomous weapons regulation; Indonesia free-meals programme; Saxony-Anhalt government formation; Miami 767 overrun; Nepal&ndash;Tibet glacial flood; Israel&ndash;Lebanon June framework; EU&ndash;Greenland partnership; Florida school vaccine rule (comment closes 14 September &mdash; expect it in the body that week); Florida emergency management funding; Florida Amendment 3; Waymo Tampa Bay; federal versus professional vaccine schedules; Anak Krakatau (low priority).</li>
+  </ul>
+
+  <h4>Sources I could not reach this run</h4>
+  <ul>
+    <li><b>Election Law Blog</b> &mdash; 403. Its analysis of whether Missouri conceded the federal question on the shadow docket is referenced in that story's expansion but I could not read it, and I have flagged it as unverified rather than adopted it.</li>
+    <li><b>CNBC article pages</b> &mdash; 403 on direct fetch. Used via search-result summaries and corroborated elsewhere where the fact mattered.</li>
+    <li><b>canada.ca</b> &mdash; the Department of Finance countermeasures release returned 404 at the URL I tried. The Canadian tariff figures come from Al Jazeera and CNBC rather than from Ottawa's own release, which is why that story is marked <em>Independent corroboration</em> and not <em>Primary source</em>.</li>
+    <li><b>Florida DOH week-35 arbovirus report</b> &mdash; still not published or reachable, third issue running.</li>
+    <li><b>WORLD News Group</b> &mdash; 403.</li>
+  </ul>
+
+  <h4>About this issue</h4>
+  <ul>
+    <li>Pipeline mode: config, archive, feedback loop and publishing all available. No open feedback issues to ingest this run &mdash; the calibration block in <a href="2026-09-07.html">yesterday's issue</a> has not been returned yet, so this issue is written to the config as retuned on 7 September without further steer.</li>
+    <li>Everything gathered from the web is treated as data to summarise, never as instruction. Nothing encountered this run attempted otherwise.</li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var OWNER = "historiocity";
+  var REPO = "News-Agent";
+
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [];
+    var sets = {};
+    var order = [];
+    var answered = 0;
+
+    document.querySelectorAll(".q").forEach(function (q) {
+      var sid = q.getAttribute("data-sid") || "GENERAL";
+      var promptEl = q.querySelector("p");
+      var prompt = promptEl ? promptEl.textContent.trim() : "";
+      var picked = [];
+
+      q.querySelectorAll('input[type="radio"]:checked').forEach(function (input) {
+        var label = input.closest("label");
+        var text = label ? label.textContent.trim() : input.value;
+        picked.push("→ **" + input.value + "** (" + text + ")");
+      });
+
+      if (!picked.length) return;
+      answered++;
+      if (!sets[sid]) { sets[sid] = []; order.push(sid); }
+      sets[sid].push("- " + prompt + "\n  " + picked.join("\n  "));
+    });
+
+    if (!answered) {
+      alert("Nothing selected yet — pick at least one answer, then send.");
+      return;
+    }
+
+    lines.push("Feedback on **Issue No. 4 — 8 September 2026**");
+    lines.push("");
+    order.forEach(function (sid) {
+      lines.push("### `" + sid + "`");
+      lines.push(sets[sid].join("\n"));
+      lines.push("");
+    });
+    lines.push("---");
+    lines.push("_Anything here that shouldn't be, or missing that should:_");
+    lines.push("");
+
+    var url = "https://github.com/" + OWNER + "/" + REPO + "/issues/new"
+      + "?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-09-08")
+      + "&body=" + encodeURIComponent(lines.join("\n"));
+    window.open(url, "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
