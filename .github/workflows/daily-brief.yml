@@ -180,6 +180,14 @@ jobs:
             --description "Notification that a brief was published" \
             --color 1D76DB 2>/dev/null || true
 
+          # The in-issue feedback button links to /issues/new?labels=brief-feedback.
+          # GitHub silently DROPS labels that do not exist in the repo, so without
+          # this the reader's feedback arrives unlabelled and the skill's
+          # "--label brief-feedback" query never finds it. Issue #3 was lost that way.
+          gh label create brief-feedback \
+            --description "Reader feedback on a published brief" \
+            --color 0E8A16 2>/dev/null || true
+
           {
             echo "**[Read the brief →](${URL})**"
             echo
