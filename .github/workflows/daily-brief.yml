@@ -46,6 +46,9 @@ jobs:
     permissions:
       contents: write
       issues: write
+      # Required: claude-code-action authenticates by OIDC and cannot get a
+      # token without this. Removing it fails the run before any work starts.
+      id-token: write
     steps:
       - uses: actions/checkout@v6
         with:
