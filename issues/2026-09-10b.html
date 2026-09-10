@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Thursday, 10 September 2026 (second edition)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  /* short-item tier */
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list summary .chip { vertical-align:.05rem; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 6b &middot; Thursday, 10 September 2026 &middot; second edition</div>
+  <h1>A rewritten census, a visa rule that bites on Monday, and diesel up 24 per cent at the factory gate</h1>
+  <p class="sub">Nine stories at length, nine in brief. The morning edition stands unchanged at <a href="2026-09-10.html">2026-09-10</a>.</p>
+  <p class="prov"><b>Format demonstration, run at the reader's request.</b> This is the first issue produced under the retuned gather, and it deliberately breaks the same-day rule that a second edition should carry only what moved — a delta three hours after publication would not exercise the new format. So: a full run.<br><br>
+  <b>13 sources checked, 8 of them outside the watchlist.</b> Six lead stories are on subjects with no story in the last three issues; three continue threads, under the cap of four. <b>Biggest story not on my list:</b> the Census Bureau's proposed rule — it was not on any beat or thread, it is the lead, and it came out of the negative check rather than a beat sweep.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#census-2030">The administration has proposed writing millions of people out of the count that apportions Congress</a></li>
+    <li><a href="#dhs-duration-status">On Monday, every student visa in America stops being open-ended</a></li>
+    <li><a href="#ppi-august">Diesel rose 24 per cent at the factory gate last month, and producer prices are running at 5.4 per cent</a></li>
+    <li><a href="#missouri-scotus">The Supreme Court ended the Missouri map fight this morning, and the 2022 districts stand</a></li>
+    <li><a href="#ferc-large-load">The grid regulator has told all six market operators to justify how they connect data centres, or change it</a></li>
+    <li><a href="#gao-good-cause">Agencies skipped public comment on seven in ten major emergency rules, and GAO has now counted them</a></li>
+    <li><a href="#chip-insurance">War-risk premiums on chip cargo are up 40 per cent, which is a tax on the AI build-out nobody itemises</a></li>
+    <li><a href="#mia-767">One Miami pilot warned the other they were too fast, repeatedly, before the 767 left the runway</a></li>
+    <li><a href="#fl-dengue">Florida's missing dengue report finally published, and the number is 73</a></li>
+  </ol>
+  <p class="also"><a href="#also-today">Also today (9)</a> &mdash; ranked below the line, each one opens.</p>
+</nav>
+
+<article id="census-2030">
+  <h2>The administration has proposed writing millions of people out of the count that apportions Congress</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The Commerce Department has published proposed rules for the 2030 census that would redefine "usual residence" to exclude immigrants without lawful permanent resident status from the population count used to apportion the House of Representatives. As drafted it reaches beyond undocumented immigrants to asylum seekers and refugees — people lawfully present but not permanent residents. The same package would add a citizenship question and stop the census asking about race, ethnicity or sexual orientation.</p>
+  <p>Two consequences follow mechanically. Apportionment: the 435 House seats are divided by state population, so removing millions of residents concentrated in particular states moves seats between them. And money: most large federal programmes allocate by census population, so states with large immigrant populations would receive less, for a decade.</p>
+  <p>The constitutional problem is on the face of the text. Article I requires the apportionment count to include the "whole number of persons in each State" and says nothing about immigration status. The administration attempted a narrower version of this in 2020 and did not succeed.</p>
+  <p><b>What to watch:</b> the comment period and its length; whether a citizenship question survives contact with the 2019 <em>Department of Commerce v. New York</em> ruling, which blocked one on pretextual grounds; and which states sue first.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is this a rule change or a constitutional amendment by regulation?</span>
+    <p><b>What is disputed.</b> Not the contents of the proposal, which are published, but whether an agency can do this at all. The administration's position is that "usual residence" is a definitional term the Census Bureau has always interpreted, and interpreting it is ordinary rulemaking. Critics say the apportionment base is fixed by Article I and no interpretation of residence can subtract people the Constitution counts.</p>
+    <p><b>Why they differ.</b> Both are right about their own half. "Usual residence" genuinely is a Bureau construct with a long history of judgement calls — students, prisoners, military personnel abroad. But that history is about <em>where</em> to count someone, never <em>whether</em> to. The proposal uses a where-question mechanism to answer a whether-question, which is why it reads as ordinary to its authors and as evasion to its opponents.</p>
+    <p><b>What it means for you.</b> Treat the apportionment provision as very unlikely to survive and the questionnaire changes as considerably more likely — dropping a question is far easier to defend than subtracting people. That split matters, because losing race and ethnicity data would degrade every federal statistic built on it, quietly and for a decade, whatever happens to the headline fight. Watch which piece the litigation targets: if the first suits go only at apportionment, the questionnaire changes may pass unopposed.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; why the questionnaire, not the apportionment, is the part that will probably stick</summary>
+    <div class="exp">
+      <p>The apportionment provision is the loudest part of this and the least likely to survive, for a reason that has already been litigated. In 2020 the administration issued a memorandum directing that undocumented immigrants be excluded from the apportionment base. The Supreme Court disposed of the challenge on standing and ripeness grounds rather than the merits, and the incoming administration rescinded it — so the constitutional question was never squarely answered, but nothing in the intervening years has made Article I's "whole number of persons" easier to read around. A proposed rule is a better vehicle than a memorandum because it produces a record and a defined effective date, but it does not change the text it has to get past.</p>
+      <p>The questionnaire changes are a different matter and deserve more attention than they will get. Removing the race and ethnicity questions does not require reading anything out of the Constitution — the census has asked different things at different times, and the specific categories are set by OMB standards rather than statute. But those questions are load-bearing far outside the census itself. Voting Rights Act enforcement needs population-by-race at block level. So do federal civil-rights compliance, health-disparity surveillance, and the annual estimates that thousands of programme formulas key off. Remove the question and you do not merely lose a data series; you remove the denominator from a great deal of American statistics, and there is no substitute source at that geography.</p>
+      <p>The citizenship question sits between the two. It was attempted for 2020 and blocked in <em>Department of Commerce v. New York</em>, where the Court accepted that the Secretary had authority to ask it but found the stated rationale pretextual. That is a narrow holding and a rerun is entirely possible with a better-documented rationale — which is precisely what a full notice-and-comment rulemaking generates. Anyone reading this as a straightforward repeat of 2019 is underrating the procedural difference.</p>
+      <p>The practical timeline is the thing to hold. The 2030 count needs questionnaire content locked years in advance — the Bureau reports content to Congress well before census day, and field testing runs before that. So the operative deadline is not 2030; it is the next two to three years, and litigation that runs past it effectively decides the question by delay. Both sides know that, which is why a proposal in 2026 is early enough to matter.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnn.com/2026/09/10/politics/census-overhaul-trump-administration">CNN on the proposed rules and the funding effect</a> &middot;
+    <a href="https://www.nbcnews.com/politics/trump-administration/trump-census-immigrants-voting-rcna596856">NBC News on the residence redefinition</a> &middot;
+    <a href="https://www.spokesman.com/stories/2026/sep/09/trump-pushes-2030-census-to-exclude-immigrants-not/">Spokesman-Review</a> &middot;
+    <a href="https://www.npr.org/2025/12/05/nx-s1-5634897/trump-census-race-categories-ethnicity-middle-east-north-africa">NPR on the racial-category rollback signalled last December</a>
+  </p>
+  <div class="fb">
+    <p>This came from the negative check rather than a beat sweep. More of that?</p>
+    <label><input type="radio" name="fb-census" value="yes"> Yes &mdash; keep asking what I missed</label>
+    <label><input type="radio" name="fb-census" value="beats"> Stick to the beats</label>
+  </div>
+</article>
+
+<article id="dhs-duration-status">
+  <h2>On Monday, every student visa in America stops being open-ended</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>A DHS final rule published on 17 July takes effect on <b>15 September</b> — Monday. It ends admission for "duration of status" for the F (academic student), J (exchange visitor) and I (foreign media) classifications, and replaces it with a fixed admission period carrying an actual expiry date.</p>
+  <p>From Monday, F and J holders are admitted until the programme end date on their Form I-20 or DS-2019, capped at four years, plus a 30-day grace period. People already in the country on duration of status are covered by a transition: they may remain until their programme end date or four years from the effective date, whichever comes first, without needing a corrected Form I-94. After that, staying means filing an extension of stay rather than simply continuing to be enrolled.</p>
+  <p>The rule does not change who qualifies for F or J status, how long degree programmes are, or a university's ability to sponsor. It changes the consequence of drift: a PhD that runs five years, a research appointment that extends, a programme that pauses, now each require an affirmative filing where before they required nothing.</p>
+  <p><b>What to watch:</b> whether the extension-of-stay backlog becomes the binding constraint; it is a major rule under the Congressional Review Act, so there is a disapproval window; and whether any suit seeks to stay it before Monday.</p>
+  <details>
+    <summary>Dig deeper &mdash; why an administrative change of default is a bigger deal than a change of rule</summary>
+    <div class="exp">
+      <p>Duration of status has been the default for student visas for decades, and it is unusual in immigration law: most nonimmigrant classifications carry a date, and F and J did not. Someone admitted on D/S was lawfully present as long as they remained enrolled and compliant, with no expiry to track. That put the compliance burden on the institution, through the SEVIS reporting system, rather than on the individual's I-94.</p>
+      <p>Moving to a fixed date inverts that. The obligation becomes personal and dated, and the failure mode changes character. Under D/S, falling out of compliance was a status violation that generally required a finding — someone had to determine you had stopped being a student. Under a fixed admission period, overstaying is a fact established by a calendar, and unlawful presence accrues automatically. That distinction is what drives the three- and ten-year re-entry bars, so the downside of an administrative slip is considerably steeper than it was.</p>
+      <p>The four-year cap is where the friction concentrates. Doctoral programmes in the sciences routinely run five to seven years; so do medical residencies on J. Everyone in those categories will need at least one extension of stay, and the filing volume arrives all at once for a population that has never had to file. The rule's own transition provision spreads the first wave, but only by four years, and it does nothing about the steady-state volume after that. Whether this is an administrative inconvenience or a serious problem depends almost entirely on adjudication times that nobody has committed to.</p>
+      <p>The Congressional Review Act designation is worth noting because it is a real, if unlikely, off-ramp. A major rule is subject to a joint resolution of disapproval on an expedited Senate track, and the window runs from submission to Congress. It requires the President's signature or a veto override, so for an administration's own rule it is close to theoretical — but it does mean the rule is on a congressional calendar, and that is a place where a coalition of universities can be heard even when a court is not available.</p>
+      <p>One number I could not get and would want: how many people are currently in the US on duration of status. Every estimate I found traces back to enrolment figures rather than admissions data, and the two are not the same population.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.federalregister.gov/documents/2026/07/17/2026-14439/establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-for-nonimmigrant">The final rule, Federal Register 2026-14439 (primary)</a> &middot;
+    <a href="https://www.duanemorris.com/alerts/dhs_eliminates_duration_status_f_j_i_nonimmigrants_fixed_admission_periods_new_extension_0726.html">Duane Morris on the effective date and mechanics</a> &middot;
+    <a href="https://www.mintz.com/insights-center/viewpoints/2806/2026-07-23-dhs-issues-final-rule-creating-fixed-period-admission-f">Mintz</a> &middot;
+    <a href="https://oiss.yale.edu/immigration/elimination-of-duration-of-status-summary-faqs">Yale OISS on the transition provisions</a> &middot;
+    <a href="https://www.ois.pitt.edu/ds-final-rule">Pitt OIS</a>
+  </p>
+  <div class="fb">
+    <p>A rule published in July that bites on Monday. Is that the right kind of find?</p>
+    <label><input type="radio" name="fb-dhs" value="yes"> Yes &mdash; effective dates, not announcements</label>
+    <label><input type="radio" name="fb-dhs" value="news"> Only when something new happens</label>
+  </div>
+</article>
+
+<article id="ppi-august">
+  <h2>Diesel rose 24 per cent at the factory gate last month, and producer prices are running at 5.4 per cent</h2>
+  <div class="meta">
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Primary source</span>
+    <span class="chip">Follow-up</span>
+  </div>
+  <p>The August producer price index landed at 8:30 this morning. Final demand rose 0.4 per cent on the month, seasonally adjusted, and 5.4 per cent over twelve months unadjusted. Goods rose 1.1 per cent against services at 0.1 — the split matters, because it says this is a commodity shock passing through, not broad price-setting.</p>
+  <p>Over three-quarters of the increase is energy, which rose 4.2 per cent. Within goods, more than a third of the entire rise traces to one line: diesel, up <b>24.1 per cent in a month</b>. Core measures were quiet by comparison — goods less foods and energy up 0.4 per cent, foods up 0.1.</p>
+  <p>This is the last major print before the FOMC, with CPI tomorrow morning. It cuts both ways for a committee deciding whether to raise: 5.4 per cent headline producer inflation is an uncomfortable number to hold rates through, and a print driven overwhelmingly by diesel is the textbook case for looking past it.</p>
+  <p><b>What to watch:</b> tomorrow's CPI, where forecasts have core at 0.2 per cent and headline at 0.4; whether diesel shows up in CPI transport and food-at-home; and the dissent column next week.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is a diesel shock inflation the Fed should answer?</span>
+    <p><b>What is disputed.</b> Not the numbers, which are the Bureau's own. The dispute is about significance: whether a producer-price rise that is three-quarters energy and one-third diesel is evidence of inflation, or evidence of an oil market.</p>
+    <p><b>Why they differ.</b> The hawkish reading is not really about this print — it is about the run of them. Three officials dissented for a hike in July on the argument that missing the target repeatedly is what un-anchors expectations, and on that view the composition of any single month is beside the point. The dovish reading takes composition seriously because monetary policy cannot produce diesel, and tightening into a supply shock buys disinflation by suppressing demand in an economy that did not cause the problem. Both are arguing from the same data with different objects: one is looking at credibility, the other at causation.</p>
+    <p><b>What it means for you.</b> Diesel is the tell to watch, not the headline. Diesel is a production input rather than a consumer good — it moves freight, farm equipment and construction — so it reaches consumer prices with a lag and through almost everything. If tomorrow's CPI shows it only in energy, the composition argument holds and a hike is harder to justify. If it is visible in food-at-home and transport services, then the supply shock has become the general price level and the committee's hand is largely forced. That is a readable distinction in tomorrow's tables, and it is more informative than any forecast published today.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.bls.gov/news.release/ppi.nr0.htm">BLS PPI news release, August 2026 (primary)</a> &middot;
+    <a href="https://www.dol.gov/newsroom/economicdata/ppi_09102026.pdf">The release PDF (primary)</a> &middot;
+    <a href="https://www.bls.gov/ppi/">BLS PPI home</a> &middot;
+    <a href="2026-09-10.html#fed-week">this morning's Fed story</a>
+  </p>
+  <div class="fb">
+    <p>Cadence on the Fed through next week's meeting?</p>
+    <label><input type="radio" name="fb-ppi" value="prints"> Every print</label>
+    <label><input type="radio" name="fb-ppi" value="decision"> CPI and the decision only</label>
+  </div>
+</article>
+
+<article id="missouri-scotus">
+  <h2>The Supreme Court ended the Missouri map fight this morning, and the 2022 districts stand</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Primary source</span>
+    <span class="chip">Follow-up</span>
+  </div>
+  <p>The Supreme Court blocked a federal district judge's order that had revived Missouri's Republican-drawn congressional map for November. In a one-page order with no noted dissents, the Court granted the emergency application of People Not Politicians and its executive director Richard von Glahn, staying the temporary restraining order Chief US District Judge Stephen Clark issued in St. Louis on Tuesday. Missouri will run the November election on the districts drawn after the 2020 census.</p>
+  <p>This resolves the collision this brief flagged yesterday as "two live, incompatible map orders" — a state supreme court ruling blocking the 2025 map pending a referendum, and a federal district order requiring its use. The state's own Attorney General had filed against her supreme court's position, which is why a private organisation rather than the State of Missouri was defending the state ruling.</p>
+  <p>The map would have moved Missouri's delegation from 6&ndash;2 Republican toward 7&ndash;1. It will not, this cycle.</p>
+  <p><b>What to watch:</b> the November referendum on the map itself, which is now the live question; whether an Eighth Circuit merits panel takes the underlying case; and the contempt proceeding before Judge Clark, which the stay does not obviously dispose of.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.nbcnews.com/politics/supreme-court/supreme-court-blocks-missouris-attempt-use-newly-drawn-republican-cong-rcna596857">NBC News on the order</a> &middot;
+    <a href="https://rollcall.com/2026/09/10/republicans-scotus-bid-new-missouri-map/">Roll Call</a> &middot;
+    <a href="https://www.democracydocket.com/news-alerts/supreme-court-blocks-gerrymandered-missouri-map-that-federal-judge-revived/">Democracy Docket</a> &middot;
+    <a href="https://www.newstribune.com/news/2026/sep/10/missouri-fight-over-gerrymandered-congressional/">News-Tribune</a> &middot;
+    <a href="2026-09-10.html#missouri">this morning's story</a>
+  </p>
+  <div class="fb">
+    <p>The thread has resolved for this cycle. Keep it active for the referendum?</p>
+    <label><input type="radio" name="fb-mo" value="keep"> Keep it to November</label>
+    <label><input type="radio" name="fb-mo" value="retire"> Retire it</label>
+  </div>
+</article>
+
+<article id="ferc-large-load">
+  <h2>The grid regulator has told all six market operators to justify how they connect data centres, or change it</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>FERC has issued show-cause orders to all six of its jurisdictional market operators — PJM, MISO, SPP, CAISO, ISO New England and NYISO — directing each to revise how it interconnects data centres and other large loads, or explain why its existing rules are just and reasonable. The orders require dedicated, expedited study processes for generation serving co-located large loads that sit electrically close to it, defined as within two buses or substations.</p>
+  <p>This is the regulator conceding the point this brief has been making from the industry side: the binding constraint on AI build-out is not chips or capital but the physical and procedural apparatus of getting power to a building. Interconnection queues measured in years are the mechanism, and FERC has now put all six operators on the clock about them.</p>
+  <p>It follows a December order requiring PJM specifically to write colocation rules, and sits in docket RM26-4 alongside a broader large-load rulemaking.</p>
+  <p><b>What to watch:</b> the operators' responses and whether any defends its current rules rather than filing changes; whether "two buses or substations" becomes the definition that decides which projects get the fast path; and whether cost allocation — who pays for the upgrades — is addressed or deferred.</p>
+  <details>
+    <summary>Dig deeper &mdash; why colocation is the fight, and who ends up paying</summary>
+    <div class="exp">
+      <p>Colocation is the industry's attempt to route around the queue. If a data centre sits next to a power plant and takes electricity from it directly, the argument goes, it is not really using the transmission system and should not have to wait in line for it. That is appealing and it is not obviously wrong — but it raises a question the grid has never had to answer at scale: is a very large customer standing next to a generator a transmission customer or not? Everything follows from that. Transmission customers pay transmission rates, which fund the shared network. A load that is deemed not to use the network pays nothing toward it while relying on it for backup, frequency support and everything else that makes the local grid stable.</p>
+      <p>FERC's December order told PJM to write rules for exactly this, and the six show-cause orders generalise it. The two-buses-or-substations test is the substantive part: it draws an electrical rather than a commercial line around what counts as proximate, which is harder to game than a contractual definition but also arbitrary at the margin. Expect the responses to argue about that boundary more than about the principle.</p>
+      <p>The question the orders appear to leave open is the one that reaches ordinary bills. If an expedited process gets large loads connected faster, the network upgrades they require still get built, and the cost is recovered through rates set in state proceedings. Whether that lands on the new load or is socialised across everyone else is decided in dockets that receive almost no attention, and FERC's jurisdiction over wholesale transmission does not straightforwardly settle it. A faster queue with unresolved cost allocation is a faster route to a fight about somebody's electricity bill.</p>
+      <p>Worth holding in view: this is a regulator acting pre-emptively on a demand curve that may not fully materialise. If 30 to 50 per cent of announced 2026 data centre projects do slip or cancel — a figure this brief has flagged as the weakest in its own reporting — then some of this expedited capacity is being built for load that never arrives, and the stranded-cost question lands on the same rate cases.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration">FERC on the six show-cause orders (primary)</a> &middot;
+    <a href="https://www.ferc.gov/rm26-4">Docket RM26-4 (primary)</a> &middot;
+    <a href="https://www.whitecase.com/insight-alert/ferc-orders-grid-operators-promptly-revise-or-justify-interconnection-rules-data">White &amp; Case on the mechanics</a> &middot;
+    <a href="https://www.utilitydive.com/news/ferc-pjm-colocation-data-center/808368/">Utility Dive on the December PJM order</a> &middot;
+    <a href="2026-09-07.html#ai-transformers">background, 7 Sep</a>
+  </p>
+  <div class="fb">
+    <p>FERC is not on any beat or thread. Should it be a standing source?</p>
+    <label><input type="radio" name="fb-ferc" value="yes"> Yes &mdash; add it</label>
+    <label><input type="radio" name="fb-ferc" value="no"> No</label>
+  </div>
+</article>
+
+<article id="gao-good-cause">
+  <h2>Agencies skipped public comment on seven in ten major emergency rules, and GAO has now counted them</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+    <span class="chip">Underreported</span>
+  </div>
+  <p>The Government Accountability Office has published the first proper count of how often federal agencies use the Administrative Procedure Act's "good cause" exception to issue major rules without asking the public first. Across 116 major interim final rules and 12 direct final rules published between January 2013 and January 2025, agencies cited good cause in roughly <b>71 per cent</b> of cases.</p>
+  <p>The exception exists for genuine emergencies, and the data shows it behaving that way at the extreme: 55 rules were expedited in response to COVID, with good cause cited for 41 of them. Outside pandemic years the baseline is two to ten major rules a year issued with no advance notice — small in count, but these are *major* rules, meaning $100m-plus economic effect or equivalent significance. GAO also found only 66 per cent included economic-effects reporting, with COVID-era rules least likely to.</p>
+  <p>The report was published on 5 August and publicly released on 4 September. It has attracted almost no coverage, which is why it is marked underreported.</p>
+  <p><b>What to watch:</b> whether the count is cited in litigation over any current rulemaking; and whether the ratio holds in the post-2025 period the report does not cover, which is the period a reader would most want.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is 71 per cent an abuse or a definition?</span>
+    <p><b>What is disputed.</b> A question of significance. The number is GAO's and nobody contests it. What is contested is whether it describes agencies evading public comment or simply describes what the category of "interim final rule" <em>is</em>.</p>
+    <p><b>Why they differ.</b> This is close to a definitional artefact and it is important to see why. An interim final rule is, by construction, a rule issued without prior comment — so an agency issuing one nearly always needs a good-cause finding to justify it. On that reading 71 per cent is unremarkable and the interesting question is why it is not closer to 100. The critical reading looks at the denominator differently: the choice that matters is the upstream one, to use an interim final rule at all rather than ordinary notice-and-comment, and a good-cause finding is what makes that choice available. Counting how often the justification is invoked measures how often the door was used, not whether it should have been open.</p>
+    <p><b>What it means for you.</b> Do not read 71 per cent as a scandal figure — it is the wrong statistic for that, and anyone presenting it as one is misusing GAO's work. The genuinely useful numbers in the report are the baseline of two to ten major rules a year outside emergencies, and the 66 per cent that carried economic analysis. The second is the one I would watch: a major rule issued without comment <em>and</em> without economic effects reporting is a rule nobody outside the agency has evaluated in any form, and roughly a third of them qualify. That is a smaller and much sharper claim than the headline, and it is the one the report actually supports.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.gao.gov/products/gao-26-108208">GAO-26-108208 (primary)</a> &middot;
+    <a href="https://www.gao.gov/reports-testimonies">GAO reports and testimonies</a>
+  </p>
+  <div class="fb">
+    <p>GAO reports are slow, dense and mostly uncovered. Worth checking every run?</p>
+    <label><input type="radio" name="fb-gao" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-gao" value="weekly"> Weekly is enough</label>
+  </div>
+</article>
+
+<article id="chip-insurance">
+  <h2>War-risk premiums on chip cargo are up 40 per cent, which is a tax on the AI build-out nobody itemises</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">World economy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>Cargo insurance on semiconductors has reached historic highs this year, with military-risk surcharges on specific corridors up close to 40 per cent against 2025, and premiums on Gulf-adjacent routings rising sharply. The reporting is trade press rather than a filing, and I could not corroborate the 40 per cent figure independently — it is labelled single-sourced for that reason.</p>
+  <p>If it holds, it is the cross-connection between two threads this brief has run separately. The Hormuz crisis has been covered as an oil and fuel story. But the same war-risk underwriting that reprices a tanker voyage reprices a container of high-value chips moving through or near the same water, and chips are the input to the AI capex cycle. A shipping-insurance market is how a Gulf conflict reaches a data centre budget, and it does so without appearing in any oil price.</p>
+  <p><b>What to watch:</b> whether any hyperscaler or chipmaker quantifies logistics or insurance cost in guidance; Lloyd's or the Joint War Committee revising listed areas; and whether corroboration appears from an insurer rather than a trade outlet.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://carraglobe.com/semiconductor-supply-chain-disruption-2026/">Trade reporting on 2026 semiconductor cargo insurance</a> &middot;
+    <a href="https://www.freightamigo.com/en/blog/electronics-logistics/semiconductor-supply-chain-2026-from-shortages-to-resillience/">Supply-chain analysis</a> &middot;
+    <a href="2026-09-10.html#oil-tankers">this morning's Hormuz story</a>
+  </p>
+  <div class="fb">
+    <p>I ran this single-sourced and labelled it. Right call?</p>
+    <label><input type="radio" name="fb-ins" value="yes"> Yes &mdash; run it with the label</label>
+    <label><input type="radio" name="fb-ins" value="hold"> Hold until corroborated</label>
+  </div>
+</article>
+
+<article id="mia-767">
+  <h2>One Miami pilot warned the other they were too fast, repeatedly, before the 767 left the runway</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Independent corroboration</span>
+    <span class="chip">Follow-up</span>
+  </div>
+  <p>Flight information from the Amazon cargo 767 that ran off a Miami runway shows one pilot repeatedly warning the other that the aircraft was going too fast. That joins what this brief reported this morning from the NTSB's investigative update: the aircraft touched down at 158 knots with neither speedbrakes nor thrust reversers deployed.</p>
+  <p>Taken together those are the elements of a specific, well-documented accident category rather than a mystery — a fast, long touchdown with the deceleration devices not configured, and at least one crew member aware of it in time to say so. That does not establish cause, and the NTSB has not.</p>
+  <p>Five people died, several of them on a public road beside the airport rather than aboard the aircraft.</p>
+  <p><b>What to watch:</b> the full cockpit voice recorder transcript rather than characterisations of it; whether the preliminary report addresses the runway safety area; and any FAA action on 21 Air's certificate.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.justsecurity.org/156837/early-edition-september-10-2026/">Early Edition roundup citing the flight information</a> &middot;
+    <a href="2026-09-10.html#mia767">this morning's story, with the NTSB update</a> &middot;
+    <a href="2026-09-07.html#mia-767">original, 7 Sep</a>
+  </p>
+</article>
+
+<article id="fl-dengue">
+  <h2>Florida's missing dengue report finally published, and the number is 73</h2>
+  <div class="meta">
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip">Science &amp; public health</span>
+    <span class="chip">Primary source</span>
+    <span class="chip">Follow-up</span>
+  </div>
+  <p>The Florida arbovirus surveillance report this brief has chased for four consecutive issues is now available. Week 34, covering 23&ndash;29 August, puts locally acquired dengue at <b>73 cases statewide</b> for 2026, with onset in July for 19 and August for 54 — a caseload accelerating sharply into the late summer. Mosquito-borne illness alerts stand for Hillsborough, Miami-Dade and Pinellas.</p>
+  <p>What this settles: the state ledger now exists and can be cited, after three issues in which the only available numbers came from county announcements and independent write-ups. What it does not settle: week 35 is still not published, so the report is eleven days behind the aerial spraying over South Tampa that this brief covered on Tuesday and Wednesday. The published state number and the local situation are measuring different weeks, and anyone treating them as the same figure will misread both.</p>
+  <p><b>What to watch:</b> week 35 and 36, which should show whether the July-to-August acceleration continued; Pasco's count on the state ledger against its own mosquito-control district's; and any hospitalised or severe case.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.floridahealth.gov/wp-content/uploads/2026/09/fl-arbovirus-report-w34-2026.pdf">Florida Arbovirus Surveillance, week 34 (primary)</a> &middot;
+    <a href="https://www.floridahealth.gov/statistics-data/population-surveillance/arbovirus-surveillance/">DOH surveillance index</a> &middot;
+    <a href="2026-09-10.html">this morning's edition</a>
+  </p>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Nine things I saw and ranked below the line. Each one opens &mdash; the line is my judgement, what is behind it is the substance.</p>
+
+<div class="also-list">
+
+<details id="a-cpi">
+  <summary><span class="chip">Macro &amp; markets</span> August CPI lands at 8:30 tomorrow, the last print before the FOMC. Forecasts have core at 0.2 per cent and headline at 0.4; a core reading under 0.20 is roughly what it would take to keep rates unchanged.</summary>
+  <div class="exp">
+    <p>Market-implied odds of a 25 basis-point rise sit around 60&ndash;65 per cent, and the probability of at least one increase this year has been put near 70 per cent since Chair Warsh's Jackson Hole remarks about restoring confidence in the 2 per cent target. Natixis has core at 0.2 per cent monthly and headline at 0.4, the gap being energy. Core annual is expected around 2.4 per cent. Three officials — Hammack, Kashkari and Logan — dissented for a hike in July, so the committee is genuinely split rather than being talked into a decision.</p>
+    <p>One discrepancy to flag: sources this week give the meeting as both 15&ndash;16 and 16&ndash;17 September. Prior issues of this brief have used a statement on the 16th. I have not resolved it against the Fed's own calendar and would not rely on the exact day.</p>
+    <p class="btl"><b>Below the line because</b> a forecast is not a fact. The print is tomorrow, and tomorrow it leads.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://finance.yahoo.com/economy/policy/articles/tomorrow-cpi-report-could-send-144145444.html">Yahoo Finance on the odds</a> &middot; <a href="https://www.indexbox.io/blog/cpi-report-and-fed-rate-hike-key-insights-from-natixis/">Natixis forecast</a> &middot; <a href="2026-09-10.html#fed-week">background, this morning</a></p>
+  </div>
+</details>
+
+<details id="a-eia">
+  <summary><span class="chip">Energy &amp; grid</span> The EIA weekly petroleum report has not landed yet &mdash; highlights at noon Eastern, tables at two, pushed later than usual by Monday's federal closure. It is the first official reading that can contain the record diesel price.</summary>
+  <div class="exp">
+    <p>This matters because of the gap this brief has been flagging between AAA's retail series, which has diesel at an all-time high, and EIA's official weekly, which had not yet shown it. The 2026 EIA high stands at $5.652 from 24 August. Today's print either confirms the record in the government's own numbers or leaves the discrepancy standing for another week.</p>
+    <p>The other line to read is distillate stocks. The last complete data, for the week ending 28 August, had distillate inventories down 2.2 million barrels and about 14 per cent below the five-year average, with crude at 428.9 million barrels — 1 per cent above its five-year average. Tight distillate against comfortable crude is the shape that produces exactly the diesel spike the PPI just recorded.</p>
+    <p class="btl"><b>Below the line because</b> it is two and a half hours in the future. Reporting a print before it exists is how this brief got the diesel record wrong once already.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.eia.gov/petroleum/supply/weekly/schedule.php">EIA release schedule</a> &middot; <a href="https://ir.eia.gov/wpsr/wpsrsummary.pdf">WPSR summary</a> &middot; <a href="2026-09-09b.html">the correction, 9 Sep</a></p>
+  </div>
+</details>
+
+<details id="a-dividend">
+  <summary><span class="chip">US politics &amp; policy</span> The President told a midterm convention that every US adult would receive a $5,000 &ldquo;Trump Dividend&rdquo; if Republicans hold Congress, and said he would campaign in every state with a Republican running.</summary>
+  <div class="exp">
+    <p>Taken at face value the arithmetic is the story. There are roughly 260 million adults in the United States, so a universal $5,000 payment is on the order of $1.3 trillion — comparable to the entire FY2026 deficit, which stood at $1.4 trillion through June. Against net interest already running near $1 trillion a year and 3.2 per cent of GDP, there is no version of this that is funded from existing receipts.</p>
+    <p>It was said at a campaign event, conditioned on an election outcome, with no bill, no offset and no mechanism. This brief's anti-topics exclude campaign tactics and speculation about what someone might do, and on its face this is both.</p>
+    <p>What would move it above the line is a legislative vehicle — a bill number, a reconciliation instruction, a CBO score. Absent that, the useful information is not the promise but what it signals about the administration's appetite for unfunded transfers heading into a fiscal year that already needs $739 billion of net new borrowing this quarter.</p>
+    <p class="btl"><b>Below the line because</b> it is a conditional campaign promise with no instrument behind it, and the brief does not cover campaign tactics.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.democracynow.org/2026/9/10/headlines">Democracy Now headlines</a> &middot; <a href="https://kansaspublicradio.org/daily-headlines/2026-09-10/headlines-for-thursday-september-10-2026">Kansas Public Radio</a> &middot; <a href="2026-09-07.html#treasury-buybacks">the debt arithmetic, 7 Sep</a></p>
+  </div>
+</details>
+
+<details id="a-gao-usss">
+  <summary><span class="chip">US politics &amp; policy</span> A second GAO report finds Secret Service personnel are not required to document their reasoning when they decide an incident did not warrant a policy review.</summary>
+  <div class="exp">
+    <p>GAO-26-108455 was published and released on 3 September. The finding is narrow and procedural: when Secret Service staff assess an incident and conclude it does not meet the threshold for a formal review, there is no requirement that the rationale be written down. That means the decisions that produce no review also produce no record, so the population of incidents judged not to warrant scrutiny cannot itself be scrutinised — internally or by an inspector general.</p>
+    <p>It is the same structural defect this brief noted in the news-brief pipeline's own failure mode: a process that can only report on the cases it acts upon is blind to the cases it declines. Worth noting the report predates and is unrelated to any specific incident.</p>
+    <p class="btl"><b>Below the line because</b> it is a documentation-practice finding with no event attached, and the consequence is second-order until an incident tests it.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.gao.gov/reports-testimonies">GAO reports and testimonies</a></p>
+  </div>
+</details>
+
+<details id="a-gao-bases">
+  <summary><span class="chip">US politics &amp; policy</span> A third GAO report finds the military services' methods for costing intergovernmental support agreements &mdash; base utilities, road maintenance, services shared with local government &mdash; do not meet best practices, casting doubt on the savings claimed for them.</summary>
+  <div class="exp">
+    <p>GAO-26-108092 was published 3 September and released 9 September. Intergovernmental support agreements let a military installation buy, provide or share services with a state, local or tribal government, usually on the argument that it is cheaper than doing it in-house or contracting commercially. GAO found the services' processes for calculating and overseeing those financial benefits fall short of cost-estimating best practices, which means the cost-benefit figures used to justify the agreements are of questionable use.</p>
+    <p>The reason to note it is that this is a mechanism, not a programme: these agreements are a standing tool used across installations, so a defect in how their savings are estimated propagates quietly through a lot of individually small decisions.</p>
+    <p class="btl"><b>Below the line because</b> the dollar amounts are unquantified in the report and the finding is about estimation method rather than a discovered loss.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.gao.gov/reports-testimonies">GAO reports and testimonies</a></p>
+  </div>
+</details>
+
+<details id="a-cra">
+  <summary><span class="chip">US politics &amp; policy</span> Monday's student-visa rule is designated a major rule under the Congressional Review Act, which puts it on an expedited Senate track for a disapproval resolution.</summary>
+  <div class="exp">
+    <p>The CRA lets Congress overturn a rule by joint resolution, and for major rules the Senate procedure is privileged — it cannot be filibustered and moves on a defined clock from the date the rule is submitted. That is the only non-judicial route to stopping the rule now that the effective date is five days away.</p>
+    <p>In practice it is close to theoretical for an administration's own rule, because a joint resolution still needs the President's signature or a veto override. Its real value is procedural: the designation means the rule sits on a congressional calendar, which gives universities and their delegations a venue to be heard even where no court is available. The disapproval window is also finite, so if it is going to be used, it is used soon.</p>
+    <p class="btl"><b>Below the line because</b> it is a mechanism attached to the lead story above rather than a development of its own, and no resolution has been introduced.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.federalregister.gov/documents/2026/07/17/2026-14439/establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-for-nonimmigrant">The rule, Federal Register 2026-14439</a> &middot; <a href="#dhs-duration-status">the lead story</a></p>
+  </div>
+</details>
+
+<details id="a-iran">
+  <summary><span class="chip">Geopolitics</span> Iranian media report several explosions in coastal areas of southern Iran, after the IRGC warned it would target oil tankers in retaliation for US strikes.</summary>
+  <div class="exp">
+    <p>This continues the exchange this brief led on this morning, in which the US destroyed five Iranian tankers and Brent crossed $100. The new element is the location — coastal southern Iran rather than shipping in the strait — and the sequencing, with the IRGC's tanker threat preceding rather than following the reported strikes.</p>
+    <p>Reported by Iranian state-adjacent media and not independently confirmed at the time of writing, which is why it is here rather than above. Iran has a standing incentive to publicise strikes on its territory and the US has not characterised them.</p>
+    <p>The US channel is the one this brief cares about: whether transit counts and war-risk premiums move again. Neither has been re-read since this morning.</p>
+    <p class="btl"><b>Below the line because</b> it is unconfirmed, and because a further exchange in a running conflict is not movement unless it changes a price or a transit count.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://kansaspublicradio.org/daily-headlines/2026-09-10/headlines-for-thursday-september-10-2026">Kansas Public Radio headlines</a> &middot; <a href="2026-09-10.html#oil-tankers">this morning's story</a></p>
+  </div>
+</details>
+
+<details id="a-fl-vax">
+  <summary><span class="chip">Florida &amp; Tampa Bay</span> Comment on Florida's school vaccine rule closes Monday, 14 September. Physicians have formally demanded a hearing; none has been granted.</summary>
+  <div class="exp">
+    <p>Rule 64D-3.046 would make four childhood vaccines optional for school attendance by rule rather than by statute. The Florida Chapter of the American Academy of Pediatrics filed a response to the notice of proposed rule requesting a public hearing, which this brief covered this morning. Under Florida's rulemaking procedure a hearing request from an affected party is normally granted, but the agency has not scheduled one and the comment period ends Monday.</p>
+    <p>If it closes without a hearing the next step is adoption, and the challenge route becomes an administrative proceeding at DOAH rather than participation in the rulemaking. That is a materially worse position for the objectors, which is why the absence of a scheduled hearing is the thing to watch rather than the comment count.</p>
+    <p class="btl"><b>Below the line because</b> nothing changed today &mdash; the deadline is Monday, and it led this morning.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="2026-09-10.html#fl-vaccine-rule">this morning's story</a> &middot; <a href="2026-09-07.html#fl-vaccine-rule">original, 7 Sep</a></p>
+  </div>
+</details>
+
+<details id="a-sped">
+  <summary><span class="chip">US politics &amp; policy</span> The head of the Education Department's special education office has told staff she is resigning after less than four months in the role.</summary>
+  <div class="exp">
+    <p>The office administers the Individuals with Disabilities Education Act, which is the funding and compliance mechanism behind special education services in every US school district. A vacancy at its head is not itself a policy change, and this brief's anti-topics exclude personnel churn with no policy effect.</p>
+    <p>It is here rather than dropped because of the tenure: under four months suggests either a disagreement or a role that has become unworkable, and either would be a leading indicator for the IDEA guidance and enforcement posture that districts plan around. Neither has been established, and I found no statement of reasons.</p>
+    <p class="btl"><b>Below the line because</b> it is personnel, and the policy consequence is inferred rather than demonstrated. If IDEA guidance changes, that is the story.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.justsecurity.org/156837/early-edition-september-10-2026/">Early Edition, 10 September</a></p>
+  </div>
+</details>
+
+</div>
+
+<div class="fb" style="border-top:1px solid var(--rule); padding-top:1rem; margin-top:1.5rem;">
+  <p><b>One question about this whole section:</b> were the right things ranked below the line?</p>
+  <label><input type="radio" name="fb-also" value="right"> About right</label>
+  <label><input type="radio" name="fb-also" value="promote"> Some of these should have led</label>
+  <label><input type="radio" name="fb-also" value="drop"> Some should have been dropped entirely</label>
+  <label><input type="radio" name="fb-also" value="fewer"> Fewer short items, more depth up top</label>
+</div>
+
+<button class="submit" id="send">Send my feedback &rarr;</button>
+<p class="sources" style="text-align:center">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+
+<footer>
+  <h4>Sources checked this run &mdash; 13, of which 8 outside the watchlist</h4>
+  <p><b>Pointed at by a thread (5):</b> BLS statistical calendar (PPI) &middot; Supreme Court emergency-applications docket &middot; EIA weekly petroleum schedule &middot; Florida DOH arbovirus surveillance &middot; Fed-path market pricing.</p>
+  <p><b>Not pointed at by any thread (8):</b> FERC newsroom and docket RM26-4 &middot; GAO reports and testimonies &middot; Federal Register daily issue (Vol 91 No 174) &middot; DHS/USCIS rulemaking &middot; Census Bureau proposed rulemaking &middot; FTC and DOJ Antitrust press &middot; general wire and Just Security Early Edition &middot; semiconductor logistics trade press.</p>
+
+  <h4>The negative check</h4>
+  <p><i>What is the biggest story today that is not on my list, and why is it not?</i> The Census Bureau rulemaking. It was not on a beat or a thread, and it leads this issue. That is the check working as intended rather than producing a footnote. The second candidate was the DHS visa rule, also off-list, also leading.</p>
+
+  <h4>Threads swept as a by-product, no trigger fired</h4>
+  <p>Section 338 tariffs (no CIT complaint) &middot; USPS mail ballot rule (no order on 26A305; the Court acted on Missouri only) &middot; birthright citizenship (nothing on the emergency docket) &middot; Treasury buybacks (next operation not noticed) &middot; bank stablecoin consortium &middot; AI preemption litigation &middot; AI gated-capability tiers &middot; frontier lab safety disclosures &middot; state AI legislation &middot; Florida Amendment 3 &middot; Waymo Tampa Bay &middot; AARO records contract &middot; central bank gold custody &middot; US&ndash;China AI talks &middot; Pasco and Pinellas budgets (hearings 16 and 18 Sep) &middot; Florida emergency management funding &middot; UAP disclosure implementation.</p>
+
+  <h4>Could not reach</h4>
+  <p>federalregister.gov blocked direct fetch and redirected to an unblock page, so the DHS rule was stood up from the rule's own text via institutional summaries plus the Federal Register listing &mdash; the effective date and mechanics are consistent across five independent institutional readings, but I did not read the preamble myself. Florida DOH week 35 still not published, four issues running. FTC's 31 August complaint with 22 state attorneys general could not be identified specifically enough to report.</p>
+
+  <h4>About this issue</h4>
+  <ul>
+    <li>Second edition for 10 September, run interactively at 09:40 EDT as a format demonstration. The 05:00 scheduled run did not fire; the morning edition came from a manual dispatch at 06:25 and stands unchanged.</li>
+    <li>Nine lead stories, nine short items. Six leads are subjects with no story in the last three issues. Three are follow-ups, under the cap of four.</li>
+    <li>First issue produced under the source-led gather. It deliberately overrides the rule that a same-day second edition carries only the delta.</li>
+    <li>Every quotation is under fifteen words and attributed; everything else is paraphrase.</li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n  → **" + i.value + "**");
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on **Issue No. 6b — 10 September 2026, second edition**\n\n" + lines.join("\n")
+      + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-09-10b")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
