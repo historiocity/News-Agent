@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Friday, 11 September 2026</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  figure { margin:1.1rem 0 .6rem; }
+  figcaption { color:var(--muted); font-size:.84rem; margin-top:.3rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  footer h4 { color:var(--fg); font-size:.95rem; margin:1.4rem 0 .3rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list summary .chip { vertical-align:.05rem; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 7 &middot; Friday, 11 September 2026</div>
+  <h1>Diesel crossed $6, the Houthis closed the other chokepoint, and the European Central Bank raised rates into a bond rout</h1>
+  <p class="sub">Nine stories at length, eleven in brief. Published before the 8:30 CPI print, which is therefore not in it.</p>
+  <p class="prov"><b>25 sources checked, 14 of them outside the watchlist</b> (one, GAO, returned 403 and could not be read). Five lead stories are on subjects with no story in the last three issues; four continue threads, at the cap. <b>Biggest story today that was not on my list:</b> the Houthi seizure of Perim Island, completing their hold on the Bab el-Mandeb. This brief has run a Hormuz thread for a week and had nothing at all on the other end of the Arabian Peninsula. It leads.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#bab-el-mandeb">The Houthis took the island in the middle of the Bab el-Mandeb, and now hold both sides of it</a></li>
+    <li><a href="#diesel-six">Diesel passed $6 a gallon this morning, and the government's own print already set a record</a></li>
+    <li><a href="#buyback-ecb">Treasury declined to fill its own buyback, and the reason was partly in Frankfurt</a></li>
+    <li><a href="#anthropic-threat">A Yemeni weapons cell used Claude to write missile guidance software, its maker says</a></li>
+    <li><a href="#ca-ai-signed">California has enacted the first AI audit laws in the country, with the labs' blessing</a></li>
+    <li><a href="#dhs-grace-period">DHS proposed this morning to end the 60 days an H-1B holder gets after losing a job</a></li>
+    <li><a href="#iran-aviation">The US grounded 27 Iranian airlines on Monday, and the wind-down closes on the 23rd</a></li>
+    <li><a href="#section-338-bans">Canada's whisky, cheese and motorcycles stop entering the United States on 29 September</a></li>
+    <li><a href="#fl-pinellas-schools">Florida &amp; Tampa Bay: Pinellas wants to close seven schools, and the reason is the birth rate</a></li>
+  </ol>
+  <p class="also"><a href="#also-today">Also today (11)</a> &mdash; ranked below the line, each one opens.</p>
+</nav>
+
+<article id="bab-el-mandeb">
+  <h2>The Houthis took the island in the middle of the Bab el-Mandeb, and now hold both sides of it</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Houthi fighters crossed to Perim Island &mdash; Mayyun, in Arabic &mdash; after Yemeni government forces withdrew from it. Perim sits in the narrowest part of the Bab el-Mandeb and splits the channel into two shipping lanes. Holding it, together with the mainland town of Dhubab directly opposite, puts the group on both banks of the strait.</p>
+  <p>It is the end of a week-long coastal advance. On Thursday the Houthis took the Red Sea port of Mocha and Zuqar Island, by rocket fire and a ground assault delivered in small boats. Yemen's Presidential Leadership Council has asked for international intervention; its chairman, Rashad al-Alimi, framed the "restoration of state control over its territory, ports and waters" as an Egyptian and international interest, not only a Yemeni one.</p>
+  <p>The American channel is a map. Hormuz and the Bab el-Mandeb together carry more than a quarter of seaborne crude and petroleum products, and roughly a third of world container traffic passes through the Red Sea. Both are now contested at once, by the same coalition, while the US Navy is committed at the other end of the peninsula. That is the reason <a href="#diesel-six">diesel</a> is where it is.</p>
+  <p><b>What to watch:</b> whether the Joint War Committee relists the area or underwriters reprice it; Bab el-Mandeb transit counts, already down about 15 per cent; Suez volumes, which have been unusually high; and whether the US responds militarily while fighting Iran.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; does holding Perim mean controlling the strait?</span>
+    <p><b>What is disputed.</b> A characterisation, not a fact. Several outlets say the Houthis have "completed their takeover of the strait." Others say only that they can now threaten it. Nobody disputes that the island changed hands.</p>
+    <p><b>Why they differ.</b> Two different meanings of control are in play. Militarily, the claim is sound: artillery and short-range weapons on Perim and Dhubab reach vessels in both lanes, which is a capability the group did not have from inland missile and drone launchers alone. Legally and practically, the strait is not closed &mdash; ships are still transiting, the channel is wide enough that occupation of the island is not occupation of the water, and a chokepoint is shut by insurers and shipowners deciding not to sail, not by who stands on the rocks. The stronger claims come from outlets summarising the military position; the narrower ones from shipping and wire desks that watch transit data.</p>
+    <p><b>What it means for you.</b> Read this as a repricing event rather than a closure. The observation that will settle it arrives within days and is mundane: war-risk premiums for Bab el-Mandeb transits, which stood at about 0.5 per cent of hull value before this week against 0.1 per cent for the Saudi Red Sea coast, and the weekly transit count. If premiums jump and transits fall, the strait is effectively controlled whatever the legal position. If both hold near current levels, the seizure is a position, not yet a blockade. One date discrepancy worth knowing: at least one outlet dates the seizure "Friday, September 10," which is not a date &mdash; the 10th was Thursday. The reporting is published 11 September and describes a withdrawal the day before.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; why two chokepoints at once is a different problem from one</summary>
+    <div class="exp">
+      <p>The Strait of Hormuz and the Bab el-Mandeb are not substitutes for each other and they are not independent either. Hormuz is the only sea exit from the Gulf: there is no way around it, which is why a threat there prices crude directly. The Bab el-Mandeb is the southern gate of the Red Sea, and it does have an alternative &mdash; the long way round the Cape of Good Hope. That alternative is what made the 2024 Red Sea crisis a freight-cost event rather than a supply event. Cargo still arrived; it arrived later and dearer.</p>
+      <p>What makes this week different is that the two are being squeezed simultaneously by actors on the same side. A cargo leaving the Gulf has to pass Hormuz; if it is bound for Europe it then faces a choice between the Red Sea and an extra two to three weeks around Africa. Pressure on both raises the cost of the same voyage twice. And the product most exposed is the one already setting records: roughly 3.6 million barrels a day of refined products move north through the Red Sea toward Europe, with another 2.6 million heading the other way to Asia. Diesel is the marginal barrel in that flow.</p>
+      <p>The second-order effect to watch is the Suez Canal, which has an odd position here. Suez transits have recently run at their highest since the start of 2024, partly because Saudi traffic has been rerouted northbound. Egypt's canal revenue depends on the Red Sea being usable. If Perim changes underwriters' minds, Egypt loses income at the same time its food import bill rises with freight. That is a fiscal problem for a country the United States underwrites, and it is the channel by which this reaches Washington as something other than a naval question.</p>
+      <p>On the military side, the significant detail is not the island but the withdrawal. Government forces left; they were not defeated on Perim. A coastal advance that proceeds by other people declining to fight is fast and cheap, and it is also reversible in principle and very hard to reverse in practice, because the force that would have to do the reversing is the one that just walked away. Washington has threatened action if the Houthis block shipping, but it is fighting Iran with the same ships and aircraft, and a second front on the Red Sea coast is a capacity question before it is a policy one.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.euronews.com/2026/09/11/houthis-seize-yemeni-island-in-bab-el-mandeb-taking-control-of-the-strait">Euronews, 11 Sep</a> &middot;
+    <a href="https://www.cnn.com/2026/09/10/middleeast/houthis-capture-mocha-red-sea-strait-intl">CNN on the capture of Mocha</a> &middot;
+    <a href="https://thisisbeirut.com.lb/news/politics/houthis-seize-key-red-sea-island-complete-takeover-of-bab-al-mandab-area">This Is Beirut</a> &middot;
+    <a href="https://www.siasat.com/houthis-seize-perim-island-tighten-grip-on-bab-el-mandab-area-3540353/">Siasat</a> &middot;
+    <a href="https://www.lloydslistintelligence.com/resources/blog/red-sea-brief-3-september-2026">Lloyd's List Intelligence Red Sea brief on transits</a> &middot;
+    <a href="https://tankermap.com/analytics/straits/bab-el-mandeb">Bab el-Mandeb tanker transits</a>
+  </p>
+  <div class="fb" data-id="bab-el-mandeb">
+    <p>This came out of the negative check, not a beat sweep. Open a thread on it?</p>
+    <label><input type="radio" name="bab-el-mandeb" value="open"> Yes &mdash; track it alongside Hormuz</label>
+    <label><input type="radio" name="bab-el-mandeb" value="merge"> Merge it into the Hormuz thread as one chokepoint story</label>
+    <label><input type="radio" name="bab-el-mandeb" value="price-only"> Only when it moves a US price</label>
+  </div>
+</article>
+
+<article id="diesel-six">
+  <h2>Diesel passed $6 a gallon this morning, and the government's own print already set a record</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">Primary source</span>
+    <span class="chip">Follow-up</span>
+  </div>
+  <p>AAA's national average for diesel is <b>$6.0556</b> this morning, the first time that series has been above $6. It was $5.9773 yesterday, $5.8500 a week ago and $3.7053 a year ago &mdash; up 63 per cent over twelve months.</p>
+  <p>The government's number arrived yesterday afternoon and settles the question this brief has been chasing for four issues. EIA's weekly on-highway diesel price for the week ending 7 September is <b>$5.967</b>. That clears the 2026 high of $5.652 set on 24 August, and it clears the all-time record of $5.810 set in the week of 20 June 2022. The official series now has a record too, not just the private pump survey. Four weeks earlier it was $5.257 &mdash; a 13.5 per cent rise in a month. Gasoline, by contrast, went from $4.071 to $4.157 over the same period.</p>
+  <p>Crude did not cooperate with the headline. Brent is around $104.29 this afternoon, down about 3 per cent on the day, though still up roughly 9 per cent on the week; WTI is near $99.59. Diesel set a record on a day oil fell.</p>
+  <p><b>What to watch:</b> this morning's CPI at 8:30, and specifically whether diesel shows up outside the energy line &mdash; in food-at-home and transport services; distillate inventories, last at about 104.2 million barrels with East Coast stocks at 19.3 million; and the dissent column on the 16th.</p>
+  <figure>
+    <svg viewBox="0 0 400 158" width="100%" height="158" role="img" aria-label="EIA weekly US on-highway diesel price: $5.257 on 10 August, $5.454 on 17 August, $5.652 on 24 August, $5.599 on 31 August, $5.967 on 7 September. The previous all-time record was $5.810 in June 2022.">
+      <g font-family="Georgia, serif" font-size="10" fill="currentColor">
+        <line x1="45" y1="46.4" x2="392" y2="46.4" stroke="currentColor" stroke-width="1" stroke-dasharray="4 3" opacity="0.55"></line>
+        <text x="45" y="42" opacity="0.75">previous record, June 2022: $5.810</text>
+        <polyline points="55,96.6 135,78.7 215,60.7 295,65.5 375,32.1" fill="none" stroke="currentColor" stroke-width="2"></polyline>
+        <circle cx="55" cy="96.6" r="3.2"></circle>
+        <circle cx="135" cy="78.7" r="3.2"></circle>
+        <circle cx="215" cy="60.7" r="3.2"></circle>
+        <circle cx="295" cy="65.5" r="3.2"></circle>
+        <circle cx="375" cy="32.1" r="4.5"></circle>
+        <text x="55" y="112" text-anchor="middle">5.257</text>
+        <text x="135" y="94" text-anchor="middle">5.454</text>
+        <text x="215" y="76" text-anchor="middle">5.652</text>
+        <text x="295" y="81" text-anchor="middle">5.599</text>
+        <text x="375" y="24" text-anchor="end" font-size="12" font-weight="bold">5.967</text>
+        <line x1="45" y1="128" x2="392" y2="128" stroke="currentColor" stroke-width="1" opacity="0.45"></line>
+        <text x="55" y="143" text-anchor="middle" opacity="0.7">10 Aug</text>
+        <text x="135" y="143" text-anchor="middle" opacity="0.7">17 Aug</text>
+        <text x="215" y="143" text-anchor="middle" opacity="0.7">24 Aug</text>
+        <text x="295" y="143" text-anchor="middle" opacity="0.7">31 Aug</text>
+        <text x="375" y="143" text-anchor="middle" opacity="0.7">7 Sep</text>
+      </g>
+    </svg>
+    <figcaption>EIA weekly US average on-highway diesel, dollars per gallon, five weeks to 7 September 2026. The dashed line is the previous record. This is the official series, not AAA's daily pump survey.</figcaption>
+  </figure>
+  <div class="div">
+    <span class="t">Divergence &mdash; how can diesel set a record on a day crude falls?</span>
+    <p><b>What is disputed.</b> Not prices, which are published. The disagreement is about what diesel is currently measuring. Coverage pinned to the Gulf conflict treats the record as an oil story. Coverage from freight and refining treats it as a distillate story that the conflict aggravated rather than caused.</p>
+    <p><b>Why they differ.</b> Mostly vantage, and partly timing. Crude traded off today on demand worries, which is a forward-looking market repricing a war premium. Retail diesel is a backward-looking average of pumps: AAA's daily number embeds wholesale costs from days ago, and EIA's is a weekly survey for a week that ended on 7 September. So a fall in Brent today and a record at the pump today are not in conflict; they are different clocks. Underneath that, the distillate position is genuinely tight in its own right &mdash; total stocks around 104 million barrels, East Coast stocks at 19.3 million, refinery utilisation that hit 98 per cent in late August, which is a rate you cannot raise further. Tight product and comfortable crude is exactly the configuration that lets diesel rise while oil falls.</p>
+    <p><b>What it means for you.</b> Do not expect the pump to follow Brent down quickly, and do not read a softer crude tape as relief. The reading the evidence supports is that diesel is being set by refining and inventory, not by the headline barrel, which means it unwinds on a refining timetable &mdash; weeks at best, and maintenance season is starting. The observation that settles which story you are in arrives at 8:30 this morning: if CPI shows the move only in the energy component, diesel is still a fuel price. If it is visible in food-at-home and in transport services, it has become the general price level, and the committee meeting on the 16th has far less room than a composition argument would give it. Fuel is reckoned at roughly 15 to 30 per cent of the delivered cost of food, so that is not a subtle channel.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://gasprices.aaa.com/">AAA Fuel Prices, 11 Sep (primary)</a> &middot;
+    <a href="https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm">EIA weekly retail price series (primary)</a> &middot;
+    <a href="https://www.eia.gov/petroleum/supply/weekly/">EIA Weekly Petroleum Status Report</a> &middot;
+    <a href="https://tradingeconomics.com/commodity/brent-crude-oil">Brent and WTI screens</a> &middot;
+    <a href="https://abcnews.com/Business/wireStory/us-diesel-prices-soar-past-6-gallon-deepening-strain-for-hauling-everyday-goods-136359048">AP wire on the $6 crossing</a> &middot;
+    <a href="2026-09-10.html#oil-tankers">prior framing, 10 Sep</a> &middot;
+    <a href="2026-09-09b.html#eia-calendar">the date correction, 9 Sep</a>
+  </p>
+  <div class="fb" data-id="diesel-six">
+    <p>You asked to keep the military story and the price story as one causal chain. Today they are separate stories, because the new military fact is at a different strait. Right call?</p>
+    <label><input type="radio" name="diesel-six" value="split-ok"> Yes &mdash; new geography earns its own story</label>
+    <label><input type="radio" name="diesel-six" value="one-story"> No &mdash; one story, however many straits</label>
+    <p>The chart: you asked for more of these.</p>
+    <label><input type="radio" name="diesel-six-chart" value="good"> This is the right kind &mdash; official series, record line</label>
+    <label><input type="radio" name="diesel-six-chart" value="simpler"> Simpler &mdash; one number, bigger</label>
+  </div>
+</article>
+
+<article id="buyback-ecb">
+  <h2>Treasury declined to fill its own buyback, and the reason was partly in Frankfurt</h2>
+  <div class="meta">
+    <span class="chip">US debt &amp; fiscal</span>
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">Primary source</span>
+    <span class="chip">Follow-up</span>
+  </div>
+  <p>Yesterday this brief named two observations that would decide whether Treasury's enlarged buyback was a liquidity measure or an admission. Both arrived, and they pointed in opposite directions. Saying so is the point of having named them.</p>
+  <p>The buyback went badly. Holders offered $10.5 billion in the 10-to-20-year sector against a $6 billion ceiling, and Treasury bought <b>$5.19 billion</b> &mdash; declining to fill its own enlarged operation. That is the third time in 53 long-end operations since the programme restarted in 2024 that officials have taken less than the maximum. The 10-year yield rose 11 basis points after it, to <b>4.95 per cent</b>, the highest since 2023.</p>
+  <p>The auction went well. The $22 billion 30-year stopped at 5.308 per cent against a when-issued level of 5.335 &mdash; through the screws by 2.7 basis points, not a tail. Bid-to-cover was 2.61 against a 2.38 average, indirect bidders took 79.5 per cent, and primary dealers were left with 2.2 per cent, an unusually small share.</p>
+  <p>And the third thing, which most US coverage left out: the European Central Bank raised rates the same day, its deposit rate to 2.5 per cent, unanimously. Christine Lagarde called it "a no brainer." German ten-year yields are at their highest since 2011, Japan's above 3 per cent for the first time in about thirty years, UK thirty-years near levels last seen in 1998.</p>
+  <p><b>What to watch:</b> the next long-end operation's offer volume; whether the $4 billion floor survives the 4 November refunding; and the 30-year either side of 5.2 per cent.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; did the buyback backfire, or did it happen during something else?</span>
+    <p><b>What is disputed.</b> Causation. Headlines have it that Treasury's buyback "backfired" and pushed yields up 11 basis points. The alternative account is that a global bond repricing was under way and the operation is being credited with a move it did not cause.</p>
+    <p><b>Why they differ.</b> Reach for the mundane explanation first, and here it is a clock. The ECB decision, its press conference and the US operation all landed inside the same few hours, and a market-desk note written at 3pm has one instrument in front of it and a wire headline to write. The backfire story is not wrong about the sequence &mdash; yields did extend their rise after the results posted &mdash; but the same session repriced bunds, gilts and JGBs, none of which have any exposure to an American buyback. A central bank that has now hiked twice because an oil shock is feeding inflation is a sufficient cause for a global long-end selloff on its own.</p>
+    <p><b>What it means for you.</b> Treat the buyback as a symptom and the ECB as a cause, but do not let Treasury off on the specific point. The damaging fact is not the yield move, it is the <em>decision</em>: offers exceeded the ceiling and Treasury still bought less than it had authorised itself to buy, which means it looked at the prices holders wanted and declined to pay them. That is a choice about value, not a shortfall of supply, and it is the opposite of the reassurance the enlarged size was meant to provide. One honest caveat on this brief's own number: the roughly 10-to-1 offer-to-accept ratio it has cited for long-end operations was measured at a $2 billion size and does not compare cleanly to $10.5 billion against a $6 billion cap. The better comparison is Wednesday's cash-management buyback, which took $12.5 billion of $28.0 billion offered. What would settle the question is the next long-end operation: if offers come in near $10 billion again and Treasury fills to the cap, this was pricing. If offers keep shrinking, it is demand.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; two central banks, one curve, and why a strong auction and a weak buyback are not contradictory</summary>
+    <div class="exp">
+      <p>Start with why the 30-year auction and the buyback can disagree without either being wrong. An auction sells new paper at whatever yield clears; a buyback asks holders to hand back old paper at a price Treasury sets by accepting or rejecting offers. These are different markets in the same instrument. New thirty-year bonds are the most liquid point on the long end and the natural home for a foreign reserve manager who wants duration at 5.3 per cent; 79.5 per cent to indirect bidders is that buyer showing up. Off-the-run bonds maturing between 2037 and 2046 are the illiquid middle of the curve, held by people who want out and will only leave at a price. Strong demand for the former and a disagreement about price on the latter is an entirely coherent picture, and it is close to the narrow reading Treasury itself has offered.</p>
+      <p>The dealer number deserves a moment. Primary dealers took 2.2 per cent of the auction against an 11.5 per cent average. Dealers are the residual buyer: they absorb what nobody else wants, so a tiny dealer share normally means genuine end demand. But it also means dealer balance sheets were not expanded by this auction, and dealer balance-sheet capacity is exactly what the buyback programme exists to relieve. So the two results are consistent in a less comfortable way than the headline bid-to-cover suggests: investors wanted new long bonds, and nobody wanted to warehouse old ones.</p>
+      <p>Now the ECB, which is the part a US-only reading misses. Europe is raising rates because the same oil shock driving <a href="#diesel-six">American diesel</a> is driving euro-area inflation, and Lagarde said the Governing Council did not discuss where rates go next. Unanimity plus no forward guidance is about as hawkish as that institution gets. For an American holder of Treasuries the consequence is mechanical: as bund yields rise, the hedged return on buying US duration instead of European duration falls, and the marginal foreign buyer of the long end gets less marginal. That channel does not show up in any domestic indicator. It shows up as a 10-year at 4.95 per cent on a day with no American news in it.</p>
+      <p>What this does to the fiscal arithmetic is the part worth holding. CBO has net interest at about $1.0 trillion in fiscal 2026, rising to $2.1 trillion by 2036, with the 2026 deficit near $1.9 trillion and debt held by the public passing 101 per cent of GDP this year. Those projections are built on an interest-rate path. Every basis point of permanent increase at the long end raises the cost of the refinancing that has to happen regardless of what Congress does, and Treasury's response so far &mdash; buying in long bonds with cash raised in bills &mdash; shortens the average maturity of the debt into a meeting where the Fed may raise the front end. Protecting the long end has a price, and the price is paid in the bill market.</p>
+      <p>One date: 4 November, the quarterly refunding, when the $4 billion long-end floor set on 19 August is reset, raised or dropped. After yesterday, that decision is more informative than anything said between now and then.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://home.treasury.gov/news/press-releases/sb0607">Treasury announcement of the enlarged sizes, 19 Aug (primary)</a> &middot;
+    <a href="https://investinglive.com/news/us-treasury-sells-22-billion-of-30-year-bonds-at-a-high-yield-of-5-308/">30-year auction statistics</a> &middot;
+    <a href="https://www.bloomberg.com/news/articles/2026-09-10/treasury-buys-less-than-maximum-in-longer-debt-buyback-operation">Bloomberg on the $5.19bn take and the $10.5bn offered</a> &middot;
+    <a href="https://www.bloomberg.com/news/articles/2026-09-10/ecb-lifts-rates-for-second-time-as-iran-war-drives-inflation">Bloomberg on the ECB decision</a> &middot;
+    <a href="https://www.handelsblatt.com/">Handelsblatt on the European bond selloff</a> &middot;
+    <a href="https://www.cbo.gov/publication/61882">CBO Budget and Economic Outlook 2026&ndash;2036</a> &middot;
+    <a href="2026-09-10.html#buybacks">prior framing, 10 Sep</a>
+  </p>
+  <div class="fb" data-id="buyback-ecb">
+    <p>Yesterday you said to keep this daily while operations are enlarged. Still right, now that the story has partly moved to Europe?</p>
+    <label><input type="radio" name="buyback-ecb" value="daily"> Keep it daily</label>
+    <label><input type="radio" name="buyback-ecb" value="refunding"> Wake on the 4 November refunding and big moves only</label>
+    <label><input type="radio" name="buyback-ecb" value="widen"> Widen it &mdash; cover the global long end, not just Treasury</label>
+  </div>
+</article>
+
+<article id="anthropic-threat">
+  <h2>A Yemeni weapons cell used Claude to write missile guidance software, its maker says</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Geopolitics</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Disclosure first: this brief is written using a model made by the company that published this report. The primary document is linked; read the rest with that in mind.</p>
+  <p>Anthropic published a threat-intelligence report covering December 2025 to August 2026. The item with the most weight in it is a Yemen-based weapons engineering cell, reported as tied to the Houthis, which used Claude Code in place of software engineers to write guidance, navigation and control code &mdash; integrating an open-source autopilot with a phone-class flight computer, tuning control loops, building firmware and running flight simulations. The programmes named include a multi-stage ballistic missile with a stated range above 2,000 kilometres and an "R2000" set with a hypersonic glide variant. The company says safeguards blocked many requests but not all, that the operators split tasks across sessions to obscure intent, and that it found no evidence a working weapon was fielded.</p>
+  <p>The same report documents a Russian espionage operation with the signatures of Midnight Blizzard that automated nearly its whole workflow against more than twenty organisations &mdash; stealing drone-manufacturer software kits and over 300,000 national identity records &mdash; and Chinese activity run out of Hunan against roughly fifty organisations. Six operations involving weapons, intelligence or procurement were disrupted across Yemen, China and Russia.</p>
+  <p>Separately, it alleges Chinese labs distilled Claude at scale: about 200 million exchanges across five campaigns, 151 million attributed to Alibaba between May and July, and roughly 300,000 Moonshot customer requests relayed to Claude in ten days.</p>
+  <p><b>What to watch:</b> whether any government confirms the Yemen findings independently; whether the named Chinese firms respond; and whether this appears in the 24 September Xi visit.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how much weight can a company's report about its own product carry?</span>
+    <p><b>What is disputed.</b> Nothing in the document, because nothing in it has been independently checked. The dispute is about evidentiary status: every outlet carrying this is carrying one company's account of what happened inside its own logs, and coverage splits between reporting it as findings and reporting it as allegations.</p>
+    <p><b>Why they differ.</b> Partly house style, and partly a real asymmetry. There is no second party who could corroborate: the logs are the company's, the accounts are the company's, and the named actors &mdash; a Yemeni weapons cell, Russian intelligence, Chinese AI labs &mdash; are not going to issue rebuttals a newsroom could weigh. Al Jazeera, SCMP and the wires all note the absence of comment from those named. Against that, the incentives are not simply self-serving: a report saying your product helped write missile guidance software is not marketing, and the company has now twice published things that invite regulation. The distillation section is the one to discount most, because there the company is a commercial rival of the firms it is accusing.</p>
+    <p><b>What it means for you.</b> Hold the two halves at different confidence. The misuse findings are specific, dated and technically checkable in principle, and they describe capability that is not in dispute &mdash; the Houthis demonstrably have long-range missiles, and an autopilot on a phone-class computer is a well-documented amateur technique. Believe the shape of it. The distillation findings are a competitive claim with no neutral adjudicator and should be labelled as such until someone other than the accuser produces the evidence. The observation that would settle the first half is a government confirmation or an export-control action naming the same activity; for the second, it is a court filing, where the claims would have to survive discovery. Note also what the report does not say: Anthropic's own systems were not breached &mdash; the stolen credentials were customers'.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; the export-control problem this creates three weeks before Xi's visit</summary>
+    <div class="exp">
+      <p>The American policy apparatus for stopping adversaries from getting advanced computing is built around hardware. Export controls restrict chips, the bill fights in Congress are about Blackwell-class parts, and the enforcement model assumes the thing being controlled is physical, serialised and crosses a border. The misuse half of this report describes something that does not fit that model at all: a weapons cell in Yemen obtaining frontier engineering labour through an API, paying retail, with no hardware in the country. You cannot put an export licence on that transaction in the way the existing statutes contemplate. The control point is a terms-of-service enforcement decision made by a private company, which is precisely the arrangement the administration's AI framework says is adequate and which its critics say is not.</p>
+      <p>The distillation half cuts the other way and is politically more convenient, which is a reason to be careful with it. If Chinese labs are training on frontier American model outputs at the scale alleged &mdash; 151 million exchanges from one campaign &mdash; then the chip controls are leaking at the output layer, and the obvious policy response is to restrict who may access American models, not merely who may buy American chips. That is the gated-capability argument this brief has had an open thread on since 5 September. It would also be a significant commercial win for US labs, which is exactly why a claim of this kind deserves a neutral adjudicator before it becomes a premise of policy.</p>
+      <p>Three weeks of calendar matter here. Xi Jinping is reported due at the White House on 24 September, and Treasury has floated AI safety talks whose date has never been published. A report alleging that three named Chinese firms systematically exfiltrated the reasoning traces of American models, landing two weeks before that meeting, is now part of its furniture whether or not anyone intended it to be. Any Chinese response will be read against it, and any American concession will be read as made in spite of it.</p>
+      <p>The cross-connection within this issue is worth stating plainly, because it is the kind a beat-by-beat reading misses. The same week a report says a Houthi-linked cell used an American AI model to write missile guidance software, the Houthis took the island in the middle of the <a href="#bab-el-mandeb">Bab el-Mandeb</a>. Those are not causally linked on any evidence available &mdash; the report says no fielded weapon was found, and seizing an island does not require guided missiles. But they are the same organisation acquiring two different kinds of reach in the same week, and the policy questions they raise &mdash; who may buy frontier engineering, and who can shut a strait &mdash; are going to be answered by the same government at the same time.</p>
+      <p>One methodological note this brief owes its reader. The company's prior disclosure, covered here on 10 September, rested on a scan of 481 million transcripts whose second-stage adjudication was performed by a model from the same family as the ones under investigation. The same caution applies to this report's negative findings: a claim that nothing worse exists is only as strong as the filter that looked.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.anthropic.com/threat-intelligence-report-september-2026">Anthropic, "Detecting and countering misuse of AI: September 2026" (primary)</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/9/11/anthropic-claims-claude-ai-used-for-missile-projects-global-espionage">Al Jazeera</a> &middot;
+    <a href="https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek/">TechCrunch on the distillation figures</a> &middot;
+    <a href="https://www.scmp.com/news/us/diplomacy/article/3367112/moonshot-deepseek-secretly-routed-user-requests-claude-anthropic-claims">South China Morning Post</a> &middot;
+    <a href="https://www.thenationalnews.com/news/mena/2026/09/11/how-yemeni-rebels-used-anthropics-ai-software-to-design-and-build-guided-weapons/">The National</a> &middot;
+    <a href="2026-09-10.html#anthropic-evals">the 9 September alignment assessment, covered 10 Sep</a>
+  </p>
+  <div class="fb" data-id="anthropic-threat">
+    <p>The disclosure line at the top &mdash; you were asked this on 10 September and did not answer. Asking once more:</p>
+    <label><input type="radio" name="anthropic-threat" value="keep"> Keep it whenever a story touches Anthropic</label>
+    <label><input type="radio" name="anthropic-threat" value="drop"> Unnecessary &mdash; drop it</label>
+    <p>Which half of this report do you want followed?</p>
+    <label><input type="radio" name="anthropic-threat-half" value="misuse"> The misuse findings &mdash; weapons, espionage, influence ops</label>
+    <label><input type="radio" name="anthropic-threat-half" value="distillation"> The distillation claims and the export-control fight</label>
+    <label><input type="radio" name="anthropic-threat-half" value="both"> Both</label>
+  </div>
+</article>
+
+<article id="ca-ai-signed">
+  <h2>California has enacted the first AI audit laws in the country, with the labs' blessing</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Primary source</span>
+    <span class="chip">Follow-up</span>
+  </div>
+  <p>The named trigger on this thread was signatures, and they came two days early. On Wednesday Governor Newsom signed <b>SB 813</b> (McNerney), creating a framework for independent verification organisations to assess AI systems for compliance with state law, and <b>AB 1405</b> (Bauer-Kahan), establishing a state registry of AI auditors with standards for independence and integrity. AB 1405 requires the Government Operations Agency to stand the registry up by 1 January 2029 and bars unregistered persons from conducting covered audits from that date. These are the first statutes in the United States requiring third-party AI audits.</p>
+  <p>On Thursday he signed thirteen more bills on children and technology. The one with a name is <b>SB 1119</b>, "Adam's Law," after Adam Raine: companion-chatbot crisis protocols for suicidal ideation, parental controls, independent child-safety audits and annual risk assessments. <b>SB 867</b> reaches companion chatbots embedded in toys; <b>SB 1276</b> extends child sexual exploitation offences to AI-generated material; <b>AB 1856</b> covers age-verification signals at the application layer.</p>
+  <p>Newsom paired the signings with a demand: the federal government "must step forward with robust, national regulations." Both Anthropic and OpenAI backed the audit bills.</p>
+  <p><b>What to watch:</b> SB 1000 and SB 947, still unsigned with a 30 September deadline &mdash; SB 1000 is the one that removes the million-user threshold and bites on signature; whether the DOJ AI Litigation Task Force names any of these; Colorado's redraft on 23 September.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is industry-backed regulation a win or a capture?</span>
+    <p><b>What is disputed.</b> Significance. One framing is first-in-nation accountability: auditors, a registry, enforceable standards. The other, which at least one outlet put in its headline, is that these are the AI-industry-approved bills &mdash; the ones the labs wanted, signed while the bills they did not want sit unsigned.</p>
+    <p><b>Why they differ.</b> Both descriptions are accurate and they are about different objects. An audit-and-registry regime is genuinely new law and genuinely binding, and it is also the kind of regulation a frontier lab has the least reason to fear: it creates a professional class of verifiers, imposes costs that scale with sophistication, and does not constrain what may be built or shipped. Compare what is not yet signed. SB 1000 would strip the million-monthly-user exemption out of the existing Transparency Act, reaching every startup shipping a generative feature, with an urgency clause so it applies on signature. SB 947 would bar sole reliance on automated systems to fire someone. Those impose duties on conduct rather than on process. The sequencing is not evidence of a bargain &mdash; signing order has mundane causes, and the child-safety package signed a day later is not industry-friendly by any reading &mdash; but the pattern is worth holding until 30 September resolves it.</p>
+    <p><b>What it means for you.</b> Weight the audit laws as real but slow, and the 30 September deadline as the thing that matters. AB 1405's registry does not bind until 2029, which is a long time in this industry and long enough for a preemption suit or a federal statute to overtake it; SB 1000, by contrast, would be operative the day it is signed. So the useful reading of Wednesday is not "California acted" but "California has established the institutional machinery and has nineteen days left to decide whether to regulate conduct." What would settle the capture question is simply the governor's remaining decisions. If SB 1000 and SB 947 are vetoed while the audit framework stands, the critical reading is vindicated. If they are signed, it was sequencing.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; why a state registry matters more than it looks, and where preemption collides with it</summary>
+    <div class="exp">
+      <p>The reason an auditor registry is more consequential than its dull name suggests is that it answers a question nobody else has answered: who is allowed to say an AI system complies with anything. Every AI statute now on the books, state or foreign, eventually requires somebody to assess a system against a standard. In practice that work is done by a handful of nonprofits and consultancies operating on contract, with no accreditation, no conflict-of-interest rules and no licence to lose. AB 1405 creates the licence. Once a state can strike an auditor from a register, the auditor's incentive shifts from pleasing the client to keeping the registration, which is the mechanism that makes financial auditing work at all &mdash; imperfectly, but it is the mechanism.</p>
+      <p>That is also why the Anthropic connection in the adjacent <a href="#anthropic-threat">story above</a> is not a coincidence worth glossing over. That company has just contracted METR, an independent evaluation nonprofit, for an eight-week investigation with access beyond an incident window. SB 813 would make that kind of arrangement a recognised institutional category rather than a voluntary gesture by one firm. A lab that has already chosen to buy an outside audit has an obvious interest in everyone being required to, and an equally obvious interest in the standard being one it already meets. Neither of those makes the law worse. It does mean the law's supporters and its subjects are the same people, and a reader should not need a disclosure line to notice that.</p>
+      <p>The preemption collision is the live federal question. Congress declined to preempt state AI law twice &mdash; in the reconciliation bill and again in the NDAA. The administration's response was an executive order in December 2025 creating a DOJ AI Litigation Task Force to sue states, and a policy framework in March urging Congress to try again. As of 1 July, states had enacted 109 AI statutes and 28 data-centre statutes this year. Until a court rules, state law is the law, and California's is the operative one because no company builds a separate product for one state. What is novel about the audit laws as preemption targets is that they regulate auditors rather than AI developers, which makes the usual dormant-commerce and field-preemption arguments harder to run: a state licensing professionals inside its own borders is close to the core of what states do.</p>
+      <p>On the child-safety package, the detail with the longest reach is SB 867, on chatbots in toys. Companion-AI regulation so far has assumed a screen and an account. A toy has neither, has no login to attach parental controls to, and is bought by someone who will never read a model card. If that statute's obligations are workable it will become the template; if they are not, it will be the first test of whether this legislative approach can reach hardware at all.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="http://www.gov.ca.gov/2026/09/09/governor-newsom-signs-first-in-the-nation-ai-safeguards-to-protect-californians-calls-on-the-federal-government-to-do-its-part/">Office of the Governor, 9 Sep (primary)</a> &middot;
+    <a href="https://www.gov.ca.gov/2026/09/10/governor-newsom-signs-the-strongest-child-safety-chatbot-and-social-media-laws-in-the-nation/">Office of the Governor, 10 Sep (primary)</a> &middot;
+    <a href="https://www.transparencycoalition.ai/news/california-gov-newsom-signs-two-bills-to-create-nations-first-ai-auditing-framework">Transparency Coalition</a> &middot;
+    <a href="https://qz.com/california-ai-independent-audit-laws-newsom-091026">Quartz</a> &middot;
+    <a href="https://gizmodo.com/newsom-signs-ai-industry-approved-ai-regulation-bills-into-law-in-california-2000809702">Gizmodo, for the critical framing</a> &middot;
+    <a href="2026-09-10.html#ca-ai-bills">prior framing, 10 Sep</a>
+  </p>
+  <div class="fb" data-id="ca-ai-signed">
+    <p>You asked for this thread to be opened and the deadlines tracked. Cadence between now and 30 September?</p>
+    <label><input type="radio" name="ca-ai-signed" value="each"> Each signature or veto</label>
+    <label><input type="radio" name="ca-ai-signed" value="sb1000"> Only SB 1000 and SB 947, the two that bind conduct</label>
+    <label><input type="radio" name="ca-ai-signed" value="deadline"> One summary on 1 October</label>
+  </div>
+</article>
+
+<article id="dhs-grace-period">
+  <h2>DHS proposed this morning to end the 60 days an H-1B holder gets after losing a job</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+    <span class="chip">Underreported</span>
+  </div>
+  <p>In today's Federal Register, the Department of Homeland Security proposes to delete 8 CFR 214.1(l)(2) and, in its own words, "restore its previous and long-standing policy" of not giving certain nonimmigrant workers a grace period when their employment ends. The rule reaches E-1, E-2, E-3, H-1B, H-1B1, L-1, O-1 and TN status, and their dependents. Comments close 10 November; the docket is USCIS-2026-0364.</p>
+  <p>Today, a worker in those categories whose qualifying job ends before their authorised stay expires may be granted up to 60 consecutive days, or the remainder of the validity period, whichever is shorter, during which the end of employment alone does not break status. It is the window in which people find a new sponsor, file a change of status, or arrange to leave. If this is finalised, the expectation is departure at the point employment ceases, absent some independent basis to remain.</p>
+  <p>This is the second structural default to be removed from nonimmigrant status inside a month. The rule ending duration of status for student and exchange visas &mdash; covered here yesterday &mdash; takes effect on Monday. That one converted an open-ended admission into a dated one. This one removes the cushion between a layoff and unlawful presence.</p>
+  <p><b>What to watch:</b> the comment volume and who files &mdash; employer coalitions rather than advocacy groups would be the signal; whether a final rule keeps any transition provision for people already laid off; and whether it is designated a major rule.</p>
+  <details>
+    <summary>Dig deeper &mdash; why 60 days is load-bearing, and what a layoff looks like without it</summary>
+    <div class="exp">
+      <p>The grace period is young. It was created in 2017, in the rule on retention of employment-based immigrant workers, and it codified a practice that had until then been a matter of case-by-case discretion. DHS's framing is therefore accurate as history: the prior state of affairs was no guaranteed window. What that framing leaves out is why the window was created. Before 2017, a worker laid off was in an incoherent position &mdash; technically out of status the moment employment ended, but with a pending or possible new petition, and dependent on an adjudicator's forbearance. The 60 days replaced discretion with a rule, which is generally considered an improvement in administrative law.</p>
+      <p>The practical mechanics are where the consequence sits, and they are unforgiving. H-1B portability lets a new employer file and the worker begin work on receipt of the filing, but somebody has to file, and that takes a job offer, an attorney, a labour condition application certified by the Department of Labor, and a fee. Two months is a tight timetable for that sequence in a soft hiring market. Zero days is not a timetable at all: it makes the new petition necessarily late, which means a change of status from abroad, consular processing, and a gap in employment that many employers will simply decline to bridge.</p>
+      <p>The steeper edge is unlawful presence. Status and presence are different legal facts with different consequences. Falling out of status can often be cured; accruing unlawful presence triggers the three- and ten-year bars on re-entry under INA 212(a)(9)(B), and those are not discretionary. A grace period keeps a laid-off worker on the status side of that line while they sort it out. Removing it moves the line to the last day of employment, which means an involuntary event &mdash; a reduction in force someone learns about on a Tuesday &mdash; starts a clock with a decade-long penalty attached.</p>
+      <p>Who this lands on is not evenly distributed. L-1 holders are intracompany transferees whose status is tied to one employer by definition and who have no portability to use. TN is a USMCA category, which raises a separate question about whether removing a benefit from Canadian and Mexican professionals interacts with the trade agreement at a moment when the United States is also <a href="#section-338-bans">banning Canadian imports</a>. O-1 and E categories include people whose work is structurally intermittent. The population most often discussed &mdash; H-1B holders at large technology employers &mdash; is the one best equipped to absorb it.</p>
+      <p>I have marked this underreported because it is. It appeared this morning in the Federal Register and has so far been written up almost entirely by immigration law firms, which is the usual pattern for a rule whose subjects cannot vote. Comment closes in sixty days, which is the ordinary period and is itself the thing to notice: an agency that wanted this defensible gave the full window.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.federalregister.gov/documents/2026/09/11/2026-18631/eliminating-the-discretionary-60-day-grace-period">The proposed rule, Federal Register 2026-18631 (primary)</a> &middot;
+    <a href="https://www.fragomen.com/insights/united-states-dhs-proposal-to-eliminate-60-day-nonimmigrant-grace-period-clears-federal-review.html">Fragomen on the OIRA clearance</a> &middot;
+    <a href="https://www.rnlawgroup.com/dhs-proposes-to-eliminate-the-60-day-grace-period-for-h-1b-l-1-o-1-e-and-tn-workers/">Reddy Neumann Brown on the affected classifications</a> &middot;
+    <a href="https://www.murthy.com/2026/09/10/newsflash-dhs-proposes-eliminating-60-day-grace-period-for-certain-nonimmigrant-workers/">Murthy Law Firm</a> &middot;
+    <a href="2026-09-10b.html#dhs-duration-status">yesterday's student-visa rule</a>
+  </p>
+  <div class="fb" data-id="dhs-grace-period">
+    <p>Two immigration rules in two days, both found in the Federal Register rather than in the news. Keep that source in the daily rotation?</p>
+    <label><input type="radio" name="dhs-grace-period" value="daily"> Yes &mdash; read the register every day</label>
+    <label><input type="radio" name="dhs-grace-period" value="major"> Only major rules and ones with dates inside a month</label>
+    <label><input type="radio" name="dhs-grace-period" value="less"> Less immigration rulemaking</label>
+  </div>
+</article>
+
+<article id="iran-aviation">
+  <h2>The US grounded 27 Iranian airlines on Monday, and the wind-down closes on the 23rd</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Primary source</span>
+    <span class="chip">Underreported</span>
+  </div>
+  <p>Today's Federal Register carries Iran-related general licences CC and DD, which is how this brief found a sanctions action it missed on Monday. On 8 September, under the name Operation Economic Outcast, Treasury designated 36 targets supporting Iranian aviation: 27 Iranian airlines including Mahan Air, Iran Aseman and Kish, plus front companies in the UAE, Turkey, Malaysia and Kazakhstan, and one individual. The authorities are Executive Orders 13224 and 13902. FinCEN issued an alert to financial institutions alongside it.</p>
+  <p>The mechanically important part is not the designations but what was switched off. OFAC suspended General Licence J-1, in force since December 2016, which let non-US airlines fly aircraft containing 10 per cent or more US-origin content into and out of Iran. Almost every airliner in the world meets that threshold. Three regulatory authorisations went with it: overflight payments, aircraft-safety licensing, and bunkering and emergency repairs.</p>
+  <p>General Licence DD gives fifteen days to unwind anything previously authorised &mdash; until 12:01 a.m. Eastern on <b>23 September</b>, with payments to blocked persons going into blocked interest-bearing US accounts. Licence CC covers wind-down with the persons blocked on 4 September.</p>
+  <p><b>What to watch:</b> 23 September, and whether foreign carriers and lessors actually stop; whether safety-of-flight authorisations are restored, which is the humanitarian pressure point; and whether any third-country airline is designated for non-compliance.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; sanctions policy, or a civil-aviation safety decision?</span>
+    <p><b>What is disputed.</b> Not the action. What differs is which part of it is the story. Government statements lead on severing economic lifelines and on airlines moving weapons and personnel for the Revolutionary Guard. Aviation and legal coverage leads on the suspension of the safety authorisations, which is a different kind of act.</p>
+    <p><b>Why they differ.</b> Each is describing the half it is responsible for, and both are correct. Designating airlines that carry military cargo is ordinary counter-proliferation work. But 31 C.F.R. 560.528 and 560.529 are not economic provisions &mdash; they exist so that an aircraft in distress can be licensed for safety work and so a stranded plane can be refuelled and repaired. Suspending them is deliberate and its effect falls on flight safety for civilian passengers, including the ones with no connection to the Guard. The government is not hiding this; it simply does not lead on it, and the trade press does.</p>
+    <p><b>What it means for you.</b> The date is the actionable thing: after 23 September, a non-US carrier flying a Boeing or Airbus into Iran is exposed to secondary sanctions, and lessors have to confirm no leased airframe is on an Iranian route. Expect Iranian international service to contract to the few operators willing to take that risk. What is genuinely uncertain is the safety consequence, and the honest answer is that nobody can quantify it in advance; the observation to watch is whether OFAC issues a narrow safety-of-flight licence in the next two weeks, which is what happened in previous rounds and which would tell you the suspension was leverage rather than policy. This brief should also be plain that it missed this for three days. It was a Monday sanctions action covered by trade press and not by general wires, and it surfaced here only because the general licences were published in the register today.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.federalregister.gov/documents/2026/09/11/2026-18576/publication-of-iran-related-web-general-licenses-cc-and-dd">Federal Register, GLs CC and DD, 11 Sep (primary)</a> &middot;
+    <a href="https://home.treasury.gov/news/press-releases/sb0623">Treasury press release, 8 Sep (primary)</a> &middot;
+    <a href="https://www.state.gov/releases/office-of-the-spokesperson/2026/09/operation-economic-outcast-grounds-irans-aviation-sector">State Department release</a> &middot;
+    <a href="https://www.hklaw.com/en/insights/publications/2026/09/ofac-suspends-general-license-j-1-and-grounds-irans-aviation-sector">Holland &amp; Knight on the J-1 suspension</a> &middot;
+    <a href="https://www.ch-aviation.com/news/171643-us-sanctions-27-iranian-airlines-36-third-party-enablers">ch-aviation</a>
+  </p>
+  <div class="fb" data-id="iran-aviation">
+    <p>This was three days old when a document source surfaced it. What should happen when the brief finds a miss?</p>
+    <label><input type="radio" name="iran-aviation" value="run-late"> Run it late and say so, as here</label>
+    <label><input type="radio" name="iran-aviation" value="short"> A short item is enough for anything over 48 hours old</label>
+    <label><input type="radio" name="iran-aviation" value="skip"> Skip it &mdash; only today's news</label>
+  </div>
+</article>
+
+<article id="section-338-bans">
+  <h2>Canada's whisky, cheese and motorcycles stop entering the United States on 29 September</h2>
+  <div class="meta">
+    <span class="chip">World economy</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Independent corroboration</span>
+    <span class="chip">Follow-up</span>
+  </div>
+  <p>The named trigger on this thread was modification of the proclamations. Five more were signed on 8 September, and they move Section 338 from duties to prohibition. Three impose outright <b>import bans</b> effective 29 September on specified Canadian alcoholic beverages, dairy products and motorcycles. Two modify the existing 50 per cent duty lists effective 15 September &mdash; Monday.</p>
+  <p>The banned lists are specific. Alcohol: packaged beer, sparkling and still wine, vermouth, whiskey, bourbon, rye, brandy, rum, gin, vodka, tequila, mezcal, liqueurs, cider, sake, and undenatured ethyl alcohol for beverages. Dairy: whey protein concentrates, modified and dried whey, molasses, and non-alcoholic beer. Vehicles: motorcycles and mopeds over 800cc. Monday's modifications add named cheeses &mdash; cheddar, gruyère, parmesan, roquefort, gouda and others &mdash; plus hides, furskins, motorboats, aluminium profiles, furniture, lighting and golf carts to the 50 per cent list, and remove salt, Portland cement, some sugars and lead.</p>
+  <p>The stated basis is that Canada has "maintained or increased the discriminations against the commerce of the United States" since July. Canada's roughly US$20 billion counter-tariff took effect 8 September, the same day. USMCA qualification gives no relief; 19 U.S.C. 4512(a)(1) makes the statute win. And Section 338 duties now stack on Section 232, which can reach 75 per cent on some steel and aluminium.</p>
+  <p><b>What to watch:</b> the first complaint at the Court of International Trade &mdash; the caption will name the authority; whether the ITC opens the investigation the statute contemplates; and 29 September itself.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is an untested 96-year-old statute more vulnerable when used harder?</span>
+    <p><b>What is disputed.</b> A legal question on which nobody has a court to point at. One view is that escalating from duties to prohibition multiplies the exposure: the conduct is more drastic, the harm to importers is concrete and immediate, and plaintiffs with standing are now trivially easy to find. The other is that the escalation was drafted to be harder to attack, not easier.</p>
+    <p><b>Why they differ.</b> The second view is reading the drafting, and the drafting supports it. Section 338(b) expressly contemplates exclusion where a country has maintained or increased discrimination after an initial 338(a) proclamation, so the two-stage structure is the statute's own, not an improvisation. More to the point, the proclamations carry a severability clause: if a court strikes a ban in whole or in part, the affected goods revert to the 50 per cent duty rather than entering free. That converts the best realistic litigation outcome from a win into a partial win and removes most of the incentive to sue for a refund. The first view is reading the politics and the practical harm, which are real, and is right that a ban creates plaintiffs a tariff does not &mdash; a distiller with contracts and a distributor with stranded inventory.</p>
+    <p><b>What it means for you.</b> Expect a complaint, expect it not to restore duty-free entry, and do not expect speed. The open questions that actually decide the case are unchanged and still unlitigated in 96 years: whether Section 301 superseded Section 338, whether the operative portion of 338 has been repealed by later statute, and whether the International Trade Commission must investigate first. A prohibition makes those questions urgent; it does not make them easier. Two things would genuinely move this: an ITC investigation opening, which would concede the procedural argument, or a preliminary injunction at the CIT, which would be the first judicial statement on Section 338 since 1930. You asked for this tracked to judgment rather than to first filing, and it remains active on that basis.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; the difference between a tariff and a ban, and why USMCA does not help</summary>
+    <div class="exp">
+      <p>A tariff and a prohibition are not points on one scale. A 50 per cent duty is a price: some trade continues, importers and exporters split the cost, and the flow adjusts. A ban sets the quantity to zero, and zero has effects a price does not. Supply chains with a Canadian sole-source input do not get more expensive, they stop. Contracts become impossible to perform rather than unprofitable, which moves the dispute from commercial negotiation to force majeure. And the distributional consequence inverts: with a tariff, the US Treasury collects revenue; with a ban it collects nothing, so the policy costs the government money while costing importers more.</p>
+      <p>The product selection repays reading because it is not a list of what Americans buy most. Whey protein concentrate is an industrial input to protein powders, infant formula and processed food, not a consumer good, and Canada is a significant supplier. Motorcycles over 800cc is a category with one obvious political referent. Non-alcoholic beer appearing on the <em>dairy</em> list is a tariff-schedule artefact rather than a statement about beer. And the additions effective Monday &mdash; aluminium profiles, furniture, lighting, golf carts, fishing rod parts &mdash; are the kind of list that catches firms which checked whether they sell cars, wine or cheese, concluded they did not, and stopped reading. The annexes specify eight-digit HTS codes, so exposure is determined by classification, not by industry.</p>
+      <p>On USMCA, the point is simple and often got wrong. The agreement is not self-executing in US law. 19 U.S.C. 4512(a)(1) provides that no provision of the agreement inconsistent with US law has effect, which means a statute like Section 338 beats a treaty obligation in an American court. Canada's remedy is therefore not litigation in the United States but a Chapter 31 dispute panel or a WTO case, both of which take years and neither of which can stop goods being turned away on 29 September. Whether these measures qualify as emergency measures exempt from those obligations is exactly the kind of question those panels exist to decide slowly.</p>
+      <p>One piece of unfinished business from this brief's own record. It has twice reported an effective date of 19 August for the original three proclamations, from Holland &amp; Knight quoting the proclamation text, against a Covington alert saying 22 August. A third source now also gives 22 August, and explains the gap: the 19 August date was suspended for three days. On the balance of evidence the duties took effect <b>22 August</b>, and the earlier 19 August statements here were wrong. The Federal Register notice remains the document that would close it.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-responds-to-canadas-retaliation/">White House fact sheet (primary)</a> &middot;
+    <a href="https://www.troutman.com/insights/from-duties-to-import-bans-president-trump-escalates-section-338-actions-against-canadian-goods/">Troutman Pepper Locke on the five proclamations</a> &middot;
+    <a href="https://www.thompsonhinesmartrade.com/2026/09/president-trump-imposes-import-ban-on-certain-canadian-products-and-increases-tariffs-on-other-products/">Thompson Hine</a> &middot;
+    <a href="https://zonos.com/docs/guides/country-guides/united-states/section-338-canada-tariffs">Zonos on the 22 August effective date and the HTS annexes</a> &middot;
+    <a href="https://www.pbs.org/newshour/politics/untested-in-court-trumps-new-tariffs-on-canada-raise-legal-questions">PBS on the untested statute</a> &middot;
+    <a href="2026-09-08.html">prior framing, 8 Sep</a>
+  </p>
+  <div class="fb" data-id="section-338-bans">
+    <p>A correction sits in the expansion: the effective date was 22 August, not 19 August as said twice here. Where should corrections like that go?</p>
+    <label><input type="radio" name="section-338-bans" value="top"> A box at the top of the story, as your settled preference says</label>
+    <label><input type="radio" name="section-338-bans" value="expansion"> In the expansion is fine when the correction is a detail</label>
+    <label><input type="radio" name="section-338-bans" value="footer"> Footer</label>
+  </div>
+</article>
+
+<h2 class="section">Florida &amp; Tampa Bay</h2>
+
+<article id="fl-pinellas-schools">
+  <h2>Pinellas wants to close seven schools, and the reason is the birth rate</h2>
+  <div class="meta">
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Superintendent Kevin Hendrick put a plan called Planning for Progress to the Pinellas County School Board on Thursday. It would close <b>Tarpon Springs Fundamental, Kings Highway, Blanton, Bear Creek, Sexton and Lealman Innovation</b> at the end of this school year, move Azalea Elementary to a K&ndash;8 and relocate it in 2028&ndash;29, and turn Boca Ciega High into a technical school with six career tracks. Middle-school consolidations are also on the table.</p>
+  <p>The arithmetic is demographic, not financial mismanagement. The district reports roughly <b>45,000 empty seats</b>. Births in Pinellas County have fallen from over 10,000 a year to under 7,000 last year. And of the children born in the county in 2020, only 68 per cent enrolled in a Pinellas public school &mdash; so the district is losing both the numerator and its share of it. Hendrick's summary is blunt: three thousand fewer births means fewer kindergarteners.</p>
+  <p>This is the same force that produced Tuesday's Pasco result, reported here yesterday: a 0.9 per cent smaller operating budget, 2,001 fewer students, 476 posts cut &mdash; and a levy $17 million larger, because assessed values rose. Two adjacent counties, one cause, opposite-looking headlines.</p>
+  <p><b>What to watch:</b> public comment at the 22 September board meeting; the 6 October workshop; and the board vote on <b>13 October</b>. Closure lists change between presentation and vote more often than not.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is this a budget decision or a demographic one?</span>
+    <p><b>What is disputed.</b> Framing rather than fact. Coverage describing a district condensing to cut maintenance costs on underused buildings, and coverage describing a collapse in school-age population, are reporting the same plan with different causes foregrounded.</p>
+    <p><b>Why they differ.</b> The district has an interest in the demographic framing, because it makes the decision inevitable rather than chosen, and the demographic numbers genuinely support it &mdash; a 30 per cent fall in annual births is not something a board can offset. But the 68 per cent enrolment share is the figure that complicates it, and it is the district's own. Nearly a third of Pinellas-born children are going somewhere else: charters, private schools with state scholarship money, home education, or out of the county. That part is not demography, it is competition and choice policy, and closing neighbourhood schools is one of the things that accelerates it. Both causes are real; only one of them is outside the board's control.</p>
+    <p><b>What it means for you.</b> If you are in Pasco rather than Pinellas, read this as the leading indicator for your own county, where enrolment is already down 2,001 and a capital-outlay millage is being levied against falling demand. The useful number to watch is not the closure list but the enrolment share. A district losing children to a falling birth rate shrinks gracefully; a district losing share shrinks into a spiral, because each closure gives the next family a reason to leave. Ask at the 22 September meeting what the 2021 and 2022 birth cohorts' capture rates are. If the 68 per cent is itself falling, the seven schools are the first round, not the last.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://baynews9.com/fl/tampa/news/2026/09/10/pinellas-county-schools-superintendent-presents-recommendations-that-could-reshape-district">Bay News 9 on the recommendations and the vote timetable</a> &middot;
+    <a href="https://www.tampabay.com/news/education/2026/09/10/pinellas-unveils-plan-close-7-schools-combine-several-others/">Tampa Bay Times (paywalled; headline and lede only)</a> &middot;
+    <a href="2026-09-10.html#fl-budgets">Pasco's levy and enrolment, 10 Sep</a>
+  </p>
+  <div class="fb" data-id="fl-pinellas-schools">
+    <p>Pinellas rather than Pasco. Is the local section's geography right?</p>
+    <label><input type="radio" name="fl-pinellas-schools" value="both"> Both counties equally</label>
+    <label><input type="radio" name="fl-pinellas-schools" value="pasco"> Pasco first &mdash; that is where I live</label>
+    <label><input type="radio" name="fl-pinellas-schools" value="region"> The whole Tampa Bay region, including Hillsborough</label>
+  </div>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Eleven things I saw and ranked below the line. Each one opens &mdash; the line is my judgement, what is behind it is the substance.</p>
+
+<div class="also-list">
+
+<details id="a-cpi">
+  <summary><span class="chip">Macro &amp; markets</span> August CPI lands at 8:30 this morning, after this issue publishes. Consensus has core at 0.2 per cent and headline at 0.4; and the FOMC date discrepancy flagged here yesterday is resolved &mdash; the meeting is 15&ndash;16 September, statement Wednesday the 16th at 2 p.m.</summary>
+  <div class="exp">
+    <p>Yesterday's short item noted that sources gave the meeting as both 15&ndash;16 and 16&ndash;17 September and said not to rely on the day. The Federal Reserve's own calendar settles it: a two-day meeting on 15 and 16 September, with the statement and the dot plot on Wednesday afternoon. Prior issues of this brief used the 16th and were right.</p>
+    <p>On the print itself: the thing to read is not the headline but where diesel appears. Yesterday's PPI had final demand up 0.4 per cent on the month and 5.4 per cent on the year, with over three-quarters of the rise from energy and more than a third of the goods increase from diesel alone at 24.1 per cent. If CPI confines that to the energy line, the composition argument for holding rates survives. If food-at-home and transport services carry it, the supply shock has become the price level. Three officials dissented for a hike in July, so a split committee is demonstrable rather than inferred.</p>
+    <p class="btl"><b>Below the line because</b> the print is two and a half hours after publication. Reporting a number before it exists is how this brief got the diesel record wrong once already.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.federalreserve.gov/newsevents/calendar.htm">Federal Reserve calendar</a> &middot; <a href="https://www.bls.gov/news.release/ppi.nr0.htm">BLS PPI release</a> &middot; <a href="2026-09-10b.html#a-cpi">yesterday's item, with the discrepancy</a></p>
+  </div>
+</details>
+
+<details id="a-brent">
+  <summary><span class="chip">Macro &amp; markets</span> Brent fell about 3 per cent today to roughly $104.29 and WTI to $99.59 &mdash; and both are still up close to 9 per cent on the week.</summary>
+  <div class="exp">
+    <p>The weekly and daily numbers point opposite ways and both are informative. Brent closed at $101.21 on Wednesday, its first close above $100 since July, traded to about $105.71 on Thursday, and is now near $104.29. So the war premium is still being added week over week, while today's session took some of it back on demand worries. Brent is up roughly 17 per cent on the month and 56 per cent on the year.</p>
+    <p>The reason this is a separate item from the <a href="#diesel-six">diesel story</a> is that they are now diverging, which is the single most useful thing in the energy complex this week. Crude is a forward-looking risk price; retail diesel is a backward-looking product price set by refining and inventory. When they move together, one story explains both. When crude falls and diesel sets a record on the same morning, you have two stories, and the one that reaches a household budget is the product.</p>
+    <p class="btl"><b>Below the line because</b> a 3 per cent day in a market that has moved 56 per cent in a year is noise, and the consequential half of it is already the lead.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://tradingeconomics.com/commodity/brent-crude-oil">Brent screen</a> &middot; <a href="https://www.cnbc.com/2026/09/09/oil-prices-today-wti-brent-us-iran-hormuz-attacks.html">CNBC on Wednesday's close</a></p>
+  </div>
+</details>
+
+<details id="a-saildrone">
+  <summary><span class="chip">Geopolitics</span> Iran says it destroyed a US Saildrone Explorer at the mouth of the Strait of Hormuz and released video of it burning; two days earlier it said it captured an Anduril Dive-LD underwater drone, which the US called defective and unclassified.</summary>
+  <div class="exp">
+    <p>Two incidents, two days apart, both involving uncrewed American vessels. On 8 September the Revolutionary Guards said they had taken a Dive-LD, a roughly 19-foot autonomous underwater vehicle built by Anduril and used for mine countermeasures, seabed mapping and inspecting cables and pipelines. The US response was that it had malfunctioned and carried nothing classified. On 10 September the IRGC said it destroyed a Saildrone Explorer, a seven-metre unmanned surface vessel carrying cameras and sensors, and published footage.</p>
+    <p>The reason this is worth recording rather than leading on is the asymmetry it reveals. Uncrewed platforms are how the US is maintaining surveillance in a strait where it has lost five tankers' worth of deterrence and does not want crewed losses. They are also trivially easy for Iran to claim as victories, because nobody dies and the hardware is cheap enough that Washington will not escalate over it. Expect more of these claims, and expect them to be partly true and wholly unverifiable.</p>
+    <p class="btl"><b>Below the line because</b> no crew, no policy change and no price move. It is the texture of the campaign rather than a development in it.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> on the Saildrone &middot; <a href="https://www.defensenews.com/news/your-military/2026/09/09/iran-says-it-captured-us-submarine-drone-in-strait-of-hormuz/">Defense News on the Dive-LD</a> &middot; <a href="https://www.arabnews.com/middle-east/iran-guards-say-seized-unmanned-us-submarine-drone-in-hormuz-3000956">Arab News</a></p>
+  </div>
+</details>
+
+<details id="a-influence-ops">
+  <summary><span class="chip">AI &amp; tech industry</span> The same Anthropic report documents a French advertising agency running 70 fake news sites and 8,913 articles in 20-plus languages, and an Istanbul firm operating about 1,000 fake accounts against all 222 Malaysian parliamentary constituencies.</summary>
+  <div class="exp">
+    <p>The influence-operations section of the report is the part with the least American content and arguably the most transferable lesson. Two cases are commercial rather than state: an operation traced to LKM Company, a France-based digital advertising agency, mass-producing content across roughly 70 fabricated news websites amplified by 70 linked X accounts and more than 250 inauthentic commenting accounts, publishing at least 8,913 articles aimed at audiences on six continents; and a platform linked to BBS Bilisim Teknolojileri in Istanbul running around 1,000 fake accounts and a fake outlet called Malaysia Pulse, targeting every Malaysian constituency using census and electoral data, and generating fabricated dossiers on an opposition politician.</p>
+    <p>Two state cases accompany them: a Russian operation in the Central African Republic coordinating with a local FM station, RT, Sputnik and TASS, which used Claude to draft employment contracts encoding political loyalty and to forge government documents; and four accounts producing copy for Russian state media including fabricated claims about Moldova's president before an election.</p>
+    <p>The American relevance is the business model. Influence-as-a-service run by an ordinary advertising agency, priced commercially and sold to whoever pays, is a harder problem for election-integrity policy than a state actor, because there is no foreign-agent hook and no sanctions lever. The 2026 midterms are in under two months.</p>
+    <p class="btl"><b>Below the line because</b> none of the documented operations targeted the United States, and the consequence for a US reader is second-order until one does.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.anthropic.com/threat-intelligence-report-september-2026">Anthropic threat intelligence report, September 2026</a> &middot; <a href="#anthropic-threat">the lead story</a></p>
+  </div>
+</details>
+
+<details id="a-fcc">
+  <summary><span class="chip">AI &amp; tech industry</span> A rule titled "Protecting Against National Security Threats to the Communications Supply Chain Through the Equipment Authorization Program" appears in today's Federal Register; the substance behind that title &mdash; closing the component-part loophole &mdash; took effect on 8 September.</summary>
+  <div class="exp">
+    <p>The FCC's Third Report and Order bars authorisation of devices containing logic-bearing hardware from entities on the Covered List, extends marketing rules to online marketplaces by requiring an FCC ID at the point of sale, and requires full certification for modifications made by Covered List entities. Those rules became effective 8 September, except the marketplace ID display, which phases in over roughly six or nine months depending on whether the platform takes title to or has physical access to the goods. Recent Covered List additions include foreign-produced power inverters and robots &mdash; which is the detail with reach, because inverters are the interface between solar and the grid and there is a great deal of installed foreign hardware behind American meters.</p>
+    <p>What I could not establish from the register listing alone is whether today's document is a further order, a correction, or a delayed publication of something already in force. The title is identical to the August document. I am flagging the uncertainty rather than resolving it.</p>
+    <p class="btl"><b>Below the line because</b> I could not determine what today's document actually does, and the substance I can describe took effect three days ago.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.federalregister.gov/documents/2026/08/07/2026-16197/protecting-against-national-security-threats-to-the-communications-supply-chain-through-the">The August rule</a> &middot; <a href="https://www.fcc.gov/supplychain/coveredlist">FCC Covered List</a></p>
+  </div>
+</details>
+
+<details id="a-fda-ml">
+  <summary><span class="chip">Science &amp; public health</span> The FDA published a rule today creating a device classification for "cardiovascular machine learning-based notification software" &mdash; Class II, under 21 CFR 870.2380.</summary>
+  <div class="exp">
+    <p>This is the quiet, load-bearing kind of AI regulation. A classification regulation is how the FDA decides what evidentiary burden a category of device carries: Class II means special controls and, in practice, clearance through the 510(k) pathway against a predicate, rather than the full premarket approval a Class III device needs. Several ECG-analysis algorithms &mdash; detecting low ejection fraction or pulmonary hypertension from a waveform &mdash; have already been cleared under this classification.</p>
+    <p>Codifying it matters because it fixes the route for everything that follows. A developer building a cardiovascular notification algorithm now knows which door to use and what the special controls require, which lowers the cost of entry and, equally, locks in a standard that was set by the first few devices through. Software that learns after deployment sits awkwardly in a framework built around a fixed predicate, and a classification rule does not solve that; it decides who has to argue about it and where.</p>
+    <p class="btl"><b>Below the line because</b> it formalises existing practice rather than changing it, and no patient's care changes on the day it publishes.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.federalregister.gov/public-inspection/2026-18612/medical-devices-cardiovascular-devices-classification-of-the-cardiovascular-machine-learning-based">Federal Register, 2026-18612</a></p>
+  </div>
+</details>
+
+<details id="a-gilti">
+  <summary><span class="chip">US debt &amp; fiscal</span> The IRS proposed rules today on allocating and apportioning deductions to foreign-source Section 951A income and deduction-eligible income &mdash; the technical plumbing of how much US tax multinationals actually pay on offshore profit.</summary>
+  <div class="exp">
+    <p>Section 951A is the global intangible low-taxed income regime. The headline rate is well known; what determines the revenue is expense allocation &mdash; which domestic deductions, particularly interest and stewardship expense, get pushed against the foreign income basket and thereby shrink the foreign tax credit a company can use. Moving that line a little is worth a great deal, and it is done in proposed regulations with no press release.</p>
+    <p>The fiscal context is the reason to note it at all. CBO has the 2026 deficit near $1.9 trillion at 5.8 per cent of GDP, with net interest about $1.0 trillion this year and $2.1 trillion by 2036. Against that, international-provision regulations are one of the few revenue levers that move without legislation. Whether this particular package raises or loses money is not something I can establish from the listing, and anyone who tells you before reading the preamble is guessing.</p>
+    <p class="btl"><b>Below the line because</b> I have not read the preamble and cannot say which way the revenue runs. If the score is material it is a lead story next week.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.federalregister.gov/api/v1/documents.json?conditions%5Bpublication_date%5D%5Bis%5D=2026-09-11">Federal Register, 11 September issue</a> &middot; <a href="https://www.cbo.gov/publication/61882">CBO outlook</a></p>
+  </div>
+</details>
+
+<details id="a-26a305">
+  <summary><span class="chip">US politics &amp; policy</span> The mail-ballot stay is fully briefed and there is still no order. USPS filed its reply on 10 September; the docket shows no administrative stay.</summary>
+  <div class="exp">
+    <p>Application No. 26A305, <em>United States Postal Service v. California</em>, was submitted 6 September against the preliminary injunction the District of Massachusetts entered on 4 September. Justice Jackson set responses for 4 p.m. Eastern on 9 September; California and the League of Women Voters of Massachusetts filed on time, with amici from bipartisan members of Congress, the American Postal Workers Union, the NAACP, election-law professors and others. On 10 September the government replied, a further amicus arrived from Lawyers for Rule of Law, and letters were filed including one about a First Circuit order.</p>
+    <p>Nothing has issued. The distinction that matters is between the administrative stay and the eventual ruling: an administrative stay would let the rule operate while the Court considers it, and with ballots being printed that is the decision which determines whether the rule touches November at all. Your instruction on this thread is movement only, and a completed briefing schedule is not movement.</p>
+    <p class="btl"><b>Below the line because</b> the docket moved on paper and not in substance, and you asked for this one to run only when the Court acts.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.supremecourt.gov/docket/docketfiles/html/public/26a305.html">SCOTUS docket 26A305</a></p>
+  </div>
+</details>
+
+<details id="a-msft-38gw">
+  <summary><span class="chip">Energy &amp; grid</span> Microsoft is reported to be targeting about 38 gigawatts of data-centre capacity by 2032, up from roughly 12GW now &mdash; an addition of about 26GW, with a third of it AI-specific.</summary>
+  <div class="exp">
+    <p>Microsoft has not confirmed the figure; it comes from Bloomberg reporting on people familiar with the plans, which is why this is a short item and not a lead. Around 2GW of the current footprint is AI-specific today. The company's capital expenditure was about $145 billion last fiscal year, with roughly $50 billion guided for the first quarter of fiscal 2027.</p>
+    <p>Why it belongs on the grid beat rather than the tech beat: 26 gigawatts of new load is roughly the scale of a mid-sized country's electricity system, and it has to be interconnected by the same six market operators FERC put on the clock this week with show-cause orders on how they connect large loads. The constraint on that number is not capital and not chips. It is substations, transformers and queue position, and the cost of the network upgrades is allocated in state rate cases that almost nobody watches. This is the arithmetic that turns an AI capex figure into somebody's electricity bill.</p>
+    <p class="btl"><b>Below the line because</b> it is an unconfirmed report of an internal target for 2032, and a target is not a filing.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.investing.com/news/stock-market-news/microsoft-plans-38-gigawatts-of-data-center-capacity-by-2032-bloomberg-news-reports-4897030">Reuters on the Bloomberg report</a> &middot; <a href="2026-09-10b.html#ferc-large-load">FERC's six show-cause orders, 10 Sep</a></p>
+  </div>
+</details>
+
+<details id="a-dengue">
+  <summary><span class="chip">Florida &amp; Tampa Bay</span> Florida's week-35 arbovirus report is still not published &mdash; a fifth consecutive issue. The state ledger stands at 73 locally acquired dengue cases, through 29 August.</summary>
+  <div class="exp">
+    <p>The week-34 report, covering 23&ndash;29 August, remains the newest reachable: 73 locally acquired cases statewide, Hillsborough 59, Miami-Dade 7, Pinellas 5, with Palm Beach and Pasco also represented; onset in July for 19 and August for 54; 71 serotyped by PCR; four dengue-positive mosquito pools in Hillsborough. The week-35 PDF URL returns nothing. Mosquito-borne illness alerts stand for Hillsborough, Miami-Dade and Pinellas.</p>
+    <p>The gap is now the story as much as the count. Aerial spraying ran over South Tampa on the weekend of 5&ndash;6 September, and the newest state figures predate it by a week. Anyone comparing the state number with a county announcement is comparing different weeks, and the July-to-August acceleration &mdash; 19 cases to 54 &mdash; is the trend that weeks 35 and 36 would either confirm or break.</p>
+    <p class="btl"><b>Below the line because</b> no wake trigger fired: no new report, no severe case, and Pasco has not reached double figures. An unpublished document is an absence, not a development.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.floridahealth.gov/wp-content/uploads/2026/09/fl-arbovirus-report-w34-2026.pdf">Florida Arbovirus Surveillance, week 34</a> &middot; <a href="https://www.floridahealth.gov/statistics-data/population-surveillance/arbovirus-surveillance/">DOH surveillance index</a> &middot; <a href="2026-09-10b.html#fl-dengue">10 Sep</a></p>
+  </div>
+</details>
+
+<details id="a-fl-budgets">
+  <summary><span class="chip">Florida &amp; Tampa Bay</span> Pasco commissioners adopt the county budget on Wednesday 16 September at 5:15 p.m. in New Port Richey. Pinellas's final hearing date is still given as both 18 and 24 September, and I have not resolved it.</summary>
+  <div class="exp">
+    <p>The Pasco hearing is at the West Pasco Government Center, 8731 Citizens Drive, and the county's own budget-adoption page carries it. The number to take along is the rolled-back rate: Florida's truth-in-millage process requires a board to state plainly when the rate it adopts raises more money than last year's, and the school board's result on 8 September &mdash; a $17 million larger levy on a smaller budget &mdash; is what that looks like when nobody is watching the definition.</p>
+    <p>On Pinellas, the county has given 18 September and at least one local outlet 24 September. I went looking again today and could not close it: the page I found with a specific date and millage figure turns out to be from the 2023&ndash;24 cycle, which is exactly the trap. Check pinellas.gov before turning up, and do not trust a search result that does not show you a 2026 fiscal year.</p>
+    <p class="btl"><b>Below the line because</b> nothing moved &mdash; the hearings are next week, and this led yesterday morning.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.pascocountyfl.gov/services/office_of_management_and_budget/budget_adoption_process.php">Pasco County budget adoption</a> &middot; <a href="https://pinellas.gov/topic/transparency-open-government/county-budget-and-finance/">Pinellas County budget and finance</a> &middot; <a href="2026-09-10.html#fl-budgets">10 Sep</a></p>
+  </div>
+</details>
+
+</div>
+
+<div class="fb" data-id="also-today" style="border-top:1px solid var(--rule); padding-top:1rem; margin-top:1.5rem;">
+  <p><b>One question about this whole section:</b> were the right things ranked below the line?</p>
+  <label><input type="radio" name="also-today" value="right"> About right</label>
+  <label><input type="radio" name="also-today" value="promote"> Some of these should have led</label>
+  <label><input type="radio" name="also-today" value="drop"> Some should have been dropped entirely</label>
+  <label><input type="radio" name="also-today" value="fewer"> Fewer short items, more depth up top</label>
+</div>
+
+<button class="submit" id="sendfb">Send my feedback &rarr;</button>
+<p class="sources" style="text-align:center">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+
+<footer>
+  <h4>Sources checked this run &mdash; 25, of which 14 outside the watchlist</h4>
+  <p><b>Pointed at by a thread (11):</b> AAA Fuel Prices &middot; EIA weekly retail price series and the Weekly Petroleum Status Report &middot; Supreme Court emergency-applications docket (26A305) &middot; Treasury auction and buyback results &middot; Brent and WTI price screens &middot; Anthropic newsroom and its September threat-intelligence report &middot; Office of the Governor of California &middot; Florida DOH arbovirus surveillance &middot; Pasco County OMB and Pinellas County budget pages &middot; White House proclamations and fact sheets on Section 338 &middot; Federal Reserve meeting calendar.</p>
+  <p><b>Not pointed at by any thread (14):</b> Federal Register daily issue for 11 September, queried for every rule and proposed rule &middot; OFAC and Treasury sanctions press room &middot; State Department releases &middot; FCC equipment-authorization and supply-chain pages &middot; FDA device classification &middot; GAO reports and testimonies &middot; European Central Bank monetary-policy decision &middot; Handelsblatt front page, in German &middot; Al Jazeera news front page &middot; South China Morning Post, China section &middot; NPR morning news brief &middot; AI Weekly, for AI trade press &middot; Bay News 9 and the Tampa Bay Times &middot; Lloyd's List Intelligence Red Sea brief and Bab el-Mandeb transit data.</p>
+
+  <h4>The negative check</h4>
+  <p><i>What is the biggest story today that is not on my list, and why is it not?</i> The Houthi seizure of Perim Island. This brief has tracked the Strait of Hormuz since 5 September and had no thread, beat or source pointed at the Bab el-Mandeb, four hundred nautical miles away on the same conflict. The answer to "why is it not on my list" is that the list was built around one chokepoint. It leads this issue. Second candidate: the DHS grace-period proposal, also off-list, found by reading the register rather than the news.</p>
+
+  <h4>Corrections and what I got wrong</h4>
+  <p><b>Section 338 effective date.</b> This brief twice gave 19 August 2026 as the date the three original proclamations took effect. A third independent source now supports 22 August and supplies the explanation &mdash; the 19 August date was suspended for three days. <b>22 August stands; the earlier statements here were wrong.</b></p>
+  <p><b>FOMC dates.</b> Yesterday's second edition said sources gave the September meeting as both 15&ndash;16 and 16&ndash;17 and that the day should not be relied on. The Federal Reserve's calendar says 15&ndash;16, statement on the 16th. The date used in earlier issues was correct.</p>
+  <p><b>Buyback ratio.</b> The roughly 10-to-1 offer-to-accept ratio this brief has cited for long-end operations was measured at a $2 billion operation size and does not compare cleanly to yesterday's $10.5 billion of offers against a $6 billion ceiling. Treated with that caveat in <a href="#buyback-ecb">the story above</a>.</p>
+  <p><b>A three-day miss.</b> The 8 September designation of 27 Iranian airlines and the suspension of General Licence J-1 should have run on Tuesday. It was found today only because the general licences reached the Federal Register.</p>
+
+  <h4>Feedback applied from Issue No. 6</h4>
+  <p>Tanker war and pump price kept as one causal chain &mdash; and asked again above, because the new military fact is at a different strait &middot; more charts, so there is one &middot; <b>Missouri map: retired to dormant.</b> You asked to be woken only when a map is actually settled for November; the Supreme Court settled it on 10 September, and the thread now wakes only on the November referendum &middot; <b>Miami 767: thread closed</b> at your request &mdash; the flight-recorder readout was the story &middot; Fed: prints and the decision only, so there is no state-of-play item today and CPI sits below the line until it exists &middot; lab safety disclosures and state AI legislation: both threads confirmed active, and both ran today &middot; underreported finds: current balance kept, two tagged in this issue.</p>
+
+  <h4>Threads swept as a by-product, no trigger fired</h4>
+  <p>Ukraine&ndash;Russia negotiations &middot; Gulf states and Article 51 &middot; birthright citizenship order &middot; USPS mail ballot rule (briefed, no order) &middot; AI gated-capability tiers &middot; AI preemption litigation &middot; AI power and grid constraint &middot; frontier lab safety disclosures (no METR report) &middot; bank stablecoin consortium &middot; central bank gold custody &middot; AARO records contract &middot; UAP disclosure implementation &middot; US&ndash;China AI talks (still no published date; Xi visit still 24 September) &middot; federal funding to 11 December &middot; federal vs professional vaccine schedules &middot; Florida school vaccine rule (comment closes Monday 14 September; no hearing granted) &middot; Florida Amendment 3 &middot; Florida emergency management funding &middot; Waymo Tampa Bay &middot; Tampa Bay dengue &middot; Pasco and Pinellas budgets.</p>
+
+  <h4>Dormant</h4>
+  <p>Missouri congressional map &mdash; settled for November on 10 September; wakes on the referendum &middot; Autonomous weapons regulation &mdash; CCW review conference 16&ndash;20 November &middot; Saxony-Anhalt government formation &middot; Israel&ndash;Lebanon June framework &middot; EU&ndash;Greenland partnership &middot; Nepal&ndash;Tibet glacial flood and Loss and Damage &middot; Indonesia free-meals programme &middot; Anak Krakatau. <b>Retired:</b> Miami 767 overrun, at the reader's request.</p>
+
+  <h4>Could not reach</h4>
+  <p>GAO's reports-and-testimonies index returned 403, so no GAO report was checked this run &mdash; two ran yesterday and there may be more. EIA's own PDF releases could not be parsed, so the diesel figures come from EIA's weekly data tables and the AP wire rather than from the report PDF; the tables are the same series. federalregister.gov blocks direct page fetches and redirects to an unblock page, so today's issue was read through the agency's JSON API instead &mdash; which is a better source, but it means I read abstracts and not preambles, and the IRS item above says so. CNN returned 451 and the Tampa Bay Times is paywalled; both stories were stood up elsewhere. X/Twitter remains behind a login wall.</p>
+
+  <h4>About this issue</h4>
+  <ul>
+    <li>Published 05:53 Eastern, before the 8:30 CPI print. Nine lead stories, eleven short items.</li>
+    <li>Five leads are subjects with no story in the last three issues. Four are follow-ups, at the cap.</li>
+    <li>One story concerns the company whose model writes this brief. It carries a disclosure line and a link to the primary document.</li>
+    <li>Every quotation is under fifteen words and attributed; everything else is paraphrase. Non-English sources are paraphrase only.</li>
+  </ul>
+</footer>
+
+<script>
+(function(){
+  document.getElementById("sendfb").addEventListener("click", function(){
+    var lines = [];
+    document.querySelectorAll(".fb").forEach(function(box){
+      var id = box.getAttribute("data-id");
+      box.querySelectorAll("input:checked").forEach(function(checked){
+        lines.push(id + " / " + checked.name + ": " + checked.value);
+      });
+    });
+    if (!lines.length) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = encodeURIComponent("Issue 2026-09-11 feedback\n\n" + lines.join("\n")
+      + "\n\n---\nAnything still here that shouldn't be, or missing that should:\n\n");
+    var title = encodeURIComponent("Brief feedback 2026-09-11");
+    window.open("https://github.com/historiocity/News-Agent/issues/new?labels=brief-feedback&title=" + title + "&body=" + body, "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
