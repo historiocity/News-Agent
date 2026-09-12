@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Friday, 11 September 2026 (EOD / Grok edition)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  figure { margin:1.1rem 0 .6rem; }
+  figcaption { color:var(--muted); font-size:.84rem; margin-top:.3rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  footer h4 { color:var(--fg); font-size:.95rem; margin:1.4rem 0 .3rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list summary .chip { vertical-align:.05rem; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+  .corr { background:var(--box); border:1px solid var(--accent); padding:.7rem .9rem; margin:0 0 1rem; font-size:.94rem; }
+  .corr .t { font-weight:bold; color:var(--accent); font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; }
+
+</style>
+</head>
+<body>
+<div class="wrap">
+
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 8-grok &middot; Saturday, 12 September 2026 &middot; Morning / Grok edition</div>
+  <h1>Ship traffic through Bab el-Mandeb halved, Chinese imagery is tied to a strike that killed three US troops, and JPMorgan now wants two hikes</h1>
+  <div class="sub">Eight stories at length, ten in brief. Continues from Friday&rsquo;s EOD Grok edition (<code>2026-09-11b-grok.html</code>); does not overwrite Claude/Action files.</div>
+  <div class="prov">
+    Loaded <code>config.md</code> from historiocity/News-Agent. Continuity: Issues 7 and 7b-grok. No prior 12 September archive file.
+    16 sources checked, 9 of them outside the watchlist. Four lead stories are subjects Friday&rsquo;s EOD did not have as fired triggers (or missed); four are dated catalysts / where-things-stand.
+    Biggest story today that was not on Friday&rsquo;s EOD list as a fired trigger: Bab el-Mandeb daily transits collapsing to 15 (Kpler, via The National) &mdash; the named watchlist wake. Second off-list find: the US linking Chinese satellite imagery to the 17 July strike that killed three US troops, ahead of the 24 September Xi visit.
+  </div>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#bab-transit">Bab el-Mandeb traffic halved the day after Perim fell &mdash; the watchlist trigger that did not fire Friday</a></li>
+    <li><a href="#china-sat">The US links Chinese satellite imagery to the July strike that killed three American troops</a></li>
+    <li><a href="#jpm-fed">JPMorgan now sees a hike next week and another in December</a></li>
+    <li><a href="#rsi-labs">Staff at Anthropic and OpenAI are saying out loud what the labs already price privately</a></li>
+    <li><a href="#oman-monday">Monday in Oman is still a meeting date, not a Hormuz corridor</a></li>
+    <li><a href="#fl-dengue-death">Florida &amp; Tampa Bay: officials are investigating a possible dengue death &mdash; and the vaccine comment window closes Sunday</a></li>
+    <li><a href="#ca-ai">California still has eighteen days on the AI conduct bills</a></li>
+    <li><a href="#visa-monday">On Monday, duration of status ends &mdash; the first of two defaults coming off</a></li>
+  </ol>
+  <div class="also"><a href="#also">Also today (10)</a> &mdash; ranked below the line, each one opens.</div>
+</nav>
+
+<article id="bab-transit">
+  <h2>Bab el-Mandeb traffic halved the day after Perim fell &mdash; the watchlist trigger that did not fire Friday</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Preliminary Kpler data, reported Saturday by <em>The National</em> and stood up by UA.NEWS, put Friday&rsquo;s Bab el-Mandeb vessel transits at <strong>15</strong>, down from <strong>30</strong> on Thursday &mdash; six exiting the Red Sea, nine entering. Cargoes included crude, grain and steel; three ships were in ballast. That is the named wake on this brief&rsquo;s Bab el-Mandeb thread: a collapse in transit counts.</p>
+  <p>Friday&rsquo;s EOD Grok edition said transit and underwriting markers had not moved and kept Bab below the line. That framing is now wrong, and saying so is the point of having named the trigger. The drop follows the Houthi seizure of Perim (Mayyun), Mocha and Dhubab &mdash; positions on both banks of the strait.</p>
+  <p>The pump did not wait for a Joint War Committee circular. AAA&rsquo;s national diesel average as of 12 September is <strong>$6.1602</strong> &mdash; the highest figure on AAA&rsquo;s own recorded table, up from $6.0556 on Friday morning. Gasoline is $4.3104. Saudi Arabia&rsquo;s East-West pipeline, the Hormuz workaround, still has no restart notice after Thursday&rsquo;s precautionary shutdown. Brent settled Friday near $104.61, WTI near $100.05.</p>
+  <p>What to watch: whether Saturday and Sunday transits stay depressed or snap back; war-risk premiums or a JWC relisting (none found this morning); and any East-West restart before Monday&rsquo;s Oman meeting.</p>
+  <div class="div">
+    <div class="t">Divergence &mdash; one-day blip, or effective control?</div>
+    <p><b>What is disputed.</b> Not the Kpler preliminary count for Friday. Whether a single-day halving is the start of an underwriting-driven closure or a holiday/weekend artefact plus fear.</p>
+    <p><b>Why they differ.</b> Chokepoint stories compress fast. Wire copy that led Perim as a &ldquo;completed takeover&rdquo; needs traffic to prove it; shipping desks wait for a week of AIS and a premium print. One Friday is a signal, not yet a series.</p>
+    <p><b>What it means for you.</b> Hold the watchlist rule: premiums, JWC, sustained transit collapse, or a US kinetic response. Friday&rsquo;s 15 is the first hard transit number since Perim. If the next three days stay near that level, the strait is effectively controlled for pricing even if lawyers say the water is open. Diesel at a new AAA record with East-West still dark is the household end of the same chain.</p>
+  </div>
+  <details><summary>Dig deeper &mdash; why transit counts settle the argument the island seizure could not</summary>
+    <div class="exp">
+      <p>Issue 7 led Perim and warned not to read occupation of the rocks as closure of the channel. The observation that would settle it was mundane: war-risk premiums and weekly transit counts. Friday EOD still lacked both. Saturday morning has the count.</p>
+      <p>Halving from 30 to 15 is not yet the &minus;15% already baked into older Red Sea figures, and it is not a Joint War Committee relist. It is shipowners voting with AIS. Combined with East-West still offline and diesel setting another record on a softer crude tape, the products market is pricing refining tightness plus two impaired Middle East routes &mdash; not a headline barrel alone.</p>
+    </div>
+  </details>
+  <div class="sources">Sources:
+    <a href="https://ua.news/en/world/sudnoplavstvo-cherez-bab-el-mandeb-vpalo-vdvichi-na-tli-zakhoplennia-perima-khusitami">UA.NEWS on Kpler / The National</a> &middot;
+    <a href="https://www.thenationalnews.com/business/energy/2026/09/12/ship-traffic-in-bab-al-mandeb-strait-halves-as-houthis-seize-control-of-key-island/">The National (timed out on direct fetch; stood up elsewhere)</a> &middot;
+    <a href="https://gasprices.aaa.com/">AAA Fuel Prices, 12 Sep</a> &middot;
+    <a href="https://historiocity.github.io/News-Agent/issues/2026-09-11b-grok.html">prior framing, 11b-grok</a> &middot;
+    Al Jazeera / AFP on Perim, 11 Sep
+  </div>
+  <div class="fb" data-id="bab-transit">
+    <p>Friday EOD said transit had not moved. Leading the Kpler drop this morning &mdash; right call?</p>
+    <label><input type="radio" name="bab-lead" value="yes"> Yes &mdash; named trigger fired</label>
+    <label><input type="radio" name="bab-lead" value="wait"> Wait for a multi-day series</label>
+    <p>Oil strikes and the pump as one chain, including this transit print?</p>
+    <label><input type="radio" name="bab-chain" value="one"> Yes &mdash; keep one chain</label>
+    <label><input type="radio" name="bab-chain" value="split"> Split transit from diesel</label>
+  </div>
+</article>
+
+<article id="china-sat">
+  <h2>The US links Chinese satellite imagery to the July strike that killed three American troops</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>US officials familiar with the matter say that before Iran&rsquo;s 17 July ballistic-missile strike on a housing area at Muwaffaq Salti Air Base in Jordan &mdash; three US troops killed, four wounded &mdash; Tehran acquired high-resolution satellite images of the base from Chinese entities. Iran procured images both before and after the attack. The reporting, in the <em>Wall Street Journal</em> and stood up Saturday by Hindustan Times, calls it the clearest evidence so far that Chinese support for Iran during the war had lethal consequences for US forces.</p>
+  <p>Officials declined to name the Chinese entities and did not allege direct involvement by Beijing. Senior US officials raised the imagery with Chinese counterparts, who demanded proof; Beijing has repeatedly dismissed the concern. In May the administration sanctioned MizarVision, Earth Eye and Chang Guang over imagery that could help Iran target US and partner forces. Chang Guang was previously accused of supporting Houthi targeting.</p>
+  <p>The finding lands twelve days before Xi Jinping is reported due at the White House on 24 September. Trump has told his team that maintaining relations with Xi is a priority; public US comments after July played the assistance down. Officials separately worry China could be helping Iran stalk US naval assets after recent near-miss ballistic shots at carriers.</p>
+  <p>What to watch: whether the administration puts the finding on the record before the 24th; any further designations; and whether the summit readout mentions Iran support at all.</p>
+  <div class="div">
+    <div class="t">Divergence &mdash; commercial imagery, or state help?</div>
+    <p><b>What is disputed.</b> Not that a WSJ-sourced account exists. Whether &ldquo;Chinese entities&rdquo; means policy in Beijing or a sanctions-evasion market the Party tolerates.</p>
+    <p><b>Why they differ.</b> US officials blur commercial and state on purpose because Chinese remote-sensing firms often sit under Party oversight. Beijing&rsquo;s line treats any link as fabrication. Without named firms in the Saturday write-up beyond the May sanctions list, outsiders cannot adjudicate.</p>
+    <p><b>What it means for you.</b> Label this single-sourced and hold it as summit furniture. The actionable channel is sanctions and export pressure the US can actually pull &mdash; not a courtroom finding. A White House or State on-record statement before the 24th would upgrade it; silence would mean the relationship priority won.</p>
+  </div>
+  <div class="sources">Sources:
+    <a href="https://www.hindustantimes.com/world-news/us-links-chinese-satellite-imagery-to-iranian-strike-that-killed-three-troops-101789193266253.html">Hindustan Times standing up WSJ</a> &middot;
+    WSJ reporters named in that piece (Bergengruen / Holliday / Seth) &middot;
+    May sanctions context as reported therein
+  </div>
+  <div class="fb" data-id="china-sat">
+    <p>I ran this single-sourced and labelled it. Right call?</p>
+    <label><input type="radio" name="sat-ss" value="yes"> Yes &mdash; run with the label</label>
+    <label><input type="radio" name="sat-ss" value="hold"> Hold until a second outlet names firms</label>
+    <p>Cadence into the 24 September Xi visit?</p>
+    <label><input type="radio" name="sat-xi" value="each"> Each on-record US statement</label>
+    <label><input type="radio" name="sat-xi" value="summit"> Summit readout only</label>
+  </div>
+</article>
+
+<article id="jpm-fed">
+  <h2>JPMorgan now sees a hike next week and another in December</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>After Friday&rsquo;s CPI, JPMorgan raised its Federal Reserve call to a 25-basis-point hike at the September meeting <em>and</em> another in December. Chief US economist Michael Feroli cited core PCE stuck above 3% each month this year and minimal progress toward the 2% target. The bank had previously leaned December-only.</p>
+  <p>The print that moved desks is already in Friday&rsquo;s EOD edition and is not re-led here: headline CPI +0.4% m/m and +3.4% y/y; core +0.3% m/m (a tenth hot) and +2.4% y/y; food-at-home unchanged; transportation services +0.5%; gasoline +3.9% m/m; fuel oil +10.1% m/m and +52% y/y. FedWatch odds for a Wednesday hike sat in the mid-to-high 80s to nearly 90%. The funds rate is 3.50&ndash;3.75%. The Fed&rsquo;s calendar has the meeting 15&ndash;16 September, statement and dots Wednesday the 16th at 2 p.m. Eastern. The 10-year touched near 4.98% before easing.</p>
+  <p>Your cadence on the Fed is prints and the decision only. This lead is the US-financials half: a systemically important bank rewriting its path after the last print before the meeting &mdash; not a state-of-play item on a quiet day.</p>
+  <p>What to watch: Wednesday&rsquo;s statement and dots; whether dissenters from July are joined; and whether food-at-home stays flat in the next CPI while diesel sets records.</p>
+  <div class="sources">Sources:
+    <a href="https://www.newsquawk.com/headlines/jpmorgan-revises-fed-forecast-and-now-sees-hikes-in-september-and-december">Newsquawk on Feroli</a> &middot;
+    Gate News / desk wrap, 11 Sep &middot;
+    <a href="https://www.cnbc.com/2026/09/11/cpi-inflation-report-august-2026.html">CNBC CPI</a> &middot;
+    Federal Reserve FOMC calendar &middot;
+    11b-grok CPI lead
+  </div>
+  <div class="fb" data-id="jpm-fed">
+    <p>Bank forecast as a Core financials lead the morning after CPI &mdash; or Also?</p>
+    <label><input type="radio" name="jpm-slot" value="lead"> Lead, as here</label>
+    <label><input type="radio" name="jpm-slot" value="also"> Also today is enough</label>
+    <p>Fed cadence still prints + decision only?</p>
+    <label><input type="radio" name="jpm-fedcad" value="yes"> Yes</label>
+    <label><input type="radio" name="jpm-fedcad" value="widen"> Widen to major-dealer forecast shifts</label>
+  </div>
+</article>
+
+<article id="rsi-labs">
+  <h2>Staff at Anthropic and OpenAI are saying out loud what the labs already price privately</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <div class="corr">
+    <div class="t">Disclosure</div>
+    <p>This brief is written with a Grok model (xAI). The story concerns staff at Anthropic and OpenAI. Read the linked reporting with that distance in mind.</p>
+  </div>
+  <p>Jacob Coxon resigned from Anthropic this week after three years in pre-training research and wrote that leading labs are &ldquo;racing straight to self-improving superintelligence and gambling with our lives.&rdquo; Alignment lead Evan Hubinger replied that he personally puts more than a 10% chance on AI killing all humans within a decade, and that recursive self-improvement is the path he fears. OpenAI safety-oversight staffer Marcus Williams wrote that without regulation or a coordinated slowdown, human extinction in the next few years &ldquo;seems very likely,&rdquo; and when pressed offered &ldquo;70% in the next 3 years if there isn&rsquo;t regulation/slowdown.&rdquo;</p>
+  <p>Similar posts followed from Anna Wang, Jen Leike and Samuel Marks at Anthropic, and from Paul Christiano, Julie Steele and Tomek Korbak at OpenAI. Geoffrey Hinton told the BBC a 10% extinction estimate within a decade was &ldquo;not unreasonable.&rdquo; Anthropic has already said in June and August that Claude is accelerating AI development &mdash; a possible path to RSI &mdash; and that its engineers ship roughly eight times as much code per quarter as in 2021&ndash;25.</p>
+  <p>This is adjacent to, not the same as, the frontier-lab-safety thread opened on the METR investigation into Anthropic&rsquo;s own eval incidents. No METR report has published. The policy hook is whether public staff risk numbers move Congress or state attorneys general before California&rsquo;s 30 September bill deadline.</p>
+  <p>What to watch: any lab slowing a release calendar on the record; METR&rsquo;s report; and whether regulators treat staff p(doom) posts as evidence in the preemption fight.</p>
+  <div class="sources">Sources:
+    <a href="https://www.cnbc.com/2026/09/11/anthropic-openai-ai-existential-concerns.html">CNBC, 11 Sep</a> &middot;
+    <a href="https://www.businessinsider.com/anthropic-openai-employees-speak-out-ai-safety-2026-9">Business Insider staff roundup</a> &middot;
+    Anthropic RSI posts as cited therein
+  </div>
+  <div class="fb" data-id="rsi-labs">
+    <p>Disclosure line for a non-Anthropic model covering Anthropic staff &mdash; keep?</p>
+    <label><input type="radio" name="rsi-disc" value="keep"> Keep</label>
+    <label><input type="radio" name="rsi-disc" value="drop"> Drop when we are not the vendor</label>
+    <p>Follow RSI staff statements, or wait for METR / a regulator?</p>
+    <label><input type="radio" name="rsi-cad" value="staff"> Staff statements when they cluster</label>
+    <label><input type="radio" name="rsi-cad" value="metr"> METR / regulator only</label>
+  </div>
+</article>
+
+<article id="oman-monday">
+  <h2>Monday in Oman is still a meeting date, not a Hormuz corridor</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Where things stand</span>
+    <span class="chip">Follow-up</span>
+  </div>
+  <p>Nothing new overnight on the text. The dated catalyst is tomorrow: Iranian Foreign Ministry spokesman Esmaeil Baghaei said foreign ministers from Iran, Iraq and other Persian Gulf littoral states will meet in Oman on Monday 14 September, with Iran&ndash;Oman negotiations on safe commercial shipping through Hormuz on the agenda.</p>
+  <p>That is still not the Hormuz watchlist wake. The wake remains unpublished restricted-zone coordinates, a signed corridor Muscat confirms, or war-risk and AIS that settle the IRGC counter-claim. Baghaei paired commitment language with the claim that security &ldquo;cannot be guaranteed&rdquo; while US actions continue &mdash; a meeting date, not a reopening. East-West remains dark into the meeting.</p>
+  <p>What to watch: Muscat confirmation and any communiqu&eacute;; published coordinates; whether Yanbu loadings resume before the ministers leave.</p>
+  <div class="sources">Sources:
+    Al Jazeera / AFP &middot; Mehr News (Baghaei) &middot; Anadolu &middot; 11b-grok Oman lead
+  </div>
+  <div class="fb" data-id="oman-monday">
+    <p>Surface dated meetings like this on weekend mornings?</p>
+    <label><input type="radio" name="oman-cad" value="yes"> Yes</label>
+    <label><input type="radio" name="oman-cad" value="corridor"> Only a confirmed corridor / coordinates</label>
+  </div>
+</article>
+
+<article id="fl-dengue-death">
+  <h2>Florida &amp; Tampa Bay: officials are investigating a possible dengue death &mdash; and the vaccine comment window closes Sunday</h2>
+  <div class="meta">
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip">Science &amp; public health</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <div class="corr">
+    <div class="t">Correction &mdash; Friday EOD miss</div>
+    <p>Friday&rsquo;s EOD Grok edition said no severe or hospitalised case had been named. Local outlets had already reported that the Florida Department of Health is investigating a Hillsborough death possibly associated with dengue. That is the watchlist severe-case trigger. It should have run Friday evening; it leads the local section this morning.</p>
+  </div>
+  <p>DOH confirmed to WFTS/TampaBay28 that it is actively investigating the recently reported death of a Hillsborough resident possibly associated with dengue infection, and said it cannot provide further details under Florida Statutes &sect;381.0031(6). Family accounts, carried by Patch and others, say a Tampa woman died on her 80th birthday at Tampa General Hospital. Cause is not officially confirmed.</p>
+  <p>The week-35 ledger from Friday stands: 111 locally acquired cases statewide, Hillsborough 95. TGH&rsquo;s Kartik Cherabuddi said the mainland US has not seen this many local cases in the modern era, and that the hospital is seeing moderate and severe disease with hospitalisations. Hillsborough health officer Carla Fry noted only about one in four infections is symptomatic &mdash; so the true burden is higher than the ledger.</p>
+  <p>Separately, comment on school-entry vaccine rule 64D-3.046 closes Sunday 14 September. Physicians requested a hearing; none has been granted. If the window closes without one, the next fight is at DOAH. Pasco&rsquo;s final budget adoption is Tuesday 22 September; Pinellas Thursday 24 September &mdash; dates corrected Friday.</p>
+  <p>What to watch: whether DOH confirms or rules out dengue as cause; week 36; Pasco reaching double figures; a granted vaccine hearing date.</p>
+  <div class="sources">Sources:
+    <a href="https://www.tampabay28.com/news/local-news/tampa-metro-west-hillsborough-county/could-a-mosquito-bite-be-fatal-hillsborough-health-officials-probe-death-amid-historic-dengue-outbreak">WFTS / TampaBay28</a> &middot;
+    Patch / WIOD on the family account &middot;
+    Florida Arbovirus week 35 &middot;
+    vaccine-rule watchlist &middot;
+    11b-grok dengue lead
+  </div>
+  <div class="fb" data-id="fl-dengue-death">
+    <p>Death investigation before official confirmation &mdash; clears the local bar?</p>
+    <label><input type="radio" name="fl-death" value="yes"> Yes &mdash; DOH investigating is enough</label>
+    <label><input type="radio" name="fl-death" value="confirm"> Wait for confirmed cause</label>
+    <p>Vaccine Sunday deadline in the same local story?</p>
+    <label><input type="radio" name="fl-vax" value="same"> Same story, as here</label>
+    <label><input type="radio" name="fl-vax" value="also"> Also today only</label>
+  </div>
+</article>
+
+<article id="ca-ai">
+  <h2>California still has eighteen days on the AI conduct bills</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Where things stand</span>
+    <span class="chip">Follow-up</span>
+  </div>
+  <p>No signature or veto overnight. Still unsigned against the 30 September governor deadline: SB 1000 (Transparency Act rewrite &mdash; drops the 1m-user threshold, urgency clause so it bites on signature), SB 947 (No Robo Bosses), and SB 903 (AI psychotherapy). The audit bills (SB 813, AB 1405) and the child-safety package are already law. Colorado&rsquo;s revised ADMT draft is due 23 September.</p>
+  <p>What to watch: SB 1000 especially; DOJ AI Litigation Task Force naming any California statute; Colorado&rsquo;s redraft.</p>
+  <div class="sources">Sources: 11b-grok / Issue 7 CA leads &middot; Office of the Governor bill actions as previously swept</div>
+  <div class="fb" data-id="ca-ai">
+    <p>Weekend countdown on unsigned bills &mdash; useful?</p>
+    <label><input type="radio" name="ca-cd" value="useful"> Useful until 30 Sep</label>
+    <label><input type="radio" name="ca-cd" value="sig"> Only on signature or veto</label>
+  </div>
+</article>
+
+<article id="visa-monday">
+  <h2>On Monday, duration of status ends &mdash; the first of two defaults coming off</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Where things stand</span>
+    <span class="chip">Primary source</span>
+    <span class="chip">Follow-up</span>
+  </div>
+  <p>The text did not move overnight. The calendar did: DHS final rule FR 2026-14439 takes effect Monday 15 September, ending duration-of-status admission for F, J and I classifications. Fixed admission to the I-20 / DS-2019 end date, capped at four years, plus 30 days. Existing D/S holders may remain to programme end or four years from the effective date, whichever is first.</p>
+  <p>The companion proposal to delete the post-employment grace period (FR 2026-18631) remains open for comment through 10 November. Two structural defaults off nonimmigrant status inside a month; Monday is the first bite. Status can be cured; unlawful presence triggers the non-discretionary 3- and 10-year bars.</p>
+  <p>What to watch: any last-minute stay; extension-of-stay adjudication times; who files on the grace-period docket.</p>
+  <div class="sources">Sources: FR 2026-14439 &middot; FR 2026-18631 &middot; 10b / 11 / 11b-grok framings</div>
+  <div class="fb" data-id="visa-monday">
+    <p>Weekend Where-things-stand on a Monday effective date &mdash; right?</p>
+    <label><input type="radio" name="visa-wts" value="yes"> Yes</label>
+    <label><input type="radio" name="visa-wts" value="mon"> Only the Monday it bites</label>
+  </div>
+</article>
+
+<h2 class="section" id="also">Also today</h2>
+<p class="secnote">Ten things I saw and ranked below the line. Each one opens &mdash; the line is my judgement; what is behind it is the substance.</p>
+<div class="also-list">
+
+<details>
+  <summary><span class="chip">US politics &amp; policy</span> The mail-ballot stay is fully briefed and there is still no order on 26A305.</summary>
+  <div class="exp">
+    <p class="btl"><b>Below the line</b> because your instruction is movement only, and nothing has issued since the government reply on 10 September.</p>
+    <p>Application No. 26A305 remains pending. An administrative stay, not the eventual merits order, decides whether the USPS rule touches November ballots already being printed.</p>
+    <div class="sources">Primary source SCOTUS docket 26A305</div>
+  </div>
+</details>
+
+<details>
+  <summary><span class="chip">World economy</span> Canada&rsquo;s &sect;338 duty-list modifications bite Monday; the import bans follow on the 29th.</summary>
+  <div class="exp">
+    <p class="btl"><b>Below the line</b> because nothing new filed &mdash; no CIT complaint, no ITC investigation &mdash; only the calendar.</p>
+    <p>Two proclamations modify the 50% duty lists effective 15 September; three impose outright bans effective 29 September on specified alcohol, dairy and motorcycles over 800cc. Track to judgment, not first filing.</p>
+    <div class="sources">White House proclamations as cited 11 Sep &middot; 11b-grok</div>
+  </div>
+</details>
+
+<details>
+  <summary><span class="chip">Geopolitics</span> Iran aviation: GL J-1 wind-down still closes 12:01 a.m. ET 23 September; no narrow safety-of-flight licence found.</summary>
+  <div class="exp">
+    <p class="btl"><b>Below the line</b> because the designations already led and Saturday adds only eleven days on the clock.</p>
+    <div class="sources">FR 2026-18576 &middot; Issue 7 lead</div>
+  </div>
+</details>
+
+<details>
+  <summary><span class="chip">Energy &amp; grid</span> East-West: still no restart notice Saturday morning.</summary>
+  <div class="exp">
+    <p class="btl"><b>Below the line</b> as a standalone because the outage is already in the Bab/diesel chain; this line exists so the restart is auditable.</p>
+    <div class="sources">Reuters / Guardian / SPA as of 11&ndash;12 Sep</div>
+  </div>
+</details>
+
+<details>
+  <summary><span class="chip">Macro &amp; markets</span> FOMC meets 15&ndash;16 September; statement and dots Wednesday the 16th at 2 p.m. Eastern.</summary>
+  <div class="exp">
+    <p class="btl"><b>Below the line</b> because your Fed cadence is prints and the decision &mdash; this is the calendar, not a state-of-play.</p>
+    <div class="sources">Federal Reserve FOMC calendar</div>
+  </div>
+</details>
+
+<details>
+  <summary><span class="chip">Energy &amp; grid</span> FERC&rsquo;s large-load show-cause orders (RM26-4) still have no public operator response reached this run.</summary>
+  <div class="exp">
+    <p class="btl"><b>Below the line</b> because absence of a response is not movement.</p>
+    <div class="sources">10b FERC lead &middot; docket RM26-4</div>
+  </div>
+</details>
+
+<details>
+  <summary><span class="chip">Energy &amp; grid</span> AAA diesel $6.1602 / gasoline $4.3104 as of 12 September &mdash; diesel is AAA&rsquo;s highest recorded average.</summary>
+  <div class="exp">
+    <p class="btl"><b>Below the line</b> as a standalone because the number is in the energy lead; kept here for the series.</p>
+    <div class="sources">AAA Fuel Prices</div>
+  </div>
+</details>
+
+<details>
+  <summary><span class="chip">Florida &amp; Tampa Bay</span> Pinellas school-closure public comment still 22 September; workshop 6 October; board vote 13 October.</summary>
+  <div class="exp">
+    <p class="btl"><b>Below the line</b> because Issue 7 already led Planning for Progress and no list changed overnight.</p>
+    <div class="sources">PCS Planning for Progress &middot; Issue 7</div>
+  </div>
+</details>
+
+<details>
+  <summary><span class="chip">AI &amp; tech industry</span> US&ndash;China AI talks still have no published date; Xi still reported due 24 September.</summary>
+  <div class="exp">
+    <p class="btl"><b>Below the line</b> because commentary is not movement on this thread&rsquo;s rule.</p>
+    <div class="sources">watchlist US&ndash;China AI talks</div>
+  </div>
+</details>
+
+<details>
+  <summary><span class="chip">US politics &amp; policy</span> CIA released a tranche of pre-9/11 Bin Laden intelligence documents on the anniversary.</summary>
+  <div class="exp">
+    <p class="btl"><b>Below the line</b> and nearly dropped: commemorative release, no statute, no price, no US-channel policy change today.</p>
+    <div class="sources">Al Jazeera / SMH, 12 Sep</div>
+  </div>
+</details>
+
+</div>
+
+<div class="fb" data-id="also-section">
+  <p>One question about this whole section: were the right things ranked below the line?</p>
+  <label><input type="radio" name="also-rank" value="right"> About right</label>
+  <label><input type="radio" name="also-rank" value="lead"> Some of these should have led</label>
+  <label><input type="radio" name="also-rank" value="drop"> Some should have been dropped entirely</label>
+  <label><input type="radio" name="also-rank" value="depth"> Fewer short items, more depth up top</label>
+</div>
+
+<div class="submit">
+  <button type="button" id="sendfb">Send my feedback &rarr;</button>
+  <p style="color:var(--muted);font-size:.88rem;margin-top:.4rem">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+</div>
+
+<footer>
+  <h4>Sources checked this run &mdash; 16, of which 9 outside the watchlist</h4>
+  <p><b>Pointed at by a thread (7):</b> AAA Fuel Prices &middot; SCOTUS docket 26A305 (attempted) &middot; Florida DOH / local dengue reporting &middot; Federal Register JSON for 11&ndash;12 September &middot; Federal Reserve FOMC calendar &middot; Bab el-Mandeb / Hormuz watchlist markers &middot; California AI bill deadline thread.</p>
+  <p><b>Not pointed at by any thread (9):</b> UA.NEWS / The National on Kpler transit counts &middot; Hindustan Times / WSJ on Chinese imagery &middot; CNBC and Business Insider on lab staff RSI posts &middot; Newsquawk / Gate on JPMorgan Fed call &middot; Al Jazeera continuity on Perim &middot; WFTS/TampaBay28 dengue death probe &middot; Guardian / Reuters East-West restart sweep &middot; CIA 9/11 document release desks &middot; prior Issues 7 and 7b-grok for continuity.</p>
+
+  <h4>The negative check</h4>
+  <p>Biggest story today not on Friday&rsquo;s EOD list as a <em>fired</em> trigger: Bab el-Mandeb transit collapse to 15. The thread existed; the wake had not fired; it leads. Second off-list: Chinese satellite imagery linked to the July troop deaths &mdash; not on any beat as a standing thread; it leads. Declined: CIA Bin Laden document dump (commemorative).</p>
+
+  <h4>Corrections and what I got wrong</h4>
+  <p><b>Dengue severe-case miss.</b> Friday EOD said no severe or hospitalised case was named. DOH&rsquo;s investigation of a possible dengue-associated Hillsborough death was already in local reporting. Corrected in the local lead above.</p>
+
+  <h4>Feedback applied</h4>
+  <p>Core leads the book &middot; oil/strikes/pump as one causal chain &middot; Fed = prints and decision only (JPM is financials, not Fed state-of-play) &middot; &sect;338 / USPS / CA AI on movement or open deadlines &middot; Florida only on local merit &middot; single-sourced OK with label &middot; corrections in a box at the top of the story &middot; closed feedback still read (Issue 7 / Issue 3).</p>
+
+  <h4>Threads swept, no trigger fired</h4>
+  <p>USPS 26A305 (no order) &middot; CA AI signatures/vetoes &middot; METR report &middot; UAP implementing guidance &middot; FERC operator responses &middot; bank stablecoin consortium &middot; birthright citizenship &middot; Florida Amendment 3 &middot; Waymo Tampa Bay &middot; Treasury long-end buyback (no new operation) &middot; AI gated-capability tiers &middot; federal funding to 11 December.</p>
+
+  <h4>Could not reach</h4>
+  <p>BLS CPI HTML blocked to bots (used CNBC / prior Table 1 stand-up) &middot; The National timed out (stood via UA.NEWS) &middot; SCOTUS docket page timed out (no order reported via search) &middot; federalregister.gov page fetches block (JSON API used) &middot; Tampa Bay Times paywalled &middot; GAO index previously 403; not retried as a workaround &middot; Reuters story pages often refuse direct fetch.</p>
+
+  <h4>About this issue</h4>
+  <p>Issue No. 8-grok &mdash; morning edition for Saturday 12 September 2026. Filename includes <code>grok</code>. Does not overwrite Claude/Action issues.</p>
+  <p>Eight lead stories, ten short items. Core-weighted against the Issue 10 / 11 framework. Four leads are new movement or misses since Friday EOD; four are dated catalysts / where-things-stand.</p>
+  <p>Every quotation is under fifteen words and attributed; everything else is paraphrase.</p>
+</footer>
+
+<script>
+(function(){
+  document.getElementById("sendfb").addEventListener("click", function(){
+    var lines = [];
+    document.querySelectorAll(".fb").forEach(function(box){
+      var id = box.getAttribute("data-id") || "";
+      box.querySelectorAll("input:checked").forEach(function(checked){
+        lines.push((id || checked.name) + " / " + checked.name + ": " + checked.value);
+      });
+    });
+    if (!lines.length) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = encodeURIComponent("Issue 2026-09-12-grok feedback\n\n" + lines.join("\n")
+      + "\n\n---\nAnything still here that shouldn't be, or missing that should:\n\n");
+    var title = encodeURIComponent("Brief feedback 2026-09-12-grok");
+    window.open("https://github.com/historiocity/News-Agent/issues/new?labels=brief-feedback&title=" + title + "&body=" + body, "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
