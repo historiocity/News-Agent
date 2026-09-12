@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Saturday, 12 September 2026 (second edition / Grok)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  figure { margin:1.1rem 0 .6rem; }
+  figcaption { color:var(--muted); font-size:.84rem; margin-top:.3rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  footer h4 { color:var(--fg); font-size:.95rem; margin:1.4rem 0 .3rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list summary .chip { vertical-align:.05rem; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+  .corr { background:var(--box); border:1px solid var(--accent); padding:.7rem .9rem; margin:0 0 1rem; font-size:.94rem; }
+  .corr .t { font-weight:bold; color:var(--accent); font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 8b-grok &middot; Saturday, 12 September 2026 &middot; second edition</div>
+  <h1>A judge stayed the civil-service essay, August inflation leaked into the core, and diesel set another record on a market that is closed</h1>
+  <p class="sub">Ten stories at length, ten in brief. This replaces the morning Grok edition as a full Saturday paper, not a delta of Issue 7 or of <a href="2026-09-12-grok.html">2026-09-12-grok</a>. That file stands unchanged. US cash and Asia are shut for the weekend; the AAA pump still printed.</p>
+  <p class="prov"><b>20 sources checked, 12 of them outside the watchlist.</b> Six lead stories are on subjects with no story in the last three issues; four continue threads, at the cap. <b>Biggest story today that was not on my list:</b> Judge George O&rsquo;Toole&rsquo;s stay of the OPM civil-service essay in <em>AFGE v. Kupor</em>. No beat or thread pointed at federal hiring. It leads. Second off-list find that cleared: Nvidia in talks to put up to $10&nbsp;billion into an Anthropic IPO. The morning edition&rsquo;s Oman / California-days-left / duration-of-status leads do not return &mdash; they had no new fact.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#opm-loyalty">A Boston judge stayed the civil-service essay that asked applicants which Trump order they would implement</a></li>
+    <li><a href="#cpi-august">August CPI leaked into the core, and food-at-home has not &mdash; yet</a></li>
+    <li><a href="#energy-chain">Traffic through Bab el-Mandeb halved, the Hormuz workaround is dark, and diesel made another high on a closed market</a></li>
+    <li><a href="#anthropic-ipo">Nvidia is talking about putting $10 billion into an Anthropic IPO that would value the lab at $2 trillion</a></li>
+    <li><a href="#fcc-components">The FCC closed the component loophole that let Covered List chips hide inside someone else&rsquo;s box</a></li>
+    <li><a href="#china-sat">The US says Chinese satellite images were in Iranian hands before the July strike that killed three American troops</a></li>
+    <li><a href="#jpm-fed">JPMorgan now wants two hikes this year, not one</a></li>
+    <li><a href="#rsi-labs">Staff at the frontier labs are putting numbers on recursive self-improvement</a></li>
+    <li><a href="#japan-power">Japan&rsquo;s next tranche of US money is aimed at the power plants the AI build-out does not have</a></li>
+    <li><a href="#fl-dengue">Florida &amp; Tampa Bay: the state is investigating a possible dengue death in Hillsborough</a></li>
+  </ol>
+  <p class="also"><a href="#also-today">Also today (10)</a> &mdash; ranked below the line, each one opens.</p>
+</nav>
+
+<article id="opm-loyalty">
+  <h2>A Boston judge stayed the civil-service essay that asked applicants which Trump order they would implement</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>On Friday, U.S. District Judge George O&rsquo;Toole Jr. stayed the part of the Office of Personnel Management&rsquo;s Merit Hiring Plan that put a short essay on most federal civil-service applications. The question, quoted in the order, asked: how would you help advance the President&rsquo;s executive orders and policy priorities in this role &mdash; identify one or two that are significant to you, and explain how you would implement them if hired. Unions called it a loyalty test. OPM had said it was optional and that hiring could not turn on politics.</p>
+  <p>The stay is under 5 U.S.C. &sect;705. Case caption: <em>American Federation of Government Employees v. Kupor</em>, No. 25-13305 (D. Mass.). Within seven days OPM must tell every agency head the question is off the form; within fourteen it must file a status report. The stay lasts until the court says otherwise. O&rsquo;Toole denied a broader preliminary injunction that would have barred agencies from reading answers already in the file &mdash; the unions, he held, lacked standing for that remedy because their claimed injury is being asked, not being scored.</p>
+  <p>The Civil Service Reform Act bars employment decisions for these jobs on the basis of political affiliation. The judge found the unions likely to succeed on both the Administrative Procedure Act and the First Amendment: there is, he wrote, &ldquo;no legitimate governmental interest&rdquo; in inquiring into applicants&rsquo; political beliefs, and the question is not narrowly tailored. Plaintiffs say more than 70,000 postings carried it, from air-traffic control to nuclear-materials courier. OPM did not comment. The May 2025 memo implementing a January 2025 executive order is what put the essay on the form.</p>
+  <p><b>What to watch:</b> the seven-day notice and the fourteen-day status report; whether the government appeals to the First Circuit; and whether agencies treat answers already collected as usable once the form itself is stayed.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; stay of the question, or stay of the hiring plan?</span>
+    <p><b>What is disputed.</b> Scope, not the fact of the order. Some write-ups say the Merit Hiring Plan is paused. The two-page order stays the plan only &ldquo;insofar as&rdquo; it directs inclusion of that essay.</p>
+    <p><b>Why they differ.</b> The plan had other parts &mdash; more political-appointee involvement in hiring, three other essays. Those are not in the decretal language. Headline writers compressed a partial stay into a plan-wide halt. The opinion is longer; the order is two pages and specific.</p>
+    <p><b>What it means for you.</b> New applicants to GS-5 and above should stop seeing the question once OPM&rsquo;s notice lands. Anyone who already answered is in a gap the court declined to close. The observation that settles the rest is the status report due in two weeks, and whether the SG notices an appeal.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; why a &sect;705 stay is not a preliminary injunction, and why that split matters</summary>
+    <div class="exp">
+      <p>Section 705 of the APA lets a court postpone the effective date of agency action to the extent necessary to prevent irreparable injury, pending review. It is the administrative-law cousin of an injunction, and it runs against the rule, not against a pile of already-collected answers. That is why O&rsquo;Toole could stop the question going forward and still refuse to police what hiring officials do with essays already in USAJOBS.</p>
+      <p>The standing holding on the injunction half is the part that will travel. The unions&rsquo; injury, as pleaded, is compelled speech at the point of application. Once the speech has been given, an order telling agencies not to read it does not undo the compulsion. If that reasoning holds, later suits over politicised hiring will need a plaintiff who can show a hiring decision, not just a form. That is a narrower case and a slower one.</p>
+      <p>The statutory backdrop is older than this administration. The 1883 Pendleton Act and the 1978 Reform Act built a career service that is supposed to survive a change of president. An essay that asks which of the current president&rsquo;s orders the applicant finds &ldquo;significant&rdquo; sits on the wrong side of that line even if the agency stamps the question optional. Optionality is not a defence if the applicant reasonably reads the form as a test. O&rsquo;Toole accepted that reading. A different judge, or a circuit panel, can reject it. The next filing is the one to watch, not the commentary.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://storage.courtlistener.com/recap/gov.uscourts.mad.291405/gov.uscourts.mad.291405.87.0.pdf">Order, D. Mass. 11 Sep (primary)</a> &middot;
+    <a href="https://www.reuters.com/legal/government/us-judge-blocks-trump-administrations-loyalty-question-job-applicants-2026-09-12/">Reuters, 12 Sep</a> &middot;
+    <a href="https://fedscoop.com/court-blocks-trump-opm-loyalty-question-federal-hiring/">FedScoop</a> &middot;
+    <a href="https://www.govexec.com/workforce/2026/09/judge-halts-favorite-eo-question-federal-job-applications/415952/">Government Executive</a>
+  </p>
+  <div class="fb" data-id="opm-loyalty">
+    <p>This came from the negative check, not a beat sweep. More of that?</p>
+    <label><input type="radio" name="fb-opm-neg" value="yes"> Yes &mdash; keep asking what I missed</label>
+    <label><input type="radio" name="fb-opm-neg" value="beats"> Stick to the beats</label>
+    <p>Open a thread on civil-service hiring rules?</p>
+    <label><input type="radio" name="fb-opm-th" value="open"> Yes</label>
+    <label><input type="radio" name="fb-opm-th" value="appeal"> Only if the government appeals</label>
+  </div>
+</article>
+
+<article id="cpi-august">
+  <h2>August CPI leaked into the core, and food-at-home has not &mdash; yet</h2>
+  <div class="meta">
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The Bureau of Labor Statistics released August CPI on Friday at 8:30 Eastern. Issue 7 had already published. Headline rose 0.4 per cent on the month and 3.4 per cent on the year, matching July&rsquo;s annual rate. Core rose 0.3 per cent &mdash; a tenth hotter than the consensus 0.2 &mdash; and 2.4 per cent on the year, a tick down from 2.5 and the lowest annual core since March 2021. Energy was +2.1 per cent on the month and +16.3 per cent on the year, the fastest since May. Gasoline +3.9 per cent accounted for more than a third of the headline increase. Fuel oil +10.1 per cent and +52 per cent year-on-year. Natural gas and electricity both fell on the month.</p>
+  <p>The diagnostic this brief named on Thursday is now a number. Food-at-home was essentially unchanged (+2.2 per cent year-on-year). Transportation services rose 0.5 per cent (+2.4 per cent year-on-year). Supercore &mdash; services less energy services, rent and owners&rsquo; equivalent rent &mdash; rose 0.5 per cent, the ninth increase in ten months, and 3.0 per cent on the year, up from 2.8. Shelter was +0.3 per cent; the annual rate eased to 3.0 from 3.2. Combined with Tuesday&rsquo;s PPI (final demand +0.4 per cent, +5.4 per cent year-on-year; diesel +24.1 per cent at the factory gate), the last print before the 15&ndash;16 September meeting is a composition argument that is fraying at the edges.</p>
+  <p>Fed-funds futures moved the Wednesday hike from roughly 70 per cent before the print to the mid-to-high 80s after it. The funds rate is 3.50&ndash;3.75 per cent. The 10-year traded as high as about 4.98 per cent on Friday before easing; cash is shut until Monday. This is a print, not a state-of-play. The decision is Wednesday at 2 p.m. Eastern, with a dot plot.</p>
+  <p><b>What to watch:</b> whether Wednesday&rsquo;s statement treats energy as transitory or as the price level; whether the July hike-dissenters (Hammack, Kashkari, Logan) are joined; and whether September food-at-home is still flat once diesel has been above $6 for a month.</p>
+  <figure>
+    <svg viewBox="0 0 420 160" role="img" aria-label="August 2026 CPI month-on-month components" style="width:100%;height:auto">
+      <rect width="420" height="160" fill="transparent"/>
+      <text x="0" y="14" font-size="11" fill="currentColor">August CPI, month-on-month / per cent</text>
+      <g font-size="10" fill="currentColor">
+        <text x="0" y="148">headline</text>
+        <text x="70" y="148">core</text>
+        <text x="130" y="148">energy</text>
+        <text x="200" y="148">food-home</text>
+        <text x="280" y="148">trans. svc</text>
+        <text x="360" y="148">supercore</text>
+      </g>
+      <rect x="10" y="86" width="28" height="40" fill="#8a3324"/>
+      <rect x="80" y="96" width="28" height="30" fill="#8a3324"/>
+      <rect x="140" y="28" width="28" height="98" fill="#8a3324"/>
+      <rect x="220" y="124" width="28" height="2" fill="#8a3324"/>
+      <rect x="300" y="76" width="28" height="50" fill="#8a3324"/>
+      <rect x="370" y="76" width="28" height="50" fill="#8a3324"/>
+      <text x="12" y="82" font-size="10" fill="currentColor">0.4</text>
+      <text x="82" y="92" font-size="10" fill="currentColor">0.3</text>
+      <text x="138" y="24" font-size="10" fill="currentColor">2.1</text>
+      <text x="218" y="120" font-size="10" fill="currentColor">0.0</text>
+      <text x="302" y="72" font-size="10" fill="currentColor">0.5</text>
+      <text x="372" y="72" font-size="10" fill="currentColor">0.5</text>
+    </svg>
+    <figcaption>Food-at-home is the flat bar. Transport services and supercore are the leak. Energy is a different scale and is why the headline moved. Source: BLS via Haver.</figcaption>
+  </figure>
+  <div class="div">
+    <span class="t">Divergence &mdash; is the core print an energy story in disguise?</span>
+    <p><b>What is disputed.</b> Significance, not the table. Desks that call the report &ldquo;in line&rdquo; are looking at the headline match to 0.4. Desks that call it hot are looking at core +0.3 against +0.2 expected, and at supercore +0.5.</p>
+    <p><b>Why they differ.</b> Headline was the energy line doing what everyone knew it would do after a month of $100 crude. Core and supercore are supposed to be the residual. A tenth on core is small; nine of the last ten supercore prints are not. Timing matters: this is August, before diesel crossed $6 and before East-West went dark. September&rsquo;s table will be dirtier.</p>
+    <p><b>What it means for you.</b> The composition argument &mdash; diesel is an energy-line problem, not a price-level problem &mdash; survived food-at-home and failed transport services. Believe the table, not the adjectives. Wednesday&rsquo;s statement is the next observation.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.bls.gov/news.release/cpi.nr0.htm">BLS CPI release, 11 Sep</a> &middot;
+    <a href="https://www.haver.com/articles/u-s-consumer-price-inflation-steady-in-august-at-3-4-y-y">Haver on the components</a> &middot;
+    <a href="https://www.cnbc.com/2026/09/11/cpi-inflation-breakdown-august-2026.html">CNBC breakdown</a> &middot;
+    <a href="https://thehill.com/business/6083146-inflation-rate-cpi-august/">The Hill</a> &middot;
+    <a href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm">FOMC calendar</a>
+  </p>
+  <div class="fb" data-id="cpi-august">
+    <p>A Friday print, written Saturday, as a lead. Right slot?</p>
+    <label><input type="radio" name="fb-cpi-slot" value="lead"> Yes &mdash; last print before the meeting</label>
+    <label><input type="radio" name="fb-cpi-slot" value="also"> Also today would have done</label>
+    <p>Fed cadence still prints and the decision only?</p>
+    <label><input type="radio" name="fb-cpi-fed" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-cpi-fed" value="widen"> Widen to dealer forecast shifts</label>
+  </div>
+</article>
+
+<article id="energy-chain">
+  <h2>Traffic through Bab el-Mandeb halved, the Hormuz workaround is dark, and diesel made another high on a closed market</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Geopolitics</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>One shock, one chain. Preliminary Kpler counts, reported Saturday, put Friday&rsquo;s Bab el-Mandeb transits at 15 ships, against 30 on Thursday &mdash; six leaving the Red Sea, nine entering. That is the named wake on the Perim thread: a collapse in the daily count, the day after Houthi fighters took the island in the middle of the strait. Issue 7 said not to read rocks as a closure. Friday&rsquo;s EOD said the count had not moved. Both of those sentences are now wrong in the direction that matters.</p>
+  <p>The Hormuz workaround is still off. Saudi Arabia shut the East-West pipeline as a precaution after drones launched from Iraq&rsquo;s Maysan province hit the line in the Riyadh and Medina regions. The pipe has been moving four to five million barrels a day &mdash; four to five per cent of world supply &mdash; specifically because Hormuz is impaired. Baghdad fired the Maysan operations commander, opened an investigation, and on Saturday closed the Shalamcheh crossing with Iran. Riyadh said it would not retaliate &ldquo;at this stage,&rdquo; at the Iraqi prime minister&rsquo;s request. No group has claimed the drones. No restart notice has issued.</p>
+  <p>US cash crude is closed. Friday&rsquo;s settlement was Brent $104.61 and WTI $100.05, both down on the day, both up on the week. The pump did not wait. AAA, as of 12 September, has national diesel at $6.1602 &mdash; the highest figure on its own table, up from $6.0556 on Friday &mdash; and regular gasoline at $4.3104, up from $4.2950. Diesel set a record on a day the barrel fell, and then set another on a weekend. That is refining and inventory, plus two impaired routes, not the headline strip.</p>
+  <p><b>What to watch:</b> Saturday and Sunday AIS &mdash; one Friday is a signal, not a series; war-risk premiums or a Joint War Committee relist (none found this morning); any East-West restart; and whether next month&rsquo;s CPI food-at-home is still the flat bar.</p>
+  <figure>
+    <svg viewBox="0 0 420 150" role="img" aria-label="AAA national diesel, late August to 12 September" style="width:100%;height:auto">
+      <rect width="420" height="150" fill="transparent"/>
+      <text x="0" y="14" font-size="11" fill="currentColor">AAA US diesel, $ / gallon</text>
+      <polyline fill="none" stroke="#8a3324" stroke-width="2" points="20,110 90,78 160,58 230,42 300,28 370,18"/>
+      <circle cx="20" cy="110" r="3" fill="#8a3324"/>
+      <circle cx="160" cy="58" r="3" fill="#8a3324"/>
+      <circle cx="230" cy="42" r="3" fill="#8a3324"/>
+      <circle cx="300" cy="28" r="3" fill="#8a3324"/>
+      <circle cx="370" cy="18" r="3" fill="#8a3324"/>
+      <line x1="20" y1="70" x2="400" y2="70" stroke="currentColor" stroke-dasharray="3 3" opacity="0.4"/>
+      <text x="24" y="66" font-size="9" fill="currentColor">2022 record $5.81</text>
+      <text x="8" y="142" font-size="9" fill="currentColor">mid-Aug ~5.32</text>
+      <text x="140" y="142" font-size="9" fill="currentColor">10 Sep 5.98</text>
+      <text x="230" y="142" font-size="9" fill="currentColor">11 Sep 6.06</text>
+      <text x="320" y="142" font-size="9" fill="currentColor">12 Sep 6.16</text>
+    </svg>
+    <figcaption>AAA national diesel. The dashed line is the June 2022 all-time weekly high. Source: gasprices.aaa.com, 12 Sep.</figcaption>
+  </figure>
+  <div class="div">
+    <span class="t">Divergence &mdash; one-day transit drop, or effective control?</span>
+    <p><b>What is disputed.</b> Not Friday&rsquo;s Kpler preliminary. Whether a single-day halving is the start of an underwriting-driven closure or a weekend artefact plus fear.</p>
+    <p><b>Why they differ.</b> Military desks read Perim plus Dhubab as both banks of the strait. Shipping desks wait for a week of AIS and a premium print. The Joint War Committee last expanded the listed area in late July (JWLA-034); it has not relisted since Mocha and Perim. One Friday is not that circular.</p>
+    <p><b>What it means for you.</b> Hold the rule this brief wrote on the 11th: premiums, JWC, a multi-day transit collapse, or a US kinetic response. Friday&rsquo;s 15 is the first hard count. If the next three days stay near it, the strait is controlled for pricing even if the water is open. Diesel at a new AAA high with East-West dark is the household end of the same chain. Do not split them.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; why 4&ndash;5 million barrels on East-West is a different number from a Hormuz headline</summary>
+    <div class="exp">
+      <p>Hormuz is the only sea exit from the Gulf. East-West exists to pretend that is not true: Abqaiq to Yanbu, 1,200 kilometres, crude that never sees the strait. Saudi Arabia had been running it hard enough to matter &mdash; four to five million barrels a day in recent months, against a pre-war peacetime spare that was much smaller. An April hit on a pumping station cut throughput to about 700,000 barrels and was repaired in three days. This time there is no damage assessment on the record, only a precautionary shutdown and satellite smoke south of Medina.</p>
+      <p>Yanbu puts the barrels into the Red Sea. That is now the other impaired gate. Perim splits the Bab el-Mandeb into two lanes; Mocha and Dhubab sit on the banks; Greater and Lesser Hanish were reported taken on Friday as well. The Cape route still exists. It adds two to three weeks and it does not help a European diesel crack that was already set by refining utilisation at 98 per cent and East Coast distillate at 19.3 million barrels. SPR is 285&ndash;287 million, lowest since 1982, no draw authorised.</p>
+      <p>Iraq&rsquo;s response &mdash; fire the commander, close Shalamcheh, ask Riyadh not to hit back &mdash; is a containment bid. The last time Saudi facilities were struck from Iraqi soil, in July, the US and Saudi Arabia hit Popular Mobilisation Forces bases and killed at least twenty. A repeat, with East-West dark and Perim in Houthi hands, is a different tape. The 48 hours Khalid Bartafi gave Al Jazeera for whether this stays contained are the 48 hours this weekend is.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.thenationalnews.com/business/energy/2026/09/12/ship-traffic-in-bab-al-mandeb-strait-halves-as-houthis-seize-control-of-key-island/">The National / Kpler</a> &middot;
+    <a href="https://ua.news/en/world/sudnoplavstvo-cherez-bab-el-mandeb-vpalo-vdvichi-na-tli-zakhoplennia-perima-khusitami">UA.NEWS standing up the count</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/9/12/saudi-arabia-shuts-critical-oil-pipeline-after-drone-attack-what-happened">Al Jazeera, 12 Sep</a> &middot;
+    <a href="https://www.bbc.com/news/articles/c62m933465eo">BBC</a> &middot;
+    <a href="https://www.handelsblatt.com/politik/international/konflikt-im-nahen-osten-pipeline-stillgelegt-saudische-oelexporte-massiv-unter-druck/100254031.html">Handelsblatt</a> &middot;
+    <a href="https://gasprices.aaa.com/">AAA, 12 Sep</a> &middot;
+    <a href="https://www.theguardian.com/world/2026/sep/12/yemen-houthi-advance-red-sea-coast-displaces-civilians-bab-al-mandab">Guardian, 50,000 displaced</a>
+  </p>
+  <div class="fb" data-id="energy-chain">
+    <p>One chain for transits, the pipe, and the pump. Right?</p>
+    <label><input type="radio" name="fb-en-chain" value="one"> Yes &mdash; keep one chain</label>
+    <label><input type="radio" name="fb-en-chain" value="split"> Split them next time</label>
+    <p>Friday EOD said transit had not moved. Leading the Kpler drop &mdash; right call?</p>
+    <label><input type="radio" name="fb-en-kpler" value="yes"> Yes &mdash; named trigger</label>
+    <label><input type="radio" name="fb-en-kpler" value="wait"> Wait for a multi-day series</label>
+  </div>
+</article>
+
+<article id="anthropic-ipo">
+  <h2>Nvidia is talking about putting $10 billion into an Anthropic IPO that would value the lab at $2 trillion</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <div class="corr">
+    <div class="t">Disclosure</div>
+    <p>This brief is written with a Grok model (xAI). The story is about Anthropic, a competitor. Read the sourcing with that distance.</p>
+  </div>
+  <p>Anthropic is in talks to bring Nvidia in as an anchor investor on what would be the largest initial public offering on record, two people familiar with the matter told Reuters on Friday night. The lab is seeking to raise as much as $100 billion at a valuation around $2 trillion. Nvidia is considering investing up to $10 billion. The plans remain under discussion and could change. The listing is expected to complete before the November midterms.</p>
+  <p>The numbers, if they hold, are a jump from a May raise of $65 billion at a $965 billion post-money valuation. Anthropic has said its annualised revenue run-rate was above $65 billion by the end of July, from about $9 billion at the end of 2025, and has pointed at $190&ndash;200 billion of 2028 revenue in earlier Reuters reporting. Nvidia already pledged up to $10 billion in November 2025 as part of a partnership in which Anthropic committed to $30 billion of Microsoft Azure capacity running on Nvidia chips. An IPO cheque on top of that is not a new relationship. It is the same relationship, now asked to underwrite the public book.</p>
+  <p>US cash is closed. There will be no tape reaction until Monday, and there may be none then &mdash; this is still a talk, not a filing. The public-market test is the thing that matters: whether a $2 trillion lab can be digested by real-money accounts that have spent two years watching circular capex (chipmaker invests in lab; lab buys the chipmaker&rsquo;s cloud; cloud is the chipmaker&rsquo;s largest customer). Handelsblatt carried the same Reuters account overnight. Neither company has confirmed.</p>
+  <p><b>What to watch:</b> an S-1, or a statement from either company; whether the $10 billion is primary (new cash to Anthropic) or a secondary buy from existing holders; and whether the midterm deadline is a real calendar or a banker&rsquo;s wish.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; a capital event, or a customer rebate?</span>
+    <p><b>What is disputed.</b> Not that Reuters has two sources. What a $10 billion Nvidia cheque at IPO would be <em>for</em>. One reading is demand insurance for the offering. The other is Nvidia concentrating its largest customer&rsquo;s equity at the moment that customer most needs a headline.</p>
+    <p><b>Why they differ.</b> The November 2025 deal already tied Anthropic&rsquo;s compute spend to Nvidia silicon on Azure. An IPO investment does not create that dependency; it prices it. People who cover IPOs see an anchor. People who cover the AI capex loop see the loop closing in public.</p>
+    <p><b>What it means for you.</b> Label this single-sourced and unfinished. The observation that settles it is a filing, not another anonymous quote. Until then the useful number is not $2 trillion. It is the $65 billion run-rate against the $190&ndash;200 billion 2028 target the valuation requires &mdash; a gap that only works if the power, the chips and the customers all show up.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.reuters.com/legal/transactional/nvidia-talks-invest-anthropics-mega-ipo-sources-say-2026-09-11/">Reuters exclusive, 11 Sep</a> &middot;
+    <a href="https://www.channelnewsasia.com/business/exclusive-nvidia-in-talks-invest-in-anthropics-mega-ipo-sources-say-6379756">CNA stand-up, 12 Sep</a> &middot;
+    <a href="https://www.handelsblatt.com/technik/it-internet/insiderberichte-nvidia-erwaegt-offenbar-milliardeneinstieg-bei-anthropic-boersengang/100254006.html">Handelsblatt</a> &middot;
+    Bloomberg headline confirmation
+  </p>
+  <div class="fb" data-id="anthropic-ipo">
+    <p>Single-sourced IPO talks, labelled, as a lead. Right call?</p>
+    <label><input type="radio" name="fb-ipo-ss" value="yes"> Yes &mdash; run with the label</label>
+    <label><input type="radio" name="fb-ipo-ss" value="hold"> Hold for a filing</label>
+    <p>Disclosure line when a Grok brief covers Anthropic?</p>
+    <label><input type="radio" name="fb-ipo-disc" value="keep"> Keep</label>
+    <label><input type="radio" name="fb-ipo-disc" value="drop"> Drop when we are not the vendor</label>
+  </div>
+</article>
+
+<article id="fcc-components">
+  <h2>The FCC closed the component loophole that let Covered List chips hide inside someone else&rsquo;s box</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Underreported</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The Federal Communications Commission published a final rule on Friday that changes what &ldquo;authorised equipment&rdquo; means. From 13 October, a device cannot be authorised if it incorporates a logic-bearing hardware component produced by an entity on the Commission&rsquo;s Covered List, where the device itself would have been barred had that entity made the whole thing. The loophole was the finished-product test: a radio, a camera, a small-cell box assembled by a clean name, stuffed with a listed modem or processor. That route closes.</p>
+  <p>Three other changes travel with it. Any modification or permissive change by a Covered List entity now needs full certification, not a paperwork shortcut. Marketing rules are read to reach any entity that sells unauthorised equipment, including online marketplaces. Those marketplaces must, with limited exceptions, show an FCC ID at the point of sale &mdash; March 2027 if they have physical access or title, June 2027 if they rely on third-party seller certifications. Used devices and small-seller listings are carved out. The Commission also amended the definition of &ldquo;critical infrastructure&rdquo; used on the Covered List and cleaned two administrative errors.</p>
+  <p>The Covered List is the FCC&rsquo;s running ban of firms judged a national-security risk &mdash; Huawei, ZTE, and a lengthening set of camera, radio and chip names. Closing the component loophole is how a list that was written for boxes becomes a list that reaches the silicon inside them. That is the AI-build-out channel: the same authorisation pipeline that clears radios for towers and modules for edge devices now has to look one layer down, in a market that does not have spare certified alternatives on the shelf.</p>
+  <p><b>What to watch:</b> the first denied authorisation that cites a component rather than a finished device; whether marketplace rules produce takedowns or just an ID field; and any petition for reconsideration before 13 October.</p>
+  <details>
+    <summary>Dig deeper &mdash; why a component rule is harder than a company ban</summary>
+    <div class="exp">
+      <p>Banning a named manufacturer is easy to administer and easy to route around. The assembler changes, the board house changes, the brand on the plastic changes; the modem does not. A logic-bearing-component test forces the authorisation file to identify the silicon, which is information the applicant has and the Commission previously did not demand in this form. It also forces a definition of &ldquo;logic-bearing&rdquo; that will be litigated the first time someone argues a power-management chip or a passive RF front-end is or is not in scope.</p>
+      <p>Online marketplaces are the enforcement surface most people will see. Requiring an FCC ID at the point of sale sounds like a label rule. It is a discovery rule. Once the ID is on the page, anyone can look up the grant and see whether the device was authorised under the old finished-product test or the new one. Used and small-seller exceptions are where grey-market Covered List hardware will go. That is a known hole and, for a first final rule, an honest one.</p>
+      <p>This is not on any watchlist thread. It came out of Friday&rsquo;s Federal Register JSON, sitting next to the grace-period proposal this brief already covered and a Forest Service comment extension. The documents were always going to be the same ones if the gather only followed threads. The component rule is what the half-outside test is for.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.federalregister.gov/documents/2026/09/11/2026-18535/protecting-against-national-security-threats-to-the-communications-supply-chain-through-the">FR 2026-18535 (primary)</a> &middot;
+    <a href="https://www.govinfo.gov/content/pkg/FR-2026-09-11/pdf/2026-18535.pdf">GovInfo PDF</a> &middot;
+    Federal Register JSON API, 11 Sep issue
+  </p>
+  <div class="fb" data-id="fcc-components">
+    <p>An FR final rule no thread pointed at, as a lead. The right kind of find?</p>
+    <label><input type="radio" name="fb-fcc-kind" value="yes"> Yes &mdash; more document finds like this</label>
+    <label><input type="radio" name="fb-fcc-kind" value="also"> Also today is enough for FR rules</label>
+    <p>Follow FCC Covered List implementation?</p>
+    <label><input type="radio" name="fb-fcc-th" value="open"> Yes</label>
+    <label><input type="radio" name="fb-fcc-th" value="auth"> Only the first denied authorisation</label>
+  </div>
+</article>
+
+<article id="china-sat">
+  <h2>The US says Chinese satellite images were in Iranian hands before the July strike that killed three American troops</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>US officials familiar with the matter say that before Iran&rsquo;s 17 July ballistic-missile strike on a housing area at Muwaffaq Salti Air Base in Jordan &mdash; three US troops killed, four wounded &mdash; Tehran had acquired high-resolution satellite images of the base from Chinese entities. Iran procured images both before and after the attack. The account, in the <em>Wall Street Journal</em> and stood up Saturday by the Hindustan Times, is described as the clearest evidence so far that Chinese support for Iran during the war had lethal consequences for US forces.</p>
+  <p>Officials would not name the entities and did not allege that Beijing ordered the sale. Senior US officials raised the imagery with Chinese counterparts, who asked for proof. Beijing has dismissed the concern. In May the administration sanctioned MizarVision, Earth Eye and Chang Guang over imagery that could help Iran target US and partner forces. Chang Guang had already been accused of supporting Houthi targeting.</p>
+  <p>The finding lands twelve days before Xi Jinping is reported due at the White House on 24 September. Trump has told his team that the relationship with Xi is a priority; public US comments after July played the assistance down. Officials separately worry China could be helping Iran stalk US naval assets after recent near-miss shots at carriers. None of that is on the record in a White House or State statement this weekend.</p>
+  <p><b>What to watch:</b> whether the administration puts this on the record before the 24th; any further designations; and whether the summit readout mentions Iran support at all.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; commercial imagery, or state help?</span>
+    <p><b>What is disputed.</b> Not that a WSJ-sourced account exists. Whether &ldquo;Chinese entities&rdquo; means policy in Beijing or a sanctions-evasion market the Party tolerates.</p>
+    <p><b>Why they differ.</b> US officials blur commercial and state because Chinese remote-sensing firms often sit under Party oversight. Beijing&rsquo;s line treats any link as fabrication. Without named firms in the Saturday write-up beyond the May sanctions list, outsiders cannot adjudicate. Timing also matters: the strike was 17 July; the story is 11&ndash;12 September, twelve days before a summit.</p>
+    <p><b>What it means for you.</b> Label this single-sourced and hold it as summit furniture. The actionable channel is sanctions and export pressure the US can actually pull. An on-record statement before the 24th upgrades it. Silence would mean the relationship priority won.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.hindustantimes.com/world-news/us-links-chinese-satellite-imagery-to-iranian-strike-that-killed-three-troops-101789193266253.html">Hindustan Times standing up WSJ</a> &middot;
+    WSJ reporters named in that piece (Bergengruen / Holliday / Seth) &middot;
+    May sanctions context as reported therein
+  </p>
+  <div class="fb" data-id="china-sat">
+    <p>I ran this single-sourced and labelled it. Right call?</p>
+    <label><input type="radio" name="fb-sat-ss" value="yes"> Yes &mdash; run with the label</label>
+    <label><input type="radio" name="fb-sat-ss" value="hold"> Hold until a second outlet names firms</label>
+    <p>Cadence into the 24 September Xi visit?</p>
+    <label><input type="radio" name="fb-sat-xi" value="each"> Each on-record US statement</label>
+    <label><input type="radio" name="fb-sat-xi" value="summit"> Summit readout only</label>
+  </div>
+</article>
+
+<article id="jpm-fed">
+  <h2>JPMorgan now wants two hikes this year, not one</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>After Friday&rsquo;s CPI, JPMorgan raised its Federal Reserve call to a 25-basis-point hike next week <em>and</em> another in December. Chief US economist Michael Feroli cited core PCE stuck above 3 per cent each month this year and almost no progress toward 2 per cent. The bank&rsquo;s previous published call, after the July hold, was December only, with September described as data-dependent. That is the rewrite.</p>
+  <p>This is the financials half of the print, not a second Fed state-of-play. JPMorgan is the name this brief gives standing attention. A systemically important dealer changing its path the afternoon of the last CPI before an FOMC meeting is a positioning fact for everyone who borrows from it or competes with it. The funds rate is 3.50&ndash;3.75 per cent. A September hike puts the range at 3.75&ndash;4.00; a December follow-through puts it at 4.00&ndash;4.25. Feroli has also said a no-hike vote would likely come with three dissents for a hike, as in July.</p>
+  <p>Futures already had Wednesday in the mid-to-high 80s after the print. A dealer call catching up to the strip is less interesting than a dealer call adding a second hike the strip is not fully pricing. Bank net interest margins like a short, well-telegraphed hiking cycle; they do not like a 10-year that was testing 5 per cent on Friday because the long end is a mark-to-market problem for securities books. Both things can be true at once. Cash is shut until Monday. The next observation is the statement, not another note.</p>
+  <p><b>What to watch:</b> Wednesday&rsquo;s dots against a two-hike 2026 path; whether other primary dealers follow Feroli over the weekend wires; and whether the 10-year opens Monday above or below 4.95.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.newsquawk.com/headlines/jpmorgan-revises-fed-forecast-and-now-sees-hikes-in-september-and-december">Newsquawk on Feroli</a> &middot;
+    <a href="https://www.gate.com/news/detail/jpmorgan-raises-interest-rate-forecast-expects-fed-rate-hikes-in-september-24203870">Gate News, 11 Sep</a> &middot;
+    <a href="https://www.jpmorgan.com/insights/global-research/economy/fed-rate-cuts">J.P. Morgan Global Research prior call (August)</a> &middot;
+    <a href="#cpi-august">CPI lead, this issue</a>
+  </p>
+  <div class="fb" data-id="jpm-fed">
+    <p>Bank forecast as a Core financials lead the morning after CPI &mdash; or Also?</p>
+    <label><input type="radio" name="fb-jpm-slot" value="lead"> Lead, as here</label>
+    <label><input type="radio" name="fb-jpm-slot" value="also"> Also today is enough</label>
+  </div>
+</article>
+
+<article id="rsi-labs">
+  <h2>Staff at the frontier labs are putting numbers on recursive self-improvement</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <div class="corr">
+    <div class="t">Disclosure</div>
+    <p>This brief is written with a Grok model (xAI). The reporting is about staff at Anthropic and OpenAI. The distance is the point of the line.</p>
+  </div>
+  <p>Jacob Coxon resigned from Anthropic this week after three years in pre-training research, writing that leading labs are racing to self-improving superintelligence. Alignment lead Evan Hubinger replied that he personally puts more than a 10 per cent chance on AI killing all humans within a decade, and that recursive self-improvement is the path he fears. Similar posts followed from Anna Wang, Jen Leike and Samuel Marks at Anthropic, and from Jasmine Wang, Paul Christiano, Julie Steele and Tomek Korbak at OpenAI. Geoffrey Hinton told the BBC a 10 per cent decade-horizon estimate was not unreasonable. CNBC bundled the cluster on Friday.</p>
+  <p>Recursive self-improvement is the specific claim, not a generic p(doom) number. Anthropic said in June that Claude is accelerating AI development &mdash; a possible path to RSI &mdash; faster than it had expected. An August post said its engineers ship roughly eight times as much code per quarter as in 2021&ndash;25. OpenAI chief scientist Jakub Pachocki wrote on Saturday that systems in the next few years are likely to represent further capability jumps and to increasingly drive their own development. None of this is a METR report. The frontier-lab-safety thread on this brief wakes on METR&rsquo;s investigation of Anthropic&rsquo;s own eval incidents. That report has not published. This is a different document: staff, on the record, putting numbers on a mechanism the labs have already described.</p>
+  <p>The policy hook is whether public staff risk numbers move a regulator or a state attorney general before California&rsquo;s 30 September signature deadline on the conduct bills. That deadline is not a story in this issue. The posts are.</p>
+  <p><b>What to watch:</b> METR&rsquo;s report; any lab slowing a release calendar on the record; and whether a regulator treats staff statements as evidence rather than as colour.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnbc.com/2026/09/11/anthropic-openai-ai-existential-concerns.html">CNBC, 11 Sep</a> &middot;
+    <a href="https://www.businessinsider.com/anthropic-openai-employees-speak-out-ai-safety-2026-9">Business Insider staff roundup</a> &middot;
+    Anthropic RSI posts as cited therein
+  </p>
+  <div class="fb" data-id="rsi-labs">
+    <p>Follow RSI staff statements when they cluster, or wait for METR / a regulator?</p>
+    <label><input type="radio" name="fb-rsi-cad" value="staff"> Staff statements when they cluster</label>
+    <label><input type="radio" name="fb-rsi-cad" value="metr"> METR / regulator only</label>
+  </div>
+</article>
+
+<article id="japan-power">
+  <h2>Japan&rsquo;s next tranche of US money is aimed at the power plants the AI build-out does not have</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">World economy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>New investment projects under the US&ndash;Japan tariff agreement are likely to centre on the power industry, with next-generation nuclear potentially back on the table, Economy, Trade and Industry minister Ryosei Akazawa told Nikkei in an interview published Saturday in Tokyo. The US channel is not the diplomacy. It is the megawatts. FERC has already told all six jurisdictional market operators to justify how they interconnect data centres; Microsoft, in a single-sourced account this week, is aiming at about 38 GW of data-centre capacity by 2032 from about 12 GW now. Generation that does not exist cannot be interconnected.</p>
+  <p>Akazawa led the trade talks that produced a $550 billion Japanese investment package in the United States. Earlier this year Reuters, also single-sourced, said the two governments were aiming to add a nuclear project &mdash; Westinghouse and Japanese partners have been the names in circulation &mdash; to that package. Commerce Secretary Howard Lutnick has separately said Washington wants Japanese funding for a nuclear revival. Akazawa&rsquo;s Saturday formulation is broader than a single reactor: the power sector, including gas generation, as the focus of future tranches, with next-gen nuclear possibly returning. AI and semiconductor projects still carry weight in the third tranche, so the portfolio is not only turbines.</p>
+  <p>A foreign financing promise is not a plant. Interconnection queues, transformer lead times and state rate cases decide whether Japanese capital becomes American electrons. Cost allocation &mdash; who pays to hook a 2 GW load to a grid built for a factory &mdash; is the part that reaches a household bill, and FERC left it open. That is why this interview clears the altitude bar when a generic G-7 energy communiqu&eacute; would not.</p>
+  <p><b>What to watch:</b> a named project and a named US off-taker; whether nuclear is in the next tranche or only in the interview; and any state commission that has to decide who pays.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://asia.nikkei.com/editor-s-picks/interview/japan-s-future-us-investments-to-focus-on-power-sector-trade-minister">Nikkei Asia, 12 Sep (Akazawa)</a> &middot;
+    <a href="https://asia.nikkei.com/business/energy/us-eyes-japanese-funding-for-nuclear-revival-lutnick-says">Nikkei on Lutnick</a> &middot;
+    FERC large-load show-cause context as previously reported
+  </p>
+  <div class="fb" data-id="japan-power">
+    <p>A Nikkei interview on Japanese capital for US power &mdash; keep following?</p>
+    <label><input type="radio" name="fb-jp-th" value="open"> Yes &mdash; until a named plant</label>
+    <label><input type="radio" name="fb-jp-th" value="plant"> Only a named project</label>
+  </div>
+</article>
+
+<article id="fl-dengue">
+  <h2>Florida &amp; Tampa Bay: the state is investigating a possible dengue death in Hillsborough</h2>
+  <div class="meta">
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip">Science &amp; public health</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <div class="corr">
+    <div class="t">Correction &mdash; Friday EOD miss</div>
+    <p>Friday&rsquo;s EOD Grok edition said no severe or hospitalised case had been named. Local outlets had already reported that the Florida Department of Health is investigating a Hillsborough death possibly associated with dengue. That is the watchlist severe-case trigger. It should have run Friday evening.</p>
+  </div>
+  <p>DOH confirmed to WFTS / TampaBay28 that it is actively investigating the recently reported death of a Hillsborough resident possibly associated with a dengue infection, and said it cannot provide further details under Florida Statutes &sect;381.0031(6). Family accounts, carried by Patch and others, say a Tampa woman died on her 80th birthday at Tampa General Hospital. Cause is not officially confirmed. It is an investigation, not a confirmed dengue fatality.</p>
+  <p>The week-35 ledger from Friday stands: 111 locally acquired cases statewide, Hillsborough 95. Week 36 is still not on the state site. Tampa General&rsquo;s Kartik Cherabuddi said the mainland United States has not seen this many local cases in the modern era, and that the hospital is seeing moderate and severe disease with hospitalisations. Hillsborough health officer Carla Fry noted that only about one in four infections is symptomatic, so the true burden is higher than the ledger. The state figures still predate some of the September spraying; do not compare a county announcement to the week-35 PDF as if they were the same day.</p>
+  <p>Pasco reaching double figures would make this a three-county outbreak rather than Hillsborough with spillover. It has not. The school-vaccine comment window and the county budget hearings are dates, not new facts, and they are not in this story.</p>
+  <p><b>What to watch:</b> whether DOH confirms or rules out dengue as cause; the week-36 report; Pasco&rsquo;s count.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.tampabay28.com/news/local-news/tampa-metro-west-hillsborough-county/could-a-mosquito-bite-be-fatal-hillsborough-health-officials-probe-death-amid-historic-dengue-outbreak">WFTS / TampaBay28</a> &middot;
+    Patch / WIOD on the family account &middot;
+    Florida Arbovirus week 35 &middot;
+    <a href="2026-09-11b-grok.html">Friday EOD framing being corrected</a>
+  </p>
+  <div class="fb" data-id="fl-dengue">
+    <p>Death investigation before official confirmation &mdash; clears the local bar?</p>
+    <label><input type="radio" name="fb-fl-death" value="yes"> Yes &mdash; DOH investigating is enough</label>
+    <label><input type="radio" name="fb-fl-death" value="confirm"> Wait for confirmed cause</label>
+  </div>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Ten things I saw and ranked below the line. Each one opens. The line is the judgement; what is behind it is the substance. Calendar reprises from the morning edition are not here.</p>
+<div class="also-list">
+
+<details id="a-irs-951a">
+  <summary><span class="chip">US debt &amp; fiscal</span> Treasury and the IRS proposed to stop companies parking interest and R&amp;E deductions against GILTI, which is how the foreign tax credit gets larger than the tax.</summary>
+  <div class="exp">
+    <p>On Friday Treasury proposed regulations under sections 250 and 904(b)(5) on how deductions are allocated to section 951A (GILTI) category income and deduction-eligible income. For the foreign-tax-credit limitation, only the section 250 deduction, specified section 164(a)(3) taxes, and deductions directly allocable to 951A income may reduce that income. Interest and research-and-experimentation deductions cannot be allocated there. Stewardship, legal, accounting, settlement and overhead costs are generally reallocated to US-source income. The proposals generally apply to tax years beginning after 31 December 2025. Taxpayers may rely if they apply the package entirely. Comments close 10 November.</p>
+    <p>This is the OBBBA (the summer reconciliation bill) being written into the expense-allocation regulations. The US channel is the effective rate on US multinationals&rsquo; foreign earnings, and the credit they claim against US tax. It is a real rule. It is also a tax-specialist document that does not move a market that is closed.</p>
+    <p class="btl"><b>Below the line because</b> the consequence is second-order and the audience for the mechanics is a tax department, not a Saturday paper&rsquo;s lead well. If a large filer comments or a score appears, it promotes.</p>
+    <p class="sources"><span class="chip">Primary source</span>
+      <a href="https://www.federalregister.gov/documents/2026/09/11/2026-18645/allocation-and-apportionment-of-deductions-to-foreign-source-section-951a-category-income-and">FR 2026-18645</a> &middot;
+      <a href="https://kpmg.com/us/en/taxnewsflash/news/2026/09/proposed-regulations-allocation-apportionment-deductions-section-951A-dei.html">KPMG</a> &middot;
+      <a href="https://www.pwc.com/us/en/services/tax/library/proposed-rules-address-obbba-foreign-source-expense-allocation.html">PwC</a></p>
+  </div>
+</details>
+
+<details id="a-roadless">
+  <summary><span class="chip">US politics &amp; policy</span> The Forest Service gave the public fifteen more days to comment on rescinding the 2001 Roadless Rule.</summary>
+  <div class="exp">
+    <p>A 11 September notice extends the comment period on the proposal to rescind the nationwide 2001 Roadless Area Conservation Rule from 21 September to 6 October. RIN 0596-AD66, docket FS-2025-0001. The proposal would remove 36 CFR part 294, subpart B, and leave future road and timber decisions to local forest plans, subject to NEPA. Idaho and Colorado state-specific rules would stay. This is a process order, not a decision on the 58 million acres.</p>
+    <p class="btl"><b>Below the line because</b> an extension is not a rule, and the proposal itself published in August. The new date is the only Saturday fact.</p>
+    <p class="sources"><span class="chip">Primary source</span>
+      <a href="https://www.federalregister.gov/documents/2026/09/11/2026-18648/special-areas-roadless-area-conservation">FR 2026-18648</a></p>
+  </div>
+</details>
+
+<details id="a-fda-ml">
+  <summary><span class="chip">AI &amp; tech industry</span> FDA classified cardiovascular machine-learning notification software as Class II, with special controls, effective Friday.</summary>
+  <div class="exp">
+    <p>The order (FR 2026-18612) puts 21 CFR 870.2380 on the books as Class II. The devices suggest the likelihood of one cardiovascular condition from non-invasive physiological inputs, for referral or follow-up &mdash; not a diagnosis, not arrhythmia detection. Special controls cover geographically diverse clinical validation, software verification, human factors, subgroup performance and labelling. The classification is dated as applicable from 3 August 2023; Friday&rsquo;s order is the codification. Recent 510(k)s in the same product code include CorVista&rsquo;s PCWP add-on and ECG-AI pulmonary-hypertension algorithms.</p>
+    <p class="btl"><b>Below the line because</b> it is a classification of a device type that has already been clearing through 510(k), not a new capability or a safety incident. Useful as a marker that FDA is writing ML-specific special controls rather than forcing PMA.</p>
+    <p class="sources"><span class="chip">Primary source</span>
+      <a href="https://www.federalregister.gov/documents/2026/09/11/2026-18612/medical-devices-cardiovascular-devices-classification-of-the-cardiovascular-machine-learning-based">FR 2026-18612</a></p>
+  </div>
+</details>
+
+<details id="a-usps-1st">
+  <summary><span class="chip">US politics &amp; policy</span> The First Circuit refused to stay the mail-ballot injunction on 10 September. The Supreme Court still has not acted on 26A305.</summary>
+  <div class="exp">
+    <p>A First Circuit panel denied the government&rsquo;s motion to stay Judge Talwani&rsquo;s preliminary injunction against mandatory parts of the USPS mail-ballot rule. The administrative stay that would decide whether the rule touches November was not granted there either. Application 26A305 remains pending at the Supreme Court; Justice Jackson set responses for 9 September, they landed, the government replied on the 10th, and nothing has issued. Issue 7 noted the briefing and the silence. The circuit denial is the fact it did not have.</p>
+    <p class="btl"><b>Below the line because</b> the cadence on this thread is movement at the Court that decides November, and that Court has not moved. A circuit denial two days ago is real and is recorded; it is not a Saturday lead.</p>
+    <p class="sources"><span class="chip">Primary source</span>
+      <a href="https://www.ca1.uscourts.gov/sites/ca1/files/opnfiles/26-2029O-01A.pdf">First Circuit order</a> &middot;
+      <a href="https://www.supremecourt.gov/docket/docketfiles/html/public/26A305.html">SCOTUS docket 26A305</a> &middot;
+      <a href="https://www.aclu.org/press-releases/appeals-court-maintains-preliminary-injunction-blocking-u-s-postal-service-from-enforcing-key-parts-of-new-rule-to-restrict-mail-ballots">ACLU</a></p>
+  </div>
+</details>
+
+<details id="a-korean-air">
+  <summary><span class="chip">AI &amp; tech industry</span> Korean Air has tripled the share of its cargo book on long-term chip contracts, as Samsung&rsquo;s Taylor fab and SK hynix&rsquo;s Indiana HBM plant start to take equipment.</summary>
+  <div class="exp">
+    <p>Long-term contracts now account for about 30 per cent of Korean Air&rsquo;s air-cargo business, up from less than 10 per cent, Seoul Economic Daily reported Friday, citing industry sources. The contracts run three to five years and lock priority space for Samsung and SK hynix shipments to US Big Tech and to the US plants. Second-quarter cargo yield was 703 won per kilometre, up 42 per cent year-on-year; cargo revenue was 1.54 trillion won, up 46 per cent. A carrier official said the airline is also chasing transformers and server racks &mdash; the heavy freight the AI build-out actually moves. This is a trade-press find. No beat pointed at Incheon cargo.</p>
+    <p class="btl"><b>Below the line because</b> it is one carrier&rsquo;s mix shift, not a US policy or a US price, and the sourcing is industry officials. It is here so the physical constraint on the AI build-out is not only a FERC docket.</p>
+    <p class="sources"><span class="chip">Single-sourced</span>
+      <a href="https://en.sedaily.com/finance/2026/09/11/korean-air-triples-long-term-air-cargo-contracts-on-chip">Seoul Economic Daily, 11 Sep</a></p>
+  </div>
+</details>
+
+<details id="a-doj-fund">
+  <summary><span class="chip">US politics &amp; policy</span> DOJ is appealing the ruling that killed the roughly $1.8 billion &ldquo;anti-weaponization&rdquo; fund, after the Attorney General told Congress it was dead.</summary>
+  <div class="exp">
+    <p>Acting Deputy Attorney General R. Trent McCotter noticed an appeal to the Eleventh Circuit in <em>Trump v. IRS</em>, No. 26-12692, from Judge Kathleen Williams&rsquo;s 13 July order. Attorney General Todd Blanche had told Congress the fund was dead and, on 2 August, formally rescinded it. The appeal seeks to overturn or limit Williams&rsquo;s sanctions and her finding that the underlying settlement improperly benefited the President and his allies. Democracy Docket and Mediaite carried the notice this weekend. I have not read the brief.</p>
+    <p class="btl"><b>Below the line because</b> an appeal notice is not a ruling, the sourcing is thin, and the fund is already rescinded on paper. A circuit briefing schedule or a stay would promote it.</p>
+    <p class="sources"><span class="chip">Single-sourced</span>
+      <a href="https://www.democracydocket.com/news-alerts/attorney-general-blanche-said-trumps-weaponization-fund-was-dead-now-doj-is-appealing/">Democracy Docket</a> &middot;
+      Mediaite</p>
+  </div>
+</details>
+
+<details id="a-census">
+  <summary><span class="chip">US politics &amp; policy</span> Comments on the 2030 census residence rule close 13 October. That date did not exist when this brief led the proposal on the 10th.</summary>
+  <div class="exp">
+    <p>The Commerce Department&rsquo;s proposed rule on usual residence and demographic questions (FR 2026-18481, docket USBC-2026-0628) is open through 13 October. The proposal would exclude people without lawful permanent residence from the apportionment base, add a legal-status question, and drop race, ethnicity and sexual-orientation questions. Issue 10b led this as a new subject and said to watch the comment period and its length. The length is now 33 days from publication. That is short for a rule that tries to rewrite the apportionment base, and it is the only new fact.</p>
+    <p class="btl"><b>Below the line because</b> a comment deadline is not a new proposal, and the constitutional problem is the same one already written. The date is recorded so the next run does not have to rediscover it.</p>
+    <p class="sources"><span class="chip">Primary source</span>
+      <a href="https://www.federalregister.gov/documents/2026/09/10/2026-18481/decennial-census-of-the-population-of-americans-proposed-residence-criteria-and-proposed-regulations">FR 2026-18481</a> &middot;
+      <a href="2026-09-10b.html#census-2030">10b lead</a></p>
+  </div>
+</details>
+
+<details id="a-shalamcheh">
+  <summary><span class="chip">Geopolitics</span> Iraq closed the Shalamcheh crossing with Iran on Saturday, after firing the commander of the province the East-West drones launched from.</summary>
+  <div class="exp">
+    <p>Two security sources told Reuters the crossing was closed as a precaution. Prime Minister Ali al-Zaidi had already removed the Maysan operations commander and opened an investigation. No group has claimed the drones. This is a detail of the energy chain above, not a second Middle East lead. It is here so the Iraqi half of Saturday is auditable on its own if the pipe restarts and the crossing stays shut.</p>
+    <p class="btl"><b>Below the line because</b> it is already in the energy lead; a standalone would split the chain the reader asked us not to split.</p>
+    <p class="sources"><span class="chip">Single-sourced</span>
+      <a href="https://www.aljazeera.com/news/2026/9/12/saudi-arabia-shuts-critical-oil-pipeline-after-drone-attack-what-happened">Al Jazeera citing Reuters</a></p>
+  </div>
+</details>
+
+<details id="a-gas-de">
+  <summary><span class="chip">World economy</span> Germany&rsquo;s network regulator says 136 TWh in storage &mdash; 55 per cent full &mdash; already covers last winter&rsquo;s draw, and does not want a state buying order.</summary>
+  <div class="exp">
+    <p>Klaus M&uuml;ller of the Bundesnetzagentur told dpa the stores already hold slightly more gas than was withdrawn last winter (134 TWh), with weeks of injection season left. Fill is low against prior years, which is why a state purchase mandate has been floated. M&uuml;ller and the economics ministry both prefer the market: traders have delivery obligations to Stadtwerke and industry, via pipe, LNG or storage. State intervention, he said, would be expensive. The US channel is LNG demand into north-west Europe into a winter that still has an impaired Red Sea and a dark East-West. It is not a US price today.</p>
+    <p class="btl"><b>Below the line because</b> the US channel is inferred (LNG), not demonstrated, and Saturday cash is closed. If TTF or a US LNG fixture moves on the quote, it promotes.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span>
+      <a href="https://www.handelsblatt.com/politik/deutschland/energie-gasspeicher-koennten-laut-behoerden-fuer-den-winter-reichen/100254045.html">Handelsblatt / dpa, 12 Sep</a></p>
+  </div>
+</details>
+
+<details id="a-cia">
+  <summary><span class="chip">US politics &amp; policy</span> CIA released a tranche of pre-9/11 Bin Laden intelligence documents on the anniversary.</summary>
+  <div class="exp">
+    <p>A commemorative dump, carried by Al Jazeera and others on Saturday. No statute, no price, no implementing guidance, no UAP file, no current US-channel policy change.</p>
+    <p class="btl"><b>Below the line because</b> it is an anniversary release, and it nearly was dropped. Recorded so the negative check is auditable: this is what I looked at and declined to lead.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> Al Jazeera / SMH, 12 Sep</p>
+  </div>
+</details>
+
+</div>
+
+<div class="fb" data-id="also-section">
+  <p><b>One question about this whole section:</b> were the right things ranked below the line?</p>
+  <label><input type="radio" name="fb-also" value="right"> About right</label>
+  <label><input type="radio" name="fb-also" value="promote"> Some of these should have led</label>
+  <label><input type="radio" name="fb-also" value="drop"> Some should have been dropped entirely</label>
+  <label><input type="radio" name="fb-also" value="fewer"> Fewer short items, more depth up top</label>
+</div>
+
+<div class="submit">
+  <button type="button" id="send">Send my feedback &rarr;</button>
+  <p class="sources" style="text-align:center">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+</div>
+
+<footer>
+  <h4>Sources checked this run &mdash; 20, of which 12 outside the watchlist</h4>
+  <p><b>Pointed at by a thread (8):</b> AAA Fuel Prices, 12 Sep &middot; BLS CPI / Haver component tables &middot; Federal Reserve FOMC calendar (checked; no calendar filler written) &middot; Federal Register JSON for 11 and 12 September &middot; SCOTUS docket 26A305 (no order) &middot; Florida DOH / WFTS dengue reporting &middot; Al Jazeera / BBC / Guardian on East-West and Perim &middot; Bab el-Mandeb transit desks (The National / Kpler).</p>
+  <p><b>Not pointed at by any thread (12):</b> D. Mass. docket 25-13305 / Reuters / FedScoop / GovExec on the OPM stay &middot; Reuters / CNA / Handelsblatt on the Anthropic IPO &middot; FCC FR 2026-18535 (Covered List components) &middot; FDA FR 2026-18612 (ML cardiovascular software) &middot; IRS FR 2026-18645 (951A allocation) &middot; Forest Service FR 2026-18648 (roadless extension) &middot; Nikkei Asia (Akazawa power interview) &middot; Seoul Economic Daily (Korean Air chip cargo) &middot; CNBC / Business Insider on lab RSI posts &middot; Hindustan Times standing up WSJ on Chinese imagery &middot; Newsquawk / Gate / J.P. Morgan Research on Feroli &middot; First Circuit 26-2029 order.</p>
+
+  <h4>The negative check</h4>
+  <p><i>What is the biggest story today that is not on my list, and why is it not?</i> Judge O&rsquo;Toole&rsquo;s stay of the OPM civil-service essay. It was on no beat and no thread. It leads. Second off-list that cleared: Nvidia&rsquo;s possible $10 billion Anthropic IPO cheque. Declined as a lead: the IRS 951A proposal (tax specialist) and the CIA anniversary dump (commemorative). The morning edition&rsquo;s answer to this question was the Kpler transit drop &mdash; a named watchlist wake, not an off-list find.</p>
+
+  <h4>Markets, Saturday</h4>
+  <p>US cash closed Friday 16:00 ET. Asia is into its weekend. FX and crypto still trade, thinly. AAA printed diesel and gasoline anyway. Crude figures above are Friday settlements (Brent $104.61, WTI $100.05). Nothing in this issue pretends there was a Saturday session in New York or Tokyo.</p>
+
+  <h4>Corrections and what I got wrong</h4>
+  <p><b>Dengue severe-case miss.</b> Friday EOD said no severe or hospitalised case was named. DOH&rsquo;s investigation of a possible dengue-associated Hillsborough death was already in local reporting. Corrected in the local lead.</p>
+  <p><b>Morning edition, this date.</b> <a href="2026-09-12-grok.html">2026-09-12-grok.html</a> led three calendar reprises &mdash; Oman Monday, California days-left, duration-of-status Monday &mdash; without a new fact. This file is the replacement. It does not overwrite that one.</p>
+
+  <h4>Feedback applied</h4>
+  <p>Closed issues 7 and 3, still read: oil/strikes/pump as one chain &middot; Fed = prints and the decision only &middot; corrections in a box at the top of the story &middot; wrong framings said prominently &middot; single-sourced OK with the label &middot; trade = legal + market halves &middot; Ukraine balance unchanged (nothing ran) &middot; Florida sized by the local bar only &middot; charts wanted, official series. CA AI and duration-of-status are movement-only this run, which is why they are not in the book.</p>
+
+  <h4>Threads swept, no trigger fired</h4>
+  <p>USPS 26A305 (no Supreme Court order; circuit denial recorded in Also) &middot; CA AI signatures/vetoes &middot; duration-of-status / grace-period (no stay, no new text) &middot; &sect;338 (no CIT complaint) &middot; Iran aviation GL J-1 (no new licence) &middot; METR report &middot; UAP implementing guidance / AARO award &middot; FERC operator responses &middot; bank stablecoin consortium &middot; birthright citizenship &middot; Florida Amendment 3 &middot; Waymo Tampa Bay &middot; Treasury long-end buyback (no new operation) &middot; AI gated-capability tiers &middot; federal funding (11 December) &middot; US&ndash;China AI talks (no published date) &middot; Pasco / Pinellas budgets (hearings not today) &middot; Pinellas closures (list unchanged).</p>
+
+  <h4>Could not reach</h4>
+  <p>BLS CPI HTML timed out on direct fetch (stood up from Haver + CNBC + The Hill + BLS table search) &middot; The National timed out on direct fetch (stood via UA.NEWS and search) &middot; SCOTUS emergency-docket page timed out (26A305 status from search and prior docket reads) &middot; federalregister.gov HTML pages block; JSON API used and worked, including 12 Sep (zero documents &mdash; Saturday) &middot; Le Monde front blocked after search confirmed the East-West piece &middot; Tampa Bay Times paywalled &middot; GAO index previously 403; not retried as a workaround &middot; Reuters story pages often refuse direct fetch; used anyway via search and stand-ups &middot; X/Twitter is a login wall.</p>
+
+  <h4>About this issue</h4>
+  <ul>
+    <li>Issue No. 8b-grok &mdash; second edition for Saturday 12 September 2026. Filename includes <code>grok</code>. Does not overwrite Claude files or the morning Grok file.</li>
+    <li>Ten lead stories, ten short items. Six leads are new subjects. Four are follow-ups, at the cap. Quality bar is <a href="2026-09-10b.html">2026-09-10b</a>, not Issue 7.</li>
+    <li>Loaded live <code>config.md</code> from historiocity/News-Agent and the upstream skill. Continuity for accountability: Issues 7, 7b-grok, 10b, and the morning 12-grok.</li>
+    <li>Every quotation is under fifteen words and attributed; everything else is paraphrase.</li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var box = i.closest(".fb");
+      var q = box ? box.querySelector("p") : null;
+      var id = box ? (box.getAttribute("data-id") || "") : "";
+      lines.push("- " + (id ? id + " / " : "") + (q ? q.textContent.trim() : i.name) + "\n  → **" + i.value + "**");
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on **Issue No. 8b-grok — 12 September 2026, second edition**\n\n" + lines.join("\n")
+      + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback 2026-09-12b-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
