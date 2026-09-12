@@ -140,8 +140,11 @@ jobs:
           PAGES_ROOT="https://${GITHUB_REPOSITORY_OWNER}.github.io/${REPO_NAME}"
 
           # Editions for a day are issues/DATE.html, then DATEb.html, DATEc.html.
-          # Take the newest; that is the one this run produced.
-          ISSUE="$(ls -1 issues/${TODAY}*.html 2>/dev/null | sort | tail -1 || true)"
+          # Take the newest; that is the one this run produced. Match the
+          # lettered convention only: a bare * also matches hand-added files
+          # such as DATEb-grok.html, which sort last and would be verified and
+          # linked in place of the edition this run actually wrote.
+          ISSUE="$(ls -1 issues/${TODAY}.html issues/${TODAY}[b-z].html 2>/dev/null | sort | tail -1 || true)"
           if [ -z "$ISSUE" ]; then
             echo "::error::No issue file was written for ${TODAY}."
             exit 1
