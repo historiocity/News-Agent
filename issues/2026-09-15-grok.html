@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>The Brief — Tuesday, 15 September 2026 (Grok edition)</title>
+<style>
+:root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+@media (prefers-color-scheme: dark) {
+:root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+.wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+.kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+.sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+.prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+nav ol { margin:0; padding-left:1.2rem; }
+nav li { margin:.25rem 0; }
+nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+a { color:var(--link); }
+article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+.secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+.meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+.chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+.chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+.chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+.sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+.div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+.div p { margin:.4rem 0; }
+.div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+.corr { background:var(--box); border-left:4px solid var(--accent); padding:.8rem 1rem; margin:0 0 1.6rem; font-size:.95rem; }
+.corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+.corr p { margin:.45rem 0; }
+.disc { border:1px solid var(--accent); color:var(--accent); padding:.5rem .8rem; margin:.9rem 0 0; font-size:.88rem; border-radius:3px; }
+details { margin-top:.8rem; }
+details summary { cursor:pointer; color:var(--link); }
+.exp { margin-top:.6rem; }
+.also-list { margin:0; }
+.also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+.also-list details:first-of-type { border-top:1px solid var(--rule); }
+.also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+.also-list .exp { font-size:.94rem; padding-left:.2rem; }
+.btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+.btl b { color:var(--accent); }
+footer { color:var(--muted); font-size:.88rem; }
+.fb { margin-top:1rem; font-size:.9rem; }
+.fb p { margin:.6rem 0 .2rem; }
+.fb label { display:block; margin:.15rem 0; }
+.submit { margin-top:2rem; }
+button { font:inherit; padding:.45rem .8rem; }
+ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<p class="kicker">The Brief · Issue No. 11-grok · Tuesday, 15 September 2026 · Morning / Grok edition</p>
+<h1>The Court killed the midterm mail-ballot rule, diesel set an all-time AAA record, and student visas stopped being open-ended</h1>
+<p class="sub">Nine stories at length, ten in brief. Independent Grok gather; does not overwrite Claude/Action files.</p>
+<p class="prov">
+Loaded <a href="https://raw.githubusercontent.com/historiocity/News-Agent/main/config.md">config.md</a> from historiocity/News-Agent. Continuity for accountability only: Issues 10 / 10-grok / Claude Issue&nbsp;10. Quality bar: Issue&nbsp;10 framework (<a href="2026-09-10b.html">2026-09-10b</a>).
+<strong>18&nbsp;sources checked, 11 of them outside the active watchlist threads.</strong> Core beats lead the book. Oil/pump/chokepoints are one causal chain. Fed = prints and the Wednesday decision only — FOMC day&nbsp;1 is not a lead.
+<strong>Negative check reshaped the lead list:</strong> EPA’s final repeal of the 2024 power-plant carbon standards was on no watchlist thread and is a Core energy/policy lead; Sanders–Bannon’s Pro-Human AI Assembly was likewise outside the list. The USPS mail-ballot order fired a named wake trigger and leads because the order, not the briefing schedule, is the news.
+</p>
+</header>
+
+<nav>
+<ol>
+<li><a href="#usps">The Supreme Court left the mail-ballot rule blocked for the midterms</a></li>
+<li><a href="#dos">Today, every F, J and I visa stops being open-ended</a></li>
+<li><a href="#oil-chain">One chain to the pump: AAA diesel $6.27 — an all-time record — with East–West still dark</a></li>
+<li><a href="#clarity">CLARITY Act cloture lands at ~2:15pm ET; the final text arrived overnight</a></li>
+<li><a href="#epa">EPA finalised the repeal of the 2024 power-plant carbon standards</a></li>
+<li><a href="#ai-assembly">Sanders and Bannon share a stage today to demand AI curbs</a></li>
+<li><a href="#canada-338">§338 Canada duty-list modifications bite this morning; the bans wait until the 29th</a></li>
+<li><a href="#ten-year">The ten-year yield pressed past 5% into FOMC day&nbsp;1</a></li>
+<li><a href="#tprm">The banking agencies put third-party risk guidance in today’s Federal Register</a></li>
+</ol>
+<p class="also"><a href="#also">Also today (10)</a> — ranked below the line, each one opens.</p>
+</nav>
+
+<article id="usps">
+<h2>The Supreme Court left the mail-ballot rule blocked for the midterms</h2>
+<p class="meta">
+<span class="chip">US politics &amp; policy</span>
+<span class="chip new">Trigger fired</span>
+<span class="chip">Primary source</span>
+</p>
+<p>On Monday the Supreme Court denied the government’s application for a stay in <em>Postal Service v. California</em>, No.&nbsp;26A305. The unsigned order leaves intact District Judge Indira Talwani’s preliminary injunction against the Postal Service’s Ballot Mail for Federal Elections rule. The government’s challenge is “unlikely to succeed on the merits,” the Court said, and the equitable factors for emergency relief do not favour a stay.</p>
+<p>Justice Kavanaugh concurred: he sees a fair prospect the final rule falls within USPS’s statutory authority under 39&nbsp;U.S.C. §401(2), but applying it in the 2026 elections would be arbitrary and capricious under the APA because state and local officials lack enough time to implement it. Justice Alito, joined by Justice Thomas, dissented.</p>
+<p>The rule would have required election-mail logos, high-speed-scannable envelopes, a specialised barcode unique to each voter, and a state upload of voter information to a Postal Service portal — with noncompliant outbound ballots returned. Mail ballots have already gone out in some states. For this brief the operative fact is the wake trigger: the order, not another day of a quiet docket.</p>
+<p><b>What to watch:</b> the First Circuit merits track; whether the administration tries a narrower rule for a later cycle; any parallel DHS citizenship-list work under the March executive order that is still live outside this stay.</p>
+<details><summary>Dig deeper — why the absence of an administrative stay was already decisive, and the order locks it</summary>
+<div class="exp">
+<p>Yesterday’s Grok edition carried 26A305 below the line because the docket had been silent since the 10&nbsp;September reply — four days with no administrative stay, which meant Talwani’s PI continued to operate for November. Monday’s denial converts that interim posture into the Court’s own equitable judgment for this cycle. Kavanaugh’s concurrence matters for the next round: he separates statutory authority from timing, so a refiled rule with a longer runway is not foreclosed by this order even if the 2026 application is dead.</p>
+</div></details>
+<p class="sources">Sources:
+<a href="https://supremecourt.gov/opinions/25pdf/26a305_4g15.pdf">Supreme Court order, 26A305 (14&nbsp;Sep, primary)</a> ·
+<a href="https://www.reuters.com/world/loss-trump-us-supreme-court-wont-let-postal-service-restrict-mail-ballots-2026-09-14/">Reuters</a> ·
+<a href="https://www.cbsnews.com/news/supreme-court-blocks-new-postal-service-mail-ballots-trump/">CBS News</a> ·
+<a href="https://text.npr.org">text.npr.org Tuesday sweep</a>
+</p>
+<div class="fb">
+<p>Wake-trigger order as the lead — right call over another threshold calendar?</p>
+<label><input type="radio" name="usps" value="yes"/> Yes — the order is the news</label>
+<label><input type="radio" name="usps" value="below"/> Belonged below until the merits</label>
+<label><input type="radio" name="usps" value="epa"/> Prefer EPA or the AI assembly as lead</label>
+</div>
+</article>
+
+<article id="dos">
+<h2>Today, every F, J and I visa stops being open-ended</h2>
+<p class="meta">
+<span class="chip">US politics &amp; policy</span>
+<span class="chip new">Threshold event</span>
+<span class="chip">Primary source</span>
+</p>
+<div class="corr">
+<span class="t">Weekday discipline</span>
+<p>Earlier issues briefly called 15&nbsp;September a Monday. It is a <b>Tuesday</b>. The Federal Register effective date (2026-14439) was always 09/15/2026; only the weekday label was wrong. Corrected here and in the 13&nbsp;Sep second edition.</p>
+</div>
+<p>DHS final rule FR&nbsp;2026-14439 takes effect today. Admission for “duration of status” ends for the F (academic student), J (exchange visitor) and I (foreign media) classifications. New admissions get a fixed date: programme end on the I-20 or DS-2019, capped at four years, plus a 30-day grace period (F grace falls from 60 to 30 days). I holders get up to 240 days (90 for most PRC passport holders), or the assignment length if shorter.</p>
+<p>People already here on D/S transition without an immediate filing: they may remain to programme end or four years from today, whichever is first, without a corrected I-94. After that, staying means an extension of stay. No stay application was located as of this morning’s sweep.</p>
+<p>The omission that still matters: neither this rule nor the 11&nbsp;Sep grace-period NPRM (comments close 10&nbsp;Nov) commits USCIS to any adjudication time on extensions — the concession that would make either workable.</p>
+<p><b>What to watch:</b> first wave of I-539 filings; any CRA joint resolution; employer-coalition comments on the grace-period NPRM; a suit seeking to stay either rule.</p>
+<details><summary>Dig deeper — why a default change is steeper than a eligibility change</summary>
+<div class="exp">
+<p>Under D/S, falling out of compliance generally required a finding. Under a fixed date, overstaying is a calendar fact and unlawful presence accrues automatically — which is what drives the three- and ten-year bars. Doctoral programmes and medical residencies routinely run past four years; the filing volume arrives for a population that has never had to file. After today this thread goes quiet until the November comment close unless something is filed.</p>
+</div></details>
+<p class="sources">Sources:
+<a href="https://www.federalregister.gov/documents/2026/07/17/2026-14439/establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-for-nonimmigrant">FR 2026-14439 (primary)</a> ·
+<a href="https://studyinthestates.dhs.gov/final-rule-establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-quick">DHS Study in the States quick facts</a> ·
+<a href="https://www.mayerbrown.com/en/insights/publications/2026/07/dhs-ends-duration-of-status-fixed-admission-periods-now-required-for-international-students-exchange-visitors-and-foreign-media-representatives">Mayer Brown</a>
+</p>
+<div class="fb">
+<p>Threshold day as a full lead one last time — right, or should it have been Also today?</p>
+<label><input type="radio" name="dos" value="lead"/> Lead was right</label>
+<label><input type="radio" name="dos" value="also"/> Also today was enough</label>
+<label><input type="radio" name="dos" value="drop"/> Drop until a backlog or suit</label>
+</div>
+</article>
+
+<article id="oil-chain">
+<h2>One chain to the pump: AAA diesel $6.27 — an all-time record — with East–West still dark</h2>
+<p class="meta">
+<span class="chip">Energy &amp; grid</span>
+<span class="chip">Macro &amp; markets</span>
+<span class="chip">Independent corroboration</span>
+</p>
+<p>AAA’s national diesel average printed <b>$6.2694</b> this morning — the highest recorded AAA diesel average on AAA’s own table (date stamped 15&nbsp;Sep). Yesterday $6.2301; a week ago $5.9012; a month ago $5.4396; a year ago $3.6858 (+~70%&nbsp;y/y). Regular gasoline $4.3289. That is the named pump print for today; EIA’s weekly table still showed a 9&nbsp;Sep release with next release 15&nbsp;Sep as of this morning’s check — if EIA’s first $6-diesel-week print lands later today it updates the federal series, not this AAA record.</p>
+<p>Same causal chain, not a second lead: Reuters early trading had Brent around $106.93–$107.82 and WTI around $102.65–$103.58 as Saudi Arabia’s East–West pipeline remains offline after the drone strikes on pump stations, with wires still describing a multi-million-b/d bypass at risk and Hormuz traffic constrained. Oman’s Gulf littoral meeting was postponed (Monday’s fact). Houthi strikes on Saudi targets continued in Tuesday wire copy. Distillate, not the headline barrel, is still setting the pump — diesel set records on days crude eased last week; today both are firm.</p>
+<p><b>What to watch:</b> an East–West restart; EIA’s weekly diesel if/when it posts; Aug/Sep food-at-home and transport-services CPI lines (the pass-through still pending); SPR policy around ~285&nbsp;mb.</p>
+<div class="div">
+<span class="t">One chain — do not split</span>
+<p>Hormuz restrictions, Bab el-Mandeb transit collapse, East–West dark, Brent, and diesel at the pump are one shock transmitted through refining and inventory. Venezuelan heavy sour under GL&nbsp;50 (~500k&nbsp;b/d) remains the quiet substitute feedstock, not a separate energy lead.</p>
+</div>
+<p class="sources">Sources:
+<a href="https://gasprices.aaa.com/">AAA Fuel Prices, 15&nbsp;Sep (primary pump print)</a> ·
+<a href="https://www.reuters.com/business/energy/oil-prices-rise-saudi-pipeline-outage-fresh-attacks-raise-supply-concerns-2026-09-15/">Reuters oil, 15&nbsp;Sep</a> ·
+<a href="https://www.aljazeera.com/news/2026/9/14/us-says-its-clearing-hormuz-traffic-why-are-oil-futures-beyond-100">Al Jazeera Hormuz explainer</a> ·
+<a href="https://www.eia.gov/petroleum/gasdiesel/">EIA gas/diesel update (next-release check)</a> ·
+<a href="https://www.handelsblatt.com/">Handelsblatt front (EU diesel/bond colour)</a>
+</p>
+<div class="fb">
+<p>AAA all-time record as the pump fact inside one chain — right weight?</p>
+<label><input type="radio" name="oil" value="yes"/> Yes</label>
+<label><input type="radio" name="oil" value="split"/> Want Hormuz / Bab el-Mandeb split again</label>
+<label><input type="radio" name="oil" value="wait-eia"/> Wait for EIA before leading on diesel</label>
+</div>
+</article>
+
+<article id="clarity">
+<h2>CLARITY Act cloture lands at ~2:15pm ET; the final text arrived overnight</h2>
+<p class="meta">
+<span class="chip">US politics &amp; policy</span>
+<span class="chip">US financials</span>
+<span class="chip new">New development</span>
+</p>
+<p>The cloture motion on the motion to proceed to H.R.&nbsp;3633, the Digital Asset Market Clarity Act, ripens today at approximately 2:15pm&nbsp;ET. Sixty votes are required. This is a gateway to debate, not passage. Republicans hold 53 seats; the bill needs a handful of Democratic or independent votes if the GOP caucus holds.</p>
+<p>Overnight, Sens. Lummis, Boozman and Scott released a final draft reflecting 126 substantive changes requested by Democrats. New pieces named in the sponsors’ release: ethics language reflecting substantially all of the Tillis–Gallego proposal (including a role for state attorneys general); Treasury authority framed as a temporary circuit-breaker if payment-stablecoin rewards drive deposit flight from community banks; and Blockchain Regulatory Certainty Act edits for developers, miners and validators. If cloture is invoked, sponsors plan to offer that text as an amendment in the nature of a substitute.</p>
+<p><b>What to watch:</b> the 2:15pm tally; whether failure shelves market-structure for the rest of 2026 ahead of the midterms; House concurrence if the Senate substitute advances.</p>
+<p class="sources">Sources:
+<a href="https://www.democrats.senate.gov/2026/08/08/schedule-for-pro-forma-sessions-and-monday-september-14-2026">Senate Democratic schedule (cloture ripens Tue 2:15pm)</a> ·
+<a href="https://www.lummis.senate.gov/press-releases/lummis-boozman-scott-release-final-clarity-act-text/">Lummis/Boozman/Scott final text release, 14&nbsp;Sep</a> ·
+<a href="https://news.bitcoin.com/regulation-and-legal/whats-new-in-the-final-clarity-act-ahead-of-the-senate-vote/">Bitcoin.com on final-draft changes</a> ·
+<a href="https://text.npr.org">NPR: “This bill could reshape crypto in America”</a>
+</p>
+<div class="fb">
+<p>Floor-day lead with the overnight text — or wait for the tally?</p>
+<label><input type="radio" name="clarity" value="lead"/> Lead on the vote day</label>
+<label><input type="radio" name="clarity" value="tally"/> Only lead if cloture succeeds or fails</label>
+<label><input type="radio" name="clarity" value="also"/> Also today until then</label>
+</div>
+</article>
+
+<article id="epa">
+<h2>EPA finalised the repeal of the 2024 power-plant carbon standards</h2>
+<p class="meta">
+<span class="chip">US politics &amp; policy</span>
+<span class="chip">Energy &amp; grid</span>
+<span class="chip new">New subject</span>
+<span class="chip under">Negative check</span>
+</p>
+<p>On Monday EPA finalised a partial repeal of the Biden-era 2024 Carbon Pollution Standards for fossil fuel-fired electric generating units — existing-unit emission guidelines and the 90% carbon-capture requirements for certain coal and new baseload gas plants among the pieces removed. EPA’s own release puts estimated compliance-cost savings above $300&nbsp;billion. Simultaneously it <em>proposed</em> rescinding remaining power-sector GHG standards under Clean Air Act §111 (including subparts covering new and existing fossil units); that broader repeal is not final and faces a comment period and hearing.</p>
+<p>Mercury, lead and other non-GHG toxics rules are described by major outlets as remaining in place. The grid/AI channel for this brief: large-load interconnection and who pays for generation are already live at FERC and in the House Ratepayer bill; removing federal GHG performance standards changes the build economics for the same thermal fleet that still sets the margin when data-centre load arrives.</p>
+<p><b>What to watch:</b> the comment window on the residual repeal proposal; state attorney-general suits; whether any ISO/RTO response to FERC’s large-load show-cause cites the changed federal GHG posture.</p>
+<p class="sources">Sources:
+<a href="https://www.epa.gov/newsreleases/epa-finalizes-repeal-2024-power-plant-regulations-delivering-300-billion-savings">EPA news release (primary)</a> ·
+<a href="https://www.epa.gov/system/files/documents/2026-09/fact-sheet_final-and-supp_technical_september2026_1.pdf">EPA technical fact sheet PDF</a> ·
+<a href="https://www.cnn.com/2026/09/14/climate/epa-emissions-coal-gas-power-plant-regulations-trump">CNN</a> ·
+<a href="https://text.npr.org">NPR Tuesday headline sweep</a>
+</p>
+<div class="fb">
+<p>Negative-check find as a Core energy/policy lead — keep doing that?</p>
+<label><input type="radio" name="epa" value="yes"/> Yes</label>
+<label><input type="radio" name="epa" value="ai-only"/> Only if the AI/grid link is tighter</label>
+<label><input type="radio" name="epa" value="below"/> Belonged below until litigation</label>
+</div>
+</article>
+
+<article id="ai-assembly">
+<h2>Sanders and Bannon share a stage today to demand AI curbs</h2>
+<p class="meta">
+<span class="chip">AI &amp; tech industry</span>
+<span class="chip new">New subject</span>
+<span class="chip">Independent corroboration</span>
+</p>
+<p>Senator Bernie Sanders and Steve Bannon are scheduled to appear today at the Future of Life Institute’s Pro-Human Assembly in Washington, a cross-spectrum event arguing for stronger limits so humans retain control of AI. Coverage places former Anthropic researcher Jacob Coxon among the speakers, alongside labour, religious and entertainment figures. The pairing is the news: two figures who agree on almost nothing else are aligning on AI risk the day after the President dismissed weekend pacing calls as a “SICK conspiracy” and while Newsom’s 30&nbsp;September decisions on SB&nbsp;1000 and SB&nbsp;947 still sit unsigned.</p>
+<p>This is politics of regulation, not a lab safety disclosure or a coding-agent CVE. It sits next to — and does not replace — the evaluator-access commitments and California audit statutes already on the watchlist.</p>
+<p class="disc">This edition is written with an xAI model. Anthropic appears in the speaker line-up via a former researcher; treat characterisations of any frontier lab with ordinary scepticism.</p>
+<p><b>What to watch:</b> whether any legislative text is attached to the event; Newsom’s 30&nbsp;Sep signatures/vetoes; any evaluator named under the Amodei pacing step&nbsp;1.</p>
+<p class="sources">Sources:
+<a href="https://www.axios.com/2026/09/14/coxon-bernie-bannon-unite-human-ai">Axios scoop</a> ·
+<a href="https://thehill.com/policy/technology/6088599-bernie-sanders-steve-bannon-ai-regulation-event/">The Hill</a> ·
+<a href="https://text.npr.org">NPR Tuesday sweep</a>
+</p>
+<div class="fb">
+<p>Odd-couple AI politics as a Core lead — or wait for a bill?</p>
+<label><input type="radio" name="ai-assembly" value="lead"/> Lead was right</label>
+<label><input type="radio" name="ai-assembly" value="also"/> Also today until text</label>
+<label><input type="radio" name="ai-assembly" value="skip"/> Skip politics-of-AI theatre</label>
+</div>
+</article>
+
+<article id="canada-338">
+<h2>§338 Canada duty-list modifications bite this morning; the bans wait until the 29th</h2>
+<p class="meta">
+<span class="chip">US politics &amp; policy</span>
+<span class="chip">World economy</span>
+<span class="chip new">Threshold event</span>
+</p>
+<p>At 12:01&nbsp;a.m.&nbsp;ET today, Proclamations&nbsp;11064 and&nbsp;11065 modify the scope of Canadian goods subject to the additional 50% §338 duties. CBP guidance: 122 HTSUS classifications added under 9903.03.12 / 9903.03.14; rock salt, Portland cement, certain spirits lines and other named classifications removed. The 0% carve-out under 9903.03.15 narrows — only 9903.03.13 remains eligible. USMCA origin still gives no relief (19&nbsp;U.S.C. §4512(a)(1)).</p>
+<p>Separate: the three outright import bans (packaged alcoholic beverages, named dairy, motorcycles/mopeds &gt;800cc) still take effect 29&nbsp;September. Do not collapse today’s duty-list change into the ban date. Monday’s Federal Register publication of the five proclamations was the document event; today is the duty-list bite.</p>
+<p><b>What to watch:</b> first CIT complaint naming §338; ITC investigation; preliminary injunction; further proclamations; Canada’s USMCA Ch.&nbsp;31 or WTO track.</p>
+<p class="sources">Sources:
+<a href="https://www.govinfo.gov/content/pkg/FR-2026-09-14/pdf/2026-18839.pdf">FR presidential document PDF (effective 15&nbsp;Sep)</a> ·
+<a href="https://worldtradescanner.com/US%20CBP%20Modifies%20Section%20338%20Duties%20on%20Canadian%20Imports%E2%80%93Effective%2015%20September%202026.htm">CBP/World Trade Scanner HTS summary</a> ·
+<a href="https://www.whitehouse.gov/presidential-actions/2026/09/modifying-the-scope-of-products-of-canada-subject-to-the-additional-duties-imposed-to-offset-canadian-discrimination-against-the-united-states-with-respect-to-motor-vehicles/">White House proclamation text</a>
+</p>
+<div class="fb">
+<p>Duty-list effective day as its own lead after Monday’s FR drop — redundant?</p>
+<label><input type="radio" name="s338" value="yes"/> Needed — bite ≠ publication</label>
+<label><input type="radio" name="s338" value="fold"/> Fold into Monday next time</label>
+<label><input type="radio" name="s338" value="wait-ban"/> Wait for 29&nbsp;Sep bans</label>
+</div>
+</article>
+
+<article id="ten-year">
+<h2>The ten-year yield pressed past 5% into FOMC day&nbsp;1</h2>
+<p class="meta">
+<span class="chip">US debt &amp; fiscal</span>
+<span class="chip">Macro &amp; markets</span>
+<span class="chip new">New development</span>
+</p>
+<p>The U.S. 10-year yield traded above 5% on Monday and again Tuesday morning — prints around 5.01–5.02% in wire and market summaries, described as the highest since 2007 in some accounts — with the long end still carrying last week’s global repricing (Bund, JGB, gilt). Diesel’s new AAA record and oil above $100 are the same-week inflation channel into the curve; they are not a separate Fed preview.</p>
+<p>Cadence discipline: FOMC is day&nbsp;1 of&nbsp;2 today; statement and dots are Wednesday 16&nbsp;Sep at 2pm&nbsp;ET. This item is the yield print and the fiscal/debt-service context (CBO FY26 deficit ~$1.9tn, net interest ~$1.0tn), not a state-of-play on the hike odds. No decision until Wednesday.</p>
+<p><b>What to watch:</b> Wednesday’s statement and SEP dots; next long-end buyback offer/fill; 4&nbsp;Nov refunding where the $4bn floor is reset.</p>
+<p class="sources">Sources:
+<a href="https://www.nytimes.com/2026/09/14/business/10-year-treasury-yield-5-percent.html">NYT on 10-year touching 5% (headline signal; stood up elsewhere)</a> ·
+<a href="https://www.nbcnews.com/business/business-news/diesel-oil-prices-jump-saudi-pipeline-shut-hormuz-talks-postponed-iran-rcna597579">NBC diesel/oil/yield</a> ·
+<a href="https://www.handelsblatt.com/">Handelsblatt (EU bond colour)</a> ·
+Prior Treasury buyback / CBO figures in config watchlist
+</p>
+<div class="fb">
+<p>Yield print as the debt/fiscal lead on FOMC day&nbsp;1 — or too close to forbidden Fed filler?</p>
+<label><input type="radio" name="tenyr" value="yes"/> Yield print is allowed</label>
+<label><input type="radio" name="tenyr" value="wed"/> Wait for Wednesday decision</label>
+<label><input type="radio" name="tenyr" value="also"/> Also today only</label>
+</div>
+</article>
+
+<article id="tprm">
+<h2>The banking agencies put third-party risk guidance in today’s Federal Register</h2>
+<p class="meta">
+<span class="chip">US financials</span>
+<span class="chip new">New subject</span>
+<span class="chip">Primary source</span>
+</p>
+<p>OCC Bulletin 2026-46 and the joint Fed/FDIC/NCUA package propose revised interagency third-party risk management guidance, published into today’s Federal Register issue (document 2026-18859). Comments run 60 days from FR publication. The proposal would replace the 2023 interagency guidance; it is explicitly nonbinding — non-compliance with the guidance alone is not a basis for supervisory action — and emphasises tailoring to each relationship’s assessed risk and to the bank’s size and complexity rather than treating every vendor as high-risk.</p>
+<p>Season matters: the same fortnight that raised the on-site exam threshold from $3bn to $6bn (188 additional institutions) is now rewriting how banks oversee the vendors that concentrate operational risk — including core processors and, increasingly, AI/cloud providers. A separate joint statement on community banks and core service providers accompanies the proposal.</p>
+<p><b>What to watch:</b> comment-file tone from bank trades vs fintech vendors; whether final guidance stays nonbinding; any exam manual incorporation that would harden it in practice.</p>
+<p class="sources">Sources:
+<a href="https://www.federalregister.gov/documents/2026/09/15/2026-18859/proposed-third-party-risk-management-guidance">FR 2026-18859 (primary)</a> ·
+<a href="https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-46.html">OCC Bulletin 2026-46</a> ·
+<a href="https://www.fdic.gov/news/press-releases/2026/agencies-seek-comment-proposed-third-party-risk-management-guidance-and">FDIC joint press release</a>
+</p>
+<div class="fb">
+<p>FR primary as a Core financials lead the morning it publishes — right?</p>
+<label><input type="radio" name="tprm" value="yes"/> Yes</label>
+<label><input type="radio" name="tprm" value="exam"/> Fold into the exam-threshold thread</label>
+<label><input type="radio" name="tprm" value="below"/> Below until comments bite</label>
+</div>
+</article>
+
+<h2 class="section" id="also">Also today</h2>
+<p class="secnote">Ten short items. Open any one.</p>
+<div class="also-list">
+
+<details>
+<summary><span class="chip">Macro &amp; markets</span> FOMC day&nbsp;1 of&nbsp;2 — decision and dots Wednesday 2pm&nbsp;ET. No state-of-play lead.</summary>
+<div class="exp">
+<p>Meeting runs 15–16&nbsp;Sep. Reader cadence: actual prints and the decision only. The 10-year print is covered above; this line exists so the calendar is not mistaken for news.</p>
+<p class="btl"><b>Below the line</b> because the decision is tomorrow.</p>
+<p class="sources">Sources: Federal Reserve calendar; prior watchlist</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Energy &amp; grid</span> EIA weekly petroleum tables — next release dated today; AAA already printed the pump record.</summary>
+<div class="exp">
+<p>As of this morning’s fetch, EIA’s gas/diesel page still showed Diesel Release Date 9&nbsp;Sep / Next 15&nbsp;Sep. If the federal weekly posts later today covering the first full $6-diesel weeks, it updates the official series. Do not invent the number before it lands.</p>
+<p class="btl"><b>Below the line</b> until the table updates.</p>
+<p class="sources">Sources: <a href="https://www.eia.gov/petroleum/gasdiesel/">EIA Gasoline and Diesel Fuel Update</a></p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Energy &amp; grid</span> House Ratepayer Protection Act (H.R.&nbsp;9340) still teed this week — no confirmed Tuesday roll call at gather time.</summary>
+<div class="exp">
+<p>Bipartisan bill would push states to make ≥100&nbsp;MW data centres cover incremental generation/transmission/distribution costs. Committee 52–0; suspension vote needs two-thirds. Yesterday’s Grok led on the teeing-up; no floor result located this morning.</p>
+<p class="btl"><b>Below the line</b> because calendar without a vote.</p>
+<p class="sources">Sources: House docs this week PDF; Congress.gov actions</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">AI &amp; tech industry</span> California AI conduct bills — 15 days to Newsom’s 30&nbsp;September deadline.</summary>
+<div class="exp">
+<p>Still unsigned: SB&nbsp;1000, SB&nbsp;947, SB&nbsp;903. Audit bills already signed. Cadence: movement or open deadlines — deadline open, no signature overnight.</p>
+<p class="btl"><b>Below the line</b> because calendar.</p>
+<p class="sources">Sources: prior chronology</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Geopolitics</span> Iran aviation GL&nbsp;J-1 wind-down still closes 23&nbsp;September.</summary>
+<div class="exp">
+<p>OFAC suspended General Licence J-1; wind-down via GL&nbsp;DD to 12:01&nbsp;a.m.&nbsp;ET 23&nbsp;Sep. Eight days. No Tuesday movement found.</p>
+<p class="btl"><b>Below the line</b> because clock only.</p>
+<p class="sources">Sources: prior FR OFAC notices</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">US politics &amp; policy</span> Haitian TPS end — NPR leads with fear, grief and defiance among thousands.</summary>
+<div class="exp">
+<p>Protected-status termination for Haitians in the U.S. is on Tuesday’s NPR wire sweep. US channel exists; altitude for this brief is policy consequence vs human-interest framing. Swept; not elevated above Core leads without a new court or DHS document this morning.</p>
+<p class="btl"><b>Below the line</b> pending a primary document or order.</p>
+<p class="sources">Sources: text.npr.org</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Geopolitics</span> NATO jets down a drone over Lithuania; Russian warship flares at a Danish helicopter in the Baltic.</summary>
+<div class="exp">
+<p>Wikipedia current-events and NPR both flag the Lithuania intercept; a separate Baltic flare incident appears on the same day’s wiki portal. US/NATO channel exists but no Article&nbsp;5 movement or basing change — altitude bar keeps it short.</p>
+<p class="btl"><b>Below the line</b> because incident ≠ policy shift.</p>
+<p class="sources">Sources: Wikipedia Portal:Current events 15&nbsp;Sep; text.npr.org</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Florida &amp; Tampa Bay</span> School-vaccine comment window closed yesterday; flrules still shows no hearing date.</summary>
+<div class="exp">
+<p>Rule 64D-3.046 comments/hearing requests closed 14&nbsp;Sep. FL ACP and FOMA timely requests remain on file. flrules notice page checked this morning — still the 24&nbsp;Aug propose; no granted hearing date published. Pasco BCC budget adoption is tomorrow 16&nbsp;Sep, 5:15pm, West Pasco Government Center — calendar only until millage is adopted.</p>
+<p class="btl"><b>Below the line</b> because closed window without a hearing notice is not new substance.</p>
+<p class="sources">Sources: <a href="https://flrules.org/Gateway/View_notice.asp?id=31292411">flrules 64D-3.046</a>; Pasco agenda prior; fox13 Pasco tag</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Florida &amp; Tampa Bay</span> Dengue: week&nbsp;36 ledger still missing; death investigation neither confirmed nor excluded.</summary>
+<div class="exp">
+<p>Week&nbsp;35 remains the posted state ledger (111 locally acquired; Hillsborough&nbsp;95). Pasco aircraft still on Hillsborough larvicide runs. No new fox13 dengue number this morning.</p>
+<p class="btl"><b>Below the line</b> because no new state number.</p>
+<p class="sources">Sources: prior DOH ledger; fox13 Pasco tag sweep</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">UAP disclosure</span> No movement: none of Luna’s 46 videos; no ODNI implementing guidance.</summary>
+<div class="exp">
+<p>Core beat, no dated catalyst. Quiet Core without a catalyst does not lead.</p>
+<p class="btl"><b>Below the line</b> because swept, no trigger.</p>
+<p class="sources">Sources: prior chronology</p>
+</div>
+</details>
+
+</div>
+
+<div class="fb">
+<p>About this section as a whole. Ten items below the line. Boundary about right?</p>
+<label><input type="radio" name="also-boundary" value="yes"/> Yes</label>
+<label><input type="radio" name="also-boundary" value="promote"/> No — promote at least one</label>
+<label><input type="radio" name="also-boundary" value="strict"/> Too many — be stricter</label>
+</div>
+
+<h2 class="section">Provenance</h2>
+<p><strong>Sources checked this run — 18, of which 11 outside active watchlist threads</strong></p>
+<p><em>Watchlist-pointed (7):</em> AAA Fuel Prices (diesel record) · FR JSON API 15&nbsp;Sep (incl. third-party risk 2026-18859) · duration-of-status FR 2026-14439 / DHS Study in the States · §338 CBP/White House/govinfo · SCOTUS docket/order 26A305 · Al Jazeera / Reuters oil–Hormuz–East–West · flrules / fox13 Pasco (FL vaccine + local).</p>
+<p><em>Outside watchlist (11):</em> text.npr.org Tuesday sweep · EPA news release + technical fact sheet · Axios / The Hill Sanders–Bannon assembly · OCC Bulletin 2026-46 · FDIC joint TPRM release · Lummis final CLARITY text release · Senate Democratic cloture schedule · Handelsblatt front · Wikipedia Portal:Current events 15&nbsp;Sep · CNN EPA stand-up · NBC / market summaries on 10-year ≥5%.</p>
+<p><strong>Negative check.</strong> Biggest stories not on the watchlist as framed: (1)&nbsp;EPA final repeal of 2024 power-plant carbon standards — promoted to lead; (2)&nbsp;Sanders–Bannon Pro-Human AI Assembly — promoted to lead; (3)&nbsp;interagency third-party risk guidance in today’s FR — promoted to lead. Declined for altitude: Netherlands rail sabotage (no U.S. channel); South Africa road crash; Emmys; Kennedy Center bankruptcy colour; individual crime blotter on fox13.</p>
+<p><strong>Could not reach:</strong> Reuters article HTML timed out (stood up from search synthesis + Al Jazeera) · SCOTUS PDF direct fetch timed out (stood up from search excerpts of the order + multi-outlet corroboration; URL retained) · EPA HTML release timed out (stood up from search + fact-sheet URL) · CNBC pages often 403 · AP hub refused · some Bloomberg/NYT paywalled (headlines as signal only for the 10-year).</p>
+<p><strong>Weekday discipline:</strong> Today is <b>Tuesday, 15&nbsp;September 2026</b>. Duration of status and §338 duty-list mods bite today. CLARITY cloture ~2:15pm&nbsp;ET today. FOMC continues Wednesday 16&nbsp;Sep (statement 2pm&nbsp;ET). Pasco BCC budget adoption Wednesday 16&nbsp;Sep 5:15pm. Canada import bans still 29&nbsp;Sep.</p>
+<p><strong>Dormant / swept, no trigger:</strong> UAP videos · Gulf states Article&nbsp;51 · birthright citizenship · AARO contract · FEMA remedy (October) · Alien Terrorist Removal Court (no second case) · Bab el-Mandeb (no new transit print this morning; prior Friday halving stands) · bank exam threshold (effective Monday; count already reported).</p>
+<p><a href="../">Archive</a> · Previous Grok: <a href="2026-09-14-grok.html">14&nbsp;Sep morning</a> · Claude Issue&nbsp;10: <a href="2026-09-14.html">2026-09-14</a></p>
+
+<div class="submit">
+<button type="button" id="send">Send my feedback →</button>
+<p style="font-size:.84rem;color:var(--muted);margin-top:.5rem;">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+</div>
+
+<footer style="margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--rule);">
+<p>Independent Grok edition for 15 September 2026. Nine lead stories, ten short items. Five leads are new subjects or threshold events with fresh facts (SCOTUS USPS order, EPA carbon-standards repeal, Sanders–Bannon assembly, 10-year ≥5%, bank TPRM FR drop); duration of status and §338 duty-list mods are same-day threshold bites; oil/pump is one chain; CLARITY is the floor-day vote. Every quotation under fifteen words and attributed; everything else is paraphrase. Numbers from named primary tables or labelled single-sourced.</p>
+</footer>
+
+</div>
+<script>
+(function () {
+ var OWNER = "historiocity", REPO = "News-Agent";
+ document.getElementById("send").addEventListener("click", function () {
+ var lines = [], answered = 0;
+ document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+ answered++;
+ var q = i.closest(".fb");
+ var p = q ? q.querySelector("p") : null;
+ lines.push("- " + (p ? p.textContent.trim() : i.name) + "\\n → **" + i.value + "**");
+ });
+ if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+ var body = "Feedback on **Issue No. 11-grok — 15 September 2026**\\n\\n" + lines.join("\\n")
+ + "\\n\\n---\\n_Anything still here that shouldn't be, or missing that should:_\\n\\n";
+ window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+ + "&title=" + encodeURIComponent("Brief feedback — 2026-09-15-grok")
+ + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+ });
+})();
+</script>
+</body>
+</html>
