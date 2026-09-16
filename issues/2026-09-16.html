@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Wednesday, 16 September 2026</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; --band:#d7d1c4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; --band:#3a3a42; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  .short { border-bottom:1px solid var(--rule); padding:.7rem 0; margin:0; }
+  .short > summary { color:var(--fg); cursor:pointer; list-style:none; }
+  .short > summary::-webkit-details-marker { display:none; }
+  .short > summary::before { content:"\25B8  "; color:var(--link); }
+  .short[open] > summary::before { content:"\25BE  "; }
+  .short .body { margin-top:.7rem; padding-left:1.1rem; border-left:2px solid var(--rule); }
+  .short .why { font-style:italic; color:var(--muted); }
+  figure { margin:1.2rem 0 0; }
+  figure svg { width:100%; height:auto; display:block; }
+  figcaption { font-size:.84rem; color:var(--muted); margin-top:.4rem; line-height:1.5; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+  ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 12</div>
+  <h1>Wednesday, 16 September 2026</h1>
+  <div class="sub">Two recorded votes that change nothing by themselves and tell you a great deal anyway &mdash; the House against the Iran war, the Senate against crypto market structure. Plus near-prohibitive duties on solar cells from three countries, and the Air Force saying out loud that the United States has weapons in orbit.</div>
+  <div class="prov">
+    <b>Provenance.</b> 27 sources checked, 14 of them pointing at no active thread. Seven lead stories plus the Florida section: three new subjects, four continuations &mdash; at the cap of four follow-ups.
+    <b>Negative check</b> &mdash; the biggest story not on the list: the Air Force Secretary&rsquo;s acknowledgment that the United States has fielded weapons in orbit. No thread points at it, no beat line in the config covers military space, and it is the fourth lead. The one thing found and declined: the Kosovo Specialist Chambers convicting former president Hashim Tha&ccedil;i of war crimes and sentencing him to 25 years. It is a real verdict in a court the United States helped create, but the American channel is historical rather than operative, and this brief&rsquo;s altitude bar asks what changes for you.
+  </div>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#war-powers">The House voted to end the Iran war at 10:32 last night. It is not a law and it was never going to be</a></li>
+    <li><a href="#clarity-cloture">Crypto market structure died on the Senate floor at 49&ndash;50, eleven votes short</a></li>
+    <li><a href="#solar-duties">Commerce set duties near 250% on Indian solar cells today, and nobody covered it</a></li>
+    <li><a href="#space-weapons">The Air Force Secretary said the United States has weapons in orbit</a></li>
+    <li><a href="#ebola-order">The Congo Ebola epidemic is at 6,779 cases, and the US entry ban now runs to 11 October</a></li>
+    <li><a href="#diesel-freight">Diesel set a seventh straight record, and the freight market had already turned before it got here</a></li>
+    <li><a href="#mecca-red-line">A drone was shot down short of Mecca, and three price feeds cannot agree what Brent costs</a></li>
+    <li><a href="#fl-budgets">Florida &amp; Tampa Bay: Pasco adopts its budget tonight at 5:15, ten minutes from you</a></li>
+    <li><a href="#also-today">Also today (10)</a></li>
+  </ol>
+</nav>
+
+<article id="war-powers">
+<h2>The House voted to end the Iran war at 10:32 last night. It is not a law and it was never going to be</h2>
+<div class="meta"><span class="chip">US politics &amp; policy</span><span class="chip new">New subject</span><span class="chip">Primary source</span></div>
+
+<p>On roll call 307, taken at 10:32pm Eastern on Tuesday 15 September, the House agreed to H. Con. Res. 93 by <b>220 to 204</b>, directing the President to remove US armed forces from hostilities with Iran under the War Powers Resolution. Nine members did not vote. The Democratic caucus went 213&ndash;0 in favour with one absence; Republicans went 7&ndash;203 against with eight absences; the chamber&rsquo;s one independent voted no.</p>
+
+<p>The seven Republicans were Thomas Massie of Kentucky, Brian Fitzpatrick of Pennsylvania, Warren Davidson of Ohio, Tom Barrett of Michigan, Nancy Mace of South Carolina, and Mariannette Miller-Meeks and Zach Nunn of Iowa. Three of them had not voted for a withdrawal resolution before. The two earlier attempts, in June and July, drew four Republicans each. The resolution is Seth Moulton&rsquo;s, cosponsored by fourteen Democrats, thirteen of them veterans.</p>
+
+<p>Here is the part the coverage is getting wrong. This is a <em>concurrent</em> resolution. It is not presented to the President, it cannot be signed and it cannot be vetoed, and even if the Senate passed it tomorrow it would not have the force of law. What it is instead is a count: a recorded House majority against a war the President began in late February without authorisation, seven weeks before the midterms, with the Republican defection rate tripling since June.</p>
+
+<p>What to watch: whether any senator forces the privileged equivalent onto the Senate floor, which would put fifty-three Republicans on the record; and the appropriations route, which is the one mechanism in this area that has ever actually bound a President.</p>
+
+<div class="div">
+  <p class="t">Divergence</p>
+  <p><b>The point in dispute.</b> Not the tally &mdash; everyone has 220&ndash;204. The dispute is about what the instrument <em>is</em>. Al Jazeera writes that the measure &ldquo;faces an almost certain presidential veto if it reaches Trump&rsquo;s desk.&rdquo; UPI&rsquo;s headline says the House &ldquo;passes resolution to curb Trump&rsquo;s ability to wage Iran war.&rdquo; Moulton&rsquo;s own press release says the House voted to &ldquo;reclaim congressional authority to declare war.&rdquo; This is a dispute about facts, and it is adjudicable.</p>
+  <p><b>Why they land differently.</b> Mostly compression, not motive. A concurrent resolution and a joint resolution are one word apart on the docket and a universe apart in law, and the wire template for &ldquo;chamber passes thing the President dislikes&rdquo; has a veto sentence built into it. Moulton&rsquo;s framing is the sponsor describing the intent of his own text, which is a different claim from describing its effect. Nobody here is inventing anything; the veto sentence is simply a category error.</p>
+  <p><b>What it means for you.</b> Treat this as a political count with no operative legal effect, and discount any account that says otherwise &mdash; including any that tells you the war is now on a clock. The observation that would change the picture is a <em>joint</em> resolution, or a funding limitation in an appropriations bill. Either would be news of a different order. Watch the vehicle type, not the headline verb.</p>
+</div>
+
+<details>
+<summary>Dig deeper &mdash; why a concurrent resolution cannot do this, and what happened to the mechanism that could</summary>
+<div class="exp">
+<p>The War Powers Resolution of 1973 was written with a self-executing enforcement clause: Congress could direct the President to withdraw forces by concurrent resolution, which requires both chambers and no presidential signature. That was the design, and for a decade it was the assumed remedy.</p>
+<p>Then in 1983 the Supreme Court decided <em>INS v. Chadha</em>, striking down the one-house legislative veto and, in its reasoning, the general proposition that Congress can bind the executive through an instrument that never goes through presentment. The concurrent-resolution mechanism in the War Powers Resolution has been widely regarded as constitutionally infirm ever since. Congress responded the same year by adding expedited floor procedures for a <em>joint</em> resolution &mdash; the version that does go to the President, can be vetoed, and would need two thirds of both chambers to survive that veto. That is the live route. Last night&rsquo;s vote did not take it.</p>
+<p>So what was the point? Three things, and they are not nothing. First, the count itself: 220 members have now put their names to ending this war, and in a chamber this close that number is a whip check for anything that follows. Second, the Republican trend line &mdash; four, four, seven, with three first-time defectors. Zach Nunn&rsquo;s stated reasoning is the tell: with the negotiating window closed, he argued, sustained combat operations now require congressional authorisation. That is a member of the President&rsquo;s own party locating the moment the legal position changed, which is a more durable thing to have on the record than a floor speech. Third, it forces the question into the Senate, where the arithmetic is worse for the administration than the House&rsquo;s was.</p>
+<p>The related item, and the reason to keep the two separate in your head: Thomas Massie has also moved to impeach Defense Secretary Pete Hegseth over the Iran war. That is a privileged resolution of a different kind, it will not succeed, and it is the sort of thing that generates a great deal of coverage while changing nothing. The war-powers count is the one worth carrying forward.</p>
+<p>One limit on this item. What has been read here is the Clerk&rsquo;s roll-call record for vote 307, which is authoritative on the question, the time, the tally and every member&rsquo;s position. The text of H. Con. Res. 93 itself has not been read &mdash; congress.gov has been returning 403 to this brief since 14 September &mdash; so the description of what it directs comes from the Clerk&rsquo;s question line and from reporting. If the resolution contains a reporting requirement or a certification clause, that would not be visible here.</p>
+</div>
+</details>
+
+<p class="sources"><b>Sources:</b> <a href="https://clerk.house.gov/Votes/2026307">House Clerk, roll call 307</a> &middot; <a href="https://moulton.house.gov/news/press-releases/house-passes-moultons-war-powers-resolution-reclaim-congressional-authority">Rep. Moulton&rsquo;s statement</a> &middot; <a href="https://www.aljazeera.com/news/2026/9/16/us-house-votes-to-end-iran-war-7-republicans-join-in-favour">Al Jazeera</a> &middot; <a href="https://www.upi.com/Top_News/US/2026/09/16/House-war-powers-resolution/8781789544714/">UPI</a>.</p>
+
+<div class="fb">
+  <p><b>New thread?</b> This would track war-powers votes, the Senate equivalent, and any appropriations limitation.</p>
+  <label><input type="radio" name="fb-warpowers" value="open"> Open it &mdash; the war is the biggest thing happening and I want the congressional track</label>
+  <label><input type="radio" name="fb-warpowers" value="joint"> Open it, but wake me only on a joint resolution or a funding limitation</label>
+  <label><input type="radio" name="fb-warpowers" value="no"> No thread &mdash; symbolic votes are not worth a standing watch</label>
+  <p><b>The divergence box corrected three outlets, including the sponsor.</b> That is a sharper posture than usual.</p>
+  <label><input type="radio" name="fb-warpowers-div" value="more"> Good &mdash; adjudicate against the coverage when the law is clear</label>
+  <label><input type="radio" name="fb-warpowers-div" value="careful"> Careful &mdash; only when you can cite the authority, not from general knowledge</label>
+</div>
+</article>
+
+<article id="clarity-cloture">
+<h2>Crypto market structure died on the Senate floor at 49&ndash;50, eleven votes short</h2>
+<div class="meta"><span class="chip">US politics &amp; policy</span><span class="chip">US financials</span><span class="chip">Primary source</span></div>
+
+<p>Senate roll call 234, Tuesday 15 September: cloture on the motion to proceed to H.R. 3633 &mdash; the CLARITY Act, which would divide oversight of digital commodities between the SEC and the CFTC &mdash; was <b>rejected 49 to 50</b>. Sixty were needed. This brief said yesterday that the vote was at 2:15pm and that there would be no result to report before publication. There is now.</p>
+
+<p>The margin is the story. Not 57, not 58 &mdash; forty-nine. Every Democrat who had been publicly working on the bill voted against proceeding, including Kirsten Gillibrand, Mark Warner, Cory Booker, Raphael Warnock, Ruben Gallego, Angela Alsobrooks and Catherine Cortez Masto. On initial tallies at least one Republican, Susan Collins, voted no as well. A bill eleven votes from cloture with its own bipartisan negotiators voting against the motion to proceed is not a bill that was close.</p>
+
+<p>The stated objection is not about digital assets. Gallego&rsquo;s statement says Republicans abandoned bipartisan ethics negotiations to schedule the vote, and that he will not support legislation that he sees as enabling the President personally. Republican leaders had released a revised text on Sunday adding ethics restrictions on public officials profiting from crypto ventures. It was not enough.</p>
+
+<p>What to watch: whether leadership files again this session, which would require finding eleven votes that were not there; and the two things that were waiting on this bill &mdash; the stablecoin-yield question, and the OCC stablecoin rules still targeted for November against a statutory deadline missed on 18 July.</p>
+
+<details>
+<summary>Dig deeper &mdash; what the failure hands to the regulators, and why the community-bank angle survives the bill</summary>
+<div class="exp">
+<p>The immediate consequence of a failed cloture vote is that nothing changes, which in this area means the status quo wins by default &mdash; and the status quo is regulation by enforcement and by agency rulemaking rather than by statute. The SEC and the CFTC keep their contested and overlapping claims over the same instruments. Nobody gets the jurisdictional line the industry spent two years and a great deal of money trying to buy.</p>
+<p>The piece this brief has been tracking is narrower and it outlives the bill. The CLARITY text carried the compromise on stablecoin yield: community banks argue that a yield-bearing dollar token is a deposit substitute that pulls funding out of institutions in roughly the $3bn&ndash;$6bn asset band, and the bill answered that by directing the Treasury Secretary to restrict such rewards only <em>if</em> substantial deposit flight could be demonstrated. That was a trigger rather than a prohibition, and it is now gone along with everything else. The deposit-flight question does not go away; it simply has no statutory answer, which means it lands back with the banking agencies &mdash; the same four that yesterday proposed rescinding the 2023 third-party risk framework, eight days after doubling the extended-examination threshold. Three reductions in the structure around one band of banks, and the one piece of it that was going to arrive by statute just failed.</p>
+<p>On the ethics fight, be precise about what is being claimed. Gallego is not arguing the market-structure provisions are wrong. He is arguing that a framework legitimising an asset class in which the President and his family have direct commercial interests requires conflict-of-interest provisions that the Sunday text did not contain. That is a claim about the bill&rsquo;s context, not its content, and it is why the usual trade-off &mdash; soften a definition here, widen an exemption there &mdash; could not close the gap. A bill blocked on content can be renegotiated. A bill blocked on who benefits generally cannot be, until the beneficiary changes.</p>
+<p>What has been read here: the Senate&rsquo;s own roll-call record, which is authoritative on the question, the tally and the date, and Senator Gallego&rsquo;s published statement. The member-by-member breakdown of the 49 and the 50 is from reporting, not from the roll-call detail page, and the Collins vote in particular is described in sources as an initial tally. CNBC&rsquo;s article on the vote returned 403 to this brief, as its article pages have all week.</p>
+</div>
+</details>
+
+<p class="sources"><b>Sources:</b> <a href="https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_119_2.htm">Senate roll-call votes, 119th Congress 2nd session &mdash; vote 234</a> &middot; <a href="https://www.gallego.senate.gov/news/press-releases/gallego-statement-on-failed-clarity-act-cloture-vote/">Sen. Gallego&rsquo;s statement</a> &middot; <a href="https://www.coindesk.com/policy/2026/09/15/crypto-clarity-act-flames-out-in-failed-u-s-senate-vote">CoinDesk</a>. Continues <a href="2026-09-14.html#s-clarity">Monday&rsquo;s item</a> and <a href="2026-09-15.html#also-today">yesterday&rsquo;s</a>.</p>
+
+<div class="fb">
+  <p><b>This thread was opened to see whether the bill passed. It did not.</b></p>
+  <label><input type="radio" name="fb-clarity" value="close"> Close it &mdash; question answered</label>
+  <label><input type="radio" name="fb-clarity" value="stablecoin"> Narrow it to the stablecoin-yield and deposit-flight question only</label>
+  <label><input type="radio" name="fb-clarity" value="refile"> Keep it open for a refile this session</label>
+</div>
+</article>
+
+<article id="solar-duties">
+<h2>Commerce set duties near 250% on Indian solar cells today, and nobody covered it</h2>
+<div class="meta"><span class="chip">Energy &amp; grid</span><span class="chip new">New subject</span><span class="chip under">Underreported</span><span class="chip">Primary source</span></div>
+
+<p>Six Federal Register notices today, published together and read here in full: the Commerce Department&rsquo;s final antidumping and countervailing duty determinations on crystalline silicon photovoltaic cells from <b>India, Indonesia and Laos</b>. For India the countervailing rate is <b>126.09%</b> and the dumping margin <b>123.04%</b>, both applied to every named producer &mdash; the Adani-affiliated Mundra Solar entities, Kowa and Premier Energies &mdash; and to all others. Both rest on adverse inferences: the mandatory respondents did not participate, so Commerce used facts available rather than verified data.</p>
+
+<p>Indonesia is lower and split: PT Blue Sky Solar Indonesia draws 173.70% on the subsidy side, also by adverse inference, while PT REC Solar Energy Indonesia and all others draw 73.20%. Commerce found critical circumstances almost everywhere, which pulls the suspension of liquidation back 90 days before the preliminary determinations &mdash; to 28 November 2025 for most subsidy findings, and to 28 January 2026 for the four named Indian exporters on the dumping side.</p>
+
+<p>The US channel is the interconnection queue. This is the sequel to the 2024 Southeast Asia cases: cell manufacturing moved to India, Indonesia and Laos, and the duties have now followed it there. Effective rates near 250% are not a tariff, they are an exclusion.</p>
+
+<p>What to watch: the International Trade Commission&rsquo;s final injury vote, due within 45 days. If it finds injury, orders issue and the deposits become permanent. If it does not, the whole thing terminates and the money is refunded.</p>
+
+<details>
+<summary>Dig deeper &mdash; adverse inference, the stacking question, and why this lands on the data-centre build</summary>
+<div class="exp">
+<p>Start with the number, because it deserves a caveat. The headline arithmetic &mdash; 126.09 plus 123.04, call it 249% &mdash; is roughly right for what an importer posts as cash deposits, but not exactly. Where a countervailing duty offsets an <em>export</em> subsidy, the dumping margin is reduced to avoid double-counting the same benefit. That adjustment is in the orders rather than in the headline rates, so the true combined deposit rate for a given entry may be somewhat below the sum. It will still be far past the level at which anyone imports anything.</p>
+<p>The adverse-inference point is the one that tells you what happened procedurally. Commerce sends questionnaires; respondents answer them; Commerce verifies. When the mandatory respondents do not participate &mdash; as here, for every Indian company and for Blue Sky in Indonesia &mdash; the agency is entitled to use facts otherwise available and to draw inferences adverse to the non-cooperating party, which in practice means selecting from the high end of the petition&rsquo;s alleged rates. So 126.09% is not a measurement of Indian subsidy. It is the price of not showing up. REC Solar in Indonesia did participate and drew 73.20%, which is the only rate in the set derived from examined data, and it is still enormous.</p>
+<p>Why this matters to a reader who does not own a solar panel. The same month EPA finalised the power-plant carbon repeal and FERC ordered all six market operators to justify how they interconnect large loads, the cheapest marginal source of new generating capacity in the United States just got considerably more expensive to import. Utility-scale solar has been the fastest thing to build into an interconnection queue &mdash; not because it is ideologically favoured but because the equipment is a commodity and the permitting is light. Data-centre load is arriving on a schedule that does not care about any of this. Take the commodity supply away and what is left to serve that load is gas turbines with multi-year delivery slots, and the cost of the difference is allocated in a state rate case.</p>
+<p>The critical-circumstances finding is the sharp edge. Suspension of liquidation reaching back to November 2025 means importers who moved cargo in anticipation of the case now owe deposits on entries already sold, at rates nobody could have provisioned for. That is the mechanism&rsquo;s intended deterrent effect and it also produces insolvencies.</p>
+<p>The honest limits. The India countervailing and antidumping notices and the Indonesia countervailing notice were read in full here. The Laos determinations are in today&rsquo;s issue under document numbers 2026-18941 and 2026-18942 but their rates have not been read, and the Indonesia dumping margin has not been read either &mdash; so no combined Indonesian figure is given above. The ITC schedule is stated in the Commerce notices as &ldquo;within 45 days&rdquo;; no specific vote date has been confirmed.</p>
+</div>
+</details>
+
+<p class="sources"><b>Sources:</b> <a href="https://www.federalregister.gov/documents/full_text/text/2026/09/16/2026-18947.txt">India, final countervailing determination (2026-18947)</a> &middot; <a href="https://www.federalregister.gov/documents/full_text/text/2026/09/16/2026-18945.txt">India, final dumping determination (2026-18945)</a> &middot; <a href="https://www.federalregister.gov/documents/full_text/text/2026/09/16/2026-18940.txt">Indonesia, final countervailing determination (2026-18940)</a> &middot; <a href="https://www.federalregister.gov/api/v1/documents.json?conditions%5Bpublication_date%5D%5Bis%5D=2026-09-16&conditions%5Btype%5D%5B%5D=NOTICE&per_page=80">Federal Register notices, 16 September</a>.</p>
+
+<div class="fb">
+  <p><b>New thread?</b> This would track the ITC injury vote and the orders.</p>
+  <label><input type="radio" name="fb-solar" value="open"> Open it &mdash; follow to the ITC vote and the orders</label>
+  <label><input type="radio" name="fb-solar" value="grid"> Open it, but only where it reaches the grid or retail power prices</label>
+  <label><input type="radio" name="fb-solar" value="no"> No thread &mdash; one story was enough</label>
+  <p><b>Second day running that a full read of the Federal Register produced the underreported lead.</b></p>
+  <label><input type="radio" name="fb-solar-method" value="standing"> Make it a standing daily call and say so &mdash; it keeps working</label>
+  <label><input type="radio" name="fb-solar-method" value="balance"> Current balance is right</label>
+</div>
+</article>
+
+<article id="space-weapons">
+<h2>The Air Force Secretary said the United States has weapons in orbit</h2>
+<div class="meta"><span class="chip">Geopolitics</span><span class="chip new">New subject</span><span class="chip">Single-sourced</span></div>
+
+<p>Air Force Secretary Troy Meink told the Air, Space &amp; Cyber Conference in Maryland that the United States has fielded &ldquo;on-orbit space control weapons capable of defending the Joint Force against hostile adversary action.&rdquo; He did not say what they are, how they work, or whether they are aimed at objects in space or at targets on the ground. Reporting dates the remarks to 15 September.</p>
+
+<p>This is the first public American acknowledgment that it has deployed weapons in space. Until now the posture was studied ambiguity: the United States described adversary capabilities &mdash; principally the Russian nuclear anti-satellite programme reported in 2024 &mdash; while characterising its own space activity as defensive and unarmed. That asymmetry is now gone, by choice.</p>
+
+<p>The 1967 Outer Space Treaty, to which the United States and Russia are both parties, bans placing nuclear weapons or other weapons of mass destruction in orbit and declares space a commons for peaceful purposes. It does not ban conventional weapons in orbit. So the plain reading is that nothing said yesterday is a treaty violation &mdash; and also that the one legal line everyone cites is not the line being approached.</p>
+
+<p>What to watch: whether the Space Force or the Department of War puts anything on paper &mdash; a posture statement, a budget line, a congressional hearing answer &mdash; that gives the category a name. An acknowledgment made in a conference speech and nowhere else is deniable in a way a budget justification is not.</p>
+
+<details>
+<summary>Dig deeper &mdash; why a conference speech, and what the disclosure is probably for</summary>
+<div class="exp">
+<p>Deliberate disclosure of a capability is itself the capability being used. States reveal weapons when the deterrent value of being known to have them exceeds the operational value of surprise, and the calculation almost always turns on a specific audience. The audience here is not the American public.</p>
+<p>The sequence is worth holding. In 2024 the United States publicly accused Russia of developing a nuclear anti-satellite weapon designed to be launched into orbit, while saying there was no immediate danger. Chinese on-orbit rendezvous and proximity operations have been tracked and complained about for years. American military dependence on satellite communication, positioning and imagery is the deepest of any state and is therefore the most attractive thing to hold at risk. Saying out loud that there is something up there able to defend the joint force is a message to two capitals that the cost of a first move has changed.</p>
+<p>The form of the disclosure carries information too. A conference keynote is the softest available channel: no document, no definitions, no compelled follow-up questions, and deniability about scope. Compare the section 338 proclamations this brief has been reading all month, where the operative content turned out to be in the severability clause. There is no severability clause in a speech. Until this appears in a budget justification or a posture statement, what exists is a sentence.</p>
+<p>Meink used the same appearance to describe a service reshaped by 2032 around more autonomous systems, including replacing some artillery roles with uncrewed attack aircraft. That is a procurement argument being made in front of a procurement audience, and the space sentence was delivered inside it, which is a reason for some caution about how carefully it was drafted.</p>
+<p>The confidence marker on this story is deliberate. NBC News, NPR, CNBC and US News all carried it within hours of each other, and their accounts agree closely &mdash; which is exactly what shared wire copy looks like. This brief could not establish that any two of them reported it independently, and the speech itself was not read or watched here. One further wrinkle supports the caution: the accounts differ on which day Meink spoke, with most placing it on Tuesday 15 September and at least one describing it as the day before. That is a small discrepancy and it is the kind that propagates when everyone is working from the same summary. Treat the quoted sentence as reliable and the surrounding detail as thinner than the number of bylines suggests.</p>
+<p>One thing this brief did <em>not</em> do today: the UAP disclosure thread&rsquo;s own sources &mdash; the AARO records contract and the implementing guidance &mdash; were not reached this run, so nothing here should be read as bearing on them.</p>
+</div>
+</details>
+
+<p class="sources"><b>Sources:</b> <a href="https://www.nbcnews.com/news/us-news/us-acknowledges-first-time-deployed-weapons-in-space-rcna597916">NBC News</a> &middot; <a href="https://www.npr.org/2026/09/16/nx-s1-5970937/us-weapons-space">NPR</a> &middot; <a href="https://www.usnews.com/news/world/articles/2026-09-15/us-acknowledges-for-the-first-time-that-it-has-deployed-weapons-in-space">US News</a>.</p>
+
+<div class="fb">
+  <p><b>New thread?</b> Military space is not in any beat line in your config.</p>
+  <label><input type="radio" name="fb-space" value="open"> Open it &mdash; and add military space to the beat list</label>
+  <label><input type="radio" name="fb-space" value="uap"> Fold it into the UAP disclosure thread &mdash; same transparency question</label>
+  <label><input type="radio" name="fb-space" value="no"> No &mdash; one speech is not a beat</label>
+  <p><b>This ran single-sourced despite four outlets carrying it.</b></p>
+  <label><input type="radio" name="fb-space-conf" value="right"> Right call &mdash; keep labelling wire convergence honestly</label>
+  <label><input type="radio" name="fb-space-conf" value="strict"> Too strict &mdash; four national outlets is corroboration enough</label>
+</div>
+</article>
+
+<article id="ebola-order">
+<h2>The Congo Ebola epidemic is at 6,779 cases, and the US entry ban now runs to 11 October</h2>
+<div class="meta"><span class="chip">Science &amp; public health</span><span class="chip under">Underreported</span><span class="chip">Primary source</span></div>
+
+<p>Today&rsquo;s Federal Register carries the CDC order continuing the suspension of the right to introduce certain persons from countries where a quarantinable communicable disease exists. It is document 2026-18948, it took effect at 5:00pm Eastern on 11 September, and it expires at 4:59pm on <b>11 October</b>. It covers the Democratic Republic of the Congo, Uganda and South Sudan, and the disease is Ebola caused by Bundibugyo virus.</p>
+
+<p>The numbers in the order are the news. As of 9 September the DRC has <b>6,779 confirmed cases and 3,267 deaths across 61 health zones</b> &mdash; a case fatality ratio just under half. Contact tracing is running at roughly 87% when the order says 95% is needed to bring an outbreak under control. Uganda has completed its 42-day monitoring period with 20 cases and two deaths, its last case on 21 June. South Sudan has no confirmed cases and is included on cross-border risk alone.</p>
+
+<p>The order reaches non-citizens who were in those three countries in the preceding 21 days &mdash; and on its own terms that includes lawful permanent residents. US citizens and nationals, military personnel and certain government employees are excepted, and customs officers may grant case-by-case exceptions on humanitarian or public-health grounds.</p>
+
+<p>What to watch: 11 October, when this either lapses or is renewed a fourth time; and whether the contact-tracing figure moves, since the order itself names 95% as the threshold.</p>
+
+<details>
+<summary>Dig deeper &mdash; the scale of this outbreak, and the part of the order that is about immigration rather than disease</summary>
+<div class="exp">
+<p>Set the case count against the historical record. The 2018&ndash;20 Kivu outbreak, the second-largest Ebola epidemic ever recorded, ran to roughly 3,470 cases and 2,280 deaths and dominated global health coverage for two years. At 6,779 confirmed cases this one has passed it, and is now second only to the 2013&ndash;16 West Africa epidemic. That comparison is drawn from the historical record rather than from today&rsquo;s document, and it is the single most useful thing to know about a story that is receiving a fraction of the attention Kivu did.</p>
+<p>The legal instrument is worth understanding because it is a familiar one wearing a different coat. Sections 362 and 365 of the Public Health Service Act, implemented at 42 CFR 71.40, are the authority used for the Title 42 border expulsions of 2020&ndash;23 &mdash; a public-health power to suspend entry, exercised by the CDC Director, renewable in short increments, and subject to essentially no adversarial process. Its use here is squarely within what the statute contemplates: a lethal haemorrhagic fever with active transmission in three named countries. That is a much better fit to the text than the 2020 use was.</p>
+<p>The provision that deserves scrutiny is the coverage of lawful permanent residents. An LPR is not a visitor; they hold a statutory right to reside in the United States, and suspending their re-entry on the basis of recent travel is a serious thing to do by order rather than by rule. There is a public-health case for it &mdash; a virus does not check immigration status, and the 21-day window matches Ebola&rsquo;s incubation period. There is also an obvious precedent risk in establishing that the entry rights of permanent residents can be suspended by a renewable 30-day administrative order, and the case-by-case exception at the discretion of a customs officer is thin process for a right of that weight. Both things are true. Recording that they are both true is the point.</p>
+<p>The contact-tracing number is the operational signal to watch and the reason this is not near an end. Eighty-seven per cent against a required ninety-five is not a small gap; in an outbreak spread across 61 health zones it is the difference between a receding epidemic and one that keeps reseeding itself. Expect renewal on 11 October unless that figure moves sharply.</p>
+<p>What has been read here is the full text of the order, which is the authority for every figure above. Congolese and WHO situation reports were not reached this run, so the case counts are the CDC&rsquo;s as of 9 September and are already a week old.</p>
+</div>
+</details>
+
+<p class="sources"><b>Sources:</b> <a href="https://www.federalregister.gov/documents/full_text/text/2026/09/16/2026-18948.txt">CDC order, full text (2026-18948)</a> &middot; <a href="https://www.federalregister.gov/api/v1/documents.json?conditions%5Bpublication_date%5D%5Bis%5D=2026-09-16&conditions%5Btype%5D%5B%5D=NOTICE&per_page=80">Federal Register notices, 16 September</a>.</p>
+
+<div class="fb">
+  <p><b>Cadence on this thread.</b></p>
+  <label><input type="radio" name="fb-ebola" value="renewal"> Wake only on renewal, lapse, or a US case</label>
+  <label><input type="radio" name="fb-ebola" value="epidemic"> Track the epidemic itself too, not just the US order</label>
+  <label><input type="radio" name="fb-ebola" value="less"> Less &mdash; this is too far from me</label>
+</div>
+</article>
+
+<article id="diesel-freight">
+<h2>Diesel set a seventh straight record, and the freight market had already turned before it got here</h2>
+<div class="meta"><span class="chip">US fuel prices</span><span class="chip">Macro &amp; markets</span><span class="chip">Primary source</span></div>
+
+<p>AAA this morning: on-highway diesel <b>$6.3103</b> a gallon, a seventh consecutive all-time record. Yesterday $6.2694, a week ago $5.9424, a month ago $5.4460, a year ago $3.7008 &mdash; <b>up 70.5% year on year</b> and 15.9% in thirty days. Regular gasoline is $4.3672 against $3.1862 a year ago.</p>
+
+<p>The new information today is not the price. It is Cass&rsquo;s August freight data, and it changes the transmission story. Cass&rsquo;s truckload linehaul index &mdash; which measures rates <em>excluding</em> fuel surcharges &mdash; rose 11.3% year on year in August, up 70 basis points from July, a twentieth consecutive annual increase and the largest since June 2022. Shipment volumes rose 2.1% year on year, the first increase after 42 straight months of decline.</p>
+
+<p>Read those two series together. The freight market turned before the diesel shock arrived, on capacity that left during a three-and-a-half-year downturn. So carriers now have contract pricing power and a fuel shock at the same time, and the fuel component reaches shippers separately through surcharges that reset weekly. August&rsquo;s 11.3% is the floor under what happens next, not the effect of $6 diesel &mdash; none of that is in these numbers yet.</p>
+
+<p>What to watch: September CPI, published in October, the first month lived entirely inside $6 diesel. Food-at-home was 0.0% month on month in August. It will not stay there.</p>
+
+<figure>
+<svg viewBox="0 0 640 300" role="img" aria-label="Bar chart of the AAA national average retail diesel price at the five reference points AAA publishes: one year ago $3.7008, one month ago $5.4460, one week ago $5.9424, yesterday $6.2694, and today, 16 September 2026, $6.3103. The horizontal axis begins at $3.50 and a dashed line marks $6.00.">
+  <rect x="0" y="0" width="640" height="300" fill="none"/>
+  <line x1="198" y1="28" x2="198" y2="250" stroke="#b9b5aa" stroke-width="0.5"/>
+  <line x1="281" y1="28" x2="281" y2="250" stroke="#b9b5aa" stroke-width="0.5"/>
+  <line x1="363" y1="28" x2="363" y2="250" stroke="#b9b5aa" stroke-width="0.5"/>
+  <line x1="445" y1="28" x2="445" y2="250" stroke="#b9b5aa" stroke-width="0.5"/>
+  <line x1="610" y1="28" x2="610" y2="250" stroke="#b9b5aa" stroke-width="0.5"/>
+  <line x1="116" y1="250" x2="610" y2="250" stroke="#6b6a66" stroke-width="1"/>
+  <text x="116" y="266" text-anchor="middle" font-size="10.5" fill="#6b6a66" font-family="Georgia,serif">$3.50</text>
+  <text x="198" y="266" text-anchor="middle" font-size="10.5" fill="#6b6a66" font-family="Georgia,serif">$4</text>
+  <text x="281" y="266" text-anchor="middle" font-size="10.5" fill="#6b6a66" font-family="Georgia,serif">$4.50</text>
+  <text x="363" y="266" text-anchor="middle" font-size="10.5" fill="#6b6a66" font-family="Georgia,serif">$5</text>
+  <text x="445" y="266" text-anchor="middle" font-size="10.5" fill="#6b6a66" font-family="Georgia,serif">$5.50</text>
+  <text x="610" y="266" text-anchor="middle" font-size="10.5" fill="#6b6a66" font-family="Georgia,serif">$6.50</text>
+  <line x1="528" y1="22" x2="528" y2="254" stroke="#8a3324" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="524" y="19" text-anchor="end" font-size="11" fill="#8a3324" font-family="Georgia,serif">$6.00</text>
+
+  <text x="110" y="49" text-anchor="end" font-size="11.5" fill="#6b6a66" font-family="Georgia,serif">A year ago</text>
+  <rect x="116" y="37" width="33" height="20" fill="#1c4f8a" opacity="0.45"/>
+  <text x="155" y="52" font-size="11.5" fill="#6b6a66" font-family="Georgia,serif">$3.7008</text>
+
+  <text x="110" y="93" text-anchor="end" font-size="11.5" fill="#6b6a66" font-family="Georgia,serif">A month ago</text>
+  <rect x="116" y="81" width="320" height="20" fill="#1c4f8a" opacity="0.55"/>
+  <text x="442" y="96" font-size="11.5" fill="#6b6a66" font-family="Georgia,serif">$5.4460</text>
+
+  <text x="110" y="137" text-anchor="end" font-size="11.5" fill="#6b6a66" font-family="Georgia,serif">A week ago</text>
+  <rect x="116" y="125" width="402" height="20" fill="#1c4f8a" opacity="0.7"/>
+  <text x="524" y="140" font-size="11.5" fill="#6b6a66" font-family="Georgia,serif">$5.9424</text>
+
+  <text x="110" y="181" text-anchor="end" font-size="11.5" fill="#6b6a66" font-family="Georgia,serif">Yesterday</text>
+  <rect x="116" y="169" width="456" height="20" fill="#1c4f8a" opacity="0.85"/>
+  <text x="578" y="184" font-size="11.5" fill="#6b6a66" font-family="Georgia,serif">$6.2694</text>
+
+  <text x="110" y="225" text-anchor="end" font-size="11.5" fill="#6b6a66" font-family="Georgia,serif">Today</text>
+  <rect x="116" y="213" width="463" height="20" fill="#8a3324"/>
+  <text x="585" y="228" font-size="11.5" fill="#8a3324" font-family="Georgia,serif" font-weight="bold">$6.3103</text>
+</svg>
+<figcaption>AAA national average retail price, No. 2 on-highway diesel, dollars per gallon including taxes, at the five reference points AAA itself publishes, read on 16 September 2026. The axis begins at $3.50 rather than at zero, so bar lengths compare the amount above that baseline and not the prices themselves &mdash; today&rsquo;s bar is fourteen times the year-ago bar, but the price is 1.7 times higher. The dashed line is $6.00. This is AAA&rsquo;s daily credit-card and station-level series, not the EIA weekly panel survey charted yesterday; the two are separate measurements and currently agree.</figcaption>
+</figure>
+
+<details>
+<summary>Dig deeper &mdash; why the linehaul index excluding fuel is the number that matters this week</summary>
+<div class="exp">
+<p>Freight pricing has two parts and conflating them is the commonest error in reading a fuel shock into the economy. The linehaul rate is the price of moving the load: it reflects capacity, demand and the carrier&rsquo;s cost of everything except fuel. The fuel surcharge is a separate line, usually indexed to the EIA weekly diesel print and reset weekly, and it is designed to pass diesel straight through to the shipper with a lag of days. Cass&rsquo;s truckload linehaul index deliberately strips the surcharge out.</p>
+<p>That is what makes August&rsquo;s 11.3% significant. It is not diesel showing up in freight rates &mdash; it cannot be, by construction. It is the end of the longest freight downturn on record: 42 consecutive months of year-on-year shipment declines, during which small carriers left the market and capacity was permanently retired. Volumes turning positive against that thinned capacity is what produces pricing power, and the twentieth consecutive annual increase in the linehaul index says carriers have been rebuilding margin for most of two years.</p>
+<p>So the shipper&rsquo;s delivered cost is now rising on both lines at once, and only one of them has been measured yet. The surcharge line tracks a diesel price 70.5% higher than a year ago. The linehaul line is rising 11.3% for reasons that have nothing to do with diesel and will not reverse when diesel does. This is why the pass-through argument this brief has been making since 14 September should be expected to show up later and to stick longer than a simple fuel-cost model would imply: a fuel spike is transitory, and a recapitalised truckload market with pricing power is not.</p>
+<p>The second-order evidence is in the carrier accounts. FreightWaves&rsquo; front page today carries Hub Group warning of a possible Nasdaq delisting after a first-half operating loss, alongside a run of smaller carriers and brokers seeking court protection. A market where rates are rising 11% and operators are still failing is one where the cost increase is arriving faster than contracts reprice &mdash; which is exactly the condition under which surviving carriers end up with more pricing power still.</p>
+<p>Provenance, precisely. The AAA figures were read from AAA&rsquo;s own page this morning and are primary. The Cass figures are Cass Information Systems&rsquo; monthly report as described by FreightWaves and corroborated in trade coverage; the Cass report itself was not read here, so the 11.3%, the 70 basis points, the 2.1% and the 42-month figure are secondary. The EIA weekly print charted in yesterday&rsquo;s issue &mdash; $6.285 for the week ending 14 September &mdash; is unchanged; there is no new federal print until next Tuesday.</p>
+</div>
+</details>
+
+<p class="sources"><b>Sources:</b> <a href="https://gasprices.aaa.com/">AAA national averages</a> &middot; <a href="https://www.freightwaves.com/news/cass-tl-rates-jump-11-in-august-freight-shipments-turn-positive">FreightWaves on the Cass August report</a> &middot; <a href="https://www.freightwaves.com/">FreightWaves front page</a> &middot; <a href="https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm">EIA weekly retail prices</a>. Continues <a href="2026-09-15.html#diesel-print">yesterday</a>.</p>
+
+<div class="fb">
+  <p><b>You asked yesterday whether to chart the pass-through.</b> This is a first attempt at the freight half of it.</p>
+  <label><input type="radio" name="fb-freight" value="more"> More of this &mdash; freight and logistics data, not just the pump price</label>
+  <label><input type="radio" name="fb-freight" value="cpi"> Skip freight &mdash; wait for CPI food-at-home and chart that</label>
+  <label><input type="radio" name="fb-freight" value="pump"> Just the pump price, as before</label>
+  <p><b>The chart today is a level comparison rather than a time series, because AAA publishes five reference points and not a daily history.</b></p>
+  <label><input type="radio" name="fb-freight-chart" value="ok"> Fine &mdash; honest about what the data is</label>
+  <label><input type="radio" name="fb-freight-chart" value="eia"> Prefer the EIA weekly time series even when there is no new print</label>
+</div>
+</article>
+
+<article id="mecca-red-line">
+<h2>A drone was shot down short of Mecca, and three price feeds cannot agree what Brent costs</h2>
+<div class="meta"><span class="chip">Geopolitics</span><span class="chip">Energy &amp; grid</span><span class="chip">Independent corroboration</span></div>
+
+<p>Saudi air defences intercepted a drone before it entered restricted airspace over Mecca on Tuesday evening, according to coalition spokesman Turki al-Maliki, who called the security of the two holy mosques and of pilgrims a &ldquo;red line&rdquo;. Reporting describes it as the first security alert activated in Mecca in nearly a decade. The Houthis deny it, calling the accusation a &ldquo;nauseating lie&rdquo;. Mecca is about 1,100km from the Yemeni border.</p>
+
+<p>Attribution is genuinely open and probably will stay open. What is not open is the trajectory: a UN-brokered truce in April 2022 largely ended Houthi strikes on Saudi territory, and they resumed after the group declared a blockade on Saudi shipping in July. Saudi cities faced fresh missile and drone alerts through the day.</p>
+
+<p>The physical oil position is unchanged and bad. The East&ndash;West pipeline &mdash; 1,200km, up to 7m barrels a day, the single largest bypass of Hormuz &mdash; remains shut since 11 September. Houthi forces are advancing toward Bab el-Mandeb. Libya has production halted. Against that, the American Petroleum Institute reported a 7.1m barrel build in US crude stocks last week, which is why the price is falling on a day the news got worse.</p>
+
+<p>What to watch: a restart date for the East&ndash;West line, which is the only near-term supply relief available; and whether an attack on the Hejaz rather than the Eastern Province changes Riyadh&rsquo;s stated decision not to retaliate.</p>
+
+<div class="div">
+  <p class="t">Divergence</p>
+  <p><b>The point in dispute.</b> What Brent costs. Three feeds read this morning: Trading Economics has $107.61, down 1.04% on the day; Handelsblatt&rsquo;s front page has $102.65, <em>up</em> 1.34%; a third quote circulating from Tuesday has $109.21. That is a $6.56 spread and a disagreement about direction. This is a dispute about facts, and yesterday&rsquo;s issue flagged a five-dollar version of the same thing.</p>
+  <p><b>Why they differ.</b> Almost certainly the mundane explanation: these are not the same instrument. &ldquo;Brent&rdquo; is variously the ICE front-month future, the next-month future, dated physical Brent, and a contract-for-difference derived from any of them &mdash; and in steep backwardation, which is what a supply shock produces, the gap between adjacent contract months is large. Add timestamps taken at different hours across European and US sessions on a day with 3% intraday ranges and a $6 spread needs no conspiracy. Handelsblatt is a German paper quoting a European feed at European midday; Trading Economics is quoting later.</p>
+  <p><b>What it means for you.</b> Do not use the level for anything. Use the direction on a single feed held constant, and prefer physical indicators over the screen price: whether the East&ndash;West pipeline restarts, whether Bab el-Mandeb transits fall, and what AAA prints at the pump. This brief will quote Trading Economics&rsquo; Brent consistently and say so, rather than picking whichever feed suits the sentence. What would settle it properly is a settlement price from ICE itself, which has not been reachable here.</p>
+</div>
+
+<details>
+<summary>Dig deeper &mdash; why Mecca is a different category of target, and the inventory number underneath the price</summary>
+<div class="exp">
+<p>Distinguish the military question from the political one. Militarily, a single drone intercepted 1,100km from its presumed launch point changes nothing: no damage, no casualties, no infrastructure affected. Politically, the target set matters more than the outcome. Houthi strikes on Saudi Arabia have historically concentrated on the Eastern Province and the energy infrastructure there &mdash; Abqaiq, Ras Tanura, the pump stations struck on 11 September. Those are economic targets with an economic logic, and Riyadh has treated them as costs to be absorbed while it decides.</p>
+<p>Mecca is not that. An attack on the Hejaz, and specifically on the haram, is an attack on the basis of Saudi legitimacy in the Muslim world &mdash; the monarchy&rsquo;s central claim is custodianship of the two holy mosques. That is why al-Maliki reached for &ldquo;red line&rdquo; language he has not used for the oil facilities, and it is why the Houthi denial is both immediate and plausible on motive: claiming a strike at Mecca costs the Houthis standing across exactly the constituency they have spent two years courting. Both a Houthi launch they have chosen to disown and a launch by someone else are consistent with what is known, and this brief cannot distinguish them.</p>
+<p>The reason it matters to a reader in Florida is the retaliation question. On 11 September Riyadh said it would not respond to the pump-station strikes for now, at Baghdad&rsquo;s request, reserving the right. That restraint is the thing keeping a regional war from becoming a Gulf-wide one, and it was priced on the assumption that the targets stayed economic. If Mecca moves the Saudi calculation, the next escalation is on the Saudi side rather than the Iranian one, and the East&ndash;West pipeline does not restart.</p>
+<p>The inventory number deserves attention because it is the first genuinely bearish datum in a month. A 7.1m barrel build in US crude stocks is large, and it says American refiners are not able to run the crude they have &mdash; which is consistent with utilisation already at 98% and with a market short of distillate capacity rather than short of barrels. That is the same structural point that keeps diesel setting records while crude falls. An inventory build in this configuration is not relief; it is evidence of the bottleneck.</p>
+<p>Limits on this item. The interception is reported, not documented: no imagery, no debris, no independent confirmation, and the denial is categorical. The API figure is an industry body&rsquo;s estimate reported in market commentary, not the EIA weekly statistical release, which publishes separately. Al Jazeera&rsquo;s live blog and its economy desk were the reachable sources on the Gulf today; Reuters and AP front pages continue to refuse direct fetches here.</p>
+</div>
+</details>
+
+<p class="sources"><b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/9/16/saudi-led-coalition-intercepts-drone-headed-for-mecca">Al Jazeera</a> &middot; <a href="https://www.aljazeera.com/news/liveblog/2026/9/16/iran-war-live-irans-top-diplomat-heads-to-china-as-war-drags-on">Al Jazeera live blog</a> &middot; <a href="https://tradingeconomics.com/commodity/brent-crude-oil">Trading Economics Brent</a> &middot; <a href="https://www.handelsblatt.com/">Handelsblatt front page</a>, read in German. Continues <a href="2026-09-14.html#hormuz-cancelled">Monday</a>.</p>
+
+<div class="fb">
+  <p><b>Price feeds.</b> This is the second issue running with a measurement dispute instead of a price.</p>
+  <label><input type="radio" name="fb-brent" value="onefeed"> Pick one feed, name it, and stop explaining &mdash; I just want a consistent series</label>
+  <label><input type="radio" name="fb-brent" value="physical"> Drop the screen price &mdash; report physical indicators and the pump only</label>
+  <label><input type="radio" name="fb-brent" value="keep"> Keep flagging it &mdash; the disagreement is itself information</label>
+</div>
+</article>
+
+<h2 class="section" id="fl-budgets">Florida &amp; Tampa Bay</h2>
+<p class="secnote">Judged on a local bar: what changes in Pasco, Pinellas, Tampa or at state level.</p>
+
+<article>
+<h2>Pasco adopts its budget tonight at 5:15, ten minutes from you</h2>
+<div class="meta"><span class="chip">Florida</span><span class="chip">Independent corroboration</span></div>
+
+<p>The Pasco County Commission holds its final FY2027 budget hearing and adopts the millage <b>tonight, 16 September, at 5:15pm</b>, at the West Pasco Government Center, 8731 Citizens Drive, New Port Richey. This is the last point at which the rate can be changed and the last point at which a member of the public can be heard on it. The budget takes effect on 1 October.</p>
+
+<p>Pinellas is a week behind. Commissioners advanced a tentative budget at their first hearing on Thursday 11 September, cutting property taxes by $6.026m against the originally proposed figure &mdash; the fifth rate reduction in six years &mdash; while preserving local funding for the Weedon Island and Shell Key preserves. Their final hearing is <b>24 September</b>, listed on the county&rsquo;s own budget page as a 6pm public hearing.</p>
+
+<p>One caution about the Pasco date, stated because it nearly went the other way. The county&rsquo;s budget-adoption page was read twice this morning and returned two different schedules: 3 September and 16 September in one rendering, 9 September and 22 September in the other. The second is almost certainly last year&rsquo;s FY2026 calendar being served from cache &mdash; this brief recorded the 16 September hearing from the same page earlier in the month, and again yesterday. If you intend to speak, call the Office of Management and Budget on 727-847-8980 first.</p>
+
+<p>What to watch: the adopted millage against the rolled-back rate, which is the number that tells you whether this is a tax increase in the statutory sense regardless of what the rate does.</p>
+
+<details>
+<summary>Dig deeper &mdash; what the rolled-back rate means, and why Pinellas cutting the rate may still raise your bill</summary>
+<div class="exp">
+<p>Florida&rsquo;s truth-in-millage law defines a tax increase not against last year&rsquo;s millage but against the <em>rolled-back rate</em>: the millage that would raise the same total revenue from the same properties as last year, after removing new construction. Because assessed values in Pasco and Pinellas have risen for years, the rolled-back rate is normally below the current rate. A county can therefore cut its millage, advertise a tax cut, and still be above rolled-back &mdash; which means it is collecting more money from the same houses, and the statute requires it to advertise a tax increase. Both things can be in the same press release.</p>
+<p>This is the number to ask for at either hearing, and it is the reason the reporting on Pinellas is not sufficient on its own. What is established is that commissioners reduced the tax take by $6.026m from what was originally proposed, and that this is the fifth rate cut in six years. What is not established, from anything read here, is the adopted millage, the rolled-back rate, or the total budget. A cut against your own earlier proposal is a cut against a plan, not against last year&rsquo;s bill.</p>
+<p>The Homestead exemption and the Save Our Homes 3% assessment cap mean the effect differs sharply by how long you have owned. A long-held homesteaded property in New Port Richey will see assessed value rise by the capped amount regardless of market value; a recent purchase resets to market and absorbs the full increase. So the same millage decision lands very differently on two neighbours, and the county-level average tells an individual household almost nothing.</p>
+<p>Pasco&rsquo;s stated pressures, from the county&rsquo;s budget office in earlier cycles, are the operating cost of the detention centre expansion, constitutional-officer budget growth, and personnel costs driven by workers&rsquo; compensation and retirement contributions. Those are structural and none of them fall next year. The school board levy is separate and already decided: on 8 September it set operating millage at 4.684 and capital outlay at 1.5, for a levy of $436.6m against $419.6m last year &mdash; about $17m more, roughly 4%, on an operating budget 0.9% smaller with around 2,001 fewer students and 476 posts cut. The gap is assessed values, not the rate, which is exactly the rolled-back-rate point above.</p>
+<p>Provenance, and it is thinner than the certainty of the date suggests. The Pinellas figures come from a single local outlet&rsquo;s account of the 11 September hearing; Florida Politics&rsquo; coverage returned HTTP 402 to this brief. The Pasco schedule conflict is described exactly as encountered &mdash; the same URL, read twice this morning, giving different dates. It is resolved here against this brief&rsquo;s own archive rather than against a third source, which is a weaker form of confirmation than it sounds: if the earlier readings came from the same cached page, they could all be wrong together. The Laker/Lutz News piece that surfaced in searching turned out to be from March 2025 and about the FY2026 cycle, which is precisely the trap this kind of conflict sets. Pinellas&rsquo;s budget page fetches cleanly; Pasco&rsquo;s Legistar calendar returned &ldquo;Invalid parameters&rdquo;.</p>
+</div>
+</details>
+
+<p class="sources"><b>Sources:</b> <a href="https://www.pascocountyfl.gov/services/office_of_management_and_budget/budget_adoption_process.php">Pasco County budget adoption process</a> &middot; <a href="https://www.pascocountyfl.gov/services/office_of_management_and_budget/index.php">Pasco Office of Management and Budget</a> &middot; <a href="https://www.tampafp.com/pinellas-commissioners-advance-fy27-budget-aith-property-tax-rate-cut-preserves-funding/">Tampa Free Press on the Pinellas first hearing</a> &middot; <a href="https://pinellas.gov/topic/transparency-open-government/county-budget-and-finance/">Pinellas County budget and finance</a>.</p>
+
+<div class="fb">
+  <p><b>Local government.</b> This is the first budget item this brief has run.</p>
+  <label><input type="radio" name="fb-flbudget" value="more"> More &mdash; cover county and school board decisions that hit my bill</label>
+  <label><input type="radio" name="fb-flbudget" value="hearings"> Just tell me when a hearing I could attend is scheduled, briefly</label>
+  <label><input type="radio" name="fb-flbudget" value="less"> Less &mdash; keep the Florida section for state-level and public-health items</label>
+</div>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Everything else found in this run that is worth knowing and did not clear the lead bar. Each one expands: the visible line is the judgement, the expansion is the substance, and every one ends with why it is below the line. Nothing here needs a click away from this page.</p>
+
+<details class="short" id="s-fed">
+<summary><b>Macro &amp; markets.</b> The Fed decides at 2pm Eastern today, roughly seven hours after this issue published, and August retail sales land at 8:30am. There is no result to report and this brief will not pretend otherwise.</summary>
+<div class="body">
+<p>The FOMC&rsquo;s two-day meeting concludes today with a statement, the projections and the dot plot at 2pm Eastern, followed by the press conference. CME FedWatch has a 25 basis point increase at better than 92%, which would be the first rise since 2023. The federal funds effective rate was 3.63% on 14 September. The Fed&rsquo;s own H.15 release has the ten-year constant maturity at 4.97% and the thirty-year at 5.34% for 14 September; the ten-year then reached 5.041% intraday on Tuesday, the highest since July 2007.</p>
+<p>The reason this is a short item rather than a lead is that you asked for prints and decisions, not previews, and the print arrives after you read this. Two things are worth holding until tomorrow. First, Census publishes August advance retail sales at 8:30am, five and a half hours before the decision &mdash; the committee&rsquo;s last read on whether the consumer is absorbing the energy shock, arriving too late to change the statement. Second, the informative variable is not the 25 basis points, which is priced, but the dot plot and the dissent count. Three officials dissented for a hike in July; a dissent in the other direction today would be the genuine surprise. Handelsblatt&rsquo;s front page this morning leads on investor nervousness ahead of the decision, with the DAX up 0.25% at 25,464.74 &mdash; the same anticipation, a different central bank.</p>
+<p class="why">Below the line because the event has not happened yet, and a preview of a priced decision is not news. It leads tomorrow, with the dots and the dissents.</p>
+<p class="sources"><b>Confidence:</b> Primary source for the rate levels. <b>Sources:</b> <a href="https://www.federalreserve.gov/releases/h15/">Federal Reserve H.15</a> &middot; <a href="https://www.handelsblatt.com/">Handelsblatt</a>. Continues <a href="2026-09-15.html#ten-year">yesterday</a>.</p>
+</div>
+</details>
+
+<details class="short" id="s-xi">
+<summary><b>US&ndash;China.</b> Xi Jinping arrives at the White House on 24 September, and Treasury Secretary Bessent meets Vice Premier He Lifeng this weekend for the last preparatory talks.</summary>
+<div class="body">
+<p>Bessent confirmed the weekend meeting on 15 September, telling the House Financial Services Committee he expects discussions to continue during the state visit. The preparatory track has been running since a Bessent&ndash;He call on 30 July covering rare earths, American agricultural exports and the other disputes straining the trade truce. The summit date is reported as 24 September.</p>
+<p>The reason to note it now rather than on the day is the agenda. Every thread this brief tracks with a Chinese leg &mdash; the US&ndash;China AI talks, export controls on advanced chips, rare-earth supply, and the pacing argument both capitals rejected on 14 September &mdash; converges on a single meeting eight days out. A state visit is also the standard vehicle for announcements that have been held back for it, which means the fortnight before one is systematically quiet and the day of it is not. Separately, SCMP reports Chinese defence minister Dong Jun striking a notably softer tone at the Xiangshan Forum and omitting Taiwan from his remarks, which is the sort of pre-summit signalling worth reading as intentional.</p>
+<p class="why">Below the line because an announced meeting date is the calendar, not an event. It leads on the day, or earlier if a deliverable leaks.</p>
+<p class="sources"><b>Confidence:</b> Independent corroboration. <b>Sources:</b> <a href="https://www.scmp.com/news/china/diplomacy/article/3367638/scott-bessent-confirms-weekend-meeting-he-lifeng-days-xis-us-visit">SCMP</a> &middot; <a href="https://www.scmp.com/news/china">SCMP China desk</a> &middot; <a href="https://www.france24.com/en/live-news/20260915-us-treasury-chief-says-to-meet-chinese-counterpart-at-weekend">France 24</a>.</p>
+</div>
+</details>
+
+<details class="short" id="s-israel-bombs">
+<summary><b>Arms transfers.</b> The administration has informally notified Congress of a $2.8bn sale of 40,000 bombs to Israel, including 20,000 MK-84 two-thousand-pounders.</summary>
+<div class="body">
+<p>The package is reported as 20,000 MK-84 general-purpose bombs, 20,000 BLU-117 variants and a quantity of I-2000 penetrator warheads designed for hardened underground targets. The Washington Post and AFP reported it on 16 September. The State Department declined to comment, saying it does not discuss proposed sales before formal congressional notification. Funding is through Foreign Military Financing &mdash; American money, used to buy American weapons.</p>
+<p>The stage matters and is easy to misread. Informal notification is the pre-clearance step in which the administration circulates a proposed sale to the leadership and ranking members of the House Foreign Affairs and Senate Foreign Relations committees. Those four members can place an informal hold, which is not a statutory power but has historically delayed or killed sales, and nothing becomes public or reviewable until formal notification starts the statutory clock. So this is a sale at the point where it can still quietly not happen. The penetrator warheads are the detail to watch: I-2000 class weapons are for buried targets, which is a different mission profile from the MK-84s and points at a different target set than Gaza.</p>
+<p class="why">Below the line because informal notification is a stage in a process, not a decision, and the package is described from reporting rather than from a notification document. It becomes a lead on formal notification, on a public hold, or on a congressional resolution of disapproval.</p>
+<p class="sources"><b>Confidence:</b> Single-sourced. <b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/9/16/trump-administration-plans-2-8bn-sale-of-2000-pound-bombs-to-israel">Al Jazeera, reporting the Washington Post and AFP</a>.</p>
+</div>
+</details>
+
+<details class="short" id="s-russia">
+<summary><b>Law enforcement.</b> Five men &mdash; two Russians, two Cubans and a Venezuelan &mdash; were charged over alleged Russian intelligence plots to kill dissidents, including one believed to be in the Washington area. All five are at large.</summary>
+<div class="body">
+<p>The unsealed indictment names Yuri Khrameev, 63, his son Kirill Khrameev, 27, Oemis Romagoza Durruthy, 35, Yaidel Delgado Suarez, 35, and Angel Eduardo Castro, 22. All five face conspiracy to finance terrorism; three also face murder-for-hire conspiracy charges. Prosecutors allege the network conducted surveillance, recruitment and planned killings for Russian intelligence services, targeting Russian dissidents in the United States and in Lithuania. One recruit was allegedly promised $40,000 to make a US-based target disappear; another was offered $25,000 for a killing in Lithuania.</p>
+<p>Two things make this more than a crime story. The composition of the cell &mdash; Russian principals recruiting Cuban and Venezuelan nationals &mdash; is the pattern of a service using third-country cut-outs to keep its own officers off American soil, and it is the same tradecraft that has appeared in European cases over the past three years. And the Lithuanian target puts it inside NATO territory, which converts a domestic prosecution into an alliance matter. That all five remain at large means the indictment is a naming exercise as much as a prosecution: an instrument for imposing travel and financial constraints on people who may never see a US courtroom.</p>
+<p class="why">Below the line because the consequence is second-order &mdash; no policy changes on an indictment, no defendant is in custody, and the court and docket were not established here.</p>
+<p class="sources"><b>Confidence:</b> Single-sourced. <b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/9/16/us-charges-five-people-over-alleged-russian-assassination-plots">Al Jazeera</a>.</p>
+</div>
+</details>
+
+<details class="short" id="s-dhs-correction">
+<summary><b>Immigration.</b> DHS quietly corrected an interim final rule that had accidentally deleted the provision letting US-born children of foreign diplomats and government employees register for permanent residence.</summary>
+<div class="body">
+<p>Federal Register document 2026-18949, effective on publication today and applied retroactively to 4 September, is a correcting amendment to 8 CFR part 264. It restores language removed by an interim final rule published on 9 September that permits children born in the United States to non-citizen foreign government employees to register for lawful permanent residence. DHS waived notice and comment on the ground that the change is technical and corrects an error rather than making policy, citing 8 U.S.C. 1103, 1201 and 1302&ndash;1305.</p>
+<p>The substance is narrow &mdash; this affects children of accredited diplomats and other foreign government personnel, a small population that does not acquire citizenship at birth because their parents are not subject to US jurisdiction in the constitutional sense, and who have a separate registration route to residence. What is worth noting is the shape rather than the effect: an interim final rule issued without comment on 9 September silently removed a benefit provision, and a second rule issued without comment a week later put it back, with a retroactive effective date covering the gap. Nobody outside the agency had an opportunity to see either. Rulemaking at this pace produces exactly this kind of error, and the ones that get corrected are the ones somebody noticed.</p>
+<p class="why">Below the line because the correction restores the status quo and the affected population is very small. It matters as evidence about process, not outcome.</p>
+<p class="sources"><b>Confidence:</b> Primary source. <b>Sources:</b> <a href="https://www.federalregister.gov/documents/full_text/text/2026/09/16/2026-18949.txt">DHS correcting amendment, full text</a>.</p>
+</div>
+</details>
+
+<details class="short" id="s-ferc">
+<summary><b>Grid.</b> FERC had a heavy docket day: an environmental review ordered for a Wyoming pumped-storage project, and schedules set for three gas pipeline expansions serving the Permian, South Texas and the Southeast.</summary>
+<div class="body">
+<p>Today&rsquo;s Federal Register carries FERC notices setting the environmental-assessment schedule for Northern Natural Gas&rsquo;s Permian Basin Expansion, Tennessee Gas Pipeline&rsquo;s South Texas Enhancement Project and Southeast Supply Header&rsquo;s Tupelo Trail Project, plus the Vinton Dome Storage Hub in Louisiana. Separately the Commission issued a notice of intent to prepare a <em>supplemental</em> environmental impact statement for Black Canyon Hydro&rsquo;s Seminoe Pumped Storage Project in Wyoming, with a request for comments.</p>
+<p>The pattern is the point. Every one of these is infrastructure for firm, dispatchable supply &mdash; gas takeaway and long-duration storage &mdash; moving through federal review in the same month EPA finalised the power-plant carbon repeal, Commerce set near-prohibitive duties on imported solar cells, and FERC itself ordered all six market operators to justify how they interconnect large loads in docket RM26-4. Nothing here is coordinated, and that is precisely the observation: separate proceedings under separate statutes are collectively tilting what gets built to serve data-centre load toward gas. A supplemental EIS, meanwhile, generally means the original analysis no longer covers the project as proposed, which adds time to a pumped-storage scheme already measured in years.</p>
+<p class="why">Below the line because scheduling notices are process, not decisions, and no dates or docket numbers beyond the titles were read from the notices themselves.</p>
+<p class="sources"><b>Confidence:</b> Primary source for the existence and titles of the notices. <b>Sources:</b> <a href="https://www.federalregister.gov/api/v1/documents.json?conditions%5Bpublication_date%5D%5Bis%5D=2026-09-16&conditions%5Btype%5D%5B%5D=NOTICE&per_page=80">Federal Register notices, 16 September</a>.</p>
+</div>
+</details>
+
+<details class="short" id="s-flvax">
+<summary><b>Florida.</b> The school vaccine rule&rsquo;s notice history was checked again today and still shows nothing after the 24 August proposal. No hearing, no adoption filing.</summary>
+<div class="body">
+<p>Rule 64D-3.046, immunisation and documentation requirements for child care and school entry, was noticed as proposed on 24 August 2026 at Florida Administrative Register volume 52, number 164, following a development notice on 10 September 2025 and a rule-development workshop held in Panama City Beach on 12 December 2025. The rule currently in force is the version effective 2 April 2013. The twenty-one day window for filing an objection or requesting a hearing closed on 15 September. As of this morning the register shows no hearing noticed and nothing filed for adoption.</p>
+<p>That is the expected outcome and it is still worth recording, because the absence is what carries the information. Under Florida&rsquo;s Administrative Procedure Act the agency may now file the rule for adoption with the Department of State at any time, and the rule takes effect twenty days after filing unless something intervenes. In other words the next thing that happens on this rule is not a hearing or a debate; it is a filing, after which the change is done. There is no further public step.</p>
+<p class="why">Below the line because nothing happened. A register checked and found unchanged is a sweep, not a story &mdash; it leads on the adoption filing, which is the next and last event.</p>
+<p class="sources"><b>Confidence:</b> Primary source. <b>Sources:</b> <a href="https://www.flrules.org/gateway/ruleno.asp?id=64D-3.046">Florida Administrative Code rule history, 64D-3.046</a>. Continues <a href="2026-09-15.html#fl-vaccine">yesterday</a>.</p>
+</div>
+</details>
+
+<details class="short" id="s-dengue">
+<summary><b>Florida.</b> The state&rsquo;s week-36 arbovirus report has now failed to appear for a ninth consecutive issue of this brief. Week 35 remains the newest.</summary>
+<div class="body">
+<p>Florida&rsquo;s Department of Health publishes a weekly arbovirus surveillance report covering dengue, West Nile, chikungunya and related illness by county. The most recent posted is week 35, covering 30 August to 5 September. Week 36 would cover 6&ndash;12 September and would ordinarily have appeared by now. The reports for weeks 31 through 35 are all present, so the series has been running normally until this gap.</p>
+<p>The consequence is specific: there is no current case count for the Tampa Bay dengue outbreak this brief has been tracking, and has not been for over a week. Dengue surveillance is the mechanism by which local transmission is distinguished from travel-associated cases, and that distinction is what triggers county mosquito-control response. Without a current report a reader in Pasco or Pinellas cannot tell whether the outbreak is growing, and neither, from public data, can anyone else. Nine consecutive checks is long enough that this is now better described as a publication failure than a delay, though no explanation has been posted and none has been sought from the department here.</p>
+<p class="why">Below the line because a report not published is not an event. It becomes a story if week 36 shows a material change, or if the gap reaches a point where the department is asked about it.</p>
+<p class="sources"><b>Confidence:</b> Primary source. <b>Sources:</b> <a href="https://www.floridahealth.gov/statistics-data/population-surveillance/arbovirus-surveillance/">Florida DOH arbovirus surveillance</a>.</p>
+</div>
+</details>
+
+<details class="short" id="s-tropics">
+<summary><b>Florida.</b> The Atlantic disturbance this brief flagged yesterday has weakened and moved away: 10% at 48 hours, 30% at seven days, and it is 600 miles east of Bermuda.</summary>
+<div class="body">
+<p>The National Hurricane Center&rsquo;s 2:00am Eastern outlook today describes a single area of interest: a trough of low pressure about 600 miles east of Bermuda, producing scattered showers and thunderstorms and drifting slowly west to west-northwest. Formation chance is low at 10% over 48 hours and low at 30% over seven days. Yesterday the seven-day figure had risen to 40% and the Hurricane Center expected a depression could form later this week.</p>
+<p>That is a downgrade in both the probability and, more usefully, the geography. A system 600 miles east of Bermuda that is only now being given a 30% chance over a week is not a Florida system on any plausible track; even if it develops it is a fish storm or a Bermuda problem. Yesterday&rsquo;s item was written when the trend was the other way, and the honest thing is to say plainly that the direction reversed within a day. Nothing else is being watched in the basin. The Atlantic season runs to 30 November and this brief checks the outlook every run.</p>
+<p class="why">Below the line because a disturbance becoming less likely and moving further away is the absence of a story. It returns if anything forms with a track west of 65 degrees.</p>
+<p class="sources"><b>Confidence:</b> Primary source. <b>Sources:</b> <a href="https://www.nhc.noaa.gov/text/MIATWOAT.shtml">NHC Atlantic Tropical Weather Outlook</a>. Continues <a href="2026-09-15.html#also-today">yesterday</a>.</p>
+</div>
+</details>
+
+<details class="short" id="s-swept">
+<summary><b>Swept, no trigger.</b> Three threads were reached today and produced nothing that meets this brief&rsquo;s movement test: section 338 and Canada, Ukraine&ndash;Russia, and the SNAP food-restriction notices.</summary>
+<div class="body">
+<p>Today&rsquo;s presidential documents contain exactly one item &mdash; the continuation of the national emergency with respect to persons who commit or support terrorism, signed 11 September and published today at 91 FR 58805. That is an annual statutory renewal, not a new instrument, and there is no new section 338 proclamation. The Canadian duty-list modifications that took effect on 15 September are running as scheduled and no complaint has been filed at the Court of International Trade.</p>
+<p>On SNAP: yesterday&rsquo;s eighteen state notices opened a comment period that closes 15 October. Today&rsquo;s Federal Register carries no further food-restriction notices, no response from USDA, and nothing from the DC Circuit on the <em>Aragon v. Rollins</em> appeal. On Ukraine: nothing reached today meets the thread&rsquo;s wake trigger, which requires a published text either side will describe, a front-line ceasefire, or a named difference from the Anchorage proposals. Commentary and mutual breach accusations do not count and there was plenty of both.</p>
+<p class="why">Below the line because none of it moved. It is here so the sweep is auditable rather than asserted &mdash; you asked, in effect, to be able to check that threads are being reached rather than quietly dropped.</p>
+<p class="sources"><b>Confidence:</b> Primary source. <b>Sources:</b> <a href="https://www.federalregister.gov/api/v1/documents.json?conditions%5Bpublication_date%5D%5Bis%5D=2026-09-16&conditions%5Btype%5D%5B%5D=PRESDOCU&per_page=40">Federal Register presidential documents, 16 September</a> &middot; <a href="https://www.federalregister.gov/api/v1/documents.json?conditions%5Bpublication_date%5D%5Bis%5D=2026-09-16&conditions%5Btype%5D%5B%5D=NOTICE&per_page=80">notices</a>.</p>
+</div>
+</details>
+
+<div class="fb">
+  <p><b>About this section as a whole.</b> Ten items, of which three are records of threads swept and found unchanged rather than stories, and two are things becoming <em>less</em> likely. Were the right things ranked below the line?</p>
+  <label><input type="radio" name="fb-alsotoday" value="right"> Yes &mdash; the boundary is about right</label>
+  <label><input type="radio" name="fb-alsotoday" value="promote"> No &mdash; at least one should have been a lead (say which in the issue)</label>
+  <label><input type="radio" name="fb-alsotoday" value="sweeps"> Cut the &ldquo;swept and unchanged&rdquo; entries &mdash; I do not need to audit the sweep</label>
+  <label><input type="radio" name="fb-alsotoday" value="fewer"> Too many &mdash; be stricter about what gets written up at all</label>
+</div>
+
+<footer>
+  <h2 class="section">Sources checked this run</h2>
+  <p class="secnote">27 checks. Those marked &dagger; were pointed at by no active thread.</p>
+  <p style="font-size:.9rem;line-height:1.7;color:var(--muted)">
+    Federal Register documents API &mdash; notices, rules and proposed rules, presidential documents &middot;
+    Federal Register full text: CDC Ebola order 2026-18948 &middot;
+    Federal Register full text: solar duties 2026-18947&dagger;, 2026-18945&dagger;, 2026-18940&dagger; &middot;
+    Federal Register full text: DHS correcting amendment 2026-18949&dagger; &middot;
+    Senate roll-call vote list, 119th Congress 2nd session, and vote 234 &middot;
+    House Clerk roll call 307&dagger; &middot;
+    Sen. Gallego&rsquo;s statement on the CLARITY cloture vote &middot;
+    Rep. Moulton&rsquo;s statement on H. Con. Res. 93&dagger; &middot;
+    text.npr.org headline sweep&dagger; &middot;
+    NBC News, NPR and US News on the space-weapons remarks&dagger; &middot;
+    Al Jazeera news index&dagger; &middot;
+    Al Jazeera Iran war live blog &middot;
+    Al Jazeera on the Mecca interception &middot;
+    Al Jazeera on the Israel arms package&dagger; &middot;
+    Al Jazeera on the Russian assassination indictment&dagger; &middot;
+    Wikipedia current-events portal&dagger; (negative check) &middot;
+    Trading Economics Brent &middot;
+    AAA national averages &middot;
+    NHC Atlantic Tropical Weather Outlook&dagger; &middot;
+    Handelsblatt front page, read in German &middot;
+    Federal Reserve H.15 &middot;
+    Treasury daily par yield curve &middot;
+    flrules.org rule history 64D-3.046 &middot;
+    Florida DOH arbovirus surveillance index &middot;
+    FreightWaves front page and its Cass August report coverage&dagger; &middot;
+    SCMP China desk&dagger; &middot;
+    Pasco County OMB and budget-adoption pages &middot;
+    Tampa Free Press on the Pinellas first hearing&dagger; &middot;
+    Laker/Lutz News on the Pasco budget&dagger; (turned out to be March 2025) &middot;
+    UPI and CoinDesk on the two votes
+  </p>
+  <p style="font-size:.9rem;color:var(--muted)"><b>Could not reach:</b> CNBC article pages returned 403 again, as every day this week. Treasury&rsquo;s daily par yield curve page returned August data rather than September, so today&rsquo;s long-end levels come from the Fed&rsquo;s H.15 and from reporting rather than from Treasury&rsquo;s own table. NPR article pages timed out on direct fetch; stories were reached through search and syndicating outlets. congress.gov has been returning 403 since 14 September, so the text of H. Con. Res. 93 was not read. Pasco County&rsquo;s Legistar calendar returned &ldquo;Invalid parameters&rdquo;. Florida Politics returned HTTP 402. The UAP disclosure thread&rsquo;s own sources &mdash; AARO and the records contract &mdash; were not reached this run.</p>
+
+  <h2 class="section">Dormant threads</h2>
+  <ul class="dorm" style="font-size:.9rem;color:var(--muted)">
+    <li><b>Ukraine&ndash;Russia negotiations</b> &mdash; swept today, no trigger. Wakes on a published text, a front-line ceasefire, or a named difference from the Anchorage proposals.</li>
+    <li><b>Gulf states &amp; Article 51</b> &mdash; Kuwait or the UAE restricting US base access, or a collective GCC statement.</li>
+    <li><b>Autonomous weapons regulation</b> &mdash; CCW Seventh Review Conference, 16&ndash;20 November. The space-weapons acknowledgment above is adjacent but does not wake it.</li>
+    <li><b>Missouri congressional map</b> &mdash; settled for November; wakes only on the referendum, an Eighth Circuit merits panel, or a contempt ruling.</li>
+    <li><b>Israel&ndash;Lebanon June framework</b>, <b>EU&ndash;Greenland partnership</b>, <b>Nepal&ndash;Tibet glacial flood</b>, <b>Saxony-Anhalt government formation</b>, <b>Indonesia free-meals programme</b>, <b>Anak Krakatau</b> &mdash; no triggers.</li>
+  </ul>
+
+  <div class="submit">
+    <p style="font-size:.9rem;color:var(--muted)">Answering above changes tomorrow&rsquo;s issue. The button opens a prefilled GitHub issue in a new tab; nothing is sent anywhere else.</p>
+    <button type="button" id="send">Send feedback &rarr;</button>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var QUESTIONS = {
+    "fb-warpowers": "Story: House war powers vote — open a thread?",
+    "fb-warpowers-div": "Story: House war powers vote — adjudicating against the coverage",
+    "fb-clarity": "Story: CLARITY Act cloture fails — thread disposition",
+    "fb-solar": "Story: solar AD/CVD finals — open a thread?",
+    "fb-solar-method": "Story: solar AD/CVD finals — full Federal Register read as a standing call",
+    "fb-space": "Story: US weapons in orbit — open a thread / add a beat?",
+    "fb-space-conf": "Story: US weapons in orbit — single-sourced label with four outlets carrying it",
+    "fb-ebola": "Story: Congo Ebola and the US entry ban — cadence",
+    "fb-freight": "Story: diesel record and Cass freight data — freight coverage",
+    "fb-freight-chart": "Story: diesel record — the chart format",
+    "fb-brent": "Story: Mecca interception and the Brent price feeds — how to handle price disagreement",
+    "fb-flbudget": "Story: Pasco and Pinellas FY27 budgets — local government coverage",
+    "fb-alsotoday": "Section: Also today — was the boundary right?"
+  };
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = ["Feedback on the issue of Wednesday, 16 September 2026 (Issue No. 12).", ""];
+    var answered = 0;
+    for (var name in QUESTIONS) {
+      var picked = document.querySelector('input[name="' + name + '"]:checked');
+      if (picked) {
+        answered++;
+        lines.push("- **" + QUESTIONS[name] + "** → `" + picked.value + "` — " +
+          picked.parentNode.textContent.trim());
+      }
+    }
+    if (!answered) {
+      lines.push("_No radio answers selected — free text only._");
+    }
+    lines.push("", "---", "", "Anything else (more like this / less like this / follow this / stop following):", "", "");
+    lines.push("Story IDs in this issue: war-powers, clarity-cloture, solar-duties, space-weapons, ebola-order, diesel-freight, mecca-red-line, fl-budgets; shorts: s-fed, s-xi, s-israel-bombs, s-russia, s-dhs-correction, s-ferc, s-flvax, s-dengue, s-tropics, s-swept.");
+    var url = "https://github.com/historiocity/News-Agent/issues/new"
+      + "?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 16 September 2026")
+      + "&body=" + encodeURIComponent(lines.join("\n"));
+    window.open(url, "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
