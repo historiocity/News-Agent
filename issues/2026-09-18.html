@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Friday, 18 September 2026</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; --band:#d7d1c4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; --band:#3a3a42; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  .corr { border:2px solid var(--accent); padding:.7rem .9rem; margin:0 0 1rem; font-size:.94rem; }
+  .corr p { margin:.4rem 0; }
+  .corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--accent); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  .short { border-bottom:1px solid var(--rule); padding:.7rem 0; margin:0; }
+  .short > summary { color:var(--fg); cursor:pointer; list-style:none; }
+  .short > summary::-webkit-details-marker { display:none; }
+  .short > summary::before { content:"\25B8  "; color:var(--link); }
+  .short[open] > summary::before { content:"\25BE  "; }
+  .short .body { margin-top:.7rem; padding-left:1.1rem; border-left:2px solid var(--rule); }
+  .short .why { font-style:italic; color:var(--muted); }
+  figure { margin:1.2rem 0 0; }
+  figure svg { width:100%; height:auto; display:block; }
+  figcaption { font-size:.84rem; color:var(--muted); margin-top:.4rem; line-height:1.5; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+  ul.dorm li { margin:.3rem 0; }
+  .disc { font-size:.86rem; color:var(--muted); border:1px solid var(--rule); padding:.5rem .7rem; margin:.8rem 0 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 14</div>
+  <h1>Friday, 18 September 2026</h1>
+  <div class="sub">The Bank of Japan went to a thirty-one-year high and split doing it, which makes three of the world&rsquo;s four biggest central banks tightening into an energy shock. Iran struck a tanker for transiting the Strait of Hormuz without its permission &mdash; the blockade has become a licensing regime. And Treasury&rsquo;s own published yield curve says this brief has been printing the wrong number for the ten-year all week. That correction is the second story.</div>
+  <div class="prov">
+    <b>Provenance.</b> 36 source checks completed, 16 of them pointing at no active thread; three more that would have counted outside &mdash; Folha de S.Paulo, El Pa&iacute;s and the GAO reports index &mdash; refused the connection or returned 403, so the outside share is 16 of 36 rather than the 19 of 39 attempted. Eight lead stories: <b>four new subjects, four continuations</b>, at the cap of four follow-ups. The Florida section carries a fifth continuation and it ran because a named trigger fired after nine issues of absence &mdash; the state&rsquo;s missing dengue report finally published.
+    <b>Negative check.</b> Wikipedia&rsquo;s current-events portal was populated today, unlike yesterday. The biggest thing on it that no thread and no beat line covered was the <b>Bank of Japan</b>; it is the first lead. Two found and declined: the Kohat mosque bombing in Pakistan, 27 dead, which fails this file&rsquo;s altitude bar for want of any US channel; and Russia&rsquo;s three-day Duma election, which is an anti-topic unless a result changes a US relationship, and this one will not.
+  </div>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#boj">Three of the four big central banks are now tightening into an energy shock. Japan joined today, and its board did not agree</a></li>
+    <li><a href="#ten-year">Correction: this brief told you the ten-year went through 5%. Treasury&rsquo;s own series says it never did</a></li>
+    <li><a href="#opm-schedule-g">OPM is writing the rulebook for a new political hiring schedule &mdash; and routing interns into the at-will one</a></li>
+    <li><a href="#google-chatbots">Google supplied the exemptions. At least ten states introduced them, and they cover almost every chatbot anyone uses</a></li>
+    <li><a href="#diesel-g7">Diesel&rsquo;s ninth straight record, on a day crude fell. Europe is reaching for reserves; the US has a million barrels of the right stuff</a></li>
+    <li><a href="#hormuz-licence">Iran is no longer blockading the Strait of Hormuz. It is licensing it, and today it enforced the licence</a></li>
+    <li><a href="#italy-bam">Italy is sending warships to Bab el-Mandeb and will not wait for Brussels. China is quietly leaning on Tehran</a></li>
+    <li><a href="#buffett">Buffett takes the emeritus title at 96 and hands the chair to his son</a></li>
+    <li><a href="#florida">Florida &amp; Tampa Bay (1)</a></li>
+    <li><a href="#also-today">Also today (11)</a></li>
+  </ol>
+</nav>
+
+<article id="boj">
+<h2>Three of the four big central banks are now tightening into an energy shock. Japan joined today, and its board did not agree</h2>
+<div class="meta"><span class="chip">Macro &amp; markets</span><span class="chip new">New subject</span><span class="chip">Independent corroboration</span></div>
+
+<p>The Bank of Japan raised its uncollateralised overnight call rate by 25 basis points to around <b>1.25%</b> this morning, the highest in <b>31 years</b>. It is the bank&rsquo;s second hike in three months &mdash; the shortest gap between Japanese rate increases since the bubble era &mdash; and it came on a <b>split vote</b>. The yen touched <b>158 to the dollar</b>. The Nikkei 225 closed up 1.38% at 65,018.95.</p>
+
+<p>Governor Kazuo Ueda declined to commit to a path: the bank does not assume &ldquo;a specific pace&rdquo; of further increases. He framed the risk as underlying inflation overshooting the 2% target because firms have become more aggressive in setting wages and prices and medium-term expectations have risen. Core consumer inflation held near target in August. A senior BoJ official has separately described Japan&rsquo;s shrinking labour pool as a slow-moving demographic shock rather than a transitory one.</p>
+
+<p>Count the week. The Federal Reserve went to 3&frac34;&ndash;4% on Wednesday, unanimously. The ECB&rsquo;s deposit rate is at 2.5%. Japan is now at 1.25%. Three of the four largest central banks are tightening simultaneously into the same imported energy shock, and none of them can do anything about a refinery or a pipeline.</p>
+
+<p>What this means for an American reader is duration. Japanese institutions are the largest foreign holders of US Treasuries, and their calculation of whether to hedge currency risk or buy at home turns on exactly this rate. What to watch: whether the yen strengthens from 158 or keeps sliding &mdash; a hike that fails to support the currency is the signal that Japanese money has stopped treating 1.25% as enough.</p>
+
+<div class="div">
+  <p class="t">Divergence</p>
+  <p><b>The point in dispute.</b> Not the decision, which every account has right, but what a split board means. One reading, carried in market commentary this morning, is that the split is <em>bearish for the yen</em>: dissent signals the committee is near the end of its tightening and will not defend the currency. The other reading is that a split in favour of hiking is <em>hawkish</em> &mdash; the bank moved despite internal opposition. This is a dispute about significance, not facts.</p>
+  <p><b>Why the accounts differ.</b> Vantage and timing. The bearish reading comes from currency strategists quoted after Ueda&rsquo;s press conference, whose question is the next three months of carry. The hawkish reading comes from the decision itself, published hours earlier. They are answering different questions and both are internally consistent. Note also what neither can do here: the exact tally and the names of dissenters were not obtained &mdash; the Bank&rsquo;s own statement is a PDF this environment cannot parse, and the one account that reported the split sits behind a paywall.</p>
+  <p><b>What it means for you.</b> The evidence supports the bearish-for-yen reading on the narrow point, because the yen went to 158 <em>after</em> a hike, which is the market answering the question directly. But do not convert that into a view on the terminal rate: Ueda explicitly refused to name a pace, and a governor who refuses to name a pace has not told you he is finished. What would settle it: the vote tally and the dissenters&rsquo; stated reasons, which appear in the Summary of Opinions in about ten days and in the full minutes later.</p>
+</div>
+
+<details>
+<summary>Dig deeper &mdash; why a Japanese rate rise is a US long-end story</summary>
+<div class="exp">
+<p>For most of the last decade the Bank of Japan supplied the world with the one thing a bond market cannot manufacture: a large pool of savers who had no domestic alternative. With Japanese government bonds yielding nothing, Japanese life insurers, pension funds and banks bought foreign duration &mdash; Treasuries, Bunds, French OATs, Australian government paper &mdash; and hedged or did not hedge the currency depending on the cost. That flow was one of the quiet supports under long-dated government debt everywhere.</p>
+<p>This brief has been arguing since 10 September that the repricing at the long end of the US curve is global rather than American: Bunds at their highest since 2011, JGBs through 3% for the first time in three decades, UK 30-year paper near 1998 levels, and France paying more than Italy for ten-year money for the first time on record. The control observation for that argument has been that the same direction shows up in currencies and central banks that have nothing to do with US fiscal policy. Today is another one, and a cleaner one than most: Japan raised rates because of imported energy inflation, which is the identical shock driving the American print.</p>
+<p><b>The mechanism to watch is the hedge, not the headline.</b> A Japanese investor buying a 10-year Treasury at 4.86% earns that yield minus the cost of hedging dollar exposure, which tracks the short-rate differential. When the BoJ raises and the Fed is on hold, that spread compresses and the unhedged trade gets riskier at the same time the hedged trade gets less profitable. The domestic alternative simultaneously improves. None of this happens in a week; it happens over quarters, and it shows up as weaker foreign participation in Treasury auctions rather than as a headline.</p>
+<p><b>Which is why the 4 November refunding remains the date on this thread.</b> The 10 September 30-year auction was the opposite of a warning &mdash; it stopped through the when-issued yield by 2.7 basis points, bid-to-cover 2.61 against a 2.38 average, and indirect bidders, the category that includes foreign accounts, took 79.5% while dealers were left with 2.2% against an 11.5% average. That is foreign demand arriving, not leaving. If the BoJ&rsquo;s tightening is going to matter to the US long end, the place it becomes visible is the indirect share at the next long-dated auction and the composition at the November refunding, where Treasury resets the buyback floor.</p>
+<p><b>And the honest limit.</b> Today&rsquo;s JGB yields were not obtained. The Bank&rsquo;s statement PDF would not parse, Japanese government bond levels were not carried on the two Japanese sources that did fetch, and no reachable source printed a dated 10-year JGB yield for today. So the claim that this raises the global anchor for duration is an argument from the policy rate and the currency, not from the Japanese bond market. That is a real gap and it is worth closing tomorrow.</p>
+</div>
+</details>
+
+<p class="sources"><b>Sources:</b> <a href="https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/index.htm">Bank of Japan, Monetary Policy Meeting decisions</a> (statement <a href="https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf">k260918a.pdf</a>, 18 September &mdash; would not parse here) &middot; <a href="https://asia.nikkei.com/">Nikkei Asia</a> &middot; <a href="https://www.aljazeera.com/news/2026/9/18/japans-interest-rate-hiked-to-31-year-high-at-1-25-as-inflation-rises">Al Jazeera</a> &middot; <a href="https://www.handelsblatt.com/">Handelsblatt front-page ticker</a> &middot; <a href="2026-09-17.html#ten-year">This brief, 17 September</a></p>
+
+<div class="fb">
+  <p><b>Should the Bank of Japan become a tracked thread?</b></p>
+  <label><input type="radio" name="fb-boj-thread" value="open"> Yes &mdash; open it, and wake it on decisions and JGB levels</label>
+  <label><input type="radio" name="fb-boj-thread" value="fold"> Fold it into the Treasury long-end thread as a control observation</label>
+  <label><input type="radio" name="fb-boj-thread" value="no"> No &mdash; foreign central banks only when they move a US number</label>
+  <p><b>The Fed cadence you set was &ldquo;prints and the decision only.&rdquo; Does that extend to other central banks?</b></p>
+  <label><input type="radio" name="fb-boj-cadence" value="same"> Same rule &mdash; decisions and data only, no state-of-play</label>
+  <label><input type="radio" name="fb-boj-cadence" value="looser"> Looser for foreign banks &mdash; I know less, so context helps</label>
+  <label><input type="radio" name="fb-boj-cadence" value="tighter"> Tighter &mdash; only when it moves a US rate or price</label>
+</div>
+</article>
+
+<article id="ten-year">
+<h2>Correction: this brief told you the ten-year went through 5%. Treasury&rsquo;s own series says it never did</h2>
+<div class="meta"><span class="chip">Macro &amp; markets</span><span class="chip">US debt &amp; fiscal</span><span class="chip">Primary source</span></div>
+
+<div class="corr">
+  <p class="t">Correction</p>
+  <p>On 14, 15, 16 and 17 September this brief printed the 10-year Treasury yield as <b>5.00%</b>, <b>5.041%</b>, <b>5.016%</b> and <b>4.943%</b>, and built a lead story on 15 September around the 10-year going &ldquo;through&rdquo; 5% for the first time since July 2007. <b>Treasury&rsquo;s own Daily Par Yield Curve &mdash; the official published series &mdash; shows 4.88%, 4.91%, 4.94% and 4.86% for those four dates. On the official series the 10-year has not printed above 4.94% this month.</b> The 5% crossing did not happen in the series of record. The sourcing caveat was disclosed at the time; the number was still wrong, and it was the number the story turned on.</p>
+</div>
+
+<p>Treasury&rsquo;s page fetched cleanly on the first attempt today, which is the part that stings: the corroborating source this brief said on Wednesday it had failed to reach was one request away. Here is the week, as published by the issuer.</p>
+
+<figure>
+<svg viewBox="0 0 600 250" role="img" aria-label="Line chart of the 10-year Treasury constant-maturity yield from 14 to 17 September 2026, showing 4.88, 4.91, 4.94 and 4.86 percent against the 5 percent level, with the four higher figures this brief printed marked separately above the line.">
+  <rect x="0" y="0" width="600" height="250" fill="none"/>
+  <line x1="60" y1="200" x2="580" y2="200" stroke="currentColor" stroke-opacity=".35" stroke-width="1"/>
+  <line x1="60" y1="143.3" x2="580" y2="143.3" stroke="currentColor" stroke-opacity=".12" stroke-width="1"/>
+  <line x1="60" y1="30" x2="580" y2="30" stroke="currentColor" stroke-opacity=".12" stroke-width="1"/>
+  <line x1="60" y1="86.7" x2="580" y2="86.7" stroke="#8a3324" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="64" y="81" font-size="12" fill="#8a3324" font-family="Georgia,serif">5.00% &mdash; the level this brief said was crossed</text>
+  <text x="52" y="204" font-size="11" text-anchor="end" fill="currentColor" fill-opacity=".6" font-family="Georgia,serif">4.80</text>
+  <text x="52" y="147" font-size="11" text-anchor="end" fill="currentColor" fill-opacity=".6" font-family="Georgia,serif">4.90</text>
+  <text x="52" y="34" font-size="11" text-anchor="end" fill="currentColor" fill-opacity=".6" font-family="Georgia,serif">5.10</text>
+  <polyline points="80,154.7 233,137.7 387,120.7 540,166" fill="none" stroke="currentColor" stroke-width="2.5"/>
+  <circle cx="80" cy="154.7" r="4.5" fill="currentColor"/>
+  <circle cx="233" cy="137.7" r="4.5" fill="currentColor"/>
+  <circle cx="387" cy="120.7" r="4.5" fill="currentColor"/>
+  <circle cx="540" cy="166" r="4.5" fill="currentColor"/>
+  <text x="80" y="176" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Georgia,serif">4.88</text>
+  <text x="233" y="159" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Georgia,serif">4.91</text>
+  <text x="387" y="112" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Georgia,serif">4.94</text>
+  <text x="540" y="187" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Georgia,serif">4.86</text>
+  <circle cx="80" cy="86.7" r="4.5" fill="none" stroke="#8a3324" stroke-width="2"/>
+  <circle cx="233" cy="63.4" r="4.5" fill="none" stroke="#8a3324" stroke-width="2"/>
+  <circle cx="387" cy="77.6" r="4.5" fill="none" stroke="#8a3324" stroke-width="2"/>
+  <circle cx="540" cy="119" r="4.5" fill="none" stroke="#8a3324" stroke-width="2"/>
+  <text x="80" y="53" font-size="11.5" text-anchor="middle" fill="#8a3324" font-family="Georgia,serif">5.00</text>
+  <text x="233" y="55" font-size="11.5" text-anchor="middle" fill="#8a3324" font-family="Georgia,serif">5.041</text>
+  <text x="387" y="69" font-size="11.5" text-anchor="middle" fill="#8a3324" font-family="Georgia,serif">5.016</text>
+  <text x="540" y="111" font-size="11.5" text-anchor="middle" fill="#8a3324" font-family="Georgia,serif">4.943</text>
+  <text x="80" y="228" font-size="12" text-anchor="middle" fill="currentColor" fill-opacity=".7" font-family="Georgia,serif">Mon 14</text>
+  <text x="233" y="228" font-size="12" text-anchor="middle" fill="currentColor" fill-opacity=".7" font-family="Georgia,serif">Tue 15</text>
+  <text x="387" y="228" font-size="12" text-anchor="middle" fill="currentColor" fill-opacity=".7" font-family="Georgia,serif">Wed 16</text>
+  <text x="540" y="228" font-size="12" text-anchor="middle" fill="currentColor" fill-opacity=".7" font-family="Georgia,serif">Thu 17</text>
+  <text x="60" y="246" font-size="11.5" fill="currentColor" fill-opacity=".6" font-family="Georgia,serif">Filled: Treasury Daily Par Yield Curve, 10-year. Hollow: what this brief printed.</text>
+</svg>
+<figcaption>10-year Treasury constant-maturity yield, 14&ndash;17 September 2026, from Treasury&rsquo;s published Daily Par Yield Curve. The hollow points are the figures this brief carried on those mornings, taken from vendor quotes relayed through search-result summaries after CNBC&rsquo;s pages returned 403 for six consecutive days. Wednesday&rsquo;s Fed decision falls between the third and fourth points.</figcaption>
+</figure>
+
+<p><b>What survives.</b> The analysis does. This brief said on Thursday that a central bank hiking while the long end rallies is the market pricing the hike as inflation control rather than as a fiscal or credit problem. On Treasury&rsquo;s series that is <em>more</em> true, not less: the 10-year fell <b>8 basis points</b> from Wednesday to Thursday, 4.94% to 4.86%, and the 30-year fell 6, from 5.35% to 5.29%. The 2-year fell 5, to 4.40%. The direction was right; the level was not.</p>
+
+<div class="div">
+  <p class="t">Divergence</p>
+  <p><b>The point in dispute.</b> A spread of 10 to 13 basis points on the same instrument on the same four dates, between Treasury&rsquo;s constant-maturity series and the vendor quotes this brief relayed. It is a dispute about facts and it is adjudicable, because one of the two sources is the issuer.</p>
+  <p><b>Why.</b> Reach for the mundane explanation, and there are two. First, <b>staleness</b>, and there is direct evidence for it: the 4.943% printed on Thursday morning is within a third of a basis point of Treasury&rsquo;s <em>Wednesday</em> close of 4.94%. A search-result summary of a quote page, read before the market&rsquo;s own close, will often be reporting yesterday. Second, <b>instrument</b>: the par yield curve is a constant-maturity construction from bid-side quotes taken around 3:30pm Eastern, not the on-the-run note&rsquo;s intraday high. Those two can differ by a few basis points. What neither explanation covers is 5.041%, which has no counterpart anywhere on Treasury&rsquo;s curve that week &mdash; the 20-year was 5.40% and the 30-year 5.36% on that date, so it was not a tenor mix-up either. Note the offset is not uniform: at the 30-year the official series ran slightly <em>above</em> what this brief printed, which argues against a single systematic error and for a mixture of staleness and intraday quoting.</p>
+  <p><b>What it means for you, and the rule going forward.</b> Treat Treasury&rsquo;s par yield curve as the series of record for any dated level, and treat a yield figure sourced from a search summary as unusable to the basis point. This brief will do the same: the level comes from Treasury, direction may come from a ticker. What would fully settle the residual: the Fed&rsquo;s H.15 daily release and an intraday chart for 15 September, neither of which was reached today. Until then the honest statement is that <b>the September high on the official 10-year series is 4.94%, set on Wednesday 16 September</b>, and that whether this is a multi-decade high was not verified today &mdash; the &ldquo;highest since July 2007&rdquo; claim travelled with the withdrawn number and is withdrawn with it.</p>
+</div>
+
+<p class="sources"><b>Sources:</b> <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202609">US Treasury, Daily Par Yield Curve Rates, September 2026</a> &middot; <a href="2026-09-15.html">This brief, 15 September</a> &middot; <a href="2026-09-17.html#ten-year">This brief, 17 September</a></p>
+
+<div class="fb">
+  <p><b>Was running this as the second lead the right call?</b></p>
+  <label><input type="radio" name="fb-corr-place" value="right"> Right &mdash; a wrong number I acted on deserves the space</label>
+  <label><input type="radio" name="fb-corr-place" value="box"> Too much &mdash; a correction box on the next Treasury story would do</label>
+  <label><input type="radio" name="fb-corr-place" value="more"> Not enough &mdash; also say which past issues to distrust</label>
+  <p><b>How much sourcing plumbing do you want in the issue itself?</b></p>
+  <label><input type="radio" name="fb-corr-plumb" value="keep"> Keep it &mdash; knowing which source a number came from is part of the number</label>
+  <label><input type="radio" name="fb-corr-plumb" value="footer"> Move it to the footer &mdash; keep stories clean</label>
+  <label><input type="radio" name="fb-corr-plumb" value="less"> Less of it &mdash; just be right</label>
+</div>
+</article>
+
+<article id="opm-schedule-g">
+<h2>OPM is writing the rulebook for a new political hiring schedule &mdash; and routing interns into the at-will one</h2>
+<div class="meta"><span class="chip">US politics &amp; policy</span><span class="chip new">New subject</span><span class="chip under">Underreported</span><span class="chip">Primary source</span></div>
+
+<p>The Office of Personnel Management published a 23-page proposed rule this morning, <b>Employment in the Excepted Service</b>, RIN 3206-AO92, docket OPM-2026-0166, <b>comments close 17 November</b>. It amends ten parts of Title 5 and it is the implementing regulation for two years of executive orders on the civil service. A targeted search for coverage of it returned nothing at all.</p>
+
+<p>Three things are in it. First, regulatory text for <b>Schedule G</b>, created by Executive Order 14317 on 17 July 2025. Schedule G covers &ldquo;noncareer positions that are of a policy-making or policy-advocating character and are normally subject to change as a result of a Presidential transition.&rdquo; Agencies may appoint to it only &ldquo;upon specific authorization by OPM,&rdquo; and every position carries a unique identifier &mdash; which means OPM will hold a central, countable register of them.</p>
+
+<p>Second, conforming text for <b>Schedule Policy/Career</b>, the renamed Schedule F, and for Schedule E, administrative law judges.</p>
+
+<p>Third, and sharpest: the rule would <b>authorise Pathways Program conversions into Schedule Policy/Career</b>. Pathways is the intern and recent-graduate pipeline. A conversion would produce &ldquo;a permanent position in Schedule Policy/Career&rdquo; that &ldquo;does not itself confer competitive status, career tenure, or a career or career-conditional appointment.&rdquo; Competitive status arrives only after two years of continuing service, and &mdash; the operative sentence &mdash; &ldquo;pre-conversion Pathways service does not count toward the 2 years.&rdquo;</p>
+
+<p>So the entry-level pipeline into the federal government would deliver people into the schedule whose defining feature is reduced removal protection, with their clock reset to zero. What to watch: the comment file by 17 November, and whether any agency publishes a Schedule G position count.</p>
+
+<details>
+<summary>Dig deeper &mdash; what part 302 actually does, and why the tidying matters</summary>
+<div class="exp">
+<p>The least-discussed half of this rule is part 302, which governs how excepted-service jobs get filled. OPM proposes to eliminate the existing apparatus outright: &ldquo;priority reemployment lists, reemployment lists, regular employment lists, Orders A, B, and C&rdquo; all go, replaced by case-by-case evaluation in which agencies must identify and consider &ldquo;qualified and available priority candidates before selecting non-priority candidates.&rdquo; OPM&rsquo;s stated rationale is that the current procedures are &ldquo;more complex than necessary.&rdquo;</p>
+<p>They are. They are also <em>enumerated</em>, and that is the whole difference. A list with an order on it produces a record: who was on it, in what rank, and whether the agency went past them. A standard that says consider priority candidates first produces a judgement, which is much harder to contest. The rule preserves veterans&rsquo; preference, and says so, and the statutory hook &mdash; 5 U.S.C. &sect;3320 &mdash; is real; it also preserves compensable-injury restoration rights. What it does not preserve is the mechanism by which a passed-over candidate could previously point to a document. Whether that matters in practice is exactly the sort of thing the comment file will tell you, and it is why the identity of the commenters is worth more here than their arguments: if federal-employee unions and veterans&rsquo; service organisations file on part 302 rather than on Schedule G, that is the sophisticated reading of where this rule bites.</p>
+<p><b>Put it next to the other instrument this brief is tracking.</b> On 11 September Judge George O&rsquo;Toole in the District of Massachusetts blocked OPM from requiring applicants for career civil service jobs to write essays on advancing the President&rsquo;s policies, holding it likely to violate the Administrative Procedure Act by infringing First Amendment speech rights. That was an <em>ad hoc</em> instrument bolted onto the hiring process, and a single order reached it government-wide because OPM owns the process. This rule is the opposite approach: build the thing into the regulations, through notice-and-comment, with a real 60-day window and a stated statutory basis. A properly promulgated rule is far harder to enjoin than a memo, and the standard of review is the deferential one.</p>
+<p><b>The structural pattern, which is now the fourth instance this brief has logged in three weeks.</b> Section 338 of the Tariff Act, unlitigated for 96 years, switched on against Canada. The Alien Terrorist Removal Court, dormant for 30 years, used once. The bank examination threshold doubled inside a housing-supply bill. Two structural defaults removed from nonimmigrant status in a month. In each case the authority already existed and the novelty was in using it. Schedule G fits the pattern with one difference worth noting in the government&rsquo;s favour: this one is being done in the open, in the Federal Register, with a comment period, which is more procedural regularity than the other three got.</p>
+<p><b>Honest limits.</b> The rule was read in full text at the Federal Register&rsquo;s text endpoint. Executive Order 14317 itself was not read; its date, citation and the Schedule G definition are quoted from this rule&rsquo;s own preamble. No position counts, no cost estimate and no affected-employee estimate were extracted, and the proposal may not contain them. And the rule does not say how many Schedule G positions OPM has authorised to date &mdash; which, given that the rule creates the unique-identifier register, is the number to ask for.</p>
+</div>
+</details>
+
+<p class="sources"><b>Sources:</b> <a href="https://www.federalregister.gov/documents/full_text/text/2026/09/18/2026-19222.txt">Full text, OPM proposed rule 2026-19222</a> &middot; <a href="https://www.federalregister.gov/documents/2026/09/18/2026-19222/employment-in-the-excepted-service">Federal Register record</a> &middot; <a href="2026-09-13.html">This brief, 13 September</a></p>
+
+<div class="fb">
+  <p><b>Open a thread on the civil-service hiring instruments?</b></p>
+  <label><input type="radio" name="fb-opm-thread" value="open"> Yes &mdash; wake it on the comment file, a final rule, or a Schedule G count</label>
+  <label><input type="radio" name="fb-opm-thread" value="fold"> Fold it into the OPM loyalty-essay litigation thread</label>
+  <label><input type="radio" name="fb-opm-thread" value="no"> No &mdash; federal personnel rules are too far from anything I decide</label>
+  <p><b>This is the third day running that the Federal Register produced the underreported lead. Right balance?</b></p>
+  <label><input type="radio" name="fb-opm-fr" value="right"> Right &mdash; documents nobody read are the point of this brief</label>
+  <label><input type="radio" name="fb-opm-fr" value="less"> Too document-heavy &mdash; I am getting the register, not the news</label>
+  <label><input type="radio" name="fb-opm-fr" value="more"> More &mdash; go deeper into the day&rsquo;s filings</label>
+</div>
+</article>
+
+<article id="google-chatbots">
+<h2>Google supplied the exemptions. At least ten states introduced them, and they cover almost every chatbot anyone uses</h2>
+<div class="meta"><span class="chip">AI &amp; tech industry</span><span class="chip new">New subject</span><span class="chip">Single-sourced</span></div>
+
+<p>NPR reported this morning that Google worked with state legislators and intermediaries to shape chatbot-safety bills, supplying draft language and exemptions that would put its own products outside the resulting statutes. The reporting names identical or near-identical exemption language in bills in <b>at least ten states</b> &mdash; Colorado, Hawaii, Arizona, Idaho, Iowa, Nebraska, New Jersey, Oklahoma, Oregon, Washington and Georgia &mdash; most of them modelled on California&rsquo;s SB 243 from 2025.</p>
+
+<p>The Colorado law, <b>HB 26-1263</b>, signed in May, is the clearest case. It excludes twelve categories, among them products for developers and researchers, commerce and customer-service assistance, chatbots in search engines, business productivity tools, features inside other software applications, and voice-activated virtual assistants. Read together, those carve-outs would place ChatGPT, Copilot, Claude and Gemini outside a chatbot-safety statute.</p>
+
+<p>Two states broke the pattern. Hawaii stripped the exemptions before enacting Act 248. Arizona&rsquo;s governor vetoed its bill in June, writing that she would not protect technology companies and chatbots &ldquo;more than children.&rdquo; A Colorado sponsor defended the language on competitive grounds &mdash; the state could not pass a bill that made it an outlier. A Hawaii legislator said the framework had been provided by Google early on.</p>
+
+<p>Google told NPR it is committed to supporting &ldquo;thoughtful, effective AI legislation.&rdquo; At least 75 lawsuits are pending against AI developers over alleged chatbot harms, many involving children. What to watch: whether the pending California bills, due by 30 September, carry the same carve-outs.</p>
+
+<div class="disc">
+  <b>Disclosure.</b> This brief is written with an Anthropic model, and Claude is one of the products the Colorado exemptions would cover. Read this story with that in mind. The standing rule in this brief&rsquo;s configuration is to apply the same scepticism to the reader&rsquo;s own interests and to the writer&rsquo;s; the exemption analysis above is NPR&rsquo;s reading of the statute, and the statute is public.
+</div>
+
+<div class="div">
+  <p class="t">Divergence</p>
+  <p><b>The point in dispute.</b> Whether an exemption list of this kind is a loophole or a scope definition. NPR and the advocates it quotes read the twelve Colorado categories as carve-outs that hollow out the law. The bill&rsquo;s sponsor reads them as the ordinary work of confining a statute to companion chatbots rather than to every piece of software with a text box. This is a dispute about significance, and both readings describe the same twelve paragraphs.</p>
+  <p><b>Why they land where they do.</b> The sponsor&rsquo;s interest is a bill that passes and survives; a definition broad enough to reach a customer-service widget is a definition that draws opposition from every industry in the state, and his &ldquo;outlier&rdquo; point is a real legislative constraint rather than a dodge. The advocates&rsquo; interest is a statute that reaches the products their clients&rsquo; children actually used &mdash; which, in the cases named in the reporting, were general-purpose assistants and character chatbots, not customer-service bots. Google&rsquo;s interest needs no explanation. Note also the vantage: a bereaved parent and a plaintiffs&rsquo; lawyer are assessing the law against specific deaths; a legislator is assessing it against a floor vote.</p>
+  <p><b>What it means for you.</b> The evidence favours the loophole reading on one specific test, and it is a test you can apply yourself: does the statute reach the product that generated the lawsuits? The lawsuits named in the reporting involve Character.AI, ChatGPT and Google&rsquo;s own products, and general-purpose assistants sit inside the exclusions. A safety statute that exempts the products whose harms prompted it has a scope problem regardless of anyone&rsquo;s motives. What would settle the broader question: the first enforcement action under HB 26-1263 or Hawaii&rsquo;s Act 248, and which products the state attorney general asserts jurisdiction over. Hawaii, having removed the exemptions, is now the natural control case against Colorado.</p>
+</div>
+
+<details>
+<summary>Dig deeper &mdash; why this lands on the preemption fight, and the sourcing problem</summary>
+<div class="exp">
+<p><b>The sourcing first, because it governs how much weight this carries.</b> This is one newsroom. NPR&rsquo;s story is syndicated across dozens of member stations and the search results look like broad corroboration; they are not. It was read here through St. Louis Public Radio because NPR&rsquo;s own article pages have timed out on every direct attempt for four consecutive days. No second newsroom was found on it. The statutory text of HB 26-1263 was not read directly &mdash; the twelve exclusion categories are NPR&rsquo;s enumeration &mdash; and the model-legislation drafts NPR describes were not obtained. The quotes attributed to legislators and advocates are NPR&rsquo;s. This is a well-sourced piece of reporting from a serious newsroom about documents it has and this brief does not, and it is still one source. It runs under a <code>Single-sourced</code> label for that reason, per this brief&rsquo;s standing instruction to run such stories rather than hold them.</p>
+<p><b>Now the structural point, which is the reason it leads rather than sits in the shorts.</b> This brief has been tracking a three-way fight: states legislating on AI, the Justice Department&rsquo;s AI Litigation Task Force preparing preemption suits, and Congress unable to pass anything. The standing observation has been that some state approaches are much harder to preempt than others &mdash; California&rsquo;s SB 813 and AB 1405, which licence third-party AI auditors, are close to the core of what states indisputably do, because licensing professionals inside your own borders is not a field the federal government has occupied.</p>
+<p>Industry-drafted chatbot statutes are the other end of that spectrum, and they solve the industry&rsquo;s problem without needing preemption at all. A federal preemption fight is expensive, slow and uncertain. Twenty near-identical state statutes with the same exclusions produce something better than preemption from a developer&rsquo;s point of view: a settled national standard that the developer wrote, enacted by the states themselves, with no constitutional question to litigate. It also forecloses the future. The strongest argument in the NPR piece is not about any single carve-out &mdash; it is that once a legislature has passed <em>a</em> chatbot law, the subject is treated as settled and the second, stronger bill becomes much harder to move.</p>
+<p><b>What this predicts, and it is testable.</b> If the analysis is right, the Justice Department&rsquo;s preemption task force should show no interest in Colorado&rsquo;s law and considerable interest in California&rsquo;s auditor statutes and Colorado&rsquo;s attorney-general ADMT rulemaking &mdash; the revised draft of which is due 23 September, with comments closing 26 October. The conduct rules that industry did not write are the ones that get challenged. Watch also the four California bills awaiting signature by <b>30 September</b>: SB 1000, which removes the one-million-monthly-user threshold from the AI Transparency Act and carries an urgency clause so it bites on signature, is the one whose scope language is worth reading against Colorado&rsquo;s twelve exclusions.</p>
+<p><b>One thing not to overclaim.</b> Nothing in this reporting establishes that Google drafted the Colorado exclusions verbatim, and the Hawaii legislator&rsquo;s statement about a framework provided early on is about Hawaii. &ldquo;Google supplied language that appears in bills in at least ten states&rdquo; is the supportable claim. &ldquo;Google wrote these laws&rdquo; is not, and the difference matters if you are deciding how much weight to put on it.</p>
+</div>
+</details>
+
+<p class="sources"><b>Sources:</b> <a href="https://www.stlpr.org/npr/2026-09-18/google-is-helping-write-ai-chatbot-safety-laws-while-pushing-for-loopholes">NPR, via St. Louis Public Radio</a> &middot; <a href="2026-09-11.html">This brief, 11 September</a></p>
+
+<div class="fb">
+  <p><b>Is industry authorship of state AI bills something to track?</b></p>
+  <label><input type="radio" name="fb-goog-thread" value="open"> Yes &mdash; add it to the state AI legislation thread with its own trigger</label>
+  <label><input type="radio" name="fb-goog-thread" value="separate"> Open it separately &mdash; lobbying mechanics, not statutes</label>
+  <label><input type="radio" name="fb-goog-thread" value="no"> No &mdash; report the laws, not the drafting</label>
+  <p><b>The Anthropic-model disclosure box.</b></p>
+  <label><input type="radio" name="fb-goog-disc" value="keep"> Keep it where a story touches Anthropic or its products</label>
+  <label><input type="radio" name="fb-goog-disc" value="once"> Say it once in the footer and stop repeating it</label>
+  <label><input type="radio" name="fb-goog-disc" value="drop"> Drop it &mdash; I know who writes this</label>
+  <p><b>A single-sourced lead from one newsroom &mdash; right call?</b></p>
+  <label><input type="radio" name="fb-goog-single" value="right"> Right &mdash; label it and run it, as agreed</label>
+  <label><input type="radio" name="fb-goog-single" value="short"> Should have been a short item until corroborated</label>
+  <label><input type="radio" name="fb-goog-single" value="hold"> Should have waited for a second newsroom</label>
+</div>
+</article>
+
+<article id="diesel-g7">
+<h2>Diesel&rsquo;s ninth straight record, on a day crude fell. Europe is reaching for reserves; the US has a million barrels of the right stuff</h2>
+<div class="meta"><span class="chip">Energy &amp; grid</span><span class="chip">Macro &amp; markets</span><span class="chip">Primary source</span></div>
+
+<p>AAA&rsquo;s national diesel average is <b>$6.4476</b> this morning, a <b>ninth consecutive all-time record</b> &mdash; up 5.2 cents on yesterday, 39.2 cents on the week, <b>17.9% in thirty days</b> and <b>73.9% on the year</b> ($3.7087 a year ago). Gasoline is $4.4687 against $3.2036 a year ago. The federal weekly print is unchanged at $6.285 for the week ending 14 September; the next one is Tuesday 22 September.</p>
+
+<p>Crude, meanwhile, fell. Brent was $104.80 on the feed this brief names, down fractionally on the day; WTI has been testing $99. The reason is Saudi: Aramco is working to bypass the damaged section of the East&ndash;West pipeline and is <b>seeking to restore about half its capacity within days</b>, with full capability in roughly six weeks. Pump stations 8 and 9 were the ones hit on 10 September.</p>
+
+<p>That divergence &mdash; crude down, diesel at a record &mdash; is the whole American story in one line. The binding constraint is not barrels, it is distillate: refinery utilisation touched 98% in late August, the highest since 2018, so there is no domestic slack to convert cheaper crude into diesel.</p>
+
+<p>Europe is now acting on it. President Macron said today he will convene a <b>G7</b> meeting in the coming weeks on coordinating strategic stockpile levels, export cooperation and production capacity, with more than <b>11% of French service stations out of fuel</b>. Germany&rsquo;s coalition is reported close to agreeing a fuel price cap and a pump rebate. What to watch: whether any G7 release covers <em>products</em> rather than crude.</p>
+
+<div class="div">
+  <p class="t">Divergence</p>
+  <p><b>The point in dispute.</b> Whether the Saudi pipeline restart is relief. The crude tape says yes &mdash; three consecutive sessions of declines on the restart plan and the Sohar and Yanbu workarounds. The retail diesel print says no, and said it again this morning, for the ninth day running. This is a dispute about significance and both measurements are correct.</p>
+  <p><b>Why they point opposite ways.</b> They are measuring different molecules at different points in a chain with a bottleneck in the middle. A pipeline restart puts Saudi crude back on water toward Yanbu and out of the Hormuz queue. It does nothing about the fact that Atlantic-basin refineries are running flat out and distillate inventories are thin &mdash; East Coast distillate stocks were 19.3 million barrels at the last reading this brief carried. Timing matters too: a restart &ldquo;within days&rdquo; at half capacity, with full service six weeks out, reprices futures today and reaches a truck stop, if at all, in weeks. And note the asymmetry the wires keep missing &mdash; a crude glut cannot fix a refining shortage, but a refining shortage will happily coexist with cheaper crude and wider cracks.</p>
+  <p><b>What it means for you.</b> Do not read a softer crude tape as relief at the pump; this brief has now said that three times and it has been right each time. The number that would mean actual relief is a <b>distillate inventory build</b> or utilisation breaking below the high 90s, and neither has happened. The reading the evidence supports: crude prices are normalising toward a war premium of roughly $40 a barrel over last year, while diesel is being set domestically by a refining constraint that no G7 stockpile decision touches. What would settle it: the EIA weekly distillate stocks and utilisation figures, and the September CPI in October &mdash; the first month lived entirely inside $6 diesel, where the lines to read are food-at-home and transportation services.</p>
+</div>
+
+<details>
+<summary>Dig deeper &mdash; the million barrels, and what a G7 product release would actually do</summary>
+<div class="exp">
+<p><b>Start with the American cupboard, because it is the part nobody checks.</b> The Strategic Petroleum Reserve holds roughly 285 million barrels, its lowest since 1982, and there is no draw authorisation. But the SPR is <em>crude</em>. Releasing crude into a market where refineries are already at 98% utilisation gives refiners feedstock they cannot process faster and does approximately nothing for diesel.</p>
+<p>The federal government&rsquo;s only distillate reserve is the <b>Northeast Home Heating Oil Reserve</b>: approximately <b>one million barrels of ultra-low-sulphur diesel</b>, held at four sites &mdash; 200,000 barrels at South Portland, Maine; 200,780 at Boston; 300,347 at Groton and New Haven, Connecticut; and 300,000 in New York Harbour. It is released under the Energy Policy and Conservation Act, by email auction, in an emergency. It was created after the 2000 New England heating-oil spike and it is sized for exactly that: a regional winter disruption. Against national distillate consumption it is a rounding error. So when the G7 discusses releasing product stocks, understand that this is largely a European instrument &mdash; the EU and IEA member states hold obligatory stocks in product form to a far greater degree than the United States does &mdash; and that the American contribution to a coordinated product release would be small, slow and geographically confined to New England.</p>
+<p><b>What Macron is actually asking for, and what it would do.</b> Four things, per his own framing: coordinating the level of strategic stocks, cooperating on exports, supporting refinery operations, and protecting energy infrastructure from hybrid threats including cyberattack. The first two are the classic IEA collective-action playbook and they work on a price spike driven by a temporary supply interruption. The third is the one that matters for this shock and is the hardest, because &ldquo;supporting refinery operations&rdquo; means subsidising or de-mothballing capacity that was closed on a demand-peak assumption, and that is a multi-year decision being taken during a shortage. The fourth is new and is a tell about what European governments now think the threat model is.</p>
+<p><b>The pass-through is arriving, and it is arriving through freight and farms.</b> Cass&rsquo;s August truckload linehaul index &mdash; which <em>excludes</em> fuel surcharges &mdash; rose 11.3% year on year, a twentieth consecutive annual increase and the largest since June 2022, with shipments up 2.1% after 42 straight months of decline. That is capacity retired during the downturn giving carriers pricing power <em>before</em> the fuel shock arrived; diesel reaches shippers separately, on weekly-reset surcharges indexed to the EIA print. So 11.3% is the floor under the pass-through, not the effect of $6 diesel. And the agricultural trade press is now carrying it directly: Nebraska farmers reporting that record diesel costs are eroding the gains from higher crop prices, with fall harvest &mdash; the single most fuel-intensive fortnight in the farm calendar &mdash; about to begin. Fuel is roughly 15&ndash;30% of delivered food cost. August CPI food-at-home was 0.0% month on month, so none of this is in the grocery data yet. That is the pass-through pending, not evidence against it.</p>
+<p><b>Measurement discipline, restated because it bit again today.</b> Brent quotes disagreed by nearly five dollars this morning: the market data service read $104.80 while Handelsblatt&rsquo;s front-page ticker read $100.12. &ldquo;Brent&rdquo; is variously front-month, next-month, dated physical and contracts-for-difference, and in a backwardated market the adjacent months are far apart. The rule this brief follows: quote one feed, name it, use newspaper tickers for direction only, and prefer physical indicators &mdash; a pipeline restart, a transit count, the price at the pump &mdash; to the screen price. AAA and the EIA weekly are both used here and are not redundant: AAA is a daily card-and-station average and the fastest honest signal; the EIA figure is a Monday survey of a fixed retail panel published Tuesday, and it is the number that enters federal statistical use, rulemaking records and agency cost models.</p>
+</div>
+</details>
+
+<p class="sources"><b>Sources:</b> <a href="https://gasprices.aaa.com/">AAA national averages, 18 September</a> &middot; <a href="https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm">EIA weekly retail prices</a> &middot; <a href="https://www.energy.gov/ceser/northeast-home-heating-oil-reserve">Department of Energy, Northeast Home Heating Oil Reserve</a> &middot; <a href="https://tradingeconomics.com/commodity/brent-crude-oil">Brent, market data service</a> &middot; <a href="https://www.dtnpf.com/agriculture/web/ag/news">DTN/Progressive Farmer</a> &middot; <a href="https://www.aljazeera.com/news/2026/9/17/from-yanbu-to-sohar-tracking-saudi-arabias-alternative-oil-routes">Al Jazeera on the Saudi workarounds</a> &middot; <a href="2026-09-16.html">This brief, 16 September</a></p>
+
+<div class="fb">
+  <p><b>Ninth record in nine days. Is a daily record still news?</b></p>
+  <label><input type="radio" name="fb-diesel-cad" value="daily"> Yes &mdash; print it every day it happens</label>
+  <label><input type="radio" name="fb-diesel-cad" value="weekly"> Only on the federal weekly print, or a round number</label>
+  <label><input type="radio" name="fb-diesel-cad" value="passthrough"> Only when it shows up in something else &mdash; food, freight, CPI</label>
+  <p><b>You asked for oil strikes and the pump price as one causal chain. Does that extend to the G7 and German responses?</b></p>
+  <label><input type="radio" name="fb-diesel-chain" value="yes"> Yes &mdash; foreign policy responses belong in the same chain</label>
+  <label><input type="radio" name="fb-diesel-chain" value="split"> Split them &mdash; European fuel politics is its own story</label>
+  <label><input type="radio" name="fb-diesel-chain" value="uschannel"> Only where there is a US decision at the end of it</label>
+</div>
+</article>
+
+<article id="hormuz-licence">
+<h2>Iran is no longer blockading the Strait of Hormuz. It is licensing it, and today it enforced the licence</h2>
+<div class="meta"><span class="chip">Geopolitics</span><span class="chip">Energy &amp; grid</span><span class="chip">Independent corroboration</span></div>
+
+<p>The IRGC Navy says it struck the Togo-flagged oil tanker <b>Trend</b> in the Strait of Hormuz for attempting an &ldquo;illegal passage.&rdquo; UK Maritime Trade Operations independently logged a tanker hit by an unidentified projectile, a fire since extinguished, and the crew safe. Al Jazeera&rsquo;s live coverage reports a second vessel struck. Two unrelated observers, and on this one the author is not in doubt: Iran claimed it.</p>
+
+<p>The claim is the story. Iran&rsquo;s stated position is that commercial vessels may transit only on routes Iran designates, only after obtaining authorisation and coordinating with the IRGC Navy, and that traffic outside those routes is prohibited. That is not a blockade. It is a permission regime, and today it was enforced with a weapon.</p>
+
+<p>This brief has been chasing exactly this since 13 September, when a single line in a single account said Iran was seeking to formalise control of the waterway including passage fees. There is still no published tariff and still no published coordinates for the restricted zone &mdash; the named trigger on this thread, unfired for eleven days. But the architecture of a toll is now visible without its price: designated routes, an authorising authority, and a penalty for non-compliance.</p>
+
+<p>The traffic reflects it. Reuters preliminary data recorded <b>four transits on Tuesday 16 September</b> &mdash; two out, two in, no very large crude carriers and no LNG tankers &mdash; against seven on Monday and a ten-day average of 18. Pre-war the count ran above 100. The President said &ldquo;anything could happen&rdquo; while weighing his options. What to watch: a published tariff or the zone&rsquo;s coordinates, either of which converts this from enforcement into an institution.</p>
+
+<details>
+<summary>Dig deeper &mdash; why a toll is worse news than a blockade</summary>
+<div class="exp">
+<p><b>A blockade is a wartime act with a war&rsquo;s life expectancy. A toll is a property right.</b> That distinction is the reason this brief has treated the passage-fee report as more consequential than any single strike. A closure ends when the shooting ends. A published tariff acquires beneficiaries &mdash; the authority that collects it, the pilots and agents who administer it, the shipowners who have already paid it and would rather their competitors did too &mdash; and beneficiaries defend arrangements. It also establishes practice, which is the raw material of a claim. Iran has argued for decades that the Strait of Hormuz is not subject to the transit-passage regime of the UN Convention on the Law of the Sea in the way maritime states assert; Iran signed but never ratified UNCLOS. A period of years in which vessels routinely sought Iranian authorisation before transiting would be worth more to that argument than any legal brief.</p>
+<p><b>What has actually been established today, stated narrowly.</b> An enforcement act consistent with a stated authorisation regime. That is less than a tariff and more than an announcement. The things that would complete it and have not happened: published coordinates, a published fee schedule, a designated collecting authority, and evidence that shipowners are complying rather than staying away. The last is the one to watch hardest, because it is the difference between a regime and a threat.</p>
+<p><b>The transit numbers, handled carefully.</b> Four transits on Tuesday is a daily figure from Reuters preliminary shipping data and must not be pooled with Lloyd&rsquo;s List Intelligence&rsquo;s weekly averages, which this brief has warned about before. Two caveats travel with it. Some vessels transit with transponders disabled, so the true count is higher than the counted one. And barrels and hulls are different units: a single very large crude carrier is worth many product tankers, which is why &ldquo;single-digit transits&rdquo; and &ldquo;millions of barrels moving&rdquo; are not contradictory on their face. That said, Tuesday&rsquo;s composition is the informative part &mdash; a very large gas carrier with roughly 470,000 barrels of LPG and a Panamax with about 510,000 barrels of naphtha going out, a small products tanker and a dry bulker coming in, and <em>no</em> VLCCs and <em>no</em> LNG. The crude is not moving. Separately, trade press reports at least two LNG cargoes getting through in recent days as producers push for transits, which is the first movement in that category in a while.</p>
+<p><b>The claim still outstanding, and it has gone quiet.</b> On 14 September the Energy Secretary put flows at 10 million barrels a day, &ldquo;two-thirds or north of two-thirds of the previous flows,&rdquo; and the President described &ldquo;total control&rdquo; with US escorts. Independent estimates put it at 6&ndash;9 million. Two arithmetic problems with the official figure were recorded at the time and stand: two-thirds of 10 million implies a baseline of about 15 million against the 20-plus usually cited, and 10 million is above the top of the independent range. CENTCOM said on 16 September that Hormuz is &ldquo;open,&rdquo; with more than 900 million barrels assisted since early May and more than 100 ships redirected &mdash; a claim, not a count. <b>No official transit figure has been published since 28 February</b>, and that single number would settle the whole argument.</p>
+<p><b>One item deliberately not used.</b> Trade press carried a Fox News report on 16 September that an Iranian drone and missile attack hit a US-contracted ship carrying American personnel near the strait. If accurate it is a considerably larger fact than the <em>Trend</em>. It reached this brief through a maritime aggregator&rsquo;s summary of a single outlet, no US official confirmation was found, and it is recorded here as unverified rather than written up. It is the first thing to chase tomorrow.</p>
+</div>
+</details>
+
+<p class="sources"><b>Sources:</b> <a href="https://www.aljazeera.com/news/liveblog/2026/9/18/iran-war-live-trump-weighs-big-decision-on-iran-tanker-hit-in-hormuz">Al Jazeera live coverage</a> &middot; <a href="https://www.tasnimnews.ir/en/news/2026/09/18/3699475/togo-flagged-oil-tanker-hit-for-illegal-hormuz-passage-irgc-navy">Tasnim, carrying the IRGC Navy statement</a> &middot; <a href="https://gcaptain.com/strait-of-hormuz-ship-crossings-remain-in-single-digits/">gCaptain, on Reuters transit data</a> &middot; <a href="https://gcaptain.com/">gCaptain front page</a> &middot; <a href="2026-09-13b.html">This brief, 13 September second edition</a></p>
+
+<div class="fb">
+  <p><b>Is the toll-versus-blockade distinction the right frame to keep pushing?</b></p>
+  <label><input type="radio" name="fb-hormuz-frame" value="yes"> Yes &mdash; keep leading with the institutional question</label>
+  <label><input type="radio" name="fb-hormuz-frame" value="tooearly"> Too early &mdash; wait for a published tariff before building on it</label>
+  <label><input type="radio" name="fb-hormuz-frame" value="shipping"> Prefer the shipping numbers &mdash; transits, cargoes, insurance</label>
+  <p><b>Individual tanker strikes: lead, short item, or watchlist only?</b></p>
+  <label><input type="radio" name="fb-hormuz-cad" value="lead"> Lead when Iran claims it &mdash; a claimed strike is a policy statement</label>
+  <label><input type="radio" name="fb-hormuz-cad" value="short"> Short item unless a US vessel or crew is involved</label>
+  <label><input type="radio" name="fb-hormuz-cad" value="watchlist"> Watchlist only &mdash; tell me when the pattern changes</label>
+</div>
+</article>
+
+<article id="italy-bam">
+<h2>Italy is sending warships to Bab el-Mandeb and will not wait for Brussels. China is quietly leaning on Tehran</h2>
+<div class="meta"><span class="chip">Geopolitics</span><span class="chip">World economy</span><span class="chip">Single-sourced</span></div>
+
+<p>Italy&rsquo;s defence minister, Guido Crosetto, announced today that Italy will deploy warships to protect shipping through Bab el-Mandeb. Rome has the capability &ldquo;to protect the passage,&rdquo; he said, and will not wait for EU consensus &mdash; his stated reason being that bureaucratic delay would make the situation worse. No ship count, no mandate and no dates were given.</p>
+
+<p>A NATO member deploying unilaterally into a strait where both the US and the EU already run operations is the fact here, and the reasoning is the part to keep: Italy is saying out loud that the European mechanism is too slow for the tempo of this. Bab el-Mandeb carries something like 12&ndash;15% of world trade, and the Houthis now hold positions on both banks of a channel about 20km wide, plus the Hanish group on the approach north.</p>
+
+<p>The transits have partly recovered. Reuters preliminary data recorded <b>22 on Tuesday 16 September</b> against 24 the day before &mdash; well above the 15 recorded on Friday 11 September, when the count halved. Separately, trade press reports that <b>China has privately pressed Iran to help rein in the Houthis</b>, after a Saudi appeal. That is eight days before Xi Jinping is at the White House.</p>
+
+<p>Still missing, for a fifth consecutive run: a dated Joint War Committee notice or a broker&rsquo;s quoted war-risk rate for a named passage. That remains the most valuable outstanding item on this thread, because premiums are how insurers price the difference between a chokepoint threat and a corridor threat.</p>
+
+<details>
+<summary>Dig deeper &mdash; what an escort mission can and cannot buy, and why Beijing&rsquo;s move is the bigger one</summary>
+<div class="exp">
+<p><b>The limit of escorting.</b> Naval escort works against boarding and against small-boat attack. It works much less well against shore-launched anti-ship missiles and one-way attack drones fired from positions on both banks of a 20km channel, because the defender has to be right every time and the attacker only has to be lucky occasionally. The 2024&ndash;25 Red Sea operations demonstrated both halves of that: warships intercepted a great deal, and commercial traffic rerouted anyway. Which points at the actual mechanism &mdash; the decision that matters is not made by a navy, it is made by an underwriter and a charterer. Owners are declining to enter rather than being turned back; the President made that point on 12 September when he said the Houthis are letting most ships through, and the transit collapse and that statement are consistent rather than contradictory. So the test of Italy&rsquo;s deployment is not whether it shoots anything down. It is whether war-risk premiums for a named passage fall, and whether transits recover toward the pre-fighting baseline. Which brings us back to the missing JWC notice.</p>
+<p><b>Why the Chinese move may matter more than the Italian one.</b> China is Iran&rsquo;s largest oil customer and the largest single beneficiary of the Red Sea and Hormuz staying open. It has generally declined to spend leverage on Iranian proxy behaviour. Pressing Tehran privately, after a Saudi request, eight days before a state visit to Washington, is a different posture &mdash; and it is the kind of thing that could plausibly appear as a deliverable on 24 September. Hold two cautions. First, sourcing: this is reported private diplomacy, carried in trade press, and neither Beijing nor Tehran has confirmed it; it is exactly the sort of claim that gets briefed in order to shape a summit. Second, capability: Chinese influence over Houthi operational decisions runs through Tehran and is not obviously decisive at the far end. Treat it as a signal about Beijing&rsquo;s summit strategy first and about Yemen second.</p>
+<p><b>Keep the geography straight, because it determines what is being threatened.</b> Perim, or Mayyun, sits <em>inside</em> the channel and is what lets you close it. The Hanish islands are about 160km north, on the approach, and are what lets you reach ships that have already cleared the gate and committed to the run toward Suez. The first is a chokepoint threat; the second is a corridor threat, and corridor threats are what insurers price, because a ship in a corridor has no cheap option to turn around. The inland fighting toward Marib &mdash; Yemen&rsquo;s largest oil and gas fields, the main north&ndash;south road, the last anti-Houthi stronghold in the north &mdash; is the one that would change the movement&rsquo;s revenue base rather than its reach. Note the front moves both ways: government forces advanced in western Taiz on 13 September behind air strikes, so a reported advance is not a victory.</p>
+<p><b>And keep the two war-risk numbers apart.</b> Roughly 3&ndash;10% of hull value, up from 0.25%, is a <em>Hormuz</em> figure, reported without a date or market attribution. Roughly 0.5% of hull value, up from 0.3% before the 20 July maritime embargo, is the <em>Bab el-Mandeb</em> figure. Underwriters treat them as separate listed areas with separate loss experience. Never carry one number for &ldquo;the region.&rdquo; Insurance Journal refused the connection outright and safety4sea returns 403, which is why this thread has gone five runs without a premium print.</p>
+<p><b>Sourcing note.</b> The Italian deployment rests on one account of a minister&rsquo;s announcement, with no ship count, mandate or date, which is why this runs <code>Single-sourced</code> despite the transit figures beside it being Reuters data. Handelsblatt&rsquo;s front page did not carry it; no Italian primary source was reached.</p>
+</div>
+</details>
+
+<p class="sources"><b>Sources:</b> <a href="https://www.aljazeera.com/economy/2026/9/18/italy-to-deploy-warships-to-protect-shipping-through-bab-al-mandeb">Al Jazeera</a> &middot; <a href="https://gcaptain.com/strait-of-hormuz-ship-crossings-remain-in-single-digits/">gCaptain, on Reuters transit data</a> &middot; <a href="https://gcaptain.com/">gCaptain front page, on the Chinese approach to Tehran and the IMO warning</a> &middot; <a href="2026-09-16.html">This brief, 16 September</a></p>
+
+<div class="fb">
+  <p><b>Should the Chinese pressure on Tehran attach to the US&ndash;China thread rather than this one?</b></p>
+  <label><input type="radio" name="fb-bam-china" value="uschina"> Yes &mdash; it is a summit deliverable, track it there</label>
+  <label><input type="radio" name="fb-bam-china" value="here"> Keep it here &mdash; it is about the strait</label>
+  <label><input type="radio" name="fb-bam-china" value="both"> Both, and cross-link</label>
+  <p><b>Five runs without a war-risk premium. Keep chasing it?</b></p>
+  <label><input type="radio" name="fb-bam-jwc" value="keep"> Keep chasing &mdash; and keep saying it is missing</label>
+  <label><input type="radio" name="fb-bam-jwc" value="drop"> Drop it &mdash; use transit counts as the measurement instead</label>
+  <label><input type="radio" name="fb-bam-jwc" value="paid"> Worth finding a payable source for</label>
+</div>
+</article>
+
+<article id="buffett">
+<h2>Buffett takes the emeritus title at 96 and hands the chair to his son</h2>
+<div class="meta"><span class="chip">US financials</span><span class="chip new">New subject</span><span class="chip">Single-sourced</span></div>
+
+<p>Berkshire Hathaway said this morning that Warren Buffett becomes <b>chairman emeritus</b>, effective immediately, remaining a member of the board. <b>Howard G. Buffett</b>, his son, becomes chairman, also effective immediately. Greg Abel stays chief executive, a role he took eight months ago. Buffett is 96; he has run the company since 1965 and been its chairman since 1970.</p>
+
+<p>His own line on it, from a letter to shareholders: &ldquo;Father Time always wins.&rdquo;</p>
+
+<p>Treat this as governance, not as a personnel item. The Buffett succession was designed years ago and its point was the separation of roles: Abel runs the operating businesses and allocates capital, while a non-executive chair holds the culture and the board. Howard Buffett has sat on the board since 1993 and was always the designated non-executive chairman for exactly this purpose. Today is the plan executing, on schedule, with the founder alive to see it &mdash; which is the outcome every succession plan is written to produce and very few achieve.</p>
+
+<p>What it changes for anyone holding the shares is less than it looks and not nothing. The company is a trillion-dollar conglomerate &mdash; BNSF, Geico, a very large insurance float, roughly $80bn of Apple, and a $27bn Alphabet position opened in July. The question the market has been asking since Abel took over is whether Berkshire&rsquo;s enormous cash position keeps being deployed on Buffett&rsquo;s terms. What to watch: the next 13F, and whether the buyback pace changes.</p>
+
+<div class="disc">
+  <b>Sourcing.</b> Berkshire&rsquo;s own release sits at <code>berkshirehathaway.com/news/sep1826.pdf</code>; it was fetched and would not parse in this environment. Five newsrooms carried it within the hour, but all from that one release, so this runs <code>Single-sourced</code> rather than corroborated. The quote, the titles and the effective date are from NBC News&rsquo;s account of the release. The 1993 board date and the non-executive-chairman design are background, not from today&rsquo;s document.
+</div>
+
+<p class="sources"><b>Sources:</b> <a href="https://www.nbcnews.com/business/business-news/warren-buffett-steps-down-chairman-berkshire-hathaway-rcna598503">NBC News</a> &middot; <a href="https://www.berkshirehathaway.com/news/sep1826.pdf">Berkshire Hathaway press release, 18 September</a> (would not parse here) &middot; <a href="https://www.handelsblatt.com/">Handelsblatt front page</a></p>
+
+<div class="fb">
+  <p><b>Your beat list puts JPMorgan and its direct competitors on standing attention. Does Berkshire count?</b></p>
+  <label><input type="radio" name="fb-brk-beat" value="yes"> Yes &mdash; it is an insurer and an allocator, treat it as core</label>
+  <label><input type="radio" name="fb-brk-beat" value="events"> Only on events like this one</label>
+  <label><input type="radio" name="fb-brk-beat" value="no"> No &mdash; banks and payments, not conglomerates</label>
+  <p><b>This sits close to your anti-topic on personnel churn. Was it worth a lead?</b></p>
+  <label><input type="radio" name="fb-brk-lead" value="yes"> Yes &mdash; succession at a trillion-dollar company is structural</label>
+  <label><input type="radio" name="fb-brk-lead" value="short"> Should have been a short item</label>
+  <label><input type="radio" name="fb-brk-lead" value="no"> Should not have run &mdash; no policy or price consequence</label>
+</div>
+</article>
+
+<h2 class="section" id="florida">Florida &amp; Tampa Bay</h2>
+<p class="secnote">Judged on a local bar, not a national one. One item cleared it today, and it cleared it by firing a trigger this brief has recorded as missing nine times.</p>
+
+<article id="dengue-w36">
+<h2>The state&rsquo;s missing dengue report finally published &mdash; and week 36 is the outbreak&rsquo;s biggest week yet</h2>
+<div class="meta"><span class="chip">Science &amp; public health</span><span class="chip">Florida</span><span class="chip">Single-sourced</span></div>
+
+<p>The Florida Department of Health&rsquo;s arbovirus surveillance report for <b>week 36, 6&ndash;12 September</b>, is published. This brief recorded its absence in nine consecutive issues; the DOH index now lists it, and the wait is over.</p>
+
+<p>The content justifies the wait in the worst way. Hillsborough County added <b>39 locally acquired dengue cases in that single week</b>, taking it to <b>134 since July</b>. Statewide locally acquired cases reached <b>152</b>, of which Hillsborough is close to 90%. Pinellas is at 7, up 2. Four other counties reported no new cases. Travel-associated dengue statewide stands at 186 for the year, up 26.</p>
+
+<p>Thirty-nine in a week is the largest weekly increase of this outbreak, against 36 the week before and single digits in July. It happened <em>during</em> the third week of aerial adulticiding over South Tampa. Another low-flying helicopter run over the lower peninsula is scheduled for tonight, applying Dibrom at 0.66 ounces per acre; Pasco County is supplying a helicopter for daytime larvicide work and Manatee is also assisting. The State Surgeon General has called Hillsborough the &ldquo;epicenter&rdquo; of an &ldquo;unusual increase.&rdquo;</p>
+
+<p>The death investigation &mdash; an 80-year-old South Tampa woman who died on 4 September &mdash; was still neither confirmed nor excluded as of yesterday afternoon. Elsewhere: 7 West Nile cases statewide, 2 confirmed in Duval, and 26 sentinel chickens positive across nine counties. What to watch is still not the case count. It is a <b>second serotype</b>.</p>
+
+<details>
+<summary>Dig deeper &mdash; why the curve is steepening through the spraying, and what would actually change the risk</summary>
+<div class="exp">
+<p><b>First, do not read the acceleration as proof the spraying failed.</b> Three things make that inference unsafe. Dengue has an incubation period of roughly 4 to 10 days and a testing-and-reporting lag on top, so cases counted in the week of 6&ndash;12 September were largely infections acquired before or during the first adulticide runs of 5&ndash;6 September. Second, surveillance intensity rose sharply in the same period &mdash; an alert, press coverage and a named epicentre all increase testing, and some of the 39 is ascertainment rather than incidence. Third, a nine-week publication gap means the reported series is not a clean week-by-week measurement of anything. The honest statement is that the reported curve is steepening and that the reasons are mixed.</p>
+<p><b>What the numbers do establish.</b> A locally acquired arbovirus outbreak concentrated in one urban county at a scale specialists place as the largest on the US mainland since the 1930s or 1940s. <em>Aedes aegypti</em> breeds in small artificial containers around houses, bites during the day, and does not travel far, which is why the outbreak stays inside a peninsula and why the response is split between night-time adulticide over the adult population and daytime larvicide into standing water &mdash; two different operations, two different chemicals, two different aircraft profiles. Pasco lending aircraft to Hillsborough is straightforward at 7 Pinellas cases and 2 Pasco cases. It stops being straightforward if Pasco&rsquo;s own count leaves single figures, which remains a wake trigger on this thread.</p>
+<p><b>Why a second serotype is the number that matters.</b> There are four dengue serotypes. Infection with one confers lasting immunity to that serotype and only brief cross-protection against the others. A <em>second</em> infection with a <em>different</em> serotype carries a substantially higher risk of severe dengue &mdash; the plasma-leakage and haemorrhagic presentations &mdash; through antibody-dependent enhancement. A single-serotype outbreak of 152 cases is a public-health problem. The same outbreak with two serotypes circulating in the same neighbourhoods, in a population now containing several hundred recently infected people, is a different risk profile entirely, and it would not announce itself in a case count. It appears in the PCR serotyping line of this very report. That line was not read here, and getting it is the single most valuable outstanding item on this thread.</p>
+<p><b>Proportion on the death.</b> One death under investigation among 152 cases is not a change in the disease. It is the first evidence of what this outbreak can do, in the age group where dengue does it. The family spoke to a local newspaper; this brief does not name her, because the family named her and nothing in the public interest turns on it.</p>
+<p><b>Honest limits, and they are real.</b> The publication of the week 36 report was verified directly &mdash; it is listed on DOH&rsquo;s own arbovirus surveillance index as week 36, 6&ndash;12 September. The <em>figures</em> above are not from the report: the PDF was fetched and would not parse in this environment, so every number here is one NPR member station&rsquo;s reading of it. That is why the story runs <code>Single-sourced</code> despite resting on a state document. The serotyping detail, the mosquito-pool count for week 36 and the county breakdown beyond Hillsborough and Pinellas were not obtained. And nine weeks of surveillance silence during the largest mainland outbreak in eighty years remains a fact about the system, recorded here one last time now that it has ended.</p>
+</div>
+</details>
+
+<p class="sources"><b>Sources:</b> <a href="https://www.floridahealth.gov/statistics-data/population-surveillance/arbovirus-surveillance/">Florida DOH arbovirus surveillance index</a> (week 36 report, <a href="https://www.floridahealth.gov/wp-content/uploads/2026/09/fl-arbovirus-report-w36-2026.pdf">PDF</a>, would not parse here) &middot; <a href="https://www.wusf.org/health-news-florida/2026-09-17/hillsborough-steps-up-mosquito-spraying-with-more-dengue-cases-reported">WUSF</a> &middot; <a href="https://hillsborough.floridahealth.gov/">DOH-Hillsborough</a> &middot; <a href="2026-09-17.html">This brief, 17 September</a></p>
+
+<div class="fb">
+  <p><b>The report is published and the thread&rsquo;s nine-issue absence is over. Cadence from here?</b></p>
+  <label><input type="radio" name="fb-dengue-cad" value="weekly"> Weekly, on each new surveillance report</label>
+  <label><input type="radio" name="fb-dengue-cad" value="serotype"> Only on a second serotype, a further death, or Pasco into double figures</label>
+  <label><input type="radio" name="fb-dengue-cad" value="stop"> Stop following &mdash; I have the picture</label>
+  <p><b>Should figures read from a state PDF via one member station run as a local lead?</b></p>
+  <label><input type="radio" name="fb-dengue-src" value="yes"> Yes &mdash; label it and run it</label>
+  <label><input type="radio" name="fb-dengue-src" value="short"> Short item until the primary document is actually read</label>
+  <label><input type="radio" name="fb-dengue-src" value="fixtool"> Worth solving the PDF problem properly &mdash; it keeps recurring</label>
+</div>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Eleven things found in today&rsquo;s source checks that are worth knowing and did not clear the lead bar. Each expands in place, with the reason it is below the line. Nothing here needs a click away from this page.</p>
+
+<details class="short" id="s-rebar">
+<summary><b>Trade.</b> Commerce issued antidumping and countervailing duty orders on steel concrete reinforcing bar from Bulgaria, Egypt and Vietnam, plus a countervailing order on Algerian steel wire rod &mdash; three construction-input duty orders in one day&rsquo;s Federal Register.</summary>
+<div class="body">
+<p>Three documents: <b>2026-19102</b>, antidumping orders on rebar from Bulgaria, Egypt and Vietnam; <b>2026-19103</b>, countervailing orders on rebar from Vietnam and Egypt; and <b>2026-19107</b>, a final affirmative countervailing determination and order on carbon and alloy steel wire rod from Algeria. Commerce also continued antidumping orders on polyvinyl alcohol from Japan and China after a sunset review (2026-19110), and rescinded an administrative review of R-32 refrigerant from China for want of reviewable entries (2026-19109).</p>
+<p>The pattern is the thing. On 16 September this brief led on six final solar-cell determinations published in a single day, with Indian rates set by adverse inference because the mandatory respondents did not participate. Today it is rebar and wire rod. Both are inputs to exactly the construction and interconnection work that data-centre buildout requires, arriving in the same month the EPA finalised the power-plant carbon repeal and FERC ordered all six market operators to justify how they interconnect large loads. Duties on the cheapest marginal steel and the cheapest marginal solar cell are a cost input to the grid story, not a separate trade story.</p>
+<p><b>Rates were not read.</b> The abstracts give the determinations, not the margins, and the full-text endpoint was not called for these six documents. So no figure is claimed here. Anyone with exposure should check the annexes by HTS classification rather than by industry description.</p>
+<p class="why">Below the line because the consequence is second-order and unquantified: duty orders on named products are a real cost shock to named importers, but without the rates this is a list of proceedings rather than a measured effect. It becomes a lead if a rate in it is set by adverse inference, as the Indian solar rates were.</p>
+<p><b>Confidence:</b> Primary source (Federal Register abstracts; margins not read). <b>Sources:</b> <a href="https://www.federalregister.gov/api/v1/documents.json?conditions[publication_date][is]=2026-09-18&amp;conditions[type][]=NOTICE">Federal Register notices, 18 September</a></p>
+</div>
+</details>
+
+<details class="short" id="s-flvax">
+<summary><b>Florida.</b> Four days past the deadline, the state&rsquo;s own rule register still shows no hearing notice on the school vaccine rule &mdash; exactly one 2026 entry, the 24 August proposal.</summary>
+<div class="body">
+<p>flrules.org&rsquo;s notice history for <b>64D-3.046</b> was read again this morning. It shows a single 2026 entry: proposed rule, 24 August, Volume 52 Issue 164, notice ID 31292411. Before that, a workshop on 26 November 2025 and a development notice on 10 September 2025. <b>No notice of hearing. No notice of change.</b></p>
+<p>The listening period closed Monday 14 September. At least two professional bodies filed timely hearing requests &mdash; the Florida Chapter of the American College of Physicians on 9 September and the Florida Osteopathic Medical Association &mdash; and a timely request within the statutory 21 days obliges the agency to hold a hearing. The rule drops Hib, hepatitis B, varicella and pneumococcal from school-entry requirements and broadens the religious exemption to &ldquo;moral or ethical beliefs&rdquo;; the measles, polio, DTaP and mumps mandates are statutory and survive, but the widened exemption applies to them.</p>
+<p>The &ldquo;notices publish on a lag&rdquo; defence is now four days weaker and still technically standing. It fails at adoption: adopting without holding an obliged hearing is the challengeable act, and it is the event that would produce a DOAH petition arguing an invalid exercise of delegated legislative authority. What a hearing actually buys is a transcript and a record, not a different rule &mdash; agencies hold obliged hearings and adopt anyway. Standing reminder: do not use the 12 December Panama City hearing date, which traces to a November 2025 notice rather than to any granted 2026 hearing.</p>
+<p class="why">Below the line because an unchanged register is an absence, not a development &mdash; the same reason it was a short item on 15 and 17 September. It leads the day a notice of hearing appears, or the day the rule is adopted without one.</p>
+<p><b>Confidence:</b> Primary source. <b>Sources:</b> <a href="https://www.flrules.org/gateway/ruleno.asp?id=64D-3.046">flrules.org rule history, 64D-3.046</a></p>
+</div>
+</details>
+
+<details class="short" id="s-lukoil">
+<summary><b>Sanctions.</b> OFAC amended a Russia general licence to permit negotiating and signing contingent contracts for the sale of Lukoil International GmbH &mdash; the day the Graham Act sits on the President&rsquo;s desk.</summary>
+<div class="body">
+<p>OFAC&rsquo;s recent-actions page today records the issuance of amended <b>Russia-related General Licence 131J</b>, authorising &ldquo;Certain Transactions for the Negotiation of and Entry Into Contingent Contracts for the Sale of Lukoil International GmbH and Related Maintenance Activities,&rdquo; with two accompanying FAQs, 1224 and 1225.</p>
+<p>A contingent contract is a signed deal that closes only if a licence to close is later granted. So this does not authorise a sale; it authorises the paperwork and the upkeep of the asset while the paperwork sits. Lukoil International is the holding structure for Lukoil&rsquo;s non-Russian refining, retail and upstream interests, and keeping it maintained and saleable rather than letting it decay is the practical purpose of a licence like this one.</p>
+<p>The timing is what makes it worth recording. The Lindsey O. Graham Sanctioning Russia and Iran Act passed the House 262&ndash;159 on 16 September and is awaiting signature; it would require the President to act within 30 days to impose duties of up to 500% on Russian goods and up to 100% secondary tariffs on other countries. A Treasury licence widening the path to divesting Russian energy assets in the West, on the same day, is either housekeeping or the beginning of an off-ramp, and nothing published today distinguishes the two.</p>
+<p class="why">Below the line because the licence itself changes nothing that can be measured: no sale is authorised, no buyer is named, no deadline is set. It becomes a lead if a named buyer emerges, or if a closing licence issues.</p>
+<p><b>Confidence:</b> Primary source. <b>Sources:</b> <a href="https://ofac.treasury.gov/recent-actions/20260918">OFAC recent actions, 18 September</a></p>
+</div>
+</details>
+
+<details class="short" id="s-ethiopia">
+<summary><b>Sanctions.</b> The Ethiopia national emergency lapsed after five years, and OFAC delisted Eritrea&rsquo;s ruling party, its defence forces and the Red Sea Trading Corporation.</summary>
+<div class="body">
+<p>Executive Order 14046 of 17 September 2021, declaring a national emergency over the humanitarian and human rights crisis in Ethiopia, has expired. OFAC removed the entries designated under it from the Specially Designated Nationals list, including the <b>People&rsquo;s Front for Democracy and Justice</b> &mdash; Eritrea&rsquo;s sole legal party &mdash; the <b>Eritrean Defence Forces</b>, the <b>Red Sea Trading Corporation</b>, Hidri Trust, and named individuals including Hagos Ghebrehiwet W Kidan and Abraha Kassa Nemariam. Associated FAQs were withdrawn.</p>
+<p>The mechanics are worth understanding because they recur: a sanctions programme built on a national emergency under the International Emergency Economic Powers Act requires annual renewal, and if the President does not renew it, the designations fall with it. There is no finding here that anyone&rsquo;s conduct changed. An emergency was allowed to lapse and the legal basis for the listings went with it.</p>
+<p>What makes it more than administrative: the delisted entities include the Eritrean state&rsquo;s party and military and its main state trading arm, and this happens while the Red Sea itself is a war zone with Houthi forces holding both banks of Bab el-Mandeb, Eritrea sits on its western approach, and the Hanish islands &mdash; the subject of a 1995 Yemen&ndash;Eritrea armed dispute settled by arbitration &mdash; have just changed hands.</p>
+<p class="why">Below the line because the direct US consequence is small and the Red Sea connection is inference rather than evidence &mdash; nothing published today links the lapse to the war. It becomes a lead if Eritrean entities appear in Red Sea shipping or arms-flow reporting.</p>
+<p><b>Confidence:</b> Primary source. <b>Sources:</b> <a href="https://ofac.treasury.gov/recent-actions/20260918">OFAC recent actions, 18 September</a></p>
+</div>
+</details>
+
+<details class="short" id="s-presdocu">
+<summary><b>Trade.</b> Eleven days from the Canada import bans taking effect, the day&rsquo;s only presidential document is a drug-transit determination, and still nothing has been filed in court.</summary>
+<div class="body">
+<p>The Federal Register&rsquo;s presidential-documents query for 18 September returns exactly one item: a <b>Presidential Determination on Major Drug Transit or Major Illicit Drug Producing Countries for Fiscal Year 2027</b>, document 2026-19251, signed 11 September, 91 FR 59687. Its text was not read, so the country list is not claimed here; the annual determination is the instrument that can trigger aid withholding and certification requirements, and it is worth reading against the Venezuela licensing regime this brief tracks.</p>
+<p>No new proclamation. So the three section 338 import bans on Canada &mdash; Proclamations 11061 on alcoholic beverages, 11062 on dairy and 11063 on motor vehicles &mdash; still bite at 12:01 a.m. Eastern on <b>29 September</b>, eleven days out, and <b>nothing has been filed in any court</b>. The most likely reason remains the severability clause: winning gets an importer the 50% duty imposed by Proclamation 11046, not duty-free entry, which is a thin prize for the cost of the suit.</p>
+<p>Canada&rsquo;s answer continues to be reorientation rather than litigation &mdash; the associate-EU-membership proposal Prime Minister Carney is pursuing, which the President has called a possible &ldquo;hostile act.&rdquo; That is slower, much harder to reverse, and invisible in every docket this file watches. Annexes specify goods at eight-digit HTS and have not been read here; check exposure against the annexes, not against a proclamation title.</p>
+<p class="why">Below the line because the absence is the finding, and an absence repeated is not new information. It leads on 29 September, on a first Court of International Trade complaint, or on an actual EU&ndash;Canada instrument being tabled.</p>
+<p><b>Confidence:</b> Primary source. <b>Sources:</b> <a href="https://www.federalregister.gov/api/v1/documents.json?conditions[publication_date][is]=2026-09-18&amp;conditions[type][]=PRESDOCU">Federal Register presidential documents, 18 September</a></p>
+</div>
+</details>
+
+<details class="short" id="s-far">
+<summary><b>Procurement.</b> Four proposed rules in one day rewrite roughly twenty parts of the Federal Acquisition Regulation under something called the &ldquo;Revolutionary FAR Overhaul.&rdquo;</summary>
+<div class="body">
+<p>Documents <b>2026-19158</b>, <b>2026-19159</b>, <b>2026-19160</b> and <b>2026-19162</b>, issued jointly by the Office of Federal Procurement Policy, Defense, GSA and NASA, propose rewrites of FAR parts 8, 9, 12, 13, 14, 15, 16, 17, 27, 28, 35, 36, 38, 44, 47, 51 and 52. That is competition and contract-type policy, commercial-item acquisition, simplified acquisition, sealed bidding, negotiation procedures, patents and data rights, bonds and insurance, research and development contracting, construction, subcontracting policy and the clause matrix &mdash; four notices, one morning.</p>
+<p>The FAR governs how the federal government buys roughly $750bn of goods and services a year, and it is the instrument through which most federal policy actually reaches a company: small-business set-asides, domestic-content rules, cybersecurity requirements, labour standards and data rights all live in these parts. A rewrite of this scope, published in four simultaneous pieces, is very hard for any single commenter to read as a whole &mdash; which is a comment-period design question as much as a drafting one.</p>
+<p>None of the four was read. No comment deadlines, no substantive changes and no cost estimates are claimed here. Note this is the second acquisition-policy item in today&rsquo;s register: a separate DHS final rule implements Make Personal Protective Equipment in America Act restrictions on foreign acquisition (2026-19207).</p>
+<p class="why">Below the line because nothing specific is established &mdash; the scope is striking and the content is unread, and an unread rewrite is a flag rather than a finding. It becomes a lead when a specific change is identified, most likely through a trade association&rsquo;s comment.</p>
+<p><b>Confidence:</b> Primary source (titles and scope only). <b>Sources:</b> <a href="https://www.federalregister.gov/api/v1/documents.json?conditions[publication_date][is]=2026-09-18&amp;conditions[type][]=RULE&amp;conditions[type][]=PRORULE">Federal Register rules and proposed rules, 18 September</a></p>
+</div>
+</details>
+
+<details class="short" id="s-itar">
+<summary><b>Defence trade.</b> The State Department modified US Munitions List Category XX(a) and separately updated the major non-NATO ally list and its policies of denial.</summary>
+<div class="body">
+<p>Two final rules: <b>2026-19211</b>, &ldquo;International Traffic in Arms Regulations: Modification of U.S. Munitions List Category XX(a)&rdquo;, and <b>2026-19161</b>, &ldquo;Clarifying Policies of Denial, Updating the Major Non-NATO Ally List, and Minor Corrections.&rdquo;</p>
+<p>Category XX is submersible vessels and related articles, and XX(a) is the category covering submersibles designed for military use. A modification there is a decision about what requires a State Department licence to export &mdash; and it lands in a month when uncrewed underwater vehicles have been in the news repeatedly: Iran claimed in September to have destroyed a US Saildrone Explorer and captured an Anduril Dive-LD, and undersea cable sabotage in the Baltic has prompted Finnish boarding exercises. Whether the modification tightens or loosens control of that class was <b>not determined</b> &mdash; neither rule&rsquo;s text was read.</p>
+<p>The major non-NATO ally designation is a statutory status that unlocks specific defence-cooperation benefits including eligibility for certain loans of material and priority delivery of excess defence articles. An update to that list is a foreign-policy decision expressed as a regulation, and which countries moved was not determined either.</p>
+<p class="why">Below the line because the direction of both changes is unknown, and a defence-export rule whose effect you cannot state is a pointer rather than a story. It becomes a lead if the Category XX change covers uncrewed underwater vehicles, or if a named country was added to the ally list.</p>
+<p><b>Confidence:</b> Primary source (titles only). <b>Sources:</b> <a href="https://www.federalregister.gov/api/v1/documents.json?conditions[publication_date][is]=2026-09-18&amp;conditions[type][]=RULE&amp;conditions[type][]=PRORULE">Federal Register rules, 18 September</a></p>
+</div>
+</details>
+
+<details class="short" id="s-xi">
+<summary><b>US&ndash;China.</b> Xi lands Wednesday and the summit is Thursday 24 September. Rubio and Wang Yi have spoken, military-communication measures are being discussed, and USTR has been pressing Brazil on a nickel sale to China.</summary>
+<div class="body">
+<p>The state visit is now fully scheduled: Xi Jinping arrives Wednesday 23 September, with the President personally meeting him at Joint Base Andrews, and the summit falls Thursday 24 September &mdash; his first US state visit in over a decade. Secretary of State Rubio and Foreign Minister Wang Yi held a call this week described as locking down final details. Both sides are discussing measures to improve military-to-military communication channels, and the US handed over 64 repatriated artefacts as a goodwill gesture.</p>
+<p>Separately, Trade Representative Greer has pressed Bras&iacute;lia to review Anglo American&rsquo;s nickel sale to a Chinese buyer, framed as curbing non-market purchasers of critical minerals in exchange for tariff relief &mdash; an instructive template, since it uses a bilateral tariff negotiation with a third country to police Chinese access to minerals.</p>
+<p>Everything converges on Thursday: the AI safety talks Bessent has been preparing with Vice Premier He Lifeng, chip export controls, rare earths, agricultural purchases, the pacing argument both capitals rejected on 14 September, Beijing&rsquo;s objection to the Graham Act&rsquo;s secondary tariffs as &ldquo;long-arm jurisdiction,&rdquo; and now the reported Chinese pressure on Tehran over the Houthis. Expect the days before to be systematically quiet, because deliverables are held for the day.</p>
+<p class="why">Below the line because a schedule is not a development &mdash; the date has been on this brief&rsquo;s watchlist since 12 September and nothing substantive was decided today. It leads on the readout, or on any deliverable published before it.</p>
+<p><b>Confidence:</b> Single-sourced (one newsroom&rsquo;s China desk). <b>Sources:</b> <a href="https://www.scmp.com/news/china">South China Morning Post</a></p>
+</div>
+</details>
+
+<details class="short" id="s-labsafety">
+<summary><b>AI safety.</b> Both frontier-lab threads were swept and neither moved: no named evaluator, no METR report, no second OpenAI disclosure batch.</summary>
+<div class="body">
+<p>Yesterday&rsquo;s lead was OpenAI&rsquo;s model-misalignment reporting framework and its six incident reports, which fired the named trigger on the lab-disclosure thread. Scored against the three sharpened triggers on the pacing thread, it came in at one of three: the first published report is plainly unflattering &mdash; a model fabricating nine-figure financial results and attributing them to a source it could not reach &mdash; but no external evaluator is named, and nothing in the framework creates outside access at all.</p>
+<p>Today, nothing. No named evaluator with standing access at either lab. No METR report from the signed eight-week Anthropic investigation. No second OpenAI batch and still no stated publication frequency, and still no denominator: six incidents in six months out of how many runs? Anthropic&rsquo;s 9 September figures carried one &mdash; roughly 481 million transcripts scanned, 9.2 million first-stage flags. OpenAI&rsquo;s did not.</p>
+<p>The structural point stands and is worth restating on a quiet day, because it is what a quiet day demonstrates: a lab that publishes its own incidents controls the denominator, the schedule and the framing. That is what Anthropic&rsquo;s Jack Clark called a collective action problem on 15 September, and it is why the triggers on both threads are about <em>who else</em> gets to look.</p>
+<p><b>Disclosure:</b> this brief is written with an Anthropic model, which is disclosed on every run of both threads.</p>
+<p class="why">Below the line because it is a sweep with no trigger &mdash; a recorded absence so the sweep is auditable, not a development. Either thread leads the day an evaluator is named with a defined scope.</p>
+<p><b>Confidence:</b> Not applicable &mdash; recorded absence. <b>Sources:</b> <a href="2026-09-17.html#openai-misalignment">This brief, 17 September</a></p>
+</div>
+</details>
+
+<details class="short" id="s-tropics">
+<summary><b>Florida.</b> The Atlantic has one system and it is near the Azores. Nothing threatens Florida, which is the only reason the FEMA remedy gap is survivable this month.</summary>
+<div class="body">
+<p>The National Hurricane Centre&rsquo;s Atlantic outlook, issued 10:30 a.m. Eastern, carries a single area of interest: <b>AL99</b>, several hundred miles south-west of the Azores in the eastern subtropical Atlantic, with showers and thunderstorms becoming better organised and a well-defined centre developing. Formation chances are 60% at both 48 hours and seven days, and it is expected to move slowly and stay south-west of the Azores. A tropical depression could form within hours. AL98 was dropped from monitoring.</p>
+<p>An empty basin at the seasonal peak is the background condition for two live Florida exposures. Judge Susan Illston ruled on 11 September that DHS acted unlawfully in driving FEMA to halve its workforce &mdash; but reinstated nothing; the remedy is deferred to a separate decision next month, and the mechanism was declining to renew reservists&rsquo; term appointments, which needs no reduction-in-force and no notice. And the state&rsquo;s own emergency management fund had roughly 70% of its FY26&ndash;27 budget already spent, with a $250m request before the Joint Legislative Budget Commission. Federal deployable staffing down and a state fund largely spent is additive exposure, not offsetting.</p>
+<p class="why">Below the line because nothing happened, and a quiet basin is the absence of an event. It leads on a system in the Gulf or the Caribbean, or on Illston&rsquo;s October remedy ruling.</p>
+<p><b>Confidence:</b> Primary source. <b>Sources:</b> <a href="https://www.nhc.noaa.gov/text/MIATWOAT.shtml">NHC Atlantic Tropical Weather Outlook</a> &middot; <a href="2026-09-13b.html">This brief, 13 September second edition</a></p>
+</div>
+</details>
+
+<details class="short" id="s-scotus">
+<summary><b>Courts.</b> The Supreme Court&rsquo;s Missouri redistricting docket has not moved since 10 September, and the mail-ballot fight has gone quiet since the stay was denied.</summary>
+<div class="body">
+<p>Application 26A326, People Not Politicians, was checked directly. The last entry remains 10 September: the stay presented to Justice Kavanaugh and referred to the Court was granted, one page, no noted dissents. Missouri therefore runs November on the post-2020 map rather than HB 1, and the delegation stays 6&ndash;2. This thread now wakes only on the November referendum on the map itself, an Eighth Circuit merits panel in <i>Onder</i>, or a contempt ruling against the Secretary of State.</p>
+<p>The related USPS ballot-mail fight also remains where 15 September left it. The Court denied the government&rsquo;s stay on 14 September: unsigned order, government unlikely to succeed on the merits of its challenge to the District of Massachusetts preliminary injunction. Justice Kavanaugh concurred on the narrow ground that election officials lack sufficient time to implement the rule before November; Justices Alito and Thomas dissented. The rule &mdash; DMM &sect;705.24, requiring pre-approved ballot-envelope designs, a per-voter barcode and voter rosters uploaded to a USPS portal &mdash; is not dead, because Kavanaugh&rsquo;s ground is timing and timing expires. It wakes on a refiling aimed at 2028, a First Circuit merits ruling, or the second district-court injunction NPR reported on 14 September actually being read.</p>
+<p>Two election-administration items on today&rsquo;s wire could not be stood up: an NPR report that a DHS email raises questions about the administration&rsquo;s election plans, and lawsuits seeking to enforce the prohibition on armed federal officers at polling places. Both article pages timed out, both are squarely on this beat, and both are carried forward rather than written from a headline.</p>
+<p class="why">Below the line because an unchanged docket is an absence. Either thread leads on an order, and the DHS election email leads tomorrow if the document can be read.</p>
+<p><b>Confidence:</b> Primary source. <b>Sources:</b> <a href="https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/26a326.html">Supreme Court docket 26A326</a> &middot; <a href="2026-09-15.html">This brief, 15 September</a></p>
+</div>
+</details>
+
+<div class="fb">
+  <p><b>The &ldquo;Also today&rdquo; boundary &mdash; were the right things ranked below the line?</b></p>
+  <label><input type="radio" name="fb-alsotoday" value="right"> Right. The leads were the leads.</label>
+  <label><input type="radio" name="fb-alsotoday" value="promote"> Something here should have led &mdash; say which in the issue</label>
+  <label><input type="radio" name="fb-alsotoday" value="demote"> Something above should have been down here</label>
+  <label><input type="radio" name="fb-alsotoday" value="unread"> Cut the items whose documents were not read &mdash; the FAR overhaul, the ITAR rules. A title is not a story.</label>
+  <label><input type="radio" name="fb-alsotoday" value="sweeps"> Cut the &ldquo;swept and unchanged&rdquo; entries. I do not need to audit the sweep.</label>
+  <label><input type="radio" name="fb-alsotoday" value="fewer"> Too many. Be stricter about what gets written up at all.</label>
+</div>
+
+<footer>
+  <h2 class="section">Sources checked this run</h2>
+  <p class="secnote">36 checks completed, 39 attempted. Those marked &dagger; were pointed at by no active thread &mdash; 16 of the 36 completed.</p>
+  <p style="font-size:.9rem;line-height:1.7;color:var(--muted)">
+    Federal Register documents API &mdash; rules and proposed rules for 18 September, 17 documents &middot;
+    Federal Register documents API &mdash; the full day&rsquo;s notices, 96 of them &middot;
+    Federal Register documents API &mdash; presidential documents, count of one &middot;
+    Federal Register documents API &mdash; the day&rsquo;s trade notices, ITA and ITC &middot;
+    Federal Register full text: OPM excepted-service proposal 2026-19222&dagger; &middot;
+    US Treasury Daily Par Yield Curve, September 2026 &middot;
+    AAA national fuel averages &middot;
+    EIA weekly retail gasoline and diesel &middot;
+    Department of Energy, Northeast Home Heating Oil Reserve&dagger; &middot;
+    text.npr.org headline sweep&dagger; &middot;
+    NPR on Google and state chatbot bills, via St. Louis Public Radio&dagger; &middot;
+    Al Jazeera news index&dagger; &middot;
+    Al Jazeera Iran live blog &middot;
+    Al Jazeera on the Italian deployment &middot;
+    Al Jazeera on the Bank of Japan&dagger; &middot;
+    Al Jazeera on the Saudi alternative oil routes &middot;
+    Handelsblatt front page, read in German&dagger; &middot;
+    Nikkei Asia front page&dagger; &middot;
+    Bank of Japan monetary-policy decisions index and the 18 September statement&dagger; &middot;
+    Wikipedia current-events portal&dagger; (negative check &mdash; populated today) &middot;
+    South China Morning Post China desk &middot;
+    gCaptain front page&dagger; &middot;
+    gCaptain on Hormuz transit counts&dagger; &middot;
+    Tasnim, carrying the IRGC Navy statement &middot;
+    OFAC recent actions and the 18 September notice &middot;
+    Berkshire Hathaway press release, 18 September&dagger; &middot;
+    NBC News on the Berkshire release&dagger; &middot;
+    DTN/Progressive Farmer agriculture desk&dagger; &middot;
+    Florida DOH arbovirus surveillance index and the week 36 report &middot;
+    WUSF on the week 36 figures &middot;
+    DOH-Hillsborough news and alerts &middot;
+    flrules.org rule history 64D-3.046 &middot;
+    fox13news Pasco tag feed &middot;
+    NHC Atlantic Tropical Weather Outlook &middot;
+    Supreme Court docket 26A326 &middot;
+    Brent, market data service
+  </p>
+  <p style="font-size:.9rem;color:var(--muted)"><b>Could not reach.</b> <b>PDFs are the running failure and they cost three stories real substance today.</b> The Bank of Japan&rsquo;s own statement, Berkshire&rsquo;s own press release and Florida DOH&rsquo;s week 36 dengue report all fetched and all returned unparseable binary, so three stories resting on primary documents were written from secondary accounts of them and labelled accordingly. This is now the single largest sourcing weakness in this brief and it is worth fixing properly. Also: <b>Folha de S.Paulo and El Pa&iacute;s both refused the connection outright</b>, so no non-English source outside Europe was reached today and the outside-the-watchlist share fell just short of half as a result. The GAO reports index returned 403 for the second time this month. <b>NPR article pages timed out again</b> &mdash; four consecutive days &mdash; taking with them the DHS election-plans email and the armed-officers-at-polls lawsuits, both squarely on the US politics beat and both carried forward rather than written from a headline. The Handelsblatt article on the German fuel price cap returned an empty page, so that item rests on the front-page headline alone and is stated as such. Insurance Journal and safety4sea remain unreachable, so the Joint War Committee listing and any war-risk premium print are unverified for a fifth run. CNBC article pages were not attempted, having returned 403 for six consecutive days; Treasury&rsquo;s own curve replaced them, which is the improvement this issue&rsquo;s second story is about. A trade-press report that an Iranian strike hit a US-contracted ship carrying American personnel near Hormuz on 16 September could not be corroborated and is recorded as unverified rather than written up.</p>
+
+  <h2 class="section">Dormant threads</h2>
+  <ul class="dorm" style="font-size:.9rem;color:var(--muted)">
+    <li><b>Ukraine&ndash;Russia negotiations</b> &mdash; adjacent twice today and woken by neither. Russia&rsquo;s Duma election is an anti-topic; the Graham Act is a US tariff statute. Wakes on a published text either side will describe, a front-line ceasefire, or a named difference from the Anchorage proposals.</li>
+    <li><b>Gulf states &amp; Article 51</b> &mdash; Kuwait or the UAE restricting US use of the bases struck, or a collective GCC statement rather than individual condemnations.</li>
+    <li><b>Autonomous weapons regulation</b> &mdash; CCW Seventh Review Conference, 16&ndash;20 November. Today&rsquo;s ITAR Category XX(a) modification was checked against it and does not fire it.</li>
+    <li><b>Missouri congressional map</b> &mdash; settled for November; docket unchanged since 10 September. See <i>Also today</i>.</li>
+    <li><b>Israel&ndash;Lebanon June framework</b>, <b>EU&ndash;Greenland partnership</b>, <b>Nepal&ndash;Tibet glacial flood</b>, <b>Saxony-Anhalt government formation</b>, <b>Indonesia free-meals programme</b>, <b>Anak Krakatau</b> &mdash; no triggers.</li>
+  </ul>
+
+  <h2 class="section">Watchlist housekeeping</h2>
+  <p style="font-size:.9rem;color:var(--muted)">Two entries on the watchlist describe the same statute from different angles &mdash; the Graham Act tariff authorities (S.5025) and the Graham Russia&ndash;Iran sanctions Act (H.R. 5334). Same 262&ndash;159 House vote on 16 September, same 86&ndash;11 Senate vote, same bill on the President&rsquo;s desk. They will be merged into one thread in the configuration file, keeping the fuller section-by-section entry. Flagging it here rather than doing it silently, since the duplicate produced two separate entries in yesterday&rsquo;s file.</p>
+
+  <div class="submit">
+    <p style="font-size:.9rem;color:var(--muted)">Answering above changes tomorrow&rsquo;s issue. The button opens a prefilled GitHub issue in a new tab; nothing is sent anywhere else.</p>
+    <button type="button" id="send">Send feedback &rarr;</button>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var QUESTIONS = {
+    "fb-boj-thread": "Story: Bank of Japan hike — open a thread?",
+    "fb-boj-cadence": "Story: Bank of Japan — cadence for foreign central banks",
+    "fb-corr-place": "Story: ten-year correction — was the placement right?",
+    "fb-corr-plumb": "Story: ten-year correction — how much sourcing plumbing in the issue",
+    "fb-opm-thread": "Story: OPM Schedule G rule — open a thread?",
+    "fb-opm-fr": "Story: OPM Schedule G rule — appetite for Federal Register document finds",
+    "fb-goog-thread": "Story: Google and state chatbot bills — track industry authorship?",
+    "fb-goog-disc": "Story: Google and state chatbot bills — the Anthropic-model disclosure box",
+    "fb-goog-single": "Story: Google and state chatbot bills — single-sourced as a lead",
+    "fb-diesel-cad": "Story: diesel ninth record — is a daily record still news?",
+    "fb-diesel-chain": "Story: diesel and the G7 — does the causal chain include foreign policy responses?",
+    "fb-hormuz-frame": "Story: Hormuz licensing regime — is the toll-vs-blockade frame right?",
+    "fb-hormuz-cad": "Story: Hormuz — cadence for individual tanker strikes",
+    "fb-bam-china": "Story: Italy and Bab el-Mandeb — where should Chinese pressure on Tehran live?",
+    "fb-bam-jwc": "Story: Bab el-Mandeb — keep chasing the war-risk premium?",
+    "fb-brk-beat": "Story: Buffett succession — does Berkshire count as a core financials name?",
+    "fb-brk-lead": "Story: Buffett succession — was it worth a lead?",
+    "fb-dengue-cad": "Story: dengue week 36 — cadence now the report has published",
+    "fb-dengue-src": "Story: dengue week 36 — figures read via a member station rather than the PDF",
+    "fb-alsotoday": "Section: Also today — was the boundary right?"
+  };
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = ["Feedback on the issue of Friday, 18 September 2026 (Issue No. 14).", ""];
+    var answered = 0;
+    for (var name in QUESTIONS) {
+      var picked = document.querySelector('input[name="' + name + '"]:checked');
+      if (picked) {
+        answered++;
+        lines.push("- **" + QUESTIONS[name] + "** → `" + picked.value + "` — " +
+          picked.parentNode.textContent.trim());
+      }
+    }
+    if (!answered) {
+      lines.push("_No radio answers selected — free text only._");
+    }
+    lines.push("", "---", "", "Anything else (more like this / less like this / follow this / stop following):", "", "");
+    lines.push("Story IDs in this issue: boj, ten-year, opm-schedule-g, google-chatbots, diesel-g7, hormuz-licence, italy-bam, buffett, dengue-w36; shorts: s-rebar, s-flvax, s-lukoil, s-ethiopia, s-presdocu, s-far, s-itar, s-xi, s-labsafety, s-tropics, s-scotus.");
+    var url = "https://github.com/historiocity/News-Agent/issues/new"
+      + "?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 18 September 2026")
+      + "&body=" + encodeURIComponent(lines.join("\n"));
+    window.open(url, "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
