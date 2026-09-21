@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Monday, 21 September 2026 (Grok edition)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  .corr { background:var(--box); border-left:4px solid var(--accent); padding:.8rem 1rem; margin:0 0 1rem; font-size:.95rem; }
+  .corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+  .corr p { margin:.45rem 0; }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+  ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 17-grok &middot; Monday, 21 September 2026 &middot; Morning / Grok edition</div>
+  <h1>The SEC wants to scrap federal shareholder proposals; Fed and BoE are asking banks about Jane Street; diesel set a twelfth AAA record; and Bessent put an AI incident hotline on the Trump–Xi table</h1>
+  <p class="sub">Nine stories at length, ten in brief. Independent Grok gather for the 7am&nbsp;ET cron; does not overwrite Claude/Action files. Continuity for accountability: <a href="2026-09-20-grok.html">20&nbsp;Sep Grok</a> &middot; <a href="2026-09-19-grok.html">19&nbsp;Sep Grok</a> &middot; framework <a href="2026-09-10b.html">2026-09-10b</a>.</p>
+  <p class="prov"><b>Loaded</b> <a href="https://github.com/historiocity/News-Agent/blob/main/config.md">config.md</a>. Re-read closed brief-feedback (#3, #7). Quality bar: Issue&nbsp;10 / 2026-09-10b.<br><br>
+  <b>18&nbsp;sources checked, 12 of them outside the active watchlist threads.</b> Core beats lead. Oil/pump/chokepoints stay one causal chain. Fed = prints and the decision only — no new print or FOMC action; Fed speakers omitted.<br><br>
+  <b>Negative check reshaped the lead list:</b> Monday’s Federal Register carried an SEC proposal to <em>rescind Rule&nbsp;14a-8</em> entirely — not on any prior Grok agenda, not on a watchlist thread, and absent from overnight wire fronts. Reuters/FT on Fed–BoE bank-exposure questions after Jane Street’s reported $15&nbsp;billion hit, and the concrete Bessent “notification mechanism” for AI national-security incidents, likewise were not yesterday’s menu. Those displaced calendar reprises of the AI Force announcement-as-announcement, the Chinese-ship boarding near-miss, Newsom’s kill-switch EO, the WH press-ban implementation, the DHS voting-email FOIA, and Moscow-drone colour. Diesel stayed fused with Hormuz measurement conflict — not split.<br><br>
+  Declined for altitude: AfD Mecklenburg-Vorpommern Landtag win (no US channel); New Zealand Bird of the Year; sports; celebrity; Argentina “March of Anger” without a US fiscal/trade hinge.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#sec-14a8">Negative check: the SEC proposes to scrap federal shareholder-proposal rules and leave them to state law</a></li>
+    <li><a href="#jane-street">Fed and BoE are asking banks what they lent to trading firms after Jane Street’s reported $15&nbsp;billion hit</a></li>
+    <li><a href="#bessent-ai">Bessent proposes a US–China AI incident-notification channel ahead of Thursday’s Trump–Xi summit</a></li>
+    <li><a href="#diesel-hormuz">One chain to the pump: AAA diesel $6.5107 — a twelfth record — as CENTCOM and ship-tracking disagree on Hormuz</a></li>
+    <li><a href="#dhs-influx">DHS extends the Mass Influx Finding for 180 days — Secretary Mullin’s first such notice</a></li>
+    <li><a href="#ai-antitrust">A lawsuit says Anthropic, OpenAI, xAI and Google illegally agreed to slow AI</a></li>
+    <li><a href="#anthropic-accenture">Anthropic is embedding Accenture evaluators inside the lab — $1&nbsp;billion each over five years</a></li>
+    <li><a href="#ai-force-accountability">Accountability: two days on, the White House still will not say what the “AI Force” is</a></li>
+    <li><a href="#yamal-graham">Graham Act pressure reaches Russia’s Yamal LNG icebreaker fleet</a></li>
+  </ol>
+  <p class="also"><a href="#also-today">Also today (10)</a> &mdash; ranked below the line, each one opens. Florida section empty on local merit.</p>
+</nav>
+
+<article id="sec-14a8">
+  <h2>Negative check: the SEC proposes to scrap federal shareholder-proposal rules and leave them to state law</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip under">Underreported</span>
+    <span class="chip">Primary source</span>
+    <span class="chip">Negative-check</span>
+  </div>
+  <p>In today’s Federal Register the Securities and Exchange Commission proposes to <b>rescind Rule&nbsp;14a-8</b> under the Exchange Act — the federal rule that has, for decades, forced public companies to include qualifying shareholder proposals in their proxy materials — and to leave “determinations about the role of shareholder proposals to State law and company governing documents.” Comment deadline: <b>20 November 2026</b>.</p>
+  <p>The same package amends Rule&nbsp;14a-4 to expand when a company may exercise discretionary voting authority on proposals that will be presented at a meeting but are <em>not</em> in the company’s proxy materials, while giving shareholders a way to elect to block that discretionary voting on their own shares. A companion proposed rule, “Proxy Solicitation Modernization,” would among other things eliminate the requirement that registrants deliver an annual report to security holders and shorten the minimum broker-search period — also comments through 20&nbsp;Nov.</p>
+  <p>Rule&nbsp;14a-8 is the machinery behind climate, labour, governance and political-spending proposals that asset managers and activists have used for a generation. Rescinding it does not ban proposals; it moves the fight into Delaware charters, bylaws and state courts — and into whoever controls the board’s proxy card.</p>
+  <p><b>What to watch:</b> the comment file; whether large index managers (BlackRock, Vanguard, State Street) file as a bloc; any state legislative response that re-creates a mandatory-inclusion regime; litigation timing if the Commission finalises.</p>
+  <div class="div">
+    <span class="t">Divergence — investor voice vs management control</span>
+    <p><b>What is disputed.</b> Whether federal proxy access is a disclosure/governance floor that markets need, or a federalisation of what corporate law left to states and charters.</p>
+    <p><b>Why they differ.</b> Issuers and some Republican commissioners have long called 14a-8 a cost centre for political proposals. Pension funds and NGOs treat it as the cheapest formal channel into the annual meeting. Both can be true about different proposal classes.</p>
+    <p><b>What it means for you.</b> Core US financials and policy. This came from the standing FR RULE/PRORULE sweep, not a beat tip — the overnight wires did not lead with it. If finalised, ESG and governance fights migrate to state law and private ordering.</p>
+  </div>
+  <details>
+    <summary>Dig deeper — why this is bigger than “anti-ESG”</summary>
+    <div class="exp">
+      <p>Rescission is not a narrowing of submission thresholds or a longer ownership period — those were prior fights. It is removing the federal inclusion mandate. A bylaw that simply refuses all shareholder proposals would, under this proposal, face state fiduciary and charter constraints rather than an SEC no-action process. That is a different game: more room for dual-class and controlled companies; more pressure on institutional holders to vote with their feet or sue in Chancery.</p>
+      <p>The 14a-4 discretionary-voting expansion is the operational half. Even if a shareholder forces a proposal onto the floor under state law, management’s ability to cast unmatched proxies for or against it is what often decides the tally. The proposal’s individual opt-out is real but easy to miss in retail accounts.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.federalregister.gov/documents/2026/09/21/2026-19260/rescission-of-rule-14a-8s-federal-regulation-of-shareholder-proposals-and-amendments-to-rule-14a-4">FR 2026-19260 (primary abstract)</a> &middot;
+    <a href="https://www.federalregister.gov/documents/2026/09/21/2026-19259/proxy-solicitation-modernization">FR 2026-19259 companion</a> &middot;
+    Federal Register documents JSON API (21&nbsp;Sep RULE/PRORULE sweep)
+  </p>
+  <div class="fb">
+    <p>FR negative-check lead on shareholder proposals — right altitude?</p>
+    <label><input type="radio" name="fb-14a8" value="yes"> Yes — federal corporate-governance rules are Core financials</label>
+    <label><input type="radio" name="fb-14a8" value="follow"> Follow through comment period only</label>
+    <label><input type="radio" name="fb-14a8" value="less"> Less — wait for final rule</label>
+  </div>
+</article>
+
+<article id="jane-street">
+  <h2>Fed and BoE are asking banks what they lent to trading firms after Jane Street’s reported $15&nbsp;billion hit</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>Reuters, citing the Financial Times on Monday, reports that the <b>Federal Reserve and the Bank of England</b> are asking global banks about their exposures to large trading firms after turmoil at the AI-focused hedge fund <b>Situational Awareness</b> — run by former OpenAI researcher Leopold Aschenbrenner — contributed to a reported <b>$15&nbsp;billion</b> hit at Jane Street. The fund was forced to sell most of its public-equities portfolio to Citadel Securities after a sharp sell-off in AI and chip stocks. Central banks want risk appetite, how bank exposure evolved <em>intraday</em>, and how risk controls operated.</p>
+  <p>Separately last month, the SEC subpoenaed Wall Street banks including Goldman Sachs, JPMorgan, Citigroup and Bank of America over Situational Awareness’ trading, leverage, margin calls and lender communications. Reuters could not independently verify Monday’s FT report; Fed, BoE and Jane Street did not immediately comment outside business hours.</p>
+  <p><b>What to watch:</b> any formal supervisory letter or horizontal review announcement; whether the SEC subpoena expands past Situational Awareness to prime-broker AI books generally; Jane Street or bank 10-Q language.</p>
+  <div class="div">
+    <span class="t">Divergence — idiosyncratic loss vs systemic plumbing</span>
+    <p><b>What is disputed.</b> Whether this is one fund’s concentration risk or a signal that AI-equity financing through non-bank trading firms is now large enough to worry prudential regulators.</p>
+    <p><b>Why they differ.</b> Trading firms intermediate bank balance sheets; when one blows up, the question is always whether the banks saw the intraday path. That is what the questionnaires target.</p>
+    <p><b>What it means for you.</b> Core US financials with an AI-capex financing channel. Not on yesterday’s Grok agenda. Labelled Single-sourced on the FT→Reuters chain until a primary regulator statement.</p>
+  </div>
+  <details>
+    <summary>Dig deeper — the AI sell-off transmission</summary>
+    <div class="exp">
+      <p>July’s AI/chip drawdown turned a concentrated long book into forced sales through a market-maker. The $15&nbsp;billion figure traces to August Reuters exclusive sourcing; Monday’s new fact is the <em>supervisory follow-up</em>, not the original loss. Keep those dates straight.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.reuters.com/business/finance/us-fed-boe-step-up-scrutiny-bank-exposure-trading-firms-after-jane-street-loss-2026-09-21/">Reuters (FT report, 21&nbsp;Sep)</a> &middot;
+    <a href="https://www.marketscreener.com/news/us-fed-boe-step-up-scrutiny-of-bank-exposure-to-trading-firms-after-jane-street-loss-ft-reports-ce785adbd980ff25">MarketScreener write-through</a> &middot;
+    <a href="https://www.reuters.com/business/finance/jane-street-took-15-billion-hit-july-tied-situational-awareness-sources-say-2026-08-14/">Reuters Aug exclusive (loss figure)</a>
+  </p>
+  <div class="fb">
+    <p>Jane Street / Situational Awareness supervisory story — weight?</p>
+    <label><input type="radio" name="fb-js" value="yes"> Yes — bank–trading-firm plumbing is Core financials</label>
+    <label><input type="radio" name="fb-js" value="follow"> Follow when a regulator speaks on record</label>
+    <label><input type="radio" name="fb-js" value="less"> Less — one-fund colour</label>
+  </div>
+</article>
+
+<article id="bessent-ai">
+  <h2>Bessent proposes a US–China AI incident-notification channel ahead of Thursday’s Trump–Xi summit</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">World economy</span>
+    <span class="chip">Lab safety</span>
+    <span class="chip new">New subject</span>
+  </div>
+  <p>After Sunday’s New York talks with Chinese Vice Premier He Lifeng and USTR Jamieson Greer, Treasury Secretary Scott Bessent told reporters the US has proposed a <b>“notification mechanism”</b> inside a new US–China AI dialogue — covering AI-related incidents that rise to a <b>national-security</b> level — for Presidents Trump and Xi to consider at this week’s Washington summit (Thu–Fri 24–25&nbsp;Sep). Both sides agreed to meet again. Greer said US export controls on advanced AI chips and semiconductor manufacturing equipment were <b>not</b> on the agenda for the AI-mechanism talks.</p>
+  <p>Xinhua’s readout was thinner: “frank, in-depth and constructive exchanges” on trade and investment, with AI mentioned only briefly. Handelsblatt’s Monday front carried the Meldemechanismus framing. The concrete proposal is the new fact; yesterday’s Grok had the meeting itself.</p>
+  <p><b>What to watch:</b> whether Thursday’s joint statement names a channel, a ministry pair, and an incident definition; any chip-control linkage that Greer said was off the table Sunday.</p>
+  <div class="div">
+    <span class="t">Divergence — hotline vs guardrails</span>
+    <p><b>What is disputed.</b> Whether an incident-notification line is meaningful cooperation or summit theatre that leaves racing, export controls and lab evaluation untouched.</p>
+    <p><b>Why they differ.</b> Washington can sell a hotline as safety without conceding compute. Beijing can accept talks language without accepting inspectable limits. Greer’s carve-out of chip controls is the tell.</p>
+    <p><b>What it means for you.</b> Core AI + US–China channel. Upgrades yesterday’s “they met” item into a dated deliverable to watch on Thursday.</p>
+  </div>
+  <details>
+    <summary>Dig deeper — what “incident” would have to mean</summary>
+    <div class="exp">
+      <p>Bessent’s public gloss is national-security-level AI incidents — closer to a nuclear or cyber hotline metaphor than to commercial model-card sharing. Without a shared definition (escape, critical infrastructure compromise, military misidentification), the mechanism is a phone number. Pair with the military AI near-miss from yesterday’s edition: a false boarding plan is exactly the class of event a bilateral channel would claim to handle — if either side would actually call.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.thehindu.com/news/international/us-seeks-ai-dialogue-with-china-as-officials-set-stage-for-trump-xi-summit/article71490031.ece">The Hindu / AFP</a> &middot;
+    <a href="https://tribune.com.pk/story/2630541/bessent-proposes-us-china-ai-safety-notifications-in-talks-with-chinese-vice-premier">Tribune / Reuters</a> &middot;
+    Handelsblatt (Meldemechanismus, Monday front) &middot;
+    Al Jazeera (Bessent–He NY framing)
+  </p>
+  <div class="fb">
+    <p>AI notification mechanism — right as a Monday lead ahead of Xi?</p>
+    <label><input type="radio" name="fb-bessent" value="yes"> Yes — concrete proposal beats meeting colour</label>
+    <label><input type="radio" name="fb-bessent" value="thu"> Save the lead for Thursday’s statement</label>
+    <label><input type="radio" name="fb-bessent" value="less"> Less — still theatre</label>
+  </div>
+</article>
+
+<article id="diesel-hormuz">
+  <h2>One chain to the pump: AAA diesel $6.5107 — a twelfth record — as CENTCOM and ship-tracking disagree on Hormuz</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">Geopolitics</span>
+    <span class="chip">Primary source</span>
+    <span class="chip">Follow-up</span>
+  </div>
+  <p>AAA Monday 21&nbsp;Sep national averages: <b>diesel $6.5107</b> — a <b>twelfth</b> consecutive all-time record (Sun $6.5050; week ago $6.2301; month ago $5.5764; year ago $3.6958, ~+76% y/y). AAA’s own “highest recorded average price” line for diesel now reads <b>$6.5107 on 9/21/26</b>. Regular gasoline $4.4786 (Sun $4.4761; year ago $3.1834, ~+41% y/y). Diesel is now about <b>$2.03/gal</b> dearer than gasoline. EIA’s weekly federal print is still the Tue&nbsp;16&nbsp;Sep table ($6.285 w/e 14&nbsp;Sep); <b>next EIA table due Tue 22&nbsp;Sep</b> — first covering a full week above $6.40.</p>
+  <p>Same morning, the measurement fight on the other end of the chain: Reuters’ Morning Bid notes Adm. Brad Cooper (CENTCOM) said over the weekend that crude, cargo and LNG volume through Hormuz in the past two weeks was higher than at any point in the past six months — with many vessels running <b>transponders off</b> under US escort, which makes the claim hard to verify from AIS. Shipping data showed <b>12 commodity vessels</b> transiting Saturday–Sunday vs <b>35</b> the prior weekend. Kpler: Saudi exports recovered to just over 4&nbsp;mb/d so far in September after 2.4&nbsp;mb/d in August. Screen Brent on Handelsblatt’s ticker ~$97 (−~2%); use for direction only. Physical Dated Brent dislocation from last week still stands as context — do not quote a single “oil price.”</p>
+  <p>Qatar Energy Minister Saad Al-Kaabi told Bloomberg (via gCaptain) that Bessent is “wrong” about Hormuz’s future — a named energy-minister rebuttal of the Treasury line, not a transit count.</p>
+  <p><b>What to watch:</b> Tue 22&nbsp;Sep EIA weekly; any published Iran permission-regime coordinates or fee schedule (still unfired); whether escorted “dark” volumes show up as a distillate build.</p>
+  <div class="div">
+    <span class="t">Divergence — barrels claimed vs hulls counted</span>
+    <p><b>What is disputed.</b> Whether Hormuz is recovering (CENTCOM volume claim + Kpler Saudi export rebound) or still structurally constrained (weekend AIS 12 vs 35; diesel still making records while screen crude falls).</p>
+    <p><b>Why they differ.</b> Transponders-off escort traffic is invisible to the public AIS series. Diesel is a refining/distillate story; a softer Brent tape has now failed as a relief signal for nearly two weeks.</p>
+    <p><b>What it means for you.</b> One causal chain only. Do not split the twelfth AAA print from the Hormuz measurement conflict.</p>
+  </div>
+  <details>
+    <summary>Dig deeper — why gasoline flatness still matters</summary>
+    <div class="exp">
+      <p>Yesterday’s edition noted gasoline essentially stopped ($4.4759→$4.4761) while diesel climbed. Today gasoline ticked a couple of cents ($4.4786) while diesel set another record and became AAA’s own all-time high print. The crack/inventory story is intact: gasoline still roughly tracks the barrel; diesel tracks the distillate shortage.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://gasprices.aaa.com/">AAA Daily Fuel Gauge (primary, 21&nbsp;Sep)</a> &middot;
+    <a href="https://www.reuters.com/world/china/global-markets-view-europe-2026-09-21/">Reuters Morning Bid (Cooper vs AIS)</a> &middot;
+    Handelsblatt Brent ticker (direction) &middot;
+    gCaptain / Bloomberg (Al-Kaabi on Bessent)
+  </p>
+  <div class="fb">
+    <p>Twelfth diesel record + Hormuz measurement fight — still one chain?</p>
+    <label><input type="radio" name="fb-diesel" value="yes"> Yes — keep fused</label>
+    <label><input type="radio" name="fb-diesel" value="split"> Split pump from CENTCOM claim</label>
+    <label><input type="radio" name="fb-diesel" value="eia"> Less weight until EIA Tuesday</label>
+  </div>
+</article>
+
+<article id="dhs-influx">
+  <h2>DHS extends the Mass Influx Finding for 180 days — Secretary Mullin’s first such notice</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Monday’s Federal Register publishes a DHS <b>Finding of Mass Influx of Aliens</b> extending the prior finding for another <b>180 days</b>, effective immediately. It is signed by <b>Markwayne Mullin, Secretary of Homeland Security</b> — his first extension in this series. The chain of prior findings runs from Acting Secretary (23&nbsp;Jan 2025) through Secretary Noem’s extensions to 17&nbsp;Sep 2026; this notice continues the authority under which DHS may request state and local law-enforcement assistance in administering immigration law (8&nbsp;U.S.C. 1103(a); 28&nbsp;CFR 65.83).</p>
+  <p>Operative facts cited in the notice: ICE detention population <b>67,022</b> against capacity <b>80,700</b> (83% occupancy as of 12&nbsp;Aug 2026); <b>2,120,058</b> aliens on the non-detained docket with final removal orders (as of 11&nbsp;Aug); continued weekly Southwest-border encounter volumes; and the D.C. Circuit posture in <em>RAICES</em> limiting direct repatriation under the Invasion Proclamation so that DHS must still process many aliens through expedited removal. The finding requests assistance from state and local governments in all 50 states and may expire sooner if the Secretary finds circumstances changed.</p>
+  <p><b>What to watch:</b> whether states accept or condition assistance; any updated CBP nationwide-encounters print that the notice cites; litigation challenging the finding’s factual predicates.</p>
+  <div class="div">
+    <span class="t">Divergence — emergency finding vs steady-state tool</span>
+    <p><b>What is disputed.</b> Whether “mass influx” still describes the border given lower encounter totals than 2021–24 peaks, or whether detention, non-detained docket and court limits on the Invasion Proclamation independently justify the finding.</p>
+    <p><b>Why they differ.</b> The statute and regulation turn on DHS capacity and endangerment findings, not only raw encounter counts. Critics read serial 180-day renewals as a standing mobilisation authority.</p>
+    <p><b>What it means for you.</b> Primary FR notice — substance, not personnel colour. Clears the US-policy bar; not on yesterday’s Grok menu.</p>
+  </div>
+  <details>
+    <summary>Dig deeper — what the finding actually authorises</summary>
+    <div class="exp">
+      <p>It does not itself rewrite asylum law. It is the predicate for requesting state/local officers to perform immigration-officer duties with their superiors’ consent. The practical stakes are workforce surge and interior/border resource allocation — especially the notice’s explicit trade-off between Southwest-border detention beds and interior criminal-alien priorities.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.federalregister.gov/documents/full_text/text/2026/09/21/2026-19253.txt">FR 2026-19253 full text (primary)</a> &middot;
+    Federal Register NOTICE sweep 21&nbsp;Sep
+  </p>
+  <div class="fb">
+    <p>Mass Influx extension — lead or Also today?</p>
+    <label><input type="radio" name="fb-influx" value="lead"> Lead (as today) — primary FR + midterm enforcement</label>
+    <label><input type="radio" name="fb-influx" value="also"> Also today only</label>
+    <label><input type="radio" name="fb-influx" value="less"> Less — routine renewal</label>
+  </div>
+</article>
+
+<article id="ai-antitrust">
+  <h2>A lawsuit says Anthropic, OpenAI, xAI and Google illegally agreed to slow AI</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+  </div>
+  <p>AP reporting carried Monday: a complaint filed Friday in the U.S. District Court for the Northern District of California alleges that Anthropic, OpenAI, SpaceXAI/xAI and Google made an illegal agreement to coordinate a slowdown in AI development, reducing the value consumers get from paid AI subscriptions. The suit points to 12&nbsp;Sep — when Anthropic CEO Dario Amodei published “We Must Pace the Frontier” and Sam Altman, Elon Musk and Demis Hassabis publicly agreed in substance — and to an earlier July 2026 multi-lab staff statement acknowledging competitive pressure not to slow unilaterally and calling for government support of a global slowdown.</p>
+  <p>Amodei’s essay itself flagged antitrust risk and asked for a narrow government waiver for certain safety conversations. Altman publicly said OpenAI welcomes a federal safety framework but does not need an antitrust exemption to start the work. The Trump administration’s growth-first line (see AI Force accountability item) cuts the other way.</p>
+  <p><b>What to watch:</b> motions to dismiss; whether DOJ/FTC open a parallel inquiry or file a statement of interest; any lab walk-back of public “pace” language.</p>
+  <div class="div">
+    <span class="t">Divergence — parallel speech vs agreement</span>
+    <p><b>What is disputed.</b> Whether same-day CEO statements plus a prior staff open letter are concerted action under Sherman Act standards, or parallel public advocacy.</p>
+    <p><b>Why they differ.</b> Antitrust plaintiffs need agreement, not merely identical hopes. Labs will argue the essay invited <em>government</em> mediation precisely to avoid private coordination.</p>
+    <p><b>What it means for you.</b> Core AI + policy. Turns the pacing debate into a docketed case. Not a reprise of the essay itself.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.thehindu.com/sci-tech/technology/lawsuit-says-anthropic-openai-spacexai-google-made-illegal-agreement-on-ai-slowdown/article71489963.ece">The Hindu / AP</a> &middot;
+    <a href="https://www.21alivenews.com/2026/09/20/lawsuit-says-anthropic-openai-spacexai-and-google-made-illegal-agreement-ai-slowdown/">21Alive / AP</a> &middot;
+    Anthropic pacing essay context (prior issues)
+  </p>
+  <div class="fb">
+    <p>AI slowdown antitrust suit — weight?</p>
+    <label><input type="radio" name="fb-anti" value="yes"> Yes — puts pacing on a docket</label>
+    <label><input type="radio" name="fb-anti" value="follow"> Follow after a motion to dismiss</label>
+    <label><input type="radio" name="fb-anti" value="less"> Less — long-shot private suit</label>
+  </div>
+</article>
+
+<article id="anthropic-accenture">
+  <h2>Anthropic is embedding Accenture evaluators inside the lab — $1&nbsp;billion each over five years</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Lab safety</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Anthropic’s own 18&nbsp;Sep post — now getting Monday trade-press amplification — announces a partnership with Accenture (led by Faculty) to place <b>embedded evaluators</b> inside Anthropic with access “comparable to an employee’s”: red-teaming, alignment assessments, safeguard testing, and the ability to watch models through training and deployment decisions. Anthropic and Accenture each expect to invest at least <b>$1&nbsp;billion over five years</b>. Anthropic is funding Accenture’s work directly for now; it is also in dialogue with METR and other nonprofits for separately funded pilots. The partnership is explicitly non-exclusive.</p>
+  <p>This is the operational half of Amodei’s pacing essay commitment to embed evaluators — and it lands in the same news cycle as the antitrust slowdown suit and Bessent’s bilateral incident channel. Standards for access and reporting “do not yet exist,” Anthropic says.</p>
+  <p><b>What to watch:</b> first public evaluator report or incident disclosure under the arrangement; whether OpenAI or Google announce parallel embeds; any SEC/FTC attention to evaluator independence when the lab pays the bill.</p>
+  <div class="div">
+    <span class="t">Divergence — independent vs funded-by-lab</span>
+    <p><b>What is disputed.</b> Whether a lab-funded embed with employee-comparable access is independence or a sophisticated internal audit branded as third-party.</p>
+    <p><b>Why they differ.</b> Anthropic argues no pooled/government funding exists yet, so direct funding is urgency. Critics note the payer sets the ceiling on what gets published.</p>
+    <p><b>What it means for you.</b> Standing lab-safety thread. Primary document fetched; not run in the 19–20 Sep Grok editions.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.anthropic.com/news/accenture-embedded-evaluation">Anthropic (primary, 18&nbsp;Sep)</a> &middot;
+    <a href="https://cioinfluence.com/security/accenture-and-anthropic-partner-to-build-team-of-embedded-evaluators-at-anthropic/">CIO Influence / Business Wire</a> &middot;
+    <a href="https://www.itpro.com/technology/artificial-intelligence/anthropic-moves-fast-on-ai-safety-concerns-with-accenture-embedded-evaluator-partnership">IT Pro</a>
+  </p>
+  <div class="fb">
+    <p>Embedded evaluators — keep as a standing lab-safety lead?</p>
+    <label><input type="radio" name="fb-embed" value="yes"> Yes — implementation of the pacing commitment</label>
+    <label><input type="radio" name="fb-embed" value="follow"> Follow when a report publishes</label>
+    <label><input type="radio" name="fb-embed" value="less"> Less — paid consultant colour</label>
+  </div>
+</article>
+
+<article id="ai-force-accountability">
+  <h2>Accountability: two days on, the White House still will not say what the “AI Force” is</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Accountability</span>
+  </div>
+  <div class="corr">
+    <span class="t">Accountability to 20 Sep framing</span>
+    <p>Yesterday’s Grok led on Trump’s Saturday Truth Social announcement of an “AI Force” (likened to Space Force) and an AI “czar,” while noting powers, budget and organisational home were undefined. Monday follow-ups confirm the gap has not closed: The Next Web reports the White House has not clarified whether the Force would be a military branch, a regulatory body, or something else — and notes that creating a true military branch requires Congress (as Space Force did via the FY2020 NDAA). No bill, EO, budget line or agency designation has surfaced. The AI czar role has been vacant since David Sacks hit the 130-day special-government-employee limit in March.</p>
+  </div>
+  <p>Euronews and CSMonitor Monday pieces restate the growth-first posture and the rejection of a slowdown. That is continuity, not news. The accountability fact is the continued absence of constitutive documents.</p>
+  <p><b>What to watch:</b> an EO, a DoD/Commerce organisational memo, a named czar, or a bill — any one of which would convert the post into an entity.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://thenextweb.com/news/white-house-ai-force-no-detail">The Next Web</a> &middot;
+    <a href="https://www.euronews.com/next/2026/09/21/only-high-iq-individuals-need-apply-trump-resists-calls-to-slow-ai-development">Euronews</a> &middot;
+    <a href="https://www.csmonitor.com/USA/Politics/2026/0921/trump-ai-china-regulate">Christian Science Monitor</a>
+  </p>
+  <div class="fb">
+    <p>AI Force accountability item — right cadence?</p>
+    <label><input type="radio" name="fb-force" value="yes"> Yes — say when the framing still has no paperwork</label>
+    <label><input type="radio" name="fb-force" value="also"> Demote to Also today</label>
+    <label><input type="radio" name="fb-force" value="drop"> Drop until an EO or name</label>
+  </div>
+</article>
+
+<article id="yamal-graham">
+  <h2>Graham Act pressure reaches Russia’s Yamal LNG icebreaker fleet</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">US channel</span>
+    <span class="chip new">New subject</span>
+  </div>
+  <p>gCaptain’s Monday lead: a new US sanctions law — the Graham Russia–Iran architecture Trump signed Friday — could put the specialised Arc7 icebreaker/LNG carrier fleet that keeps Novatek’s Yamal LNG project running in the Arctic under unprecedented pressure. Yamal’s logistics depend on a small set of ice-class vessels; secondary sanctions that raise the cost of servicing, insuring or financing that fleet are a US-channel energy fact, not Russia colour.</p>
+  <p>Keep adjacent to, not fused with, the Hormuz/diesel chain. Arctic LNG is a different barrel path; the US lever is the statute just signed.</p>
+  <p><b>What to watch:</b> OFAC implementing guidance or designations that name Yamal-serving vessels/owners; European charterer and insurer reactions; any Chinese substitution of ice-class capacity.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://gcaptain.com/">gCaptain (Yamal LNG fleet / sanctions law)</a> &middot;
+    Prior issues on Graham Act signing (H.R.&nbsp;5334)
+  </p>
+  <div class="fb">
+    <p>Yamal / Graham Act fleet pressure — right as a geopolitics lead?</p>
+    <label><input type="radio" name="fb-yamal" value="yes"> Yes — US statute → Arctic LNG logistics</label>
+    <label><input type="radio" name="fb-yamal" value="also"> Also today until OFAC names hulls</label>
+    <label><input type="radio" name="fb-yamal" value="less"> Less — wait for designations</label>
+  </div>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Ten short items. Each opens. Not a dumping ground for yesterday’s unfinished leads.</p>
+<div class="also-list">
+
+<details>
+  <summary>Qatar’s energy minister says Bessent is “wrong” about Hormuz’s future <span class="chip">Energy</span></summary>
+  <div class="exp">
+    <p>Saad Al-Kaabi (Bloomberg via gCaptain, 20&nbsp;Sep): rebuts the Treasury Secretary’s framing of the strait. Named ministerial pushback — sits inside the diesel/Hormuz chain as colour, not a second oil lead. <span class="sources">gCaptain / Bloomberg</span></p>
+  </div>
+</details>
+
+<details>
+  <summary>LNG tanker to Europe suffered systems failure; crew suspected cyber attack <span class="chip">Energy</span> <span class="chip">Cyber</span></summary>
+  <div class="exp">
+    <p>gCaptain: US-origin LNG cargo to Europe — systems failure reported by crew as suspected cyber. Unconfirmed attribution; record as operational risk beside chokepoint stress. <span class="sources">gCaptain</span></p>
+  </div>
+</details>
+
+<details>
+  <summary>SEC companion proposal: Proxy Solicitation Modernization (comments to 20&nbsp;Nov) <span class="chip">US financials</span></summary>
+  <div class="exp">
+    <p>FR 2026-19259: would eliminate mandatory annual-report delivery to security holders, shorten broker-search minimums, and drop certain exempt-solicitation filing requirements. Pair with the 14a-8 rescission lead — same comment window. <span class="sources">FR 2026-19259</span></p>
+  </div>
+</details>
+
+<details>
+  <summary>HHS seeks comment on EMF / RF / wireless radiation exposure <span class="chip">Science</span></summary>
+  <div class="exp">
+    <p>FR NOTICE 2026-19252: Request for Information on electromagnetic fields, radiofrequency radiation and wireless radiation exposure. Standing science/public-health RFI; not a rule. <span class="sources">FR 2026-19252</span></p>
+  </div>
+</details>
+
+<details>
+  <summary>Handelsblatt: Google’s Gemini hacked three companies in a test <span class="chip">AI / lab safety</span></summary>
+  <div class="exp">
+    <p>Monday short: Gemini guessed passwords and used public credentials to enter corporate systems in testing — another data point in the regulation debate. Thin on methodology in the blurb; treat as signal, stand up before overweighting. <span class="sources">Handelsblatt Shorts</span></p>
+  </div>
+</details>
+
+<details>
+  <summary>Treasury 10-year: Friday issuer print still 5.01%; Monday tape softer on oil (direction only) <span class="chip">US debt &amp; fiscal</span></summary>
+  <div class="exp">
+    <div class="corr" style="margin:.4rem 0">
+      <span class="t">Series of record</span>
+      <p>Treasury Daily Par Yield Curve last print Fri&nbsp;18&nbsp;Sep: 10-year <b>5.01%</b>, 30-year 5.34%, 2-year 4.76%. Monday’s issuer row is not up yet. Reuters says the 10-year slipped below 5% on the oil drop — ticker/direction only; do not print a Monday basis-point level without the Treasury table.</p>
+    </div>
+    <p><span class="sources">Treasury TextView (Sep 2026) · Reuters futures wrap</span></p>
+  </div>
+</details>
+
+<details>
+  <summary>Qatar PM at UNGA: Iran-war fallout an “earthquake”; mediators still shuttling <span class="chip">Geopolitics</span></summary>
+  <div class="exp">
+    <p>Al Jazeera: Sheikh Mohammed frames regional fallout and investment-strategy shift; Qatar MFA says mediators continue between Iran and the US. US channel via mediation and Hormuz diplomacy — short. <span class="sources">Al Jazeera</span></p>
+  </div>
+</details>
+
+<details>
+  <summary>China reported braking robot-maker IPOs after Unitree volatility <span class="chip">World economy</span></summary>
+  <div class="exp">
+    <p>Handelsblatt: Chinese regulators scrutinising robot-firm listings after a volatile Unitree debut. US channel thin (competition/capex colour); short only. <span class="sources">Handelsblatt</span></p>
+  </div>
+</details>
+
+<details>
+  <summary>Wall Street futures bid as AI stocks rebound and oil slides ~2% <span class="chip">Macro</span></summary>
+  <div class="exp">
+    <p>Reuters Monday wrap: futures up on AI names; Accenture/Anthropic partnership colour in the same piece; airlines catching a bid on softer crude. Market colour, not a Fed print. <span class="sources">Reuters</span></p>
+  </div>
+</details>
+
+<details>
+  <summary>Florida school-vaccine rule 64D-3.046: still no hearing notice seven days past the deadline <span class="chip">Florida</span></summary>
+  <div class="exp">
+    <p>Standing absence, not a development: comment/hearing-request window closed 14&nbsp;Sep; prior runs found only the 24&nbsp;Aug proposed-rule notice on flrules.org. Seventh day of the same register fact — recorded so the sweep is auditable. Triggers unchanged: notice of hearing, adoption without one, or DOAH filing. <span class="sources">Prior flrules.org reads · config watchlist</span></p>
+  </div>
+</details>
+
+</div>
+
+<h2 class="section">Florida &amp; Tampa Bay</h2>
+<p class="secnote">Empty on local merit this run. Dengue death confirmation and “may be waning” framing ran 20&nbsp;Sep; no w37 ledger verified this morning. School-vaccine register absence carried under Also today, not manufactured into a local lead. Pasco/Pinellas blotter items (crime, e-bike fire, traffic) do not clear the local policy bar. Empty is fine.</p>
+
+<h2 class="section">Provenance &amp; negative check</h2>
+<p><b>18 sources checked; 12 outside active watchlist threads</b> (≥half). Outside-watchlist examples: FR 2026-19260 / 19259 / 19253 / 19252 (SEC 14a-8, proxy modernization, DHS Mass Influx, HHS EMF RFI); Anthropic.com Accenture post; Reuters Jane Street/Fed–BoE; Reuters Morning Bid + futures wrap; Handelsblatt (Meldemechanismus, Gemini short, robot IPOs, Brent ticker); The Hindu / Tribune / AFP Bessent AI dialogue; AP antitrust suit via Hindu/21Alive; gCaptain (Yamal, Al-Kaabi, LNG cyber); The Next Web / Euronews / CSMonitor AI Force follow-ups; CIO Influence / IT Pro Accenture; Al Jazeera UNGA/Qatar; AAA Daily Fuel Gauge; Treasury Daily Par Yield Curve TextView.</p>
+<p><b>Negative check changed the lead list:</b> Monday FR SEC 14a-8 rescission proposal + Fed/BoE Jane Street exposure questions + Bessent’s concrete AI notification mechanism displaced reprises of AI Force-as-announcement, Chinese-ship boarding near-miss, Newsom kill-switch EO, WH press-ban implementation, DHS voting-email FOIA, and Moscow-drone colour. Oil stayed one chain (12th AAA record + CENTCOM-vs-AIS measurement conflict). AI Force demoted to an accountability lead that states the continued absence of constitutive documents.</p>
+<p><b>Accountability:</b> Treasury levels only from issuer series (Fri 5.01%); Monday “below 5%” treated as ticker direction. Anthropic–Accenture dated to the 18&nbsp;Sep primary post, not invented as a 21&nbsp;Sep exclusive.</p>
+<p><b>Blocked / thin this run:</b> Wikipedia 21&nbsp;Sep current-events portal was donation-walled then nearly empty (DMZ explosion; NZ bird); NPR text index header-only on first fetch; CNBC article pages historically 403; congress.gov historically 403. FR JSON API worked today.</p>
+<p><b>Declined for altitude:</b> AfD Mecklenburg-Vorpommern win; New Zealand Bird of the Year; Argentina austerity march without US hinge; sports; celebrity.</p>
+<ul class="dorm">
+  <li>Dormant / unchanged sweeps: UAP implementing guidance — no movement. Fed — no print/decision (omitted). AARO contract — no award. Bank stablecoin consortium — no OCC final. Florida dengue w37 — not published.</li>
+</ul>
+
+<footer>
+  <p>Grok edition for historiocity/News-Agent · Issue&nbsp;10 framework · filename <b>2026-09-21-grok.html</b> · not a Claude/Action overwrite.</p>
+  <p><a href="index.html">Archive</a> · Continuity: <a href="2026-09-20-grok.html">20&nbsp;Sep Grok</a> · <a href="2026-09-19-grok.html">19&nbsp;Sep Grok</a> · framework <a href="2026-09-10b.html">2026-09-10b</a>.</p>
+  <p>Feedback radios are local-only unless wired to an issue form; reply in chat or open a brief-feedback GitHub issue to retune weights.</p>
+  <p class="submit"><button type="button">Submit feedback (wire me)</button></p>
+</footer>
+
+</div>
+</body>
+</html>
