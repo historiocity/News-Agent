@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Monday, 21 September 2026</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  .corr { background:var(--box); border-left:3px solid var(--accent); padding:.7rem .9rem; margin:0 0 1rem; font-size:.94rem; }
+  .corr p { margin:.4rem 0; }
+  .corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--accent); }
+  .disc { font-size:.9rem; color:var(--muted); border-top:1px dotted var(--rule); padding-top:.6rem; margin-top:.9rem; }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  .short { border-bottom:1px solid var(--rule); padding:.7rem 0; margin:0; }
+  .short > summary { color:var(--fg); cursor:pointer; list-style:none; }
+  .short > summary::-webkit-details-marker { display:none; }
+  .short > summary::before { content:"▸ "; color:var(--link); }
+  .short[open] > summary::before { content:"▾ "; }
+  .short .body { margin-top:.6rem; padding-left:1.1rem; border-left:2px solid var(--rule); font-size:.96rem; }
+  .why { font-style:italic; color:var(--muted); }
+  figure { margin:1.2rem 0 0; }
+  figcaption { font-size:.84rem; color:var(--muted); margin-top:.4rem; line-height:1.5; }
+  svg { width:100%; height:auto; display:block; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+  ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 17 &middot; Monday, 21 September 2026</div>
+  <h1>Anthropic has named the outside evaluator it promised. It is a consultancy being paid a billion dollars &mdash; and on Friday four subscribers sued the labs for agreeing to slow down at all</h1>
+  <p class="sub">Morning edition. Continues from <a href="2026-09-20.html">Sunday</a>. Two of this issue&rsquo;s leads are this brief correcting itself.</p>
+  <p class="prov"><b>28 sources checked, 17 of them outside the watchlist.</b> Nine lead stories: five on subjects with no existing thread (the SEC&rsquo;s proxy rescission, the DHS mass-influx renewal, the White House press lawsuit, data centres on the November ballot, the Florida springs settlement) and four continuations (the pacing commitments, the ten-year yield, the China AI track, Hormuz). Thirteen short items.<br><br>
+  <b>Biggest story today not on this list &mdash; and the answer is embarrassing.</b> Two of them, and both were three days old before this brief found them. On <b>Friday 18 September</b> Anthropic named <b>Accenture</b> as its first embedded evaluator, which is the exact trigger this file wrote down on 17 September as the one thing that would make the pacing thread lead. The same day, four paying subscribers sued Anthropic, OpenAI, Google and SpaceXAI in the Northern District of California for agreeing to slow down. Neither appeared in Saturday&rsquo;s or Sunday&rsquo;s issue. They were found this morning not by a beat sweep but by checking a lead off the archive index. Separately, the <b>SEC</b> proposed rescinding the shareholder-proposal rule on 16 September &mdash; on a core beat &mdash; and this brief missed that for five days too, catching it only because the <em>Federal Register</em> published it today. Three misses on core beats in one weekend is a pattern, not luck, and the footer says what changes.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#evaluator">The evaluator Amodei promised is a consultancy on a $1bn contract &mdash; and the slowdown is now an antitrust defendant</a></li>
+    <li><a href="#tenyear">Correction: the ten-year did go through 5%. This brief&rsquo;s correction was itself wrong</a></li>
+    <li><a href="#sec">The SEC wants to abolish the shareholder proposal. The clock started this morning</a></li>
+    <li><a href="#massinflux">A nationwide immigration emergency quietly entered its twenty-first month today</a></li>
+    <li><a href="#aidialogue">Washington and Beijing have agreed to telephone each other about AI accidents</a></li>
+    <li><a href="#press">CNN, MS NOW and Politico sued this morning. The networks have stopped sharing the pool</a></li>
+    <li><a href="#hormuz">Two more tankers hit this morning, and seventeen ships crossed Hormuz all weekend</a></li>
+    <li><a href="#datacenters">Data centres are on the ballot in eighteen Ohio towns in six weeks</a></li>
+    <li><a href="#springs">Florida &amp; Tampa Bay: the state has settled the springs case and must write nine cleanup plans again</a></li>
+    <li><a href="#also-today">Also today (13)</a></li>
+  </ol>
+</nav>
+
+<article id="evaluator">
+  <h2>The evaluator Amodei promised is a consultancy on a $1bn contract &mdash; and the slowdown is now an antitrust defendant</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>On <b>Friday 18 September</b>, Anthropic named <b>Accenture</b> as its first embedded evaluator. Each company says it expects to invest <b>at least $1bn over five years</b>. The work &mdash; evaluating and red-teaming models, alignment assessments, testing safeguards &mdash; runs through <b>Faculty</b>, the specialist AI unit Accenture bought in January. Evaluators are to watch models take shape in training, follow the decisions governing how they are built and deployed, and speak directly to staff. The arrangement is not exclusive; Anthropic says it is talking to METR and other nonprofits about piloting embedded evaluation <em>on their own funding</em>.</p>
+  <p>That fires the trigger this file named on 17 September. Scoring the pacing thread then, it asked three questions &mdash; is an evaluator named, is the access standing or project-scoped, is the first published report unflattering &mdash; and answered one of three. The first is now answered. <b>The second is answered badly.</b></p>
+  <p>Because the same Friday, four paying subscribers to ChatGPT, Claude, Grok and Gemini filed an <b>antitrust class action</b> in the <b>Northern District of California</b> against Anthropic, OpenAI, Google and SpaceXAI, alleging they illegally agreed to slow AI development. The complaint&rsquo;s evidence is the public record: Dario Amodei&rsquo;s 12 September essay, the same-day agreement from Sam Altman, Elon Musk and Demis Hassabis, and a July statement by senior lab employees conceding &ldquo;intense competitive pressure not to unilaterally slow&rdquo;. Counsel is Nick Rowley. No defendant had responded by Saturday.</p>
+  <p><b>What to watch:</b> whether Anthropic publishes the access terms and Accenture&rsquo;s publication rights, and whether any defendant answers the complaint by asserting there was no agreement at all.</p>
+
+  <div class="div">
+    <p class="t">Where the accounts diverge</p>
+    <p><b>The substance.</b> Whether a paid commercial evaluator is independent. Anthropic&rsquo;s position is that outside evaluators &ldquo;do not reduce our accountability, but help to make it more verifiable&rdquo;, and it concedes the novelty directly: no standards yet exist for evaluators&rsquo; access or communications. Critics read the whole arrangement as self-policing designed to pre-empt regulation. This is a dispute about <em>significance</em>, not facts &mdash; nobody disputes the money, the duration or the access.</p>
+    <p><b>Cause.</b> The mundane explanation is capacity, and it is probably the true one. The 12 September essay promised evaluators with permanent, employee-level access &mdash; office access, company equipment, tool permissions comparable to internal risk teams. Almost nobody can staff that. The nonprofits that would satisfy the independence objection are small; a firm that can put a standing team inside a frontier lab for five years is, by construction, a large consultancy. Reach for that before reaching for evasion. But note what follows from it: the constraint is structural, so the same substitution will happen at every lab that tries this.</p>
+    <p><b>What it means for you.</b> Independence is not a vibe, it is three contract terms, and you can check them: <b>(1)</b> who can terminate the engagement and on what notice; <b>(2)</b> whether the evaluator may publish an unfavourable finding without the lab&rsquo;s editorial control &mdash; the essay promised exactly this, and neither account read for this story confirms it survived into the contract; <b>(3)</b> whether the evaluator sells anything else to the lab or its competitors. A billion dollars over five years is around $200m a year, which is a material revenue line for a business unit and creates precisely the incentive an auditor is supposed not to have. <b>Until those terms are published, treat this as access secured and independence unproven.</b> The observation that settles it is the first unflattering published report &mdash; that is still the thread&rsquo;s third question, and it is still unanswered.</p>
+  </div>
+
+  <details>
+    <summary>Dig deeper &mdash; why the lawsuit is the more interesting of the two documents</summary>
+    <div class="exp">
+      <p><b>The suit is weak on the law and strong as a description of the problem.</b> A Sherman Act &sect;1 claim needs an agreement, and what the plaintiffs have is an essay and three executives saying in public that they agree with it. Conscious parallelism &mdash; rivals independently reaching the same conclusion and saying so &mdash; is not a conspiracy, and public advocacy for a policy is close to the core of what the First Amendment protects. The July employee statement is better evidence, because it is an acknowledgement of the competitive pressure the parties are accused of relieving, but it is a statement asking <em>government</em> to act, which is the <em>Noerr-Pennington</em> safe harbour almost by definition. On today&rsquo;s public record this looks unlikely to survive a motion to dismiss.</p>
+      <p><b>And yet it identifies the trap precisely.</b> Anthropic&rsquo;s own co-founder Jack Clark described the pacing problem on 15 September as &ldquo;a collective action problem&rdquo; &mdash; one firm acting alone does not relieve the pressure on the rest. That is a correct diagnosis and it has an uncomfortable corollary: the only remedy that works is the one antitrust law exists to forbid. Competitors cannot lawfully agree among themselves to restrict output or degrade a product, however good their reason. This is exactly why Amodei&rsquo;s step 1 &mdash; the unilateral evaluator commitment &mdash; was the only part with a signature on it, and steps 2 and 3, coordination among firms and among governments, had no date, no signatory and no enforcement. The essay was structured to avoid this problem. The lawsuit says the structure did not work.</p>
+      <p><b>Score the thread honestly.</b> It is now <b>1.5 of 3</b>. An evaluator is named: yes. Access standing rather than project-scoped: yes on its face &mdash; five years and employee-level access is standing by any reading &mdash; but the independence terms that make standing access <em>worth</em> anything are unpublished, so this is half a point, not a point. First published report unflattering: nothing published. Compare OpenAI&rsquo;s 16 September framework, which named no evaluator, created no outside access and set no publication frequency; Anthropic has now done materially more than that, and the correct way to say so is that it has done more of a thing whose value still depends on terms nobody has seen.</p>
+      <p>Watch for one more thing: Accenture stock was reported up around <b>6% premarket today</b> on the announcement. An evaluation contract that moves the evaluator&rsquo;s share price is a commercial relationship first. That is not an accusation &mdash; it is the reason auditor independence rules exist in every other industry that has them.</p>
+    </div>
+  </details>
+
+  <div class="disc"><b>Disclosure, and it is not a formality on this story.</b> This brief is written with a model made by Anthropic. Anthropic is the subject of the first half of this story and a defendant in the second. The standing rule in this file is that the reader&rsquo;s own interests get the same scepticism as anyone&rsquo;s; the same applies here, and the reader should discount accordingly and check the sources below.</div>
+
+  <p class="sources"><b>Sources:</b> <a href="https://techcrunch.com/2026/09/18/anthropics-first-embedded-evaluator-is-accenture/">TechCrunch</a> &middot; <a href="https://www.engadget.com/2263235/anthropic-picks-accenture-for-third-party-ai-safety-evaluations/">Engadget</a> &middot; <a href="https://www.opb.org/article/2026/09/20/lawsuit-says-anthropic-openai-spacexai-and-google-made-illegal-agreement-on-ai-slowdown/">OPB</a>, carrying CNN&rsquo;s account of the complaint &middot; <a href="https://www.tradingpedia.com/2026/09/21/accenture-gains-6-premarket-on-anthropic-ai-safety-deal/">Tradingpedia</a> for the premarket move. <b>Honest limits:</b> Anthropic&rsquo;s own announcement and the complaint itself were <em>not</em> read &mdash; CNN returned 451 and CNBC 403 for a tenth consecutive day. Every figure above is second-hand. <b>Date caution:</b> the syndicated copy of the lawsuit story says &ldquo;filed Friday&rdquo; while carrying a 20 September dateline; 20 September was a Sunday, so the filing is taken as Friday <b>18 September</b>, consistent with CNN&rsquo;s 19 September original.</p>
+
+  <div class="fb">
+    <p>This thread has been scored three runs in a row and has now half-fired. What should it do next?</p>
+    <label><input type="radio" name="fb-evaluator" value="terms"> Chase the contract terms &mdash; access, termination, publication rights &mdash; and lead when they publish</label>
+    <label><input type="radio" name="fb-evaluator" value="litigation"> Follow the antitrust case; the governance story is downstream of it</label>
+    <label><input type="radio" name="fb-evaluator" value="merge"> Fold it into the lab safety-disclosures thread; they are one subject now</label>
+    <label><input type="radio" name="fb-evaluator" value="less"> Less of this &mdash; lab self-governance is not moving fast enough to warrant a lead</label>
+    <p>The disclosure above appears whenever this brief covers its own maker. Is that the right handling?</p>
+    <label><input type="radio" name="fb-disclosure" value="keep"> Yes &mdash; keep it prominent and keep the scepticism</label>
+    <label><input type="radio" name="fb-disclosure" value="footer"> Move it to the footer; I have read it enough</label>
+  </div>
+</article>
+
+<article id="tenyear">
+  <h2>Correction: the ten-year did go through 5%. This brief&rsquo;s correction was itself wrong</h2>
+  <div class="meta">
+    <span class="chip">US debt &amp; fiscal</span>
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">Primary source</span>
+  </div>
+
+  <div class="corr">
+    <p class="t">Correction &mdash; second on the same number in four days</p>
+    <p>On <b>18 September</b> this brief ran a lead headed by the claim that on Treasury&rsquo;s own par yield curve the ten-year had <b>not</b> printed above 4.94% in September, that the 5% crossing &ldquo;did not happen in the series of record&rdquo;, and that the 15 September lead built on it was withdrawn. <b>That correction was wrong.</b> Treasury&rsquo;s series, read again this morning with the column headers enumerated explicitly, shows the ten-year at <b>5.00% on Tuesday 15 September, 5.01% on Wednesday 16 September, 4.94% on Thursday and 5.01% again on Friday 18 September.</b> The 5% crossing happened. The 20 September issue then reported Friday&rsquo;s close as 4.93%; the correct figure is 5.01%.</p>
+  </div>
+
+  <p><b>What went wrong is identifiable, which is the only reassuring thing here.</b> The values printed on 18 and 20 September were read off the right page and out of the wrong columns. Treasury&rsquo;s table now carries a <b>1.5-month</b> tenor between the 1-month and 2-month columns, and the figures this brief published as the &ldquo;10-year&rdquo; are in every case the <b>7-year</b>, and those published as the &ldquo;2-year&rdquo; are the <b>1-year</b>. The 20-year and 30-year, which sit at the end of the row and can be counted backwards from the edge, were right both times. That is why the 18 September entry noticed the offset was not uniform and could not explain it.</p>
+  <p>So the original vendor-sourced figures &mdash; 5.00, 5.041, 5.016, 4.943 for 14 to 17 September &mdash; were out by +3, +4, +1 and 0 basis points against the official series. Not good enough to print to the basis point. <b>But the claim they carried was true, and this brief withdrew a true claim.</b></p>
+  <p><b>What to watch:</b> today&rsquo;s close, due on the same page tomorrow morning. The September high on the series of record is <b>5.01%</b>, set twice.</p>
+
+  <figure>
+    <svg viewBox="0 0 600 260" role="img" aria-label="Ten-year Treasury constant-maturity yield, daily, 1 to 18 September 2026, crossing 5 percent on 15 September">
+      <line x1="44" y1="226" x2="588" y2="226" stroke="#6b6a66" stroke-width="1"/>
+      <line x1="44" y1="166" x2="588" y2="166" stroke="#e0ddd6" stroke-width="1"/>
+      <line x1="44" y1="106" x2="588" y2="106" stroke="#e0ddd6" stroke-width="1"/>
+      <line x1="44" y1="46" x2="588" y2="46" stroke="#8a3324" stroke-width="1.5" stroke-dasharray="5 4"/>
+      <text x="40" y="230" text-anchor="end" font-size="11" fill="#6b6a66">4.70</text>
+      <text x="40" y="170" text-anchor="end" font-size="11" fill="#6b6a66">4.80</text>
+      <text x="40" y="110" text-anchor="end" font-size="11" fill="#6b6a66">4.90</text>
+      <text x="40" y="50" text-anchor="end" font-size="11" fill="#8a3324">5.00</text>
+      <polyline fill="none" stroke="#1c4f8a" stroke-width="2.5"
+        points="44,172 89,172 135,184 180,178 225,166 271,148 316,76 361,70 407,64 452,46 497,40 543,82 588,40"/>
+      <circle cx="452" cy="46" r="4" fill="#8a3324"/>
+      <circle cx="497" cy="40" r="4" fill="#8a3324"/>
+      <circle cx="588" cy="40" r="4" fill="#8a3324"/>
+      <text x="452" y="30" text-anchor="middle" font-size="11" fill="#8a3324">5.00</text>
+      <text x="520" y="22" text-anchor="middle" font-size="11" fill="#8a3324">5.01 (16th, 18th)</text>
+      <text x="44" y="246" font-size="11" fill="#6b6a66">1 Sep</text>
+      <text x="316" y="246" text-anchor="middle" font-size="11" fill="#6b6a66">10 Sep</text>
+      <text x="452" y="246" text-anchor="middle" font-size="11" fill="#6b6a66">15 Sep</text>
+      <text x="588" y="246" text-anchor="end" font-size="11" fill="#6b6a66">18 Sep</text>
+    </svg>
+    <figcaption>Ten-year Treasury constant-maturity yield, daily close, 1&ndash;18 September 2026. Dashed line at 5.00%. Source: <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202609">US Treasury Daily Par Yield Curve Rates</a>, read 21 September with column headers verified. Values: 4.79, 4.79, 4.77, 4.78, 4.80, 4.83, 4.95, 4.96, 4.97, 5.00, 5.01, 4.94, 5.01.</figcaption>
+  </figure>
+
+  <details>
+    <summary>Dig deeper &mdash; what survives, what is withdrawn, and the rule that has to change</summary>
+    <div class="exp">
+      <p><b>What survives.</b> The analytical claim from 17 September &mdash; that the market priced the Fed&rsquo;s first hike since 2023 as inflation control rather than as a fiscal or credit problem &mdash; survives on the corrected numbers and is a little cleaner on them. On Treasury&rsquo;s series the ten-year fell <b>7bp</b> from Wednesday&rsquo;s 5.01 to Thursday&rsquo;s 4.94, the thirty-year 6bp, the two-year 7bp (4.74 to 4.67). Then Friday gave the whole thing back: ten-year 5.01, two-year 4.76 &mdash; a <b>9bp</b> jump at the short end, the largest single-day move at that tenor this month. A two-year rising nine basis points the session after the market decided the hike was disinflationary is not a comfortable combination, and it is the observation this brief lost by reading the wrong column.</p>
+      <p><b>What is still withdrawn.</b> &ldquo;Highest since July 2007&rdquo;. That claim was never verified against a multi-decade series and still has not been. It may well be true &mdash; a 5.01% ten-year is plainly unusual &mdash; but this file does not have the history to say so and will not print it again without one. The 15 September figure of <b>5.041%</b> also stays withdrawn: the official close was 5.00, and 5.041 has no counterpart at any tenor that day.</p>
+      <p><b>The rule that has to change, and it is a different rule from the one written down on 18 September.</b> That day&rsquo;s lesson &mdash; go to the issuer, not to a summary of a blocked vendor page &mdash; was correct and stands. It was also insufficient, because it addressed <em>which page</em> and said nothing about <em>how to read it</em>. The new rule is narrow and checkable: <b>when pulling a value out of a wide numeric table, enumerate the column headers in the same request and count the position, never the label.</b> Treasury&rsquo;s table has twenty-three columns, several of them frequently blank, and a tenor was added to the middle of it. Counting backwards from the right-hand edge is what saved the 20-year and 30-year on both bad reads, and it is the sanity check to apply every time.</p>
+      <p><b>The thread&rsquo;s breaking observation is unchanged and still unbroken:</b> specifically <em>American</em> underperformance &mdash; a tailed thirty-year, or US yields rising while Bunds and JGBs fall. That test still cannot be run, because a dated Bund level and a dated ten-year JGB level have both now eluded this brief across five runs. Handelsblatt&rsquo;s front page carries DAX, Euro Stoxx, Brent and the euro this morning and no Bund yield. The 4 November refunding is where the test would show up.</p>
+    </div>
+  </details>
+
+  <p class="sources"><b>Source:</b> <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202609">US Treasury, Daily Par Yield Curve Rates, September 2026</a>, fetched twice this morning &mdash; once in summary form and once with the full column-header list and complete rows &mdash; the two readings agreeing. No Monday close yet; Friday 18 September is the latest date on the page.</p>
+
+  <div class="fb">
+    <p>Two corrections to the same figure in four days. How should this brief handle a number it keeps getting wrong?</p>
+    <label><input type="radio" name="fb-tenyear" value="prominent"> Keep correcting prominently, as here &mdash; this is what I want to see</label>
+    <label><input type="radio" name="fb-tenyear" value="quiet"> Correct it, but in a line rather than a lead; the process is less interesting than the yield</label>
+    <label><input type="radio" name="fb-tenyear" value="stop"> Stop printing daily yield levels at all unless something breaks a range</label>
+  </div>
+</article>
+
+<article id="sec">
+  <h2>The SEC wants to abolish the shareholder proposal. The clock started this morning</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The <em>Federal Register</em> published two SEC proposals this morning, starting a comment period that closes <b>20 November 2026</b>. The first, File No. <b>S7-2026-32</b> (Release 34-106383), would <b>rescind Rule 14a-8 in its entirety</b>. That is the rule under which a shareholder can require a company to put a proposal in its proxy statement and hold a vote on it. Under the proposal, &ldquo;the Federal proxy rules would no longer require companies to include in their proxy materials shareholder proposals on the basis that they satisfy procedural and substantive requirements established under Federal law.&rdquo; A companion amendment to Rule 14a-4(c) would widen management&rsquo;s discretionary voting authority over proposals kept out of the materials, with a shareholder opt-out per holding.</p>
+  <p>The stated ground is not policy but power. Chairman <b>Paul Atkins</b>: &ldquo;Absent authorization from Congress&mdash;which it has not granted for shareholder proposals&mdash;the Commission has no authority to determine which matters are a proper subject for a shareholder vote.&rdquo; The release argues &sect;14(a) of the Exchange Act does not reach the <em>scope</em> of matters put to a vote, and that the rule has been &ldquo;supplanting, and hindering the development of, state law&rdquo;.</p>
+  <p>The second proposal, <b>S7-2026-33</b>, is housekeeping with one live item: it would end the Notice of Exempt Solicitation under Rule 14a-6(g), drop the requirement to deliver an annual report to holders, and cut the broker search period from 20 business days to 5.</p>
+  <p><b>What to watch:</b> whether Delaware legislates, and whether index managers file.</p>
+
+  <details>
+    <summary>Dig deeper &mdash; what actually replaces it, and the numbers the release does and does not give</summary>
+    <div class="exp">
+      <p><b>Rescission is not abolition, and the difference matters.</b> Nothing in the proposal bars a shareholder proposal. It removes the <em>federal entitlement</em> to have one carried at the company&rsquo;s expense in the company&rsquo;s own proxy. What is left is state corporate law and the company&rsquo;s bylaws &mdash; which is to say, in most cases, whatever the board has written down. A shareholder who wants a vote without the board&rsquo;s cooperation would have to run an independent solicitation and pay for it, which costs six figures at a large issuer and is why Rule 14a-8 existed. Atkins&rsquo;s answer is to &ldquo;look to the state&rsquo;s legislature&rdquo; and &ldquo;the company&rsquo;s governing documents&rdquo;. He does not say what a shareholder in a state whose legislature has not acted should do in the meantime, and Delaware &mdash; where most large US issuers are chartered &mdash; has no such statute today.</p>
+      <p><b>The one empirical argument in the release cuts both ways.</b> It compares <b>34 to 66</b> proposals included per year in 1943&ndash;46 with <b>437 to 599</b> a year in 2020&ndash;25, and notes that in 2025 about <b>7%</b> of submitted proposals and <b>11%</b> of those actually voted on won majority support. Read one way that is a rule being used far beyond its original scale for causes most owners reject. Read the other way, roughly one proposal in nine that reaches a vote commands a majority of the shares &mdash; which is a real rate of owners telling boards something the board did not want asked, and the reason management dislikes the mechanism. The release does not give the figure that would settle it: how many proposals were <em>withdrawn after the company negotiated</em>, which is where most of this rule&rsquo;s effect has historically shown up and which never reaches a vote at all.</p>
+      <p><b>Why this belongs on a banks-and-markets beat rather than a governance one.</b> Rule 14a-8 is the cheapest route by which an outside owner forces a large financial institution to hold a recorded vote &mdash; on executive pay, on lobbying disclosure, on risk oversight, on concentration. Remove it and the remaining routes are a proxy fight, a lawsuit, or private engagement, all of which favour the largest holders and disadvantage everyone else. The institutions with the most to gain are the biggest issuers; the institutions with the most to lose are asset managers who use the mechanism cheaply on behalf of index funds. Watch whether the large index managers file comments, because if they do not, the practical answer is that they prefer private engagement anyway.</p>
+      <p><b>What this brief cannot tell you:</b> the Commission vote. Neither the press release nor the <em>Federal Register</em> text records a tally or a dissent, and Commissioner Uyeda published a supporting statement. Caroline Crenshaw, who dissented from earlier changes to this rule, left the Commission on 3 January 2026. The current composition and the vote count were not established here.</p>
+    </div>
+  </details>
+
+  <p class="sources"><b>Sources:</b> <a href="https://www.federalregister.gov/documents/full_text/text/2026/09/21/2026-19260.txt">Proposed rule, <em>Rescission of Rule 14a-8&rsquo;s Federal Regulation of Shareholder Proposals and Amendments to Rule 14a-4</em></a>, 91 FR, doc 2026-19260 &middot; <a href="https://www.federalregister.gov/documents/full_text/text/2026/09/21/2026-19259.txt"><em>Proxy Solicitation Modernization</em></a>, doc 2026-19259 &middot; <a href="https://www.sec.gov/newsroom/press-releases/2026-89-sec-proposes-rescission-shareholder-proposal-rule-reforms-proxy-solicitation-process">SEC press release 2026-89</a> (16 September) &middot; <a href="https://www.sec.gov/newsroom/speeches-statements/atkins-statement-proposals-rescind-rule-14a-8-amend-rule-14a-4-modernize-proxy-solicitation-091626">Chairman Atkins&rsquo;s statement</a>. Announced 16 September; published today, which is what starts the 60-day clock. This brief should have had it five days ago.</p>
+
+  <div class="fb">
+    <p>US financials is a core beat and this took five days to reach the issue. Open it as a thread?</p>
+    <label><input type="radio" name="fb-sec" value="yes"> Yes &mdash; track the comment file to the final rule</label>
+    <label><input type="radio" name="fb-sec" value="delaware"> Only if Delaware or another chartering state moves to fill the gap</label>
+    <label><input type="radio" name="fb-sec" value="no"> No &mdash; corporate governance rulemaking is not what I want this beat for</label>
+  </div>
+</article>
+
+<article id="massinflux">
+  <h2>A nationwide immigration emergency quietly entered its twenty-first month today</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip under">Underreported</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Among sixty-one notices in this morning&rsquo;s <em>Federal Register</em> sits doc <b>2026-19253</b>, &ldquo;Finding of Mass Influx of Aliens&rdquo;. Signed by Homeland Security Secretary <b>Markwayne Mullin</b> on <b>18 September</b>, effective on publication, it runs a further <b>180 days</b> &mdash; to roughly mid-March 2027. It finds that &ldquo;an actual or imminent mass influx of aliens is arriving at the southern border&rdquo; and, on that basis, requests &ldquo;the assistance of State and local governments in <b>all 50 States</b>&rdquo;.</p>
+  <p>The finding is the statutory precondition for a specific power. Under <b>8 U.S.C. &sect;1103(a)</b> and <b>28 CFR &sect;65.83</b>, once a mass influx is found, the Secretary may authorise a state or local police officer &mdash; with that officer&rsquo;s superiors&rsquo; consent &mdash; to <b>perform the duties of an immigration officer</b>. That is the route around the 287(g) process, which requires a negotiated written agreement with each individual agency.</p>
+  <p>The document cites its own lineage: an initial finding of <b>23 January 2025</b> (90 FR 8399), then extensions on <b>21 March 2025</b> (90 FR 13622), <b>17 September 2025</b> (90 FR 45396) and <b>21 March 2026</b> (91 FR 14703). Today&rsquo;s is the <b>fifth instrument in the series</b>, and it means the finding has run without a break since January 2025 &mdash; twenty months, renewed every six.</p>
+  <p><b>What to watch:</b> any published count of officers actually authorised under &sect;1103(a) rather than under 287(g).</p>
+
+  <details>
+    <summary>Dig deeper &mdash; why a rolling emergency is different from a long one</summary>
+    <div class="exp">
+      <p><b>The legal shape is the story, not the policy.</b> Congress wrote &sect;1103(a) as an emergency valve: in a genuine surge, the Secretary should not have to negotiate agency by agency before local police can help. Every feature of the power follows from that premise &mdash; it is broad, it is fast, it requires no agreement, and it is bounded only by the Secretary&rsquo;s own finding that the emergency exists. Renewed on schedule five times across twenty months, it stops being an emergency valve and becomes a standing alternative to the statutory process Congress designed for the ordinary case. Nothing about that is unlawful on its face. It is the same structural move this file has now recorded five times in three weeks &mdash; &sect;338 unlitigated for 96 years, the Alien Terrorist Removal Court unused for 30, a bank supervision threshold carried inside a housing bill, an excepted-service schedule created by executive order &mdash; a dormant or narrow authority switched on and then simply left on.</p>
+      <p><b>Be precise about what the finding does and does not do.</b> It does not itself deputise anyone. It unlocks the Secretary&rsquo;s discretion to do so. The operative question &mdash; how many officers, in which agencies, in which states, are actually carrying &sect;1103(a) authority today &mdash; is not answered by this document and this brief could not find it answered anywhere. That is the number that converts a paper authority into a fact on the ground, and its absence is why the renewal passes without comment. By contrast DHS publishes a 287(g) participation list, which is why 287(g) generates local news and this does not.</p>
+      <p><b>Note the internal tension, because it is on the face of the document.</b> The finding rests on a mass influx &ldquo;arriving at the southern border&rdquo;, and the relief requested is assistance in all fifty states. Those are different geographies, and the document does not bridge them. The administration has spent the year publicising historically low southern-border encounters; a finding of imminent mass influx sits oddly beside that, and the same tension was noted when the March 2026 extension issued. A litigant challenging a specific deputisation would start here &mdash; not with the policy, but with whether the predicate finding is supported.</p>
+      <p><b>How this was found, since that is the transferable part:</b> by reading the whole day&rsquo;s notice list rather than the entry the watchlist pointed at. It sat between two FERC water-quality notices and an HHS request for information on wireless radiation, among sixty-one items dominated by information-collection renewals. Nothing flagged it. No reachable news outlet appears to have covered today&rsquo;s renewal at all.</p>
+    </div>
+  </details>
+
+  <p class="sources"><b>Sources:</b> <a href="https://www.federalregister.gov/documents/full_text/text/2026/09/21/2026-19253.txt">Finding of Mass Influx of Aliens, doc 2026-19253</a>, full text &middot; <a href="https://www.federalregister.gov/api/v1/documents.json?conditions[publication_date][is]=2026-09-21&amp;conditions[type][]=NOTICE&amp;per_page=100">the day&rsquo;s complete notice list</a> &middot; background on the January 2025 original and its renewals from the <a href="https://www.americanimmigrationcouncil.org/fact-sheet/mass-influx-declaration/">American Immigration Council</a> and the <a href="https://immpolicytracking.org/policies/dhs-makes-finding-of-mass-influx-of-aliens-at-southern-border-requests-state-and-local-assistance-nationwide/">Immigration Policy Tracking Project</a>. <b>Honest limit:</b> no count of officers authorised under &sect;1103(a) was obtained, and DHS&rsquo;s own publication page was not reached.</p>
+
+  <div class="fb">
+    <p>Found by reading a whole day&rsquo;s notice list. Worth a thread?</p>
+    <label><input type="radio" name="fb-massinflux" value="yes"> Yes &mdash; track it to the March 2027 renewal and chase the officer count</label>
+    <label><input type="radio" name="fb-massinflux" value="litigation"> Only if someone challenges a deputisation</label>
+    <label><input type="radio" name="fb-massinflux" value="no"> No</label>
+    <p>Underreported finds like this one:</p>
+    <label><input type="radio" name="fb-under" value="more"> More &mdash; this is the most valuable thing the brief does</label>
+    <label><input type="radio" name="fb-under" value="same"> The current balance is right</label>
+    <label><input type="radio" name="fb-under" value="less"> Fewer &mdash; not at the cost of a headline story</label>
+  </div>
+</article>
+
+<article id="aidialogue">
+  <h2>Washington and Beijing have agreed to telephone each other about AI accidents</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">World economy</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>Sunday&rsquo;s talks at JPMorgan&rsquo;s headquarters ran about <b>eight hours</b> and produced the first concrete thing this thread has seen since it opened on 5 September. Treasury Secretary <b>Scott Bessent</b>, Trade Representative <b>Jamieson Greer</b> and Vice Premier <b>He Lifeng</b> agreed to pursue a <b>US&ndash;China AI Dialogue</b>, with a US proposal for a <b>notification mechanism</b> covering AI incidents rising &ldquo;up to a national security level&rdquo;. Officials expect to reconvene in <b>Shenzhen in about two months</b>. Bessent called the talks &ldquo;very successful&rdquo;. Accounts also report progress on tariff carve-outs.</p>
+  <p>The summit itself is <b>Thursday 24 September</b>, with Xi arriving Wednesday.</p>
+  <p>Weigh this against the record. A Reuters report on 5 September said AI safety talks were being arranged; a White House official said no such meeting was planned; both capitals publicly rejected the pacing argument on 14 September, Beijing calling it a &ldquo;Cold War playbook&rdquo;. The meeting happened anyway, and produced a named mechanism and a follow-up venue. <b>When statements and meetings disagree, weight the meeting.</b></p>
+  <p><b>What to watch:</b> whether Thursday&rsquo;s readout gives the mechanism a threshold, a channel and a named authority on each side, or leaves it at &ldquo;dialogue&rdquo;.</p>
+
+  <div class="div">
+    <p class="t">Where the accounts diverge</p>
+    <p><b>The substance.</b> What was actually agreed. Bloomberg reports the two sides agreed to <em>launch</em> an AI dialogue; CNN reports Bessent <em>proposed</em> an incident-notification mechanism; the Washington Times headlines a communication line as <em>opened</em>. Those are three different degrees of commitment, and the gap between &ldquo;proposed&rdquo; and &ldquo;agreed to launch&rdquo; is the whole question.</p>
+    <p><b>Cause.</b> Not spin, but sequence: this is a briefing after a preparatory meeting three days before a summit, and the deliverable is being held for Thursday. A briefer will describe an American proposal that the Chinese side did not reject as agreement to pursue; a reporter working from a US source will hear &ldquo;we proposed&rdquo;. No Chinese-side readout was reached for this story, which is the missing control &mdash; and its absence is itself informative, because a jointly announced mechanism would normally be announced jointly.</p>
+    <p><b>What it means for you.</b> Read the ceiling, not the headline. An incident-notification channel is the AI equivalent of a military hotline: it does not constrain what either side builds, it only reduces the chance that an accident is read as an attack. That is worth having and it is much less than the pacing proposal both governments rejected a week ago. <b>The test is Thursday&rsquo;s readout, and there are three things to look for:</b> a defined trigger threshold, a named authority at each end, and whether Beijing announces the same thing in its own words. Two months to Shenzhen is a long time for a mechanism whose value is speed; if the next step is a meeting rather than a working channel, this is a summit deliverable rather than a safety instrument.</p>
+  </div>
+
+  <div class="disc"><b>Disclosure:</b> as above, this brief is written with an Anthropic model, and US frontier labs are the regulated parties in any AI-safety understanding of this kind.</div>
+
+  <p class="sources"><b>Sources:</b> <a href="https://www.aljazeera.com/economy/2026/9/20/us-china-open-high-level-talks-ahead-of-trump-xi-summit">Al Jazeera</a> &middot; <a href="https://www.washingtontimes.com/news/2026/sep/21/us-china-open-communication-line-alarming-ai-incidents/">Washington Times</a> &middot; <a href="https://www.euronews.com/2026/09/21/us-and-china-to-seek-ai-dialogue-to-communicate-shared-concerns">Euronews</a> &middot; <a href="https://asia.nikkei.com/">Nikkei Asia</a> front page &middot; <a href="https://www.scmp.com/news/china">SCMP</a> China desk. <b>Marked single-sourced deliberately:</b> every account traces to the same round of US briefings after the meeting, with Bloomberg and CNN the two originals and the rest downstream. Both originals were reached only through search summaries &mdash; CNN returned 451 and CNBC 403.</p>
+
+  <div class="fb">
+    <p>This thread has run five times in three weeks. Is the cadence right?</p>
+    <label><input type="radio" name="fb-aidialogue" value="right"> Right &mdash; keep running it through Thursday&rsquo;s readout</label>
+    <label><input type="radio" name="fb-aidialogue" value="readout"> Too often &mdash; wait for the readout and run it once, properly</label>
+    <label><input type="radio" name="fb-aidialogue" value="more"> Not enough &mdash; the China channel deserves more space than it is getting</label>
+  </div>
+</article>
+
+<article id="press">
+  <h2>CNN, MS NOW and Politico sued this morning. The networks have stopped sharing the pool</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The three outlets the President declared banned on <b>Friday 18 September</b> filed suit in <b>federal court in Washington, DC</b> this morning against the President and several senior officials. The claims are <b>First Amendment</b> viewpoint discrimination and retaliation, and <b>Fifth Amendment</b> due process &mdash; credentials revoked, the complaint says, &ldquo;without notice or process&rdquo;. They seek an immediate order restoring access. From the complaint: the President banned the three outlets &ldquo;in disregard of the most basic guarantees of the First Amendment&rdquo;.</p>
+  <p>Saturday&rsquo;s issue reported that reporters were still inside on Friday afternoon. That changed over the weekend: journalists from each outlet &mdash; MS NOW&rsquo;s Akayla Gardner, CNN&rsquo;s Betsy Klein, Politico&rsquo;s Cheyenne Haslett &mdash; were turned away by the Secret Service, which took their passes.</p>
+  <p><b>The consequential part is not the lawsuit.</b> The White House television pool runs on a five-network rotation. With CNN excluded, the networks have <b>suspended pool coverage</b> of the President. That is a collective action by outlets who are not parties, and it is the first time in this episode that the cost has fallen on the White House rather than on the banned outlets.</p>
+  <p><b>What to watch:</b> whether a TRO issues this week, and how long the pool suspension holds.</p>
+
+  <details>
+    <summary>Dig deeper &mdash; why the precedent is strong and the remedy may still be slow</summary>
+    <div class="exp">
+      <p><b>The law here is unusually settled for a First Amendment question.</b> Courts have twice held during this administration that suspending a reporter&rsquo;s White House pass violated the Constitution, and the line of authority runs back to <em>Sherrill v. Knight</em> (D.C. Cir. 1977): the White House need not open its grounds to everyone, but having created a press facility it cannot deny access to an individual journalist arbitrarily, and must give notice, a chance to respond, and a written decision. The stated rationale here &mdash; that it is &ldquo;wrong&rdquo; to allow people to write &ldquo;purposely negative stories&rdquo; &mdash; is close to a stipulation that the decision was content-based. Jameel Jaffer of the Knight First Amendment Institute called it &ldquo;pretty clearly unconstitutional&rdquo; before the suit was filed.</p>
+      <p><b>The complication is that a strong case does not guarantee a fast remedy.</b> The Associated Press won on similar ground after being excluded from the Oval Office, Air Force One and certain events, and its case is still running; the practical effect of a favourable ruling has repeatedly been narrowed on appeal or absorbed by changing the format of the event rather than the rule. An organisation-level ban on three outlets is a larger act than excluding one reporter, which cuts in the plaintiffs&rsquo; favour on the merits and against them on speed, because the government has more to appeal.</p>
+      <p><b>Which is why the pool suspension is the thing to watch.</b> The rotation exists because a single camera and a small group of reporters cover events the full press corps cannot attend, and the resulting material is shared with everyone including the outlets now barred. Suspending it removes the video and the print report from the President&rsquo;s own daily coverage. It is a private remedy, available immediately, requiring no judge, and it can be withdrawn the moment it becomes inconvenient &mdash; which is the real question. Collective refusals by commercial competitors are historically fragile; the first network to resume gets the access, and each of them knows it.</p>
+      <p><b>What this brief has not established:</b> the case number and the assigned judge, the full list of defendants, and whether a TRO application was filed with the complaint or is to follow. The complaint itself was not read.</p>
+    </div>
+  </details>
+
+  <p class="sources"><b>Sources:</b> <a href="https://www.ms.now/news/ms-now-cnn-politico-lawsuit-trump-media-ban">MS NOW</a> (a party) &middot; <a href="https://www.npr.org/nx-s1-5975451">NPR</a> &middot; <a href="https://www.nbcnews.com/politics/white-house/ms-now-journalists-denied-access-white-house-trump-announced-ban-rcna598677">NBC News</a>, for the weekend denials and the Jaffer quote. NPR and NBC are independent of the three plaintiffs, which is what makes this corroborated rather than single-sourced. The <em>Washington Post</em>&rsquo;s account of the pool suspension returned 403 and was not read. <b>Date note:</b> one account labels 19 September as a Friday; it was a Saturday. The announcement was Friday <b>18</b> September and the denials of entry were over the following two days.</p>
+
+  <div class="fb">
+    <p>How should this be followed?</p>
+    <label><input type="radio" name="fb-press" value="thread"> Open a thread &mdash; track it to a ruling</label>
+    <label><input type="radio" name="fb-press" value="ruling"> Run it again only when a court acts</label>
+    <label><input type="radio" name="fb-press" value="pool"> The pool suspension is the story &mdash; follow that, not the docket</label>
+  </div>
+</article>
+
+<article id="hormuz">
+  <h2>Two more tankers hit this morning, and seventeen ships crossed Hormuz all weekend</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>Two tankers were struck in the Strait of Hormuz today &mdash; an inbound tanker, two crew with minor injuries, and an outbound LPG carrier, crew safe. Neither vessel was named and neither projectile was identified; UKMTO did not attribute either. That makes <b>at least five</b> attacks or security incidents involving tankers since <b>16 September</b>, one of which breached a hull and started a fire. The Joint Maritime Information Center rates the threat <b>SEVERE</b> and reports that IRGC Navy attacks, attempted attacks and harassment have continued.</p>
+  <p><b>The number that matters is the traffic.</b> Seventeen commodity vessels transited over the whole weekend, against roughly <b>125 a day</b> before the war. This brief&rsquo;s prior figures &mdash; four transits on Tuesday 16 September, seven on the 15th, a ten-day average of 18 &mdash; are daily counts, and cannot be added to a weekend total; but seventeen across Saturday and Sunday is consistent with them and no better.</p>
+  <p>Still absent, and now unfired for <b>fourteen days</b>: the published coordinates of Iran&rsquo;s restricted zone, and any published tariff for the authorised-passage regime the IRGC announced on 18 September.</p>
+  <p><b>What to watch:</b> whether owners comply with Iranian authorisation or keep staying away. That distinction &mdash; regime versus threat &mdash; is the whole thread.</p>
+
+  <details>
+    <summary>Dig deeper &mdash; what an unattributed strike means when one party has claimed others</summary>
+    <div class="exp">
+      <p><b>Do not resolve attribution, and notice why that is not fence-sitting.</b> Iran claimed the <em>Trend</em> on 18 September explicitly, as a penalty for &ldquo;illegal passage&rdquo;. It has not claimed today&rsquo;s two, or the two of 16&ndash;17 September. There are two readings and this brief cannot choose between them on today&rsquo;s evidence. Either the IRGC is claiming the strikes that serve its declared permission regime and leaving the others deniable, which is what a party building a legal practice would do; or there is more than one actor in the channel. The first is more likely on the pattern recorded since 6 July &mdash; <b>22 of 35 projectile strikes on the southern Omani route</b>, and most incidents hitting <em>engine rooms</em> &mdash; because disabling a ship in a narrow channel is cheap, deniable and far better at deterring owners than sinking one. But &ldquo;more likely&rdquo; is not attribution.</p>
+      <p><b>Hold the measurement discipline that this thread keeps needing.</b> Transit counts come in three incompatible units: gCaptain&rsquo;s figures are <em>daily</em> counts from Reuters preliminary data; Lloyd&rsquo;s List Intelligence publishes <em>weekly averages</em>; and CENTCOM&rsquo;s claims are in <em>barrels assisted</em>, not hulls. Barrels and hulls are not contradictory &mdash; a market can move oil on few large ships &mdash; and this is exactly where the Wright and CENTCOM volume claims have survived scrutiny they should not have. No official transit count has been published since <b>28 February</b>, which remains the single number that would settle the argument.</p>
+      <p><b>The consequence is not at the strait, it is at a truck stop.</b> The chain this brief has been running as one story holds: Aramco is routing roughly <b>60 million barrels</b> through Hormuz across September and October because the East&ndash;West pipeline is still damaged; that lengthens the haul at the moment vessels became unobtainable; physical Brent has decoupled from front-month futures by $20&ndash;30; and US diesel took a twelfth consecutive record this morning. Qatar&rsquo;s energy minister told gCaptain that Bessent is &ldquo;wrong&rdquo; about the strait&rsquo;s future &mdash; an interested party, but the interested party with the best information about LNG movements through it.</p>
+      <p><b>Still missing after seven runs:</b> a war-risk premium quoted for a named Gulf passage, or a current Joint War Committee listed-areas text. The JWC was shown on 20 September to be reachable and to publish dated decisions &mdash; it widened its Black Sea listing on the 18th &mdash; so the instrument works and the Gulf figure is obtainable. Nobody has published one.</p>
+    </div>
+  </details>
+
+  <p class="sources"><b>Sources:</b> <a href="https://gcaptain.com/two-more-tankers-hit-in-strait-of-hormuz-as-attacks-mount/">gCaptain</a>, carrying UKMTO and Joint Maritime Information Center material and Reuters preliminary transit data, plus its <a href="https://gcaptain.com/">front page</a> for the Qatar remarks &middot; <a href="https://www.aljazeera.com/news/">Al Jazeera</a> news index, which carries Iran&rsquo;s claim that the US is preparing to resume strikes. Single-sourced: one maritime outlet relaying two organisations&rsquo; data. No premium print, no coordinates, no tariff.</p>
+
+  <div class="fb">
+    <p>This thread has run nearly every issue since 11 September.</p>
+    <label><input type="radio" name="fb-hormuz" value="right"> Cadence is right &mdash; it is the biggest thing happening</label>
+    <label><input type="radio" name="fb-hormuz" value="chain"> Run it only inside the oil-and-pump-price chain, never separately</label>
+    <label><input type="radio" name="fb-hormuz" value="less"> Less &mdash; wake it on transit counts and premiums only</label>
+  </div>
+</article>
+
+<article id="datacenters">
+  <h2>Data centres are on the ballot in eighteen Ohio towns in six weeks</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>On <b>3 November</b>, voters in <b>eighteen Ohio municipalities and townships</b> decide local measures on data centres. Nine of them &mdash; Conneaut, Defiance, Granville, Oregon, Pataskala, Piqua, Sunbury, Trenton and Upper Sandusky &mdash; are citizen petitions mirroring a proposed statewide ban on data centres drawing more than <b>25 megawatts</b>. A referendum on a specific project is on the ballot in Ashville; three petitions in Sidney are headed for a special election after the Ohio Supreme Court held the city clerk had illegally blocked them.</p>
+  <p>This is no longer only local. On <b>14 July 2026</b>, New York Governor Kathy Hochul issued <b>Executive Order 62</b>, the first statewide moratorium on large data centres: the Department of Environmental Conservation pauses review of incomplete permit applications for facilities that can consume <b>50MW or more</b>, while the Department of Public Service prepares a generic environmental impact statement.</p>
+  <p>NPR, which published a piece on this today, reports the backlash is reshaping politics community by community, and separately that non-disclosure agreements around data-centre deals are drawing legislative attention.</p>
+  <p><b>What to watch:</b> how many of the eighteen pass, and whether any of the nine identical petitions fails.</p>
+
+  <details>
+    <summary>Dig deeper &mdash; the megawatt threshold is the whole design, and it points back at FERC</summary>
+    <div class="exp">
+      <p><b>Notice what these measures regulate.</b> Not &ldquo;AI&rdquo;, not &ldquo;technology companies&rdquo;, not emissions &mdash; <b>electrical demand at a single site</b>. Ohio&rsquo;s petitions use 25MW, New York&rsquo;s order uses 50MW, and the federal Ratepayer Protection Act (H.R. 9340, out of House Energy and Commerce 52&ndash;0 in July, no floor vote) uses 100MW. Three levels of government, three different thresholds, one variable. That is a strong signal about what the fight is actually about, and it is not land use or noise: it is who pays for the generation, transmission and distribution upgrades needed to serve a very large new load. A megawatt threshold is a jurisdictional hook that survives a preemption argument better than a rule about what the building does inside, because connecting load to a distribution system is about as squarely local as regulation gets.</p>
+      <p><b>This is the retail end of a story this brief has been covering from the wholesale end.</b> FERC issued show-cause orders on 10 September to all six jurisdictional market operators &mdash; PJM, MISO, SPP, CAISO, ISO-NE, NYISO &mdash; to revise how they interconnect large co-located loads or justify their current rules, in docket RM26-4, and conspicuously left <em>cost allocation</em> open. Cost allocation is what reaches a household bill, through a state rate case. What is on the Ohio ballot is the same question arriving from below, before the federal proceeding has answered it, and arriving in a form that binds a specific parcel rather than a tariff.</p>
+      <p><b>Two cautions about how to read the vote.</b> First, a moratorium is a pause, not a decision; New York&rsquo;s order pauses <em>incomplete</em> applications pending a study, which is a real constraint on new entrants and no constraint at all on projects already permitted. Second, be careful with the polling. A figure circulating in coverage of this story holds that roughly <b>seven in ten Americans</b> oppose an AI data centre being built near them; this brief could not reach the underlying poll and is reporting it as attributed rather than as a measurement. Stated opposition to a nearby facility is among the least predictive survey questions there is, and the eighteen ballot lines on 3 November will be a far better instrument than any poll, because they are votes.</p>
+      <p><b>The disclosure applies here too:</b> this brief is written with a model whose training and serving depend on exactly the facilities being voted on.</p>
+    </div>
+  </details>
+
+  <p class="sources"><b>Sources:</b> the Ohio detail is <a href="https://ohiocapitaljournal.com/2026/09/14/data-centers-are-on-the-november-ballot-in-these-18-ohio-communities/">Ohio Capital Journal</a>, 14 September, republished by Cleveland Scene and Cleveland Jewish News &mdash; <b>one newsroom, not three</b>, and its page returned 403 here, so the list of communities comes through a search summary of it &middot; New York&rsquo;s order via <a href="https://www.governor.ny.gov/news/first-statewide-moratorium-new-hyperscale-data-centers-launched-governor-kathy-hochul">the Governor&rsquo;s office</a>, <a href="https://www.nbcnews.com/news/us-news/new-york-impose-countrys-first-statewide-moratorium-data-centers-rcna587429">NBC News</a> and law-firm notes, which is properly corroborated &middot; <a href="https://text.npr.org/">text.npr.org</a> for the two NPR headlines. <b>Honest limit:</b> NPR&rsquo;s article itself could not be read &mdash; direct fetches timed out and two member-station URLs returned 404 &mdash; so nothing is attributed to its contents beyond its headlines.</p>
+
+  <div class="fb">
+    <p>Where AI capex meets a ballot box. Keep following it?</p>
+    <label><input type="radio" name="fb-datacenters" value="yes"> Yes &mdash; and report the 3 November results</label>
+    <label><input type="radio" name="fb-datacenters" value="merge"> Fold it into the existing AI power &amp; grid thread</label>
+    <label><input type="radio" name="fb-datacenters" value="no"> No &mdash; local ballot measures are below this brief&rsquo;s altitude bar</label>
+  </div>
+</article>
+
+<h2 class="section" id="florida">Florida &amp; Tampa Bay</h2>
+
+<article id="springs">
+  <h2>The state has settled the springs case and must write nine cleanup plans again</h2>
+  <div class="meta">
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>The Florida Department of Environmental Protection has settled administrative challenges brought by the <b>Florida Springs Council</b> and <b>Friends of the Wekiva River</b>, and will write new <b>Basin Management Action Plans</b> for nine springs: seven on the Suwannee River in north Florida, plus <b>Wekiwa Springs</b> and <b>Rock Springs</b> outside Orlando. Under the agreement DEP must increase water monitoring and enforcement, verify that agricultural best-management practices are actually working, and <b>expand septic restrictions</b> in the Wekiwa and Rock springshed &mdash; prohibiting new conventional septic systems and requiring existing ones to be upgraded. Septic tanks are <b>52%</b> of the nitrogen load in that springshed. The groups drop their challenges; DEP says its 2025 plans can now take effect.</p>
+  <p>The background is a <b>2023 First District Court of Appeal</b> ruling that invalidated several BMAPs. The Springs Council sought hearings in 2025 on the Suwannee and Wekiwa plans, arguing they lacked project lists, monitoring, and any mechanism for pollution from future population growth. &ldquo;BMAPs are the only regulatory strategy we have in Florida to take a polluted body of water and make it clean again,&rdquo; said executive director <b>Ryan Smart</b>.</p>
+  <p><b>Why it runs here, in a Tampa Bay brief.</b> Nitrogen from septic systems and agriculture is the same mechanism behind Florida&rsquo;s coastal water problems, and a BMAP is the instrument. A settlement that makes DEP restrict septic systems in one springshed, with an enforceable agreement behind it, sets the template the next petitioner points at &mdash; including in basins closer to Pinellas and Pasco, where septic-to-sewer conversion is a live and expensive local fight.</p>
+  <p><b>What to watch:</b> whether the new plans actually carry project lists and dates, which is what the last set lacked.</p>
+  <p class="sources"><b>Source:</b> <a href="https://insideclimatenews.org/news/17092026/florida-springs-cleanup-plan-settlement/">Inside Climate News</a>, 17 September. Single-sourced &mdash; one newsroom, and no second account was found. <b>This brief is four days late to it</b>, and found it by checking WUSF&rsquo;s front page rather than by any thread. The settlement document itself was not read, so the deadlines and any enforcement timetable are unknown; a figure of 150 days for enforcement appears in a secondary summary and is <em>not</em> used here because it could not be confirmed.</p>
+
+  <div class="fb">
+    <p>Florida&rsquo;s local bar &mdash; was this the right call?</p>
+    <label><input type="radio" name="fb-springs" value="yes"> Yes &mdash; state-level environmental rulemaking belongs in the Florida section</label>
+    <label><input type="radio" name="fb-springs" value="closer"> Only when it reaches Pasco, Pinellas or Tampa</label>
+    <label><input type="radio" name="fb-springs" value="no"> No &mdash; this should have been a short item</label>
+  </div>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Everything else found this run that is worth knowing and did not clear the lead bar. The visible line is the judgement; open one for the substance, the sourcing and the reason it is below the line. Thirteen items.</p>
+
+<details class="short" id="s-diesel">
+<summary><span class="chip">Energy &amp; grid</span> AAA diesel took a twelfth consecutive record this morning at $6.5107 &mdash; but the climb has nearly stopped, and petrol has restarted.</summary>
+<div class="body">
+<p>AAA&rsquo;s national averages for <b>21 September</b>: diesel <b>$6.5107</b> against $6.5050 yesterday, a rise of <b>0.57 of a cent</b>. Week ago $6.2301, month ago $5.5764, year ago $3.6958 &mdash; so <b>+76.2% year on year</b> and <b>+16.8% in thirty days</b>, the thirty-day figure being the one that matters for freight repricing. Records now run 10&ndash;21 September inclusive. Petrol is <b>$4.4786</b> against $4.4761, up a quarter of a cent after Sunday&rsquo;s dead stop; week ago $4.3163, year ago $3.1834.</p>
+<p>The informative number is the deceleration, not the record. Diesel rose 5.2 cents on Saturday, 1.8 on Sunday and 0.6 today. Three consecutive smaller increases is the first thing in twelve days that looks like the top of a move &mdash; but it is three days, it is a daily card average, and the diesel-to-petrol spread is still <b>$2.03</b>. The numbers that would mean actual relief remain a distillate inventory build or refinery utilisation breaking below the high 90s, and neither has happened. <b>The EIA weekly print lands tomorrow, Tuesday 22 September</b>, and is the first federal survey to cover a full week above $6.40; the series still ends at $6.285 for the week to 14 September.</p>
+<p class="why">Below the line because a twelfth record in a run of twelve is not new information, and the deceleration needs tomorrow&rsquo;s federal print to mean anything. If the EIA number comes in soft, this leads.</p>
+<p class="sources"><a href="https://gasprices.aaa.com/">AAA national averages</a> (primary) &middot; <a href="https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm">EIA weekly retail prices</a>. <b>Primary source.</b></p>
+</div>
+</details>
+
+<details class="short" id="s-h1b">
+<summary><span class="chip">US politics &amp; policy</span> The $100,000 H-1B charge took effect this morning, and three days on nothing has been filed in court.</summary>
+<div class="body">
+<p>The proclamation <em>Restriction on Entry of Certain Nonimmigrant Workers</em>, signed Friday 18 September, is effective <b>today</b> and expires 21 September 2027. Yesterday&rsquo;s lead named the observation that would settle whether this is a renewal or a re-issuance of an instrument Judge Leo Sorokin vacated in June: whether the plaintiff states go back to him in <em>days</em>, meaning they read the two texts as the same document, or in <em>weeks</em>, meaning there is something new in it. Today is day three and no filing was found. One account notes the requirement&rsquo;s legality is now contested in <b>two</b> federal appeals courts, which this file did not previously have.</p>
+<p>Neither instrument had published in the <em>Federal Register</em> as of this morning &mdash; a presidential-documents query for 18&ndash;23 September returns five items, all signed on the 16th or the 11th, and none of them these. That gap between signature and publication is itself worth holding: the White House actions index beat the Register by at least three days again.</p>
+<p class="why">Below the line because an effective date arriving as announced is the calendar, and an absence on day three is not yet evidence of anything. It leads the day a state files or the text differs.</p>
+<p class="sources"><a href="https://www.whitehouse.gov/presidential-actions/">White House presidential-actions index</a> &middot; <a href="https://www.federalregister.gov/api/v1/documents.json?conditions[publication_date][gte]=2026-09-18&amp;conditions[publication_date][lte]=2026-09-23&amp;conditions[type][]=PRESDOCU">FR presidential documents, 18&ndash;23 September</a> &middot; immigration-bar commentary via search. <b>Primary source</b> for the instrument; the litigation status is second-hand. <em>Disclosure: written with an Anthropic model; AI labs are heavy users of this visa category.</em></p>
+</div>
+</details>
+
+<details class="short" id="s-iranun">
+<summary><span class="chip">Geopolitics</span> The UN mission that found reasonable grounds to believe US forces committed war crimes in Iran presents in Geneva today. The White House called the Council &ldquo;unserious nonsense&rdquo;.</summary>
+<div class="body">
+<p>The Independent International Fact-Finding Mission on Iran, chaired by <b>Sara Hossain</b>, presents to the Human Rights Council today. Its findings, reported here on 17 September: reasonable grounds to believe US forces committed the war crime of indiscriminate attack in two strikes on <b>28 February</b> &mdash; the Shajareh Tayyebeh primary school at <b>Minab</b>, where the mission found the US failed to verify and failed to update targeting information, characterising this as more than mere negligence; and a Precision Strike Missile attack at <b>Lamerd</b> on a sports complex and residential area, 22 civilian deaths.</p>
+<p>New detail since: the same report finds killings by Iranian security forces &ldquo;occurred on a massive scale in all provinces&rdquo;, with at least <b>221 children</b> reportedly killed, some as young as two, and at least <b>29 men executed</b> between March and August 2026 after expedited trials, five of them publicly. The White House response is a dismissal of the forum rather than of the findings: the Council &ldquo;has accomplished nothing for human rights while spouting unserious nonsense for decades&rdquo;. <b>That is not the substantive response this thread named as its trigger</b>, and the Pentagon&rsquo;s own investigation remains unreleased &mdash; the gap between the two is still the thing to watch.</p>
+<p class="why">Below the line because a scheduled presentation of findings already covered is the calendar, and a statement dismissing the venue is not movement. It leads on the Pentagon investigation, a substantive State or Defense response, or an HRC resolution doing more than noting the report.</p>
+<p class="sources"><a href="https://www.ohchr.org/en/press-releases/2026/09/iran-civilians-trapped-between-extreme-state-repression-and-violations">OHCHR</a> &middot; <a href="https://news.un.org/en/story/2026/09/1168358">UN News</a> &middot; <a href="https://www.democracynow.org/2026/9/18/headlines/un_fact_finding_mission_finds_evidence_us_committed_war_crimes_in_iran">Democracy Now</a>. <b>Independent corroboration.</b> The mission&rsquo;s report text was again not reached.</p>
+</div>
+</details>
+
+<details class="short" id="s-canada">
+<summary><span class="chip">World economy</span> A memorandum published this morning orders Canadian goods stripped out of federal procurement &mdash; and the import bans bite in eight days with still nothing filed in any court.</summary>
+<div class="body">
+<p>Presidential memorandum <b>Restoring Reciprocity in Government Procurement</b>, signed <b>16 September</b>, published today at 91 FR 59979. It directs the OMB Director and the Trade Representative to &ldquo;identify and take all steps permitted by applicable law&rdquo; to remove or restrict <b>Canadian-origin items</b> from federal procurement, to notify agencies of domestic alternatives, and to report on whether Canadian access should be restored. Authority is 3 U.S.C. 301. Stated ground: Canadian &ldquo;Buy Canadian&rdquo; policies and provincial procurement barriers, against Canadian preferential access to more than <b>$280bn</b> a year of US federal procurement. No deadlines.</p>
+<p>Meanwhile proclamations <b>11061</b> (alcoholic beverages), <b>11062</b> (dairy) and <b>11063</b> (motor vehicles) still impose outright import bans at 12:01am ET on <b>29 September</b> &mdash; eight days &mdash; and <b>nothing has been filed in any court</b>, the fifth consecutive run recording that. The severability disincentive is unchanged: strike a ban and the goods revert to the 50% duty from Proclamation 11046, not to duty-free. Canada&rsquo;s answer remains reorientation; Handelsblatt&rsquo;s front page carries Canada as receptive to a special EU membership status this morning.</p>
+<p class="why">Below the line because procurement preference is a slow instrument with no deadline attached, and an absence of litigation repeated for a fifth time is not new information. The 29th is the date that leads.</p>
+<p class="sources"><a href="https://www.federalregister.gov/documents/full_text/text/2026/09/21/2026-19336.txt">Memorandum, full text</a> &middot; <a href="https://www.handelsblatt.com/">Handelsblatt</a> front page. <b>Primary source.</b> Annexes to the &sect;338 proclamations still not read; exposure is by 8-digit HTS, not by industry.</p>
+</div>
+</details>
+
+<details class="short" id="s-softbank">
+<summary><span class="chip">AI &amp; tech industry</span> SoftBank is raising $11bn in bonds to fund its OpenAI investment &mdash; three days after OpenAI&rsquo;s IPO was said to be delayed to 2027 on safety grounds.</summary>
+<div class="body">
+<p>Nikkei Asia&rsquo;s front page carries SoftBank Group launching an <b>$11bn bond sale</b> to fund its OpenAI investment. Hold this against the test written down on 13 September. Sam Altman told <em>Fortune</em> that OpenAI&rsquo;s IPO is delayed to <b>2027</b>, citing safety. Two readings were live: safety, or a bad autumn to list with the ten-year near 5% and a hike priced above 90%. The test was that if the delay survives a rate rally, safety gains weight; if it prices into the first friendly 2027 window, it was rates.</p>
+<p>A debt raise at this size is a third data point and it favours neither reading cleanly. Funding a position with bonds rather than waiting for a listing is what you do when the equity window is shut for <em>any</em> reason &mdash; but it also removes the pressure to reopen it, which makes a safety-motivated delay cheaper to sustain. SoftBank fell 11% in Tokyo on 14 September as an equity claim on this exact position; watch what it does on the bond news.</p>
+<p class="why">Below the line because a financing is a company&rsquo;s balance sheet, not a fact about AI policy, and it is at best weak evidence on a question this brief already framed as resolvable by a rate rally.</p>
+<p class="sources"><a href="https://asia.nikkei.com/">Nikkei Asia</a> front page, headline level only &mdash; the article was not read. <b>Single-sourced.</b> <em>Disclosure: written with an Anthropic model; OpenAI is a direct competitor.</em></p>
+</div>
+</details>
+
+<details class="short" id="s-yamal">
+<summary><span class="chip">Geopolitics</span> The Graham Act&rsquo;s first named commercial target has surfaced, and it is Russia&rsquo;s Arctic LNG fleet.</summary>
+<div class="body">
+<p>gCaptain reports that the sanctions law signed on <b>18 September</b> puts the specialised fleet serving <b>Yamal LNG</b> in the crosshairs. That fleet is the ice-class tankers and icebreakers without which Arctic LNG cannot move at all &mdash; a small, identifiable, hard-to-replace set of hulls, which is why it is the obvious first target and why it is a better test of the statute than any tariff rate.</p>
+<p>Remember the clocks. Enactment on 18 September started two 30-day deadlines: <b>&sect;112</b>, duties of up to 500% on Russian goods with no floor, so the President may pick any rate including zero; and <b>&sect;113</b>, secondary tariffs of up to 100% on other countries, both expiring around <b>18 October</b>. The first hard evidence of use rather than holding is the <b>&sect;113(g)</b> written justification to six congressional committees, which must precede any secondary duty by at least ten days. Xi is at the White House on Thursday, four days after signature and three and a half weeks before the deadline, and China is on the top-five list. Its conspicuous absence through the summit would be as informative as its arrival.</p>
+<p class="why">Below the line because a trade-press account of which assets are exposed is analysis of a statute already covered as a lead, not an action taken under it. The &sect;113(g) notice leads.</p>
+<p class="sources"><a href="https://gcaptain.com/">gCaptain</a> front page, headline level. <b>Single-sourced.</b> The bill-number collision recorded on 20 September &mdash; S.5025 in CRS, H.R. 5334 in wire accounts &mdash; is still unresolved; congress.gov has returned 403 for ten consecutive days.</p>
+</div>
+</details>
+
+<details class="short" id="s-emf">
+<summary><span class="chip">Science &amp; public health</span> HHS has opened a public comment docket on whether wireless radiation harms health, naming 5G, 6G, Wi-Fi, smart meters and children.</summary>
+<div class="body">
+<p>Doc <b>2026-19252</b>, published today by the <b>Office of the Assistant Secretary for Health</b>: a request for information on electromagnetic fields, radiofrequency radiation and wireless exposure. <b>Comments close 21 October</b> &mdash; a month, which is short. It asks for the current state of evidence on RF/EMF exposure and health outcomes, comparison of domestic and international safety standards and regulatory approaches, and research gaps. It names <b>5G</b> and <b>6G</b> as contributors to cumulative exposure, along with Wi-Fi, mobile phones, wireless infrastructure, smart meters and wearables, and says public concern has increased &ldquo;particularly in relation to children, schools, and long-term cumulative exposure&rdquo;. It names no specific disease.</p>
+<p>Read it for what it is. An RFI commits the government to nothing and creates no rule. But RF emission limits are the <b>FCC&rsquo;s</b> jurisdiction, not HHS&rsquo;s, and an HHS health review that concluded current limits were inadequate would be the predicate for pressure on another agency&rsquo;s standard. The explicit invitation to compare US standards with international ones is the tell: several European limits are stricter than the FCC&rsquo;s.</p>
+<p class="why">Below the line because a request for information is the earliest and least binding step an agency can take, and the consequence is entirely conditional on what it concludes and whether the FCC listens.</p>
+<p class="sources"><a href="https://www.federalregister.gov/documents/full_text/text/2026/09/21/2026-19252.txt">Full text</a>. <b>Primary source.</b> No reporting on it was found.</p>
+</div>
+</details>
+
+<details class="short" id="s-dengue">
+<summary><span class="chip">Florida &amp; Tampa Bay</span> Week 37 of the arbovirus report is not published &mdash; the tenth run recording an absence in the state&rsquo;s worst dengue outbreak in a century.</summary>
+<div class="body">
+<p>Florida DOH&rsquo;s arbovirus surveillance index, read again this morning, lists 2026 weeks 1 to <b>36</b> and nothing after. Week 36 (6&ndash;12 September) remains the ledger: Hillsborough <b>+39</b> locally acquired in that single week to 134 since July, <b>152 statewide</b>, Pinellas 7, travel-associated 186 for the year, 26 sentinel chickens positive across nine counties. The death of the 80-year-old Hillsborough resident on 4 September was confirmed as dengue on 20 September &mdash; septic shock and multi-organ failure, bitten near her home on Bayshore Boulevard. <b>This brief does not name her</b>, and the confirmation does not change that: the public interest turns on the confirmation, not the identity.</p>
+<p>The number that would change the risk picture is still a <b>second serotype</b> in the PCR line, because dengue&rsquo;s danger concentrates in second infections with a different serotype. That line is in the weekly PDF, which fetches here and returns unparseable binary. Health reporting on the confirmation noted signs the outbreak may be waning; hold that loosely for the three reasons already recorded &mdash; ascertainment rose with attention and will fall with it, a nine-week publication gap means the series is not a clean weekly measurement, and <em>Aedes aegypti</em> activity falls with the end of the wet season regardless.</p>
+<p class="why">Below the line because a missing report is an absence, not a development, and this brief will not manufacture movement out of a publication failure. It leads when week 37 publishes or the serotype line is obtained.</p>
+<p class="sources"><a href="https://www.floridahealth.gov/statistics-data/population-surveillance/arbovirus-surveillance/">Florida DOH arbovirus surveillance index</a>. <b>Primary source</b> for the absence; the week 36 figures remain WUSF&rsquo;s reading of an unparseable PDF and are single-sourced.</p>
+</div>
+</details>
+
+<details class="short" id="s-vaccine">
+<summary><span class="chip">Florida &amp; Tampa Bay</span> Seven days past the deadline, Florida&rsquo;s register still shows no hearing noticed on the school vaccine rule.</summary>
+<div class="body">
+<p>The rule history for <b>64D-3.046</b> at flrules.org, read again this morning, shows exactly <b>one</b> 2026 entry: the notice of proposed rule, <b>24 August</b>, Vol. 52/164, notice ID 31292411. No notice of hearing, no notice of change. Prior entries remain a workshop on 26 November 2025 (Vol. 51/230) and rule development on 10 September 2025 (Vol. 51/176). The listening period closed <b>14 September</b> with at least two timely hearing requests on file &mdash; the Florida Chapter of the American College of Physicians on 9 September, and the Florida Osteopathic Medical Association &mdash; which obliges the agency to hold one.</p>
+<p>The &ldquo;notices publish on a lag&rdquo; defence is now seven days weaker and still technically standing. It fails at adoption. What a hearing buys, restated so it is not overclaimed: a transcript and a record, which is the raw material for a challenge at DOAH as an invalid exercise of delegated legislative authority. It does not buy a different rule &mdash; agencies hold obliged hearings and adopt anyway. Standing reminder: do <em>not</em> use the 12 December Panama City date; it traces to a November 2025 notice.</p>
+<p class="why">Below the line for the sixth consecutive run and for the same reason each time: an unchanged register is an absence, not a development. Adoption without a hearing is the challengeable act, and that leads.</p>
+<p class="sources"><a href="https://www.flrules.org/gateway/ruleno.asp?id=64D-3.046">Florida Administrative Register rule history, 64D-3.046</a>. <b>Primary source.</b></p>
+</div>
+</details>
+
+<details class="short" id="s-budgets">
+<summary><span class="chip">Florida &amp; Tampa Bay</span> Three county decisions land this week: Pasco adopts its budget tomorrow evening, Pinellas takes school-closure comment tomorrow, Pinellas adopts on Thursday.</summary>
+<div class="body">
+<p><b>Tuesday 22 September, 5:15pm</b>: Pasco County Commission final hearing and budget adoption, West Pasco Government Center, 8731 Citizens Drive, New Port Richey. The number to get is the <b>adopted millage against the rolled-back rate</b> &mdash; that difference, not the budget total, is the tax increase under Florida&rsquo;s TRIM framework. The school board levy is already set from 8 September: operating 4.684, capital outlay 1.5, a levy of $436.6m against $419.6m on a 0.9% smaller operating budget with 2,001 fewer students and 476 posts cut. The gap is assessed values, not the rate.</p>
+<p><b>Also Tuesday</b>: Pinellas school board takes public comment on &ldquo;Planning for Progress&rdquo; &mdash; closing Tarpon Springs Fundamental, Kings Highway, Blanton, Bear Creek, Sexton and Lealman Innovation, converting Boca Ciega High to a technical high school. Workshop 6 October, vote 13 October. The district reports ~45,000 empty seats; of children born in the county in 2020, only <b>68%</b> enrolled in a Pinellas public school, and that capture rate is the number inside the board&rsquo;s control. <b>Thursday 24 September, 6pm</b>: Pinellas County final budget hearing. Closure lists change between presentation and vote more often than not.</p>
+<p class="why">Below the line because a calendar is not news. Tomorrow&rsquo;s adopted rate is, and it leads the Florida section on Wednesday.</p>
+<p class="sources">Dates carried from this brief&rsquo;s own file, corrected on 17 September from Pasco&rsquo;s budget-adoption page after that page served two different schedules to two fetches on 16 September. <b>Single-sourced</b> and flagged as such: no county page was re-read this morning, and this file has been wrong about this date once already.</p>
+</div>
+</details>
+
+<details class="short" id="s-screwworm">
+<summary><span class="chip">Florida &amp; Tampa Bay</span> Florida livestock owners are on alert for New World screwworm &mdash; but the Florida detection was an imported horse caught at inspection, not an outbreak.</summary>
+<div class="body">
+<p>Get the geography right, because the coverage blurs it. The <b>Florida</b> detection &mdash; the first US case in at least a decade &mdash; was found during routine inspection of a horse imported from a country south of the Dari&eacute;n Gap. That is the system working, not an incursion. The consequential case is in <b>Texas</b>: a working ranch horse in <b>Presidio County</b>, detected <b>9 September</b>, the first equine case in the US in the current outbreak. University of Florida veterinarians say the state&rsquo;s climate and its large horse and livestock population make preparation critical; the screwworm has <em>not</em> been detected in Florida outside that import.</p>
+<p>The dated thing to watch is capacity. The parasite was eradicated from the US in 1966 by releasing sterile flies, and the control method has not changed. A USDA facility in Texas is being converted to produce sterile flies and is expected to begin production in <b>early 2027</b>, which means the production gap runs through this winter.</p>
+<p class="why">Below the line because an interception at inspection is a non-event, and an alert is not a case. A confirmed domestic Florida infestation, or a slip in the sterile-fly production date, would change that.</p>
+<p class="sources"><a href="https://www.wusf.org/">WUSF</a> front page and its <a href="https://www.wusf.org/health-news-florida/2026-09-20/new-world-screwworm-florida-horse-livestock-owners-on-alert">20 September piece</a>, syndicated from WUFT &mdash; <b>one newsroom</b>. <b>Single-sourced.</b> The USDA APHIS confirmed-detections page was not reached.</p>
+</div>
+</details>
+
+<details class="short" id="s-boj">
+<summary><span class="chip">Macro &amp; markets</span> A fourth attempt to get a dated ten-year JGB level failed, and that gap is now the weakest point in this brief&rsquo;s global-tightening argument.</summary>
+<div class="body">
+<p>Nikkei Asia&rsquo;s front page carried nothing on the Bank of Japan, JGB yields or the yen this morning &mdash; the fourth run across three weeks in which no dated Japanese ten-year level could be obtained. State plainly what that costs: the claim that BoJ tightening raises the global anchor for duration rests on the <b>policy rate</b> (1.25%, raised 18 September on a split vote, highest in 31 years) and on the <b>currency</b> (a rate check on 20 September pulled the yen back from 158 to the upper 156s). It does not rest on the Japanese bond market, because this brief has not seen it.</p>
+<p>The substantive triggers are all still unfired: the Summary of Opinions around <b>28 September</b> and then the minutes, for the vote tally and the dissenters&rsquo; reasons, neither of which was obtained because the BoJ statement PDF will not parse here; a dated ten-year JGB; and the <b>indirect bidder share</b> at the next long-dated Treasury auction and at the <b>4 November</b> refunding, which is where Japanese institutions&rsquo; hedged-carry calculation would actually become visible.</p>
+<p class="why">Below the line because it is a record of a failed source check, not a development. It is here so the gap is auditable rather than quietly carried.</p>
+<p class="sources"><a href="https://asia.nikkei.com/">Nikkei Asia</a> front page &middot; <a href="https://www.handelsblatt.com/">Handelsblatt</a>, which carries DAX 25,575.01 (+1.07%), Euro Stoxx 50 6,318.20 (+1.31%) and Brent in euro, and again no Bund yield. Direction only, per the standing rule.</p>
+</div>
+</details>
+
+<details class="short" id="s-discoveries">
+<summary><span class="chip">Energy &amp; grid</span> Global oil and gas discoveries have hit a forty-year low &mdash; which matters for the refining argument, not the price one.</summary>
+<div class="body">
+<p>Nikkei Asia reports worldwide oil and gas discoveries at their lowest in <b>forty years</b>, attributed to investment cutbacks driven by decarbonisation expectations and by technical difficulty. Keep this in the right box. It is not an explanation of today&rsquo;s prices: a discovery made now produces nothing for the better part of a decade, and the current shock is a chokepoint, a damaged pipeline, an unobtainable ship and a refinery constraint, none of which is about reserves in the ground.</p>
+<p>Where it does bear is on the thesis behind the <b>Atlantic refining capacity</b> thread. The same expectation of peak demand that suppressed exploration spending also suppressed OECD refinery investment and drove a decade of closures, leaving the Atlantic basin short of distillate capacity. That is the shared cause of the two constraints, and it is why the structural answer to $6.50 diesel &mdash; Dangote&rsquo;s expansion to 1.4m b/d, financed and targeted for 2029 &mdash; is three years away. There is no supply-side relief this winter from either direction.</p>
+<p class="why">Below the line because a multi-year exploration statistic changes nothing this month and confirms a thesis this file already holds rather than testing it.</p>
+<p class="sources"><a href="https://asia.nikkei.com/">Nikkei Asia</a> front page, headline level; the underlying survey was not identified or read. <b>Single-sourced.</b></p>
+</div>
+</details>
+
+<div class="fb">
+  <p>The &ldquo;Also today&rdquo; tier is a record of what was ranked below the line so you can audit the ranking. Was it right today?</p>
+  <label><input type="radio" name="fb-alsotoday" value="right"> Yes &mdash; these belong below the line</label>
+  <label><input type="radio" name="fb-alsotoday" value="promote"> No &mdash; at least one should have been a lead (say which in the issue)</label>
+  <label><input type="radio" name="fb-alsotoday" value="fewer"> Too many &mdash; be stricter about what gets written up at all</label>
+  <label><input type="radio" name="fb-alsotoday" value="more"> Too few &mdash; I want everything you saw</label>
+</div>
+
+<footer>
+  <h2 class="section">Sources checked this run</h2>
+  <p><b>Watchlist-pointed (11):</b> <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202609">Treasury Daily Par Yield Curve</a>, fetched twice &middot; <a href="https://gasprices.aaa.com/">AAA national fuel averages</a> &middot; <a href="https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm">EIA weekly retail prices</a> &middot; <a href="https://gcaptain.com/">gCaptain</a> front page and its Hormuz story &middot; <a href="https://www.whitehouse.gov/presidential-actions/">White House presidential-actions index</a> &middot; the <em>Federal Register</em> documents API in three standing calls &mdash; <a href="https://www.federalregister.gov/api/v1/documents.json?conditions[publication_date][is]=2026-09-21&amp;conditions[type][]=RULE&amp;conditions[type][]=PRORULE&amp;per_page=80">rules and proposed rules</a> (11 documents), <a href="https://www.federalregister.gov/api/v1/documents.json?conditions[publication_date][is]=2026-09-21&amp;conditions[type][]=NOTICE&amp;per_page=100">notices</a> (61) and presidential documents (5) &middot; <a href="https://www.floridahealth.gov/statistics-data/population-surveillance/arbovirus-surveillance/">Florida DOH arbovirus index</a> &middot; <a href="https://www.flrules.org/gateway/ruleno.asp?id=64D-3.046">Florida Administrative Register, rule 64D-3.046</a> &middot; <a href="https://www.scmp.com/news/china">SCMP</a> China desk &middot; <a href="https://www.handelsblatt.com/">Handelsblatt</a> front page.</p>
+  <p><b>Outside the watchlist (17):</b> <em>Federal Register</em> full texts that no thread pointed at &mdash; <a href="https://www.federalregister.gov/documents/full_text/text/2026/09/21/2026-19260.txt">the Rule 14a-8 rescission</a>, <a href="https://www.federalregister.gov/documents/full_text/text/2026/09/21/2026-19259.txt">proxy solicitation modernization</a>, <a href="https://www.federalregister.gov/documents/full_text/text/2026/09/21/2026-19253.txt">the mass-influx finding</a>, <a href="https://www.federalregister.gov/documents/full_text/text/2026/09/21/2026-19252.txt">the HHS wireless-radiation RFI</a> and <a href="https://www.federalregister.gov/documents/full_text/text/2026/09/21/2026-19336.txt">the procurement memorandum</a> &middot; <a href="https://www.sec.gov/newsroom/press-releases/2026-89-sec-proposes-rescission-shareholder-proposal-rule-reforms-proxy-solicitation-process">the SEC press room</a> and <a href="https://www.sec.gov/newsroom/speeches-statements/atkins-statement-proposals-rescind-rule-14a-8-amend-rule-14a-4-modernize-proxy-solicitation-091626">Chairman Atkins&rsquo;s statement</a> &middot; <a href="https://text.npr.org/">text.npr.org</a> headline index &middot; <a href="https://www.aljazeera.com/news/">Al Jazeera</a> news index &middot; <a href="https://asia.nikkei.com/">Nikkei Asia</a> &mdash; the rotating non-US source this run, and it produced two short items &middot; <a href="https://www.statnews.com/">STAT News</a>, the trade publication for a sector on no beat list &middot; <a href="https://en.wikipedia.org/wiki/Portal:Current_events/2026_September_21">Wikipedia current-events portal</a> &middot; <a href="https://www.nhc.noaa.gov/text/MIATWOAT.shtml">National Hurricane Center</a> Atlantic outlook &middot; <a href="https://www.fox13news.com/tag/us/fl/pasco">Fox 13 Pasco tag feed</a> &middot; <a href="https://www.wusf.org/">WUSF</a> front page &mdash; which produced the Florida lead &middot; <a href="https://insideclimatenews.org/news/17092026/florida-springs-cleanup-plan-settlement/">Inside Climate News</a> &middot; <a href="https://techcrunch.com/2026/09/18/anthropics-first-embedded-evaluator-is-accenture/">TechCrunch</a> and <a href="https://www.engadget.com/2263235/anthropic-picks-accenture-for-third-party-ai-safety-evaluations/">Engadget</a> on the evaluator deal &middot; <a href="https://www.opb.org/article/2026/09/20/lawsuit-says-anthropic-openai-spacexai-and-google-made-illegal-agreement-on-ai-slowdown/">OPB</a> on the antitrust suit &middot; <a href="https://www.ms.now/news/ms-now-cnn-politico-lawsuit-trump-media-ban">MS NOW</a> and <a href="https://www.nbcnews.com/politics/white-house/ms-now-journalists-denied-access-white-house-trump-announced-ban-rcna598677">NBC News</a> on the press suit.</p>
+  <p><b>The negative check:</b> answered in the header, and the answer is a failure rather than a find. Three stories on core beats &mdash; the Accenture evaluator deal, the AI antitrust suit, and the SEC&rsquo;s proxy rescission &mdash; had been public for three to five days before this brief reached them. Wikipedia&rsquo;s current-events portal, the usual negative-check instrument, was <b>essentially unpopulated for today</b> again when read mid-morning: three entries, one of them New Zealand&rsquo;s bird of the year and one a Singapore transit-fines schedule. It lags on the day itself, so the check had to be run by hand against Al Jazeera, Nikkei, Handelsblatt and the <em>Federal Register</em> notice list with the beat list held alongside. Considered and excluded: an explosion injuring three South Korean officers inside the DMZ (no change to a US obligation, price or deployment today); Germany&rsquo;s state-election results and coalition talks (a foreign election with no change to a US relationship, per the anti-topics list); Japanese PM Takaichi preparing to stress Japanese investment in talks with the President (a scheduled meeting, not a development); and Mercedes weighing moving production out of Germany (foreign corporate restructuring with no US channel).</p>
+  <p><b>Could not reach:</b> CNN returned <b>451</b> and CNBC <b>403</b> for a tenth consecutive day, so both the antitrust complaint and the Bessent&ndash;He detail came through summaries &middot; NPR article pages timed out and two member-station URLs 404&rsquo;d, so the data-centre piece stands on its headline only &middot; the <em>Washington Post</em> and Ohio Capital Journal both 403&rsquo;d &middot; the Florida DOH weekly arbovirus PDF still will not parse, so the serotype line remains unobtained &middot; Hollywood Reporter redirected to a <code>tollbit.</code> host &middot; congress.gov has now 403&rsquo;d for ten consecutive days. The Atlantic outlook shows Tropical Storm Fay near the Azores and no formation expected in seven days, so there is nothing for the Florida section there.</p>
+  <p><b>What changes after three misses.</b> Two rules, both narrow enough to be checked next run. <b>First:</b> when pulling a value from a wide numeric table, enumerate the column headers in the same request and count the position, never trust the label &mdash; that is what produced two wrong ten-year yields. <b>Second:</b> the source-led gather works for documents published <em>today</em> and failed for stories published on Friday, because a front page has moved on by Monday. A Monday run needs an explicit sweep of Friday and the weekend on each core beat, not just a sweep of today.</p>
+
+  <h2 class="section">Dormant threads</h2>
+  <p class="secnote">Kept on the watchlist, dropped from the body, picked up the moment a source check touches one.</p>
+  <ul class="dorm">
+    <li><b>Ukraine&ndash;Russia negotiations</b> &mdash; still dormant. Russia&rsquo;s parliamentary election result is domestic politics, not a negotiation; this wakes on a published text either side will describe, a front-line ceasefire, or a named difference from the Anchorage proposals.</li>
+    <li><b>Gulf states &amp; Article 51</b> &mdash; Kuwait or the UAE restricting US base access, or a collective GCC statement. UNGA high-level week opens tomorrow and remains the likeliest venue.</li>
+    <li><b>Missouri congressional map</b> &mdash; settled for November; wakes on the referendum, an Eighth Circuit merits panel in <em>Onder</em>, or a contempt ruling.</li>
+    <li><b>Autonomous weapons regulation</b> &mdash; CCW review conference, 16&ndash;20 November.</li>
+    <li><b>EU&ndash;Greenland partnership</b> &middot; <b>Indonesia free-meals programme</b> &middot; <b>Anak Krakatau</b> &middot; <b>Nepal&ndash;Tibet glacial flood</b> &middot; <b>Israel&ndash;Lebanon June framework</b> &middot; <b>Saxony-Anhalt government formation</b> &mdash; each on its named trigger.</li>
+  </ul>
+
+  <h2 class="section">Watchlist housekeeping</h2>
+  <p>No open <code>brief-feedback</code> issues were waiting this morning, so nothing in <code>config.md</code> changed on that account. Four threads opened today: the SEC proxy rescission, the DHS mass-influx finding, data centres as electoral politics, and the Florida springs BMAPs. The <b>Frontier-lab pacing commitments</b> thread is rescored at 1.5 of 3 and now carries the antitrust case. Two questions still carried forward and now overdue &mdash; whether <b>Berkshire</b> belongs on the US financials core beat alongside JPMorgan, and whether <b>Tanker freight</b> should stay folded inside the fuel-price chain or stand alone.</p>
+  <p><a href="../">Archive</a> &middot; Previous: <a href="2026-09-20.html">20 September</a></p>
+
+  <div class="submit">
+    <button type="button" id="send-feedback">Send feedback as a GitHub issue</button>
+  </div>
+</footer>
+
+</div>
+<script>
+(function () {
+  var owner = "historiocity", repo = "News-Agent";
+  document.getElementById("send-feedback").addEventListener("click", function () {
+    var lines = ["Feedback on Issue No. 17 (2026-09-21)", ""];
+    document.querySelectorAll(".fb input[type=radio]:checked").forEach(function (el) {
+      lines.push(el.name + ": " + el.value);
+    });
+    if (lines.length === 2) lines.push("(no radio answers selected)");
+    lines.push("", "Anything else:", "");
+    var url = "https://github.com/" + owner + "/" + repo + "/issues/new"
+      + "?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("brief-feedback: 2026-09-21")
+      + "&body=" + encodeURIComponent(lines.join("\n"));
+    window.open(url, "_blank");
+  });
+})();
+</script>
+</body>
+</html>
