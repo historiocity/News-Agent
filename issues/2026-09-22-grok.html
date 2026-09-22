@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>The Brief — Tuesday, 22 September 2026 (Grok edition)</title>
+<style>
+:root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+@media (prefers-color-scheme: dark) {
+:root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+.wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+.kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+.sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+.prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+nav ol { margin:0; padding-left:1.2rem; }
+nav li { margin:.25rem 0; }
+nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+a { color:var(--link); }
+article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+.secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+.meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+.chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+.chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+.chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+.sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+.div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+.div p { margin:.4rem 0; }
+.div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+.corr { background:var(--box); border-left:4px solid var(--accent); padding:.8rem 1rem; margin:0 0 1.6rem; font-size:.95rem; }
+.corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+.corr p { margin:.45rem 0; }
+details { margin-top:.8rem; }
+details summary { cursor:pointer; color:var(--link); }
+.exp { margin-top:.6rem; }
+.also-list { margin:0; }
+.also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+.also-list details:first-of-type { border-top:1px solid var(--rule); }
+.also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+.also-list .exp { font-size:.94rem; padding-left:.2rem; }
+.btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+.btl b { color:var(--accent); }
+footer { color:var(--muted); font-size:.88rem; }
+.fb { margin-top:1rem; font-size:.9rem; }
+.fb p { margin:.6rem 0 .2rem; }
+.fb label { display:block; margin:.15rem 0; }
+.submit { margin-top:2rem; }
+button { font:inherit; padding:.45rem .8rem; }
+ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<p class="kicker">The Brief · Issue No. 18-grok · Tuesday, 22 September 2026 · Morning / Grok edition</p>
+<h1>The FDIC wants to remake bank mergers; the SEC opened a five-year on-chain window for tokenized stocks; diesel set a thirteenth AAA record as Hormuz traffic fell to two; and British Columbia sued OpenAI in California</h1>
+<p class="sub">Nine stories at length, ten in brief. Independent Grok gather for the 7am&nbsp;ET cron; does not overwrite Claude/Action files. Continuity for accountability: <a href="2026-09-21-grok.html">21&nbsp;Sep Grok</a> · <a href="2026-09-20-grok.html">20&nbsp;Sep Grok</a> · framework <a href="2026-09-10b.html">2026-09-10b</a>.</p>
+<p class="prov">
+Loaded <a href="https://raw.githubusercontent.com/historiocity/News-Agent/main/config.md">config.md</a>. Re-read closed brief-feedback (#3, #7). Quality bar: Issue&nbsp;10 / <a href="2026-09-10b.html">2026-09-10b</a>.
+<strong>19&nbsp;sources checked, 13 of them outside the active watchlist threads.</strong> Core beats lead. Oil/pump/chokepoints stay one causal chain. Fed = prints and the decision only — no new Fed print or FOMC action; Fed speakers omitted.
+<strong>Negative check reshaped the lead list:</strong> Tuesday’s Federal Register carried an FDIC NPR to fundamentally reform Bank Merger Act processing (de&nbsp;minimis “deemed approval,” credit-union shares in the HHI screen, 90/150-day clocks) and an SEC temporary conditional exemption for permissioned AMM trading of tokenized NMS stocks — neither on any prior Grok agenda, neither a watchlist calendar item, and neither led overnight wire fronts. The companion FDIC State Bank Parity NPR (Illinois Interchange Fee Prohibition Act / Riegle-Neal) and British Columbia’s California suit against OpenAI likewise were not yesterday’s menu. Those displaced reprises of SEC 14a-8-as-announcement, Jane Street supervisory colour, Anthropic–Accenture as fresh news, AI Force undefined-again, Yamal fleet pressure, and DHS Mass Influx extension. Diesel stayed fused with Hormuz measurement — not split. Declined for altitude: Putin’s United Russia Duma supermajority (no new US channel); Mali independence colour; Morocco Gen&nbsp;Z election; Typhoon Dujuan Japan; Brazil Lula–Bolsonaro poll horse-race; sports; celebrity.
+</p>
+</header>
+
+<nav>
+<ol>
+<li><a href="#fdic-mergers">FDIC proposes a remake of bank-merger review</a></li>
+<li><a href="#sec-tokenize">SEC opens a five-year window for tokenized NMS stocks on AMM venues</a></li>
+<li><a href="#oil-chain">One chain to the pump: AAA diesel $6.5276 — thirteenth record — as Hormuz traffic falls to two</a></li>
+<li><a href="#state-parity">FDIC State Bank Parity: host-state law follows national-bank preemption</a></li>
+<li><a href="#bc-openai">British Columbia sues OpenAI in California over Tumbler Ridge</a></li>
+<li><a href="#openai-standards">OpenAI asks Washington to lead global frontier-AI standards; Altman briefs the UNSC Wednesday</a></li>
+<li><a href="#ai-hotline">Axios: the Trump–Xi “red telephone” is the summit deliverable to watch</a></li>
+<li><a href="#treasury">Treasury’s Monday curve: 10-year 4.96% (issuer series)</a></li>
+<li><a href="#ofac-iran">OFAC SDN notice: Iran digital-asset sector designation</a></li>
+</ol>
+<p class="also">Also today: EU Red Sea mission · Hormuz oil shuttles · global diesel records · FCC RF remand comment · FDA “nonclinical” terminology · FleetCor FTC consent · CBP IRS interest rates · Florida vaccine register · dengue w37 absence · OCC/FDIC MRA correction</p>
+</nav>
+
+<article id="fdic-mergers">
+<p class="meta"><span class="chip under">Negative check</span> <span class="chip new">New</span> <span class="chip">Core · US financials</span> <span class="chip">US policy</span></p>
+<h2>Negative check: the FDIC proposes to remake how bank mergers get approved</h2>
+<p>In today’s Federal Register the Federal Deposit Insurance Corporation publishes a notice of proposed rulemaking (RIN 3064-AG18; FR Doc. 2026-19308) that would “fundamentally reform” the FDIC’s processing and evaluation of merger transactions under the Bank Merger Act. Comments close <strong>23 November 2026</strong>.</p>
+<p>Notable mechanics in the proposal: (1)&nbsp;a new <em>de&nbsp;minimis</em> category with a letter filing and “deemed approval” on a five-business-day clock unless the Attorney General objects on competition grounds; (2)&nbsp;express inclusion of <strong>credit-union shares</strong> and <strong>centrally booked deposits</strong> in the initial Herfindahl-Hirschman Index competitive screen; (3)&nbsp;an HHI safe harbor (post-merger HHI ≤1,800, or increase &lt;200 if above 1,800, or corporate reorganizations); (4)&nbsp;mandatory completeness determination within 21 days and tailored decision clocks of 90 or 150 days (extendable to 180/270); (5)&nbsp;a quantitative “merger in substance” definition at 80% of assets over a rolling 12 months; and (6)&nbsp;a new notice/non-objection track for “significant asset transfers” (≥25% asset growth over 12 months that is not itself a BMA merger).</p>
+<p>The preamble is explicit about the policy direction: faster, more predictable, less stringency than the current framework, less weight on supervisory ratings alone, and rarer removal from expedited processing for CRA protests. It would also rescind the current Statement of Policy concurrent with a final rule.</p>
+<p><strong>What to watch:</strong> the comment file from large banks, community-bank trade groups, and DOJ Antitrust; whether the OCC and Federal Reserve Board publish companion frameworks; any congressional reaction to “deemed approval.”</p>
+<div class="div">
+<p class="t">Divergence — speed vs concentration</p>
+<p><strong>What is disputed.</strong> Whether modernising the BMA screen for fintech/credit-union competition and hard clocks is overdue housekeeping, or a structural tilt toward consolidation.</p>
+<p><strong>Why they differ.</strong> Credit-union shares in the HHI raise measured competition in rural markets; de&nbsp;minimis deemed approval and longer asset thresholds for expedited processing cut friction for serial acquirers. Both can be true about different deal sizes.</p>
+<p><strong>What it means for you.</strong> Core US financials. Came from the standing FR RULE/PRORULE sweep — not a beat tip. If finalised, the competitive map and the processing clock both change.</p>
+</div>
+<details><summary>Dig deeper — what “deemed approval” actually buys</summary>
+<div class="exp">
+<p>De&nbsp;minimis is not a free pass for megadeals. The proposal ties it to assets below the Hart-Scott-Rodino lower threshold <em>and</em> under 5% of the acquirer’s assets (or certain roll-up corporate reorganizations of operating subsidiaries with unchanged legal/financial risk), plus composite/CRA/compliance/capital screens. The load-bearing change for larger deals is the combination of credit-union HHI inclusion, the safe harbor, and the 90/150-day clocks with limited CRA-protest removal — that is the architecture of predictability, not the five-day letter track.</p>
+</div></details>
+<p class="sources">Sources: <a href="https://www.federalregister.gov/documents/2026/09/22/2026-19308/merger-transactions">FR 2026-19308 full text</a> (primary) · Federal Register documents JSON API (22&nbsp;Sep RULE/PRORULE sweep)</p>
+<div class="fb">
+<p><strong>FDIC merger remake — right as Tuesday’s negative-check lead?</strong></p>
+<label><input type="radio" name="fb-fdic-m"/> Yes — BMA processing is Core financials</label>
+<label><input type="radio" name="fb-fdic-m"/> Follow through comment period only</label>
+<label><input type="radio" name="fb-fdic-m"/> Less — wait for a final rule</label>
+</div>
+</article>
+
+<article id="sec-tokenize">
+<p class="meta"><span class="chip new">New</span> <span class="chip">Core · US financials</span> <span class="chip">AI &amp; tech</span></p>
+<h2>The SEC opens a five-year, conditioned window for tokenized NMS stocks on permissioned AMM venues</h2>
+<p>Also in today’s Federal Register: an SEC order (Release No.&nbsp;34-106402; File No.&nbsp;4-927; FR Doc. 2026-19388), dated 17&nbsp;September and published 22&nbsp;Sep, granting temporary conditional exemptive relief under Exchange Act §36(a)(1). Tokenized Securities Venues (TSVs) that provide permissioned automated-market-maker liquidity pools for tokenized NMS stocks get a temporary exemption from the statutory “exchange” definition; certain proprietary liquidity providers get a temporary exemption from the “dealer” definition. The order expires <strong>five years after publication</strong> and requests comment on modifications.</p>
+<p>Scope is tight on purpose: permissioned (not open DeFi) trading; Tokenized NMS Stock paired with another Tokenized NMS Stock, a non-security crypto asset (e.g. a GENIUS Act payment stablecoin), or a tokenized money market fund; volume/symbol caps by LULD tier (Tier&nbsp;1: ≤75 symbols and 0.25% of prior-month ADV; Tier&nbsp;2: ≤250 symbols and 2.5% ADV); issuer notice and objection rights for third-party tokenization; U.S.-person TSV requirement; public Notice; books-and-records; stoppage of trading when the listing exchange stops the underlying; no leverage/financing by the TSV. The order sits inside Chairman Atkins’s “Project Crypto” and the January 2025 digital-asset executive-order line — and it is self-consciously interim while the Commission considers rulemaking.</p>
+<p><strong>What to watch:</strong> first TSV Notices and which issuers object; whether volume caps bind; any FINRA/broker-dealer friction when members trade through TSVs; companion Investment Company Act issues the order expressly does not resolve.</p>
+<div class="div">
+<p class="t">Divergence — sandbox vs fragmentation</p>
+<p><strong>What is disputed.</strong> Whether a five-year exchange/dealer carve-out for AMM pricing (which generally cannot meet Reg&nbsp;NMS trade-through/quotation rules without gutting the model) is necessary innovation policy, or a supervised fracture of the national market system.</p>
+<p><strong>Why they differ.</strong> AMMs set prices from pool ratios, not external NBBO. The Commission’s answer is volume caps and time limits while it learns. Critics will say any meaningful TSV volume is already a two-track equity market.</p>
+<p><strong>What it means for you.</strong> Core financials with a crypto/tech channel. Primary FR notice — not on yesterday’s Grok menu.</p>
+</div>
+<details><summary>Dig deeper — what the volume caps are for</summary>
+<div class="exp">
+<p>The order is explicit that AMM prices can dislocate from traditional NMS prints because they do not directly consider external pricing. Caps and the issuer-objection right are the investor-protection half of a relief package that also drops Reg&nbsp;NMS obligations for qualifying TSVs. Read the two together: the Commission is allowing the experiment and simultaneously bounding its footprint in the SIP-reported market.</p>
+</div></details>
+<p class="sources">Sources: <a href="https://www.federalregister.gov/documents/2026/09/22/2026-19388/order-granting-temporary-conditional-exemptive-relief-pursuant-to-section-36a1-of-the-securities">FR 2026-19388 full text</a> (primary) · Federal Register NOTICE sweep 22&nbsp;Sep</p>
+<div class="fb">
+<p><strong>Tokenized NMS exemption — lead weight?</strong></p>
+<label><input type="radio" name="fb-tsv"/> Yes — on-chain equities market structure is Core</label>
+<label><input type="radio" name="fb-tsv"/> Follow when a TSV actually notices and trades</label>
+<label><input type="radio" name="fb-tsv"/> Less — temporary sandbox colour</label>
+</div>
+</article>
+
+<article id="oil-chain">
+<p class="meta"><span class="chip">Energy</span> <span class="chip">Geopolitics</span> <span class="chip">One causal chain</span></p>
+<h2>One chain to the pump: AAA diesel $6.5276 — a thirteenth record — as Hormuz visible traffic falls to two</h2>
+<p>AAA Tuesday 22&nbsp;Sep national averages: diesel <strong>$6.5276</strong> — a thirteenth consecutive all-time record (Mon $6.5107; week ago $6.2694; month ago $5.5947; year ago $3.6880, ~+77% y/y). AAA’s own “highest recorded average price” line for diesel now reads $6.5276 on 9/22/26. Regular gasoline <strong>$4.4750</strong> (Mon $4.4786) — down a few tenths of a cent while diesel climbed another ~1.7¢. Diesel–gasoline spread now about <strong>$2.05/gal</strong>.</p>
+<p>Same morning, the measurement end of the chain worsened on the AIS series: Reuters (22&nbsp;Sep) reports commodity vessels crossing Hormuz fell to <strong>two on Monday</strong> from ten a day earlier (Kpler preliminary; excludes dark/AIS-off traffic). That sits on top of gCaptain’s Monday report of two further tanker security incidents (inbound crude struck by unidentified projectile — two crew minor injuries; outbound LPG hit by debris — crew safe), bringing at least five tanker attacks/incidents since 16&nbsp;Sep. JMIC still rates the threat SEVERE. Weekend visible commodity traffic had been seventeen vs ~125/day pre-war.</p>
+<p class="btl"><b>EIA weekly:</b> the federal on-highway diesel print that was due today (first covering a full week above $6.40) was <strong>not yet on EIA’s retail table when checked this morning</strong> — the pet_pri_gnd page still ended at w/e 14&nbsp;Sep ($6.285 ULSD; release date still showing 9/15, next release 9/22). Do not invent the federal print. If it lands soft or hard later today, that is tomorrow’s fact.</p>
+<p><strong>What to watch:</strong> today’s EIA table when published; any published Iran permission-regime coordinates or fee schedule (still unfired); distillate inventory build or utilisation break below the high 90s (still the relief numbers).</p>
+<div class="div">
+<p class="t">Divergence — barrels claimed vs hulls counted</p>
+<p><strong>What is disputed.</strong> Whether Hormuz is functionally open under US escort (CENTCOM volume claims; NCAGS-facilitated flows) or structurally constrained (Mon AIS = 2; diesel still making records while screen crude has been soft).</p>
+<p><strong>Why they differ.</strong> Transponders-off escort traffic is invisible to public AIS. Diesel remains a refining/distillate story; a softer Brent tape has failed as a relief signal for nearly two weeks.</p>
+<p><strong>What it means for you.</strong> One causal chain only. Do not split the thirteenth AAA print from the Hormuz traffic collapse.</p>
+</div>
+<details><summary>Dig deeper — why gasoline down / diesel up still matters</summary>
+<div class="exp">
+<p>Monday’s edition noted gasoline had tick-restarted after a dead stop while diesel set a twelfth record. Today gasoline slipped ($4.4786→$4.4750) while diesel set a thirteenth and became AAA’s own all-time high again. The crack/inventory story is intact: gasoline still roughly tracks the barrel; diesel tracks the distillate shortage.</p>
+</div></details>
+<p class="sources">Sources: <a href="https://gasprices.aaa.com/">AAA Daily Fuel Gauge</a> (primary, 22&nbsp;Sep) · <a href="https://www.reuters.com/world/middle-east/hormuz-vessel-traffic-falls-two-data-shows-2026-09-22/">Reuters</a> (Hormuz traffic = 2) · <a href="https://gcaptain.com/two-more-tankers-hit-in-strait-of-hormuz-as-attacks-mount/">gCaptain</a> (Mon tanker hits) · EIA pet_pri_gnd table (checked; print not yet posted)</p>
+<div class="fb">
+<p><strong>Thirteenth diesel record + Hormuz traffic = 2 — still one chain?</strong></p>
+<label><input type="radio" name="fb-oil"/> Yes — keep fused</label>
+<label><input type="radio" name="fb-oil"/> Split pump from AIS count</label>
+<label><input type="radio" name="fb-oil"/> Less weight until EIA lands</label>
+</div>
+</article>
+
+<article id="state-parity">
+<p class="meta"><span class="chip new">New</span> <span class="chip">Core · US financials</span> <span class="chip">US policy</span></p>
+<h2>FDIC State Bank Parity: when host-state law does not bind national banks, it should not bind out-of-state State banks either</h2>
+<p>Companion NPR in today’s FR (RIN 3064-AG34; FR Doc. 2026-19310): the FDIC proposes to amend 12&nbsp;CFR part&nbsp;331 so that, for purposes of FDI Act §24(j) (Riegle-Neal), host-state laws apply to any branch <em>or any services provided</em> in the host state by an out-of-state State bank to the same extent those laws apply to an out-of-state national bank. Comments also close <strong>23 November 2026</strong>.</p>
+<p>The catalyst named in the preamble is Illinois’s Interchange Fee Prohibition Act (IFPA) and the Northern District of Illinois litigation (<em>Ill. Bankers Ass’n v. Raoul</em>). The court enjoined enforcement against national banks and against out-of-state State banks “subject to Riegle-Neal,” but the Illinois AG argued §24(j) reaches only branches physically in Illinois — leaving State banks that serve Illinois customers online without a branch in legal limbo. The FDIC estimates ~3,185 State banks potentially affected once IFPA’s current July&nbsp;2027 effective date arrives, with ~$308&nbsp;million in one-time compliance-system costs avoided if parity holds. Eleven other states are described as pursuing similar legislation.</p>
+<p>The proposal expressly does <strong>not</strong> change interest-rate exportation under FDI Act §27, and does not itself decide which particular host-state laws are preempted.</p>
+<p><strong>What to watch:</strong> IFPA effective-date politics in Springfield; copycat state bills; whether the rule finalises before July&nbsp;2027.</p>
+<div class="div">
+<p class="t">Divergence — dual banking vs state consumer experiments</p>
+<p><strong>What is disputed.</strong> Whether §24(j) was always about functional parity in a mobile-banking world, or whether Congress tied the shield to physical branches and left online State banks exposed.</p>
+<p><strong>Why they differ.</strong> National banks already have a clearer preemption path (OCC IFR + injunction). Without parity, State banks face convert-or-comply pressure — exactly the dual-banking imbalance the FDIC says it is curing.</p>
+<p><strong>What it means for you.</strong> Core financials + policy. Same day’s FR as the merger remake — package them as a bank-regulatory morning, not two unrelated filings.</p>
+</div>
+<p class="sources">Sources: <a href="https://www.federalregister.gov/documents/2026/09/22/2026-19310/state-bank-parity">FR 2026-19310 full text</a> (primary)</p>
+<div class="fb">
+<p><strong>State Bank Parity NPR — lead or Also today?</strong></p>
+<label><input type="radio" name="fb-parity"/> Lead — dual-banking parity is Core</label>
+<label><input type="radio" name="fb-parity"/> Pair with the merger NPR as one bank-reg package</label>
+<label><input type="radio" name="fb-parity"/> Also today until a final rule</label>
+</div>
+</article>
+
+<article id="bc-openai">
+<p class="meta"><span class="chip new">New</span> <span class="chip">Core · AI &amp; tech</span> <span class="chip">US channel</span></p>
+<h2>British Columbia sues OpenAI in California over the Tumbler Ridge school shooting</h2>
+<p>British Columbia Attorney General Niki Sharma stated Monday that the province has filed suit in California against OpenAI for alleged failure to notify law enforcement of threats made on its platform before the 10&nbsp;February 2026 mass shooting at Tumbler Ridge Secondary School. The province frames the case as corporate accountability for credible violence threats on an AI platform, seeks answers for families and School District&nbsp;59, and pairs the filing with letters to Canadian federal ministers proposing Criminal Code amendments for human accountability when AI is implicated. Sharma says OpenAI “has not taken meaningful steps” to address survivor and community concerns.</p>
+<p>US channel: the venue is California federal process against a US company and CEO; the liability theory (duty to warn / failure to escalate flagged threats) is the same class of claim US state AGs and plaintiffs will watch as a template. Altitude bar cleared — this is not foreign colour.</p>
+<p><strong>What to watch:</strong> the complaint’s operative counts once docketed and readable; OpenAI’s response; whether US state AGs file parallel actions; any product-safety or reporting commitment from the lab.</p>
+<div class="div">
+<p class="t">Divergence — platform duty vs speech intermediary</p>
+<p><strong>What is disputed.</strong> Whether a frontier chatbot provider that flags credible gun-violence content owes an affirmative law-enforcement notice duty, or whether that collapses into a general monitoring obligation the US has historically resisted.</p>
+<p><strong>Why they differ.</strong> BC analogises to tobacco/opioid public-nuisance suits. OpenAI will likely argue scale, false-positive risk, and First Amendment / Section&nbsp;230-adjacent theories even in a Canadian-plaintiff California filing.</p>
+<p><strong>What it means for you.</strong> Core AI + liability. Primary provincial statement fetched. Not on yesterday’s Grok menu.</p>
+</div>
+<p class="sources">Sources: <a href="https://news.gov.bc.ca/releases/2026AG0067-001105">BC Attorney General statement</a> (primary, 21&nbsp;Sep) · Guardian / CBC / Bloomberg Law write-throughs</p>
+<div class="fb">
+<p><strong>BC → OpenAI suit — right as an AI liability lead?</strong></p>
+<label><input type="radio" name="fb-bc"/> Yes — California venue makes it US-channel</label>
+<label><input type="radio" name="fb-bc"/> Follow after the complaint is readable</label>
+<label><input type="radio" name="fb-bc"/> Less — foreign plaintiff colour</label>
+</div>
+</article>
+
+<article id="openai-standards">
+<p class="meta"><span class="chip new">New</span> <span class="chip">Core · AI &amp; tech</span> <span class="chip">Lab safety</span></p>
+<h2>OpenAI asks the US to lead global frontier-AI standards; Altman briefs the UN Security Council Wednesday</h2>
+<p>OpenAI on Monday published “Building standards for AI’s next phase,” arguing Washington should lead technical and safety standards for frontier AI — including alignment research keeping pace with capabilities and a caution that fully autonomous recursive self-improvement “is not happening today, and we should not pursue it unless and until it can be done safely.” CEO Sam Altman is scheduled to brief the UN Security Council in person on Wednesday (23&nbsp;Sep) on AI and international security. Same news cycle: about twenty countries led by Finland and Norway adopted a human-control-of-AI declaration at UNGA that the United States and China did not join.</p>
+<p>This is the standards half of last week’s pacing debate — not a reprise of Amodei’s essay itself. It lands two days before Trump–Xi and one day before Altman’s UNSC appearance, and it collides with the administration’s growth-first line (Bessent: hold developers legally responsible; do not throttle).</p>
+<p><strong>What to watch:</strong> Wednesday’s UNSC briefing text; whether Thursday’s Trump–Xi readout names standards, a hotline, both, or neither; any joint lab standards body charter.</p>
+<div class="div">
+<p class="t">Divergence — US-led standards vs US–China race</p>
+<p><strong>What is disputed.</strong> Whether a US-led standards body is safety architecture or a soft way to freeze Chinese capability under Western process rules.</p>
+<p><strong>Why they differ.</strong> OpenAI wants Washington to seize the pen before a fragmented system hardens. The White House has rejected slowdown language. Twenty middle powers writing a declaration without either superpower is the third path — and a tell that the middle is not waiting.</p>
+<p><strong>What it means for you.</strong> Standing lab-safety / AI-policy thread. OpenAI.com post was not directly fetchable this morning (timeout); stood up via TechXplore / Seoul Economic Daily / Times of India accounts of the Monday post — labelled accordingly.</p>
+</div>
+<p class="sources">Sources: TechXplore / AFP-style write-through of OpenAI Monday post · Seoul Economic Daily · Times of India · Politico (20-nation declaration, via SED)</p>
+<div class="fb">
+<p><strong>OpenAI standards pitch + Altman UNSC — lead weight ahead of Xi?</strong></p>
+<label><input type="radio" name="fb-std"/> Yes — sets the Wednesday/Thursday agenda</label>
+<label><input type="radio" name="fb-std"/> Save the lead for the UNSC text</label>
+<label><input type="radio" name="fb-std"/> Less — lab PR</label>
+</div>
+</article>
+
+<article id="ai-hotline">
+<p class="meta"><span class="chip">Core · AI &amp; tech</span> <span class="chip">US–China</span></p>
+<h2>Axios: the Trump–Xi “red telephone” for AI incidents is the summit deliverable to watch</h2>
+<p>Axios’s Tuesday framing upgrades Sunday’s Bessent “notification mechanism” into Cold War vocabulary: a US–China emergency “red phone” for the day AI goes haywire, pitched as potentially the most meaningful outcome of this week’s Washington summit if a broad trade pact or strategic slowdown does not land. Xi arrives Wednesday for his first state visit since 2015; leaders meet Thursday. Trump’s week: catastrophe fears labelled a “HOAX,” vow not to hinder US AI. Xi’s reported balance: win the race without losing Party control. Greer’s carve-out — export controls on advanced chips not on the AI-mechanism agenda — still stands from Sunday.</p>
+<p>Accountability to yesterday: Monday’s Grok already had Bessent’s concrete proposal. Today’s new fact is the Axios packaging and the explicit claim that the hotline, not tariffs or a slowdown, may be the only durable deliverable — plus the collision with OpenAI’s US-led-standards ask and the 20-nation declaration that excluded both powers.</p>
+<p><strong>What to watch:</strong> Thursday joint statement language — channel name, ministry pair, incident definition; any chip-control linkage Greer said was off the table.</p>
+<div class="div">
+<p class="t">Divergence — hotline vs guardrails</p>
+<p><strong>What is disputed.</strong> Whether an incident line is meaningful cooperation or summit theatre that leaves racing, export controls and lab evaluation untouched.</p>
+<p><strong>Why they differ.</strong> Washington can sell a hotline as safety without conceding compute. Beijing can accept talks language without accepting inspectable limits.</p>
+<p><strong>What it means for you.</strong> Core AI + US–China. Upgrade, not calendar reprise — but do not pretend the underlying Bessent proposal is new today.</p>
+</div>
+<p class="sources">Sources: Axios (22&nbsp;Sep red-phone framing; fetch timed out — stood via search summary) · prior Bessent readouts (Hindu/AFP, Tribune/Reuters)</p>
+<div class="fb">
+<p><strong>Hotline-as-summit-deliverable framing — right cadence?</strong></p>
+<label><input type="radio" name="fb-hot"/> Yes — Tuesday upgrade ahead of Thursday</label>
+<label><input type="radio" name="fb-hot"/> Demote until the joint statement</label>
+<label><input type="radio" name="fb-hot"/> Drop — still Sunday’s news</label>
+</div>
+</article>
+
+<article id="treasury">
+<p class="meta"><span class="chip">Core · US debt &amp; fiscal</span></p>
+<h2>Treasury’s Monday curve: 10-year at 4.96% (issuer series of record)</h2>
+<p>Series of record — Treasury Daily Par Yield Curve TextView for September 2026, row dated 09/21/2026, columns enumerated left-to-right including the 1.5-month tenor. Monday close: <strong>2-year 4.76%</strong>, <strong>10-year 4.96%</strong>, <strong>20-year 5.33%</strong>, <strong>30-year 5.29%</strong>. Friday 18&nbsp;Sep had been 10-year 5.01% / 30-year 5.34% / 2-year 4.76%. So the long end eased roughly five basis points on the week’s oil soft patch; the 2-year was unchanged at 4.76%.</p>
+<p>Column-position discipline applied (standing rule after the Sep&nbsp;18/20 misreads): counted from the right-hand edge (30y, 20y, 10y) rather than trusting a summariser’s label.</p>
+<p><strong>What to watch:</strong> Tuesday’s issuer row when posted; any refunding or buyback announcement; September CPI in October for the diesel pass-through into food-at-home and transport services.</p>
+<div class="div">
+<p class="t">Accountability</p>
+<p>Prior issues wrongly printed vendor-summary 10-year levels through 5%. Corrected against Treasury’s own series on 18&nbsp;Sep. Today’s levels are issuer-only.</p>
+</div>
+<p class="sources">Sources: <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202609">Treasury Daily Par Yield Curve TextView</a> (primary, Sep&nbsp;2026 table)</p>
+<div class="fb">
+<p><strong>Issuer 10-year print as a lead on a quiet fiscal day?</strong></p>
+<label><input type="radio" name="fb-tsy"/> Yes — keep the series of record visible</label>
+<label><input type="radio" name="fb-tsy"/> Also today unless something moves 10bp+</label>
+<label><input type="radio" name="fb-tsy"/> Drop on quiet days</label>
+</div>
+</article>
+
+<article id="ofac-iran">
+<p class="meta"><span class="chip">Geopolitics</span> <span class="chip">US policy</span></p>
+<h2>OFAC SDN notice: designation for operating in Iran’s digital-asset sector</h2>
+<p>Today’s FR publishes OFAC’s notice (FR Doc. 2026-19287) of a sanctions action issued 17&nbsp;September: one or more persons placed on the SDN List pursuant to E.O.&nbsp;13902 for operating in the digital asset sector of the Iranian economy. Property and interests in property of the designated persons are blocked; US persons are generally prohibited from dealing with them. The FR text’s name graphics did not parse in this environment — treat the legal authority and sector as verified; do not invent the entity names from secondary colour.</p>
+<p>US channel: Graham Act / Iran secondary-sanctions architecture signed last week meets OFAC’s digital-asset targeting. Adjacent to, not fused with, the Hormuz/diesel chain.</p>
+<p><strong>What to watch:</strong> OFAC recent-actions detail page for named entities and FAQs; any exchange delistings; Chinese or UAE facilitation patterns.</p>
+<p class="sources">Sources: <a href="https://www.federalregister.gov/documents/2026/09/22/2026-19287/notice-of-ofac-sanctions-action">FR 2026-19287</a> (primary abstract/authority) · ofac.treasury.gov recent-actions (chase names)</p>
+<div class="fb">
+<p><strong>OFAC Iran digital-asset SDN — lead or Also today?</strong></p>
+<label><input type="radio" name="fb-ofac"/> Lead — implements the new sanctions architecture</label>
+<label><input type="radio" name="fb-ofac"/> Also today until names are confirmed</label>
+<label><input type="radio" name="fb-ofac"/> Less — routine designation</label>
+</div>
+</article>
+
+<h2 class="section">Also today</h2>
+<p class="secnote">Ten short items. Each opens. Not a dumping ground for yesterday’s unfinished leads.</p>
+<div class="also-list">
+
+<details>
+<summary>Kallas urges EU to bolster the Red Sea mission against Houthi threat <span class="chip">Energy</span> <span class="chip">Geopolitics</span></summary>
+<div class="exp">
+<p>gCaptain: EU High Representative Kaja Kallas called for member states to send more naval vessels to protect commercial shipping in the Red Sea. Sit inside the Bab el-Mandeb / Houthi thread as a European force-generation ask — test remains war-risk premiums and transit recovery, not ship count alone. <a href="https://gcaptain.com/">gCaptain</a></p>
+</div>
+</details>
+
+<details>
+<summary>Hormuz “shuttles” keep oil flowing — at high cost <span class="chip">Energy</span></summary>
+<div class="exp">
+<p>gCaptain: producers are using a shuttling system to keep Middle East oil exports moving despite the conflict. Mechanism colour inside the one oil chain — ship-to-ship / offshore transfer economics that convert a short pipeline haul into expensive sea logistics. Do not split into a second oil lead. <a href="https://gcaptain.com/">gCaptain</a></p>
+</div>
+</details>
+
+<details>
+<summary>Global diesel prices hit record highs <span class="chip">Energy</span></summary>
+<div class="exp">
+<p>gCaptain: diesel has rallied to records in Europe and the US as Iran and Ukraine wars cut exports from major producers. International confirmation of the US AAA print — still one causal chain. <a href="https://gcaptain.com/">gCaptain</a></p>
+</div>
+</details>
+
+<details>
+<summary>FCC seeks comment on RF exposure issues after D.C. Circuit remand <span class="chip">Science</span></summary>
+<div class="exp">
+<p>FR NOTICE 2026-19364: FCC OET seeks comment on RF exposure issues remanded in <em>Environmental Health Trust v. FCC</em>, 9 F.4th 893 (D.C. Cir. 2021). Pairs with Monday’s HHS EMF/RF RFI — standing science/public-health thread, not a rule. <a href="https://www.federalregister.gov/documents/2026/09/22/2026-19364/fcc-seeks-comment-on-rf-exposure-issues-subject-to-dc-circuit-remand-in-environmental-health-trust-v">FR 2026-19364</a></p>
+</div>
+</details>
+
+<details>
+<summary>FDA substitutes “nonclinical” for “animal” testing terminology <span class="chip">Science</span></summary>
+<div class="exp">
+<p>FR 2026-19350 (direct final) and 2026-19349 (proposed companion): FDA replaces references to “animal” tests/studies with “nonclinical,” aiming to remove an emphasis on animal testing as the only nonclinical safety method and to foster validated alternatives. Adds no new requirements. <a href="https://www.federalregister.gov/documents/2026/09/22/2026-19350/nonclinical-testing-terminology">FR 2026-19350</a></p>
+</div>
+</details>
+
+<details>
+<summary>FleetCor Technologies: FTC proposed consent order <span class="chip">US financials</span></summary>
+<div class="exp">
+<p>FR 2026-19289: analysis of proposed consent order for public comment on alleged unfair/deceptive acts. Payments/fleet-card adjacency to Core financials — short. <a href="https://www.federalregister.gov/documents/2026/09/22/2026-19289/fleetcor-technologies-analysis-of-proposed-consent-order-to-aid-public-comment">FR 2026-19289</a></p>
+</div>
+</details>
+
+<details>
+<summary>CBP: quarterly IRS interest rates unchanged for Oct–Dec <span class="chip">US debt &amp; fiscal</span></summary>
+<div class="exp">
+<p>FR 2026-19292: for the quarter beginning 1&nbsp;Oct 2026, underpayment rate 7% (corps and non-corps); overpayment 7% non-corps / 6% corps — unchanged from prior quarter. Routine but issuer-adjacent. <a href="https://www.federalregister.gov/documents/2026/09/22/2026-19292/quarterly-irs-interest-rates-used-in-calculating-interest-on-overdue-accounts-and-refunds-of-customs">FR 2026-19292</a></p>
+</div>
+</details>
+
+<details>
+<summary>OCC/FDIC “unsafe or unsound practices” final rule — correction <span class="chip">US financials</span></summary>
+<div class="exp">
+<p>FR 2026-19312: corrects an incorrect OCC docket number in the 1&nbsp;Sep final rule defining “unsafe or unsound practice” and revising the MRA supervisory framework. Housekeeping — recorded so the bank-reg package is complete. <a href="https://www.federalregister.gov/documents/2026/09/22/2026-19312/unsafe-or-unsound-practices-matters-requiring-attention-correction">FR 2026-19312</a></p>
+</div>
+</details>
+
+<details>
+<summary>Florida school-vaccine rule 64D-3.046: still no hearing notice eight days past the deadline <span class="chip">Florida</span></summary>
+<div class="exp">
+<p>Standing absence, not a development: comment/hearing-request window closed 14&nbsp;Sep; prior runs found only the 24&nbsp;Aug proposed-rule notice on flrules.org. Eighth day of the same register fact — recorded so the sweep is auditable. Triggers unchanged: notice of hearing, adoption without one, or DOAH filing.</p>
+</div>
+</details>
+
+<details>
+<summary>Florida dengue w37 still unpublished — eleventh run recording an absence <span class="chip">Florida</span></summary>
+<div class="exp">
+<p>DOH arbovirus index still ended at week&nbsp;36 when last verified; w36 (6–12&nbsp;Sep) remains the ledger. A missing report is an absence, not a development. Number that would change the risk picture remains a second serotype in the PCR line.</p>
+</div>
+</details>
+
+</div>
+
+<h2 class="section">Florida &amp; Tampa Bay</h2>
+<p>Empty on local merit this run. Dengue death confirmation and “may be waning” framing ran 20&nbsp;Sep; no w37 ledger verified this morning. School-vaccine register absence and dengue publication gap carried under Also today, not manufactured into local leads. Empty is fine.</p>
+
+<h2 class="section">Provenance &amp; negative check</h2>
+<p><strong>19 sources checked; 13 outside active watchlist threads (≥half).</strong> Outside-watchlist examples: FR 2026-19308 / 19310 / 19388 / 19287 / 19364 / 19350 / 19349 / 19289 / 19292 / 19312 (FDIC mergers, State Bank Parity, SEC tokenized NMS order, OFAC SDN, FCC RF, FDA nonclinical, FleetCor, CBP IRS rates, OCC/FDIC correction); AAA Daily Fuel Gauge; Treasury Daily Par Yield Curve TextView; BC Attorney General statement; Reuters Hormuz traffic; gCaptain (tankers, Kallas, shuttles, global diesel); Axios search summary (red-phone); TechXplore / SED / ToI (OpenAI standards); Al Jazeera news index (altitude declines).</p>
+<p><strong>Negative check changed the lead list:</strong> Tuesday FR FDIC Bank Merger Act remake + SEC tokenized-NMS temporary exemption + FDIC State Bank Parity NPR + BC→OpenAI California suit displaced reprises of SEC 14a-8-as-announcement, Jane Street supervisory colour, Anthropic–Accenture as fresh news, AI Force undefined-again, Yamal fleet pressure, and DHS Mass Influx extension. Oil stayed one chain (13th AAA record + Hormuz AIS = 2 + Mon tanker hits; EIA weekly not yet posted at gather time). Bessent AI hotline carried only as an Axios Tuesday upgrade, not as a Sunday reprint.</p>
+<p><strong>Accountability:</strong> Treasury levels only from issuer series (Mon 10y 4.96%); column headers enumerated. EIA federal diesel print not invented. OFAC entity names not invented from unparsed FR graphics. OpenAI.com primary post timed out — secondary accounts labelled.</p>
+<p><strong>Blocked / thin this run:</strong> Wikipedia 22&nbsp;Sep current-events portal timed out; Handelsblatt front timed out; Axios article timed out (search summary used); openai.com timed out; NPR text index header-only; EIA gasdiesel page timed out / table page still pre-release; CNBC and congress.gov historically 403. FR JSON API and full-text endpoints worked.</p>
+<p><strong>Declined for altitude:</strong> Putin United Russia supermajority; Mali independence; Morocco Gen&nbsp;Z election; Typhoon Dujuan; Brazil poll horse-race; sports; celebrity.</p>
+<ul class="dorm">
+<li>Dormant / unchanged sweeps: UAP implementing guidance — no movement. Fed — no print/decision (omitted). AARO contract — no award. Bank stablecoin consortium — no OCC final. Florida dengue w37 — not published. Florida vaccine hearing — not noticed.</li>
+</ul>
+
+<footer>
+<p>Archive · Continuity: <a href="2026-09-21-grok.html">21&nbsp;Sep Grok</a> · <a href="2026-09-20-grok.html">20&nbsp;Sep Grok</a> · framework <a href="2026-09-10b.html">2026-09-10b</a>.</p>
+<form class="submit" onsubmit="return false;">
+<p class="fb"><em>Per-story feedback widgets above are display-only in this static Pages build; substantive brief-feedback still lands via the News-Agent repo issues.</em></p>
+</form>
+</footer>
+
+</div>
+</body>
+</html>
