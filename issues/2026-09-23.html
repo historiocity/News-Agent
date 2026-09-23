@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Wednesday, 23 September 2026</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  .corr { border:1px solid var(--accent); padding:.6rem .9rem; margin:0 0 1rem; font-size:.94rem; border-radius:3px; }
+  .corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--accent); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  .short { border-bottom:1px solid var(--rule); padding:.7rem 0; margin:0; }
+  .short > summary { color:var(--fg); cursor:pointer; list-style:none; }
+  .short > summary::-webkit-details-marker { display:none; }
+  .short > summary::before { content:"▸ "; color:var(--link); }
+  .short[open] > summary::before { content:"▾ "; }
+  .short .body { margin-top:.6rem; padding-left:1.1rem; border-left:2px solid var(--rule); font-size:.96rem; }
+  .why { font-style:italic; color:var(--muted); }
+  figure { margin:1.2rem 0 0; }
+  figcaption { font-size:.84rem; color:var(--muted); margin-top:.4rem; line-height:1.5; }
+  svg { width:100%; height:auto; display:block; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+  ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 19 &middot; Wednesday, 23 September 2026</div>
+  <h1>Diesel fell this morning &mdash; the first time in thirteen days &mdash; and OpenAI has produced a proof no mathematician can read</h1>
+  <p class="sub">Morning edition. Continues from <a href="2026-09-22.html">Tuesday</a>.</p>
+  <p class="prov"><b>13 sources checked, 8 of them outside the watchlist.</b> Six lead stories: three on subjects with no existing thread (the Navier&ndash;Stokes proof, the ACA removals, the Warner settlement) and three continuations, two of which carry corrections to this brief's own earlier framing. Seven short items.<br><br>
+  <b>Biggest story today not on this list:</b> Category 5 Hurricane Polo, the second-most intense eastern Pacific hurricane on record, which is below the line because its US channel is indirect &mdash; the item explains what that channel is and what would promote it. <b>Two things in this issue are here because this brief got them wrong:</b> the Washington arch, which was excluded yesterday as spectacle and has a concrete federal consequence after all; and the press credentials, which were reported on 19 September as not having been revoked and since have been.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#diesel-break">Diesel fell this morning, and the thirteen-day record streak is over</a></li>
+    <li><a href="#navier">OpenAI marshalled ten thousand agents at a Millennium Prize problem and produced 166 pages no mathematician can learn from</a></li>
+    <li><a href="#aca">The administration is removing 760,000 people from Obamacare and has not said how it identified them</a></li>
+    <li><a href="#warner">The Warner settlement, and the foreign-ownership decision four days before it that this brief has not previously published</a></li>
+    <li><a href="#arch">Correction: the Washington arch is not spectacle. The FAA just finished a safety review it has now invalidated</a></li>
+    <li><a href="#trumptv">Correction: the credentials were revoked. And there is now a White House channel</a></li>
+    <li><a href="#also-today">Also today (7)</a></li>
+  </ol>
+</nav>
+
+<article id="diesel-break">
+  <h2>Diesel fell this morning, and the thirteen-day record streak is over</h2>
+  <div class="meta">
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>AAA's national diesel average is <b>$6.5217</b> this morning, against <b>$6.5276</b> yesterday. It is down. The record stands where it was set on 22 September, and the run of thirteen consecutive record prints that began on 11 September has ended.</p>
+  <p>Gasoline also edged down, to $4.4744 from $4.4750.</p>
+  <p>This is the observation this brief named as the thing to watch, so here is the honest weight to put on it: <b>one day is not a turn.</b> A six-hundredth of a cent under yesterday is indistinguishable from noise in a series that moves in tenths. What makes it worth the lead is not the decline itself but the shape behind it &mdash; the daily increments decayed from roughly 5 cents to 3.9, then 1.7, and now to negative, and the weekly change has fallen from +39 cents to <b>+21.1</b> over the same stretch.</p>
+  <p>That is what a shock looks like when it stops compounding. The level remains extraordinary: diesel is <b>77% above</b> a year ago, when it was $3.6933, and the pre-2026 record of $5.810 was passed twelve days ago and never revisited.</p>
+  <p>Nothing has been fixed. The East&ndash;West pipeline is still shut, the Houthis still hold both banks of the Bab el-Mandeb, and the USDA's $22bn farm fuel forecast does not improve because the retail series flattens.</p>
+  <p><b>What to watch:</b> today's EIA distillate stocks, which is the first hard supply read since the streak broke; whether tomorrow prints below today; and the diesel&ndash;gasoline spread.</p>
+
+  <figure>
+    <svg viewBox="0 0 640 230" role="img" aria-label="AAA national average diesel price: one year ago $3.6933, one month ago $5.6074, one week ago $6.3103, yesterday $6.5276, today $6.5217, against the pre-2026 record of $5.810 set in June 2022.">
+      <rect x="0" y="0" width="640" height="230" fill="none"/>
+      <rect x="130" y="24" width="23.9" height="20" fill="#b9b2a4"/>
+      <rect x="130" y="54" width="260.7" height="20" fill="#b9b2a4"/>
+      <rect x="130" y="84" width="347.6" height="20" fill="#8a3324"/>
+      <rect x="130" y="114" width="374.4" height="20" fill="#8a3324"/>
+      <rect x="130" y="144" width="373.7" height="20" fill="#b9b2a4"/>
+      <line x1="415.7" y1="16" x2="415.7" y2="178" stroke="#1c4f8a" stroke-width="2" stroke-dasharray="5 4"/>
+      <text x="420" y="14" font-family="Georgia, serif" font-size="11" fill="#1c4f8a">June 2022 record $5.810</text>
+      <line x1="130" y1="178" x2="600" y2="178" stroke="#6b6a66" stroke-width="1"/>
+      <line x1="130" y1="178" x2="130" y2="183" stroke="#6b6a66"/>
+      <line x1="315.5" y1="178" x2="315.5" y2="183" stroke="#6b6a66"/>
+      <line x1="501" y1="178" x2="501" y2="183" stroke="#6b6a66"/>
+      <text x="130" y="196" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">$3.50</text>
+      <text x="315.5" y="196" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">$5.00</text>
+      <text x="501" y="196" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">$6.50</text>
+      <text x="122" y="39" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">year ago</text>
+      <text x="122" y="69" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">month ago</text>
+      <text x="122" y="99" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">week ago</text>
+      <text x="122" y="129" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">yesterday</text>
+      <text x="122" y="159" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">today</text>
+      <text x="600" y="218" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">AAA national average, retail diesel &middot; bars to scale from $3.50</text>
+    </svg>
+    <figcaption>Today&rsquo;s bar is shorter than yesterday&rsquo;s by 0.7 pixels, which is the entire news. It is shaded as a non-record print; the twelve before it were records.</figcaption>
+  </figure>
+
+  <p class="sources"><b>Sources:</b> <a href="https://gasprices.aaa.com/">AAA Fuel Prices, 23 September</a> &middot; continues <a href="2026-09-22.html#diesel">22 September</a></p>
+
+  <div class="fb">
+    <p>The streak is over and the level is still 77% up. What should this thread do now?</p>
+    <label><input type="radio" name="fb-diesel" value="weekly"> Drop to weekly unless something breaks</label>
+    <label><input type="radio" name="fb-diesel" value="farm"> Stay daily but follow the farm and freight costs, not the retail print</label>
+    <label><input type="radio" name="fb-diesel" value="daily"> Keep it daily while the level is this far above normal</label>
+  </div>
+</article>
+
+<article id="navier">
+  <h2>OpenAI marshalled ten thousand agents at a Millennium Prize problem and produced 166 pages no mathematician can learn from</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>Earlier this month OpenAI announced that its model had solved the <b>Navier&ndash;Stokes</b> problem &mdash; one of the seven Millennium Prize problems, and the one that asks whether the equations governing fluid flow always have smooth solutions. The announcement was celebratory. The reception among mathematicians is not.</p>
+  <p>The output is a <b>166-page manuscript</b>. Mathematicians who have looked at it say it appears technically correct and is proving extremely difficult to read, and that so far <b>humanity has learned very little from it</b>. Two working on the same equations, Tristan Buckmaster and Levent Alp&ouml;ge, are in open disagreement with OpenAI over the claim.</p>
+  <p>The method is the part to hold onto. On 1 September OpenAI heard rumours that two Millennium problems had been resolved, and &mdash; prompted by that and by a step change in an internal model &mdash; set roughly <b>10,000 AI agents</b> onto the open problems.</p>
+  <p>A proof is not only a certificate that something is true. It is the mechanism by which mathematicians acquire the technique that then solves the next twenty problems. A correct proof nobody can read delivers the certificate and withholds the technique, which is a genuinely new kind of object.</p>
+  <p><b>What to watch:</b> whether the Clay Mathematics Institute treats it as a submission; whether any group publishes an independent verification; and whether a human-legible version appears.</p>
+
+  <details>
+    <summary>Dig deeper &mdash; why &ldquo;correct but unreadable&rdquo; is the hard case, and what this brief cannot yet tell you</summary>
+    <div class="exp">
+      <p><b>The claim and its status are not the same thing.</b> A Millennium Prize award requires publication in a reputable journal and a two-year waiting period, during which the proof must achieve general acceptance in the community. &ldquo;OpenAI says it solved Navier&ndash;Stokes&rdquo; and &ldquo;Navier&ndash;Stokes is solved&rdquo; are therefore separated by a process that has not started. Nothing in the reporting says the manuscript has been submitted anywhere, and this brief has not read it.</p>
+      <p><b>Machine proofs are not new; unreadable ones are not either.</b> The four-colour theorem (1976) was proved with heavy computer case-checking and provoked the same objection, that no human could verify it end to end. Formal proof assistants like Lean now let mathematicians check arguments mechanically, and the community has broadly made peace with that. So the interesting question is not whether a machine may prove things. It is whether a 166-page argument generated by an agent swarm is <em>checkable</em> in the way a Lean proof is, or merely <em>long</em> in the way a bad paper is. Those require completely different responses, and the available reporting does not distinguish them.</p>
+      <p><b>What ten thousand agents implies about the shape of the result.</b> Parallel search across a very large number of agents is good at finding a path through a space of possible arguments and bad at finding an <em>elegant</em> one. If the manuscript is a brute-forced chain of technically valid steps, its unreadability is not an accident of presentation but a property of how it was produced &mdash; and the technique the community wants would not be in it at any length. If instead there is a compressible idea buried in it, someone will extract it and the extraction will be the real paper.</p>
+      <p><b>The commercial context belongs in the frame, carefully.</b> OpenAI is reported to have launched this effort within a day of hearing that other groups were closing in, and it is a company that has just delayed a listing to 2027 on stated safety grounds. A Millennium Prize claim is an extraordinarily valuable demonstration. That is a reason to want independent verification before accepting the framing, not a reason to assume the result is wrong.</p>
+      <p><b>Disclosure, as this brief's standing rule requires:</b> this brief is written using an Anthropic model, a direct competitor of OpenAI. Apply the discount that deserves to the paragraph above.</p>
+    </div>
+  </details>
+
+  <p class="sources"><b>Confidence:</b> Single-sourced &mdash; one NPR report, syndicated widely, which is one newsroom. The manuscript has not been read. <b>Sources:</b> <a href="https://www.npr.org/2026/09/22/nx-s1-5968588/openai-navier-stokes-problem-mathematicians-learn-little">NPR, 22 September</a></p>
+
+  <div class="fb">
+    <p>Open a thread on this?</p>
+    <label><input type="radio" name="fb-navier" value="yes"> Yes &mdash; track verification, submission and whether a readable version appears</label>
+    <label><input type="radio" name="fb-navier" value="verified"> Only if an independent group verifies or refutes it</label>
+    <label><input type="radio" name="fb-navier" value="no"> No &mdash; too far from anything that reaches me</label>
+  </div>
+</article>
+
+<article id="aca">
+  <h2>The administration is removing 760,000 people from Obamacare and has not said how it identified them</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Vice-President JD Vance and administration officials announced yesterday that about <b>760,000 enrollees</b> are being removed from Affordable Care Act coverage, on the grounds that they were fraudulently enrolled or <em>do not exist</em>. Vance, who leads a government-wide anti-fraud task force, put the saving from cancelled subsidy payments at <b>$2.2bn</b>.</p>
+  <p>Roughly <b>19.2 million</b> people are enrolled in ACA marketplace plans as of early 2026, so this is about <b>4%</b> of the marketplace.</p>
+  <p>Health-policy researchers are asking the question that decides whether this is fraud enforcement or coverage loss: <b>how were these 760,000 identified?</b> No methodology has been published. &ldquo;Fraudulently enrolled&rdquo; and &ldquo;does not exist&rdquo; are different findings requiring different evidence, and they are being reported as one number.</p>
+  <p>The distinction matters because the known failure mode here is not fabricated people. It is <em>data mismatch</em> &mdash; a name, address or immigration-status field that fails an automated cross-check on someone entirely real, which is how eligibility purges have generated wrongful removals in Medicaid and voter-roll programmes before.</p>
+  <p><b>What to watch:</b> whether CMS publishes the matching criteria; whether removed enrollees get individual notice and an appeal; and the reinstatement count, which is the only number that will show how many were wrong.</p>
+
+  <div class="div">
+    <p class="t">Where the accounts diverge</p>
+    <p><b>The substance.</b> Not the count &mdash; 760,000 and $2.2bn come from the administration and nobody disputes that those are the figures announced. The dispute is what the number <em>measures</em>: the administration describes detected fraud, and policy experts quoted in the reporting describe an unexplained removal. This is a dispute about <em>facts</em>, and it is adjudicable, because a matching methodology either exists and withstands scrutiny or it does not.</p>
+    <p><b>Cause.</b> Asymmetric access, not motive. The administration holds the enrollment data, the match logic and the error rates; nobody outside can check any of it. So officials can state a finding and critics can only state an absence &mdash; which reads as partisanship but is actually the predictable shape of any argument about a dataset only one side can see. Note the timing as well: this was announced from the White House by the Vice-President as a savings figure, which is the framing of a fiscal win rather than a programme-integrity report, and programme-integrity reports normally carry an appendix.</p>
+    <p><b>What it means for you.</b> Treat the $2.2bn as an estimate of subsidies withheld, not as a measure of fraud recovered &mdash; those are only the same number if every removal was correct. The concrete thing to watch for is notice and appeal: a genuine anti-fraud action against non-existent people needs no appeals process, because non-existent people do not appeal, so an absence of appeal machinery would tell you the administration is confident and a presence of it would tell you they expect errors. The figure that would settle it is the reinstatement rate three months out, and this brief will look for it.</p>
+  </div>
+
+  <p class="sources"><b>Sources:</b> <a href="https://www.npr.org/2026/09/23/g-s1-144623/trump-affordable-care-act">NPR</a> &middot; <a href="https://www.washingtonpost.com/politics/2026/09/22/trump-officials-plan-cut-hundreds-thousands-aca-claiming-fraud/">Washington Post</a> &middot; <a href="https://abcnews.com/US/wireStory/trump-administration-remove-760000-affordable-care-act-enrollees-136657561">ABC News</a></p>
+</article>
+
+<article id="warner">
+  <h2>The Warner settlement, and the foreign-ownership decision four days before it that this brief has not previously published</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip under">Underreported</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>California's attorney general, Rob Bonta, said yesterday that the states made demands in the Paramount&ndash;Warner Bros. Discovery deal. That is the hook for a story this brief researched on 22 September and did not publish, so it runs today.</p>
+  <p>Paramount's owners settled with a coalition of <b>twelve Democratic state attorneys general</b> over the lawsuit threatening their <b>$111bn</b> takeover. The settlement requires the two studios to be operated separately for now, and commits Paramount to release <b>at least 30 films a year for two years, then 32 a year for three</b>, or pay a penalty. Bonta was explicit that settling is not support for the merger.</p>
+  <p>Four days earlier, on 18 September, the FCC approved the financing. The merged company will be <b>49.5% foreign-owned</b>, including the sovereign wealth funds of <b>Saudi Arabia, Qatar and Abu Dhabi</b>.</p>
+  <p>Those are two different instruments pointing opposite ways, and each body issued the only kind of remedy it has power to issue: state antitrust enforcers can bargain over output, and only the FCC can rule on foreign ownership of a broadcast licensee.</p>
+  <p>A film-count covenant is enforceable and expires in five years. An ownership structure does not expire. And 49.5% is a hair under the 50% at which US foreign-ownership rules bite hardest, which is a structuring decision rather than a coincidence.</p>
+  <p><b>What to watch:</b> whether the FCC order carries auditable conditions on editorial control at CNN, which the merged company would own; and whether the 49.5% figure draws congressional attention during UN week.</p>
+
+  <p class="sources"><b>Sources:</b> <a href="https://www.wxpr.org/2026-09-21/paramount-makes-concessions-to-salvage-111-billion-warner-bros-discovery-deal">NPR on the settlement</a> &middot; <a href="https://text.npr.org/">NPR index, 23 September, on Bonta's remarks</a> &middot; <a href="https://www.sec.gov/Archives/edgar/data/1437107/000143710726000018/exhibit991.htm">Warner Bros. Discovery 8-K exhibit, SEC EDGAR</a> &middot; the FCC order itself has not been read</p>
+
+  <div class="fb">
+    <p>Open a thread on this?</p>
+    <label><input type="radio" name="fb-warner" value="yes"> Yes &mdash; the FCC conditions and the foreign-ownership structure</label>
+    <label><input type="radio" name="fb-warner" value="cnn"> Only the CNN editorial-independence angle</label>
+    <label><input type="radio" name="fb-warner" value="no"> No &mdash; media ownership is not my business</label>
+  </div>
+</article>
+
+<article id="arch">
+  <h2>Correction: the Washington arch is not spectacle. The FAA just finished a safety review it has now invalidated</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <div class="corr">
+    <p class="t">Correction</p>
+    <p>Yesterday this brief researched the arch and put it below the line, excluded as &ldquo;spectacle without policy consequence&rdquo; on the grounds that nothing had been appropriated, designed or contracted. That judgement was wrong, and the fact that makes it wrong was already available: the FAA had completed a formal review. The exclusion rule was applied correctly to the wrong set of facts. That issue was not published &mdash; a backstop edition ran instead &mdash; so the error reached no reader, but it was made and it is worth recording, because the same reasoning would have excluded it again today.</p>
+  </div>
+  <p>The President wrote on Sunday that the planned <b>250-foot</b> arch near the National Mall will &ldquo;house, store, and have the rapid ability to use large numbers of drones, plus Snipers, on both the roof and plaza areas&rdquo;, and will store ammunition.</p>
+  <p>Here is the consequence. On <b>Friday</b> the FAA published the findings of a <b>six-month</b> evaluation concluding that the arch &mdash; which would stand directly in the approach path into Reagan National &mdash; would not pose a risk to airspace. That review did not consider military drones, because nobody had said there would be any.</p>
+  <p>Representative Don Beyer of Virginia put it bluntly: a drone-launching site in the landing path for DCA is, in his words, a &ldquo;stupid, dangerous, and unworkable idea&rdquo;, and the FAA's six months of work is now obsolete and will have to be redone.</p>
+  <p>That is the difference between rhetoric and consequence. A completed federal safety determination has been overtaken by a social-media post, in the approach path of an airport that had a fatal mid-air collision in January 2025.</p>
+  <p><b>What to watch:</b> whether the FAA reopens the evaluation; the National Capital Planning Commission's treatment of an ammunition store on the Mall; and whether any of this appears in a design solicitation.</p>
+
+  <p class="sources"><b>Sources:</b> <a href="https://www.npr.org/2026/09/22/nx-s1-5977646/trump-dc-arch-military-complex-questions">NPR on the FAA complication</a> &middot; <a href="https://www.npr.org/2026/09/20/nx-s1-5975449/trump-washington-dc-arch-military-complex-snipers-drones">NPR on the original post</a> &middot; <a href="https://www.cnn.com/2026/09/20/politics/trump-dc-arch-military-complex">CNN</a> &middot; <a href="https://www.cnbc.com/2026/09/20/trump-says-his-planned-arch-would-become-a-military-complex.html">CNBC</a></p>
+
+  <div class="fb">
+    <p>This brief's anti-topic rule excluded a story with a real federal consequence. How should that rule change?</p>
+    <label><input type="radio" name="fb-arch" value="faa"> Check for a completed regulatory action before calling anything spectacle</label>
+    <label><input type="radio" name="fb-arch" value="asis"> Rule is fine &mdash; this was a judgement error, not a rule error</label>
+    <label><input type="radio" name="fb-arch" value="looser"> Be less willing to exclude in the first place</label>
+  </div>
+</article>
+
+<article id="trumptv">
+  <h2>Correction: the credentials were revoked. And there is now a White House channel</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <div class="corr">
+    <p class="t">Correction</p>
+    <p>On 19 September this brief led with the observation that the President had announced a ban on CNN, MS NOW and Politico but that their reporters were still at the White House and their passes had not been pulled. That was accurate on Friday afternoon and is no longer true: reporting now describes the credentials as having been abruptly revoked. The framing &mdash; announcement versus administrative act &mdash; was right as an analytical distinction and wrong as a prediction.</p>
+  </div>
+  <p>The White House began streaming a 24-hour channel on Monday night, promising its &ldquo;biggest moments all in one place&rdquo; under the tagline <em>The Essentials Station</em>. It opened with the President's 3 July speech at Mount Rushmore.</p>
+  <p>Press-freedom advocates and Democratic legislators have called it state-run media. The three barred outlets have filed a joint suit on First Amendment grounds.</p>
+  <p>The thing worth separating: a government producing its own channel is not in itself unusual &mdash; agencies have run broadcast operations for decades, and the White House has published its own video for years. What is different is the sequence. Independent outlets were removed first, and the state channel launched into the space they occupied, three days later.</p>
+  <p>That ordering is what distinguishes a communications product from a substitution, and it is the ordering the lawsuit will be about.</p>
+  <p><b>What to watch:</b> the first hearing in the suit; whether the pool rotation is reconstituted without the three outlets; and whether any other organisation is added to the ban.</p>
+
+  <p class="sources"><b>Sources:</b> <a href="https://www.npr.org/2026/09/22/nx-s1-5977768/trump-tv-media-ban-white-house">NPR</a> &middot; <a href="https://time.com/article/2026/09/22/trump-tv-white-house-press-pool-ban-boycott-state-media/">Time</a> &middot; <a href="https://thehill.com/homenews/administration/6102606-trump-bans-white-house-press/">The Hill</a> &middot; corrects <a href="2026-09-19.html#press-ban">19 September</a>; continues <a href="2026-09-21.html#press">21 September</a></p>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Seven things found in this morning&rsquo;s source checks that did not clear the lead bar. Each expands to the substance, the reason it sits below the line, and where it came from. Nothing here needs you to leave the page.</p>
+
+<details class="short" id="s-polo">
+  <summary><span class="chip">Geopolitics</span> Hurricane Polo is the second-most intense eastern Pacific storm on record and went from tropical storm to Category 5 in a day. Its US channel is a container port, not a coastline.</summary>
+  <div class="body">
+    <p>Polo reached <b>165mph</b> sustained winds on Tuesday night, making it the <b>second-most intense hurricane on record in the eastern Pacific</b> behind Patricia's 215mph in 2015. It was centred about 210 miles south of Zihuatanejo, nearly stationary, and was expected to turn sharply northwest overnight and then track west-northwest. It is the third Category 5 of the Pacific season, after Genevieve and Lowell.</p>
+    <p>The mechanism is the notable part: it went from tropical storm to Category 5 in roughly 24 hours, one of the fastest intensification rates on record. Rapid intensification is the forecasting problem that matters most for evacuation timelines, because it compresses warning into hours.</p>
+    <p>The US channel, stated honestly, is indirect and real: L&aacute;zaro C&aacute;rdenas and Manzanillo are among the largest container ports feeding US-bound freight, and Michoac&aacute;n and Guerrero supply American winter produce. A track that stays offshore touches neither.</p>
+    <p><b>Below the line because</b> it is forecast to skirt the coast rather than land, no US territory is threatened, and this brief's altitude bar requires a US channel that a near-miss does not provide. It becomes a lead on a port closure, a landfall, or a produce-supply disruption.</p>
+    <p class="sources"><b>Confidence:</b> Independent corroboration. <b>Sources:</b> <a href="https://www.npr.org/2026/09/23/nx-s1-5978589/hurricane-polo">NPR</a> &middot; <a href="https://www.cbsnews.com/news/hurricane-polo-category-5-mexico-life-threatening-flooding/">CBS News</a> &middot; <a href="https://www.sfchronicle.com/weather/article/hurricane-polo-mexico-rainfall-22443230.php">San Francisco Chronicle on the intensity record</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-guard">
+  <summary><span class="chip">US politics &amp; policy</span> Several dozen former military lawyers have been writing to Congress about the use of the military around the election, now 41 days out.</summary>
+  <div class="body">
+    <p>The Former Judge Advocates Working Group &mdash; a nonpartisan group of retired military lawyers including Major General Steven Lepper &mdash; has spent months writing to Congress about the possibility that the armed forces could be used to influence the November election, and has been tracking executive orders for signs of it.</p>
+    <p>The legal position is not ambiguous. A state governor may deploy the National Guard in support of elections in many capacities. A president deploying troops or federal armed agents to polling places is illegal, and has been since Reconstruction. In March, Democratic members of the Senate Armed Services Committee sought assurances from General Gregory Guillot of USNORTHCOM, who would receive any such order.</p>
+    <p>This sits alongside the DHS document this brief reported on 18 September &mdash; a list of multilingual voting jurisdictions produced in response to a FOIA request about federal agents at polling places.</p>
+    <p><b>Below the line because</b> it is a warning about something that has not happened, from people whose job is to warn. The underlying reporting is a week old and nothing has moved. It becomes a lead on an actual order, a deployment, or a refusal.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced. <b>Sources:</b> <a href="https://www.npr.org/2026/09/17/nx-s1-5969937/fears-grow-that-trump-could-use-military-to-influence-the-upcoming-election">NPR, 17 September</a> &middot; <a href="https://www.votebeat.org/2026/01/20/trump-national-guard-troops-polling-places-2026-election-insurrection-act/">Votebeat on the legal framework</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-tropics">
+  <summary><span class="chip">Florida &amp; Tampa Bay</span> The Atlantic wave off Africa is up to 40% over seven days, and the forecast calls it short-lived.</summary>
+  <div class="body">
+    <p>The 2am outlook has the tropical wave moving off the west African coast at <b>20% over 48 hours and 40% over seven days</b>, up from 30% yesterday. A low is expected to form within a day and could become a <em>short-lived</em> tropical depression on Thursday or Friday. No named storms are active in the basin.</p>
+    <p>&ldquo;Short-lived&rdquo; is the word that matters and it cuts against the geometry. Cabo Verde systems are the ones with the runway to reach the Gulf, but a depression forecast to dissipate quickly does not get to use that runway. Rising probability and a shortening expected lifespan point in opposite directions.</p>
+    <p>Thirteen days past the climatological peak, the basin has produced one named storm this brief has tracked &mdash; Fay, near the Azores &mdash; and nothing that has threatened the United States.</p>
+    <p><b>Below the line because</b> 40% at seven days on a system expected to be short-lived is not a forecast of anything. It runs as a lead on a named storm with a westward track.</p>
+    <p class="sources"><b>Confidence:</b> Primary source. <b>Sources:</b> <a href="https://www.nhc.noaa.gov/text/MIATWOAT.shtml">NHC Atlantic Tropical Weather Outlook, 2am EDT 23 September</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-houthi">
+  <summary><span class="chip">Geopolitics</span> The Houthis are pushing deeper into western Yemen, and the people describing it to reporters are residents rather than officials.</summary>
+  <div class="body">
+    <p>Houthi forces are attempting to advance further into western Yemen, with witnesses describing the disruption to daily life to reporters. This follows the capture of Mokha, the islands near the Bab el-Mandeb, and positions on both banks of the strait.</p>
+    <p>The reason this brief keeps returning to Yemen is not the civil war. It is that roughly 12% of peacetime world trade passes through the Bab el-Mandeb, that the strait now has hostile positions on both sides, and that Saudi Arabia's only pipeline bypass of Hormuz terminates at Yanbu on the Red Sea &mdash; which means the two chokepoints are not independent problems.</p>
+    <p>Witness testimony is valuable for establishing that an advance is happening and poor for establishing where the line is. Territorial claims in this conflict have repeatedly been announced before they were true.</p>
+    <p><b>Below the line because</b> it is an advance without a confirmed position, and the price chain it feeds ran as the lead story today from the other end. It becomes a lead on a transit-count collapse, a war-risk premium change, or a US military response.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced. <b>Sources:</b> <a href="https://text.npr.org/">NPR index, 23 September</a> &middot; continues <a href="2026-09-22.html#redsea">22 September</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-911">
+  <summary><span class="chip">US politics &amp; policy</span> Unarmed 911 response teams now operate in nearly a hundred cities &mdash; a structural change to policing that arrived without a national argument about it.</summary>
+  <div class="body">
+    <p>Programmes dispatching unarmed civilian teams &mdash; typically a medic and a crisis counsellor &mdash; to certain 911 calls are now running in close to <b>100 American cities</b>.</p>
+    <p>What makes this worth recording is how it happened. The idea was at the centre of a furious national argument in 2020, framed as defunding the police, and most of the proposals attached to that framing failed. The programmes spread anyway, city by city, procured as dispatch efficiency rather than as reform: a mental-health call handled by a counsellor frees an armed officer for something else, which is an argument a police chief and a city budget office can both accept.</p>
+    <p>The measurable claims &mdash; fewer use-of-force incidents, shorter response times on other calls, cost per call &mdash; are the ones to look for, and this brief has not seen the aggregate data.</p>
+    <p><b>Below the line because</b> it is a trend piece without a dated event or a number attached, and no figure is the news today. It would be a lead on a multi-city outcome study, or on a state mandating or banning the model.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced. <b>Sources:</b> <a href="https://text.npr.org/">NPR index, 23 September</a> &mdash; the underlying report was not read in full</p>
+  </div>
+</details>
+
+<details class="short" id="s-poll">
+  <summary><span class="chip">US politics &amp; policy</span> A poll finds most voters see the midterms as being about the President and disapprove &mdash; recorded, and then set aside, because horse-race polling is an anti-topic here.</summary>
+  <div class="body">
+    <p>New polling reports that most voters agree the 2026 midterms are principally about the President, and that they disapprove of him.</p>
+    <p>This brief's config lists horse-race polling and campaign tactics as anti-topics, and that rule exists for a good reason: a poll is a measurement of opinion at a moment, it moves, and forty-one days out it has no predictive authority worth a reader's attention. Nothing in this result changes a price, a rate, a rule or an obligation.</p>
+    <p>It is written up rather than dropped because it led a general-interest index this morning, and a selection rule that is never shown working is indistinguishable from an oversight. If the exclusion is wrong &mdash; if you want the electoral temperature tracked between now and November &mdash; this is the item to say so on.</p>
+    <p><b>Below the line because</b> it is an opinion measurement, not an event. The election-related items this brief does run are the ones with documents behind them: the DHS jurisdiction list, the mail-ballot rule, the judge advocates' letters.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced. <b>Sources:</b> <a href="https://text.npr.org/">NPR headline index, 23 September</a> &mdash; the poll's sponsor, sample and margin were not read</p>
+  </div>
+</details>
+
+<details class="short" id="s-pinellas">
+  <summary><span class="chip">Florida &amp; Tampa Bay</span> Pinellas took public comment last night on closing six schools. The board vote is 13 October, and this brief has not yet seen what was said.</summary>
+  <div class="body">
+    <p>Yesterday's issue had the Pinellas school board taking comment on the &ldquo;Planning for Progress&rdquo; closure proposal &mdash; Tarpon Springs Fundamental, Kings Highway, Blanton, Bear Creek, Sexton and Lealman Innovation &mdash; with Azalea Elementary converting to K&ndash;8 and Boca Ciega High becoming a technical high school. The board vote is <b>13 October</b>, after a workshop on 6 October.</p>
+    <p>The comment session was last night and no account of it has reached this brief. That is the honest position rather than a summary assembled from the proposal.</p>
+    <p>The number that governs this is the one worth repeating: of children born in Pinellas in 2020, only <b>68%</b> enrolled in a Pinellas public school. Closure lists change between presentation and vote more often than not, and the 6 October workshop is where that usually shows.</p>
+    <p><b>Below the line because</b> the meeting happened after this brief's sources were last updated and the vote is three weeks out. It is the local lead when the list changes or the board votes.</p>
+    <p class="sources"><b>Confidence:</b> Prior reporting only. <b>Sources:</b> continues <a href="2026-09-22.html#pinellas">22 September</a></p>
+  </div>
+</details>
+
+<div class="fb">
+  <p><b>About this section as a whole.</b> Seven items, ranked below the line &mdash; including two that led the wires, with the exclusion reasoning attached. Were the right things ranked there?</p>
+  <label><input type="radio" name="fb-alsotoday" value="right"> Yes &mdash; the boundary is about right</label>
+  <label><input type="radio" name="fb-alsotoday" value="promote"> No &mdash; at least one of these should have been a lead (say which in the issue)</label>
+  <label><input type="radio" name="fb-alsotoday" value="fewer"> Too many &mdash; be stricter about what gets written up at all</label>
+  <label><input type="radio" name="fb-alsotoday" value="more"> Too few &mdash; I want everything you saw</label>
+</div>
+
+<footer>
+  <h2 class="section">Sources checked this run</h2>
+  <p><b>Watchlist-pointed (5):</b> AAA Fuel Prices national averages &middot; the <em>Federal Register</em> JSON API for 23 September (no rules or proposed rules indexed at the time of this check) &middot; National Hurricane Center Atlantic outlook &middot; SEC EDGAR filings for Warner Bros. Discovery &middot; this brief's own archive, for the two corrections.</p>
+  <p><b>Outside the watchlist (8):</b> <a href="https://text.npr.org/">text.npr.org headline index</a>, the general wire sweep, and five stories reached from it (the Navier&ndash;Stokes reception, the ACA removals, Trump TV, the arch's FAA complication, Hurricane Polo) &middot; Washington Post &middot; ABC News &middot; CNN and CNBC on the arch &middot; Time and The Hill on the White House channel &middot; CBS News and the San Francisco Chronicle on Polo &middot; Votebeat on the military-at-the-polls legal framework.</p>
+  <p><b>The negative check:</b> Hurricane Polo, which is below the line with its US channel spelled out rather than dismissed. The two corrections in this issue came from the same check &mdash; asking what the biggest thing missing was surfaced a story this brief had itself excluded the day before.</p>
+  <p><b>Could not reach:</b> the Navier&ndash;Stokes manuscript &middot; the FCC order on the Warner financing &middot; the FAA's airspace findings document &middot; any CMS methodology for the ACA removals, which does not appear to be public &middot; an account of last night's Pinellas comment session &middot; NPR article pages redirect off the text host, so the index and search were used.</p>
+
+  <h2 class="section">Dormant threads</h2>
+  <p class="secnote">Kept on the watchlist, dropped from the body, picked up the moment a source check touches one.</p>
+  <ul class="dorm">
+    <li><b>Ukraine&ndash;Russia negotiations</b> &mdash; wakes on a published text either side will describe, a front-line ceasefire, or a named difference from the Anchorage proposals.</li>
+    <li><b>Gulf states &amp; Article 51</b> &mdash; Kuwait or the UAE restricting US base access, or a collective GCC statement. UN week is the likeliest venue.</li>
+    <li><b>Missouri congressional map</b> &mdash; settled for November; wakes only on the referendum, an Eighth Circuit merits panel in <em>Onder</em>, or a contempt ruling.</li>
+    <li><b>Autonomous weapons regulation</b> &mdash; CCW review conference, 16&ndash;20 November.</li>
+    <li><b>Indonesia free-meals programme</b> &middot; <b>Anak Krakatau</b> &middot; <b>Nepal&ndash;Tibet glacial flood</b> &middot; <b>Israel&ndash;Lebanon June framework</b> &middot; <b>Saxony-Anhalt government formation</b> &mdash; each on its named trigger.</li>
+  </ul>
+
+  <p style="margin-top:1.4rem">No open <code>brief-feedback</code> issues were waiting this morning, so nothing in <code>config.md</code> changed on that account.</p>
+  <p><a href="../">Archive</a> &middot; Previous: <a href="2026-09-22.html">22 September</a></p>
+
+  <div class="submit">
+    <button type="button" id="send-feedback">Send feedback as a GitHub issue</button>
+  </div>
+</footer>
+
+</div>
+<script>
+(function () {
+  var owner = "historiocity", repo = "News-Agent";
+  document.getElementById("send-feedback").addEventListener("click", function () {
+    var lines = ["Feedback on Issue No. 19 (2026-09-23)", ""];
+    document.querySelectorAll(".fb input[type=radio]:checked").forEach(function (el) {
+      lines.push(el.name + ": " + el.value);
+    });
+    if (lines.length === 2) lines.push("(no radio answers selected)");
+    lines.push("", "Anything else:", "");
+    var url = "https://github.com/" + owner + "/" + repo + "/issues/new"
+      + "?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("brief-feedback: 2026-09-23")
+      + "&body=" + encodeURIComponent(lines.join("\n"));
+    window.open(url, "_blank");
+  });
+})();
+</script>
+</body>
+</html>
