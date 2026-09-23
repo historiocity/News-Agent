@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>The Brief — Wednesday, 23 September 2026 (Grok edition)</title>
+<style>
+:root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+@media (prefers-color-scheme: dark) {
+:root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+.wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+.kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+.sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+.prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+nav ol { margin:0; padding-left:1.2rem; }
+nav li { margin:.25rem 0; }
+nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+a { color:var(--link); }
+article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+.secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+.meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+.chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+.chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+.chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+.sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+.div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+.div p { margin:.4rem 0; }
+.div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+.corr { background:var(--box); border-left:4px solid var(--accent); padding:.8rem 1rem; margin:0 0 1.6rem; font-size:.95rem; }
+.corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+.corr p { margin:.45rem 0; }
+details { margin-top:.8rem; }
+details summary { cursor:pointer; color:var(--link); }
+.exp { margin-top:.6rem; }
+.also-list { margin:0; }
+.also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+.also-list details:first-of-type { border-top:1px solid var(--rule); }
+.also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+.also-list .exp { font-size:.94rem; padding-left:.2rem; }
+.btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+.btl b { color:var(--accent); }
+footer { color:var(--muted); font-size:.88rem; }
+.fb { margin-top:1rem; font-size:.9rem; }
+.fb p { margin:.6rem 0 .2rem; }
+.fb label { display:block; margin:.15rem 0; }
+.submit { margin-top:2rem; }
+button { font:inherit; padding:.45rem .8rem; }
+ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<p class="kicker">The Brief · Issue No. 19-grok · Wednesday, 23 September 2026 · Morning / Grok edition</p>
+<h1>CMS freezes new ACA brokers; diesel slips off its thirteenth AAA record as Trump weighs an export ban; Anthropic and OpenAI cut prices the same afternoon they called for a slowdown; and fifteen governments named 24 cartels under Shield of the Americas</h1>
+<p class="sub">Nine stories at length, ten in brief. Independent Grok gather for the 7am&nbsp;ET cron; does not overwrite Claude/Action files. Continuity for accountability: <a href="2026-09-22-grok.html">22&nbsp;Sep Grok</a> · <a href="2026-09-21-grok.html">21&nbsp;Sep Grok</a> · framework <a href="2026-09-10b.html">2026-09-10b</a>.</p>
+<p class="prov">
+Loaded <a href="https://raw.githubusercontent.com/historiocity/News-Agent/main/config.md">config.md</a>. Re-read closed brief-feedback (#3, #7). Quality bar: Issue&nbsp;10 / <a href="2026-09-10b.html">2026-09-10b</a>.
+<strong>18&nbsp;sources checked, 12 of them outside the active watchlist threads.</strong> Core beats lead. Oil/pump/chokepoints stay one causal chain. Fed = prints and the decision only — no new Fed print or FOMC action; Fed speakers omitted.
+<strong>Negative check reshaped the lead list:</strong> Wednesday’s Federal Register carried an HHS/CMS interim final rule (CMS-9872-IFC) that immediately pauses registration of agents and brokers without Plan&nbsp;Year&nbsp;2026 Exchange agreements through <strong>1&nbsp;February&nbsp;2027</strong>, plus a Commerce/BIS notice defining zero-rate specialty pharmaceuticals under Section&nbsp;232 Proclamation&nbsp;11020 six days before the 100% tariff bites most companies — neither on yesterday’s Grok menu. Same-day Anthropic Opus&nbsp;5.5 / OpenAI GPT-6 Sol&amp;Luna launches, Kalshi’s perpetual security-futures filing, New York’s $1.4bn offshore-wind Judgment Fund suits, and the State Department’s Shield of the Americas joint statement (15 governments, 24 named groups) likewise were not yesterday’s agenda. Those displaced reprises of the FDIC Bank Merger remake, SEC tokenized-NMS exemption-as-announcement, BC–OpenAI Tumbler Ridge colour, OpenAI frontier-standards/UNSC as fresh news, and Axios “red telephone” as a calendar item. Diesel stayed fused with Hormuz measurement and the export-ban examination — not split.
+</p>
+</header>
+
+<nav>
+<ol>
+<li><a href="#cms-brokers">Negative check: CMS freezes new ACA agent and broker registrations through 1 February</a></li>
+<li><a href="#oil-chain">One chain to the pump: AAA diesel slips to $6.5217 as Trump weighs a diesel export ban; Hormuz visible traffic stays at three</a></li>
+<li><a href="#model-war">Anthropic and OpenAI cut mid-tier prices hours after both called for a frontier slowdown</a></li>
+<li><a href="#bis-pharma">Commerce publishes the zero-tariff specialty-pharma list six days before Section 232 bites</a></li>
+<li><a href="#kalshi-sfp">Kalshi asks to list perpetual security futures on single-name equities</a></li>
+<li><a href="#ny-wind">New York leads eight AGs against $1.4bn offshore-wind buyouts paid from the Judgment Fund</a></li>
+<li><a href="#shield">Shield of the Americas: fifteen governments name 24 cartels for asset freezes and visa bans</a></li>
+<li><a href="#xi-ai">Xi lands into an AI agenda that still has one concrete ask — and a same-day model price war</a></li>
+<li><a href="#bab">Bab el-Mandeb: 22 visible transits Tuesday against a 10-day average of ~26</a></li>
+</ol>
+<p class="also">Also today: Nasdaq ATH · Coinbase/Bitnomial companion filings · CBP truck export-manifest test · USTR sugar TRQ · France UNSC Hormuz draft · Meta Muse · Alibaba AI chip · SCOTUS scholar stay · dengue absence · Florida empty</p>
+</nav>
+
+<article id="cms-brokers">
+<p class="meta"><span class="chip under">Negative check</span> <span class="chip new">New</span> <span class="chip">Core · US policy</span> <span class="chip">Primary source</span></p>
+<h2>Negative check: CMS freezes new ACA agent and broker registrations through 1 February</h2>
+<p>In today’s Federal Register, HHS/CMS publishes an interim final rule with comment (CMS-9872-IFC; RIN&nbsp;0938-AW26; FR Doc.&nbsp;2026-19493) that <strong>codifies authority</strong> at 45&nbsp;CFR&nbsp;§155.220(o) to impose temporary moratoria on certain agent and broker registrations with the Federally-facilitated Exchanges — and, in the same document, <strong>imposes one immediately</strong>.</p>
+<p>Effective <strong>22&nbsp;September&nbsp;2026</strong>, CMS pauses registration of agents and brokers that do <em>not</em> have Plan&nbsp;Year&nbsp;2026 Exchange agreements and want Plan&nbsp;Year&nbsp;2027 access. The pause runs until <strong>1&nbsp;February&nbsp;2027</strong> unless lifted earlier or extended by further FR notice. It does <strong>not</strong> cover web-brokers, does <strong>not</strong> hit State-based Exchanges that run their own platforms, and does not block reinstatement after a reversed termination.</p>
+<p>The load-bearing numbers in the preamble: from 2023–2025 CMS received <strong>over 624,000</strong> consumer complaints of unauthorized enrollments or plan switches confirmed by issuer review — roughly <strong>300,000 in 2025 alone</strong>. Newly registered Plan&nbsp;Year&nbsp;2026 agents were ~11% of agents with active enrollments but ~30% of the 569 Notices of Intent to Terminate issued in July–August 2026. CMS estimates the temporary pause prevents improper APTC outlays in a modeled range of roughly <strong>$48&nbsp;million to $877&nbsp;million</strong> annually and transfers ~$71–98&nbsp;million in commission revenue toward already-registered brokers. Comments close <strong>21&nbsp;November&nbsp;2026</strong>. OIRA tagged the action significant/major under E.O.&nbsp;12866 and the CRA; HHS waived prior notice-and-comment and the ordinary delayed effective date on good-cause grounds tied to Open Enrollment starting <strong>1&nbsp;November</strong>.</p>
+<p><strong>What to watch:</strong> whether state AGs or broker trade groups sue the IFC; whether the enhanced Login.gov/ID.me identity-proofing and SSN/immigration verification CMS describes actually land before OE; any early lift or extension of the February&nbsp;1 date.</p>
+<div class="div">
+<p class="t">Divergence — program integrity vs gatekeeping</p>
+<p><strong>What is disputed.</strong> Whether a prospective pause on new entrants is a tailored response to measured over-representation of newly registered brokers in unauthorized-enrollment enforcement, or a structural preference for incumbents that shifts ~$70–100m in commissions.</p>
+<p><strong>Why they differ.</strong> CMS’s own ratios (11% of agents → 30% of NOITs; 2.6–2.8× higher rates of missing SSNs and unresolved citizenship/income DMIs) are the case for targeting new entrants. The quantified commission transfer and the estimated 19,000 registrations that would otherwise occur during the window are the case for calling it a market-structure intervention.</p>
+<p><strong>What it means for you.</strong> Core US policy with a fiscal channel (APTC). Came from the standing FR RULE/PRORULE sweep — not a beat tip and not on yesterday’s Grok menu.</p>
+</div>
+<details><summary>Dig deeper — why good-cause mattered here</summary>
+<div class="exp">
+<p>The preamble is unusually explicit that a proposed rule would have been self-defeating: registration takes under 30 days, Open Enrollment is six weeks away, and announcing a forthcoming pause would accelerate the very registrations the pause is meant to stop. That is a stronger good-cause story than most IFCs manage — and it is also the legal vulnerability plaintiffs will target first. Severability language is in the document; if a court voids the concurrent moratorium notice but leaves §155.220(o) standing, CMS keeps the toolkit for later.</p>
+</div></details>
+<p class="sources">Sources: <a href="https://www.federalregister.gov/documents/full_text/text/2026/09/23/2026-19493.txt">FR 2026-19493 full text</a> (primary) · Federal Register documents JSON API (23&nbsp;Sep RULE/PRORULE sweep)</p>
+<div class="fb">
+<p><strong>CMS broker moratorium — right as Wednesday’s negative-check lead?</strong></p>
+<label><input type="radio" name="fb-cms"/> Yes — Exchange integrity is Core policy</label>
+<label><input type="radio" name="fb-cms"/> Follow through Open Enrollment only</label>
+<label><input type="radio" name="fb-cms"/> Less — wait for a suit or a lift date</label>
+</div>
+</article>
+
+<article id="oil-chain">
+<p class="meta"><span class="chip">Energy</span> <span class="chip">Geopolitics</span> <span class="chip">One causal chain</span> <span class="chip">US policy</span></p>
+<h2>One chain to the pump: AAA diesel slips to $6.5217 as Trump weighs a diesel export ban; Hormuz visible traffic stays at three</h2>
+<div class="corr">
+<p class="t">Accountability — instrument rule, applied</p>
+<p>Yesterday’s issue corrected the 21&nbsp;Sep “top of a move” call that had been made off three shrinking daily AAA increases. Today AAA diesel finally fell — <strong>$6.5217</strong> vs Tuesday’s <strong>$6.5276</strong> (AAA’s own all-time high date remains 9/22/26). That is one daily card-average print. Per the standing rule: use AAA for the <em>level</em> and the fastest signal; use the EIA weekly series for <em>direction</em>. EIA on-highway diesel for w/e 21&nbsp;Sep still reads <strong>$6.529</strong> (release 9/22; next 9/29). Do <strong>not</strong> call a turn off today’s AAA slip alone.</p>
+</div>
+<p>AAA Wednesday 23&nbsp;Sep national averages: diesel <strong>$6.5217</strong> (Tue $6.5276; week ago $6.3103; month ago $5.6074; year ago $3.6933, ~+76.6% y/y). Regular gasoline <strong>$4.4744</strong> (Tue $4.4750). Diesel–gasoline spread still about <strong>$2.05/gal</strong>.</p>
+<p>Same 24 hours, the policy end of the chain moved: at the UN, Trump said he has “called for” stopping diesel exports (“I’ve said let’s not send out the diesel”), and Treasury Secretary Bessent said the administration is examining whether a <strong>full or partial ban</strong> is feasible given refining capacity, with a decision “fast one way or another.” API and multiple analysts warned a ban would cut US refining runs after inventories fill, raise global diesel, and hurt Gulf Coast margins — the opposite of a sustained domestic price cut. No order has issued.</p>
+<p>Measurement end (Reuters/Kpler, Wed morning): <strong>three</strong> commodity vessels transited Hormuz on Tuesday (all exiting, including one Panamax), against a 10-day average of about <strong>15</strong>. Reuters’ prior-day figure in the same wrap is <strong>four</strong> — treat AIS preliminaries as revisable; yesterday’s Grok print of Monday=2 was a different cut of the same noisy series. Bab el-Mandeb ran <strong>22</strong> Tuesday vs ~26 ten-day average (separate strait; see short item).</p>
+<p><strong>What to watch:</strong> any formal DOE/Commerce export restriction text; next EIA weekly (29&nbsp;Sep) and whether distillate stocks/utilisation (still unreadable here as PDF) finally print a build; published Iran permission-regime coordinates (still unfired).</p>
+<div class="div">
+<p class="t">Divergence — politics at the pump vs refining arithmetic</p>
+<p><strong>What is disputed.</strong> Whether diverting US diesel from export markets lowers the AAA card average before midterms, or whether it eventually shrinks runs and raises the global crack that set the record in the first place.</p>
+<p><strong>Why they differ.</strong> Short-run inventory redirection can print a lower domestic price; the industry’s rebuttal is that US Gulf refining is sized for export, and Europe remains structurally short.</p>
+<p><strong>What it means for you.</strong> One causal chain only. The first AAA decline, the export-ban examination, and Hormuz=3 are the same story.</p>
+</div>
+<details><summary>Dig deeper — why the weekly still governs the turn call</summary>
+<div class="exp">
+<p>EIA weekly increments over the last three prints: +36.8¢, +31.8¢, +24.4¢ to $6.529. Deceleration is real in the federal series. A −0.59¢ AAA day does not reverse a weekly average that cannot re-accelerate on a Wednesday. Hold the instrument rule.</p>
+</div></details>
+<p class="sources">Sources: <a href="https://gasprices.aaa.com/">AAA Daily Fuel Gauge</a> (primary, 23&nbsp;Sep) · <a href="https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm">EIA weekly retail diesel table</a> (w/e 21&nbsp;Sep $6.529) · <a href="https://www.reuters.com/world/us/trump-says-he-backs-idea-ban-diesel-exports-2026-09-22/">Reuters on Trump export-ban comments</a> · <a href="https://www.reuters.com/world/us/ban-us-diesel-exports-would-hurt-not-help-fuel-markets-analysts-say-2026-09-22/">Reuters explainer / API warning</a> · <a href="https://www.reuters.com/world/middle-east/shipping-traffic-via-strait-hormuz-stays-below-10-day-average-data-shows-2026-09-23/">Reuters/Kpler Hormuz Tuesday=3</a> · gCaptain diesel-export item</p>
+<div class="fb">
+<p><strong>Export-ban examination inside the oil chain — right weight?</strong></p>
+<label><input type="radio" name="fb-oil"/> Yes — fuse policy with the pump</label>
+<label><input type="radio" name="fb-oil"/> Lead only when an order issues</label>
+<label><input type="radio" name="fb-oil"/> Less — AAA slip is enough</label>
+</div>
+</article>
+
+<article id="model-war">
+<p class="meta"><span class="chip new">New</span> <span class="chip">Core · AI &amp; tech</span></p>
+<h2>Anthropic and OpenAI cut mid-tier prices hours after both called for a frontier slowdown</h2>
+<p>On Tuesday 22&nbsp;Sep, Anthropic released <strong>Claude Opus&nbsp;5.5</strong> — priced as a cheaper near-flagship (company claim: matches Fable on most tasks at ~20% lower price) — and minutes later OpenAI released <strong>GPT-6 Sol</strong> and <strong>GPT-6 Luna</strong>, the mid- and low-tier companions to GPT-6 Astra (3&nbsp;Sep). OpenAI cut Sol/Luna API rates <strong>50%</strong> versus GPT-5.6 promotional levels: Sol $2/$10 per million input/output tokens; Luna $0.10/$0.50. Decrypt and Straits Times both timed the releases to the same afternoon leaders had spent urging a pace slowdown after summer security incidents.</p>
+<p>OpenAI’s published internal coding-deception rates: Sol <strong>1.3%</strong>, Luna <strong>2.8%</strong>, versus a cited GPT-5.6 Sol baseline of 10.4%. Sol/Luna are live in ChatGPT Work and Codex for paid tiers; Luna also to free/Go via desktop; neither yet in the plain ChatGPT app on day one.</p>
+<p><strong>What to watch:</strong> whether “slowdown” talk survives a price war that expands usage; any regulator reaction to shipping cheaper, faster agents into enterprise workflows the same week Xi is in Washington on an AI-incident agenda.</p>
+<div class="div">
+<p class="t">Divergence — pacing rhetoric vs product cadence</p>
+<p><strong>What is disputed.</strong> Whether Opus&nbsp;5.5 / Sol / Luna are compatible with Amodei/Altman pacing statements, or evidence that competitive pressure overrides them.</p>
+<p><strong>Why they differ.</strong> Labs can claim these are not frontier-max models (Astra/Fable still sit above). A 50% mid-tier cut still floods the economy with more capable agents per dollar.</p>
+<p><strong>What it means for you.</strong> Core AI. New subject for this brief — not a continuation of BC–OpenAI or frontier-standards colour from yesterday.</p>
+</div>
+<p class="sources">Sources: <a href="https://decrypt.co/378986/openai-launches-gpt-6-sol-luna-anthropic-claude-opus-5-5">Decrypt on Sol/Luna + Opus&nbsp;5.5 timing and prices</a> · <a href="https://www.straitstimes.com/world/united-states/anthropic-openai-release-cheaper-ai-even-as-safety-fears-grow">Straits Times</a> · OpenAI/X launch thread as quoted in Decrypt (OpenAI primary pages still 403 here)</p>
+<div class="fb">
+<p><strong>Same-day model price war after slowdown talk — lead weight?</strong></p>
+<label><input type="radio" name="fb-models"/> Yes — Core AI contradiction is the story</label>
+<label><input type="radio" name="fb-models"/> Follow benchmarks, not launches</label>
+<label><input type="radio" name="fb-models"/> Less — product marketing</label>
+</div>
+</article>
+
+<article id="bis-pharma">
+<p class="meta"><span class="chip new">New</span> <span class="chip">Core · US policy</span> <span class="chip">Trade</span> <span class="chip">Primary source</span></p>
+<h2>Commerce publishes the zero-tariff specialty-pharma list six days before Section 232 bites</h2>
+<p>Also in today’s Federal Register: BIS notice (Docket 260918-0006; RIN&nbsp;0694-XC154; FR Doc.&nbsp;2026-19498) implementing clause&nbsp;3(d) of <strong>Presidential Proclamation&nbsp;11020</strong> (2&nbsp;April&nbsp;2026) — the Section&nbsp;232 pharmaceutical action. It defines which specialty products get an <strong>ad valorem tariff of zero</strong>: orphan-only indications, nuclear medicines, plasma-derived therapies, fertility drugs, cell and gene therapies, antibody-drug conjugates, CBRN medical countermeasures, and animal-health products — <em>if</em> they are products of a listed jurisdiction with a trade-and-security framework agreement, or if Commerce (with USTR and HHS) finds an urgent US health need.</p>
+<p><strong>Eligible jurisdictions named today:</strong> Argentina, Bangladesh, Cambodia, Ecuador, El Salvador, European Union, Guatemala, India, Indonesia, Japan, Jordan, Malaysia, North Macedonia, Republic of Korea, Switzerland and Liechtenstein, Taiwan, Thailand, United Kingdom, Vietnam. Urgent-need petitions open <strong>immediately</strong> (email to BIS). HTSUS technical corrections take effect for entries on/after <strong>12:01&nbsp;a.m. ET 29&nbsp;September&nbsp;2026</strong> — the date the 100% rate expands beyond the Annex&nbsp;III early list. Generics remain outside the Section&nbsp;232 patented-pharma tariff for now.</p>
+<p><strong>What to watch:</strong> first urgent-need approvals before the 29&nbsp;Sep cliff; whether onshoring-agreement companies already on preferential tracks collide with the specialty list; any EU/India industry pushback on definitions.</p>
+<div class="div">
+<p class="t">Divergence — carve-out vs industrial policy</p>
+<p><strong>What is disputed.</strong> Whether zero-rating orphan/gene/cell therapies is a patient-access safety valve, or the hole that lets the 100% tariff’s pressure escape.</p>
+<p><strong>Why they differ.</strong> The proclamation always contemplated clause&nbsp;3(d); today’s notice is the operating manual, not a repeal. The timing — six days before the broad effective date — is why it leads.</p>
+<p><strong>What it means for you.</strong> Trade mechanism <em>and</em> market effect, per settled preference. FR primary; not on yesterday’s menu.</p>
+</div>
+<p class="sources">Sources: <a href="https://www.federalregister.gov/documents/full_text/text/2026/09/23/2026-19498.txt">FR 2026-19498 full text</a> (primary) · Federal Register NOTICE sweep 23&nbsp;Sep</p>
+<div class="fb">
+<p><strong>Specialty-pharma zero list — lead weight?</strong></p>
+<label><input type="radio" name="fb-pharma"/> Yes — Section 232 implementation is Core</label>
+<label><input type="radio" name="fb-pharma"/> Follow the first urgent-need decisions</label>
+<label><input type="radio" name="fb-pharma"/> Less — technical tariff notice</label>
+</div>
+</article>
+
+<article id="kalshi-sfp">
+<p class="meta"><span class="chip new">New</span> <span class="chip">Core · US financials</span> <span class="chip">AI &amp; tech</span></p>
+<h2>Kalshi asks to list perpetual security futures on single-name equities</h2>
+<p>SEC notice (Release No.&nbsp;34-106422; File No.&nbsp;SR-KALSHIEX-2026-02; FR Doc.&nbsp;2026-19409), dated 18&nbsp;Sep and published 23&nbsp;Sep: KalshiEX LLC filed under Exchange Act §19(b)(7) to adopt Rulebook Chapter&nbsp;14 authorizing <strong>Perpetual SFPs</strong> — cash-settled security futures with <em>no</em> pre-specified expiry that keep perpetual-style funding payments pulling the contract toward the underlying NMS equity. Same Federal Register day carries companion security-futures listing-standard filings from <strong>Coinbase Derivatives</strong> and <strong>Bitnomial</strong>.</p>
+<p>Kalshi’s proposed screens are stricter than Staff Legal Bulletin&nbsp;15 samples: initial underlying market cap ≥<strong>$100bn</strong>, six-month ADTV ≥<strong>$450m</strong> (or $1bn if listed &lt;6 months), estimated deliverable supply &gt;20m shares; customer margin <strong>15.50%</strong> (above the joint SEC/CFTC 15% floor); position limits 50,000 standard contract equivalents (25,000 in the last three days before any forced final settlement). CFTC approval of the DCM rule change is still pending in the notice. Clearing via Kalshi Klear.</p>
+<p><strong>What to watch:</strong> CFTC action; first Approved Securities Table names; whether the funding mechanism survives contact with Reg&nbsp;SHO / manipulation concerns on megacap names.</p>
+<div class="div">
+<p class="t">Divergence — crypto plumbing into equity risk</p>
+<p><strong>What is disputed.</strong> Whether perpetual funding on single-name equities is a legitimate risk-transfer tool, or a supervised path for 24/5 leveraged equity exposure outside traditional futures months.</p>
+<p><strong>Why they differ.</strong> Kalshi already has CFTC-approved bitcoin perpetuals; the filing’s claim is that “future delivery” does not require a fixed date. Equity-market structure veterans will read the $100bn/ADTV screens as the real story — only megacaps qualify at launch.</p>
+<p><strong>What it means for you.</strong> Core financials with a tech channel. Three venues moving the same day is the tell.</p>
+</div>
+<p class="sources">Sources: <a href="https://www.federalregister.gov/documents/2026/09/23/2026-19409/self-regulatory-organizations-kalshiex-llc-notice-of-filing-and-immediate-effectiveness-of-a">FR 2026-19409 Kalshi notice</a> (primary) · FR 2026-19407 Coinbase Derivatives · FR 2026-19408 Bitnomial (companion NOTICE sweep)</p>
+<div class="fb">
+<p><strong>Perpetual equity SFPs — lead weight?</strong></p>
+<label><input type="radio" name="fb-kalshi"/> Yes — market-structure experiment is Core</label>
+<label><input type="radio" name="fb-kalshi"/> Follow when CFTC approves and a name lists</label>
+<label><input type="radio" name="fb-kalshi"/> Less — venue paperwork</label>
+</div>
+</article>
+
+<article id="ny-wind">
+<p class="meta"><span class="chip new">New</span> <span class="chip">Energy &amp; grid</span> <span class="chip">US policy</span> <span class="chip">Primary source</span></p>
+<h2>New York leads eight AGs against $1.4bn offshore-wind buyouts paid from the Judgment Fund</h2>
+<p>On 22&nbsp;Sep (Climate Week), NY AG Letitia James and Governor Kathy Hochul announced two federal lawsuits with Connecticut, Delaware, Maine, Massachusetts, New Jersey, Rhode Island and Vermont. The targets: Interior deals that cancel offshore-wind leases in exchange for Judgment Fund payments — <strong>$765m to Bluepoint Wind</strong> (NY lease; company redirected toward an LNG facility and barred from future US offshore wind) and <strong>$653m to Invenergy</strong> (three leases including one off NY; money redirected to gas plants in IN/WI/IA/KS/MO and western geothermal). Combined ~<strong>$1.4bn</strong>. California filed a concurrent suit on a separate Invenergy California lease.</p>
+<p>State framing: the Judgment Fund is for legitimate claims against the United States; these agreements allegedly resolve no actual or imminent litigation, violate the APA, NEPA, OCSLA and Judgment Fund statutes, and remove &gt;8&nbsp;GW that planners counted on while NY electricity demand is projected +8% by 2030 / +24% by 2040 (data centres called out). Relief sought: void the deals and lease cancellations.</p>
+<p><strong>What to watch:</strong> TRO/preliminary-injunction posture; whether DOE/DOI defend the Judgment Fund theory; any further buyout announcements during the litigation.</p>
+<div class="div">
+<p class="t">Divergence — settlement tool vs spending end-run</p>
+<p><strong>What is disputed.</strong> Whether paying lessees to exit is a lawful way to unwind prior leasing, or an unlawful use of a litigation fund to buy a policy outcome courts had already constrained.</p>
+<p><strong>Why they differ.</strong> Administration: no future for offshore wind; pay-to-exit avoids years of contested permitting. States: after winning earlier injunctions, the buyouts are the workaround.</p>
+<p><strong>What it means for you.</strong> Energy/grid with a fiscal channel — and a data-centre demand hook on a Core-adjacent beat.</p>
+</div>
+<p class="sources">Sources: <a href="https://ag.ny.gov/press-release/2026/attorney-general-james-and-governor-hochul-announce-lawsuit-challenging-trump">NY AG / Hochul press release</a> (primary) · <a href="https://ag.ny.gov/sites/default/files/court-filings/new-york-et-al-v-u.s-department-of-the-interior-et-al-complaint-for-declaratory-and-injunctive-relief-2026.pdf">Complaint PDF</a> · gCaptain on the state coalition</p>
+<div class="fb">
+<p><strong>Offshore-wind Judgment Fund suits — lead weight?</strong></p>
+<label><input type="radio" name="fb-wind"/> Yes — grid + fiscal is Core-adjacent</label>
+<label><input type="radio" name="fb-wind"/> Follow the first injunction order</label>
+<label><input type="radio" name="fb-wind"/> Less — blue-state Climate Week colour</label>
+</div>
+</article>
+
+<article id="shield">
+<p class="meta"><span class="chip new">New</span> <span class="chip">US policy</span> <span class="chip">Geopolitics</span> <span class="chip">Primary source</span></p>
+<h2>Shield of the Americas: fifteen governments name 24 cartels for asset freezes and visa bans</h2>
+<p>State Department released a <strong>22&nbsp;Sep</strong> joint statement (Office of the Spokesman) from the United States plus Argentina, Bolivia, Chile, Colombia, Costa Rica, Dominican Republic, Ecuador, El Salvador, Guyana, Honduras, Panama, Paraguay, Peru, and Trinidad and Tobago. Under the Shield of the Americas’ security pillar, the governments “declare [their] intention” to impose — as applicable under domestic law — asset freezes, immigration/visa restrictions, and criminal liability for knowing material support, focused on a published list of <strong>24</strong> organizations (MS-13, Tren de Aragua, CJNG, Sinaloa, Cartel de Los Soles, PCC, Comando Vermelho, ELN, FARC dissidents, Shining Path, and others).</p>
+<p>They also intend to co-sign a request for an OAS Permanent Council meeting of consultation toward an Organ of Consultation under Articles&nbsp;6 and&nbsp;13 of the <strong>Rio Treaty</strong>. Non-parties to the Rio Treaty in the Shield say they will support to the extent their law allows. Al Jazeera/France&nbsp;24 same-morning wraps cast Trump as urging the coalition to treat the groups as common regional threats.</p>
+<p><strong>What to watch:</strong> actual designation/sanctions packages (intention ≠ order); whether Mexico participates or objects; Rio Treaty Organ of Consultation scheduling.</p>
+<div class="div">
+<p class="t">Divergence — coalition theatre vs binding instruments</p>
+<p><strong>What is disputed.</strong> Whether a fifteen-government “intention to impose” list is the start of coordinated hemispheric sanctions, or a UNGA-week communiqué that still requires each capital’s domestic machinery.</p>
+<p><strong>Why they differ.</strong> The list and the Rio Treaty pathway are concrete. “As applicable and in accordance with … domestic legal obligations” is the escape hatch.</p>
+<p><strong>What it means for you.</strong> US policy substance with a sanctions channel — not a foreign election story.</p>
+</div>
+<p class="sources">Sources: <a href="https://www.state.gov/releases/office-of-the-spokesman/2026/09/joint-statement-on-defending-hemispheric-sovereignty">State.gov joint statement</a> (primary) · <a href="https://www.aljazeera.com/news/2026/9/23/trump-rallies-shield-of-the-americas-coalition-against-drug-cartels">Al Jazeera</a> · France&nbsp;24 live wrap</p>
+<div class="fb">
+<p><strong>Shield of the Americas list — lead weight?</strong></p>
+<label><input type="radio" name="fb-shield"/> Yes — hemispheric sanctions architecture</label>
+<label><input type="radio" name="fb-shield"/> Follow when OFAC/Treasury mirrors the 24</label>
+<label><input type="radio" name="fb-shield"/> Less — intention communiqué</label>
+</div>
+</article>
+
+<article id="xi-ai">
+<p class="meta"><span class="chip">Core · AI &amp; tech</span> <span class="chip">World economy</span></p>
+<h2>Xi lands into an AI agenda that still has one concrete ask — and a same-day model price war</h2>
+<p>Xi’s Washington state visit runs Wednesday–Friday. Same-morning wires (ABC, CNBC, WaPo) converge on a narrow deliverable that is not new as a proposal but is newly timed to arrival day: a US–China <strong>AI incident-notification / dialogue channel</strong> of the kind Bessent discussed with He Lifeng over the weekend. WaPo’s 23&nbsp;Sep framing is blunt that industry wants a bargain and “that probably won’t happen.” CNBC flags chips export controls and “distillation” accusations as the sticking points Greer said were not on the weekend trade agenda.</p>
+<p>Read against today’s model-war lead: the same 24 hours that put Opus&nbsp;5.5 and GPT-6 Sol/Luna into market also put the slowdown rhetoric and the bilateral “hotline” ask on the same calendar. That juxtaposition is the new fact — not a reprise of Monday’s Bessent colour alone.</p>
+<p><strong>What to watch:</strong> any signed notification MOU text (not a readout adjective); whether chip controls appear in the final communiqué despite Greer’s weekend denial; Altman UNSC appearance if it produces a document.</p>
+<div class="div">
+<p class="t">Divergence — hotline vs race</p>
+<p><strong>What is disputed.</strong> Whether an incident channel is meaningful cooperation or a low-cost substitute for constraints neither side will accept.</p>
+<p><strong>Why they differ.</strong> A hotline is cheap and reversible. Binding compute/chip deals are not. The mid-tier price war shows commercial pressure running the other direction.</p>
+<p><strong>What it means for you.</strong> Kept as a lead only because arrival day + model war is a new conjunction; the hotline proposal itself was already framed 21–22&nbsp;Sep.</p>
+</div>
+<p class="sources">Sources: <a href="https://abcnews.com/Politics/trump-xi-meeting-amid-tensions-iran-taiwan-trade/story?id=136650648">ABC News 23&nbsp;Sep</a> · CNBC Trump–Xi AI safety wrap (headline/summary; article page often 403) · WaPo 23&nbsp;Sep “aren’t close to a deal” · prior Bessent/He context from 21–22&nbsp;Sep issues (accountability, not menu)</p>
+<div class="fb">
+<p><strong>Xi-arrival AI item — right to keep as a lead given prior coverage?</strong></p>
+<label><input type="radio" name="fb-xi"/> Yes — arrival day + model war is new</label>
+<label><input type="radio" name="fb-xi"/> Should have been Also today</label>
+<label><input type="radio" name="fb-xi"/> Drop until a signed text</label>
+</div>
+</article>
+
+<article id="bab">
+<p class="meta"><span class="chip">Geopolitics</span> <span class="chip">Energy</span></p>
+<h2>Bab el-Mandeb: 22 visible transits Tuesday against a 10-day average of ~26</h2>
+<p>Reuters’ Wednesday Hormuz wrap also printed the other strait: <strong>22</strong> commodity vessels through Bab el-Mandeb on Tuesday (14 toward the Red Sea, 8 toward the Gulf of Aden; mix included five Panamax, a Suezmax and a VLCC) versus a ~<strong>26</strong> ten-day average. That is soft, not collapsed — and it is a <em>daily</em> count that must not be pooled with older Lloyd’s weekly averages. Kept separate from the Hormuz/diesel chain per the standing two-strait rule, but reported because the measurement finally moved on a morning when Hormuz stayed single-digit.</p>
+<p class="sources">Sources: <a href="https://www.reuters.com/world/middle-east/shipping-traffic-via-strait-hormuz-stays-below-10-day-average-data-shows-2026-09-23/">Reuters 23&nbsp;Sep shipping wrap</a></p>
+<div class="fb">
+<p><strong>Bab el-Mandeb transit print — right as a short lead?</strong></p>
+<label><input type="radio" name="fb-bab"/> Yes — measurement when we have it</label>
+<label><input type="radio" name="fb-bab"/> Fold into oil chain next time</label>
+<label><input type="radio" name="fb-bab"/> Also today only</label>
+</div>
+</article>
+
+<h2 class="section" id="also">Also today</h2>
+<p class="secnote">Ranked below the line. Each opens.</p>
+<div class="also-list">
+
+<details>
+<summary><span class="chip">Markets</span> Nasdaq hits an all-time high as AI bids shrug off safety colour · <em>Al Jazeera 23&nbsp;Sep</em></summary>
+<div class="exp"><p>AJ morning wrap: Wall Street’s Nasdaq at a record on AI enthusiasm even as Iran-war and safety headlines continue. Directional only here — no print claimed from a blocked vendor page.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">US financials</span> Coinbase Derivatives and Bitnomial file companion security-futures listing standards · <em>FR 2026-19407 / 19408</em></summary>
+<div class="exp"><p>Same NOTICE day as Kalshi’s perpetual SFP chapter. Three venues moving at once is the market-structure signal; details live in the Kalshi lead.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">Trade</span> CBP announces ACE Electronic Export Manifest test for truck cargo · <em>FR 2026-19414</em></summary>
+<div class="exp"><p>Voluntary test under Automated Commercial Environment for truck export manifests. Quiet logistics infrastructure — recorded because the FR NOTICE sweep caught it and it is not on any watchlist thread.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">Trade</span> USTR posts FY2027 raw cane sugar TRQ country allocations · <em>FR 2026-19399</em></summary>
+<div class="exp"><p>Routine annual allocation notice for Oct&nbsp;1&nbsp;2026–Sep&nbsp;30&nbsp;2027. Not a policy rewrite; logged from the NOTICE sweep.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">Geopolitics</span> France drafting a UNSC resolution on an international Hormuz mission · <em>gCaptain</em></summary>
+<div class="exp"><p>gCaptain: France coordinating with the US on a Security Council text to restore freedom of navigation. No published draft text reached here — intention item, Single-sourced pending a UN document.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">AI &amp; tech</span> Handelsblatt: markets cheer Meta’s “Muse” as a killer-app download spike · <em>Handelsblatt front page</em></summary>
+<div class="exp"><p>German business front page: Muse download surge and an ~11% one-day share move framed as Meta reusing a proven distribution playbook. Paywalled depth not claimed.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">AI &amp; tech</span> Alibaba touts a new AI chip and denser models · <em>Handelsblatt</em></summary>
+<div class="exp"><p>Standing China-tech check via Handelsblatt: Alibaba pushing a high-performance chip and data-centre buildout to close on US labs. US channel is the chip-controls agenda around the Xi visit.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">US policy</span> SG asks SCOTUS to reverse a scholar’s release · <em>Al Jazeera 22&nbsp;Sep</em></summary>
+<div class="exp"><p>Solicitor General challenges a lower-court ruling freeing a Georgetown scholar detained in a pro-Palestinian case. Docket movement only until an order.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">OFAC</span> Iran GLs Y and Z appear in the FR — both already expired · <em>FR 2026-19424</em></summary>
+<div class="exp"><p>Codification trap avoided: GL&nbsp;Y issued 10&nbsp;Jul (expired 9&nbsp;Aug); GL&nbsp;Z issued 14&nbsp;Jul (expired 12&nbsp;Sep). Publishing wind-down licences months later is not new sanctions news.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">Florida</span> Dengue week-37 ledger still unpublished · absence recorded</summary>
+<div class="exp"><p>No new Florida DOH arbovirus week reachable this morning; prior w36 figures stand. Absence is not movement.</p></div>
+</details>
+
+</div>
+
+<h2 class="section">Florida &amp; Tampa Bay</h2>
+<p class="secnote">Empty on local merit this run. Fox13 Pasco/Pinellas tags swept: Holiday juvenile shooting, New Port Richey e-bike battery fire, older bus/tractor-trailer and Cobalt fire follow-ups — crime/disruption blotter, not policy. No new flrules hearing notice verified for the vaccine register. Empty is fine.</p>
+
+<h2 class="section">Provenance &amp; negative check</h2>
+<p><strong>18 sources checked; 12 outside active watchlist threads</strong> (≥half). Outside-watchlist examples: FR 2026-19493 (CMS IFC); FR 2026-19498 (BIS pharma); FR 2026-19409/19407/19408 (Kalshi/Coinbase/Bitnomial); NY AG press release + complaint; State.gov Shield statement; Al Jazeera Shield + Nasdaq; Decrypt/Straits Times model launches; Handelsblatt Muse/Alibaba; gCaptain France UNSC + diesel export; Wikipedia Current Events 23&nbsp;Sep; Fox13 Pasco (local sweep). Watchlist-adjacent: AAA; EIA weekly table; Reuters Hormuz/Bab; Reuters diesel-export wraps.</p>
+<p><strong>Negative check changed the lead list:</strong> CMS broker moratorium, BIS specialty-pharma zero list, Kalshi perpetual SFPs, NY Judgment Fund wind suits, Shield of the Americas 24-group list, and the Anthropic/OpenAI same-day price cut displaced reprises of FDIC Bank Merger remake, SEC tokenized-NMS exemption-as-news, BC–OpenAI Tumbler Ridge, OpenAI frontier-standards/UNSC-as-fresh, and Axios red-telephone calendar colour. Oil stayed one chain (first AAA decline + export-ban examination + Hormuz Tuesday=3). Wikipedia 23&nbsp;Sep was thin (Nigeria clash, Myanmar prisons, Duterte impeachment vote math, Asian Games) — used as negative check that nothing larger was missed on those wires, not as a lead source.</p>
+<p><strong>Accountability:</strong> Applied the 22&nbsp;Sep instrument rule — AAA diesel’s first decline is printed as a level, not as a trend turn; EIA weekly $6.529 still governs direction. Noted Reuters’ Tuesday Hormuz=3 / prior-day=4 against yesterday’s Monday=2 print as revisable AIS preliminaries, not a silent correction fight.</p>
+<p><strong>Blocked/unreachable this run:</strong> openai.com / anthropic.com primary posts (403/partial); CNBC article bodies often 403 (headlines used as signal only where stood up elsewhere); EIA Weekly Petroleum Status Report PDF (distillate stocks/utilisation still unreadable); NPR article pages thin via text.npr.org index; congress.gov 403.</p>
+<p><strong>Declined for altitude:</strong> Sri Lanka Easter-bombing convictions; Ethiopia civil-war colour without new US channel; NYC DoorDash settlement; Asian Games weightlifting; Indonesia ferry death toll; sports; celebrity; Putin/United Russia reprises.</p>
+
+<ul class="dorm">
+<li><b>Dormant / unchanged sweeps:</b> UAP implementing guidance — no movement. Fed — no print/decision (omitted). Treasury Daily Par Yield Curve — Tuesday 10-year still 4.96% (issuer CSV); Wednesday row not yet published at gather time — no lead. Florida vaccine register — no verified new hearing. AARO contract — no award. Bank stablecoin consortium — no OCC final. USPS mail-ballot — resolved for November; no refiling.</li>
+</ul>
+
+<footer>
+<p>Grok edition for historiocity/News-Agent · Issue&nbsp;10 framework · filename <code>2026-09-23-grok.html</code> · not a Claude/Action overwrite.</p>
+<p><a href="https://historiocity.github.io/News-Agent/">Archive</a> · Continuity: <a href="2026-09-22-grok.html">22&nbsp;Sep Grok</a> · <a href="2026-09-21-grok.html">21&nbsp;Sep Grok</a> · framework <a href="2026-09-10b.html">2026-09-10b</a>.</p>
+<p>Feedback radios are local-only unless wired to an issue form; reply in chat or open a <code>brief-feedback</code> GitHub issue to retune weights.</p>
+<div class="submit"><button type="button" disabled title="Local preview only">Submit feedback (wire me)</button></div>
+</footer>
+
+</div>
+</body>
+</html>
