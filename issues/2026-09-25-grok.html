@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>The Brief — Friday, 25 September 2026 (Grok edition)</title>
+<style>
+:root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+@media (prefers-color-scheme: dark) {
+:root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+.wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+.kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+.sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+.prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+nav ol { margin:0; padding-left:1.2rem; }
+nav li { margin:.25rem 0; }
+nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+a { color:var(--link); }
+article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+.secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+.meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+.chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+.chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+.chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+.sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+.div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+.div p { margin:.4rem 0; }
+.div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+.corr { background:var(--box); border-left:4px solid var(--accent); padding:.8rem 1rem; margin:0 0 1.6rem; font-size:.95rem; }
+.corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+.corr p { margin:.45rem 0; }
+details { margin-top:.8rem; }
+details summary { cursor:pointer; color:var(--link); }
+.exp { margin-top:.6rem; }
+.also-list { margin:0; }
+.also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+.also-list details:first-of-type { border-top:1px solid var(--rule); }
+.also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+.also-list .exp { font-size:.94rem; padding-left:.2rem; }
+footer { color:var(--muted); font-size:.88rem; }
+.fb { margin-top:1rem; font-size:.9rem; }
+.fb p { margin:.6rem 0 .2rem; }
+.fb label { display:block; margin:.15rem 0; }
+.submit { margin-top:2rem; }
+button { font:inherit; padding:.45rem .8rem; }
+ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+ul.dorm li { margin:.3rem 0; }
+figure { margin:1.2rem 0 0; }
+figcaption { font-size:.84rem; color:var(--muted); margin-top:.4rem; line-height:1.5; }
+svg { width:100%; height:auto; display:block; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<p class="kicker">The Brief · Issue No. 21-grok · Friday, 25 September 2026 · Morning / Grok edition</p>
+<h1>Treasury’s own 10-year hit 5.18% and mortgages printed 7.03%; the Senate voted 49–50 on July’s Iran resolution; DOT deleted the race/sex DBE presumptions; diesel fell a third day while 80 countries demanded Hormuz without tolls</h1>
+<p class="sub">Nine stories at length, ten in brief. Independent Grok gather for the 7am&nbsp;ET cron; does not overwrite Claude/Action files. Continuity for accountability: <a href="2026-09-24-grok.html">24&nbsp;Sep Grok</a> · <a href="2026-09-23-grok.html">23&nbsp;Sep Grok</a> · framework <a href="2026-09-10b.html">2026-09-10b</a>. Parallel Claude Issue&nbsp;21: <a href="2026-09-25.html">2026-09-25.html</a> (separate slate).</p>
+<p class="prov">
+Loaded <a href="https://raw.githubusercontent.com/historiocity/News-Agent/main/config.md">config.md</a>. Re-read closed brief-feedback (#3, #7, #20 — <em>fb-census: yes</em>). Quality bar: Issue&nbsp;10 / <a href="2026-09-10b.html">2026-09-10b</a>.
+<strong>19&nbsp;sources checked, 12 of them outside the active watchlist threads.</strong> Core beats lead. Oil/pump/chokepoints stay one causal chain. Fed = prints and the decision only — no state-of-play.
+<strong>Negative check reshaped the lead list:</strong> reading Thursday’s Federal Register whole produced the DOT DBE final rule (effective today; goals suspended to 24&nbsp;Dec) and OMB’s RFI on domestic manufacture of the ASPR 86 essential medicines within eighteen months — neither on yesterday’s Grok agenda and neither reachable as a wire lead. Same-morning issuer prints: Treasury CSV 10-year <strong>5.18%</strong> (highest of this move) and Freddie Mac PMMS 30-year <strong>7.03%</strong> (first seven since Jan&nbsp;2025). Senate roll call 244 (49–50) on H.&nbsp;Con.&nbsp;Res.&nbsp;89. Those displaced reprises of OpenAI–Medicare portal breach, Williams hike colour, BIS polysilicon TFR, Wright export-ban rejection, and Bessent’s truce preview without the Xi summit fact or a new diesel print. Declined for altitude: Butler-rally death (anti-topic: individual political violence without policy consequence); Netanyahu UN speech without a US policy channel; Ethiopia Tigray fighting; sports; celebrity.
+</p>
+</header>
+
+<nav>
+<ol>
+<li><a href="#longend">Treasury’s own 10-year closed at 5.18%; Freddie Mac’s 30-year mortgage printed 7.03%</a></li>
+<li><a href="#iranvote">Senate rejected the Iran war-powers resolution 49–50 — it was July’s text, and a tie fails</a></li>
+<li><a href="#dbe">DOT final rule: race and sex DBE presumptions deleted; contract goals suspended until firms re-apply</a></li>
+<li><a href="#oil">One chain to the pump: AAA diesel $6.5019 (third drop) as 80 countries demand Hormuz without tolls</a></li>
+<li><a href="#medicines">OMB wants the ASPR 86 essential medicines made domestic or near-shore within eighteen months</a></li>
+<li><a href="#xi">After the state dinner: Xi claims a “new” trade consensus; AI stays “under human control,” no binding deal</a></li>
+<li><a href="#dram">ITC institutes DRAM Section&nbsp;337 case naming Micron, HPE, Lenovo and Super Micro</a></li>
+<li><a href="#polymarket">New York sued Polymarket for illegal gambling; Polymarket sued New York the same day</a></li>
+<li><a href="#dengue">Florida &amp; Tampa Bay: Hillsborough, Pinellas and Pasco declare dengue emergencies — Hillsborough at 170</a></li>
+</ol>
+<p class="also">Also today: Hurricane Nolo (Big Island watch) · journalists restored to WH · census thread open (feedback yes) · NIH draft results-sharing · ATF explosives package · EPA title&nbsp;V clarification · Qatar LNG through Hormuz · Cape Dao seafarer death · Super El&nbsp;Niño outlook · NHC Atlantic quiet for Florida</p>
+</nav>
+
+<article id="longend">
+<p class="meta"><span class="chip under">Negative check</span> <span class="chip new">New</span> <span class="chip">Core · US debt &amp; fiscal</span> <span class="chip">Core · Macro</span></p>
+<h2>Treasury’s own 10-year closed at 5.18%; Freddie Mac’s 30-year mortgage printed 7.03%</h2>
+<div class="corr">
+<p class="t">Accountability — issuer series, column enumeration, weekly vs daily</p>
+<p>Mid-September this brief wrongly printed a “through 5%” story off vendor summaries; the 21&nbsp;Sep standing rule requires enumerating Treasury column headers every read. <strong>Today’s levels are the issuer CSV</strong> (Date, then fourteen tenors — 10-year is unambiguous). Thursday 24&nbsp;Sep: 2-year 4.87 · 7-year 5.10 · <strong>10-year 5.18</strong> · 20-year 5.53 · 30-year 5.47. Sequence: 18&nbsp;Sep 5.01 → 21/22 Sep 4.96 → 23 Sep 5.11 → <strong>24 Sep 5.18</strong>. Freddie Mac’s Primary Mortgage Market Survey (as of 24&nbsp;Sep, released Thu noon ET): 30-year <strong>7.03%</strong> (was 6.95%; year ago 6.30%); 15-year 6.42% (was 6.26%). First seven-handle since the week of 16&nbsp;Jan&nbsp;2025 (7.04%). The survey week closed before Thursday’s 5.18% print — so 7.03% is already stale to the downside for next Thursday.</p>
+</div>
+<p>Twenty-year at 5.53% still yields more than the thirty-year at 5.47% — a six-basis-point inversion that has persisted more than a week. The long end is not repricing uniformly; it is worse where issuance is heaviest. Two-year rose 4.71→4.87 over the same three sessions, so the whole curve is moving — which reads more like Fed-path expectations than a pure fiscal-credibility strike on duration alone.</p>
+<p><strong>What to watch:</strong> next Thursday’s Freddie Mac print (absorbs this week’s 5.18%); whether the 20s–30s inversion survives the 4&nbsp;November refunding; September CPI in October (first full month inside $6 diesel — food-at-home and transport services). No FOMC colour item today.</p>
+<figure>
+<svg viewBox="0 0 640 210" role="img" aria-label="Ten-year Treasury par yield: 18 Sep 5.01, 21 Sep 4.96, 22 Sep 4.96, 23 Sep 5.11, 24 Sep 5.18">
+<rect x="0" y="0" width="640" height="210" fill="none"/>
+<line x1="95" y1="50" x2="600" y2="50" stroke="#e0ddd6" stroke-width="1"/>
+<line x1="95" y1="90" x2="600" y2="90" stroke="#e0ddd6" stroke-width="1"/>
+<line x1="95" y1="130" x2="600" y2="130" stroke="#1c4f8a" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="95" y1="170" x2="600" y2="170" stroke="#6b6a66" stroke-width="1"/>
+<text x="87" y="54" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">5.20</text>
+<text x="87" y="94" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">5.10</text>
+<text x="87" y="134" font-family="Georgia, serif" font-size="11" fill="#1c4f8a" text-anchor="end">5.00</text>
+<text x="87" y="174" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">4.90</text>
+<polyline fill="none" stroke="#8a3324" stroke-width="2.5" points="95,126 221.25,146 347.5,146 473.75,86 600,58"/>
+<circle cx="95" cy="126" r="3.5" fill="#8a3324"/>
+<circle cx="221.25" cy="146" r="3.5" fill="#8a3324"/>
+<circle cx="347.5" cy="146" r="3.5" fill="#8a3324"/>
+<circle cx="473.75" cy="86" r="3.5" fill="#8a3324"/>
+<circle cx="600" cy="58" r="4.5" fill="#8a3324"/>
+<text x="103" y="118" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="start">5.01</text>
+<text x="596" y="44" font-family="Georgia, serif" font-size="11" fill="#8a3324" text-anchor="end">5.18</text>
+<text x="95" y="192" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="start">18 Sep</text>
+<text x="221.25" y="192" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">21</text>
+<text x="347.5" y="192" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">22</text>
+<text x="473.75" y="192" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">23</text>
+<text x="600" y="192" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">24 Sep</text>
+</svg>
+<figcaption>Ten-year constant maturity, Treasury Daily Par Yield Curve CSV, headers enumerated this morning. Plotted from a 4.90% base. Dashed line is 5.00%.</figcaption>
+</figure>
+<div class="div">
+<p class="t">Where the accounts diverge</p>
+<p><strong>The substance.</strong> Level is not disputed — everyone has the same yields. Significance is: stress (fiscal/foreign holders) vs strength (housing agency commentary). Freddie Mac’s own note still says the housing market “remains supported by a solid labor market,” written against a survey week averaging nearer 5% than 5.18%.</p>
+<p><strong>What it means for you.</strong> Core debt and macro. Came from the standing Friday PMMS check plus the issuer CSV — not yesterday’s menu. Mortgage seven is the household channel of the long-end move.</p>
+</div>
+<p class="sources">Sources: <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&amp;field_tdr_date_value=2026&amp;page&amp;_format=csv">Treasury Daily Par Yield Curve CSV</a> (primary) · <a href="https://www.freddiemac.com/pmms">Freddie Mac PMMS</a> (primary) · continues <a href="2026-09-24-grok.html#treasury-5">24&nbsp;Sep Grok</a></p>
+<div class="fb">
+<p><strong>Long-end + mortgage seven as Friday’s lead?</strong></p>
+<label><input type="radio" name="fb-longend" value="yes"/> Yes — issuer 5.18% and PMMS 7.03% are Core</label>
+<label><input type="radio" name="fb-longend" value="mortgage"/> Lead with the mortgage print; keep the curve in the box</label>
+<label><input type="radio" name="fb-longend" value="less"/> Less — wait for next week’s PMMS that absorbs 5.18%</label>
+</div>
+</article>
+
+<article id="iranvote">
+<p class="meta"><span class="chip new">New</span> <span class="chip">Core · US politics &amp; policy</span></p>
+<h2>Senate rejected the Iran war-powers resolution 49–50 — it was July’s text, and a tie fails</h2>
+<p>Senate roll call <strong>244</strong>, 24&nbsp;Sep, 1:45pm ET: on adoption of <strong>H.&nbsp;Con.&nbsp;Res.&nbsp;89</strong> (Iran war powers) — YEAs 49, NAYs 50, Not Voting 1 (Alsobrooks). Concurrent resolution rejected. Required for majority: 1/2. A 49–50 is not “one vote short of a Vice-Presidential tie-break”; a concurrent resolution needs a majority of those voting, and 49 is short of 50. The Vice President does not break this kind of tie into passage.</p>
+<p>Four Republicans voted Yea: Collins, Murkowski, Paul, Tillis. One Democrat voted Nay: Fetterman. The House had passed 89 on 23&nbsp;Jul by 214–208 (roll call 282). A stronger House text — H.&nbsp;Con.&nbsp;Res.&nbsp;93 (Moulton), 220–204 on 15&nbsp;Sep — has not received a Senate floor vote. Privilege clocks, not substance, explain why July’s weaker count is the one the Senate answered.</p>
+<p>As a concurrent resolution it does not go to the President and does not bind under <em>INS&nbsp;v.&nbsp;Chadha</em>. The binding route remains a joint resolution subject to veto. Nineteen US service members dead; diesel and petrol still the domestic price of the war — see the oil chain below.</p>
+<p><strong>What to watch:</strong> whether 93 ever gets a floor date; a Republican senator saying the <em>legal</em> position has changed (not merely that the war is unwise); any joint-resolution or appropriations limitation.</p>
+<details><summary>Dig deeper — why July’s resolution, and why 49–50 is not almost a win</summary>
+<div class="exp">
+<p>War-powers concurrent resolutions become privileged on a schedule tied to receipt. 89 has sat since July; 93 arrived ten days ago. Leadership had no incentive to schedule the stronger text after the weaker one failed. Party split on the Senate roll call: the Yea list is almost the full Democratic caucus plus two independents and four Republicans; the Nay list is almost the full Republican caucus plus Fetterman. Check subtotals against the chamber (53&nbsp;R / 47&nbsp;D) before trusting a summariser’s party arithmetic — the standing 25&nbsp;Sep discipline note after a prior wrong subtotal.</p>
+</div></details>
+<p class="sources">Sources: <a href="https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00244.htm">Senate roll call 244</a> (primary) · <a href="https://www.nbcnews.com/politics/congress/senate-rejects-resolution-calling-end-iran-war-republicans-stick-trump-rcna599624">NBC News</a> · <a href="https://www.dailypress.senate.gov/thursday-september-24-2026/">Senate Daily Press 24&nbsp;Sep</a></p>
+<div class="fb">
+<p><strong>Iran vote mechanics vs tally?</strong></p>
+<label><input type="radio" name="fb-iranvote" value="more"/> More — adjudicate procedure when wires compress it</label>
+<label><input type="radio" name="fb-iranvote" value="tally"/> Tally and defectors enough</label>
+<label><input type="radio" name="fb-iranvote" value="joint"/> Wake only on a joint resolution or appropriations limit</label>
+</div>
+</article>
+
+<article id="dbe">
+<p class="meta"><span class="chip under">Negative check</span> <span class="chip new">New</span> <span class="chip under">Underreported</span> <span class="chip">Core · US politics &amp; policy</span></p>
+<h2>DOT final rule: race and sex DBE presumptions deleted; contract goals suspended until firms re-apply</h2>
+<p>Transportation Department final rule <strong>2026-19688</strong>, published and <strong>effective 25&nbsp;Sep</strong>, finalises the October&nbsp;2025 interim final rule that eliminated race- and sex-based presumptions in the Disadvantaged Business Enterprise and Airport Concession DBE programmes. Every firm must now show social and economic disadvantage through an <strong>individualised personal narrative</strong>. Contract goals are suspended while Unified Certification Programs re-evaluate rosters; reevaluations must be complete by <strong>24&nbsp;December 2026</strong> (one possible three-month extension). Non-responsive firms get a final written notice path with a 90-day grace to <strong>March&nbsp;2027</strong> then automatic disqualification.</p>
+<p>Legal scaffolding cited in the rule: <em>Mid-America Milling</em> (E.D.&nbsp;Ky. 2024 preliminary injunction), <em>Students for Fair Admissions</em>, Executive Orders 14151 and 14173, DOJ/Solicitor General refusal to defend the presumptions. DOT received <strong>637</strong> comments on the IFR. Clarifications today: “similarly situated” → “non-disadvantaged individuals with comparable qualifications”; race/sex may appear in a narrative as factual experience but cannot be a presumption; Alaska Native Corporations / Tribes / NHOs keep a distinct statutory track; no automatic SBA&nbsp;8(a) reciprocity.</p>
+<p>This is federally aided highway, transit and airport contracting — most public construction money in the country has a DBE clause. For three months the programme runs without numerical goals.</p>
+<p><strong>What to watch:</strong> how many certified firms fail to re-certify by 24&nbsp;Dec; state DOT litigation over the goal suspension; whether SBA’s 8(a) programme mirrors the narrative structure.</p>
+<details><summary>Dig deeper — why the FR sweep produced this lead</summary>
+<div class="exp">
+<p>No reachable wire front page carried the final rule this morning. It appeared by reading the day’s RULE/PRORULE list and then the full-text endpoint — the standing FR discipline. The abstract alone does not convey the 24&nbsp;Dec deadline or the goal suspension; the full text does. Estimated one-time transitional cost in the rule’s own analysis: roughly $95&nbsp;million (narratives + UCP reevaluation), treated by DOT as outweighed by constitutional-compliance benefits.</p>
+</div></details>
+<p class="sources">Sources: <a href="https://www.federalregister.gov/documents/full_text/text/2026/09/25/2026-19688.txt">FR full text 2026-19688</a> (primary) · FR documents API 25&nbsp;Sep RULE sweep</p>
+<div class="fb">
+<p><strong>Open DBE as a standing thread?</strong></p>
+<label><input type="radio" name="fb-dbe" value="thread"/> Yes — track 24&nbsp;Dec and any litigation</label>
+<label><input type="radio" name="fb-dbe" value="8a"/> Only if the same change reaches SBA 8(a)</label>
+<label><input type="radio" name="fb-dbe" value="no"/> One-off; note and move on</label>
+</div>
+</article>
+
+<article id="oil">
+<p class="meta"><span class="chip new">New</span> <span class="chip">Energy &amp; grid</span> <span class="chip">Geopolitics · US channel</span></p>
+<h2>One chain to the pump: AAA diesel $6.5019 (third drop) as 80 countries demand Hormuz without tolls</h2>
+<p><strong>Pump.</strong> AAA national diesel as of 25&nbsp;Sep: <strong>$6.5019</strong> (yesterday $6.5141; week ago $6.4476; month ago $5.6199; year ago $3.6890). Third straight daily decline after the all-time high of <strong>$6.5276</strong> on 22&nbsp;Sep. Regular petrol $4.4918 (up from $4.4825 yesterday). Diesel–gasoline spread still about $2.01. Per the 22&nbsp;Sep standing rule: daily AAA is the level and the fastest signal; weekly EIA is the trend. EIA weekly increments were already shrinking (+36.8c / +31.8c / +24.4c). A third AAA decline is consistent with that deceleration — it is not yet a call that the move has topped.</p>
+<p><strong>Chokepoint.</strong> A Bahrain-led statement at the UN, backed by <strong>80 countries</strong>, demanded urgent full reopening of Hormuz and safe transit “without the imposition of tolls, conditions or illegal charges” — the first multilateral text that names the toll architecture this brief has tracked since the 13&nbsp;Sep passage-fee report. It also condemned Houthi pressure on Bab el-Mandeb. gCaptain: Qatar has ramped LNG tanker traffic through Hormuz to the highest in more than two months. IMO has logged at least 84 merchant incidents in the wider Middle East since 28&nbsp;Feb, with 23 seafarers killed; UKMTO still counting attacks through 23&nbsp;Sep including Cape Dao.</p>
+<p><strong>What to watch:</strong> next EIA weekly (Tue) distillate stocks and utilisation — the actual relief numbers; any published Iranian tariff or coordinates (named trigger, still unfired); whether war-risk for a <em>named</em> Gulf passage finally prints.</p>
+<div class="div">
+<p class="t">One chain, not two stories</p>
+<p>Diesel falling while a toll-free Hormuz demand lands is the same causal chain: refining/distillate scarcity priced the pump up; any credible path back to unimpeded transit is what would loosen the crack. Do not read three down-days as a solved war, and do not split “diplomacy” from “the pump.”</p>
+</div>
+<p class="sources">Sources: <a href="https://gasprices.aaa.com/">AAA Fuel Prices</a> (primary) · <a href="https://gcaptain.com/bahrain-leads-countries-call-for-full-reopening-of-strait-of-hormuz-without-tolls/">gCaptain / Bahrain 80-country statement</a> · gCaptain Qatar LNG Hormuz traffic · continues US fuel prices + Hormuz watchlist</p>
+<div class="fb">
+<p><strong>Third diesel drop + tolls demand as one chain?</strong></p>
+<label><input type="radio" name="fb-oil" value="yes"/> Yes — keep pump and chokepoint fused</label>
+<label><input type="radio" name="fb-oil" value="split"/> Split when the diplomacy is this concrete</label>
+<label><input type="radio" name="fb-oil" value="eia"/> Wait for the next EIA weekly before leading on diesel</label>
+</div>
+</article>
+
+<article id="medicines">
+<p class="meta"><span class="chip under">Negative check</span> <span class="chip new">New</span> <span class="chip under">Underreported</span> <span class="chip">US policy</span> <span class="chip">Science &amp; public health</span></p>
+<h2>OMB wants the ASPR 86 essential medicines made domestic or near-shore within eighteen months</h2>
+<p>OMB request for information <strong>2026-19646</strong>, published 25&nbsp;Sep: market research on new and <em>idle</em> domestic and near-shore capacity for finished dose forms, APIs and key starting materials on the <strong>ASPR 86 list</strong> of essential medicines. Responses due <strong>26&nbsp;October 2026</strong>. Stated objective: secure domestic production of those medicines and precursors <strong>within eighteen months</strong>, and reduce dependence on “Foreign Entities of Concern” (China, Russia, Iran, North Korea). Also asks about amoxicillin and ciprofloxacin, not on the 86 list, for supply-chain vulnerability. Feedback may shape near-term federal acquisition, including limited competition for industrial mobilisation.</p>
+<p>Most essential-medicine APIs and KSMs are not made in the US. This is industrial-base policy with a dated clock, not a study for its own sake.</p>
+<p><strong>What to watch:</strong> which molecules attract idle-capacity responses; any follow-on FAR or offtake instrument; whether antibiotics outside the 86 list get pulled into a later action.</p>
+<p class="sources">Sources: <a href="https://www.federalregister.gov/documents/full_text/text/2026/09/25/2026-19646.txt">FR full text 2026-19646</a> (primary) · FR NOTICE sweep 25&nbsp;Sep</p>
+<div class="fb">
+<p><strong>Essential-medicines RFI?</strong></p>
+<label><input type="radio" name="fb-meds" value="thread"/> Open a thread through the 18-month clock</label>
+<label><input type="radio" name="fb-meds" value="action"/> Only when an acquisition or offtake lands</label>
+<label><input type="radio" name="fb-meds" value="less"/> Too speculative until responses post</label>
+</div>
+</article>
+
+<article id="xi">
+<p class="meta"><span class="chip new">New</span> <span class="chip">Core · AI &amp; tech</span> <span class="chip">World economy · US channel</span></p>
+<h2>After the state dinner: Xi claims a “new” trade consensus; AI stays “under human control,” no binding deal</h2>
+<div class="corr">
+<p class="t">Accountability vs yesterday’s Bessent preview</p>
+<p>Yesterday’s Grok led on Bessent’s Fox interview extending the trade truce to <strong>10&nbsp;January 2027</strong> as Xi arrived. That dated extension still stands. <strong>Today’s new facts are the summit products:</strong> Xi, via Xinhua/CCTV, said the economic teams reached a “new consensus” / arrangement and called it good news for both industries and the global economy — without publishing operative tariff, rare-earth or chip terms. On AI, Xi said both countries have “the capability and responsibility” to develop AI for good and keep it “always under human control.” Tech CEOs (Cook, Bezos, Pichai, Altman, Musk, Huang) attended the state dinner. No binding AI safeguard, summit calendar, or export-control relief was announced. Trump has called extinction-risk talk a “hoax.” Short truce + rhetorical AI alignment is the deliverable; the disputes are deferred into the next negotiation window.</p>
+</div>
+<p>Taiwan: Xi again asked Washington to handle the issue “prudently” and oppose Taiwan independence. Iran: Xi urged return to the Islamabad MoU framework. US channel is direct — tariffs the reader pays, chips the labs need, rare earths in the build-out.</p>
+<p><strong>What to watch:</strong> any published text of the “new consensus”; whether the AI incident hotline Bessent previewed with He Lifeng is stood up; Jan&nbsp;10 truce expiry politics.</p>
+<p class="sources">Sources: Yonhap / Xinhua pool on Xi remarks · BBC analysis of limited deliverables · CNBC Bessent truce (23–24&nbsp;Sep) · CNA guest list · continues <a href="2026-09-24-grok.html#trump-xi">24&nbsp;Sep Grok</a></p>
+<div class="fb">
+<p><strong>Xi summit AI language vs trade truce?</strong></p>
+<label><input type="radio" name="fb-xi" value="ai"/> Weight the AI “human control” line harder</label>
+<label><input type="radio" name="fb-xi" value="trade"/> Trade clock to 10&nbsp;Jan is the story</label>
+<label><input type="radio" name="fb-xi" value="both"/> Both, as here</label>
+</div>
+</article>
+
+<article id="dram">
+<p class="meta"><span class="chip new">New</span> <span class="chip">Core · AI &amp; tech</span> <span class="chip under">Underreported</span></p>
+<h2>ITC institutes DRAM Section&nbsp;337 case naming Micron, HPE, Lenovo and Super Micro</h2>
+<p>US International Trade Commission instituted investigation <strong>337-TA-1523</strong> on complaint of Netlist (filed 11&nbsp;Aug): alleged infringement of four patents covering DDR5 RDIMM/MRDIMM technology by Micron Technology, Micron Semiconductor Products, Hewlett Packard Enterprise, Lenovo (Group and US) and Super Micro Computer. Netlist seeks a limited exclusion order and cease-and-desist orders — i.e., a potential import ban on the accused memory products. Target date for completion to be set within 45 days of institution. Remedial orders, if any, face a 60-day Presidential/USTR review.</p>
+<p>This is not a liability finding. It <em>is</em> an expedited ITC track that can wall off US imports of the very DRAM that seats AI servers. Super Micro and HPE sit in the data-centre build; Micron is the US memory champion. Physical constraint on AI capex, reached from the FR NOTICE list — no thread pointed here.</p>
+<p><strong>What to watch:</strong> target date; any early settlement with Samsung-style licensing (Netlist’s own framing); USTR disposition if an exclusion order issues.</p>
+<p class="sources">Sources: FR NOTICE 2026-19697 (institution) · Netlist / PR Newswire 24&nbsp;Sep · Bloomberg Law summary</p>
+<div class="fb">
+<p><strong>DRAM 337 as Core AI physical?</strong></p>
+<label><input type="radio" name="fb-dram" value="yes"/> Yes — track through exclusion risk</label>
+<label><input type="radio" name="fb-dram" value="settle"/> Only if an exclusion order is recommended</label>
+<label><input type="radio" name="fb-dram" value="less"/> Patent ITC noise</label>
+</div>
+</article>
+
+<article id="polymarket">
+<p class="meta"><span class="chip new">New</span> <span class="chip">Core · US financials</span> <span class="chip">US policy</span></p>
+<h2>New York sued Polymarket for illegal gambling; Polymarket sued New York the same day</h2>
+<p>NY Attorney General Letitia James and Governor Hochul filed in state court on 24&nbsp;Sep accusing QCX LLC d/b/a Polymarket US of running an unlicensed gambling operation — prediction markets on sports and “markets on everything,” available to 18–20-year-olds despite New York’s 21+ mobile-sports rule, without a Gaming Commission licence or the associated tax base. Relief sought: injunction, forfeiture, restitution, treble fines. The same afternoon Polymarket sued James and state officials in Manhattan federal court to block state regulation, arguing prediction markets sit under federal CFTC derivatives oversight.</p>
+<p>This is the same State theory used against Kalshi, Coinbase and Gemini earlier in 2026 — now aimed at the highest-profile event-contract venue. CFTC has been publicly supportive of prediction markets as a category while, separately, reporting described an ongoing marketing investigation into Polymarket. The live legal question is whether a state can regulate a CFTC-facing prediction market at all.</p>
+<p><strong>What to watch:</strong> temporary restraining order practice in either court; CFTC statement or filing; whether other AGs copy New York.</p>
+<p class="sources">Sources: <a href="https://ag.ny.gov/press-release/2026/attorney-general-james-and-governor-hochul-announce-lawsuit-against-polymarket">NY AG press release</a> (primary) · AP / PBS · CNA on Polymarket countersuit</p>
+<div class="fb">
+<p><strong>Polymarket dual suits?</strong></p>
+<label><input type="radio" name="fb-poly" value="thread"/> Open beside the Kalshi/state-preemption thread</label>
+<label><input type="radio" name="fb-poly" value="cftc"/> Wake on a CFTC filing</label>
+<label><input type="radio" name="fb-poly" value="less"/> Gambling enforcement colour</label>
+</div>
+</article>
+
+<article id="dengue">
+<p class="meta"><span class="chip new">New</span> <span class="chip">Florida &amp; Tampa Bay</span></p>
+<h2>Hillsborough, Pinellas and Pasco declare dengue emergencies — Hillsborough at 170</h2>
+<p>On 24&nbsp;Sep Hillsborough County Administrator Bonnie Wise signed a local state of emergency for dengue (seven days, extendable). Pinellas commissioners voted the same day; Pasco had declared the day before. State ledger cited in local reporting: Hillsborough <strong>170</strong> locally acquired cases; Pinellas 7; Pasco 2 — about 179 across the three counties, of roughly 190 statewide. Declarations unlock emergency mosquito-control spend, staffing and potential reimbursement. Hillsborough still accounts for the overwhelming share; a dengue-associated death under investigation remains on the prior thread.</p>
+<p>Clears the local bar: three contiguous Tampa Bay counties, a new case level, and formal emergency powers — not blotter.</p>
+<p><strong>What to watch:</strong> next Florida DOH arbovirus weekly; whether the Governor opens state funding; aerial spray cadence.</p>
+<p class="sources">Sources: WFLA (Hillsborough / Pinellas / Pasco) · Hillsborough executive order 24&nbsp;Sep · St Pete Catalyst · continues Tampa Bay dengue watchlist</p>
+<div class="fb">
+<p><strong>Three-county dengue emergency?</strong></p>
+<label><input type="radio" name="fb-dengue" value="yes"/> Right size for Florida section</label>
+<label><input type="radio" name="fb-dengue" value="death"/> Lead only on a confirmed dengue death or statewide emergency</label>
+<label><input type="radio" name="fb-dengue" value="less"/> Demote to Also today</label>
+</div>
+</article>
+
+<h2 class="section" id="also">Also today</h2>
+<p class="secnote">Ranked below the line. Each opens.</p>
+<div class="also-list">
+
+<details>
+<summary><span class="chip">Geopolitics</span> Hurricane Nolo: Big Island under hurricane watch; major-hurricane risk Saturday · <em>Hawaii News Now / Star-Advertiser</em></summary>
+<div class="exp"><p>Nolo is a hurricane south of Hawai‘i Island, forecast to intensify. Hawaii County hurricane watch and tropical storm warning; Maui tropical storm watch. Main threats: catastrophic rainfall (figures up to the mid-30s inches on the Big Island in some guidance), surf, mudslides. No Florida Atlantic threat — NHC Atlantic outlook quiet for the Tampa Bay section.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">US policy</span> Journalists for CNN, MS NOW and Politico return to the White House on a judge’s order · <em>text.npr.org</em></summary>
+<div class="exp"><p>Continuation of the Kelly TRO thread from 24&nbsp;Sep Grok: hard-pass access restored after the overnight ruling. Movement item, not a re-litigation of the underlying press-ban dispute.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">US policy</span> Census interference ban: thread open after feedback · <em>fb-census: yes</em></summary>
+<div class="exp"><p>Closed feedback #20 on Issue&nbsp;20 answered <strong>yes</strong> to tracking Commerce’s removal of the political-interference ban from census data policy. No new procedural signature overnight. Wake triggers unchanged: Oct&nbsp;7 agency responses to Warren’s letters, or a measurable change in the data pipeline.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">Science</span> NIH draft policy on sharing summary-level study results with participants · <em>FR 2026-19706</em></summary>
+<div class="exp"><p>NOTICE seeking comment on a draft NIH policy to share summary results with clinical-research participants. Governance of the research enterprise; not a trial result.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">US policy</span> ATF package: Safe Explosives Act finalisation + magazine and storage proposals · <em>FR 2026-19691–19694</em></summary>
+<div class="exp"><p>Four related explosives documents in one day’s RULE/PRORULE list — annual local-fire-authority notices, Safe Explosives Act IFR finalisation, magazine safety proposal, storage-exceptions proposal. Cluster tell, not four separate stories.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">Energy</span> EPA finalises title&nbsp;V “applicable requirements” clarification — NSR review narrowed · <em>FR 2026-19671</em></summary>
+<div class="exp"><p>Codifies limited situations in which New Source Review requirements can be revisited through title&nbsp;V oversight, and clarifies accidental-release general-duty obligations are not title&nbsp;V “applicable requirements.” Procedural narrowing for major-source permits.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">Energy</span> Qatar LNG traffic through Hormuz highest in two-plus months · <em>gCaptain</em></summary>
+<div class="exp"><p>Folded into the oil chain above; logged here so the sweep is auditable. Composition of what still moves (LNG vs crude) remains the informative half of any transit story.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">Geopolitics</span> Cape Dao attack killed an Indian seafarer near Hormuz (23&nbsp;Sep) · <em>gCaptain / UKMTO</em></summary>
+<div class="exp"><p>Already inside the 80-country statement’s casualty arithmetic (IMO: 23 seafarers killed since 28&nbsp;Feb). Named here because it is the most recent fatal merchant incident in the channel.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">Science</span> “Super” El Niño outlook circulating on wires · <em>text.npr.org</em></summary>
+<div class="exp"><p>Held below the line: seasonal outlook without a US agricultural or Florida landfall trigger yet. Watch if CPC/NOAA upgrades affect winter power or Florida dengue/mosquito season framing.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">Florida</span> NHC Atlantic: no tropical cyclone threat to Tampa Bay this morning · <em>nhc.noaa.gov</em></summary>
+<div class="exp"><p>Standing check through November. Quiet for the local section; Pacific Nolo is the live basin.</p></div>
+</details>
+
+</div>
+
+<h2 class="section">Provenance</h2>
+<p><strong>19 sources checked, 12 outside the active watchlist.</strong></p>
+<p><b>Watchlist-pointed (7):</b> Treasury Daily Par Yield CSV · AAA Fuel Prices · Hormuz / Bahrain 80-country statement (gCaptain) · Senate Iran war-powers roll call · Tampa Bay dengue emergencies · census feedback follow · NHC Atlantic quiet.</p>
+<p><b>Outside the watchlist (12):</b> Freddie Mac PMMS · FR DOT DBE full text 2026-19688 · FR OMB essential-medicines RFI 2026-19646 · FR NOTICE DRAM institution 2026-19697 · NY AG Polymarket release · Netlist/PR Newswire + Bloomberg Law on ITC · Yonhap/Xinhua and BBC/CNA on Xi summit · NBC + Senate Daily Press on the vote · text.npr.org headline index · Al Jazeera news index · Hawaii News Now / Star-Advertiser on Nolo · FR ATF explosives cluster + EPA title&nbsp;V + NIH draft.</p>
+<p><strong>Negative check changed the lead list:</strong> whole-day FR RULE and NOTICE sweeps produced DBE final rule, essential-medicines RFI, DRAM 337 institution and the ATF explosives cluster; issuer CSV + Friday PMMS produced the long-end/mortgage lead; Senate roll call 244 and the Bahrain tolls statement displaced reprises of OpenAI–Medicare, Williams colour, BIS polysilicon, Wright export-ban rejection, and Bessent-without-Xi. Wikipedia current-events for 25&nbsp;Sep timed out — negative check run instead against Al Jazeera, gCaptain, text.npr.org and the FR lists; say so rather than imply the usual instrument was empty.</p>
+<p><b>Feedback applied:</b> #20 <em>fb-census: yes</em> → census kept as an open short with Oct&nbsp;7 wake. Settled prefs: corrections at top of story; oil as one chain; Fed prints/decision only; Florida only on local merit; single-sourced OK with label; charts from official series.</p>
+
+<ul class="dorm">
+<li><b>Dormant / no wake today:</b> Ukraine negotiations (still no published text) · Missouri map · USPS mail-ballot rule (resolved for November) · UAP implementing guidance · AARO contract · birthright citizenship appeal.</li>
+</ul>
+
+<footer>
+<p>Issue No. 21-grok · 25 September 2026 · Grok edition for MAGA Mickey · Archive: <a href="https://historiocity.github.io/News-Agent/">historiocity.github.io/News-Agent</a> · Skill reads <a href="https://github.com/historiocity/News-Agent/blob/main/config.md">config.md</a> every run.</p>
+<div class="submit"><button type="button" disabled title="Local preview only">Submit feedback (wire me)</button></div>
+</footer>
+
+</div>
+</body>
+</html>
