@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Saturday, 26 September 2026</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .chip.alert { background:var(--accent); color:#fff; border:1px solid var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  .corr { background:var(--box); border-left:3px solid var(--accent); padding:.7rem .9rem; margin:0 0 1rem; font-size:.94rem; }
+  .corr p { margin:.4rem 0; }
+  .corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--accent); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  .short { border-bottom:1px solid var(--rule); padding:.7rem 0; margin:0; }
+  .short > summary { color:var(--fg); cursor:pointer; list-style:none; }
+  .short > summary::-webkit-details-marker { display:none; }
+  .short > summary::before { content:"▸ "; color:var(--link); }
+  .short[open] > summary::before { content:"▾ "; }
+  .short .body { margin-top:.6rem; padding-left:1.1rem; border-left:2px solid var(--rule); font-size:.96rem; }
+  .why { font-style:italic; color:var(--muted); }
+  figure { margin:1.2rem 0 0; }
+  figcaption { font-size:.84rem; color:var(--muted); margin-top:.4rem; line-height:1.5; }
+  svg { width:100%; height:auto; display:block; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+  ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 22 &middot; Saturday, 26 September 2026</div>
+  <h1>The Supreme Court set the midterm ground rules in a single afternoon &mdash; and diesel&rsquo;s week-on-week increase finally went negative</h1>
+  <p class="sub">Morning edition. Continues from <a href="2026-09-25.html">Friday</a>.</p>
+  <p class="prov"><b>26 sources checked, 16 of them outside the watchlist.</b> Seven lead stories: three on subjects with no existing thread (the Pentagon&rsquo;s exclusion of Anthropic, the nor&rsquo;easter, the teen pregnancy money) and four continuations (the two Supreme Court election orders, Nolo, the pump chain, the prediction-market suits). Eight short items. <b>No Florida section today</b> &mdash; Pasco went from two dengue cases to three, which does not clear a local bar on its own, so it runs as a short instead.<br><br>
+  <b>The Federal Register published nothing today.</b> It does not publish on Saturdays, and the public-inspection list is offline until Monday morning. The instrument that produced two of yesterday&rsquo;s six leads was simply unavailable, which is why today leans on courts and wires.<br><br>
+  <b>Biggest story today not on this list:</b> the WHO pandemic treaty, signed and in limbo. It is genuinely consequential and it is held because &ldquo;in limbo&rdquo; is a state rather than an event, and this brief has not read the ratification tally. Also held: Netanyahu&rsquo;s UN speech, the Thailand floods and the Kamchatka trawler fire, all for want of a US channel.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#scotus">Two Supreme Court election orders in one afternoon, both about lateness, resolved in opposite directions</a></li>
+    <li><a href="#nolo">Nolo is a Category 2 sitting almost still 150 miles off the Big Island, and Hawaii now has a federal emergency declaration</a></li>
+    <li><a href="#noreaster">A nor&rsquo;easter peaks over the New Jersey coast today, with two to three feet of inundation warned into Sunday</a></li>
+    <li><a href="#diesel">Diesel is now cheaper than it was a week ago. That has not been true since the shock began</a></li>
+    <li><a href="#anthropic">A federal appeals court says the Pentagon may blacklist the company that makes the model writing this brief</a></li>
+    <li><a href="#kalshi">A day after this brief said the preemption question was open, the Sixth Circuit answered it &mdash; against the prediction markets</a></li>
+    <li><a href="#teenpreg">Congress appropriated $101 million for teen pregnancy prevention. With four days of the fiscal year left, $500,000 has gone out</a></li>
+    <li><a href="#also-today">Also today (8)</a></li>
+  </ol>
+</nav>
+
+<article id="scotus">
+  <h2>Two Supreme Court election orders in one afternoon, both about lateness, resolved in opposite directions</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The Court issued two emergency-docket orders on Friday, six weeks before the midterms. In <b><em>Von Glahn v. Hoskins</em></b> (26A388) it blocked the Eighth Circuit&rsquo;s injunction and told the lower courts not to prohibit use of Missouri&rsquo;s <b>2022 map</b> in November. In <b><em>DHS v. League of Women Voters</em></b> it stayed a district court order, <b>6&ndash;3</b>, and let the modified <b>SAVE</b> citizenship-verification system run.</p>
+  <p>The Missouri reasoning is Purcell in its purest form: &ldquo;ballots using the 2022 map have been printed and mailed. Absentee voting has already begun.&rdquo; It is the third time the Court has declined to let the Trump-backed 2025 map take effect, and voters will now use different districts in November from the ones used in the primaries.</p>
+  <p>The SAVE order runs the other way on the same instinct. SAVE is a forty-year-old benefits-eligibility system that DHS linked to Social Security records last year, bringing most Americans into it. The unsigned opinion permits <b>individualised</b> citizenship checks while noting that federal law still bars mass purges close to Election Day. Jackson dissented, joined by Sotomayor and Kagan.</p>
+  <p>So: a late change to the map is chaos, and a late change to the verification machinery is not. The distinction the Court is drawing is between what voters see and what officials do, and it is not obvious that voters experience it that way.</p>
+  <p><b>What to watch:</b> whether any state runs a list maintenance programme inside the ninety-day quiet period and dares the Court to enforce its own caveat; the Missouri litigation on the merits after November; and whether an individualised SAVE mismatch generates a challenge at a polling place.</p>
+
+  <div class="div">
+    <p class="t">Where the accounts diverge</p>
+    <p><b>The substance.</b> How much the SAVE order actually changes, and the split is between the advocacy read and the administrative one. DHS calls it &ldquo;a victory for election integrity&rdquo;, with its general counsel adding that &ldquo;American elections are for Americans&rdquo;. Votebeat, which covers election administration rather than election politics, reports that the impact on the 2026 election will be limited. Both are reading the same unsigned order. This is a dispute about <em>significance</em>.</p>
+    <p><b>Cause.</b> Vantage and timing, not bad faith. DHS is describing the authority it won; Votebeat is describing what an election official can do with it in six weeks. Both are right about their own object. The administrative read has the stronger mechanical footing: the order permits individualised checks and preserves the statutory bar on systematic removals within ninety days of a federal election, and the ninety-day window for 3 November opened in early August. So the tool is available and the aggressive use of it is still unlawful. DHS&rsquo;s framing is about the precedent; Votebeat&rsquo;s is about this cycle.</p>
+    <p><b>What it means for you.</b> Read this as a ruling whose consequence lands in 2028 rather than 2026, and discount any account that presents it as changing what happens in November. The thing to watch is not a purge but a <em>protocol</em>: whether a state adopts SAVE as a routine step in processing new registrations, which is individualised, entirely lawful under this order, and cumulative. The observation that would tell you the limited read was wrong is a state announcing a list-comparison programme before Election Day &mdash; which the order says it cannot do, and which is exactly the kind of thing that arrives as a fait accompli with litigation trailing behind.</p>
+  </div>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration &mdash; but the orders themselves were not read. The Supreme Court&rsquo;s orders page served no data this morning, so the case names, docket number, vote and quoted language come from reporting and from DHS&rsquo;s own statement. <b>Sources:</b> <a href="https://www.stlpr.org/government-politics-issues/2026-09-25/congressional-map-missouri-8th-circle-appeal">St. Louis Public Radio</a> &middot; <a href="https://www.dhs.gov/news/2026/09/25/dhs-applauds-supreme-court-decision-permitting-citizenship-verification-voters">DHS statement</a> &middot; <a href="https://www.votebeat.org/national/2026/09/25/supreme-court-ruling-save-system-trump-dhs-noncitizens-2026-election/">Votebeat</a> &middot; <a href="https://www.npr.org/2026/09/25/nx-s1-5976804/supreme-court-trump-save-noncitizen-voting">NPR</a> &middot; wakes the dormant Missouri thread, last seen <a href="2026-09-10.html#missouri">10 September</a>, and continues <a href="2026-09-20.html#dhs">20 September</a></p>
+
+  <div class="fb">
+    <p>The Missouri thread has been dormant since 10 September. This order is bigger than the trigger written for it.</p>
+    <label><input type="radio" name="fb-scotus" value="reopen"> Reopen Missouri as an active thread through November</label>
+    <label><input type="radio" name="fb-scotus" value="save"> Only the SAVE side &mdash; the voter-roll machinery is the durable story</label>
+    <label><input type="radio" name="fb-scotus" value="docket"> Track the emergency docket generally, not these two cases</label>
+  </div>
+</article>
+
+<article id="nolo">
+  <h2>Nolo is a Category 2 sitting almost still 150 miles off the Big Island, and Hawaii now has a federal emergency declaration</h2>
+  <div class="meta">
+    <span class="chip">Science &amp; public health</span>
+    <span class="chip alert">Warning in effect</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Nolo strengthened overnight to a <b>Category 2 with 105mph winds</b> and is now about <b>150 miles south of the Big Island</b>, having closed a hundred miles since yesterday morning. Outer rainbands are already over the island. The forecast is for further strengthening to a major hurricane.</p>
+  <p>The dangerous part of this storm is not the wind and never was. It is that Nolo is <b>nearly stationary</b>. A slow or stalled system dumps its entire rainfall budget on one place: ten to fifteen inches over eastern and southern parts of the island through Sunday, up to twenty-five in the steepest terrain, and a National Hurricane Center ceiling of <b>thirty-five inches</b> with catastrophic and life-threatening flash flooding.</p>
+  <p>Governor Josh Green requested and President Trump approved a <b>federal emergency declaration</b>, releasing assistance for emergency protective measures statewide. That is the pre-landfall instrument &mdash; it funds sheltering, evacuation and debris clearance, not rebuilding, and it is a different and much faster thing than a major disaster declaration.</p>
+  <p>Context the coverage is supplying and this brief had not: Nolo is the <b>third hurricane to pass near Hawaii in under two months</b>, after Lala and Lowell, and the state has taken hundreds of millions of dollars of damage from disasters since March.</p>
+  <p><b>What to watch:</b> whether Nolo makes the forecast left turn west and stays south, which is the difference between very bad and catastrophic; rainfall totals on the Hilo and Ka&lsquo;u slopes; and whether the emergency declaration is upgraded to a major disaster declaration, which is the tell for damage assessments.</p>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration. As yesterday, the Central Pacific Hurricane Center&rsquo;s own advisories could not be fetched. The position and hurricane status come from the National Hurricane Center&rsquo;s Eastern Pacific outlook read directly; the intensity, rainfall and declaration come from NBC News, CNN and the Honolulu Star-Advertiser, all downstream of the same National Weather Service products. <b>Sources:</b> <a href="https://www.nhc.noaa.gov/text/MIATWOEP.shtml">NHC Eastern Pacific Tropical Weather Outlook, 11pm PDT 25 September</a> &middot; <a href="https://www.nbcnews.com/news/us-news/hurricane-nolo-expected-bring-heavy-rain-skirts-hawaiis-big-island-rcna599924">NBC News</a> &middot; <a href="https://www.cnn.com/2026/09/25/weather/hurricane-nolo-hawaii-el-nino-impacts-climate">CNN</a> &middot; <a href="https://www.staradvertiser.com/">Honolulu Star-Advertiser</a> &middot; continues <a href="2026-09-25.html#nolo">25 September</a></p>
+</article>
+
+<article id="noreaster">
+  <h2>A nor&rsquo;easter peaks over the New Jersey coast today, with two to three feet of inundation warned into Sunday</h2>
+  <div class="meta">
+    <span class="chip">Science &amp; public health</span>
+    <span class="chip new">New subject</span>
+    <span class="chip alert">Warning in effect</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The National Weather Service office at Mount Holly issued a <b>coastal flood warning at 4:20 this morning</b>, running to <b>2pm Sunday</b>. It warns of <b>two to three feet of inundation above ground level</b> in low-lying areas near shorelines and tidal waterways. A separate <b>high wind warning</b> covers the Atlantic coasts of New Jersey and Delaware: north winds of 30 to 40mph with gusts to 60.</p>
+  <p>Roads have already flooded in New Jersey and water has reached some homes. The storm strengthens through today and peaks <b>Saturday into early Sunday</b> before weakening slowly. Breaking waves in the surf zone are forecast to nine feet, with a high rip-current risk through Sunday.</p>
+  <p>The geography worth knowing is that the worst of it is not oceanfront. Multiple rounds of tidal flooding are expected in the <b>back bays</b> &mdash; Barnegat Bay, the Shrewsbury River, southern Raritan Bay, Delaware Bay and the tidal Delaware River. A sustained north wind over several tide cycles piles water into those bays and it does not drain between high tides, which is why a storm with no landfall still floods streets.</p>
+  <p>&ldquo;Long-lasting&rdquo; is the operative word. Damage from a multi-cycle event of this kind is cumulative, and the third high tide is usually the one that gets into buildings.</p>
+  <p><b>What to watch:</b> the Sunday morning high tide, which arrives after two full cycles of piling; power outages across the Jersey Shore and Long Island; and whether the warning is extended past 2pm Sunday.</p>
+
+  <p class="sources"><b>Confidence:</b> Primary source for the warnings &mdash; the products are National Weather Service issuances, reached through alert aggregators rather than weather.gov itself, which was not fetched. <b>Sources:</b> NWS Mount Holly coastal flood warning and high wind warning, 26 September, via <a href="https://www.govonestop.com/nws/new-jersey-severe-coastal-flood-warning-effective-09262026-0120-0">GovOneStop</a> and <a href="https://www.defconlevel.com/alert/2026-09-26-nws-noaa-weather-coastal-flood-warning-issued-september-26-at-4-20am-edt-until-september-27-at-3-00am-edt-by-nws-mount-holly-nj">DefconLevel</a> &middot; <a href="https://abc7ny.com/live-updates/developing-noreaster-threatens-jersey-shore-long-island-coastal-flooding-rough-surf-strong-winds-accuweather-alert/19861959/">ABC7 New York</a> &middot; <a href="https://text.npr.org/">NPR</a></p>
+
+  <div class="fb">
+    <p>Two weather leads today, both live US hazards.</p>
+    <label><input type="radio" name="fb-noreaster" value="ok"> Right call &mdash; run live warnings as leads while they are live</label>
+    <label><input type="radio" name="fb-noreaster" value="one"> One weather lead is enough; rank the other below the line</label>
+    <label><input type="radio" name="fb-noreaster" value="fl"> Only when it reaches Florida or has a federal policy consequence</label>
+  </div>
+</article>
+
+<article id="diesel">
+  <h2>Diesel is now cheaper than it was a week ago. That has not been true since the shock began</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>AAA&rsquo;s national diesel average is <b>$6.4839</b>, down 1.80 cents on the day and the <b>fourth consecutive decline</b>. The week-ago figure is $6.4866. Diesel is therefore <b>0.27 cents cheaper than it was seven days ago</b> &mdash; the first negative week-on-week reading of the entire shock.</p>
+  <p>The daily declines have accelerated every day: 0.59c, 0.76c, 1.22c, 1.80c. The average is now <b>4.37 cents below the 22 September record</b> of $6.5276, and petrol turned too, to $4.4874 from $4.4918, though it remains up 1.15 cents on the week.</p>
+  <p>This brief called a top on 21 September and was wrong inside a day. The reason to treat today differently is that the earlier call rested on three shrinking <em>daily</em> increases, which is a rate of change. Today the <b>level</b> is lower than it was a week ago, which is not a rate of change but an arithmetic fact about two prices.</p>
+  <p>The weekly official series has not confirmed it yet. EIA&rsquo;s on-highway survey ran $5.599, $5.967, $6.285 and $6.529 for the four weeks to 21 September &mdash; increments of 36.8, 31.8 and 24.4 cents, decelerating but still positive. The reading for the week ending <b>28 September</b> publishes Monday and is the first that could come in negative.</p>
+  <p><b>What to watch:</b> Monday&rsquo;s EIA print; whether the fifth consecutive daily fall arrives; and the petrol leg, which has now diverged from diesel in direction for three mornings and rejoined it on the fourth.</p>
+
+  <figure>
+    <svg viewBox="0 0 640 210" role="img" aria-label="AAA national average diesel, daily: 22 September $6.5276 (the record), 23 September $6.5217, 24 September $6.5141, 25 September $6.5019, 26 September $6.4839. A dashed line marks the week-ago level of $6.4866, which today's price falls below.">
+      <rect x="0" y="0" width="640" height="210" fill="none"/>
+      <line x1="95" y1="30" x2="600" y2="30" stroke="#e0ddd6" stroke-width="1"/>
+      <line x1="95" y1="65" x2="600" y2="65" stroke="#e0ddd6" stroke-width="1"/>
+      <line x1="95" y1="100" x2="600" y2="100" stroke="#e0ddd6" stroke-width="1"/>
+      <line x1="95" y1="135" x2="600" y2="135" stroke="#e0ddd6" stroke-width="1"/>
+      <line x1="95" y1="170" x2="600" y2="170" stroke="#6b6a66" stroke-width="1"/>
+      <line x1="95" y1="141" x2="600" y2="141" stroke="#1c4f8a" stroke-width="1.5" stroke-dasharray="5 4"/>
+      <text x="87" y="34" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">$6.55</text>
+      <text x="87" y="69" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">$6.53</text>
+      <text x="87" y="104" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">$6.51</text>
+      <text x="87" y="139" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">$6.49</text>
+      <text x="87" y="174" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">$6.47</text>
+      <text x="300" y="133" font-family="Georgia, serif" font-size="11" fill="#1c4f8a" text-anchor="middle">a week ago: $6.4866</text>
+      <polyline fill="none" stroke="#8a3324" stroke-width="2.5" points="95,69.2 221.25,79.5 347.5,92.8 473.75,114.2 600,145.7"/>
+      <circle cx="95" cy="69.2" r="4.5" fill="#8a3324"/>
+      <circle cx="221.25" cy="79.5" r="3.5" fill="#8a3324"/>
+      <circle cx="347.5" cy="92.8" r="3.5" fill="#8a3324"/>
+      <circle cx="473.75" cy="114.2" r="3.5" fill="#8a3324"/>
+      <circle cx="600" cy="145.7" r="4.5" fill="#8a3324"/>
+      <text x="103" y="62" font-family="Georgia, serif" font-size="11" fill="#8a3324" text-anchor="start">record $6.5276</text>
+      <text x="596" y="162" font-family="Georgia, serif" font-size="11" fill="#8a3324" text-anchor="end">$6.4839</text>
+      <text x="95" y="192" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="start">22 Sep</text>
+      <text x="221.25" y="192" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">23</text>
+      <text x="347.5" y="192" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">24</text>
+      <text x="473.75" y="192" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">25</text>
+      <text x="600" y="192" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">26 Sep</text>
+    </svg>
+    <figcaption>AAA national average, retail diesel, daily. Plotted to scale: 1,750px per dollar from a $6.47 base, so each two-cent gridline is 35px. The dashed line is the price seven days ago; today is the first day of this episode on which the line has been crossed from above.</figcaption>
+  </figure>
+
+  <p class="sources"><b>Sources:</b> <a href="https://gasprices.aaa.com/">AAA Fuel Prices, 26 September</a> &middot; <a href="https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm">EIA weekly retail prices</a> &middot; continues <a href="2026-09-25.html#s-diesel">25 September</a> and the corrected turn call of <a href="2026-09-21.html#s-diesel">21 September</a></p>
+
+  <div class="fb">
+    <p>Five weeks of this story. The level has now turned on the daily series.</p>
+    <label><input type="radio" name="fb-diesel" value="daily"> Keep it daily until the weekly series confirms</label>
+    <label><input type="radio" name="fb-diesel" value="weekly"> Weekly only from here &mdash; the daily print is noise</label>
+    <label><input type="radio" name="fb-diesel" value="passthrough"> Shift the story to pass-through: freight rates, food prices, the surcharge line</label>
+  </div>
+</article>
+
+<article id="anthropic">
+  <h2>A federal appeals court says the Pentagon may blacklist the company that makes the model writing this brief</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <div class="corr">
+    <p class="t">Disclosure</p>
+    <p>This brief is written by Claude, which is made by Anthropic. The subject of this story is Anthropic&rsquo;s litigation against the Defense Department. The config file&rsquo;s standing instruction is never to soften coverage of the reader&rsquo;s employer, industry or locality; the same rule plainly applies here, and more so. What follows tries to be the story a brief with no connection to the company would write. The reader should still weigh it knowing the connection, and should treat the closing assessment in particular as the one most worth checking against other coverage.</p>
+  </div>
+  <p>The <b>D.C. Circuit</b> upheld the Pentagon&rsquo;s designation of Anthropic as a supply-chain risk on Friday, <b>2&ndash;1</b>. The designation bars the military from using the company&rsquo;s models and bars defence contractors from using them in their Defense Department work.</p>
+  <p>The origin is specific and on the record. In <b>February</b>, the Department asked Anthropic to remove safeguards preventing Claude&rsquo;s use in <b>fully autonomous lethal weapons and mass domestic surveillance of Americans</b>. Anthropic refused. In <b>March</b>, the Department issued the supply-chain risk designation &mdash; an instrument built for hardware with foreign-adversary exposure, here applied to a US company over the terms of its usage policy.</p>
+  <p>The legal position is genuinely unsettled and the court knew it. A California federal court held in <b>August</b> that a parallel and broader designation was unlawful. The D.C. panel upheld this one on public procurement regulations, and <b>stayed its own decision</b> so Anthropic can seek rehearing en banc or petition the Supreme Court.</p>
+  <p>The interesting question is not whether a company may set usage terms. It is whether a procurement instrument designed for security risk can be used to price a refusal, and what that implies for any vendor whose product has terms of service the government dislikes.</p>
+  <p><b>What to watch:</b> whether the D.C. Circuit takes it en banc; whether the government appeals the California ruling, which would tee up a circuit split; and whether the same designation is used against another AI vendor, which would establish it as a tool rather than an episode.</p>
+
+  <div class="div">
+    <p class="t">Where the accounts diverge</p>
+    <p><b>The substance.</b> Whether this is a procurement decision or a speech-adjacent one. The Department&rsquo;s position, sustained by the panel, is that the government may decline to buy from a supplier it judges risky, and that the courts owe procurement judgements deference. Anthropic&rsquo;s position is that the designation is retaliation for refusing to change a product, dressed in a security label &mdash; and that a district judge already used the word &ldquo;Orwellian&rdquo; about the notion in March. This is a dispute about <em>characterisation</em>, and two federal courts have now landed on opposite sides of it.</p>
+    <p><b>Cause.</b> Both framings are self-serving and both have real content, which is why the courts split. The government&rsquo;s interest is in preserving an instrument that works quickly and without a hearing; a supply-chain designation is fast precisely because it is not an adjudication. Anthropic&rsquo;s interest is commercial &mdash; it puts the cost at billions and it is approaching an IPO, which is a reason to say so loudly and also a reason the number should be treated as an estimate from an interested party. The mundane explanation for the split is the least dramatic one: the California case concerned a broader ban and the D.C. case a narrower one, and a court may uphold the narrow version of a thing it would strike down whole.</p>
+    <p><b>What it means for you.</b> Do not read this as settled; read it as one of two live holdings, with the losing side not yet out of options and the winning side&rsquo;s own panel unwilling to let its ruling take effect. The generalisable point, and the reason this matters beyond one company, is that the underlying demand was for a vendor to remove safeguards against autonomous lethal targeting and domestic surveillance &mdash; and whatever a court says about procurement, that demand is now a documented government position rather than a hypothetical. The observation that would settle the characterisation question is whether the designation is ever used again, and against whom. One use is a dispute; two is a policy.</p>
+  </div>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration &mdash; the opinion itself was not read, and the court and vote come from CNBC and Axios rather than the docket. <b>Sources:</b> <a href="https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html">CNBC</a> &middot; <a href="https://www.aljazeera.com/economy/2026/9/25/us-court-upholds-pentagons-blacklisting-of-anthropic">Al Jazeera</a> (an unrelated party) &middot; <a href="https://broadbandbreakfast.com/federal-court-says-pentagon-can-label-anthropic-a-supply-chain-risk/">Broadband Breakfast</a></p>
+
+  <div class="fb">
+    <p>This brief is written by a model made by the company in this story, and said so at the top.</p>
+    <label><input type="radio" name="fb-anthropic" value="cover"> Cover it like anything else, with the disclosure &mdash; this is the right approach</label>
+    <label><input type="radio" name="fb-anthropic" value="skip"> Leave Anthropic stories out entirely; I will read them elsewhere</label>
+    <label><input type="radio" name="fb-anthropic" value="facts"> Facts only, no assessment, when the subject is the author&rsquo;s own maker</label>
+  </div>
+</article>
+
+<article id="kalshi">
+  <h2>A day after this brief said the preemption question was open, the Sixth Circuit answered it &mdash; against the prediction markets</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <div class="corr">
+    <p class="t">This moved against yesterday&rsquo;s framing</p>
+    <p>Yesterday this brief led on New York suing Polymarket and said the substance was Polymarket&rsquo;s claim that the CFTC holds exclusive authority, calling it &ldquo;a preemption fight dressed as a consumer-protection case&rdquo; and naming CFTC intervention as the thing to watch. The same day, the Sixth Circuit ruled the other way on the identical question in Kalshi&rsquo;s case. The framing was right; the assessment that the question was open was already out of date when it published.</p>
+  </div>
+  <p>A unanimous three-judge panel of the <b>Sixth Circuit</b>, in an opinion by Judge <b>Julia Smith Gibbons</b>, held that states retain authority to regulate prediction-market event contracts under their gambling laws. <b>Ohio and Tennessee</b> may regulate Kalshi&rsquo;s contracts.</p>
+  <p>The important thing is not the holding but the map. The <b>Ninth Circuit</b> has held prediction markets subject to Nevada&rsquo;s gambling laws. The <b>Third Circuit</b> has held they are not subject to New Jersey&rsquo;s. The Sixth now sides with the Ninth. Three circuits, two answers, on whether a federally regulated event contract is a bet.</p>
+  <p>That is a textbook Supreme Court posture: a clean, recurring, purely legal question on which the courts of appeals disagree, in an industry that cannot operate state by state. Someone will file a petition, and the odds of a grant are high.</p>
+  <p>For New York&rsquo;s case against Polymarket the immediate effect is modest &mdash; the Second Circuit is bound by neither &mdash; but the defence Polymarket filed within hours on Thursday now has two circuits against it and one for it.</p>
+  <p><b>What to watch:</b> a certiorari petition and whether the Solicitor General is asked for views, which would reveal whether the administration backs the CFTC&rsquo;s exclusivity claim; and whether either platform geofences Ohio and Tennessee rather than litigate on.</p>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration for the holding; the opinion was not read, and the characterisation of the Third and Ninth Circuit cases comes from the same report rather than from those opinions. <b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/9/25/us-court-rules-against-kalshi-says-states-can-regulate-prediction-markets">Al Jazeera</a> &middot; continues <a href="2026-09-25.html#polymarket">25 September</a></p>
+</article>
+
+<article id="teenpreg">
+  <h2>Congress appropriated $101 million for teen pregnancy prevention. With four days of the fiscal year left, $500,000 has gone out</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip under">Underreported</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>Congress appropriated <b>$101 million</b> for the Teen Pregnancy Prevention Program in the February budget bill, which the President signed. HHS has disbursed about <b>$500,000</b>. The fiscal year ends on <b>30 September</b>.</p>
+  <p>The sequence matters more than the total. In <b>June</b>, HHS abruptly terminated grants to roughly <b>fifty</b> organisations &mdash; nonprofits, universities and health departments &mdash; most of them in the third year of five-year cycles. It then reissued the money under a new funding notice promoting abstinence-only education.</p>
+  <p>In <b>August</b>, Judge <b>Christopher Cooper</b> ruled HHS could not impose the new abstinence-only requirements, calling the approach likely arbitrary and capricious. He also noted that the funding notice cited <b>research papers that do not exist</b> &mdash; a detail worth pausing on, because a citation to a nonexistent paper in a federal funding document is either fabrication or an unreviewed machine draft, and neither has an innocent reading.</p>
+  <p>Ninety-two lawmakers wrote to HHS this week demanding the money go out. Cooper&rsquo;s decision on whether to order reinstatement was expected imminently.</p>
+  <p>What makes this a story about appropriations rather than about sex education is the clock. Money not obligated by 30 September generally lapses, and a programme defunded by inaction leaves nothing to enjoin. This is impoundment by calendar, and it requires no legal theory at all.</p>
+  <p><b>What to watch:</b> Cooper&rsquo;s reinstatement ruling before Wednesday; whether HHS obligates the balance in the last four days; and whether the unexisting citations draw a separate inquiry.</p>
+
+  <p class="sources"><b>Confidence:</b> Single-sourced &mdash; NPR&rsquo;s reporting, read through a member station, which had the congressional letter exclusively. Neither the letter, the funding notice nor Judge Cooper&rsquo;s August opinion was read here. <b>Sources:</b> <a href="https://www.stlpr.org/npr/2026-09-25/100-million-in-teen-pregnancy-prevention-funds-remain-unused-what-happened">NPR via St. Louis Public Radio</a></p>
+
+  <div class="fb">
+    <p>Spending appropriated money slowly is a quieter mechanism than impoundment and harder to litigate.</p>
+    <label><input type="radio" name="fb-teenpreg" value="thread"> Open a thread on appropriated-but-unspent funds across agencies</label>
+    <label><input type="radio" name="fb-teenpreg" value="case"> Just follow this case to Cooper&rsquo;s ruling</label>
+    <label><input type="radio" name="fb-teenpreg" value="cites"> The fabricated citations are the story &mdash; follow that</label>
+  </div>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Eight things found in this morning&rsquo;s source checks that did not clear the lead bar. Each expands to the substance, the reason it sits below the line, and where it came from. Nothing here needs you to leave the page.</p>
+
+<details class="short" id="s-hormuz">
+  <summary><span class="chip">Geopolitics</span> Iran has put a seven-day plan on the table: Hormuz reopens on day six, nuclear talks start on day seven. The price is the blockade, the oil sanctions and $12bn.</summary>
+  <div class="body">
+    <p>Foreign Minister Abbas Araghchi presented the roadmap outside the Security Council on Friday, conveyed to Washington through Qatar. Days one to five are preparatory steps; the Strait of Hormuz reopens on <b>day six</b>; nuclear talks begin on <b>day seven</b>, for a final deal on mutually agreed subjects.</p>
+    <p>Iran&rsquo;s asks are four: lift the naval blockade of Iranian ports, waive sanctions on oil sales, release about <b>$12bn</b> in frozen assets, and observe a regional ceasefire including Lebanon and Yemen. In exchange it reopens a strait carrying roughly a fifth of globally traded oil and gas &mdash; which is to say it offers to stop doing the thing that is its only leverage.</p>
+    <p>A White House official described &ldquo;positive and constructive discussions through the mediators&rdquo; without accepting the plan. Araghchi said it should ideally be finalised before the November midterms, which is an unusually explicit statement about whose clock he thinks is running.</p>
+    <p><b>Below the line because</b> a proposal is a position, not an event, and this one has no US response attached. It leads on an American answer either way, or on the blockade actually lifting.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced. <b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/9/25/iran-says-it-awaits-us-response-on-seven-day-roadmap-to-end-war">Al Jazeera</a> &middot; continues <a href="2026-09-25.html#s-hormuz">25 September</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-iranair">
+  <summary><span class="chip">Geopolitics</span> Iraq&rsquo;s four main airports stopped Iranian flights yesterday. That is the second country in two days, and the mechanism is the same one.</summary>
+  <div class="body">
+    <p>Baghdad, Najaf, Erbil and Sulaimaniyah all halted Iran flights on 25 September, a day after the UAE did the same. The trigger is the aviation sanctions announced this month under &ldquo;Operation Economic Outcast&rdquo;, which target global companies doing business with Iranian airlines.</p>
+    <p>Iraq&rsquo;s central government said nothing officially, and the reason is in the commercial layer rather than the diplomatic one: the ground-handling companies will not risk secondary sanctions and exclusion from the dollar system. The airports stopped because their suppliers stopped. That is the pattern yesterday&rsquo;s item identified, now visible twice.</p>
+    <p>At least three other countries have restricted Iranian carriers; Russia, China and Armenia remain open. The human consequence is concrete: <b>at least twelve hours overland</b> between Iran and Iraq, which falls hardest on Shia pilgrims who use Najaf.</p>
+    <p><b>Below the line because</b> it is the second instance of a mechanism already covered as a lead-adjacent item yesterday, and a second data point confirms rather than changes. It leads if a country with a formal US defence relationship refuses, or if the dollar-access threat is turned on a non-aviation sector.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced. <b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/9/25/iraqi-airports-halt-iranian-flights-after-new-us-aviation-sanctions">Al Jazeera</a> &middot; continues <a href="2026-09-25.html#s-uae">25 September</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-press">
+  <summary><span class="chip">US politics &amp; policy</span> CNN is off Air Force One today, replaced by Real America&rsquo;s Voice &mdash; two days after a judge ordered its credentials restored. The order did not cover the plane.</summary>
+  <div class="body">
+    <p>The White House signalled on Friday night that CNN would not travel on Air Force One for Saturday&rsquo;s trip to Knoxville, and that Real America&rsquo;s Voice would take the television pool slot instead.</p>
+    <p>The legal point is narrow and is the whole story. Judge Timothy Kelly&rsquo;s overnight order on Thursday addressed <b>hard passes</b> &mdash; physical access to the White House grounds. It said nothing about pool rotation and nothing about who flies on the President&rsquo;s aircraft. CNN was back in the pool on Friday at the National Archives with Xi; it is off the plane today. Both facts are consistent with full compliance.</p>
+    <p>This is the scenario yesterday&rsquo;s brief named when it observed that a due-process holding is easy to comply with badly. The remedy restored the thing that was taken and left every adjacent lever untouched.</p>
+    <p><b>Below the line because</b> one trip is an instance, not a pattern, and the underlying ruling was covered on 24 September. It leads if the pool rotation is formally restructured, or if the outlets go back to Kelly arguing the order is being evaded.</p>
+    <p class="sources"><b>Confidence:</b> Independent corroboration. <b>Sources:</b> <a href="https://www.kpbs.org/news/national/2026/09/25/cnn-left-off-air-force-one-for-trumps-upcoming-trip-white-house-signals-in-new-media-restriction">NPR via KPBS</a> &middot; <a href="https://www.cnn.com/2026/09/25/politics/white-house-blocks-cnn-air-force-one-travel-pool">CNN</a>, an interested party &middot; continues <a href="2026-09-24.html#press-ruling">24 September</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-yields">
+  <summary><span class="chip">US debt &amp; fiscal</span> Friday&rsquo;s close: the ten-year held at 5.17% while the two-year fell six basis points. The curve steepened again, and the twenty-thirty inversion narrowed.</summary>
+  <div class="body">
+    <p>Treasury&rsquo;s Friday par yields: two-year <b>4.81%</b>, ten-year <b>5.17%</b>, twenty-year <b>5.54%</b>, thirty-year <b>5.49%</b>. Against Thursday, that is the two-year down six basis points, the ten-year down one, the twenty-year up one and the thirty-year up two.</p>
+    <p>Yesterday&rsquo;s lead argued the whole curve was moving together, which reads as expectations about the Fed rather than doubt about the Treasury. Friday cuts against that a little: the front end fell while the long end rose, and the 2s10s spread widened from 31 to 36 basis points. One session is not a trend, but it is the shape the fiscal reading predicts and the policy reading does not.</p>
+    <p>The twenty-thirty inversion narrowed from six basis points to five and is still there.</p>
+    <p><b>Below the line because</b> it is one session of movement inside a story led yesterday, and the movement is small. It leads if the 2s10s spread keeps widening on a falling front end, which would be the fiscal signal arriving.</p>
+    <p class="sources"><b>Confidence:</b> Primary source. Read with the column headers enumerated, per the standing rule &mdash; the table returned <em>twenty-one</em> columns in a different order from yesterday&rsquo;s twenty-six, and the Thursday row cross-validated yesterday&rsquo;s figures exactly. <b>Sources:</b> <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202609">US Treasury Daily Par Yield Curve</a> &middot; continues <a href="2026-09-25.html#longend">25 September</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-ebola">
+  <summary><span class="chip">Science &amp; public health</span> The Congo outbreak is at 7,890 cases and 3,799 deaths, and has reached two more health zones &mdash; one on the South Sudan border, one on the Central African Republic border.</summary>
+  <div class="body">
+    <p>WHO figures to 23 September: <b>7,890</b> confirmed cases and <b>3,799</b> deaths across 63 health zones in seven provinces &mdash; a 48% case fatality rate. The two new zones are <b>Bulu</b> in South Ubangi, bordering the Central African Republic, and <b>Dungu</b> in Haut-Uele, bordering South Sudan.</p>
+    <p>Two numbers describe the response better than the case count. North Kivu has a <b>60%</b> fatality rate, well above the national figure, and accounts for a third of newly confirmed cases. And only <b>30,000</b> people are on contact lists against a caseload that implies something nearer 420,000 &mdash; a contact-tracing shortfall of more than an order of magnitude.</p>
+    <p>There is no approved vaccine for the Bundibugyo strain; trials are being accelerated. The WHO Director-General framed the constraint as conflict: displacement and inaccessible areas.</p>
+    <p><b>Below the line because</b> the US channel is the entry restriction covered on 16 September, and today&rsquo;s WHO update does not touch it. It leads if the boarding ban is extended past 11 October, or if a case reaches a bordering country with direct US flights.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced. <b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/9/25/dr-congos-ebola-outbreak-spreads-to-two-new-health-zones-who-says">Al Jazeera</a> &middot; continues <a href="2026-09-16.html#ebola-order">16 September</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-dengue">
+  <summary><span class="chip">Florida &amp; Tampa Bay</span> Pasco went from two locally acquired dengue cases to three. The three-county emergencies run to 1 October.</summary>
+  <div class="body">
+    <p>Pasco County confirmed a third locally contracted dengue case on Friday, the day after it declared a local state of emergency at two. Hillsborough, Pasco and Pinellas all declared on Thursday afternoon; the tri-county total at declaration was 143, with 134 in Hillsborough.</p>
+    <p>One case is not much of a movement, and the reason to record it at all is that Pasco is the reader&rsquo;s county and the number is the one the 1 October extend-or-lapse decision will be read against. The earlier ratio is the better context: in mid-September Hillsborough accounted for 95 of Florida&rsquo;s 111 locally acquired cases statewide, so the outbreak remains overwhelmingly one county&rsquo;s.</p>
+    <p>Pasco has been flying helicopter suppression missions since 11 September.</p>
+    <p><b>Below the line because</b> a single additional case does not clear a local bar on its own, which is why there is no Florida section today. It returns as a section on the 1 October decision, on the week-38 state arbovirus report, or if Hernando or Manatee declare.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced. The Florida arbovirus PDF still cannot be parsed here. <b>Sources:</b> <a href="https://www.fox13news.com/tag/us/fl/pasco">FOX 13 Tampa Bay</a> &middot; continues <a href="2026-09-25.html#dengue">25 September</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-xi">
+  <summary><span class="chip">AI &amp; tech industry</span> Forty-eight hours after the state visit there is still no joint statement. The retrospectives are being written about the pandas.</summary>
+  <div class="body">
+    <p>Yesterday this brief noted the absence of a White House readout twenty-four hours after the Trump&ndash;Xi meeting and said the story was the absence. Two days on, there is still none. NPR&rsquo;s takeaways piece is headed &ldquo;pageantry and pandas&rdquo;; Trump called the talks &ldquo;very productive&rdquo;.</p>
+    <p>Nothing has been added to the ledger. The trade truce extension to 10 January was Bessent&rsquo;s Wednesday announcement, made before the meeting. The AI incident-notification channel dates to 21 September and still has no agreed definition of an incident. On Iran, where the two might plausibly have moved together, no breakthrough was reported.</p>
+    <p>A state visit is the most expensive diplomatic instrument either country has. Spending one and issuing no joint text is a choice, and the plainest reading is that there was nothing both sides would sign.</p>
+    <p><b>Below the line because</b> it is the same finding as yesterday with one more day attached, and a readout could still appear. It becomes a lead if a week passes with nothing, or the moment a text is published.</p>
+    <p class="sources"><b>Confidence:</b> Independent corroboration. <b>Sources:</b> <a href="https://text.npr.org/">NPR index, 26 September</a> &middot; <a href="https://www.aljazeera.com/news/2026/9/25/trump-hails-very-productive-talks-with-chinas-xi">Al Jazeera</a> &middot; continues <a href="2026-09-25.html#s-xi">25 September</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-pope">
+  <summary><span class="chip">AI &amp; tech industry</span> Pope Leo XIV spent his first France trip in eighteen years warning about a &ldquo;paradise of machines&rdquo; and calling for AI regulation.</summary>
+  <div class="body">
+    <p>Speaking at the &Eacute;lys&eacute;e Palace with President Macron and then at UNESCO, the Pope said that &ldquo;if we are to avoid losing our humanity amid a paradise of machines invading and conditioning our daily lives, there is an urgent need for education in ethical discernment&rdquo;. He called for significant regulation of AI.</p>
+    <p>The argument underneath the phrase is sharper than the phrase. He put it as a paradox: computational systems are readily credited with intelligence while human dignity is measured by efficiency, and people judged unproductive are discarded. That is a claim about how the vocabulary of AI reshapes what a person is taken to be worth, and it is not a claim about capability at all.</p>
+    <p>He has made AI the defining theme of his pontificate. He also said he found many developers open to ensuring the technology serves rather than displaces.</p>
+    <p><b>Below the line because</b> a speech is a position, not an event, with no legislative or regulatory vehicle attached and no US channel beyond the fact that American firms build the systems. It leads if the Vatican&rsquo;s position turns up in an EU or US legislative text, which has happened before with bioethics.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced &mdash; the addresses themselves were not read. <b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/9/25/pope-leo-xiv-warns-ai-could-undermine-humanity-during-france-visit">Al Jazeera</a></p>
+  </div>
+</details>
+
+<div class="fb">
+  <p><b>About this section as a whole.</b> Eight items ranked below the line today. Was the boundary in the right place?</p>
+  <label><input type="radio" name="fb-also" value="right"> About right</label>
+  <label><input type="radio" name="fb-also" value="promote"> Something here should have been a lead &mdash; I will say which in the comment box</label>
+  <label><input type="radio" name="fb-also" value="fewer"> Too many; be harsher about what is worth recording at all</label>
+  <label><input type="radio" name="fb-also" value="more"> More of these; the short tier is the most useful part</label>
+</div>
+
+<footer>
+  <h2 class="section">Sources checked this run</h2>
+  <p><b>Watchlist-pointed (10):</b> the <a href="https://www.federalregister.gov/">Federal Register</a> documents API, which returned a count of zero &middot; <a href="https://gasprices.aaa.com/">AAA Fuel Prices</a> &middot; <a href="https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm">EIA weekly retail prices</a> &middot; <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202609">Treasury Daily Par Yield Curve</a> &middot; <a href="https://www.nhc.noaa.gov/text/MIATWOEP.shtml">NHC Eastern Pacific outlook</a> &middot; <a href="https://www.staradvertiser.com/">Honolulu Star-Advertiser</a> &middot; <a href="https://www.fox13news.com/tag/us/fl/pasco">FOX 13 Pasco tag feed</a> &middot; Al Jazeera on the Hormuz roadmap, the Iraqi airport closures and the Congo outbreak &middot; the archive, for the pump chain, the press ban, the Xi summit and the Missouri map.</p>
+  <p><b>Outside the watchlist (16):</b> <a href="https://text.npr.org/">text.npr.org headline index</a> &middot; <a href="https://www.aljazeera.com/news/">Al Jazeera news index</a> &middot; <a href="https://www.supremecourt.gov/orders/ordersofthecourt/26">supremecourt.gov orders page</a>, which served no order data &middot; <a href="https://www.stlpr.org/government-politics-issues/2026-09-25/congressional-map-missouri-8th-circle-appeal">St. Louis Public Radio</a> on the Missouri order &middot; <a href="https://www.dhs.gov/news/2026/09/25/dhs-applauds-supreme-court-decision-permitting-citizenship-verification-voters">DHS&rsquo;s own statement</a> and <a href="https://www.votebeat.org/national/2026/09/25/supreme-court-ruling-save-system-trump-dhs-noncitizens-2026-election/">Votebeat</a> on SAVE &middot; Al Jazeera on the Kalshi ruling, the Anthropic ruling and the Pope &middot; <a href="https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html">CNBC</a> and <a href="https://broadbandbreakfast.com/federal-court-says-pentagon-can-label-anthropic-a-supply-chain-risk/">Broadband Breakfast</a> on the D.C. Circuit panel &middot; <a href="https://en.wikipedia.org/wiki/Portal:Current_events/2026_September_26">Wikipedia current events</a> &middot; NWS Mount Holly warning products via two alert aggregators &middot; <a href="https://abc7ny.com/live-updates/developing-noreaster-threatens-jersey-shore-long-island-coastal-flooding-rough-surf-strong-winds-accuweather-alert/19861959/">ABC7 New York</a> &middot; <a href="https://www.stlpr.org/npr/2026-09-25/100-million-in-teen-pregnancy-prevention-funds-remain-unused-what-happened">NPR via STLPR</a> on the teen pregnancy funds &middot; <a href="https://www.kpbs.org/news/national/2026/09/25/cnn-left-off-air-force-one-for-trumps-upcoming-trip-white-house-signals-in-new-media-restriction">NPR via KPBS</a> and CNN on the Air Force One pool &middot; NBC News and CNN on Nolo.</p>
+  <p><b>The negative check:</b> ran by hand today, because the usual instrument was thin &mdash; Wikipedia&rsquo;s current-events page for 26 September carried only a Kamchatka trawler fire, Thai flooding and an Australian football result, and had nothing for the 25th at all. Held under standing anti-topics: the WHO pandemic treaty in limbo (a state, not an event, and the ratification tally was not read &mdash; the honest answer to &ldquo;biggest story not on the list&rdquo;), Netanyahu&rsquo;s UN speech, the Jay-Z accuser&rsquo;s recantation, and a Swiss neutrality feature.</p>
+  <p><b>Could not reach:</b> the Supreme Court&rsquo;s own orders page, which served a template and no orders &mdash; so both of today&rsquo;s lead orders are reported second-hand &middot; every NPR article page, 503 on each attempt, a sixth consecutive day of failure in one form or another &middot; the Central Pacific Hurricane Center, DNS failure for a second day &middot; the D.C. Circuit opinion and the Sixth Circuit opinion &middot; the Federal Register, which does not publish on Saturdays.</p>
+  <p><b>A note on the source mix.</b> Yesterday six of twenty-five checks were <em>Federal Register</em> full-text reads and they produced two leads. Today that instrument published nothing, and it shows: five of today&rsquo;s seven leads rest on reporting rather than on a document, and four items carry a single-sourced marker. Saturday is structurally the weakest day of the week for this brief, and the honest thing is to say so on the face of the issue rather than let the confidence markers carry it alone.</p>
+  <p><b>On the Anthropic story.</b> It is disclosed at the top of that item and repeated here: this brief is written by a model made by the company it is reporting on. The story ran because holding it would itself have been a choice, and a less visible one.</p>
+
+  <h2 class="section">Dormant threads</h2>
+  <p class="secnote">Kept on the watchlist, dropped from the body, picked up the moment a source check touches one.</p>
+  <ul class="dorm">
+    <li><b>Missouri congressional map</b> &mdash; <em>woken today.</em> The trigger written for it named a referendum, an Eighth Circuit merits panel or a contempt ruling; a Supreme Court order vacating the Eighth Circuit&rsquo;s injunction is larger than all three. It leads the issue and returns to active.</li>
+    <li><b>Ukraine&ndash;Russia negotiations</b> &mdash; wakes on a published text either side will describe, a front-line ceasefire, or a named difference from the Anchorage proposals. Poland boosting air defence over &ldquo;Russian provocations&rdquo; is not a text.</li>
+    <li><b>Gulf states &amp; Article 51</b> &mdash; Kuwait or the UAE restricting US base access, or a collective GCC statement.</li>
+    <li><b>Autonomous weapons regulation</b> &mdash; CCW review conference, 16&ndash;20 November. Note that the Pentagon&rsquo;s February demand in the Anthropic story concerned fully autonomous lethal weapons, which touches this thread from an unexpected direction.</li>
+    <li><b>Indonesia free-meals programme</b> &middot; <b>Anak Krakatau</b> &middot; <b>Nepal&ndash;Tibet glacial flood</b> &middot; <b>Israel&ndash;Lebanon June framework</b> &middot; <b>EU&ndash;Greenland partnership</b> &middot; <b>Saxony-Anhalt government formation</b> &mdash; each on its named trigger.</li>
+  </ul>
+
+  <p style="margin-top:1.4rem">No open <code>brief-feedback</code> issues were waiting this morning. Yesterday&rsquo;s was applied and closed, and the census thread it opened has had no movement; its first named trigger is 7 October.</p>
+  <p><a href="../">Archive</a> &middot; Previous: <a href="2026-09-25.html">25 September</a></p>
+
+  <div class="submit">
+    <button type="button" id="send-feedback">Send feedback as a GitHub issue</button>
+  </div>
+</footer>
+
+</div>
+<script>
+(function () {
+  var owner = "historiocity", repo = "News-Agent";
+  document.getElementById("send-feedback").addEventListener("click", function () {
+    var lines = ["Feedback on Issue No. 22 (2026-09-26)", ""];
+    document.querySelectorAll(".fb input[type=radio]:checked").forEach(function (el) {
+      lines.push(el.name + ": " + el.value);
+    });
+    if (lines.length === 2) lines.push("(no radio answers selected)");
+    lines.push("", "Anything else:", "");
+    var url = "https://github.com/" + owner + "/" + repo + "/issues/new"
+      + "?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("brief-feedback: 2026-09-26")
+      + "&body=" + encodeURIComponent(lines.join("\n"));
+    window.open(url, "_blank");
+  });
+})();
+</script>
+</body>
+</html>
