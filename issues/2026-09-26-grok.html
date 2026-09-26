@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>The Brief — Saturday, 26 September 2026 (Grok edition)</title>
+<style>
+:root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+@media (prefers-color-scheme: dark) {
+:root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+.wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+.kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+.sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+.prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+nav ol { margin:0; padding-left:1.2rem; }
+nav li { margin:.25rem 0; }
+nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+a { color:var(--link); }
+article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+.secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+.meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+.chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+.chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+.chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+.sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+.div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+.div p { margin:.4rem 0; }
+.div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+.corr { background:var(--box); border-left:4px solid var(--accent); padding:.8rem 1rem; margin:0 0 1.6rem; font-size:.95rem; }
+.corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+.corr p { margin:.45rem 0; }
+details { margin-top:.8rem; }
+details summary { cursor:pointer; color:var(--link); }
+.exp { margin-top:.6rem; }
+.also-list { margin:0; }
+.also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+.also-list details:first-of-type { border-top:1px solid var(--rule); }
+.also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+.also-list .exp { font-size:.94rem; padding-left:.2rem; }
+footer { color:var(--muted); font-size:.88rem; }
+.fb { margin-top:1rem; font-size:.9rem; }
+.fb p { margin:.6rem 0 .2rem; }
+.fb label { display:block; margin:.15rem 0; }
+.submit { margin-top:2rem; }
+button { font:inherit; padding:.45rem .8rem; }
+ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+ul.dorm li { margin:.3rem 0; }
+.disclose { background:var(--box); border:1px dashed var(--accent); padding:.7rem .9rem; margin:0 0 1rem; font-size:.92rem; }
+.disclose .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<p class="kicker">The Brief · Issue No. 22-grok · Saturday, 26 September 2026 · Morning / Grok edition</p>
+<h1>SCOTUS kept Missouri on the 2022 map and revived SAVE citizenship checks; diesel is cheaper week-on-week for the first time in the shock as Iran’s seven-day Hormuz roadmap hits a reported rejection; the D.C. Circuit lets the Pentagon keep Anthropic off its supply chain</h1>
+<p class="sub">Nine stories at length, nine in brief. Independent Grok gather for the 7am&nbsp;ET cron; does not overwrite Claude/Action files. Continuity for accountability: <a href="2026-09-25-grok.html">25&nbsp;Sep Grok</a> · <a href="2026-09-24-grok.html">24&nbsp;Sep Grok</a> · framework <a href="2026-09-10b.html">2026-09-10b</a>. Parallel Claude Issue&nbsp;22: <a href="2026-09-26.html">2026-09-26.html</a> (separate slate).</p>
+<p class="prov">
+Loaded <a href="https://raw.githubusercontent.com/historiocity/News-Agent/main/config.md">config.md</a> (incl. Saturday operational notes). Re-read closed brief-feedback (#3, #7, #20 — <em>fb-census: yes</em>; Missouri earlier marked “resolution”). Quality bar: Issue&nbsp;10 / <a href="2026-09-10b.html">2026-09-10b</a>.
+<strong>18&nbsp;sources checked, 11 of them outside the active watchlist threads.</strong> Core beats lead. Oil/pump/chokepoints stay one causal chain. Fed = prints and the decision only — no state-of-play; no new Fed print today.
+<strong>Saturday document channel closed:</strong> Federal Register documents API returned <strong>count&nbsp;0</strong> for 2026-09-26 (no Saturday issue); public-inspection offline until Mon&nbsp;8:45am&nbsp;ET. Do not pretend a populated FR was swept. Plan was courts, weather, wires.
+<strong>Negative check reshaped the lead list:</strong> Wikipedia current-events (thin for Sat/Fri) + Al&nbsp;Jazeera index + Handelsblatt front page + text.npr.org held against the beat list produced two Friday-afternoon Supreme Court election orders, the Anthropic D.C.&nbsp;Circuit supply-chain ruling, the Sixth Circuit Kalshi preemption loss, and Hawaii’s pre-landfall federal emergency for Nolo — none of which were Friday Grok’s agenda. Same-morning issuer/card prints: Treasury CSV Friday close 10-year <strong>5.17%</strong> (from Thu&nbsp;5.18%; no Saturday print) and AAA diesel <strong>$6.4839</strong> (fourth straight fall; first negative week-on-week of the shock). Those displaced reprises of DOT&nbsp;DBE, OMB essential-medicines RFI, Senate Iran war-powers 49–50, Freddie Mac weekly (already printed), Xi-summit colour without a new binding fact, and OpenAI–Medicare without a new document. Declined for altitude: Pope AI sermon (no US policy channel); Netanyahu UN speech; sports; celebrity; Bangkok floods; individual crime blotter.
+</p>
+</header>
+
+<nav>
+<ol>
+<li><a href="#missouri">SCOTUS stayed the Eighth Circuit again: Missouri runs November on the 2022 map</a></li>
+<li><a href="#save">SCOTUS revived DHS’s modified SAVE citizenship-check tool — with a hard November limit</a></li>
+<li><a href="#oil">One chain: AAA diesel $6.4839 (fourth fall, first negative week) as Iran’s seven-day Hormuz roadmap meets a reported White House rejection</a></li>
+<li><a href="#anthropic">D.C. Circuit upholds the Pentagon’s Anthropic supply-chain-risk designation</a></li>
+<li><a href="#nolo">Hurricane Nolo sits ~150 miles off the Big Island; Hawaii has a pre-landfall federal emergency</a></li>
+<li><a href="#kalshi">Sixth Circuit: Ohio and Tennessee may regulate Kalshi sports contracts as gambling</a></li>
+<li><a href="#treasury">Treasury’s own Friday close: 10-year at 5.17% (down a basis point from Thursday’s 5.18%)</a></li>
+<li><a href="#teenpreg">Congress funded teen-pregnancy prevention at $101&nbsp;million; $500,000 has gone out with four days left in the fiscal year</a></li>
+<li><a href="#dengue">Pasco dengue cases rise to three inside the three-county emergency</a></li>
+</ol>
+<p class="also"><a href="#also">Also today (9)</a> — nor’easter, NHC Atlantic quiet, Iraqi airports, “Trump Strait,” census wake, OFAC, Ebola zones, Handelsblatt AI/bond colour, CNN Air Force One.</p>
+</nav>
+
+<article id="missouri">
+<div class="corr">
+<div class="t">Accountability — Missouri map thread</div>
+<p>Yesterday’s Grok dormant list still carried “Missouri map” as settled for November after the 10&nbsp;Sep stay. Friday afternoon’s order in <em>People Not Politicians v. Onder</em>, No.&nbsp;26A388, reactivates it: the Court stayed the Eighth Circuit’s 21–22&nbsp;Sep mandate and the Eastern District’s permanent injunctions that would have forced the 2025 (HB&nbsp;1) map mid-election. The 2022 map governs the ongoing general election. Third SCOTUS intervention in three weeks on the same dispute. Prior framing that the thread “wakes only on the November referendum / Eighth Circuit merits / contempt” was too narrow — a mid-election federal injunction forcing the referred map was the live risk and it fired.</p>
+</div>
+<p class="meta"><span class="chip under">Negative check</span> <span class="chip new">New</span> <span class="chip">Core · US politics &amp; policy</span> <span class="chip">Courts</span></p>
+<h2>SCOTUS stayed the Eighth Circuit again: Missouri runs November on the 2022 map</h2>
+<p>In a per&nbsp;curiam stay dated 25&nbsp;Sep, the Supreme Court granted the application in No.&nbsp;26A388 and stayed: the Eighth Circuit’s 21&nbsp;Sep mandate and 22&nbsp;Sep order in No.&nbsp;26–2797, and the Eastern District of Missouri’s 21 and 22&nbsp;Sep injunctions (ECF&nbsp;57 and 60). The Court’s own 10&nbsp;Sep stay remains in effect. Operative instruction to the lower courts: do not enjoin use of the <strong>2022</strong> map, and do not order Missouri to use the <strong>2025</strong> map, for the 2026 congressional election.</p>
+<p>State-law baseline (Missouri Supreme Court, <em>von Glahn v. Hoskins</em>, 3&nbsp;Sep): because a sufficient referendum petition attached to HB&nbsp;1, the 2025 map “is not the law and has never been the law” until voters approve it in November. Federal plaintiffs then argued the U.S. Constitution required the 2025 map anyway — after the August primary ran on it. Absentee and military ballots on the 2022 map are already in the mail; county clerks told the Eighth Circuit it is “practically impossible” to revert. The Court leaned on <em>Purcell</em> as well as its own prior stays.</p>
+<p><strong>What to watch:</strong> the November referendum on HB&nbsp;1 itself; any further emergency application; whether the Eighth Circuit merits track continues under the stay.</p>
+<p class="sources"><b>Sources:</b> <a href="https://www.supremecourt.gov/opinions/25pdf/26a388_q86b.pdf">SCOTUS per curiam 26A388 (PDF)</a> · Missouri Supreme Court <em>von Glahn</em> (3&nbsp;Sep) via State Court Report · text.npr.org headline · Al Jazeera election desk</p>
+<div class="fb">
+<p><strong>Missouri map — third SCOTUS stay?</strong></p>
+<label><input type="radio" name="fb-mo" value="thread"/> Keep as active election thread through November</label>
+<label><input type="radio" name="fb-mo" value="ref"/> Wake only on the referendum result</label>
+<label><input type="radio" name="fb-mo" value="less"/> Enough — demote</label>
+</div>
+</article>
+
+<article id="save">
+<p class="meta"><span class="chip under">Negative check</span> <span class="chip new">New</span> <span class="chip">Core · US politics &amp; policy</span> <span class="chip">Courts</span></p>
+<h2>SCOTUS revived DHS’s modified SAVE citizenship-check tool — with a hard November limit</h2>
+<p>Same afternoon, in No.&nbsp;26A308 (<em>Department of Homeland Security v. League of Women Voters</em>), the Court stayed a D.C. district injunction that had blocked DHS’s 2025 expansion of the Systematic Alien Verification for Entitlements (SAVE) program for voter-roll checks. The modified SAVE adds Social Security records and bulk searches so states can query citizenship status of registered voters — the March&nbsp;2025 EO&nbsp;14248 build-out.</p>
+<p>Substance for November is narrower than the headline. The National Voter Registration Act’s 90-day quiet period before a federal election still bars <em>systematic</em> voter-roll purges. Votebeat’s read (election-administration desk): individualized checks can resume now; bulk post-election scrutiny can restart after 3&nbsp;Nov; mass pre-election removals should not. Jackson, joined by Sotomayor and Kagan, dissented, citing false positives (including Texas cases where citizens were flagged).</p>
+<p>Do not confuse SAVE-the-database with the SAVE&nbsp;Act / SAVE America Act citizenship-proof bills, which have not become law. Earlier this month the Court also denied the USPS mail-ballot stay for November — so two election-administration fights resolved in opposite directions inside two weeks.</p>
+<p><strong>What to watch:</strong> which states restart bulk queries after Election Day; whether the D.C. Circuit merits panel restores the injunction; documented false-positive rates in the next state audits.</p>
+<p class="sources"><b>Sources:</b> <a href="https://www.supremecourt.gov/opinions/25pdf/26a308_pok0.pdf">SCOTUS per curiam 26A308 (PDF)</a> · <a href="https://www.votebeat.org/national/2026/09/25/supreme-court-ruling-save-system-trump-dhs-noncitizens-2026-election/">Votebeat</a> · SCOTUSblog · text.npr.org · Al Jazeera</p>
+<div class="fb">
+<p><strong>SAVE revival?</strong></p>
+<label><input type="radio" name="fb-save" value="yes"/> Right weight for an election-admin order</label>
+<label><input type="radio" name="fb-save" value="post"> Lead harder on the post-November bulk risk</label>
+<label><input type="radio" name="fb-save" value="less"/> Demote beside Missouri</label>
+</div>
+</article>
+
+<article id="oil">
+<div class="corr">
+<div class="t">Accountability — diesel turn</div>
+<p>Friday Grok printed AAA diesel at <strong>$6.5019</strong> (third consecutive daily fall) inside the Hormuz/tolls chain. Saturday’s AAA card average is <strong>$6.4839</strong> — a fourth fall (−1.8¢) — and for the first time since the shock began the print is <strong>below</strong> the week-ago average ($6.4866). That is the first negative week-on-week reading of the move. Standing rule still holds: the daily card average is today’s level; the EIA weekly (next print due Mon for w/e 28&nbsp;Sep) is the trend instrument. Do not call a multi-week turn off four AAA downs alone.</p>
+</div>
+<p class="meta"><span class="chip">Core · Energy</span> <span class="chip">Geopolitics</span> <span class="chip">One causal chain</span></p>
+<h2>One chain: AAA diesel $6.4839 (fourth fall, first negative week) as Iran’s seven-day Hormuz roadmap meets a reported White House rejection</h2>
+<p><b>Pump (issuer/card).</b> AAA national diesel average Saturday 26&nbsp;Sep: <strong>$6.4839</strong> (yesterday $6.5019; week ago $6.4866; month ago $5.6230; year ago $3.6844). Regular gasoline $4.4874. Diesel’s all-time AAA high remains $6.5276 on 22&nbsp;Sep. Fourth straight daily decline; week-on-week −0.27¢ — the first negative week of the $6 era.</p>
+<p><b>Chokepoint (diplomacy).</b> Iranian FM Abbas Araghchi told reporters Friday that Tehran had sent Washington, via Qatar, a seven-day roadmap: US lifts the naval blockade, waives oil sanctions, releases ~$12&nbsp;bn in frozen assets, and observes a regional ceasefire (incl. Lebanon/Yemen); Hormuz reopens around day&nbsp;6; nuclear talks begin day&nbsp;7. “The choice now rests with the United States.” The plan echoes the collapsed 17&nbsp;Jun Islamabad MoU on a compressed clock.</p>
+<p><b>US response (reported, not on-record).</b> The White House has issued no public acceptance or rejection. The Wall Street Journal, cited by Al&nbsp;Jazeera and others, reported unnamed officials saying Trump privately ruled the offer out and has discussed a renewed bombing campaign after the November midterms. Treat the rejection as <span class="chip">Single-sourced</span> to that WSJ account until an on-record statement appears. Late Friday Trump posted a Truth Social map labelling the waterway the “Trump Strait.” A US official separately told Al&nbsp;Jazeera mediated talks remain “positive and constructive” and that Washington sees itself in a strong position on the strait — so the public and private channels disagree.</p>
+<p>Physical context unchanged from Friday’s chain: Hormuz permission regime + East–West diversion still set distillate; gCaptain’s recent Gulf of Oman STS-limit and Qatar LNG-uptick items are composition, not relief. Relief numbers remain a distillate inventory build or utilisation out of the high 90s — neither readable from a Saturday FR/EIA hole.</p>
+<p><strong>What to watch:</strong> an on-record White House answer to Araghchi; EIA weekly Mon; any published Hormuz coordinates or tariff (still the named unfired trigger).</p>
+<p class="sources"><b>Sources:</b> <a href="https://gasprices.aaa.com/">AAA Fuel Prices</a> (primary level) · <a href="https://www.aljazeera.com/news/2026/9/25/iran-says-it-awaits-us-response-on-seven-day-roadmap-to-end-war">Al Jazeera 25&nbsp;Sep</a> · <a href="https://www.aljazeera.com/news/2026/9/26/trump-reportedly-rejects-irans-seven-day-ceasefire-proposal-whats-next">Al Jazeera 26&nbsp;Sep</a> · Wikipedia current-events (WSJ rejection line) · gCaptain (maritime context) · Handelsblatt (weekend Iran/bond colour, direction only)</p>
+<div class="fb">
+<p><strong>Diesel + Hormuz as one Saturday chain?</strong></p>
+<label><input type="radio" name="fb-oil" value="yes"/> Keep merged</label>
+<label><input type="radio" name="fb-oil" value="split"/> Split pump from diplomacy when the offer moves</label>
+<label><input type="radio" name="fb-oil" value="eia"/> Lead only on the next EIA weekly</label>
+</div>
+</article>
+
+<article id="anthropic">
+<div class="disclose">
+<div class="t">Authorship disclosure</div>
+<p>This edition is written by <b>Grok Bot / xAI</b>, not by Anthropic’s Claude. The story is about Anthropic’s Pentagon designation. Config’s rule about not softening coverage of the reader’s interests applies with more force, not less, to covering a peer AI lab: holding it would itself be an editorial choice. Run with disclosure rather than silence.</p>
+</div>
+<p class="meta"><span class="chip under">Negative check</span> <span class="chip new">New</span> <span class="chip">Core · AI &amp; tech</span> <span class="chip">Courts</span></p>
+<h2>D.C. Circuit upholds the Pentagon’s Anthropic supply-chain-risk designation</h2>
+<p>A U.S. Court of Appeals for the D.C. Circuit panel on Friday upheld the Department of War’s designation of Anthropic as a national-security supply-chain risk under the Federal Acquisition Supply Chain Security Act (41&nbsp;U.S.C. §4713). Wire accounts describe a divided panel. The March designation — issued after Anthropic refused to remove contractual/model restrictions on fully autonomous lethal weapons and mass domestic surveillance — cancelled Anthropic’s military contracts and directed DoD contractors away from Claude.</p>
+<p>Anthropic said the blacklisting has cost it billions ahead of a planned IPO and that it “respectfully disagree[s],” noting a separate California federal ruling last month that found a broader White House ban unlawful. The procurement designation upheld Friday remains in effect; the California conflict is unresolved. Majority reasoning, per contemporaneous accounts of the opinion: encoded refusals and at least one live dispute over whether Claude would perform in an overseas operation gave the Secretary ample statutory support; balancing those risks is for the political branches.</p>
+<p><strong>What to watch:</strong> en banc or cert petition; how the California ruling and the D.C. Circuit procurement holding are reconciled; whether other frontier labs face parallel §4713 notices.</p>
+<p class="sources"><b>Sources:</b> <a href="https://www.aljazeera.com/economy/2026/9/25/us-court-upholds-pentagons-blacklisting-of-anthropic">Al Jazeera / AFP / Reuters</a> · CNBC search summary (panel split; article page 403 here) · CourtListener docket materials on the petition · config disclosure rule</p>
+<div class="fb">
+<p><strong>Anthropic designation with authorship disclosure?</strong></p>
+<label><input type="radio" name="fb-anth" value="yes"/> Right call — disclose and run</label>
+<label><input type="radio" name="fb-anth" value="follow"/> Open as standing AI–DoD thread</label>
+<label><input type="radio" name="fb-anth" value="less"/> Demote — peer-lab conflict too noisy</label>
+</div>
+</article>
+
+<article id="nolo">
+<p class="meta"><span class="chip under">Negative check</span> <span class="chip new">New</span> <span class="chip">Weather / US channel</span></p>
+<h2>Hurricane Nolo sits ~150 miles off the Big Island; Hawaii has a pre-landfall federal emergency</h2>
+<p>NHC’s Eastern Pacific outlook (updated late Fri&nbsp;ET): Hurricane Nolo is located about 150 miles south of the Big Island of Hawaii, with Hurricanes Polo and Odalys also active farther east. Governor Josh Green announced Friday that President Trump approved a pre-landfall Presidential Emergency Declaration (2026-43 / Tropical Cyclone 15E) covering Honolulu, Hawaiʻi, Maui and Kauaʻi counties — Public Assistance Category&nbsp;B (emergency protective measures), 75% federal cost share, including Direct Federal Assistance. NWS guidance cited in the release: possible Category&nbsp;3 on closest approach Saturday; Hurricane Watch for Hawaiʻi Island; up to ~25 inches of rain on the Big Island Fri–Sat; Tropical Storm Watch for Maui.</p>
+<p>Central Pacific Hurricane Center’s own host (<code>prh.noaa.gov/cphc</code>) failed DNS again this run — second consecutive day. Intensity, warning polygons and rainfall beyond the governor/NHC EP text therefore rest on downstream relays (Star-Advertiser, KITV, NBC) of the same NWS product: treat as one source family, not four.</p>
+<p><strong>What to watch:</strong> landfall/closest-approach intensity Saturday; whether Individual Assistance is later requested; any mainland aviation or fuel logistics hit.</p>
+<p class="sources"><b>Sources:</b> <a href="https://www.nhc.noaa.gov/text/MIATWOEP.shtml">NHC Eastern Pacific outlook</a> · <a href="https://governor.hawaii.gov/newsroom/office-of-the-governor-news-release-gov-green-announces-approval-of-pre-landfall-presidential-declaration-for-hurricane-nolo/">Hawaii Governor release 25&nbsp;Sep</a> · text.npr.org · Star-Advertiser / KITV (downstream)</p>
+<div class="fb">
+<p><strong>Nolo as a lead on a Florida-centred brief?</strong></p>
+<label><input type="radio" name="fb-nolo" value="yes"/> Yes — federal emergency + US channel</label>
+<label><input type="radio" name="fb-nolo" value="also"/> Also-today unless landfall damage</label>
+<label><input type="radio" name="fb-nolo" value="less"/> Drop — not Florida</label>
+</div>
+</article>
+
+<article id="kalshi">
+<div class="corr">
+<div class="t">Accountability — prediction markets</div>
+<p>Friday Grok led on New York suing Polymarket (and Polymarket suing back) and treated CFTC preemption as the open question. Friday afternoon the Sixth Circuit answered part of that question against the platforms: Ohio and Tennessee may apply state gambling laws to Kalshi’s sports-event contracts. Circuit split with the Third Circuit (pro-platform on New Jersey) is now thicker; Supreme Court review more likely. The Polymarket New York fight remains separate.</p>
+</div>
+<p class="meta"><span class="chip under">Negative check</span> <span class="chip new">New</span> <span class="chip">Core · US financials</span> <span class="chip">Courts</span></p>
+<h2>Sixth Circuit: Ohio and Tennessee may regulate Kalshi sports contracts as gambling</h2>
+<p>A unanimous Sixth Circuit panel Friday held that Kalshi had not shown its sports-event contracts are CFTC “swaps” under the Commodity Exchange Act, and — even assuming they were — that the CEA does not expressly or impliedly preempt Ohio’s or Tennessee’s gambling laws. Result: affirm the Southern District of Ohio’s denial of a preliminary injunction; vacate the Middle District of Tennessee’s injunction; remand. Follows a Ninth Circuit loss for platforms on Nevada; breaks from the Third Circuit’s April New Jersey ruling favouring exclusive CFTC jurisdiction.</p>
+<p><strong>What to watch:</strong> cert petition / New Jersey’s existing Supreme Court ask; whether other AGs copy the Ohio/Tennessee posture; any CFTC interpretive release.</p>
+<p class="sources"><b>Sources:</b> Sixth Circuit opinion via CourtListener · Reuters · The Hill · Al Jazeera markets note · CoinDesk</p>
+<div class="fb">
+<p><strong>Kalshi Sixth Circuit?</strong></p>
+<label><input type="radio" name="fb-kalshi" value="thread"/> Merge with Polymarket into one prediction-markets thread</label>
+<label><input type="radio" name="fb-kalshi" value="scotus"/> Wake on a cert grant</label>
+<label><input type="radio" name="fb-kalshi" value="less"/> Demote</label>
+</div>
+</article>
+
+<article id="treasury">
+<p class="meta"><span class="chip">Core · US debt &amp; fiscal</span> <span class="chip">Issuer series</span></p>
+<h2>Treasury’s own Friday close: 10-year at 5.17% (down a basis point from Thursday’s 5.18%)</h2>
+<p>Treasury Daily Par Yield Curve CSV (headers enumerated this run: Date, 1&nbsp;Mo, 1.5&nbsp;Month, 2&nbsp;Mo, 3&nbsp;Mo, 4&nbsp;Mo, 6&nbsp;Mo, 1&nbsp;Yr, 2&nbsp;Yr, 3&nbsp;Yr, 5&nbsp;Yr, 7&nbsp;Yr, <b>10&nbsp;Yr</b>, 20&nbsp;Yr, 30&nbsp;Yr — fourteen tenor columns, no phantom bill columns). Latest row <strong>09/25/2026</strong>: 2&nbsp;Yr 4.81 · 10&nbsp;Yr <strong>5.17</strong> · 20&nbsp;Yr 5.54 · 30&nbsp;Yr 5.49. Thursday 09/24 was 10&nbsp;Yr 5.18. No Saturday Treasury print. Column count/order changed again vs Friday’s TextView read — CSV remains the first instrument.</p>
+<p>Handelsblatt weekend colour on what higher U.S. yields mean for consumer credit is direction/narrative only; levels stay with the issuer. Freddie Mac’s 30-year mortgage at 7.03% was Friday’s weekly print — not re-led.</p>
+<p><strong>What to watch:</strong> Monday’s open; any refunding or buyback calendar change; Sept CPI (October) for the pass-through half.</p>
+<p class="sources"><b>Sources:</b> <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&amp;field_tdr_date_value=2026&amp;page&amp;_format=csv">Treasury daily CSV</a> (primary) · Handelsblatt (direction only)</p>
+<div class="fb">
+<p><strong>Quiet Saturday long-end print?</strong></p>
+<label><input type="radio" name="fb-ust" value="yes"/> Keep issuer closes even on Saturdays</label>
+<label><input type="radio" name="fb-ust" value="also"/> Also-today unless a round number</label>
+<label><input type="radio" name="fb-ust" value="less"/> Skip when unchanged overnight</label>
+</div>
+</article>
+
+<article id="teenpreg">
+<p class="meta"><span class="chip under">Negative check</span> <span class="chip new">New</span> <span class="chip under">Underreported</span> <span class="chip">Core · US debt &amp; fiscal</span></p>
+<h2>Congress funded teen-pregnancy prevention at $101&nbsp;million; $500,000 has gone out with four days left in the fiscal year</h2>
+<p>text.npr.org carried the underreported fiscal finding Saturday: Congress appropriated roughly $100–101&nbsp;million for teen-pregnancy prevention; with four days left in FY2026, about $500,000 has been obligated. That is an execution story, not a culture-war one — appropriated dollars that did not move. Full NPR article pages returned 503 again this run (standing hole); the index establishes the story exists. Member-station or primary HHS/OASH tables were not reached before press — label the dollar figures <span class="chip">Single-sourced</span> to the NPR headline/summary pending a primary spend table.</p>
+<p><strong>What to watch:</strong> year-end obligation surge or a reprogramming notice; IG or GAO (GAO still 403 here) follow-up.</p>
+<p class="sources"><b>Sources:</b> text.npr.org index (headline) · NPR article pages 503 this run</p>
+<div class="fb">
+<p><strong>Unspent appropriation as underreported lead?</strong></p>
+<label><input type="radio" name="fb-teen" value="yes"/> More fiscal-execution finds</label>
+<label><input type="radio" name="fb-teen" value="primary"/> Only with a primary spend table</label>
+<label><input type="radio" name="fb-teen" value="less"/> Demote</label>
+</div>
+</article>
+
+<article id="dengue">
+<p class="meta"><span class="chip">Florida &amp; Tampa Bay</span></p>
+<h2>Pasco dengue cases rise to three inside the three-county emergency</h2>
+<p>Fox&nbsp;13 Pasco tag: health officials confirmed a third locally acquired dengue case in Pasco on Friday, inside the local state of emergency declared earlier in the week. Hillsborough / Pinellas / Pasco emergencies from 24–25&nbsp;Sep Grok remain the frame; Hillsborough still dominates the state ledger. Clears the local bar as a case-count update under active emergency powers — not blotter. Florida DOH arbovirus weekly PDF still will not parse here; WUSF/Fox&nbsp;13 remain the readable relays.</p>
+<p>NHC Atlantic outlook Saturday 2am&nbsp;ET: Tropical Storms Gonzalo and Fay active well east in the Atlantic; <strong>no tropical cyclone formation expected for the next 7 days</strong> — quiet for Tampa Bay.</p>
+<p><strong>What to watch:</strong> next DOH weekly; aerial spray cadence; any statewide emergency.</p>
+<p class="sources"><b>Sources:</b> fox13news.com/tag/us/fl/pasco · <a href="https://www.nhc.noaa.gov/text/MIATWOAT.shtml">NHC Atlantic outlook</a> · continues Tampa Bay dengue watch</p>
+<div class="fb">
+<p><strong>Pasco case #3 update?</strong></p>
+<label><input type="radio" name="fb-den" value="yes"/> Right size</label>
+<label><input type="radio" name="fb-den" value="death"/> Lead only on confirmed death / statewide emergency</label>
+<label><input type="radio" name="fb-den" value="less"/> Also today</label>
+</div>
+</article>
+
+<h2 class="section" id="also">Also today</h2>
+<p class="secnote">Ranked below the line. Each opens. Saturday FR empty — these are wire/court/weather finds.</p>
+<div class="also-list">
+
+<details>
+<summary><span class="chip">Weather</span> Nor’easter: New Jersey coastal flood / high-wind warnings; roads inundated · <em>text.npr.org / NWS relays</em></summary>
+<div class="exp"><p>First major signs of a nor’easter taking shape; Mount Holly products carried via alert aggregators when weather.gov is awkward from here. Disruption-heavy — held below the line per altitude bar unless a structural (power, ports, fuel) hit appears.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">Geopolitics</span> Iraqi airports suspend Iranian flights after new US aviation sanctions · <em>Al Jazeera</em></summary>
+<div class="exp"><p>Baghdad, Najaf, Erbil, Sulaimaniyah halt Iran flights as Washington tightens aviation pressure. Clear US channel; logged as composition of the sanctions/Hormuz campaign, not a separate war lead.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">Geopolitics</span> Trump Truth Social map renames Hormuz the “Trump Strait” · <em>Al Jazeera / Politico</em></summary>
+<div class="exp"><p>Folded into the oil chain above; named here so the sweep is auditable. Iran rejects any US territorial claim over the strait.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">US policy</span> Census interference-ban thread: still open after fb-census: yes · <em>feedback #20</em></summary>
+<div class="exp"><p>No new procedural signature overnight. Wake triggers unchanged: Oct&nbsp;7 agency responses to Warren’s letters, or a measurable change in the data pipeline.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">US policy</span> OFAC: regulatory amendments + TSRA licensing report (24&nbsp;Sep) · <em>ofac.treasury.gov/recent-actions</em></summary>
+<div class="exp"><p>Standing sweep. Codification/reporting, not a new Iran designation list today. Logged so the Saturday sanctions check is auditable.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">Science</span> DRC Ebola outbreak spreads to two new health zones — WHO · <em>Al Jazeera / Wikipedia</em></summary>
+<div class="exp"><p>Negative-check catch. No US-channel policy move yet; held short. CDC travel-notice watch if one appears.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">AI &amp; tech</span> Handelsblatt: first acknowledged OpenAI misbehaviour case affecting user data; “dozens” of site operators notified · <em>Handelsblatt</em></summary>
+<div class="exp"><p>Front-page German business desk; English detail thin from here. Signal that a story exists — stand up elsewhere before printing incident rates. Related to, not a reprise of, the Australia Medicare portal breach.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">US policy</span> CNN left off Air Force One for Trump’s upcoming trip — new media restriction signal · <em>text.npr.org</em></summary>
+<div class="exp"><p>Separate from the Kelly TRO that restored CNN/MS NOW/Politico hard passes earlier this week. Movement item only.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">Florida</span> NHC Atlantic: Gonzalo + Fay active far east; no TC formation expected next 7 days · <em>nhc.noaa.gov</em></summary>
+<div class="exp"><p>Standing check through November. Quiet for Tampa Bay; Pacific Nolo is the live basin.</p></div>
+</details>
+
+</div>
+
+<h2 class="section">Provenance</h2>
+<p><strong>18 sources checked, 11 outside the active watchlist.</strong></p>
+<p><b>Watchlist-pointed (7):</b> AAA Fuel Prices · Hormuz / Araghchi seven-day roadmap (Al&nbsp;Jazeera) · Missouri map (reactivated) · Treasury Daily Par Yield CSV · Tampa Bay dengue · NHC Atlantic quiet · census feedback follow.</p>
+<p><b>Outside the watchlist (11):</b> SCOTUS PDF 26A388 · SCOTUS PDF 26A308 · Votebeat / SCOTUSblog on SAVE · D.C.&nbsp;Circuit Anthropic ruling (AJ/AFP/Reuters) · Sixth Circuit Kalshi opinion · Hawaii Governor emergency declaration · NHC Eastern Pacific outlook · text.npr.org index (teen-pregnancy spend + nor’easter + CNN AF1) · Handelsblatt front page · fox13 Pasco tag · OFAC recent-actions · Wikipedia current-events (negative check).</p>
+<p><strong>Document channel:</strong> FR documents API for 2026-09-26 returned <code>{"count":0}</code> — Saturday; public-inspection offline until Monday 8:45am&nbsp;ET. Said on the face of the issue rather than implying an empty-but-swept list.</p>
+<p><strong>Negative check changed the lead list:</strong> Wikipedia (thin Sat) + Al&nbsp;Jazeera + Handelsblatt + text.npr.org + court PDFs displaced Friday’s DBE / OMB medicines / Senate Iran-vote / Freddie Mac / Xi-colour reprises. Courts and weather carried the Saturday run as planned in config.</p>
+<p><b>Feedback applied:</b> #20 <em>fb-census: yes</em> → census kept as open short. #7 Missouri “resolution” → corrected by Friday’s reactivation. Settled prefs: corrections at top of story; oil as one chain; Fed prints/decision only; Florida only on local merit; single-sourced OK with label; authorship disclosure when covering a peer AI lab; charts/levels from issuer series; enumerate Treasury columns every run.</p>
+
+<ul class="dorm">
+<li><b>Dormant / no wake today:</b> Ukraine negotiations (still no published text) · USPS mail-ballot rule (resolved for November) · UAP implementing guidance · AARO contract · birthright citizenship appeal · Fed (no print/decision) · DOT DBE (no new fact since Friday effective date).</li>
+</ul>
+
+<footer>
+<p>Issue No. 22-grok · 26 September 2026 · Grok edition for MAGA Mickey · Written by Grok Bot / xAI · Archive: <a href="https://historiocity.github.io/News-Agent/">historiocity.github.io/News-Agent</a> · Skill reads <a href="https://github.com/historiocity/News-Agent/blob/main/config.md">config.md</a> every run.</p>
+<p style="margin-top:.6rem;font-size:.84rem;">Authorship note: the Anthropic lead discloses that this brief is Grok-authored; holding peer-lab coverage would itself be an editorial choice.</p>
+<div class="submit"><button type="button" disabled title="Local preview only">Submit feedback (wire me)</button></div>
+</footer>
+
+</div>
+</body>
+</html>
