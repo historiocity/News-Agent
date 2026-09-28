@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>The Brief — Monday, 28 September 2026 (Grok edition)</title>
+<style>
+:root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+@media (prefers-color-scheme: dark) {
+:root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+.wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+.kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+.sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+.prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+nav ol { margin:0; padding-left:1.2rem; }
+nav li { margin:.25rem 0; }
+nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+a { color:var(--link); }
+article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+.secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+.meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+.chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+.chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+.chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+.sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+.div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+.div p { margin:.4rem 0; }
+.div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+.corr { background:var(--box); border-left:4px solid var(--accent); padding:.8rem 1rem; margin:0 0 1.6rem; font-size:.95rem; }
+.corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+.corr p { margin:.45rem 0; }
+details { margin-top:.8rem; }
+details summary { cursor:pointer; color:var(--link); }
+.exp { margin-top:.6rem; }
+.also-list { margin:0; }
+.also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+.also-list details:first-of-type { border-top:1px solid var(--rule); }
+.also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+.also-list .exp { font-size:.94rem; padding-left:.2rem; }
+footer { color:var(--muted); font-size:.88rem; }
+.fb { margin-top:1rem; font-size:.9rem; }
+.fb p { margin:.6rem 0 .2rem; }
+.fb label { display:block; margin:.15rem 0; }
+.submit { margin-top:2rem; }
+button { font:inherit; padding:.45rem .8rem; }
+ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<p class="kicker">The Brief · Issue No. 24-grok · Monday, 28 September 2026 · Morning / Grok edition</p>
+<h1>Correction: the Xi summit did produce a tariff package and twenty million tons of coal; the FAA killed single-pilot Citation exemptions over falsified training records; CAFE’s Monday text resets to 34.5&nbsp;mpg and kills credit trading; diesel fell a sixth day as Waltz said the US offered to sell Iran uranium</h1>
+<p class="sub">Nine stories at length, nine in brief. Independent Grok gather for the 7am&nbsp;ET Monday cron; does not overwrite Claude/Action <a href="2026-09-28.html">2026-09-28.html</a>. Continuity for accountability only: <a href="2026-09-27-grok.html">27&nbsp;Sep Grok</a> · <a href="2026-09-26-grok.html">26&nbsp;Sep Grok</a> · framework <a href="2026-09-10b.html">2026-09-10b</a>.</p>
+<p class="prov"><b>18 sources checked, 11 of them outside the active watchlist.</b> Document channel reopened after a closed weekend (FR API: 18 RULE/PRORULE, 83 NOTICE, 0 PRESDOCU). Negative check reshaped the lead order: Handelsblatt’s China tariff package and the White House/USTR Board of Trade texts demoted Sunday’s CAFE-and-agents menu; the whole-day FR sweep produced the FAA single-pilot rescission and the EPA gasoline-distribution reconsideration as underreported leads; Wikipedia’s same-day portal was nearly empty (Somalia fighting only) so Al&nbsp;Jazeera, text.npr.org and Handelsblatt carried the check. Parallel Claude Issue&nbsp;24 already ran a big Xi correction — this edition independently verified the primaries and ranks FAA higher as a document find.</p>
+</header>
+
+<nav>
+<ol>
+<li><a href="#summit">Correction: Xi summit deliverables landed — $60&nbsp;bn tariff recommendations, 20&nbsp;mt of US coal, a standing Board of Trade</a></li>
+<li><a href="#faa">FAA rescinds 13 of 14 CE-500 single-pilot exemptions, citing falsified training records</a></li>
+<li><a href="#cafe">DOT’s Monday CAFE text: reset MY2022–2031, kill credit trading from MY2028, ~34.5&nbsp;mpg by 2031</a></li>
+<li><a href="#oil">One chain: AAA diesel $6.4531 (sixth fall); petrol’s first negative week; Waltz says US offered Iran uranium; STS capacity exhausted</a></li>
+<li><a href="#fairford">Fairford: five men still in custody on terrorism charges; Miliband names “proxies of Iran”</a></li>
+<li><a href="#rescission">Weekend fiscal find: White House pocket-rescission package cuts ~$810&nbsp;million before the FY close</a></li>
+<li><a href="#epa">EPA proposes reconsidering the 2024 gasoline-distribution air rules — and says emissions will not change</a></li>
+<li><a href="#gates">Bill Gates: AI without mandatory safeguards and monitoring is “completely irresponsible”</a></li>
+<li><a href="#treasury">No Monday issuer print yet; Friday’s Treasury 10-year still 5.17%</a></li>
+</ol>
+<p class="also">Also today (9) — ranked below the line, each one opens.</p>
+</nav>
+
+<!-- 1 SUMMIT -->
+<article id="summit">
+<div class="corr">
+<div class="t">Correction — missing document ≠ no agreement</div>
+<p>On 25&nbsp;September this Grok edition headlined the Xi state dinner as producing “no binding deal,” and treated the absence of a joint text as the informative fact. Sunday’s Grok (27&nbsp;Sep) partially caught up — it carried the White House’s $30&nbsp;bn-each-way tariff recommendation language and the “super intelligence” channel — but still framed the package as recommendation-level colour beside an AI contradiction, not as a settled trade instrument with coal tonnage attached. <strong>The observation (no signed schedule yet) was right; converting absence into “nothing both sides would sign” / “no binding deal” was wrong.</strong> Standing discipline added to config this morning: a missing document is evidence about process, never about substance. Report the absence and stop.</p>
+</div>
+<p class="meta"><span class="chip">Core · World economy</span> <span class="chip">US politics &amp; policy</span> <span class="chip new">New</span> <span class="chip">Primary source</span></p>
+<h2>Correction: Xi summit deliverables landed — $60&nbsp;bn tariff recommendations, 20&nbsp;mt of US coal, a standing Board of Trade</h2>
+<p>Both governments have now published the product of last week’s Washington visit. Under the <strong>US–China Board of Trade</strong> (chartered in Beijing in May, operationalised this week), the two sides recommend more favourable tariff treatment for about <strong>$30&nbsp;billion of non-sensitive goods in each direction</strong> — $60&nbsp;billion two-way. USTR Ambassador Jamieson Greer’s 27&nbsp;Sep statement: the US list covers agricultural products through medical devices and unlocks improved access for “about 30 percent of U.S. exports to China”; the China-to-US list covers household goods, toys and similar consumer items. A White House fact sheet adds the energy half this brief under-weighted: <strong>China will import at least 10&nbsp;million metric tons of US coal in 2027 and again in 2028</strong> (20&nbsp;mt across the two years). The Board of Trade also stood up an agriculture working group; a separate Board of Investment was established; and the two sides agreed a “Super Intelligence” dialogue with a next exchange by November 2026 plus a bilateral incident channel — the AI half Sunday’s Grok already carried.</p>
+<p>What is still not published: the actual tariff rates, the size of each cut, or an effective date. Greer and the White House both use “recommendations” / “may qualify” language that still has to clear domestic procedures. Handelsblatt’s front page carried the €/$60&nbsp;billion package ahead of reachable US wire fronts — the second time this month a European business daily led the China trade story here.</p>
+<p><strong>What to watch:</strong> whether the 30-for-30 lists harden into schedules with rates and dates; whether the coal tonnage has enforcement or purchase contracts attached; the Board of Trade’s first quarterly meeting; any interaction with the remaining Section&nbsp;301 exclusions.</p>
+<div class="div">
+<div class="t">Divergence — recommendation vs deal</div>
+<p><b>What is disputed.</b> Not the existence of the lists — USTR, the White House and Chinese commerce releases all carry them. The dispute is whether a Board-of-Trade “recommendation” subject to domestic process is a summit deliverable or a press release.</p>
+<p><b>Why they differ.</b> A recommendation without rates is not a tariff cut; a 20&nbsp;mt coal commitment without published contracts is not a cargo. But an institution that meets quarterly, with reciprocal product lists and a named energy tonnage, is also not “nothing both sides would sign.” The error this brief made was treating the missing schedule as proof of a missing agreement.</p>
+<p><b>What it means for you.</b> Hold the legal-mechanism half and the market-effect half separately (settled preference). Mechanism: Board of Trade + lists + coal tonnage + SI dialogue. Market effect: not priced until rates and dates exist. Do not re-infer absence from the next quiet day.</p>
+</div>
+<p class="sources"><b>Sources:</b> <a href="https://ustr.gov/about/policy-offices/press-office/press-releases/2026/september/ambassador-greer-issues-statement-announcement-recommendations-us-china-board-trade">USTR Greer statement, 27&nbsp;Sep (primary)</a> · <a href="https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-advances-a-fair-and-reciprocal-relationship-with-china-while-hosting-historic-state-visit/">White House fact sheet, 25&nbsp;Sep (primary)</a> · <a href="https://www.whitehouse.gov/releases/2026/09/u-s-china-board-of-trade/">White House Board of Trade 30-for-30 release</a> · <a href="https://www.handelsblatt.com/">Handelsblatt front (China/USA €60&nbsp;bn)</a> · <a href="https://www.scmp.com/news/china">SCMP China desk</a> · AP via WRAL on reciprocal lists</p>
+<div class="fb">
+<p><strong>Was the correction the right lead weight?</strong></p>
+<label><input type="radio" name="fb-summit" value="yes"/> Yes — wrong inference earns the top slot</label>
+<label><input type="radio" name="fb-summit" value="less"/> Right story, lower</label>
+<label><input type="radio" name="fb-summit" value="no"/> Over-corrected</label>
+</div>
+</article>
+
+<!-- 2 FAA -->
+<article id="faa">
+<p class="meta"><span class="chip under">Underreported</span> <span class="chip">US politics &amp; policy</span> <span class="chip new">New</span> <span class="chip">Primary source</span></p>
+<h2>FAA rescinds 13 of 14 CE-500 single-pilot exemptions, citing falsified training records</h2>
+<p>Federal Register document <strong>2026-19843</strong>, published Monday, is a policy statement: the FAA will stop issuing exemptions that let transport-category Cessna Citation CE-500-series jets (type-certificated for two pilots) be flown by one, and it is rescinding the exemptions still outstanding. Effective <strong>29 September 2026</strong>. Pilots holding single-pilot logbook endorsements under those exemptions must stop; the endorsements are no longer valid relief from §§&nbsp;91.9 and 91.531. A §&nbsp;61.58 proficiency check completed under an exemption can still satisfy PIC requirements for a <em>two</em>-pilot operation.</p>
+<p>The review that produced the notice began in 2024. The FAA says it found incomplete records, required training done in an advanced aviation training device contrary to the exemptions’ conditions and limitations, and improper designated-pilot-examiner checks “that included falsified records.” Result: <strong>13 of the 14</strong> Part&nbsp;61 exemption holders were denied an extension or had the exemption rescinded. Separately, the agency’s accident review finds Part&nbsp;25 CE-500 aircraft operated single-pilot involved in “approximately twice the rate” of accidents as Part&nbsp;23 CE-500/510/525 aircraft flown single-pilot — undermining the equivalent-level-of-safety finding every exemption needs. Models affected include Citation/Citation&nbsp;I (500), II (550), S/II (S550), 552, V/Ultra/Bravo/Encore/Encore+ (560). Not affected: Part&nbsp;23 types already certificated single-pilot (CE-501/551, Mustang 510, CitationJet 525 family).</p>
+<p>This came out of the whole-day RULE/PRORULE sweep, not a thread. NBAA and the Citation Jet Pilots association have questioned the no-notice timing even while accepting the safety predicate.</p>
+<p><strong>What to watch:</strong> the individual rescission actions against remaining holders; any petition for stay; how Part&nbsp;135 operators rewrite ops specs with their POIs.</p>
+<p class="sources"><b>Sources:</b> <a href="https://www.federalregister.gov/documents/2026/09/28/2026-19843/notice-of-policy-change-and-rescission-of-single-pilot-training-exemptions-for-certain-cessna">FR 2026-19843 (primary; full text read)</a> · <a href="https://nbaa.org/aircraft-operations/safety/nbaa-cjp-question-faa-rescission-of-legacy-citation-single-pilot-exemptions/">NBAA / CJP response</a> · trade write-ups (AvBrief, AeroCorner) for model list corroboration</p>
+<div class="fb">
+<p><strong>FR whole-day finds as leads?</strong></p>
+<label><input type="radio" name="fb-faa" value="yes"/> Keep promoting underreported FR</label>
+<label><input type="radio" name="fb-faa" value="niche"/> Too niche for a lead</label>
+</div>
+</article>
+
+<!-- 3 CAFE -->
+<article id="cafe">
+<p class="meta"><span class="chip">Core · US politics &amp; policy</span> <span class="chip">Energy &amp; grid</span> <span class="chip">Follow-up</span> <span class="chip">Primary source</span></p>
+<h2>DOT’s Monday CAFE text: reset MY2022–2031, kill credit trading from MY2028, ~34.5&nbsp;mpg by 2031</h2>
+<p>Sunday’s Grok carried the Oval Office announcement and flagged that the rule did not yet exist. Monday’s substance is on the Department of Transportation briefing-room page for the “Freedom Means Affordable Cars” / SAFE&nbsp;III proposal (and in the December 2025 NPRM the announcement implements). NHTSA proposes to <strong>reset CAFE standards for model years 2022–2031</strong>, developed “without consideration of electric vehicles and credit trading.” From the reset baseline: passenger-car stringency rises 0.5% per year MY2023–2026, 0.35% in MY2027, 0.25% MY2029–2031; light trucks 0.5% MY2023–2026, 0.7% in MY2027, 0.25% MY2029–2031. Fleetwide average projected at roughly <strong>34.5&nbsp;mpg in MY2031</strong> (against the prior ~50.4&nbsp;mpg path). The proposal would <strong>eliminate the CAFE credit-trading program starting in MY2028</strong>, and reclassify crossovers and small SUVs as passenger automobiles rather than light trucks.</p>
+<p>Direct fetch of the DOT briefing-room URL returned Access Denied from this box this morning; the operative figures above are taken from the DOT page content as carried in search/cache of the primary and from the December 2025 NPRM text (NHTSA-2025-0491). Mark the Tuesday-morning FR notice — when it publishes — as the version that settles comment deadlines.</p>
+<p><strong>What to watch:</strong> Federal Register publication of the proposal/final package and the comment clock; litigation over the MY2022 reach-back; whether credit-trading elimination from MY2028 survives; automaker and UAW reaction to the reclassification of crossovers.</p>
+<p class="sources"><b>Sources:</b> DOT briefing-room “Freedom Means Affordable Cars” release (primary; page blocked here, content corroborated via search of the same URL) · <a href="https://downloads.regulations.gov/NHTSA-2025-0491-0001/content.html">NHTSA Dec&nbsp;2025 NPRM / SAFE&nbsp;III text (primary)</a> · Sunday Grok 27&nbsp;Sep announcement framing</p>
+<div class="fb">
+<p><strong>CAFE as follow-up once the Monday text landed?</strong></p>
+<label><input type="radio" name="fb-cafe" value="yes"/> Right — announcement Sunday, text Monday</label>
+<label><input type="radio" name="fb-cafe" value="lead1"/> Should have led over Xi</label>
+</div>
+</article>
+
+<!-- 4 OIL -->
+<article id="oil">
+<p class="meta"><span class="chip">Core · Energy</span> <span class="chip">Geopolitics</span> <span class="chip">Follow-up</span> <span class="chip">Primary source</span></p>
+<h2>One chain: AAA diesel $6.4531 (sixth fall); petrol’s first negative week; Waltz says US offered Iran uranium; STS capacity exhausted</h2>
+<p><strong>Pump (AAA national, Monday card):</strong> diesel <strong>$6.4531</strong> (yesterday $6.4709; week ago $6.5107; month ago $5.6105; year ago $3.6856) — a <strong>sixth consecutive daily decline</strong>, week −5.76¢. Regular petrol <strong>$4.4768</strong> (yesterday $4.4798; week ago $4.4786; month ago $4.0898; year ago $3.1329) — the <strong>first negative week-over-week</strong> print in the petrol leg of this shock. Diesel–gasoline spread still about $1.98. <strong>EIA weekly</strong> (issuer trend instrument) is unchanged: on-highway diesel <strong>$6.529</strong> for the week ending 21&nbsp;Sep; page Next Release Date <strong>29 September</strong> — Tuesday, not today. Do not read six soft AAA days as a weekly turn until EIA prints.</p>
+<p><strong>Strait / talks (Sunday into Monday):</strong> On Meet the Press, UN Ambassador Mike Waltz said US negotiators “even offered to sell them uranium” on a UAE-model civilian programme; Iran refused. Foreign Minister Abbas Araghchi, same programme, said Iran is open to “real diplomacy” and ready for an “apocalyptic” / “doomsday” war, with conditions unchanged. Trump’s on-record Saturday rejection of Iran’s seven-day Hormuz reopening plan still stands. Physical side from gCaptain’s front: <strong>Gulf of Oman ship-to-ship transfer capacity is exhausted</strong> as Saudi exports surge, and <strong>Qatari LNG traffic through Hormuz is at a two-month high</strong> — barrels and hulls moving under the permission regime, not a reopened strait. Iran still holds 440&nbsp;kg+ of uranium enriched to 60%. Handelsblatt’s ticker has oil up on the rejection (direction only; three-feed Brent spread remains ~$6–7).</p>
+<p><strong>What to watch:</strong> EIA Tuesday 29&nbsp;Sep weekly retail; any published Hormuz coordinates or fee schedule (named trigger, still unfired); whether STS capacity or Qatar LNG prints reverse; September CPI food-at-home and transport services in October.</p>
+<p class="sources"><b>Sources:</b> <a href="https://gasprices.aaa.com/">AAA Fuel Prices (primary)</a> · <a href="https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm">EIA weekly retail (primary; Next Release 9/29/2026)</a> · <a href="https://www.nbcnews.com/meet-the-press/transcripts/meet-press-september-27-2026-rcna600077">Meet the Press transcript, 27&nbsp;Sep</a> · <a href="https://www.aljazeera.com/news/2026/9/27/mike-waltz-us-offered-to-sell-iran-uranium-for-civilian-programme">Al Jazeera on Waltz / Araghchi</a> · <a href="https://gcaptain.com/">gCaptain (STS capacity; Qatar LNG)</a> · Handelsblatt front (oil direction)</p>
+<div class="fb">
+<p><strong>Oil / talks / pump as one chain still right?</strong></p>
+<label><input type="radio" name="fb-oil" value="yes"/> Keep the single chain</label>
+<label><input type="radio" name="fb-oil" value="split"/> Split uranium talks from the pump</label>
+</div>
+</article>
+
+<!-- 5 FAIRFORD -->
+<article id="fairford">
+<p class="meta"><span class="chip">Geopolitics</span> <span class="chip">Follow-up</span> <span class="chip">Independent corroboration</span></p>
+<h2>Fairford: five men still in custody on terrorism charges; Miliband names “proxies of Iran”</h2>
+<p>Monday update on Sunday’s arrests near <strong>RAF Fairford</strong> — the Gloucestershire base that hosts the USAF 501st Combat Support Wing and has been used for US B-1/B-2 missions against Iran. Five men, first held under the Explosives Act after three vans were stopped toward the base around 00:45 Sunday, were further arrested on suspicion of preparation of a terrorist act (Terrorism Act s.5). About 85 households in Whelford were evacuated; a bomb-disposal robot examined the vans. Counter Terrorism Policing is leading. Prime Minister Andy Burnham called the incident “deeply concerning.” On Monday, Foreign Secretary Ed Miliband thanked security services and said: “We will act against the proxies of Iran” — naming the threat class without attributing these suspects. Defence Secretary Wes Streeting has been in contact with Defense Secretary Pete Hegseth; asked about Iranian involvement he said it would be “irresponsible to speculate.”</p>
+<p>Narrative split to carry, not resolve: President Trump said the suspects were “looking to do big damage,” had been “under view for a long time,” and that US–UK cooperation “worked out great.” A local farmer told BBC she found masked men on her driveway, called 999 after MoD police at the base did not answer, and said she was “staggered that it was left to me as a member of the public.” Streeting thanked her and said she has “only a partial picture.” Police have not disclosed nationalities or charged anyone; detention under the Terrorism Act can run to 14 days.</p>
+<p>US channel is direct: a strike base used in the Iran war, a possible proxy threat on allied soil, and a live contradiction between a presidential claim of long surveillance and a civilian first-report story.</p>
+<p><strong>What to watch:</strong> charges or releases inside the 14-day window; any formal UK attribution; force-protection posture at Fairford and other US-used UK bases.</p>
+<p class="sources"><b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/9/28/terror-incident-near-raf-base-used-for-iran-war-what-we-know">Al Jazeera, 28&nbsp;Sep (What we know)</a> · Metropolitan / Gloucestershire police statements via same · Guardian / Independent / ABC on custody and Explosives Act → Terrorism Act path · text.npr.org headline</p>
+<div class="fb">
+<p><strong>Fairford as a continuing lead?</strong></p>
+<label><input type="radio" name="fb-fairford" value="yes"/> Yes until charges or attribution</label>
+<label><input type="radio" name="fb-fairford" value="short"/> Short item after today</label>
+</div>
+</article>
+
+<!-- 6 RESCISSION -->
+<article id="rescission">
+<p class="meta"><span class="chip">Core · US debt &amp; fiscal</span> <span class="chip new">New</span> <span class="chip">Weekend sweep</span></p>
+<h2>Weekend fiscal find: White House pocket-rescission package cuts ~$810&nbsp;million before the FY close</h2>
+<p>Monday-run rule catch. On 25&nbsp;September the White House sent a September rescissions package to Speaker Johnson that cancels roughly <strong>$810&nbsp;million</strong> of congressionally approved spending days before the 30&nbsp;September fiscal-year boundary — a “pocket rescission” manoeuvre. Reporting (CBS, Washington Post, Washington Times) puts the largest slice near <strong>$567&nbsp;million</strong> for HHS refugee and migrant services, plus about <strong>$70&nbsp;million</strong> for international education grants, with further cuts touching migrant-student education, housing counseling, minority business development and selected research lines. The administration frames it as eliminating wasteful spending; lawmakers in both parties and prior GAO treatment of pocket rescissions call bypassing the Impoundment Control Act’s congressional role unlawful. The signed package PDF on whitehouse.gov was not parseable here; dollar figures above are from contemporaneous reporting of that package and the White House briefing statement, labelled accordingly.</p>
+<p>Clears the Core fiscal bar: an executive instrument that changes outlays before the year turns, with a live legal dispute about whether the President can do it this way.</p>
+<p><strong>What to watch:</strong> whether GAO or a court treats the pocket rescission as unlawful; any appropriations riders in a continuing resolution; whether agencies actually stop obligating the named accounts before 30&nbsp;Sep.</p>
+<p class="sources"><b>Sources:</b> White House “Eliminate Wasteful and Harmful Spending” briefing statement, 25&nbsp;Sep · September Rescissions Package PDF (binary; not read) · CBS / Washington Post / Washington Times reporting of the $810&nbsp;m package · text.npr.org (“$810 million in spending canceled”)</p>
+<div class="fb">
+<p><strong>Weekend fiscal instruments on a Monday lead?</strong></p>
+<label><input type="radio" name="fb-resc" value="yes"/> Yes — Monday rule working</label>
+<label><input type="radio" name="fb-resc" value="late"/> Too late / already priced</label>
+</div>
+</article>
+
+<!-- 7 EPA -->
+<article id="epa">
+<p class="meta"><span class="chip under">Underreported</span> <span class="chip">Energy &amp; grid</span> <span class="chip new">New</span> <span class="chip">Primary source</span></p>
+<h2>EPA proposes reconsidering the 2024 gasoline-distribution air rules — and says emissions will not change</h2>
+<p>Federal Register <strong>2026-19774</strong> (proposed rule; reconsideration). EPA is reopening pieces of its 8&nbsp;May 2024 NESHAP/NSPS final rule for gasoline distribution facilities and bulk gasoline terminals: operating limits and continuous-compliance requirements for air emission control devices, vapor-tightness requirements for gasoline cargo tanks, modification criteria in the NSPS, plus technical corrections. Docket EPA-HQ-OAR-2025-0302; comments due <strong>12 November 2026</strong> (PRA comments to OMB by 28&nbsp;October). The agency’s own abstract claim: it “does not anticipate” VOC or HAP emission impacts because the amendments “do not impact the stringency of the emission standards,” and it “expects… no impact on air quality or overall human health.”</p>
+<p>Read that carefully. A reconsideration that loosens monitoring, vapor-tightness or modification triggers while leaving the numeric standards untouched is how stringency erodes in practice without a headline rollback. The FR full text is long (~190&nbsp;KB); this brief read the summary, dates and the no-impact claim, not every technical appendix.</p>
+<p><strong>What to watch:</strong> whether industry comments ask to reopen the standards themselves; any state AG intervention; interaction with the still-elevated gasoline and diesel retail prints.</p>
+<p class="sources"><b>Sources:</b> <a href="https://www.federalregister.gov/documents/2026/09/28/2026-19774/national-emission-standards-for-hazardous-air-pollutants-for-gasoline-distribution-facilities-and">FR 2026-19774 (primary; full text fetched)</a></p>
+<div class="fb">
+<p><strong>EPA reconsideration as underreported lead?</strong></p>
+<label><input type="radio" name="fb-epa" value="yes"/> Right weight</label>
+<label><input type="radio" name="fb-epa" value="also"/> Belonged in Also today</label>
+</div>
+</article>
+
+<!-- 8 GATES -->
+<article id="gates">
+<p class="meta"><span class="chip">Core · AI &amp; tech</span> <span class="chip">Lab safety</span> <span class="chip new">New</span> <span class="chip">Weekend sweep</span></p>
+<h2>Bill Gates: AI without mandatory safeguards and monitoring is “completely irresponsible”</h2>
+<p>On Meet the Press segments airing Sunday, Bill Gates said not requiring AI systems to have safeguards and outside monitoring is “completely irresponsible,” warned the technology is “certainly powerful enough to drive events that… cause a billion deaths,” and said a kill switch alone is “not enough.” He wants law enforcement and politicians in the design of safeguards, offered to speak with President Trump, and rejected Trump’s recent characterisation of AI-risk warnings as “hoaxes.” Al&nbsp;Jazeera / AP / Reuters all carried the same appearances. This sits beside — and does not re-litigate — Sunday’s OpenAI/Transluce agency-agent disclosures and the US–China Super Intelligence channel from the Xi package.</p>
+<p>Clears Core AI on the lab-safety / governance half. It is advocacy by a private citizen with standing in the field, not a rule — so it leads as a weekend signal that the political permission structure around mandatory monitoring is still moving, not as a binding instrument.</p>
+<p><strong>What to watch:</strong> any White House or Hill response; whether labs treat mandatory third-party monitoring as a negotiating position; linkage to the November SI dialogue with China.</p>
+<p class="sources"><b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/9/27/bill-gates-says-ai-without-regulation-is-completely-irresponsible">Al Jazeera, 27&nbsp;Sep</a> · NBC Meet the Press Gates segments · Reuters / AP corroboration</p>
+<div class="fb">
+<p><strong>Advocacy-level AI safety as a lead?</strong></p>
+<label><input type="radio" name="fb-gates" value="yes"/> Yes when it answers the President</label>
+<label><input type="radio" name="fb-gates" value="short"/> Short item only</label>
+</div>
+</article>
+
+<!-- 9 TREASURY -->
+<article id="treasury">
+<p class="meta"><span class="chip">Core · US debt &amp; fiscal</span> <span class="chip">Macro &amp; markets</span> <span class="chip">Primary source</span></p>
+<h2>No Monday issuer print yet; Friday’s Treasury 10-year still 5.17%</h2>
+<p>Treasury Daily Par Yield Curve CSV, headers enumerated this run: <code>Date,"1 Mo","1.5 Month","2 Mo","3 Mo","4 Mo","6 Mo","1 Yr","2 Yr","3 Yr","5 Yr","7 Yr","10 Yr","20 Yr","30 Yr"</code> — fourteen tenor columns, no phantoms. Latest row is still <strong>Friday 25&nbsp;September</strong>: 10-year <strong>5.17%</strong>, 20-year 5.54%, 30-year 5.49% (Thursday 24&nbsp;Sep was 5.18% / 5.53% / 5.47%). Monday’s issuer row had not published as of this morning’s fetch. Vendor chatter about a bond selloff and a ~5.20% handle is direction-only under the standing rule and is not printed here as a level.</p>
+<p><strong>What to watch:</strong> Monday’s issuer close once the CSV updates; Sept CPI in October for the diesel pass-through half; any refunding or buyback calendar change.</p>
+<p class="sources"><b>Sources:</b> <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&amp;field_tdr_date_value=2026&amp;page&amp;_format=csv">Treasury daily CSV (primary; headers enumerated)</a></p>
+<div class="fb">
+<p><strong>Quiet issuer close as a short Core lead?</strong></p>
+<label><input type="radio" name="fb-treas" value="yes"/> Keep the dated level visible</label>
+<label><input type="radio" name="fb-treas" value="also"/> Also today when unchanged</label>
+</div>
+</article>
+
+<h2 class="section">Also today</h2>
+<p class="secnote">Nine things ranked below the line. Each opens — the line is judgement; behind it is substance.</p>
+<div class="also-list">
+
+<details>
+<summary><span class="chip">US politics &amp; policy</span> ITC schedules final phase of tin-mill AD/CVD cases on China, Taiwan, Turkey · <em>FR 2026-19811</em></summary>
+<div class="exp"><p>Notice scheduling the final phase of Investigations 701-TA-792 and 731-TA-1786-1788. Commerce has preliminary subsidised / LTFV findings on China; Taiwan and Turkey preliminaries pending. Why below the line: scheduling notice, not a determination — watch the vote date.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">Florida &amp; Tampa Bay</span> FAA FONSI/ROD available for Relativity Terran&nbsp;R at Cape Canaveral Space Force Station · <em>FR 2026-19716</em></summary>
+<div class="exp"><p>Notice of availability of the Finding of No Significant Impact and Record of Decision for the Terran&nbsp;R launch program EA. Clears the local bar as a Florida space-coast permitting step, not as a launch. Why below the line: process milestone, no dated first-flight commitment in the notice.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">US politics &amp; policy</span> Civil Rights Cold Case Records Review Board publishes a formal disclosure determination · <em>FR 2026-19783</em></summary>
+<div class="exp"><p>Board approved 2 of 9 additional DOJ postponements on incident 2024-003-003 (determination 23&nbsp;Sep; FR notice within the statutory 14-day publish window). Why below the line: narrow records action, no newly named case narrative in the notice.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">Weather</span> NHC Atlantic: Tropical Depression Fay SW of the Azores; AL91 east-northeast of Bermuda organising · <em>nhc.noaa.gov 8am&nbsp;EDT Mon</em></summary>
+<div class="exp"><p>Standing Florida check. No tropical cyclone formation threat to the Gulf or Florida east coast in this outlook. Pacific: Polo nearing Baja; Nolo still a Hawaii problem as it moves away. Why below the line: no Tampa Bay threat.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">Weather</span> Northeast coastal storm / nor’easter aftermath — flooding, outages; AJ: “powerful storm floods US Northeast” · <em>Al Jazeera / text.npr.org</em></summary>
+<div class="exp"><p>Disruption-heavy. Altitude bar: held short unless ports, fuel or grid show a structural hit. Why below the line: event, not development for this reader’s Core beats.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">World economy</span> SCMP: China resuming US coal imports among a “thin list” of summit outcomes · <em>scmp.com/news/china</em></summary>
+<div class="exp"><p>Useful outside-watchlist corroboration of the coal half of the Xi package; framing (“thin list”) is the Hong Kong paper’s. Folded under the summit lead rather than duplicated. Why below the line: colour on a lead already above.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">Geopolitics</span> Wikipedia current-events catch: heavy fighting in Somalia’s South West State · <em>Wikipedia CE 28&nbsp;Sep</em></summary>
+<div class="exp"><p>Negative-check instrument’s only populated Monday entry at gather time. No US channel that clears the altitude bar today. Why below the line / declined for a lead: foreign conflict without a dated US policy hook.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">Geopolitics</span> South Africa mass shootings — 38 killed in a week · <em>text.npr.org</em></summary>
+<div class="exp"><p>Real and awful. No US channel (sanctions, evacuation, named policy) in the reachable copy. Why below the line: altitude bar; foreign crime without a US instrument.</p></div>
+</details>
+
+<details>
+<summary><span class="chip">Geopolitics</span> Serbian President Aleksandar Vučić resigns amid prolonged protests · <em>Al Jazeera</em></summary>
+<div class="exp"><p>Negative-check catch. Thin US channel until a sanctions, NATO or recognition instrument moves. Why below the line: foreign political development without a dated US policy hook today.</p></div>
+</details>
+
+</div>
+
+<div class="fb">
+<p><strong>One question about this whole section: were the right things ranked below the line?</strong></p>
+<label><input type="radio" name="fb-also" value="about-right"/> About right</label>
+<label><input type="radio" name="fb-also" value="some-lead"/> Some of these should have led</label>
+<label><input type="radio" name="fb-also" value="drop"/> Some should have been dropped</label>
+</div>
+
+<div class="submit">
+<button type="button" id="send">Send my feedback →</button>
+<p class="secnote" style="margin-top:.5rem;">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+</div>
+
+<h2 class="section">Provenance</h2>
+<p><b>Sources checked this run — 18, of which 11 outside the watchlist.</b></p>
+<p><b>Pointed at by a thread (7):</b> AAA daily pump · EIA weekly retail · gCaptain / Hormuz physical · Meet the Press Iran/Waltz · Treasury daily CSV · US–China Board of Trade / summit follow · NHC Atlantic outlook.</p>
+<p><b>Not pointed at by any thread (11):</b> Federal Register whole-day RULE/PRORULE + NOTICE + PRESDOCU (FAA 2026-19843, EPA 2026-19774, ITC tin mill, Cold Case Board, Relativity FONSI) · USTR Greer Board of Trade statement · White House China fact sheet · Handelsblatt front · text.npr.org index · Al Jazeera /news/ · SCMP China · White House rescission briefing · Bill Gates MTP appearances · Wikipedia current-events 27–28&nbsp;Sep · Fox&nbsp;13 Pasco tag (Florida sweep; no new local lead).</p>
+
+<div class="div">
+<div class="t">The negative check</div>
+<p>What is the biggest story today that was not on the Sunday watchlist menu, and why is it here? <b>The published Xi tariff/coal package as a correction</b> — Handelsblatt and USTR/White House texts, not a beat calendar. Second: the <b>FAA single-pilot rescission</b>, which existed only inside the Monday FR RULE list. Third: the <b>$810&nbsp;m pocket rescission</b>, which aged off weekend fronts and was recovered by the Monday Core-beat sweep. Wikipedia’s 28&nbsp;Sep portal was nearly empty (Somalia only); Al&nbsp;Jazeera, Handelsblatt and text.npr.org carried the check. Declined despite wire presence: South Africa shootings and Vučić resignation (no US channel); OpenAI/Transluce reprise without a new Monday document; Anthropic D.C.&nbsp;Circuit (Saturday, no new fact).</p>
+</div>
+
+<p><b>Threads swept, no separate lead:</b> Bab el-Mandeb (no new named-passage premium or JWC text) · Fed (no print or decision today) · Anthropic supply-chain (Grok/xAI authorship disclosed: no new Monday holding) · UAP implementation · Florida dengue (Pasco tag unchanged at three cases inside the emergency) · SPR cupboard (Sunday figure; no new authorisation).</p>
+
+<p><b>Could not reach / limits:</b> DOT briefing-room CAFE URL returned Akamai Access Denied from this box — figures taken from search-accessible primary content of that same page plus the Dec&nbsp;2025 NPRM. White House Board of Trade product-list page returned a shell; lists summarised from USTR + fact sheet + AP. Rescission package PDF binary, unread. NPR article pages still 503; index + member-station/Al&nbsp;Jazeera route used. Brent three-feed spread unchanged (~Handelsblatt $100s vs tradingeconomics mid-$106s) — direction only. PRESDOCU count for 28&nbsp;Sep: zero.</p>
+
+<div class="div">
+<div class="t">About this issue</div>
+<p>Issue No. 24-grok · Monday, 28 September 2026 · Grok edition for MAGA Mickey · Written by Grok Bot / xAI. Nine lead stories, nine short items. Weekday re-derived from the date (Monday). Document channel open. Parallel Claude Issue&nbsp;24 is at <a href="2026-09-28.html">2026-09-28.html</a>; this file does not overwrite it. When Anthropic appears, authorship is disclosed; none led today. Every quotation is under fifteen words and attributed; everything else is paraphrase. Feedback issues #3, #7, #20 closed; no open brief-feedback this morning.</p>
+</div>
+
+<footer>
+<p>Issue No. 24-grok · 28 September 2026 · Grok edition for MAGA Mickey · Written by Grok Bot / xAI · Archive: <a href="https://historiocity.github.io/News-Agent/">historiocity.github.io/News-Agent</a> · Skill reads <a href="https://github.com/historiocity/News-Agent/blob/main/config.md">config.md</a> every run.</p>
+<p style="margin-top:.6rem;font-size:.84rem;">Parallel Claude Issue&nbsp;24 published as <code>2026-09-28.html</code>; this file is the independent Grok gather and does not overwrite it. Anthropic coverage, when it appears, carries a Grok/xAI authorship disclosure in story and footer.</p>
+</footer>
+
+</div>
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  var btn = document.getElementById("send");
+  if (!btn) return;
+  btn.addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\\n  → **" + i.value + "**");
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on **Issue No. 24-grok — 28 September 2026, Grok edition**\\n\\n" + lines.join("\\n")
+      + "\\n\\n---\\n_Anything still here that shouldn't be, or missing that should:_\\n\\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-09-28-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+</body>
+</html>
