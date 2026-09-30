@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Wednesday, 30 September 2026</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .chip.alert { background:var(--accent); color:#fff; border:1px solid var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  .corr { background:var(--box); border-left:3px solid var(--accent); padding:.7rem .9rem; margin:0 0 1rem; font-size:.94rem; }
+  .corr p { margin:.4rem 0; }
+  .corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--accent); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  .short { border-bottom:1px solid var(--rule); padding:.7rem 0; margin:0; }
+  .short > summary { color:var(--fg); cursor:pointer; list-style:none; }
+  .short > summary::-webkit-details-marker { display:none; }
+  .short > summary::before { content:"▸ "; color:var(--link); }
+  .short[open] > summary::before { content:"▾ "; }
+  .short .body { margin-top:.6rem; padding-left:1.1rem; border-left:2px solid var(--rule); font-size:.96rem; }
+  .why { font-style:italic; color:var(--muted); }
+  figure { margin:1.2rem 0 0; }
+  figcaption { font-size:.84rem; color:var(--muted); margin-top:.4rem; line-height:1.5; }
+  svg { width:100%; height:auto; display:block; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+  ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 26 &middot; Wednesday, 30 September 2026</div>
+  <h1>The official weekly diesel print fell 14.7 cents &mdash; and consumer confidence hit a twelve-year low blaming fuel</h1>
+  <p class="sub">Morning edition. Continues from <a href="2026-09-29.html">Tuesday</a>.</p>
+  <p class="prov"><b>22 sources checked, 13 of them outside the watchlist.</b> Seven lead stories: three on subjects with no existing thread (consumer confidence, third-country deportations, the completed Iraq withdrawal) and four continuations (the pump chain, the White House AI accord, Polo&rsquo;s remnants over the Southwest, and a correction on the fiscal-year lapse). Eight short items.<br><br>
+  <b>The <em>Federal Register</em> returned zero documents of any type today, and zero on public inspection.</b> That is not normal for a Wednesday &mdash; yesterday had a full edition &mdash; and this brief cannot tell whether the edition is genuinely empty or the API has not ingested it at this hour. Treated as a source failure rather than as news, and said so rather than implying the government published nothing.<br><br>
+  <b>Biggest story today not on this list:</b> Hegseth cutting twenty per cent of general and admiral billets, which runs as a short only because the announcement is scheduled for later today at Quantico and has not happened yet. Held under standing anti-topics: the Cornell fraternity case, the MacArthur Fellowships, French strikes and student protests, and Trump&rsquo;s campaign schedule.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#fuel">The official weekly diesel average fell 14.7 cents. That is the first negative print of the entire shock</a></li>
+    <li><a href="#confidence">Consumer confidence fell to its lowest since 2014, and the survey blames fuel prices by name</a></li>
+    <li><a href="#aiaccord">Seven AI and tech chiefs signed a voluntary accord at the White House. Trump called it a constitution and said the industry will self-police</a></li>
+    <li><a href="#lapse">Correction: the teen pregnancy money does not lapse tonight. A judge suspended the statutory deadline nine days ago</a></li>
+    <li><a href="#deport">The Supreme Court let third-country deportations resume, 6&ndash;3, with argument in December. About 25,000 people have already been sent</a></li>
+    <li><a href="#iraq">The last US troops left Iraq yesterday, taking the Patriot batteries with them, in the middle of a war with Iran</a></li>
+    <li><a href="#polo">Polo&rsquo;s remnants flooded the Southwest, emptied New Mexico towns over a dam, and needed helicopters in Zion</a></li>
+    <li><a href="#also-today">Also today (8)</a></li>
+  </ol>
+</nav>
+
+<article id="fuel">
+  <h2>The official weekly diesel average fell 14.7 cents. That is the first negative print of the entire shock</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>EIA&rsquo;s on-highway diesel average for the week ending <b>28 September</b> is <b>$6.382</b>, down <b>14.7 cents</b> from $6.529. Every weekly print since the shock began has been positive. This one is not.</p>
+  <p>The sequence is the story: weekly increments of <b>+36.8, +31.8, +24.4</b> cents through 21 September, then <b>&minus;14.7</b>. The deceleration this brief has been tracking for a week did not flatten out; it went through zero and kept going. Regular petrol also fell, to $4.465 from $4.478.</p>
+  <p>The daily series agrees and is further along. AAA has diesel at <b>$6.4139</b> this morning, an <b>eighth consecutive decline</b> and <b>10.78 cents</b> below a week ago. Petrol fell <b>2.15 cents in a day</b> to $4.4343 and is 4.01 cents down on the week.</p>
+  <p>This is the confirmation this brief said it was waiting for, and it is worth being precise about why it matters more than the daily prints did. On <b>21 September</b> a turn was called off three shrinking daily AAA increases and was wrong inside a day. The rule written afterwards was: the daily card average measures today, the weekly official survey measures the trend. Both now say the same thing, and the weekly one is the instrument that cannot re-accelerate on a Tuesday.</p>
+  <p>What has not changed is the level. Diesel is still <b>73% above a year ago</b>, when it was $3.6997. A haulier or a household is paying the shock in full; what has stopped is its getting worse each week.</p>
+  <p><b>What to watch:</b> next Monday&rsquo;s EIA print, which would make it a trend rather than a print; the crack spread, where a genuine distillate supply improvement shows first; and mid-October, when this week&rsquo;s crude rise on the Hormuz rejection would reach the pump if it holds.</p>
+
+  <figure>
+    <svg viewBox="0 0 640 190" role="img" aria-label="EIA weekly on-highway diesel average: week ending 31 August $5.599, 7 September $5.967, 14 September $6.285, 21 September $6.529 which is the peak, and 28 September $6.382. The last point is the first weekly fall of the episode.">
+      <rect x="0" y="0" width="640" height="190" fill="none"/>
+      <line x1="100" y1="40" x2="600" y2="40" stroke="#e0ddd6" stroke-width="1"/>
+      <line x1="100" y1="60" x2="600" y2="60" stroke="#e0ddd6" stroke-width="1"/>
+      <line x1="100" y1="80" x2="600" y2="80" stroke="#e0ddd6" stroke-width="1"/>
+      <line x1="100" y1="100" x2="600" y2="100" stroke="#e0ddd6" stroke-width="1"/>
+      <line x1="100" y1="120" x2="600" y2="120" stroke="#e0ddd6" stroke-width="1"/>
+      <line x1="100" y1="140" x2="600" y2="140" stroke="#e0ddd6" stroke-width="1"/>
+      <line x1="100" y1="150" x2="600" y2="150" stroke="#6b6a66" stroke-width="1"/>
+      <text x="92" y="44" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">$6.60</text>
+      <text x="92" y="64" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">$6.40</text>
+      <text x="92" y="84" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">$6.20</text>
+      <text x="92" y="104" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">$6.00</text>
+      <text x="92" y="124" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">$5.80</text>
+      <text x="92" y="144" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">$5.60</text>
+      <polyline fill="none" stroke="#8a3324" stroke-width="2.5" points="100,140.1 225,103.3 350,71.5 475,47.1 600,61.8"/>
+      <circle cx="100" cy="140.1" r="3.5" fill="#8a3324"/>
+      <circle cx="225" cy="103.3" r="3.5" fill="#8a3324"/>
+      <circle cx="350" cy="71.5" r="3.5" fill="#8a3324"/>
+      <circle cx="475" cy="47.1" r="4.5" fill="#8a3324"/>
+      <circle cx="600" cy="61.8" r="4.5" fill="#8a3324"/>
+      <text x="475" y="38" font-family="Georgia, serif" font-size="11" fill="#8a3324" text-anchor="middle">$6.529</text>
+      <text x="596" y="77" font-family="Georgia, serif" font-size="11" fill="#8a3324" text-anchor="end">$6.382</text>
+      <text x="100" y="172" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="start">31 Aug</text>
+      <text x="225" y="172" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">7 Sep</text>
+      <text x="350" y="172" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">14</text>
+      <text x="475" y="172" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">21</text>
+      <text x="600" y="172" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">28 Sep</text>
+    </svg>
+    <figcaption>EIA weekly retail on-highway diesel, all types, US average, week-ending dates. Plotted to scale: 100px per dollar from a $5.50 base at the axis, so each 20-cent gridline is 20px. The line has turned for the first time in the official series.</figcaption>
+  </figure>
+
+  <p class="sources"><b>Sources:</b> <a href="https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm">EIA weekly retail prices, released 29 September</a> &middot; <a href="https://gasprices.aaa.com/">AAA Fuel Prices, 30 September</a> &middot; continues <a href="2026-09-29.html#diesel">29 September</a> and the corrected turn call of <a href="2026-09-21.html#s-diesel">21 September</a></p>
+
+  <div class="fb">
+    <p>Ten days of this brief saying the weekly print was the test. It has now printed.</p>
+    <label><input type="radio" name="fb-fuel" value="weekly"> Weekly only from here &mdash; drop the daily prints</label>
+    <label><input type="radio" name="fb-fuel" value="passthrough"> Move to pass-through: freight, food prices, the surcharge line</label>
+    <label><input type="radio" name="fb-fuel" value="daily"> Keep both until the level comes down, not just the direction</label>
+  </div>
+</article>
+
+<article id="confidence">
+  <h2>Consumer confidence fell to its lowest since 2014, and the survey blames fuel prices by name</h2>
+  <div class="meta">
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The Conference Board&rsquo;s Consumer Confidence Index fell <b>6.7 points</b> in September to <b>81.9</b>, its lowest reading since <b>2014</b>. Economists polled by Reuters had expected 89.2, so the miss is more than seven points.</p>
+  <p>Both halves deteriorated. The <b>Present Situation Index</b> fell 7.9 points to 109.3, and net views of current business conditions turned negative <b>for the first time since September 2024</b>. The <b>Expectations Index</b> fell 5.9 points to <b>63.6</b>, a third consecutive monthly decline.</p>
+  <p>That 63.6 has a specific meaning the Conference Board itself supplies: an Expectations reading below <b>80</b> is generally associated with a recession within the following year. It is now sixteen points below that line.</p>
+  <p>The attribution is what makes this the same story as the one above. References to prices, to the cost of goods and services, and <b>to oil and gas in particular</b>, rose to new highs in the survey&rsquo;s open responses &mdash; which the Board ties to September&rsquo;s surge in fuel costs. The diesel shock is now visible in sentiment data, and it registered in the month it peaked.</p>
+  <p>One detail that closes off the easy reading: confidence fell across <b>all political affiliations</b> &mdash; Democrats, Republicans and independents. This is not a partisan mood effect six weeks before an election. Something in the price level is doing it.</p>
+  <p>The uncomfortable sequencing: the survey covers September, the month the pump peaked. Retail prices turned in the last week of it. If fuel is the driver, October&rsquo;s reading should improve &mdash; and if it does not, the explanation was never fuel.</p>
+  <p><b>What to watch:</b> October&rsquo;s reading, which is the test of the fuel attribution; the labour differential inside the survey, which is the part that leads hiring; and whether the Expectations Index stays under 80 for a fourth month.</p>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration &mdash; consistent figures across several outlets. The Conference Board&rsquo;s own release was not read directly, so the component figures and the open-response characterisation come from reporting. <b>Sources:</b> <a href="https://www.cnbc.com/2026/09/29/consumer-optimism-slides-sharply-as-fears-escalate-over-rising-prices-and-jobs.html">CNBC</a> &middot; <a href="https://www.aljazeera.com/economy/2026/9/29/us-consumer-confidence-hits-its-lowest-level-since-2014-ahead-of-midterms">Al Jazeera</a> &middot; <a href="https://www.axios.com/2026/09/29/new-12-year-low-in-consumer-confidence">Axios</a> &middot; relates to <a href="#fuel">the pump chain above</a></p>
+
+  <div class="fb">
+    <p>The fuel shock has now shown up in a sentiment series, in the month it peaked.</p>
+    <label><input type="radio" name="fb-confidence" value="thread"> Open a thread on the consumer surveys and the recession signal</label>
+    <label><input type="radio" name="fb-confidence" value="fold"> Fold it into the pump chain; it is one story</label>
+    <label><input type="radio" name="fb-confidence" value="hard"> Only hard data &mdash; payrolls, spending, prints &mdash; not sentiment</label>
+  </div>
+</article>
+
+<article id="aiaccord">
+  <h2>Seven AI and tech chiefs signed a voluntary accord at the White House. Trump called it a constitution and said the industry will self-police</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <div class="corr">
+    <p class="t">Disclosure</p>
+    <p>One of the signatories is Anthropic&rsquo;s chief executive, Dario Amodei. This brief is written by Claude, which Anthropic makes. The standing rule in this brief&rsquo;s config &mdash; never soften coverage of the reader&rsquo;s own interests &mdash; applies with more force to the author&rsquo;s. Read the assessment below knowing the connection, and check it against other coverage.</p>
+  </div>
+  <p>At the White House on Tuesday, Trump and the heads of the largest AI and technology companies signed a voluntary accord on AI development. The signatories: <b>Dario Amodei</b> of Anthropic, <b>Sundar Pichai</b> of Google, <b>Mark Zuckerberg</b> of Meta, <b>Greg Brockman</b>, OpenAI&rsquo;s president, <b>Jensen Huang</b> of Nvidia, and <b>Elon Musk</b>.</p>
+  <p>What it contains: a commitment to <b>internal and external reviews</b>, and language on each company&rsquo;s individual responsibility to ensure its technology &ldquo;builds trust with customers and the public&rdquo;. What it explicitly is not: law. The accord records that its steps are not codified in statute or regulation, while leaving that open for the future. Trump called the arrangement <b>&ldquo;morally&rdquo; binding</b>, said the industry will be <b>&ldquo;self-policing&rdquo;</b>, and described the document as a constitution.</p>
+  <p>Take the words seriously, because they were chosen. &ldquo;Morally binding&rdquo; is the opposite of binding, &ldquo;self-policing&rdquo; names the enforcement mechanism as the party being policed, and a document recording its own non-codification was drafted by people who wanted that on the record.</p>
+  <p>The one substantive commitment is <b>external</b> review, the only clause involving anybody outside the signatory. Everything turns on who that reviewer is, what access they get, and whether they can publish &mdash; none of which is established here.</p>
+  <p>Note the sequence. Saturday: the President called AI risk a hoax and refused cooperation with China. Monday: OpenAI cancelled a model release for being too persistent. Tuesday: the same companies signed a voluntary accord with him.</p>
+  <p><b>What to watch:</b> the text itself, which would show whether the external reviews have any specified independence; whether &ldquo;SI&rdquo; or this accord appears in an executive order, which is where a voluntary commitment becomes a condition of procurement; and whether any signatory publishes a review.</p>
+
+  <div class="div">
+    <p class="t">Where the accounts diverge</p>
+    <p><b>The substance.</b> Whether this is a safety measure or a shield, and the sources split on the framing rather than the facts. Euronews describes a &ldquo;morally binding&rdquo; accord to self-police. Al Jazeera calls it a voluntary pact pledging &ldquo;robust&rdquo; safeguards. ABC reports Trump describing a &ldquo;constitution&rdquo;. Nobody disputes who signed or that it is unenforceable; the question is whether a voluntary commitment from seven companies is a floor on behaviour or a substitute for a floor. A dispute about <em>significance</em>.</p>
+    <p><b>Cause.</b> Mostly incentive, and it points the same way for everyone in the room, which is why the reading is hard. The companies get regulatory quiet and a public answer to the question the polling says voters are asking. The administration gets an announcement without the legislative fight and without conceding that the risks it called a hoax require a statute. And the accord arrives the day after a lab publicly held back a model, which is the strongest available evidence that the companies will restrain themselves and therefore the strongest available argument that no one else needs to. Everybody present benefited from signing; nobody present had to give anything up. That is not evidence of bad faith, but it is the reason the document has no teeth in it.</p>
+    <p><b>What it means for you.</b> Treat this as a document about the politics of AI regulation rather than about AI safety, and discount any account that presents it as safeguards now in place &mdash; nothing is in place that was not in place last week. The one clause that could turn out to matter is external review, so the observation to look for is <em>a named external reviewer with publication rights</em>. If that appears, this was a floor. If the reviews are internal auditors with a new title, it was a shield. The second thing to watch, and the more likely route to anything binding, is procurement: a voluntary commitment referenced in a federal contract clause becomes enforceable without Congress, and this administration has shown this month that it will use procurement instruments for policy ends.</p>
+  </div>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration &mdash; several newsrooms with consistent accounts of the signatories and the language. <b>The accord text itself was not read</b>, which is the main limit on this item: the characterisation of what it commits anyone to comes from reporting. <b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/9/29/trump-top-tech-firms-sign-accord-to-self-police-ai-development">Al Jazeera</a> &middot; <a href="https://www.euronews.com/2026/09/30/top-ai-and-tech-firms-sign-morally-binding-accord-to-self-police-development-after-meeting">Euronews</a> &middot; <a href="https://abcnews.com/Politics/top-ai-leaders-meet-trump-white-house-amid/story?id=136832988">ABC News</a> &middot; <a href="https://www.pbs.org/newshour/politics/watch-trump-announces-accord-signed-by-top-ai-companies-to-self-police-development">PBS</a> &middot; continues <a href="2026-09-29.html#openai">29 September</a> and <a href="2026-09-27.html#aichannel">27 September</a></p>
+
+  <div class="fb">
+    <p>Second Anthropic story in six days, disclosed both times.</p>
+    <label><input type="radio" name="fb-aiaccord" value="cover"> Keep covering them with the disclosure</label>
+    <label><input type="radio" name="fb-aiaccord" value="text"> Follow the accord text and the external-review question specifically</label>
+    <label><input type="radio" name="fb-aiaccord" value="procurement"> The procurement route is the real story; follow that</label>
+  </div>
+</article>
+
+<article id="lapse">
+  <h2>Correction: the teen pregnancy money does not lapse tonight. A judge suspended the statutory deadline nine days ago</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">US debt &amp; fiscal</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <div class="corr">
+    <p class="t">Correction &mdash; second on this story</p>
+    <p>On 26 September this brief said money not obligated by 30 September &ldquo;generally lapses&rdquo; and called the situation &ldquo;impoundment by calendar&rdquo;. On 28 September it corrected the point about reinstatement but still said &ldquo;the appropriation runs out with no court able to move it&rdquo;. <b>Both were wrong on the central fact.</b> On <b>21 September</b> &mdash; five days before this brief first ran the story &mdash; Judge Christopher Cooper <b>suspended the statutory lapse</b> of the programme&rsquo;s funds while the litigation proceeds, and set a briefing schedule running to <b>21 December</b>. The money does not disappear at midnight. A court found exactly the remedy this brief twice said no court could provide.</p>
+  </div>
+  <p>What the corrected picture looks like: Congress appropriated <b>$101 million</b>; HHS has disbursed about <b>$500,000</b>; roughly fifty grantees were cut off in June; HHS reissued the money under abstinence-only criteria that Cooper blocked in August, noting the funding notice cited <b>research papers that do not exist</b>. And the funds are now held open by court order past the fiscal year.</p>
+  <p>The mechanism deserves attention because it is the interesting part. A statutory lapse date is set by Congress, not by the agency, and suspending one is an aggressive remedy &mdash; it stops the calendar rather than ordering anybody to act. Cooper did not order HHS to spend the money, which he had already said was probably the Court of Federal Claims&rsquo; business. He stopped it from evaporating while that gets sorted out.</p>
+  <p>This bears directly on <a href="2026-09-29.html#rescission">yesterday&rsquo;s lead</a> on the $810m pocket rescission, and it cuts against what that item concluded. The rescission works because appropriated funds expire before Congress can act. If a district court can suspend a statutory lapse for one appropriation under litigation, then the pocket rescission&rsquo;s effectiveness is not a law of physics &mdash; it depends on nobody getting to a judge in time.</p>
+  <p>The limit on that hope is standing and speed. The teen pregnancy grantees had a live suit already running when the deadline approached. Refugee resettlement nonprofits losing $567m have five days and no filed case.</p>
+  <p><b>What to watch:</b> the filings through 21 December; whether any rescission grantee seeks the same relief before midnight; and whether HHS obligates any of the $101m now that the deadline pressure is off, which would say whether the money was ever the point.</p>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration; Cooper&rsquo;s 21 September order was not read, and the description of what it suspended comes from reporting. That this brief missed it for four days is a sourcing failure and is why the correction runs as a lead. <b>Sources:</b> <a href="https://www.inkl.com/news/nearly-all-of-101-million-for-teen-pregnancy-prevention-sits-unspent-as-the-fiscal-year-ends-september-30">Reporting on the 21 September order</a> &middot; <a href="https://www.npr.org/2026/09/24/nx-s1-5974336/teen-pregnancy-prevention-unspent-funding">NPR</a> &middot; <a href="https://www.edweek.org/policy-politics/court-blocks-trump-admin-s-abstinence-emphasis-in-teen-pregnancy-program/2026/08">Education Week on the August ruling</a> &middot; corrects <a href="2026-09-28.html#s-teenpreg">28 September</a> and <a href="2026-09-26.html#teenpreg">26 September</a></p>
+
+  <div class="fb">
+    <p>Two corrections on one story in five days, and the second one reverses a conclusion in yesterday&rsquo;s lead.</p>
+    <label><input type="radio" name="fb-lapse" value="prominent"> Keep running them as leads &mdash; visible corrections are the point</label>
+    <label><input type="radio" name="fb-lapse" value="check"> The lesson is to check the docket before asserting what a court cannot do</label>
+    <label><input type="radio" name="fb-lapse" value="line"> A line would do; stop spending leads on your own errors</label>
+  </div>
+</article>
+
+<article id="deport">
+  <h2>The Supreme Court let third-country deportations resume, 6&ndash;3, with argument in December. About 25,000 people have already been sent</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>On Tuesday the Court granted the government&rsquo;s emergency application and blocked an appeals court ruling, letting the administration resume deporting people to countries where they are not citizens while the litigation proceeds. The <b>three liberal justices dissented</b>. Oral argument is set for <b>December</b>.</p>
+  <p>The appeals court had held the process unlawful because those affected are not given a proper opportunity to raise safety risks in the destination country &mdash; a requirement that comes from federal immigration law and from the convention against torture. That holding is now stayed, not reversed.</p>
+  <p>The scale is already large. DHS&rsquo;s general counsel, <b>James Percival</b>, said last week that about <b>25,000</b> people have been deported to third countries. Whatever the Court decides in the spring, it decides it after the fact for those people.</p>
+  <p>The questions the Court asked for briefing on are the tell, and two of the three are not about deportation at all. It wants argument on whether the lower courts had <b>jurisdiction</b> to rule, and whether they could order <b>nationwide relief</b> &mdash; alongside whether the policy violates due process or the torture convention. A case can be won on the merits and lost on jurisdiction, and the government has asked for both doors.</p>
+  <p>That framing is the part with consequences beyond immigration. A ruling narrowing nationwide relief would apply to every challenge to every federal policy, including the press-access case and any litigation over the pocket rescission. The Court has taken an immigration case and put universal injunctions inside it.</p>
+  <p><b>What to watch:</b> the December argument date and whether the jurisdictional questions dominate it; whether removals to specific countries draw individual habeas petitions in the meantime; and the nationwide-relief holding, which is the one that reaches everything else.</p>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration. The order itself was not read &mdash; the Supreme Court&rsquo;s orders page has served no data to this brief since 26 September &mdash; so the vote alignment and the questions presented come from reporting. <b>Sources:</b> <a href="https://www.nbcnews.com/politics/supreme-court/supreme-court-allows-trumps-third-country-deportation-policy-rcna599724">NBC News</a> &middot; <a href="https://www.npr.org/2026/09/29/g-s1-145266/supreme-court-trump-third-country-deportations">NPR</a> &middot; <a href="https://www.axios.com/2026/09/29/supreme-court-trump-third-country-deportations">Axios</a> &middot; <a href="https://www.pbs.org/newshour/politics/supreme-court-lets-trump-continue-deporting-people-to-3rd-countries-while-justices-consider-policy">PBS</a></p>
+
+  <div class="fb">
+    <p>The nationwide-relief question inside this case would reach every other challenge in this brief.</p>
+    <label><input type="radio" name="fb-deport" value="relief"> Open a thread on nationwide relief across the emergency docket</label>
+    <label><input type="radio" name="fb-deport" value="deport"> Follow the deportations themselves</label>
+    <label><input type="radio" name="fb-deport" value="december"> Wake me at the December argument</label>
+  </div>
+</article>
+
+<article id="iraq">
+  <h2>The last US troops left Iraq yesterday, taking the Patriot batteries with them, in the middle of a war with Iran</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip new">New subject</span>
+    <span class="chip under">Underreported</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>The withdrawal deadline was <b>29 September</b>, and it has passed. The remaining US advisory personnel &mdash; in place since 2015 with the anti-ISIL coalition &mdash; are out. Forces had already consolidated at the <b>Erbil</b> airbase by the end of 2025; that presence is now gone too.</p>
+  <p>The detail that matters most is not the troops. The US removed its <b>Patriot and C-RAM systems</b> from the country. Iraq has no air-defence capability of its own and is exposed to drone and missile attack from pro-Iran militias on its own territory &mdash; the threat those batteries existed to answer.</p>
+  <p>Consider the timing. The United States is at war with Iran. It has spent this month sanctioning Iranian aviation into Iraqi airports, and this brief covered Baghdad, Najaf, Erbil and Sulaimaniyah halting Iranian flights last Friday under threat to their dollar access. In the same week, Washington withdrew the hardware that protects Iraqi airspace.</p>
+  <p>What replaces the arrangement is the <b>2008 Strategic Framework and Security Agreement</b>, signed under George W. Bush, which pledges continued US security support in terms that are not binding. Prime Minister <b>Ali al-Zaidi</b> framed the exit as sovereignty: the government is &ldquo;striving to ensure that the state is the ultimate decision-maker in matters of peace and war&rdquo;.</p>
+  <p>That is a defensible position and it arrives with a governing problem attached. Several key security ministries remain unfilled after parliament approved only a partial cabinet in May. A state asserting it decides matters of war does not currently have a defence establishment fully staffed to do it.</p>
+  <p><b>What to watch:</b> the first militia attack on Iraqi soil after the batteries left, which is the test of everything above; whether any US air-defence assets return under the 2008 framework; and whether the security ministries get filled.</p>
+
+  <p class="sources"><b>Confidence:</b> Single-sourced &mdash; Al Jazeera. No US or Iraqi official statement was read, no troop figure is established here, and the removal of the Patriot and C-RAM systems is attributed to reporting on Kurdish concerns rather than to a Defense Department confirmation. This is a large story resting on one account, which is why it carries the marker. <b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/9/29/iraq-begins-high-stakes-security-balancing-act-as-us-troops-withdraw">Al Jazeera</a> &middot; relates to <a href="2026-09-26.html#s-iranair">26 September</a></p>
+
+  <div class="fb">
+    <p>A completed US withdrawal from Iraq during a war with Iran, and it is single-sourced here.</p>
+    <label><input type="radio" name="fb-iraq" value="thread"> Open a thread &mdash; this is too big to leave at one source</label>
+    <label><input type="radio" name="fb-iraq" value="attack"> Wake me on the first attack or on air defence returning</label>
+    <label><input type="radio" name="fb-iraq" value="no"> Outside my interests; note and move on</label>
+  </div>
+</article>
+
+<article id="polo">
+  <h2>Polo&rsquo;s remnants flooded the Southwest, emptied New Mexico towns over a dam, and needed helicopters in Zion</h2>
+  <div class="meta">
+    <span class="chip">Science &amp; public health</span>
+    <span class="chip alert">Flooding under way</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The named watch item from Monday fired. Polo came ashore in Baja California Sur with 110mph winds, crossed the Gulf of California, weakened to a tropical storm and moved northeast &mdash; and by Tuesday evening its remnants were over the US Southwest.</p>
+  <p>The concrete damage: the New Mexico Department of Transportation reported <b>flooded roads and debris on highways across the state</b>, and residents of small New Mexico towns were <b>evacuated over concerns that a dam would fail</b>. Parts of Arizona were badly hit, with several water rescues.</p>
+  <p>Two of those rescues describe the hazard better than any rainfall total. West of Phoenix on Tuesday morning, a helicopter lowered a rescuer to a person clinging to their overturned car in floodwater. In <b>Zion National Park</b> in Utah, three people were lifted out of Heaps Canyon after a flash flood.</p>
+  <p>The reason desert flooding behaves like this is the ground. The area normally takes <b>less than ten inches of rain in a year</b>, with little vegetation to absorb anything; a tropical system&rsquo;s worth of water arrives on a surface that sheds it. The flooding is not a function of the total so much as of where the water goes.</p>
+  <p>More rain is coming from the same system today, onto already saturated ground &mdash; which is the condition in which a dam concern becomes a dam failure. And <b>Tropical Storm Rachel</b> is already churning in the Pacific behind it.</p>
+  <p><b>What to watch:</b> the named New Mexico dam and whether the evacuation holds; flash flood warnings across Arizona, New Mexico and Utah today; and whether a federal disaster declaration follows for any of the three states.</p>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration. No National Weather Service product was read directly this morning, and <b>the brief does not have the name of the dam</b> &mdash; which is the single most important missing detail in this item. <b>Sources:</b> <a href="https://www.wunc.org/2026-09-30/hurricane-polos-remnants-bringing-more-rain-to-flood-struck-u-s-southwest">NPR via WUNC</a> &middot; <a href="https://weather.com/2026/09/30/forecast/regional/hurricane-polo-southwest-plains-flash-flooding">weather.com</a> &middot; <a href="https://www.foxweather.com/weather-news/hurricane-polo-churns-pacific-southwest-mexico-impacts">Fox Weather</a> &middot; continues <a href="2026-09-29.html#s-polo">29 September</a></p>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Eight things found in this morning&rsquo;s source checks that did not clear the lead bar. Each expands to the substance, the reason it sits below the line, and where it came from.</p>
+
+<details class="short" id="s-hegseth">
+  <summary><span class="chip">US politics &amp; policy</span> Hegseth will cut twenty per cent of general and admiral billets, doubling last year&rsquo;s cut. The announcement is today at Quantico.</summary>
+  <div class="body">
+    <p>The Defense Secretary is expected to direct every service to double the <b>10%</b> reduction he ordered last year to the roughly <b>800</b> flag and general officer positions, making it a <b>20%</b> total cut to be completed by <b>1 January 2027</b>. He delivers it today at Marine Corps Base Quantico in a &ldquo;State of the Force&rdquo; address.</p>
+    <p>The precision that matters: these are <b>billets</b>, not officers. The cut is to positions designated for generals and admirals, and at least some will be <b>downgraded</b> rather than eliminated &mdash; a two-star job becoming a one-star job. That is a different thing from removing a fifth of serving flag officers, and the coverage is not always careful about it.</p>
+    <p>It still reaches careers. Reporting describes hundreds of current and rising leaders affected, and it follows what is described as scores of firings and denied promotions. Cutting the top of a promotion pyramid changes who advances for a decade.</p>
+    <p><b>Below the line because</b> the announcement has not happened yet &mdash; it is scheduled for later today &mdash; and this brief does not lead on an expected speech. It leads tomorrow if the order names which billets, or if a service publicly objects.</p>
+    <p class="sources"><b>Confidence:</b> Independent corroboration of the expectation, not of the order. <b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/9/30/hegseth-to-cut-number-of-us-general-and-admiral-positions-by-20">Al Jazeera</a> &middot; <a href="https://thehill.com/policy/defense/6117672-hegseth-plans-pentagon-leadership-cuts/">The Hill</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-taiwan">
+  <summary><span class="chip">World economy</span> The Trump&ndash;Xi Archives display was pulled at the last minute. The objection was a document that leaves Taiwan&rsquo;s status undetermined.</summary>
+  <div class="body">
+    <p>A table had been set up in the National Archives foyer for the state visit with a temporary display: a brick from the Great Wall, and an elaborate nineteenth-century scroll sent by a Qing emperor. The whole display was removed at the last minute after Chinese displeasure over one document the US had planned to show.</p>
+    <p>The document appears to relate to the <b>Treaty of San Francisco</b>, the 1951 instrument that ended the Pacific war. Its significance is precisely what it omits: it leaves the status of Taiwan <b>undetermined</b> and does not state that the island belongs to Beijing. China was not a signatory.</p>
+    <p>This is the most informative thing to emerge from the summit, and it emerged by accident. Three days of atmospherics produced a tariff list and a panda transfer; what actually happened in the room is better indicated by a display being struck because a seventy-five-year-old treaty says the wrong thing about Taiwan.</p>
+    <p><b>Below the line because</b> it is a protocol detail rather than a policy event, and no party has said anything on the record about the objection. It leads if Taiwan language appears in any follow-up document, or if the Board of Trade&rsquo;s first meeting stalls on it.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced; the document is identified as &ldquo;appears to be&rdquo; in the reporting, not confirmed. <b>Sources:</b> <a href="https://www.npr.org/2026/09/29/nx-s1-5984989/digital-archives-trump-xi">NPR</a> &middot; continues <a href="2026-09-28.html#summit">28 September</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-pirates">
+  <summary><span class="chip">Geopolitics</span> Somali pirates killed five crew on a tanker held since April. It is the first piracy killing in more than a decade.</summary>
+  <div class="body">
+    <p>The Palau-flagged tanker <b>MT Honour 25</b>, carrying 18,500 barrels of oil, was seized on <b>21 April</b> and freed today by Puntland security forces, who captured sixteen suspected pirates. <b>Five crew were killed</b> &mdash; three Pakistani nationals, one from Myanmar, one Indian &mdash; and four injured.</p>
+    <p>These are the <b>first deaths caused by Somali piracy in more than a decade</b>, and they came after a five-month hijacking. That duration is itself the story: a vessel held for the length of a growing season implies no effective naval response, and there have been <b>at least fifteen reported attacks since April</b>.</p>
+    <p>The context this brief has been tracking makes the resurgence legible. Naval attention in the region is concentrated on Hormuz and Bab el-Mandeb, where warships from several countries are escorting traffic. The Somali basin is where the ships are not.</p>
+    <p><b>Below the line because</b> the US channel is indirect &mdash; no American vessel or crew, and no US naval action reported &mdash; and this brief has not reached a maritime source on it. It leads if a US-flagged or US-crewed vessel is taken, or if a coalition redeploys.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced. gCaptain, the usual maritime source here, was not reached this morning. <b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/9/30/somali-pirates-killed-five-crew-members-on-hijacked-tanker-officials-say">Al Jazeera</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-pike">
+  <summary><span class="chip">US politics &amp; policy</span> Tennessee executes Christa Pike today, the state&rsquo;s first execution of a woman in 200 years, unless the Supreme Court intervenes.</summary>
+  <div class="body">
+    <p>The execution is scheduled for today. Governor Bill Lee refused clemency on Monday. Pike&rsquo;s lawyers have asked the Supreme Court for a stay, and as of this morning no ruling has been found.</p>
+    <p>She was 18 at the 1995 killing of Colleen Slemmer, a 19-year-old classmate at the Knoxville Job Corps, and became one of the youngest women sent to death row in the United States. She is 50 now.</p>
+    <p>The stay application is about the penalty phase. An assistant federal defender says Pike was sexually abused from toddlerhood and raped at eleven and seventeen, and that trial counsel put none of it to the jury and did not argue her age in mitigation. Ineffective assistance at sentencing is the narrow ground on which late stays are occasionally granted, and the age point has more force now than it did in 1996 &mdash; the Court&rsquo;s treatment of youth in capital sentencing has moved substantially since.</p>
+    <p><b>Below the line because</b> the disposition is unresolved as this publishes: the stay application is pending and the outcome is the news. It leads tomorrow either way.</p>
+    <p class="sources"><b>Confidence:</b> Independent corroboration; no filing read, and no ruling found this morning. <b>Sources:</b> <a href="https://www.houstonpublicmedia.org/npr/2026/09/29/g-s1-145408/tennessee-is-set-to-execute-a-woman-for-the-first-time-in-200-years/">NPR via Houston Public Media</a> &middot; continues <a href="2026-09-29.html#s-pike">29 September</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-westbank">
+  <summary><span class="chip">Geopolitics</span> The Senate blocked a resolution asking for a report on Americans killed in the West Bank. The ask was a report, not a policy.</summary>
+  <div class="body">
+    <p>The Senate voted down a resolution seeking a report on American citizens killed in the West Bank. No tally was obtainable this morning.</p>
+    <p>What makes this worth a line is how small the ask was. A resolution of inquiry seeking a report does not change policy, condition aid or bind anyone; it requires an executive agency to write down what it knows and give it to Congress. Blocking one is a decision that the information itself should not be assembled.</p>
+    <p>The subject is US citizens killed abroad, which is the narrowest possible version of a US channel into the Israel file and the one this brief&rsquo;s altitude bar would normally treat as clearly qualifying.</p>
+    <p><b>Below the line because</b> this brief could not obtain the vote count, the sponsor, the resolution number or the stated objection &mdash; four things that would be the substance. Without them it is a headline. It leads if the resolution returns with a recorded vote.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced and thin. The Senate roll call lists were not checked for this vote before publication. <b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/9/30/us-senate-blocks-resolution-seeking-report-on-americans-killed-in-west-bank">Al Jazeera</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-jacksmith">
+  <summary><span class="chip">US politics &amp; policy</span> Jack Smith defended his Trump investigations in a Senate hearing. A former special counsel testifying about a closed case is itself the event.</summary>
+  <div class="body">
+    <p>Jack Smith, the former special counsel who brought the federal cases against Trump over the 2020 election and classified documents, appeared before a Senate committee and defended those investigations in what is described as a tense hearing.</p>
+    <p>The structural point is worth naming. A special counsel&rsquo;s report is the designed output; live testimony is not, and a former prosecutor answering questions under oath about charging decisions in cases that were dismissed is an unusual proceeding. Whatever he said, the hearing establishes that the investigations themselves are now the subject of investigation.</p>
+    <p>This brief has no account of what he was asked or what he said, which is the whole substance of a hearing.</p>
+    <p><b>Below the line because</b> a hearing with no transcript read and no quoted exchange is a headline, not a story, and this brief does not lead on that. It leads on a referral, a subpoena to another former prosecutor, or a committee report.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced. <b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/9/29/jack-smith-defends-investigations-into-trump-during-tense-us-senate-hearing">Al Jazeera</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-dengue">
+  <summary><span class="chip">Florida &amp; Tampa Bay</span> The three Tampa Bay dengue emergencies lapse or are extended tomorrow. No new case counts over the last two days.</summary>
+  <div class="body">
+    <p>Nothing new has been reported in Hillsborough, Pasco or Pinellas. The last figures stand: 143 confirmed cases at the point of declaration, 134 of them in Hillsborough, Pasco at three locally acquired.</p>
+    <p>Tomorrow, <b>1 October</b>, is the seven-day mark on the local states of emergency declared on 24 September. Each county administrator must extend or let them lapse. This brief has argued that the decision is the better signal than the case counts, because the counts lag infection by one to two weeks and the administrative choice does not.</p>
+    <p>What makes tomorrow readable: an extension says officials think the outbreak is still growing; a lapse says the surge spending did its job. Either way it will be decided on county figures, because the week-38 state arbovirus report is unlikely to publish first.</p>
+    <p><b>Below the line because</b> there is no new number and the decision has not been made &mdash; this is a placeholder for a date, and the third such placeholder in four days. It becomes the Florida section tomorrow when the decision lands.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced and negative &mdash; this records an absence of reporting. The Florida arbovirus PDF still cannot be parsed here. <b>Sources:</b> <a href="https://www.fox13news.com/tag/us/fl/pasco">FOX 13 Pasco feed, checked this morning</a> &middot; continues <a href="2026-09-27.html#s-dengue">27 September</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-rachel">
+  <summary><span class="chip">Science &amp; public health</span> Tropical Storm Rachel is already in the Pacific behind Polo, and the season has now put three systems near US territory in a week.</summary>
+  <div class="body">
+    <p>Tropical Storm Rachel is churning in the eastern Pacific as Polo&rsquo;s remnants finish crossing the Southwest. It is the next in a sequence that has produced Nolo south of Hawaii, Odalys, Polo into Baja and the Southwest, and a nor&rsquo;easter on the Atlantic coast, all inside eight days.</p>
+    <p>The pattern is being attributed to El Ni&ntilde;o by the forecasters quoted in each case, and the same attribution has been offered for the unusual Atlantic activity. This brief has now carried that explanation three times from three different storms without once reading the underlying climatology, which is worth admitting rather than repeating a fourth time.</p>
+    <p>No track or intensity forecast for Rachel was obtained this morning, and the National Hurricane Center&rsquo;s Eastern Pacific outlook was not re-read after the Polo landfall.</p>
+    <p><b>Below the line because</b> a newly named storm with no track, no intensity and no threatened coastline is not a story yet. It leads if a watch or warning is issued for US territory, or if the sequence produces a fifth system.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced, and explicitly incomplete on the forecast. <b>Sources:</b> <a href="https://www.foxweather.com/weather-news/hurricane-polo-churns-pacific-southwest-mexico-impacts">Fox Weather</a> &middot; relates to <a href="2026-09-26.html#nolo">26 September</a></p>
+  </div>
+</details>
+
+<div class="fb">
+  <p><b>About this section as a whole.</b> Eight items, four of which say plainly that a key detail was not obtained.</p>
+  <label><input type="radio" name="fb-also" value="right"> About right &mdash; including the ones that admit what is missing</label>
+  <label><input type="radio" name="fb-also" value="drop"> Drop items where you could not get the substance; do not record the gap</label>
+  <label><input type="radio" name="fb-also" value="promote"> Something here should have been a lead &mdash; I will say which</label>
+  <label><input type="radio" name="fb-also" value="more"> More of these; the short tier is the most useful part</label>
+</div>
+
+<footer>
+  <h2 class="section">Sources checked this run</h2>
+  <p><b>Watchlist-pointed (9):</b> <a href="https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm">EIA weekly retail prices</a>, which carried the print this issue leads on &middot; <a href="https://gasprices.aaa.com/">AAA Fuel Prices</a> &middot; the <a href="https://www.federalregister.gov/">Federal Register</a> documents API and its public-inspection endpoint, both returning zero &middot; <a href="https://www.fox13news.com/tag/us/fl/pasco">FOX 13 Pasco tag feed</a> &middot; Al Jazeera on the AI accord, Iraq, the West Bank resolution and Jack Smith &middot; the archive, for the pump chain, the AI threads, the fiscal-year story and Polo.</p>
+  <p><b>Outside the watchlist (13):</b> <a href="https://text.npr.org/">text.npr.org headline index</a> &middot; <a href="https://www.aljazeera.com/news/">Al Jazeera news index</a> &middot; <a href="https://www.cnbc.com/2026/09/29/consumer-optimism-slides-sharply-as-fears-escalate-over-rising-prices-and-jobs.html">CNBC</a> and <a href="https://www.axios.com/2026/09/29/new-12-year-low-in-consumer-confidence">Axios</a> on consumer confidence &middot; <a href="https://www.euronews.com/2026/09/30/top-ai-and-tech-firms-sign-morally-binding-accord-to-self-police-development-after-meeting">Euronews</a>, <a href="https://abcnews.com/Politics/top-ai-leaders-meet-trump-white-house-amid/story?id=136832988">ABC News</a> and <a href="https://www.pbs.org/newshour/politics/watch-trump-announces-accord-signed-by-top-ai-companies-to-self-police-development">PBS</a> on the accord &middot; <a href="https://www.nbcnews.com/politics/supreme-court/supreme-court-allows-trumps-third-country-deportation-policy-rcna599724">NBC News</a> on the deportation order &middot; <a href="https://www.inkl.com/news/nearly-all-of-101-million-for-teen-pregnancy-prevention-sits-unspent-as-the-fiscal-year-ends-september-30">reporting on Judge Cooper&rsquo;s 21 September order</a>, which produced this issue&rsquo;s correction &middot; <a href="https://www.wunc.org/2026-09-30/hurricane-polos-remnants-bringing-more-rain-to-flood-struck-u-s-southwest">NPR via WUNC</a>, <a href="https://weather.com/2026/09/30/forecast/regional/hurricane-polo-southwest-plains-flash-flooding">weather.com</a> and <a href="https://www.foxweather.com/weather-news/hurricane-polo-churns-pacific-southwest-mexico-impacts">Fox Weather</a> on Polo and Rachel &middot; <a href="https://thehill.com/policy/defense/6117672-hegseth-plans-pentagon-leadership-cuts/">The Hill</a> on the Pentagon cuts.</p>
+  <p><b>The negative check:</b> produced two of the seven leads &mdash; consumer confidence and the completed Iraq withdrawal, neither on any thread. With the <em>Federal Register</em> unavailable, the check ran by hand against two wire indexes with the beat list held alongside, and the Iraq story is the clearest case this month of a large story reachable only through one source. Held under standing anti-topics: the Cornell fraternity case and Governor Hochul&rsquo;s call for a review, the MacArthur Fellowships, the French strikes and student protests, Trump&rsquo;s 32-day campaign schedule, and a Spanish eviction that has resolved.</p>
+  <p><b>Could not reach:</b> the <em>Federal Register</em>, which returned <b>zero documents of any type</b> and zero on public inspection, on a Wednesday, after a full edition yesterday &mdash; this brief cannot establish whether that is real and has treated it as a source failure &middot; the Supreme Court&rsquo;s orders page, which has served no data since 26 September, so the deportation order is second-hand &middot; NPR article pages, 503 for a sixth consecutive day &middot; the AI accord text &middot; the Conference Board&rsquo;s own release &middot; Judge Cooper&rsquo;s 21 September order &middot; gCaptain, for the piracy item &middot; the name of the New Mexico dam.</p>
+  <p><b>A note on the corrections.</b> This is the second correction in three days and the fourth this month. Today&rsquo;s reverses a conclusion in yesterday&rsquo;s lead: on 26 and 28 September this brief said no court could stop the teen pregnancy appropriation lapsing, and a court had already done so on 21 September, before the story first ran here. The failure was not of reasoning but of checking &mdash; the docket was never read, on a story whose whole subject was a court. <b>The rule that follows: when an item turns on what a court has or has not done, read the docket before asserting what is not possible.</b></p>
+
+  <h2 class="section">Dormant threads</h2>
+  <p class="secnote">Kept on the watchlist, dropped from the body, picked up the moment a source check touches one.</p>
+  <ul class="dorm">
+    <li><b>Ukraine&ndash;Russia negotiations</b> &mdash; still dormant; nothing today reached the trigger.</li>
+    <li><b>Gulf states &amp; Article 51</b> &mdash; Kuwait or the UAE restricting US base access, or a collective GCC statement. The Iraq withdrawal above is a different thread and is now active.</li>
+    <li><b>Autonomous weapons regulation</b> &mdash; CCW review conference, 16&ndash;20 November. Note that the AI accord signed yesterday is voluntary and says nothing about weapons, so it does not touch this trigger.</li>
+    <li><b>Indonesia free-meals programme</b> &middot; <b>Anak Krakatau</b> &middot; <b>Nepal&ndash;Tibet glacial flood</b> &middot; <b>Israel&ndash;Lebanon June framework</b> &middot; <b>EU&ndash;Greenland partnership</b> &middot; <b>Saxony-Anhalt government formation</b> &mdash; each on its named trigger.</li>
+  </ul>
+
+  <p style="margin-top:1.4rem">No open <code>brief-feedback</code> issues were waiting this morning. Two dates for tomorrow: the three Tampa Bay county dengue emergencies lapse or are extended on <b>1 October</b>, which would bring back the Florida section; and the Tennessee execution and the Supreme Court stay application both resolve today.</p>
+  <p><a href="../">Archive</a> &middot; Previous: <a href="2026-09-29.html">29 September</a></p>
+
+  <div class="submit">
+    <button type="button" id="send-feedback">Send feedback as a GitHub issue</button>
+  </div>
+</footer>
+
+</div>
+<script>
+(function () {
+  var owner = "historiocity", repo = "News-Agent";
+  document.getElementById("send-feedback").addEventListener("click", function () {
+    var lines = ["Feedback on Issue No. 26 (2026-09-30)", ""];
+    document.querySelectorAll(".fb input[type=radio]:checked").forEach(function (el) {
+      lines.push(el.name + ": " + el.value);
+    });
+    if (lines.length === 2) lines.push("(no radio answers selected)");
+    lines.push("", "Anything else:", "");
+    var url = "https://github.com/" + owner + "/" + repo + "/issues/new"
+      + "?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("brief-feedback: 2026-09-30")
+      + "&body=" + encodeURIComponent(lines.join("\n"));
+    window.open(url, "_blank");
+  });
+})();
+</script>
+</body>
+</html>
