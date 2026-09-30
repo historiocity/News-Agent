@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>The Brief — Wednesday, 30 September 2026 (Grok edition)</title>
+<style>
+:root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+@media (prefers-color-scheme: dark) {
+:root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+.wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+.kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+.sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+.prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+nav ol { margin:0; padding-left:1.2rem; }
+nav li { margin:.25rem 0; }
+nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+a { color:var(--link); }
+article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+.secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+.meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+.chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+.chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+.chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+.sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+.div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+.div p { margin:.4rem 0; }
+.div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+.corr { background:var(--box); border-left:4px solid var(--accent); padding:.8rem 1rem; margin:0 0 1.6rem; font-size:.95rem; }
+.corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+.corr p { margin:.45rem 0; }
+details { margin-top:.8rem; }
+details summary { cursor:pointer; color:var(--link); }
+.exp { margin-top:.6rem; }
+.also-list { margin:0; }
+.also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+.also-list details:first-of-type { border-top:1px solid var(--rule); }
+.also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+.also-list .exp { font-size:.94rem; padding-left:.2rem; }
+footer { color:var(--muted); font-size:.88rem; }
+.fb { margin-top:1rem; font-size:.9rem; }
+.fb p { margin:.6rem 0 .2rem; }
+.fb label { display:block; margin:.15rem 0; }
+.submit { margin-top:2rem; }
+button { font:inherit; padding:.45rem .8rem; }
+ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+ul.dorm li { margin:.3rem 0; }
+figure { margin:1.2rem 0 0; }
+figcaption { font-size:.84rem; color:var(--muted); margin-top:.4rem; line-height:1.5; }
+svg { width:100%; height:auto; display:block; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<p class="kicker">The Brief · Issue No. 26-grok · Wednesday, 30 September 2026 · Morning / Grok edition</p>
+<h1>The CAFE rollback is now a Register final rule; the $810&nbsp;m rescission hits the FR on fiscal-year-end day; EIA’s weekly diesel fell for the first time; consumer confidence named oil and gas; a judge had already stopped the teen-pregnancy money from lapsing</h1>
+<p class="sub">Nine stories at length, ten in brief. Independent Grok gather for the 7am&nbsp;ET Wednesday cron; does not overwrite Claude/Action <a href="2026-09-30.html">Issue&nbsp;26</a>. Continuity for accountability only: <a href="2026-09-29-grok.html">29&nbsp;Sep Grok</a> · <a href="2026-09-28-grok.html">28&nbsp;Sep Grok</a> · framework <a href="2026-09-10b.html">2026-09-10b</a>.</p>
+<p class="prov"><b>20 sources checked, 12 of them outside the active watchlist.</b> Document channel open this morning: FR API returned <b>118 documents</b> for Wednesday 30&nbsp;September (23 RULE/PRORULE, 94 NOTICE, 1 PRESDOCU ceremonial). Public-inspection endpoint still returned zero. An earlier same-day run that saw FR count&nbsp;0 is recorded as a source-failure window, not as “the government published nothing” — the edition exists (Vol.&nbsp;91 No.&nbsp;188) and produced three of today’s leads. Negative check reshaped the order: NHTSA’s SAFE&nbsp;III CAFE final rule, the OMB $810&nbsp;m rescissions FR notice on fiscal-year-end day, and Treasury’s Stablecoin Certification Review Committee interim final were not on Tuesday’s OpenAI/Title&nbsp;IX/SBA menu. Parallel Claude Issue&nbsp;26 already ran diesel/confidence/AI-accord/Cooper/SCOTUS/Iraq — this edition independently verified primaries (including Cooper’s 21&nbsp;Sep order PDF and the Conference Board PR wire) and leads with the FR documents Claude’s earlier gather missed.</p>
+</header>
+
+<nav>
+<ol>
+<li><a href="#cafe">The CAFE rollback is now a Federal Register final rule — ~34.9&nbsp;mpg by MY2031, credit trading gone from MY2028, effective 30&nbsp;November</a></li>
+<li><a href="#rescission">Fiscal year ends tonight: OMB publishes the $810&nbsp;m pocket-rescission special message in the Register</a></li>
+<li><a href="#cooper">Correction: a judge suspended the teen-pregnancy appropriation’s lapse on 21&nbsp;September — the money does not evaporate at midnight</a></li>
+<li><a href="#oil">One chain: EIA’s weekly diesel fell 14.7¢ — the first negative print of the shock — as AAA posted an eighth daily fall</a></li>
+<li><a href="#confidence">Consumer confidence hit a twelve-year low; the Board’s open responses name oil and gas</a></li>
+<li><a href="#aiaccord">Trump and six tech chiefs signed a voluntary “Joint Commitment on Frontier Responsibilities”; he called it almost a constitution</a></li>
+<li><a href="#scrc">Treasury put out the Stablecoin Certification Review Committee’s forms — the state-regime gate under the GENIUS Act</a></li>
+<li><a href="#deport">SCOTUS stayed the third-country-deportation block, 6–3, and set December argument — including nationwide-relief power</a></li>
+<li><a href="#iraq">US forces exit Iraq on the deadline; Patriot and C-RAM batteries went with them</a></li>
+</ol>
+<p class="also">Also today (10) — ranked below the line, each one opens.</p>
+</nav>
+
+<!-- 1 CAFE -->
+<article id="cafe">
+<h2>The CAFE rollback is now a Federal Register final rule — ~34.9&nbsp;mpg by MY2031, credit trading gone from MY2028, effective 30&nbsp;November</h2>
+<div class="meta">
+<span class="chip">US politics &amp; policy</span>
+<span class="chip">Energy &amp; grid</span>
+<span class="chip">Primary source</span>
+<span class="chip">Continuation</span>
+</div>
+<p>NHTSA’s <b>Safer Affordable Fuel-Efficient (SAFE) Vehicles Rule&nbsp;III</b> published this morning as a final rule (FR Doc <b>2026-19964</b>). It “substantially recalibrat[es]” light-duty CAFE standards for model years <b>2022–2026</b> and <b>2027–2031</b>, and it amends compliance pathways including vehicle classification. Effective date: <b>30 November 2026</b>.</p>
+<p>Two load-bearing choices are now on the record, not in a briefing-room summary. The agency is <b>finalizing removal of the inter-manufacturer credit trading program starting in MY&nbsp;2028</b>. And the rule’s own projection language points to a combined industry fleetwide average of roughly <b>34.9&nbsp;mpg in MY&nbsp;2031</b> — the same neighbourhood as Monday’s ~34.5&nbsp;mpg figure from the DOT announcement, now attached to a signed final rule rather than a press release.</p>
+<p>Monday’s transportation.gov text and Saturday’s presidential announcement are therefore superseded as the document of record. What to litigate, comment on, or model is this Register package (pages 61988–62291), not the weekend framing.</p>
+<p><b>What to watch:</b> manufacturer suits timed to the 30&nbsp;November effective date; whether EPA’s parallel greenhouse-gas pathway is rewritten to match; and the first model-year credit market that actually closes when trading ends in MY&nbsp;2028.</p>
+<div class="div">
+<span class="t">Divergence — announcement versus rule</span>
+<p><b>What is disputed.</b> Not that a rollback was coming — that was public Saturday and detailed Monday — but whether an announcement is enough to reprice compliance. Fleets and litigants price the Federal Register text and the effective date.</p>
+<p><b>Why they differ.</b> Briefing rooms summarise; the Register binds. Credit-trading elimination and the MY2022–2031 reset only become operational facts when the CFR changes.</p>
+<p><b>What it means for you.</b> Treat Monday’s story as the preview and today’s FR document as the lead. The ~34.9&nbsp;mpg / MY2028 trading-kill pair is now citable to a final rule number.</p>
+</div>
+<p class="sources"><b>Sources:</b>
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/09/30/2026-19964.txt">FR full text 2026-19964 (SAFE&nbsp;III final rule; read)</a> ·
+<a href="https://www.transportation.gov/briefing-room">DOT briefing room (Monday announcement; continuity)</a> ·
+continues <a href="2026-09-28-grok.html">28&nbsp;Sep Grok CAFE lead</a>
+</p>
+<div class="fb">
+<p>Document arrival after Monday’s announcement — right lead weight?</p>
+<label><input type="radio" name="fb-cafe" value="right"/> Yes — the FR text is the story</label>
+<label><input type="radio" name="fb-cafe" value="lower"/> Lower — Monday already covered the substance</label>
+<label><input type="radio" name="fb-cafe" value="litigation"/> Wake me on the first suit or EPA companion</label>
+</div>
+</article>
+
+<!-- 2 RESCISSION -->
+<article id="rescission">
+<h2>Fiscal year ends tonight: OMB publishes the $810&nbsp;m pocket-rescission special message in the Register</h2>
+<div class="meta">
+<span class="chip">US debt &amp; fiscal</span>
+<span class="chip">Primary source</span>
+<span class="chip">Continuation</span>
+</div>
+<p>On the last day of FY2026, the Federal Register carries OMB’s notice (FR Doc <b>2026-19965</b>) publishing the President’s 25&nbsp;September special message under Impoundment Control Act §1014(d): <b>11 rescissions totaling $810&nbsp;million</b>. Release date on the face of the notice: 25&nbsp;September. The largest line remains <b>$567,401,904</b> from HHS Refugee and Entrant Assistance (075-1503 2024/2026). Other quantified lines in the Register enclosure include DHS Alternatives to Detention case-management ($15&nbsp;m), USCIS citizenship/integration grants ($10&nbsp;m), Education migrant-student competitive grants (~$25&nbsp;m), DOJ Community Relations Service ($15&nbsp;m), MBDA ($10&nbsp;m), Education international/foreign-language domestic programs (~$70&nbsp;m), and AHRQ (~$28&nbsp;m). As of Tuesday’s reporting, published components still do not fully sum to the $810&nbsp;m headline — chart only what is quantified.</p>
+<p>The pocket-rescission logic is unchanged: propose so close to year-end that the ICA’s 45-day continuous-session clock cannot run before unobligated balances expire. What <em>has</em> changed overnight is the document channel — yesterday’s White House PDF is now a Register notice on the day the calendar bites — and the court point developed in the next lead.</p>
+<p><b>What to watch:</b> whether any of the 11 accounts show new obligations before midnight; any CR rider aimed at pocket rescissions; whether a grantee seeks the same §1502(b) hold that Cooper granted on the teen-pregnancy funds.</p>
+<p class="sources"><b>Sources:</b>
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/09/30/2026-19965.txt">FR full text 2026-19965 (OMB rescissions notice; read)</a> ·
+continues <a href="2026-09-29-grok.html#rescission">29&nbsp;Sep Grok rescission lead</a>
+</p>
+<div class="fb">
+<p>FR publication on FY-end day — right continuation?</p>
+<label><input type="radio" name="fb-rescission" value="right"/> Yes — the Register + midnight is the update</label>
+<label><input type="radio" name="fb-rescission" value="fold"/> Fold into the Cooper correction; one fiscal story</label>
+<label><input type="radio" name="fb-rescission" value="done"/> Done — stop after tonight</label>
+</div>
+</article>
+
+<!-- 3 COOPER -->
+<article id="cooper">
+<h2>Correction: a judge suspended the teen-pregnancy appropriation’s lapse on 21&nbsp;September — the money does not evaporate at midnight</h2>
+<div class="meta">
+<span class="chip">US politics &amp; policy</span>
+<span class="chip">US debt &amp; fiscal</span>
+<span class="chip">Primary source</span>
+<span class="chip">Independent corroboration</span>
+</div>
+<div class="corr">
+<div class="t">Correction — accountability to prior frames</div>
+<p>Parallel Claude editions on 26 and 28&nbsp;September said appropriated teen-pregnancy money “generally lapses” and that “the appropriation runs out with no court able to move it.” <b>That was wrong on the central fact.</b> On <b>21 September</b> — five days before that story first ran — Judge Christopher&nbsp;R. Cooper (D.D.C., <em>Hennepin County v. HHS</em>, 26-cv-2460) <b>granted</b> plaintiffs’ motion to hold funds and <b>ordered that the statutory lapse of the TPP Program funds is suspended during the pendency of the litigation</b>, citing 31&nbsp;U.S.C. §1502(b) and D.C.&nbsp;Circuit authority (<em>Goodluck v. Biden</em>). This Grok edition read the order PDF. Grok’s own 29&nbsp;September rescission lead treated Wednesday midnight as arithmetic destiny for pocket rescissions; Cooper’s order shows a district court <em>can</em> stop a statutory lapse when a live case exists. Effectiveness of a pocket rescission depends on nobody reaching a judge in time — not on physics.</p>
+</div>
+<p>The underlying programme facts, from reachable reporting triangulated against the order: Congress appropriated about <b>$101&nbsp;million</b> for Teen Pregnancy Prevention; HHS had disbursed only about <b>$580,000</b> as of late September; dozens of grantees were terminated in June; Cooper’s August preliminary injunction blocked new abstinence-only NOFO conditions (and noted funding-notice citations to research that does not exist) but did <em>not</em> reinstate terminated grants. The September&nbsp;21 order keeps the appropriation from evaporating while merits briefing runs (schedule into December). It does not order HHS to spend.</p>
+<p><b>What to watch:</b> whether HHS obligates any of the held $101&nbsp;m now that midnight pressure is off; dispositive filings through December; whether any $810&nbsp;m rescission grantee seeks the same hold before balances die.</p>
+<p class="sources"><b>Sources:</b>
+<a href="https://litigationtracker.law.georgetown.edu/wp-content/uploads/2026/07/Hennepin-County_2026.09.21_ORDER-ON-MOTION-TO-HOLD-FUNDS.pdf">Cooper order, 21&nbsp;Sep 2026 (PDF; read)</a> ·
+<a href="https://www.medicaldaily.com/teen-pregnancy-prevention-funds-unspent-september-30-479187">Medical Daily on unspent funds and the hold</a> ·
+<a href="https://news.bloomberglaw.com/health-law-and-business/judge-extends-teen-pregnancy-fund-deadline-amid-legal-fight">Bloomberg Law on the 21&nbsp;Sep extension</a> ·
+corrects the “no court remedy” frame in parallel Claude 26/28&nbsp;Sep issues; revises the clock logic in <a href="2026-09-29-grok.html#rescission">29&nbsp;Sep Grok rescission</a>
+</p>
+<div class="fb">
+<p>Visible correction as a lead — right weight?</p>
+<label><input type="radio" name="fb-cooper" value="prominent"/> Keep corrections as leads when they reverse a conclusion</label>
+<label><input type="radio" name="fb-cooper" value="docket"/> The lesson is: read the docket before asserting what a court cannot do</label>
+<label><input type="radio" name="fb-cooper" value="line"/> A line would do; stop spending leads on process errors</label>
+</div>
+</article>
+
+<!-- 4 OIL -->
+<article id="oil">
+<h2>One chain: EIA’s weekly diesel fell 14.7¢ — the first negative print of the shock — as AAA posted an eighth daily fall</h2>
+<div class="meta">
+<span class="chip">Energy &amp; grid</span>
+<span class="chip">Macro &amp; markets</span>
+<span class="chip">Geopolitics</span>
+<span class="chip">Primary source</span>
+<span class="chip">Continuation</span>
+</div>
+<p>EIA’s weekly on-highway diesel (ULSD) for the week ending <b>28 September</b> printed <b>$6.382</b>, down <b>14.7 cents</b> from $6.529 the prior week. Every weekly increment since the shock began had been positive (+36.8¢, +31.8¢, +24.4¢ through 21&nbsp;Sep). This one is not. Regular gasoline (EIA) eased to <b>$4.465</b> from $4.478.</p>
+<p>The daily card agrees and is further along. AAA national averages this morning: diesel <b>$6.4139</b> (yesterday $6.4391; week ago $6.5217) — an <b>eighth consecutive decline</b> — and regular <b>$4.4343</b> (yesterday $4.4558). Level still brutal: diesel remains about <b>73% above</b> the year-ago AAA print ($3.6997).</p>
+<p>Standing discipline, written after the 21&nbsp;Sep false turn: the daily average measures today; the weekly official survey measures the trend. Both now say the same thing, and the weekly instrument is the one that cannot re-accelerate on a Tuesday.</p>
+<p>Physical half of the same chain (not a second oil lead): gCaptain continues to show Gulf of Oman ship-to-ship transfer capacity pressed as Saudi barrels reroute around the damaged East–West system; Handelsblatt’s front ticker this morning showed Brent near <b>$97.63 (+2.0%)</b> — direction only, given the standing three-feed spread. No new named-passage war-risk premium and no fresh JWC listed-areas text.</p>
+<p><b>What to watch:</b> next Monday’s EIA weekly (second negative would make a trend); the crack / distillate inventory signal; October Conference Board and CPI food-at-home / transport services as the pass-through tests.</p>
+<figure>
+<svg viewBox="0 0 640 190" role="img" aria-label="EIA weekly on-highway diesel: 31 Aug 5.599, 7 Sep 5.967, 14 Sep 6.285, 21 Sep 6.529 peak, 28 Sep 6.382 first weekly fall.">
+<rect x="0" y="0" width="640" height="190" fill="none"/>
+<line x1="100" y1="40" x2="600" y2="40" stroke="#e0ddd6" stroke-width="1"/>
+<line x1="100" y1="60" x2="600" y2="60" stroke="#e0ddd6" stroke-width="1"/>
+<line x1="100" y1="80" x2="600" y2="80" stroke="#e0ddd6" stroke-width="1"/>
+<line x1="100" y1="100" x2="600" y2="100" stroke="#e0ddd6" stroke-width="1"/>
+<line x1="100" y1="120" x2="600" y2="120" stroke="#e0ddd6" stroke-width="1"/>
+<line x1="100" y1="140" x2="600" y2="140" stroke="#e0ddd6" stroke-width="1"/>
+<line x1="100" y1="150" x2="600" y2="150" stroke="#6b6a66" stroke-width="1"/>
+<text x="92" y="44" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">$6.60</text>
+<text x="92" y="64" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">$6.40</text>
+<text x="92" y="84" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">$6.20</text>
+<text x="92" y="104" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">$6.00</text>
+<text x="92" y="124" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">$5.80</text>
+<text x="92" y="144" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">$5.60</text>
+<polyline fill="none" stroke="#8a3324" stroke-width="2.5" points="100,140.1 225,103.3 350,71.5 475,47.1 600,61.8"/>
+<circle cx="100" cy="140.1" r="3.5" fill="#8a3324"/>
+<circle cx="225" cy="103.3" r="3.5" fill="#8a3324"/>
+<circle cx="350" cy="71.5" r="3.5" fill="#8a3324"/>
+<circle cx="475" cy="47.1" r="3.5" fill="#8a3324"/>
+<circle cx="600" cy="61.8" r="3.5" fill="#8a3324"/>
+<text x="100" y="170" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">8/31</text>
+<text x="225" y="170" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">9/7</text>
+<text x="350" y="170" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">9/14</text>
+<text x="475" y="170" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">9/21</text>
+<text x="600" y="170" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">9/28</text>
+<text x="600" y="55" font-family="Georgia, serif" font-size="11" fill="#8a3324" text-anchor="middle">$6.382</text>
+</svg>
+<figcaption>EIA weekly on-highway diesel (ULSD), dollars per gallon. Peak w/e 21&nbsp;Sep at $6.529; first weekly decline w/e 28&nbsp;Sep at $6.382 (−14.7¢). Source: EIA retail gasoline and diesel table.</figcaption>
+</figure>
+<p class="sources"><b>Sources:</b>
+<a href="https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm">EIA weekly retail gasoline and diesel (primary)</a> ·
+<a href="https://gasprices.aaa.com/">AAA national averages (primary)</a> ·
+<a href="https://gcaptain.com/">gCaptain front (STS / Hormuz physicals)</a> ·
+Handelsblatt ticker (Brent direction only)
+</p>
+<div class="fb">
+<p>First negative EIA weekly — keep as the pump instrument?</p>
+<label><input type="radio" name="fb-oil" value="weekly"/> Lead on the weekly until a second print confirms</label>
+<label><input type="radio" name="fb-oil" value="passthrough"/> Move weight to freight / food pass-through</label>
+<label><input type="radio" name="fb-oil" value="both"/> Keep daily + weekly until the level, not just the slope, breaks</label>
+</div>
+</article>
+
+<!-- 5 CONFIDENCE -->
+<article id="confidence">
+<h2>Consumer confidence hit a twelve-year low; the Board’s open responses name oil and gas</h2>
+<div class="meta">
+<span class="chip">Macro &amp; markets</span>
+<span class="chip new">New subject</span>
+<span class="chip">Independent corroboration</span>
+</div>
+<p>The Conference Board Consumer Confidence Index fell <b>6.7 points to 81.9</b> in September (1985=100), from a revised 88.6 in August — lowest since <b>2014</b>, and well below the ~89 consensus. Present Situation −7.9 to <b>109.3</b>; Expectations −5.9 to <b>63.6</b>, a third consecutive decline. The Board’s own framing: Expectations below <b>80</b> are associated with recession within a year. Survey window: 1–23 September (inside the rate hike and the fuel surge).</p>
+<p>Chief economist Dana Peterson’s PR wire: write-in references to prices and to <b>“oil and gas prices in particular”</b> “rose to new heights,” tied to September’s fuel surge. Net views of current business conditions turned negative for the first time since September 2024. Family current finances flipped so that “bad” overtook “good” for only the second time since that question was introduced. Average 12-month inflation expectations rose to <b>6.1%</b>.</p>
+<p>October is the attribution test: the pump turned in the last week of September, after much of this survey was already in. If fuel drove the print, October should improve; if it does not, the explanation was never only fuel.</p>
+<p><b>What to watch:</b> October’s reading; the labour differential inside the survey; a fourth month of Expectations under 80.</p>
+<p class="sources"><b>Sources:</b>
+<a href="https://www.prnewswire.com/news-releases/us-consumer-confidence-fell-in-september-302892867.html">Conference Board via PR Newswire (components + Peterson quotes; read)</a> ·
+<a href="https://bankingjournal.aba.com/2026/09/consumer-confidence-falls-in-september/">ABA Banking Journal</a> ·
+<a href="https://www.aljazeera.com/economy/2026/9/29/us-consumer-confidence-hits-its-lowest-level-since-2014-ahead-of-midterms">Al Jazeera</a> ·
+relates to <a href="#oil">the pump chain</a>
+</p>
+<div class="fb">
+<p>Sentiment series now naming the fuel shock — open a thread?</p>
+<label><input type="radio" name="fb-confidence" value="thread"/> Yes — consumer surveys + recession signal</label>
+<label><input type="radio" name="fb-confidence" value="fold"/> Fold into the pump chain</label>
+<label><input type="radio" name="fb-confidence" value="hard"/> Hard data only — payrolls, spending, CPI</label>
+</div>
+</article>
+
+<!-- 6 AI ACCORD -->
+<article id="aiaccord">
+<h2>Trump and six tech chiefs signed a voluntary “Joint Commitment on Frontier Responsibilities”; he called it almost a constitution</h2>
+<div class="meta">
+<span class="chip">AI &amp; tech industry</span>
+<span class="chip">Lab safety</span>
+<span class="chip">Independent corroboration</span>
+</div>
+<div class="corr">
+<div class="t">Disclosure</div>
+<p>One signatory is <b>Elon Musk / xAI</b>. This brief is written by Grok Bot (xAI). Standing rule — never soften coverage of the reader’s (or the author’s) interests — applies. Read the assessment knowing the connection. Anthropic’s Dario Amodei also signed; that is reported as a load-bearing fact of the lunch, not as an endorsement.</p>
+</div>
+<p>After Tuesday’s White House lunch with Speaker Johnson, Trump announced a voluntary <b>Joint Commitment on Frontier Responsibilities</b> (also framed as a White House Accord on “super intelligence”). Reachable accounts name signatories including <b>Amodei (Anthropic), Brockman (OpenAI), Pichai (Google), Zuckerberg (Meta), Musk (xAI), and Huang (Nvidia)</b>. The pledge language, as reported: “robust” internal controls and monitoring; internal teams to remediate; partner with <b>independent external auditors</b>; meet to set standards. The text, per Al&nbsp;Jazeera, does not name who those auditors are, and says it “may make sense” later to codify measures into law. Trump: “almost like a constitution”; the deal is “morally binding”; he is seeing “tremendous self-policing.”</p>
+<p>Sequence that makes this a Wednesday lead rather than a colour item: Saturday’s “hoax” / no-China-integration line → Monday’s OpenAI Astra scrap for authorisation failures → Tuesday’s voluntary accord with the same industry. The instrument that would turn atmospherics into constraint is still a named external reviewer with publication rights — or a procurement clause that incorporates the pledge.</p>
+<p><b>What to watch:</b> the full accord text (Washington Examiner published a “read in full” version; treat secondary copies carefully); whether any signatory names an auditor; whether “super intelligence” or the Joint Commitment appears in an EO or FAR clause.</p>
+<div class="div">
+<span class="t">Divergence — floor or shield?</span>
+<p><b>What is disputed.</b> Not who signed or that the pledge is unenforceable as law — that is on the face of the reporting. The fight is whether voluntary external-audit language is a floor under lab behaviour or a substitute for one.</p>
+<p><b>Why they differ.</b> A scrap (Astra) is evidence labs will hold models; a voluntary accord the next day is also the best available argument that no statute is needed. Both readings use the same Monday–Tuesday sequence.</p>
+<p><b>What it means for you.</b> Discount “safeguards now in place.” Nothing binding that was not binding Monday. Score it when an auditor is named with access and publication rights, or when procurement incorporates the commitment.</p>
+</div>
+<p class="sources"><b>Sources:</b>
+<a href="https://www.aljazeera.com/news/2026/9/29/trump-top-tech-firms-sign-accord-to-self-police-ai-development">Al Jazeera (signatories + pledge language; read)</a> ·
+<a href="https://www.cbsnews.com/news/trump-ai-constitution-tech-execs-openai-anthropic-voluntary-controls/">CBS News (“constitution” / “morally binding”)</a> ·
+<a href="https://www.theguardian.com/us-news/2026/sep/29/trump-ai-deal-tech-ceos-superintelligence">Guardian</a> ·
+continues <a href="2026-09-29-grok.html#openai">29&nbsp;Sep Grok Astra / lunch lead</a>
+</p>
+<div class="fb">
+<p>Voluntary accord the day after Astra — follow how?</p>
+<label><input type="radio" name="fb-aiaccord" value="auditor"/> Follow the named-auditor / publication-rights test</label>
+<label><input type="radio" name="fb-aiaccord" value="procurement"/> Follow the procurement / EO route</label>
+<label><input type="radio" name="fb-aiaccord" value="done"/> Atmospherics — drop until a binding instrument</label>
+</div>
+</article>
+
+<!-- 7 SCRC -->
+<article id="scrc">
+<h2>Treasury put out the Stablecoin Certification Review Committee’s forms — the state-regime gate under the GENIUS Act</h2>
+<div class="meta">
+<span class="chip">US financials</span>
+<span class="chip">Primary source</span>
+<span class="chip new">New subject</span>
+</div>
+<p>Companion to Tuesday’s Fed GENIUS Act NPRMs: Treasury this morning issued an <b>interim final rule</b> (FR Doc <b>2026-19966</b>) on behalf of the <b>Stablecoin Certification Review Committee</b>, chaired by the Treasury Secretary under the GENIUS Act. It adopts interim procedural regulations and forms for the Committee to approve or deny certifications submitted by <b>State payment stablecoin regulators</b> under §4(c)(4). Effective <b>30 September 2026</b>, but certifications will not be accepted until Paperwork Reduction Act approval; comments due <b>30 November 2026</b> — the same comment close as yesterday’s Fed stablecoin NPRMs.</p>
+<p>Read as plumbing, not a rate story. Yesterday defined who may issue a dollar payment stablecoin at the federal level; today defines how a state regime gets Committee sign-off. The state gate is where most of the GENIUS Act’s dual-track structure either works or bottlenecks.</p>
+<p><b>What to watch:</b> Treasury’s website notice that certifications are being accepted; the first state certification filed; comment-file themes through 30&nbsp;November.</p>
+<p class="sources"><b>Sources:</b>
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/09/30/2026-19966.txt">FR full text 2026-19966 (SCRC IFR; read)</a> ·
+continues <a href="2026-09-29-grok.html#genius">29&nbsp;Sep Grok Fed GENIUS NPRMs</a>
+</p>
+<div class="fb">
+<p>State-certification gate as its own lead?</p>
+<label><input type="radio" name="fb-scrc" value="thread"/> Yes — open a GENIUS Act implementation thread</label>
+<label><input type="radio" name="fb-scrc" value="pair"/> Keep paired with Fed NPRMs only</label>
+<label><input type="radio" name="fb-scrc" value="short"/> Short item next time unless a state files</label>
+</div>
+</article>
+
+<!-- 8 DEPORT -->
+<article id="deport">
+<h2>SCOTUS stayed the third-country-deportation block, 6–3, and set December argument — including nationwide-relief power</h2>
+<div class="meta">
+<span class="chip">US politics &amp; policy</span>
+<span class="chip new">New subject</span>
+<span class="chip">Independent corroboration</span>
+</div>
+<p>Tuesday’s miscellaneous order (<em>DHS v. D.V.D.</em>, 26-426 / 26A406): the Court granted the government’s stay application, stayed the District of Massachusetts February&nbsp;25, 2026 order and judgment, treated the application as a cert petition, granted cert, and ordered briefing for argument in the <b>December 2026</b> session. Justices Sotomayor, Kagan, and Jackson would have denied the stay.</p>
+<p>Questions presented, as summarised from the order text carried by SCOTUSblog and CNBC: (1) whether the district court had <b>jurisdiction</b>; (2) whether it had authority to enter <b>classwide declaratory relief and APA vacatur</b> under 8&nbsp;U.S.C. §1252(f)(1); (3) whether the government’s third-country-removal guidance is unlawful under §1231(b), due process, or FARRA/CAT; (4) such other questions as the government determines are appropriate. DHS general counsel James Percival has said about <b>25,000</b> people have already been removed to third countries.</p>
+<p>The jurisdiction / nationwide-relief questions are why this is Core policy rather than only an immigration blotter item. A holding narrowing universal injunctions would reach the press-access fight and any pocket-rescission litigation this brief tracks.</p>
+<p><b>What to watch:</b> December argument and whether jurisdiction dominates; individual habeas on specific destinations; the nationwide-relief holding.</p>
+<p class="sources"><b>Confidence:</b> Independent corroboration of the stay and questions; the Court’s HTML orders page has served no usable data here since 26&nbsp;Sep, so the order text is via SCOTUSblog’s quotation of the PDF miscellaneous order. <b>Sources:</b>
+<a href="https://www.scotusblog.com/2026/09/supreme-court-to-hear-argument-on-trump-administrations-deportation-of-immigrants-to-third-party/">SCOTUSblog</a> ·
+<a href="https://www.cnbc.com/2026/09/29/supreme-court-lets-trump-resume-third-country-deportations.html">CNBC</a> ·
+<a href="https://www.aljazeera.com/news/2026/9/30/us-supreme-court-allows-trump-to-continue-third-country-deportations">Al Jazeera</a>
+</p>
+<div class="fb">
+<p>Nationwide-relief question inside an immigration stay — thread?</p>
+<label><input type="radio" name="fb-deport" value="relief"/> Open a nationwide-relief / emergency-docket thread</label>
+<label><input type="radio" name="fb-deport" value="deport"/> Follow the removals themselves</label>
+<label><input type="radio" name="fb-deport" value="december"/> Wake at December argument</label>
+</div>
+</article>
+
+<!-- 9 IRAQ -->
+<article id="iraq">
+<h2>US forces exit Iraq on the deadline; Patriot and C-RAM batteries went with them</h2>
+<div class="meta">
+<span class="chip">Geopolitics</span>
+<span class="chip new">New subject</span>
+<span class="chip under">Underreported</span>
+</div>
+<p>The bilateral withdrawal deadline was <b>30 September</b> (Iraq marks “Sovereignty Days”). Reachable accounts say the remaining US advisory presence — a few hundred personnel tied to the anti-ISIL coalition mission begun in 2015, consolidated at <b>Erbil</b> by end-2025 — is exiting on schedule. Reuters dates the remaining-base exit to Wednesday; Al&nbsp;Jazeera framed Tuesday’s run-up the same way. PM Ali al-Zaidi’s UNGA line: the state as “ultimate decision-maker in matters of peace and war,” with the relationship shifting from military to economic cooperation.</p>
+<p>The consequence half is air defence. Multiple accounts (Al&nbsp;Jazeera; earlier Al-Monitor reporting) say US <b>Patriot and C-RAM</b> systems were removed as part of the drawdown. Iraq has no comparable national air-defence umbrella of its own against militia drones and missiles. The legal shelf that remains is the non-binding <b>2008 Strategic Framework</b>. Several security ministries remain incompletely filled after a partial cabinet in May.</p>
+<p>Timing is the US channel: Washington is at war with Iran, has spent September pressing Iraqi airports over Iranian aviation and dollar access, and is simultaneously removing the batteries that covered Erbil’s airspace.</p>
+<p><b>What to watch:</b> first militia strike on Iraqi soil after the batteries left; any US air-defence return under the 2008 framework; filling of security ministries; a DoD on-record confirmation of the Patriot removal (still thinner than the troop-exit reporting).</p>
+<p class="sources"><b>Confidence:</b> Troop-exit corroborated across Al&nbsp;Jazeera and Reuters headlines/summaries; Patriot/C-RAM removal remains second-hand (Kurdish/regional sourcing via Al-Monitor earlier; AJ this week) without a CENTCOM confirmation read here. <b>Sources:</b>
+<a href="https://www.aljazeera.com/news/2026/9/29/iraq-begins-high-stakes-security-balancing-act-as-us-troops-withdraw">Al Jazeera</a> ·
+<a href="https://www.reuters.com/world/us-forces-exit-iraq-emboldening-irans-proxies-islamic-state-2026-09-30/">Reuters (30&nbsp;Sep)</a> ·
+Al-Monitor July/August Patriot pull reporting (background)
+</p>
+<div class="fb">
+<p>Completed withdrawal during a war with Iran — cadence?</p>
+<label><input type="radio" name="fb-iraq" value="thread"/> Open a thread — wake on first attack or air defence return</label>
+<label><input type="radio" name="fb-iraq" value="attack"/> Wake only on attack / battery return</label>
+<label><input type="radio" name="fb-iraq" value="no"/> Outside my interests</label>
+</div>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Ten things found in this morning’s source checks that did not clear the lead bar. Each expands.</p>
+<div class="also-list">
+
+<details id="s-fed">
+<summary><span class="chip">Macro &amp; markets</span> Fed publishes Reg&nbsp;D / Reg&nbsp;A: IORB 3.90%, primary credit 4.00% — the September hike’s Register print · <em>FR 2026-20037 / 20036</em></summary>
+<div class="exp">
+<p>Formal FR amendments reflecting the 16&nbsp;September FOMC: interest on reserve balances at <b>3.90%</b> (up 25&nbsp;bp; applicable from 17&nbsp;Sep) and primary credit <b>4.00%</b> (secondary 4.50%). Per reader cadence this is a print, not a state-of-play item — short only.</p>
+<p class="sources"><b>Sources:</b> <a href="https://www.federalregister.gov/documents/full_text/text/2026/09/30/2026-20037.txt">FR 2026-20037</a> · <a href="https://www.federalregister.gov/documents/full_text/text/2026/09/30/2026-20036.txt">FR 2026-20036</a></p>
+</div>
+</details>
+
+<details id="s-trumpaccounts">
+<summary><span class="chip">US debt &amp; fiscal</span> IRS temporary regulations for “Trump Accounts” — automatic enrollment mechanics · <em>FR 2026-20026</em></summary>
+<div class="exp">
+<p>Treasury/IRS TD&nbsp;10056 temporary regs under new §530A: general requirements, establishment of an initial Trump account including <b>automatic enrollment by the Treasury Secretary</b>, and qualified general contributions (including qualified stock contributions). Effective 30&nbsp;September 2026. Below the line until the first enrollment numbers or a challenge.</p>
+<p class="sources"><b>Sources:</b> <a href="https://www.federalregister.gov/documents/full_text/text/2026/09/30/2026-20026.txt">FR 2026-20026</a></p>
+</div>
+</details>
+
+<details id="s-eb5">
+<summary><span class="chip">US politics &amp; policy</span> USCIS EB-5 immigrant-investor fee final rule · <em>FR 2026-20016</em></summary>
+<div class="exp">
+<p>DHS/USCIS final rule adjusting Employment-Based Fifth Preference (EB-5) fees (8&nbsp;CFR parts 106 and 216). Effective 30&nbsp;November 2026. Fee schedules are policy; this clears the short bar as a dated instrument, not a lead without the dollar table extracted in full.</p>
+<p class="sources"><b>Sources:</b> FR 2026-20016 abstract + full-text header</p>
+</div>
+</details>
+
+<details id="s-treasury">
+<summary><span class="chip">US debt &amp; fiscal</span> Tuesday’s issuer 10-year printed 5.26% — up 2&nbsp;bp from Monday’s 5.24% · <em>Treasury CSV</em></summary>
+<div class="exp">
+<p>Daily Par Yield Curve CSV (headers enumerated): <b>29&nbsp;Sep 2026</b> — 2-year 4.89, <b>10-year 5.26</b>, 20-year 5.64, 30-year 5.59. Monday 28&nbsp;Sep was 10-year 5.24; Friday 25&nbsp;Sep was 5.17. No Wednesday row yet at gather time. Levels from issuer CSV only.</p>
+<p class="sources"><b>Sources:</b> <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&amp;field_tdr_date_value=2026&amp;page&amp;_format=csv">Treasury daily CSV</a></p>
+</div>
+</details>
+
+<details id="s-hegseth">
+<summary><span class="chip">US politics &amp; policy</span> Hegseth expected to cut ~20% of general/admiral billets at Quantico today · <em>Al Jazeera / The Hill</em></summary>
+<div class="exp">
+<p>Announcement scheduled for a “State of the Force” address at Marine Corps Base Quantico — doubling last year’s ~10% cut to flag/general billets, toward a 20% reduction by 1&nbsp;January 2027. These are billets (some downgraded), not a headcount of people fired. Below the line because the speech has not happened yet.</p>
+<p class="sources"><b>Sources:</b> Al Jazeera · The Hill</p>
+</div>
+</details>
+
+<details id="s-pirates">
+<summary><span class="chip">Geopolitics</span> Somali pirates killed five crew on a tanker held since April — first piracy killings in &gt;a decade · <em>Al Jazeera</em></summary>
+<div class="exp">
+<p>Palau-flagged MT Honour&nbsp;25, seized 21&nbsp;April, freed by Puntland forces; five crew killed (Pakistani, Myanmar, Indian nationals reported). At least fifteen attacks since April as naval attention concentrates on Hormuz / Bab el-Mandeb. US channel indirect — no US-flag vessel named. Short.</p>
+<p class="sources"><b>Sources:</b> Al Jazeera 30&nbsp;Sep</p>
+</div>
+</details>
+
+<details id="s-taiwan">
+<summary><span class="chip">World economy</span> Trump–Xi Archives display pulled over a San Francisco Treaty document that leaves Taiwan’s status undetermined · <em>NPR</em></summary>
+<div class="exp">
+<p>National Archives foyer display for the state visit removed at the last minute after Chinese objection to a planned document tied to the 1951 Treaty of San Francisco (Taiwan status undetermined; PRC not a signatory). Protocol detail with a sharper Taiwan tell than the tariff/coal readout. Single-sourced; below the line unless Board of Trade or a follow-up text surfaces it.</p>
+<p class="sources"><b>Sources:</b> NPR (via reporting summaries)</p>
+</div>
+</details>
+
+<details id="s-graphite">
+<summary><span class="chip">US politics &amp; policy</span> Commerce prelim AD: large-diameter graphite electrodes from China and India · <em>FR 2026-20030 / 20031</em></summary>
+<div class="exp">
+<p>ITA preliminary affirmative less-than-fair-value determinations on large-diameter graphite electrodes — a steelmaking input with an electrification / EAF channel. Repetition tell from the NOTICE sweep; rates need the full-text tables before this can lead.</p>
+<p class="sources"><b>Sources:</b> FR NOTICE list 30&nbsp;Sep</p>
+</div>
+</details>
+
+<details id="s-lng">
+<summary><span class="chip">Energy &amp; grid</span> Cheniere signs 22-year LNG supply deal with Petrobras · <em>gCaptain</em></summary>
+<div class="exp">
+<p>Long-term US LNG offtake into Brazil while Gulf of Oman STS capacity is reported exhausted and Qatari Hormuz LNG traffic has been elevated. US energy-export channel; short unless volumes and start dates are extracted from the IR release.</p>
+<p class="sources"><b>Sources:</b> gCaptain</p>
+</div>
+</details>
+
+<details id="s-dengue">
+<summary><span class="chip">Florida &amp; Tampa Bay</span> Tampa Bay dengue emergencies hit their seven-day mark tomorrow — no new case counts this morning · <em>Fox&nbsp;13 Pasco/Pinellas tags</em></summary>
+<div class="exp">
+<p>Hillsborough / Pasco / Pinellas local emergencies declared 24&nbsp;Sep come up for extend-or-lapse on <b>1 October</b>. Fox&nbsp;13 Pasco/Pinellas tags showed no new case-count lead overnight. Florida section empty on local merit until that administrative decision or a fresh case print.</p>
+<p class="sources"><b>Sources:</b> Fox&nbsp;13 Pasco and Pinellas tag feeds</p>
+</div>
+</details>
+
+</div>
+
+<div class="fb">
+<p><b>About this section as a whole.</b></p>
+<label><input type="radio" name="fb-also" value="right"/> About right</label>
+<label><input type="radio" name="fb-also" value="drop"/> Drop items that admit missing substance</label>
+<label><input type="radio" name="fb-also" value="promote"/> Something here should have been a lead</label>
+<label><input type="radio" name="fb-also" value="more"/> More short-tier items</label>
+</div>
+
+<h2 class="section">Provenance</h2>
+<p><b>Sources checked this run — 20, of which 12 outside the watchlist.</b></p>
+<p><b>Pointed at by a thread (8):</b> Federal Register whole-day RULE/PRORULE + NOTICE + PRESDOCU (SAFE&nbsp;III, OMB rescission, SCRC, Reg&nbsp;A/D, Trump Accounts, EB-5, OFAC codifications, graphite electrodes) · AAA daily pump · EIA weekly retail · Treasury daily CSV · gCaptain (Hormuz/STS physicals) · Al Jazeera (AI accord, Iraq, SCOTUS, pirates) · White House presidential-actions index · Wikipedia current-events portal (thin for 30&nbsp;Sep; used as negative check).</p>
+<p><b>Not pointed at by any thread (12):</b> Conference Board via PR Newswire · ABA Banking Journal · CBS News AI lunch · Guardian AI accord · SCOTUSblog deportation order · CNBC deportation · Georgetown Law litigation tracker Cooper PDF · Medical Daily / Bloomberg Law on TPP funds · Reuters Iraq exit · Handelsblatt front ticker · text.npr.org index · Fox&nbsp;13 Pasco/Pinellas tags · OFAC recent-actions page (swept; today’s FR OFAC items look like codification).</p>
+
+<div class="div">
+<div class="t">The negative check</div>
+<p>Biggest stories today that were not on Tuesday’s OpenAI/Title&nbsp;IX/SBA/rescission-PDF menu: <b>(1) SAFE&nbsp;III CAFE final rule in the Register</b> — the document Monday’s announcement promised, missed entirely by an earlier same-day gather that saw FR count&nbsp;0; <b>(2) Conference Board confidence print</b> naming oil/gas in open responses; <b>(3) Cooper’s already-issued hold on TPP funds</b>, which reverses the “no court can stop a lapse” frame and revises pocket-rescission arithmetic. Wikipedia’s 30&nbsp;Sep portal was essentially a calendar (ongoing Hormuz/Bab el-Mandeb/Polo listed as continuing crises without new dated entries) — the useful half of the check ran through Al&nbsp;Jazeera’s index, the FR list, and gCaptain. Declined despite presence: French strikes/student protests (anti-topic); Cornell fraternity case; Trump’s 32-day midterm campaign schedule; Polo Southwest flooding as a standalone lead (disruption without a new federal instrument — noted via Claude’s Issue&nbsp;26 as a negative-check instrument, not copied); RBA-style foreign central-bank items with no US channel.</p>
+</div>
+
+<p><b>Threads swept, no separate lead:</b> Bab el-Mandeb (no new named-passage premium / JWC text) · Fed funds (Reg&nbsp;A/D are the Register print of the already-reported 16&nbsp;Sep hike — short only) · Xi tariff/coal/Board of Trade (28&nbsp;Sep correction stands; Archives/Taiwan display is short) · Fairford (bail already noted 29&nbsp;Sep; no new charging fact) · UAP implementation · Title&nbsp;IX / SBA immediate-effect pair (yesterday’s documents; no Wednesday rewrite) · GENIUS Fed NPRMs (yesterday; today’s SCRC is the new primary).</p>
+
+<p><b>Accountability to prior Grok frames:</b> Xi “no binding deal” corrected 28&nbsp;Sep — no new Xi correction today. Fairford “still in custody” superseded by bail on 29&nbsp;Sep — stands. Diesel seventh fall as of 29&nbsp;Sep → <b>eighth daily fall + first negative EIA weekly</b>. Monday issuer 10-year 5.24% (vs Friday 5.17%) → <b>Tuesday issuer 5.26%</b>. Pocket-rescission Wednesday-clock lead on 29&nbsp;Sep revised by Cooper’s §1502(b) hold: a district court can suspend a statutory lapse. Early-morning FR count&nbsp;0 reports (including Claude Issue&nbsp;26’s provenance) are source-failure notes, not evidence of an empty edition — this gather’s re-check found 118 documents.</p>
+
+<p><b>Could not reach / limits:</b> FR public-inspection endpoint still 0 · Supreme Court orders HTML still empty (order via SCOTUSblog/PDF relay) · NPR article pages unreliable (index + member-station/PR paths used) · CNBC article pages 403 · OpenAI.com 403 · full Washington Examiner accord text not relied on as primary · Brent left at Handelsblatt direction only (three-feed spread) · EIA weekly petroleum status PDF (inventories/utilisation) still unreadable · OFAC FR publications today read as licence codification, not new actions.</p>
+
+<div class="div">
+<div class="t">About this issue</div>
+<p>Issue No. 26-grok · Wednesday, 30 September 2026 · Grok edition for MAGA Mickey · Written by Grok Bot / xAI. Nine lead stories, ten short items. Weekday re-derived from the date (Wednesday). Document channel open (118 FR documents). Parallel Claude Issue&nbsp;26 is at <a href="2026-09-30.html">2026-09-30.html</a>; this file does not overwrite it. xAI/Musk appears as an AI-accord signatory — disclosed in that lead and again here. Every quotation is under fifteen words and attributed; everything else is paraphrase. Feedback issues #3, #7, #20 closed; no open brief-feedback this morning.</p>
+</div>
+
+<footer>
+<p>Issue No. 26-grok · 30 September 2026 · Grok edition for MAGA Mickey · Written by Grok Bot / xAI · Archive: <a href="https://historiocity.github.io/News-Agent/">historiocity.github.io/News-Agent</a> · Skill reads <a href="https://github.com/historiocity/News-Agent/blob/main/config.md">config.md</a> every run.</p>
+<p style="margin-top:.6rem;font-size:.84rem;">Parallel Claude Issue&nbsp;26 published as <code>2026-09-30.html</code>; this file is the independent Grok gather and does not overwrite it. xAI coverage in the AI-accord lead carries an authorship disclosure in story and footer.</p>
+<p class="submit"><button type="button" id="send">Send feedback as a GitHub issue</button></p>
+</footer>
+
+</div>
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  var btn = document.getElementById("send");
+  if (!btn) return;
+  btn.addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\\n  → **" + i.value + "**");
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on **Issue No. 26-grok — 30 September 2026, Grok edition**\\n\\n" + lines.join("\\n")
+      + "\\n\\n---\\n_Anything still here that shouldn't be, or missing that should:_\\n\\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-09-30-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+</body>
+</html>
