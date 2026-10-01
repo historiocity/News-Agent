@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Thursday, 1 October 2026</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .chip.alert { background:var(--accent); color:#fff; border:1px solid var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  .corr { background:var(--box); border-left:3px solid var(--accent); padding:.7rem .9rem; margin:0 0 1rem; font-size:.94rem; }
+  .corr p { margin:.4rem 0; }
+  .corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--accent); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  .short { border-bottom:1px solid var(--rule); padding:.7rem 0; margin:0; }
+  .short > summary { color:var(--fg); cursor:pointer; list-style:none; }
+  .short > summary::-webkit-details-marker { display:none; }
+  .short > summary::before { content:"▸ "; color:var(--link); }
+  .short[open] > summary::before { content:"▾ "; }
+  .short .body { margin-top:.6rem; padding-left:1.1rem; border-left:2px solid var(--rule); font-size:.96rem; }
+  .why { font-style:italic; color:var(--muted); }
+  figure { margin:1.2rem 0 0; }
+  figcaption { font-size:.84rem; color:var(--muted); margin-top:.4rem; line-height:1.5; }
+  svg { width:100%; height:auto; display:block; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+  ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 27 &middot; Thursday, 1 October 2026</div>
+  <h1>Tennessee tried twice to execute Christa Pike and she survived &mdash; and a startup wants 456 reactors on federal land to run a data centre</h1>
+  <p class="sub">Morning edition. Continues from <a href="2026-09-30.html">Wednesday</a>.</p>
+  <p class="prov"><b>23 sources checked, 12 of them outside the watchlist.</b> Seven lead stories: three on subjects with no existing thread (the rural energy grant rewrite, the FCC&rsquo;s copper-retirement deregulation, the FTC on platform impersonation) and four continuations (the failed execution, Hegseth at Quantico, the Utah reactor project, the pump chain). One Florida section &mdash; the first since 25 September &mdash; and eight short items.<br><br>
+  <b>The <em>Federal Register</em> is back:</b> 112 documents today after returning zero yesterday on a Wednesday, which this brief flagged as a probable source failure rather than news. That judgement was right. Three of today&rsquo;s leads come out of the sweep.<br><br>
+  <b>Biggest story today not on this list:</b> the Flydubai flight on which one pilot stabbed the other and tried to crash the aircraft, which runs as a short because the US channel is aviation policy rather than anything that has happened yet. Also held: the Swiss glacier loss record, two NPR investigations without a dated event, and Trump&rsquo;s campaign schedule.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#pike">Tennessee gave Christa Pike two doses of a lethal drug and she survived. The governor has halted the state&rsquo;s executions</a></li>
+    <li><a href="#beehive">A startup wants 456 nuclear reactors on federal land in Utah to power data centres. It would produce more than twice the state&rsquo;s entire electricity</a></li>
+    <li><a href="#hegseth">Hegseth announced an autonomous warfare command, a religious affairs office reporting to him, and &ldquo;no fatties, no trannies&rdquo;</a></li>
+    <li><a href="#reap">Rural energy grants now require you to build the project first and run it for a year. Cropland solar and wind are out</a></li>
+    <li><a href="#fcc">The FCC has made retiring the copper telephone network a filing you no longer have to make</a></li>
+    <li><a href="#ftc">The FTC is asking whether platforms should be liable for the impersonation scams they sell ads for. The figure is $3.5bn</a></li>
+    <li><a href="#fuel">Ninth consecutive fall, and petrol is down nearly seven cents on the week</a></li>
+    <li><a href="#florida">Florida &amp; Tampa Bay: the dengue emergency extended, 179 cases, and now West Nile</a></li>
+    <li><a href="#also-today">Also today (8)</a></li>
+  </ol>
+</nav>
+
+<article id="pike">
+  <h2>Tennessee gave Christa Pike two doses of a lethal drug and she survived. The governor has halted the state&rsquo;s executions</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The execution was set for 10am on Wednesday. Tennessee administered <b>two doses</b> of a lethal drug. According to an emergency motion her attorneys filed while it was happening, Pike <b>&ldquo;has not lost consciousness and still has a heartbeat and is audibly snoring&rdquo;</b>. She was taken from the prison by ambulance and is being treated at a nearby hospital.</p>
+  <p>Governor <b>Bill Lee</b> has called off the state&rsquo;s remaining execution of 2026 and ordered a <b>third-party review</b> of the procedure.</p>
+  <p>Yesterday this brief said the item would lead today either way, meaning a stay or an execution. Neither happened. A failed execution is a third outcome, and it is the one that changes the most.</p>
+  <p>A botched execution is not primarily an argument about capital punishment. It is a factual demonstration that the procedure does not reliably do what the statute authorises &mdash; a claim about the <b>method</b>, which is the ground on which Eighth Amendment challenges to lethal injection have repeatedly been brought and repeatedly failed for want of evidence. Tennessee has now generated the evidence itself, in front of witnesses. Snoring after two doses describes a person sedated but not killed, which points at the drug, the dose or the delivery rather than at an isolated accident.</p>
+  <p>Note what Lee did and did not do. He halted the remaining <b>2026</b> execution and commissioned a review. He has not commuted anything, has not addressed the schedule beyond this year, and Pike remains under sentence of death while in hospital.</p>
+  <p><b>What to watch:</b> who conducts the review and whether its findings are published; whether Pike&rsquo;s lawyers move to bar a second attempt as double jeopardy or cruel and unusual punishment, which is the live legal question; and whether other states using the same protocol pause.</p>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration &mdash; consistent accounts from several newsrooms, and the quoted language is from her attorneys&rsquo; emergency motion as reported. The motion itself was not read, the drug and doses are not named in any account reached, and her condition this morning is not established here. <b>Sources:</b> <a href="https://www.npr.org/2026/10/01/nx-s1-5986822/tennessee-governor-halts-executions">NPR</a> &middot; <a href="https://www.cbsnews.com/news/what-to-know-christa-pike-first-woman-executed-tennessee-200-years/">CBS News</a> &middot; <a href="https://www.newschannel5.com/news/state/tennessee/davidson-county/tennessee-governor-halts-executions-after-christa-gail-pike-survives-lethal-injection-attempt">NewsChannel 5 Nashville</a> &middot; <a href="https://www.abc.net.au/news/2026-10-01/christa-pike-lethal-injection/107216194">ABC Australia</a> &middot; continues <a href="2026-09-30.html#s-pike">30 September</a> and <a href="2026-09-29.html#s-pike">29 September</a></p>
+
+  <div class="fb">
+    <p>This brief ran it twice as a short and said the outcome would be a stay or an execution. It was neither.</p>
+    <label><input type="radio" name="fb-pike" value="method"> Follow the method litigation &mdash; that is where this goes</label>
+    <label><input type="radio" name="fb-pike" value="review"> Follow the third-party review and whether it is published</label>
+    <label><input type="radio" name="fb-pike" value="no"> One-off; no thread</label>
+  </div>
+</article>
+
+<article id="beehive">
+  <h2>A startup wants 456 nuclear reactors on federal land in Utah to power data centres. It would produce more than twice the state&rsquo;s entire electricity</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>A company called <b>Valar Atomics</b> is seeking over <b>9,000 acres</b> of Bureau of Land Management land near <b>Price, Utah</b> for a project it calls <b>Beehive</b>: data centres powered by <b>456 small nuclear reactors</b>, plus a facility to make nuclear fuel and others to store the waste. It has also sought about 650 acres of state land.</p>
+  <p>The number that makes this a lead rather than a curiosity: the reactors would produce around <b>9.6 gigawatts</b> of electricity for the data centres, plus more thermal heat for industrial use. <b>Utah&rsquo;s entire average generation is about 4 gigawatts.</b> One private campus would need two and a half times everything the state currently makes.</p>
+  <p>The timeline is the other remarkable thing. Non-nuclear construction could begin <b>as soon as the end of this year</b>, with the first reactors online <b>in 2028</b> &mdash; which is faster than any recent US reactor has been licensed, let alone built, and implies 456 units moving through the Nuclear Regulatory Commission at a pace that has no precedent.</p>
+  <p>The fuel plant and the waste store signal vertical integration: the company does not propose to buy fuel or send waste elsewhere, which is the design of an operator who expects the supply chain not to exist.</p>
+  <p>This is the AI power constraint arriving as a land-use application. For months the story has been interconnection queues and transformer lead times; private generation at state scale on public land, co-located with the load, is the end of that pressure and the point where it becomes a public question.</p>
+  <p><b>What to watch:</b> the BLM application and whether it requires a full environmental impact statement; the NRC pathway for a 456-unit fleet, which is the real constraint; and whether local opposition in Carbon County organises before the non-nuclear groundworks start.</p>
+
+  <figure>
+    <svg viewBox="0 0 640 165" role="img" aria-label="Project Beehive's planned output of 9.6 gigawatts compared with Utah's entire average electricity generation of about 4 gigawatts.">
+      <rect x="0" y="0" width="640" height="165" fill="none"/>
+      <rect x="200" y="35" width="384" height="30" fill="#8a3324"/>
+      <rect x="200" y="85" width="160" height="30" fill="#b9b2a4"/>
+      <text x="192" y="54" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">Project Beehive</text>
+      <text x="192" y="104" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">All of Utah, now</text>
+      <text x="576" y="54" font-family="Georgia, serif" font-size="11" fill="#ffffff" text-anchor="end">9.6 GW</text>
+      <text x="368" y="104" font-family="Georgia, serif" font-size="11" fill="#1a1a18" text-anchor="start">~4 GW</text>
+      <line x1="200" y1="130" x2="600" y2="130" stroke="#6b6a66" stroke-width="1"/>
+      <line x1="200" y1="130" x2="200" y2="135" stroke="#6b6a66"/>
+      <line x1="280" y1="130" x2="280" y2="135" stroke="#6b6a66"/>
+      <line x1="360" y1="130" x2="360" y2="135" stroke="#6b6a66"/>
+      <line x1="440" y1="130" x2="440" y2="135" stroke="#6b6a66"/>
+      <line x1="520" y1="130" x2="520" y2="135" stroke="#6b6a66"/>
+      <line x1="600" y1="130" x2="600" y2="135" stroke="#6b6a66"/>
+      <text x="200" y="148" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">0</text>
+      <text x="280" y="148" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">2</text>
+      <text x="360" y="148" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">4</text>
+      <text x="440" y="148" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">6</text>
+      <text x="520" y="148" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">8</text>
+      <text x="600" y="148" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">10 GW</text>
+    </svg>
+    <figcaption>Planned electrical output of the proposed Beehive reactors against Utah&rsquo;s current average generation. Bars to scale from a true zero: 40px per gigawatt, so each 2GW tick is 80px. The Utah figure is &ldquo;around 4GW on average&rdquo; as reported and is not a nameplate capacity, so treat the comparison as an order of magnitude rather than a ratio to one decimal.</figcaption>
+  </figure>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration of the proposal&rsquo;s existence and scale through NPR and member stations. <b>No BLM application document was read</b>, the acreage and reactor count come from reporting, and nothing here establishes that the project is viable or that any regulator has accepted a filing. <b>Sources:</b> <a href="https://www.kuer.org/business-economy/2026-09-30/valar-atomic-nuclear-data-center-project-beehive-utah">KUER</a> &middot; <a href="https://www.npr.org/2026/09/30/nx-s1-5983482/valar-atomic-nuclear-data-center-project-beehive-utah">NPR</a> &middot; continues <a href="2026-09-21.html#datacenters">21 September</a></p>
+
+  <div class="fb">
+    <p>The AI power constraint has turned into a request for 9,000 acres of federal land.</p>
+    <label><input type="radio" name="fb-beehive" value="land"> Follow the public-land route &mdash; this and the other data centre proposals</label>
+    <label><input type="radio" name="fb-beehive" value="nrc"> Follow the NRC pathway; licensing is the real test</label>
+    <label><input type="radio" name="fb-beehive" value="bills"> Only where it reaches retail power prices</label>
+  </div>
+</article>
+
+<article id="hegseth">
+  <h2>Hegseth announced an autonomous warfare command, a religious affairs office reporting to him, and &ldquo;no fatties, no trannies&rdquo;</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The Defense Secretary delivered his &ldquo;State of the Force&rdquo; address at Quantico on Wednesday to hundreds of junior officers and enlisted leaders, announcing <b>six initiatives</b> and claiming that &ldquo;the warrior ethos has been revived, our military is being rebuilt and American deterrence is back&rdquo;.</p>
+  <p>Three of the six are structural: an <b>autonomous warfare command</b>, a <b>religious affairs office reporting directly to the Secretary</b>, and the <b>20% cut to general and admiral billets</b> this brief covered yesterday. There is also a new corps of cadets at five universities.</p>
+  <p>A standing command for autonomous warfare is a bureaucratic fact with doctrinal consequences. Commands write requirements, hold budgets and generate acquisition programmes, so creating one for autonomy means the department now has an institution whose job is to <em>field</em> autonomous systems rather than study them. Set it beside what this brief reported on 26 September: in February the department asked Anthropic to remove safeguards against its models&rsquo; use in <b>fully autonomous lethal weapons</b>, and designated the company a supply-chain risk when it refused. The command is the organisational form of that demand.</p>
+  <p>The religious affairs office is the second structural change. Chaplaincy has always been service-administered; a headquarters office with a direct line to the Secretary is a different instrument, and nothing establishes what it is for.</p>
+  <p>On the rest: Hegseth said <b>&ldquo;No fatties, no trannies, no beardos, no weirdos, no wimps, no radicals. Just warriors.&rdquo;</b> He also claimed recruitment and retention have risen including among women and minorities, and called the force &ldquo;color-blind&rdquo; and merit-based. Those do not sit together, and the recruitment claim comes without figures this brief can check.</p>
+  <p><b>What to watch:</b> the autonomous warfare command&rsquo;s charter, reporting line and first budget request; whether the religious affairs office gets a published remit; and the actual retention and recruitment data by demographic, which would test the claim.</p>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration of the speech and the initiatives. The quoted line is as reported by NPR and others; no transcript was read, no charter exists for either new office yet, and the recruitment and retention claims are the Secretary&rsquo;s own, unverified here. <b>Sources:</b> <a href="https://www.npr.org/2026/09/30/nx-s1-5986304/hegseth-troops-address">NPR</a> &middot; <a href="https://www.stripes.com/theaters/us/2026-09-30/hegseth-state-of-the-force-quantico-23016908.html">Stars and Stripes</a> &middot; continues <a href="2026-09-30.html#s-hegseth">30 September</a> &middot; relates to <a href="2026-09-26.html#anthropic">26 September on the Anthropic designation</a></p>
+
+  <div class="fb">
+    <p>An autonomous warfare command is the part of this speech with the longest consequences.</p>
+    <label><input type="radio" name="fb-hegseth" value="autonomy"> Follow the autonomous warfare command specifically</label>
+    <label><input type="radio" name="fb-hegseth" value="flag"> Follow the flag-officer cuts and who goes</label>
+    <label><input type="radio" name="fb-hegseth" value="culture"> The culture-war material is the story; cover that</label>
+  </div>
+</article>
+
+<article id="reap">
+  <h2>Rural energy grants now require you to build the project first and run it for a year. Cropland solar and wind are out</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip new">New subject</span>
+    <span class="chip under">Underreported</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>A rule published today rewrites the <b>Rural Energy for America Program</b>, the grant scheme that helps farms and rural small businesses install energy equipment. Effective <b>16 October</b>.</p>
+  <p>The structural change is the one nobody will headline. REAP moves to a <b>&ldquo;post-completion, performance validated model&rdquo;</b>: a project must be <b>fully built and operational</b>, with <b>twelve months of actual performance data</b>, before the applicant may apply.</p>
+  <p>Think about what that does to who can use it. A grant you can only apply for after financing, building and running the thing for a year is not a grant that makes a project possible &mdash; it is a reimbursement for someone who could already afford it.</p>
+  <p>The eligibility changes point the same way. <b>Ground-mounted solar and wind on certified cropland are now ineligible</b>, as are multi-location projects, <b>EV chargers</b> and <b>stand-alone storage</b>; components from &ldquo;foreign adversary nations&rdquo; cannot be funded. Rooftop solar, biogas and geothermal survive, with batteries capped at 120% of average use.</p>
+  <p>The legal basis is three executive orders &mdash; 14154 &ldquo;Unleashing American Energy&rdquo;, 14156 &ldquo;National Energy Emergency&rdquo; and 14315 &ldquo;Ending Market Distorting Subsidies&rdquo; &mdash; which is how a programme Congress authorised at 7 U.S.C. 8107 gets its purposes reset without legislation.</p>
+  <p>And it is the <b>fifth</b> rule in a week to take effect without prior notice and comment under the Administrative Procedure Act&rsquo;s grants exemption. USDA did open a 32-day comment period to <b>2 November</b>, which it says it was not required to do &mdash; the only one of the five to offer anything.</p>
+  <p><b>What to watch:</b> the comment file from farm groups on the post-completion requirement, which is the provision with teeth; whether obligations collapse in FY2027; and whether &ldquo;certified cropland&rdquo; is defined anywhere operable.</p>
+
+  <p class="sources"><b>Confidence:</b> Primary source &mdash; the rule text. No reporting on it found anywhere reachable. The document does not give an estimate of how many applicants the post-completion model excludes, which is the number that would size the effect. <b>Sources:</b> <a href="https://www.federalregister.gov/documents/full_text/text/2026/10/01/2026-20178.txt">Federal Register, USDA rule 2026-20178, 1 October</a> &middot; relates to <a href="2026-09-29.html#titleix">the grants-exemption count opened 29 September</a></p>
+
+  <div class="fb">
+    <p>Fifth no-comment rule in a week under the same exemption, and the first to offer a comment period anyway.</p>
+    <label><input type="radio" name="fb-reap" value="count"> Keep counting them; the pattern is the story</label>
+    <label><input type="radio" name="fb-reap" value="reap"> Follow REAP specifically to the comment close</label>
+    <label><input type="radio" name="fb-reap" value="farm"> More agriculture generally; it is a gap in this brief</label>
+  </div>
+</article>
+
+<article id="fcc">
+  <h2>The FCC has made retiring the copper telephone network a filing you no longer have to make</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip under">Underreported</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>A rule published today, effective <b>15 October</b>, removes the procedural machinery around retiring old telephone networks: it eliminates filing requirements and Commission public notice for short-term network changes and for <b>copper retirement</b>, grants carriers <b>blanket authority</b> to grandfather legacy voice and lower-speed data without applications, drops most filings for discontinuing services with no customers, and shortens comment and automatic-grant periods.</p>
+  <p>The copper network is the pair of wires that carries a landline. It works in a power cut, it carries alarm and medical-alert systems, and in parts of rural America it is what there is. Retiring it is probably inevitable; the question has always been what a carrier must prove, and to whom, first.</p>
+  <p>The answer is now thinner. Copper retirement requires direct notice to interconnecting providers and to <b>911 services at least 90 days</b> ahead &mdash; 15 days for unused facilities. To discontinue legacy voice a carrier gets streamlined treatment by <b>certifying</b> a replacement is available area-wide: VoIP, wireless or a modernised programme. A certification is the carrier&rsquo;s own assertion, and the public-notice step that let anyone contest it is gone. Customers get an <b>&ldquo;approximate date&rdquo;</b> and information about alternatives; for resold services, notice &ldquo;as soon as practicable&rdquo;. Neither phrase is a deadline.</p>
+  <p>This one did go through notice and comment: the substance was adopted in a <b>26 March 2026</b> Report and Order, and today&rsquo;s document announces OMB approval of the paperwork. The fifth-in-a-week pattern above does not apply here, and saying so matters &mdash; the procedural objection available against the other four is not available against this.</p>
+  <p><b>What to watch:</b> the first copper retirement executed under blanket authority and whether a state commission objects; whether 911 authorities report problems inside the 90-day window; and complaint volumes at the Commission, which is now the only route left for a customer who finds the replacement does not reach them.</p>
+
+  <p class="sources"><b>Confidence:</b> Primary source &mdash; the rule text. The March 2026 Report and Order it implements was not read, so the characterisation of what was adopted then rests on today&rsquo;s document describing it. <b>Sources:</b> <a href="https://www.federalregister.gov/documents/full_text/text/2026/10/01/2026-20192.txt">Federal Register, FCC rule 2026-20192, 1 October</a></p>
+</article>
+
+<article id="ftc">
+  <h2>The FTC is asking whether platforms should be liable for the impersonation scams they sell ads for. The figure is $3.5bn</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The Federal Trade Commission published an advance notice of proposed rulemaking today asking whether it should regulate <b>digital platforms&rsquo; role</b> in government and business impersonation scams. Comments close <b>30 November</b>. The prompt is a number: nearly <b>$3.5 billion</b> in reported losses to imposter scams in 2025.</p>
+  <p>The target is unusual and that is the point. Existing impersonation rules reach the impersonator. This asks about the <b>advertising machinery</b>: platforms developing or modifying deceptive ad content, audience targeting that delivers impersonation ads to vulnerable consumers, failure to screen or monitor for them, and inadequate action against scammers who are caught.</p>
+  <p>&ldquo;Audience targeting that delivers impersonation ads to vulnerable consumers&rdquo; is the clause to watch. It describes a platform&rsquo;s optimisation system finding the people most likely to fall for a fake government notice &mdash; not as a failure of moderation but as the advertising product working correctly. A rule reaching that would be a rule about the business model.</p>
+  <p>Two limits cut against the breadth. It does <b>not</b> cover impersonation of <b>individuals</b> &mdash; the Commission declined that before &mdash; so deepfakes of a person are outside it. And it does not isolate <b>AI-generated</b> impersonation, mentioning AI in ad optimisation only in passing. At the moment generative tools made convincing impersonation cheap, the proceeding is framed around ad systems rather than content. An advance notice is also the earliest stage: no rule text, no penalties, no commitment to proceed. What it builds is a record, and a record survives a change of Commission.</p>
+  <p><b>What to watch:</b> whether platforms file comments on the targeting question or only on jurisdiction; whether the Commission later adds individual impersonation, which it would have to do to reach deepfakes; and whether any proposed rule follows before the comment file goes cold.</p>
+
+  <p class="sources"><b>Confidence:</b> Primary source &mdash; the notice itself. The $3.5bn figure is the Commission&rsquo;s own reported-loss statistic for 2025 and reported losses are a floor, not an estimate of total fraud. <b>Sources:</b> <a href="https://www.federalregister.gov/documents/full_text/text/2026/10/01/2026-20143.txt">Federal Register, FTC advance notice 2026-20143, 1 October</a></p>
+
+  <div class="fb">
+    <p>A proceeding about impersonation that excludes individuals and does not isolate AI.</p>
+    <label><input type="radio" name="fb-ftc" value="thread"> Open a thread &mdash; platform liability is the live question</label>
+    <label><input type="radio" name="fb-ftc" value="deepfake"> Only if it is extended to individual impersonation and deepfakes</label>
+    <label><input type="radio" name="fb-ftc" value="no"> Too early; wait for a proposed rule</label>
+  </div>
+</article>
+
+<article id="fuel">
+  <h2>Ninth consecutive fall, and petrol is down nearly seven cents on the week</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>AAA&rsquo;s diesel average is <b>$6.3895</b>, down 2.44 cents and the <b>ninth consecutive decline</b>. Against a week ago it is <b>12.46 cents</b> cheaper. Petrol is <b>$4.4137</b>, down 2.06 cents on the day and <b>6.88 cents</b> on the week.</p>
+  <p>Both legs are now falling at a comparable clip, which they have not done at any point in this episode. The weekly deficits have widened every single morning since they turned: diesel 0.27, 3.41, 5.76, 8.85, 10.78, 12.46.</p>
+  <p>Diesel is now below $6.40 for the first time since <b>mid-September</b> and is 13.8 cents off the 22 September record of $6.5276. It is still <b>72% above a year ago</b>, when it was $3.7068.</p>
+  <p>Yesterday&rsquo;s EIA weekly print confirmed the turn in the official series at $6.382 for the week ending 28 September, down 14.7 cents. The daily series has since fallen past that level, which means next week&rsquo;s official print should be lower again unless something reverses in the next four days.</p>
+  <p>The thing that could reverse it is still sitting there. Crude rose on Trump&rsquo;s rejection of Iran&rsquo;s Hormuz plan, retail lags crude by about a fortnight, and nothing in these numbers reflects this week&rsquo;s news yet.</p>
+  <p><b>What to watch:</b> next Monday&rsquo;s EIA print; whether the daily falls start shrinking, which would mark the bottom rather than the turn; and mid-October for the crude pass-through.</p>
+
+  <p class="sources"><b>Sources:</b> <a href="https://gasprices.aaa.com/">AAA Fuel Prices, 1 October</a>, with week-ago figures from this brief&rsquo;s own daily record &middot; <a href="https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm">EIA weekly retail prices</a> &middot; continues <a href="2026-09-30.html#fuel">30 September</a></p>
+</article>
+
+<h2 class="section" id="florida">Florida &amp; Tampa Bay</h2>
+<p class="secnote">Judged on a local bar rather than a national one. First section since 25 September; today it clears.</p>
+
+<article id="dengue">
+  <h2>The dengue emergency is extended to 8 October, the regional case count has reached 179, and West Nile has turned up in Pinellas</h2>
+  <div class="meta">
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip alert">Emergency extended</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Pinellas County extended its state of local emergency to <b>8 October</b> by <b>Resolution 26-83</b>, signed by County Administrator Barry Burton under authority delegated by the commission. This brief said the extend-or-lapse decision would be the better signal than the case counts. It was an extension.</p>
+  <p>The counts moved too, and by more than expected. The Tampa Bay region now has <b>179 confirmed cases</b> across Hillsborough, Pasco and Pinellas, against <b>143</b> at the declaration a week ago &mdash; <b>36 more in seven days</b>. Pinellas has seven confirmed since August.</p>
+  <p>The new fact is a second disease. <b>West Nile virus</b> has been detected in Pinellas, in the county&rsquo;s <b>sentinel chicken flocks</b>, which the county describes as an early warning of possible human transmission.</p>
+  <p>That detection method is worth understanding because it is why this counts as news before anyone is ill. Sentinel flocks are caged chickens tested regularly for antibodies; a bird that seroconverts has been bitten by an infected mosquito in that place. It is a direct reading of the mosquito population rather than of the human one, and it runs ahead of case counts by weeks.</p>
+  <p>So Pinellas is now running an elevated mosquito-control response against two arboviruses at once, with different vectors: dengue travels on <em>Aedes aegypti</em>, a container breeder with a short flight range; West Nile on <em>Culex</em> species, which breed in standing water and range further. The same spraying does not do both jobs equally.</p>
+  <p><b>What to watch:</b> whether Hillsborough and Pasco extended as well &mdash; not established here; the <b>8 October</b> decision, which is the next hinge; and the first human West Nile case, which would make this a two-outbreak story.</p>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration for the Pinellas extension and the 179 figure. <b>The Hillsborough and Pasco decisions were not found this morning</b>, and the per-county split of the 179 beyond Pinellas is not established. The Florida arbovirus PDF still cannot be parsed here. <b>Sources:</b> <a href="https://pinellas.gov/executive-orders/resolution-26-83-order-extending-local-state-of-emergency-for-mosquito-borne-illness">Pinellas County Resolution 26-83</a> &middot; <a href="https://www.wfla.com/news/pinellas-county/pinellas-county-extends-state-of-local-emergency-for-dengue-fever/">WFLA</a> &middot; <a href="https://www.tampafp.com/mosquito-threat-lingers-pinellas-county-extends-dengue-emergency-through-oct-8/">Tampa Free Press</a> &middot; continues <a href="2026-09-25.html#dengue">25 September</a></p>
+
+  <div class="fb">
+    <p>Thirty-six new cases in a week, an extension, and now West Nile in the sentinel flocks.</p>
+    <label><input type="radio" name="fb-dengue" value="section"> Keep the Florida section running while both outbreaks are live</label>
+    <label><input type="radio" name="fb-dengue" value="pasco"> Pasco-specific only &mdash; spray schedules, advisories, my own county</label>
+    <label><input type="radio" name="fb-dengue" value="short"> Back to a short unless there is a human West Nile case</label>
+  </div>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Eight things found in this morning&rsquo;s source checks that did not clear the lead bar. Each expands to the substance, the reason it sits below the line, and where it came from.</p>
+
+<details class="short" id="s-flydubai">
+  <summary><span class="chip">Geopolitics</span> One Flydubai pilot stabbed the other and tried to crash the aircraft. The stabbed pilot opened the cockpit door so passengers could stop him.</summary>
+  <div class="body">
+    <p>On Flydubai flight <b>FZ 1073</b> from Dubai to Tel Aviv, one pilot stabbed the other in the cockpit in what Israel&rsquo;s prime minister describes as an attempt to crash the plane. The aircraft went into a spin and began to plunge.</p>
+    <p>The pilot who was attacked is an Indian national, <b>Smit Machchhar</b>. Seriously injured, he fought back and <b>opened the cockpit door</b>, which let passengers and crew into the flight deck to subdue the attacker. <b>Off-duty Flydubai pilots travelling as passengers</b> then flew the aircraft to an emergency landing in Saudi Arabia. Everyone aboard reached Israel on Wednesday. Flydubai has suspended its Israel flights pending an attempted-hijacking investigation.</p>
+    <p>The reason this matters beyond one flight is the category. Reinforced cockpit doors and two-person rules exist to keep threats <em>out</em> of the flight deck. A crew member acting from inside defeats all of it, and the thing that saved the aircraft was the victim deliberately undoing the security measure.</p>
+    <p><b>Below the line because</b> the US channel is prospective: no US carrier, no US route, no American casualties, and no FAA or regulatory response yet. It leads if the FAA or EASA changes cockpit policy, or if a motive is established that touches US security.</p>
+    <p class="sources"><b>Confidence:</b> Independent corroboration; the attribution of intent is the Israeli prime minister&rsquo;s and no investigation has concluded. <b>Sources:</b> <a href="https://www.npr.org/2026/09/30/nx-s1-5985806/flydubai-flight-dubai-tel-aviv-israel">NPR</a> &middot; <a href="https://www.aljazeera.com/news/2026/9/30/what-happened-on-diverted-flydubai-flight-from-dubai-to-tel-aviv">Al Jazeera</a> &middot; <a href="https://www.cnn.com/2026/09/30/middleeast/flydubai-israel-plane-pilot-hijacking-incident-latam-hnk-intl">CNN</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-iraq">
+  <summary><span class="chip">Geopolitics</span> NPR has now reported the Iraq withdrawal, which this brief ran single-sourced yesterday. The second source resolves the sourcing but not the air-defence question.</summary>
+  <div class="body">
+    <p>Yesterday this brief led on the completed US withdrawal from Iraq and marked it <b>Single-sourced</b>, saying plainly that a story that large resting on one account was uncomfortable and that a second source on the removal of the Patriot and C-RAM systems was wanted. NPR has now published its own account, headed as a withdrawal more than two decades after the invasion.</p>
+    <p>What the second source settles: the withdrawal itself is corroborated. What it does not settle is the specific claim this brief flagged &mdash; the removal of the air-defence systems, which was attributed to reporting on Kurdish concerns rather than to a Defense Department confirmation. That remains unconfirmed here.</p>
+    <p>The analysis stands and is worth restating in one line: Iraq has no air defence of its own, is exposed to pro-Iran militia drones and missiles on its own territory, and several of its security ministries remain unfilled.</p>
+    <p><b>Below the line because</b> it is a sourcing update on a story that led yesterday, not new substance. It returns as a lead on the first militia attack after the batteries left, or on any US air-defence return under the 2008 framework.</p>
+    <p class="sources"><b>Confidence:</b> Independent corroboration now, for the withdrawal. The Patriot and C-RAM removal is still single-sourced. <b>Sources:</b> <a href="https://www.npr.org/2026/09/30/nx-s1-5983426/us-military-withdraws-iraq">NPR</a> &middot; continues <a href="2026-09-30.html#iraq">30 September</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-rescission">
+  <summary><span class="chip">US debt &amp; fiscal</span> The fiscal year turned at midnight and the $810m pocket rescission ran out the clock. No litigation appeared.</summary>
+  <div class="body">
+    <p>FY2026 ended last night. The <b>$810 million</b> rescission the President sent to Congress on 25 September &mdash; five days before the deadline, so the Impoundment Control Act&rsquo;s 45-day review could not run &mdash; has now done what it was designed to do. Of that, <b>$567m</b> was the HHS Office of Refugee Resettlement.</p>
+    <p>This brief said on Wednesday that the one thing that would change the picture was a grantee reaching a judge, on the strength of Judge Cooper having suspended a statutory lapse for the teen pregnancy appropriation on 21 September. <b>No such filing has been found.</b> The teen pregnancy grantees had a live suit when their deadline came; the refugee resettlement nonprofits had five days and no case.</p>
+    <p>What is left is the appropriations route. Senator Collins, who chairs Senate Appropriations and called this an attempt to undermine the power of the purse, writes the December bill.</p>
+    <p><b>Below the line because</b> this is the absence of an event &mdash; no filing, no ruling, no statement found this morning &mdash; and the substance ran as yesterday&rsquo;s and Tuesday&rsquo;s leads. It returns on a late filing, a GAO report, or anti-impoundment text in the December bill.</p>
+    <p class="sources"><b>Confidence:</b> Negative and weakly sourced &mdash; this records that nothing was found, which is not the same as nothing having happened. No docket was searched. <b>Sources:</b> continues <a href="2026-09-30.html#lapse">30 September</a> and <a href="2026-09-29.html#rescission">29 September</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-cornell">
+  <summary><span class="chip">US politics &amp; policy</span> Cornell has agreed to an independent investigation of how it handled a fraternity rape case, after the governor called for one.</summary>
+  <div class="body">
+    <p>Cornell has agreed to an independent probe into its handling of a fraternity rape case that was reopened this week as new details emerged. Governor Kathy Hochul had called for a review of the university&rsquo;s response.</p>
+    <p>This brief held the case twice under its anti-topic on crime without policy consequence. It is here now because the policy consequence arrived: a governor demanding a review of a private university&rsquo;s internal process, and the university conceding it, is a question about who supervises campus adjudication.</p>
+    <p>That question has a federal frame as of yesterday. The Education Department recodified the <b>Title IX</b> rules on 29 September, restoring the 2020 framework and its grievance procedures without notice and comment. An independent probe of one university&rsquo;s handling of one case will be measured against whichever rulebook is now in force, and the rulebook changed this week.</p>
+    <p><b>Below the line because</b> an agreement to investigate is not a finding, and this brief has no account of the case itself, the reopening, or what the probe will cover. It leads on the probe&rsquo;s terms of reference, or if the Office for Civil Rights opens its own inquiry.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced, and thin on the underlying case. <b>Sources:</b> <a href="https://www.npr.org/2026/09/30/nx-s1-5983480/cornell-fraternity-rape-case">NPR</a> &middot; relates to <a href="2026-09-29.html#titleix">29 September</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-hhs">
+  <summary><span class="chip">Science &amp; public health</span> An HHS report argues gender-affirming care &ldquo;may&rdquo; radicalize patients. It was not peer reviewed and its data and funding are not public.</summary>
+  <div class="body">
+    <p>HHS published a report in August titled <em>Where the Clinic Meets the Movement: Does Gender Ideology Arm Left-Wing Authoritarian Psychology?</em> It argues that gender-affirming care may radicalize. It was <b>not peer reviewed</b>, and its <b>underlying data and funding have not been made available</b>.</p>
+    <p>One of the authors is <b>Colin Wright</b>, an evolutionary biologist at the Manhattan Institute, a policy organisation that has campaigned against diversity programmes.</p>
+    <p>The methodological objection does the work and requires no view on the subject. A report that will not release its data or say who funded it cannot be checked, and publishing outside peer review is a choice not to be. That is the same claim this brief made about HHS citing nonexistent research papers in the teen pregnancy funding notice &mdash; which a federal judge found likely arbitrary and capricious.</p>
+    <p>On the substance, critics note that the evidence runs the other way on risk: transgender people are far more likely to be the targets of violence than the perpetrators.</p>
+    <p><b>Below the line because</b> the report is from August, no dated action followed it, and this brief has not read it. It leads if the report is cited in a rule, a grant condition or a coverage determination, which is where an unreviewed paper becomes policy.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced; the report was not read. <b>Sources:</b> <a href="https://www.npr.org/2026/09/30/nx-s1-5962843/hhs-study-gender-ideology-flaws-missing-context">NPR</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-csapr">
+  <summary><span class="chip">Energy &amp; grid</span> Virginia power plants went 80 tons over their air-pollution budget. They owe 160 allowances, two for every ton.</summary>
+  <div class="body">
+    <p>EPA posted final calculations today showing that Virginia units exceeded the state&rsquo;s emissions assurance level by <b>80 tons</b> in the 2025 control period under the Cross-State Air Pollution Rule. The operators must surrender <b>160 additional allowances</b> &mdash; two per ton of overage &mdash; into assurance accounts by <b>2 November</b>. Most of the burden falls on <b>Hopewell Power Generation</b>, with smaller shares to Wolf Hills Energy, Dominion Generation and Calpine Operating Services.</p>
+    <p>The two-for-one surrender is the part worth knowing. An assurance provision is the backstop that stops a state trading its way past its own ceiling: ordinary allowances cover emissions one-for-one, and going over the state budget costs double. It is the only part of the programme that bites on a state rather than on a plant.</p>
+    <p>Eighty tons is small. The mechanism working at all, with named companies and a dated surrender deadline, is the reportable fact &mdash; cross-state air trading has been litigated for fifteen years and mostly appears in this brief as rules being rescinded.</p>
+    <p><b>Below the line because</b> eighty tons has no measurable effect on anyone&rsquo;s air, and it is an administrative notification rather than an enforcement action. It leads if a large state exceeds by a large margin, or if the assurance provisions are themselves reconsidered.</p>
+    <p class="sources"><b>Confidence:</b> Primary source. <b>Sources:</b> <a href="https://www.federalregister.gov/documents/full_text/text/2026/10/01/2026-20191.txt">Federal Register, EPA notification 2026-20191</a> &middot; relates to <a href="2026-09-28.html#neshap">28 September</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-sailor">
+  <summary><span class="chip">US politics &amp; policy</span> A young sailor died by suicide and her family blames health care gaps and a long deployment. It landed the same week as the Quantico speech.</summary>
+  <div class="body">
+    <p>NPR has reported the death by suicide of a young sailor whose family attributes it to gaps in military health care and the length of her deployment.</p>
+    <p>The reason to put it next to the lead above is that the two describe the same institution from opposite ends. On Wednesday the Defense Secretary told junior officers the force has been rebuilt and the warrior ethos revived, announced tighter fitness and body-fat standards and fewer shaving waivers, and said &ldquo;no wimps&rdquo;. A family account of a sailor who could not get care is the part of readiness that does not appear in a State of the Force address.</p>
+    <p>This brief has no figures. Military suicide rates, the staffing of behavioural health billets, and deployment-length data all exist and none were obtained this morning, which is exactly what would make this a story rather than an anecdote.</p>
+    <p><b>Below the line because</b> it is one family&rsquo;s account with no dated policy event and no data attached, and this brief does not lead on that. It leads on a published suicide-rate figure, an inspector general report, or a change to behavioural health staffing.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced; the report was not read in full. <b>Sources:</b> <a href="https://text.npr.org/">NPR index, 1 October</a> &middot; relates to <a href="#hegseth">the Quantico speech above</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-glaciers">
+  <summary><span class="chip">Science &amp; public health</span> Swiss glaciers lost a record amount of ice again this year. The US channel is the one this brief keeps invoking and has never checked.</summary>
+  <div class="body">
+    <p>Swiss glaciers have suffered another year of record ice loss, according to the annual survey.</p>
+    <p>It is here for a reason that is partly about this brief rather than about Switzerland. Over the past week it has carried an El Ni&ntilde;o attribution three times &mdash; for Nolo near Hawaii, for Polo into Baja and the Southwest, and for the Atlantic nor&rsquo;easter &mdash; each time from forecasters quoted in the coverage, and said on Wednesday that it had never read the underlying climatology. A European glacier record is the same category of fact from a different instrument, and it is the kind of series that is measured rather than attributed.</p>
+    <p>What this item lacks is any US consequence this brief can follow: no water supply, no insurance market, no policy decision. Swiss glacial melt reaches the Rhine and the Rh&ocirc;ne, which is a European hydrology and shipping story &mdash; and Rhine water levels did appear in a maritime source check last week.</p>
+    <p><b>Below the line because</b> the altitude bar requires a US channel and this has none, and the survey itself was not read. It is recorded rather than dropped because three storm attributions in a week is a pattern this brief should be measuring and is not.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced; headline only. <b>Sources:</b> <a href="https://text.npr.org/">NPR index, 1 October</a></p>
+  </div>
+</details>
+
+<div class="fb">
+  <p><b>About this section as a whole.</b> Eight items, three of which are mainly about what this brief has not established.</p>
+  <label><input type="radio" name="fb-also" value="right"> About right, including the ones that admit the gap</label>
+  <label><input type="radio" name="fb-also" value="drop"> Drop items where you have not got the substance</label>
+  <label><input type="radio" name="fb-also" value="promote"> Something here should have been a lead &mdash; I will say which</label>
+  <label><input type="radio" name="fb-also" value="more"> More of these; the short tier is the most useful part</label>
+</div>
+
+<footer>
+  <h2 class="section">Sources checked this run</h2>
+  <p><b>Watchlist-pointed (11):</b> the <a href="https://www.federalregister.gov/">Federal Register</a> documents API, back to 112 documents after yesterday&rsquo;s zero &middot; four <em>Federal Register</em> full-text reads: the USDA REAP rule, the FCC network-change rule, the FTC impersonation notice and the EPA cross-state notification &middot; <a href="https://gasprices.aaa.com/">AAA Fuel Prices</a> &middot; <a href="https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm">EIA weekly retail prices</a> &middot; <a href="https://pinellas.gov/executive-orders/resolution-26-83-order-extending-local-state-of-emergency-for-mosquito-borne-illness">Pinellas County Resolution 26-83</a> &middot; <a href="https://www.wfla.com/news/pinellas-county/pinellas-county-extends-state-of-local-emergency-for-dengue-fever/">WFLA</a> &middot; the archive, for the execution, Hegseth, the data-centre power thread, the pump chain, the rescission and dengue.</p>
+  <p><b>Outside the watchlist (12):</b> <a href="https://text.npr.org/">text.npr.org headline index</a> &middot; <a href="https://www.npr.org/2026/10/01/nx-s1-5986822/tennessee-governor-halts-executions">NPR</a>, <a href="https://www.cbsnews.com/news/what-to-know-christa-pike-first-woman-executed-tennessee-200-years/">CBS News</a>, <a href="https://www.newschannel5.com/news/state/tennessee/davidson-county/tennessee-governor-halts-executions-after-christa-gail-pike-survives-lethal-injection-attempt">NewsChannel 5 Nashville</a> and <a href="https://www.abc.net.au/news/2026-10-01/christa-pike-lethal-injection/107216194">ABC Australia</a> on the failed execution &middot; <a href="https://www.kuer.org/business-economy/2026-09-30/valar-atomic-nuclear-data-center-project-beehive-utah">KUER</a> on Project Beehive &middot; <a href="https://www.stripes.com/theaters/us/2026-09-30/hegseth-state-of-the-force-quantico-23016908.html">Stars and Stripes</a> on Quantico &middot; <a href="https://www.aljazeera.com/news/2026/9/30/what-happened-on-diverted-flydubai-flight-from-dubai-to-tel-aviv">Al Jazeera</a> and <a href="https://www.cnn.com/2026/09/30/middleeast/flydubai-israel-plane-pilot-hijacking-incident-latam-hnk-intl">CNN</a> on Flydubai &middot; <a href="https://www.tampafp.com/mosquito-threat-lingers-pinellas-county-extends-dengue-emergency-through-oct-8/">Tampa Free Press</a> on the West Nile detection &middot; member-station copies of the NPR pieces on Cornell, the HHS report and the Iraq withdrawal.</p>
+  <p><b>The negative check:</b> produced three of the seven leads &mdash; the REAP rewrite, the FCC rule and the FTC notice, none on any thread and all three from reading a whole day of the <em>Federal Register</em>. It also produced a correction to this brief&rsquo;s own anti-topic call: the Cornell case was held twice as crime without policy consequence, and a governor demanding a review that the university conceded is a policy consequence, so it runs as a short. Held: the Swiss glacier record (no US channel, and recorded anyway for a reason given in the item), two NPR investigations with no dated event, and Trump&rsquo;s campaign schedule.</p>
+  <p><b>Could not reach:</b> the Hillsborough and Pasco emergency decisions, which is the main gap in the Florida section &middot; Christa Pike&rsquo;s attorneys&rsquo; emergency motion, and her condition this morning &middot; the drug and doses used in the execution, which no account reached names &middot; any BLM filing for Project Beehive &middot; a Defense Department confirmation of the Patriot and C-RAM removal from Iraq, wanted since yesterday and still missing &middot; the Hegseth transcript &middot; the HHS report &middot; any docket search on the $810m rescission.</p>
+  <p><b>A note on yesterday&rsquo;s judgement call.</b> The <em>Federal Register</em> returned zero documents of any type on Wednesday and this brief treated it as a source failure rather than reporting that the government had published nothing. Today it returned 112. That was the right call, and it is worth recording because the opposite error &mdash; inferring substance from an absence &mdash; is the one this brief made for four days on the Xi summit and corrected on Monday. The rule that came out of that correction worked three days later.</p>
+
+  <h2 class="section">Dormant threads</h2>
+  <p class="secnote">Kept on the watchlist, dropped from the body, picked up the moment a source check touches one.</p>
+  <ul class="dorm">
+    <li><b>Autonomous weapons regulation</b> &mdash; <em>woken today.</em> The trigger named the CCW review conference in November; the creation of a standing <b>autonomous warfare command</b> inside the Defense Department is larger and arrived first. It returns to active, and the thread now has a US institutional track as well as a treaty one.</li>
+    <li><b>Ukraine&ndash;Russia negotiations</b> &mdash; still dormant; nothing today reached the trigger.</li>
+    <li><b>Gulf states &amp; Article 51</b> &mdash; Kuwait or the UAE restricting US base access, or a collective GCC statement.</li>
+    <li><b>Indonesia free-meals programme</b> &middot; <b>Anak Krakatau</b> &middot; <b>Nepal&ndash;Tibet glacial flood</b> &middot; <b>Israel&ndash;Lebanon June framework</b> &middot; <b>EU&ndash;Greenland partnership</b> &middot; <b>Saxony-Anhalt government formation</b> &mdash; each on its named trigger.</li>
+  </ul>
+
+  <p style="margin-top:1.4rem">No open <code>brief-feedback</code> issues were waiting this morning. Dates ahead: <b>8 October</b>, when the Pinellas dengue emergency and the press-access restraining order both expire; <b>2 November</b>, the REAP comment close; <b>30 November</b>, the FTC and Federal Reserve comment closes; and the census thread&rsquo;s first trigger, the <b>7 October</b> responses to Senator Warren&rsquo;s letters.</p>
+  <p><a href="../">Archive</a> &middot; Previous: <a href="2026-09-30.html">30 September</a></p>
+
+  <div class="submit">
+    <button type="button" id="send-feedback">Send feedback as a GitHub issue</button>
+  </div>
+</footer>
+
+</div>
+<script>
+(function () {
+  var owner = "historiocity", repo = "News-Agent";
+  document.getElementById("send-feedback").addEventListener("click", function () {
+    var lines = ["Feedback on Issue No. 27 (2026-10-01)", ""];
+    document.querySelectorAll(".fb input[type=radio]:checked").forEach(function (el) {
+      lines.push(el.name + ": " + el.value);
+    });
+    if (lines.length === 2) lines.push("(no radio answers selected)");
+    lines.push("", "Anything else:", "");
+    var url = "https://github.com/" + owner + "/" + repo + "/issues/new"
+      + "?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("brief-feedback: 2026-10-01")
+      + "&body=" + encodeURIComponent(lines.join("\n"));
+    window.open(url, "_blank");
+  });
+})();
+</script>
+</body>
+</html>
