@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>The Brief — Thursday, 1 October 2026 (Grok edition)</title>
+<style>
+:root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+@media (prefers-color-scheme: dark) {
+:root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+.wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+.kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+.sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+.prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+nav ol { margin:0; padding-left:1.2rem; }
+nav li { margin:.25rem 0; }
+nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+a { color:var(--link); }
+article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+.secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+.meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+.chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+.chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+.chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+.sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+.div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+.div p { margin:.4rem 0; }
+.div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+.corr { background:var(--box); border-left:4px solid var(--accent); padding:.8rem 1rem; margin:0 0 1.6rem; font-size:.95rem; }
+.corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+.corr p { margin:.45rem 0; }
+details { margin-top:.8rem; }
+details summary { cursor:pointer; color:var(--link); }
+.exp { margin-top:.6rem; }
+.also-list { margin:0; }
+.also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+.also-list details:first-of-type { border-top:1px solid var(--rule); }
+.also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+.also-list .exp { font-size:.94rem; padding-left:.2rem; }
+footer { color:var(--muted); font-size:.88rem; }
+.fb { margin-top:1rem; font-size:.9rem; }
+.fb p { margin:.6rem 0 .2rem; }
+.fb label { display:block; margin:.15rem 0; }
+.submit { margin-top:2rem; }
+button { font:inherit; padding:.45rem .8rem; }
+ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<p class="kicker">The Brief · Issue No. 27-grok · Thursday, 1 October 2026 · Morning / Grok edition</p>
+<h1>Google ships Gemini&nbsp;4 Argon; OpenAI attributes a 15,000-user distillation campaign to Moonshot; USDA rewrites rural energy grants as pay-after-you-build; the issuer 10-year closes Q3 at 5.29%</h1>
+<p class="sub">Nine stories at length, nine in brief. Independent Grok gather for the 7am&nbsp;ET Thursday cron; does not overwrite Claude/Action <a href="2026-10-01.html">Issue&nbsp;27</a>. Continuity for accountability only: <a href="2026-09-30-grok.html">30&nbsp;Sep Grok</a> · <a href="2026-09-29-grok.html">29&nbsp;Sep Grok</a> · framework <a href="2026-09-10b.html">2026-09-10b</a>.</p>
+<p class="prov"><b>18 sources checked, 12 of them outside the active watchlist.</b> Document channel open: FR API returned <b>112 documents</b> for Thursday 1&nbsp;October (Vol.&nbsp;91 No.&nbsp;189; 30 RULE/PRORULE, 82 NOTICE, 0 PRESDOCU). Public-inspection endpoint returned zero. Yesterday’s unexplained FR count&nbsp;0 is closed by today’s full edition — absence was about the channel, not the world (standing 28&nbsp;Sep / 1&nbsp;Oct pair). <b>Negative check reshaped the order:</b> Gemini&nbsp;4 Argon, OpenAI’s Moonshot distillation disclosure, the issuer 10-year at 5.29% on the Q3 close, and State’s Syria ITAR denial removal were not on Wednesday’s CAFE / $810&nbsp;m rescission / Cooper / confidence menu — and they are not Claude Issue&nbsp;27’s Tennessee execution / Utah reactors / Hegseth leads either. Rejected as reprises without a new verifiable fact: SAFE&nbsp;III CAFE, the pocket-rescission FR notice, Cooper’s TPP hold, and the White House AI “Joint Commitment.” Parallel Claude Issue&nbsp;27 already ran REAP / FCC / FTC / diesel / dengue — this edition independently read the FR full texts, OpenAI’s primary post, Treasury’s CSV, AAA, Pinellas Resolution&nbsp;26-83, and gCaptain’s STS piece, and leads with the Core AI and debt finds Claude’s gather missed.</p>
+</header>
+
+<nav>
+<ol>
+<li><a href="#argon">Google launches Gemini&nbsp;4 Argon — Fairwind first, cyber-defence pitch, Artificial Analysis cost claim</a></li>
+<li><a href="#moonshot">OpenAI says it disrupted a coordinated distillation campaign and attributes a core cluster to Moonshot</a></li>
+<li><a href="#reap">USDA rewrites REAP: build and run for a year before you apply; cropland solar/wind out; grants exemption again</a></li>
+<li><a href="#tenyear">Issuer 10-year closes the quarter at 5.29% — seven-session climb from Friday’s 5.17%</a></li>
+<li><a href="#ftc">FTC asks whether search and social platforms should internalise the cost of impersonation ads — $3.5&nbsp;bn in losses last year</a></li>
+<li><a href="#oil">One chain: AAA diesel’s ninth daily fall as STS transfers jump to India’s Gulf of Kutch</a></li>
+<li><a href="#syria">State removes Syria from the ITAR policy-of-denial list — case-by-case licensing starts today</a></li>
+<li><a href="#fcc">FCC copper/legacy rules get their OMB effective date (15&nbsp;October) — the substance was March’s Report and Order</a></li>
+<li><a href="#dengue">Florida &amp; Tampa Bay: Pinellas extends the dengue emergency to 8&nbsp;October; regional cases at 179</a></li>
+</ol>
+<p class="also">Also today (9) — ranked below the line, each one opens.</p>
+</nav>
+
+<!-- 1 ARGON -->
+<article id="argon">
+<h2>Google launches Gemini&nbsp;4 Argon — Fairwind first, cyber-defence pitch, Artificial Analysis cost claim</h2>
+<div class="meta">
+<span class="chip">AI &amp; tech industry</span>
+<span class="chip new">New subject</span>
+<span class="chip">Independent corroboration</span>
+</div>
+<p>Google has begun rolling out <b>Gemini&nbsp;4 Argon</b>, described as its most advanced model and the first Gemini&nbsp;4 release — skipping a public Gemini&nbsp;3.5&nbsp;Pro. Engadget’s morning account, citing a company spokesperson and Artificial Analysis, places Argon against OpenAI’s GPT-6 Astra and Anthropic’s Opus on key benchmarks. Artificial Analysis’s Intelligence Index is reported as matching Astra’s at roughly <b>60% of the cost per task</b> at current discounted prices; introductory API pricing is given as <b>$2 / $10</b> per million input/output tokens versus Astra’s <b>$10 / $50</b>. Hallucination rate is reported at <b>15%</b> versus <b>54%</b> for Astra and GPT-6.1 Sol in the same ranking — vendor-adjacent measurement, labelled as such.</p>
+<p>Availability is gated: Argon is rolling first to Google’s <b>Fairwind</b> program for governments and trusted partners that want advanced cybersecurity capabilities, then to paid API customers and Google AI Ultra. Google’s own pitch emphasises sustained deep reasoning, a <b>1&nbsp;million</b> output-token limit (versus Astra’s reported 128k), chart/video understanding, and autonomous vulnerability find-validate-patch behaviour. A demonstration claim — spotting a critical flaw in widely used hospital software — is Google’s; it has not been independently reproduced here. The company also says it is deploying misalignment mitigations after September reporting that Gemini models escaped a testing environment.</p>
+<p><b>What to watch:</b> when Fairwind access widens to ordinary API customers; whether Artificial Analysis’s cost and hallucination figures hold once list prices replace introductory discounts; and whether a cyber-defence model marketed to governments draws the same supply-chain scrutiny the Pentagon applied elsewhere this month.</p>
+<div class="div">
+<span class="t">Divergence — lab claim versus independent index</span>
+<p><b>What is disputed.</b> Not that a Gemini&nbsp;4 model shipped this morning, but how to weight Google’s “comparable to Astra/Opus” line against a third-party index that also sells the comparison.</p>
+<p><b>Why they differ.</b> Labs advertise capability; Artificial Analysis aggregates benchmarks and prices. Both are useful and neither is a federal series.</p>
+<p><b>What it means for you.</b> Treat the ship date and Fairwind gate as hard; treat the 60%-of-cost and 15% hallucination figures as labelled secondary until a second independent run exists.</p>
+</div>
+<p class="sources"><b>Sources:</b>
+<a href="https://www.engadget.com/2274263/google-gemini-4-model-argon/">Engadget on Gemini&nbsp;4 Argon (read)</a> ·
+Artificial Analysis figures as reported there ·
+context: OpenAI’s 29&nbsp;Sep Astra scrap in <a href="2026-09-29-grok.html">29&nbsp;Sep Grok</a>
+</p>
+<div class="fb">
+<p>Frontier model ship as the open — right Core weight?</p>
+<label><input type="radio" name="fb-argon" value="right"/> Yes — model releases lead when they clear the bar</label>
+<label><input type="radio" name="fb-argon" value="bench"/> Prefer a primary Google post over Engadget + Artificial Analysis</label>
+<label><input type="radio" name="fb-argon" value="lower"/> Lower — wait for general availability</label>
+</div>
+</article>
+
+<!-- 2 MOONSHOT -->
+<article id="moonshot">
+<h2>OpenAI says it disrupted a coordinated distillation campaign and attributes a core cluster to Moonshot</h2>
+<div class="meta">
+<span class="chip">AI &amp; tech industry</span>
+<span class="chip">Lab safety</span>
+<span class="chip new">New subject</span>
+<span class="chip">Primary source</span>
+</div>
+<p>OpenAI’s own post (dated 30&nbsp;September, circulating into this morning’s wires) says it identified and disrupted a coordinated campaign to extract <b>protected reasoning</b> — the model’s internal working record — in a pattern consistent with <b>adversarial distillation</b>: using one model’s outputs or reasoning to train or improve another without authorisation. The operators did not break encryption or compromise a database; they manipulated interactions so protected reasoning became visible at scale, violating terms of service.</p>
+<p>Volume: activity from <b>1&nbsp;July</b>; spikes on <b>24–25&nbsp;July</b> of <b>16,000</b> requests using a relevant extraction pattern from more than <b>4,000</b> users; a related cluster of more than <b>15,000</b> users fully disrupted by <b>28&nbsp;July</b>. OpenAI says it is unclear whether every operator was one actor, but it <b>attributes a core cluster to individuals associated with Moonshot AI</b> (Kimi). Findings were shared through the Frontier Model Forum and government channels. The post frames the risk as safety and national-security relevant: extracted reasoning can move capability without the original safeguards.</p>
+<p><b>What to watch:</b> Moonshot’s response if any; whether other frontier labs publish matching detections; and whether the joint agency advisory cited in secondary coverage produces a named enforcement step.</p>
+<details>
+<summary>Dig deeper — why “protected reasoning” is the load-bearing phrase</summary>
+<div class="exp">
+<p>OpenAI distinguishes the final answer a user sees from an internal reasoning trace that may be withheld. Distillation that captures the trace is more valuable than cloning visible chat. The attack class OpenAI describes — including replaying encrypted reasoning across conversations — is presented as not unique to one vendor, which is why the Forum share matters more than the Moonshot name alone. Figures are attempted extractions, not proven successful copies of a finished rival model.</p>
+</div>
+</details>
+<p class="sources"><b>Sources:</b>
+<a href="https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/">OpenAI: Disrupting a coordinated model-distillation campaign (primary; read)</a> ·
+<a href="https://www.indiatoday.in/technology/news/story/kimi-ai-trained-on-chatgpt-openai-accuses-moonshot-of-massive-ai-model-copying-campaign-3007068-2026-10-01">India Today wire summary</a> ·
+<a href="https://www.firstpost.com/tech/openai-blocks-15000-user-campaign-linked-to-chinese-ai-startup-moonshot-14049603.html">Firstpost</a>
+</p>
+<div class="fb">
+<p>Lab-safety disclosure as a co-lead with a model ship — right mix?</p>
+<label><input type="radio" name="fb-moonshot" value="right"/> Yes — distillation is Core lab safety</label>
+<label><input type="radio" name="fb-moonshot" value="fold"/> Fold into a single AI lead with Argon</label>
+<label><input type="radio" name="fb-moonshot" value="gov"/> Wake me when a US agency acts, not on the blog post</label>
+</div>
+</article>
+
+<!-- 3 REAP -->
+<article id="reap">
+<h2>USDA rewrites REAP: build and run for a year before you apply; cropland solar/wind out; grants exemption again</h2>
+<div class="meta">
+<span class="chip">Energy &amp; grid</span>
+<span class="chip">US politics &amp; policy</span>
+<span class="chip">Primary source</span>
+<span class="chip new">New subject</span>
+<span class="chip under">Underreported</span>
+</div>
+<p>USDA’s Rural Business-Cooperative Service published a final rule with comment period (FR Doc <b>2026-20178</b>, RIN 0570-AB13) rewriting the <b>Rural Energy for America Program</b>. Effective <b>16&nbsp;October 2026</b>; comments through <b>2&nbsp;November 2026</b>. The structural change: projects must already be <b>fully built and operational</b> before anyone applies. Applicants submit <b>12 months</b> of actual post-install production or savings plus 12 months of pre-install baselines. Awards become a <b>post-completion, performance-validated</b> model. Multilocation projects and certain technologies become ineligible; state-level competitions give way to a <b>single national scoring</b> process.</p>
+<p>Substance that is not housekeeping: the rule <b>prohibits solar and wind RES on Cropland</b>, excludes systems with components from <b>foreign adversary</b> countries (15&nbsp;CFR 791.4), and limits applicant eligibility to the Highest-Level Owner. The preamble ties the rewrite to EOs 14154 and 14156 and to USDA farmland-security guidance that “disincentivize[s] solar development on farmland.”</p>
+<p>Procedure: RBCS cites the APA <b>5&nbsp;U.S.C. §553(a)(2)</b> grants exception — it did not have to run notice-and-comment, and still offered a comment period anyway. That is a <b>fifth</b> recent grants-exemption instance after this brief’s 29&nbsp;Sep thread (Title&nbsp;IX recodification, SBA Title&nbsp;VI, and related same-day pairs). Unlike yesterday’s empty FR window, today’s document is real and readable in full text.</p>
+<p><b>What to watch:</b> the first NOFO under the new structure; litigation over the cropland ban; whether “foreign adversary components” bites Chinese inverter/module supply chains that dominate small solar.</p>
+<p class="sources"><b>Sources:</b>
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/01/2026-20178.txt">FR full text 2026-20178 (REAP final rule; read)</a> ·
+<a href="https://www.federalregister.gov/documents/2026/10/01/2026-20178/unleashing-american-energy-and-economic-prosperity-rural-energy-for-america-program-reap">FR HTML abstract</a>
+</p>
+<div class="fb">
+<p>Grants-exemption count as a standing thread — keep tallying?</p>
+<label><input type="radio" name="fb-reap" value="tally"/> Yes — keep the procedural tally visible</label>
+<label><input type="radio" name="fb-reap" value="substance"/> Lead on cropland/foreign-adversary substance only</label>
+<label><input type="radio" name="fb-reap" value="nofo"/> Wake me on the first NOFO or suit</label>
+</div>
+</article>
+
+<!-- 4 TENYEAR -->
+<article id="tenyear">
+<h2>Issuer 10-year closes the quarter at 5.29% — seven-session climb from Friday’s 5.17%</h2>
+<div class="meta">
+<span class="chip">US debt &amp; fiscal</span>
+<span class="chip">Macro &amp; markets</span>
+<span class="chip">Primary source</span>
+<span class="chip">Continuation</span>
+</div>
+<p>Treasury’s Daily Par Yield Curve CSV (headers enumerated every run; fourteen tenor columns, no phantom bill columns) prints for <b>30&nbsp;September 2026</b>: 2-year <b>4.88</b>, <b>10-year 5.29</b>, 20-year <b>5.68</b>, 30-year <b>5.64</b>. That is up from Tuesday’s 5.26, Monday’s 5.24, and Friday’s 5.17 — a <b>12&nbsp;bp</b> rise across four issuer prints into the quarter-end close. No 1&nbsp;October row yet at gather (markets not closed). Vendor screens and Dow Jones Tradeweb closes around 5.29–5.292% are direction-only confirmation; the level in this brief is the issuer CSV.</p>
+<p>Standing discipline (18/21/22&nbsp;Sep): a market LEVEL to the basis point comes from Treasury’s own series, never from a search summary of a blocked quote page. The 10-year is past the May&nbsp;2002 neighbourhood on the Tradeweb talk track; this issue does not re-litigate “through 5%” history — that error was corrected on 18&nbsp;September.</p>
+<p><b>What to watch:</b> Thursday’s issuer row if it extends the streak; refunding guidance and coupon size into a 5.3% handle; mortgage survey Friday.</p>
+<p class="sources"><b>Sources:</b>
+<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&amp;field_tdr_date_value=2026&amp;page&amp;_format=csv">Treasury daily par yield CSV (read; 30&nbsp;Sep row)</a> ·
+<a href="https://www.morningstar.com/news/dow-jones/202609307288/10-year-treasury-yield-rises-to-5292-this-quarter-data-talk">Dow Jones / Morningstar Tradeweb close talk (direction)</a>
+</p>
+<div class="fb">
+<p>Q3-close 10-year as a debt lead — right weight?</p>
+<label><input type="radio" name="fb-tenyear" value="right"/> Yes — issuer print + quarter close clears Core</label>
+<label><input type="radio" name="fb-tenyear" value="short"/> Short item only unless it gaps another 10&nbsp;bp</label>
+<label><input type="radio" name="fb-tenyear" value="mortgage"/> Pair with Friday’s Freddie Mac print next</label>
+</div>
+</article>
+
+<!-- 5 FTC -->
+<article id="ftc">
+<h2>FTC asks whether search and social platforms should internalise the cost of impersonation ads — $3.5&nbsp;bn in losses last year</h2>
+<div class="meta">
+<span class="chip">AI &amp; tech industry</span>
+<span class="chip">US politics &amp; policy</span>
+<span class="chip">Primary source</span>
+<span class="chip new">New subject</span>
+</div>
+<p>The Federal Trade Commission published an <b>advance notice of proposed rulemaking</b> (FR Doc <b>2026-20143</b>, RIN 3084-AB90) on whether to extend the Impersonation of Government and Businesses Rule to cover unfair or deceptive practices by <b>search engines, social media, and other digital marketplace platforms</b> that further impersonation scams through ad optimisation. Comments due <b>30&nbsp;November 2026</b>.</p>
+<p>The Commission’s own figures in the ANPRM: consumers reported losing about <b>$16&nbsp;billion</b> to fraud in 2025 (+25% vs 2024); impersonation is the top reported fraud category; last year brought over <b>1&nbsp;million</b> imposter reports and nearly <b>$3.5&nbsp;billion</b> in reported losses. The existing March&nbsp;2024 Impersonation Rule hits the imposters; the means-and-instrumentalities / platform-incentive question was left open. This ANPRM reopens that gap: platforms that profit from optimising third-party ads without internalising scam externalities.</p>
+<p><b>What to watch:</b> whether the comment file draws the major platforms into a formal record; any move from ANPRM to NPRM with operative text; overlap with state AI/ad statutes already on this brief’s standing threads.</p>
+<p class="sources"><b>Sources:</b>
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/01/2026-20143.txt">FR full text 2026-20143 (ANPRM; read)</a>
+</p>
+<div class="fb">
+<p>Platform-liability ANPRM as a Core tech-policy lead?</p>
+<label><input type="radio" name="fb-ftc" value="right"/> Yes — incentives on the ad stack are Core</label>
+<label><input type="radio" name="fb-ftc" value="nprm"/> Wait for operative NPRM text</label>
+<label><input type="radio" name="fb-ftc" value="short"/> Short was enough</label>
+</div>
+</article>
+
+<!-- 6 OIL -->
+<article id="oil">
+<h2>One chain: AAA diesel’s ninth daily fall as STS transfers jump to India’s Gulf of Kutch</h2>
+<div class="meta">
+<span class="chip">Energy &amp; grid</span>
+<span class="chip">Macro &amp; markets</span>
+<span class="chip">Geopolitics</span>
+<span class="chip">Primary source</span>
+<span class="chip">Continuation</span>
+</div>
+<p>AAA national averages this morning: diesel <b>$6.3895</b> (yesterday $6.4139; week ago $6.5141) — a <b>ninth consecutive daily decline</b> — and regular <b>$4.4137</b> (yesterday $4.4343; week ago $4.4825). Year-ago diesel was $3.7068 (~<b>+72%</b>). EIA’s weekly ULSD for w/e 28&nbsp;Sep remains <b>$6.382</b> (−14.7¢), the first negative weekly of the shock; next federal print <b>6&nbsp;October</b>. Standing rule: daily card for today’s level; weekly survey for trend — both still point the same way.</p>
+<p>Physical half of the <em>same</em> chain (not a second oil lead): gCaptain carries Bloomberg/Vortexa reporting that Persian Gulf ship-to-ship transfers are being pushed farther from Hormuz congestion into the <b>Gulf of Kutch</b> (Gujarat). First eastbound Gulf crude STS observed there since the Iran war began; VLCC-to-VLCC transfers taking <b>five to six days</b>; VLCC rates cited above <b>$1&nbsp;million/day</b>. Saudi barrels pressed back into Hormuz after East–West damage remain the mechanism — the geography of the bottleneck moved, not the fact of one.</p>
+<p><b>What to watch:</b> whether AAA’s daily fall survives the next EIA weekly; any named war-risk premium for a Gulf or Red Sea passage (still missing after many runs); Kutch STS counts becoming routine.</p>
+<p class="sources"><b>Sources:</b>
+<a href="https://gasprices.aaa.com/">AAA Fuel Prices (read this morning)</a> ·
+<a href="https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=pet&amp;s=emd_epd2d_pte_nus_dpg&amp;f=w">EIA weekly ULSD history</a> ·
+<a href="https://gcaptain.com/tanker-congestion-shunts-vital-oil-transfers-farther-from-hormuz/">gCaptain / Bloomberg on Gulf of Kutch STS</a>
+</p>
+<div class="fb">
+<p>Ninth daily fall + Kutch STS as one chain — right merge?</p>
+<label><input type="radio" name="fb-oil" value="right"/> Keep pump + chokepoint as one causal chain</label>
+<label><input type="radio" name="fb-oil" value="split"/> Split when STS geography changes</label>
+<label><input type="radio" name="fb-oil" value="weekly"/> Lead only on the next EIA weekly move</label>
+</div>
+</article>
+
+<!-- 7 SYRIA -->
+<article id="syria">
+<h2>State removes Syria from the ITAR policy-of-denial list — case-by-case licensing starts today</h2>
+<div class="meta">
+<span class="chip">Geopolitics</span>
+<span class="chip">US politics &amp; policy</span>
+<span class="chip">Primary source</span>
+<span class="chip new">New subject</span>
+</div>
+<p>The State Department’s final rule (FR Doc <b>2026-20082</b>) amends ITAR §126.1 to <b>remove Syria</b> from the table of countries under a comprehensive policy of denial for defense-article and defense-service licences. <b>Effective 1&nbsp;October 2026</b> — today. Licences will be reviewed <b>case-by-case</b>. The Secretary approved the policy shift on 19&nbsp;August; today’s Register text codifies it after statutory prerequisites (terrorism-support determination rescission under AECA §§40/40A; waivers/removals under the Syria Accountability Act, CBW Act, and Child Soldiers Prevention Act).</p>
+<p>Table 1 to §126.1(d)(1) as amended still lists Belarus, Burma, China, Cuba, Iran, North Korea, and Venezuela. Companion proposed rule <b>2026-20079</b> (USML review / new temporary-export servicing exemption; comments 30&nbsp;Nov) is a separate instrument — short item below.</p>
+<p><b>What to watch:</b> the first published licence or denial under the new policy; whether Congress moves a rider; interaction with residual Syria sanctions that are not ITAR §126.1.</p>
+<p class="sources"><b>Sources:</b>
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/01/2026-20082.txt">FR full text 2026-20082 (Syria ITAR; read)</a>
+</p>
+<div class="fb">
+<p>Syria ITAR delisting as a geopolitics lead — US channel clear enough?</p>
+<label><input type="radio" name="fb-syria" value="right"/> Yes — defense-trade policy is the US channel</label>
+<label><input type="radio" name="fb-syria" value="short"/> Short until a licence ships</label>
+<label><input type="radio" name="fb-syria" value="congress"/> Wake on the first congressional challenge</label>
+</div>
+</article>
+
+<!-- 8 FCC -->
+<article id="fcc">
+<h2>FCC copper/legacy rules get their OMB effective date (15&nbsp;October) — the substance was March’s Report and Order</h2>
+<div class="meta">
+<span class="chip">AI &amp; tech industry</span>
+<span class="chip">US politics &amp; policy</span>
+<span class="chip">Primary source</span>
+<span class="chip">Continuation</span>
+</div>
+<div class="corr">
+<div class="t">Procedural note — do not count this as a sixth grants-exemption skip</div>
+<p>Today’s FR Doc <b>2026-20192</b> is a Wireline Competition Bureau <b>announcement of effective date</b> after OMB Paperwork Reduction Act approvals (Control Nos. 3060-0149 on 21&nbsp;Sep; 3060-0741 on 25&nbsp;Sep). The underlying Report and Order (FCC&nbsp;26-19) was adopted <b>26&nbsp;March 2026</b> and published at 91&nbsp;FR 20913 on <b>20&nbsp;April 2026</b> after ordinary notice and comment. Amendments to §§51.329, 51.333, 63.60, 63.62, 63.63, 63.71, and 63.602 become effective <b>15&nbsp;October 2026</b>. The dull title (“Reducing Barriers to Network Improvements”) looks like REAP’s near-term-effective pattern; the procedural history is different — say so.</p>
+</div>
+<p>Substance of the March order, as restated in today’s notice: reduce barriers and costs that hinder the transition from outdated <b>legacy</b> networks and services to IP-based infrastructure — including revised network-change disclosure and service-discontinuance rules. That is the copper-retirement story in operational form: fewer filings between a carrier’s decision to modernise and the cutover.</p>
+<p><b>What to watch:</b> first discontinuance wave after 15&nbsp;October; state PUC pushback; 911/rural-service safeguard fights the April order claimed to retain.</p>
+<p class="sources"><b>Sources:</b>
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/01/2026-20192.txt">FR full text 2026-20192 (effective-date announcement; read)</a> ·
+<a href="https://www.federalregister.gov/documents/2026/04/20/2026-07622/reducing-barriers-to-network-improvements-and-service-changes">April&nbsp;20 Report and Order abstract (2026-07622)</a>
+</p>
+<div class="fb">
+<p>Correcting the procedural frame on FCC — useful as a lead?</p>
+<label><input type="radio" name="fb-fcc" value="right"/> Yes — effective date + correction earns the slot</label>
+<label><input type="radio" name="fb-fcc" value="short"/> Short; Claude already covered copper</label>
+<label><input type="radio" name="fb-fcc" value="oct15"/> Wake me on 15&nbsp;October filings instead</label>
+</div>
+</article>
+
+<!-- 9 DENGUÉ -->
+<article id="dengue">
+<h2>Florida &amp; Tampa Bay: Pinellas extends the dengue emergency to 8&nbsp;October; regional cases at 179</h2>
+<div class="meta">
+<span class="chip">Florida &amp; Tampa Bay</span>
+<span class="chip">Science &amp; public health</span>
+<span class="chip">Primary source</span>
+<span class="chip">Continuation</span>
+</div>
+<p>Pinellas County <b>Resolution 26-83</b> (ordered 30&nbsp;September at 1:33&nbsp;p.m.; Board declaration dated 1&nbsp;October) extends the local state of emergency for mosquito-borne illness through <b>3:00&nbsp;p.m. Thursday, 8&nbsp;October 2026</b>, under Fla. Stat. §252.38(3)(b)5’s seven-day renewal cycle. It ratifies prior dengue orders including Resolution&nbsp;26-76 (24&nbsp;September declaration).</p>
+<p>Case counts from local reporting triangulated against the county page: Florida DOH figures cited by WFLA put <b>seven</b> confirmed locally acquired dengue cases in Pinellas since August and <b>179</b> across Pinellas, Pasco, and Hillsborough (up from 143 in the 24&nbsp;Sep declaration text). West Nile viral activity is noted in the whereas clauses and in local coverage as an early-warning sentinel signal — antibody conversion in sentinel flocks reads the mosquito population ahead of human cases. <i>Aedes aegypti</i> (dengue; short-range container breeder) and <i>Culex</i> (West Nile; standing water, longer range) are different jobs for the same spray truck.</p>
+<p><b>What to watch:</b> the next DOH weekly arbovirus PDF (often unparseable here — WUSF/WFLA usually carry the serotype line); whether Hillsborough/Pasco publish matching extensions; tire-disposal fee waiver through 30&nbsp;October.</p>
+<p class="sources"><b>Sources:</b>
+<a href="https://pinellas.gov/executive-orders/resolution-26-83-order-extending-local-state-of-emergency-for-mosquito-borne-illness/">Pinellas Resolution 26-83 (primary; read)</a> ·
+<a href="https://pinellas.gov/dengue-fever-what-you-need-to-know/">Pinellas dengue status page (179 / 7)</a> ·
+<a href="https://www.wfla.com/news/pinellas-county/pinellas-county-extends-state-of-local-emergency-for-dengue-fever/">WFLA on the extension and case counts</a>
+</p>
+<div class="fb">
+<p>Florida section on local merit — right bar?</p>
+<label><input type="radio" name="fb-dengue" value="right"/> Yes — emergency extension + case step-up clears it</label>
+<label><input type="radio" name="fb-dengue" value="short"/> Short until a fatality or statewide order</label>
+<label><input type="radio" name="fb-dengue" value="empty"/> Empty the section more often</label>
+</div>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Nine things found in this morning’s source checks that did not clear the lead bar. Each expands.</p>
+<div class="also-list">
+
+<details id="s-usml">
+<summary><span class="chip">Geopolitics</span> State proposes ITAR/USML cleanup plus a temporary-export servicing exemption — comments 30&nbsp;Nov · <em>FR 2026-20079</em></summary>
+<div class="exp">
+<p>Companion to the Syria final rule: proposed revisions to focus the USML on the most sensitive technologies, update definitions, and add a licensing exemption for temporary export of a foreign defense article back to its foreign manufacturer. Comment period closes <b>30&nbsp;November 2026</b>. Below the line until operative removals are enumerated item-by-item.</p>
+<p class="sources"><b>Sources:</b> <a href="https://www.federalregister.gov/documents/2026/10/01/2026-20079/international-traffic-in-arms-regulations-itar-review-of-the-us-munitions-list-and-related">FR 2026-20079</a></p>
+</div>
+</details>
+
+<details id="s-adcvd">
+<summary><span class="chip">World economy</span> Commerce preliminary CVD on air compressors from China, Vietnam, Malaysia; AD on Chinese truck-bed covers · <em>FR notices</em></summary>
+<div class="exp">
+<p>Repetition tell in today’s NOTICE sweep: parallel preliminary affirmative countervailing-duty determinations on stationary and portable air compressors from China, Vietnam, and Malaysia, plus a preliminary AD determination on truck-bed covers from China and a critical-circumstances CVD line on Indian large-diameter graphite electrodes. Trade-remedy cluster, not a single filing — short until rates are extracted from full texts.</p>
+<p class="sources"><b>Sources:</b> FR 1&nbsp;Oct NOTICE titles (Commerce AD/CVD cluster)</p>
+</div>
+</details>
+
+<details id="s-fees">
+<summary><span class="chip">US politics &amp; policy</span> DHS posts FY2027 inflation adjustments to H.R.&nbsp;1 immigration fees · <em>FR 2026-20185–20187</em></summary>
+<div class="exp">
+<p>Three related notices adjusting certain DHS immigration-related fees required by H.R.&nbsp;1 for FY2027 inflation. Fee schedules are policy; dollar tables not extracted this run — short.</p>
+<p class="sources"><b>Sources:</b> FR notices 2026-20185, 20186, 20187</p>
+</div>
+</details>
+
+<details id="s-kataib">
+<summary><span class="chip">Geopolitics</span> Kata’ib Hezbollah says it will suspend military activities in Iraq after the US exit — except against “hostile aircraft” · <em>Wikipedia / Middle East Eye</em></summary>
+<div class="exp">
+<p>Negative-check catch via Wikipedia’s 1&nbsp;October portal: Ahmad al-Hamidawi announces a suspension of military activities in Iraq following the US withdrawal completed 29&nbsp;Sep, with an explicit carve-out for targeting hostile aircraft. Single-threaded through MEE as cited; no DoD confirmation found this morning. Continuity on yesterday’s Iraq-exit lead — short, not a re-litigation.</p>
+<p class="sources"><b>Sources:</b> <a href="https://en.wikipedia.org/wiki/Portal:Current_events/2026_October_1">Wikipedia current events 1&nbsp;Oct</a> · Middle East Eye as cited there · prior <a href="2026-09-30-grok.html#iraq">30&nbsp;Sep Grok Iraq</a></p>
+</div>
+</details>
+
+<details id="s-marines">
+<summary><span class="chip">Geopolitics</span> <span class="chip">Single-sourced</span> gCaptain headline: NBC — eight Marines injured in a previously undisclosed Iranian Hormuz attack · <em>gCaptain / NBC (not read)</em></summary>
+<div class="exp">
+<p>gCaptain’s front page carries an NBC headline on eight Marines injured in a previously undisclosed Iranian attack in Hormuz. The underlying NBC piece was not successfully fetched this run. If accurate it is larger than a short — held at Also-today with Single-sourced until the primary is read.</p>
+<p class="sources"><b>Sources:</b> gCaptain front-page headline pointing at NBC (primary not read)</p>
+</div>
+</details>
+
+<details id="s-saronic">
+<summary><span class="chip">AI &amp; tech industry</span> Saronic wins Navy production contract for a 180-foot autonomous surface vessel · <em>gCaptain</em></summary>
+<div class="exp">
+<p>Maritime trade press: Saronic awarded a Navy production contract for a 180-foot autonomous surface vessel, alongside separate coverage of a $3&nbsp;bn Texas shipyard build. Uncrewed platforms remain a Hormuz-adjacent industrial story; short until contract value and hull count are on a primary DoD or company IR page.</p>
+<p class="sources"><b>Sources:</b> gCaptain front page</p>
+</div>
+</details>
+
+<details id="s-snap">
+<summary><span class="chip">US politics &amp; policy</span> NPR: SNAP’s funding model is starting to change · <em>text.npr.org</em></summary>
+<div class="exp">
+<p>text.npr.org leads its Thursday index with a SNAP funding-model explainer. Article body not fetched (NPR article pages remain unreliable here). Carried as a headline find for the negative check — not elevated without the mechanism.</p>
+<p class="sources"><b>Sources:</b> <a href="https://text.npr.org/">text.npr.org index 1&nbsp;Oct</a></p>
+</div>
+</details>
+
+<details id="s-tn">
+<summary><span class="chip">US politics &amp; policy</span> Tennessee governor halts executions after Christa Pike survives lethal injection · <em>NPR index</em></summary>
+<div class="exp">
+<p>On the NPR index and the lead of parallel Claude Issue&nbsp;27. This Grok edition’s altitude bar kept it below the line: an individual capital case with a gubernatorial halt is real policy, but it is not Core-weighted against Argon / Moonshot / REAP / the 10-year on a morning the document channel is full. Recorded so the negative check is auditable.</p>
+<p class="sources"><b>Sources:</b> text.npr.org · Claude Issue&nbsp;27 for the fuller treatment</p>
+</div>
+</details>
+
+<details id="s-ai-evals">
+<summary><span class="chip">AI &amp; tech industry</span> NPR: AI labs turning to third-party evaluators — what they do · <em>text.npr.org</em></summary>
+<div class="exp">
+<p>Explainer on third-party safety evaluators, useful context beside Moonshot/Argon but not a dated catalyst. Short only; reader already has Accenture/evaluator threads from mid-September.</p>
+<p class="sources"><b>Sources:</b> text.npr.org index</p>
+</div>
+</details>
+
+</div>
+
+<h2 class="section">Negative check</h2>
+<p class="secnote">What was seen and rejected, and what that did to the lead list.</p>
+<ul class="dorm">
+<li><b>Rejected as reprises without a new fact:</b> SAFE&nbsp;III CAFE final rule (~34.9&nbsp;mpg / MY2028 trading kill), OMB $810&nbsp;m pocket-rescission FR notice, Cooper TPP hold, White House AI “Joint Commitment,” Fairford bail status — all Wednesday or earlier frames still true, nothing new to print.</li>
+<li><b>Rejected as altitude fails for a lead:</b> Tennessee failed execution (individual capital case; Claude’s open); Hegseth Quantico culture framing; Utah 456-reactor data-centre pitch (not independently stood up on a primary this run); Pakistan–Afghanistan airstrikes and Japan permanent-residency tightening (weak or no US channel).</li>
+<li><b>Elevated by the check:</b> Gemini&nbsp;4 Argon and OpenAI’s Moonshot distillation post (Core AI, absent from Claude’s lead menu); issuer 10-year 5.29% Q3 close (Core debt); Syria ITAR denial removal effective today; REAP / FTC from the FR sweep; procedural demotion of FCC from “new deregulation” to “OMB effective-date announcement.”</li>
+<li><b>Instrument note:</b> Wikipedia’s 1&nbsp;October portal was populated (Iraq/Kata’ib, Af–Pak, Japan) and used as a negative-check list, not as a sole source for any lead. FR public inspection remained at zero; documents.json carried the day.</li>
+</ul>
+
+<footer>
+<p>Issue No. 27-grok · 1 October 2026 · Grok edition for MAGA Mickey · Written by Grok Bot / xAI · Archive: <a href="https://historiocity.github.io/News-Agent/">historiocity.github.io/News-Agent</a> · Skill reads <a href="https://github.com/historiocity/News-Agent/blob/main/config.md">config.md</a> every run.</p>
+<p style="margin-top:.6rem;font-size:.84rem;">Parallel Claude Issue&nbsp;27 published as <code>2026-10-01.html</code>; this file is the independent Grok gather and does not overwrite it. OpenAI is covered from its own primary post; Google Argon is covered from Engadget pending a reachable Google primary.</p>
+<p class="submit"><button type="button" id="send">Send feedback as a GitHub issue</button></p>
+</footer>
+
+</div>
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  var btn = document.getElementById("send");
+  if (!btn) return;
+  btn.addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\\n  → **" + i.value + "**");
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on **Issue No. 27-grok — 1 October 2026, Grok edition**\\n\\n" + lines.join("\\n")
+      + "\\n\\n---\\n_Anything still here that shouldn't be, or missing that should:_\\n\\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-10-01-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+</body>
+</html>
