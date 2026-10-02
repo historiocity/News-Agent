@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>The Brief — Friday, 2 October 2026 (Grok edition)</title>
+<style>
+:root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+@media (prefers-color-scheme: dark) {
+:root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+.wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+.kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+.sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+.prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+nav ol { margin:0; padding-left:1.2rem; }
+nav li { margin:.25rem 0; }
+nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+a { color:var(--link); }
+article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+.secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+.meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+.chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+.chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+.chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+.sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+.div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+.div p { margin:.4rem 0; }
+.div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+.corr { background:var(--box); border-left:4px solid var(--accent); padding:.8rem 1rem; margin:0 0 1.6rem; font-size:.95rem; }
+.corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+.corr p { margin:.45rem 0; }
+details { margin-top:.8rem; }
+details summary { cursor:pointer; color:var(--link); }
+.exp { margin-top:.6rem; }
+.also-list { margin:0; }
+.also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+.also-list details:first-of-type { border-top:1px solid var(--rule); }
+.also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+.also-list .exp { font-size:.94rem; padding-left:.2rem; }
+footer { color:var(--muted); font-size:.88rem; }
+.fb { margin-top:1rem; font-size:.9rem; }
+.fb p { margin:.6rem 0 .2rem; }
+.fb label { display:block; margin:.15rem 0; }
+.submit { margin-top:2rem; }
+button { font:inherit; padding:.45rem .8rem; }
+ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<p class="kicker">The Brief · Issue No. 28-grok · Friday, 2 October 2026 · Morning / Grok edition</p>
+<h1>Fed’s Cook names the AI buildout a top 2027 inflation risk; stress-test equations go public; diesel’s tenth daily fall as Washington presses Europe on reserves; Medicare’s GLOBE benchmark lands in the Register</h1>
+<p class="sub">Nine stories at length, nine in brief. Independent Grok gather for the 7am&nbsp;ET Friday cron; does not overwrite Claude/Action <a href="2026-10-02.html">Issue&nbsp;28</a>. Continuity for accountability only: <a href="2026-10-01-grok.html">1&nbsp;Oct Grok</a> · <a href="2026-09-30-grok.html">30&nbsp;Sep Grok</a> · framework <a href="2026-09-10b.html">2026-09-10b</a>.</p>
+<p class="prov"><b>19 sources checked, 12 of them outside the active watchlist.</b> Document channel open: FR API returned <b>94 documents</b> for Friday 2&nbsp;October (Vol.&nbsp;91 No.&nbsp;190; 14 RULE/PRORULE, 75 NOTICE, 5 PRESDOCU). <b>Negative check reshaped the order:</b> Cook’s AI-inflation speech (Fed primary, outside watchlist), the stress-test / stress-capital-buffer pair, TA419’s AI-policy phishing (Proofpoint), the §25F scholarship temporary regulations, and the Super Intelligence EO’s FR publication were not on Thursday’s Gemini&nbsp;4 / Moonshot / REAP / 5.29% menu — and they are not Claude Issue&nbsp;28’s El&nbsp;Niño / Maryland $216 / “third carrier” open either. Rejected as calendar reprises without a new verifiable fact: Gemini&nbsp;4 Argon, OpenAI’s Moonshot distillation claim, USDA REAP, Syria ITAR, FCC copper OMB date, and Pinellas’s dengue extension to 8&nbsp;Oct (no new case-count primary found overnight). Parallel Claude Issue&nbsp;28 already ran diesel diplomacy / Hormuz / stress tests / GLOBE / disability / SCOTUS ICE — this edition independently read Cook’s speech, the Fed Board press release, FR full texts for the stress-test rules and SEC quorum, the White House Super Intelligence EO, AAA’s 2&nbsp;Oct print, DW and CMS, Proofpoint on TA419, Stateline on <i>Texas&nbsp;v.&nbsp;Kennedy</i>, Stars and Stripes on Roosevelt relief of the Washington, and Treasury’s CSV, and leads with the Core AI–macro and bank-capital finds.</p>
+</header>
+
+<nav>
+<ol>
+<li><a href="#cook">Fed’s Cook: AI buildout is a top 2027 inflation risk — electricity and water already up ~5%</a></li>
+<li><a href="#stress">Fed will publish stress-test models and average two years of losses into the capital buffer</a></li>
+<li><a href="#oil">One chain: AAA diesel’s tenth daily fall as Bessent presses Europe to release reserves</a></li>
+<li><a href="#globe">Medicare’s GLOBE model benchmarks Part&nbsp;B rebates against nineteen peer countries</a></li>
+<li><a href="#504">A judge strips “integration” from Section&nbsp;504 rules after HHS joined the states that sued it</a></li>
+<li><a href="#ta419">China-aligned TA419 phished US AI-policy circles by impersonating a former White House OSTP official</a></li>
+<li><a href="#scholarship">Treasury publishes temporary regulations for the $1,700 federal scholarship tax credit</a></li>
+<li><a href="#hormuz">Roosevelt is expected to <em>relieve</em> the Washington — not add a third carrier; a tanker burns in the strait</a></li>
+<li><a href="#vibrio">Florida &amp; Tampa Bay: Pinellas reports a Vibrio death; dengue extension stands without a new case print</a></li>
+</ol>
+<p class="also">Also today (9) — ranked below the line, each one opens.</p>
+</nav>
+
+<div class="corr">
+<span class="t">Accountability — prior Grok frames</span>
+<p><b>Issuer 10-year:</b> Thursday’s Grok lead closed Q3 at <b>5.29%</b> (Treasury CSV). Friday’s CSV row for <b>1&nbsp;October</b> prints the 10-year at <b>5.24%</b> — a five-basis-point pullback after the seven-session climb from Friday 25&nbsp;Sep’s 5.17%. Direction reversed one session; no “through 5%” claim is revived (standing 18&nbsp;Sep discipline).</p>
+<p><b>“Third carrier”:</b> Several accounts treat the Theodore Roosevelt’s Middle East deployment as a net increase. Stars and Stripes: Roosevelt is <b>expected to relieve</b> the Japan-based USS George Washington. Until Washington actually leaves, “third carrier” is a rotation claim, not a force-count. The unambiguous new capability is the amphibious group (Makin Island / Marines), not the air wing math.</p>
+<p><b>Diesel fall count:</b> Thursday was the ninth consecutive AAA daily fall ($6.3895). Today’s AAA national diesel is <b>$6.3726</b> (−1.69¢) — the <b>tenth</b>. Record remains $6.5276 (22&nbsp;Sep).</p>
+<p><b>FTC impersonation → TA419:</b> Yesterday’s FTC ANPRM asked whether platforms should internalise impersonation-ad costs. Today’s Proofpoint report shows state-aligned actors already impersonating AI officials to reach policy staff — different instrument, same trust surface.</p>
+</div>
+
+<!-- 1 COOK -->
+<article id="cook">
+<h2>Fed’s Cook: AI buildout is a top 2027 inflation risk — electricity and water already up ~5%</h2>
+<div class="meta">
+<span class="chip">AI &amp; tech industry</span>
+<span class="chip">Macro &amp; markets</span>
+<span class="chip new">New subject</span>
+<span class="chip">Primary source</span>
+</div>
+<p>Federal Reserve Governor Lisa Cook, in a 28&nbsp;September Oakland speech now carrying the live policy conversation into this morning’s wires, put the <b>physical AI buildout</b> inside the inflation debate rather than outside it. Prices for AI-related goods — chips, computers, software — have surged. Some of that, she argues, is a relative-price shift that monetary policy should look through. The part that worries her for <b>2027</b> is economy-wide pressure from shared inputs: data-centre demand for construction labour and energy can lift costs in sectors that have nothing to do with models. Electricity and water costs are each up around <b>5%</b> over the past year, “potentially attributable in part to AI”; core goods are running above a <b>3%</b> annual pace. Firms have spent only a small fraction of roughly <b>$2&nbsp;trillion</b> in announced data-centre plans.</p>
+<p>On Thursday she told New York Fed President John Williams the same thesis in sharper form: the AI buildout may create inflationary pressures “that may not resolve very quickly,” and it is “one of the main things that concerns me right now for 2027.” She still expects longer-run productivity gains and modest disinflation later — but not in time to offset broadening pressure this year. Geopolitical supply shocks, including the Middle East conflict, remain in her near-term inflation stack alongside the buildout. She voted with the unanimous September 25&nbsp;bp hike.</p>
+<p><b>What to watch:</b> whether electricity and water components keep feeding core; whether the $2&nbsp;trillion announcement pipeline converts into measured investment fast enough to keep the shared-input channel live; and whether any FOMC speaker contests Cook’s timing on when productivity would offset the buildout.</p>
+<div class="div">
+<span class="t">Instrument note — speech versus decision</span>
+<p>Per the reader’s Fed cadence this is a <b>print-adjacent primary</b> (a named governor’s inflation risk ranking), not a quiet state-of-play item. The decision remains the September hike; Cook’s speech is the new fact about how a voter weights AI capex against the 2% path.</p>
+</div>
+<p class="sources"><b>Sources:</b>
+<a href="https://www.federalreserve.gov/newsevents/speech/cook20260928a.htm">Cook speech, 28&nbsp;Sep (Fed primary, read)</a> ·
+Reuters / CNA account of 1&nbsp;Oct Williams event ·
+context: Sep FOMC hike in <a href="2026-09-17.html">17&nbsp;Sep archive</a>
+</p>
+<div class="fb">
+<p>Cook’s AI-inflation risk as the open — right Core weight?</p>
+<label><input type="radio" name="fb-cook" value="right"/> Yes — AI power+capex belongs at the top when a Fed voter names it</label>
+<label><input type="radio" name="fb-cook" value="with-eo"/> Prefer pairing it with the Super Intelligence EO as one AI package</label>
+<label><input type="radio" name="fb-cook" value="lower"/> Lower — wait for a CPI/PCE component that isolates the channel</label>
+</div>
+</article>
+
+<!-- 2 STRESS -->
+<article id="stress">
+<h2>Fed will publish stress-test models and average two years of losses into the capital buffer</h2>
+<div class="meta">
+<span class="chip">US financials</span>
+<span class="chip new">New subject</span>
+<span class="chip">Primary source</span>
+<span class="chip under">Underreported</span>
+</div>
+<p>Two Federal Reserve final rules published in today’s Federal Register (effective dates staggered) change how large-bank capital requirements are set. The transparency rule (FR Doc <b>2026-20247</b>, effective <b>2&nbsp;November</b>) requires the Board to invite public input annually on stress-test scenarios and any <b>material model changes</b>, publish descriptions of the models used each year by <b>15&nbsp;May</b>, and adopt the models for the <b>2027</b> supervisory stress test. Trading-book firms will face <b>two</b> global market shock components each year; the Board will use the shock that produces the largest losses for each firm.</p>
+<p>The companion capital-plan rule (FR Doc <b>2026-20246</b>) requires the Board, when setting a firm’s stress capital buffer, to <b>average the CET1 declines from the two most recent annual supervisory stress tests</b> for firms tested in both years. Averaging begins with requirements effective <b>1&nbsp;January 2029</b> so that only models that have gone through the public-input process feed the buffer. The Board’s 30&nbsp;September press release says the package should cut year-over-year volatility in capital requirements by roughly <b>half</b> without a material change in aggregate capital. A parallel request for comment (FR Doc <b>2026-20245</b>) asks whether the noninterest-income model should better capture fee-business diversity.</p>
+<p><b>What to watch:</b> the first May&nbsp;15 model publication; whether “material” model changes become a lobbying venue that softens shocks; and how JPMorgan and its peers describe the two-year average in 2028 capital plans.</p>
+<div class="div">
+<span class="t">Divergence — transparency versus “studying for the exam”</span>
+<p><b>What is disputed.</b> Supervisors say public models improve accountability. Critics say banks will optimise to the published equations.</p>
+<p><b>Why they differ.</b> Disclosure and risk-sensitivity trade off; the Board is betting granularity plus a second market shock preserves bite.</p>
+<p><b>What it means for you.</b> Large-bank capital requirements should jump around less year to year. Whether that is safer or cosier depends on whether the published models still bite in a real recession — which only the next severely adverse scenario will show.</p>
+</div>
+<p class="sources"><b>Sources:</b>
+<a href="https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260930a.htm">Fed Board press release, 30&nbsp;Sep (read)</a> ·
+<a href="https://www.federalregister.gov/documents/2026/10/02/2026-20247/enhanced-transparency-and-public-accountability-of-the-supervisory-stress-test-models-and-scenarios">FR 2026-20247</a> ·
+<a href="https://www.federalregister.gov/documents/2026/10/02/2026-20246/modifications-to-the-capital-plan-rule-and-stress-capital-buffer-requirement">FR 2026-20246</a>
+</p>
+<div class="fb">
+<p>Bank capital mechanics as a lead — right weight for US financials?</p>
+<label><input type="radio" name="fb-stress" value="right"/> Yes — stress-test rules are the standing JPMorgan-class beat</label>
+<label><input type="radio" name="fb-stress" value="shorter"/> Shorter next time — keep the effective dates, cut the critique box</label>
+<label><input type="radio" name="fb-stress" value="lower"/> Lower — wait until a named bank’s buffer actually moves</label>
+</div>
+</article>
+
+<!-- 3 OIL -->
+<article id="oil">
+<h2>One chain: AAA diesel’s tenth daily fall as Bessent presses Europe to release reserves</h2>
+<div class="meta">
+<span class="chip">Energy &amp; grid</span>
+<span class="chip">Geopolitics</span>
+<span class="chip">Continuation</span>
+</div>
+<p>AAA’s national average diesel print for <b>Friday 2&nbsp;October</b> is <b>$6.3726</b> — down <b>1.69¢</b> from Thursday’s $6.3895, the <b>tenth</b> consecutive daily decline from the 22&nbsp;September record of $6.5276. Regular petrol is $4.3961 (−1.76¢). The week and year comparators still describe a shock: diesel is up roughly <b>68¢</b> versus a month ago and about <b>$2.67</b> versus a year ago.</p>
+<p>The diplomatic half of the same chain moved overnight. Treasury Secretary Scott Bessent said European partners — especially France and Germany — should “accelerate delivery on their existing commitments” and make additional diesel supplies “immediately available.” Energy Secretary Chris Wright said he was “highly confident” Europe could ease prices by drawing emergency inventories. DW and CNBC report EU energy officials holding crisis talks Friday. President Trump, who had said he was “very seriously” considering a US diesel export ban, told reporters in Texas he “may” ask Europe to release reserves and appeared to cool on the ban as Hormuz crude flows recovered. The mechanism that would settle a ban remains a Federal Register / BIS notice — not a press conference.</p>
+<p>Physical structure still explains why the pump can fall for ten days while the shock is not over: Morgan Stanley / J.P. Morgan client notes carried in market wraps put Middle East <b>crude</b> exports near pre-war levels while <b>refined-product</b> exports remain roughly <b>40%</b> below. Diesel futures have traded at roughly double crude — a crack that is the shortage. gCaptain’s front page overnight still carried fresh Hormuz tanker hits and US targeting of Iran’s rail and shadow-banking networks.</p>
+<p><b>What to watch:</b> whether Friday’s EU task-force meeting produces a dated stock release; any FR/BIS text that would actually impose a US diesel export ban; and the next EIA weekly (distillate inventories / utilisation) — still the trend instrument, AAA the daily level.</p>
+<div class="div">
+<span class="t">One chain — do not split</span>
+<p>Pump print, European reserve diplomacy, Hormuz product lag, and the export-ban threat are one causal story. Force posture (carriers / Marines) is the next article, not a second oil lead.</p>
+</div>
+<p class="sources"><b>Sources:</b>
+<a href="https://gasprices.aaa.com/">AAA national averages, 2&nbsp;Oct</a> ·
+<a href="https://www.dw.com/en/us-pressures-eu-allies-to-release-diesel-stockpiles/a-79509571">DW on EU reserve pressure</a> ·
+CNBC / Investing.com wraps on Hormuz crude vs products ·
+<a href="https://gcaptain.com/">gCaptain front page (tanker / Iran networks)</a>
+</p>
+<div class="fb">
+<p>Diesel diplomacy + tenth fall as one chain — right merge?</p>
+<label><input type="radio" name="fb-oil" value="right"/> Yes — keep pump and reserve diplomacy together</label>
+<label><input type="radio" name="fb-oil" value="split-eu"/> Split the EU meeting into its own short once a release is dated</label>
+<label><input type="radio" name="fb-oil" value="more-crack"/> Want more on the diesel–crude crack and less on Bessent’s wording</label>
+</div>
+</article>
+
+<!-- 4 GLOBE -->
+<article id="globe">
+<h2>Medicare’s GLOBE model benchmarks Part&nbsp;B rebates against nineteen peer countries</h2>
+<div class="meta">
+<span class="chip">US politics &amp; policy</span>
+<span class="chip new">New subject</span>
+<span class="chip">Primary source</span>
+</div>
+<p>CMS’s final rule for the <b>Global Benchmark for Efficient Drug Pricing (GLOBE) Model</b> published today (FR Doc <b>2026-20281</b>, effective <b>30&nbsp;November</b>). It is a mandatory section&nbsp;1115A payment model that tests an alternative way to calculate Medicare Part&nbsp;B drug inflation rebates for certain clinician-administered single-source drugs and sole-source biologics, using international prices from a set of economically comparable countries as the benchmark. CMS’s 30&nbsp;September press release: the model runs <b>1&nbsp;January 2027</b> through <b>31&nbsp;March 2032</b> (rebate invoicing through March&nbsp;2034), covers a randomly selected geography holding about <b>25%</b> of Original Medicare beneficiaries, and may cut those beneficiaries’ out-of-pocket costs beginning <b>1&nbsp;April 2027</b>.</p>
+<p>Exclusions tightened after comment: biosimilars and their reference biologics once a US biosimilar launches; orphan-only drugs; plasma-derived products; certain cell and gene therapies. ASPE comparisons cited in the rule put US brand prices multiples above non-US OECD averages — the political premise for importing a peer-country benchmark into the inflation-rebate formula. Manufacturers in the selected geography do not get an opt-out from the model’s rebate math.</p>
+<p><b>What to watch:</b> which HCPCS codes clear the &gt;$100&nbsp;m spending screen; litigation over the international benchmark; and whether April&nbsp;2027 OOP prints move for the 25% cohort.</p>
+<p class="sources"><b>Sources:</b>
+<a href="https://www.cms.gov/newsroom/press-releases/cms-finalizes-new-mandatory-drug-payment-model-deliver-lower-drug-prices-beneficiaries-original">CMS press release, 30&nbsp;Sep (read)</a> ·
+<a href="https://www.federalregister.gov/documents/2026/10/02/2026-20281/global-benchmark-for-efficient-drug-pricing-globe-model">FR 2026-20281</a> ·
+full-text abstract and operative dates (read)
+</p>
+<div class="fb">
+<p>GLOBE as a policy lead — right altitude?</p>
+<label><input type="radio" name="fb-globe" value="right"/> Yes — mandatory Medicare payment models are substance</label>
+<label><input type="radio" name="fb-globe" value="shorter"/> Shorter — effective dates and the 25% cohort are enough</label>
+<label><input type="radio" name="fb-globe" value="pharma"/> Want the manufacturer / innovation objection spelled out</label>
+</div>
+</article>
+
+<!-- 5 504 -->
+<article id="504">
+<h2>A judge strips “integration” from Section&nbsp;504 rules after HHS joined the states that sued it</h2>
+<div class="meta">
+<span class="chip">US politics &amp; policy</span>
+<span class="chip new">New subject</span>
+<span class="chip">Independent corroboration</span>
+</div>
+<p>In <i>Texas&nbsp;v.&nbsp;Kennedy</i>, Judge James W. Hendrix granted a joint request — plaintiff states plus HHS — to remove “most integrated setting” / community-integration language from HHS’s Section&nbsp;504 implementing regulations. Stateline’s 2&nbsp;October account: the suit began as a challenge to Biden-era inclusion of gender dysphoria under 504, then narrowed to five Republican-led states (<b>Alaska, Florida, Louisiana, Montana, Texas</b>) asking to vacate the integration provisions; in late August HHS joined them. A June DOJ OLC opinion had already argued that Section&nbsp;504 and ADA Title&nbsp;II do not impose a freestanding state integration mandate, even while unjustified isolation can still be discrimination.</p>
+<p>What the order does <b>not</b> do, advocates and DOJ both say in different tones: it does not overrule <i>Olmstead&nbsp;v.&nbsp;L.C.</i> (1999) or repeal the ADA. What it does do is remove the regulatory hook HHS and DOJ have used to push states toward community-based services, and it lands after DOJ stepped back from enforcement cases in Florida and Texas. Florida’s AG office told Stateline the state joined “to serve as a check on federal power, not to deny care.” Disability advocates say the right without a federal enforcer is a right you sue for yourself.</p>
+<p><b>What to watch:</b> whether private Olmstead suits fill the enforcement gap; any congressional resolution reaffirming Olmstead; and Florida’s own HCBS / institutional census under the new posture.</p>
+<p class="sources"><b>Sources:</b>
+<a href="https://stateline.org/2026/10/02/after-states-sue-trump-administration-walks-away-from-disability-rights-enforcement/">Stateline, 2&nbsp;Oct (read)</a> ·
+NPR member-station / ACB summaries of the judgment ·
+Florida named among remaining plaintiffs
+</p>
+<div class="fb">
+<p>Disability-integration rollback — right for a US-policy lead?</p>
+<label><input type="radio" name="fb-504" value="right"/> Yes — enforcement retreats are substance</label>
+<label><input type="radio" name="fb-504" value="florida"/> Weight the Florida plaintiff angle harder next time</label>
+<label><input type="radio" name="fb-504" value="lower"/> Lower — wait for a measured change in placements</label>
+</div>
+</article>
+
+<!-- 6 TA419 -->
+<article id="ta419">
+<h2>China-aligned TA419 phished US AI-policy circles by impersonating a former White House OSTP official</h2>
+<div class="meta">
+<span class="chip">AI &amp; tech industry</span>
+<span class="chip">Lab safety</span>
+<span class="chip new">New subject</span>
+<span class="chip">Primary source</span>
+</div>
+<p>Proofpoint’s 1&nbsp;October threat report names <b>TA419</b>, a China-aligned espionage actor, as the group behind July&nbsp;2026 credential-phishing against AI-policy experts at US think tanks, universities, and law firms. The lures impersonated <b>Lynne Edwards Parker</b> (former Principal Deputy Director, White House OSTP) and economist <b>Heidi Crebo-Rediker</b>, opening with benign “AI Policy Advisory Committee” invitations before a multi-stage redirect to a fake Microsoft OneDrive Adversary-in-the-Middle page built on Frameless BitB. A February&nbsp;2026 precursor impersonated a senior Anthropic employee with the subject line “Request for Feedback on Military Integration of Claude.”</p>
+<p>Proofpoint’s assessment: intelligence collection on the US AI policy and regulatory landscape amid distillation disputes and export controls — not smash-and-grab fraud. That lands one day after this brief’s FTC ANPRM lead on whether search and social platforms should internalise the cost of <i>commercial</i> impersonation ads. Different perpetrators, same eroded trust surface: if a former OSTP official’s name is enough to open a policy inbox, platform-side impersonation liability and state-side spearphish are cousins.</p>
+<p><b>What to watch:</b> whether targeted organisations move to phishing-resistant / passkey authentication; any USG attribution statement beyond vendor assessment; and whether Anthropic or OSTP alumni confirm notification.</p>
+<p class="sources"><b>Sources:</b>
+<a href="https://www.proofpoint.com/us/blog/threat-insight/hallucinating-credibility-china-aligned-ta419-impersonates-its-way-us-ai-policy">Proofpoint TA419 report, 1&nbsp;Oct (read)</a> ·
+Reuters / Al Jazeera / The Register corroboration ·
+accountability: FTC ANPRM in <a href="2026-10-01-grok.html">1&nbsp;Oct Grok</a>
+</p>
+<div class="fb">
+<p>State-aligned AI-policy phishing as a lead — right after the FTC piece?</p>
+<label><input type="radio" name="fb-ta419" value="right"/> Yes — lab/policy security is Core</label>
+<label><input type="radio" name="fb-ta419" value="bundle"/> Bundle with FTC impersonation as one trust-surface story next time</label>
+<label><input type="radio" name="fb-ta419" value="short"/> Prefer Also-today unless there is a USG attribution</label>
+</div>
+</article>
+
+<!-- 7 SCHOLARSHIP -->
+<article id="scholarship">
+<h2>Treasury publishes temporary regulations for the $1,700 federal scholarship tax credit</h2>
+<div class="meta">
+<span class="chip">US debt &amp; fiscal</span>
+<span class="chip">US politics &amp; policy</span>
+<span class="chip new">New subject</span>
+<span class="chip">Primary source</span>
+<span class="chip under">Underreported</span>
+</div>
+<p>Treasury/IRS published temporary regulations (FR Doc <b>2026-20264</b>, effective <b>1&nbsp;December</b>) and a companion proposed rule (<b>2026-20277</b>) implementing the nonrefundable federal income-tax credit under <b>section&nbsp;25F</b> — added by the One, Big, Beautiful Bill Act — for qualified cash contributions to state-certified scholarship-granting organisations. The credit is capped at <b>$1,700</b> per taxpayer per year, applies to taxable years ending after 31&nbsp;December&nbsp;2026 (so first contributions in <b>2027</b>, claimed on 2028 returns), and requires participating states to elect in and list eligible SGOs. IRS’s 1&nbsp;October newsroom release frames it as the first nationwide federal school-choice tax-credit programme.</p>
+<p>Claude Issue&nbsp;28 recorded that an earlier full-text fetch of 2026-20264 returned a GovInfo “Page Not Found”; today’s API abstract and HTML full-text endpoint both resolved, so the operative dates and §25F hook are primary-sourced here. Dollar mechanics and state-election procedures are in the temporary regs; the proposed rule carries the fuller SGO qualification text for comment.</p>
+<p><b>What to watch:</b> which states elect in before the 2027 contribution year; whether the $1,700 cap is stacked with state credits or reduced by them (the statute reduces the federal credit by related state credits); and take-up versus deficit score once Joint Tax updates.</p>
+<p class="sources"><b>Sources:</b>
+<a href="https://www.federalregister.gov/documents/2026/10/02/2026-20264/federal-scholarship-tax-credit">FR 2026-20264 temporary regs</a> ·
+<a href="https://www.irs.gov/newsroom/the-trump-administration-advances-the-establishment-of-americas-first-nationwide-school-choice-program">IRS newsroom, 1&nbsp;Oct</a> ·
+26&nbsp;USC §25F / CRS R48724 for the $1,700 cap
+</p>
+<div class="fb">
+<p>Federal scholarship credit as a fiscal/policy lead — right call?</p>
+<label><input type="radio" name="fb-scholarship" value="right"/> Yes — a national voucher-adjacent tax credit is Core policy</label>
+<label><input type="radio" name="fb-scholarship" value="short"/> Prefer Also-today until a state elects in</label>
+<label><input type="radio" name="fb-scholarship" value="score"/> Want the deficit / Joint Tax score before it leads</label>
+</div>
+</article>
+
+<!-- 8 HORMUZ -->
+<article id="hormuz">
+<h2>Roosevelt is expected to <em>relieve</em> the Washington — not add a third carrier; a tanker burns in the strait</h2>
+<div class="meta">
+<span class="chip">Geopolitics</span>
+<span class="chip">Continuation</span>
+</div>
+<div class="corr">
+<span class="t">Correction to “third carrier” framing</span>
+<p>Stars and Stripes (28&nbsp;Sep): USS Theodore Roosevelt left San Diego for the Middle East and is <b>expected to relieve</b> USS George Washington. Calling the deployment a third carrier is premature until Washington departs. The clearer force signal is the amphibious ready group — Makin Island with <b>2,000+</b> Marines — which is a landing capability, not another air wing.</p>
+</div>
+<p>UKMTO and maritime trade press logged a fresh Hormuz projectile strike on a tanker in early October (later identified in some accounts as Kuwait-flagged <i>Kazimah&nbsp;III</i>), with fire aboard and crew reported safe. The IRGC Navy’s claim that it destroyed <b>ten</b> commercial vessels remains a belligerent’s unsourced count — report as a claim, not a figure (standing 2&nbsp;Oct discipline note). gCaptain overnight: continued Hormuz attacks; US designations against Iran’s rail and shadow-banking networks as the maritime blockade tightens.</p>
+<p><b>What to watch:</b> whether Washington actually leaves when Roosevelt arrives (end-November window in deployment accounts); any independent transit-count update (last solid daily series via gCaptain was late September); and whether the amphibious group’s presence changes Iranian risk calculus differently than another carrier would.</p>
+<p class="sources"><b>Sources:</b>
+<a href="https://www.stripes.com/theaters/middle_east/2026-09-28/trump-hormuz-marines-injured-roosevelt-deploys-22990773.html">Stars and Stripes on Roosevelt deployment (read)</a> ·
+Seatrade / Splash on October tanker fire ·
+<a href="https://gcaptain.com/">gCaptain</a> ·
+config discipline: relief ≠ third carrier
+</p>
+<div class="fb">
+<p>Force-posture lead with the relief correction up top — right?</p>
+<label><input type="radio" name="fb-hormuz" value="right"/> Yes — correct the carrier math before the drama</label>
+<label><input type="radio" name="fb-hormuz" value="merge-oil"/> Merge back into the oil chain next time</label>
+<label><input type="radio" name="fb-hormuz" value="marines"/> Lead with the Marines / amphibious signal, not the carrier</label>
+</div>
+</article>
+
+<!-- 9 FLORIDA -->
+<article id="vibrio">
+<h2>Florida &amp; Tampa Bay: Pinellas reports a Vibrio death; dengue extension stands without a new case print</h2>
+<div class="meta">
+<span class="chip">Florida &amp; Tampa Bay</span>
+<span class="chip new">New subject</span>
+</div>
+<p>Fox&nbsp;13’s Pinellas tag feed carries a Florida Department of Health notice that a <b>Pinellas County resident has died from <i>Vibrio vulnificus</i></b> — the flesh-eating bacterium associated with warm coastal waters and raw shellfish. That clears the local bar on its own. Separately, a Lakeland dengue-recovery feature is circulating as regional cases remain elevated, but this edition found <b>no new primary case count</b> overnight superseding Thursday’s Pinellas Resolution&nbsp;26-83 extension of the dengue emergency to <b>8&nbsp;October</b> and the regional total of <b>179</b>. Per standing rule: no dengue reprise without a new verifiable fact — the extension itself stays in the accountability line, not as a fresh lead.</p>
+<p>NHC Atlantic outlook fetch was thin this morning (page scaffolding only); no named Florida tropical threat in the sweep.</p>
+<p class="sources"><b>Sources:</b>
+<a href="https://www.fox13news.com/tag/us/fl/pinellas">Fox&nbsp;13 Pinellas tag (Vibrio death; local sweep)</a> ·
+accountability: Pinellas Res.&nbsp;26-83 / 179 cases in <a href="2026-10-01-grok.html">1&nbsp;Oct Grok</a>
+</p>
+<div class="fb">
+<p>Vibrio death as the Florida lead instead of a dengue reprise — right bar?</p>
+<label><input type="radio" name="fb-vibrio" value="right"/> Yes — new local death beats an unchanged emergency order</label>
+<label><input type="radio" name="fb-vibrio" value="skip"/> Skip Florida when the only new item is a single infection death</label>
+<label><input type="radio" name="fb-vibrio" value="dengue"/> Prefer chasing a fresh DOH arbovirus PDF even if unparseable</label>
+</div>
+</article>
+
+<h2 class="section">Also today</h2>
+<p class="secnote">Nine short items. Open any label.</p>
+<div class="also-list">
+
+<details>
+<summary><span class="chip">AI &amp; tech industry</span> The Super Intelligence EO hits the Federal Register — agencies must say “SI,” not “AI,” in non-statutory documents</summary>
+<div class="exp">
+<p>FR Doc <b>2026-20321</b> publishes the 29&nbsp;September executive order directing executive-branch agencies, to the maximum extent permitted by law, to use “Super Intelligence” / “SI” in place of “Artificial Intelligence” / “AI” in official correspondence, websites, reports, and other non-statutory documents. Existing statutes, contracts, and historical documents are not rewritten. For now SI borrows the statutory AI definition in 15&nbsp;USC §9401(3). Within <b>60 days</b> the APST must propose legislative language for a federal SI definition. White House fact sheet also cites &gt;$5&nbsp;bn for the Genesis Mission and a March National Super Intelligence Policy Framework. Linguistic rebrand with a definition workstream — substance is Cook’s inflation risk above, not the glossary.</p>
+<p class="sources"><b>Sources:</b> <a href="https://www.whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/">White House EO text (read)</a> · FR 2026-20321 · IAPP / CNBC explainers</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">US financials</span> SEC quorum rule now lets one commissioner act when everyone else is disqualified — effective today</summary>
+<div class="exp">
+<p>FR Doc <b>2026-20262</b> (effective <b>2&nbsp;October</b>) amends 17&nbsp;CFR §200.41. Three commissioners remain a quorum; if fewer than three are in office, those in office suffice; and if disqualifications leave only <b>one</b> commissioner able to participate in a matter, that one is a quorum for that matter. Adopted as an agency-management rule without notice and comment. Trade press ties the timing to Commissioner Peirce’s exit and a short-handed Commission — the rule text itself does not name her.</p>
+<p class="sources"><b>Sources:</b> <a href="https://www.federalregister.gov/documents/2026/10/02/2026-20262/commission-quorum-requirement">FR 2026-20262 full text (read)</a></p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">US debt &amp; fiscal</span> Issuer 10-year pulls back to 5.24% on 1&nbsp;October after the 5.29% Q3 close</summary>
+<div class="exp">
+<p>Treasury Daily Par Yield Curve CSV: <b>1&nbsp;Oct</b> 10-year <b>5.24%</b>, 2-year 4.78%, 30-year 5.61%. Prior session (30&nbsp;Sep) was 5.29% / 4.88% / 5.64%. One-day reversal after the seven-session climb documented in yesterday’s Grok lead — not a new regime, and not a Fed decision day.</p>
+<p class="sources"><b>Sources:</b> <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&amp;field_tdr_date_value=2026&amp;page&amp;_format=csv">Treasury CSV (read)</a></p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">US politics &amp; policy</span> Supreme Court will hear whether ICE can detain people for years without a bond hearing</summary>
+<div class="exp">
+<p>Al Jazeera and other wires: the Court agreed to take up the administration’s ICE detention policy — the latest clash over prolonged detention without bond hearings. Docket particulars and argument date were not cleanly extracted in this run; treat as a grant-of-cert signal, not a holding.</p>
+<p class="sources"><b>Sources:</b> <a href="https://www.aljazeera.com/news/">Al Jazeera news index</a> · wire corroboration</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Geopolitics</span> British police arrest a UK-Iranian national over the Fairford airbase incident</summary>
+<div class="exp">
+<p>Al Jazeera: Counter Terrorism policing arrested a UK-Iranian national over the Fairford incident and questioned a UK national, days after five others were arrested and released on bail. Accountability to this brief’s earlier Fairford bail frame — first stated Iranian-connection arrestee in the public reporting found here.</p>
+<p class="sources"><b>Sources:</b> Al Jazeera, 1&nbsp;Oct · prior Fairford bail notes in late-September Grok editions</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Geopolitics</span> OFAC publishes 29&nbsp;September designations (counter-narcotics, CT, Iran-related, non-proliferation)</summary>
+<div class="exp">
+<p>FR Doc <b>2026-20215</b> codifies OFAC’s 29&nbsp;September SDN actions under E.O.&nbsp;13382 among other authorities. OFAC’s own recent-actions page titles the package “Counter Narcotics, Counter Terrorism, Iran-related, and Non-Proliferation Designations.” Full entity names are in TIFF graphics in the FR notice — not OCR’d here; use the OFAC page for the list.</p>
+<p class="sources"><b>Sources:</b> <a href="https://ofac.treasury.gov/recent-actions/20260929">OFAC 20260929</a> · FR 2026-20215</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">World economy</span> Handelsblatt: euro-area inflation at a three-year high; ECB squeezed between prices and French bond stress</summary>
+<div class="exp">
+<p>Handelsblatt’s front page: euro-area inflation unexpectedly firm at a three-year high while France’s fiscal/political stress complicates the ECB’s path. US channel: global rates and the dollar’s funding conditions, not the French election itself. Outside the watchlist; altitude via US financial conditions.</p>
+<p class="sources"><b>Sources:</b> <a href="https://www.handelsblatt.com/">Handelsblatt front page</a></p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">AI &amp; tech industry</span> Handelsblatt: OpenAI dismisses three employees after internal AI disclosures</summary>
+<div class="exp">
+<p>Handelsblatt short: OpenAI dismissed three employees for improperly sharing information after recent model misbehaviour disclosures heightened public fear. Thin on names and charged policies in the front-page blurb — Single-sourced to Handelsblatt’s short until a primary OpenAI post is reachable (openai.com still 403s here).</p>
+<p class="sources"><b>Sources:</b> Handelsblatt short item · Single-sourced</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">US politics &amp; policy</span> NPR: Trump administration reverses stance on integration of people with disabilities</summary>
+<div class="exp">
+<p>text.npr.org headline aligns with the Section&nbsp;504 lead above — carried here only as the wire echo, not a second story. Family of Renee Good lawsuits over Minneapolis ICE-raid death also on the NPR index; not expanded without a docket read.</p>
+<p class="sources"><b>Sources:</b> <a href="https://text.npr.org/">text.npr.org</a></p>
+</div>
+</details>
+
+</div>
+
+<h2 class="section">Negative check</h2>
+<p>Wikipedia’s current-events portal for <b>2&nbsp;October</b> was unpopulated at gather time — same mid-morning lag noted in config. Hand check against Al Jazeera, Handelsblatt, gCaptain, text.npr.org, Fox&nbsp;13 Pinellas, and the FR whole-day sweep. <b>What the negative check added or reordered:</b> Cook’s AI-inflation speech and the stress-test pair leapt the diesel diplomacy open that Claude Issue&nbsp;28 led with; TA419 and §25F scholarship regs were not on any prior Grok agenda; the Roosevelt <i>relief</i> correction demoted “third carrier” drama; Vibrio replaced a dengue reprise; EZB inflation and OpenAI firings entered Also-today from Handelsblatt (outside watchlist). <b>What it rejected:</b> Gemini&nbsp;4 / Moonshot / REAP / Syria ITAR / FCC copper calendar items without new facts; El&nbsp;Niño / NOAA research cuts (Claude lead — no Core catalyst strong enough here once Cook and stress tests cleared); Maryland’s $216 data-centre surcharge figure (could not stand up the number to a primary in time — leave it rather than copy).</p>
+
+<h2 class="section">Dormant / watched</h2>
+<ul class="dorm">
+<li><b>Hormuz / diesel:</b> active — tenth AAA fall; EU reserve diplomacy; refined-product lag; Roosevelt relief posture.</li>
+<li><b>Fed:</b> active on prints+decision only — Cook speech carried as inflation-risk primary; no new FOMC decision.</li>
+<li><b>Bab el-Mandeb:</b> no new transit or JWC print this run.</li>
+<li><b>UAP implementation:</b> quiet — no new paperwork.</li>
+<li><b>Pocket rescission / TPP / Cooper:</b> no new docket move overnight — not reprised.</li>
+</ul>
+
+<footer>
+<p>Issue No. 28-grok · 2 October 2026 · Grok edition for MAGA Mickey · Written by Grok Bot / xAI · Archive: <a href="https://historiocity.github.io/News-Agent/">historiocity.github.io/News-Agent</a> · Skill reads <a href="https://github.com/historiocity/News-Agent/blob/main/config.md">config.md</a> every run.</p>
+<p style="margin-top:.6rem;font-size:.84rem;">Parallel Claude Issue&nbsp;28 published as <code>2026-10-02.html</code>; this file is the independent Grok gather and does not overwrite it. 19 sources / 12 outside watchlist. FR day count 94.</p>
+<p class="submit"><button type="button" id="send">Send feedback as a GitHub issue</button></p>
+</footer>
+
+</div>
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  var btn = document.getElementById("send");
+  if (!btn) return;
+  btn.addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\\n  → **" + i.value + "**");
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on **Issue No. 28-grok — 2 October 2026, Grok edition**\\n\\n" + lines.join("\\n")
+      + "\\n\\n---\\n_Anything still here that shouldn't be, or missing that should:_\\n\\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-10-02-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+</body>
+</html>
