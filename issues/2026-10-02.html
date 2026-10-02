@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Friday, 2 October 2026</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .chip.alert { background:var(--accent); color:#fff; border:1px solid var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  .corr { background:var(--box); border-left:3px solid var(--accent); padding:.7rem .9rem; margin:0 0 1rem; font-size:.94rem; }
+  .corr p { margin:.4rem 0; }
+  .corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--accent); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  .short { border-bottom:1px solid var(--rule); padding:.7rem 0; margin:0; }
+  .short > summary { color:var(--fg); cursor:pointer; list-style:none; }
+  .short > summary::-webkit-details-marker { display:none; }
+  .short > summary::before { content:"▸ "; color:var(--link); }
+  .short[open] > summary::before { content:"▾ "; }
+  .short .body { margin-top:.6rem; padding-left:1.1rem; border-left:2px solid var(--rule); font-size:.96rem; }
+  .why { font-style:italic; color:var(--muted); }
+  figure { margin:1.2rem 0 0; }
+  figcaption { font-size:.84rem; color:var(--muted); margin-top:.4rem; line-height:1.5; }
+  svg { width:100%; height:auto; display:block; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+  ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 28 &middot; Friday, 2 October 2026</div>
+  <h1>Washington told France and Germany to release their diesel reserves or face a US export ban &mdash; while American pump prices fell for a tenth day</h1>
+  <p class="sub">Morning edition. Continues from <a href="2026-10-01.html">Thursday</a>.</p>
+  <p class="prov"><b>22 sources checked, 12 of them outside the watchlist.</b> Eight lead stories &mdash; an unusually full day: four on subjects with no existing thread (the Federal Reserve&rsquo;s stress-test disclosure, the Medicare drug-pricing benchmark, the disability integration mandate, NOAA&rsquo;s El Ni&ntilde;o research) and four continuations (the diesel diplomacy, the Hormuz escalation, data-centre ratepayer costs, the Supreme Court and ICE detention). Eight short items.<br><br>
+  <b>A note on yesterday&rsquo;s admission.</b> Yesterday this brief said it had carried an El Ni&ntilde;o attribution three times in a week without ever reading the underlying science, and that it should be measuring the pattern rather than repeating it. Today NOAA is the fourth lead, because the agency that would do the measuring is being cut while the event is peaking. That is not a coincidence this brief engineered &mdash; the story was on the wire &mdash; but it is the right answer to its own complaint.<br><br>
+  <b>Biggest story today not on this list:</b> the Nepal avalanche that killed at least fifteen expedition workers, held for want of a US channel. Also held: the Eritrea&ndash;Ethiopia diplomatic rupture, an Amnesty report on Moroccan surveillance of journalists, and a California child-marriage law that had already passed.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#diesel">The US told France and Germany to release diesel reserves or face an American export ban. The threat would hurt the people being asked to help</a></li>
+    <li><a href="#hormuz">A third carrier group, two thousand Marines, and a 2.5-million-barrel supertanker on fire in the strait</a></li>
+    <li><a href="#fed">The Federal Reserve will publish the equations behind its stress tests. Critics say banks will study for the exam</a></li>
+    <li><a href="#noaa">A super El Ni&ntilde;o is peaking and NOAA has no missions planned to study it</a></li>
+    <li><a href="#globe">Medicare will benchmark some drug prices against nineteen other countries, and manufacturers cannot opt out</a></li>
+    <li><a href="#disabilities">A judge has stripped &ldquo;integration&rdquo; out of disability regulations, after the Justice Department declined to defend its own rules</a></li>
+    <li><a href="#ratepayers">Maryland households are paying up to $216 a year for the data-centre boom, and two bills disagree about whether to stop it</a></li>
+    <li><a href="#scotus">The Supreme Court will decide whether ICE can hold people for years without a bond hearing</a></li>
+    <li><a href="#also-today">Also today (8)</a></li>
+  </ol>
+</nav>
+
+<article id="diesel">
+  <h2>The US told France and Germany to release diesel reserves or face an American export ban. The threat would hurt the people being asked to help</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">World economy</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The administration has told <b>Germany and France</b> to draw down their emergency diesel inventories to ease global fuel prices &mdash; or face a US <b>diesel export ban</b>. Treasury Secretary Bessent, publicly: European partners should &ldquo;accelerate delivery on their existing commitments and make additional supplies immediately available to address ongoing disruptions.&rdquo;</p>
+  <p>The two countries hold <b>more than a third</b> of the EU&rsquo;s strategic diesel reserves, so the demand is addressed to the right parties. Twelve EU member states have recorded all-time diesel price highs.</p>
+  <p>Now look at the structure of the threat, because it is unusual. A US export ban would keep American diesel at home and <b>raise</b> European prices, which is why EU trade chief <b>Maro&scaron; &Scaron;ef&ccaron;ovi&ccaron;</b> called it &ldquo;unexpected for Europeans&rdquo; with &ldquo;very dramatic consequences for our economic performance&rdquo;. The lever being used to make Europe release stocks is a measure that would deepen the shortage Europe is being asked to relieve.</p>
+  <p>That is coercion rather than coordination, and a different instrument from the one designed for this: the International Energy Agency exists to run collective stock releases, and no account reached here says the IEA mechanism is being used. Trade Representative Greer&rsquo;s line &mdash; that France, Germany and Italy &ldquo;would love to have a cooperative path forward&rdquo; &mdash; is the language of a bilateral squeeze.</p>
+  <p>The timing cuts against the urgency too. US diesel has fallen for <b>ten consecutive days</b>, to <b>$6.3726</b>, down <b>12.93 cents</b> on the week; petrol is <b>$4.3961</b>, down 9.57. Reporting suggests Trump has <b>cooled</b> on the ban as Hormuz flows recover. The threat may be most useful as a threat.</p>
+  <p><b>What to watch:</b> whether France or Germany announces a release and on what authority; whether the IEA is brought in, which would make it collective rather than coercive; and the European price series, which is where a US export ban would show within days.</p>
+
+  <figure>
+    <svg viewBox="0 0 640 190" role="img" aria-label="AAA national average diesel, daily, from the 22 September record of $6.5276 through ten consecutive declines to $6.3726 on 2 October. A dashed line marks the record.">
+      <rect x="0" y="0" width="640" height="190" fill="none"/>
+      <line x1="100" y1="30" x2="600" y2="30" stroke="#e0ddd6" stroke-width="1"/>
+      <line x1="100" y1="65" x2="600" y2="65" stroke="#e0ddd6" stroke-width="1"/>
+      <line x1="100" y1="100" x2="600" y2="100" stroke="#e0ddd6" stroke-width="1"/>
+      <line x1="100" y1="135" x2="600" y2="135" stroke="#e0ddd6" stroke-width="1"/>
+      <line x1="100" y1="170" x2="600" y2="170" stroke="#6b6a66" stroke-width="1"/>
+      <line x1="100" y1="45.7" x2="600" y2="45.7" stroke="#1c4f8a" stroke-width="1.5" stroke-dasharray="5 4"/>
+      <text x="92" y="34" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">$6.55</text>
+      <text x="92" y="69" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">$6.50</text>
+      <text x="92" y="104" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">$6.45</text>
+      <text x="92" y="139" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">$6.40</text>
+      <text x="92" y="174" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">$6.35</text>
+      <text x="596" y="42" font-family="Georgia, serif" font-size="11" fill="#1c4f8a" text-anchor="end">record $6.5276, 22 Sep</text>
+      <polyline fill="none" stroke="#8a3324" stroke-width="2.5" points="100,45.7 150,49.8 200,55.1 250,63.7 300,76.3 350,85.4 400,97.8 450,107.6 500,125.3 550,142.4 600,154.2"/>
+      <circle cx="100" cy="45.7" r="4" fill="#8a3324"/>
+      <circle cx="600" cy="154.2" r="4.5" fill="#8a3324"/>
+      <text x="596" y="148" font-family="Georgia, serif" font-size="11" fill="#8a3324" text-anchor="end">$6.3726</text>
+      <text x="100" y="186" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="start">22 Sep</text>
+      <text x="350" y="186" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">27 Sep</text>
+      <text x="600" y="186" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">2 Oct</text>
+    </svg>
+    <figcaption>AAA national average retail diesel, every day from the record to this morning &mdash; eleven readings, ten of them declines. Plotted to scale: 700px per dollar from a $6.35 base, so each five-cent gridline is 35px. The dashed line is the 22 September record.</figcaption>
+  </figure>
+
+  <div class="div">
+    <p class="t">Where the accounts diverge</p>
+    <p><b>The substance.</b> Whether the export ban is a live policy or a bargaining chip, and the two best-sourced accounts point different ways within a day. A Reuters exclusive, reported on 1 October, has the administration telling France and Germany to release stocks <em>or face</em> a ban &mdash; a conditional threat with named targets. CNBC the next day reports Trump has <b>cooled</b> on a ban as prices stay elevated but Hormuz flows recover. Both can be true in sequence; they cannot both describe the position today. This is a dispute about <em>facts</em> &mdash; what the administration currently intends &mdash; and it is adjudicable, just not from here.</p>
+    <p><b>Cause.</b> Timing and sourcing, not motive. The threat account rests on unnamed sources describing a private communication, which is how pressure is applied and is also exactly the kind of account that is accurate on Tuesday and stale on Thursday. The cooling account rests on the market: if Hormuz transits are recovering and the US pump price has fallen ten days running, the domestic case for an export ban weakens by the hour. Note too that a threat works better undeclared, so an administration that wanted the leverage without the consequence would produce precisely this pattern &mdash; a sourced threat followed by public ambivalence. That is not evidence of bad faith; it is what leverage looks like from outside.</p>
+    <p><b>What it means for you.</b> Read the ban as unlikely and the pressure as real, and do not treat the threat&rsquo;s withdrawal as the end of it &mdash; the instrument stays available every time the pump price turns back up. The reason this matters at the till is counter-intuitive: a US export ban would <em>lower</em> American diesel prices by trapping supply domestically, which is why it is politically attractive six weeks before an election, and would raise them in Europe. So European resistance is not obstruction; it is self-defence. The observation that would settle which account is current is a <b>Federal Register notice or a BIS export control</b>, because a ban cannot be imposed by press conference. Until something appears in the rule-making channel, this is diplomacy conducted through journalists.</p>
+  </div>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration, with the divergence above unresolved. No US export-control document exists, the Bessent post was read as quoted rather than directly, and no European release has been announced. <b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/10/2/trump-says-us-may-ask-europe-to-release-diesel-reserves">Al Jazeera</a> &middot; <a href="https://www.usnews.com/news/top-news/articles/2026-10-01/exclusive-us-tells-france-and-germany-to-release-diesel-stocks-or-face-us-export-ban-sources-say">Reuters exclusive via US News</a> &middot; <a href="https://www.cnbc.com/2026/10/02/diesel-oil-trump-europe-export-ban.html">CNBC</a> &middot; <a href="https://www.france24.com/en/europe/20261001-us-europe-diesel-reserves-fuel-prices">France 24</a> &middot; <a href="https://gasprices.aaa.com/">AAA Fuel Prices, 2 October</a> &middot; continues <a href="2026-10-01.html#fuel">1 October</a></p>
+
+  <div class="fb">
+    <p>The pump chain has become a trade dispute with allies.</p>
+    <label><input type="radio" name="fb-diesel" value="trade"> Follow the trade and export-control side; that is where it is decided</label>
+    <label><input type="radio" name="fb-diesel" value="pump"> Keep it on the US pump price and leave the diplomacy out</label>
+    <label><input type="radio" name="fb-diesel" value="europe"> Add European price series so the comparison is checkable</label>
+  </div>
+</article>
+
+<article id="hormuz">
+  <h2>A third carrier group, two thousand Marines, and a 2.5-million-barrel supertanker on fire in the strait</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The <b>USS Theodore Roosevelt</b> carrier strike group left San Diego on Sunday for Central Command, arriving <b>by the end of November</b>. The <b>Makin Island</b> Marine Expeditionary Force followed a day later carrying <b>more than 2,000 Marines</b>. The <b>USS George H.W. Bush</b> and <b>USS George Washington</b> are already in the region.</p>
+  <p>Be careful with the &ldquo;third carrier&rdquo; framing, which several accounts use. The Roosevelt is <b>expected to relieve</b> the Washington, which is Japan-based and has been deployed since August. Three carriers near Iran is what Bloomberg reports the US <em>may soon</em> have; a relief rotation and a net increase are different things, and which this turns out to be depends on whether the Washington actually leaves.</p>
+  <p>What is unambiguous is the amphibious group. Two thousand Marines on an amphibious ready group is not air power &mdash; it is the capability to put people ashore, and it is a different signal from a carrier.</p>
+  <p>Meanwhile the strait itself got worse. A <b>2.5-million-barrel supertanker</b> was hit by an unknown projectile in the Strait of Hormuz and caught fire. The IRGC Navy has claimed it destroyed <b>ten commercial vessels</b> attempting to transit.</p>
+  <p>Hold that against the diesel story above. Washington is telling Europe the disruption is easing enough that pressure on reserves will work, while a loaded supertanker burns in the strait and Tehran claims ten hulls. One of those two pictures is wrong, and the physical indicators this brief has been tracking &mdash; ship-to-ship transfer capacity, Qatari LNG throughput &mdash; were last read a week ago.</p>
+  <p><b>What to watch:</b> whether the Washington departs, which settles the carrier count; the tanker&rsquo;s name, flag and crew, none of which is established here; and a current transit count, which is the measurement that would adjudicate the recovery claim.</p>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration for the deployments. <b>Weak on the maritime detail</b>: the supertanker&rsquo;s name, flag, owner and casualties are not established, and the IRGC claim of ten vessels is a belligerent&rsquo;s assertion carried by one source and should not be treated as a count. gCaptain was not reached this morning. <b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/10/2/us-to-send-third-aircraft-carrier-towards-iran">Al Jazeera</a> &middot; <a href="https://www.thenationalnews.com/news/us/2026/10/01/us-sends-third-aircraft-carrier-to-middle-east/">The National</a> &middot; <a href="https://www.aljazeera.com/news/liveblog/2026/10/2/iran-war-live-us-moves-2000-marines-to-middle-east-tanker-hit-in-hormuz">Al Jazeera live blog</a> &middot; continues <a href="2026-09-30.html#iraq">30 September</a> and <a href="2026-09-28.html#iran">28 September</a></p>
+</article>
+
+<article id="fed">
+  <h2>The Federal Reserve will publish the equations behind its stress tests. Critics say banks will study for the exam</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>A rule published today, effective <b>2 November</b>, commits the Board to publishing its supervisory stress test models in detail &mdash; including the <b>equations, variables and coefficients</b> used in each model, with assumptions, limitations and the rationale behind them. On an annual calendar: model documentation by <b>15 May</b>; proposed material model changes by <b>31 August</b> of the prior year for at least 30 days of comment; scenarios by <b>10 January</b> for comment to <b>28 February</b>.</p>
+  <p>A companion rule published alongside it modifies the capital plan rule and the stress capital buffer requirement.</p>
+  <p>This reverses a decade of deliberate opacity. The models were secret precisely so banks could not manage to them: the test measured resilience to a scenario the bank had not optimised against. Publishing the coefficients changes what is being measured.</p>
+  <p>The Board took <b>30 comments</b> and the objection is in the record. Supporters want predictability and better capital planning. Critics warned transparency lets firms <b>&ldquo;optimize their balance sheets&rdquo;</b> for the test and produces <b>&ldquo;model monoculture&rdquo;</b>, with institutions mirroring the Fed&rsquo;s approach instead of assessing their own risks.</p>
+  <p>Monoculture is the serious version of the objection and it is not about gaming. If every large bank internalises the same published model of how a recession hits a loan book, they will all be wrong in the same direction at the same time &mdash; which is the correlation that makes a shock systemic rather than survivable.</p>
+  <p>The Board says the rule does not itself change capital requirements, and expects it to reduce unanticipated buffer swings and support lending.</p>
+  <p><b>What to watch:</b> the first published model documentation on 15 May and whether it is detailed enough to replicate; whether banks&rsquo; disclosed capital projections converge after it; and whether the stress capital buffer gets less volatile, which is the Board&rsquo;s own test.</p>
+
+  <p class="sources"><b>Confidence:</b> Primary source &mdash; the rule text. The companion capital plan rule was not read in full, and no figure for the aggregate capital effect is given in the document. <b>Sources:</b> <a href="https://www.federalregister.gov/documents/full_text/text/2026/10/02/2026-20247.txt">Federal Register, Federal Reserve rule 2026-20247</a> &middot; Federal Reserve rule 2026-20246 on the capital plan rule &middot; relates to <a href="2026-09-29.html#stablecoin">29 September</a></p>
+
+  <div class="fb">
+    <p>Publishing the coefficients is a decade-long reversal, and the monoculture objection is in the comment file.</p>
+    <label><input type="radio" name="fb-fed" value="thread"> Open a thread &mdash; follow it to the 15 May disclosure</label>
+    <label><input type="radio" name="fb-fed" value="monoculture"> Follow the correlation question; that is the systemic one</label>
+    <label><input type="radio" name="fb-fed" value="no"> Too technical; note it and move on</label>
+  </div>
+</article>
+
+<article id="noaa">
+  <h2>A super El Ni&ntilde;o is peaking and NOAA has no missions planned to study it</h2>
+  <div class="meta">
+    <span class="chip">Science &amp; public health</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>NOAA&rsquo;s Office of Marine and Aviation Operations says there are <b>no specific missions planned</b> to study the El Ni&ntilde;o now developing. The agency is sending <b>a handful of unmanned watercraft</b> into the zone and says it will not match the field campaign it ran for the last strong event.</p>
+  <p>Two reasons, and only one of them is a choice. The event is <b>already close to peaking</b>, so there is little lead time to mount a campaign. And the administration is trying to <b>eliminate NOAA&rsquo;s research office</b> &mdash; the primary scientific arm that studies events like this &mdash; while the agency has lost <b>more than 2,000 staff</b> to retirements and firings.</p>
+  <p>Why the loss is specific rather than general: super El Ni&ntilde;os are rare, so very few have been observed in detail. The value of this one is not that it is bad but that it is <em>observable</em>, and the window is the event itself &mdash; data not collected now cannot be collected later. What it buys is forecast skill, which converts into warning time, which is how a research cruise becomes a life saved.</p>
+  <p>This brief owes a note here. Over the past week it has attributed three storms to El Ni&ntilde;o &mdash; Nolo, Polo and the nor&rsquo;easter &mdash; each time from forecasters quoted in coverage, and said on Wednesday it had never read the underlying climatology. The reason that climatology is thin for events of this size is partly the thing being reported today.</p>
+  <p><b>What to watch:</b> whether the research office is actually eliminated in the FY2027 appropriation; what the unmanned platforms return, since they are now the whole campaign; and the winter forecast skill scores, which are the measurable consequence.</p>
+
+  <p class="sources"><b>Confidence:</b> Single-sourced &mdash; NPR, read through member stations because NPR article pages have been returning 503 for a week. The 2,000-staff figure and the research-office elimination are as reported; no budget document was read. <b>Sources:</b> <a href="https://www.kpbs.org/news/national/2026/10/01/studying-this-super-el-nino-could-save-lives-noaa-is-scaling-back-research">NPR via KPBS</a> &middot; <a href="https://www.opb.org/article/2026/10/01/a-super-el-nino-is-here-but-noaa-is-scaling-back-research/">NPR via OPB</a> &middot; relates to <a href="2026-10-01.html#s-glaciers">1 October</a></p>
+
+  <div class="fb">
+    <p>This brief said on Wednesday it should be measuring the El Ni&ntilde;o pattern rather than repeating the attribution.</p>
+    <label><input type="radio" name="fb-noaa" value="thread"> Open a thread on NOAA capacity and forecast skill</label>
+    <label><input type="radio" name="fb-noaa" value="budget"> Follow the FY2027 appropriation for the research office</label>
+    <label><input type="radio" name="fb-noaa" value="storms"> Just stop attributing storms to El Ni&ntilde;o unless you can cite the science</label>
+  </div>
+</article>
+
+<article id="globe">
+  <h2>Medicare will benchmark some drug prices against nineteen other countries, and manufacturers cannot opt out</h2>
+  <div class="meta">
+    <span class="chip">Science &amp; public health</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>CMS published a final rule today establishing the <b>Global Benchmark for Efficient Drug Pricing</b> model &mdash; GLOBE &mdash; effective <b>30 November</b>. It changes how Medicare <b>Part B</b> drug inflation rebates are calculated, by reference to international prices.</p>
+  <p>The scope is narrower than &ldquo;drug prices&rdquo; suggests and that narrowness is deliberate. It applies to separately payable Part B drugs that are single-source or sole-source biologics, in seven therapeutic categories: antigout agents, antineoplastics, blood products and modifiers, central nervous system agents, immunological agents, metabolic bone disease agents and ophthalmic agents. Part B means drugs administered in a clinical setting &mdash; infusions and injections &mdash; not pharmacy prescriptions.</p>
+  <p>Two methods, and the difference between them is the whole fight. <b>Method I</b> takes commercially available international pricing data and benchmarks to the <b>lowest</b> country-level price. <b>Method II</b> uses pricing data manufacturers <b>volunteer</b> and benchmarks to the <b>average</b> of international prices. A manufacturer that hands over its net prices gets measured against an average; one that does not gets measured against the cheapest country in the set.</p>
+  <p>The reference set is nineteen countries: Australia, Austria, Belgium, Canada, the Czech Republic, Denmark, France, Germany, Ireland, Israel, Italy, Japan, the Netherlands, Norway, South Korea, Spain, Sweden, Switzerland and the United Kingdom.</p>
+  <p><b>Participation is mandatory</b> for manufacturers of qualifying drugs. Voluntary data collection opens <b>1 January 2027</b>; the performance period starts <b>1 April 2027</b>. CMS proposed this on 23 December 2025 and received <b>20,168 pieces of correspondence</b>, of which <b>157</b> were unique submissions &mdash; a ratio that tells you a campaign ran.</p>
+  <p><b>What to watch:</b> whether manufacturers choose Method II and hand over net prices, which is the revealed preference that will show whether the lowest-price benchmark bites; litigation before 30 November; and whether the therapeutic categories expand.</p>
+
+  <p class="sources"><b>Confidence:</b> Primary source &mdash; the rule text. No estimate of savings or of the price change per drug is reported here, and the brief has not read the comment analysis. <b>Sources:</b> <a href="https://www.federalregister.gov/documents/full_text/text/2026/10/02/2026-20281.txt">Federal Register, CMS final rule 2026-20281, 2 October</a></p>
+
+  <div class="fb">
+    <p>International reference pricing has arrived as a mandatory Medicare model.</p>
+    <label><input type="radio" name="fb-globe" value="thread"> Open a thread &mdash; follow it to the April performance period</label>
+    <label><input type="radio" name="fb-globe" value="litigation"> Wake me on litigation</label>
+    <label><input type="radio" name="fb-globe" value="prices"> Only when there are actual price effects to report</label>
+  </div>
+</article>
+
+<article id="disabilities">
+  <h2>A judge has stripped &ldquo;integration&rdquo; out of disability regulations, after the Justice Department declined to defend its own rules</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip under">Underreported</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>A federal judge has agreed to remove references to <b>&ldquo;integration&rdquo;</b> from the regulations implementing <b>Section 504</b> of the Rehabilitation Act &mdash; the provisions requiring federally funded programmes to serve people with disabilities in the <b>&ldquo;most integrated setting&rdquo;</b>. For nearly fifty years that has been the federal position: living, working and learning in community rather than in institutions.</p>
+  <p>The mechanism is what makes this unusual. Several states sued to challenge the rules. The <b>Justice Department declined to defend them</b>, switching sides in its own case, and the court granted what both remaining parties wanted. No appellate ruling, no rulemaking, no notice and comment &mdash; an agency simply stopped arguing for a regulation it had written.</p>
+  <p>The stated basis is a <b>June memo</b> from the Office of Legal Counsel concluding that neither the Americans with Disabilities Act nor Section 504 <b>&ldquo;require states to treat mentally disabled patients in the most integrated setting appropriate to their needs&rdquo;</b>.</p>
+  <p>That position is in tension with what the Supreme Court said in <em>Olmstead v. L.C.</em> in 1999, which held that unjustified institutional isolation of people with disabilities is discrimination under the ADA. An OLC memo cannot overrule a Supreme Court decision; what it can do is remove the regulatory text through which the principle was routinely enforced, leaving the statutory right intact and much harder to invoke.</p>
+  <p>Advocates put it precisely: the right to integration remains on paper, and whether it is practically enforced is now an open question. They are pressing for legislation and working with states.</p>
+  <p><b>What to watch:</b> the case name and circuit, which this brief does not have; whether any state moves to reinstitutionalise and is challenged under <em>Olmstead</em> directly; and whether the OLC memo is published.</p>
+
+  <p class="sources"><b>Confidence:</b> Single-sourced &mdash; NPR via member stations. <b>The case name, court, judge and date are not established here</b>, nor is the OLC memo&rsquo;s publication status; this item rests entirely on one newsroom&rsquo;s account of a court order it read and this brief did not. It runs because a fifty-year federal position changing by non-defence is consequential enough to report with the gap marked. <b>Sources:</b> <a href="https://www.npr.org/2026/10/01/nx-s1-5981375/integration-mandate-disabilities-reversed-trump">NPR</a> &middot; <a href="https://www.disabilityscoop.com/2026/09/28/trump-administration-gets-ok-to-scale-back-disability-protections/32194/">Disability Scoop</a></p>
+
+  <div class="fb">
+    <p>A fifty-year federal position reversed by an agency declining to defend its own rule.</p>
+    <label><input type="radio" name="fb-disabilities" value="thread"> Open a thread &mdash; this and any other non-defence cases</label>
+    <label><input type="radio" name="fb-disabilities" value="olmstead"> Follow whether Olmstead is tested directly</label>
+    <label><input type="radio" name="fb-disabilities" value="no"> Note and move on</label>
+  </div>
+</article>
+
+<article id="ratepayers">
+  <h2>Maryland households are paying up to $216 a year for the data-centre boom, and two bills disagree about whether to stop it</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>By one estimate, Maryland electricity customers pay roughly <b>$168 to $216 more a year</b> primarily because of the data-centre boom. Tens to hundreds of millions of dollars of infrastructure is being built by local utilities and will end up in customers&rsquo; bills.</p>
+  <p>Experts told NPR there is no universal figure &mdash; it varies by utility and state &mdash; but residential customers will pay for a share of the AI build-out. The Maryland range is the only quantified example this brief has.</p>
+  <p>Congress has noticed, six weeks from an election, and the two responses differ in the way that matters. The <b>Ratepayer Protection Act</b>, from Ohio Republican <b>Jon Husted</b>, would have state utilities <em>consider</em> holding &ldquo;large-load&rdquo; customers responsible; it passed the House in September with bipartisan support. Schumer opposes it because its protections are <b>voluntary</b>, and backs New Mexico Democrat <b>Martin Heinrich</b>&rsquo;s <b>GRID Savings Act</b>.</p>
+  <p>&ldquo;Consider&rdquo; is the whole dispute. A statute directing a state commission to consider something does not change any rate; it changes what a commission must put in the record. Whether that is a protection or a permission slip depends entirely on the commission.</p>
+  <p>Set this beside yesterday&rsquo;s lead. A company proposing <b>456 reactors</b> on federal land to generate its own 9.6 gigawatts is, among other things, a company proposing not to use the grid &mdash; which would take its load off everyone else&rsquo;s bill. The private-generation route and the cost-allocation fight are the same problem approached from opposite ends.</p>
+  <p><b>What to watch:</b> whether the Senate takes up either bill before the recess; the House vote margin on Husted&rsquo;s bill, which this brief does not have; and state commission dockets, where large-load tariffs are actually set.</p>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration for the bills; the Maryland figure is a single estimate relayed by NPR, with no source study identified here, and should be read as an order of magnitude. <b>Sources:</b> <a href="https://www.npr.org/2026/10/01/nx-s1-5984949/data-centers-ai-ratepayers-congress">NPR</a> &middot; <a href="https://www.hppr.org/npr-news/2026-10-01/ai-data-centers-how-much-are-ratepayers-on-the-hook-for">via HPPR</a> &middot; continues <a href="2026-10-01.html#beehive">1 October</a> and <a href="2026-09-21.html#datacenters">21 September</a></p>
+</article>
+
+<article id="scotus">
+  <h2>The Supreme Court will decide whether ICE can hold people for years without a bond hearing</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The Court granted certiorari on Thursday in the challenge to the administration&rsquo;s <b>mandatory detention</b> policy. The question is whether people already living in the United States have a right to a hearing at which a judge can decide whether to release them on bond while their deportation case proceeds &mdash; proceedings that can run for years.</p>
+  <p>The policy dates to <b>July 2025</b> guidance directing immigration authorities to detain people without a bond hearing for the duration of their case. Argument comes later in the term that begins Monday, with a decision expected <b>by July</b>.</p>
+  <p>The circuit split is lopsided and that is why the grant matters. <b>Most</b> federal appeals courts have held that people cannot be detained without a bond hearing. The <b>Fifth and Eighth</b> have held that those accused of entering and remaining unlawfully must stay detained throughout. The Court has taken the minority position&rsquo;s question.</p>
+  <p>This is the second immigration matter to reach the Court in a week. On 29 September it let <b>third-country deportations</b> resume 6&ndash;3 pending December argument. Taken together the Court will decide, in one term, both whether someone can be detained without a bond hearing and whether they can be removed to a country they are not from.</p>
+  <p>And note the practical asymmetry both cases share. The policies operate now; the rulings come by July. Whatever the Court decides about bond hearings, the people held without one between July 2025 and July 2027 will have been held.</p>
+  <p><b>What to watch:</b> the argument date; whether the Court consolidates or sequences the two immigration cases; and whether the nationwide-relief question from the deportation case reappears here, which would make the remedy the issue rather than the right.</p>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration. The cert order was not read &mdash; the Supreme Court&rsquo;s orders page has served no data to this brief since 26 September &mdash; so the case name and the precise question presented are not established here. <b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/10/1/us-supreme-court-agrees-to-take-up-trumps-ice-detention-policy">Al Jazeera</a> &middot; <a href="https://www.cnn.com/2026/10/01/politics/supreme-court-trump-ice-migrants-detention-without-bond">CNN</a> &middot; <a href="https://courthousenews.com/justices-take-up-ice-mandatory-detention-policy">Courthouse News</a> &middot; continues <a href="2026-09-30.html#deport">30 September</a></p>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Eight things found in this morning&rsquo;s source checks that did not clear the lead bar. Each expands to the substance, the reason it sits below the line, and where it came from.</p>
+
+<details class="short" id="s-cornell">
+  <summary><span class="chip">US politics &amp; policy</span> New York&rsquo;s attorney general has been made special prosecutor in the Cornell rape investigation. That is two days from governor&rsquo;s request to criminal takeover.</summary>
+  <div class="body">
+    <p>Attorney General <b>Letitia James</b> has been appointed special prosecutor in the Cornell fraternity rape investigation. Yesterday this brief reported that Cornell had agreed to an independent probe after Governor Hochul called for a review.</p>
+    <p>The escalation is the content. An independent probe of a university&rsquo;s <em>handling</em> is an administrative review; a special prosecutor is a criminal investigation run by the state rather than by the county district attorney. Appointing one is a judgement that the ordinary prosecutorial route is inadequate or conflicted.</p>
+    <p>Two days from a governor&rsquo;s request to a state takeover of the prosecution is fast, and it says something about what Hochul&rsquo;s office thinks the local handling looked like. This brief has no account of the underlying case or of what was found on reopening.</p>
+    <p><b>Below the line because</b> an appointment is not a charge, and this brief still has no detail on the case, the reopening, or the scope of James&rsquo;s mandate. It leads on charges, or on a finding about the university&rsquo;s own process.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced. <b>Sources:</b> <a href="https://www.npr.org/2026/10/02/nx-s1-5987703/cornell-rape-investigation-special-prosecutor">NPR</a> &middot; continues <a href="2026-10-01.html#s-cornell">1 October</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-fairford">
+  <summary><span class="chip">Geopolitics</span> British police have arrested a UK-Iranian national over the Fairford incident &mdash; a sixth person, and the first with a stated Iranian connection.</summary>
+  <div class="body">
+    <p>A <b>UK-Iranian national</b> has been arrested in connection with the incident near RAF Fairford. The five men detained on 27 September &mdash; British citizens in their early twenties from London &mdash; were released on bail on Monday.</p>
+    <p>This is the first arrest with a stated Iranian connection, and it lands directly on the line of inquiry counterterrorism police named: that the offences may have been committed by &ldquo;proxies or individuals, either knowingly or unknowingly, working on behalf of a foreign state&rdquo;. Iran, Russia and non-state groups were the possibilities. Tehran has denied any link.</p>
+    <p>What a sixth arrest with a different profile suggests, if the recruitment theory is right, is the intermediary rather than the hired hands &mdash; the person who commissions is not usually in the van. That is a reading, not a finding, and nothing has been charged.</p>
+    <p><b>Below the line because</b> an arrest is not a charge and no affiliation has been established; dual nationality is a fact about a passport, not about who directed anything. It leads on charges, or on British police naming a state.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced. <b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/10/1/british-police-arrest-uk-iranian-national-over-airbase-incident">Al Jazeera</a> &middot; continues <a href="2026-10-01.html#s-flydubai">1 October</a> and <a href="2026-09-28.html#fairford">28 September</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-chinese">
+  <summary><span class="chip">AI &amp; tech industry</span> Chinese hackers impersonated AI experts to reach US policy specialists &mdash; one day after the FTC asked about impersonation and excluded individuals from the question.</summary>
+  <div class="body">
+    <p>Chinese hackers impersonated AI experts in order to target people who work on US policy, according to a report carried by Al Jazeera&rsquo;s economy desk.</p>
+    <p>The juxtaposition with yesterday&rsquo;s lead is close to exact. The FTC opened a proceeding on <b>1 October</b> about impersonation of <b>governments and businesses</b>, explicitly declining to cover impersonation of <b>individuals</b> &mdash; which is the category this operation used. A consumer-protection rule would not reach it anyway, since this is espionage rather than fraud, but the gap is the same gap.</p>
+    <p>What makes impersonating an AI researcher effective is the target&rsquo;s own incentives: people working on AI policy want to talk to technical experts, and a plausible approach from one is the thing they are least likely to refuse.</p>
+    <p>This brief has not read the underlying report, does not know who published it, and cannot say how many people were targeted or whether any compromise followed.</p>
+    <p><b>Below the line because</b> the report was not read and none of the facts that would make it a story &mdash; attribution basis, scale, outcome &mdash; are established here. It leads on a government attribution or an indictment.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced and thin. <b>Sources:</b> <a href="https://www.aljazeera.com/economy/2026/10/1/chinese-hackers-impersonated-ai-experts-to-target-us-policy-minds">Al Jazeera</a> &middot; relates to <a href="2026-10-01.html#ftc">1 October</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-sec">
+  <summary><span class="chip">US financials</span> The SEC has changed its quorum rule &mdash; a small amendment that decides whether a short-handed Commission can act at all.</summary>
+  <div class="body">
+    <p>A rule published today amends the Securities and Exchange Commission&rsquo;s <b>quorum requirement</b>.</p>
+    <p>This is the kind of housekeeping that turns out to matter. The Commission has five seats; a quorum rule decides how many sitting members are needed to take an action. When seats are vacant or a member is recused, the quorum rule is the difference between an agency that can approve a rule, bring an enforcement action or grant an exemption, and one that cannot.</p>
+    <p>It bears directly on things this brief is already tracking: the SEC&rsquo;s tokenized-securities exemptive relief, its proposal to rescind the shareholder proposal rule, and the prediction-market preemption fight in which the CFTC&rsquo;s authority is contested. All of them require a Commission capable of voting.</p>
+    <p>This brief did not read the rule text and therefore cannot say in which direction the quorum was changed, what the new number is, or whether it was adopted with notice and comment &mdash; which is the entire substance.</p>
+    <p><b>Below the line because</b> it is recorded from the title alone. That is not enough to report what it does, and saying so is more useful than guessing. It leads if the new quorum enables or blocks a specific action.</p>
+    <p class="sources"><b>Confidence:</b> Primary source for the existence of the rule; the text was not read. <b>Sources:</b> <a href="https://www.federalregister.gov/api/v1/documents.json?conditions[publication_date][is]=2026-10-02">Federal Register, SEC rule 2026-20262, 2 October</a> &middot; relates to <a href="2026-09-22.html#sectoken">22 September</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-scholarship">
+  <summary><span class="chip">US politics &amp; policy</span> Treasury published a final rule and a proposed rule on a federal scholarship tax credit on the same day &mdash; a national school-voucher mechanism arriving through the tax code.</summary>
+  <div class="body">
+    <p>Two documents today, both titled <b>Federal Scholarship Tax Credit</b>: a final rule and a proposed rule, from Treasury and the IRS. Publishing both on one day usually means the final rule settles part of a scheme while the proposal opens the rest.</p>
+    <p>A scholarship tax credit is the mechanism by which federal tax policy funds private school tuition without a federal voucher programme: a taxpayer donates to a scholarship granting organisation, receives a credit against tax, and the organisation pays tuition. Because the money never becomes an appropriation, it avoids the constitutional and political objections that have blocked direct vouchers for decades.</p>
+    <p>The design questions are the whole thing &mdash; the credit percentage, whether states must opt in, what a qualifying organisation is, income limits, and the annual cap, which determines the cost. None of them are established here.</p>
+    <p>This brief tried to read the final rule and the <em>Federal Register</em> full-text endpoint returned a not-found page, which is the first time that has happened on a document this brief wanted.</p>
+    <p><b>Below the line because</b> the text could not be retrieved, so every number that matters is missing. It leads tomorrow if the document becomes readable.</p>
+    <p class="sources"><b>Confidence:</b> Primary source for the titles only; both documents are unread. <b>Sources:</b> <a href="https://www.federalregister.gov/api/v1/documents.json?conditions[publication_date][is]=2026-10-02">Federal Register, 2026-20264 and 2026-20277</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-snap">
+  <summary><span class="chip">US politics &amp; policy</span> SNAP&rsquo;s funding model is changing, which decides whether the programme still expands automatically in a downturn.</summary>
+  <div class="body">
+    <p>NPR reports that SNAP&rsquo;s funding model is starting to change.</p>
+    <p>The structural question underneath is the one worth holding. SNAP has been an open-ended entitlement: eligibility is set in law, and spending rises automatically when more people qualify. That is why it is the fastest-acting counter-cyclical programme the federal government has &mdash; it expands in a recession without anyone voting. A funding model that caps, blocks or cost-shares it converts an automatic stabiliser into a budget line.</p>
+    <p>That matters more this week than last. Consumer confidence hit a twelve-year low on Tuesday, with the Expectations Index at 63.6 against the 80 the Conference Board associates with recession inside a year.</p>
+    <p>This brief has not read the piece and does not have the mechanism, the dates, or whether this is statutory, regulatory or a state cost-share.</p>
+    <p><b>Below the line because</b> it is recorded from a headline, and a story about a funding model with no mechanism attached is not reportable. It leads on the actual instrument, which should be findable in the <em>Federal Register</em> or an appropriations text.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced and unread. <b>Sources:</b> <a href="https://text.npr.org/">NPR index, 2 October</a> &middot; relates to <a href="2026-09-30.html#confidence">30 September</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-reneegood">
+  <summary><span class="chip">US politics &amp; policy</span> The family of Renee Good has filed lawsuits over her death during ICE raids in Minneapolis.</summary>
+  <div class="body">
+    <p>Lawsuits have been filed by the family of <b>Renee Good</b>, who died during immigration enforcement operations in Minneapolis.</p>
+    <p>The reason a wrongful-death suit against federal enforcement is worth recording rather than filing under crime: civil discovery is one of the few routes by which the internal conduct of an enforcement operation becomes public. Depositions and document production reach material that no agency publishes voluntarily, which is why these cases matter beyond the parties even when they settle.</p>
+    <p>It also arrives in a week when the Supreme Court took up ICE detention without bond hearings and let third-country deportations resume. The litigation track and the enforcement track are moving at once.</p>
+    <p>This brief has no account of the circumstances of her death, who is named as a defendant, what the claims are, or in which court.</p>
+    <p><b>Below the line because</b> a filing is not a finding and none of the particulars are established here. It leads on a ruling on a motion to dismiss, which is where the government&rsquo;s immunity defence would be tested.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced and thin. <b>Sources:</b> <a href="https://text.npr.org/">NPR index, 2 October</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-iraqflights">
+  <summary><span class="chip">Geopolitics</span> Iran is now pressing Iraq to lift the flight ban, having spent the week protesting to Washington about it.</summary>
+  <div class="body">
+    <p>Iran is urging Iraq to lift the ban on Iranian flights imposed after US aviation sanctions. Baghdad, Najaf, Erbil and Sulaimaniyah stopped serving Iranian carriers on 25 September; Najaf service resumed on 28 September after Iraq asked Washington for a humanitarian exemption.</p>
+    <p>The direction of the request is the content. Tehran is asking <b>Baghdad</b>, not Washington, which concedes the structure this brief has described twice: the closures happened because Iraqi ground handlers would not risk secondary sanctions, so the decision sits with Iraqi commercial parties and their exposure to the dollar system, not with Iraqi aviation policy. Iran is lobbying the party that cannot fix it.</p>
+    <p>It also lands two days after the US completed its military withdrawal from Iraq. Baghdad is being asked to defy American sanctions in the same week American forces left &mdash; which is a test of whether the withdrawal bought Iraq latitude or removed its leverage.</p>
+    <p><b>Below the line because</b> it is a request with no answer, and no US licence, OFAC guidance or Iraqi decision has appeared. It leads on a general licence, or on Iraq restoring flights without one.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced. <b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/10/2/iran-urges-iraq-to-lift-flight-ban-amid-us-sanctions">Al Jazeera</a> &middot; continues <a href="2026-10-01.html#s-iraq">1 October</a></p>
+  </div>
+</details>
+
+<div class="fb">
+  <p><b>About this section as a whole.</b> Eight items, four of which record that a document could not be read or a detail could not be got.</p>
+  <label><input type="radio" name="fb-also" value="right"> About right, including the ones that mark the gap</label>
+  <label><input type="radio" name="fb-also" value="drop"> Drop items you could not stand up; the gap is not worth recording</label>
+  <label><input type="radio" name="fb-also" value="promote"> Something here should have been a lead &mdash; I will say which</label>
+  <label><input type="radio" name="fb-also" value="more"> More of these; the short tier is the most useful part</label>
+</div>
+
+<footer>
+  <h2 class="section">Sources checked this run</h2>
+  <p><b>Watchlist-pointed (10):</b> the <a href="https://www.federalregister.gov/">Federal Register</a> documents API, 94 documents today &middot; three <em>Federal Register</em> full-text reads: the Federal Reserve stress-test rule, the CMS GLOBE model, and an attempted read of the scholarship tax credit that returned a not-found page &middot; <a href="https://gasprices.aaa.com/">AAA Fuel Prices</a> &middot; <a href="https://www.aljazeera.com/news/">Al Jazeera news index</a> and its Iran live blog &middot; Al Jazeera on the Iraq flight ban and the Fairford arrest &middot; the archive, for the pump chain, Hormuz, data-centre power, the deportation docket, Cornell and Fairford.</p>
+  <p><b>Outside the watchlist (12):</b> <a href="https://text.npr.org/">text.npr.org headline index</a> &middot; <a href="https://www.usnews.com/news/top-news/articles/2026-10-01/exclusive-us-tells-france-and-germany-to-release-diesel-stocks-or-face-us-export-ban-sources-say">the Reuters exclusive via US News</a>, <a href="https://www.cnbc.com/2026/10/02/diesel-oil-trump-europe-export-ban.html">CNBC</a> and <a href="https://www.france24.com/en/europe/20261001-us-europe-diesel-reserves-fuel-prices">France 24</a> on the diesel demand &middot; <a href="https://www.thenationalnews.com/news/us/2026/10/01/us-sends-third-aircraft-carrier-to-middle-east/">The National</a> on the carrier deployment &middot; <a href="https://www.kpbs.org/news/national/2026/10/01/studying-this-super-el-nino-could-save-lives-noaa-is-scaling-back-research">NPR via KPBS</a> and <a href="https://www.opb.org/article/2026/10/01/a-super-el-nino-is-here-but-noaa-is-scaling-back-research/">via OPB</a> on NOAA &middot; <a href="https://www.npr.org/2026/10/01/nx-s1-5981375/integration-mandate-disabilities-reversed-trump">NPR</a> and <a href="https://www.disabilityscoop.com/2026/09/28/trump-administration-gets-ok-to-scale-back-disability-protections/32194/">Disability Scoop</a> on Section 504 &middot; <a href="https://www.npr.org/2026/10/01/nx-s1-5984949/data-centers-ai-ratepayers-congress">NPR</a> on ratepayers &middot; <a href="https://www.cnn.com/2026/10/01/politics/supreme-court-trump-ice-migrants-detention-without-bond">CNN</a> and <a href="https://courthousenews.com/justices-take-up-ice-mandatory-detention-policy">Courthouse News</a> on the cert grant.</p>
+  <p><b>The negative check:</b> produced three of the eight leads &mdash; the Federal Reserve stress-test disclosure and the GLOBE drug-pricing model from the <em>Federal Register</em> sweep, and the Section 504 integration reversal from the wire. It also produced today&rsquo;s fourth lead in an unusual way: yesterday this brief admitted it had attributed three storms to El Ni&ntilde;o without reading the science, and the check turned up NOAA scaling back the research that would supply it. Held: the Nepal avalanche (fifteen dead, no US channel), the Eritrea&ndash;Ethiopia rupture, an Amnesty report on Moroccan surveillance, a Ukraine&ndash;South Korea row over North Korean prisoners, and an FAO official&rsquo;s dismissal.</p>
+  <p><b>Could not reach:</b> the <em>Federal Register</em> full text of the <b>Federal Scholarship Tax Credit</b> final rule &mdash; the endpoint returned a not-found page, the first time that has happened on a document this brief wanted, so a national school-voucher mechanism runs as a short with every number missing &middot; the SEC quorum rule text &middot; the supertanker&rsquo;s name, flag, owner and casualties &middot; the Supreme Court&rsquo;s orders page, no data since 26 September, so the cert grant is second-hand &middot; the case name and court in the Section 504 reversal, and the June OLC memo &middot; the Maryland study behind the $168&ndash;$216 figure &middot; gCaptain, so no current Hormuz transit count &middot; the SNAP and Renee Good reports, recorded from headlines.</p>
+  <p><b>A note on the shape of this issue.</b> Eight leads is two more than usual and it is not padding: the <em>Federal Register</em> carried two major financial and health rules, the diesel story became a trade dispute with allies overnight, and the Supreme Court took a second immigration case in four days. The cost shows in the short tier, where <b>four of eight items</b> record that a document could not be read or a particular could not be got. On a day this full the honest failure mode is thin verification rather than thin selection, and that is what happened.</p>
+
+  <h2 class="section">Dormant threads</h2>
+  <p class="secnote">Kept on the watchlist, dropped from the body, picked up the moment a source check touches one.</p>
+  <ul class="dorm">
+    <li><b>Ukraine&ndash;Russia negotiations</b> &mdash; touched and still dormant. A Ukraine&ndash;South Korea row over North Korean prisoners and a piece arguing Western militaries are undermining Ukraine&rsquo;s defence are neither a text nor a front-line change.</li>
+    <li><b>Gulf states &amp; Article 51</b> &mdash; Kuwait or the UAE restricting US base access, or a collective GCC statement. The UAE investigating a possible terrorist link in the Flydubai attack is a different matter.</li>
+    <li><b>Indonesia free-meals programme</b> &middot; <b>Anak Krakatau</b> &middot; <b>Nepal&ndash;Tibet glacial flood</b> &middot; <b>Israel&ndash;Lebanon June framework</b> &middot; <b>EU&ndash;Greenland partnership</b> &middot; <b>Saxony-Anhalt government formation</b> &mdash; each on its named trigger. Note that today&rsquo;s Nepal avalanche is in a different region from the glacial-flood thread and does not wake it.</li>
+  </ul>
+
+  <p style="margin-top:1.4rem">No open <code>brief-feedback</code> issues were waiting this morning. No Florida section today: nothing new was reported in Hillsborough, Pasco or Pinellas, and the next hinge is <b>8 October</b>, when the Pinellas dengue emergency expires. The press-access restraining order expires the same day. Also ahead: <b>7 October</b>, the census thread&rsquo;s first trigger; <b>2 November</b>, the REAP comment close and the Federal Reserve stress-test rule&rsquo;s effective date; <b>30 November</b>, the GLOBE model, the FTC comment close and the Federal Reserve stablecoin comment close.</p>
+  <p><a href="../">Archive</a> &middot; Previous: <a href="2026-10-01.html">1 October</a></p>
+
+  <div class="submit">
+    <button type="button" id="send-feedback">Send feedback as a GitHub issue</button>
+  </div>
+</footer>
+
+</div>
+<script>
+(function () {
+  var owner = "historiocity", repo = "News-Agent";
+  document.getElementById("send-feedback").addEventListener("click", function () {
+    var lines = ["Feedback on Issue No. 28 (2026-10-02)", ""];
+    document.querySelectorAll(".fb input[type=radio]:checked").forEach(function (el) {
+      lines.push(el.name + ": " + el.value);
+    });
+    if (lines.length === 2) lines.push("(no radio answers selected)");
+    lines.push("", "Anything else:", "");
+    var url = "https://github.com/" + owner + "/" + repo + "/issues/new"
+      + "?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("brief-feedback: 2026-10-02")
+      + "&body=" + encodeURIComponent(lines.join("\n"));
+    window.open(url, "_blank");
+  });
+})();
+</script>
+</body>
+</html>
