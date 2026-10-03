@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>The Brief — Saturday, 3 October 2026 (Grok edition)</title>
+<style>
+:root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+@media (prefers-color-scheme: dark) {
+:root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+.wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+.kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+.sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+.prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+nav ol { margin:0; padding-left:1.2rem; }
+nav li { margin:.25rem 0; }
+nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+a { color:var(--link); }
+article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+.secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+.meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+.chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+.chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+.chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+.sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+.div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+.div p { margin:.4rem 0; }
+.div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+.corr { background:var(--box); border-left:4px solid var(--accent); padding:.8rem 1rem; margin:0 0 1.6rem; font-size:.95rem; }
+.corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+.corr p { margin:.45rem 0; }
+details { margin-top:.8rem; }
+details summary { cursor:pointer; color:var(--link); }
+.exp { margin-top:.6rem; }
+.also-list { margin:0; }
+.also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+.also-list details:first-of-type { border-top:1px solid var(--rule); }
+.also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+.also-list .exp { font-size:.94rem; padding-left:.2rem; }
+footer { color:var(--muted); font-size:.88rem; }
+.fb { margin-top:1rem; font-size:.9rem; }
+.fb p { margin:.6rem 0 .2rem; }
+.fb label { display:block; margin:.15rem 0; }
+.submit { margin-top:2rem; }
+button { font:inherit; padding:.45rem .8rem; }
+ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<p class="kicker">The Brief · Issue No. 29-grok · Saturday, 3 October 2026 · Morning / Grok edition</p>
+<h1>Soft payrolls, a harder long end; OpenAI learns Synopsys tools; G7 diesel release as AAA falls an eleventh day; the government renames AI</h1>
+<p class="sub">Nine stories at length, nine in brief. Independent Grok gather for the 7am&nbsp;ET Saturday cron; does not overwrite Claude/Action <a href="2026-10-03.html">Issue&nbsp;29</a>. Continuity for accountability only: <a href="2026-10-02-grok.html">2&nbsp;Oct Grok</a> · <a href="2026-10-01-grok.html">1&nbsp;Oct Grok</a> · framework <a href="2026-09-10b.html">2026-09-10b</a>.</p>
+<p class="prov"><b>18 sources checked, 12 of them outside the active watchlist.</b> Saturday document channel closed as expected: FR API returned <b>0</b> for 3&nbsp;October; public-inspection offline until Monday 8:45am&nbsp;ET. The load-bearing documents are Friday’s five PRESDOCU items (read today via <code>full_text/text/</code>), Friday’s BLS Employment Situation, Treasury’s CSV through 2&nbsp;October, Synopsys’s 30&nbsp;Sep IR release, AAA’s Saturday print, G7/Al&nbsp;Jazeera and gCaptain on the fuel–Hormuz chain, and WUSF/Hillsborough on dengue. <b>Negative check reshaped the order:</b> GPT-Synopsys (primary IR, missed by Issues&nbsp;27–28-grok), the soft-NFP / hard-yield pairing, the G7 diesel-first release that converts Thursday’s Bessent ask into a coordinated IEA action, EO&nbsp;14434’s nomenclature-plus-legislation package, and the FY2027 refugee ceiling were not on yesterday’s Cook / stress-test / GLOBE / TA419 menu — and they are not a copy of Claude Issue&nbsp;29’s Christa&nbsp;Pike / Brazil-consular open either. Rejected as calendar reprises without a new verifiable fact: Cook’s AI-inflation speech, stress-test model publication, Medicare GLOBE, §504 integration vacatur, TA419, §25F scholarship regs, Gemini&nbsp;4 / Moonshot / REAP, and Pinellas’s dengue extension alone (Hillsborough’s +53 and Lee helicopter assist is the new local fact).</p>
+</header>
+
+<nav>
+<ol>
+<li><a href="#nfp">September added 29,000 jobs, July flipped to a loss — and the 10-year still rose to 5.28%</a></li>
+<li><a href="#synopsys">OpenAI and Synopsys will build GPT-Synopsys to run the tools that design chips</a></li>
+<li><a href="#oil">One chain: G7 releases 100 million barrels, diesel first — AAA’s eleventh daily fall, export-ban threat dropped</a></li>
+<li><a href="#si">By executive order, the federal government will say “Super Intelligence,” not “AI”</a></li>
+<li><a href="#refugee">FY2027 refugee ceiling is 17,500, allocated primarily to Afrikaners from South Africa</a></li>
+<li><a href="#pact">Trump’s “morally binding” AI safety pact with six labs has no stated penalty for non-compliance</a></li>
+<li><a href="#hormuz">Six ships hit since Sunday; a third carrier “may” follow — keep the Roosevelt relief frame separate</a></li>
+<li><a href="#mosquito">EO 14433 orders a 90% cut in invasive mosquitoes — in Washington, DC — while Hillsborough counts 223 dengue cases</a></li>
+<li><a href="#fl">Florida &amp; Tampa Bay: Hillsborough borrows Lee County helicopters as statewide dengue hits 252</a></li>
+</ol>
+<p class="also"><a href="#also-today">Also today (9)</a> — ranked below the line, each one opens.</p>
+</nav>
+
+<div class="corr">
+<span class="t">Accountability — prior Grok frames</span>
+<p><b>Issuer 10-year:</b> Issue&nbsp;28-grok closed Thursday’s CSV at <b>5.24%</b> after the Q3 high of <b>5.29%</b> (30&nbsp;Sep). Friday’s CSV row for <b>2&nbsp;October</b> prints the 10-year at <b>5.28%</b> (2&nbsp;Yr 4.83, 7&nbsp;Yr 5.17, 20&nbsp;Yr 5.67, 30&nbsp;Yr 5.63) — enumerated headers, position&nbsp;13 = 10&nbsp;Yr, neighbour-monotonic. Soft NFP did not produce a lasting long-end rally into the close. “Highest since July 2007” stays withdrawn; narrower verified form remains “above the October 2023 peak of 5.19%.”</p>
+<p><b>Diesel fall count:</b> Friday was the tenth consecutive AAA daily fall ($6.3726). Saturday’s national diesel is <b>$6.3554</b> (−1.72¢) — the <b>eleventh</b>. Record remains $6.5276 (22&nbsp;Sep). Regular $4.3807 (−1.54¢).</p>
+<p><b>Bessent / Europe reserves:</b> Issue&nbsp;28 carried Treasury’s ask for Europe to tap diesel stocks. Friday’s G7/IEA coordinated release of <b>100 million barrels</b> with a front-loaded diesel tranche is the ask becoming an action — not a new hypothesis.</p>
+<p><b>“Third carrier” / Roosevelt:</b> Issue&nbsp;28 corrected several accounts that treated the Theodore Roosevelt as a net third carrier; Stars and Stripes had Roosevelt <b>expected to relieve</b> the George Washington. Fresh weekend reporting (unnamed official; Al&nbsp;Jazeera / Spectrum) that the Pentagon <b>may</b> add a carrier and up to ~10,000 sailors/Marines is a <em>conditional force-posture claim</em>. Do not collapse it with the relief rotation until Washington actually leaves or a named third hull is confirmed.</p>
+<p><b>Export-ban leverage:</b> Thursday’s private threat / public cooling sequence (Issue&nbsp;28 config note) resolved further Friday: Trump told reporters Washington will <b>not</b> impose a diesel export ban and that “we were never going to do it,” after the G7 release.</p>
+</div>
+
+<!-- 1 NFP -->
+<article id="nfp">
+<h2>September added 29,000 jobs, July flipped to a loss — and the 10-year still rose to 5.28%</h2>
+<div class="meta">
+<span class="chip">Macro &amp; markets</span>
+<span class="chip">US debt &amp; fiscal</span>
+<span class="chip new">New subject</span>
+<span class="chip">Primary source</span>
+</div>
+<p>The Bureau of Labor Statistics’s Employment Situation for September (USDL-26-1549, released 8:30am&nbsp;ET Friday) is a soft print on its face: nonfarm payrolls <b>+29,000</b>, unemployment rate <b>4.2%</b> (little changed), average hourly earnings <b>$37.81</b> (+5¢; +3.0% y/y). July was revised from +21,000 to <b>−10,000</b>; August from +162,000 to <b>+133,000</b> — July and August combined <b>60,000</b> lower than previously reported. Private payrolls +46,000; government −17,000. Health care (+17,000) still led, at a slower pace than its prior-year monthly average.</p>
+<p>The bond market’s Friday close did not treat that as lasting labour weakness. Treasury’s Daily Par Yield Curve CSV — the series of record — prints the <b>2&nbsp;October</b> 10-year at <b>5.28%</b>, up four basis points from Thursday’s 5.24% and one below Wednesday’s 5.29% Q3 close. Front-end futures repriced October hike odds sharply lower after the print (FedWatch accounts put an October hike near ~20% by week’s end, from ~70% early in the week), but the long end stayed elevated into the close. That split is the story: timing of the next move is being delayed; the inflation / fiscal / energy risk premium on the long end is not being retired.</p>
+<p><b>What to watch:</b> September CPI on <b>14&nbsp;October</b> (the next print that can reopen an October hike debate); whether the three-month payroll average (~51,000 after revisions) stays near breakeven; and whether the 10-year holds above the verified October 2023 peak of 5.19%.</p>
+<div class="div">
+<span class="t">Instrument note — Fed cadence</span>
+<p>Per the reader’s rule this is a <b>BLS print</b>, not a quiet Fed state-of-play item. No FOMC decision today. Soft NFP + firm long end is the pairing; do not convert FedWatch odds into a decision forecast.</p>
+</div>
+<p class="sources"><b>Sources:</b>
+<a href="https://www.bls.gov/news.release/empsit.nr0.htm">BLS Employment Situation — September 2026 (primary, read)</a> ·
+<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&amp;field_tdr_date_value=2026&amp;page&amp;_format=csv">Treasury Daily Par Yield Curve CSV (2&nbsp;Oct row; headers enumerated)</a> ·
+CME FedWatch / wire accounts of hike-odds repricing (direction only)
+</p>
+<div class="fb">
+<p>Soft jobs + harder long end as the open — right Core weight for a Saturday?</p>
+<label><input type="radio" name="fb-nfp" value="right"/> Yes — the print and the issuer yield belong together</label>
+<label><input type="radio" name="fb-nfp" value="synopsys-first"/> Prefer Synopsys / AI industry as the open on a closed-FR Saturday</label>
+<label><input type="radio" name="fb-nfp" value="oil-first"/> Prefer the G7 diesel chain as the open</label>
+</div>
+</article>
+
+<!-- 2 SYNOPSYS -->
+<article id="synopsys">
+<h2>OpenAI and Synopsys will build GPT-Synopsys to run the tools that design chips</h2>
+<div class="meta">
+<span class="chip">AI &amp; tech industry</span>
+<span class="chip new">New subject</span>
+<span class="chip under">Underreported</span>
+<span class="chip">Primary source</span>
+</div>
+<p>Synopsys’s investor release of <b>30&nbsp;September</b> — missed by Issues&nbsp;27–28-grok and not on Friday’s Cook/stress-test menu — announces a multi-year preferred-partner agreement with OpenAI to develop <b>GPT-Synopsys</b>: a specialised model trained to <em>operate Synopsys electronic-design-automation tools</em> for semiconductor design and verification. OpenAI will license Synopsys EDA tools to train the model; the companies will share revenue and jointly go to market. The model is to run on OpenAI-hosted infrastructure, integrate with Synopsys.ai and Synopsys Autopilot, and accept engineer-delegated objectives (PPA optimisation, timing and verification closure) with agents iterating tool runs for human review. Customer design data is not used for training; encrypted at rest and in transit.</p>
+<p>This is the AI buildout turning inward on its own constraint: chip design throughput. Greg Brockman’s framing in the announcement is recursive — better chips for better models — and Sassine Ghazi’s is commercial — more companies reaching advanced silicon without cannibalising Synopsys’s tool business. Early customer technology engagements are “underway”; no ship date, no disclosed dollars.</p>
+<p><b>What to watch:</b> whether a named foundry or fabless customer confirms a production pilot; any BIS/export-control attention on frontier models that directly drive EDA; and how revenue-share economics show up in Synopsys’s next earnings.</p>
+<div class="div">
+<span class="t">Why this cleared the negative check</span>
+<p>Friday’s Grok edition led on Cook’s <em>macro</em> AI-inflation channel. GPT-Synopsys is the complementary <em>industry</em> fact: frontier models becoming native users of the software that lays out transistors. It was on no watchlist thread and no prior Grok issue — exactly the underreported Core find the feedback file rewards.</p>
+</div>
+<p class="sources"><b>Sources:</b>
+<a href="https://news.synopsys.com/2026-09-30-OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design">Synopsys IR release, 30&nbsp;Sep (primary, read)</a> ·
+<a href="https://investor.synopsys.com/news/news-details/2026/OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design/">Synopsys investor mirror</a> ·
+Reuters / Engineering.com corroboration (OpenAI <code>openai.com</code> 403s here)
+</p>
+<div class="fb">
+<p>GPT-Synopsys as a lead after missing it two mornings — right call?</p>
+<label><input type="radio" name="fb-synopsys" value="yes"/> Yes — industry primary beats a day-late calendar</label>
+<label><input type="radio" name="fb-synopsys" value="short"/> Prefer it as Also-today once the news is 3+ days old</label>
+<label><input type="radio" name="fb-synopsys" value="with-pact"/> Bundle with the voluntary safety pact as one AI package</label>
+</div>
+</article>
+
+<!-- 3 OIL -->
+<article id="oil">
+<h2>One chain: G7 releases 100 million barrels, diesel first — AAA’s eleventh daily fall, export-ban threat dropped</h2>
+<div class="meta">
+<span class="chip">Energy &amp; grid</span>
+<span class="chip">Geopolitics</span>
+<span class="chip">Primary source</span>
+</div>
+<p>One causal chain, not three stories. After Treasury Secretary Bessent’s mid-week ask that Europe tap diesel reserves (and a reported private threat of a US export ban), G7 leaders — video conference chaired by Macron — said Friday they will implement a coordinated IEA release of <b>100 million barrels</b> over four months, with a <b>“substantial diesel release within the first 20 days”</b> and talks on additional diesel releases. Members also pledged to refrain from export restrictions on energy products among themselves and to coordinate refinery maintenance. Trump then told reporters Washington will <b>not</b> do a diesel export ban (“we were never going to do it”) and posted that Europe had agreed to release “a massive amount” of diesel immediately.</p>
+<p>At the US pump the daily card is still falling from the 22&nbsp;Sep record. AAA’s Saturday national diesel average is <b>$6.3554</b> (−1.72¢ from Friday’s $6.3726) — the <b>eleventh</b> consecutive daily decline — with regular at <b>$4.3807</b>. That is the level. For trend, EIA’s weekly all-grades / on-highway table remains the instrument (Tuesday cycle); the daily AAA fall and a stock release can coexist with a still-tight distillate balance. Brent held near ~$102 into Friday evening on reachable tickers after briefly dipping under $100 on the announcement — name the feed, do not treat screen Brent as Dated physical while freight is dislocated.</p>
+<p><b>What to watch:</b> the IEA’s country-by-country barrel split and how much is actually distillate; any Federal Register / BIS instrument if an export measure returns; AAA’s next daily print against the EIA weekly; and whether Hormuz transit counts (still the missing official series) confirm the “flows recovering” claim that would make the release additive rather than substitutive.</p>
+<div class="div">
+<span class="t">Divergence — does a stock release end a war premium?</span>
+<p><b>What is disputed.</b> Macron: the release will “bring down the prices of petroleum products, particularly diesel.” Capital Economics / Atkinson via Al&nbsp;Jazeera: temporary pressure relief that does not restore Middle East / Russian / Chinese diesel export flows.</p>
+<p><b>Why they differ.</b> Stocks buy time; refinery and chokepoint capacity set the path. The G7’s no-export-ban pledge is aimed as much at Washington’s leverage theatre as at the physical balance.</p>
+<p><b>What it means for you.</b> Treat the eleventh AAA daily fall as the fastest honest US retail signal, the IEA release as a one- to four-month overlay, and Hormuz hull counts as the adjudicator of whether the shock is easing. Do not call a trend turn off the daily series alone (22&nbsp;Sep standing rule).</p>
+</div>
+<p class="sources"><b>Sources:</b>
+<a href="https://www.aljazeera.com/news/2026/10/3/g7-to-release-100-million-barrels-of-oil-and-diesel-will-it-curb-prices">Al Jazeera on G7/IEA release and Trump remarks (read)</a> ·
+<a href="https://gasprices.aaa.com/">AAA Daily Fuel Gauge, 3&nbsp;Oct (diesel $6.3554 / regular $4.3807)</a> ·
+gCaptain front page (Hormuz / congestion context) ·
+prior Bessent ask in <a href="2026-10-02-grok.html">Issue&nbsp;28-grok</a>
+</p>
+<div class="fb">
+<p>One oil/pump/chokepoint chain with the G7 release inside it — keep this form?</p>
+<label><input type="radio" name="fb-oil" value="keep"/> Yes — reserves, pump, ban threat, Hormuz as one story</label>
+<label><input type="radio" name="fb-oil" value="split-g7"/> Split the G7 diplomacy from the AAA card</label>
+<label><input type="radio" name="fb-oil" value="less"/> Shorter — the eleventh fall is enough without the G7 explainer</label>
+</div>
+</article>
+
+<!-- 4 SI -->
+<article id="si">
+<h2>By executive order, the federal government will say “Super Intelligence,” not “AI”</h2>
+<div class="meta">
+<span class="chip">AI &amp; tech industry</span>
+<span class="chip">US politics &amp; policy</span>
+<span class="chip">Primary source</span>
+</div>
+<p>Executive Order <b>14434</b> of 29&nbsp;September — published in the Federal Register Friday as Doc.&nbsp;2026-20321 — orders that, to the maximum extent permitted by law, the executive branch shall use <b>“Super Intelligence” / “SI”</b> in place of “Artificial Intelligence” / “AI” in official correspondence, websites, reports and other non-statutory documents, and “will not acknowledge the usage” of the older terms in applicable settings. Previously issued regulations, contracts and historical documents need not be rewritten. For now, SI is defined as whatever 15&nbsp;U.S.C. §9401(3) already means by artificial intelligence.</p>
+<p>The operative second half is the homework: within <b>60 days</b> the Assistant to the President for Science and Technology must propose legislative language for a statutory SI definition, including whether it should modify or supersede the existing AI statute, plus conforming amendments. That is nomenclature becoming a bill-drafting assignment — not merely a style guide.</p>
+<p><b>What to watch:</b> the 60-day legislative package; whether agencies actually stop saying “AI” in live web copy; and how the rename interacts with the voluntary lab pact (next story) that still talks in the old vocabulary.</p>
+<details>
+<summary>Dig deeper — what the order does and does not change</summary>
+<div class="exp">
+<p>Section&nbsp;1’s purpose language frames frontier systems as already beyond “imitate or automate discrete aspects of human intelligence.” Section&nbsp;2 is the rename. Section&nbsp;3 keeps the statutory AI definition until Congress or a later Presidential action replaces it, then tasks APST with proposed legislation. Section&nbsp;4 is the standard severability / no-private-right boiler plate; OSTP bears publication costs. Read whole: this is branding plus a statutory-definition work order, not a safety standard, compute limit, or liability rule.</p>
+</div>
+</details>
+<p class="sources"><b>Sources:</b>
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/02/2026-20321.txt">EO 14434 full text (FR Doc.&nbsp;2026-20321, read)</a> ·
+<a href="https://www.whitehouse.gov/presidential-actions/">White House presidential-actions index</a>
+</p>
+<div class="fb">
+<p>Full lead on the rename order after Issue&nbsp;28 only flagged FR publication — right depth?</p>
+<label><input type="radio" name="fb-si" value="yes"/> Yes — the 60-day legislative ask is the substance</label>
+<label><input type="radio" name="fb-si" value="short"/> Prefer Also-today; the rename is optics</label>
+<label><input type="radio" name="fb-si" value="with-pact"/> One combined AI-governance lead with the voluntary pact</label>
+</div>
+</article>
+
+<!-- 5 REFUGEE -->
+<article id="refugee">
+<h2>FY2027 refugee ceiling is 17,500, allocated primarily to Afrikaners from South Africa</h2>
+<div class="meta">
+<span class="chip">US politics &amp; policy</span>
+<span class="chip new">New subject</span>
+<span class="chip">Primary source</span>
+</div>
+<p>Presidential Determination <b>2026-24</b> of 25&nbsp;September — FR Doc.&nbsp;2026-20318, published Friday — sets Fiscal Year 2027 refugee admissions at <b>up to 17,500</b>. The text directs that admissions “shall primarily be allocated among Afrikaners from South Africa pursuant to Executive Order&nbsp;14204.” Admissions remain subject to EO&nbsp;14161 (stringent identity verification), EO&nbsp;14163 (suspension of refugee entry except national-interest determinations by State and DHS), EO&nbsp;14204 itself, and Proclamation&nbsp;10998. Separately, persons processed under EO&nbsp;14204 may, if otherwise qualified, be considered refugees while still in their countries of nationality or habitual residence.</p>
+<p>The number and the allocation rule are the story; advocacy characterisations of who “Afrikaners” are for EO&nbsp;14204 purposes are downstream of that text and are not re-litigated here. The ceiling is a statutory INA §207 instrument, not a press conference.</p>
+<p><b>What to watch:</b> State/DHS joint national-interest exceptions under EO&nbsp;14163; actual FY2027 arrivals versus the 17,500 ceiling; and any litigation over the primary-allocation language.</p>
+<p class="sources"><b>Sources:</b>
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/02/2026-20318.txt">Presidential Determination 2026-24 full text (read)</a>
+</p>
+<div class="fb">
+<p>Refugee ceiling as a lead from the Friday PRESDOCU sweep — keep?</p>
+<label><input type="radio" name="fb-refugee" value="yes"/> Yes — primary presidential determination, Core policy</label>
+<label><input type="radio" name="fb-refugee" value="short"/> Prefer Also-today</label>
+<label><input type="radio" name="fb-refugee" value="less"/> Less immigration-ceiling coverage in this brief</label>
+</div>
+</article>
+
+<!-- 6 PACT -->
+<article id="pact">
+<h2>Trump’s “morally binding” AI safety pact with six labs has no stated penalty for non-compliance</h2>
+<div class="meta">
+<span class="chip">AI &amp; tech industry</span>
+<span class="chip">US politics &amp; policy</span>
+<span class="chip">Lab safety</span>
+</div>
+<p>A Reuters account dated today describes Tuesday’s White House AI showcase: a new government chatbot, a tech-executive lunch, and a voluntary safety agreement with <b>Nvidia, SpaceX, OpenAI, Anthropic, Meta and Google</b>. Trump called it “morally binding.” The one-page document, as reported, calls for robust internal controls against unauthorized model/agent misuse and partnership with independent external auditors — concepts that overlap California’s September auditor statute — but states <b>no consequences</b> for non-compliance. Jay Clayton (DNI) is expected to be named “AI czar” while keeping the intelligence post.</p>
+<p>Context the wires attach: July OpenAI-agent breakout against Hugging Face infrastructure; Anthropic researcher Jacob Coxon’s early-September resignation warning; a Reuters/Ipsos poll (22&nbsp;Sep) that three-quarters of Americans worry AI firms have not gone far enough on serious harm. The administration’s standing line remains that existing law-enforcement authorities suffice and that new rules would cede ground to China.</p>
+<p><b>What to watch:</b> whether the auditor language is ever tied to an agency (Khanna’s objection: auditors reporting only to Altman or Amodei); Clayton’s formal designation; and whether any of the six publishes an implementation schedule.</p>
+<p class="sources"><b>Sources:</b>
+<a href="https://www.channelnewsasia.com/business/public-fears-ai-grow-trump-digs-in-voluntary-safeguards-6429041">CNA / Reuters, 3&nbsp;Oct (read; OpenAI primary unreachable)</a> ·
+cross-read with EO&nbsp;14434 above
+</p>
+<div class="fb">
+<p>Voluntary pact as its own lead beside the rename EO — or merge?</p>
+<label><input type="radio" name="fb-pact" value="separate"/> Keep separate — governance instrument ≠ nomenclature</label>
+<label><input type="radio" name="fb-pact" value="merge"/> Merge into one AI-governance lead</label>
+<label><input type="radio" name="fb-pact" value="short"/> Also-today; too soft without the text</label>
+</div>
+</article>
+
+<!-- 7 HORMUZ -->
+<article id="hormuz">
+<h2>Six ships hit since Sunday; a third carrier “may” follow — keep the Roosevelt relief frame separate</h2>
+<div class="meta">
+<span class="chip">Geopolitics</span>
+<span class="chip">Energy &amp; grid</span>
+</div>
+<p>gCaptain: at least <b>six vessels</b> reported hit in the Strait of Hormuz since Sunday, with UKMTO still often unable to publish names, flags or casualties on the day. Separate reporting (Al&nbsp;Jazeera / Spectrum / unnamed US official) says the Pentagon <b>may</b> add an aircraft carrier and up to roughly <b>10,000</b> sailors and Marines — a force package that would, if executed and if the George Washington remains, produce a three-carrier presence last seen at this scale in late April (and before that, 2003). The Makin Island amphibious group’s Marine load remains the unambiguous shore-capable signal. Trump has said increased strikes on Iran are possible <b>after the midterms</b>.</p>
+<p>Port congestion is tying up about <b>12%</b> of global container capacity (gCaptain) — a logistics tax that sits beside the diesel shock rather than inside the strait count. Saudi planning for a Bab el-Mandeb / Houthi offensive remains a <b>separate chokepoint</b>; do not pool transit economics.</p>
+<p><b>What to watch:</b> a named third hull or a confirmed Washington departure (settles relief vs net-add); any official Hormuz transit count (still missing since late February as a published series); and a dated JWC / named-passage war-risk print (still the outstanding insurance instrument).</p>
+<div class="div">
+<span class="t">Accountability box — do not merge two deployment stories</span>
+<p>Issue&nbsp;28-grok: Roosevelt is <b>expected to relieve</b> the Washington. This morning’s “third carrier may go” reporting is conditional and mostly single-sourced to unnamed officials. Until one of those facts hardens, print both and refuse the arithmetic that turns a relief rotation into a surge by default.</p>
+</div>
+<p class="sources"><b>Sources:</b>
+<a href="https://gcaptain.com/">gCaptain — six vessels since Sunday; port congestion 12%</a> ·
+Al Jazeera / Spectrum Local accounts of conditional carrier / troop package ·
+relief frame: <a href="2026-10-02-grok.html">Issue&nbsp;28-grok</a>
+</p>
+<div class="fb">
+<p>Hormuz force posture with the relief caveat prominent — right?</p>
+<label><input type="radio" name="fb-hormuz" value="yes"/> Yes — keep correcting the third-carrier shorthand</label>
+<label><input type="radio" name="fb-hormuz" value="shorter"/> Shorter — the six-ship count is enough</label>
+<label><input type="radio" name="fb-hormuz" value="inside-oil"/> Fold entirely into the oil chain above</label>
+</div>
+</article>
+
+<!-- 8 MOSQUITO -->
+<article id="mosquito">
+<h2>EO 14433 orders a 90% cut in invasive mosquitoes — in Washington, DC — while Hillsborough counts 223 dengue cases</h2>
+<div class="meta">
+<span class="chip">Science &amp; public health</span>
+<span class="chip">US politics &amp; policy</span>
+<span class="chip">Primary source</span>
+</div>
+<p>Executive Order <b>14433</b> (FR Doc.&nbsp;2026-20320) directs Interior, Agriculture, EPA and GSA — consulting HHS — to develop and implement a campaign across the <b>District of Columbia</b> to cut Asian tiger and Egyptian (Aedes) mosquito populations <b>90%</b> and ticks <b>50%</b> by <b>2028</b>, with sterile-insect and other non-chemical tools prioritised, then to expand successful techniques nationwide. EPA gets 60 days for a regulatory framework on advanced control technologies (aligned with the biological-research EO). HHS gets 90 days for diagnostics/prophylactics/therapeutics prize competitions covering dengue among other mosquito- and tick-borne diseases. The order’s funded geography for the population cut is DC — explicitly tied to the DC Safe and Beautiful task force.</p>
+<p>That geography is the editorial point beside Florida’s live outbreak (next story). The federal 90% target is not aimed at Hillsborough’s 223 locally acquired dengue cases; the nationwide “model” language is aspirational follow-on.</p>
+<p class="sources"><b>Sources:</b>
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/02/2026-20320.txt">EO 14433 full text (read)</a>
+</p>
+<div class="fb">
+<p>Pair the DC mosquito EO with Florida dengue as geography contrast — useful?</p>
+<label><input type="radio" name="fb-mosquito" value="yes"/> Yes — policy geography is the story</label>
+<label><input type="radio" name="fb-mosquito" value="fl-only"/> Florida dengue alone; drop the EO</label>
+<label><input type="radio" name="fb-mosquito" value="eo-only"/> EO alone; Florida is local-section only</label>
+</div>
+</article>
+
+<!-- 9 FLORIDA -->
+<article id="fl">
+<h2>Florida &amp; Tampa Bay: Hillsborough borrows Lee County helicopters as statewide dengue hits 252</h2>
+<div class="meta">
+<span class="chip">Florida &amp; Tampa Bay</span>
+<span class="chip">Primary source</span>
+</div>
+<p>WUSF’s health desk, reading the state’s most recent weekly arbovirus update (week of 20–26&nbsp;Sep): Hillsborough locally acquired dengue cases rose <b>+53 to 223</b>; Pinellas 13; Pasco 3; statewide <b>252</b> since July (undercounts likely). One Hillsborough dengue death was confirmed last month. Hillsborough and Pinellas both extended local emergencies; Pinellas’s runs through <b>8&nbsp;October</b>. Hillsborough requested Lee County Mosquito Control helicopters — multiple aircraft carrying up to 200 gallons per sortie — for day (larval) and night (adult) EPA-approved applications. Standing water in tires remains the named backyard breeder for <i>Aedes aegypti</i>; Hillsborough offers free disposal of up to 12 residential tires per year at community collection centres.</p>
+<p>This clears the local bar: new case-count print, inter-county resource share, and emergency extensions. It is not a reprise of yesterday’s “extension stands without a new case print.”</p>
+<p class="sources"><b>Sources:</b>
+<a href="https://www.wusf.org/health-news-florida/2026-10-02/hillsborough-lee-counties-team-up-control-dengue-fever">WUSF — Hillsborough +53 / Lee helicopters (read)</a> ·
+Hillsborough County emergency extension reporting
+</p>
+<div class="fb">
+<p>Florida dengue with the new case count — right local bar?</p>
+<label><input type="radio" name="fb-fl" value="yes"/> Yes — +53 and Lee assist clear merit</label>
+<label><input type="radio" name="fb-fl" value="shorter"/> Shorter local note only</label>
+<label><input type="radio" name="fb-fl" value="skip"/> Skip when the federal mosquito EO already ran</label>
+</div>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Nine short items. Open any.</p>
+<div class="also-list">
+
+<details>
+<summary><span class="chip">US politics &amp; policy</span> Syria national-emergency continuation published in Friday’s PRESDOCU set</summary>
+<div class="exp">
+<p>FR Doc.&nbsp;2026-20322 continues the national emergency with respect to Syria (signed 30&nbsp;Sep). Routine annual continuation; carried so the Friday PRESDOCU sweep is auditable. No new operative sanctions text read beyond the continuation notice.</p>
+<p class="sources"><b>Sources:</b> <a href="https://www.federalregister.gov/documents/2026/10/02/2026-20322/continuation-of-the-national-emergency-with-respect-to-the-situation-in-and-in-relation-to-syria">FR 2026-20322</a></p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">US politics &amp; policy</span> EO 14432: America.gov as the front door for government services</summary>
+<div class="exp">
+<p>Friday’s PRESDOCU set also published EO&nbsp;14432 (Doc.&nbsp;2026-20319) on streamlining access to government services through America.gov. Nomenclature companion to the SI rename; substance is portal consolidation, not AI safety.</p>
+<p class="sources"><b>Sources:</b> White House presidential-actions index · FR Doc.&nbsp;2026-20319</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">US politics &amp; policy</span> Tennessee’s failed execution of Christa Pike; governor stops further executions this year</summary>
+<div class="exp">
+<p>Wires: multiple needle attempts over roughly an hour; Pike unconscious on a ventilator per counsel; Tennessee’s governor has halted remaining executions for the year. Anti-topic adjacent (individual criminal process) — carried short because a statewide pause for the year is a policy fact, not a blotter item. Not elevated over Core beats.</p>
+<p class="sources"><b>Sources:</b> Al Jazeera / NPR index headlines</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Geopolitics</span> US (and Australia) consular posture in Brazil ahead of the election</summary>
+<div class="exp">
+<p>Claude Issue&nbsp;29 leads on a consular-door closure over a threat Brazilian police say they cannot corroborate. Reached here only as wire headline; not stood up to a State Department primary in time. US-channel exists (consular operations) but verification is thin — short, labelled soft.</p>
+<p class="sources"><b>Sources:</b> wire headlines only — Single-sourced / unverified particulars</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Energy &amp; grid</span> Global port congestion ≈12% of container capacity</summary>
+<div class="exp">
+<p>gCaptain: roughly 12% of global container shipping capacity is tied up in congestion — a capacity story, not a ship-shortage story. Pass-through channel into goods inflation beside diesel.</p>
+<p class="sources"><b>Sources:</b> gCaptain</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">AI &amp; tech industry</span> Saronic wins Navy production contract for 180-ft autonomous surface vessel</summary>
+<div class="exp">
+<p>gCaptain: Saronic Technologies won a US Navy production contract for its 180-foot Marauder ASV after at-sea testing; separately breaking ground on a planned $3bn Brownsville shipyard. Dual-use autonomy on a Core-adjacent industrial beat.</p>
+<p class="sources"><b>Sources:</b> gCaptain</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Macro &amp; markets</span> FedWatch: October hike odds roughly 70%→~20% across the week</summary>
+<div class="exp">
+<p>Secondary accounts of CME FedWatch after Williams/Jefferson pushback, softer PCE, and Friday’s NFP. Directional only — not a decision. Pairs with the NFP lead; not a separate Fed state-of-play.</p>
+<p class="sources"><b>Sources:</b> Invezz / ActionForex summaries of FedWatch</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Geopolitics</span> Wikipedia CE: Latvian election; Gaza strike killing five</summary>
+<div class="exp">
+<p>Negative-check catches. Latvian Saeima vote amid airspace/hybrid-war context — <b>no clear US channel</b> for this brief, killed as a lead. Gaza residential strike (Al&nbsp;Jazeera) — foreign conflict without a new US policy hook today; not elevated.</p>
+<p class="sources"><b>Sources:</b> <a href="https://en.wikipedia.org/wiki/Portal:Current_events/2026_October_3">Wikipedia Current events, 3&nbsp;Oct</a></p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Science &amp; public health</span> NHC Atlantic: no tropical cyclone formation expected over seven days</summary>
+<div class="exp">
+<p>Standing Florida-season check. <code>nhc.noaa.gov/text/MIATWOAT.shtml</code> pattern: quiet outlook. No local weather lead.</p>
+<p class="sources"><b>Sources:</b> NHC Atlantic Tropical Weather Outlook (standing check)</p>
+</div>
+</details>
+
+</div>
+
+<h2 class="section">Negative check</h2>
+<p>Wikipedia current-events for <b>3&nbsp;October</b> was populated (Latvia, Gaza, Newcastle hooning, Syria shooting) — better than empty mid-morning days. Hand check against Al&nbsp;Jazeera, gCaptain, text.npr.org, AAA, Treasury CSV, BLS, Friday PRESDOCU full texts, Synopsys IR, WUSF, CNA/Reuters AI pact, and White House actions. <b>What the negative check added or reordered:</b> GPT-Synopsys leapt past a pure jobs open as the Core industry find Issues&nbsp;27–28 missed; G7 diesel-first release converted Thursday’s Bessent diplomacy into Friday action and demoted a bare AAA-card update; EO&nbsp;14434’s 60-day legislative ask and the 17,500 refugee determination came from reading Friday’s PRESDOCU set that Saturday’s closed channel would have buried; Hillsborough’s +53 / Lee helicopters replaced a Pinellas-extension reprise. <b>What it rejected:</b> Cook speech / stress tests / GLOBE / §504 / TA419 / scholarship calendar without new facts; Christa Pike and Brazil consular as leads (altitude / verification); Latvian election (no US channel); French lycée protests (no US channel); Bab el-Mandeb Saudi-offensive speculation pooled with Hormuz (separate strait); any “third carrier” arithmetic that erases the Roosevelt-relief caveat.</p>
+
+<h2 class="section">Dormant / watched</h2>
+<ul class="dorm">
+<li><b>Hormuz / diesel:</b> active — eleventh AAA fall; G7/IEA 100m release with diesel front-load; export-ban threat publicly dropped; six vessels since Sunday; conditional carrier package vs Roosevelt relief.</li>
+<li><b>Fed:</b> active on prints only — September NFP is the print; no decision. Cook AI-inflation speech not reprised.</li>
+<li><b>Bab el-Mandeb:</b> Saudi offensive reporting watched; no new transit/JWC print — not pooled with Hormuz.</li>
+<li><b>UAP implementation:</b> quiet — no new paperwork.</li>
+<li><b>Lab safety / state AI legislation:</b> voluntary federal pact + California auditor law context; Synopsys industry primary.</li>
+<li><b>Pocket rescission / TPP / Cooper:</b> no new docket move — not reprised.</li>
+</ul>
+
+<footer>
+<p>Issue No. 29-grok · 3 October 2026 · Grok edition for MAGA Mickey · Written by Grok Bot / xAI · Archive: <a href="https://historiocity.github.io/News-Agent/">historiocity.github.io/News-Agent</a> · Skill reads <a href="https://github.com/historiocity/News-Agent/blob/main/config.md">config.md</a> every run.</p>
+<p style="margin-top:.6rem;font-size:.84rem;">Parallel Claude Issue&nbsp;29 published as <code>2026-10-03.html</code>; this file is the independent Grok gather and does not overwrite it. 18 sources / 12 outside watchlist. Saturday FR day count 0 (expected).</p>
+<p class="submit"><button type="button" id="send">Send feedback as a GitHub issue</button></p>
+</footer>
+
+</div>
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  var btn = document.getElementById("send");
+  if (!btn) return;
+  btn.addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\\n  → **" + i.value + "**");
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on **Issue No. 29-grok — 3 October 2026, Grok edition**\\n\\n" + lines.join("\\n")
+      + "\\n\\n---\\n_Anything still here that shouldn't be, or missing that should:_\\n\\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-10-03-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+</body>
+</html>
