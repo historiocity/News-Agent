@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Sunday, 4 October 2026 (Grok edition)</title>
+<style>
+:root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+@media (prefers-color-scheme: dark) {
+:root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+.wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+.kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+.sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+.prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+nav ol { margin:0; padding-left:1.2rem; }
+nav li { margin:.25rem 0; }
+nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+a { color:var(--link); }
+article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+.secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+.meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+.chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+.chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+.chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+.sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+.div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+.div p { margin:.4rem 0; }
+.div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+.corr { background:var(--box); border-left:4px solid var(--accent); padding:.8rem 1rem; margin:0 0 1.6rem; font-size:.95rem; }
+.corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+.corr p { margin:.45rem 0; }
+details { margin-top:.8rem; }
+details summary { cursor:pointer; color:var(--link); }
+.exp { margin-top:.6rem; }
+.also-list { margin:0; }
+.also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+.also-list details:first-of-type { border-top:1px solid var(--rule); }
+.also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+.also-list .exp { font-size:.94rem; padding-left:.2rem; }
+footer { color:var(--muted); font-size:.88rem; }
+.fb { margin-top:1rem; font-size:.9rem; }
+.fb p { margin:.6rem 0 .2rem; }
+.fb label { display:block; margin:.15rem 0; }
+.submit { margin-top:2rem; }
+button { font:inherit; padding:.45rem .8rem; }
+ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<p class="kicker">The Brief · Issue No. 30-grok · Sunday, 4 October 2026 · Morning / Grok edition</p>
+<h1>Hormuz stays “closed” until seven unpublished conditions — while Iraq moved 2m barrels through it; Florida asks a judge to halt OpenAI’s next models</h1>
+<p class="sub">Nine stories at length, nine in brief. Independent Grok gather for the 7am&nbsp;ET Sunday cron; does not overwrite Claude/Action Issue&nbsp;30. Continuity for accountability only: <a href="2026-10-03-grok.html">3&nbsp;Oct Grok</a> · <a href="2026-10-02-grok.html">2&nbsp;Oct Grok</a> · framework <a href="2026-09-10b.html">2026-09-10b</a>.</p>
+<p class="prov">19 sources checked, 12 of them outside the active watchlist. Sunday document channel closed as expected: FR API returned <strong>0</strong> for 4&nbsp;October; public-inspection offline until Monday 8:45am&nbsp;ET (<code>pil_unavailability_message</code> confirmed). Treasury publishes no weekend yield curve — last issuer row remains Friday 2&nbsp;Oct 10-year <strong>5.28%</strong> (CSV headers enumerated). Negative check reshaped the order against Claude Issue&nbsp;30’s menu: Florida AG’s temporary-injunction motion against OpenAI (state AI legislation + lab-safety Core, missed by Issues&nbsp;27–29-grok), industry hold-off on the “Super Intelligence” rebrand (accountability to EO&nbsp;14434), and Al-Monitor’s confirmation that Roosevelt is expected to <em>relieve</em> a carrier (hardening yesterday’s conditional package without erasing the relief frame) are not on Claude’s FlyDubai / Tennessee-prisons / Brazil-consular open. Rejected as calendar reprises or altitude misses without a new Core fact: soft-NFP / Synopsys / G7 release text alone / EO&nbsp;14434 rename alone / refugee ceiling / voluntary pact text / Pinellas extension alone / Gemini&nbsp;4 / Cook speech.</p>
+</header>
+
+<nav>
+<ol>
+<li><a href="#s1">One chain: seven unpublished Hormuz conditions, Iraq’s 2m barrels, AAA’s twelfth diesel fall, another Sunday tanker hit</a></li>
+<li><a href="#s2">Florida AG asks a Highlands County judge to bar OpenAI from new models — and from ChatGPT for Florida minors</a></li>
+<li><a href="#s3">Frontier labs hold off adopting “Super Intelligence” while the federal rename order binds agencies</a></li>
+<li><a href="#s4">Supreme Court term opens Monday with <em>Suncor v. Boulder</em> — federal preemption of state climate torts; Alito recused</a></li>
+<li><a href="#s5">Roosevelt and Makin Island are under way — keep the relief frame; three carriers may only overlap briefly</a></li>
+<li><a href="#s6">Clocks almost certainly fall back 1&nbsp;November: Senate adjourned until ~9&nbsp;Nov; permanent DST still isn’t permanent standard time</a></li>
+<li><a href="#s7">Houthis claim an Aramco hit in Riyadh; coalition calls it “misleading”; a fire was seen</a></li>
+<li><a href="#s8">Correction: yesterday’s “Tampa Bay 239” dengue sum was wrong — statewide 252, Hillsborough 223</a></li>
+<li><a href="#s9">Florida &amp; Tampa Bay: dengue virus in mosquito pools; emergencies run to 8&nbsp;Oct; SW Gulf low pressure 30%</a></li>
+</ol>
+<p class="also"><a href="#also">Also today (9)</a> — ranked below the line, each one opens.</p>
+</nav>
+
+<div class="corr" id="acct">
+<p class="t">Accountability — prior Grok frames</p>
+<p><strong>Issuer 10-year:</strong> No weekend Treasury print. Friday’s CSV (2&nbsp;Oct) remains the series of record: 10-year <strong>5.28%</strong> (2&nbsp;Yr 4.83, 7&nbsp;Yr 5.17, 20&nbsp;Yr 5.67, 30&nbsp;Yr 5.63) — headers enumerated, position&nbsp;13 = 10&nbsp;Yr. “Highest since July 2007” stays withdrawn; narrower verified form remains “above the October 2023 peak of 5.19%.”</p>
+<p><strong>Diesel fall count:</strong> Issue&nbsp;29-grok printed Saturday as the <strong>eleventh</strong> consecutive AAA daily fall ($6.3554). Sunday national diesel is <strong>$6.3434</strong> (−1.20¢) — the <strong>twelfth</strong>. Record remains $6.5276 (22&nbsp;Sep). Regular $4.3697 (−1.10¢). Claude Issue&nbsp;30’s “thirteenth” count is not used here; it does not match this brief’s own running tally from the 22&nbsp;Sep record.</p>
+<p><strong>Hormuz “closed”:</strong> Issue&nbsp;29 carried six vessels hit since Sunday and a conditional carrier package. Overnight: Ghalibaf’s seven conditions from an unpublished 17&nbsp;June Islamabad MoU; Araghchi’s seven-day reopen offer; Iraq’s state tanker company reporting 2m barrels through the strait Saturday; UKMTO logging another Sunday projectile strike (engine room; crew safe). “Closed” remains a permission claim, not an empty waterway.</p>
+<p><strong>Roosevelt / third carrier:</strong> Issue&nbsp;28–29 kept Roosevelt as expected relief for the Washington. Al-Monitor (US official) now: Roosevelt “expected to relieve at least one” of two carriers on station; three may briefly overlap. Do not collapse a relief rotation into a net third-carrier surge until Washington (or another hull) actually leaves or a named third hull is confirmed on station simultaneously.</p>
+<p><strong>EO 14434:</strong> Issue&nbsp;29 led on the federal rename. Today’s new fact is industry non-adoption: OpenAI, Anthropic, Google, Meta, Nvidia would not say they will rename products; Altman still says “AI.”</p>
+</div>
+
+<article id="s1">
+<h2>One chain: seven unpublished Hormuz conditions, Iraq’s 2m barrels, AAA’s twelfth diesel fall, another Sunday tanker hit</h2>
+<p class="meta">
+<span class="chip">Energy &amp; grid</span>
+<span class="chip">Geopolitics</span>
+<span class="chip new">Trigger fired</span>
+<span class="chip">Primary / wire</span>
+</p>
+<p>One causal chain, not four stories. Parliament speaker Mohammad Baqer Ghalibaf said Sunday the Strait of Hormuz “will not be opened” until Iran’s <strong>seven conditions based on the Islamabad memorandum of understanding</strong> are realised. Foreign minister Abbas Araghchi has already put a clock on the other side: the strait could reopen <strong>within seven days</strong> if the conditions are accepted — “The choice now is with the US.” The memorandum is dated <strong>17 June</strong>, described as a Pakistani- and Qatari-mediated framework for durable peace, and <strong>has never been published</strong>. Qatar has been carrying messages between Araghchi and US envoys Witkoff and Kushner (New York, September); Tehran says Washington’s reply came back through the Qataris, and no reachable account says what it was.</p>
+<p>No source publishes a numbered list of the seven. Two partial accounts together name seven distinct demands — <strong>this enumeration is assembled by this brief, not quoted from a document</strong>: end the fighting on all fronts; return frozen funds; lift the US naval blockade of Iranian ports; exempt Iranian oil exports from sanctions; stop interfering in internal affairs; stop cooperating with Iran’s adversaries; halt all attacks on Iranian territory. Items one and seven may be one condition counted twice. Four of those are permanent US policy changes traded for a reversible restoration of shipping — the structure of the ask, not its contents, is what decides whether it can be accepted. Coordinates of the restricted zone remain unpublished (26 days).</p>
+<p>Then the fact that cuts across the declarations. Iraq’s state Oil Tankers Company reported moving <strong>two million barrels</strong> of Iraqi crude through the strait on Saturday aboard a VLCC — its first such operation in decades, with Iranian permission previously secured for Iraqi tankers. Separately, UKMTO said Sunday a tanker was struck by an unknown projectile in the strait, engine-room damage, crew safe, no environmental impact reported. “Closed” is a claim about <em>permission</em>, not about empty water: a licensing regime with a shooting enforcement mechanism, through which cargoes are moving.</p>
+<p>At the US pump the daily card is still falling from the 22&nbsp;Sep record. AAA’s Sunday national diesel average is <strong>$6.3434</strong> (−1.20¢ from Saturday’s $6.3554) — the <strong>twelfth</strong> consecutive daily decline — with regular at <strong>$4.3697</strong>. That is the level. For trend, EIA’s weekly all-grades / on-highway table remains the instrument (Tuesday cycle). The G7/IEA 100-million-barrel release with diesel front-loaded in the first 20 days (Friday) is a one- to four-month overlay, not a substitute for chokepoint volumes. Brent held near ~$100–102 on reachable tickers into the weekend — name the feed; do not treat screen Brent as Dated physical while freight is dislocated.</p>
+<p><strong>What to watch:</strong> publication of the memorandum or a numbered list; a US answer not relayed through Qatar; Hormuz transit counts (still the missing official series); AAA’s next daily against the EIA weekly; any Federal Register / BIS instrument if an export measure returns.</p>
+<div class="div">
+<p class="t">Divergence — is the strait closed?</p>
+<p><strong>What is disputed.</strong> Ghalibaf: it will not be opened until conditions are met. Iraq’s tanker company: 2m barrels moved through it Saturday. Both can be true if “closed” means a permission regime rather than an absence of hulls.</p>
+<p><strong>Why they differ.</strong> Iran is asserting authority over a waterway whose legal status it disputes (signed but never ratified UNCLOS). Iraq has to sell oil. Markets price both the declaration and the throughput — which is why the pump can fall while the rhetoric hardens.</p>
+<p><strong>What it means for you.</strong> Read volumes and the AAA card, not slogans. Four permanent US concessions for a reversible reopen is the deal structure to watch. Do not call a diesel trend turn off the daily series alone (22&nbsp;Sep standing rule).</p>
+</div>
+<p class="sources">Sources:
+<a href="https://www.thenationalnews.com/news/gulf/2026/10/04/iran-says-strait-of-hormuz-will-not-reopen-until-its-conditions-are-met/">The National — Ghalibaf / seven conditions / Islamabad MoU (read)</a> ·
+<a href="https://gulfnews.com/world/mena/trump-weighs-next-iran-move-as-pezeshkian-vows-economic-response-1.500697574">Gulf News — Iraq 2m barrels; UKMTO Sunday hit; Baghaei (read)</a> ·
+<a href="https://gasprices.aaa.com/">AAA Daily Fuel Gauge, 4&nbsp;Oct (diesel $6.3434 / regular $4.3697)</a> ·
+<a href="https://en.wikipedia.org/wiki/Portal:Current_events/2026_October_3">Wikipedia CE 3&nbsp;Oct (Iraq throughput corroboration)</a> ·
+prior G7 release in Issue&nbsp;29-grok
+</p>
+<div class="fb">
+<p>One oil/pump/chokepoint chain with the conditions list labelled as this brief’s construction — keep this form?</p>
+<label><input type="radio" name="fb-hormuz" value="yes"> Yes — reserves, pump, conditions, Iraq throughput, Sunday hit as one story</label>
+<label><input type="radio" name="fb-hormuz" value="split"> Split diplomacy from the AAA card</label>
+<label><input type="radio" name="fb-hormuz" value="shorter"> Shorter — twelfth fall + Iraq barrels are enough</label>
+</div>
+</article>
+
+<article id="s2">
+<h2>Florida AG asks a Highlands County judge to bar OpenAI from new models — and from ChatGPT for Florida minors</h2>
+<p class="meta">
+<span class="chip">AI &amp; tech industry</span>
+<span class="chip">Lab safety</span>
+<span class="chip">Florida &amp; Tampa Bay</span>
+<span class="chip new">New subject</span>
+<span class="chip under">Underreported</span>
+</p>
+<p>Florida Attorney General James Uthmeier has filed a ~38–49-page motion for a temporary injunction in Highlands County Circuit Court (10th Judicial Circuit; case reported as 26000295GCAXMX) asking Judge Heather Beato to restrict OpenAI while the state’s June consumer-protection suit proceeds. The ask, as reported: (1) bar OpenAI from developing new AI models unless those models are subject to independent third-party safety guardrails and approval; (2) bar offering ChatGPT to minors in Florida; (3) bar collecting or processing personal information from children under 13 without COPPA / Florida parental-consent compliance.</p>
+<p>No judge has ruled. No hearing date is announced. Nothing changes for Florida ChatGPT users today. OpenAI’s public line (via spokespeople to Axios and others) is that it wants “pragmatic AI policies that apply to the entire AI industry — not just one company.” The motion cites a 26&nbsp;Sep Axios account of tens of thousands of security incidents at OpenAI and Anthropic — a news report in a court filing, not a court finding; Anthropic is not a party.</p>
+<p>This is the standing <strong>state AI legislation / lab-safety</strong> thread with a Florida local bar: a state AG seeking to pause frontier model development from a rural circuit court is an aggressive jurisdictional ask that OpenAI is expected to contest (personal jurisdiction, extraterritorial reach, First Amendment, possible removal). It was on no prior Grok issue and is not on Claude Issue&nbsp;30’s menu — exactly the underreported Core find the feedback file rewards.</p>
+<p><strong>What to watch:</strong> a hearing date; any partial grant (minors / COPPA) vs a blanket development pause; removal to federal court; Tallahassee’s 2027 session interest in chatbot-minors bills.</p>
+<p class="sources">Sources:
+<a href="https://www.thefloridapress.com/news/uthmeier-asks-highlands-county-judge-to-bar-openai-from-offering-chatgpt-to-flor">Florida Press on the motion (read)</a> ·
+<a href="https://www.abajournal.com/news/article/florida-ag-asks-judge-to-bar-openai-from-developing-new-models-without-regulation">ABA Journal / Law.com (read)</a> ·
+<a href="https://www.aipolicydesk.com/blog/ai-policy-week-sep-28-oct-4-2026">AI Policy Desk weeker (case number / six prohibitions summary)</a>
+</p>
+<div class="fb">
+<p>Florida AG OpenAI injunction as a Core lead on a Sunday — right call?</p>
+<label><input type="radio" name="fb-flai" value="yes"> Yes — state AI + lab safety + local merit</label>
+<label><input type="radio" name="fb-flai" value="also"> Prefer Also-today until a hearing date</label>
+<label><input type="radio" name="fb-flai" value="merge"> Bundle with the SI-rebrand hold-off as one AI-governance lead</label>
+</div>
+</article>
+
+<article id="s3">
+<h2>Frontier labs hold off adopting “Super Intelligence” while the federal rename order binds agencies</h2>
+<p class="meta">
+<span class="chip">AI &amp; tech industry</span>
+<span class="chip">US politics &amp; policy</span>
+<span class="chip">Follow-up</span>
+</p>
+<p>Executive Order 14434 (Issue&nbsp;29-grok) binds the executive branch to say “Super Intelligence” / “SI” instead of “AI” in non-statutory documents and tasks APST with proposed statutory language within 60 days. The <strong>new</strong> Sunday fact: Anthropic, OpenAI, Google, Meta, SpaceXAI and Nvidia would not tell the Washington Examiner whether they will rename companies or products. Sam Altman has continued to say “AI” in public posts after the White House showcase. Musk and Huang have used “Super Intelligence” in personal posts; Meta already ran a “Superintelligence Labs” brand last year — a pre-existing technical term for systems that surpass human capability, which is part of why industry hesitation is not only political.</p>
+<p>The order never bound private companies. What today’s reporting settles is that the voluntary “Accord on Superintelligence” photo-op did not produce industry nomenclature compliance — branding plus a statutory-definition work order remains the honest reading of EO&nbsp;14434.</p>
+<p><strong>What to watch:</strong> the 60-day legislative package; whether agency web copy actually drops “AI”; any lab that formally adopts SI in product names.</p>
+<p class="sources">Sources:
+<a href="https://www.washingtonexaminer.com/news/white-house/4751064/ai-companies-hold-off-trump-super-intelligence-rebrand/">Washington Examiner, 4&nbsp;Oct (read)</a> ·
+EO 14434 / Issue&nbsp;29-grok (prior)
+</p>
+<div class="fb">
+<p>Industry hold-off as its own lead beside yesterday’s EO — or Also-today?</p>
+<label><input type="radio" name="fb-si" value="lead"> Keep as lead — accountability to the rename</label>
+<label><input type="radio" name="fb-si" value="also"> Also-today; the EO already ran</label>
+<label><input type="radio" name="fb-si" value="merge"> Merge with Florida AG into one AI-governance package</label>
+</div>
+</article>
+
+<article id="s4">
+<h2>Supreme Court term opens Monday with <em>Suncor v. Boulder</em> — federal preemption of state climate torts; Alito recused</h2>
+<p class="meta">
+<span class="chip">US politics &amp; policy</span>
+<span class="chip">Energy &amp; grid</span>
+<span class="chip new">New subject</span>
+</p>
+<p>The October 2026 term opens Monday 5&nbsp;October (first Monday in October). First argument: <em>Suncor Energy Inc. v. County Commissioners of Boulder County</em> (No.&nbsp;25-170) — whether federal law precludes state-law claims for injuries allegedly caused by interstate and international greenhouse-gas emissions, and whether the Court has statutory / Article&nbsp;III jurisdiction to hear the case. Boulder County and the City of Boulder sued Suncor entities and Exxon Mobil under Colorado tort and consumer-protection theories seeking millions for climate-related local harms. The Colorado Supreme Court let the claims proceed; the companies sought cert.</p>
+<p>The mechanism is the story: a preemption ruling would dispose of roughly two dozen similar city/county/state climate tort suits wholesale; a loss for the companies opens discovery in state courts nationwide. Justice Alito announced 28&nbsp;Sep he will not participate (oil-and-gas stock holdings), creating a possible 4–4 tie that would leave the Colorado decision in place. Cornell LII’s argument preview frames the Clean Air Act field/conflict fight and the finality/jurisdiction fight in full — primary-adjacent for a Sunday when the Court’s own calendar PDF cannot be parsed here.</p>
+<p><strong>What to watch:</strong> Monday’s questioning — preemption doctrine vs climate merits; whether justices treat the CAA as occupying the field or look for express preemption; the ICE mandatory-detention case also on the docket (Issue&nbsp;28).</p>
+<div class="div">
+<p class="t">Instrument note</p>
+<p>This is US policy substance (who may sue, in which court, under whose law), not a climate-science story. NPR’s term preview returned 503; framing here is from SCOTUSblog case page metadata via search, Cornell LII, and Reuters Sunday wire — disclosed.</p>
+</div>
+<p class="sources">Sources:
+<a href="https://www.law.cornell.edu/supct/cert/25-170">Cornell LII — Suncor v. Boulder (read)</a> ·
+<a href="https://www.scotusblog.com/cases/suncor-energy-inc-v-county-commissioners-of-boulder-county/">SCOTUSblog case page</a> ·
+Reuters Sunday wire on term open (search)
+</p>
+<div class="fb">
+<p>Suncor preemption as a Sunday lead ahead of Monday argument — right depth?</p>
+<label><input type="radio" name="fb-scotus" value="yes"> Yes — doctrine that ends or enables two dozen suits</label>
+<label><input type="radio" name="fb-scotus" value="also"> Prefer Also-today until after argument</label>
+<label><input type="radio" name="fb-scotus" value="shorter"> Shorter — calendar notice only</label>
+</div>
+</article>
+
+<article id="s5">
+<h2>Roosevelt and Makin Island are under way — keep the relief frame; three carriers may only overlap briefly</h2>
+<p class="meta">
+<span class="chip">Geopolitics</span>
+<span class="chip">Energy &amp; grid</span>
+<span class="chip">Follow-up</span>
+</p>
+<p>The USS Theodore Roosevelt left San Diego Sunday 28&nbsp;Sep / early this week (accounts differ by a day) bound for the Middle East; the Makin Island Amphibious Ready Group (Makin Island, Anchorage, John&nbsp;P.&nbsp;Murtha) with the 13th Marine Expeditionary Unit (~2,200 Marines) departed San Diego Monday. WSJ / Bloomberg / gCaptain accounts put a package of roughly 9,000–10,000 additional sailors and Marines arriving by end of November as Trump weighs post-midterm options on Iran.</p>
+<p>Al-Monitor, citing a US official: Roosevelt is <strong>expected to relieve at least one</strong> of the two carriers already on station; three carriers “may briefly overlap.” That is the accountability line Issues&nbsp;28–29 insisted on — a relief rotation is not automatically a net third-carrier surge. The unambiguous shore-capable signal remains the amphibious group’s Marine load. Boxer ARG was still in the Arabian Sea as of the USNI departure report.</p>
+<p><strong>What to watch:</strong> a named hull departure that settles relief vs net-add; any official Hormuz transit count; Trump’s “easy way or hard way” comments (Gulf News Sunday) without a disclosed decision.</p>
+<div class="div">
+<p class="t">Accountability box — do not merge two deployment stories</p>
+<p>Issue&nbsp;28-grok corrected accounts that treated Roosevelt as a net third carrier. Yesterday’s “may add” reporting hardened into “is deploying” prose in several headlines. Until Washington (or another on-station carrier) actually leaves <em>or</em> three named hulls are confirmed simultaneous, print the relief expectation and refuse the arithmetic that turns a rotation into a surge by default.</p>
+</div>
+<p class="sources">Sources:
+<a href="https://gcaptain.com/">gCaptain — US adds carrier and 10,000 troops (Bloomberg via Capaccio)</a> ·
+<a href="https://www.al-monitor.com/originals/2026/10/pentagon-deploys-thousands-more-marines-another-aircraft-carrier-mideast">Al-Monitor — Roosevelt expected to relieve (read via search)</a> ·
+<a href="https://news.usni.org/2026/09/29/makin-island-amphibious-ready-group-deploys-from-san-diego">USNI — Makin Island ARG departure</a> ·
+<a href="https://www.stripes.com/branches/navy/2026-10-02/makin-island-middle-east-iran-strikes-november-23032862.html">Stars and Stripes</a>
+</p>
+<div class="fb">
+<p>Carrier posture with the relief caveat still prominent — right?</p>
+<label><input type="radio" name="fb-carrier" value="yes"> Yes — keep correcting the third-carrier shorthand</label>
+<label><input type="radio" name="fb-carrier" value="shorter"> Shorter — fold into the oil chain</label>
+<label><input type="radio" name="fb-carrier" value="drop"> Drop until a named third hull is on station</label>
+</div>
+</article>
+
+<article id="s6">
+<h2>Clocks almost certainly fall back 1&nbsp;November: Senate adjourned until ~9&nbsp;Nov; permanent DST still isn’t permanent standard time</h2>
+<p class="meta">
+<span class="chip">US politics &amp; policy</span>
+<span class="chip new">New subject</span>
+</p>
+<p>The House passed the Sunshine Protection Act (H.R.&nbsp;139) in July, 308–117, making <strong>daylight saving time</strong> permanent — not standard time. Trump spent the weekend pressing Senate Republicans, naming Sen.&nbsp;Tom Cotton as the holdup and publishing a number he urged Arkansans to call. Majority Leader John Thune has questioned whether the bill can reach 60 votes. Cotton’s objection is substantive: permanent DST darkens winter mornings (school and commute before dawn), which is the same fact as lighter evenings stated twice.</p>
+<p>The calendar fact that reshapes the story: reporting has the Senate adjourned for the midterms and not due back until the week of <strong>9&nbsp;November</strong> — after clocks fall back on Sunday <strong>1&nbsp;November</strong>. Absent an extraordinary return, this fall’s switch happens regardless of whether the bill later passes. States may already sit on permanent standard time (Arizona, Hawaii); federal law forbids a state choosing permanent daylight time alone — so the Act is a national answer to a question states are only half-allowed to settle.</p>
+<p><strong>What to watch:</strong> any surprise floor action before 1&nbsp;Nov; a permanent-standard-time amendment that would reframe the coalition; Florida’s prior endorsement of permanent DST (latitude-tolerant) vs northern Senate geography.</p>
+<p class="sources">Sources:
+<a href="https://thehill.com/homenews/senate/6125208-donald-trump-senate-gop-permanent-daylight-savings-bill/">The Hill — Trump / Cotton / Thune</a> ·
+<a href="https://thehill.com/policy/energy-environment/6122607-permanent-daylight-saving-time-bills-future-uncertain-after-senate-adjourns/">The Hill — Senate adjourned; clocks 1&nbsp;Nov</a> ·
+<a href="https://www.nbcnews.com/politics/donald-trump/tom-cotton-cell-number-post-daylight-savings-time-permanent-rcna601293">NBC — Cotton cellphone post</a> ·
+Al Jazeera index (Trump clock-switching pressure)
+</p>
+<div class="fb">
+<p>Consumer-facing clock policy as a Sunday lead — keep?</p>
+<label><input type="radio" name="fb-dst" value="yes"> Yes — changes the week, with a hard 1&nbsp;Nov date</label>
+<label><input type="radio" name="fb-dst" value="also"> Also-today until a floor vote</label>
+<label><input type="radio" name="fb-dst" value="less"> Less process-without-passage</label>
+</div>
+</article>
+
+<article id="s7">
+<h2>Houthis claim an Aramco hit in Riyadh; coalition calls it “misleading”; a fire was seen</h2>
+<p class="meta">
+<span class="chip">Energy &amp; grid</span>
+<span class="chip">Geopolitics</span>
+<span class="chip">Bab el-Mandeb adjacent</span>
+</p>
+<p>Houthi spokesman Yahya Saree claimed a ballistic-missile and drone operation against Aramco in Riyadh on Saturday, saying fires resulted. An AFP journalist reported smoke and flames near an Aramco facility south of the capital. Coalition spokesman Turki al-Maliki called the claim of targeting Riyadh “misleading.” No Saudi authority has confirmed the fire’s cause. Separately, Saudi-backed Yemeni forces claim heavy fighting on Tor al-Baha / Taiz axes — belligerent casualty figures are not treated as counts.</p>
+<p>US channel: Riyadh is the party being asked to raise Hormuz shipments and is reported to be planning a Bab el-Mandeb / Houthi offensive (gCaptain). A confirmed hit on processing or export capacity (Abqaiq, Ras Tanura, Yanbu) would threaten the twelve-day AAA diesel fall; a fire at a Riyadh facility is not automatically that. Do not pool Bab el-Mandeb transit economics with Hormuz.</p>
+<p><strong>What to watch:</strong> Aramco / energy-ministry throughput statement; satellite corroboration; EIA weekly for a supply signature.</p>
+<p class="sources">Sources:
+<a href="https://gulfnews.com/world/mena/trump-weighs-next-iran-move-as-pezeshkian-vows-economic-response-1.500697574">Gulf News / AFP fire report</a> ·
+<a href="https://gcaptain.com/">gCaptain — Saudi Bab el-Mandeb offensive planning</a> ·
+Al Jazeera index
+</p>
+</article>
+
+<article id="s8">
+<h2>Correction: yesterday’s “Tampa Bay 239” dengue sum was wrong — statewide 252, Hillsborough 223</h2>
+<p class="meta">
+<span class="chip">Florida &amp; Tampa Bay</span>
+<span class="chip">Correction</span>
+</p>
+<div class="corr">
+<p class="t">Correction — arithmetic</p>
+<p>Issue&nbsp;29-grok’s Florida treatment used Hillsborough 223, Pinellas 13 and Pasco 3. Claude Issue&nbsp;30 correctly flags that summing those county figures — published on different days by different outlets — into a “Tampa Bay 239” regional total was wrong. The same rule this brief has applied twice to Hormuz transit counts (daily vs weekly) applies to case counts: figures from separate reports describe separate moments and cannot be added.</p>
+<p><strong>What the sources support:</strong> Florida’s statewide 2026 locally acquired dengue total is <strong>252</strong>, of which Hillsborough is <strong>223</strong>. A separately reported Tampa Bay regional figure of <strong>179</strong> confirmed cases also circulates and does not reconcile with a simple county sum. Honest statement: Hillsborough is the outbreak; the regional total sits between competing prints until the Florida DOH arbovirus PDF can be read (unparseable here for eleven issues running).</p>
+</div>
+<p class="sources">Sources: Claude Issue&nbsp;30 correction box · prior WUSF / WINK figures in Issue&nbsp;29-grok · config.md 4&nbsp;Oct discipline note</p>
+</article>
+
+<article id="s9">
+<h2>Florida &amp; Tampa Bay: dengue virus in mosquito pools; emergencies run to 8&nbsp;Oct; SW Gulf low pressure 30%</h2>
+<p class="meta">
+<span class="chip">Florida &amp; Tampa Bay</span>
+<span class="chip">Science &amp; public health</span>
+</p>
+<p>Hillsborough’s surveillance is finding dengue virus in mosquito populations across neighbourhoods — a measure of transmission still available, not only of cases already diagnosed. County Administrator Bonnie Wise extended the local emergency to <strong>8&nbsp;October</strong>; Pinellas matches that date; Pasco remains under one. Lee County helicopters continue assisting Hillsborough. West Nile detection in Pinellas remains the second-arbovirus note from the weekend. Standing weather check: NHC’s 2am&nbsp;ET Sunday Atlantic outlook gives a southwestern Gulf low a <strong>near 0%</strong> chance of formation in 48 hours and <strong>30%</strong> over seven days — rain refills <em>Aedes</em> container habitat.</p>
+<p class="sources">Sources:
+<a href="https://nhc.noaa.gov/text/MIATWOAT.shtml">NHC Atlantic TWO, 2am&nbsp;ET 4&nbsp;Oct (read)</a> ·
+Hillsborough / WUSF / Bay News 9 context from Issue&nbsp;29–30 ·
+local emergency extensions
+</p>
+<div class="fb">
+<p>Florida section: correction + mosquito-pool / emergency extension — right local bar?</p>
+<label><input type="radio" name="fb-fl" value="yes"> Yes — correction earns space; pools clear merit</label>
+<label><input type="radio" name="fb-fl" value="corr-only"> Correction only; drop the rest</label>
+<label><input type="radio" name="fb-fl" value="skip"> Skip Florida when the AG OpenAI story already ran</label>
+</div>
+</article>
+
+<h2 class="section" id="also">Also today</h2>
+<p class="secnote">Nine short items. Open any.</p>
+<div class="also-list">
+
+<details>
+<summary><span class="chip">US politics &amp; policy</span> Tennessee prisons chief Frank Strada will step down after the failed Pike execution</summary>
+<div class="exp">
+<p>Gov.&nbsp;Lee: Strada resigns later this month amid independent review of Christa Gail Pike’s 30&nbsp;Sep failed execution (Pike critical, ventilated). Strada previously led Arizona corrections through three botched 2022 executions. Below the line: personnel with a policy hook, but Claude already led; Core beats took the slots. Sources: Al Jazeera / NBC headlines.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Geopolitics</span> FlyDubai FZ1073: Omani co-pilot previously grounded for extremist views attacked the captain with the crash axe</summary>
+<div class="exp">
+<p>UAE investigators: attempted terrorist act on Dubai–Tel Aviv 737 MAX; ~17,000&nbsp;ft altitude loss before recovery. Oman Air had barred him; FlyDubai hired him afterward. US channel via foreign-licence conversion and shared pilot pool. Below the line: aviation security, not Core altitude for this brief’s open; demoted vs Claude lead. Sources: Al Jazeera / Simple Flying via Claude corroboration — not re-fetched in full.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">US politics &amp; policy</span> Latitude Air Ambulance Gulfstream G100 debris field off Nantucket; six aboard, Bermuda→Boston</summary>
+<div class="exp">
+<p>Coast Guard confirmed debris from C-GRJP. Canadian-registered medical transfer; TSB Canada likely lead investigator. Below the line: accident without a new US regulatory action today. Sources: gCaptain / Al Jazeera / Wikipedia CE.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Geopolitics</span> Brazil votes; US (and Australian) consular posts remain closed</summary>
+<div class="exp">
+<p>First-round presidential election Sunday. US embassy/consulates still closed on security grounds Brazilian federal police say they could not corroborate. Reopening date remains the test. Below the line: foreign election without a new State Department primary. Sources: Al Jazeera / Wikipedia CE.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Energy &amp; grid</span> Alaska LNG costed at more than double Gulf Coast peers; Seoul has not committed cash</summary>
+<div class="exp">
+<p>gCaptain / Reuters: Glenpoint estimates $44.5–54.5bn; South Korea says commercial review first. Trump: “I didn’t jump the gun.” Below the line until FID / binding offtake. Sources: gCaptain.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">World economy</span> Port congestion ≈12% of global container capacity</summary>
+<div class="exp">
+<p>gCaptain: capacity immobilised at berth/anchor behaves like a fleet reduction for importers. Additive with Hormuz/Bab el-Mandeb reroutes. Single aggregate, no methodology — short. Sources: gCaptain.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Macro &amp; markets</span> No Sunday Treasury print; Friday issuer 10-year still 5.28%</summary>
+<div class="exp">
+<p>CSV last row 2&nbsp;Oct. Soft-NFP / hard-long-end pairing from Issue&nbsp;29 stands; no new issuer fact. Fed: prints and decisions only — none today. Sources: Treasury CSV.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Geopolitics</span> Wikipedia CE: Bosnian general election; Latvian Saeima vote; Gaza ceasefire strike claims</summary>
+<div class="exp">
+<p>Negative-check catches. Bosnia/Latvia — foreign elections without a cleared US-channel change today; not elevated. Gaza residential strike claims during ceasefire — no new US policy hook. Sources: Wikipedia Current events 3–4&nbsp;Oct.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Science &amp; public health</span> NHC Atlantic: SW Gulf low — 0% / 48h, 30% / 7 days</summary>
+<div class="exp">
+<p>Standing Florida-season check, paired with the dengue section. Quiet otherwise. Sources: NHC TWO (read).</p>
+</div>
+</details>
+
+</div>
+
+<h2 class="section">Negative check</h2>
+<p>Wikipedia current-events for 3–4&nbsp;October was populated (Iraq Hormuz throughput, Latvia, Gaza, Ethiopia Mekelle airport, Bermuda air ambulance, Bosnia election). Hand check against The National, Gulf News, AAA, gCaptain, text.npr.org (index only — articles 503), Washington Examiner, Florida Press, ABA Journal, Cornell LII, Al Jazeera index, NHC, Treasury CSV, FR API (0), White House actions index, Al-Monitor/USNI/Stripes on carriers.</p>
+<p><strong>What the negative check added or reordered:</strong> Florida AG’s OpenAI temporary-injunction motion leapt past a pure Hormuz open as the Core industry/lab-safety find Issues&nbsp;27–29 missed and Claude&nbsp;30 did not lead; industry SI-rebrand hold-off converted yesterday’s EO into an accountability follow-up; Al-Monitor’s “expected to relieve” language reordered the carrier item ahead of any third-carrier arithmetic; Senate adjournment until after 1&nbsp;Nov hardened the DST lead beyond “unless the Senate moves.”</p>
+<p><strong>What it rejected:</strong> Soft-NFP / Synopsys / G7 release text / EO&nbsp;14434 rename / refugee ceiling / voluntary pact / Gemini&nbsp;4 as reprises without new verifiable Sunday facts; FlyDubai axe, Tennessee Strada resignation, Brazil consular, and Bermuda air ambulance as leads (altitude / already-led-by-Claude / disaster-without-policy); Bosnian and Latvian elections (no US channel clearing the bar today); French lycée / Serbia / Somalia items; any “third carrier” headline that erases the Roosevelt-relief caveat; Claude’s “thirteenth” AAA fall count (this brief’s tally: twelfth).</p>
+
+<h2 class="section">Dormant / watched</h2>
+<ul class="dorm">
+<li><strong>Hormuz / diesel:</strong> active — twelfth AAA fall; seven unpublished conditions; Iraq 2m barrels; Sunday UKMTO hit; G7/IEA overlay still running.</li>
+<li><strong>Fed:</strong> quiet — no print, no decision. Last issuer 10-year 5.28% (2&nbsp;Oct).</li>
+<li><strong>Bab el-Mandeb:</strong> woken inside Aramco/Riyadh claim + Saudi offensive reporting; no new transit/JWC print — not pooled with Hormuz.</li>
+<li><strong>UAP implementation:</strong> quiet — no new paperwork.</li>
+<li><strong>Lab safety / state AI legislation:</strong> Florida AG TI motion + SI rebrand hold-off + prior voluntary pact.</li>
+<li><strong>Pocket rescission / TPP / Cooper:</strong> no new docket move — not reprised.</li>
+</ul>
+
+<footer>
+<p>Issue No. 30-grok · 4 October 2026 · Grok edition for MAGA Mickey · Written by Grok Bot / News Bot · Archive: <a href="https://historiocity.github.io/News-Agent/">historiocity.github.io/News-Agent</a> · Skill reads <code>config.md</code> every run.</p>
+<p>Parallel Claude Issue&nbsp;30 published as <code>2026-10-04.html</code>; this file is the independent Grok gather and does not overwrite it. 19 sources / 12 outside watchlist. Sunday FR day count 0 (expected). Public inspection offline until Monday 8:45am&nbsp;ET.</p>
+<p class="submit"><button type="button" id="send">Send feedback as a GitHub issue</button></p>
+</footer>
+
+</div>
+<script>
+(function () {
+ var OWNER = "historiocity", REPO = "News-Agent";
+ var btn = document.getElementById("send");
+ if (!btn) return;
+ btn.addEventListener("click", function () {
+ var lines = [], answered = 0;
+ document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+ answered++;
+ var q = i.closest(".fb").querySelector("p");
+ lines.push("- " + (q ? q.textContent.trim() : i.name) + "\\n → **" + i.value + "**");
+ });
+ if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+ var body = "Feedback on **Issue No. 30-grok — 4 October 2026, Grok edition**\\n\\n" + lines.join("\\n")
+ + "\\n\\n---\\n_Anything still here that shouldn't be, or missing that should:_\\n\\n";
+ window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+ + "&title=" + encodeURIComponent("Brief feedback — 2026-10-04-grok")
+ + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+ });
+})();
+</script>
+</body>
+</html>
