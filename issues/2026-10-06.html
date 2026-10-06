@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Tuesday, 6 October 2026</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .chip.alert { background:var(--accent); color:#fff; border:1px solid var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  .corr { background:var(--box); border-left:3px solid var(--accent); padding:.7rem .9rem; margin:0 0 1rem; font-size:.94rem; }
+  .corr p { margin:.4rem 0; }
+  .corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--accent); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  .short { border-bottom:1px solid var(--rule); padding:.7rem 0; margin:0; }
+  .short > summary { color:var(--fg); cursor:pointer; list-style:none; }
+  .short > summary::-webkit-details-marker { display:none; }
+  .short > summary::before { content:"▸ "; color:var(--link); }
+  .short[open] > summary::before { content:"▾ "; }
+  .short .body { margin-top:.6rem; padding-left:1.1rem; border-left:2px solid var(--rule); font-size:.96rem; }
+  .why { font-style:italic; color:var(--muted); }
+  figure { margin:1.2rem 0 0; }
+  figcaption { font-size:.84rem; color:var(--muted); margin-top:.4rem; line-height:1.5; }
+  svg { width:100%; height:auto; display:block; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+  ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 32 &middot; Tuesday, 6 October 2026</div>
+  <h1>One day after proposing a measure that reaches crypto wallets, Treasury withdrew the two rules that would have let banks see them</h1>
+  <p class="sub">Morning edition. Continues from <a href="2026-10-05.html">Monday</a>.</p>
+  <p class="prov"><b>20 sources checked, 8 of them outside the watchlist.</b> Eight lead stories: four on subjects with no existing thread (pharmacy benefit managers, the FDA drug-test exemptions, the trucking hours pilot, the Nobel) and four continuations (the crypto rules, the SEC&rsquo;s private-markets package, the ten-year yield, FlyDubai). Eight short items. The follow-up cap held at four.<br><br>
+  <b>Today&rsquo;s top story is a contradiction inside one agency in 24 hours.</b> Yesterday this brief led on FinCEN proposing a special measure written to reach the crypto addresses of a Russian laundering network, and argued the instrument could not reach the channel where the money actually moved. Today FinCEN withdrew the two general rules that would have reached it. The sequence is visible only if you read both days&rsquo; <em>Federal Register</em> in full, and no wire carried either.<br><br>
+  <b>Biggest story today not on this list:</b> the Supreme Court&rsquo;s argument in <em>Suncor v. Boulder County</em>, heard yesterday morning. It is in the short tier rather than the lead tier for one reason: no transcript or argument readout could be obtained, so this brief cannot tell you what the justices said, and a lead that cannot do that is not a lead. Also held: the deaths of Dennis Hastert and Jim Bakker, and a report that people are asking chatbots how to vote.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#crypto">FinCEN withdrew the unhosted-wallet reporting rule and the mixing measure, one day after invoking crypto addresses against a $179bn network</a></li>
+    <li><a href="#sec">Four SEC proposals in two days, and the threshold to be charged a performance fee falls from $2.7m to $1m</a></li>
+    <li><a href="#tenyear">The ten-year went to 5.31% on a day with nothing to react to &mdash; the highest this brief has recorded</a></li>
+    <li><a href="#flydubai">The FlyDubai co-pilot meant to fly the aircraft into Ben Gurion, and says he planned it before FlyDubai hired him</a></li>
+    <li><a href="#pbm">The biggest drug-pricing reform in years is already law and almost nobody noticed &mdash; it delinks what PBMs earn from what drugs cost</a></li>
+    <li><a href="#devices">The FDA has exempted fourteen drug-screening test systems from premarket review, effective immediately</a></li>
+    <li><a href="#hos">A pilot programme would let 256 truckers stop the 14-hour clock for up to three hours. Fatigue is in 30% of fatal truck crashes</a></li>
+    <li><a href="#nobel">The Nobel in medicine went to optogenetics &mdash; switching single neurons on with light, from a protein in pond algae</a></li>
+    <li><a href="#also-today">Also today (8)</a></li>
+  </ol>
+</nav>
+
+<article id="crypto">
+  <h2>FinCEN withdrew the unhosted-wallet reporting rule and the mixing measure, one day after invoking crypto addresses against a $179bn network</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip under">Underreported</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Two FinCEN withdrawals published today. The first kills the <b>December 2020</b> proposal (85 FR 83840) that would have required banks and money service businesses to <b>report transactions over $10,000</b> and <b>keep records and verify identity above $3,000</b> where the counterparty was an <b>unhosted wallet</b> &mdash; a wallet whose keys the holder controls, with no institution in between. FinCEN says it will &ldquo;take no further action&rdquo; on it. The second kills the <b>October 2023</b> section 311 special measure on <b>convertible virtual currency mixing</b> (88 FR 72701), on the ground that the proposal&rsquo;s &ldquo;expansive definition&rdquo; could chill legitimate activity and burden institutions. Both withdrawals cite the President&rsquo;s Working Group on Digital Asset Markets.</p>
+  <p>Now set that against yesterday. On <b>5 October</b> FinCEN proposed a special measure against the <b>A7 Network</b> written to cover any &ldquo;account or CVC address administered by or on behalf of&rdquo; a sub-agent, with findings recording <b>$17bn</b> of dollar transmittals and <b>at least $179.1bn</b> in A7A5 stablecoin volume. This brief argued that a measure operating on transmittals by covered institutions cannot reach value moving between foreign wallets.</p>
+  <p>Today answers that in the worst way. The unhosted-wallet rule is precisely the instrument that would have given a US institution a record of a customer sending value to a self-custodied wallet. Withdrawn. The mixing measure is the instrument for the service that breaks the chain between sender and recipient. Withdrawn.</p>
+  <p>What remains is enforcement one named entity at a time, against a technology whose point is that entities are cheap to recreate. FinCEN says it will keep monitoring mixers and &ldquo;may take appropriate steps in the future&rdquo;.</p>
+  <p><b>What to watch:</b> whether any designated A7A5 address is actually frozen, which is the only measure of whether entity-by-entity works; whether a replacement unhosted-wallet proposal appears with a narrower definition; and the 4 November A7 comment file.</p>
+
+  <div class="div">
+    <p class="t">Where the accounts diverge</p>
+    <p><b>The substance.</b> Not between sources &mdash; no secondary coverage of either withdrawal was found, as with yesterday&rsquo;s measure &mdash; but between two readings of the same two-day sequence. The coherent reading: these are different problems. A7 is a specific, documented laundering network and deserves a targeted measure; the 2020 and 2023 proposals were drafted so broadly that they would have swept in ordinary users, and the mixing withdrawal says exactly that, citing lawful privacy uses on public blockchains. The incoherent reading: the agency has conceded that general visibility into self-custody is unobtainable and is now pursuing a channel it cannot see, one shell at a time.</p>
+    <p><b>Cause.</b> Both readings rest on real facts, and the honest resolution is that they describe different timescales. The breadth objection to the 2020 rule is genuine &mdash; a $3,000 recordkeeping threshold on unhosted-wallet transfers would have covered a very large number of entirely lawful transactions, and the comment file on it was hostile for six years across two administrations. But withdrawal with &ldquo;no further action&rdquo; is not the same as replacement, and the gap it leaves is not theoretical: it is the exact gap the A7 findings describe. Note what the <em>withdrawals</em> do not contain: any alternative, any timetable, or any estimate of what visibility is lost. Both cite a policy document rather than an analysis.</p>
+    <p><b>What it means for you.</b> The practical consequence for an ordinary holder is that the compliance burden you were going to face on self-custody transfers has been lifted, and that is a real benefit if you use crypto lawfully &mdash; no $3,000 identity verification when you move coins to your own wallet. The consequence for everyone, holder or not, is that the dollar-denominated sanctions regime now has a documented blind spot that its own enforcement filings describe in nine-figure terms, and the tool chosen to cover it is a list of names. If you want one observation that distinguishes the coherent reading from the incoherent one, it is whether a <b>narrower unhosted-wallet proposal appears within six months</b>. A withdrawal followed by a better rule is regulatory hygiene. A withdrawal followed by nothing is a decision not to look, and it will be legible in the next enforcement action&rsquo;s findings rather than in any announcement.</p>
+  </div>
+
+  <p class="sources"><b>Confidence:</b> Primary source, both withdrawals read in full. No secondary coverage found. <b>Sources:</b> <a href="https://www.federalregister.gov/documents/full_text/text/2026/10/06/2026-20430.txt">FinCEN, withdrawal of the convertible virtual currency transaction NPRM, full text</a> &middot; <a href="https://www.federalregister.gov/documents/full_text/text/2026/10/06/2026-20429.txt">FinCEN, withdrawal of the virtual currency mixing special measure, full text</a> &middot; continues <a href="2026-10-05.html#fincen">5 October</a></p>
+
+  <div class="fb">
+    <p><b>This story exists only because the whole list was read two days running.</b></p>
+    <label><input type="radio" name="fb-crypto" value="more"> Keep doing that &mdash; the sequence is the story</label>
+    <label><input type="radio" name="fb-crypto" value="right"> About right</label>
+    <label><input type="radio" name="fb-crypto" value="less"> Too inside-baseball for a morning brief</label>
+  </div>
+</article>
+
+<article id="sec">
+  <h2>Four SEC proposals in two days, and the threshold to be charged a performance fee falls from $2.7m to $1m</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip under">Underreported</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Two more SEC proposals today, both closing <b>7 December</b>. <b>Investment Adviser Performance-Based Compensation Modernization</b> (file <b>S7-2026-28</b>) would replace the &ldquo;qualified client&rdquo; tests &mdash; currently <b>$2.7m net worth</b> or <b>$1.4m</b> under management &mdash; with the accredited-investor definition, which is <b>$1m net worth excluding the home</b> or <b>$200,000</b> of income. It would also allow performance fees on registered funds and BDCs up to <b>20% of net gains</b>, with board approval by a majority of independent directors.</p>
+  <p><b>Adviser and Regulated Fund Custody Rules; Crypto Custody</b> (file <b>S7-2026-35</b>) would let an adviser hold a client&rsquo;s crypto in <b>self-custody</b> &mdash; the adviser holding the private keys &mdash; where it determines in writing, quarterly, that no qualified custodian is available, subject to joint transaction authorisation, cybersecurity review, annual internal-control audits and quarterly statements showing addresses. It would also admit <b>state-chartered trust companies</b> as qualified custodians. The release cites <b>9.2%</b> of US adults holding crypto and a <b>$2.7 trillion</b> global market cap as of May 2026.</p>
+  <p>Add yesterday&rsquo;s two &mdash; professional credentials as accredited-investor status, and interval funds released from the 100% liquid-asset requirement &mdash; and four proposals in two days move the same perimeter. Who counts as sophisticated, what a retail-available fund may hold, who may be charged incentive fees, and who may hold the assets.</p>
+  <p>The performance-fee change is the one with the cleanest arithmetic. A qualified-client test exists because performance fees give a manager a one-sided bet: upside participation without symmetrical downside. Dropping the bar to $1m is not a marginal adjustment.</p>
+  <p><b>What to watch:</b> whether the Commission acknowledges the four proposals as one programme; whether the performance-fee rule keeps any inflation indexing, since Dodd-Frank requires five-yearly adjustment of the current figures; and whether a single commissioner dissents, given last week&rsquo;s quorum change.</p>
+
+  <figure>
+    <svg viewBox="0 0 640 170" role="img" aria-label="Three bars: the current qualified-client net worth test at 2.7 million dollars, the current assets-under-management test at 1.4 million, and the proposed accredited-investor net worth test at 1 million dollars.">
+      <line x1="190.0" y1="14" x2="190.0" y2="128" stroke="#e0ddd6" stroke-width="1"/>
+      <text x="190.0" y="144" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">$0m</text>
+      <line x1="330.0" y1="14" x2="330.0" y2="128" stroke="#e0ddd6" stroke-width="1"/>
+      <text x="330.0" y="144" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">$1m</text>
+      <line x1="470.0" y1="14" x2="470.0" y2="128" stroke="#e0ddd6" stroke-width="1"/>
+      <text x="470.0" y="144" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">$2m</text>
+      <rect x="190.0" y="22" width="378.0" height="22" fill="#8a3324"/>
+      <text x="182.0" y="37" font-family="Georgia, serif" font-size="11" fill="#1a1a18" text-anchor="end">Current: net worth</text>
+      <text x="560.0" y="37" font-family="Georgia, serif" font-size="12" fill="#ffffff" text-anchor="end">$2.7m</text>
+      <rect x="190.0" y="60" width="196.0" height="22" fill="#8a3324"/>
+      <text x="182.0" y="75" font-family="Georgia, serif" font-size="11" fill="#1a1a18" text-anchor="end">Current: assets managed</text>
+      <text x="394.0" y="75" font-family="Georgia, serif" font-size="12" fill="#8a3324" text-anchor="start">$1.4m</text>
+      <rect x="190.0" y="98" width="140.0" height="22" fill="#1c4f8a"/>
+      <text x="182.0" y="113" font-family="Georgia, serif" font-size="11" fill="#1a1a18" text-anchor="end">Proposed: accredited test</text>
+      <text x="338.0" y="113" font-family="Georgia, serif" font-size="12" fill="#1c4f8a" text-anchor="start">$1.0m</text>
+      <line x1="190.0" y1="14" x2="190.0" y2="128" stroke="#6b6a66" stroke-width="1"/>
+    </svg>    <figcaption>The qualified-client thresholds today against the accredited-investor net-worth test that would replace them. Plotted to scale: <b>0.00014px per dollar from a zero baseline</b>, so each $1m gridline is 140px. The accredited-investor route also admits anyone with <b>$200,000</b> of annual income and no particular net worth, which no bar can show. The current figures are as of June 2026 and are inflation-indexed every five years under Dodd-Frank.</figcaption>
+  </figure>
+
+  <div class="div">
+    <p class="t">Where the accounts diverge</p>
+    <p><b>The substance.</b> Again no wire carried either proposal, so the disagreement is between two readings this brief is setting out and labelling as such. The harmonisation reading: the SEC is running two incompatible investor tests &mdash; accredited investor for buying private offerings, qualified client for being charged performance fees &mdash; and collapsing them into one is tidying, not loosening. Someone already permitted to buy a private fund is hardly protected by being forbidden to pay it a performance fee. The exposure reading: the two tests do different jobs. Eligibility asks whether you can evaluate a risk; the qualified-client test asks whether you can absorb a fee structure that pays the manager for volatility.</p>
+    <p><b>Cause.</b> The harmonisation argument is stronger than it first looks, and it is worth saying so plainly: two thresholds for overlapping populations really is incoherent, and the lower one has a documented rationale. But the direction of harmonisation is a choice, and both proposals resolve downward. Nothing required collapsing the qualified-client test <em>into</em> the accredited test rather than the reverse. The custody proposal has the same shape &mdash; a genuine problem, that crypto often has no qualified custodian willing to hold it, answered by permitting the adviser to hold the keys rather than by building custodians. In both cases the obstacle is treated as the rule rather than the market.</p>
+    <p><b>What it means for you.</b> If your net worth is between $1m and $2.7m excluding your home &mdash; which in 2026 includes a large number of people with an ordinary house and a full retirement account &mdash; you are the population this moves, and the practical effect is that products carrying performance fees become marketable to you next year. The question to ask of any such product is not whether you qualify but what the fee does in a bad year: a 20%-of-gains fee with no clawback means the manager keeps the good years and you keep the bad ones, which is why the high-water mark and any catch-up provision matter more than the headline rate. On the crypto half, the thing to read is the <b>quarterly written determination</b>: an adviser self-custodying your crypto must record each quarter that no qualified custodian was available, and that record is the document a court would look at if the keys were lost. The observation that would tell you how seriously the Commission takes its own safeguards is whether the final rule keeps the joint-authorisation requirement, which is the only one of them that prevents a single person moving the assets.</p>
+  </div>
+
+  <p class="sources"><b>Confidence:</b> Primary source, both proposals read in part &mdash; each full text runs to hundreds of thousands of characters and only the opening sections were retrieved, so figures beyond those quoted are not established here. <b>Sources:</b> <a href="https://www.federalregister.gov/documents/full_text/text/2026/10/06/2026-20474.txt">SEC, Investment Adviser Performance-Based Compensation Modernization</a> &middot; <a href="https://www.federalregister.gov/documents/full_text/text/2026/10/06/2026-20466.txt">SEC, Adviser and Regulated Fund Custody Rules; Crypto Custody</a> &middot; continues <a href="2026-10-05.html#sec">5 October</a></p>
+</article>
+
+<article id="tenyear">
+  <h2>The ten-year went to 5.31% on a day with nothing to react to &mdash; the highest this brief has recorded</h2>
+  <div class="meta">
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">US debt &amp; fiscal</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Treasury&rsquo;s par yield curve for <b>Monday 5 October</b>: the ten-year at <b>5.31%</b>, up 3 basis points from Friday and above the <b>5.29%</b> of 30 September that had been the month&rsquo;s high. The thirty-year is <b>5.66%</b>, the twenty-year <b>5.70%</b>, the two-year <b>4.84%</b>, the three-month bill <b>4.22%</b>.</p>
+  <p>The notable thing is the absence of a cause. Monday brought no economic release, no auction, no Federal Reserve communication and no fiscal event. Friday&rsquo;s payroll print &mdash; <b>29,000</b> jobs with July revised into a loss &mdash; was three sessions old, and it was weak. Yields rose anyway, and the whole curve moved: the front end up 1 basis point, the ten-year up 3, the twenty-year up 3, the thirty up 3.</p>
+  <p>A parallel shift with no news is the signature of supply and term premium rather than expectations. If this were about the Federal Reserve, the two-year would be doing the work; it moved least. If it were about growth, a weak jobs report would pull yields down, not up.</p>
+  <p>Two structural facts persist. The <b>twenty-year still out-yields the thirty-year</b> by 4 basis points, as it has every day checked since 4 September &mdash; a kink about issuance and demand at particular maturities, not a forecast. And the ten-year is <b>12 basis points above the October 2023 peak of 5.19%</b>, verified directly in Treasury&rsquo;s 2023 table.</p>
+  <p>What is <em>not</em> available, and this brief has withdrawn it twice: &ldquo;highest since&rdquo; any date before November 2023. The thirty-four months in between have not been checked month by month.</p>
+  <p><b>What to watch:</b> the <b>4 November refunding</b>, which is where a genuine buyer problem would appear as weak bid-to-cover rather than as a daily level; whether the twenty-thirty inversion closes, which would say the kink was technical; and the next CPI print.</p>
+
+  <figure>
+    <svg viewBox="0 0 640 196" role="img" aria-label="Ten-year Treasury par yield, daily, 18 September to 5 October 2026, rising from 4.96 percent to a new high of 5.31 percent. A dashed line marks the October 2023 peak of 5.19 percent.">
+      <line x1="100" y1="34.0" x2="610" y2="34.0" stroke="#e0ddd6" stroke-width="1"/>
+      <line x1="100" y1="68.0" x2="610" y2="68.0" stroke="#e0ddd6" stroke-width="1"/>
+      <line x1="100" y1="102.0" x2="610" y2="102.0" stroke="#e0ddd6" stroke-width="1"/>
+      <line x1="100" y1="136.0" x2="610" y2="136.0" stroke="#e0ddd6" stroke-width="1"/>
+      <line x1="100" y1="170.0" x2="610" y2="170.0" stroke="#6b6a66" stroke-width="1"/>
+      <line x1="100" y1="71.4" x2="610" y2="71.4" stroke="#1c4f8a" stroke-width="1.5" stroke-dasharray="5 4"/>
+      <text x="92" y="38.0" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">5.30%</text>
+      <text x="92" y="72.0" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">5.20%</text>
+      <text x="92" y="106.0" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">5.10%</text>
+      <text x="92" y="140.0" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">5.00%</text>
+      <text x="92" y="174.0" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">4.90%</text>
+      <text x="106" y="65.4" font-family="Georgia, serif" font-size="11" fill="#1c4f8a" text-anchor="start">Oct 2023 peak 5.19%</text>
+      <polyline fill="none" stroke="#8a3324" stroke-width="2.5" points="100.0,132.6 145.45,149.6 190.91,149.6 236.36,98.6 281.82,74.8 327.27,78.2 372.73,54.4 418.18,47.6 463.64,37.4 509.09,54.4 554.55,40.8 600.0,30.6"/>
+      <circle cx="100.0" cy="132.6" r="4" fill="#8a3324"/>
+      <circle cx="600.0" cy="30.6" r="4.5" fill="#8a3324"/>
+      <text x="594.0" y="48.6" font-family="Georgia, serif" font-size="11" fill="#8a3324" text-anchor="end">5.31%</text>
+      <text x="100" y="190" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="start">18 Sep</text>
+      <text x="350" y="190" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">25 Sep</text>
+      <text x="600" y="190" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">5 Oct</text>
+    </svg>    <figcaption>Ten-year constant maturity, US Treasury Daily Par Yield Curve Rates, twelve business days. Read with the column headers enumerated and every cell taken in position order &mdash; and cross-checked against the 1 and 2 October values already recorded here, because this morning&rsquo;s read again returned a header count and a cell count that did not match. Plotted to scale: <b>340px per percentage point from a 4.90% base</b>, so each 0.10% gridline is 34px. The dashed line is the October 2023 peak of 5.19%, verified directly in Treasury&rsquo;s October 2023 table.</figcaption>
+  </figure>
+
+  <div class="div">
+    <p class="t">Where the accounts diverge</p>
+    <p><b>The substance.</b> What a rising long end with a soft labour market means, and the two readings are genuinely opposed. The fiscal reading: investors are demanding more to hold duration because of issuance volume and debt service, and the weak economy is irrelevant to that calculation. The inflation reading: the market expects price pressure the Federal Reserve will have to meet, which is consistent with a hiking cycle still pricing a December increase. Both predict rising long yields and they imply opposite things about whether the Fed should act.</p>
+    <p><b>Cause.</b> The curve&rsquo;s own shape is the best available discriminator, and on 5 October it points fiscal. A pure inflation-expectations move lifts the belly and the front end together, because higher expected prices mean higher expected policy rates; here the two-year moved a single basis point while the long end moved three, and the two-year is <em>below</em> where it was on 30 September. A parallel long-end shift with a static front end is what term premium looks like. The twenty-thirty inversion is corroborating: it is a statement about which maturities buyers want, not about the economy. <b>The honest caveat is that one session is not evidence of a regime</b>, and this brief has twice been wrong about this exact number, so a three-basis-point move is being reported as a level rather than a turn.</p>
+    <p><b>What it means for you.</b> Treat 5.31% as the number your borrowing costs track and stop waiting for the weak economy to lower it &mdash; that has not worked for three weeks and the mechanism above explains why it may not. Concretely: thirty-year mortgage rates follow the ten-year with a spread that has been unusually wide all year, so a 5.31% ten-year is consistent with a mortgage in the low sevens, and refinancing arithmetic does not improve on a weak payroll report in a term-premium regime. If you hold bonds, the twenty-year is the maturity being punished and the thirty is relatively favoured, which is the opposite of the usual ordering. The event that would settle the fiscal reading is the <b>4 November refunding</b>: watch the bid-to-cover and the dealer takedown rather than the yield, because a buyer problem shows up in who is left holding the auction, not in the screen.</p>
+  </div>
+
+  <p class="sources"><b>Confidence:</b> Primary source, read with headers enumerated and cross-checked against previously recorded values. <b>Sources:</b> <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202610">Treasury Daily Par Yield Curve, October 2026</a> &middot; <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202310">October 2023</a>, for the peak &middot; continues <a href="2026-10-03.html#payrolls">3 October</a></p>
+</article>
+
+<article id="flydubai">
+  <h2>The FlyDubai co-pilot meant to fly the aircraft into Ben Gurion, and says he planned it before FlyDubai hired him</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The investigation into <b>FlyDubai FZ1073</b> has found the attacker intended to crash the aircraft into <b>Ben Gurion International Airport</b>. Under interrogation in the UAE, <b>Hamam al-Hammami</b> said he had <b>planned the attack before he was employed by FlyDubai</b>. Both Emirati and Israeli authorities treat it as an attempted terrorist attack; motive is still under investigation.</p>
+  <p>Two details sharpen yesterday&rsquo;s account. Al-Hammami was suspended by <b>Oman Air in 2024</b> as a <b>trainee</b> co-pilot for <b>possessing extremist materials</b> &mdash; more specific and better sourced than the &ldquo;visits to radical websites&rdquo; this brief carried from a single report, and it replaces it. And the aircraft made an <b>emergency landing in Saudi Arabia</b>, which yesterday&rsquo;s issue did not mention.</p>
+  <p>The pre-employment intent is what changes the story&rsquo;s shape. Yesterday the question was whether a records failure let a flagged pilot be hired. If he had already formed the intent when he applied, the hiring was not a lapse that preceded a later radicalisation &mdash; it was the mechanism, and the aircraft was the objective of the job application.</p>
+  <p>That makes the gap this brief described yesterday much more consequential than a compliance point. The relevant question is no longer only whether Oman&rsquo;s adverse finding was shareable, but whether a suspension <em>for possessing extremist materials</em> &mdash; a documented employer action, not an intelligence assessment &mdash; can be invisible to the next airline. Those are different classes of record and the second is far harder to defend.</p>
+  <p>The US channel is unchanged and now stronger: American carriers and their codeshare partners draw crew from the same international pool, and the FAA accepts foreign licence conversions.</p>
+  <p><b>What to watch:</b> whether the preliminary report states what FlyDubai asked Oman Air and what it received; any ICAO move on cross-border sharing of adverse pilot findings; and whether Israel or the UAE charges him, since the venue determines what becomes public.</p>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration; the interrogation account is attributed to sources rather than to an official statement, and no preliminary report has been published. <b>Sources:</b> <a href="https://www.kpbs.org/news/international/2026/10/05/flydubai-attacker-intended-to-crash-plane-into-tel-aviv-airport-investigation-finds">NPR via KPBS</a> &middot; <a href="https://www.cbsnews.com/news/flydubai-plane-attempted-crash-hijacking-israel-dubai-what-to-know/">CBS News</a> &middot; <a href="https://www.gpb.org/news/2026/10/05/flydubai-attacker-intended-crash-plane-tel-aviv-airport-ongoing-investigation-finds">NPR via GPB</a> &middot; continues <a href="2026-10-04.html#flydubai">4 October</a></p>
+</article>
+
+<article id="pbm">
+  <h2>The biggest drug-pricing reform in years is already law and almost nobody noticed &mdash; it delinks what PBMs earn from what drugs cost</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Science &amp; public health</span>
+    <span class="chip new">New thread</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Pharmacy benefit managers are the intermediaries that decide which drugs an insurance plan covers, at what tier, and what a pharmacy is paid to dispense them. Three companies control most of the market and each sits inside a larger health conglomerate. The structural complaint is that PBM compensation has been tied to a drug&rsquo;s list price and to the rebate negotiated off it &mdash; which gives the intermediary an interest in a <em>higher</em> list price.</p>
+  <p>That link is now being cut by statute. The <b>Consolidated Appropriations Act, 2026</b> (H.R. 7148), enacted in <b>February</b>, <b>delinks PBM compensation in Medicare Part D</b> from a drug&rsquo;s price and from rebate arrangements; requires PBMs to pass <b>100% of rebates</b> through to employer health plans; and adds transparency and data-reporting obligations for Part D and employer plans. It is the most comprehensive federal regulation of the industry to date, and it arrived inside a spending bill.</p>
+  <p>It is a story in October because the coalition is bipartisan in a way almost nothing in health policy is, and the follow-on bills show where it goes. <b>Crapo</b> and <b>Wyden</b>, the Finance Committee chair and ranking member, have the PBM Price Transparency and Accountability Act (<b>S. 3345</b>). <b>Warren</b> and <b>Hawley</b> have the Break Up Big Medicine Act (<b>S. 3822</b>), barring a PBM from common ownership with pharmacies or provider groups &mdash; a structural remedy rather than a disclosure one.</p>
+  <p>Delinking and divestiture are different theories of the problem: the first assumes a conflicted incentive can be neutralised by changing how the intermediary is paid, the second that it cannot, because the conflict is ownership.</p>
+  <p><b>What to watch:</b> the Part D plan bids for 2027, the first set priced under delinked compensation, and whether premiums or formularies move; whether employer plans actually receive 100% of rebates, which is an auditable claim; and whether S. 3822 gets a hearing, since an ownership bill is the test of how far the coalition goes.</p>
+
+  <div class="div">
+    <p class="t">Where the accounts diverge</p>
+    <p><b>The substance.</b> Whether delinking reaches the problem. The reform reading: compensation tied to list price is the mechanism of the conflict, so severing it removes the incentive to prefer expensive drugs, and 100% rebate pass-through removes the retained spread. The structural reading, which is what the Warren&ndash;Hawley bill asserts: a PBM owned by the same company as an insurer, a specialty pharmacy and a provider group has many other ways to profit from steering, and fee reform addresses only the one that was legislated against.</p>
+    <p><b>Cause.</b> The two readings weight vertical integration differently, and the structural case is stronger on the mechanics than the delinking case admits. If a PBM, an insurer and a mail-order pharmacy share a parent, the group&rsquo;s margin can be taken at whichever entity is least regulated; delinking the PBM&rsquo;s fee changes where the margin is booked, not whether it exists. That is not a reason to think delinking does nothing &mdash; Part D bids are a real constraint and rebate pass-through is auditable &mdash; but it is why the same senators who passed it are now writing an ownership bill. Note also that both readings come from interested parties: independent pharmacies and drug manufacturers fund much of the PBM critique, and manufacturers set the list prices that PBMs are accused of inflating.</p>
+    <p><b>What it means for you.</b> The honest expectation is modest and specific: delinking changes what the plan pays the intermediary, and it is not a mechanism for lowering the price at your pharmacy counter. The place to look for an effect is your <b>2027 Part D plan documents</b> if you are on Medicare &mdash; specifically the formulary tier of any drug you take, because a plan no longer rewarded for high list prices has less reason to prefer an expensive brand over a cheaper equivalent, and tier changes are where that shows up. If you have employer coverage, the 100% rebate pass-through is money owed to your <em>plan</em>, not to you, and whether it reaches your premium depends entirely on your employer. The single thing worth watching across both is <b>whether independent pharmacy closures slow</b>: reimbursement below acquisition cost is what has been closing them, and it is the most measurable consequence of any of this.</p>
+  </div>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration from law-firm and policy analyses; <b>the statutory text of H.R. 7148 was not read</b>, and congress.gov has returned 403 to this brief since 14 September, so the provisions are described second-hand. <b>Sources:</b> <a href="https://www.mintz.com/insights-center/viewpoints/2146/2026-02-06-congress-passes-landmark-pbm-reform-2026-spending-bill">Mintz</a> &middot; <a href="https://www.kff.org/other-health/what-to-know-about-pharmacy-benefit-managers-pbms-and-federal-efforts-at-regulation/">KFF</a> &middot; <a href="https://www.ajmc.com/view/pbm-reforms-signed-into-law-reshaping-medicare-part-d-drug-pricing-transparency">AJMC</a> &middot; <a href="https://www.fiercehealthcare.com/regulatory/bipartisan-lawmakers-reintroduce-bill-barring-pbms-owning-pharmacies">Fierce Healthcare</a> on S. 3822 &middot; <a href="https://text.npr.org/">text.npr.org</a></p>
+
+  <div class="fb">
+    <p><b>This is a story about a law passed eight months ago.</b></p>
+    <label><input type="radio" name="fb-pbm" value="good"> Right to run it &mdash; I did not know this had happened</label>
+    <label><input type="radio" name="fb-pbm" value="late"> Too late to be news; cover the new bills instead</label>
+    <label><input type="radio" name="fb-pbm" value="more"> More health-cost mechanics like this</label>
+  </div>
+</article>
+
+<article id="devices">
+  <h2>The FDA has exempted fourteen drug-screening test systems from premarket review, effective immediately</h2>
+  <div class="meta">
+    <span class="chip">Science &amp; public health</span>
+    <span class="chip new">New thread</span>
+    <span class="chip under">Underreported</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>A final rule published today, effective <b>on publication</b>, exempts <b>fourteen</b> Class II clinical toxicology test systems from premarket notification under <b>section 510(m)(2)</b> of the Food, Drug, and Cosmetic Act. The list is the standard drug panel: <b>amphetamine, barbiturate, benzodiazepine, cocaine metabolite, codeine, LSD, methamphetamine, methadone, methaqualone, morphine, opiate, propoxyphene, cannabinoid and tricyclic antidepressant</b> test systems.</p>
+  <p>Exemption means a manufacturer no longer files a <b>510(k)</b> demonstrating substantial equivalence to a cleared device before marketing. The FDA&rsquo;s basis: these devices have well-established characteristics, users can detect changes by visual examination or routine testing, and changes are unlikely to affect safety or effectiveness. The stated purpose is to decrease regulatory burden.</p>
+  <p>Process was followed properly, which is worth saying because this brief has spent two weeks on rules that skipped it. The FDA proposed this on <b>1 May 2026</b>, took comments to <b>30 June</b>, received about <b>70</b>, and responded to 21 comment categories before finalising.</p>
+  <p>What makes it consequential is where these assays are used, which is almost never in a hospital making a treatment decision. Drug screens of exactly this kind decide employment, probation and parole conditions, pain-management contracts, child-custody and child-welfare proceedings, and participation in treatment programmes. A false positive in that setting is not a medical error; it is a legal event. These assays are also the ones with documented cross-reactivity problems &mdash; the amphetamine and opiate immunoassays in particular.</p>
+  <p>Four further FDA rules published today classify a DNA sequencing test, a hyperoxia monitoring device and a focused ultrasound system, three of them also effective on publication.</p>
+  <p><b>What to watch:</b> whether the comment responses addressed confirmatory testing, since an exempt screen is only as safe as the requirement to confirm it by mass spectrometry; whether any state forensic or employment-testing programme references 510(k) status; and the next 510(m) exemption list.</p>
+
+  <p class="sources"><b>Confidence:</b> Primary source, full text read. The point about legal rather than clinical use, and about immunoassay cross-reactivity, is this brief&rsquo;s own and is not in the document. <b>Sources:</b> <a href="https://www.federalregister.gov/documents/full_text/text/2026/10/06/2026-20448.txt">FDA, Medical Devices; Exemptions From Premarket Notification: Class II Devices, full text</a> &middot; <a href="https://www.federalregister.gov/api/v1/documents.json?conditions%5Bpublication_date%5D%5Bis%5D=2026-10-06">Federal Register documents API, 6 October</a> (documents 2026-20440, 20441, 20443, 20448)</p>
+</article>
+
+<article id="hos">
+  <h2>A pilot programme would let 256 truckers stop the 14-hour clock for up to three hours. Fatigue is in 30% of fatal truck crashes</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">World economy</span>
+    <span class="chip new">New thread</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The Federal Motor Carrier Safety Administration has proposed a pilot programme to test whether a driver may <b>pause the 14-hour driving window</b>. Today a driver has 14 consecutive hours to complete driving after 10 hours off duty, and the clock runs whatever happens. The pilot would allow a <b>single pause of 30 minutes to 3 hours</b>, taken at a cargo pickup or delivery location, that does not count against the window. <b>256</b> drivers, carriers representative of the overall distribution of carrier sizes, <b>16 weeks</b>. Comments close <b>7 December</b>.</p>
+  <p>The agency&rsquo;s own figure for the stakes: driver fatigue &ldquo;may be involved in over <b>30 percent</b> of fatal&rdquo; commercial motor vehicle crashes.</p>
+  <p>The monitoring is unusually serious and is the reason to take the pilot seriously rather than as cover. Participants would be measured with <b>psychomotor vigilance tests</b>, subjective sleepiness ratings, <b>wrist actigraphy</b>, driving records and telematics. That is a sleep-science protocol, not a survey, and actigraphy in particular measures whether a driver actually slept rather than whether the logbook says so.</p>
+  <p>The practical argument for the pause is detention time: a driver held three hours at a shipper&rsquo;s dock loses three hours of his window and is then pressed to drive the remainder fast or park short of a paid delivery. The pause converts someone else&rsquo;s inefficiency into neutral time.</p>
+  <p>The argument against is that a 14-hour window plus a 3-hour pause is a 17-hour day, and fatigue tracks time awake rather than time driving. Whether the pause restores anything depends on what the driver does in it &mdash; which is what the actigraphy would reveal.</p>
+  <p><b>What to watch:</b> whether the pilot requires the pause to be sleeper-berth rest rather than any off-duty time; the 7 December comment file, where the Teamsters and the safety-advocacy groups will appear; and whether the 256-driver sample is powered to detect a crash-rate effect, which it almost certainly is not.</p>
+
+  <p class="sources"><b>Confidence:</b> Primary source, full text read. <b>Sources:</b> <a href="https://www.federalregister.gov/documents/full_text/text/2026/10/06/2026-20476.txt">FMCSA, Hours of Service Pilot Program, full text</a></p>
+</article>
+
+<article id="nobel">
+  <h2>The Nobel in medicine went to optogenetics &mdash; switching single neurons on with light, from a protein in pond algae</h2>
+  <div class="meta">
+    <span class="chip">Science &amp; public health</span>
+    <span class="chip new">New thread</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The 2026 Nobel Prize in Physiology or Medicine was awarded on <b>5 October</b> to <b>Karl Deisseroth</b> of Stanford, <b>Peter Hegemann</b> of Humboldt University in Berlin and <b>Georg Nagel</b> of the University of W&uuml;rzburg, for light-gated ion channels and <b>optogenetics</b>. The prize is <b>12 million Swedish kronor</b>, about $1.2m, shared.</p>
+  <p>The chain of discovery is the part worth knowing. Hegemann was studying how a single-celled green alga swims toward light. He and Nagel identified a protein that, illuminated by blue light, opens a channel and creates an electrical impulse. Deisseroth&rsquo;s contribution was to put that protein into neurons, so that a pulse of light switches a chosen cell on or off.</p>
+  <p>That turns neuroscience from a correlational science into an experimental one. Before optogenetics you could record which neurons fired during a behaviour; afterwards you could activate a specific population and see whether the behaviour followed. Almost everything claimed about circuits for fear, reward, appetite, sleep and movement in the past fifteen years rests on it.</p>
+  <p>It is also a case study in basic research. Nobody funded pond-algae phototaxis in order to map the brain, and no plausible research-priority exercise would have selected it.</p>
+  <p>The caveat worth carrying: optogenetics requires genetically modifying the target cells, so it is a laboratory tool rather than a therapy. Its clinical descendants are narrow &mdash; retinal work is the furthest along &mdash; and a reader should not expect this prize to be about treatments.</p>
+  <p><b>What to watch:</b> the physics prize today and chemistry tomorrow; and whether the citation&rsquo;s emphasis on a tool rather than a disease mechanism signals how the committee is weighting methods.</p>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration; the Nobel Assembly&rsquo;s own citation was not read. The account of what optogenetics changed methodologically is this brief&rsquo;s own. <b>Sources:</b> <a href="https://www.npr.org/2026/10/05/g-s1-146400/nobel-medicine-prize">NPR</a> &middot; <a href="https://www.nbcnews.com/world/europe/nobel-prize-medicine-2026-karl-deisseroth-peter-hegemann-georg-nagel-rcna601564">NBC News</a> &middot; <a href="https://www.cnn.com/2026/10/05/science/nobel-prize-medicine-karl-deisseroth-peter-hegemann-georg-nagel-intl">CNN</a> &middot; <a href="https://www.bostonglobe.com/2026/10/05/world/nobel-prize-physiology-medicine/">Boston Globe</a></p>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Eight things found in this morning&rsquo;s source checks that did not clear the lead bar. Each expands to the substance, the reason it sits below the line, and where it came from.</p>
+
+<details class="short" id="s-suncor">
+  <summary><span class="chip">US politics &amp; policy</span> The Supreme Court heard the Boulder climate case yesterday. This brief could not obtain a transcript, so it cannot tell you how it went.</summary>
+  <div class="body">
+    <p><b>Suncor Energy (U.S.A.) v. County Commissioners of Boulder County</b>, No. <b>25-170</b>, was argued at <b>10am Eastern on Monday 5 October</b>, the first case of the term. Two questions: whether federal law forecloses state-law claims for injuries from the effects of interstate and international greenhouse-gas emissions, and whether the Court has statutory and Article III jurisdiction.</p>
+    <p>The posture matters. Boulder sued Suncor and ExxonMobil on <b>17 April 2018</b>, alleging deception about their products&rsquo; role in climate change. The <b>Colorado Supreme Court</b> ruled <b>5&ndash;2</b> for Boulder on <b>12 May 2025</b>, rejecting the preemption argument. So the companies are the petitioners and the state-court judgment is what they are asking the Court to undo. A decision is expected by mid-2027.</p>
+    <p>The jurisdictional question is the one that could make the case anticlimactic: the Court can decide it lacks jurisdiction over an interlocutory state-court ruling and never reach preemption, which would leave two dozen similar suits exactly where they are.</p>
+    <p><b>Below the line because</b> no transcript, audio or argument readout was reachable this morning, and an argument story with no account of the argument is not one. It leads tomorrow if a readout becomes available, and on the decision.</p>
+    <p class="sources"><b>Confidence:</b> Case posture from pre-argument primers; <b>the argument itself was NOT read or heard</b>. <b>Sources:</b> <a href="https://legal-planet.org/2026/09/08/legal-planet-guide-to-suncor-energy-v-county-commissioners-of-boulder-county/">Legal Planet</a> &middot; <a href="https://eelp.law.harvard.edu/suncor-v-boulder-preemption-state-law-and-climate-related-harm/">Harvard EELP</a> &middot; <a href="https://www.everycrsreport.com/reports/R49419.html">CRS R49419</a> &middot; continues <a href="2026-10-05.html#census">5 October</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-transparency">
+  <summary><span class="chip">US politics &amp; policy</span> A rule called Transparency in Coverage adds phone price quotes &mdash; and cuts out-of-network rate reporting from monthly to quarterly.</summary>
+  <div class="body">
+    <p>A joint Treasury, Labor and HHS final rule published today, effective <b>7 December 2026</b> for plan years beginning on or after <b>1 January 2027</b>, revises the Transparency in Coverage regime. Added: plans must provide cost-sharing estimates <b>by telephone</b> on request, satisfying both the ACA and the No Surprises Act, with the number of providers per request capped at no fewer than <b>20 a day</b>. Clarified: estimates must say they do not account for out-of-network balance billing where state and federal law permits it.</p>
+    <p>On the machine-readable files &mdash; the bulk price data researchers and employers actually use &mdash; in-network rate files move from plan level to <b>provider-network level</b>, cutting duplication and file size, and rates for &ldquo;unlikely provider-to-service mappings&rdquo; are dropped. Out-of-network files get a market-level structure, a longer claims window, and a cadence moving from <b>monthly to quarterly</b>.</p>
+    <p>That last change is the one to notice. Reducing a disclosure&rsquo;s frequency by a factor of three, inside a rule named Transparency in Coverage, is a real trade: smaller and cleaner files against less timely out-of-network data. Whether it nets out as more transparency depends entirely on whether anyone was using the monthly cadence.</p>
+    <p><b>Below the line because</b> it is a technical revision to an existing regime with a 2027 compliance date, and the cost figures are in charts this brief could not parse. It leads if researchers show the quarterly cadence breaks an existing use.</p>
+    <p class="sources"><b>Confidence:</b> Primary source, opening sections read; the full text runs past what could be retrieved and the cost tables are graphics. <b>Sources:</b> <a href="https://www.federalregister.gov/documents/full_text/text/2026/10/06/2026-20447.txt">Transparency in Coverage, full text</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-pm25">
+  <summary><span class="chip">Science &amp; public health</span> The EPA opened comment on which areas fail the 9.0 microgram soot standard &mdash; without publishing the list.</summary>
+  <div class="body">
+    <p>The EPA proposed initial air quality designations for the <b>2024 revised primary annual PM2.5 standard</b>, which 40 CFR 50.20 sets at <b>9.0 micrograms per cubic metre</b>, down from 12.0. Comments close <b>5 November 2026</b>. The notice covers all fifty states, the District of Columbia, the territories and certain tribes.</p>
+    <p>The problem with it as a document: <b>the designations are not in it</b>. The EPA says it completed its obligation to notify states on or about <b>2 October</b> through individual <b>120-day letters</b>, and the actual nonattainment and attainment proposals live in those letters and in docket datasets. So a national notice opening comment on designations does not tell a reader whether their county is proposed as nonattainment.</p>
+    <p>That matters because nonattainment is the consequential status: it triggers state implementation planning, new-source review with offsets, and permitting constraints on industrial expansion. PM2.5 also has the best-established mortality association of any criteria pollutant, which is why the standard moved from 12.0 to 9.0. This brief has not read the 120-day letters or the docket datasets and cannot say how many areas or which states are affected.</p>
+    <p><b>Below the line because</b> the notice omits the designations, which are the entire content, and this brief did not retrieve them. It leads with the list &mdash; particularly if Hillsborough or Pinellas appears.</p>
+    <p class="sources"><b>Confidence:</b> Primary source for the notice; <b>the designations themselves were NOT obtained</b>. The nonattainment consequences and the 12.0 prior standard are this brief&rsquo;s background. <b>Sources:</b> <a href="https://www.federalregister.gov/documents/full_text/text/2026/10/06/2026-20468.txt">EPA, Initial Air Quality Designations for the 2024 Annual PM2.5 NAAQS, full text</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-ibogaine">
+  <summary><span class="chip">Science &amp; public health</span> The FDA is asking how to design clinical trials for ibogaine &mdash; a psychedelic that treats opioid dependence and can stop the heart.</summary>
+  <div class="body">
+    <p>The FDA published a request for information on <b>clinical trial design for ibogaine drug products</b>. An RFI rather than a guidance means the agency is asking the field how a trial should be built before it says what it will accept.</p>
+    <p>Ibogaine is the hardest case in psychedelic medicine. It has the strongest anecdotal record of any agent for interrupting <b>opioid dependence</b> &mdash; often from a single administration &mdash; and it is <b>cardiotoxic</b>, prolonging the QT interval and causing fatal arrhythmias; deaths in unsupervised clinics are documented. It is Schedule I in the United States and legal under supervision in a few jurisdictions. Texas appropriated state money for ibogaine trials in 2025.</p>
+    <p>So the design questions are genuinely hard and that is why the FDA is asking: a dose that works may be near a dose that kills, the experience cannot be blinded, and a single-administration treatment does not fit the usual trial architecture. An RFI is the appropriate first step rather than a delay.</p>
+    <p>This brief has not read the RFI and does not have the comment deadline, the specific questions asked, or whether any sponsor has an open IND.</p>
+    <p><b>Below the line because</b> the document was not read and an RFI commits the agency to nothing. It leads on a guidance document, or a trial authorisation.</p>
+    <p class="sources"><b>Confidence:</b> Index entry only; the RFI text was NOT read, and the pharmacology and Texas funding are this brief&rsquo;s background. <b>Sources:</b> <a href="https://www.federalregister.gov/api/v1/documents.json?conditions%5Bpublication_date%5D%5Bis%5D=2026-10-06&conditions%5Btype%5D%5B%5D=NOTICE">Federal Register notices, 6 October</a> (document 2026-20427)</p>
+  </div>
+</details>
+
+<details class="short" id="s-ofac">
+  <summary><span class="chip">Geopolitics</span> Three separate OFAC sanctions actions published in one day, with no indication in the index of who was designated.</summary>
+  <div class="body">
+    <p>The <em>Federal Register</em> carried <b>three</b> OFAC sanctions actions today (2026-20395, 2026-20425, 2026-20475). The index entries give only the agency and the generic title, so the designated persons, the programme and the basis are not visible without reading each one.</p>
+    <p>Three in a day is above the usual rate and is worth recording for that reason alone, particularly in the week FinCEN moved against a Russian laundering network and then withdrew two crypto rules. Whether these actions are related to that is exactly what cannot be told from the index.</p>
+    <p>The standing caution from this brief&rsquo;s own notes applies and is why no claim is made here: <b>OFAC notices in the Federal Register are frequently codification of licences or designations issued weeks or months earlier</b>, so a publication date is not an action date. Four Venezuela general licences on 11 September looked like news and were not. The dated detail pages at <code>ofac.treasury.gov/recent-actions</code> are the way to tell, and were not checked this morning.</p>
+    <p><b>Below the line because</b> no document was read and no designee is known; it is a count, not a finding. It leads if the designations touch the A7 Network or a stablecoin issuer.</p>
+    <p class="sources"><b>Confidence:</b> Index entries only; nothing read. <b>Sources:</b> <a href="https://www.federalregister.gov/api/v1/documents.json?conditions%5Bpublication_date%5D%5Bis%5D=2026-10-06&conditions%5Btype%5D%5B%5D=NOTICE">Federal Register notices, 6 October</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-hfc">
+  <summary><span class="chip">Energy &amp; grid</span> The EPA has set 2027 allowances for the hydrofluorocarbon phasedown &mdash; the one climate programme running on a statutory schedule.</summary>
+  <div class="body">
+    <p>The EPA published <b>2027 allowance allocations</b> for the <b>hydrofluorocarbon phasedown</b>. HFCs are the refrigerants that replaced ozone-depleting CFCs and are themselves potent greenhouse gases, hundreds to thousands of times more warming than carbon dioxide per unit mass.</p>
+    <p>The programme is distinctive for being statutory rather than discretionary: the <b>AIM Act of 2020</b> directs an <b>85% reduction</b> in HFC production and consumption by <b>2036</b> against a baseline, on a schedule Congress wrote. The EPA issues allowances each year, and allowance holders trade them. That makes it a cap-and-trade system enacted with bipartisan support and almost never described as one.</p>
+    <p>Its practical reach is appliances. HFC availability sets the cost of servicing existing air-conditioning and refrigeration equipment, and an annual allocation is what determines whether a refrigerant price spike is coming &mdash; which lands on anyone repairing rather than replacing a system.</p>
+    <p>This brief has not read the allocation notice and has no allowance quantities, no comparison to 2026, and no indication of whether the schedule step applies this year.</p>
+    <p><b>Below the line because</b> the document was not read and the numbers are the story. It leads with the allocation quantity against 2026 and the step-down date.</p>
+    <p class="sources"><b>Confidence:</b> Index entry only; the AIM Act schedule is this brief&rsquo;s background. <b>Sources:</b> <a href="https://www.federalregister.gov/api/v1/documents.json?conditions%5Bpublication_date%5D%5Bis%5D=2026-10-06&conditions%5Btype%5D%5B%5D=NOTICE">Federal Register notices, 6 October</a> (document 2026-20389)</p>
+  </div>
+</details>
+
+<details class="short" id="s-blood">
+  <summary><span class="chip">Science &amp; public health</span> NHTSA is asking about blood transfusions in ambulances &mdash; a change that would move a hospital procedure to the roadside.</summary>
+  <div class="body">
+    <p>The National Highway Traffic Safety Administration, which runs the federal office of emergency medical services, published a <b>request for information on prehospital blood transfusion</b>. Separately it published a <b>driver monitoring systems assessment</b> notice.</p>
+    <p>Prehospital transfusion is a live question with a real evidence base behind it. Haemorrhage is the leading cause of preventable death after injury, most of those deaths occur before hospital arrival, and military experience with whole blood forward of a hospital is what drives civilian interest. A handful of US systems carry blood on ambulances or helicopters; most do not, because of cold-chain logistics, wastage of a scarce donated product, and the cost of stocking units that may expire unused.</p>
+    <p>An RFI from the federal EMS office is how a practice moves from a few well-resourced systems toward a national standard &mdash; or how the agency establishes that it should not.</p>
+    <p>This brief has not read either notice and has no comment deadline, no questions list, and no figures.</p>
+    <p><b>Below the line because</b> neither document was read and an RFI commits nothing. It leads on a model protocol or a federal funding mechanism for blood on ambulances.</p>
+    <p class="sources"><b>Confidence:</b> Index entries only; the clinical background is this brief&rsquo;s own. <b>Sources:</b> <a href="https://www.federalregister.gov/api/v1/documents.json?conditions%5Bpublication_date%5D%5Bis%5D=2026-10-06&conditions%5Btype%5D%5B%5D=NOTICE">Federal Register notices, 6 October</a> (documents 2026-20426, 2026-20394)</p>
+  </div>
+</details>
+
+<details class="short" id="s-911">
+  <summary><span class="chip">US politics &amp; policy</span> Two agencies jointly deleted the regulations for a 911 grant programme, effective on publication &mdash; the kind of housekeeping worth one line.</summary>
+  <div class="body">
+    <p>Commerce&rsquo;s NTIA and Transportation&rsquo;s NHTSA jointly published a rule <b>&ldquo;Eliminating Obsolete Regulations Related to the 911 Grant Program&rdquo;</b>, effective <b>on publication</b>. The grant programme those regulations implemented has ended, so the rules govern nothing.</p>
+    <p>It belongs here for one reason: it is the cleanest example this brief has seen of what an immediate-effect rule <em>should</em> look like. Removing regulations for a programme that no longer exists affects nobody&rsquo;s rights, nobody could usefully comment, and an effective date on publication is exactly right.</p>
+    <p>That is worth stating because this brief has run three items in two weeks on rules taking effect immediately where the characterisation was doing real work &mdash; the SEC quorum change, several FDA classifications, and the immediate-effect rulemaking thread generally. The comparison is the point: the test is not whether notice and comment was skipped but whether anything turned on skipping it. Here nothing does.</p>
+    <p>The underlying policy question &mdash; that 911 systems still need capital to move to next-generation IP-based call handling, and the grant programme that funded it has lapsed &mdash; is not addressed by the rule and is not established here.</p>
+    <p><b>Below the line because</b> it is the removal of dead text. It leads if a successor 911 grant programme is proposed.</p>
+    <p class="sources"><b>Confidence:</b> Index entry only; the next-generation 911 background is this brief&rsquo;s own. <b>Sources:</b> <a href="https://www.federalregister.gov/api/v1/documents.json?conditions%5Bpublication_date%5D%5Bis%5D=2026-10-06">Federal Register documents API, 6 October</a> (document 2026-20493) &middot; relates to <a href="2026-10-03.html#s-sec">3 October</a></p>
+  </div>
+</details>
+
+<div class="fb">
+  <p><b>About this section as a whole.</b> Eight items; three read in full, five from index entries only and labelled as such.</p>
+  <label><input type="radio" name="fb-also" value="right"> About right &mdash; the count tells me what the day held</label>
+  <label><input type="radio" name="fb-also" value="drop"> Drop the index-only items; read fewer documents properly</label>
+  <label><input type="radio" name="fb-also" value="promote"> Something here should have been a lead &mdash; I will say which</label>
+  <label><input type="radio" name="fb-also" value="fewer"> Fewer, longer items</label>
+</div>
+
+<footer>
+  <h2 class="section">Sources checked this run</h2>
+  <p><b>Watchlist-pointed (12):</b> the <a href="https://www.federalregister.gov/">Federal Register</a> documents API &mdash; all three queries, returning <b>21</b> rules and proposed rules and <b>73</b> notices &mdash; with <b>eight full-text reads</b>: the two FinCEN withdrawals, the SEC performance-fee proposal, the SEC crypto custody proposal, the FDA Class II exemptions, the FMCSA hours-of-service pilot, the Transparency in Coverage rule and the EPA PM2.5 designations notice &middot; <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202610">Treasury Daily Par Yield Curve</a>, October and October 2023 &middot; <a href="https://gasprices.aaa.com/">AAA Fuel Prices</a> &middot; <a href="https://text.npr.org/">text.npr.org headline index</a> &middot; the archive, for the A7 measure, the SEC package, the payroll print, FlyDubai and the immediate-effect thread.</p>
+  <p><b>Outside the watchlist (8):</b> <a href="https://www.kpbs.org/news/international/2026/10/05/flydubai-attacker-intended-to-crash-plane-into-tel-aviv-airport-investigation-finds">NPR via KPBS</a>, <a href="https://www.gpb.org/news/2026/10/05/flydubai-attacker-intended-crash-plane-tel-aviv-airport-ongoing-investigation-finds">NPR via GPB</a> and <a href="https://www.cbsnews.com/news/flydubai-plane-attempted-crash-hijacking-israel-dubai-what-to-know/">CBS News</a> on FZ1073 &middot; <a href="https://www.nbcnews.com/world/europe/nobel-prize-medicine-2026-karl-deisseroth-peter-hegemann-georg-nagel-rcna601564">NBC News</a>, <a href="https://www.cnn.com/2026/10/05/science/nobel-prize-medicine-karl-deisseroth-peter-hegemann-georg-nagel-intl">CNN</a> and the <a href="https://www.bostonglobe.com/2026/10/05/world/nobel-prize-physiology-medicine/">Boston Globe</a> on the Nobel &middot; <a href="https://www.mintz.com/insights-center/viewpoints/2146/2026-02-06-congress-passes-landmark-pbm-reform-2026-spending-bill">Mintz</a>, <a href="https://www.kff.org/other-health/what-to-know-about-pharmacy-benefit-managers-pbms-and-federal-efforts-at-regulation/">KFF</a>, <a href="https://www.ajmc.com/view/pbm-reforms-signed-into-law-reshaping-medicare-part-d-drug-pricing-transparency">AJMC</a> and <a href="https://www.fiercehealthcare.com/regulatory/bipartisan-lawmakers-reintroduce-bill-barring-pbms-owning-pharmacies">Fierce Healthcare</a> on PBMs &middot; <a href="https://legal-planet.org/2026/09/08/legal-planet-guide-to-suncor-energy-v-county-commissioners-of-boulder-county/">Legal Planet</a>, <a href="https://eelp.law.harvard.edu/suncor-v-boulder-preemption-state-law-and-climate-related-harm/">Harvard EELP</a> and <a href="https://www.everycrsreport.com/reports/R49419.html">everycrsreport</a> on <em>Suncor</em> &mdash; everycrsreport earning its place again as the statutory-mechanics workaround for a congress.gov that has 403&rsquo;d for twenty-three days.</p>
+  <p><b>The negative check:</b> produced the top story by doing nothing cleverer than reading two consecutive days of the same source. Yesterday&rsquo;s FinCEN measure and today&rsquo;s two FinCEN withdrawals are three documents in one week from one bureau that point in opposite directions, and none of the three was carried by any wire reachable here. The PM2.5 designations, the FDA drug-test exemptions, the hours-of-service pilot and the Transparency in Coverage revision were all found the same way. Held: the Supreme Court argument, for want of a readout, in the short tier; the deaths of Dennis Hastert and Jim Bakker; a Fox News correspondent&rsquo;s parents suing the network; a report on voters asking chatbots how to vote; and the Ukraine drone-warfare feature.</p>
+  <p><b>Could not reach:</b> the <b><em>Suncor</em> argument transcript or audio</b>, which is why the term&rsquo;s first case is a short rather than a lead &middot; the <b>EPA&rsquo;s 120-day designation letters</b>, so the PM2.5 notice runs without the designations that are its entire content &middot; the statutory text of <b>H.R. 7148</b> &mdash; congress.gov has returned 403 for twenty-three consecutive days, so the PBM provisions are described from law-firm and policy analyses &middot; the <b>full texts</b> of the two SEC proposals and the Transparency in Coverage rule, each running to between half a million and 1.6 million characters, of which only the opening sections were retrieved &mdash; a new sourcing limit worth naming &middot; the <b>ibogaine RFI</b>, the three <b>OFAC</b> notices, the <b>HFC</b> allocation and the two <b>NHTSA</b> notices, all run from index entries and labelled as such.</p>
+  <p><b>A note on a new limit, and it is a real one.</b> Three documents today were too large to read: the SEC crypto custody proposal runs to about <b>1.64 million characters</b>, the Transparency in Coverage rule <b>790,000</b>, the performance-fee proposal <b>517,000</b>, and the retrieval returns the first 100,000. For the first time this brief is reporting on major rules from their opening sections rather than their whole text, and the figures beyond what is quoted are not established. This is a different failure from a blocked page or an unparseable PDF: the document is readable and simply will not fit. The fix is to request successive offsets, which was not done today for want of time, and it is now the first thing owed on any of these three.</p>
+  <p><b>A note on the Treasury table, for the record.</b> The read again returned <b>twenty-four</b> enumerated headers and <b>twenty-six</b> cells per row, with the series offset by eleven places &mdash; the same mismatch as yesterday. It was resolved the same way: the 1 and 2 October values in the response matched what this brief recorded on 3 October, which fixed the offset and identified the ten-year. The rule stands and is now proven three times: <b>enumerate the headers in the request, take the cells in position order, then reconcile against values already in the file &mdash; never put the expected value in the prompt.</b></p>
+
+  <h2 class="section">Dormant threads</h2>
+  <p class="secnote">Kept on the watchlist, dropped from the body, picked up the moment a source check touches one.</p>
+  <ul class="dorm">
+    <li><b>Prediction markets &amp; the CFTC preemption question</b> &mdash; untouched for three days and still the longest-owed item here.</li>
+    <li><b>Air-rule reconsiderations &amp; monitoring stringency</b> &mdash; adjacent to today&rsquo;s PM2.5 designations but not the same proceeding: that thread is about reconsidering rules already in force, this is an initial designation under a new standard. Related, not continued.</li>
+    <li><b>Immediate-effect rulemaking &amp; the grants exemption</b> &mdash; touched twice today, once by five FDA rules effective on publication and once by the 911 grant deletion, which is in the short tier as the counter-example of a justified one.</li>
+    <li><b>Federal statistical integrity &amp; the census</b> &mdash; woken yesterday; the 10 September residence-criteria proposal is still owed, comments close 2 November.</li>
+    <li><b>Hormuz closure &amp; EU energy response</b> &mdash; no statement, no transit count, coordinates unpublished on day twenty-eight. AAA diesel <b>$6.3151</b>, a fifteenth consecutive fall and <b>12.40 cents</b> below a week ago; petrol <b>$4.3685</b>, up a fraction on the day after fourteen falls. Neither needs a story.</li>
+    <li><b>Cornell</b> &middot; <b>Brazil</b> &mdash; both ran in the last two issues; the Cornell consent-law angle and the 25 October runoff are the next hinges.</li>
+    <li><b>Ukraine&ndash;Russia negotiations</b> &middot; <b>Bab el-Mandeb</b> &middot; <b>Futenma</b> &middot; <b>Attacks on allied basing</b> &middot; <b>Gulf states &amp; Article 51</b> &middot; <b>Indonesia free-meals programme</b> &middot; <b>Anak Krakatau</b> &middot; <b>Israel&ndash;Lebanon June framework</b> &middot; <b>EU&ndash;Greenland partnership</b> &middot; <b>Saxony-Anhalt government formation</b> &mdash; untouched.</li>
+  </ul>
+
+  <p style="margin-top:1.4rem">No open <code>brief-feedback</code> issues were waiting this morning. No Florida section today: nothing new was reported in Hillsborough, Pasco or Pinellas, and the hinge is <b>8 October</b>, when both dengue emergencies expire. Dates ahead: <b>8 October</b>, the dengue emergencies and the press-access restraining order; <b>15 October</b>, CPSC hearing registration; <b>25 October</b>, the Brazilian runoff; <b>1 November</b>, the clocks go back unless the Senate acts; <b>2 November</b>, census comments, the Federal Reserve stress-test rule and REAP comments; <b>4 November</b>, the Treasury refunding, the FinCEN A7 comment close, FAA Part 450 comments, the NRC adverse-comment deadline and HHS child-welfare comments; <b>5 November</b>, EPA PM2.5 comments and the Treasury Privacy Act rule; <b>around 28 November</b>, the EPA pest framework and the Super Intelligence legislative proposal; <b>30 November</b>, the GLOBE model; <b>1 December</b>, Big Cypress comments; <b>4 December</b>, the accredited-credential and interval-fund comment files; <b>7 December</b>, the Transparency in Coverage effective date, the two new SEC comment files and the hours-of-service comments; <b>21 December</b>, the NRC licensing exemptions; <b>early February</b>, the Super Intelligence Force report.</p>
+  <p><a href="../">Archive</a> &middot; Previous: <a href="2026-10-05.html">5 October</a></p>
+
+  <div class="submit">
+    <button type="button" id="send-feedback">Send feedback as a GitHub issue</button>
+  </div>
+</footer>
+
+</div>
+<script>
+(function () {
+  var owner = "historiocity", repo = "News-Agent";
+  document.getElementById("send-feedback").addEventListener("click", function () {
+    var lines = ["Feedback on Issue No. 32 (2026-10-06)", ""];
+    document.querySelectorAll(".fb input[type=radio]:checked").forEach(function (el) {
+      lines.push(el.name + ": " + el.value);
+    });
+    if (lines.length === 2) lines.push("(no radio answers selected)");
+    lines.push("", "Anything else:", "");
+    var url = "https://github.com/" + owner + "/" + repo + "/issues/new"
+      + "?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("brief-feedback: 2026-10-06")
+      + "&body=" + encodeURIComponent(lines.join("\n"));
+    window.open(url, "_blank");
+  });
+})();
+</script>
+</body>
+</html>
