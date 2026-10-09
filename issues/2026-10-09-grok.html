@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Friday, 9 October 2026 (Grok edition)</title>
+<style>
+:root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+@media (prefers-color-scheme: dark) {
+:root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+.wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+.kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+.sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+.prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+nav ol { margin:0; padding-left:1.2rem; }
+nav li { margin:.25rem 0; }
+nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+a { color:var(--link); }
+article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+.secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+.meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+.chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+.chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+.chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+.sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+.div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+.div p { margin:.4rem 0; }
+.div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+.corr { background:var(--box); border-left:4px solid var(--accent); padding:.8rem 1rem; margin:0 0 1.6rem; font-size:.95rem; }
+.corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+.corr p { margin:.45rem 0; }
+details { margin-top:.8rem; }
+details summary { cursor:pointer; color:var(--link); }
+.exp { margin-top:.6rem; }
+.also-list { margin:0; }
+.also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+.also-list details:first-of-type { border-top:1px solid var(--rule); }
+.also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+.also-list .exp { font-size:.94rem; padding-left:.2rem; }
+footer { color:var(--muted); font-size:.88rem; }
+.fb { margin-top:1rem; font-size:.9rem; }
+.fb p { margin:.6rem 0 .2rem; }
+.fb label { display:block; margin:.15rem 0; }
+.submit { margin-top:2rem; }
+button { font:inherit; padding:.45rem .8rem; }
+ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<p class="kicker">The Brief · Issue No. 35-grok · Friday, 9 October 2026 · Morning / Grok edition</p>
+<h1>The President rules out striking Iran before the midterms; OpenAI’s $50bn revenue figure knocks the AI trade; the 10-year falls to 5.22% as Isaias closes in on the Gulf Coast</h1>
+<p class="sub">Ten stories at length, ten in brief. This is the independent Grok gather for the morning run. It does not overwrite Claude/Action Issue&nbsp;35 (<a href="2026-10-09.html">2026-10-09</a>), which leads on Isaias, the Gulf shut-ins and refining in the storm’s path. Earlier editions are linked for accountability only: <a href="2026-10-08-grok.html">8&nbsp;Oct Grok</a> · <a href="2026-10-07-grok.html">7&nbsp;Oct Grok</a> · framework <a href="2026-09-10b.html">2026-09-10b</a>.</p>
+<p class="prov">34 sources checked, 19 of them outside the watchlist’s own data feeds. Outside: BBC world, US, business and tech; NPR news and politics; Al Jazeera; Guardian US and tech; CNBC top and tech; TechCrunch; The Verge; Ars Technica; Wired; Axios (feed text; articles blocked); DefenseScoop; STAT; ProPublica. Watchlist feeds and data: the Treasury par-yield CSV, AAA, NHC Advisory and Discussion&nbsp;11, the Federal Register API for 9&nbsp;Oct (89 documents) and public inspection, the White House actions index, the Federal Reserve and SEC feeds, gCaptain, The Hill (index only; articles blocked), Politico, CNBC finance, Guardian business and an X news search for UAP. No brief-feedback issues are open; the last closed one is from 24&nbsp;Sep. The negative check reshaped the order. OpenAI’s revenue, the PERM suspensions, SpaceX’s spectrum deal, the Banks–Gillibrand bill and the Fermi draft EIS are not watchlist threads; they took five of the ten leads and pushed the oil chain to fourth.</p>
+</header>
+
+<nav>
+<ol>
+<li><a href="#s1">Correction to yesterday’s lead: the President now says the US will not attack Iran before the 3&nbsp;November midterms, while the blockade stays and a third carrier heads to the region</a></li>
+<li><a href="#s2">OpenAI tells investors it is at about $50bn of annualised revenue, not the $68bn widely reported, and the AI trade has its worst day since mid-August; an Nvidia-backed $5bn data-centre IPO is pulled</a></li>
+<li><a href="#s3">The 10-year falls to 5.22%, its lowest close since 25&nbsp;September, as jobless claims hold under 200,000 for a month and mortgage rates reach 7.4%</a></li>
+<li><a href="#s4">One oil chain: Isaias shuts in 63% of Gulf of Mexico oil, supertanker rates hit records as Saudi Arabia formalises Hormuz shuttles, and pump gasoline turns up while diesel falls for a 17th day; Delta cuts its year by a quarter</a></li>
+<li><a href="#s5">Three fired OpenAI safety researchers say in an open letter that they were let go for “prioritising safety”; OpenAI cites a “significant breach of trust”, and Axios reports that lab executives are planning for public revolt after a first AI catastrophe</a></li>
+<li><a href="#s6">Washington and the labs: a Banks–Gillibrand bill would make the Pentagon vet its frontier-AI vendors, Anthropic opens a critical-infrastructure defence programme, both labs hire Trump officials, and the President calls anyone who says “AI” “THE ENEMY!”</a></li>
+<li><a href="#s7">Labor suspends Microsoft, Adobe and six IT outsourcers from the green-card labour-certification programme, on the same stage where Nadella received a National Medal of Science</a></li>
+<li><a href="#s8">SpaceX buys nationwide 800&nbsp;MHz spectrum to make Starlink Mobile a full carrier, and AT&amp;T, Verizon and T-Mobile slide; the President’s August disclosure shows SpaceX notes bought two days before his space-launch policy</a></li>
+<li><a href="#s9">The NRC staff recommends licensing four AP1000 reactors for Fermi America’s “Advanced Energy and Intelligence Campus” next to the Pantex nuclear-weapons plant in Texas; comments are due 23&nbsp;November</a></li>
+<li><a href="#s10">Florida &amp; Tampa Bay: Isaias is a 110 mph hurricane forecast to reach 120 mph before a Panhandle-area landfall tonight, and the surge forecast now reaches Tampa Bay at 1–3 feet</a></li>
+</ol>
+<p class="also"><a href="#also">Also today (10)</a>. Ranked below the line; each one opens.</p>
+</nav>
+
+<div class="corr" id="acct">
+<p class="t">Accountability: prior Grok frames</p>
+<p><strong>Iran timing (correction, lead 1):</strong> Issue&nbsp;34-grok’s headline, “the Pentagon readies a return to war”, with strikes possibly before 3&nbsp;November, is superseded. The President has publicly ruled out an attack before the midterms. The CENTCOM preparation report is not retracted by anyone, but the pre-election timing no longer stands.</p>
+<p><strong>10-year:</strong> yesterday’s “the market is at about 5.33% this morning” did not hold. Thursday closed at <strong>5.22%</strong>, down six basis points.</p>
+<p><strong>Diesel count:</strong> yesterday said that Thursday’s 5% Brent jump had not reached the pump yet, so expect the run to end soon. Half right. Diesel fell again (17th day, $6.2785), but regular gasoline rose 1.1¢ to $4.3718.</p>
+<p><strong>Isaias (correction, Florida section):</strong> yesterday’s “forecast to peak at 110 mph holds” is wrong. The storm is at 110 mph now, and the peak forecast is 120 mph.</p>
+<p><strong>OpenAI revenue:</strong> this edition never printed the $68–70bn figure, so there is nothing to correct, but lead 2 replaces it as the working number.</p>
+<p><strong>Sanctions count:</strong> CNBC says 17 tankers and gCaptain says 22. Both are right: Treasury named 17 and State added five.</p>
+</div>
+
+<article id="s1">
+<h2>Correction to yesterday’s lead: the President now says the US will not attack Iran before the 3&nbsp;November midterms, while the blockade stays and a third carrier heads to the region</h2>
+<p class="meta">
+<span class="chip">Geopolitics</span>
+<span class="chip new">Correction</span>
+<span class="chip new">New fact</span>
+</p>
+<p>Yesterday this edition led on Axios’s report that the Pentagon had told CENTCOM to finish preparing to resume major combat, possibly <strong>before the midterms</strong>. On Thursday the President wrote on Truth Social: “we will not be attacking Iran at any time prior to the Midterm Elections,” adding that the two sides are having “productive discussions.” <strong>That timing frame no longer stands.</strong> The preparation itself was not denied, and Axios notes that his past statements on Iran have not always matched what he did: in February he said he had not decided less than 24 hours before the war began.</p>
+<p>What stays: the <strong>naval blockade</strong> “will remain in full force and effect”. AP reported last week that about 9,000 sailors and Marines and a third aircraft carrier are heading to the region, which could put three US carriers in the Middle East by late October. Iran’s foreign minister Abbas Araghchi says Tehran is reviewing a US proposal and will answer “in the next few days” (Tasnim, via Deutsche Bank’s morning note). The IDF chief was briefed on Tuesday on US preparations for operations “within the next three weeks”, and said that could force Israel to postpone its 27&nbsp;October election.</p>
+<p>The region did not pause. Houthi strikes on Riyadh’s King Khalid International Airport on Thursday killed <strong>three Saudi nationals, including a Saudia pilot</strong>. Hundreds of flights were cancelled, and the Saudi-led coalition promises a “firm response”. Reuters reports Iran has told Gulf states that any new oil-export route it has not authorised will be treated as hostile, and a chemical tanker, the <em>Acers</em>, was hit by projectiles 51 nautical miles off Qatar, inside the Gulf. Public support for the war was 31% in an August Reuters/Ipsos poll.</p>
+<p><strong>What to watch:</strong> Iran’s written reply; whether the carrier build-up continues on schedule after the pledge; and whether Riyadh’s “firm response” draws the US in.</p>
+<p class="sources">Sources:
+<a href="https://www.cnbc.com/2026/10/08/iran-war-trump-midterm-election.html">CNBC — no strike before midterms (read)</a> ·
+<a href="https://www.axios.com/2026/10/08/trump-iran-strikes-midterm-elections">Axios — pledge and IDF briefing (feed text read)</a> ·
+<a href="https://www.cnbc.com/2026/10/09/saudi-us-iran-war-trump-hormuz.html">CNBC — Riyadh airport deaths, Araghchi (read)</a> ·
+<a href="https://gcaptain.com/attack-risks-rise-for-tankers-as-iran-vows-to-block-more-hormuz-routes/">gCaptain/Reuters — new-route warning, Acers (read)</a> ·
+<a href="https://www.aljazeera.com/news/2026/10/9/trump-says-us-will-not-strike-iran-before-midterm-elections">Al Jazeera (headline)</a>
+</p>
+<div class="fb">
+<p>Iran lead — right weight after yesterday’s frame?</p>
+<label><input type="radio" name="fb-iran" value="yes"> Yes, and the correction belonged on top</label>
+<label><input type="radio" name="fb-iran" value="less"> Less war, more economics</label>
+<label><input type="radio" name="fb-iran" value="more"> More detail on the talks</label>
+</div>
+</article>
+
+<article id="s2">
+<h2>OpenAI tells investors it is at about $50bn of annualised revenue, not the $68bn widely reported, and the AI trade has its worst day since mid-August; an Nvidia-backed $5bn data-centre IPO is pulled</h2>
+<p class="meta">
+<span class="chip">AI &amp; tech</span>
+<span class="chip">US financials</span>
+<span class="chip new">New fact</span>
+</p>
+<p>CNBC confirmed an FT report: in an investor presentation, OpenAI put its annualised revenue at roughly <strong>$50bn at the end of September</strong>. Last month’s widely reported figure was $68bn. A person familiar with it says the bigger number was built by OpenAI’s own investors to include partners’ gross revenue, the way Anthropic counts cloud resale. OpenAI also cited 77% run-rate growth in the third quarter and 107% for enterprise. The Guardian describes the $50bn as this year’s revenue forecast rather than a run-rate; CNBC’s wording is the one used here.</p>
+<p>The market reaction was sharp. On Thursday the Nasdaq fell <strong>1.4%</strong>, its biggest one-day fall since mid-August. Nvidia fell 3%, Oracle nearly 6%, CoreWeave nearly 8%, and AMD, Broadcom, Intel and Super Micro 4–5%. Vital Knowledge’s Adam Crisafulli said the gross-versus-net point is not the main issue. In his view the main issues are that “standalone frontier labs are increasingly unattractive businesses” and that markets are pushing back on “the tidal wave of AI-linked debt and equity”. Futures were rebounding before Friday’s open, with Nasdaq-100 futures up 0.8%.</p>
+<p>The financing side is wobbling too. Australia’s <strong>Firmus</strong>, an Nvidia-, Blackstone- and Coatue-backed AI data-centre operator that signed a Meta compute deal last month, withdrew a planned $5bn IPO at a valuation of about $30.6bn. It would have been Australia’s second-largest float, and the company cited “market volatility”. On the retail side, Robinhood’s margin book hit a record <strong>$21.6bn</strong> in the second quarter, up 127% on a year earlier. OpenAI is still in early talks to raise about $30bn. Its last round, in March, valued it at $852bn; the Guardian puts the new round’s valuation at about $1.4tn.</p>
+<p><strong>Why it matters:</strong> the AI build-out is now a credit story as much as an equity one (yesterday’s SpaceX/Apollo GPU-backed debt). Lab revenue is the cash flow that is meant to service it. A 26% gap between the reported and the presented figure is the kind of number that reprices that debt.</p>
+<p class="sources">Sources:
+<a href="https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html">CNBC — $50bn and the sell-off (read)</a> ·
+<a href="https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/">TechCrunch (read)</a> ·
+<a href="https://www.theguardian.com/technology/2026/oct/09/openai-forecast-revenue-gap">Guardian (read)</a> ·
+<a href="https://www.cnbc.com/2026/10/08/stock-market-today-live-updates.html">CNBC markets live (read)</a> ·
+<a href="https://www.cnbc.com/2026/10/09/nvidia-ai-firmus-ipo-.html">CNBC — Firmus (read)</a> ·
+<a href="https://www.cnbc.com/2026/10/09/margin-debt-stock-market-risk.html">CNBC — margin debt (read)</a>
+</p>
+<div class="fb">
+<p>AI money lead — useful?</p>
+<label><input type="radio" name="fb-oairev" value="yes"> Yes</label>
+<label><input type="radio" name="fb-oairev" value="more"> More on AI credit</label>
+<label><input type="radio" name="fb-oairev" value="less"> Less market colour</label>
+</div>
+</article>
+
+<article id="s3">
+<h2>The 10-year falls to 5.22%, its lowest close since 25&nbsp;September, as jobless claims hold under 200,000 for a month and mortgage rates reach 7.4%</h2>
+<p class="meta">
+<span class="chip">Macro &amp; markets</span>
+<span class="chip">US debt &amp; fiscal</span>
+<span class="chip">Follow-up</span>
+</p>
+<p>Treasury’s par-yield curve for Thursday: <strong>10-year 5.22%</strong>, down from 5.28% on Wednesday. That is the lowest close since 25&nbsp;September (5.17%). The 30-year fell to 5.60% from 5.67%, and the 2-year to 4.75%. The fall came on the day the President ruled out pre-election strikes and tech sold off, even though Brent rose more than 4%. This edition does not have a source assigning the cause, so it is reported as coincidence in time, not as an explanation. Early Friday the market 10-year was at about <strong>5.24%</strong>.</p>
+<p><strong>Print:</strong> initial jobless claims fell 2,000 to <strong>197,000</strong> last week, and the four-week average is 198,000, its lowest since 2022–23. Claims have been under 200,000 for a month, a stretch Navy Federal’s Heather Long says “hasn’t been seen since the 1960s”. Challenger counted announced job cuts down 20% on a year earlier in September. Employers are not firing; whether they are hiring is the question September’s +29k payrolls raised (Issue&nbsp;29-grok).</p>
+<p><strong>The household channel:</strong> The Hill reports the average 30-year mortgage rate reached <strong>7.4%</strong>, the first time since November 2023 (headline only; article blocked). Treasury counsellor David Zervos told CNBC that real yields are “really, really high by any historic standard” and have “room to come down” once the energy shock ends. He also called AI “SI”. CME futures put the odds of a hike at the <strong>December</strong> meeting above 82%. No Fed decision until 28&nbsp;October.</p>
+<p class="sources">Sources:
+<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026">Treasury par yields, 8 Oct (CSV read)</a> ·
+<a href="https://www.axios.com/2026/10/08/layoffs-unemployment-labor">Axios — claims (feed text read)</a> ·
+<a href="https://thehill.com/business/6137377-mortgage-rates-rise-multi-week-high/">The Hill — mortgage rates (index only)</a> ·
+<a href="https://www.cnbc.com/2026/10/08/treasury-yields-david-zervos.html">CNBC — Zervos, FedWatch (read)</a> ·
+<a href="https://www.cnbc.com/2026/10/08/stock-market-today-live-updates.html">CNBC — Friday yields (read)</a>
+</p>
+<div class="fb">
+<p>Rates lead — right altitude?</p>
+<label><input type="radio" name="fb-rates" value="yes"> Yes</label>
+<label><input type="radio" name="fb-rates" value="more"> More fiscal / auction detail</label>
+<label><input type="radio" name="fb-rates" value="less"> Shorter</label>
+</div>
+</article>
+
+<article id="s4">
+<h2>One oil chain: Isaias shuts in 63% of Gulf of Mexico oil, supertanker rates hit records as Saudi Arabia formalises Hormuz shuttles, and pump gasoline turns up while diesel falls for a 17th day; Delta cuts its year by a quarter</h2>
+<p class="meta">
+<span class="chip">Energy &amp; chokepoints</span>
+<span class="chip">Macro &amp; markets</span>
+<span class="chip">Follow-up</span>
+</p>
+<p><strong>Supply.</strong> The offshore regulator reported on Thursday that <strong>62.9% of Gulf of Mexico oil output (1.28m b/d)</strong> and 57.4% of gas (1.13 bcf/d) are shut in, up from about 25% on Wednesday. 121 of 371 manned platforms have been evacuated, and Shell has shut Mars, Olympus, Ursa, Vito and Appomattox. Undamaged facilities usually restart quickly after inspection. Brent rose more than 4% to above $104 on Thursday, then slipped to <strong>$102.94</strong> early Friday after the no-strike pledge, with WTI at $90.51.</p>
+<p><strong>Freight.</strong> Gulf-to-East Asia VLCC rates reached an all-time high of nearly <strong>$1.4m a day</strong> on Wednesday, up about 540% since before the war, compared with roughly 40% for Brent. A US Gulf-to-Japan supertanker was offered at a possible record <strong>$82m</strong>, more than $40 a barrel. Yesterday’s US-to-China charter was $76m. Signal Ocean says more than 40% of the world’s roughly 850 VLCCs are in or near the Gulf, tied up by ship-to-ship shuttling. Bloomberg reports Saudi Aramco is negotiating to put <strong>loadings outside Hormuz into its long-term contracts</strong> for next year, with talks to conclude by year end. That would turn the wartime workaround into the default.</p>
+<p><strong>Pressure on Iran.</strong> Treasury designated 17 tankers and State five more (22 in all) under “Operation Economic Outcast”. Treasury says the action neutralises most of the remaining shadow fleet; trackers say many Iran-linked tankers remain unsanctioned. Kpler says Iran has loaded no crude for export since 25&nbsp;August.</p>
+<p><strong>Pump and P&amp;L.</strong> AAA this morning: regular <strong>$4.3718</strong>, up 1.1¢ overnight (still below last week’s $4.3961). Diesel is <strong>$6.2785</strong>, its 17th straight daily fall. The President’s diesel order is published in today’s Federal Register as <strong>EO&nbsp;14435</strong>. Kalshi traders give 87% odds that gasoline is still above $4 on Election Day. <strong>Delta</strong> missed for the first time in two years and cut 2026 adjusted EPS guidance to <strong>$5.10–5.60 from $6.50–7.50</strong>, citing a $6bn rise in fuel costs this year, though it says demand is holding.</p>
+<p class="sources">Sources:
+<a href="https://gcaptain.com/hurricane-isaias-shuts-down-nearly-two-thirds-of-gulf-oil-production/">gCaptain — Gulf shut-ins (read)</a> ·
+<a href="https://gcaptain.com/supertankers-racing-to-middle-east-worsen-global-ship-crunch/">gCaptain/Bloomberg — VLCC rates (read)</a> ·
+<a href="https://gcaptain.com/saudis-in-talks-to-formalize-hormuz-shuttles-in-fight-for-market/">gCaptain/Bloomberg — Aramco contracts (read)</a> ·
+<a href="https://gcaptain.com/u-s-sanctions-22-more-tankers-in-crackdown-on-irans-shadow-fleet/">gCaptain — 22 tankers (read)</a> ·
+<a href="https://www.cnbc.com/2026/10/08/iran-treasury-sanctions-shadow-fleet.html">CNBC — Treasury’s 17 (read)</a> ·
+<a href="https://gasprices.aaa.com/">AAA (read)</a> ·
+<a href="https://www.federalregister.gov/documents/2026/10/09/2026-20855/emergency-tax-relief-on-diesel-fuel">FR — EO 14435</a> ·
+<a href="https://www.cnbc.com/2026/10/08/little-relief-expected-for-gas-prices-ahead-of-election-day.html">CNBC — Kalshi odds (read)</a> ·
+<a href="https://www.cnbc.com/2026/10/09/delta-air-lines-dal-q3-2026-earnings.html">CNBC — Delta (read)</a>
+</p>
+<div class="fb">
+<p>Oil chain — still one story?</p>
+<label><input type="radio" name="fb-oil" value="yes"> Yes</label>
+<label><input type="radio" name="fb-oil" value="split"> Split freight from pump</label>
+<label><input type="radio" name="fb-oil" value="less"> Shorter</label>
+</div>
+</article>
+
+<article id="s5">
+<h2>Three fired OpenAI safety researchers say in an open letter that they were let go for “prioritising safety”; OpenAI cites a “significant breach of trust”, and Axios reports that lab executives are planning for public revolt after a first AI catastrophe</h2>
+<p class="meta">
+<span class="chip">Lab safety</span>
+<span class="chip">AI &amp; tech</span>
+<span class="chip new">New fact</span>
+</p>
+<p>Mikita Balesni, Tomek Korbak and Jasmine Wang, safety and alignment staff fired last week, wrote on Thursday to OpenAI’s Safety and Security Committee, Safety Advisory Group and Mission Advisory Council. They say their dismissals have made colleagues “afraid to speak” and that well-defined procedures for working with outside evaluators are “itself an essential safety mechanism”. They deny leaking to The Information about <strong>less monitorable architectures</strong> in OpenAI’s newest models. Korbak says he had spent months warning “we’re losing the ability to monitor what AI agents think”.</p>
+<p>OpenAI’s research leaders replied on Friday that “these decisions were not about raising safety concerns”. They say an investigation found “a significant breach of trust beyond what’s outlined in the letter”, and a spokesperson cited a “pattern of misconduct”. OpenAI did not say which policies were broken. It says it agrees on “preserving the monitorability of frontier models” and is finalising contracts with third-party safety assessors, with details in the coming weeks.</p>
+<p><strong>Axios scoop:</strong> executives at Anthropic, OpenAI and other labs are privately gaming out a political backlash after a catastrophic AI event, most likely a cyberattack that takes down financial services, connectivity, power or water. Many insiders told Axios they expect a major event <strong>within six to 12 months</strong>. OpenAI says its preparedness scenarios “are not treated as inevitable”. Separately, Common Sense Media tested ChatGPT for Teens and found the block on role-play works but most other safeguards do not; it recommends under-18s not use it.</p>
+<p><strong>Accountability:</strong> this is the third OpenAI safety story this brief has carried in ten days, after safety lead Robinson’s resignation (Issue&nbsp;33-grok) and the Australia rogue-agent disclosure (Issues&nbsp;32 and 34-grok). Chain-of-thought monitorability is now the specific technical point in dispute, not a general mood.</p>
+<p class="sources">Sources:
+<a href="https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/">TechCrunch — letter (read)</a> ·
+<a href="https://www.bbc.co.uk/news/articles/cvlydn8d3lkjo">BBC (read)</a> ·
+<a href="https://www.cnbc.com/2026/10/09/openai-fired-researchers-ai-concerns.html">CNBC — OpenAI response (read)</a> ·
+<a href="https://www.theverge.com/ai-artificial-intelligence/1008604/openai-defends-decision-fire-safety-researchers">Verge (headline)</a> ·
+<a href="https://www.axios.com/2026/10/09/ai-companies-day-after-major-attack">Axios — “day after” planning (feed text read)</a> ·
+<a href="https://www.npr.org/2026/10/09/nx-s1-5995514/chatgpt-openai-teens-mental-health">NPR — teen safeguards (read)</a>
+</p>
+<div class="fb">
+<p>Lab-safety lead — right depth?</p>
+<label><input type="radio" name="fb-safety" value="yes"> Yes</label>
+<label><input type="radio" name="fb-safety" value="more"> More technical (monitorability)</label>
+<label><input type="radio" name="fb-safety" value="less"> Less personnel drama</label>
+</div>
+</article>
+
+<article id="s6">
+<h2>Washington and the labs: a Banks–Gillibrand bill would make the Pentagon vet its frontier-AI vendors, Anthropic opens a critical-infrastructure defence programme, both labs hire Trump officials, and the President calls anyone who says “AI” “THE ENEMY!”</h2>
+<p class="meta">
+<span class="chip">AI &amp; tech</span>
+<span class="chip">US policy</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The bill.</strong> Sens. Jim Banks (R-Ind.) and Kirsten Gillibrand (D-N.Y.) have introduced an 18-page bill directing the Defense Secretary to set reporting requirements and voluntary guidance for large AI contractors. The Pentagon would continuously vet them for security vulnerabilities and “algorithmic failures”, using DoD purchasing power to enforce safety standards ahead of industry-wide law. Gillibrand: the Pentagon is deploying “incredibly powerful AI technology without commonsense guardrails”. Context: DoD’s May frontier deals went to SpaceX, OpenAI, Google, Nvidia, Reflection, Microsoft, AWS and Oracle, but not Anthropic, which an appeals court upheld as a supply-chain risk in September.</p>
+<p><strong>Anthropic’s programme.</strong> Its new <strong>Critical Infrastructure Defense Program</strong> puts frontier models, on-site engineers and threat research with firms that secure grids and water systems. Founding partners are Accenture, Booz Allen, CrowdStrike, Deloitte, Dragos, Hitachi, Insane Cyber, Nozomi, Palo Alto Networks, PwC and Rockwell. It also launched a free <strong>OSS Scanner</strong> for open-source projects; its reports go to maintainers without human review. Anthropic did not say who pays for compute.</p>
+<p><strong>The revolving door.</strong> CNBC counts at least two former Trump officials at Anthropic: Sihao Huang, formerly OSTP’s AI lead, now head of frontier compute strategy, and Chris Liddell on the board. It counts at least three at OpenAI. A CNAS fellow: the labs “have learned from the Anthropic episode that it pays to be on the good side of the White House.”</p>
+<p><strong>The word.</strong> The President on Truth Social: the White House “considers anyone that uses the term, ‘Artificial Intelligence’… THE ENEMY!” This follows up Issues&nbsp;28 and 29-grok on the September executive order (FR Doc 2026-20321), which carries no penalty and defines “Super Intelligence” using the existing legal definition of AI. AI.gov and OSTP still say “AI”.</p>
+<p class="sources">Sources:
+<a href="https://defensescoop.com/2026/10/08/senate-bill-expand-dod-oversight-commercial-frontier-ai-models/">DefenseScoop — Banks–Gillibrand (read)</a> ·
+<a href="https://www.axios.com/2026/10/08/anthropic-critical-infrastructure-cybersecurity">Axios — Anthropic CIDP (feed text read)</a> ·
+<a href="https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner">Verge — OSS Scanner (headline)</a> ·
+<a href="https://www.cnbc.com/2026/10/09/openai-anthropic-poach-trump-officials.html">CNBC — officials hired (read)</a> ·
+<a href="https://www.axios.com/2026/10/08/trump-ai-super-intelligence-white-house">Axios — “THE ENEMY!” (feed text read)</a>
+</p>
+<div class="fb">
+<p>AI-policy roundup — keep bundled?</p>
+<label><input type="radio" name="fb-aipol" value="yes"> Yes, bundled</label>
+<label><input type="radio" name="fb-aipol" value="split"> Split the bill out</label>
+<label><input type="radio" name="fb-aipol" value="less"> Drop the terminology item</label>
+</div>
+</article>
+
+<article id="s7">
+<h2>Labor suspends Microsoft, Adobe and six IT outsourcers from the green-card labour-certification programme, on the same stage where Nadella received a National Medal of Science</h2>
+<p class="meta">
+<span class="chip">US policy</span>
+<span class="chip">AI &amp; tech</span>
+<span class="chip new">New fact</span>
+</p>
+<p>Labor Secretary Keith Sonderling said the department will not accept or process new or pending <strong>PERM</strong> labour certifications (the employer step toward a green card) involving <strong>Cognizant, Infosys, Capgemini, Tata, Wipro and HCL</strong>. Microsoft and Adobe are suspended “due to multiple active federal investigations”. Sonderling: these companies have sought “almost 3 million foreign workers” since 2009, with more than 230,000 H-1B approvals and 100,000 labour certifications. Vice President Vance tied Microsoft’s suspension to its 6,000 layoffs in 2025, said the company “replaced” them with H-1B workers, and said the ban lasts until it shows it is “serious about putting American workers first”.</p>
+<p>Microsoft’s reply: of about 6,000 H-1B applications last fiscal year, 80% extended or changed the status of existing employees, and the rest equal 1% of its US workforce, all people already in the country. Vance also announced investigations of <strong>nine universities</strong>, including Harvard, Yale and Stanford, over alleged J-1 visa fraud and wage undercutting. The announcement came at the White House science summit where Nadella, Huang, Su and Musk, all immigrants, received medals.</p>
+<p><strong>Why it matters:</strong> this is enforcement against named companies, not a rule change. It sits on top of September’s H-1B integrity order and Thursday’s proposed $70,000 OPT fee. For tech employers, the green-card queue now depends on a firm’s standing with the administration.</p>
+<p class="sources">Sources:
+<a href="https://www.cnbc.com/2026/10/08/microsoft-adobe-green-card-labor-suspension.html">CNBC (read)</a> ·
+<a href="https://techcrunch.com/2026/10/08/us-bars-microsoft-adobe-and-major-it-firms-from-green-card-program-for-skilled-foreign-workers/">TechCrunch (read)</a> ·
+<a href="https://www.wired.com/story/trump-administration-crackdown-microsoft-adobe-immigration/">Wired (headline)</a> ·
+<a href="https://www.whitehouse.gov/presidential-actions/2026/09/enhancing-program-integrity-and-integrity-and-interagency-coordination-in-the-administration-of-the-h-1b-nonimmigrant-visa-program/">White House — H-1B order (index)</a>
+</p>
+<div class="fb">
+<p>PERM suspension — lead-worthy?</p>
+<label><input type="radio" name="fb-perm" value="yes"> Yes</label>
+<label><input type="radio" name="fb-perm" value="short"> Should be a short</label>
+<label><input type="radio" name="fb-perm" value="more"> More on the universities</label>
+</div>
+</article>
+
+<article id="s8">
+<h2>SpaceX buys nationwide 800&nbsp;MHz spectrum to make Starlink Mobile a full carrier, and AT&amp;T, Verizon and T-Mobile slide; the President’s August disclosure shows SpaceX notes bought two days before his space-launch policy</h2>
+<p class="meta">
+<span class="chip">AI &amp; tech</span>
+<span class="chip">US financials</span>
+<span class="chip new">New fact</span>
+</p>
+<p>SpaceX agreed to buy a portfolio of up to <strong>14&nbsp;MHz of paired 800&nbsp;MHz spectrum</strong> from Grain Management, subject to FCC approval. It says the deal fills “one of the key remaining technical gaps” for Starlink Mobile to become “a major mobile carrier in the US”, combining satellite-to-phone with terrestrial service. Low-band spectrum gets through walls, which satellites alone cannot do. Analyst Tim Farrar: it is “still a very limited amount of spectrum” and urban coverage would need towers. SpaceX rose about 4% premarket Friday; the three carriers fell sharply. Last week they formed a satellite joint venture that leaves out Starlink.</p>
+<p><strong>The disclosure.</strong> The President reported <strong>517 securities transactions in August</strong> totalling $74.3m–$273.3m (CNBC’s analysis of the ranges). On 18&nbsp;August his accounts bought <strong>$1m–$5m of SpaceX 5.35% notes due 2031</strong>. Two days later he signed a national space transportation policy targeting more than 1,000 launches and re-entries a year by 2030. The largest single trade was a $5m–$25m Meta purchase on 21&nbsp;August. He also bought AT&amp;T and Chevron and sold some Nvidia, AMD and T-Mobile.</p>
+<p>This follows yesterday’s brief item on the FCC’s 29&nbsp;October vote on satellite-to-phone spectrum, which would also benefit SpaceX.</p>
+<p class="sources">Sources:
+<a href="https://www.cnbc.com/2026/10/08/spacex-spectrum-license-att-verizon-tmobile.html">CNBC — spectrum deal (read)</a> ·
+<a href="https://www.theverge.com/science/1008467/spacex-announces-plan-to-become-a-major-mobile-carrier">Verge (read)</a> ·
+<a href="https://www.cnbc.com/2026/10/08/trump-august-trades-meta-spacex-financial-disclosure.html">CNBC — August disclosure (read)</a>
+</p>
+<div class="fb">
+<p>SpaceX / disclosure — worth a lead?</p>
+<label><input type="radio" name="fb-spacex" value="yes"> Yes</label>
+<label><input type="radio" name="fb-spacex" value="split"> Split them</label>
+<label><input type="radio" name="fb-spacex" value="short"> Short only</label>
+</div>
+</article>
+
+<article id="s9">
+<h2>The NRC staff recommends licensing four AP1000 reactors for Fermi America’s “Advanced Energy and Intelligence Campus” next to the Pantex nuclear-weapons plant in Texas; comments are due 23&nbsp;November</h2>
+<p class="meta">
+<span class="chip">AI &amp; tech</span>
+<span class="chip">Energy</span>
+<span class="chip new">Primary document</span>
+</p>
+<p>In today’s Federal Register, the Nuclear Regulatory Commission publishes a <strong>draft environmental impact statement</strong> on Fermi America’s combined licence application for <strong>Project Matador Nuclear Units 1–4</strong>, four Westinghouse AP1000 pressurised-water reactors. The site is the Project Matador campus in <strong>Carson County, Texas, next to the Department of Energy’s Pantex Plant</strong>. Staff’s <strong>preliminary recommendation is that the licence be issued</strong>, contingent on the separate safety review. The first part of the application was filed on 17&nbsp;June 2025, so the environmental review has reached a draft in about 16 months.</p>
+<p>This is the AI power story at the paperwork level: a data-centre campus whose name includes “Intelligence”, seeking four large light-water reactors, not small modular ones. A draft EIS is not a licence. The safety review, a hearing and financing all still stand between this and construction. No construction schedule or cost is in the notice. Docket NRC-2026-0100; comments by <strong>23&nbsp;November</strong>.</p>
+<p><strong>Read with:</strong> Congress’s permitting bill making large data centres pay their full grid costs (Issue&nbsp;34-grok), and Google–Constellation’s 890&nbsp;MW PJM deal (Issue&nbsp;33-grok). Self-supplied generation is how a campus avoids both the bill and the queue.</p>
+<p class="sources">Sources:
+<a href="https://www.federalregister.gov/documents/2026/10/09/2026-20742/fermi-america-llc-dba-fermi-america-project-matador-advanced-energy-and-intelligence-campus-ap1000">Federal Register — NRC draft EIS (full text read)</a>
+</p>
+<div class="fb">
+<p>Primary-document AI-power lead — more of these?</p>
+<label><input type="radio" name="fb-fermi" value="yes"> Yes</label>
+<label><input type="radio" name="fb-fermi" value="short"> Short is enough</label>
+<label><input type="radio" name="fb-fermi" value="no"> Skip</label>
+</div>
+</article>
+
+<article id="s10">
+<h2>Florida &amp; Tampa Bay: Isaias is a 110 mph hurricane forecast to reach 120 mph before a Panhandle-area landfall tonight, and the surge forecast now reaches Tampa Bay at 1–3 feet</h2>
+<p class="meta">
+<span class="chip">Florida &amp; Tampa Bay</span>
+<span class="chip new">Correction</span>
+</p>
+<p>NHC Advisory 11 (4am CDT Friday): maximum winds <strong>110 mph</strong>, 963 mb, about 200 miles SSE of the mouth of the Mississippi, moving NNE at 15 mph. Isaias is “likely to become a major hurricane this morning”. The forecast is <strong>120 mph (105 kt) at 1pm CDT today</strong>, then some weakening from shear, for a <strong>high-end Category 2</strong> landfall in the warning area tonight or early Saturday. The discussion warns that a six-hour delay in the shear “would bring a stronger hurricane than expected onshore”. NWS Mobile’s most likely landfall is near the <strong>Alabama–Florida line</strong>, with surge across Pensacola Bay.</p>
+<p><strong>Warnings:</strong> hurricane warning from Ocean Springs, MS to the Bay/Gulf County line. Storm surge warning from the mouth of the Mississippi to the Suwannee River. Surge watch from the Suwannee to Yankeetown. Peak surge forecasts: Dauphin Island to Indian Pass <strong>5–7 ft</strong>, Indian Pass to the Steinhatchee 4–6 ft, and <strong>Yankeetown to Egmont Key 1–3 ft</strong>, which takes in Tampa Bay’s mouth. Pinellas and Hillsborough are not under a watch or warning. DeSantis has declared emergencies and expects about 5,000 Guard troops mobilised by today. Alabama has ordered non-residents out of Gulf Shores, Orange Beach and Dauphin Island.</p>
+<p><strong>FEMA:</strong> the Guardian calls this the first large surge-deployment test since the cuts. GAO counts about 4,300 departures in FY2025 (17% of staff) and 58 senior executives gone in a year, against about 13 a year before. The Region&nbsp;4 administrator, covering Florida and Alabama, is among them. FEMA says incident teams are deploying to both states.</p>
+<p><strong>Correction:</strong> yesterday this edition said the forecast peak of “110 mph” held. Isaias is already at 110 mph and the peak forecast is now 120 mph.</p>
+<p class="sources">Sources:
+<a href="https://www.nhc.noaa.gov/text/MIATCPAT4.shtml">NHC — Advisory 11 (read)</a> ·
+<a href="https://www.nhc.noaa.gov/text/MIATCDAT4.shtml">NHC — Discussion 11 (read)</a> ·
+<a href="https://www.cnbc.com/2026/10/08/hurricane-isaias-florida-alabama-and-mississippi-coasts.html">CNBC/AP — preparations (read)</a> ·
+<a href="https://www.theguardian.com/us-news/2026/oct/09/hurricane-isaias-fema-trump-cuts">Guardian — FEMA test (read)</a>
+</p>
+<div class="fb">
+<p>Florida section — right bar?</p>
+<label><input type="radio" name="fb-fl" value="yes"> Yes</label>
+<label><input type="radio" name="fb-fl" value="more"> More local</label>
+<label><input type="radio" name="fb-fl" value="less"> Tropics only when Tampa Bay is in the cone</label>
+</div>
+</article>
+
+<h2 class="section" id="also">Also today</h2>
+<p class="secnote">10 short items. Open any.</p>
+<div class="also-list">
+
+<details>
+<summary><span class="chip">US financials</span> The Fed takes enforcement action against American Express over failures to detect and report suspicious activity</summary>
+<div class="exp">
+<p>The Board cites “significant deficiencies” in how the firm’s enterprise-wide anti-money-laundering programme was implemented, especially at its national bank. The OCC issued a separate action against the bank. No penalty amount appears in the release. Source: <a href="https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm">Federal Reserve</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">US policy</span> ICE emails discuss using a Palantir-supported tool to hunt voter fraud, and DHS has investigated more than 150 nonprofits</summary>
+<div class="exp">
+<p>Documents released through a FOIA request by Democracy Forward show Homeland Security Investigations’ iLab working on DOJ voter rolls and USCIS data. A 26&nbsp;May email says criminal histories “are currently excluded, with efforts underway to address this”. The tool named is ELITE. Source: <a href="https://www.wired.com/story/ice-emails-discuss-using-palantir-supported-tool-to-investigate-voter-fraud/">Wired</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Science &amp; public health</span> HHS launches a vaccine-injury initiative: an NIH clinic opened quietly on 5&nbsp;October, and doctors would be paid to file VAERS reports</summary>
+<div class="exp">
+<p>Four parts were announced on Thursday. Kennedy attended the clinic’s undisclosed ribbon-cutting. Paying for VAERS reports would boost an unvetted system that the CDC says mostly captures unrelated events. Source: <a href="https://arstechnica.com/health/2026/10/rfk-jr-unveils-sweeping-federal-initiative-to-find-evidence-of-vaccine-injuries/">Ars Technica</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Energy</span> Interior adds a NEPA categorical exclusion for winter oil and gas exploration in Alaska’s petroleum reserve, and BOEM proposes the next Gulf lease sale</summary>
+<div class="exp">
+<p>Both are in today’s Federal Register. The categorical exclusion lets NPR-A wintertime exploration skip case-by-case environmental review. BOEM’s Proposed Notice of Sale for OBBBA Lease Sale&nbsp;4 opens the governors’ review; the statute sets royalty and rental terms. Sources: <a href="https://www.federalregister.gov/documents/2026/10/09/2026-20763/national-environmental-policy-act-implementing-procedures-wintertime-oil-and-gas-exploration-in-the">FR — NPR-A</a>; <a href="https://www.federalregister.gov/documents/2026/10/09/2026-20767/notice-of-availability-of-the-proposed-notice-of-sale-for-gulf-of-america-outer-continental-shelf">FR — Lease Sale 4</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">US policy</span> The Pentagon says the firing-squad execution of Fort Hood gunman Nidal Hasan will be livestreamed</summary>
+<div class="exp">
+<p>It would be the first military execution in more than 60 years and, the BBC says, believed to be the first public US execution in almost a century. A capital-defence lawyer calls it “on uncertain legal terrain”, and the UN rights office says it breaches the torture prohibition. Source: <a href="https://www.bbc.co.uk/news/articles/cmy0r96xygx6o">BBC</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Geopolitics</span> A top State Department official says investors are overpricing Taiwan conflict risk, as a $14bn arms package stays on hold</summary>
+<div class="exp">
+<p>Assistant Secretary Michael DeSombre told CNBC that deterrence will keep Beijing from moving by 2027. The President has held back the $14bn sale after December’s $11bn package drew a sharp Chinese response. Source: <a href="https://www.cnbc.com/2026/10/09/taiwan-trump-china-militia-boat-tsmc-.html">CNBC</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">US debt &amp; fiscal</span> Trump Accounts hold $4.5bn, and the IRS says “nine-figure” donors are lined up under new stock-gift rules</summary>
+<div class="exp">
+<p>The President’s figure includes the $1,000 Treasury seeds. Last week’s temporary regulations let accounts hold donated single stocks, which must generally be held five years. The fiscal cost of the seeds is still not in coverage. Follow-up to Issue&nbsp;34-grok. Source: <a href="https://www.cnbc.com/2026/10/08/trump-accounts-70-million-enrolled.html">CNBC</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Defense</span> The Air Force will prepare a supplemental EIS for Sentinel ICBM deployment and Minuteman III retirement</summary>
+<div class="exp">
+<p>The notice in today’s Federal Register covers changes to the 2023 plan at F.E. Warren, Malmstrom and Minot and their missile fields. Sentinel is the largest single item in the nuclear-modernisation bill. Source: <a href="https://www.federalregister.gov/documents/2026/10/09/2026-20724/notice-of-intent-to-prepare-a-supplemental-environmental-impact-statement-for-the-sentinel">FR</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">US policy</span> FDA drafts guidance saying it will not enforce parts of the food-traceability rule on some retailers and restaurants</summary>
+<div class="exp">
+<p>Draft guidance plus a public meeting on lot-level traceability; the rule is the post-FSMA “additional records” requirement. Source: <a href="https://www.federalregister.gov/documents/2026/10/09/2026-20721/requirements-for-additional-traceability-records-for-certain-foods-enforcement-policy-for-certain">FR</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">AI &amp; tech</span> OpenAI says users in Russia and Iran used its models for influence operations, and Anthropic’s new usage policy bans election interference and “needless” abuse of Claude</summary>
+<div class="exp">
+<p>Headlines and summaries only: The Hill’s article was blocked and TechCrunch’s text was thin, so no account counts or policy text were read. Sources: <a href="https://thehill.com/policy/technology/6137774-openai-bans-iran-russia-influence-operations/">The Hill (index)</a>; <a href="https://techcrunch.com/2026/10/08/anthropic-changes-usage-policy-to-ban-model-abuse-and-election-interference/">TechCrunch</a>.</p>
+</div>
+</details>
+
+</div>
+
+<h2 class="section">Negative check</h2>
+<p>I checked by hand against the BBC, NPR, Al Jazeera, Guardian, CNBC, TechCrunch, Verge, Ars, Wired, Axios, DefenseScoop, STAT, ProPublica, Politico and The Hill index, gCaptain, the Fed and SEC feeds, the Federal Register API and public-inspection list, the White House actions index, Treasury, AAA and NHC. The SEC feed was empty for the window. The Fed feed had one item, the AmEx action. The White House index had no new instrument after the diesel order. Today’s Federal Register is mostly FDA, ITA and SEC notices, apart from the NRC draft EIS, the NPR-A exclusion, Lease Sale&nbsp;4 and Sentinel.</p>
+<p><strong>What it added or reordered:</strong> OpenAI’s revenue figure came through CNBC tech and was confirmed by TechCrunch and the Guardian; it took lead 2 because it moved the whole AI complex. The PERM suspension appeared in five outlets at once (CNBC, TechCrunch, Wired, BBC business, Guardian). The Fermi America reactors surfaced only in the Federal Register and had no press coverage in any feed checked. The Banks–Gillibrand bill came from DefenseScoop alone. The Axios “day after” scoop came from the feed text because the article page was blocked.</p>
+<p><strong>What it rejected:</strong> Senate debates in Michigan, Georgia and Maine, the Guilfoyle–Deters story, Johnson’s fundraising and midterm polling (campaign, anti-topic). The NYC ICE shooting (individual case, no instrument yet). The Peace and Literature Nobels (no US channel). The UK by-election, the South Africa riots and Brazil’s Bolsonaro warrant (no US channel). Arlington’s suit over the Trump arch and the Truth Social early-access case (minor). The Army’s DCA collision report (read only as an X summary; next run, if a primary is reachable). Margaret Hamilton’s death and Prime Day.</p>
+
+<h2 class="section">Dormant / watched</h2>
+<ul class="dorm">
+<li><strong>Hormuz / Iran:</strong> active. The pre-midterm timing is off, but the blockade, the carrier build-up, the Riyadh airport deaths and Iran’s warning on new routes keep it live. Next trigger: Iran’s reply to the US proposal.</li>
+<li><strong>Fed:</strong> claims print in lead 3. Next decision 28&nbsp;Oct; futures favour December for the next hike.</li>
+<li><strong>UAP implementation:</strong> quiet. An X news search turned up only podcast claims: Kennedy’s secondhand crash-retrieval briefings with Rep. Luna, Elizondo, and former Energy Secretary Herrington. No documents and no new PURSUE tranche; Release&nbsp;06 (18&nbsp;Sep) is still the latest, three weeks on.</li>
+<li><strong>Lab safety / AI legislation:</strong> active. The fired-researchers letter, the Banks–Gillibrand bill and the Axios scenario planning.</li>
+<li><strong>AI agent trust boundary:</strong> touched. Monitorability is the dispute in lead 5, and Anthropic’s OSS Scanner sends unreviewed reports to maintainers.</li>
+<li><strong>Autonomous weapons regulation:</strong> touched through the Banks–Gillibrand bill. The CCW review conference is 16–20&nbsp;Nov.</li>
+</ul>
+
+<footer>
+<p>Issue No. 35-grok · 9 October 2026 · Grok edition for MAGA Mickey · Written by Grok Bot / News Bot · Archive: <a href="https://historiocity.github.io/News-Agent/">historiocity.github.io/News-Agent</a> · Skill reads <code>config.md</code> every run.</p>
+<p>The parallel Claude Issue&nbsp;35 is published as <code>2026-10-09.html</code>; this file is the independent Grok gather and does not overwrite it. 34 sources, 19 outside the watchlist. Federal Register documents for 9&nbsp;Oct: 89. Items marked “index”, “headline” or “feed text” were not read as full articles.</p>
+<p class="submit"><button type="button" id="send">Send feedback as a GitHub issue</button></p>
+</footer>
+
+</div>
+<script>
+(function () {
+ var OWNER = "historiocity", REPO = "News-Agent";
+ var btn = document.getElementById("send");
+ if (!btn) return;
+ btn.addEventListener("click", function () {
+ var lines = [], answered = 0;
+ document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+ answered++;
+ var q = i.closest(".fb").querySelector("p");
+ lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n → **" + i.value + "**");
+ });
+ if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+ var body = "Feedback on **Issue No. 35-grok — 9 October 2026, Grok edition**\n\n" + lines.join("\n")
+ + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+ window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+ + "&title=" + encodeURIComponent("Brief feedback — 2026-10-09-grok")
+ + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+ });
+})();
+</script>
+</body>
+</html>
