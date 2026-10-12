@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Monday, 12 October 2026</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .chip.alert { background:var(--accent); color:#fff; border:1px solid var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  .corr { background:var(--box); border-left:3px solid var(--accent); padding:.7rem .9rem; margin:0 0 1rem; font-size:.94rem; }
+  .corr p { margin:.4rem 0; }
+  .corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--accent); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  .short { border-bottom:1px solid var(--rule); padding:.7rem 0; margin:0; }
+  .short > summary { color:var(--fg); cursor:pointer; list-style:none; }
+  .short > summary::-webkit-details-marker { display:none; }
+  .short > summary::before { content:"▸ "; color:var(--link); }
+  .short[open] > summary::before { content:"▾ "; }
+  .short .body { margin-top:.6rem; padding-left:1.1rem; border-left:2px solid var(--rule); font-size:.96rem; }
+  .why { font-style:italic; color:var(--muted); }
+  figure { margin:1.2rem 0 0; }
+  figcaption { font-size:.84rem; color:var(--muted); margin-top:.4rem; line-height:1.5; }
+  svg { width:100%; height:auto; display:block; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+  ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 38 &middot; Monday, 12 October 2026</div>
+  <h1>A one-member commission has proposed a framework for the entire American crypto market, and the voting summary says so</h1>
+  <p class="sub">Morning edition. Continues from <a href="2026-10-11.html">Sunday</a>.</p>
+  <p class="prov"><b>18 sources checked, 9 of them outside the watchlist.</b> Seven lead stories: three on subjects with no existing thread (the long-term unemployed share, advance traveller information for rail, and a deep seabed mining licence) and four continuations &mdash; <b>the follow-up cap is full again</b>. Eight short items. No Florida section.<br><br>
+  <b>Today is Columbus Day, and the method note is the issue.</b> The <em>Federal Register</em> published <b>nothing</b> &mdash; all three standing API calls returned a count of zero, confirmed rather than assumed. <b>But tomorrow&rsquo;s documents are already in the API</b>, and they are the source of four of the seven leads and four of the shorts. Everything below marked for 13 October was read this morning, a day before it publishes, and the text was read in full rather than the abstract. <b>Three consecutive issues without a same-day document list have produced the best document reporting of the run.</b><br><br>
+  <b>Biggest story today not on this list:</b> a migrant boat capsizing off <b>Djibouti</b> with at least 139 dead and 84 missing. It is not here because this brief cannot find a US channel for it and will not manufacture one; it is recorded in the footer so the omission is visible rather than silent. Also held: the alleged plot against Poland&rsquo;s prime minister and defence minister, and Pope Leo XIV&rsquo;s lung surgery &mdash; both in the short tier.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#cftc">A one-member commission has proposed a framework for the entire American crypto market, and the voting summary says so</a></li>
+    <li><a href="#ceasefire">Trump announced an energy ceasefire that Moscow has not confirmed and Kyiv had not been told about</a></li>
+    <li><a href="#riyadh">Riyadh airport was hit a fourth time and is closed, and a cruise missile was intercepted over it</a></li>
+    <li><a href="#jobs">More than one unemployed American in four has now been out of work for over six months</a></li>
+    <li><a href="#rail">Every passenger on every train crossing the US border would be reported in advance, and the cargo fleet is covered too</a></li>
+    <li><a href="#seabed">A company has applied to explore the deep seabed under a 1980 American law, in waters nobody owns</a></li>
+    <li><a href="#isaias">The Gulf crews are back and the oil is not: 8.6% of platforms evacuated, 57.5% of production still shut in</a></li>
+    <li><a href="#also-today">Also today (8)</a></li>
+  </ol>
+</nav>
+
+<article id="cftc">
+  <h2>A one-member commission has proposed a framework for the entire American crypto market, and the voting summary says so</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip under">Underreported</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The CFTC has issued an advance notice of proposed rulemaking, <b>&ldquo;Regulation Crypto Asset Transactions and Regulation Crypto Asset Markets&rdquo;</b>, RIN 3038-AF80, touching <b>17 CFR parts 1, 38 and 39</b>. It publishes tomorrow at <b>91 FR 64811</b>; comments close <b>14 December 2026</b>. It was issued in Washington on <b>8 October</b>. The voting summary reads: <b>Chairman Selig voted in the affirmative; no Commissioner voted in the negative.</b> There are no other commissioners. On 9 October this brief reported that the agency is down to one of a statutory five and 551 staff, and wrote that the pending rulemakings were now being written by a one-member commission. This is that, in thirty pages.</p>
+  <p>The substance is not small. <b>Regulation CTX</b> would say which crypto transactions fall inside <b>CEA section 2(c)(2)(D)</b> &mdash; retail commodity transactions on a leveraged, margined or financed basis. An <b>offer counts even if it is not accepted</b>, and may sit in onboarding materials, exchange terms or margin documents. Financing &ldquo;arranged, endorsed, or materially assisted&rdquo; through marketing or revenue-sharing can bring a platform in. The escape is <b>actual delivery within 28 days</b> to a wallet the buyer controls, and the Commission would ask who holds the <b>private keys</b>: a book entry where the broker keeps exclusive control is not delivery.</p>
+  <p><b>Regulation CAM</b> is the larger half: a purpose-built subcategory of designated contract market for venues listing only crypto, with tailored core principles on listing standards, position limits, trade reporting, execution and operational risk; <b>proof of reserves</b>; mandatory FCM intermediation; leverage only through an FCM or a sponsored qualified banking institution; and open questions on <b>section 4d segregation, part 190 and the Bankruptcy Code</b>, including rehypothecation.</p>
+  <p>&ldquo;Crypto asset&rdquo; means any digital representation of value on a cryptographically secured distributed ledger, excluding payment stablecoins from a permitted issuer under the GENIUS Act.</p>
+  <p><b>What to watch:</b> whether any commissioner is nominated before comments close, because an ANPRM issued 1&ndash;0 becomes a proposed rule and then a final rule on the same arithmetic; the <b>14 December</b> comment file, the only adversarial process this rulemaking will get; and whether the SEC&rsquo;s own Regulation Crypto Assets, proposed 18 August, lines up with this or cuts across it.</p>
+
+  <div class="div">
+    <p class="t">Where the accounts diverge</p>
+    <p><b>The substance.</b> There is no divergence yet, because the document publishes tomorrow and nobody has written about it. The disagreement this brief can already adjudicate is the one inside the document: whether a quorum problem is a legitimacy problem. The CFTC&rsquo;s own position, implicit in proceeding, is that a commission acts through whoever is seated and the statute sets no floor it is breaching. The contrary case is not about authority but about <b>record</b>: a rulemaking of this size normally produces concurrences and dissents, and those are what a reviewing court reads when the rule is challenged. <b>A 1&ndash;0 vote leaves the comment file as the only place an opposing argument can be made, and a comment is not a dissent.</b></p>
+    <p><b>Cause.</b> Mundane and structural, not sinister. Commissioners leave, nominations stall, and an agency with a statutory mandate and a crypto industry waiting does not stop issuing rules while the Senate is busy. The ANPRM form itself is a tell in the agency&rsquo;s favour: it asks questions rather than proposing text, which is the most procedurally cautious instrument available and buys time for a quorum to be restored before anything binding is written. Against that, note the pacing &mdash; the SEC proposed its companion in August, a joint taxonomy was issued in March, and an industry that has waited years is unlikely to accept a pause now.</p>
+    <p><b>What it means for you.</b> If you hold crypto on a US exchange with any leverage, margin or financing feature, <b>read the actual-delivery test</b>, because it is the line between a state-regulated spot market and a federal futures market, and it turns on whether you control the private keys. If your platform holds them, the Commission is signalling the transaction may be its business. The second thing worth your attention is the custody question: the notice asks openly whether <b>section 4d segregation and the Bankruptcy Code need modification</b> for crypto held by an FCM, and whether rehypothecation is permissible. <b>That is the FTX question, asked by the regulator, with no answer yet.</b> Anyone with assets on a venue that would become a CAM should want the answer before the rule, not after. The resolving observation is the comment file on 14 December, and specifically whether any bank or clearing house files on segregation.</p>
+  </div>
+
+  <p class="sources"><b>Confidence:</b> Primary source, <b>full text read</b> across three retrievals (the document runs to about 290,000 characters). <b>It has not yet published</b> &mdash; it is scheduled for 13 October and was read today through the <em>Federal Register</em> API. <b>Sources:</b> <a href="https://www.federalregister.gov/documents/full_text/text/2026/10/13/2026-20888.txt">CFTC, Regulation Crypto Asset Transactions and Regulation Crypto Asset Markets, full text</a>, 91 FR 64811 &middot; continues <a href="2026-10-09.html#cftc">9 October</a></p>
+
+  <div class="fb">
+    <p><b>This was read a day before publication, from tomorrow&rsquo;s Federal Register.</b></p>
+    <label><input type="radio" name="fb-preread" value="always"> Do this every day &mdash; read tomorrow&rsquo;s documents today</label>
+    <label><input type="radio" name="fb-preread" value="holiday"> Only when there is no same-day list, as today</label>
+    <label><input type="radio" name="fb-preread" value="no"> Wait until it publishes; unpublished documents can change</label>
+  </div>
+</article>
+
+<article id="ceasefire">
+  <h2>Trump announced an energy ceasefire that Moscow has not confirmed and Kyiv had not been told about</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The President said on Sunday that Russia and Ukraine had agreed to an <b>energy ceasefire</b>, and told both sides not to break it. What it covers was not stated. A White House official told Axios the proposal is <b>refinery for refinery</b> &mdash; attacks on oil refineries only, with power plants and the grid possibly to follow if refinery strikes stop. The same official said <b>Russia was still considering the proposal</b>, which contradicts the announcement. No Kremlin confirmation has been found.</p>
+  <p>Zelenskyy was reported to be unaware of any agreement, and said Kyiv was prepared to accept a reciprocal energy ceasefire. Russian attacks continued. This follows Saturday, when the President called for Zelenskyy to be replaced and told him to stop striking Russian refineries: &ldquo;He better damn well stop.&rdquo;</p>
+  <p>Note the shape of the week. <b>Friday:</b> OFAC licenses Russian-origin diesel through April 2027, against a statutory import ban nobody has repealed. <b>Saturday:</b> the President calls for the Ukrainian president&rsquo;s removal. <b>Sunday:</b> he announces a ceasefire one party has not agreed to and the other had not heard of. Each step is presented as a response to the diesel price.</p>
+  <p>And the diesel price is falling without any of it. AAA diesel is <b>$6.2665</b>, <b>down 1.06 cents</b> &mdash; the largest daily fall in a week and a new low. Petrol is <b>$4.3556</b>. The national average is <b>26.11 cents</b> off the 22 September record, with Saturday&rsquo;s single-day rise more than reversed.</p>
+  <p>Ukraine meanwhile struck a <b>Yandex data centre in Vladimir</b>, which the company says is shut down &mdash; Russian digital rather than energy infrastructure, in the same twenty-four hours.</p>
+  <p><b>What to watch:</b> a Kremlin statement, which is the only thing that would make this an agreement rather than an announcement; whether Ukrainian refinery strikes actually stop, which is observable within days from Russian regional reporting; and <b>18 October</b>, the Graham Act implementation deadline, now six days away.</p>
+
+  <div class="div">
+    <p class="t">Where the accounts diverge</p>
+    <p><b>The substance.</b> A factual dispute with an unusually clean answer: whether an agreement exists. The President says two parties agreed. A White House official, speaking to Axios on the same day, says <b>one of them is still considering it</b>. Ukraine says it was not told but would accept something reciprocal. <b>On the evidence the honest description is a proposal publicly announced as a deal</b>, and the scope is narrower than &ldquo;energy&rdquo; implies &mdash; refineries only, by the administration&rsquo;s own account, not power plants or the grid that Russia has been hitting all week.</p>
+    <p><b>Cause.</b> The mundane explanation first: announcing a deal is a negotiating tactic, and a public claim that Moscow has agreed raises the cost to Moscow of saying it has not. The administration also has a dated reason to want this resolved before <b>18 October</b>, when the Graham Act obliges it to act on Russia sanctions. Reach for timing too: the Axios official and the President are describing the same proposal at different stages, hours apart, and an official briefing on background is usually the more accurate of the two because there is no audience to persuade. There is also a precedent that should temper everyone &mdash; a 30-day energy truce was announced in March 2025 on the same terms and did not hold.</p>
+    <p><b>What it means for you.</b> Do not price anything off this. <b>The thing that would make it real is a Kremlin statement, and the thing that would make it matter is a stop to Ukrainian refinery strikes</b> &mdash; which is the actual supply variable, since those strikes are what the President blames for the diesel price. Watch Russian regional reporting of refinery fires rather than any statement from Washington. And note the arithmetic in the paragraph above: the pump price has fallen 26 cents from its record across a week in which the licence, the demand for Zelenskyy&rsquo;s removal and the ceasefire announcement all happened, and the fall predates all three. <b>If diesel keeps falling, nothing here caused it; if it rises again, nothing here will have prevented it.</b> The one genuinely new fact worth carrying forward is the Yandex strike: whatever is or is not agreed about refineries, Ukraine has just demonstrated it can take down Russian data infrastructure, and no announced ceasefire covers that.</p>
+  </div>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration; <b>no text of any agreement exists publicly</b> and no Kremlin statement was found. The scope is from one official speaking on background. <b>Sources:</b> <a href="https://www.cnn.com/2026/10/11/politics/trump-ukraine-russia-energy-ceasefire">CNN</a> &middot; <a href="https://www.axios.com/2026/10/11/russia-ukraine-oil-energy-ceasefire-trump-putin-zelensky">Axios</a> &middot; <a href="https://www.cbsnews.com/news/zelenskyy-trump-new-ukrainian-president/">CBS News</a> &middot; <a href="https://oilprice.com/Latest-Energy-News/World-News/Trumps-Russia-Ukraine-Energy-Ceasefire-May-Only-Cover-Oil-Refineries.html">OilPrice</a> &middot; <a href="https://www.aljazeera.com/news/2026/10/11/russias-yandex-says-data-centre-in-vladimir-shut-down-after-drone-attack">Al Jazeera</a> on Yandex &middot; <a href="https://gasprices.aaa.com/">AAA</a> &middot; continues <a href="2026-10-11.html#zelenskyy">11 October</a></p>
+
+  <div class="fb">
+    <p><b>Fourth consecutive day leading on this chain.</b></p>
+    <label><input type="radio" name="fb-chain" value="daily"> Keep it daily while it moves this fast</label>
+    <label><input type="radio" name="fb-chain" value="confirmed"> Only report confirmed agreements, not announcements</label>
+    <label><input type="radio" name="fb-chain" value="price"> Give me the price and the statute; drop the diplomacy</label>
+  </div>
+</article>
+
+<article id="riyadh">
+  <h2>Riyadh airport was hit a fourth time and is closed, and a cruise missile was intercepted over it</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>A projectile struck <b>Terminal 4</b> of King Khalid International Airport on Sunday, starting a fire. Saudi Arabia&rsquo;s civil aviation authority said the assault &ldquo;resulted in injuries&rdquo; without giving a number; NBC reports <b>one death, a Pakistani resident, and eleven injured</b>. The Saudi-led coalition said air defences intercepted and destroyed a <b>cruise missile</b> near the airport. The airport, already suspended after Saturday&rsquo;s attack, <b>remained closed</b>.</p>
+  <p>Saturday&rsquo;s toll stands at <b>12 dead and 309 wounded</b> on the civil aviation authority&rsquo;s own count, with some outlets reporting 13. The dead included an American. This was the fourth strike on the airport in days; sources differ on whether to count a 7 October drone attack, so the sequence runs either three or four depending on who is counting.</p>
+  <p>The Houthis warned airlines and travellers away from Saudi airports hours before Sunday&rsquo;s strike, repeating their position that any aircraft over the kingdom except above Mecca and Medina is a target. No airline suspension beyond the airport&rsquo;s own closure has been confirmed here.</p>
+  <p>Yesterday this brief said the thing to watch was not the casualty count but the airspace, and the first measurable consequence would be a carrier or insurer acting. <b>The airport closing itself is a larger version of that</b> &mdash; King Khalid is the capital&rsquo;s hub and one of the largest airports in the Gulf, and it has now been shut for two days by a non-state actor using missiles and drones. Nothing about the United States joining the war has been decided or announced.</p>
+  <p><b>What to watch:</b> a reopening date, which is the measure of the damage; whether any US or European carrier suspends Saudi overflight rather than just Riyadh service; and whether a cruise missile &mdash; a different weapon from the ballistic missiles reported earlier &mdash; is confirmed, because it would mean a capability the coalition has not had to defend against at this tempo.</p>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration; <b>no Saudi or coalition primary document was read</b>, the injury count for Sunday is not published, and the Saturday toll is given as 12 by the civil aviation authority and 13 by some outlets. <b>Sources:</b> <a href="https://www.nbcnews.com/world/middle-east/saudi-airport-attack-trump-us-join-fight-houthis-rcna602744">NBC News</a> &middot; <a href="https://www.jpost.com/middle-east/article-911343">Jerusalem Post</a> &middot; <a href="https://gulfbusiness.com/en/2026/saudi-arabia/riyadh-airport-hit-again-fire-terminal-4-missile-attack/">Gulf Business</a> &middot; <a href="https://www.aljazeera.com/news/liveblog/2026/10/11/iran-war-live-12-killed-in-riyadh-us-weighs-joining-fight-against-houthis">Al Jazeera</a> &middot; continues <a href="2026-10-11.html#riyadh">11 October</a></p>
+</article>
+
+<article id="jobs">
+  <h2>More than one unemployed American in four has now been out of work for over six months</h2>
+  <div class="meta">
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip new">New thread</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>From the Bureau of Labor Statistics&rsquo; September Employment Situation, released 2 October: unemployment <b>4.2%</b>, <b>7.1 million</b> unemployed, nonfarm payrolls <b>+29,000</b>, participation <b>61.8%</b>, employment-population ratio <b>59.2%</b>. And the figure the headline rate hides: <b>1.9 million people have been unemployed for 27 weeks or more &mdash; 27.1% of all unemployed.</b></p>
+  <p>Put the two together. A 4.2% unemployment rate is historically unremarkable. A long-term share above a quarter is not: it is the signature of a labour market where <b>people who lose a job do not quickly find another</b>, which is a different condition from one where many people are losing jobs. The 29,000 payroll gain against 7.1 million unemployed works out at roughly <b>one new job for every 245 people looking</b>.</p>
+  <p>The consequence arrives through the benefit system, which is built for short spells. NPR reports that <b>nearly four in ten people now exhaust their unemployment benefits before finding work</b>, and profiles a Colorado worker in a state offering <b>twelve weeks</b>. Twelve weeks against a 27-week-plus share of 27.1% is not a close call: for a quarter of the unemployed, the insurance runs out roughly halfway through the spell.</p>
+  <p>This is the first time this brief has run the labour market as its own story, and the reason is that the two numbers have separated. The rate is what gets reported and what the Fed is watched on; the duration is what the household experiences. <b>They are now telling different stories, and only one of them is in the headline.</b></p>
+  <p><b>What to watch:</b> the October Employment Situation, due in early November, and specifically whether the 27-week share rises again rather than whether the rate does; weekly continuing claims, which measure the same thing faster; and any state moving to extend benefit duration, which would be the first policy acknowledgement.</p>
+
+  <p class="sources"><b>Confidence:</b> Primary source for every official figure, read from the BLS release. The benefit-exhaustion share and the Colorado case are from NPR and were <b>not independently verified</b>; the one-job-per-245 arithmetic is this brief&rsquo;s own. <b>Sources:</b> <a href="https://www.bls.gov/news.release/empsit.nr0.htm">BLS, Employment Situation, September 2026</a> &middot; <a href="https://www.mynspr.org/npr-news/2026-10-11/its-taking-longer-to-find-a-new-job-after-losing-one">NPR via Northern Public Radio</a></p>
+
+  <div class="fb">
+    <p><b>New thread: unemployment duration rather than the unemployment rate.</b></p>
+    <label><input type="radio" name="fb-jobs" value="monthly"> Run it every Employment Situation, on the duration figures</label>
+    <label><input type="radio" name="fb-jobs" value="turns"> Only when something turns</label>
+    <label><input type="radio" name="fb-jobs" value="fed"> Keep the Fed rule &mdash; prints and decisions only, nothing else</label>
+  </div>
+</article>
+
+<article id="rail">
+  <h2>Every passenger on every train crossing the US border would be reported in advance, and the cargo fleet is covered too</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New thread</span>
+    <span class="chip under">Underreported</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Customs and Border Protection has proposed <b>&ldquo;Advance Traveler Information for Rail&rdquo;</b>, docket <b>USCBP-2026-0992</b>, RIN 1651-AB60, creating a new subpart K of <b>19 CFR part 123</b>. It publishes tomorrow at <b>91 FR 64840</b>; comments close <b>14 December 2026</b>. Rail carriers would transmit advance electronic information on <b>every individual &mdash; passenger and crew &mdash; crossing the US border by train</b>, including those in transit.</p>
+  <p>The data set is a full traveller record: name, date of birth, sex, citizenship, residence, travel document details, status on board, itinerary, US address, <b>seat location</b> and contact details. Carriers would also file a notice of arrival or departure for each train, with route, stops and a 24-hour emergency contact. Timing: the train notice <b>24 hours before</b> the border, traveller data <b>60 minutes before departure</b>, a close-out within 30 minutes after.</p>
+  <p>Two things in the text deserve attention. First, the proposed definition of &ldquo;train&rdquo; <b>includes cargo as well as passenger conveyances</b>, and the agency&rsquo;s own projections are about <b>3,497 passenger train crossings a year against 70,215 cargo crossings</b> &mdash; so a rule titled for travellers reaches a fleet twenty times larger. Second, the enforcement: civil penalties under <b>19 U.S.C. 1436</b>, criminal penalties for intentional violations, and the conveyance used in a violation is <b>&ldquo;subject to seizure and forfeiture&rdquo;</b>. A locomotive is forfeitable for a late manifest.</p>
+  <p>The economics are small and oddly distributed. Over 2026&ndash;2030 at a 3% discount rate CBP projects a net benefit of <b>$36.3m to rail passengers</b> and $1.5m to passenger carriers, against a net <b>cost of $1.7m to cargo carriers</b>. Security benefits are not quantified at all. The one exemption is for active-duty military on orders aboard a <b>Department of War</b>-chartered train.</p>
+  <p><b>What to watch:</b> whether Amtrak, VIA Rail and the Class I freight railroads file against the cargo scope, where the cost falls; whether the 60-minute window survives, since it is tight for a train boarding at several stops; and whether the seizure-and-forfeiture language is softened, because it has no proportionality in it.</p>
+
+  <p class="sources"><b>Confidence:</b> Primary source, full text read; <b>it publishes tomorrow</b> and was read today through the <em>Federal Register</em> API. <b>Sources:</b> <a href="https://www.federalregister.gov/documents/full_text/text/2026/10/13/2026-20884.txt">CBP, Advance Traveler Information for Rail, full text</a>, 91 FR 64840</p>
+
+  <div class="fb">
+    <p><b>New thread, found by reading tomorrow&rsquo;s rules list rather than any wire.</b></p>
+    <label><input type="radio" name="fb-rail" value="follow"> Follow it to the final rule</label>
+    <label><input type="radio" name="fb-rail" value="comments"> Only if the comment file turns adversarial</label>
+    <label><input type="radio" name="fb-rail" value="privacy"> More on federal traveller-data collection generally</label>
+  </div>
+</article>
+
+<article id="seabed">
+  <h2>A company has applied to explore the deep seabed under a 1980 American law, in waters nobody owns</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip new">New thread</span>
+    <span class="chip under">Underreported</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>NOAA has announced receipt of an application from <b>Eco Minerals, Inc.</b> for a <b>deep seabed mining exploration licence</b> under the <b>Deep Seabed Hard Mineral Resources Act</b>, 30 U.S.C. 1426(a)(1). The amended application arrived on <b>5 December 2025</b>. The notice publishes tomorrow at <b>91 FR 64880</b>, docket NOAA-NOS-2026-2608, and NOAA has determined the application fully compliant with the Act&rsquo;s information requirements.</p>
+  <p>The area is the part that matters: the seabed <b>&ldquo;beyond national jurisdiction&rdquo;</b> in the Pacific, in the <b>Clarion-Clipperton Zone</b> and in an area between <b>Guam and Wake Island</b>. No coordinates, no block list and no acreage are given in the notice, and it does not name the minerals or the term sought. The Clarion-Clipperton Zone is the polymetallic nodule province between Hawaii and Mexico that the International Seabed Authority has spent three decades allocating under the Law of the Sea Convention.</p>
+  <p>That is the story in one sentence: <b>the United States is not a party to the Convention, so it licenses the seabed under its own 1980 statute, and the area it is licensing is the area the Authority administers for everyone else.</b> DSHMRA was written as an interim measure pending a ratification that never came. The notice mentions neither the Convention nor the Authority.</p>
+  <p>A <b>virtual public hearing</b> is set for <b>16 November, 3&ndash;5pm Eastern</b>, capped at 1,000 attendees, with registration closing 12 November and three minutes per speaker. Written comments close <b>14 December</b>. NOAA notes that statements in the application are the applicant&rsquo;s, not the government&rsquo;s.</p>
+  <p><b>What to watch:</b> whether the International Seabed Authority or any state party objects, which would be the first real test of the parallel regime; what the application says the minerals are, which the notice withholds and the docket may not; and whether the hearing fills its thousand seats, because that is the cheapest available measure of whether anyone outside the industry is paying attention.</p>
+
+  <p class="sources"><b>Confidence:</b> Primary source, full text read; <b>it publishes tomorrow</b>. The application itself was not obtained, so the minerals, acreage and term are not established. The Law of the Sea context is this brief&rsquo;s own and is not in the notice. <b>Sources:</b> <a href="https://www.federalregister.gov/documents/full_text/text/2026/10/13/2026-20830.txt">NOAA, Deep Seabed Mining: Notice of Receipt of Application, full text</a>, 91 FR 64880</p>
+
+  <div class="fb">
+    <p><b>New thread: American seabed licensing outside the Law of the Sea regime.</b></p>
+    <label><input type="radio" name="fb-seabed" value="follow"> Follow it through the hearing and the licence decision</label>
+    <label><input type="radio" name="fb-seabed" value="objection"> Only if another state or the Authority objects</label>
+    <label><input type="radio" name="fb-seabed" value="drop"> Too far from a US channel</label>
+  </div>
+</article>
+
+<article id="isaias">
+  <h2>The Gulf crews are back and the oil is not: 8.6% of platforms evacuated, 57.5% of production still shut in</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>BSEE&rsquo;s Sunday count, as of <b>11am CDT</b> from 31 company reports: <b>1,173,863 barrels a day of oil shut in &mdash; 57.54%</b> &mdash; and <b>1,051 million cubic feet of gas (49.11%)</b>, with <b>32 of 371 manned platforms</b> still evacuated, <b>one</b> non-dynamically-positioned rig, and no DP rigs off location. The agency will keep updating daily at 1pm CDT.</p>
+  <p>Hold those two numbers together, because they have come apart. Evacuated platforms have fallen from <b>129 on Friday to 32 on Sunday</b> &mdash; from 34.8% of the Gulf&rsquo;s manned platforms to <b>8.6%</b>, a three-quarters reduction. Shut-in oil over the same two days fell only from 71.5% to <b>57.5%</b>. <b>Crews are back on four platforms in five, and well over half the oil is still off.</b></p>
+  <p>That gap is the thing worth watching, and the honest position is that this brief does not know what is in it. The benign reading is ordinary restart sequencing: re-manning is fast, bringing wells and the pipeline and processing chain back is slower, and the gap closes over days. The other reading is that something was found on inspection, offshore or in the onshore infrastructure the platforms feed. <b>Nothing reachable this morning distinguishes them.</b> What can be said is that the standing expectation this brief has carried &mdash; that offshore production returns within days while refinery damage lasts weeks &mdash; is being tested on its first half.</p>
+  <p>Four deaths remain attributed to Isaias, two in Escambia County, Florida and two in Alabama. The three refineries named last week &mdash; <b>Chevron Pascagoula (356,000 b/d), Vertex at Mobile (88,000), Hunt at Tuscaloosa (50,000)</b> &mdash; have still reported no damage.</p>
+  <p><b>What to watch:</b> today&rsquo;s 1pm BSEE count, and specifically whether shut-in oil falls below half while platform evacuations are already under 10%; any operator statement explaining a delayed restart; and the pipeline and processing operators, who report separately and are the likeliest location of the gap.</p>
+
+  <figure>
+      <svg viewBox="0 0 640 212" role="img" aria-label="Gulf of Mexico oil production shut in and manned platforms evacuated, as percentages, for 8 to 11 October 2026. Shut-in production peaks at 71.5 percent on 9 October and falls to 57.5 percent on 11 October, while platforms evacuated falls from 34.8 percent to 8.6 percent.">
+      <line x1="130" y1="23.0" x2="612" y2="23.0" stroke="#e0ddd6" stroke-width="1"/>
+      <text x="122" y="27.0" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">80%</text>
+      <line x1="130" y1="61.0" x2="612" y2="61.0" stroke="#e0ddd6" stroke-width="1"/>
+      <text x="122" y="65.0" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">60%</text>
+      <line x1="130" y1="99.0" x2="612" y2="99.0" stroke="#e0ddd6" stroke-width="1"/>
+      <text x="122" y="103.0" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">40%</text>
+      <line x1="130" y1="137.0" x2="612" y2="137.0" stroke="#e0ddd6" stroke-width="1"/>
+      <text x="122" y="141.0" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">20%</text>
+      <line x1="130" y1="175.0" x2="612" y2="175.0" stroke="#6b6a66" stroke-width="1"/>
+      <text x="122" y="179.0" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="end">0%</text>
+      <polyline fill="none" stroke="#8a3324" stroke-width="2.5" points="130.0,55.49 280.0,39.13 430.0,44.36 580.0,65.67"/>
+      <polyline fill="none" stroke="#1c4f8a" stroke-width="2.5" stroke-dasharray="6 4" points="130.0,113.04 280.0,108.94 430.0,117.13 580.0,158.6"/>
+      <circle cx="130.0" cy="55.49" r="3.5" fill="#8a3324"/>
+      <circle cx="280.0" cy="39.13" r="3.5" fill="#8a3324"/>
+      <circle cx="430.0" cy="44.36" r="3.5" fill="#8a3324"/>
+      <circle cx="580.0" cy="65.67" r="3.5" fill="#8a3324"/>
+      <circle cx="130.0" cy="113.04" r="3.5" fill="#1c4f8a"/>
+      <circle cx="280.0" cy="108.94" r="3.5" fill="#1c4f8a"/>
+      <circle cx="430.0" cy="117.13" r="3.5" fill="#1c4f8a"/>
+      <circle cx="580.0" cy="158.6" r="3.5" fill="#1c4f8a"/>
+      <text x="612" y="54.67" font-family="Georgia, serif" font-size="11" fill="#8a3324" text-anchor="end">oil shut in 57.5%</text>
+      <text x="612" y="192" font-family="Georgia, serif" font-size="11" fill="#1c4f8a" text-anchor="end">platforms evacuated 8.6%</text>
+      <text x="130.0" y="207" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">Thu 8 Oct</text>
+      <text x="280.0" y="207" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">Fri 9 Oct</text>
+      <text x="430.0" y="207" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">Sat 10 Oct</text>
+      <text x="580.0" y="207" font-family="Georgia, serif" font-size="11" fill="#6b6a66" text-anchor="middle">Sun 11 Oct</text>
+    </svg>
+    <figcaption>Gulf of Mexico, from BSEE&rsquo;s own daily activity statistics, each taken at 11am CDT. The solid red line is <b>oil production shut in</b> as a share of Gulf output; the dashed blue line is <b>manned platforms evacuated</b> as a share of the 371 in the Gulf. They moved together until Saturday and separated on Sunday: <b>platform evacuations fell by three quarters while shut-in production fell by a sixth.</b> Plotted to scale: <b>1.9px per percentage point from a zero base</b>, so each twenty-point gridline is 38px. Four days, four readings, no interpolation.</figcaption>
+  </figure>
+
+  <p class="sources"><b>Confidence:</b> Primary source for every figure, from four consecutive BSEE releases. The explanation for the gap is <b>not established</b> and is labelled as such. <b>Sources:</b> <a href="https://www.bsee.gov/newsroom/latest-news/statements-and-releases/press-releases/mma-monitors-gulf-response-isaias5">BSEE activity statistics, 11 October</a> &middot; <a href="https://www.bsee.gov/newsroom/latest-news/statements-and-releases/press-releases/mma-monitors-gulf-response-isaias4">10 October</a> &middot; continues <a href="2026-10-11.html#isaias">11 October</a></p>
+
+  <div class="fb">
+    <p><b>Fifth consecutive day on this storm, now entirely on the energy numbers.</b></p>
+    <label><input type="radio" name="fb-isaias" value="gap"> Keep going while the restart gap is unexplained</label>
+    <label><input type="radio" name="fb-isaias" value="half"> Stop once shut-ins fall below half</label>
+    <label><input type="radio" name="fb-isaias" value="now"> Enough &mdash; drop it unless a refinery reports damage</label>
+  </div>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Eight items that did not clear the lead bar. Four of them publish in tomorrow&rsquo;s <em>Federal Register</em> and were read this morning. Each expands in place; each ends with why it is below the line.</p>
+
+<details class="short" id="s-simon">
+  <summary><span class="chip">World economy</span> Hurricane Simon stayed just offshore, flooded Manzanillo, and never made the landfall that would have closed the port.</summary>
+  <div class="body">
+    <p>Simon battered Mexico&rsquo;s Pacific coast as a <b>Category 4</b> through Sunday with its eye remaining just offshore; the National Hurricane Center said it was not clear whether it would come ashore at all. At one point it was about <b>85 miles west-northwest of Manzanillo</b>. <b>28 municipalities across Jalisco and Colima</b> were placed under the highest cyclone alert and <b>93 more</b> on high alert, with forecasts of 10 to 20 inches of rain and up to 30 inches in parts of Michoacán, Colima and Jalisco.</p>
+    <p>Flooding reached homes in Manzanillo and the Navy pumped water out of some of them. <b>No death toll and no damage to the port itself has been reported</b> in anything reachable here.</p>
+    <p>Yesterday this was the answer to the negative check: the biggest story off the beat list, held below it because the American consequence ran through a Mexican container port and depended on a track that had not resolved. It resolved the way that kept it below the line. <b>Manzanillo is Mexico&rsquo;s largest Pacific container port and it is still working.</b></p>
+    <p><b>Below the line because</b> the contingent US consequence did not materialise, and a severe storm in another country with no American channel is not this brief&rsquo;s business. It leads if the port closes or if freight rates move.</p>
+    <p class="sources"><b>Confidence:</b> Independent corroboration; <b>no NHC advisory or Mexican civil protection bulletin was read</b> and no post-landfall assessment exists. <b>Sources:</b> <a href="https://www.cnn.com/2026/10/11/americas/mexico-hurricane-simon-intl-latam">CNN</a> &middot; <a href="https://www.pbs.org/newshour/world/hurricane-simon-hits-mexicos-pacific-coast">PBS NewsHour</a> &middot; continues <a href="2026-10-11.html#s-simon">11 October</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-luld">
+  <summary><span class="chip">US financials</span> The overnight circuit breaker gets its reference price moved fifteen minutes earlier, effective on publication.</summary>
+  <div class="body">
+    <p>The SEC has granted summary effectiveness to the <b>Twenty-Ninth Amendment to the LULD Plan</b> &mdash; the National Market System Plan to Address Extraordinary Market Volatility. Release <b>34-106624</b>, File No. 4-631, publishing tomorrow at <b>91 FR 65016</b>. The change is one number: the <b>Consolidated Price</b>, used with the listing market&rsquo;s official closing price to set Overnight Price Bands, moves from <b>7:45pm to 7:30pm Eastern</b>. Nothing else changes.</p>
+    <p>The reason is operational. Alternative trading systems run overnight sessions from <b>8pm to 9pm</b>, when the exchanges are closed, and a 7:45pm snapshot leaves fifteen minutes to compute and distribute bands. Moving it to 7:30 gives forty-five. Participants asked for summary effectiveness so the change was certain before the <b>December deadline</b> for systems work.</p>
+    <p>It is temporary: effective on publication <b>13 October</b>, for a period &ldquo;not to exceed February 10, 2027&rdquo;, with operative date expected <b>6 December</b>. Comments close <b>3 November</b>. The Commission identifies no risk.</p>
+    <p><b>Below the line because</b> it is a fifteen-minute timing change to a mechanism that has not yet been tested in anger. It is here because this brief opened the 23-hour trading thread on 8 October from nine exchange filings asking what happens when the market halts at 3am, and <b>this is the first piece of that machinery actually being set.</b> It leads at the first overnight halt.</p>
+    <p class="sources"><b>Confidence:</b> Primary source, full text read; <b>publishes tomorrow</b>. <b>Sources:</b> <a href="https://www.federalregister.gov/documents/full_text/text/2026/10/13/2026-20799.txt">SEC, Twenty-Ninth Amendment to the LULD Plan, full text</a>, 91 FR 65016 &middot; continues <a href="2026-10-08.html#also-today">8 October</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-epa">
+  <summary><span class="chip">Energy &amp; grid</span> EPA is delaying chemical spill response plans and deleting the words &ldquo;climate change&rdquo; and &ldquo;environmental justice&rdquo; from the rule.</summary>
+  <div class="body">
+    <p>EPA is finalising an extension of the compliance date for <b>Facility Response Plans</b> under the Clean Water Act &mdash; the plans that onshore non-transportation facilities must hold for a worst-case discharge of a CWA hazardous substance into navigable waters, adjoining shorelines or the exclusive economic zone. Docket EPA-HQ-OLEM-2021-0585; publishing tomorrow at <b>91 FR 64774</b>; <b>effective 14 December 2026</b>.</p>
+    <p>The stated reason for the delay is &ldquo;serious concerns that facilities may be unable to comply&rdquo; by the existing deadline. The same action also makes <b>language modifications to remove references to climate change and environmental justice</b> from the requirements, to align with <b>Executive Order 14148</b> of 20 January 2025.</p>
+    <p>Those are two different things in one rule. A compliance-date extension is a scheduling judgement about industry readiness and is routine. Striking the terms that tell a plan-writer which hazards to plan for &mdash; sea level, flooding, storm intensity at a facility&rsquo;s own location &mdash; changes what the plan has to contain, not when it is due.</p>
+    <p><b>Below the line because</b> it is a final rule with no comment period, so there is nothing to watch procedurally, and the abstract rather than the preamble was read here. It leads if a discharge occurs at a facility whose plan was written under the revised language.</p>
+    <p class="sources"><b>Confidence:</b> Primary source for the abstract, dates and docket, read from the <em>Federal Register</em> API; <b>the preamble was not read</b>, so the extent of the language changes is not established. <b>Sources:</b> <a href="https://www.federalregister.gov/api/v1/documents/2026-20849.json">EPA, Clean Water Act Hazardous Substance Facility Response Plans</a>, 91 FR 64774</p>
+  </div>
+</details>
+
+<details class="short" id="s-cookinlet">
+  <summary><span class="chip">Energy &amp; grid</span> The second Cook Inlet lease sale mandated by the One Big Beautiful Bill Act has its proposed terms out.</summary>
+  <div class="body">
+    <p>The Bureau of Ocean Energy Management has published the Proposed Notice of Sale for the <b>Cook Inlet Outer Continental Shelf Oil and Gas One Big Beautiful Bill Act Lease Sale 2</b> &mdash; docket BOEM-2026-0925, at <b>91 FR 64941</b> tomorrow, with comments closing <b>14 December 2026</b>. The notice sets out the proposed size, timing and location of the sale together with lease stipulations, terms and conditions, <b>minimum bids, royalty rates and rental rates</b>, all of which <b>Section 50102 of the OBBBA requires for this sale</b>.</p>
+    <p>The mechanism is the point. This is not a discretionary leasing decision Interior reached and could reverse; it is a sale Congress directed by statute, with the economic terms set in law rather than by the agency. Under Section 19 of the OCS Lands Act the Governor of Alaska and affected local governments review and comment on the proposed notice, which this publication starts.</p>
+    <p>Cook Inlet is a mature, shallow basin with a modest bidding history; the binding question is whether the statutory minimum bid and royalty make tracts worth taking at current prices.</p>
+    <p><b>Below the line because</b> a proposed notice of sale is a procedural step with a comment period, and the actual terms &mdash; the numbers that decide whether anyone bids &mdash; are in the notice document rather than the abstract read here. It leads at the final notice, or if the sale draws no bids.</p>
+    <p class="sources"><b>Confidence:</b> Primary source for the abstract, docket and dates; <b>the proposed notice itself was not read</b>, so no minimum bid or royalty rate is reported. <b>Sources:</b> <a href="https://www.federalregister.gov/api/v1/documents/2026-20892.json">BOEM, Proposed Notice of Sale, Cook Inlet OCS Lease Sale 2</a>, 91 FR 64941</p>
+  </div>
+</details>
+
+<details class="short" id="s-salt">
+  <summary><span class="chip">Science &amp; public health</span> After four years, the FDA will let salt substitutes into foods that legally required salt.</summary>
+  <div class="body">
+    <p>The FDA is issuing a final rule amending its <b>standard of identity</b> regulations &mdash; the rules that define what a food must contain to be sold under a given name &mdash; to permit <b>salt substitutes</b> in standardised foods where salt (sodium chloride) is currently a required or optional ingredient. Docket FDA-2022-N-2226; publishing tomorrow at <b>91 FR 65040</b>; <b>effective 14 December 2026</b>.</p>
+    <p>The stated purpose is sodium reduction: less sodium may reduce the risk of hypertension, a major risk factor for heart disease and stroke. The agency frames it as flexibility for industry to reformulate &ldquo;while maintaining the basic nature and essential characteristics of the foods&rdquo;.</p>
+    <p>The mechanism is more interesting than the health claim. <b>Standards of identity are among the oldest and most rigid parts of American food law</b>, written to stop adulteration by specifying recipes &mdash; and that rigidity is what has blocked reformulation: a manufacturer removing salt from a standardised food could not legally still call it that food. This rule removes the obstacle for one ingredient class. It requires nothing.</p>
+    <p><b>Below the line because</b> it is permissive rather than mandatory &mdash; nothing changes until manufacturers choose to reformulate &mdash; and the abstract rather than the rule text was read here. It leads if a major category actually reformulates, or if a petition follows for other ingredients.</p>
+    <p class="sources"><b>Confidence:</b> Primary source for the abstract, docket and dates, read from the <em>Federal Register</em> API; <b>the rule text was not read</b>, so the permitted substitutes and any labelling conditions are not established. <b>Sources:</b> <a href="https://www.federalregister.gov/api/v1/documents/2026-20848.json">FDA, Use of Salt Substitutes To Reduce the Sodium Content in Standardized Foods</a>, 91 FR 65040</p>
+  </div>
+</details>
+
+<details class="short" id="s-poland">
+  <summary><span class="chip">Geopolitics</span> Polish police are investigating an alleged plot to assassinate the prime minister and the defence minister.</summary>
+  <div class="body">
+    <p>Polish police are examining an alleged plot to kill Prime Minister <b>Donald Tusk</b> and the <b>defence minister</b>. Nothing beyond the existence of the investigation was reachable here: no suspects, no method, no attribution, no stage of planning, no charges.</p>
+    <p>The US channel is NATO&rsquo;s eastern flank and is real but indirect. Poland is the alliance&rsquo;s largest European defence spender by share of GDP, the logistical hub through which American and allied support for Ukraine moves, and the country that has reported the most Russian hybrid activity &mdash; sabotage, arson, drone incursions &mdash; of any member state. An attempt on its head of government and its defence minister together would not be an ordinary criminal matter.</p>
+    <p>None of which is established. <b>An allegation under investigation is not a plot</b>, and in a country with Poland&rsquo;s politics an accusation of this kind carries a domestic charge of its own.</p>
+    <p><b>Below the line because</b> a police investigation with no public detail cannot be reported beyond its own existence, and this brief will not build a NATO story on a headline. It leads on charges, on an attribution, or on a government statement.</p>
+    <p class="sources"><b>Confidence:</b> <b>Unconfirmed.</b> Index entry only; no Polish source and no article read. <b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/10/11/poland-police-probe-alleged-plot-to-assassinate-pm-tusk-defence-minister">Al Jazeera news index</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-yandex">
+  <summary><span class="chip">AI &amp; tech industry</span> A Ukrainian drone shut down a Yandex data centre, which is a different kind of target from a refinery.</summary>
+  <div class="body">
+    <p><b>Yandex</b> says a data centre at <b>Vladimir</b>, about 110 miles east of Moscow, has been shut down after a drone attack. The company is Russia&rsquo;s dominant search, mapping, ride-hailing and cloud provider, and the admission is unusual: Russian firms rarely confirm that a strike took a facility offline.</p>
+    <p>The timing is what makes it worth recording. It lands in the same twenty-four hours as the announced <b>energy ceasefire</b>, which by the administration&rsquo;s own account covers oil refineries and might later extend to power plants and the grid. <b>A data centre is none of those.</b> Whatever is or is not agreed about energy infrastructure, Russian civilian digital infrastructure sits outside the stated scope.</p>
+    <p>There is a second-order point for the reader. The damage from a strike on a data centre is not thermal but computational &mdash; capacity, latency, lost state &mdash; and it is measured in services degraded rather than barrels lost. Neither side publishes that measure, which makes this class of attack very hard to assess and correspondingly attractive.</p>
+    <p><b>Below the line because</b> nothing is established beyond the company&rsquo;s own statement: no damage assessment, no attribution beyond the obvious, no service-impact figures. It leads if a ceasefire text is published and digital infrastructure is addressed in it either way.</p>
+    <p class="sources"><b>Confidence:</b> Single-sourced to Yandex&rsquo;s own statement, reported; <b>no article was read in full</b>. <b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/10/11/russias-yandex-says-data-centre-in-vladimir-shut-down-after-drone-attack">Al Jazeera</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-stb">
+  <summary><span class="chip">US financials</span> Four of the big railroads were found revenue adequate for 2025, which is the finding that governs how much they can charge.</summary>
+  <div class="body">
+    <p>The Surface Transportation Board served a decision on <b>8 October</b> announcing the <b>2025 revenue adequacy determinations</b> for the nation&rsquo;s Class I railroads. Four were found revenue adequate: <b>BNSF, CSX, Norfolk Southern and Union Pacific</b>. Docket EP 552 (Sub-No. 30); the notice publishes tomorrow at <b>91 FR 65025</b>.</p>
+    <p>Revenue adequacy is not a formality. A railroad is revenue adequate when its return on investment at least equals the industry cost of capital, and the finding is the statutory hinge in rate regulation: it bears on what a shipper must show to challenge a rate as unreasonable, and on how the Board treats differential pricing on captive traffic. <b>Four of the large US railroads clearing that bar in the same year is the condition under which shipper complaints become most arguable.</b></p>
+    <p>The determination is backward-looking and annual, and the Board&rsquo;s methodology has been contested for years by both shippers and carriers for opposite reasons.</p>
+    <p><b>Below the line because</b> it is an annual accounting determination with no immediate operative effect, and the decision itself &mdash; the one with the figures and the cost-of-capital calculation &mdash; was not read here, only the notice abstract. It leads at the first rate case that turns on it.</p>
+    <p class="sources"><b>Confidence:</b> Primary source for the abstract and the names; <b>the 8 October decision was not read</b>, so no return figures or cost-of-capital number is reported. <b>Sources:</b> <a href="https://www.federalregister.gov/api/v1/documents/2026-20878.json">STB, Railroad Revenue Adequacy&mdash;2025 Determination</a>, 91 FR 65025</p>
+  </div>
+</details>
+
+<div class="fb">
+  <p><b>One question about this tier as a whole: were the right things ranked below the line?</b></p>
+  <label><input type="radio" name="fb-tier" value="right"> Right &mdash; nothing here should have led</label>
+  <label><input type="radio" name="fb-tier" value="promote-epa"> The EPA language deletion should have led</label>
+  <label><input type="radio" name="fb-tier" value="promote-stb"> The railroad revenue adequacy finding should have led</label>
+  <label><input type="radio" name="fb-tier" value="fewer"> Too many regulatory items &mdash; this tier is turning into a Federal Register digest</label>
+</div>
+
+<footer>
+  <h2 class="section">Sources checked this run</h2>
+  <p><b>Watchlist-pointed (9):</b> the <a href="https://www.federalregister.gov/">Federal Register</a> documents API &mdash; <b>all three standing calls for today returned a count of zero</b>, and the same three calls for <b>13 October</b> returned <b>24 rules and proposed rules, 77 notices and 2 presidential documents</b>, with <b>four full-text reads</b> (the CFTC crypto notice, the CBP rail proposal, the deep seabed mining notice and the LULD amendment) and six abstracts &middot; <a href="https://www.bls.gov/news.release/empsit.nr0.htm">BLS Employment Situation</a> &middot; <a href="https://gasprices.aaa.com/">AAA Fuel Prices</a> &middot; <a href="https://www.bsee.gov/newsroom/latest-news/statements-and-releases/press-releases/mma-monitors-gulf-response-isaias5">BSEE activity statistics</a> &middot; <a href="https://text.npr.org/">text.npr.org</a> &middot; <a href="https://www.aljazeera.com/news/">Al Jazeera news index</a> &middot; and the archive, for the CFTC thread, the 23-hour trading thread, the pump chain and the Riyadh sequence.</p>
+  <p><b>Outside the watchlist (9):</b> <a href="https://www.cnn.com/2026/10/11/politics/trump-ukraine-russia-energy-ceasefire">CNN</a> &middot; <a href="https://www.axios.com/2026/10/11/russia-ukraine-oil-energy-ceasefire-trump-putin-zelensky">Axios</a>, which carried the refinery-only scope and the Russian non-confirmation that the announcement did not &middot; <a href="https://www.cbsnews.com/news/zelenskyy-trump-new-ukrainian-president/">CBS News</a> &middot; <a href="https://oilprice.com/Latest-Energy-News/World-News/Trumps-Russia-Ukraine-Energy-Ceasefire-May-Only-Cover-Oil-Refineries.html">OilPrice</a> &middot; <a href="https://www.nbcnews.com/world/middle-east/saudi-airport-attack-trump-us-join-fight-houthis-rcna602744">NBC News</a> &middot; <a href="https://www.jpost.com/middle-east/article-911343">Jerusalem Post</a> &middot; <a href="https://gulfbusiness.com/en/2026/saudi-arabia/riyadh-airport-hit-again-fire-terminal-4-missile-attack/">Gulf Business</a>, a trade title new to this brief and the fullest account of the Terminal 4 strike &middot; <a href="https://www.pbs.org/newshour/world/hurricane-simon-hits-mexicos-pacific-coast">PBS NewsHour</a> &middot; <a href="https://www.mynspr.org/npr-news/2026-10-11/its-taking-longer-to-find-a-new-job-after-losing-one">NPR via Northern Public Radio</a>.</p>
+  <p><b>The negative check:</b> the biggest story today not on the beat list is the <b>migrant boat that capsized off Djibouti with at least 139 dead and 84 missing</b>. It is not in this issue at all. There is no US channel for it that this brief can honestly state, and the altitude bar in its configuration says a foreign story without one does not run. <b>That rule produces the right answer most days and an uncomfortable one here, so the omission is recorded rather than hidden.</b> Also surfaced and held: Pakistan imposing emergency rule in Khyber Pakhtunkhwa; the release of India&rsquo;s detained protest leaders after thousands were held in Delhi; Pope Leo XIV&rsquo;s lung surgery this week; Musk&rsquo;s Starlink fight with Ambani in India; and the Kennedy Center appointment.</p>
+  <p><b>Could not reach:</b> <b>Treasury&rsquo;s Daily Par Yield Curve</b> &mdash; the bond market is shut for Columbus Day, so there is no Monday print and yesterday&rsquo;s lead has no follow-up &middot; any <b>Kremlin statement</b> on the announced ceasefire &middot; a <b>Sunday or Monday casualty count</b> for the Terminal 4 strike, which Saudi authorities have not published &middot; the <b>Eco Minerals application</b> itself, so the minerals and acreage are unknown &middot; the preambles of the EPA, FDA, BOEM and STB items, which were read as abstracts only &middot; <b>war-risk premiums and Hormuz transit counts</b>, a twenty-fourth consecutive day.</p>
+  <p><b>The method note, because it is the most useful thing learned this week.</b> Today is a federal holiday and the <em>Federal Register</em> published nothing &mdash; verified, not assumed, by running the three standing calls and getting <code>count: 0</code> three times. <b>But the same API already holds tomorrow&rsquo;s documents, in full text.</b> That turned the thinnest possible document day into four primary-source leads and four primary-source shorts. Two cautions, both recorded: an unpublished document can in principle be withdrawn or corrected before publication, and everything here is labelled with its scheduled date; and reading tomorrow early is a one-day loan, not a free lunch &mdash; tomorrow&rsquo;s issue will have to look at Wednesday&rsquo;s list or repeat itself.</p>
+  <p><b>And a correction to this brief&rsquo;s own expectations, not to a fact.</b> On 9 October this brief wrote that the CFTC&rsquo;s pending rulemakings were &ldquo;now being written by a one-member commission&rdquo;. That was offered as a characterisation. Three days later the voting summary of a thirty-page crypto framework reads: Chairman Selig in the affirmative, no Commissioner in the negative. <b>When a brief&rsquo;s characterisation turns out to be a literal description, that is worth saying out loud rather than quietly collecting as a win.</b></p>
+
+  <h2 class="section">Dormant threads</h2>
+  <p class="secnote">Kept on the watchlist, dropped from the body, picked up the moment a source check touches one.</p>
+  <ul class="dorm">
+    <li><b>Prediction markets &amp; the CFTC</b> &mdash; <b>run today as the lead</b>, on crypto rather than prediction markets, but on the same commission and the same quorum.</li>
+    <li><b>23-hour trading &amp; the overnight circuit breaker</b> &mdash; <b>woken</b> and in the short tier: the LULD plan&rsquo;s overnight reference price moves to 7:30pm Eastern, summarily effective on publication.</li>
+    <li><b>Long-end Treasury yields</b> &mdash; opened yesterday, and <b>no print today</b>: the bond market is closed for Columbus Day. Next reading Tuesday.</li>
+    <li><b>Bab el-Mandeb &amp; the Houthi coastal advance</b> &mdash; run today as the third story, fourth strike on the same airport.</li>
+    <li><b>Hormuz closure &amp; EU energy response</b> &mdash; no development reachable today; the IRGC&rsquo;s administration claim from yesterday stands unanswered.</li>
+    <li><b>Tampa Bay dengue</b> &mdash; the county emergencies expired 8 October and <b>no renewal decision has been reported for a fifth day</b>. Still owed, and now the longest-running unresolved item in this file.</li>
+    <li><b>Lab safety disclosures</b> &middot; <b>Lethal injection method litigation</b> &middot; <b>Federal statistical integrity</b> &middot; <b>Futenma</b> &middot; <b>Cornell</b> &middot; <b>Gulf states &amp; Article 51</b> &middot; <b>Indonesia free-meals programme</b> &middot; <b>Anak Krakatau</b> &middot; <b>Israel&ndash;Lebanon June framework</b> &middot; <b>EU&ndash;Greenland partnership</b> &middot; <b>Saxony-Anhalt government formation</b> &mdash; untouched.</li>
+  </ul>
+
+  <p style="margin-top:1.4rem">No open <code>brief-feedback</code> issues were waiting this morning. Dates ahead: <b>Tuesday 13 October</b>, James Robertson&rsquo;s scheduled execution in Florida, and everything in this issue marked for publication; <b>18 October</b>, the Graham Act implementation deadline; <b>20 October</b>, United Airlines results; <b>25 October</b>, the Brazilian runoff; <b>1 November</b>, the clocks go back unless the Senate acts; <b>2 November</b>, census comments, the Federal Reserve stress-test rule and REAP comments; <b>3 November</b>, LULD amendment comments; <b>4 November</b>, the Treasury quarterly refunding, the FinCEN A7 comment close, FAA Part 450 comments, the NRC adverse-comment deadline, HHS child-welfare comments and both insider-lending comment files; <b>5 November</b>, EPA PM2.5 comments; <b>9 November</b>, OPT fee comments, the butalbital rule and the raisin order; <b>12 November</b>, Colorado Class VI primacy takes effect, and seabed-hearing registration closes; <b>16 November</b>, the deep seabed mining public hearing; <b>23 November</b>, streaming-fraud comments; <b>around 28 November</b>, the EPA pest framework and the Super Intelligence legislative proposal; <b>30 November</b>, the GLOBE model; <b>1 December</b>, Big Cypress comments; <b>3 December</b>, the Hasan execution; <b>4 December</b>, two SEC comment files; <b>6 December</b>, the LULD overnight change becomes operative; <b>7 December</b>, Transparency in Coverage, two more SEC files, both hours-of-service pilots, the Trump Account comments and the de minimis comments; <b>14 December</b>, the CFTC crypto comments, the CBP rail comments, the deep seabed mining comments, the Cook Inlet comments, and the EPA and FDA rules take effect; <b>30 December</b>, Coast Guard mariner-training comments; <b>31 December</b>, the diesel tax deferral ends; <b>1 January 2027</b>, the EU ban on long-term Russian LNG contracts; <b>28 January</b>, Rush&rsquo;s sentencing; <b>10 February 2027</b>, the LULD amendment&rsquo;s temporary effectiveness lapses; <b>7 April 2027</b>, the Russian diesel and ICC wind-down licences expire; <b>1 July 2027</b>, statutory termination of de minimis.</p>
+  <p><a href="../">Archive</a> &middot; Previous: <a href="2026-10-11.html">11 October</a></p>
+
+  <div class="submit">
+    <button type="button" id="send-feedback">Send feedback as a GitHub issue</button>
+  </div>
+</footer>
+
+</div>
+<script>
+(function () {
+  var owner = "historiocity", repo = "News-Agent";
+  document.getElementById("send-feedback").addEventListener("click", function () {
+    var lines = ["Feedback on Issue No. 38 (2026-10-12)", ""];
+    document.querySelectorAll(".fb input[type=radio]:checked").forEach(function (el) {
+      lines.push(el.name + ": " + el.value);
+    });
+    if (lines.length === 2) lines.push("(no radio answers selected)");
+    lines.push("", "Anything else:", "");
+    var url = "https://github.com/" + owner + "/" + repo + "/issues/new"
+      + "?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("brief-feedback: 2026-10-12")
+      + "&body=" + encodeURIComponent(lines.join("\n"));
+    window.open(url, "_blank");
+  });
+})();
+</script>
+</body>
+</html>
