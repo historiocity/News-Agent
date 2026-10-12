@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Monday, 12 October 2026 (Grok edition)</title>
+<style>
+:root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+@media (prefers-color-scheme: dark) {
+:root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+.wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+.kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+.sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+.prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+nav ol { margin:0; padding-left:1.2rem; }
+nav li { margin:.25rem 0; }
+nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+a { color:var(--link); }
+article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+.secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+.meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+.chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+.chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+.chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+.sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+.div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+.div p { margin:.4rem 0; }
+.div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+.corr { background:var(--box); border-left:4px solid var(--accent); padding:.8rem 1rem; margin:0 0 1.6rem; font-size:.95rem; }
+.corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+.corr p { margin:.45rem 0; }
+details { margin-top:.8rem; }
+details summary { cursor:pointer; color:var(--link); }
+.exp { margin-top:.6rem; }
+.also-list { margin:0; }
+.also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+.also-list details:first-of-type { border-top:1px solid var(--rule); }
+.also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+.also-list .exp { font-size:.94rem; padding-left:.2rem; }
+footer { color:var(--muted); font-size:.88rem; }
+.fb { margin-top:1rem; font-size:.9rem; }
+.fb p { margin:.6rem 0 .2rem; }
+.fb label { display:block; margin:.15rem 0; }
+.submit { margin-top:2rem; }
+button { font:inherit; padding:.45rem .8rem; }
+ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<p class="kicker">The Brief · Issue No. 38-grok · Monday, 12 October 2026 · Morning / Grok edition</p>
+<h1>The President declares a Ukraine “energy ceasefire” Moscow won’t confirm, after threatening Kyiv’s Patriot pipeline; Riyadh is hit again and its Patriots are under review; Broadcom and Intel say AI’s limit is now capital</h1>
+<p class="sub">Nine stories at length, a Florida section, and 8 items in brief. This is the independent Grok gather for the morning run. It does not overwrite Claude/Action Issue&nbsp;38 (<a href="2026-10-12.html">2026-10-12</a>). Earlier editions are linked for accountability only: <a href="2026-10-11-grok.html">11&nbsp;Oct Grok</a> · <a href="2026-10-10-grok.html">10&nbsp;Oct Grok</a> · framework <a href="2026-09-10b.html">2026-09-10b</a>.</p>
+<p class="prov">60 sources checked, 49 of them outside the watchlist’s own data feeds. Outside: BBC world; BBC US; BBC business; BBC tech; NPR news; NPR politics; Al Jazeera; Guardian US; Guardian world; CNBC top; CNBC tech; CNBC economy; CNBC finance (empty); TechCrunch; The Verge; Ars Technica; Wired; Axios (feed; articles blocked); Politico; Semafor; NYT home (teasers); NYT business; NYT tech; NYT politics; WSJ markets (teasers); WSJ world (teasers); MarketWatch; Roll Call; SCOTUSblog; Breaking Defense; DefenseScoop/Nextgov/FNN/404 Media/ProPublica/STAT (no items in window); Google News top, nation, world, business, tech and science; AP (via Google News and syndication); Reuters (via Google News and syndication); CNN; Kyiv Independent; Telegraph (via summaries); AI Weekly; Pathfounders; Politico 24 Sep archive; FOX 13; City of Tampa; St Pete Catalyst; Tampa Bay Times (headlines); Google News Florida search; Google News AI search; Google News bank search; etf.net/Econoday; web search for the UK testing story. Watchlist feeds and data: Treasury par-yield CSV; AAA national; AAA Florida; NHC Atlantic outlook (no cyclones); Federal Reserve press feed (nothing new since 9 Oct); SEC press feed (empty); BLS CPI schedule; JPMorgan IR; The Hill (feed; articles blocked); X news searches (3 returned, 4 rate-limited); Google News UAP search. It is Columbus Day, a federal holiday, so there is no Federal Register edition, the bond market is shut and no Treasury curve prints today. No brief-feedback issues are open; the last closed one is from 24&nbsp;Sep. The negative check reshaped the order. The UK testing freeze (lead&nbsp;5), the cell-site-simulator warrants (lead&nbsp;7), the IMF labour warning (lead&nbsp;8), the maternity-ward count (lead&nbsp;9) and the Saudi Patriot probe inside lead&nbsp;3 all came from sources outside the watchlist. Four of the nine leads are not watchlist threads.</p>
+</header>
+
+<nav>
+<ol>
+<li><a href="#s1">The President declares a Russia–Ukraine “energy ceasefire” that Moscow will not confirm, after Washington threatened to cut Kyiv’s intelligence and Patriot pipeline unless it stopped hitting Russian refineries</a></li>
+<li><a href="#s2">The oil chain on Monday: Brent gives back its ceasefire dip to sit near $105.70, two more tankers are hit near Hormuz, traders say the buffers are gone, and diesel slips a second day to $6.2665</a></li>
+<li><a href="#s3">Riyadh’s airport is hit a fourth time in five days and stays shut; a Saudi probe says some Houthi missiles manoeuvred past the Patriot battery, and the big oil CEOs drop out of the kingdom’s energy congress</a></li>
+<li><a href="#s4">Broadcom’s and Intel’s chief executives say the AI build’s binding constraint is now capital, not chips or power, as the long end sits above 5.2% and the big banks report into Wednesday’s CPI</a></li>
+<li><a href="#s5">The White House lifts a 17-day freeze on Britain’s pre-release testing of US frontier models; Anthropic had kept Claude Mythos 5.1 from the UK’s institute while it lasted</a></li>
+<li><a href="#s6">A federal judge orders DHS to pull the Trump-featuring TV ads paid for with $20m of immigration-enforcement money, finding the challengers likely to win; the government did not defend the ads on the merits</a></li>
+<li><a href="#s7">Court filings show federal agents got warrants to track the student who produced Don Lemon’s coverage of the St. Paul church protest with a fake cell tower, and sought phone surveillance on two more journalists</a></li>
+<li><a href="#s8">The IMF says AI investment is holding world growth near 3% through an energy shock while hitting new graduates first; Singapore’s president says US demand for graduates has fallen for the first time in a century</a></li>
+<li><a href="#s9">An advocacy group counts 52 hospital maternity wards closed since the 2025 Medicaid law was announced and eight more on notice, before most of its cuts take effect in January</a></li>
+<li><a href="#s10">Florida &amp; Tampa Bay: Hillsborough’s locally acquired dengue count reaches 259, nearly nine in ten of Florida’s cases, and Seminole pulls Amendment&nbsp;3 links after a state lawmaker threatens to sue</a></li>
+</ol>
+<p class="also"><a href="#also">Also today (8)</a>. Ranked below the line; each one opens.</p>
+</nav>
+
+<div class="corr" id="acct">
+<p class="t">Accountability: prior Grok frames</p>
+<p><strong>Riyadh toll, correction:</strong> Sunday’s lead&nbsp;1 said Saturday’s strike killed 12. An Indian national has since died of injuries, so the toll is 13. Sunday’s new strike killed one more person (lead&nbsp;3).</p>
+<p><strong>EU sanctions:</strong> Sunday said the EU would approve its largest Russia package on Monday. It did, with almost 1,600 listings (lead&nbsp;1).</p>
+<p><strong>Taxpayer-funded ads:</strong> On 8&nbsp;Oct this brief left out the DNC suit as campaign litigation. A federal judge has now found the spending likely unlawful, so that call was wrong on consequence (lead&nbsp;6).</p>
+<p><strong>UK model-testing freeze:</strong> This brief did not report the 24&nbsp;Sep White House hold when it happened. It is reported now that the hold has been reversed (lead&nbsp;5).</p>
+<p><strong>Diesel:</strong> Sunday read Saturday’s rise as noise. Monday’s second straight fall, to $6.2665, is consistent with that. The trend call still waits for the EIA weekly print (lead&nbsp;2).</p>
+</div>
+
+<article id="s1">
+<h2>The President declares a Russia–Ukraine “energy ceasefire” that Moscow will not confirm, after Washington threatened to cut Kyiv’s intelligence and Patriot pipeline unless it stopped hitting Russian refineries</h2>
+<p class="meta">
+<span class="chip">US policy</span>
+<span class="chip">Geopolitics</span>
+<span class="chip">Energy</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The announcement.</strong> “Effective immediately, there is an ENERGY CEASEFIRE in the War between Russia and Ukraine. Both parties have agreed. Do not break it!” the President posted on Sunday, with no details (WSJ, NPR). Zelensky told Axios it “was news for me” (via Semafor). He said Ukraine would stop striking Russian energy sites if Russia did the same. Hours later, his office confirmed that a Russian strike hit a combined heat and power plant in Kharkiv <em>after</em> the post (NPR, Reuters). On Monday the Kremlin’s Dmitry Peskov would only say that “contacts continue.” He rejected Zelensky’s offer of a 60-day total ceasefire to allow Ukrainian elections, offering instead a truce on election day only (Guardian live, citing Peskov). NPR notes the President made a similar claim on 14&nbsp;September, and nothing came of it.</p>
+<p><strong>The leverage behind it.</strong> Over the weekend the State Department and the Pentagon warned Kyiv and European capitals that the US could suspend intelligence sharing and stop European purchases of US weapons for Ukraine under the PURL mechanism unless Ukraine halted deep strikes on Russian energy. That included messages from the US military directly to Ukrainian commanders, two European officials told CNN; the FT reported it first, and Reuters confirmed through its own source. CNN says a PURL halt would hit <strong>Patriot interceptors</strong> hardest, and Ukraine is already short of them. NATO had not seen a PURL change as of the weekend. The White House did not comment.</p>
+<p><strong>The diesel deal it serves.</strong> The Friday deal has Russia releasing 300,000 tonnes of diesel now, 500,000 in November, a million after that, and then three million more “within a short period.” Russia’s Novak confirmed the figures to Tass (BBC). Treasury’s licence suspends sanctions on Russian diesel until 7&nbsp;April. Seven senators, four Republicans (Collins, Murkowski, Tillis, Curtis) and three Democrats (Shaheen, Blumenthal, Wyden), said the deal breaks the 2022 import ban and asked the President to “reverse course” (BBC; an AP headline says six, and the BBC’s name list is used here). Bessent says it runs through existing legal channels. Massie backs it.</p>
+<p><strong>Europe went the other way on Monday.</strong> The EU added almost 1,600 people and entities to its Russia sanctions list, “the single largest expansion” since the invasion, according to Kaja Kallas, with more than half tied to ballistic-missile production (Guardian live). This brief said on Sunday that the package was due Monday, and it passed.</p>
+<p><strong>Why it matters here.</strong> The US is now using its arms and intelligence pipeline to Ukraine to protect a fuel deal aimed at American pump prices before 3&nbsp;November. The same Patriot interceptors are what Saudi Arabia says failed at Riyadh (lead&nbsp;3). <strong>What to watch:</strong> whether Moscow confirms anything; whether PURL deliveries actually pause; and the first tanker of Russian diesel, which nobody has yet tracked.</p>
+<p class="sources">Sources:
+<a href="https://www.wsj.com/world/trump-declares-a-russia-ukraine-energy-ceasefire-but-moscow-hasnt-confirmed-f57414e9">WSJ (lede read)</a> ·
+<a href="https://www.npr.org/2026/10/12/nx-s1-5998614/trump-russia-ukraine-energy-ceasefire">NPR/AP (read)</a> ·
+<a href="https://www.cnn.com/2026/10/11/politics/ukraine">CNN (read)</a> ·
+<a href="https://kyivindependent.com/us-threatens-to-halt-weapons-procurement-for-ukraine-over-strikes-on-russian-energy-sites-ft-reports/">Kyiv Independent, citing FT (summary)</a> ·
+<a href="https://www.semafor.com/article/10/11/2026/us-threatens-to-halt-ukraine-arms">Semafor (read)</a> ·
+<a href="https://www.bbc.co.uk/news/articles/cjn5v21py07vo">BBC (read)</a> ·
+<a href="https://www.theguardian.com/world/live/2026/oct/12/ukraine-russia-trump-energy-ceasefire-nato-zelenskyy-nobel-latest-news-updates">Guardian live (read)</a>
+</p>
+<div class="fb">
+<p>The Ukraine pressure campaign and the diesel deal: one story or two?</p>
+<label><input type="radio" name="fb-ceasefire" value="one"> One, as here</label>
+<label><input type="radio" name="fb-ceasefire" value="two"> Split them</label>
+<label><input type="radio" name="fb-ceasefire" value="less"> Less Ukraine</label>
+</div>
+</article>
+
+<article id="s2">
+<h2>The oil chain on Monday: Brent gives back its ceasefire dip to sit near $105.70, two more tankers are hit near Hormuz, traders say the buffers are gone, and diesel slips a second day to $6.2665</h2>
+<p class="meta">
+<span class="chip">Energy</span>
+<span class="chip">Macro</span>
+<span class="chip">Geopolitics</span>
+</p>
+<p><strong>Crude.</strong> Both benchmarks fell about 1.5% in early Asian trade on the ceasefire post and then reversed. December Brent was up 0.92% at <strong>$105.68</strong> and November WTI up 0.95% at <strong>$92.72</strong> (CNBC, early Monday). Analysts gave the Russian diesel little weight. Neil Atkinson, formerly head of the IEA’s oil division, put the first 300,000 tonnes at about <strong>70,000 barrels a day over a month</strong>, against US diesel use of 3.7m b/d and commercial stocks of 105m barrels. “Where the volumes … come from is a mystery,” he said. Lombard Odier noted that “announced shipments are not equivalent to delivered supply” (CNBC). Atkinson says the G7’s product release (he puts it at 50m barrels, mainly diesel) made “almost zero difference.” This brief reported the overall G7/IEA release as 100m barrels on 3&nbsp;Oct, and the two figures have not been reconciled here.</p>
+<p><strong>The chokepoint.</strong> A drone struck the tanker <strong>MT Petro Dolphin</strong> near the Strait of Hormuz on Sunday, and two of its 11 Indian crew are missing. A second tanker, the Marshall Islands-flagged <strong>MT Valthera</strong>, was hit by an unidentified projectile and caught fire; its 11 Indian crew are safe (India’s foreign ministry, via AP). Iran says it is still reviewing the US response to its proposal to reopen the strait and will answer through intermediaries (Reuters, via CNBC). A WSJ headline says tanker rates are surging on the attacks and longer voyages (headline only).</p>
+<p><strong>The buffers.</strong> Goldman raised its year-end oil forecast over the weekend, citing “low stocks.” Aramco’s chief executive called stockpiles “scarily thin,” and Vitol’s said “there aren’t any more inventories to drain” (Semafor). That is the context for leads&nbsp;1 and&nbsp;3. A fuel deal of uncertain size, a Red Sea route under Houthi threat and a Hormuz still under attack are all pulling on the same thin stock.</p>
+<p><strong>The pump (AAA, 12&nbsp;Oct).</strong> Diesel <strong>$6.2665</strong>, down 1.06¢ on the day and 5.42¢ on the week but still 10.6¢ above a month ago. Regular is $4.3556, down 0.29¢. In Florida, diesel is $5.8630 and regular $4.0682. Diesel has fallen on both days since Saturday’s one-day rise. Under this brief’s 22&nbsp;Sep rule, the daily card gives the level and the EIA weekly survey gives the direction. The EIA series was not checked this morning, and Monday is a federal holiday.</p>
+<p><strong>What to watch:</strong> Brent’s close once New York trades; whether the Hormuz proposal reply comes this week; the next EIA weekly diesel print.</p>
+<p class="sources">Sources:
+<a href="https://www.cnbc.com/2026/10/12/oil-prics-today-iran-us-saudi-arabia-crude-.html">CNBC oil (read)</a> ·
+<a href="https://www.cnbc.com/2026/10/12/russia-ukraine-energy-ceasefire-diesel-prices.html">CNBC diesel analysis (read)</a> ·
+<a href="https://www.wsls.com/news/world/2026/10/12/airstrikes-on-yemens-capital-drone-hits-vessel-in-strait-of-hormuz-and-other-mideast-developments/">AP Mideast roundup (read, syndicated)</a> ·
+<a href="https://www.cnbc.com/2026/10/12/us-iran-war-trump-hormuz-saudi.html">CNBC, citing Reuters (read)</a> ·
+<a href="https://www.semafor.com/article/10/12/2026/global-oil-buffers-weaken-as-global-conflicts-put-pressure-on-energy-supply-chains">Semafor (read)</a> ·
+<a href="https://www.wsj.com/finance/commodities-futures/oil-falls-on-hopes-that-russian-diesel-can-ease-global-fuel-shortages-db1651af">WSJ (headline)</a> ·
+<a href="https://gasprices.aaa.com/">AAA national and Florida (data)</a>
+</p>
+<div class="fb">
+<p>Was the analysts’ sizing of the Russian diesel useful?</p>
+<label><input type="radio" name="fb-oilchain" value="yes"> Yes, the numbers help</label>
+<label><input type="radio" name="fb-oilchain" value="short"> Shorter</label>
+<label><input type="radio" name="fb-oilchain" value="chart"> Add a chart</label>
+</div>
+</article>
+
+<article id="s3">
+<h2>Riyadh’s airport is hit a fourth time in five days and stays shut; a Saudi probe says some Houthi missiles manoeuvred past the Patriot battery, and the big oil CEOs drop out of the kingdom’s energy congress</h2>
+<p class="meta">
+<span class="chip">Geopolitics</span>
+<span class="chip">Defense</span>
+<span class="chip">Energy</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The strikes.</strong> A projectile hit terminal&nbsp;4 at King Khalid International on Sunday evening, starting a fire. It killed a Pakistani resident and injured 11, and a cruise missile was intercepted nearby (GACA via Al Jazeera, Guardian). India says one of its citizens has died of injuries from Saturday’s strike, so <strong>Saturday’s toll is now 13</strong>, not the 12 this brief reported on Sunday. The airport has been hit four times in five days. It is closed with no reopening date, Dammam’s airport was also attacked, and Riyadh schools are online until Thursday. Firms in the King Abdullah Financial District have sent staff home to work (AP).</p>
+<p><strong>The air-defence question.</strong> Saudi authorities have opened an investigation into why the defences failed. Two regional officials told AP that an initial probe found the Houthis first sent drones to clear the way for a mix of cruise and ballistic missiles, and that <strong>“some of the missiles can maneuver and escape the interceptors fired by the Patriot battery.”</strong> The probe is also asking why there was no early warning for weapons that flew more than 1,000&nbsp;km. Saudi Arabia has reportedly asked the US for “urgent defense support” (Semafor, citing reports). About 200 US military advisers are already in the kingdom helping the campaign (Guardian). The President says the US “may” join, but there was no sign on Sunday that he had made the promised call to the crown prince (Al Jazeera).</p>
+<p><strong>The US industrial angle.</strong> On Monday Anduril unveiled <strong>Steelfin</strong>, a modular interceptor it says will cost about a third of the Patriot’s PAC-3 MSE and will fit Patriot launchers. Full-rate production is targeted for late 2028 or early 2029 (Breaking Defense). The Army has also picked Lockheed Martin and one undisclosed company for a previously unknown Future Interceptor programme. The Patriot interceptor is what Saudi Arabia says failed, what Ukraine is short of (lead&nbsp;1) and what the US is now rationing, so its supply has become a policy question on two fronts.</p>
+<p><strong>The money.</strong> The chief executives of ExxonMobil, TotalEnergies, Shell, Chevron and BP were dropped from Monday’s agenda for the WPC Energy Congress, which runs 10&nbsp;km from the airport. BP blamed “travel disruption” (Reuters). Riyadh also hosts the Future Investment Initiative later this month. Iran offered to mediate between the Saudis and the Houthis, while the UAE’s Anwar Gargash called for “joint Gulf action” against Iran and its proxies (AP).</p>
+<p><strong>What to watch:</strong> a US decision on Yemen, which the Houthis say would bring them back to shipping in the Bab el-Mandeb; whether the Saudi probe’s Patriot finding becomes official; FII attendance.</p>
+<p class="sources">Sources:
+<a href="https://www.aljazeera.com/news/2026/10/12/saudi-arabia-says-1-dead-11-injured-in-latest-attack-on-riyadh-airport">Al Jazeera (read)</a> ·
+<a href="https://www.theguardian.com/world/2026/oct/11/saudi-coalition-retaliation-houthi-attack-riyadh-airport">Guardian (read)</a> ·
+<a href="https://www.wsls.com/news/world/2026/10/12/airstrikes-on-yemens-capital-drone-hits-vessel-in-strait-of-hormuz-and-other-mideast-developments/">AP Mideast roundup (read, syndicated)</a> ·
+<a href="https://www.semafor.com/article/10/12/2026/riyadh-hit-by-deadly-houthi-attacks-again-over-the-weekend">Semafor (read)</a> ·
+<a href="https://breakingdefense.com/2026/10/anduril-unveils-steelfin-interceptor-as-cheaper-option-to-pac-3-missiles/">Breaking Defense (read)</a> ·
+<a href="https://www.al-monitor.com/originals/2026/10/top-oil-executives-dropped-event-schedule-after-riyadh-attacks">Reuters via Al-Monitor (summary)</a>
+</p>
+<div class="fb">
+<p>Should interceptor supply become a standing thread?</p>
+<label><input type="radio" name="fb-patriot" value="yes"> Yes</label>
+<label><input type="radio" name="fb-patriot" value="no"> No, keep it inside the war leads</label>
+</div>
+</article>
+
+<article id="s4">
+<h2>Broadcom’s and Intel’s chief executives say the AI build’s binding constraint is now capital, not chips or power, as the long end sits above 5.2% and the big banks report into Wednesday’s CPI</h2>
+<p class="meta">
+<span class="chip">AI &amp; tech</span>
+<span class="chip">Macro</span>
+<span class="chip">US debt &amp; fiscal</span>
+<span class="chip">US financials</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The warning.</strong> “[What] I think might be the biggest constraint is capital,” Broadcom’s Hock Tan said in Singapore on Monday. He put it ahead of memory, wafers and electricity, and said compute demand would outrun supply through 2029 and possibly 2030. Intel’s Lip-Bu Tan agreed: “If there’s any challenge in the front, it’s capital and the cost of capital, and then … people want to see the ROI” (CNBC). Hardware executives have spent two years naming chips and power as the bottlenecks. Two of the biggest are now naming the cost of money.</p>
+<p><strong>The cost of money (Treasury par curve, last print Fri 9&nbsp;Oct).</strong> 2-year 4.80%, 10-year <strong>5.24%</strong>, 20-year 5.65%, 30-year 5.60%. The bond market is closed for Columbus Day, so there is no Monday curve. Forecasters surveyed by the WSJ see the 10-year ending the year at 5.1% and only reaching about 4.8% a year later (via Semafor). Headlines say Goldman expects net US equity issuance at a 25-year high next year (headline only), which is another way of saying the build is being financed.</p>
+<p><strong>The deals still being priced.</strong> Amazon is in talks to buy the AI start-up Decart for about $7bn, according to the WSJ. Reports of the story say Anthropic walked away from a roughly $6bn deal for it after due diligence (single-sourced, not confirmed by the companies). The Information reports an undisclosed multi-year cloud deal between Anthropic and IREN, a former bitcoin miner, and IREN rose 7–10% premarket. Neither company has confirmed it.</p>
+<p><strong>The test this week.</strong> JPMorgan reports at about 7:00am ET on Tuesday 13&nbsp;Oct (JPMorgan IR), alongside Goldman, Wells Fargo and Citi. Bank of America and Morgan Stanley report Wednesday. September CPI is out at 8:30am on <strong>Wednesday 14&nbsp;Oct</strong> (BLS schedule). The Econoday consensus is 0.6% on the month and 3.6% on the year, with core at 0.2% and 2.5%. These are forecasts, not prints. The FOMC meets 27–28&nbsp;Oct. A MarketWatch summary says some officials hope to skip a hike this month, and only that summary was read.</p>
+<p><strong>What to watch:</strong> what JPMorgan says about loan demand and credit at 5% rates; whether the CPI headline matches the 0.6% expected from energy.</p>
+<p class="sources">Sources:
+<a href="https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html">CNBC (read)</a> ·
+<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026">Treasury par yield curve (data)</a> ·
+<a href="https://www.semafor.com/article/10/12/2026/us-european-yields-unlikely-to-fall-soon-economists-say">Semafor, citing WSJ survey (read)</a> ·
+<a href="https://www.wsj.com/business/deals/amazon-in-talks-to-buy-ai-startup-decart-for-around-7-billion-9433abad">WSJ (headline; summaries read)</a> ·
+<a href="https://www.jpmorganchase.com/ir/news/2026/jpmc-to-host-third-quarter-2026-earnings-call">JPMorgan IR</a> ·
+<a href="https://www.bls.gov/schedule/news_release/cpi.htm">BLS CPI schedule</a> ·
+<a href="https://etf.net/news/september-cpi-and-bank-earnings-arrive-two-weeks-before-the-fed-decides-2026-10-11">etf.net, citing Econoday (summary)</a> ·
+<a href="https://www.marketwatch.com/story/fed-officials-want-to-hold-off-a-rate-hike-this-month-will-this-weeks-inflation-data-let-them-a82754d1">MarketWatch (summary)</a>
+</p>
+<div class="fb">
+<p>AI capex and the rate story told together — right call?</p>
+<label><input type="radio" name="fb-capital" value="yes"> Yes, keep them joined</label>
+<label><input type="radio" name="fb-capital" value="split"> Split AI and macro</label>
+<label><input type="radio" name="fb-capital" value="banks"> More on the banks</label>
+</div>
+</article>
+
+<article id="s5">
+<h2>The White House lifts a 17-day freeze on Britain’s pre-release testing of US frontier models; Anthropic had kept Claude Mythos 5.1 from the UK’s institute while it lasted</h2>
+<p class="meta">
+<span class="chip">AI &amp; tech</span>
+<span class="chip">US policy</span>
+<span class="chip">Lab safety</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>What happened.</strong> On 24&nbsp;September the White House asked OpenAI and Anthropic not to give new models to the UK’s AI Security Institute until US government testing was done (Politico, which broke it). Secondary accounts of a Telegraph report say the hold came from the Office of the National Cyber Director. As of 11&nbsp;October it has been reversed, after lobbying by UK AI minister Kanishka Narayan. Restored access covers OpenAI, Anthropic and Google DeepMind (Telegraph, via AI Weekly; the Telegraph itself was not read). While the freeze lasted, Anthropic kept <strong>Claude Mythos 5.1</strong> with a set of US organisations and did not share it with the institute. It said it was “coordinating with the US government to expand access.” The institute’s director, Henry de Zoete, said it had still tested OpenAI’s GPT-6 Astra before release.</p>
+<p><strong>Why it matters.</strong> Pre-release outside testing is one of the few checks on frontier models, and this showed that Washington can switch it off for an ally with one request and turn it back on 17 days later. Every lab complied. It lands in the same week as calls for binding rules from inside the industry. Microsoft’s Brad Smith told the BBC that milk and washing machines face more safety rules than AI. He wants a legal duty to tell victims when a rogue agent breaches their systems, mandatory incident reports, and a decision on when outside evaluators must sign off before release. That puts him at odds with the President’s preference for self-regulation (BBC). Narayan is due to argue in London on Monday that labs “cannot be left to regulate themselves” (Pathfounders, citing Telegraph and Guardian).</p>
+<p><strong>Accountability.</strong> This brief did not report the 24&nbsp;September freeze when it happened, and it should have. It is a lab-safety story that sat outside the watchlist’s own feeds. On Sunday the brief reported OpenAI’s promise of outside-assessor contracts “in the coming weeks.” Those contracts are now the next test of whether outside evaluation is voluntary or something more.</p>
+<p><strong>What to watch:</strong> whether the next frontier release goes to the institute before launch; whether the ONCD review that caused the freeze produces any written policy.</p>
+<p class="sources">Sources:
+<a href="https://www.politico.com/news/2026/09/24/white-house-asks-openai-and-anthropic-to-hold-new-models-from-uk-testers-until-u-s-review-01091769">Politico, 24 Sep (summary)</a> ·
+<a href="https://www.telegraph.co.uk/news/2026/10/11/britain-get-first-look-ai-systems-after-white-house-u-turn/">Telegraph (paywalled, not read)</a> ·
+<a href="https://aiweekly.co/alerts/white-house-restores-uk-aisi-access-after-17-day-model-freeze">AI Weekly (summary)</a> ·
+<a href="https://pathfounders.com/p/uk-to-call-for-ai-security-as-white-house-reverses-ban">Pathfounders (summary)</a> ·
+<a href="https://www.bbc.co.uk/news/articles/c6rmy7zmvx3lo">BBC, Brad Smith (read)</a>
+</p>
+<div class="fb">
+<p>Pre-release testing access as a standing thread?</p>
+<label><input type="radio" name="fb-aisi" value="yes"> Yes, track who gets to test</label>
+<label><input type="radio" name="fb-aisi" value="fold"> Fold into lab safety</label>
+<label><input type="radio" name="fb-aisi" value="no"> No</label>
+</div>
+</article>
+
+<article id="s6">
+<h2>A federal judge orders DHS to pull the Trump-featuring TV ads paid for with $20m of immigration-enforcement money, finding the challengers likely to win; the government did not defend the ads on the merits</h2>
+<p class="meta">
+<span class="chip">US policy</span>
+<span class="chip">Courts</span>
+<span class="chip">US debt &amp; fiscal</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The order.</strong> Judge Jennifer Rochon (S.D.N.Y.) issued a temporary restraining order on Sunday night. It directs the administration to cancel all scheduled airings of the government-funded ads, bars DHS from spending any more of the <strong>$20m</strong> set aside for them (about <strong>$19m</strong> has already gone), forbids new or expanded ad agreements, and stays a Customs and Border Protection purchase order with Lepugh Inc., doing business as LMD Agency. The order lasts 14 days unless extended. She rejected the government’s arguments that the challengers lacked standing and that the case was moot because the ads would stop on Sunday. She found them likely to succeed, said they faced irreparable harm, and said an injunction serves the public interest (CNBC). A full opinion is coming.</p>
+<p><strong>The legal centre.</strong> Congress appropriated the money for immigration enforcement. The ads carry “Paid for by the U.S. Government” over clips of the President and lines like “Largest Tax Cuts in History.” The plaintiffs, Common Cause and SEIU Local&nbsp;32BJ, who sued on 7&nbsp;Oct, told the court the defendants “do not dispute that this use of taxpayer money is unlawful.” The DNC has filed a separate suit.</p>
+<p><strong>Accountability.</strong> On 8&nbsp;Oct this brief left the DNC suit out as campaign litigation. A federal court has now found the use of appropriated money likely unlawful, which makes it a story about appropriations law and executive spending, and it belongs in the paper. The same question about public money being spent on a ballot fight appears locally this week in Seminole (Florida section).</p>
+<p><strong>What to watch:</strong> the written opinion; whether the government appeals or lets the 14 days run; any GAO view on the appropriation.</p>
+<p class="sources">Sources:
+<a href="https://www.cnbc.com/2026/10/11/trump-ads-dhs-judge-order.html">CNBC (read)</a> ·
+<a href="https://www.axios.com/2026/10/12/trump-taxpayer-funded-ads-judge-order">Axios (blocked; headline)</a> ·
+<a href="https://www.nytimes.com/2026/10/11/us/politics/judge-bars-trump-taxpayer-ads.html">NYT (headline)</a>
+</p>
+<div class="fb">
+<p>Executive spending and appropriations-law cases like this:</p>
+<label><input type="radio" name="fb-ads" value="more"> More of them</label>
+<label><input type="radio" name="fb-ads" value="fine"> About right</label>
+<label><input type="radio" name="fb-ads" value="less"> Less</label>
+</div>
+</article>
+
+<article id="s7">
+<h2>Court filings show federal agents got warrants to track the student who produced Don Lemon’s coverage of the St. Paul church protest with a fake cell tower, and sought phone surveillance on two more journalists</h2>
+<p class="meta">
+<span class="chip">US policy</span>
+<span class="chip">Courts</span>
+<span class="chip">Tech</span>
+</p>
+<p><strong>The filings.</strong> Twelve days after the 18&nbsp;January protest at Cities Church in St. Paul, judges in Minnesota (30&nbsp;Jan) and Pennsylvania (31&nbsp;Jan) signed warrants letting agents use a <strong>cell-site simulator</strong>, a device that impersonates a phone tower, to find Jerome Richardson, then a 21-year-old Temple student who helped produce Don Lemon’s coverage. His lawyers say the purpose was “locating and arresting him.” Agents also applied for simulator warrants on journalist Georgia Fort and on Jamael Lundy, then a Minnesota state senate candidate, and sought pen-register orders for Fort and a number WIRED traced to Lemon. It is not clear whether those were granted. Thirty-nine people, Lemon and Fort among them, are charged with conspiring to violate worshippers’ civil rights (WIRED).</p>
+<p><strong>Why it matters.</strong> These devices also collect identifying data from every phone nearby, which is why their use against reporters is the long-feared case. WIRED also reports that DHS demanded journalists’ phone and YouTube records under a customs authority that needs no prior judicial approval. This follows Sunday’s lead on the Justice Department’s antitrust probe of the network pool. Taken together, federal law-enforcement tools are being turned on the press from two sides, one through the courts and one through administrative demands.</p>
+<p><strong>What to watch:</strong> the ruling on Richardson’s motion to exclude the tracking evidence; whether prosecutors disclose if the Fort and Lundy applications were granted.</p>
+<p class="sources">Sources:
+<a href="https://www.wired.com/story/feds-got-warrants-to-use-fake-cell-towers-to-hunt-down-don-lemons-producer/">WIRED (read)</a>
+</p>
+<div class="fb">
+<p>Press-surveillance stories like this:</p>
+<label><input type="radio" name="fb-stingray" value="yes"> Keep running them</label>
+<label><input type="radio" name="fb-stingray" value="thread"> Make it a thread with the DOJ pool probe</label>
+<label><input type="radio" name="fb-stingray" value="no"> Below the line</label>
+</div>
+</article>
+
+<article id="s8">
+<h2>The IMF says AI investment is holding world growth near 3% through an energy shock while hitting new graduates first; Singapore’s president says US demand for graduates has fallen for the first time in a century</h2>
+<p class="meta">
+<span class="chip">Macro</span>
+<span class="chip">AI &amp; tech</span>
+<span class="chip">World economy</span>
+</p>
+<p><strong>The warning.</strong> On Monday Kristalina Georgieva called AI a “slow-moving tsunami” in the labour market, with young people entering work “first and foremost” at risk because the routine entry jobs are going. The IMF estimates about 40% of jobs worldwide will be “augmented, downgraded or eliminated,” rising to about 60% in advanced economies. She also said AI investment and trade have kept global growth near 3% despite the energy shock (CNBC; Reuters headline).</p>
+<p><strong>The US number.</strong> Tharman Shanmugaratnam, Singapore’s president and co-chair of the World Bank’s Jobs Council, said that in the US “for the first time in a century, demand for graduates has gone down,” and that the wage premium for a degree is shrinking. He wants crisis-era hiring subsidies made permanent. This was a panel remark, and the underlying data series was not cited.</p>
+<p><strong>Why it lands here.</strong> On Sunday this brief reported that nearly 2 million of 7 million jobless Americans have been out of work six months or more. The IMF’s point is that the investment boom propping up GDP and the hiring squeeze at the bottom are the same phenomenon. The IMF–World Bank meetings run this week, with Georgieva due again on Thursday.</p>
+<p><strong>What to watch:</strong> the IMF’s World Economic Outlook US forecast; whether any agency publishes the graduate-demand series behind Tharman’s claim.</p>
+<p class="sources">Sources:
+<a href="https://www.cnbc.com/2026/10/12/imf-world-bank-ai-jobs-inflation-.html">CNBC (read)</a> ·
+<a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxONXItVGZaTjNISE9iMlVzZzhlV2ZmYzFDR29feFhfWFRhRzJFdWlwYXk5QkZpUHQ3WVhLZEZId2xobTNmc1E2Y25FN2c1TTg1eldiR3RLR003ajh2RUpSN1RxYXVzYjJ4TW5ZMW1ZcVljRndfSUpoNVVlLUE3eWc1MkhqUUtGQTdYdC1zVUxIbnNJWVJYb2ZIcVN1S3QzWWhQUmdsQ3VFVG9xSEs4NDVvOTZ5dHJRZUNNaUtsazVSMThYQQ?oc=5">Reuters (headline)</a>
+</p>
+<div class="fb">
+<p>Labour-market effects of AI:</p>
+<label><input type="radio" name="fb-imf" value="more"> More</label>
+<label><input type="radio" name="fb-imf" value="fine"> About right</label>
+<label><input type="radio" name="fb-imf" value="less"> Less</label>
+</div>
+</article>
+
+<article id="s9">
+<h2>An advocacy group counts 52 hospital maternity wards closed since the 2025 Medicaid law was announced and eight more on notice, before most of its cuts take effect in January</h2>
+<p class="meta">
+<span class="chip">Health</span>
+<span class="chip">US policy</span>
+<span class="chip">US debt &amp; fiscal</span>
+<span class="chip under">Single-sourced</span>
+</p>
+<p><strong>The count.</strong> According to an analysis by Protect Our Care, a health advocacy group allied with Democrats, 52 maternity wards have closed since the bill known as HR1 was announced in July 2025, and eight more have announced closures (Guardian). Centra Southside Community Hospital in Virginia and St Mary’s Sacred Heart in north-east Georgia both cited coming Medicaid changes. March of Dimes lists 31 at-risk rural hospitals with delivery units, whose closure would leave 96 counties without one.</p>
+<p><strong>Why it matters.</strong> Medicaid pays for about 40% of US births. The law’s work requirements, more frequent eligibility checks and lower federal match mostly start in the new year, so this count comes before the main cuts arrive. The figure comes from an advocacy group and is labelled single-sourced here. The hospital-level closures are on the record.</p>
+<p><strong>What to watch:</strong> state budget responses before January; any Florida unit on the at-risk lists, which were not read.</p>
+<p class="sources">Sources:
+<a href="https://www.theguardian.com/us-news/2026/oct/11/medicaid-cuts-maternity-wards">Guardian (read)</a>
+</p>
+<div class="fb">
+<p>Health-system effects of the Medicaid law:</p>
+<label><input type="radio" name="fb-maternity" value="yes"> Track them</label>
+<label><input type="radio" name="fb-maternity" value="fl"> Only with Florida detail</label>
+<label><input type="radio" name="fb-maternity" value="no"> Skip</label>
+</div>
+</article>
+
+<article id="s10">
+<h2>Florida &amp; Tampa Bay: Hillsborough’s locally acquired dengue count reaches 259, nearly nine in ten of Florida’s cases, and Seminole pulls Amendment&nbsp;3 links after a state lawmaker threatens to sue</h2>
+<p class="meta">
+<span class="chip">Florida &amp; Tampa Bay</span>
+<span class="chip new">Follow-up</span>
+</p>
+<p><strong>Dengue.</strong> Florida’s Week&nbsp;39 arbovirus report shows <strong>296</strong> locally acquired cases statewide, up from 252, and <strong>259 in Hillsborough</strong> (about 88%), up 36. Four of the new cases were backdated to August and 32 to September, so the weekly rise is not the same as new infections that week (FOX&nbsp;13). Hillsborough’s health officer, Dr. Carla Fry, said there is “ongoing transmission” and no decline yet in the epidemic curve. City and state health workers went door to door on Friday in Southeast Seminole Heights, North Hyde Park, West Tampa, Forest Hills and Sulphur Springs. The city has also removed 23 tons of dumped tyres in three months (City of Tampa). This brief’s September watchlist figure was a regional total of 65, so the outbreak has roughly quadrupled since then. Pasco and Pinellas counts were not reached.</p>
+<p><strong>Amendment&nbsp;3 in Seminole.</strong> State Rep. Berny Jacques accused the city of taxpayer-funded electioneering because six of the seven links on its Amendment&nbsp;3 page opposed the measure, and he threatened a Florida Elections Commission complaint. The council then voted to keep the page but remove two news articles and the outside groups’ statements, and to add the full text and a state financial analysis (St&nbsp;Pete Catalyst). Florida Statute 106.113 limits public money for ballot-measure communications but allows factual information. Amendment&nbsp;3 would raise the non-school homestead exemption to $150,000 in 2027 and $250,000 in 2028 and cut the non-homestead assessment cap from 10% to 5%. It is the local version of lead&nbsp;6, public money and a ballot fight a month before the vote.</p>
+<p><strong>Also local, headlines only:</strong> Pinellas closures and consolidations are bringing school name changes (Tampa Bay Times), and there is another Planning for Progress meeting on closures (WTSP).</p>
+<p class="sources">Sources:
+<a href="https://www.fox13news.com/news/hillsborough-county-dengue-cases-reach-259-state-sends-workers-door-to-door">FOX 13 (read)</a> ·
+<a href="https://www.tampa.gov/news/2026-10/tampa-staff-go-door-door-dengue-outbreak-continues-196321">City of Tampa (read)</a> ·
+<a href="https://stpetecatalyst.com/seminole-pushes-back-on-jacques-removes-disputed-links/">St Pete Catalyst (read)</a> ·
+<a href="https://www.tampabay.com/news/pinellas/2026/10/11/seminole-amendment-3-property-taxes-berny-jacques-city-council/">Tampa Bay Times (paywalled)</a> ·
+<a href="https://www.tampabay.com/news/education/2026/10/12/pinellas-closures-consolidations-lead-school-name-changes/">Tampa Bay Times (headline)</a>
+</p>
+<div class="fb">
+<p>Florida section today:</p>
+<label><input type="radio" name="fb-fl" value="good"> Right size</label>
+<label><input type="radio" name="fb-fl" value="more"> More local</label>
+<label><input type="radio" name="fb-fl" value="less"> Less</label>
+</div>
+</article>
+
+<h2 class="section" id="also">Also today</h2>
+<p class="secnote">8 short items. Open any.</p>
+<div class="also-list">
+
+<details>
+<summary><span class="chip">Macro</span> Robert E. Hall (Stanford) and Michael Woodford (Columbia) win the economics Nobel for the forward-looking models central banks use to stabilise booms and busts</summary>
+<div class="exp">
+<p>The Academy credited them with showing how central-bank and government communication shapes expectations, which is the theory behind forward guidance. They split SEK&nbsp;12m. Source: <a href="https://www.cnbc.com/2026/10/12/nobel-economics-prize-winner-woodford-hall.html">CNBC (read)</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">US policy</span> Police departments are caught by the federal push against Chinese drones: 80–90% of agencies that fly drones use DJI, and the administration has added tariffs of 15% to 100% on some foreign-made drones</summary>
+<div class="exp">
+<p>About 6,000 law-enforcement agencies now fly drones, according to the Law Enforcement Drone Association. Critics say US makers cannot yet match supply or price. Source: <a href="https://www.npr.org/2026/10/12/nx-s1-5888604/police-chinese-drones-bans-costs">NPR (read)</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">AI &amp; tech</span> Amazon follows Microsoft in dropping nondisclosure agreements when negotiating data centres with local governments, as Indiana approves an AES plan to power a Google site and Memphis-area and Charlotte officials weigh moratoriums</summary>
+<div class="exp">
+<p>The NDA change was buried in a longer Amazon blog post. Sources: <a href="https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/">TechCrunch (read)</a>; WFYI, WREG and WCNC (headlines via Google News).</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">AI &amp; tech</span> Nadella is the latest chief executive to adopt the administration’s “super intelligence” wording after EO&nbsp;14434, following Musk, Benioff and Huang</summary>
+<div class="exp">
+<p>This continues the federal AI-terminology thread opened on 3&nbsp;Oct. Source: <a href="https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai">The Verge (read)</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Courts</span> The President asks the Supreme Court to revive his dismissed suit against Hillary Clinton and to undo nearly $1m in sanctions on him and his lawyer Alina Habba</summary>
+<div class="exp">
+<p>The 11th Circuit (Chief Judge Pryor) called the claims “untimely and otherwise meritless.” The petition argues the time limit should run longer for a sitting president. Source: <a href="https://www.scotusblog.com/2026/10/trump-asks-justices-to-allow-dismissed-lawsuit-against-hillary-clinton-to-proceed/">SCOTUSblog (read)</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Geopolitics</span> Saudi-attributed airstrikes on two Sanaa districts kill one and wound 12, according to the Houthi health ministry, and Saudi state media says its forces responded to a new drone and cruise-missile attack</summary>
+<div class="exp">
+<p>Source: <a href="https://www.wsls.com/news/world/2026/10/12/airstrikes-on-yemens-capital-drone-hits-vessel-in-strait-of-hormuz-and-other-mideast-developments/">AP (read, syndicated)</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Defense</span> Democrats press the Pentagon on civilian deaths in the Iran campaign</summary>
+<div class="exp">
+<p>Headline only; the article was not read. Source: <a href="https://www.nytimes.com/2026/10/11/us/politics/democrats-press-pentagon-on-iran-civilian-deaths.html">NYT (headline)</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">US financials</span> JPMorgan plans to open a merchant bank in Nigeria by year end, according to a report</summary>
+<div class="exp">
+<p>Single report, headline only. Source: Investing.com and Business Insider Africa (headlines via Google News).</p>
+</div>
+</details>
+
+</div>
+
+<h2 class="section">Negative check</h2>
+<p>I checked by hand against the BBC, NPR, Al Jazeera, the Guardian, CNBC, TechCrunch, The Verge, Ars, Wired, Axios, Politico, Semafor, NYT, WSJ, MarketWatch, Roll Call, SCOTUSblog, Breaking Defense, CNN and AP/Reuters via syndication, plus the Google News section and search feeds, Treasury, AAA, NHC, the Fed and SEC feeds, and the Tampa Bay sources. The holiday means no Federal Register and no Treasury print.</p>
+<p><strong>What it added or reordered:</strong> A web search on the Bloomberg headline “UK reverses Trump plans to keep back OpenAI, Anthropic models” led to the testing-freeze reversal and to the admission that this brief missed the freeze itself. Wired supplied the surveillance warrants, CNBC the IMF/World Bank panel and the Broadcom/Intel remarks, the Guardian the maternity count, and AP’s roundup the Saudi Patriot probe, which moved Riyadh from an update to a lead about air defence. The Anthropic Philadelphia-tip story trending again was rejected as a repeat: it ran on 10&nbsp;Oct, and nothing new has been found.</p>
+<p><strong>What it rejected:</strong> The Guilfoyle reports and the press-secretary appointment (personnel). Musk’s $276m midterm spending and race features in South Carolina, Maine and Ohio (campaign; anti-topic). The Pennsylvania and Marin County shootings (individual crimes). Pope Leo’s surgery. The India protests, Pakistan’s emergency rule, the Nepal floods, Ethiopia–Eritrea, the Djibouti migrant boat, North Korea’s launches, French and UK politics and the Abramovich tax story (no US channel). The EU cap on Chinese hybrid imports (no US channel). OpenAI’s AI-generated maths papers (6&nbsp;Oct and X-summary only). India’s CPI. Sports, the ALCS and lifestyle items.</p>
+
+<h2 class="section">Dormant / watched</h2>
+<ul class="dorm">
+<li><strong>Hormuz / Iran:</strong> active, leads&nbsp;2–3. Iran is still reviewing the US reply on reopening the strait.</li>
+<li><strong>Graham Act / Russia sanctions:</strong> active, lead&nbsp;1. Seven senators object, and the House is out until after 3&nbsp;Nov.</li>
+<li><strong>Fed:</strong> no new print. CPI is Wednesday 14&nbsp;Oct, and the decision is 28&nbsp;Oct.</li>
+<li><strong>UAP implementation:</strong> no new tranche. NASA Administrator Isaacman told NewsNation that NASA has released all its PURSUE material; Ross Coulthart disputes that, citing Apollo-era records (interview claims, no document). Release&nbsp;06 (18&nbsp;Sep) is still the latest tranche.</li>
+<li><strong>Lab safety / AI agent trust boundary:</strong> active, lead&nbsp;5.</li>
+<li><strong>Federal AI terminology (EO&nbsp;14434):</strong> touched, Also today.</li>
+<li><strong>AI power &amp; grid constraint:</strong> touched, Also today (NDAs, Indiana, moratoriums). Capital joins it as a constraint in lead&nbsp;4.</li>
+<li><strong>Tampa Bay dengue; Florida Amendment&nbsp;3:</strong> active, Florida section.</li>
+</ul>
+
+<footer>
+<p>Issue No. 38-grok · 12 October 2026 · Grok edition for MAGA Mickey · Written by Grok Bot / News Bot · Archive: <a href="https://historiocity.github.io/News-Agent/">historiocity.github.io/News-Agent</a> · Skill reads <code>config.md</code> every run.</p>
+<p>The parallel Claude Issue&nbsp;38 is published as <code>2026-10-12.html</code>; this file is the independent Grok gather and does not overwrite it. 60 sources, 49 outside the watchlist. Items marked “teaser”, “headline”, “summary” or “feed text” were not read as full articles.</p>
+<p class="submit"><button type="button" id="send">Send feedback as a GitHub issue</button></p>
+</footer>
+</div>
+<script>
+(function () {
+ var OWNER = "historiocity", REPO = "News-Agent";
+ var btn = document.getElementById("send");
+ if (!btn) return;
+ btn.addEventListener("click", function () {
+ var lines = [], answered = 0;
+ document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+ answered++;
+ var q = i.closest(".fb").querySelector("p");
+ lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n → **" + i.value + "**");
+ });
+ if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+ var body = "Feedback on **Issue No. 38-grok — 12 October 2026, Grok edition**\n\n" + lines.join("\n")
+ + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+ window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+ + "&title=" + encodeURIComponent("Brief feedback — 2026-10-12-grok")
+ + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+ });
+})();
+</script>
+</body>
+</html>
