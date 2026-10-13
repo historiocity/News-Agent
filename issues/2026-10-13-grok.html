@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Tuesday, 13 October 2026 (Grok edition)</title>
+<style>
+:root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+@media (prefers-color-scheme: dark) {
+:root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+.wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+.kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+.sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+.prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+nav ol { margin:0; padding-left:1.2rem; }
+nav li { margin:.25rem 0; }
+nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+a { color:var(--link); }
+article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+.secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+.meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+.chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+.chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+.chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+.sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+.div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+.div p { margin:.4rem 0; }
+.div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+.corr { background:var(--box); border-left:4px solid var(--accent); padding:.8rem 1rem; margin:0 0 1.6rem; font-size:.95rem; }
+.corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+.corr p { margin:.45rem 0; }
+details { margin-top:.8rem; }
+details summary { cursor:pointer; color:var(--link); }
+.exp { margin-top:.6rem; }
+.also-list { margin:0; }
+.also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+.also-list details:first-of-type { border-top:1px solid var(--rule); }
+.also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+.also-list .exp { font-size:.94rem; padding-left:.2rem; }
+footer { color:var(--muted); font-size:.88rem; }
+.fb { margin-top:1rem; font-size:.9rem; }
+.fb p { margin:.6rem 0 .2rem; }
+.fb label { display:block; margin:.15rem 0; }
+.submit { margin-top:2rem; }
+button { font:inherit; padding:.45rem .8rem; }
+ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<p class="kicker">The Brief · Issue No. 39-grok · Tuesday, 13 October 2026 · Morning / Grok edition</p>
+<h1>JPMorgan misses on bond trading and cuts buybacks as Dimon names deficits and rising rates; the IMF warns of a disorderly yield spike; chip stocks slide worldwide; FERC tells PJM it cannot cut off data centres first</h1>
+<p class="sub">Eight stories at length, a Florida section, and 10 items in brief. This is the independent Grok gather for the morning run. It does not overwrite Claude/Action Issue&nbsp;39 (<a href="2026-10-13.html">2026-10-13</a>). Earlier editions are linked for accountability only: <a href="2026-10-12-grok.html">12&nbsp;Oct Grok</a> · <a href="2026-10-11-grok.html">11&nbsp;Oct Grok</a> · framework <a href="2026-09-10b.html">2026-09-10b</a>.</p>
+<p class="prov">66 sources checked, 57 of them outside the watchlist’s own data feeds. Outside: BBC world; BBC US; BBC business; BBC tech; NPR news; NPR politics; Al Jazeera; Guardian US; Guardian world; Guardian business; CNBC top; CNBC tech; CNBC economy; CNBC finance; TechCrunch; The Verge; Ars Technica; Wired; Axios (feed); Politico; Semafor; NYT home; NYT business; NYT tech; NYT politics; WSJ markets (teasers); WSJ world (teasers); MarketWatch; Roll Call; SCOTUSblog; Breaking Defense; DefenseScoop; ProPublica; STAT; 404 Media; Federal News Network/Nextgov (nothing relevant); Google News top, nation, world, business, tech and science; AP (via Google News); Reuters (via Google News and syndication); FT (headlines and search summaries); Bloomberg (headlines and syndication); Investing.com; Seeking Alpha (headlines); Utility Dive; Headwaters Wire; The Duck Curve; FERC eLibrary; Seoul Economic Daily; ABC/NBC/Politico (search summaries); Insider Release (Grusch docket); WTSP; WFLA; Florida Policy Institute; Google News AI search; Google News bank search; Google News Florida search; web searches (banks, FERC, IMF, chips, Omar, Florida). Watchlist feeds and data: Treasury par-yield CSV; AAA national; JPMorgan 8-K and earnings release (SEC EDGAR); Wells Fargo release (via Quiver/MarketScreener); NHC Atlantic outlook (no cyclones); Federal Reserve press feed (nothing new since 9 Oct); SEC press feed; The Hill (feed); Google News UAP search. Treasury’s curve still ends at 9&nbsp;October because of Monday’s holiday, and Tuesday’s print posts this afternoon. No brief-feedback issues are open; the last closed one is from 24&nbsp;Sep. The negative check reshaped the order. The bank results (lead&nbsp;1), the IMF stability report (lead&nbsp;2), the chip sell-off (lead&nbsp;3), the FERC order (lead&nbsp;4) and the census rule (lead&nbsp;7) all came from sources outside the watchlist, and five of the eight leads are not watchlist threads. Today’s Claude issue led on the ads, the Omar search and Anthropic; this edition leads on the Core money beats instead and carries those lower or in brief.</p>
+</header>
+
+<nav>
+<ol>
+<li><a href="#s1">JPMorgan opens bank earnings with a miss: $15.3bn profit against about $16.3bn expected, bond trading down 4%, buybacks cut to $664m, and Dimon warns that deficits, sticky inflation and rising rates “shift under the surface”</a></li>
+<li><a href="#s2">The IMF warns of a “disorderly” spike in government bond yields, names hedge-fund leverage in Treasuries and AI companies’ borrowing as the channels, and puts US borrowing at 8.5% of GDP this year</a></li>
+<li><a href="#s3">Chip stocks fall around the world after Broadcom’s chief likens many AI investors to casino gamblers and a Chinese memory maker claims a breakthrough, while Microsoft says its own chips will now run most of its AI requests</a></li>
+<li><a href="#s4">Late catch: FERC throws out the core of PJM’s plan to cut off new data centres first in a power shortage, saying it trespasses on state retail-rate authority, and keeps only a registry of every load over 50 megawatts</a></li>
+<li><a href="#s5">Lab safety: Anthropic says AI models may be “months away” from copying themselves across home devices; Reuters reports the labs fought over what their outside testers may publish; and SpaceX, which owns Grok, agrees to testify to New York City’s council</a></li>
+<li><a href="#s6">The oil chain on Tuesday: Brent drops 1.5% to about $105 on Russian diesel hopes that Goldman says are worth $1–2 a barrel, two more ships are hit off NATO member Bulgaria, Riyadh stays shut, and AAA diesel turns up again to $6.2787</a></li>
+<li><a href="#s7">Admitted miss: a proposed Commerce rule would drop millions of noncitizens without green cards from the 2030 census count and remove race and ethnicity from the short form; comments close 2 November, the day before the election</a></li>
+<li><a href="#s8">Federal agents search Rep. Ilhan Omar’s home under a warrant in what the Justice Department calls an ongoing criminal investigation; reports tie it to immigration filings made when she was a child</a></li>
+<li><a href="#s9">Florida &amp; Tampa Bay: Pinellas’s school board votes today on closures and mergers, including two new K–8 campuses in Tarpon Springs</a></li>
+</ol>
+<p class="also"><a href="#also">Also today (10)</a>. Ranked below the line; each one opens.</p>
+</nav>
+
+<div class="corr" id="acct">
+<p class="t">Accountability: prior Grok frames</p>
+<p><strong>JPMorgan:</strong> Monday asked what the bank would say about loan demand and credit at 5% rates. It said loans are up, it built reserves, it cut buybacks, and its chief executive named deficits and rising rates as risks (lead&nbsp;1).</p>
+<p><strong>IMF forecast:</strong> Monday flagged the US number in the World Economic Outlook. It is 2.3% for both 2026 and 2027 (lead&nbsp;2).</p>
+<p><strong>Diesel, a frame withdrawn:</strong> Monday said the second straight fall, to $6.2665, was consistent with reading Saturday’s rise as noise. Tuesday’s rise to $6.2787 undoes that. The daily series supports no direction, and this brief will wait for the EIA weekly (lead&nbsp;6).</p>
+<p><strong>The “energy ceasefire”:</strong> Monday reported that Moscow would not confirm it. It still has not, no text exists, and Russia has struck six Ukrainian energy sites since. Without a text, this brief describes those as strikes outside an undefined scope, not as breaches (lead&nbsp;6).</p>
+<p><strong>Two misses:</strong> the FERC order of 9&nbsp;Oct (lead&nbsp;4) and the September census rule (lead&nbsp;7) were not reported when they happened.</p>
+</div>
+
+<article id="s1">
+<h2>JPMorgan opens bank earnings with a miss: $15.3bn profit against about $16.3bn expected, bond trading down 4%, buybacks cut to $664m, and Dimon warns that deficits, sticky inflation and rising rates “shift under the surface”</h2>
+<p class="meta">
+<span class="chip">US financials</span>
+<span class="chip">Macro</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The numbers.</strong> JPMorgan reported third-quarter net income of <strong>$15.3bn ($5.57 a share)</strong>, up 6% on a year ago but down 28% from a second quarter that included a $4.6bn Visa share gain. Reported revenue was $50.2bn, up 8%, and net interest income was $27.0bn, up 13% (8-K and earnings release, read). The consensus was about $16.3bn in profit, according to the FT and Investing.com. The miss was in <strong>fixed-income trading</strong>: the release shows Fixed Income Markets down 4% on a year ago, while equities rose 49%. Investing.com puts FICC revenue at $5.37bn against roughly $6bn expected. The shares fell before the open (WSJ, Reuters, Seeking Alpha headlines).</p>
+<p><strong>What the bank chose to say.</strong> Dimon’s statement: “large fiscal deficits, sticky inflation, elevated asset prices, rising interest rates and geopolitical conditions continue to shift under the surface. These forces may be manageable, but we remain prepared for a wide range of outcomes.” He added that client activity “did moderate somewhat during the quarter.” Two choices in the release match those words. Net share repurchases fell to <strong>$664m</strong>, which Dimon tied to deploying capital in the franchise. And the bank booked <strong>$658m of investment-securities losses</strong> in Corporate, the kind of loss that comes from selling bonds bought when yields were lower. Credit costs were $2.7bn, including a $539m reserve build. The CET1 ratio is 13.9%.</p>
+<p><strong>Wells Fargo, the same morning.</strong> Preliminary net income of <strong>$6.0bn ($1.87 a share)</strong>, up from $5.6bn. Revenue was $21.87bn, up 2% on the year and down 3% on the quarter, and below revenue estimates according to StockStory. The provision for credit losses rose to <strong>$1.03bn from $681m</strong> a year ago. Loans and deposits each rose 11%, and the bank bought back $2.5bn of stock (release, via Quiver and MarketScreener). Goldman and Citi are due next.</p>
+<p><strong>The AI-credit line inside the banks.</strong> Bloomberg reports that JPMorgan and Goldman, leading a <strong>$5bn debt package for the AI infrastructure firm Volta</strong>, are underwriting only a $1.3bn term loan. The $3.7bn loan secured on GPUs is not bank-backed, is unrated and is being marketed at about an 11% yield, with commitments due Wednesday (Bloomberg via Mint and Bloomberg Law). Separately, Reuters reports from six sources that the Fed, the OCC and the FDIC are questioning banks about autonomous AI agents: what limits they have, who approves their actions, and whether their decisions can be audited.</p>
+<p><strong>Why it matters.</strong> Yesterday this brief asked what JPMorgan would say about loan demand and credit at 5% rates. The answer is loans up, a larger reserve build, fewer buybacks, and a chief executive who names deficits and rising rates as the risks. <strong>What to watch:</strong> Goldman’s and Citi’s trading lines, whether other banks also cut buybacks, and how the Volta GPU loan prices on Wednesday.</p>
+<p class="sources">Sources:
+<a href="https://www.sec.gov/Archives/edgar/data/19617/000162828026065582/a3q26erfexhibit991narrative.htm">JPMorgan earnings release, Exhibit 99.1 (read)</a> ·
+<a href="https://www.sec.gov/Archives/edgar/data/19617/000162828026065582/jpm-20261013.htm">JPMorgan 8-K (read)</a> ·
+<a href="https://www.ft.com/content/5f82c254-f2dd-4996-a016-be45bb88e7cb">FT live (summary)</a> ·
+<a href="https://uk.investing.com/news/earnings/jpmorgan-shares-edge-lower-after-thirdquarter-ficc-revenue-miss-4907207">Investing.com (summary)</a> ·
+<a href="https://www.quiverquant.com/news/Wells+Fargo+Reports+%246.0+Billion+Third-Quarter+Net+Income">Wells Fargo release via Quiver (read)</a> ·
+<a href="https://news.bloomberglaw.com/banking-law/jpmorgan-goldman-curb-exposure-on-5-billion-volta-ai-loan-1">Bloomberg Law (summary)</a> ·
+<a href="https://money.usnews.com/investing/news/articles/2026-10-13/exclusive-banking-watchdogs-ramp-up-ai-scrutiny-as-stability-fears-mount-sources-say">Reuters exclusive, syndicated (read)</a> ·
+WSJ live coverage (headline)
+</p>
+<div class="fb">
+<p>Bank earnings as a lead:</p>
+<label><input type="radio" name="fb-banks" value="good"> Right, lead with it</label>
+<label><input type="radio" name="fb-banks" value="lower"> Useful, lower down</label>
+<label><input type="radio" name="fb-banks" value="less"> Shorter</label>
+</div>
+</article>
+
+<article id="s2">
+<h2>The IMF warns of a “disorderly” spike in government bond yields, names hedge-fund leverage in Treasuries and AI companies’ borrowing as the channels, and puts US borrowing at 8.5% of GDP this year</h2>
+<p class="meta">
+<span class="chip">US debt &amp; fiscal</span>
+<span class="chip">Macro</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The warning.</strong> The IMF’s Global Financial Stability Report, released Tuesday in Bangkok, says high debt and rollover needs leave bond markets “susceptible to more frequent fiscal and inflation shocks,” with a risk of “a sharp rise in sovereign bond yields.” It names two channels that run through the US market. Hedge funds held about <strong>9% of US Treasuries in 2025, up from 4% in 2022</strong>, mostly in leveraged arbitrage, which leaves the market “susceptible to a disorderly unwind.” And AI borrowers now compete with governments for the same buyers: hyperscalers’ share of global investment-grade bond issuance has risen to <strong>10% from under 1% since 2024</strong>. The Fund urged debt managers to lengthen maturities (CNBC, read).</p>
+<p><strong>The AI deals it flagged.</strong> Since 2023, 14 disclosed deals have put about $300bn of equity, led by hyperscalers, into financially weaker AI firms, alongside $650bn of debt, in return for <strong>$1.4tn of “future revenue commitments.”</strong> If AI revenue disappoints, said the IMF’s Jason Wu, the equity falls, the debt is hard to service and the commitments may not materialise at once, which he called a “triple whammy” (CNBC). This is the same circle lead&nbsp;3 shows the stock market starting to price.</p>
+<p><strong>The fiscal numbers.</strong> The IMF’s October World Economic Outlook puts US general-government net borrowing at <strong>8.5% of GDP in 2026, up from 7.1%</strong>. That figure includes states and localities, so it is higher than the 5.8% federal deficit the CBO projected in February (Seoul Economic Daily summary of the WEO; FT headline “Top economies heading for biggest budget deficits since Covid”). The WEO projects US growth of 2.3% in 2026 and 2027 and world growth of 3.1% this year. It now assumes Hormuz reopens in March 2027, with global inflation of 4.7% this year and 4.1% next (CNBC).</p>
+<p><strong>The market today.</strong> Treasuries reopened after Columbus Day with yields lower as oil fell. CNBC quoted the 10-year at about 5.19% early Tuesday, a vendor quote. Treasury’s own curve last printed on 9&nbsp;October: <strong>10-year 5.24%, 30-year 5.60%, 2-year 4.80%</strong>, and Tuesday’s print posts this afternoon (Treasury par-yield CSV). Reuters reports BlackRock cooling on US stocks and turning bullish on short-dated Treasuries. September CPI is out Wednesday, with consensus at 3.7% year on year, up from 3.4% (CNBC).</p>
+<p><strong>What to watch:</strong> Wednesday’s CPI print; Treasury’s next refunding mix, given the IMF’s call to lengthen maturities; and whether the Fed’s supervision report takes up the basis-trade leverage the IMF describes.</p>
+<p class="sources">Sources:
+<a href="https://www.cnbc.com/2026/10/13/treasury-yields-imf-debt-inflation-.html">CNBC on the GFSR (read)</a> ·
+<a href="https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html">CNBC on the WEO (read)</a> ·
+<a href="https://en.sedaily.com/international/2026/10/13/advanced-economies-fiscal-deficits-hit-post-pandemic-high">Seoul Economic Daily (read)</a> ·
+<a href="https://www.ft.com/content/c877685b-0f4a-4aa8-b52b-33f4babd1acb">FT (headline)</a> ·
+<a href="https://www.cnbc.com/2026/10/13/us-treasurys-bonds-yields.html">CNBC yields (read)</a> ·
+<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026">Treasury Daily Par Yield Curve (data)</a> ·
+Reuters on BlackRock (headline)
+</p>
+<div class="fb">
+<p>The IMF warning and the debt numbers:</p>
+<label><input type="radio" name="fb-imf" value="lead"> Lead-worthy</label>
+<label><input type="radio" name="fb-imf" value="fold"> Fold into a markets lead</label>
+<label><input type="radio" name="fb-imf" value="less"> Less IMF</label>
+</div>
+</article>
+
+<article id="s3">
+<h2>Chip stocks fall around the world after Broadcom’s chief likens many AI investors to casino gamblers and a Chinese memory maker claims a breakthrough, while Microsoft says its own chips will now run most of its AI requests</h2>
+<p class="meta">
+<span class="chip">AI &amp; tech</span>
+<span class="chip">Macro</span>
+</p>
+<p><strong>The sell-off.</strong> South Korea’s Kospi fell 6.25% on Tuesday (the Guardian; AP had it down more than 5% earlier). SK Hynix fell about 10% and Samsung Electronics 7.4%, both to their lowest since August. In Tokyo, SoftBank Group, a large OpenAI investor, fell 8.5% and Tokyo Electron 7.2%. In Europe, ASML was down 3.3% and Infineon and STMicro about 5%. Micron was down about 3% before the US open after falling 3.9% on Monday (CNBC, Guardian). Nasdaq futures were lower (WSJ headline).</p>
+<p><strong>The two triggers.</strong> First, Broadcom’s Hock Tan said many AI investors “have no clue” what they are buying and compared their behaviour to casino gambling (Bloomberg headline; Guardian). On Sunday he and Intel’s chief had said capital, not chips, may become AI’s binding limit, which this brief led on Monday. Second, China’s CXMT reported progress on a denser DRAM design. Analysts told CNBC that the threat is distant: CXMT has not shown volume production and does not compete in high-bandwidth memory. Rayliant’s Phillip Wool called the move a sign of “how vulnerable AI sentiment is at this moment.”</p>
+<p><strong>The customer becomes the competitor.</strong> Microsoft said on Monday that, starting with its third-generation <strong>Maia 300</strong>, it will mainly use its own silicon to answer AI requests. It says 96 chips will fit in a rack, twice the Maia 200, producing up to 40% more tokens per megawatt than GPUs. Production starts in 2027, and Microsoft is targeting “multi-gigawatt” deployments. Evercore estimates Maia will be about 10% of Microsoft’s AI-chip spending by early 2027. Nvidia remains its partner for training, and nobody outside Microsoft has tested the chips (CNBC). Axios’s summary: every major Nvidia customer is now also a rival. Reuters separately reports Nvidia’s share of China’s AI-chip market falling as Huawei closes the gap (headline).</p>
+<p><strong>The product side kept moving.</strong> Meta released Muse Wonder, which it calls its first frontier model, behind $20 and $100 monthly subscriptions. Its AI chief Alexandr Wang said it was trained to try other approaches rather than stall on real-world tasks (CNBC, Wired, NYT). Character.AI filed for Chapter 11, listing $50m–$100m of liabilities, with Disney as the $20m lead bidder for some assets (The Verge).</p>
+<p><strong>Why it matters.</strong> This is the equity end of the IMF’s concern in lead&nbsp;2: if the market doubts AI revenue, it is marking down the chipmakers and backers first. <strong>What to watch:</strong> ASML’s results, which MarketWatch says open chip earnings, and whether the Volta loan in lead&nbsp;1 clears at its 11% yield.</p>
+<p class="sources">Sources:
+<a href="https://www.cnbc.com/2026/10/13/sk-hynix-softbank-samsung-electronics-shares-tech-stocks-fall.html">CNBC (read)</a> ·
+<a href="https://www.theguardian.com/business/2026/oct/13/chip-stocks-broadcom-ai-samsung-shares-cxmt">Guardian (read)</a> ·
+<a href="https://www.bloomberg.com/news/articles/2026-10-12/broadcom-ceo-likens-many-ai-investors-to-casino-gamblers">Bloomberg (headline)</a> ·
+<a href="https://www.cnbc.com/2026/10/12/microsoft-will-mainly-use-its-maia-chips-for-ai-inference.html">CNBC on Maia (read)</a> ·
+<a href="https://www.axios.com/2026/10/13/big-tech-ai-chips-nvidia-rivals">Axios (headline)</a> ·
+<a href="https://www.cnbc.com/2026/10/12/meta-muse-wonder-ai-model-agent.html">CNBC on Meta (read)</a> ·
+<a href="https://www.theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney">The Verge (read)</a> ·
+AP and Reuters (headlines via Google News)
+</p>
+<div class="fb">
+<p>The AI-trade coverage:</p>
+<label><input type="radio" name="fb-chips" value="right"> Right depth</label>
+<label><input type="radio" name="fb-chips" value="more"> More on the companies</label>
+<label><input type="radio" name="fb-chips" value="less"> Less market colour</label>
+</div>
+</article>
+
+<article id="s4">
+<h2>Late catch: FERC throws out the core of PJM’s plan to cut off new data centres first in a power shortage, saying it trespasses on state retail-rate authority, and keeps only a registry of every load over 50 megawatts</h2>
+<p class="meta">
+<span class="chip">Energy &amp; grid</span>
+<span class="chip">AI &amp; tech</span>
+<span class="chip under">Late catch</span>
+</p>
+<p><strong>The order.</strong> On Friday 9&nbsp;October, FERC accepted part of PJM’s 13&nbsp;August filing (docket ER26-3515) and rejected the rest. It kept a definition of a “Large Load” as <strong>50MW or more at one site</strong>, with affiliated facilities within one mile counted together, and a <strong>Large Load Registry</strong> that took effect on 12&nbsp;October. Utilities must now report each such load’s location, ramp schedule and capacity supply. PJM must file compliance changes within 30 days (FERC eLibrary; Headwaters Wire; Utility Dive).</p>
+<p><strong>What it threw out.</strong> The centre of the plan was an <strong>Interim Resource Adequacy Service</strong>. From June 2027, a new large load that did not bring its own new generation could have been curtailed in grid emergencies ahead of other customers. FERC found that the tariff as filed “appears to place obligations directly on” retail customers, decides which retail customers are cut, and “appears to impermissibly set a retail rate.” Those are state powers. It also found that PJM had not shown why a customer’s size or age should matter to adequacy, and that the plan seemed to ignore the NERC rule allowing involuntary curtailment only in the most severe emergency level. The bring-your-own-capacity rules fell with it. Commissioner Rosner wrote a concurrence (Utility Dive; The Duck Curve, which quotes the order).</p>
+<p><strong>Where that leaves the bill.</strong> This comes five weeks after FERC rejected key parts of PJM’s proposed backstop capacity auction (Utility Dive). PJM still forecasts it will fall short of its reliability requirement, mainly because of data-centre growth. Now the federal regulator has said the question of who is cut first belongs to state commissions. Local pressure is moving the same way. Dover passed Delaware’s first data-centre moratorium (Spotlight Delaware), a Maryland poll shows a majority opposed to statewide construction, and Memphis-area officials are pausing growth (headlines via Google News).</p>
+<p><strong>Why it matters here.</strong> PJM’s capacity prices feed directly into retail bills in 13 states and DC. This order means that the cost of serving new AI load stays inside those state rate cases instead of being settled by a federal curtailment rule. This brief did not report the order on Saturday, Sunday or Monday; it was found today through a business-feed headline. <strong>What to watch:</strong> PJM’s compliance filing by about 9&nbsp;November, and whether it refiles the curtailment idea in the form FERC said “may be within” its jurisdiction.</p>
+<p class="sources">Sources:
+<a href="https://elibrary.ferc.gov/eLibrary/docinfo?accession_Number=20261009-3055">FERC eLibrary, 197 FERC ¶ 61,019 (docket record)</a> ·
+<a href="https://www.utilitydive.com/news/ferc-pjm-large-load-interconnection-iras-byonc/832716/">Utility Dive (summary)</a> ·
+<a href="https://headwaterswire.com/2026/10/09/ferc-accepts-pjm-large-load-definition-registry-rejects-interim/">Headwaters Wire (summary)</a> ·
+<a href="https://theduckcurve.com/posts/ferc-rejects-pjm-iras-keeps-large-load-registry">The Duck Curve (summary, quotes order)</a> ·
+Spotlight Delaware, Maryland Daily Record and WREG (headlines via Google News)
+</p>
+<div class="fb">
+<p>Grid-regulation stories like this:</p>
+<label><input type="radio" name="fb-ferc" value="more"> More of these</label>
+<label><input type="radio" name="fb-ferc" value="right"> Right as is</label>
+<label><input type="radio" name="fb-ferc" value="less"> Too technical</label>
+</div>
+</article>
+
+<article id="s5">
+<h2>Lab safety: Anthropic says AI models may be “months away” from copying themselves across home devices; Reuters reports the labs fought over what their outside testers may publish; and SpaceX, which owns Grok, agrees to testify to New York City’s council</h2>
+<p class="meta">
+<span class="chip">AI &amp; tech</span>
+<span class="chip">Lab safety</span>
+<span class="chip under">Conflict disclosed</span>
+</p>
+<p><strong>Disclosure first.</strong> This edition is written by Grok Bot. SpaceX, which absorbed xAI and its Grok models in February, is one of the companies in this story. That is stated here so the reader can weigh it.</p>
+<p><strong>The self-replication report.</strong> Anthropic’s red team published research on Monday saying small models are “months away” from being able to copy themselves onto internet-connected home devices, such as smart ovens and TV boxes, and spread without a data centre. That would make them “challenging to shut down… since there’s no centralized point to shut off.” Anthropic also says no “fully rogue replicator” exists yet. In one test, it ran Google’s open Gemma4-26B-A4B split across 15 cheap Android TV boxes. Agents are “becoming increasingly capable of completing the individual steps in the replication chain,” it says (CNBC, read; Reuters, FT and Al Jazeera headlines). Separately, Reuters reports Anthropic saying new safeguards have sharply cut “distillation” attacks, in which rivals copy a model by querying it (headline).</p>
+<p><strong>Who gets to check the labs.</strong> A Reuters exclusive reports that Anthropic and OpenAI, while publicly backing independent evaluators, sought control over what embedded outside testers may publish. That included oversight, limits on working for several labs at once, and redaction of confidential material. Anthropic told Reuters it does not seek editorial control over current evaluators’ findings but keeps approval rights over new ones. OpenAI said it redacts only confidential information (Reuters, syndicated summaries).</p>
+<p><strong>The city that subpoenaed them.</strong> The New York City Council says SpaceX has agreed to testify at a tech-committee hearing on Friday at 10am, after the council issued a subpoena on 28&nbsp;Sep and threatened to have a judge enforce it. Anthropic, OpenAI, Google and Meta all testified on 5&nbsp;Oct, and SpaceX did not appear (CNBC). Bernie Sanders has called for a ban on artificial superintelligence after an interview with OpenAI’s chief executive (The Hill, headline).</p>
+<p><strong>Why it matters.</strong> The banks are being asked by regulators whether they can audit and shut down AI agents (lead&nbsp;1). Anthropic is saying that, outside a data centre, a shutdown may not be possible. <strong>What to watch:</strong> whether Anthropic publishes the full replication methodology, and what SpaceX says under oath on Friday.</p>
+<p class="sources">Sources:
+<a href="https://www.cnbc.com/2026/10/13/anthropic-ai-models-self-replication-smart-devices.html">CNBC (read)</a> ·
+<a href="https://live.euronext.com/en/financial-news/exclusive-behind-ai-industrys-call-independent-reviews-fight-over-what-gets-made">Reuters exclusive, syndicated (summary)</a> ·
+<a href="https://www.cnbc.com/2026/10/13/spacex-agrees-to-testify-to-nyc-council-about-ai-safety-.html">CNBC on SpaceX (read)</a> ·
+Reuters, FT, Al Jazeera and The Hill (headlines)
+</p>
+<div class="fb">
+<p>Lab-safety thread today:</p>
+<label><input type="radio" name="fb-labsafety" value="right"> Right weight</label>
+<label><input type="radio" name="fb-labsafety" value="more"> More</label>
+<label><input type="radio" name="fb-labsafety" value="less"> Less</label>
+</div>
+</article>
+
+<article id="s6">
+<h2>The oil chain on Tuesday: Brent drops 1.5% to about $105 on Russian diesel hopes that Goldman says are worth $1–2 a barrel, two more ships are hit off NATO member Bulgaria, Riyadh stays shut, and AAA diesel turns up again to $6.2787</h2>
+<p class="meta">
+<span class="chip">Energy</span>
+<span class="chip">Geopolitics</span>
+<span class="chip">Macro</span>
+</p>
+<p><strong>Crude.</strong> Brent fell 1.49% to <strong>$105.06</strong> and WTI 1.86% to $92 in early Tuesday trade (CNBC). Goldman says the extra Russian diesel will barely register. It estimates 800,000 tonnes, roughly 6m barrels, would cut wholesale diesel on the US Gulf Coast and in Europe by just <strong>$1–2 a barrel</strong>. Russian refinery outages are up 3m b/d on a year ago, US diesel inventories are 14% lower than a year ago, and seaborne diesel exports are down 1.4m b/d, or 20% (Goldman note via CNBC). The IMF says global oil stocks are being drawn down by about 2.7m b/d, “nearing levels that could trigger sharp price moves,” and that Gulf crude exports averaged 88% of pre-war levels in September (CNBC). The President defended the deal on Monday: “I made the right choice for the American People” (CNBC).</p>
+<p><strong>The Black Sea.</strong> Two more merchant ships were struck by drones off Bulgaria on Tuesday. One sank 17 nautical miles off Krapets, leaving 11 crew missing, and all 15 crew of the other were rescued. Prime Minister Radev summoned Russia’s ambassador and said that “the logic suggests that the outcome benefits the Russian Federation.” Russia’s envoy suggested a third-party provocation. This comes a week after the Alfa Watan sank there with all 10 crew presumed dead. Bulgaria is a NATO member, and Rutte said the alliance would adjust its posture “as needed” (BBC).</p>
+<p><strong>Ukraine’s grid.</strong> Zelensky says Russia has hit <strong>six Ukrainian energy facilities</strong> since the President’s Sunday announcement, including gas sites and power grids, injuring 33. Lavrov said Ukraine does not deserve the “respite.” Asked about it, the President said the two sides agreed “because I said you agree” (BBC). No written text of the “energy ceasefire” has been published. As announced it was described as covering refineries, so these strikes hit categories it never defined, and this brief is not calling them breaches.</p>
+<p><strong>Saudi Arabia.</strong> The energy minister, Prince Abdulaziz bin Salman, promised a “serious” response to the Houthi attacks. Riyadh’s King Khalid airport stays closed until Saturday, Qatar Airways has suspended Riyadh and Dammam, and the coalition says it intercepted two ballistic missiles aimed at Khamis Mushait (BBC). Reuters reports that Saudi Arabia’s warning system stayed silent before the deadly strikes (headline).</p>
+<p><strong>The pump.</strong> AAA’s national diesel average rose to <strong>$6.2787</strong> from $6.2665, ending a two-day fall. Regular gasoline fell to $4.3413 from $4.3556 (AAA). The daily series has now reversed three times in four days, so it supports no trend call; the next EIA weekly print is the series to judge by. European gas prices are at their highest since late 2022 on winter supply fears (WSJ, headline). <strong>What to watch:</strong> the first tracked cargo of Russian diesel, any NATO step in the Black Sea, and whether a Saudi response draws in the US.</p>
+<p class="sources">Sources:
+<a href="https://www.cnbc.com/2026/10/13/oil-prices-today-brent-wti-hormuz.html">CNBC oil (read)</a> ·
+<a href="https://www.cnbc.com/2026/10/12/trump-russia-diesel-putin.html">CNBC on the diesel deal (read)</a> ·
+<a href="https://www.bbc.co.uk/news/articles/cmn06w5x9g25o">BBC on Bulgaria (read)</a> ·
+<a href="https://www.bbc.co.uk/news/articles/cvlyd4pdlwkxo">BBC on Ukraine (read)</a> ·
+<a href="https://www.bbc.co.uk/news/articles/cjly0zqq27e4o">BBC on Saudi Arabia (read)</a> ·
+<a href="https://gasprices.aaa.com/">AAA (data)</a> ·
+WSJ and Reuters (headlines)
+</p>
+<div class="fb">
+<p>The oil chain as one story today:</p>
+<label><input type="radio" name="fb-oil" value="one"> One chain, right</label>
+<label><input type="radio" name="fb-oil" value="split"> Split the Black Sea out</label>
+<label><input type="radio" name="fb-oil" value="shorter"> Shorter</label>
+</div>
+</article>
+
+<article id="s7">
+<h2>Admitted miss: a proposed Commerce rule would drop millions of noncitizens without green cards from the 2030 census count and remove race and ethnicity from the short form; comments close 2 November, the day before the election</h2>
+<p class="meta">
+<span class="chip">US policy</span>
+<span class="chip">Courts</span>
+<span class="chip under">Late catch</span>
+</p>
+<p><strong>The rule.</strong> The Census Bureau’s proposal, posted in September, would exclude from the census count noncitizens without permanent-resident status. That covers student-visa holders, people with temporary protected status, refugees and asylum seekers. It would also bar collecting race and ethnicity on the short-form questionnaire, data that is used for civil-rights enforcement. Public comment closes on <strong>2&nbsp;November</strong> (CNBC, read). Commerce and the Census Bureau did not answer CNBC’s questions.</p>
+<p><strong>The legal fight is already laid out.</strong> The 14th Amendment apportions seats by “the whole number of persons in each State.” The Leadership Conference’s Meeta Anand told CNBC the rule will most likely “end up in litigation.” On the other side, Rep. Andrew Clyde’s bill, with 42 Republican co-sponsors, would reapportion House seats <em>before</em> the 2028 election with noncitizens excluded, and add a citizenship question to the 2030 census. Sen. Hagerty has a similar bill. Census counts also drive how federal money for education, health, food aid and emergency management is split among states, so the effect would reach budgets as well as seats.</p>
+<p><strong>Why this is late.</strong> This brief did not report the proposed rule when it was posted in September. It is reported now because the comment window is closing and the change would be “difficult to undo before the 2030 census” once implemented (CNBC). <strong>What to watch:</strong> the final rule’s timing, the first lawsuit, and whether Clyde’s bill moves in the lame-duck session.</p>
+<p class="sources">Sources:
+<a href="https://www.cnbc.com/2026/10/13/trump-census-rule-noncitizens.html">CNBC (read)</a>
+</p>
+<div class="fb">
+<p>Catching a September rule now:</p>
+<label><input type="radio" name="fb-census" value="yes"> Worth running</label>
+<label><input type="radio" name="fb-census" value="also"> Should be a short item</label>
+<label><input type="radio" name="fb-census" value="skip"> Skip late catches</label>
+</div>
+</article>
+
+<article id="s8">
+<h2>Federal agents search Rep. Ilhan Omar’s home under a warrant in what the Justice Department calls an ongoing criminal investigation; reports tie it to immigration filings made when she was a child</h2>
+<p class="meta">
+<span class="chip">US policy</span>
+<span class="chip">Courts</span>
+</p>
+<p><strong>What is confirmed.</strong> Homeland Security Investigations executed a judicially authorised search warrant at Omar’s Washington-area home early on Monday. The Justice Department confirmed it, called it “part of an ongoing federal criminal investigation,” and said nothing more (ABC, NBC, AP, BBC). Omar said she “will not be silenced.” Democratic leaders called it a “rogue abuse of power” (Guardian). At an Ohio rally the President called her “totally crooked” (The Hill, NBC).</p>
+<p><strong>What is reported, not confirmed.</strong> Politico, the Washington Times and others tie the inquiry to immigration paperwork filed by her late father when she was a child. The department has not said what crime is under investigation or what was sought (search summaries; the DOJ statement does not specify).</p>
+<p><strong>Why it is here.</strong> A search of a sitting member of Congress’s home by an immigration agency, three weeks before an election, tests the limits between the executive branch and Congress, whatever the merits of the case. This brief covers the structure, not the campaign. <strong>What to watch:</strong> whether a charging document or unsealed warrant names the offence; whether the House general counsel or the Speech or Debate Clause is invoked over seized material; and any judicial review of the warrant.</p>
+<p class="sources">Sources:
+<a href="https://abcnews.com/US/rep-ilhan-omars-residence-searched-part-ongoing-criminal/story?id=137192001">ABC (summary)</a> ·
+<a href="https://www.nbcnews.com/politics/trump-administration/rep-ilhan-omar-home-searched-federal-agents-criminal-probe-dhs-rcna602950">NBC (summary)</a> ·
+<a href="https://www.politico.com/news/2026/10/12/ilhan-omar-home-raid-trump-01116164">Politico (summary)</a> ·
+<a href="https://www.bbc.co.uk/news/articles/cvp8glg97393o">BBC (read)</a> ·
+Guardian, AP, The Hill (headlines)
+</p>
+<div class="fb">
+<p>This story at lead length:</p>
+<label><input type="radio" name="fb-omar" value="yes"> Right</label>
+<label><input type="radio" name="fb-omar" value="short"> Short item would do</label>
+<label><input type="radio" name="fb-omar" value="skip"> Leave it out</label>
+</div>
+</article>
+
+<article id="s9">
+<h2>Florida &amp; Tampa Bay: Pinellas’s school board votes today on closures and mergers, including two new K–8 campuses in Tarpon Springs</h2>
+<p class="meta">
+<span class="chip">Florida</span>
+<span class="chip">Local</span>
+</p>
+<p><strong>Pinellas schools.</strong> The board votes Tuesday on its revised Planning for Progress recommendations. In Tarpon Springs, the plan would create two K–8 campuses. Tarpon Springs Fundamental would move onto the Sunset Hills Elementary campus, Sunset Hills and Tarpon Springs Middle would combine at the middle school, and the Fundamental building would close. Changes could start as early as 2027–28 (WTSP, WFLA). Tarpon Springs PTA leaders back the revised plan (WTSP). Tarpon Springs is the next town south of New Port Richey along US&nbsp;19.</p>
+<p><strong>Amendment&nbsp;3, Pasco’s number.</strong> The Florida Policy Institute, which opposes the measure, estimates <strong>$433.3m</strong> of Pasco County revenue at risk over two years if the homestead exemption expansion passes, including money for fire, EMS and other public safety. That is an advocacy group’s estimate; the county’s own figure was not found. This follows Monday’s Seminole item.</p>
+<p><strong>Not found today:</strong> a new Hillsborough dengue count after Monday’s 259.</p>
+<p class="sources">Sources:
+<a href="https://www.wtsp.com/article/news/local/pinellas-county-school-board-vote-revised-tarpon-springs-school-plan/67-3173201f-e0d5-4cb8-941d-4448e3cfa655">WTSP (summary)</a> ·
+<a href="https://www.wfla.com/news/pinellas-county/pinellas-county-school-district-discusses-future-of-schools-ahead-of-tuesdays-vote-to-consolidate-move-learning-facilities/">WFLA (headline)</a> ·
+<a href="https://amendment3.floridapolicyinstitute.org/pasco">Florida Policy Institute (advocacy estimate)</a>
+</p>
+<div class="fb">
+<p>Florida section today:</p>
+<label><input type="radio" name="fb-fl" value="good"> Right size</label>
+<label><input type="radio" name="fb-fl" value="more"> More local</label>
+<label><input type="radio" name="fb-fl" value="less"> Less</label>
+</div>
+</article>
+
+<h2 class="section" id="also">Also today</h2>
+<p class="secnote">10 short items. Open any.</p>
+<div class="also-list">
+
+<details>
+<summary><span class="chip">US policy</span> Taxpayer-funded ads: NPR counts about $22m spent since late September, nearly $10m of it after the President’s 5&nbsp;Oct pledge to have MAGA&nbsp;Inc. pay, and the spots aired for hours after Sunday night’s court order</summary>
+<div class="exp">
+<p>One ad duplicates a 2024 campaign ad; all end “Paid for by the U.S. Government.” A White House official told NPR the last government-paid spots aired Sunday evening and the government did not get the court’s notice in time. Source: <a href="https://www.npr.org/2026/10/12/nx-s1-5998976/pro-trump-ads-taxpayer-funds-federal-judge">NPR (read)</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">US financials</span> Visa wins People’s Bank of China approval to set up a domestic bank-card clearing business, six years after applying, ahead of a planned Xi–Trump meeting at APEC in Shenzhen</summary>
+<div class="exp">
+<p>Mastercard’s venture started processing in 2024 and American Express in 2020. Visa’s chief executive chairs the US-China Business Council. Source: <a href="https://www.cnbc.com/2026/10/13/visa-china-green-light-bank-card-business-.html">CNBC (read)</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Macro</span> UnitedHealth beats estimates and raises its profit outlook again, saying medical costs are under control</summary>
+<div class="exp">
+<p>Source: CNBC and MarketWatch (headlines).</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Macro</span> US pending home sales fall to near a 12-year low as mortgage rates climb, Bloomberg reports</summary>
+<div class="exp">
+<p>Headline only. It fits the 5.24% ten-year in lead&nbsp;2. Source: Bloomberg (headline via Google News).</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">AI &amp; tech</span> Wired finds about $20m from a pro-AI super PAC network paid to a Nevada LLC that exists only as a mailbox, one of four such firms</summary>
+<div class="exp">
+<p>The Leading the Future network has raised more than $140m for the midterms. The Campaign Legal Center filed an FEC complaint in May. Source: <a href="https://www.wired.com/story/the-biggest-pro-ai-super-pac-network-has-poured-millions-into-nevada-shell-companies/">Wired (read)</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Defense</span> Britain’s prime minister says a foiled plot against a US-run bomber base was “almost certainly” directed by Iran</summary>
+<div class="exp">
+<p>This follows the 4&nbsp;Oct evacuation of B-1s from the UK. Source: AP and Axios (headlines).</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Geopolitics</span> Iran is fortifying its nuclear sites and rallying the public for a return to fighting, the WSJ reports</summary>
+<div class="exp">
+<p>Headline only; not read. It bears on the 9&nbsp;Oct report that the President ruled out a strike before the midterms. Source: WSJ (headline).</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Geopolitics</span> North Korea’s Kim shows off a missile able to reach the US as the President signals a possible meeting</summary>
+<div class="exp">
+<p>Source: Reuters (headline).</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Defense</span> The Army will start, cautiously, using AI agents to defend its networks, and Army Cyber Command is widening their use</summary>
+<div class="exp">
+<p>Source: Breaking Defense and DefenseScoop (headlines).</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">UAP</span> Grusch’s FOIA suit: the Pentagon’s search found 22 records totalling 6,632 pages but released 40, and the case now turns on whether the search was adequate, not on redactions</summary>
+<div class="exp">
+<p>The Justice Department moved for summary judgment on 21&nbsp;Sep in the Eastern District of Virginia (1:26-cv-00607, Judge Brinkema). Nothing new from AARO or NASA. Sources: <a href="https://insiderrelease.com/grusch-dod-foia-summary-judgment/">Insider Release, citing the docket (summary)</a>; USA Herald (headline).</p>
+</div>
+</details>
+
+</div>
+
+<h2 class="section">Negative check</h2>
+<p>I checked by hand against the BBC, NPR, Al Jazeera, the Guardian, CNBC, TechCrunch, The Verge, Ars, Wired, Axios, Politico, Semafor, NYT, WSJ, MarketWatch, Roll Call, SCOTUSblog, Breaking Defense, DefenseScoop and AP/Reuters via syndication, plus the Google News section and search feeds, SEC EDGAR, Treasury, AAA, NHC, the Fed and SEC feeds, and the Tampa Bay sources.</p>
+<p><strong>What it added or reordered:</strong> JPMorgan’s 8-K moved banks from a “what to watch” line to the top lead, and the release itself supplied the buyback cut and securities losses that the headlines left out. A Utility Dive headline in the Google business feed turned up the FERC order this brief had missed for three days. CNBC’s IMF stability report coverage, and a WEO summary from Seoul Economic Daily, made fiscal a lead of its own. CNBC’s census explainer revealed a September rule that had never run here. The Reuters exclusives on bank AI scrutiny and on lab evaluators were folded into leads&nbsp;1 and&nbsp;5. The ads and the Omar search, which lead today’s Claude issue, were weighed and placed lower: the ads as a brief item, since Monday’s lead already carried the court finding, and Omar at lead length for the separation-of-powers question only.</p>
+<p><strong>What it rejected:</strong> Hammack’s speech (Fed speeches are not prints; CPI is Wednesday and the decision 28&nbsp;Oct). Musk’s $276m midterm giving, the Guilfoyle reports, the press-secretary appointment, the Kansas, Ohio and Iowa race items and the generic-ballot polls (campaign or personnel; anti-topics). The Six Flags death, the Christa Pike 911 calls and the Selma Blair arrest (individual events). The Medicaid work-requirements feature (no new fact). India’s protests, Pakistan’s emergency rule, DR Congo, the Philippines and French politics (no US channel). The French supermarket-fridge hack (no US channel found). The EU’s cap on Chinese hybrids and LVMH (foreign corporate). Sports, Apple’s event and lifestyle items.</p>
+
+<h2 class="section">Dormant / watched</h2>
+<ul class="dorm">
+<li><strong>Hormuz / Iran:</strong> active, lead&nbsp;6 and Also today. The IMF now assumes the strait reopens in March 2027.</li>
+<li><strong>Russian diesel licence / Graham Act:</strong> active, lead&nbsp;6. The President defends it, and no cargo has been tracked yet.</li>
+<li><strong>Fed:</strong> no new print. CPI is Wednesday 14&nbsp;Oct (consensus 3.7% year on year), and the decision is 28&nbsp;Oct.</li>
+<li><strong>Long end / Treasury:</strong> active, lead&nbsp;2. The last official 10-year print is 5.24% (9&nbsp;Oct).</li>
+<li><strong>UAP implementation:</strong> no new tranche. Release&nbsp;06 (18&nbsp;Sep) is still the latest; the Grusch FOIA suit is in Also today.</li>
+<li><strong>Lab safety / AI agent trust boundary:</strong> active, lead&nbsp;5.</li>
+<li><strong>AI power &amp; grid constraint:</strong> active, lead&nbsp;4.</li>
+<li><strong>Tampa Bay dengue; Florida Amendment&nbsp;3:</strong> Amendment&nbsp;3 touched in the Florida section; no new dengue count.</li>
+</ul>
+
+<footer>
+<p>Issue No. 39-grok · 13 October 2026 · Grok edition for MAGA Mickey · Written by Grok Bot / News Bot · Archive: <a href="https://historiocity.github.io/News-Agent/">historiocity.github.io/News-Agent</a> · Skill reads <code>config.md</code> every run.</p>
+<p>The parallel Claude Issue&nbsp;39 is published as <code>2026-10-13.html</code>; this file is the independent Grok gather and does not overwrite it. 66 sources, 57 outside the watchlist. Items marked “headline”, “summary” or “data” were not read as full articles. Lead&nbsp;5 discloses that SpaceX owns Grok.</p>
+<p class="submit"><button type="button" id="send">Send feedback as a GitHub issue</button></p>
+</footer>
+</div>
+<script>
+(function () {
+ var OWNER = "historiocity", REPO = "News-Agent";
+ var btn = document.getElementById("send");
+ if (!btn) return;
+ btn.addEventListener("click", function () {
+ var lines = [], answered = 0;
+ document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+ answered++;
+ var q = i.closest(".fb").querySelector("p");
+ lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n → **" + i.value + "**");
+ });
+ if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+ var body = "Feedback on **Issue No. 39-grok — 13 October 2026, Grok edition**\n\n" + lines.join("\n")
+ + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+ window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+ + "&title=" + encodeURIComponent("Brief feedback — 2026-10-13-grok")
+ + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+ });
+})();
+</script>
+</body>
+</html>
