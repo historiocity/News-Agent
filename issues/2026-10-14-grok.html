@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Wednesday, 14 October 2026 (Grok edition)</title>
+<style>
+:root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+@media (prefers-color-scheme: dark) {
+:root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+.wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+.kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+.sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+.prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+nav ol { margin:0; padding-left:1.2rem; }
+nav li { margin:.25rem 0; }
+nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+a { color:var(--link); }
+article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+.secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+.meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+.chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+.chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+.chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+.sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+.div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+.div p { margin:.4rem 0; }
+.div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+.corr { background:var(--box); border-left:4px solid var(--accent); padding:.8rem 1rem; margin:0 0 1.6rem; font-size:.95rem; }
+.corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+.corr p { margin:.45rem 0; }
+details { margin-top:.8rem; }
+details summary { cursor:pointer; color:var(--link); }
+.exp { margin-top:.6rem; }
+.also-list { margin:0; }
+.also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+.also-list details:first-of-type { border-top:1px solid var(--rule); }
+.also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+.also-list .exp { font-size:.94rem; padding-left:.2rem; }
+footer { color:var(--muted); font-size:.88rem; }
+.fb { margin-top:1rem; font-size:.9rem; }
+.fb p { margin:.6rem 0 .2rem; }
+.fb label { display:block; margin:.15rem 0; }
+.submit { margin-top:2rem; }
+button { font:inherit; padding:.45rem .8rem; }
+ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<p class="kicker">The Brief · Issue No. 40-grok · Wednesday, 14 October 2026 · Morning / Grok edition</p>
+<h1>IEA says the diesel squeeze lasts into 2027 as AAA diesel jumps and senators demand the Russian licence be rescinded; Treasury hits Bank of America for $1.21bn; four immigration rules take effect; a judge makes the press-ban block indefinite</h1>
+<p class="sub">Eight stories at length, a Florida section, and 10 items in brief. This is the independent Grok gather for the morning run. It does not overwrite Claude/Action Issue&nbsp;40 (<a href="2026-10-14.html">2026-10-14</a>). Earlier editions for accountability only: <a href="2026-10-13-grok.html">13&nbsp;Oct Grok</a> · <a href="2026-10-12-grok.html">12&nbsp;Oct Grok</a> · framework <a href="2026-09-10b.html">2026-09-10b</a>.</p>
+<p class="prov">41 sources checked, 33 of them outside the watchlist’s own data feeds (80% outside). Outside: BBC via Wikipedia/search; NPR text.npr.org index; NPR via WUSF; Al Jazeera /news/; Handelsblatt front page; gCaptain front + Port of LA piece; CNBC headlines/search; CBS News (press ban; Greenland); NBC News (press ban); CNN Politics (press ban); AP (BofA summary; press-ban headline); Investing.com (IEA OMR); Blumenthal/Shaheen/Murkowski/Collins Senate releases; Interfax Ukraine; Anadolu Agency; OCC NR 2026-89; OFAC enforcement PDF; Treasury press sb0657; Federal Register full-text RULE/PRORULE/NOTICE/PRESDOCU; FR documents JSON API (three calls); White House presidential-actions; BLS CPI release page; Fox 13 Pasco tag; Pasco Mosquito Control; WUSF dengue; Pasco County emergency page; Latitude Media; The Inference; Wikipedia Portal:Current_events; Google/web search sweeps (CPI, auction, senators, Greenland, dengue, AI/grid); X search_news (public signal only; figures verified elsewhere); TechCrunch/Verge/Wired/Axios/Politico/Semafor/NYT/WSJ/MarketWatch teasers via search; Guardian/FT/Bloomberg headlines via search. Watchlist feeds and data: Treasury Daily Par Yield Curve CSV; AAA gasprices.aaa.com; EIA weekly diesel table + gasdiesel RSS; EIA LeafHandler triangulation not needed (weekly not yet updated); OFAC recent-actions cross-check via FR notice; Federal Register standing three-call sweep; White House Cook memo (watchlist-adjacent Fed governance); NHC not required (no named FL storm). No brief-feedback issues are open; the last closed one is #20 (24&nbsp;Sep). Negative check (Wikipedia current events + Al Jazeera + Handelsblatt + NPR + gCaptain) reshaped the order: the overnight IEA diesel/demand cut and the BofA enforcement package displaced a Cook-first slate; the Kyiv power-plant strike and the Nord Stream trial were weighed; Claude’s Issue&nbsp;40 led Cook → diesel/intel → immigration → press ban → Commerce → 20y — this edition leads IEA/oil chain and BofA as Core money, keeps immigration/press/Commerce/Cook on merit, and adds Port of LA and Greenland from off-watchlist finds.</p>
+</header>
+
+<nav>
+<ol>
+<li><a href="#s1">The oil chain on Wednesday: the IEA says the diesel squeeze lasts well into 2027 and that Russia’s export easing will barely move the balance; AAA diesel jumps 2.1¢ to $6.2997; twelve senators demand the licence be rescinded; and Zelenskyy says Washington threatened to cut intel over refinery strikes</a></li>
+<li><a href="#s2">Treasury hits Bank of America with more than $1.21bn for AML and sanctions failures: FinCEN $1.2bn (third-largest in Treasury history), OCC a record $750m credited inside that total, and OFAC $11.7m for 475 apparent violations</a></li>
+<li><a href="#s3">Four immigration rules land on one Wednesday: civil penalties finalised and effective today, refugee termination notice cut from 30 days to 10, automatic EAD extensions ended, and a proposed rule would drop USCIS deference to prior approvals</a></li>
+<li><a href="#s4">Judge Timothy Kelly makes the White House press-ban block indefinite: CNN, MS NOW and Politico keep hard-pass access while the case proceeds; he finds likely First Amendment retaliation and Fifth Amendment due-process violations</a></li>
+<li><a href="#s5">Commerce tells CBP how to measure “U.S. content” in USMCA cars and parts for metal tariffs — guidance effective 12:01 a.m. Eastern today</a></li>
+<li><a href="#s6">The Cook memorandum hits the Federal Register: a White House committee of inquiry will hold a closed four-hour hearing on 5 November on whether there is “cause” to remove Fed Governor Lisa Cook</a></li>
+<li><a href="#s7">Port of Los Angeles sets an all-time monthly cargo record: 1,042,652 TEUs in September, the busiest month in 118 years, as imports reroute around disrupted canals</a></li>
+<li><a href="#s8">Trump says “massive” oil, gas and mineral exploration is “getting ready to begin” in Greenland — no operators, sites or licences named — four weeks after the US–Denmark–Greenland security pact</a></li>
+<li><a href="#s9">Florida &amp; Tampa Bay: Pasco’s dengue emergency and mosquito-borne alert remain active as Hillsborough and Pinellas add cases; no new statewide DOH weekly arbovirus PDF was readable this run</a></li>
+</ol>
+<p class="also"><a href="#also">Also today (10)</a>. Ranked below the line; each one opens.</p>
+</nav>
+
+<div class="corr" id="acct">
+<p class="t">Accountability: prior Grok frames</p>
+<p><strong>Diesel daily series:</strong> Tuesday rose to $6.2787 and undid Monday’s “noise” framing; Wednesday’s AAA print is <strong>$6.2997</strong> (+2.10¢). The brief still refuses a daily trend call; the EIA weekly (last $6.199 w/e 5&nbsp;Oct) is the direction instrument, and today’s weekly update had not posted at close (lead&nbsp;1).</p>
+<p><strong>Energy ceasefire:</strong> still no published text, still unconfirmed by Moscow, and Russian strikes on Ukrainian energy continue — including overnight Kyiv power infrastructure (lead&nbsp;1).</p>
+<p><strong>Russian diesel licence:</strong> twelve senators now formally ask for GL&nbsp;135 to be rescinded; IEA says Russian export easing will not fix the distillate balance (lead&nbsp;1).</p>
+<p><strong>Banks:</strong> yesterday’s JPMorgan miss stands; today’s Core financials lead is the BofA AML/sanctions package (lead&nbsp;2).</p>
+<p><strong>FERC/PJM:</strong> no new order; yesterday’s IRAS rejection remains the frame (Also today).</p>
+<p><strong>Cook:</strong> FR publication today of the 7&nbsp;Oct memo is the new fact; hearing remains 5&nbsp;Nov (lead&nbsp;6).</p>
+</div>
+
+<article id="s1">
+<h2>The oil chain on Wednesday: the IEA says the diesel squeeze lasts well into 2027 and that Russia’s export easing will barely move the balance; AAA diesel jumps 2.1¢ to $6.2997; twelve senators demand the licence be rescinded; and Zelenskyy says Washington threatened to cut intel over refinery strikes</h2>
+<p class="meta">
+<span class="chip">Energy</span>
+<span class="chip">Geopolitics</span>
+<span class="chip">Macro</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The IEA print.</strong> In its October Oil Market Report, out Wednesday morning, the International Energy Agency cut its 2026 oil-demand forecast again: world demand is now expected to fall <strong>2.6m&nbsp;b/d</strong> this year (from −2.5m last month), with the fourth quarter alone down 2.5m&nbsp;b/d year on year, and diesel accounting for about a quarter of the decline. Global supply is seen falling 5.8m&nbsp;b/d this year before a 7.7m rebound in 2027. The agency says restricted middle-distillate supply is “likely to persist well into 2027,” wholesale diesel hit all-time highs near <strong>$220 a barrel</strong> in Europe and the US in September, and Russia’s recent easing of diesel export curbs is “unlikely to materially alter the global gasoil balance” because the constraint is Russian refining capacity, not export policy (Investing.com write-up of the IEA report; Handelsblatt front page). Global inventories fell another 10m barrels in September and sit 509m below pre-war levels.</p>
+<p><strong>The pump, measured two ways.</strong> AAA’s national diesel average rose to <strong>$6.2997</strong> from $6.2787 yesterday (+2.10¢); regular fell to $4.3333 from $4.3413. The AAA diesel record remains $6.5276 on 22&nbsp;Sep. The EIA weekly series still ends at the week of 5&nbsp;Oct at <strong>$6.199</strong>, down from the $6.529 peak the week of 21&nbsp;Sep — that is the trend instrument, and today’s EIA weekly update had not posted before this edition closed. Yesterday’s brief withdrew a daily-trend call after diesel rose again; today’s rise is another daily move, not a weekly turn.</p>
+<p><strong>The licence and the senators.</strong> Twelve senators — six Republicans (Tillis, Collins, Armstrong, Murkowski, McConnell, Cornyn) and six Democrats (Blumenthal, Shaheen, Durbin, Whitehouse, Reed, Coons) — wrote the President on Tuesday asking him to rescind Treasury General Licence&nbsp;135 and instead use the Lindsey O. Graham Sanctioning Russia and Iran Act. They call the deal “a gift to our adversary” with “limited to no relief” at the pump (Blumenthal / Shaheen / Murkowski / Collins releases; letter PDF). Separately, Zelenskyy told NPR the administration warned it could cut intelligence-sharing unless Ukraine stops long-range drone strikes on Russian refineries; Trump told reporters Tuesday “we are sharing intel.” Overnight Zelenskyy said a Russian ballistic missile hit a Kyiv power plant with “no early warning from our partners,” and Wikipedia’s current-events portal records the Dniprovskyi District strike leaving more than 1,000 residential buildings without heating (NPR via WUSF; Interfax; BBC via Wikipedia).</p>
+<p><strong>Chokepoints and ships.</strong> Al Jazeera reports Saudi Arabia intercepted a Houthi missile aimed at Riyadh on Wednesday and that the Houthis threaten further airport and oil-site attacks. gCaptain’s front page carried Saudi strikes on Sanaa, empty VLCCs turning away from a Persian Gulf transfer hub, and Port of Los Angeles’s September cargo record (see lead&nbsp;7). The “energy ceasefire” announced Sunday still has no published text; Moscow has not confirmed it; Russian strikes on Ukrainian energy continue.</p>
+<p><strong>Why one chain.</strong> Pump price, IEA distillate outlook, the Russian licence, the intel threat and the Hormuz/Saudi corridor are the same shock measured at different points. <strong>What to watch:</strong> today’s EIA weekly diesel print; any tracked Russian diesel cargo under GL&nbsp;135; whether intel sharing is observably reduced; a dated JWC premium for a named Gulf or Red Sea passage.</p>
+<p class="sources">Sources:
+<a href="https://uk.investing.com/news/commodities-news/iea-cuts-2026-oil-demand-outlook-as-diesel-crisis-mideast-war-disrupt-markets-4909235">Investing.com on IEA OMR (read)</a> ·
+<a href="https://www.handelsblatt.com/">Handelsblatt (front page)</a> ·
+<a href="https://gasprices.aaa.com/">AAA national averages (data)</a> ·
+<a href="https://eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm">EIA weekly diesel table (data)</a> ·
+<a href="https://www.blumenthal.senate.gov/newsroom/press/release/bipartisan-senators-call-on-trump-to-rescind-russian-diesel-deal-and-implement-sanctions-authorized-by-congress-last-month-on-enablers-of-putins-war-against-ukraine">Blumenthal release + letter (read)</a> ·
+<a href="https://www.wusf.org/2026-10-13/the-trump-administration-warns-ukraine-it-could-cut-off-intel-zelenskyy-tells-npr">NPR via WUSF (read)</a> ·
+<a href="https://en.interfax.com.ua/news/general/1219732.html">Interfax Ukraine (read)</a> ·
+<a href="https://www.aljazeera.com/news/">Al Jazeera /news/ (index)</a> ·
+<a href="https://gcaptain.com/">gCaptain (index)</a> ·
+<a href="https://en.wikipedia.org/wiki/Portal:Current_events">Wikipedia current events (negative check)</a>
+</p>
+<div class="fb">
+<p>Oil/diesel as one causal chain today:</p>
+<label><input type="radio" name="fb-oil" value="one"> One chain, right</label>
+<label><input type="radio" name="fb-oil" value="split"> Split the Senate letter out</label>
+<label><input type="radio" name="fb-oil" value="shorter"> Shorter</label>
+</div>
+</article>
+
+<article id="s2">
+<h2>Treasury hits Bank of America with more than $1.21bn for AML and sanctions failures: FinCEN $1.2bn (third-largest in Treasury history), OCC a record $750m credited inside that total, and OFAC $11.7m for 475 apparent violations</h2>
+<p class="meta">
+<span class="chip">US financials</span>
+<span class="chip">US policy</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The package, announced Tuesday.</strong> FinCEN assessed a <strong>$1.2bn</strong> civil money penalty — the third-largest in Treasury history — for willful Bank Secrecy Act violations: failure to maintain a compliant AML programme, failure to conduct foreign-correspondent due diligence, and failure to file SARs. The bank admits it failed to timely report more than <strong>$5bn</strong> in suspicious transactions, including more than $1bn tied to priority national-security risks such as Chinese money-laundering networks and illicit finance along the southwest border (Treasury press release sb0657, read).</p>
+<p><strong>OCC and OFAC.</strong> The OCC assessed a <strong>$750m</strong> civil money penalty — the largest in OCC history — credited toward the FinCEN total, and said the bank’s monitoring failed to cover “trillions of dollars” in transactions and that breakdowns continued after a December 2024 cease-and-desist order (OCC NR 2026-89, read). OFAC settled 475 apparent sanctions violations for <strong>$11,662,930</strong> with no mitigation credit; programmes named include Russia, Belarus, Iran, Burma, Somalia, narcotics and global terrorism (OFAC enforcement release).</p>
+<p><strong>What Bessent said.</strong> “When a bank of this size fails to meet its anti-money laundering and sanctions obligations, the consequences extend far beyond its own walls,” Treasury Secretary Scott Bessent said. The FinCEN consent order requires a third-party lookback and independent reviews focused on southwest-border/cartel risk, Iran and Russia.</p>
+<p><strong>Why it matters here.</strong> Yesterday this brief led on JPMorgan’s miss and the Volta AI loan. Bank of America’s enforcement is the compliance half of the same Core financials beat: the second-largest US bank, a GSIB, and a record OCC penalty for a programme already under a 2024 order. <strong>What to watch:</strong> the lookback’s first SAR wave; whether other GSIBs get parallel exams; any Board or management consequence beyond the fine.</p>
+<p class="sources">Sources:
+<a href="https://home.treasury.gov/news/press-releases/sb0657/">Treasury / FinCEN release (read)</a> ·
+<a href="https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-89.html">OCC NR 2026-89 (read)</a> ·
+<a href="https://ofac.treasury.gov/media/937231/download?inline=">OFAC enforcement release (read)</a> ·
+<a href="https://apnews.com/article/treasury-bank-of-america-money-laundering-29013b2c8f08a3a8d579a96721ed1aa4">AP (summary)</a> ·
+CNBC (headline)
+</p>
+<div class="fb">
+<p>BofA enforcement as a lead:</p>
+<label><input type="radio" name="fb-bofa" value="good"> Right, lead with it</label>
+<label><input type="radio" name="fb-bofa" value="lower"> Useful, lower down</label>
+<label><input type="radio" name="fb-bofa" value="less"> Shorter</label>
+</div>
+</article>
+
+<article id="s3">
+<h2>Four immigration rules land on one Wednesday: civil penalties finalised and effective today, refugee termination notice cut from 30 days to 10, automatic EAD extensions ended, and a proposed rule would drop USCIS deference to prior approvals</h2>
+<p class="meta">
+<span class="chip">US policy</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>Civil penalties, effective today.</strong> DHS and DOJ finalised the June 2025 interim final rule that streamlines civil-penalty assessment under the INA for failure to depart during voluntary departure, willful failure to depart after a final removal order, and improper entry or attempted entry. One change from the IFR: late appeals may be accepted for documented mail delays beyond the alien’s control. Effective date: <strong>14&nbsp;October 2026</strong>. Daily fines can approach <strong>$998</strong> for willful non-compliance with a removal order (FR Doc 2026-21024, full text).</p>
+<p><strong>Refugee termination, also effective today.</strong> An interim final rule cuts the response period to a Notice of Intent to Terminate refugee status from thirty days to <strong>ten</strong> when DHS finds the person was not a refugee at admission. Comments close 13&nbsp;November (FR Doc 2026-20956).</p>
+<p><strong>Employment authorisation.</strong> A final rule reaffirms the October 2025 IFR ending automatic extensions of certain Employment Authorisation Documents for timely renewal filers. Effective today (FR Doc 2026-20955).</p>
+<p><strong>Deference NPRM.</strong> USCIS proposes to remove 8&nbsp;CFR&nbsp;214.1(c)(5), which generally requires deference to a prior approval on the same facts when extending employment or stay. Comments close 13&nbsp;November (FR Doc 2026-20941). Three of the four took effect the morning they appeared; the fourth opens a thirty-day comment window.</p>
+<p><strong>Why it matters.</strong> This is substance, not personnel: same-day effect on penalty collection, refugee status, work authorisation, and (if finalised) how extensions are adjudicated. <strong>What to watch:</strong> first Form&nbsp;281 appeal volume; litigation on the effective-date choices; comment letters on the deference NPRM.</p>
+<p class="sources">Sources:
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/14/2026-21024.txt">FR 2026-21024 civil penalties (full text)</a> ·
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/14/2026-20956.txt">FR 2026-20956 refugee termination (full text)</a> ·
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/14/2026-20955.txt">FR 2026-20955 EAD extensions (full text)</a> ·
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/14/2026-20941.txt">FR 2026-20941 deference NPRM (full text)</a> ·
+<a href="https://www.federalregister.gov/api/v1/documents.json?conditions%5Bpublication_date%5D%5Bis%5D=2026-10-14&conditions%5Btype%5D%5B%5D=RULE&conditions%5Btype%5D%5B%5D=PRORULE&per_page=60">FR documents API RULE/PRORULE (data)</a>
+</p>
+<div class="fb">
+<p>Immigration package as a lead:</p>
+<label><input type="radio" name="fb-immig" value="right"> Right weight</label>
+<label><input type="radio" name="fb-immig" value="more"> More on one rule</label>
+<label><input type="radio" name="fb-immig" value="less"> Compress to a short</label>
+</div>
+</article>
+
+<article id="s4">
+<h2>Judge Timothy Kelly makes the White House press-ban block indefinite: CNN, MS NOW and Politico keep hard-pass access while the case proceeds; he finds likely First Amendment retaliation and Fifth Amendment due-process violations</h2>
+<p class="meta">
+<span class="chip">US policy</span>
+<span class="chip">Courts</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The order.</strong> On Tuesday evening, U.S. District Judge Timothy Kelly (Trump-appointed) granted a preliminary injunction that indefinitely blocks enforcement of the 18&nbsp;September revocation of White House hard passes for CNN, MS NOW and Politico. The 26-page decision finds the outlets likely to succeed on both First Amendment retaliation / viewpoint-discrimination and Fifth Amendment due-process claims (CBS, NBC, CNN, AP summaries).</p>
+<p><strong>What Kelly wrote.</strong> “It is likely that President Trump’s revocation of Plaintiffs’ hard passes is the sort of action that would deter a reasonable reporter or news organization from publishing stories to which he objects.” He said the administration failed to show the original decision rested on national-security grounds, and that later “national security” language appeared to restate complaints about coverage. Most articles the White House flagged were by reporters who do not hold hard passes; one Politico piece was based on a White House background call.</p>
+<p><strong>Limits.</strong> The injunction preserves campus access while the suit continues; it does not create a right to the Oval Office or Air Force One. The President had said on Truth Social that DOJ would appeal a loss. The AP’s separate access fight remains on a different track.</p>
+<p><strong>Why it matters.</strong> A same-complex ban grounded in disliked coverage, blocked by a Trump-appointed judge on constitutional grounds, is a structural First Amendment holding, not a personnel story. <strong>What to watch:</strong> the notice of appeal; whether other outlets are added; how the AP circuit case interacts.</p>
+<p class="sources">Sources:
+<a href="https://www.cbsnews.com/news/judge-blocks-trump-white-house-ban-cnn-msnow-politico/">CBS News (read)</a> ·
+<a href="https://www.nbcnews.com/politics/trump-administration/prewrite-not-pub-judge-extends-order-blocking-trump-white-house-media-rcna602264">NBC (summary)</a> ·
+<a href="https://www.cnn.com/2026/10/13/politics/judge-gives-cnn-white-house-access-media-ban">CNN (summary)</a> ·
+AP (headline; page 403 here)
+</p>
+<div class="fb">
+<p>Press-ban injunction:</p>
+<label><input type="radio" name="fb-press" value="lead"> Lead-worthy</label>
+<label><input type="radio" name="fb-press" value="fold"> Shorter</label>
+<label><input type="radio" name="fb-press" value="skip"> Too much process</label>
+</div>
+</article>
+
+<article id="s5">
+<h2>Commerce tells CBP how to measure “U.S. content” in USMCA cars and parts for metal tariffs — guidance effective 12:01 a.m. Eastern today</h2>
+<p class="meta">
+<span class="chip">US policy</span>
+<span class="chip">Trade</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The notice.</strong> BIS published guidance implementing clause (2)(d) of Proclamation 11032 (1&nbsp;June 2026), which adjusted aluminium, steel and copper tariff regimes. For products of Canada and Mexico that qualify for USMCA preferential treatment, “U.S. content” means: (1) value attributable to parts wholly obtained, entirely produced, or substantially transformed in the United States; and (2) to the extent not already counted, value attributable to steel melted and poured, aluminium smelted and cast, or copper smelted and cast in the United States (FR Doc 2026-20938, full text).</p>
+<p><strong>When it bites.</strong> Effective for goods entered or withdrawn for consumption on or after <strong>12:01 a.m. ET, 14&nbsp;October 2026</strong>. Product-specific questions go to CBP. The Deputy Assistant Secretary for Technology Security signed.</p>
+<p><strong>Why both halves.</strong> Settled preference: trade stories need the legal mechanism and the market effect. The mechanism is now public; the market effect will show in first customs entries and any auto-parts price pass-through. <strong>What to watch:</strong> CBP rulings on borderline parts; Canadian and Mexican industry reaction; whether the definition migrates to other tariff programmes.</p>
+<p class="sources">Sources:
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/14/2026-20938.txt">FR 2026-20938 Commerce/BIS guidance (full text)</a> ·
+<a href="https://www.federalregister.gov/api/v1/documents.json?conditions%5Bpublication_date%5D%5Bis%5D=2026-10-14&conditions%5Btype%5D%5B%5D=NOTICE&per_page=100">FR NOTICE sweep (data)</a>
+</p>
+<div class="fb">
+<p>US-content guidance:</p>
+<label><input type="radio" name="fb-commerce" value="right"> Right as a lead</label>
+<label><input type="radio" name="fb-commerce" value="also"> Also-today length</label>
+<label><input type="radio" name="fb-commerce" value="skip"> Too technical</label>
+</div>
+</article>
+
+<article id="s6">
+<h2>The Cook memorandum hits the Federal Register: a White House committee of inquiry will hold a closed four-hour hearing on 5 November on whether there is “cause” to remove Fed Governor Lisa Cook</h2>
+<p class="meta">
+<span class="chip">US policy</span>
+<span class="chip">Fed</span>
+<span class="chip">Continuation</span>
+</p>
+<p><strong>What is new today.</strong> The presidential memorandum of 7&nbsp;October establishing the committee is published in today’s Federal Register as a PRESDOCU (FR Doc 2026-21061). The White House text (read) sets a closed, transcribed hearing at the White House on <strong>5&nbsp;November 2026</strong>, lasting no more than four hours. Committee members: the Assistant to the President for Economic Policy, the EEOC Chairman, and the OGE Director. They are to report whether there is “cause” for removal under 12&nbsp;U.S.C.&nbsp;242 as construed in <em>Trump v. Cook</em>, 146 S. Ct. 2234 (2026).</p>
+<p><strong>Process.</strong> Cook may file a written position statement at least three days before the hearing, must appear and be examined, may present argument and written evidence, and may file a post-hearing statement by 10&nbsp;November. The committee then submits findings and a removal recommendation to the President. Counsel to the President transmits the memo to Cook, the members and the Attorney General.</p>
+<p><div class="corr"><p class="t">Accountability</p><p>Prior Grok editions tracked the inquiry’s creation and the 5&nbsp;Nov date. Today’s new verifiable fact is FR publication of the signed memo — not a calendar reprise without a new fact. Claude’s Issue&nbsp;40 led here; this edition keeps it as Core Fed/governance substance but below the money and same-day rule leads.</p></div></p>
+<p><strong>What to watch:</strong> whether Cook sits for the hearing; any motion to enjoin; how markets price a contested Fed removal the week after the midterms.</p>
+<p class="sources">Sources:
+<a href="https://www.whitehouse.gov/presidential-actions/2026/10/establishment-of-a-committee-of-inquiry-to-investigate-allegations-of-false-statements-by-lisa-denell-cook/">White House memorandum (read)</a> ·
+<a href="https://www.federalregister.gov/api/v1/documents.json?conditions%5Bpublication_date%5D%5Bis%5D=2026-10-14&conditions%5Btype%5D%5B%5D=PRESDOCU&per_page=40">FR PRESDOCU API (data)</a> ·
+CNNBC / search summaries on independence concerns
+</p>
+<div class="fb">
+<p>Cook FR publish / Nov 5 hearing:</p>
+<label><input type="radio" name="fb-cook" value="right"> Right weight</label>
+<label><input type="radio" name="fb-cook" value="higher"> Should lead</label>
+<label><input type="radio" name="fb-cook" value="less"> Too soon / calendar</label>
+</div>
+</article>
+
+<article id="s7">
+<h2>Port of Los Angeles sets an all-time monthly cargo record: 1,042,652 TEUs in September, the busiest month in 118 years, as imports reroute around disrupted canals</h2>
+<p class="meta">
+<span class="chip">Macro</span>
+<span class="chip">Trade</span>
+<span class="chip under">Underreported</span>
+</p>
+<p><strong>The count.</strong> Los Angeles handled <strong>1,042,652 TEUs</strong> in September — more than 20,000 above the prior monthly record (July 2025) — and nearly 3m TEUs in Q3, also a record. Loaded imports were 545,696 TEUs (+19% year on year); loaded exports 125,751 (+10%); empties about 371,206, also a monthly record. Year-to-date through September: nearly 8.1m TEUs, more than 3% ahead of last year (gCaptain, reading the port briefing).</p>
+<p><strong>Why the port says it happened.</strong> Executive Director Gene Seroka cites resilient consumer demand, inventory rebuild after earlier tariff uncertainty, and cargo allocated to Los Angeles as shippers navigate Suez and Panama disruptions. Harvard’s Willy Shih: firms are “moving from purely optimizing for cost to optimizing for options.”</p>
+<p><strong>Why it is here.</strong> A US-channel trade measurement outside the oil watchlist: physical volumes at the nation’s busiest container port while Hormuz and diesel dominate the price story. NRF has already said it expects volumes to ease in October–November. <strong>What to watch:</strong> October TEUs; whether Long Beach prints a matching surge; any tariff-guidance effect from lead&nbsp;5 on auto parts.</p>
+<p class="sources">Sources:
+<a href="https://gcaptain.com/port-of-los-angeles-sets-all-time-cargo-record-as-imports-surge/">gCaptain (read)</a>
+</p>
+<div class="fb">
+<p>Port of LA record:</p>
+<label><input type="radio" name="fb-pola" value="good"> Glad you caught it</label>
+<label><input type="radio" name="fb-pola" value="lower"> Also-today length</label>
+<label><input type="radio" name="fb-pola" value="skip"> Skip cargo stats</label>
+</div>
+</article>
+
+<article id="s8">
+<h2>Trump says “massive” oil, gas and mineral exploration is “getting ready to begin” in Greenland — no operators, sites or licences named — four weeks after the US–Denmark–Greenland security pact</h2>
+<p class="meta">
+<span class="chip">Geopolitics</span>
+<span class="chip">Energy</span>
+<span class="chip under">Single-sourced</span>
+</p>
+<p><strong>The post.</strong> Early Wednesday the President wrote on Truth Social that “Massive Oil, Gas, and Mineral Exploration is getting ready to begin in our new and beautiful Greenland,” claiming “Experts” say easily available oil exceeds almost any other land, and stressing Greenland’s early-warning value against drones and missiles (CBS, read; Al Jazeera index; Anadolu).</p>
+<p><strong>What is documented.</strong> On 22&nbsp;September the US, Denmark and Greenland signed a security agreement expanding US access (Pituffik expansion; possible additional sites at Narsarsuaq and Mestersvig) and mentioning minerals cooperation without operational detail. Greenland stopped issuing new oil and gas licences in 2021; existing licences still need further approvals. No operator, block, or start date was named in today’s statement.</p>
+<p><strong>Label.</strong> Single-sourced on the exploration claim: one presidential post, no company confirmation found this run. <strong>What to watch:</strong> a named operator or Greenlandic licence action; Danish or Nuuk reaction; any link to the diesel/Iran supply story.</p>
+<p class="sources">Sources:
+<a href="https://www.cbsnews.com/news/greenland-trump-oil-minerals-gas-exploration/">CBS News (read)</a> ·
+<a href="https://www.aljazeera.com/news/">Al Jazeera index</a> ·
+<a href="https://www.aa.com.tr/en/americas/trump-says-major-oil-gas-mineral-exploration-to-begin-in-greenland/4087965">Anadolu (summary)</a>
+</p>
+<div class="fb">
+<p>Greenland exploration item:</p>
+<label><input type="radio" name="fb-greenland" value="right"> Right as a lead</label>
+<label><input type="radio" name="fb-greenland" value="also"> Also-today</label>
+<label><input type="radio" name="fb-greenland" value="skip"> Too thin</label>
+</div>
+</article>
+
+<article id="s9">
+<h2>Florida &amp; Tampa Bay: Pasco’s dengue emergency and mosquito-borne alert remain active as Hillsborough and Pinellas add cases; no new statewide DOH weekly arbovirus PDF was readable this run</h2>
+<p class="meta">
+<span class="chip">Florida</span>
+<span class="chip">Local</span>
+</p>
+<p><strong>Pasco dengue.</strong> Pasco County has been operating under a local state of emergency and mosquito-borne illness alert as locally acquired dengue cases rose (county and Fox&nbsp;13 reporting; commissioners ratified the emergency; mosquito-control district pages). Hillsborough and Pinellas have also added to the regional tally (WUSF, 8&nbsp;Oct). This clears the local bar: a continuing public-health emergency in the home county, not a blotter item.</p>
+<p><strong>Not found today:</strong> a freshly parsed Florida DOH arbovirus weekly PDF (binary; standing sourcing weakness). Pinellas school-board consolidation fallout from yesterday’s vote was not re-checked to a primary this morning.</p>
+<p><strong>Atlantic:</strong> NHC outlook not separately demanded for a named storm affecting Florida this run.</p>
+<p class="sources">Sources:
+<a href="https://www.fox13news.com/tag/us/fl/pasco">Fox 13 Pasco tag (index)</a> ·
+<a href="https://www.pascomosquito.org/pasco-county-issues-a-local-state-of-emergency">Pasco Mosquito Control (read)</a> ·
+<a href="https://www.wusf.org/health-news-florida/2026-10-08/hillsborough-pinellas-add-dengue-tally-mosquito-fight-continues">WUSF (summary)</a> ·
+<a href="https://pascocountyfl.gov/_T18_R754.php">Pasco County emergency page</a>
+</p>
+<div class="fb">
+<p>Florida section today:</p>
+<label><input type="radio" name="fb-fl" value="good"> Right size</label>
+<label><input type="radio" name="fb-fl" value="more"> More local</label>
+<label><input type="radio" name="fb-fl" value="less"> Less</label>
+</div>
+</article>
+
+<h2 class="section" id="also">Also today</h2>
+<p class="secnote">10 short items. Open any.</p>
+<div class="also-list">
+
+<details>
+<summary><span class="chip">Macro</span> September CPI is due from BLS at 8:30 a.m. ET this morning; the August print (still the latest on the release page when this edition closed) was +0.4% m/m and +3.4% y/y, with gasoline +3.9% m/m</summary>
+<div class="exp">
+<p>This brief will not invent the September number. Source: <a href="https://www.bls.gov/news.release/cpi.nr0.htm">BLS CPI release page (read)</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">US debt &amp; fiscal</span> Treasury Daily Par Yield Curve, 13&nbsp;Oct (issuer series): 10-year <strong>5.21%</strong>, 20-year 5.60%, 30-year 5.56%, 2-year 4.79% — the 20s-over-30s hump remains; 20-year reopening is scheduled for 21&nbsp;Oct</summary>
+<div class="exp">
+<p>No 20-year auction today. Oct&nbsp;7’s $39bn 10-year reopening printed 5.300% high yield. Source: <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202610">Treasury CSV/TextView (data)</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">AI &amp; tech</span> ASML warns of supply bottlenecks even as orders stretch toward decade-end; Handelsblatt flags it as Europe’s most valuable company still capacity-constrained</summary>
+<div class="exp">
+<p>Pairs with yesterday’s chip rout. Source: Handelsblatt (front page).</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Energy &amp; grid</span> FERC’s rejection of PJM’s IRAS large-load curtailment plan (9&nbsp;Oct) continues to land in trade press; Latitude Media and The Inference walk the two remaining doors — state prepayment or the $325/MW-day capacity cap</summary>
+<div class="exp">
+<p>Yesterday’s late catch; no new FERC order today. Sources: Latitude Media, The Inference (summaries).</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">US policy</span> EPA interim final rule extends the Greenhouse Gas Reporting Rule deadline for reporting year 2025 from 30&nbsp;Oct 2026 to 10&nbsp;March 2027</summary>
+<div class="exp">
+<p>Source: <a href="https://www.federalregister.gov/documents/full_text/text/2026/10/14/2026-20982.txt">FR 2026-20982 (full text)</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Science</span> NRC publishes a final rule and a proposed rule on AP1000 design-certification renewal</summary>
+<div class="exp">
+<p>Nuclear, not AI; noted for the grid/power adjacency. Source: FR RULE/PRORULE API.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Geopolitics</span> Jamaica accepts the first flight of third-country deportations from the US, Al Jazeera reports</summary>
+<div class="exp">
+<p>US-channel migration. Source: Al Jazeera /news/.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Geopolitics</span> A Ukrainian ex-officer goes on trial in Germany over the Nord Stream blasts (Wikipedia current events; Al Jazeera)</summary>
+<div class="exp">
+<p>European court process with US-alliance resonance; not elevated without a US legal channel.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Macro</span> Singapore’s advance Q3 GDP estimate +5.4% amid the AI boom, Al Jazeera reports</summary>
+<div class="exp">
+<p>Foreign growth print with an AI label; altitude bar barely clears as colour, not a lead.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Personnel</span> Kimberly Guilfoyle resigns as ambassador to Greece after allegations of improper conduct (NPR index; Handelsblatt blog)</summary>
+<div class="exp">
+<p>Personnel; anti-topic unless a policy consequence appears — noted and rejected as a lead.</p>
+</div>
+</details>
+
+</div>
+
+<h2 class="section">Negative check</h2>
+<p>Checked against Wikipedia’s current-events portal (populated for 14&nbsp;Oct), text.npr.org, Al Jazeera /news/, Handelsblatt, gCaptain, CBS/NBC/CNN on the press ban, Treasury/OCC/OFAC primaries, the Federal Register three-call sweep (RULE/PRORULE + PRESDOCU + NOTICE), White House presidential-actions, AAA, Treasury CSV, EIA weekly table, BLS CPI page, Fox&nbsp;13 Pasco / WUSF / Pasco mosquito pages, Senate releases on GL&nbsp;135, and search/syndication for AP, Reuters, BBC, CNBC, FT, Bloomberg, Guardian.</p>
+<p><strong>What it added or reordered:</strong> The IEA Oil Market Report (Investing.com + Handelsblatt) and the overnight BofA enforcement package moved to the top of a slate that would otherwise have opened on Cook (as Claude’s Issue&nbsp;40 does). Wikipedia’s Kyiv power-station item and Zelenskyy’s “no early warning” line locked the oil/intel chain together. gCaptain’s Port of LA record and Al Jazeera’s Greenland headline were off-watchlist finds elevated on US-channel merit. The FR immigration cluster and Commerce US-content notice earned leads because they took effect this morning.</p>
+<p><strong>What it rejected:</strong> September CPI figures (not yet released at close; due 8:30&nbsp;a.m.). A 20-year auction lead (next reopening 21&nbsp;Oct; secondary -5&nbsp;bp on the 20s is not an auction print). Guilfoyle resignation and new press-secretary credential questions (personnel). Horse-race midterm items and polling. Singapore haze / Timor-Leste school closures (no US channel). Mauritius curfew, Albania protests, Namibia cattle disease, DRC/M23 colour (no US channel). Sports and entertainment. Individual crime blotter in Pasco beyond the dengue emergency.</p>
+
+<h2 class="section">Dormant / watched</h2>
+<ul class="dorm">
+<li><strong>Hormuz / Iran / Bab el-Mandeb:</strong> active inside lead&nbsp;1; IEA says Gulf recovery remains fragile.</li>
+<li><strong>Russian diesel licence / Graham Act:</strong> active, lead&nbsp;1; twelve-senator letter is the new wake.</li>
+<li><strong>Fed:</strong> no decision/print yet today; CPI due 8:30&nbsp;a.m.; Cook hearing 5&nbsp;Nov (lead&nbsp;6). Standing rule: prints and decisions only for quiet Fed days.</li>
+<li><strong>Long end / Treasury:</strong> issuer 10-year 5.21% (13&nbsp;Oct); 20y auction 21&nbsp;Oct (Also today).</li>
+<li><strong>UAP implementation:</strong> no new tranche this run.</li>
+<li><strong>Lab safety / Anthropic:</strong> yesterday’s self-replication item stands; no primary update demanded this morning beyond IPO-prep chatter (unverified here).</li>
+<li><strong>AI power &amp; grid:</strong> FERC/PJM fallout continues in trade press (Also today).</li>
+<li><strong>Tampa Bay dengue:</strong> active, Florida section.</li>
+</ul>
+
+<footer>
+<p>Issue No. 40-grok · 14 October 2026 · Grok edition for MAGA Mickey · Written by Grok Bot / News Bot · Archive: <a href="https://historiocity.github.io/News-Agent/">historiocity.github.io/News-Agent</a> · Skill reads <code>config.md</code> every run.</p>
+<p>The parallel Claude Issue&nbsp;40 is published as <code>2026-10-14.html</code>; this file is the independent Grok gather and does not overwrite it. 41 sources, 33 outside the watchlist. Items marked “headline”, “summary” or “data” were not read as full articles.</p>
+<p class="submit"><button type="button" id="send">Send feedback as a GitHub issue</button></p>
+</footer>
+</div>
+<script>
+(function () {
+ var OWNER = "historiocity", REPO = "News-Agent";
+ var btn = document.getElementById("send");
+ if (!btn) return;
+ btn.addEventListener("click", function () {
+ var lines = [], answered = 0;
+ document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+ answered++;
+ var q = i.closest(".fb").querySelector("p");
+ lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n → **" + i.value + "**");
+ });
+ if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+ var body = "Feedback on **Issue No. 40-grok — 14 October 2026, Grok edition**\n\n" + lines.join("\n")
+ + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+ window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+ + "&title=" + encodeURIComponent("Brief feedback — 2026-10-14-grok")
+ + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+ });
+})();
+</script>
+</body>
+</html>
