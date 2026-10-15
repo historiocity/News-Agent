@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Thursday, 15 October 2026 (Grok edition)</title>
+<style>
+:root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+@media (prefers-color-scheme: dark) {
+:root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+.wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+.kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+.sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+.prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+nav ol { margin:0; padding-left:1.2rem; }
+nav li { margin:.25rem 0; }
+nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+a { color:var(--link); }
+article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+.secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+.meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+.chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+.chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+.chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+.sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+.div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+.div p { margin:.4rem 0; }
+.div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+.corr { background:var(--box); border-left:4px solid var(--accent); padding:.8rem 1rem; margin:0 0 1.6rem; font-size:.95rem; }
+.corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+.corr p { margin:.45rem 0; }
+details { margin-top:.8rem; }
+details summary { cursor:pointer; color:var(--link); }
+.exp { margin-top:.6rem; }
+.also-list { margin:0; }
+.also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+.also-list details:first-of-type { border-top:1px solid var(--rule); }
+.also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+.also-list .exp { font-size:.94rem; padding-left:.2rem; }
+footer { color:var(--muted); font-size:.88rem; }
+.fb { margin-top:1rem; font-size:.9rem; }
+.fb p { margin:.6rem 0 .2rem; }
+.fb label { display:block; margin:.15rem 0; }
+.submit { margin-top:2rem; }
+button { font:inherit; padding:.45rem .8rem; }
+ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<p class="kicker">The Brief · Issue No. 41-grok · Thursday, 15 October 2026 · Morning / Grok edition</p>
+<h1>Ukraine ends the refinery pause as Washington weighs freeing shadow-fleet tankers and two ships sink near Hormuz; a 3.7% CPI sets a 3.6% Social Security raise and even odds of a hike; $1tn comes off the AI trade as TSMC and Anthropic report surging sales</h1>
+<p class="sub">Eight stories at length, a Florida section, and 10 items in brief. This is the independent Grok gather for the morning run. It does not overwrite Claude/Action Issue&nbsp;41 (<a href="2026-10-15.html">2026-10-15</a>). Earlier editions for accountability only: <a href="2026-10-14-grok.html">14&nbsp;Oct Grok</a> · <a href="2026-10-13-grok.html">13&nbsp;Oct Grok</a> · framework <a href="2026-09-10b.html">2026-09-10b</a>.</p>
+<p class="prov">51 sources checked, 45 of them outside the watchlist’s own data feeds (88% outside). Outside: NPR text.npr.org index; Al Jazeera /news/; Al Jazeera Omar article; Handelsblatt front page; BBC (Anthropic); BBC (GFS Pride); BBC (Brad Smith); CNBC (global tech rout); CNBC (Zelenskyy/FT); CNBC (Musk/Starshield); CNBC-TV18 (oil); Reuters via Investing.com (oil/shadow fleet); Reuters via Investing.com (CPI wrap); Reuters via Investing.com (Kospi); Reuters via Investing.com (CNN MOAB); Reuters via Devdiscourse (Merz); Investing.com (FT frozen assets); Investing.com analysis (Fed odds); Meduza; Mezha; AP (refinery; markets) via search; WSJ headlines (BofA; Omar); Livemint; BofA 8-K exhibit; Morgan Stanley release; TSMC investor results; TSMC call transcript (StockAnalysis); Axios; NBC News (Omar; leakers); Time (Omar; leakers); Washington Post (Omar); The Hill (Musk); CNN syndicated (MOAB); IRS IR-2026-121; Current Federal Tax Developments; SSA COLA release; SCOTUSblog; FedSmith; Pasco County Schools referendum; Wesley Chapel Today; Tampa Free Press; DOH-Pasco; Hernando Sun; WFLA; Web search sweeps (banks, Omar, Iran, AI law, local). Watchlist feeds and data: Treasury Daily Par Yield Curve CSV; AAA gasprices.aaa.com; EIA weekly retail diesel table; BLS CPI release; Federal Register API sweep (RULE/PRORULE/PRESDOCU + abstracts); NHC Atlantic outlook. No brief-feedback issues are open; the last closed one is #20 (24&nbsp;Sep). Negative check (Al Jazeera + Handelsblatt + NPR; Wikipedia’s current-events portal timed out this run) reshaped the order: Handelsblatt’s front page surfaced the frozen-assets proposal, TSMC and Anthropic’s revenue; Al Jazeera surfaced the Omar denaturalisation report and Denmark’s Greenland pushback; the EIA weekly table, posted 14&nbsp;Oct, rewrote the diesel paragraph. Claude’s Issue&nbsp;41 leads CPI → FMC/Spain → Ebola → long end → SNAP skimming → diesel; this edition leads the oil chain and CPI, then the AI-financing rout, banks, Omar, frozen assets, the premium-tax-credit rule and Iran planning.</p>
+</header>
+
+<nav>
+<ol>
+<li><a href="#s1">The oil chain on Thursday: Ukraine ends the three-day refinery pause and hits Ryazan, Washington weighs letting “legal oil” move on sanctioned shadow-fleet tankers, two ships sink near Hormuz — and the official weekly diesel series fell for a third week while the daily card average rose a third day</a></li>
+<li><a href="#s2">September CPI: 3.7% headline, 2.6% core, gasoline more than half the monthly rise — it sets a 3.6% Social Security raise, lifts the odds of an October hike to about even, and flattened the curve rather than lifting the long end</a></li>
+<li><a href="#s3">The AI trade meets the bond market: more than $1tn off the 20 biggest AI and chip stocks this week, Korea halts trading after an 8% fall — while TSMC beats and guides higher and Anthropic tells pre-IPO investors it made $16.8bn last quarter</a></li>
+<li><a href="#s4">Bank of America’s profit falls 17% as the $1.2bn penalty lands and fixed-income trading drops 17%; Morgan Stanley earns $4.9bn on equities and $232bn of net new wealth assets</a></li>
+<li><a href="#s5">The Omar investigation is aimed at denaturalisation, WSJ reports: more than a dozen subpoenas to a Minnesota grand jury over whether her age was altered on 1990s papers — no suit has been filed, and the bar is high</a></li>
+<li><a href="#s6">Washington proposed moving part of Europe’s frozen Russian reserves into a US-overseen vehicle; Europeans refused, and Merz says the money stays in Europe — as Kyiv says its military Starshield link has been throttled</a></li>
+<li><a href="#s7">Treasury proposes the rules that bar most non-citizens from ACA premium tax credits from 2027 and add pre-enrolment verification — implementing the 2025 tax law, comments by 30 November</a></li>
+<li><a href="#s8">Iran: CNN reports US planners weighing the GBU-43 “mother of all bombs” for renewed strikes on energy and nuclear sites, and the President says officials who leaked the timing of a planned Iran action “should be shot”</a></li>
+<li><a href="#s9">Florida &amp; Tampa Bay: Pasco’s school-tax renewal is on the 3 November ballot as early voting opens Monday; the dengue alert stays up; the Atlantic is quiet for seven days</a></li>
+</ol>
+<p class="also"><a href="#also">Also today (10)</a>. Ranked below the line; each one opens.</p>
+</nav>
+
+<div class="corr" id="acct">
+<p class="t">Accountability: prior Grok frames</p>
+<p><strong>EIA weekly diesel:</strong> yesterday’s edition said the weekly update had not posted at close. It posted on 14&nbsp;Oct: <strong>$6.179</strong> for the week of 12&nbsp;Oct, down 2.0¢. The weekly decline continues but has nearly stopped; the daily AAA series has risen three days to $6.3173. No turn is called on either (lead&nbsp;1).</p>
+<p><strong>Energy ceasefire:</strong> carried since Sunday as announced but unconfirmed by Moscow. It is now over from Kyiv’s side as well: Ukraine resumed refinery strikes on Thursday (lead&nbsp;1).</p>
+<p><strong>10-year yield:</strong> a vendor quote had the 10-year at 5.304% intraday after CPI; the issuer close for 14&nbsp;Oct is <strong>5.19%</strong>, lower than the 13&nbsp;Oct 5.21% cited yesterday. The hot print flattened the curve (lead&nbsp;2).</p>
+<p><strong>Greenland:</strong> yesterday’s single-sourced item on “massive” exploration now has a Danish counter-statement that the agreement excludes mining and drilling rights (Also today).</p>
+<p><strong>Bank of America:</strong> Tuesday’s $1.2bn penalty is now in reported earnings, a 17-cent hit to EPS (lead&nbsp;4).</p>
+<p><strong>Iran:</strong> the 9&nbsp;Oct correction (no strike before the midterms) stands; today’s CNN report is contingency planning (lead&nbsp;8).</p>
+</div>
+
+<article id="s1">
+<h2>The oil chain on Thursday: Ukraine ends the three-day refinery pause and hits Ryazan, Washington weighs letting “legal oil” move on sanctioned shadow-fleet tankers, two ships sink near Hormuz — and the official weekly diesel series fell for a third week while the daily card average rose a third day</h2>
+<p class="meta">
+<span class="chip">Energy</span>
+<span class="chip">Geopolitics</span>
+<span class="chip">Macro</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The refinery pause is over.</strong> Ukrainian drones hit a refinery in Russia’s Ryazan region early Thursday, starting a fire, according to Russia’s Defence Ministry and the regional governor (AP). Hours earlier Zelenskyy told the Financial Times that Ukraine had honoured the “energy ceasefire” Trump announced on Sunday for three days while Russia launched roughly 40 ballistic missiles at Ukrainian energy targets: “The block is out. We’re done” (CNBC). Russia’s deputy prime minister Alexander Novak said refineries in Saratov and Ryazan were hit on Wednesday, per Interfax as cited by CNBC-TV18, which puts Ryazan at about 400,000&nbsp;b/d. <strong>This closes the frame this brief carried since Sunday</strong>: the ceasefire never got a published text, Moscow never confirmed it, and it has now ended from the Ukrainian side too.</p>
+<p><strong>The Washington lever on supply.</strong> A US official said on Wednesday the administration is considering easing sanctions on some of Russia’s unregulated “shadow fleet” tankers so that “legal oil” can move on previously sanctioned vessels, which could lower freight rates and add flexibility to diesel shipments (Reuters via Investing.com). That would sit on top of General Licence&nbsp;135, the Russian-diesel licence twelve senators asked the President to rescind on Tuesday. Brent fell $2.28 (2.2%) to <strong>$103.78</strong> by 07:29&nbsp;GMT on the report; WTI was $93.75.</p>
+<p><strong>The chokepoint.</strong> The Singapore-flagged container ship <em>GFS Pride</em> sank near Oman’s Musandam peninsula after a projectile strike on Tuesday; all 21 crew were evacuated (Maritime and Port Authority of Singapore via BBC). Its sister <em>GFS Giselle</em> was holed on Wednesday but reached anchorage, and the bulk carrier <em>Cape Dao</em>, hit on 23&nbsp;Sep, was reported sinking. Iran’s Revolutionary Guards said the ship hit mines on an “unauthorised” route through Omani waters. The IMO counts at least 24 seafarers killed in 106 confirmed incidents since February; Kpler put September Hormuz crude flows at about 80% of the pre-war 16m&nbsp;b/d (BBC). Separately, CNN reported — single-sourced, via Reuters — that US planners are weighing the GBU-43 “mother of all bombs” for possible future strikes on Iranian energy and nuclear sites if the President authorises renewed operations (lead&nbsp;8).</p>
+<p><strong>The pump, on the right instrument.</strong> AAA’s national diesel average is <strong>$6.3173</strong> this morning, up 1.76¢ from $6.2997 and 3.26¢ above a week ago; regular is $4.3344. That is the third straight daily rise. But the EIA weekly series — which yesterday’s edition said had not yet posted — did post on 14&nbsp;Oct, and it reads <strong>$6.179</strong> for the week of 12&nbsp;Oct, down 2.0¢ from $6.199. The weekly path from the $6.529 peak (week of 21&nbsp;Sep) is −14.7¢, −18.3¢, −2.0¢: <strong>still falling, but the fall has nearly stopped</strong>. Under this brief’s 22&nbsp;Sep rule, that is a deceleration in the trend instrument, not a turn, and the three-day AAA rise is a level reading, not a direction call. API data cited by Reuters showed an 11.1m-barrel US crude draw for the week to 9&nbsp;Oct; EIA’s official inventory report is at <strong>noon ET today</strong>, a day late for Columbus Day.</p>
+<p><strong>Why one chain.</strong> The refinery strikes, the shadow-fleet decision, the Hormuz sinkings and the diesel price are one supply shock seen from four places. <strong>What to watch:</strong> today’s EIA distillate stocks; whether the shadow-fleet easing is published as a licence; whether Ryazan’s run rate is reported cut; next Monday’s EIA weekly retail diesel.</p>
+<p class="sources">Sources:
+<a href="https://apnews.com/article/russia-ukraine-war-oil-refinery-attacks-resume-0071b4f3792c9912b977b0ee73505b18">AP (summary via search)</a> ·
+<a href="https://www.cnbc.com/2026/10/15/ukraine-russia-energy-ceasefire-zelenskyy.html">CNBC on Zelenskyy/FT (summary)</a> ·
+<a href="https://www.cnbctv18.com/market/commodities/oil-prices-brent-wti-crude-strait-of-hormuz-shipping-attacks-iran-houthis-saudi-russia-refinery-strikes-oil-inventories-20012191.htm">CNBC-TV18 (summary)</a> ·
+<a href="https://www.investing.com/news/commodities-news/oil-prices-fall-as-investors-weigh-supply-outlook-middle-east-tensions-4950372">Reuters via Investing.com (read)</a> ·
+<a href="https://www.bbc.com/news/articles/crkg7q97z078o">BBC on GFS Pride (read)</a> ·
+<a href="https://gasprices.aaa.com/">AAA national averages (data)</a> ·
+<a href="https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm">EIA weekly retail table, released 14 Oct (data)</a>
+</p>
+<div class="fb">
+<p>Oil/diesel as one causal chain today:</p>
+<label><input type="radio" name="fb-oil" value="one"> One chain, right</label>
+<label><input type="radio" name="fb-oil" value="split"> Split the Hormuz sinkings out</label>
+<label><input type="radio" name="fb-oil" value="shorter"> Shorter</label>
+</div>
+</article>
+
+<article id="s2">
+<h2>September CPI: 3.7% headline, 2.6% core, gasoline more than half the monthly rise — it sets a 3.6% Social Security raise, lifts the odds of an October hike to about even, and flattened the curve rather than lifting the long end</h2>
+<p class="meta">
+<span class="chip">Macro</span>
+<span class="chip">US debt &amp; fiscal</span>
+<span class="chip new">Print</span>
+</p>
+<p><strong>The print (BLS primary).</strong> All-items CPI rose <strong>0.6%</strong> in September, seasonally adjusted, after 0.4% in August, and <strong>3.7%</strong> over twelve months (3.4% in August). Gasoline rose 9.1% on the month and, in BLS’s words, accounted for “over half” of the monthly increase; energy is +20.4% on the year, gasoline +34.2%, fuel oil +74.2%. Core (ex food and energy) rose 0.3% for a second month and 2.6% on the year, up from 2.4%. Food was flat. Shelter rose 0.4%; airline fares rose 1.2% on the month and 22.4% on the year — the most direct route by which jet fuel reaches a household that does not buy diesel. Edward Jones, quoted by Reuters, notes core is running about 3.4% annualised over three months. The October CPI is due 10&nbsp;Nov — a week after the midterms.</p>
+<p><strong>What it set.</strong> CPI-W, the index the Social Security Act ties benefits to, rose 3.9% on the year. SSA announced Wednesday a <strong>3.6% cost-of-living adjustment for 2027</strong>: about $75 a month more for the average retiree, for nearly 72 million beneficiaries from January, and for 7.3 million SSI recipients from 31&nbsp;Dec (SSA release). This is a direct fiscal cost that moves with the fuel shock.</p>
+<p><strong>What it did to the Fed.</strong> Reuters’ market wrap put the futures-implied probability around 49%, up from 19% before the release (its sentence wording is muddled between “hike” and “keep”; an Investing.com analysis put October hike odds at 45%). Read together: the market moved from about one-in-five to about even odds of a hike at the <strong>27–28&nbsp;Oct</strong> meeting. Several economists quoted by Reuters expect a hold in October and a December move. Under this brief’s Fed rule, the decision is the item; this is the print that sets it up.</p>
+<p><strong>What it did to the curve (issuer series).</strong> Reuters quoted the 10-year at 5.304% intraday after the release. <strong>Treasury’s own Daily Par Yield Curve for the 14&nbsp;Oct close reads 5.19%, down 2bp from 5.21%</strong>, while the 2-year rose 3bp to 4.82% and the 30-year fell 4bp to 5.52%. This brief prints the issuer close (18&nbsp;Sep rule). The 2s10s spread narrowed from 42bp to 37bp on the day: the market priced more tightening at the front and less term premium at the back. The 20-year at 5.57% still sits above the 30-year — the hump persists into next Wednesday’s 20-year reopening.</p>
+<p><strong>Why it matters.</strong> The headline-core gap (1.1 points) is energy. That makes the oil chain (lead&nbsp;1) the swing factor for the Fed, for the COLA bill, and for what the long end has to absorb.</p>
+<p class="sources">Sources:
+<a href="https://www.bls.gov/news.release/cpi.nr0.htm">BLS CPI September 2026 (read)</a> ·
+<a href="https://www.ssa.gov/news/en/press/releases/2026-10-14.html">SSA COLA release (read)</a> ·
+<a href="https://www.investing.com/news/economic-indicators/hot-september-cpi-sends-ratehike-bets-soaring-4949438">Reuters market wrap via Investing.com (read)</a> ·
+<a href="https://www.investing.com/analysis/fed-october-hike-odds-hit-45-as-2year-treasury-yield-rises-12-bps-200689575">Investing.com analysis (headline)</a> ·
+<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202610">Treasury Daily Par Yield Curve (data)</a>
+</p>
+<div class="fb">
+<p>CPI as macro lead with COLA and curve:</p>
+<label><input type="radio" name="fb-cpi" value="right"> Right package</label>
+<label><input type="radio" name="fb-cpi" value="fed"> More Fed path</label>
+<label><input type="radio" name="fb-cpi" value="less"> Less detail</label>
+</div>
+</article>
+
+<article id="s3">
+<h2>The AI trade meets the bond market: more than $1tn off the 20 biggest AI and chip stocks this week, Korea halts trading after an 8% fall — while TSMC beats and guides higher and Anthropic tells pre-IPO investors it made $16.8bn last quarter</h2>
+<p class="meta">
+<span class="chip">AI &amp; tech</span>
+<span class="chip">Macro</span>
+<span class="chip new">New fact</span>
+<span class="chip under">Conflict disclosed</span>
+</p>
+<p><strong>The rout.</strong> The Nasdaq fell 1.88% to 26,692.87 on Wednesday and the S&amp;P&nbsp;500 1.11% to 7,718.94 — AP called it the worst day since July — after the CPI print. CNBC counts more than <strong>$1tn</strong> erased from the 20 most valuable AI and semiconductor stocks this week. On Thursday Korea’s Kospi fell more than 8%, tripping a 20-minute circuit breaker, and closed down 7.57% at 5,554.22; SK Hynix fell about 11% and Samsung about 9.5%. SoftBank lost roughly 8–9%, Advantest almost 14%, the Nikkei about 4.9%; in Europe ASML was down 6.6% and Infineon 9.4% in morning trade. US premarket had Nvidia −1.8%, Micron −4.4%, AMD −3.5%, CoreWeave −5.3% (CNBC; Reuters via Investing.com; BBC).</p>
+<p><strong>The stated reason is financing, not demand.</strong> Broadcom’s Hock Tan said on Monday that financing could be a bigger constraint on the AI build than chips or power, and that investors were behaving as if “in a casino.” CNBC adds worries about memory oversupply by 2029 after China’s CXMT claimed a density breakthrough. Dan Ives put the argument in one line: higher yields are “a financing question, not a demand question.” With the 10-year at 5.19% (lead&nbsp;2), the cost of debt-funded data-centre capacity is the variable being repriced.</p>
+<p><strong>The demand side reported overnight.</strong> TSMC’s third-quarter revenue was <strong>US$46.72bn</strong>, above its own US$44.6–45.8bn guidance, up 41.2% in dollars; net income rose 68.7% year on year; gross margin 66.4%, diluted by the 2-nanometre ramp. It guided fourth-quarter revenue to <strong>US$52.3–54.3bn</strong> and reiterated 2026 capex of US$60–64bn, saying 2026–28 capex will be “significantly higher” than the prior three years, and flagged Arizona cost structure as something to manage (TSMC release and call). The stock still fell about 1.8% in Taipei. Separately, the BBC reports Anthropic told prospective investors on Wednesday that third-quarter revenue rose 45% to <strong>$16.8bn</strong> from $11.6bn, that it was profitable for a second quarter, and that a listing is expected before year-end; Anthropic declined to comment.</p>
+<p><strong>Disclosure.</strong> Anthropic makes Claude, which writes the parallel Claude edition of this archive. The revenue figures are company statements to investors as reported by the BBC and others, not audited filings.</p>
+<p><strong>What to watch:</strong> whether the sell-off reaches hyperscaler capex guidance (the demand signal Ives names), Anthropic’s S-1 when filed, and Treasury auction tails through month-end.</p>
+<p class="sources">Sources:
+<a href="https://www.cnbc.com/2026/10/15/sk-hynix-samsung-softbank-stocks-asia-tech-rout-ai-funding-worries.html">CNBC global tech rout (read)</a> ·
+<a href="https://www.investing.com/news/economy-news/south-koreas-kospi-triggers-circuit-breaker-in-techled-selloff-4950522">Reuters on Kospi via Investing.com (summary)</a> ·
+<a href="https://apnews.com/article/stock-markets-earnings-bonds-artificial-intelligence-704d3190f0fba2908df07c85f26346ec">AP markets (summary)</a> ·
+<a href="https://investor.tsmc.com/english/quarterly-results/2026/q3">TSMC 3Q26 results and guidance (read)</a> ·
+<a href="https://stockanalysis.com/quote/tpe/2330/transcripts/709077-q3-2026/">TSMC call transcript (summary)</a> ·
+<a href="https://www.bbc.com/news/articles/cqzjx448vxkgo">BBC on Anthropic (read)</a> ·
+<a href="https://www.axios.com/2026/10/15/anthropic-q3-revenue-cash-flow">Axios (headline)</a> ·
+<a href="https://www.handelsblatt.com/">Handelsblatt (front page)</a>
+</p>
+<div class="fb">
+<p>AI rout + TSMC + Anthropic as one story:</p>
+<label><input type="radio" name="fb-ai" value="one"> One story, right</label>
+<label><input type="radio" name="fb-ai" value="split"> Split earnings from the rout</label>
+<label><input type="radio" name="fb-ai" value="less"> Less market colour</label>
+</div>
+</article>
+
+<article id="s4">
+<h2>Bank of America’s profit falls 17% as the $1.2bn penalty lands and fixed-income trading drops 17%; Morgan Stanley earns $4.9bn on equities and $232bn of net new wealth assets</h2>
+<p class="meta">
+<span class="chip">US financials</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>Bank of America.</strong> Third-quarter net income was <strong>$6.9bn</strong>, or $0.91 a share, down 17%, after a $1.2bn non-tax-deductible charge for the regulatory penalties announced Tuesday (FinCEN, OCC, OFAC — Tuesday’s lead), which cut earnings by 17 cents a share. Revenue was about $30.0bn, below consensus. Fixed income, currencies and commodities revenue fell <strong>17% to $2.6bn</strong>; equities rose about 10% to $2.5bn; investment-banking fees were $1.8bn, down 11%. Wealth was the bright spot: asset-management fees up 16% to $4.5bn and client balances of $5.1tn. WSJ’s quote line showed the shares down 4.76% (BofA 8-K exhibit; Livemint; WSJ headline).</p>
+<p><strong>Morgan Stanley.</strong> Net revenues were <strong>$20.3bn</strong> against $18.2bn a year earlier; net income $4.9bn, or $3.03 a share; return on tangible common equity 22.6%. Wealth management brought in <strong>$232.4bn</strong> of net new assets, against $81.0bn a year ago, and $80.5bn of fee-based flows. The firm took a $148m credit provision against zero a year ago (Morgan Stanley release).</p>
+<p><strong>The read-across.</strong> With JPMorgan’s FICC down 4% on Tuesday and BofA’s down 17% on Wednesday, the quarter’s rates-and-commodities volatility has not turned into fixed-income revenue at the two biggest balance-sheet banks; equities and wealth carried the quarter. The BofA penalty is now visible in reported earnings, not only in a press release.</p>
+<p class="sources">Sources:
+<a href="https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-26-000481/bac09302026ex991.htm">BofA 8-K exhibit 99.1 (summary)</a> ·
+<a href="https://www.livemint.com/companies/company-results/us-bank-earnings-how-did-morgan-stanley-and-bank-of-america-perform-in-q3-11791991100163.html">Livemint (summary)</a> ·
+<a href="https://www.wsj.com/business/earnings/bank-of-america-settlement-charge-hits-profit-morgan-stanley-profit-climbs-d9cde716">WSJ (headline)</a> ·
+<a href="https://www.morganstanley.com/about-us-ir/shareholder/3q2026.pdf">Morgan Stanley 3Q26 release (summary)</a>
+</p>
+<div class="fb">
+<p>Bank earnings coverage:</p>
+<label><input type="radio" name="fb-banks" value="right"> Right depth</label>
+<label><input type="radio" name="fb-banks" value="more"> More on JPM peers</label>
+<label><input type="radio" name="fb-banks" value="less"> Shorter</label>
+</div>
+</article>
+
+<article id="s5">
+<h2>The Omar investigation is aimed at denaturalisation, WSJ reports: more than a dozen subpoenas to a Minnesota grand jury over whether her age was altered on 1990s papers — no suit has been filed, and the bar is high</h2>
+<p class="meta">
+<span class="chip">US policy</span>
+<span class="chip">Courts</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>What was reported.</strong> The Wall Street Journal reported late Wednesday that the federal investigation of Rep. Ilhan Omar (D-Minn.) aims to build a case to revoke her citizenship and eventually deport her, citing US officials and people familiar with it. Investigators have issued more than a dozen subpoenas, including to relatives, for testimony before a grand jury in Minnesota (WSJ via Al Jazeera). The question at issue is whether Omar or her late father altered her age on immigration paperwork to show 17 rather than 18, so that she derived citizenship through him rather than applying separately. Her father died in 2020. NBC reports agents seized her phone in Monday’s search; the Journal says they also took her passport, computers and notebooks.</p>
+<p><strong>What cuts the other way.</strong> The Journal reports Homeland Security Investigations looked at a similar allegation under the Biden administration and did not pursue it for lack of evidence of fraud; the Washington Post separately reported DHS declined to move forward years ago. Omar’s office calls the inquiry baseless. Trump said Monday he had “nothing to do” with the search.</p>
+<p><strong>The legal mechanism.</strong> No denaturalisation case has been filed. Civil denaturalisation requires the government to prove fraud or a willful material misrepresentation by clear and convincing evidence; the criminal route requires proof beyond reasonable doubt, and the Supreme Court held unanimously in <em>Maslenjak</em> (2017) that the misstatement must have played a role in obtaining citizenship (Time). The Migration Policy Institute counted an average of 11 cases a year from 1990 to 2017; DOJ has announced efforts against at least 108 people in 2026. Omar is on the 3&nbsp;Nov ballot for a fifth term.</p>
+<p><strong>Why it is here.</strong> The target is a sitting member of Congress weeks before her election. The substance is the evidentiary standard and the grand-jury record, not the campaign.</p>
+<p class="sources">Sources:
+<a href="https://www.aljazeera.com/news/2026/10/15/trump-administration-seeks-to-strip-ilhan-omar-of-us-citizenship-wsj">Al Jazeera on WSJ report (read)</a> ·
+<a href="https://www.wsj.com/politics/policy/ilhan-omar-investigation-aims-to-build-case-for-stripping-her-citizenship-6adf1edc">WSJ (headline)</a> ·
+<a href="https://www.nbcnews.com/politics/trump-administration/doj-issues-subpoenas-probe-rep-ilhan-omars-immigration-status-family-m-rcna603444">NBC News (summary)</a> ·
+<a href="https://www.washingtonpost.com/politics/2026/10/13/rep-omar-investigation-focuses-birthdate-citizenship-papers-people-familiar-say/">Washington Post (summary)</a> ·
+<a href="https://time.com/article/2026/10/14/ilhan-omar-citizenship-investigation-denaturalization-DOJ/">Time explainer (summary)</a>
+</p>
+<div class="fb">
+<p>Omar denaturalisation story:</p>
+<label><input type="radio" name="fb-omar" value="right"> Right weight</label>
+<label><input type="radio" name="fb-omar" value="less"> Too much on one case</label>
+<label><input type="radio" name="fb-omar" value="more"> Want docket tracking</label>
+</div>
+</article>
+
+<article id="s6">
+<h2>Washington proposed moving part of Europe’s frozen Russian reserves into a US-overseen vehicle; Europeans refused, and Merz says the money stays in Europe — as Kyiv says its military Starshield link has been throttled</h2>
+<p class="meta">
+<span class="chip">Geopolitics</span>
+<span class="chip">US policy</span>
+<span class="chip under">Single-sourced</span>
+</p>
+<p><strong>The proposal.</strong> The Financial Times reported Wednesday, citing four people briefed, that US envoys Steve Witkoff and Jared Kushner proposed in Miami talks on 9&nbsp;Oct — with Ukraine, France, Germany, the UK, the EU and NATO — that Europe unfreeze some Russian sovereign assets, with options including a new special-purpose vehicle overseen by Washington; European delegates rejected it (FT via Investing.com and Meduza). Reuters could not immediately verify the report; the story rests on the FT’s sourcing and is labelled so.</p>
+<p><strong>The response.</strong> Arriving at the EU summit in Brussels on Thursday, Chancellor Merz said: “Those are assets that are frozen in Europe and they should remain frozen in Europe. This is our business and we are deciding over it” (Reuters via Devdiscourse). The EU has immobilised about <strong>€210bn</strong> of Russian central-bank assets, about €185bn of it at Euroclear in Brussels; the issue is not on the 15–16&nbsp;Oct summit agenda.</p>
+<p><strong>The other lever.</strong> Ukraine says its access to Starshield, the military version of Starlink, has been greatly restricted (NPR). Elon Musk said Starshield limits are set by the US military and ultimately the President, not SpaceX (CNBC; The Hill). Zelenskyy called the reported withdrawal of US intelligence “dangerous” (Reuters).</p>
+<p><strong>The US channel.</strong> A US-controlled vehicle for Russian state money would put Washington, not Brussels, in charge of the largest bargaining chip in any settlement, and would put US policy across the EU’s legal framework for the freeze. The Ukraine balance here is held at the standing level: this is the policy story, the strikes are in lead&nbsp;1.</p>
+<p class="sources">Sources:
+<a href="https://www.investing.com/news/economy-news/us-proposes-unfreezing-russian-assets-to-restart-ukraine-peace-talks-ft-4950270">Investing.com on FT (read)</a> ·
+<a href="https://meduza.io/en/news/2026/10/15/ft-u-s-proposed-unfreezing-some-russian-assets-and-placing-them-under-washington-s-control-europe-rejected-the-plan">Meduza on FT (summary)</a> ·
+<a href="https://www.devdiscourse.com/article/international/3992878-merz-says-frozen-russian-assets-must-stay-in-europe-amid-reported-us-proposal">Reuters via Devdiscourse (read)</a> ·
+<a href="https://mezha.net/eng/news/68d7c321_merz_says_europe_must/">Mezha / Yevropeiska Pravda (read)</a> ·
+<a href="https://www.npr.org/2026/10/15/nx-s1-6002949/ukraine-says-its-starshield-access-has-been-greatly-restricted">NPR (headline)</a> ·
+<a href="https://www.cnbc.com/2026/10/15/elon-musk-starlink-ukraine-trump-energy-ceasefire.html">CNBC on Musk (summary)</a>
+</p>
+<div class="fb">
+<p>Frozen-assets story:</p>
+<label><input type="radio" name="fb-assets" value="right"> Right, US channel clear</label>
+<label><input type="radio" name="fb-assets" value="fold"> Fold into the oil chain</label>
+<label><input type="radio" name="fb-assets" value="drop"> Not needed</label>
+</div>
+</article>
+
+<article id="s7">
+<h2>Treasury proposes the rules that bar most non-citizens from ACA premium tax credits from 2027 and add pre-enrolment verification — implementing the 2025 tax law, comments by 30 November</h2>
+<p class="meta">
+<span class="chip">US policy</span>
+<span class="chip">US debt &amp; fiscal</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The document.</strong> Treasury and the IRS published proposed regulations today (REG-101576-26, <strong>91 FR 65494</strong>) amending eligibility for the Premium Tax Credit — the refundable credit that subsidises Exchange coverage — its computation, and liability for excess advance payments. Comments close <strong>30&nbsp;Nov</strong>; a telephone hearing is set for <strong>8&nbsp;Dec</strong> (FR API).</p>
+<p><strong>What it does.</strong> Per the IRS release (IR-2026-121), from 2027 the credit is restricted to US citizens, US nationals and “certain lawfully present noncitizens,” and new verification criteria apply before any advance payment. A tax-practitioner analysis of the text adds that coverage obtained through an income-based special enrolment period is excluded for plan years after 2025 and that the cap on repaying excess advance credits is removed; that reading is secondary and not checked against the preamble here. HHS is expected to issue parallel Exchange rules.</p>
+<p><strong>The framing and the number.</strong> Bessent calls it closing “eligibility loopholes.” The release cites CMS’s removal of more than 760,000 “unverified” enrollees and $2.2bn in savings — an administration figure, not an independent estimate. The mechanism is the story: a statute written in 2025 becomes, through this rule, who loses a subsidy in 2027, and uncapped repayment moves the risk of an income misestimate from the Treasury to the household.</p>
+<p class="sources">Sources:
+<a href="https://www.federalregister.gov/documents/2026/10/15/2026-21056/premium-tax-credit">FR 2026-21056 (abstract via API)</a> ·
+<a href="https://www.irs.gov/newsroom/treasury-and-irs-move-to-protect-health-care-benefits-for-eligible-americans">IRS IR-2026-121 (read)</a> ·
+<a href="https://www.currentfederaltaxdevelopments.com/blog/2026/10/14/premium-tax-credit-regulations-under-the-one-big-beautiful-bill-act-technical-analysis-for-tax-professionals">Current Federal Tax Developments (summary)</a>
+</p>
+<div class="fb">
+<p>Premium tax credit rule:</p>
+<label><input type="radio" name="fb-ptc" value="lead"> Earns a lead</label>
+<label><input type="radio" name="fb-ptc" value="also"> Also-today item</label>
+<label><input type="radio" name="fb-ptc" value="skip"> Skip</label>
+</div>
+</article>
+
+<article id="s8">
+<h2>Iran: CNN reports US planners weighing the GBU-43 “mother of all bombs” for renewed strikes on energy and nuclear sites, and the President says officials who leaked the timing of a planned Iran action “should be shot”</h2>
+<p class="meta">
+<span class="chip">Geopolitics</span>
+<span class="chip under">Single-sourced</span>
+</p>
+<p><strong>The report.</strong> CNN, cited by Reuters and others, reported Wednesday that US military planners are considering the GBU-43/B Massive Ordnance Air Blast bomb for possible future strikes on Iranian energy infrastructure and nuclear sites, including the Pickaxe Mountain site, if the President authorises renewed operations. Officials quoted doubted its usefulness against deeply buried, granite-protected facilities: it is an air-burst weapon, not a penetrator. Single-sourced and labelled so.</p>
+<p><strong>The leak line.</strong> At a rally in Bullhead City, Arizona, on Wednesday the President said government officials who leak sensitive information “should be shot,” referring to a leak of the timing of planned military action involving Iran, and said reporters who publish “false information” are “almost as bad” (NBC; Time; The Hill). Handelsblatt’s live blog adds that the EU and Gulf states postponed a summit in Riyadh.</p>
+<p><strong>Accountability.</strong> On 9&nbsp;Oct this brief reported, as a correction, that the President had ruled out an Iran strike before the midterms. Nothing today contradicts that: the CNN report is contingency planning. The Hormuz sinkings in lead&nbsp;1 are the live part of the conflict.</p>
+<p class="sources">Sources:
+<a href="https://www.investing.com/news/world-news/us-military-weighs-use-of-mother-of-all-bombs-in-potential-future-strikes-on-iran-cnn-says-4950493">Reuters on CNN via Investing.com (summary)</a> ·
+<a href="https://abc17news.com/politics/national-politics/cnn-us-politics/2026/10/14/exclusive-us-considering-using-mother-of-all-bombs-against-iran-sources-say/">CNN syndicated (summary)</a> ·
+<a href="https://www.nbcnews.com/politics/donald-trump/president-says-government-officials-who-leak-to-media-should-be-shot-rcna603613">NBC News (summary)</a> ·
+<a href="https://time.com/article/2026/10/15/trump-leakers-shot-journalists-arizona-rally/">Time (summary)</a> ·
+<a href="https://www.handelsblatt.com/">Handelsblatt live blog (front page)</a>
+</p>
+<div class="fb">
+<p>Iran planning item:</p>
+<label><input type="radio" name="fb-iran" value="right"> Right weight</label>
+<label><input type="radio" name="fb-iran" value="fold"> Fold into the oil chain</label>
+<label><input type="radio" name="fb-iran" value="less"> Shorter</label>
+</div>
+</article>
+
+<article id="s9">
+<h2>Florida &amp; Tampa Bay: Pasco’s school-tax renewal is on the 3 November ballot as early voting opens Monday; the dengue alert stays up; the Atlantic is quiet for seven days</h2>
+<p class="meta">
+<span class="chip">Florida</span>
+<span class="chip">Local</span>
+</p>
+<p><strong>Pasco school millage.</strong> Voters decide on 3&nbsp;Nov whether to <strong>renew</strong>, not add to, the up-to-one-mill school operating levy first approved in 2022. It would run from 1&nbsp;July 2027 to 30&nbsp;June 2031 and raise about <strong>$60m a year</strong>, mostly for teacher, bus-driver and other non-administrative pay plus some school safety. The district says eligible staff pay would fall about 12% without it; on a $200,000 assessed home the levy is about $200 a year (Pasco County Schools referendum pages; Wesley Chapel Today; Pasco community site). Pasco opens 12 early-voting sites from 19&nbsp;Oct (Tampa Free Press).</p>
+<p><strong>Dengue.</strong> DOH-Pasco’s mosquito-borne illness alert remains in force, under the local emergency declared 23&nbsp;Sep; recent local reporting puts Pasco at three locally acquired cases, with Hillsborough and Pinellas also adding cases (DOH-Pasco; Hernando Sun; WUSF, 8&nbsp;Oct). No new state arbovirus report was read this run.</p>
+<p><strong>Also.</strong> Pinellas County ended its contract with Suncoast Center for sexual-assault evidence exams (WFLA headline; replacement arrangement not established here). NHC’s 2&nbsp;a.m. outlook: tropical-cyclone formation is not expected in the next seven days.</p>
+<p class="sources">Sources:
+<a href="https://www.pasco.k12.fl.us/2026_referendum/ballot-language">Pasco County Schools referendum (summary)</a> ·
+<a href="https://wesleychapeltoday.com/news/pasco-school-referendum-heads-to-nov-3-ballot-what-wesley-chapel-voters-need-to-">Wesley Chapel Today (summary)</a> ·
+<a href="https://www.tampafp.com/pasco-county-opens-12-early-voting-sites-for-2026-general-election/">Tampa Free Press (headline)</a> ·
+<a href="https://pasco.floridahealth.gov/2026/09/28/doh-pasco-issues-mosquito-borneillness-alert/">DOH-Pasco alert (summary)</a> ·
+<a href="https://www.wfla.com/news/pinellas-county/pinellas-county-cuts-ties-with-suncoast-center-ending-sexual-assault-exam-deal/">WFLA (headline)</a> ·
+<a href="https://www.nhc.noaa.gov/text/MIATWOAT.shtml">NHC outlook (read)</a>
+</p>
+<div class="fb">
+<p>Florida section today:</p>
+<label><input type="radio" name="fb-fl" value="good"> Right size</label>
+<label><input type="radio" name="fb-fl" value="more"> More local</label>
+<label><input type="radio" name="fb-fl" value="less"> Less</label>
+</div>
+</article>
+
+<h2 class="section" id="also">Also today</h2>
+<p class="secnote">10 short items. Open any.</p>
+<div class="also-list">
+
+<details>
+<summary><span class="chip">US debt &amp; fiscal</span> Treasury’s amended auction rules (Uniform Offering Circular) take effect today: submitters must provide all customer bid information before the noncompetitive close</summary>
+<div class="exp">
+<p>Three weeks before the 4&nbsp;Nov refunding; matters for brokers aggregating small bids. Source: <a href="https://www.federalregister.gov/documents/2026/10/15/2026-21069/sale-and-issue-of-marketable-book-entry-treasury-bills-notes-and-bonds">FR 2026-21069 (title/abstract)</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">US financials</span> SEC proposes to widen which securities funds may cross-trade with affiliates under the Investment Company Act rule, modernise its conditions, and add aggregated cross-trade reporting on Forms N-PORT and N-MFP; comments by 14&nbsp;Dec</summary>
+<div class="exp">
+<p>Asset-manager plumbing that touches money-market funds. Source: <a href="https://www.federalregister.gov/documents/2026/10/15/2026-21037/investment-company-cross-trading">FR 2026-21037, 91 FR 65622 (abstract)</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Trade</span> Federal Maritime Commission proposes a $200,000 per-voyage fee on Spanish vessels and limits on some Spanish imports, citing Spain’s denial of port entry; comments by 14&nbsp;Dec</summary>
+<div class="exp">
+<p>Legal mechanism: the FMC’s foreign-shipping-practices authority. Market effect not yet measurable. Source: <a href="https://www.federalregister.gov/documents/2026/10/15/2026-21067">FR 2026-21067 (title)</a>. Claude’s Issue&nbsp;41 leads with it.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Public health</span> CDC renewed its Ebola entry suspension on 11&nbsp;Oct for 30 days, to 10&nbsp;Nov: non-citizens, including green-card holders, who were in DR Congo, Uganda or South Sudan in the past 21 days; US citizens and nationals are exempt</summary>
+<div class="exp">
+<p>Published in today’s Federal Register. Source: <a href="https://www.federalregister.gov/documents/2026/10/15/2026-21036/order-under-sections-362-and-365-of-the-public-health-service-act-continuing-the-suspension-of-the">FR 2026-21036 (summary via search)</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">US policy</span> The Federal Labor Relations Authority formally restores its pre-March representation rules after a federal judge vacated its 24&nbsp;March interim final rule, which had moved union-election decisions from career regional directors to the political members</summary>
+<div class="exp">
+<p>Effective today. The court found the interim rule arbitrary and capricious (29&nbsp;June). Sources: <a href="https://www.federalregister.gov/documents/2026/10/15/2026-21078">FR 2026-21078, 91 FR 65441 (abstract)</a>; <a href="https://www.fedsmith.com/2026/07/08/court-vacates-flra-rule-union-representation/">FedSmith (summary)</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Geopolitics</span> Denmark pushes back on the President’s Greenland oil-and-minerals talk: the recent US-Greenland-Denmark agreement excludes mining and drilling rights and reinforces Greenland’s sovereignty</summary>
+<div class="exp">
+<p>Accountability: yesterday’s single-sourced Greenland item now has a direct counter-statement. Source: <a href="https://www.aljazeera.com/news/">Al Jazeera /news/ (headline and dek)</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">AI &amp; tech</span> Microsoft president Brad Smith calls for “emergency brakes” on AI that controls devices or critical infrastructure, mandatory incident reporting, and possibly government sign-off before frontier releases; Handelsblatt runs a new interview today</summary>
+<div class="exp">
+<p>Lab-safety and policy thread. Sources: <a href="https://www.bbc.com/news/articles/c6rmy7zmvx3lo">BBC, 11&nbsp;Oct (summary)</a>; Handelsblatt (front page).</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Courts</span> The Supreme Court heard <em>Salazar v. Paramount Global</em> on Wednesday: whether the Video Privacy Protection Act’s “consumer” covers anyone who buys any service from a video provider, or only audiovisual goods; Paul Clement argued for Paramount</summary>
+<div class="exp">
+<p>The answer sets how far the statute’s damages reach beyond people who buy video. Source: <a href="https://www.scotusblog.com/cases/salazar-v-paramount-global/">SCOTUSblog case page (summary)</a>.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">US policy</span> ICE rejects an inspector-general recommendation that its body cameras record automatically</summary>
+<div class="exp">
+<p>Source: <a href="https://www.aljazeera.com/news/">Al Jazeera /news/ (headline and dek)</a>. Report itself not read here.</p>
+</div>
+</details>
+
+<details>
+<summary><span class="chip">Geopolitics</span> North Korea says it tested two submarine-launched missiles</summary>
+<div class="exp">
+<p>US channel: allied defence posture in Japan and South Korea. Source: <a href="https://www.aljazeera.com/news/">Al Jazeera /news/ (headline)</a>; state-media claim, unverified.</p>
+</div>
+</details>
+
+</div>
+
+<h2 class="section">Negative check</h2>
+<p>Checked against text.npr.org, Al Jazeera /news/, Handelsblatt’s front page, BBC, CNBC, Reuters syndication, the Federal Register API sweep for 15&nbsp;Oct (23 rules, proposed rules and presidential documents), AAA, the EIA weekly table, Treasury’s par curve, BLS, SSA, NHC, Pasco local outlets, and search for AP, WSJ, FT, Bloomberg, NBC, Time and the Washington Post. Wikipedia’s current-events portal timed out and was not used.</p>
+<p><strong>What it added or reordered:</strong> The EIA weekly print (posted 14&nbsp;Oct) changed the diesel paragraph from a daily rise to a weekly deceleration. Handelsblatt’s front page put the frozen-assets proposal, TSMC and Anthropic into the slate. Al Jazeera’s Omar item moved the investigation from a search to a denaturalisation case, and its Greenland dek corrected yesterday’s frame. The Treasury par curve overrode the vendor 10-year quote.</p>
+<p><strong>What it rejected:</strong> The livestreamed-execution plan for Nidal Hasan (announced 8&nbsp;Oct; no new decision). The Pakistan school collapse, Istanbul floods, Albania protests, Costa Rica’s mega-prison and the Israel election (no US channel). Kansas Senate race and swing-voter pieces (horse-race). The new press secretary’s controversy and the Greece ambassador’s removal (personnel). The OpenAI bugging suspect (crime blotter). SNAP card skimming (single-sourced USDA OIG estimate; Claude’s Issue&nbsp;41 carries it).</p>
+
+<h2 class="section">Dormant / watched</h2>
+<ul class="dorm">
+<li><strong>Hormuz / Iran / Saudi–Houthi:</strong> active in leads&nbsp;1 and&nbsp;8; a cruise missile was reported intercepted near Medina on Thursday (Al Jazeera live).</li>
+<li><strong>Russian diesel licence / shadow fleet:</strong> active, lead&nbsp;1; watch for any published licence.</li>
+<li><strong>Fed:</strong> decision 27–28&nbsp;Oct; October CPI 10&nbsp;Nov. Prints and decisions only.</li>
+<li><strong>Long end / Treasury:</strong> 10-year 5.19% (14&nbsp;Oct issuer close); 20-year reopening 21&nbsp;Oct; refunding 4&nbsp;Nov.</li>
+<li><strong>Cook:</strong> hearing 5&nbsp;Nov; no new fact today.</li>
+<li><strong>UAP implementation:</strong> six PURSUE tranches to date, the latest 18&nbsp;Sep; no seventh found this run.</li>
+<li><strong>Lab safety / Anthropic:</strong> revenue disclosed (lead&nbsp;3); S-1 not yet filed.</li>
+<li><strong>AI power &amp; grid:</strong> no new FERC/PJM order.</li>
+<li><strong>Tampa Bay dengue:</strong> active, Florida section.</li>
+</ul>
+
+<footer>
+<p>Issue No. 41-grok · 15 October 2026 · Grok edition for MAGA Mickey · Written by Grok Bot / News Bot · Archive: <a href="https://historiocity.github.io/News-Agent/">historiocity.github.io/News-Agent</a> · Skill reads <code>config.md</code> every run.</p>
+<p>The parallel Claude Issue&nbsp;41 is published as <code>2026-10-15.html</code>; this file is the independent Grok gather and does not overwrite it. 51 sources, 45 outside the watchlist. Items marked “headline”, “summary” or “data” were not read as full articles.</p>
+<p class="submit"><button type="button" id="send">Send feedback as a GitHub issue</button></p>
+</footer>
+</div>
+<script>
+(function () {
+ var OWNER = "historiocity", REPO = "News-Agent";
+ var btn = document.getElementById("send");
+ if (!btn) return;
+ btn.addEventListener("click", function () {
+ var lines = [], answered = 0;
+ document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+ answered++;
+ var q = i.closest(".fb").querySelector("p");
+ lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n → **" + i.value + "**");
+ });
+ if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+ var body = "Feedback on **Issue No. 41-grok — 15 October 2026, Grok edition**\n\n" + lines.join("\n")
+ + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+ window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+ + "&title=" + encodeURIComponent("Brief feedback — 2026-10-15-grok")
+ + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+ });
+})();
+</script>
+</body>
+</html>
