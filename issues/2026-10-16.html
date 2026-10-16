@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Thursday, 15 October 2026</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .chip.alert { background:var(--accent); color:#fff; border:1px solid var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  .corr { background:var(--box); border-left:3px solid var(--accent); padding:.7rem .9rem; margin:0 0 1rem; font-size:.94rem; }
+  .corr p { margin:.4rem 0; }
+  .corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--accent); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  .short { border-bottom:1px solid var(--rule); padding:.7rem 0; margin:0; }
+  .short > summary { color:var(--fg); cursor:pointer; list-style:none; }
+  .short > summary::-webkit-details-marker { display:none; }
+  .short > summary::before { content:"▸ "; color:var(--link); }
+  .short[open] > summary::before { content:"▾ "; }
+  .short .body { margin-top:.6rem; padding-left:1.1rem; border-left:2px solid var(--rule); font-size:.96rem; }
+  .why { font-style:italic; color:var(--muted); }
+  figure { margin:1.2rem 0 0; }
+  figcaption { font-size:.84rem; color:var(--muted); margin-top:.4rem; line-height:1.5; }
+  svg { width:100%; height:auto; display:block; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+  ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>The Brief &mdash; Friday, 16 October 2026</h1>
+  <p class="meta">No. 42 &middot; seven leads, one local, ten below the line &middot; a day the news was in the plumbing: the SEC licensed a new kind of options contract, the exchanges filed the rules for trading through the night, and the satellite link over Ukraine slowed down.</p>
+  <p class="prov"><strong>Provenance.</strong> 19 sources checked, 11 of them pointing at no active thread. Four leads are new subjects, three are continuations. <em>Negative check</em> &mdash; the biggest story this morning not on this brief's list is the shooting at Silver Rail Elementary School in Bend, Oregon, which killed three children and a teacher. It is not here because the configuration excludes acts of violence with no policy consequence attached, and nothing reachable by 5am attached one. That is a rule working as written, not an oversight, and the reader should know the rule cost this.</p>
+  <p class="prov"><strong>One source failure worth recording.</strong> The <em>Federal Register</em>'s full-text endpoint, which has carried most of this brief's document reading for a month, returned <em>"Your IP address has been blocked"</em> on every attempt this morning. Every document below was read instead from GovInfo's PDF of the same page. The reading is unaffected; the route changed.</p>
+</header>
+
+<nav aria-label="In this issue">
+  <h2 class="navh">In this issue</h2>
+  <ol>
+    <li><a href="#kpi">The SEC has licensed betting on earnings numbers, and the contracts settle even if the numbers are restated</a></li>
+    <li><a href="#night">American shares will trade 23 hours a day from 6 December, and this morning the exchanges filed the rules for the other 14</a></li>
+    <li><a href="#starshield">Ukraine's drones lost their satellite link, and Musk says Washington set the limit</a></li>
+    <li><a href="#diesel">The President called the refinery strikes a disgrace again, and the diesel premium reached two dollars</a></li>
+    <li><a href="#yields">The long end has now fallen for three sessions running, which is not what this brief told you to expect</a></li>
+    <li><a href="#ofac">Treasury designated an Iraqi bank and a Cuban one, and quietly widened two licences for Lukoil</a></li>
+    <li><a href="#rfs">EPA exempted far more refineries than it forecast, and proposes to hand the bill to the next two years</a></li>
+    <li><a href="#dengue">Florida &amp; Tampa Bay: 351 of the state's 368 local dengue cases are in three counties, and not one began in October</a></li>
+    <li><a href="#also">Also today (10)</a></li>
+  </ol>
+</nav>
+<article id="kpi">
+  <h2>The SEC has licensed betting on earnings numbers, and the contracts settle even if the numbers are restated</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip new">New thread</span>
+    <span class="chip under">Underreported</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The Securities and Exchange Commission has approved, on an accelerated basis, a Cboe proposal to list <b>binary options on the individual financial metrics companies report in their earnings filings</b> &mdash; not on their share prices. Release <b>34&ndash;106659</b>, file SR&ndash;CBOE&ndash;2026&ndash;061, signed <b>13 October</b> and published this morning at <b>91 FR 65854</b>.</p>
+  <p>The mechanics are blunt. A binary pays a fixed amount if the option finishes in or at the money and nothing if it does not, so the payout is all-or-nothing. Here the settlement test is whether a <b>named metric in a Commission filing meets or exceeds a strike level</b>. The exercise settlement amount is <b>$1</b> and the contract multiplier is <b>one</b> &mdash; the Exchange's own words call the product retail. The position limit, added only in the amendment the Commission approved alongside the rule, is <b>25,000 contracts</b>.</p>
+  <p><b>Twenty-two issuers are listed</b>, each with its own named metrics. Apple on iPhone and Services net sales and on Greater China. Meta on Family Daily Active People. Tesla on Model 3/Y production and on Supercharger connectors. Palantir on closed deals of at least $1m. Robinhood on funded customers and average revenue per user. Marathon Digital on blocks won and energised hashrate. JPMorgan, Bank of America and Citigroup on net interest income and provision for credit losses. Also SpaceX, listed only since <b>June</b>.</p>
+  <p>The provision that should give a reader pause is the one on error. <b>If an issuer restates a metric after expiry, the settlement does not change.</b> The value as reported on the expiration date is final and the money has moved. A contract on reported accounting therefore pays out on the report, not on the truth.</p>
+  <p><b>What to watch:</b> the options disclosure document, still pending Commission review, which is what a retail buyer will actually be handed; the first listed series and which metric it is written on; and whether another exchange copies the filing.</p>
+
+  <div class="div">
+    <p class="t">Where the accounts diverge</p>
+    <p><b>The substance.</b> A dispute about law, not about facts, and it is about which regulator owns this. Commenters argued these are not securities options at all: unlike every binary now listed, they do not settle on the price or value of a security but on an accounting line. One commenter attacked the Exchange's central authority, the 2007 CD Options approval order, as <b>predating Dodd-Frank</b> and therefore no longer load-bearing. The implication is that a contract on a reported number is an event contract, which would put it under the Commodity Futures Trading Commission.</p>
+    <p><b>The cause.</b> Vantage, and it is not disreputable on either side. The Exchange is a securities exchange and wants its products inside its own rulebook, where it already has clearing, position limits and a disclosure regime. The objectors trade or study event contracts and have watched prediction markets grow under a different statute with different rules. Neither is reporting from a different set of facts; they are reading the same product against two statutes.</p>
+    <p><b>What it means for you.</b> The Commission resolved it in its own favour and the reasoning is thin in one place worth knowing: the Act does not define "option" at all, so the Commission reached for the <em>Commodity Exchange Act's</em> definition to argue these are options on securities, and said earnings metrics reference a core component of the shareholder's pecuniary interest. Read that as a jurisdictional claim staked rather than a question settled. What would settle it is a CFTC response or a petition for review; the thing to watch is whether the CFTC &mdash; which this brief has reported operating with a single voting member &mdash; says anything at all.</p>
+  </div>
+
+  <p class="sources"><b>Confidence:</b> Primary source. The approval order was read in full from GovInfo's PDF of this morning's <em>Federal Register</em>, including the issuer and metric table, the restatement provision and the comment discussion. No reachable outlet carried it. <b>Sources:</b> <a href="https://www.govinfo.gov/content/pkg/FR-2026-10-16/pdf/2026-21149.pdf">SEC, Release 34&ndash;106659, 91 FR 65854</a></p>
+
+  <div class="fb">
+    <p><b>New thread: options and event contracts on reported company data.</b></p>
+    <label><input type="radio" name="fb-kpi" value="follow"> Follow this &mdash; market structure like this is worth a standing slot</label>
+    <label><input type="radio" name="fb-kpi" value="milestones"> Only on milestones: first listing, a CFTC response, a dispute</label>
+    <label><input type="radio" name="fb-kpi" value="drop"> Too technical &mdash; drop it</label>
+  </div>
+</article>
+<article id="night">
+  <h2>American shares will trade 23 hours a day from 6 December, and this morning the exchanges filed the rules for the other 14</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip new">New thread</span>
+    <span class="chip under">Underreported</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Two filings in this morning's <em>Federal Register</em>, from two different exchanges, carry the same date in them: <b>23-hour, five-day trading is scheduled to commence industry-wide on 6 December 2026</b>. That is seven weeks away. The date has sat in this brief's dates-ahead list for weeks as "the LULD overnight change becomes operative"; these are the first documents to say what it means.</p>
+  <p>The Long-Term Stock Exchange is amending its clearly-erroneous-executions rule <b>"in light of the Commission's approval of Overnight Protected Bands"</b> under the limit-up limit-down plan &mdash; the price collar that stops a trade printing far from the market. It did not exist overnight because the market did not. The plan's operating committee filed Amendment 27 to create it, the Commission approved it, and LTSE's change becomes operative when 23/5 trading starts.</p>
+  <p>Nasdaq's filing describes the shape of the day. Trading hours now run <b>4:00am to 8:00pm Eastern</b>. From December there is also a <b>Night Session, 9:00pm to 4:00am</b>, and the rules say the systems behind the day and night sessions are <b>technically and functionally separate</b>, with quoting held briefly in abeyance at the handover so the public tape is not sent overlapping data. Its substance is narrow: how a newly listed exchange-traded product opens, and how a halted one reopens, when the halt can now fall at two in the morning.</p>
+  <p>That is the content of this story. Nobody is debating whether overnight trading is a good idea; the decision is made and the date is fixed. What is being written now, one filing at a time and with no coverage, is what happens when something goes wrong at 2am: which price is erroneous, which band applies, who opens the book, and whether the tape knows which session it is in.</p>
+  <p><b>What to watch:</b> filings from the remaining exchanges before 6 December, because each needs its own halt, auction and erroneous-trade rules; whether any of them is published for comment rather than taking effect immediately; and the first overnight halt.</p>
+
+  <p class="sources"><b>Confidence:</b> Primary source. Both filings were read from GovInfo's PDFs of this morning's issue. The 6 December date and the session times are quoted from the filings themselves, not from reporting. The underlying 23/5 approval order (release 105199, April 2026) and LULD Amendment 27 were not read; they are cited in these filings. <b>Sources:</b> <a href="https://www.govinfo.gov/content/pkg/FR-2026-10-16/pdf/2026-21129.pdf">LTSE, SR&ndash;LTSE&ndash;2026, clearly erroneous executions</a> &middot; <a href="https://www.govinfo.gov/content/pkg/FR-2026-10-16/pdf/2026-21137.pdf">Nasdaq, Equity 4 Rule 4120, halting and opening ETPs in 23/5 trading</a></p>
+
+  <div class="fb">
+    <p><b>New thread: round-the-clock equity trading and the rules being written for it.</b></p>
+    <label><input type="radio" name="fb-night" value="follow"> Follow it to 6 December and through the first weeks</label>
+    <label><input type="radio" name="fb-night" value="launch"> Wake me at the launch, not for each filing</label>
+    <label><input type="radio" name="fb-night" value="drop"> Not interesting &mdash; drop it</label>
+  </div>
+</article>
+
+<article id="starshield">
+  <h2>Ukraine's drones lost their satellite link, and Musk says Washington set the limit</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip new">New thread</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Overnight on <b>13&ndash;14 October</b> a speed cap took effect on the SpaceX satellite terminals Ukraine's military uses for battlefield communications and drone control. Ukrainian officials say they had <b>no warning</b>. The service now stops working above a ground speed, and the two available figures for that speed do not match: a Ukrainian official told Reuters the military-grade link fails above <b>100mph</b>, while Ukraine's <b>7th Rapid Reaction Corps</b> reported drones dropping out for ten to twenty seconds at speeds as low as <b>68 to 75mph</b>. Fast-flying drones simply lost their link.</p>
+  <p>SpaceX has published no explanation. Elon Musk said on <b>14 October</b> that the speed limits on Ukraine's Starshield terminals are set by the US military, Trump included, and not by his company. Reuters reported on 15 October, citing two US officials and a Western official, that the instruction originated <b>in the White House</b>, and that Defense Department leadership was told the service for the Ukrainian military had to be slowed. None of them would say who in the White House decided, or who carried it out.</p>
+  <p>The timing matters. It lands in the week the President again publicly demanded Ukraine stop striking Russian refineries, the next story in this issue. Starlink does not operate inside Russia, so throttling it cannot stop a strike directly &mdash; but it degrades precisely the long-range drone operations that carry those strikes out.</p>
+  <p>Note what this is: a privately owned constellation, serving a foreign military, altered without public notice on an instruction nobody will put a name to. The company says the government decided; unnamed government officials say the same. No one has produced the order.</p>
+  <p><b>What to watch:</b> any named official or written direction &mdash; this stays an unattributed account until one appears; whether the cap is lifted or widened; and whether the figure settles at 100mph or at the lower number the Ukrainian unit reported, which are different capabilities.</p>
+
+  <div class="div">
+    <p class="t">Where the accounts diverge</p>
+    <p><b>The substance.</b> Two disputes, one factual and one about weight. The factual one is the threshold: 100mph from a Ukrainian official speaking to Reuters, against 68&ndash;75mph from the unit flying the drones. The weight dispute is whether this is a commercial engineering change or an act of US policy &mdash; and that turns on a document nobody has.</p>
+    <p><b>The cause.</b> On the threshold, the mundane explanation is almost certainly right and is not a contradiction: a cap set at 100mph will begin degrading a link well below it, because a terminal on an airframe is handing off between satellites and loses lock before it hits the hard limit. One number is the specification, the other is the experience. On attribution, both the company and the anonymous officials are pointing away from themselves, which is an unusual alignment and a reason to take it seriously rather than less so &mdash; neither party benefits from naming Washington, and Musk in particular has been blamed for exactly this before.</p>
+    <p><b>What it means for you.</b> Treat the throttling as real and deliberate, treat its origin in the US government as well supported but formally unestablished, and treat 68&ndash;75mph as the operational number because it is the one measured in use. What would settle the origin is a written directive, a named official, or a congressional letter forcing an answer &mdash; and that is the observable to watch, not further rounds of unnamed sourcing.</p>
+  </div>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration for the throttling, which Ukrainian officials, Ukrainian units and the company's own owner all describe. <b>Single-sourced</b> for the White House origin: that rests on Reuters' unnamed officials, reached here through Handelsblatt's live file, and no primary document was read. <b>Sources:</b> <a href="https://www.handelsblatt.com/politik/international/ukraine-krieg-trump-verurteilt-angriffe-auf-russische-raffinerien/27982126.html">Handelsblatt live file, 16 October</a> (paraphrased from German) &middot; <a href="https://meduza.io/en/news/2026/10/14/ukrainian-military-says-spacex-restricted-starlink-terminals-without-warning">Meduza</a> &middot; <a href="https://gizmodo.com/ukraine-says-spacexs-new-starlink-restrictions-are-disrupting-drone-missions-2000825821">Gizmodo</a> &middot; <a href="https://www.timeslive.co.za/news/2026-10-14-ukraine-says-spacex-limits-starlink-operations-disrupting-military/">TimesLIVE</a></p>
+
+  <div class="fb">
+    <p><b>New thread: commercial satellite capability as an instrument of US policy.</b></p>
+    <label><input type="radio" name="fb-ss" value="follow"> Follow it &mdash; this is a US policy lever, report it as one</label>
+    <label><input type="radio" name="fb-ss" value="doc"> Only when a document or a named official appears</label>
+    <label><input type="radio" name="fb-ss" value="drop"> Too thinly sourced to keep running</label>
+  </div>
+</article>
+<article id="diesel">
+  <h2>The President called the refinery strikes a disgrace again, and the diesel premium reached two dollars</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Geopolitics</span>
+    <span class="chip cont">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Two things moved on this brief's longest-running thread, and they belong in one story because they are one causal chain.</p>
+  <p>In an interview with Newsmax, the President called Ukraine's renewed strikes on Russian oil refineries a <b>"disgrace"</b>, on the stated ground that they drive world energy prices up. He named the mechanism himself: strike the refineries that make diesel, which the United States and the world need, and you do the world no favour. He added that Zelensky is a harder counterpart than Putin and that any settlement would come without him. Ukraine had just hit a Rosneft plant southeast of Moscow; Putin said the strikes have done nothing significant.</p>
+  <p>This is not new and that is the point. Axios reported the same request made privately on a <b>20 September</b> call; he made it publicly in Ireland, and again beside Zelensky at the UN General Assembly, where he said the strikes had dealt Russia a serious blow <em>and</em> moved diesel prices. Four reiterations in four weeks is a position, not a remark.</p>
+  <p>Meanwhile the price. AAA's national average this morning: <b>diesel $6.3261, up 0.88 cents overnight and a fourth consecutive daily rise</b>; regular petrol <b>$4.3271, down 0.73 cents on the day and 4.5 cents on the week</b>. The two are moving apart, and <b>the diesel premium is now $1.999 &mdash; effectively two dollars, and the widest of the entire move</b>. Diesel is up <b>73.4%</b> on the year against petrol's 41.5%.</p>
+  <p><b>What to watch:</b> whether the premium holds above $2.00, which is the number that passes into freight rates and then into shelf prices; the next EIA weekly print on Tuesday; and whether any of the public pressure on Kyiv becomes a condition rather than a complaint.</p>
+
+  <figure>
+<svg viewBox="0 0 700 300" width="100%" role="img" aria-label="EIA weekly US on-highway diesel average, 6 July to 12 October 2026">
+<rect x="0" y="0" width="700" height="300" fill="none"/>
+<line x1="62" y1="242.0" x2="682" y2="242.0" stroke="#ccc" stroke-width="1"/>
+<text x="54" y="246.0" font-size="12" text-anchor="end" fill="#555">$4.50</text>
+<line x1="62" y1="192.0" x2="682" y2="192.0" stroke="#ccc" stroke-width="1"/>
+<text x="54" y="196.0" font-size="12" text-anchor="end" fill="#555">$5.00</text>
+<line x1="62" y1="142.0" x2="682" y2="142.0" stroke="#ccc" stroke-width="1"/>
+<text x="54" y="146.0" font-size="12" text-anchor="end" fill="#555">$5.50</text>
+<line x1="62" y1="92.0" x2="682" y2="92.0" stroke="#ccc" stroke-width="1"/>
+<text x="54" y="96.0" font-size="12" text-anchor="end" fill="#555">$6.00</text>
+<line x1="62" y1="42.0" x2="682" y2="42.0" stroke="#ccc" stroke-width="1"/>
+<text x="54" y="46.0" font-size="12" text-anchor="end" fill="#555">$6.50</text>
+<path d="M62.0 234.2 L106.3 212.4 L150.6 178.6 L194.9 160.7 L239.1 157.2 L283.4 166.3 L327.7 146.6 L372.0 126.8 L416.3 132.1 L460.6 95.3 L504.9 63.5 L549.1 39.1 L593.4 53.8 L637.7 72.1 L682.0 74.1" fill="none" stroke="#b22" stroke-width="2.5"/>
+<circle cx="62.0" cy="234.2" r="3" fill="#b22"/>
+<text x="62.0" y="274" font-size="11" text-anchor="middle" fill="#555">07/06</text>
+<circle cx="106.3" cy="212.4" r="3" fill="#b22"/>
+<circle cx="150.6" cy="178.6" r="3" fill="#b22"/>
+<text x="150.6" y="274" font-size="11" text-anchor="middle" fill="#555">07/20</text>
+<circle cx="194.9" cy="160.7" r="3" fill="#b22"/>
+<circle cx="239.1" cy="157.2" r="3" fill="#b22"/>
+<text x="239.1" y="274" font-size="11" text-anchor="middle" fill="#555">08/03</text>
+<circle cx="283.4" cy="166.3" r="3" fill="#b22"/>
+<circle cx="327.7" cy="146.6" r="3" fill="#b22"/>
+<text x="327.7" y="274" font-size="11" text-anchor="middle" fill="#555">08/17</text>
+<circle cx="372.0" cy="126.8" r="3" fill="#b22"/>
+<circle cx="416.3" cy="132.1" r="3" fill="#b22"/>
+<text x="416.3" y="274" font-size="11" text-anchor="middle" fill="#555">08/31</text>
+<circle cx="460.6" cy="95.3" r="3" fill="#b22"/>
+<circle cx="504.9" cy="63.5" r="3" fill="#b22"/>
+<text x="504.9" y="274" font-size="11" text-anchor="middle" fill="#555">09/14</text>
+<circle cx="549.1" cy="39.1" r="3" fill="#b22"/>
+<circle cx="593.4" cy="53.8" r="3" fill="#b22"/>
+<text x="593.4" y="274" font-size="11" text-anchor="middle" fill="#555">09/28</text>
+<circle cx="637.7" cy="72.1" r="3" fill="#b22"/>
+<circle cx="682.0" cy="74.1" r="3" fill="#b22"/>
+<text x="682.0" y="274" font-size="11" text-anchor="middle" fill="#555">10/12</text>
+<text x="549.1" y="29.1" font-size="12" text-anchor="middle" fill="#b22" font-weight="bold">record $6.529</text>
+<text x="682.0" y="94.1" font-size="12" text-anchor="end" fill="#333">$6.179</text>
+<text x="62" y="292" font-size="11" fill="#777">week ending, 2026</text>
+</svg>    <figcaption>EIA weekly US on-highway diesel average, week ending 6 July to 12 October 2026, in dollars per gallon. Scale: the vertical axis runs $4.40 to $6.60 at <b>100 pixels per dollar</b>; every plotted point was verified against that constant. The record is $6.529, week ending 21 September. The last two weeks fall: $6.199, then $6.179. Source: EIA weekly retail series.</figcaption>
+  </figure>
+
+  <div class="div">
+    <p class="t">Where the accounts diverge</p>
+    <p><b>The substance.</b> The two instruments this brief uses for diesel now point in opposite directions, and both are right. <b>AAA's daily card average has risen four days running.</b> <b>EIA's weekly survey has fallen two weeks running</b>, from $6.199 to $6.179. A reader looking at one and then the other would think someone had made an error.</p>
+    <p><b>The cause.</b> Not interest or access &mdash; measurement. A daily card-reader average measures today; a weekly survey measures a seven-day period ending Monday, and its latest reading covers the week to <b>12 October</b>, before the four rises happened. The weekly series cannot re-accelerate on a Thursday and the daily series cannot describe a trend. This brief called a trend turn off the daily series on 21 September and had it undone the next morning; the rule written then is the rule that resolves this now.</p>
+    <p><b>What it means for you.</b> Believe both, for different questions. For the level you pay, the daily number: diesel is near $6.33 and rising. For direction over the move, the weekly: the decline from the September record is real but has almost stopped, two cents in the latest week against fourteen in the one before. The observation that settles it is <b>Tuesday's EIA print</b>, which is the first weekly reading that will contain this week's rises &mdash; and this brief owes the reader a correction from 15 October for naming a release date without checking its calendar, so: EIA's retail price page publishes Tuesdays, and the next reading is due <b>20 October</b>.</p>
+  </div>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration. The price figures are primary &mdash; AAA's published averages and EIA's weekly series, read directly. The Newsmax remarks were reached through Handelsblatt's live file and are paraphrased from German, so the word "disgrace" is a translation of <em>Schande</em>; the earlier September and UN remarks are from reporting, not transcripts. <b>Sources:</b> <a href="https://gasprices.aaa.com/">AAA national averages</a> &middot; <a href="https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=pet&amp;s=emd_epd2d_pte_nus_dpg&amp;f=w">EIA weekly diesel series</a> &middot; <a href="https://www.handelsblatt.com/politik/international/ukraine-krieg-trump-verurteilt-angriffe-auf-russische-raffinerien/27982126.html">Handelsblatt live file</a> &middot; <a href="https://www.pravda.com.ua/eng/news/2026/10/05/8056603/">Ukrainska Pravda</a> &middot; <a href="https://censor.net/en/news/4024758/trump-ukraine-s-refinery-strikes-dealt-russia-a-serious-blow">Censor.NET</a></p>
+
+  <div class="fb">
+    <p><b>Continuing thread: diesel, the refinery campaign and the pass-through.</b></p>
+    <label><input type="radio" name="fb-diesel" value="chain"> Keep running price and policy as one story</label>
+    <label><input type="radio" name="fb-diesel" value="split"> Split them &mdash; the price daily, the policy when it moves</label>
+    <label><input type="radio" name="fb-diesel" value="less"> Too much diesel &mdash; cut the cadence</label>
+  </div>
+</article>
+<article id="yields">
+  <h2>The long end has now fallen for three sessions running, which is not what this brief told you to expect</h2>
+  <div class="meta">
+    <span class="chip">US debt &amp; fiscal</span>
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip cont">Continuation</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>From Treasury's Daily Par Yield Curve, read this morning by enumerating the header row and taking cells in position order: the latest print is <b>Thursday 15 October</b>. The <b>ten-year is 5.10%</b>, down nine basis points on the day. The <b>twenty-year is 5.48%</b>, also down nine. The <b>thirty-year is 5.43%</b>, down nine. The <b>two-year is 4.77%</b>, down five.</p>
+  <p>Three sessions, one direction. Since the Cook memorandum published on 13 October the ten-year has gone <b>5.21 &rarr; 5.19 &rarr; 5.10</b> and the twenty-year <b>5.60 &rarr; 5.57 &rarr; 5.48</b>. From the 7 October high the twenty-year is down <b>23 basis points</b>.</p>
+  <p><b>On 14 October this brief named the first Treasury print after that memorandum as the thing to watch, with the plain implication that a move against Federal Reserve independence would push the long end up.</b> It has gone down, for three sessions, by the largest amounts of the month. That was said plainly yesterday on one day's reading. Three days makes it a pattern, and the framing was wrong.</p>
+  <p>What is happening is a flattening from the long end. Ten-year minus two-year has gone from <b>+51 basis points on 7 October to +33</b> &mdash; eighteen points in six sessions, almost all of it the long end coming down rather than the short end going up. The hump is undisturbed: <b>twenty minus ten is +38</b>, where it has sat all month.</p>
+  <p>The honest reading is that a committee of inquiry scheduled for <b>5 November</b> is not, so far, being priced as an inflation risk. What is unresolved is whether the long end is falling because growth expectations are weakening &mdash; which September's energy-driven inflation print would support &mdash; or because the hearing is simply being discounted.</p>
+  <p><b>What to watch:</b> the 20 October print, the first clear of the three-day run; whether the 10s2s spread holds above 30 basis points; and the hump, which has been this brief's most durable observation and has survived every move this month.</p>
+
+  <figure>
+<svg viewBox="0 0 700 300" width="100%" role="img" aria-label="Ten-year and two-year Treasury par yields, 1 to 15 October 2026">
+<line x1="66" y1="250.0" x2="676" y2="250.0" stroke="#ccc" stroke-width="1"/>
+<text x="58" y="254.0" font-size="12" text-anchor="end" fill="#555">4.6%</text>
+<line x1="66" y1="196.5" x2="676" y2="196.5" stroke="#ccc" stroke-width="1"/>
+<text x="58" y="200.5" font-size="12" text-anchor="end" fill="#555">4.8%</text>
+<line x1="66" y1="143.0" x2="676" y2="143.0" stroke="#ccc" stroke-width="1"/>
+<text x="58" y="147.0" font-size="12" text-anchor="end" fill="#555">5.0%</text>
+<line x1="66" y1="89.5" x2="676" y2="89.5" stroke="#ccc" stroke-width="1"/>
+<text x="58" y="93.5" font-size="12" text-anchor="end" fill="#555">5.2%</text>
+<line x1="66" y1="36.0" x2="676" y2="36.0" stroke="#ccc" stroke-width="1"/>
+<text x="58" y="40.0" font-size="12" text-anchor="end" fill="#555">5.4%</text>
+<path d="M66.0 78.8 L133.8 68.1 L201.6 60.1 L269.3 70.8 L337.1 68.1 L404.9 84.2 L472.7 78.8 L540.4 86.8 L608.2 92.2 L676.0 116.3" fill="none" stroke="#b22" stroke-width="2.5"/>
+<circle cx="66.0" cy="78.8" r="3" fill="#b22"/>
+<circle cx="133.8" cy="68.1" r="3" fill="#b22"/>
+<circle cx="201.6" cy="60.1" r="3" fill="#b22"/>
+<circle cx="269.3" cy="70.8" r="3" fill="#b22"/>
+<circle cx="337.1" cy="68.1" r="3" fill="#b22"/>
+<circle cx="404.9" cy="84.2" r="3" fill="#b22"/>
+<circle cx="472.7" cy="78.8" r="3" fill="#b22"/>
+<circle cx="540.4" cy="86.8" r="3" fill="#b22"/>
+<circle cx="608.2" cy="92.2" r="3" fill="#b22"/>
+<circle cx="676.0" cy="116.3" r="3" fill="#b22"/>
+<path d="M66.0 201.8 L133.8 188.5 L201.6 185.8 L269.3 199.2 L337.1 204.5 L404.9 209.9 L472.7 196.5 L540.4 199.2 L608.2 191.1 L676.0 204.5" fill="none" stroke="#246" stroke-width="2.5"/>
+<circle cx="66.0" cy="201.8" r="3" fill="#246"/>
+<circle cx="133.8" cy="188.5" r="3" fill="#246"/>
+<circle cx="201.6" cy="185.8" r="3" fill="#246"/>
+<circle cx="269.3" cy="199.2" r="3" fill="#246"/>
+<circle cx="337.1" cy="204.5" r="3" fill="#246"/>
+<circle cx="404.9" cy="209.9" r="3" fill="#246"/>
+<circle cx="472.7" cy="196.5" r="3" fill="#246"/>
+<circle cx="540.4" cy="199.2" r="3" fill="#246"/>
+<circle cx="608.2" cy="191.1" r="3" fill="#246"/>
+<circle cx="676.0" cy="204.5" r="3" fill="#246"/>
+<text x="66.0" y="272" font-size="11" text-anchor="middle" fill="#555">10/01</text>
+<text x="133.8" y="272" font-size="11" text-anchor="middle" fill="#555">10/02</text>
+<text x="201.6" y="272" font-size="11" text-anchor="middle" fill="#555">10/05</text>
+<text x="269.3" y="272" font-size="11" text-anchor="middle" fill="#555">10/06</text>
+<text x="337.1" y="272" font-size="11" text-anchor="middle" fill="#555">10/07</text>
+<text x="404.9" y="272" font-size="11" text-anchor="middle" fill="#555">10/08</text>
+<text x="472.7" y="272" font-size="11" text-anchor="middle" fill="#555">10/09</text>
+<text x="540.4" y="272" font-size="11" text-anchor="middle" fill="#555">10/13</text>
+<text x="608.2" y="272" font-size="11" text-anchor="middle" fill="#555">10/14</text>
+<text x="676.0" y="272" font-size="11" text-anchor="middle" fill="#555">10/15</text>
+<text x="72.0" y="68.8" font-size="12" fill="#b22" font-weight="bold">10-year</text>
+<text x="72.0" y="221.8" font-size="12" fill="#246" font-weight="bold">2-year</text>
+<text x="670.0" y="106.3" font-size="12" text-anchor="end" fill="#b22">5.10</text>
+<text x="670.0" y="224.5" font-size="12" text-anchor="end" fill="#246">4.77</text>
+<text x="66" y="292" font-size="11" fill="#777">business days, October 2026 (no print 12 October, Columbus Day)</text>
+</svg>    <figcaption>Ten-year and two-year Treasury par yields, 1 to 15 October 2026. Scale: the vertical axis runs 4.60% to 5.40% at <b>267.5 pixels per percentage point</b>; all twenty plotted points were verified against that constant. There is no print for 12 October, a federal holiday on which the bond market was closed. The gap between the lines is the 10s2s spread, +51 basis points on 7 October and +33 on 15 October. Source: Treasury Daily Par Yield Curve.</figcaption>
+  </figure>
+
+  <p class="sources"><b>Confidence:</b> Primary source. Every level is from Treasury's own daily series, taken from the CSV endpoint by enumerating its fourteen column headers and reading cells by position &mdash; the column count has changed four times since September, so the label is never trusted. Today's print posts in the afternoon and is not in this issue. <b>Sources:</b> <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-yield-curve-rates">Treasury Daily Par Yield Curve</a> &middot; this issue's <a href="#diesel">diesel story</a> and <a href="2026-10-15.html#yields">15 October</a></p>
+
+  <div class="fb">
+    <p><b>Continuing thread: the long end, the curve's shape and the Fed-independence question.</b></p>
+    <label><input type="radio" name="fb-yields" value="daily"> Keep running the print daily while it is moving</label>
+    <label><input type="radio" name="fb-yields" value="weekly"> Weekly state-of-play is enough</label>
+    <label><input type="radio" name="fb-yields" value="hearing"> Hold it until the 5 November hearing</label>
+  </div>
+</article>
+<article id="ofac">
+  <h2>Treasury designated an Iraqi bank and a Cuban one, and quietly widened two licences for Lukoil</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">US financials</span>
+    <span class="chip cont">Continuation</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The Office of Foreign Assets Control published an action dated <b>15 October</b> under the banner "Operation Economic Outcast", aimed at what Treasury calls the Iranian regime's abuse of religious charity networks. <b>Sixteen individuals and eleven entities were added to the Specially Designated Nationals list</b> &mdash; ten under the Iran authority, one under Cuba.</p>
+  <p>Four of the eleven are banks or exchange houses, and that is the part with reach. <b>Chabahar International Bank Overseas</b> and <b>Jazireh International Bank</b>, both Iranian. Two exchange companies in Qom and Tehran, one of them registered as recently as <b>November 2024</b>. And, critically, the <b>International Development Bank for Investment and Finance</b> in Baghdad &mdash; an Iraqi commercial bank, with a SWIFT code, designated along with a wind-down licence (<b>Iran-related General License FF</b>) to unwind existing business. Separately, <b>Banco Internacional de Comercio</b>, a Cuban state-owned bank in Havana, was designated under the Cuba authority.</p>
+  <p>Designating an Iraqi bank is the consequential act. Iraq's banking system runs on dollars supplied through an account at the Federal Reserve Bank of New York, a direct lever on Iraqi finance Washington has nowhere else in the region. A wind-down licence rather than an immediate block says Treasury expects correspondent relationships unwound, not frozen.</p>
+  <p>Issued the same day, and much less remarked: <b>Russia-related General License 128D</b>, authorising transactions involving <b>Lukoil retail service stations located outside Russia</b>, and <b>General License 130B</b>, authorising transactions involving <b>certain Lukoil entities in Bulgaria</b>. Both are successive amendments &mdash; the letters say so. The United States is continuing to carve out the European downstream of a sanctioned Russian oil company while, as the diesel story above records, publicly complaining about the price of fuel.</p>
+  <p><b>What to watch:</b> whether any Iraqi or Gulf correspondent bank cuts the Baghdad bank off before the licence expires; the licences' own expiry dates, which were not read here; and whether a 128E or 130C follows, which is how this thread has moved all month.</p>
+
+  <p class="sources"><b>Confidence:</b> Primary source. The designation list, the programme tags, the general licence numbers and titles were read from OFAC's own dated recent-actions page. The licence texts themselves and the Treasury press release behind the operation's name were <b>not</b> read, so expiry dates and the exact authorised scope are gaps. A separate <em>Federal Register</em> notice this morning (91 FR 65850) records one unrelated Venezuela delisting. <b>Sources:</b> <a href="https://ofac.treasury.gov/recent-actions/20261015">OFAC recent actions, 15 October 2026</a> &middot; <a href="https://www.govinfo.gov/content/pkg/FR-2026-10-16/pdf/2026-21212.pdf">91 FR 65850</a> &middot; <a href="2026-10-14.html#diesel">14 October</a> on the Russian diesel licence</p>
+
+  <div class="fb">
+    <p><b>Continuing thread: sanctions instruments and the gap between designations and licences.</b></p>
+    <label><input type="radio" name="fb-ofac" value="licences"> Keep reading the licences &mdash; that is where the policy is</label>
+    <label><input type="radio" name="fb-ofac" value="big"> Only large designations</label>
+    <label><input type="radio" name="fb-ofac" value="less"> Too much sanctions plumbing</label>
+  </div>
+</article>
+
+<article id="rfs">
+  <h2>EPA exempted far more refineries than it forecast, and proposes to hand the bill to the next two years</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New thread</span>
+    <span class="chip under">Underreported</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>In this morning's proposed rules, the Environmental Protection Agency admits a forecasting miss and proposes two ways to absorb it. When it set renewable fuel volumes on <b>1 April 2026</b>, it projected that 2025 small refinery exemptions would remove <b>990 million</b> renewable identification numbers of obligation. The exemptions it then granted removed <b>1.76 billion</b>. The gap is <b>770 million RINs</b>.</p>
+  <p>The petition tally is in the document: for 2025 the agency granted <b>full exemptions to 18 petitions, partial exemptions to 11</b>, denied three and found two ineligible. Thirty-two petitions, twenty-nine of them granted in whole or part.</p>
+  <p>This matters because of how the programme works. An exemption does not merely excuse one refinery &mdash; it frees up carryover credits that would otherwise have been retired, and those credits then satisfy somebody else's obligation in a later year. EPA's own stated purpose for reallocating is to stop the surplus from <b>"removing the market incentives for actual production and use of renewable fuels"</b> in 2026 and 2027. Left alone, the exemptions would quietly reduce how much biofuel actually has to be blended.</p>
+  <p>The two co-proposed options are to split the 770 million between the 2026 and 2027 reallocation volumes, or to put all of it into 2027. EPA also says the proposal <b>may extend the 2026 compliance reporting deadline</b> beyond 31 March 2027. Comments close <b>4 December 2026</b>; a virtual hearing is set for <b>4 November</b>, with registration by 28 October.</p>
+  <p><b>What to watch:</b> which option EPA takes, because front-loading into 2026 raises obligations on parties already deep into the compliance year; whether the compliance deadline slips; and the RIN price, which is the market's own reading of all this and which this brief has not been tracking.</p>
+
+  <p class="sources"><b>Confidence:</b> Primary source. Every figure is from the proposed rule, read from GovInfo's PDF of this morning's issue. The underlying Set 2 Rule of 1 April 2026 and the exemption decisions themselves were not read. <b>Sources:</b> <a href="https://www.govinfo.gov/content/pkg/FR-2026-10-16/pdf/2026-21155.pdf">EPA, Reallocation of Additional 2025 Small Refinery Exemptions, docket EPA-HQ-OAR-2024-0505</a></p>
+
+  <div class="fb">
+    <p><b>New thread: the renewable fuel standard, exemptions and the blending obligation.</b></p>
+    <label><input type="radio" name="fb-rfs" value="follow"> Follow it &mdash; it is upstream of the fuel price</label>
+    <label><input type="radio" name="fb-rfs" value="final"> Only the final rule</label>
+    <label><input type="radio" name="fb-rfs" value="drop"> Drop it</label>
+  </div>
+</article>
+<h2 class="sect">Florida &amp; Tampa Bay</h2>
+
+<article id="dengue">
+  <h2>351 of Florida's 368 local dengue cases are in three Tampa Bay counties, and not one of them began in October</h2>
+  <div class="meta">
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip">Science &amp; public health</span>
+    <span class="chip cont">Continuation</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>This brief has owed the reader a proper reading of the Florida outbreak for nine days, because the weekly state surveillance report is a PDF and until last week this session could not read one. It can now. From the Department of Health's <b>Week 40 arbovirus report, covering 4&ndash;10 October</b>:</p>
+  <p><b>368 locally acquired dengue cases in 2026</b>, from eight counties, with <b>72 reported in this week alone</b>. The county breakdown, all of it from this single report: <b>Hillsborough 310, Pinellas 37, Pasco 4</b>, Miami-Dade 9, Orange 5, plus Broward, Palm Beach and Polk. Hillsborough, Pinellas, Pasco, Orange and Miami-Dade are under a mosquito-borne illness alert. Separately there were <b>288 travel-associated cases</b>, 254 of them serotyped, 221 acquired in the Americas.</p>
+  <p>Now the number that changes the story. The report gives onset months for all 368: <b>July 21, August 159, September 188</b>. That sums to the total, so <b>no case in this report began in October</b>. The 72 "reported this week" are earlier illnesses arriving late in the surveillance system &mdash; reporting catch-up, not an October acceleration. Anyone reading the weekly figure as this week's infections is reading it wrong.</p>
+  <p>Three counties hold <b>95% of the state's local transmission</b>. That total is a legitimate sum because it comes from one report describing one moment; on 3 October this brief added three counties' figures published on three different days, which was wrong. This is the corrected method, not a corrected number.</p>
+  <p>One more instrument: <b>39 sentinel chickens</b> tested positive for West Nile antibodies this week across fifteen counties including Pasco and Pinellas, <b>316 for the year from 27</b>. A caged chicken that seroconverts was bitten by an infected mosquito at that location &mdash; it reads the mosquito population directly, and it leads human cases.</p>
+  <p><b>What to watch:</b> the Week 41 report, which is the first that can carry October onsets and therefore the first real test of whether transmission is still running; and the local emergencies, below.</p>
+
+  <p class="corr"><b>Standing gap, stated plainly.</b> The Hillsborough and Pinellas local states of emergency were last extended, by orders this brief could find, to <b>15 October</b> &mdash; yesterday. Florida law caps such a declaration at seven days unless renewed. No further order was reachable this morning: the county newsroom URL pattern that carried the 8 October extension returns 404 for every date from 13 to 16 October, and no reporting found says either county extended again. <b>That is a statement about what could be read, not about what is in force.</b> The emergency may well have been renewed; this brief could not confirm it either way and will not infer a lapse from a missing document.</p>
+
+  <p class="sources"><b>Confidence:</b> Primary source for every case figure, read from the Week 40 PDF itself. The emergency-order status is a reporting gap, labelled above. <b>Sources:</b> <a href="https://www.floridahealth.gov/wp-content/uploads/2026/10/fl-arbovirus-report-w40-2026.pdf">Florida DOH, Arbovirus Surveillance Week 40</a> &middot; <a href="https://www.floridahealth.gov/statistics-data/population-surveillance/arbovirus-surveillance/">report index</a> &middot; <a href="https://hcfl.gov/newsroom/2026/10/08/dengue-fever-prompts-hillsborough-county-to-extend-state-of-local-emergency">Hillsborough, 8 October order</a> &middot; <a href="https://www.fox13news.com/tag/us/fl/pasco">FOX 13 Pasco</a></p>
+
+  <div class="fb">
+    <p><b>Continuing thread: the Tampa Bay dengue outbreak.</b></p>
+    <label><input type="radio" name="fb-dengue" value="weekly"> Read the weekly report every week now that PDFs work</label>
+    <label><input type="radio" name="fb-dengue" value="turns"> Only when the trend turns or an emergency changes</label>
+    <label><input type="radio" name="fb-dengue" value="enough"> Enough dengue</label>
+  </div>
+</article>
+<h2 class="section" id="also">Also today</h2>
+<p class="secnote">Ten items that did not clear the lead bar. Each expands in place; each ends with why it is below the line.</p>
+
+<details class="short" id="s-firing">
+  <summary><span class="chip">US politics &amp; policy</span> The decision on whether to livestream a military execution appears to have been reversed, and this brief cannot stand that up.</summary>
+  <div class="body">
+    <p>On 8 October this brief reported the Pentagon's plan to livestream the execution by firing squad of Nidal Malik Hasan, scheduled for <b>3 December at Fort Hood</b>, and the distinction that mattered: it would be the first US military execution by firing squad since <b>1945</b>, and the first US military execution by any method since <b>1961</b>.</p>
+    <p>Wikipedia's current-events portal records, for <b>15 October</b>, that the President announced the Department of Defense has reversed the livestream plan. Nothing reachable this morning confirms it. What reporting does establish is a sequence of retreat: the Secretary of Defense announced the livestream, the President said he had approved it, then said he was not involved in that decision, then said no final decision had been made. Axios reported private misgivings on 12 October; CNN reported on 14 October that he and his advisers were debating calling it off.</p>
+    <p><b>Below the line because</b> the only account of a decision is a tertiary source this brief's own rules forbid publishing alone, and the underlying execution date is unchanged either way.</p>
+    <p><b>Confidence: Unconfirmed</b> on the reversal; the December date and the historical firsts are previously verified. <b>Sources:</b> <a href="https://en.wikipedia.org/wiki/Portal:Current_events/2026_October_15">Wikipedia current events, 15 October</a> &middot; <a href="https://www.axios.com/2026/10/12/trump-livestream-execution">Axios</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-aca">
+  <summary><span class="chip">US politics &amp; policy</span> After cutting 760,000 people from Affordable Care Act plans, the administration is putting some of them back.</summary>
+  <div class="body">
+    <p>The verified half, from late September: the Centers for Medicare and Medicaid Services removed more than <b>760,000</b> enrolments from ACA exchanges on fraud grounds. Roughly <b>315,000 were cancelled outright</b>, in part because eligibility had not been checked at enrolment; another <b>419,000 were flagged for additional verification</b>. The agency also suspended new agent and broker sign-ups for <b>six months</b>. A claimed $2.2bn saving was never substantiated. KFF's Cynthia Cox said at the time the action was taken outside the normal regulatory process, which is the structural objection: a coverage decision of that size made without rulemaking has no comment period and no record.</p>
+    <p>NPR reported this morning that the administration has added some people back. This brief could not find the underlying CMS action, a number, or a mechanism &mdash; whether reinstatement follows an appeal, a data match, or an error acknowledged.</p>
+    <p><b>Below the line because</b> the new half is a single headline with no quantity attached, and without a number it cannot be weighed against the 760,000.</p>
+    <p><b>Confidence: Single-sourced</b> on the reinstatements; <b>Independent corroboration</b> on the September removals. <b>Sources:</b> <a href="https://text.npr.org/">NPR</a> &middot; <a href="https://www.opb.org/article/2026/09/22/trump-administration-to-remove-760000-affordable-care-act-enrollees-over-fraud-claims/">OPB</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-denat">
+  <summary><span class="chip">US politics &amp; policy</span> The citizenship-stripping story worth following is the monthly quota, not the member of Congress.</summary>
+  <div class="body">
+    <p>Reporting on 14 October said a federal investigation of Representative Ilhan Omar is aimed at revoking her citizenship, focused on decades-old immigration paperwork, with a separate inquiry into her financial disclosures. She called it baseless. A former federal prosecutor put the legal bar very high. No charge and no denaturalisation filing exists in anything reachable.</p>
+    <p>Underneath it is the item with policy content: the New York Times reported that <b>US Citizenship and Immigration Services has pressed its offices to supply the Justice Department's Office of Immigration Litigation with 100 to 200 denaturalisation cases a month.</b> A quota is a programme. It describes what happens to thousands of people whose names nobody will publish, and it is checkable in a way a single investigation is not &mdash; through case filings in district courts.</p>
+    <p><b>Below the line because</b> both halves are secondhand accounts of unnamed sources with no primary document, and the quota figure in particular is reported at one remove.</p>
+    <p><b>Confidence: Single-sourced.</b> <b>Sources:</b> <a href="https://www.inquirer.com/politics/nation/ilhan-omar-probe-birth-date-citizenship-20261014.html">Philadelphia Inquirer</a> &middot; <a href="https://politicalwire.com/2026/10/14/ilhan-omar-probe-aims-to-revoke-her-citizenship/">Political Wire</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-seized">
+  <summary><span class="chip">World economy</span> Russia has put four European manufacturers' local assets under state administration, and says it is reversible.</summary>
+  <div class="body">
+    <p>By decree, Russia has placed the Russian assets of several European companies under temporary state administration. Named in Handelsblatt's account: the German packaging maker <b>Menshen</b>, which makes closures and speciality packaging and employs about 1,400 people worldwide; the French flooring manufacturer <b>Tarkett</b>; and two further packaging firms. The Kremlin framed it as a response to EU states' role in the war and said the decision is <b>"reversible"</b>. It follows similar action last month against Nestl&eacute;, Auchan and Metro.</p>
+    <p>The US channel is narrow but real: temporary administration is the instrument by which a foreign state converts a sanctions dispute into an expropriation risk, and it sets the precedent any US company still holding Russian assets will be measured against. It is also a bargaining chip held openly &mdash; calling it reversible is the point of calling it anything.</p>
+    <p><b>Below the line because</b> no US company is named and the altitude bar requires a US channel that is more than a precedent.</p>
+    <p><b>Confidence: Single-sourced</b>, paraphrased from German; the decree itself was not read. <b>Sources:</b> <a href="https://www.handelsblatt.com/politik/international/ukraine-krieg-trump-verurteilt-angriffe-auf-russische-raffinerien/27982126.html">Handelsblatt</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-45z">
+  <summary><span class="chip">Energy &amp; grid</span> The second fuel-policy instrument in this morning's issue: Energy has opened the door for fuels with no published emissions rate.</summary>
+  <div class="body">
+    <p>The Department of Energy's Office of Critical Minerals and Energy Innovation published a notice of availability for its <b>section 45Z Emissions Value Request Process</b>. Section 45Z is the Clean Fuel Production Credit, created by the Inflation Reduction Act and amended by the One, Big, Beautiful Bill Act. The credit's size depends on the fuel's lifecycle greenhouse gas emissions rate. A producer either uses the published emissions rate table or, if its fuel's type, feedstock or pathway is not on that table, petitions Treasury for a <b>provisional emissions rate</b>. This process is how DOE supplies the emissions value that petition needs.</p>
+    <p>Read it alongside the EPA proposal above. In one morning, the federal government moved on both sides of the biofuel ledger: the blending obligation that creates demand, and the tax credit that pays for supply &mdash; the second one specifically to accommodate fuels nobody has yet classified.</p>
+    <p><b>Below the line because</b> it is a notice that a process exists, with no rate, no deadline and no identified petitioner.</p>
+    <p><b>Confidence: Primary source.</b> <b>Sources:</b> <a href="https://www.govinfo.gov/content/pkg/FR-2026-10-16/pdf/2026-21217.pdf">DOE notice of availability</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-paprs">
+  <summary><span class="chip">US politics &amp; policy</span> Mine safety regulators propose allowing powered air-purifying respirators underground.</summary>
+  <div class="body">
+    <p>The Mine Safety and Health Administration has published a proposed rule on <b>powered air-purifying respirators in underground mines</b>. A PAPR uses a blower to push filtered air into the facepiece rather than relying on the wearer's lungs to draw it through, which matters for respirable dust and silica exposure over a shift &mdash; a negative-pressure respirator leaks inward around the seal, a positive-pressure one does not.</p>
+    <p>This brief is flagging the item rather than reporting it: the proposal's text was not read today, so what it permits, requires or restricts is unstated here, and the comment deadline was not established. The agency also published, in the same issue, three separate petitions for modification of existing mandatory safety standards and a notice of affirmative decisions on earlier petitions &mdash; a reminder that mine safety runs largely on case-by-case variances rather than rules.</p>
+    <p><b>Below the line because</b> the document was identified but not read, and a proposed rule whose provisions you have not checked is a title, not a story.</p>
+    <p><b>Confidence: Primary source</b> for the existence and type of the document only. <b>Sources:</b> <a href="https://www.federalregister.gov/documents/2026/10/16/2026-21154/powered-air-purifying-respirators-paprs-in-underground-mines">MSHA proposed rule, 2026-21154</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-crypto">
+  <summary><span class="chip">US financials</span> On the same morning it licensed earnings options, the SEC let an exchange write generic listing rules for options on multi-crypto trusts.</summary>
+  <div class="body">
+    <p>Cboe BZX filed, with immediate effectiveness, amendments to its Rules 19.3 and 19.4 to <b>establish generic listing criteria and continued listing standards for options on commodity-based trusts holding multiple crypto assets</b>, and to permit the listing of options on exchange-traded funds.</p>
+    <p>"Generic criteria" is the load-bearing phrase. It is the difference between approving each product individually and publishing a standard that any qualifying product meets automatically. Applied to single-asset crypto trusts, that shift is what turned a trickle of approvals into a flood. Applied to baskets holding several crypto assets, it does the same thing one layer up &mdash; and it arrived by immediate effectiveness, which means it is in force now and comments come afterwards.</p>
+    <p><b>Below the line because</b> the filing's text was not read today, so the criteria themselves are unknown here; it is the mechanism, not the substance, that is being reported.</p>
+    <p><b>Confidence: Primary source</b> for the filing's existence, type and stated purpose. <b>Sources:</b> <a href="https://www.federalregister.gov/documents/2026/10/16/2026-21128/self-regulatory-organizations-cboe-bzx-exchange-inc-notice-of-filing-and-immediate-effectiveness-of">Cboe BZX, 2026-21128</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-pulp">
+  <summary><span class="chip">World economy</span> Commerce found Brazilian and Norwegian dissolving pulp dumped in the United States, in three determinations on one morning.</summary>
+  <div class="body">
+    <p>The International Trade Administration published three final determinations on <b>high purity dissolving pulp</b>: sales at less than fair value from <b>Norway</b>, sales at less than fair value from <b>Brazil</b>, and an affirmative countervailing duty determination on <b>Brazil</b>. All three are affirmative.</p>
+    <p>Dissolving pulp is the feedstock for viscose and rayon, for cellulose acetate, and for the cellulosic chemistry behind films and filters. It is a genuine input industry, which is what makes an antidumping order on it a cost pass-through to US textile and speciality chemical producers rather than a win for them. The duty rates were not read here, and they are the whole economic content of the determination.</p>
+    <p>Separately, the International Trade Commission scheduled the final phase of countervailing and antidumping investigations on a rubber accelerator chemical from China.</p>
+    <p><b>Below the line because</b> without the margins this is a procedural step in a case already in train, and the next step &mdash; the ITC's injury vote &mdash; is what produces an order.</p>
+    <p><b>Confidence: Primary source</b> for the determinations' existence and outcome. <b>Sources:</b> <a href="https://www.federalregister.gov/documents/2026/10/16/2026-21139/high-purity-dissolving-pulp-from-brazil-final-affirmative-determination-of-sales-at-less-than-fair">Commerce, Brazil LTFV</a> &middot; <a href="https://www.federalregister.gov/documents/2026/10/16/2026-21140/high-purity-dissolving-pulp-from-norway-final-affirmative-determination-of-sales-at-less-than-fair">Commerce, Norway LTFV</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-labor">
+  <summary><span class="chip">US politics &amp; policy</span> The Labor Department filed sixteen paperwork notices in one morning, and quietly rewrote who runs it if the Secretary cannot.</summary>
+  <div class="body">
+    <p>Of 113 notices in this morning's <em>Federal Register</em>, <b>sixteen came from the Labor Department</b> and almost all are information-collection submissions to the Office of Management and Budget &mdash; Job Corps questionnaires, rigging equipment, a BLS data-sharing programme, coal mine operator responses, labour condition application wage components.</p>
+    <p>Buried among them is one that is not paperwork: <b>"Updated Line of Succession and Delegations of Authority."</b> A succession notice sets out who exercises the Secretary's authority, in what order, when the office is vacant or the Secretary unavailable. Published without comment among fifteen OMB forms, it is the kind of document that becomes important retrospectively.</p>
+    <p>The repetition tell &mdash; a single agency filling a day's list &mdash; has produced leads for this brief repeatedly. Today it did not: the cluster is a batch clearing OMB deadlines, and the one interesting document inside it was not read.</p>
+    <p><b>Below the line because</b> the succession notice's text was not read, and a volume observation is a reason to look, never a story by itself.</p>
+    <p><b>Confidence: Primary source</b> for the counts and titles. <b>Sources:</b> <a href="https://www.federalregister.gov/documents/2026/10/16/2026-21171/updated-line-of-succession-and-delegations-of-authority">DOL, 2026-21171</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-106">
+  <summary><span class="chip">US politics &amp; policy</span> The rewrite of historic preservation review is still sitting at OMB, which is why there is no story yet.</summary>
+  <div class="body">
+    <p>NPR reported this morning that US historic preservation law faces its most serious threat in sixty years. The underlying action: on <b>24 July 2026</b> the Advisory Council on Historic Preservation voted <b>15&ndash;5 with two abstentions</b> to advance a rewrite of the Section 106 regulations at 36 CFR Part 800 &mdash; the first amendment in over two decades.</p>
+    <p>What practitioners describe: consultation steps replaced by an agency-prepared Section 106 report; Section 106 characterised as purely procedural; agencies free to alter any regulatory deadline; "avoid, minimize, or mitigate" adverse effects softened to "address" them; the area of potential effects narrowed to direct material alterations; and "historic property" redefined to require a physical location.</p>
+    <p>But it is a draft at the Office of Information and Regulatory Affairs, not a published rule. This brief checked: there is no notice of proposed rulemaking in the <em>Federal Register</em>, no docket and no comment period. Current regulations remain in force.</p>
+    <p><b>Below the line because</b> there is no document to read &mdash; and a rule at OIRA is exactly the state in which this brief's own rules say to wait.</p>
+    <p><b>Confidence: Independent corroboration</b> for the July vote and the draft's contents, from law-firm analyses rather than the draft itself. <b>Sources:</b> <a href="https://text.npr.org/">NPR</a> &middot; <a href="https://www.hklaw.com/en/insights/publications/2026/07/achp-proposes-sweeping-overhaul-of-section-106">Holland &amp; Knight</a> &middot; <a href="https://www.kelleydrye.com/viewpoints/blogs/kelley-green-law/national-historic-preservation-act-overhaul-what-you-need-to-know">Kelley Drye</a></p>
+  </div>
+</details>
+
+<div class="fb">
+  <p><b>One question about this tier as a whole.</b> Were the right things ranked below the line today?</p>
+  <label><input type="radio" name="fb-also" value="right"> About right</label>
+  <label><input type="radio" name="fb-also" value="promote"> Something here should have led &mdash; the 23/5 plumbing or the 45Z process</label>
+  <label><input type="radio" name="fb-also" value="demote"> Something that led belonged here</label>
+  <label><input type="radio" name="fb-also" value="fewer"> Fewer, longer items</label>
+</div>
+<footer>
+  <h2 class="section">Sources checked this run</h2>
+  <p><b>Watchlist-pointed (8):</b> the <a href="https://www.federalregister.gov/">Federal Register</a> documents API &mdash; <b>16 rules and proposed rules, 113 notices, 0 presidential documents</b>, with <b>six documents read in full</b> from GovInfo PDFs after the full-text endpoint blocked this session &middot; <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-yield-curve-rates">Treasury&rsquo;s Daily Par Yield Curve</a>, CSV endpoint, read by enumerated column position &middot; <a href="https://gasprices.aaa.com/">AAA Fuel Prices</a> &middot; <a href="https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=pet&amp;s=emd_epd2d_pte_nus_dpg&amp;f=w">EIA weekly diesel series</a> &middot; <a href="https://ofac.treasury.gov/recent-actions">OFAC recent actions</a> and its dated detail page &middot; <a href="https://www.whitehouse.gov/presidential-actions/">whitehouse.gov presidential actions</a> &mdash; nothing new since the Cook memorandum &middot; <a href="https://www.floridahealth.gov/statistics-data/population-surveillance/arbovirus-surveillance/">Florida DOH arbovirus index</a> and the Week 40 report &middot; the archive, for the diesel chain, the yield-curve thread, the firing-squad firsts and yesterday&rsquo;s named observable.</p>
+  <p><b>Outside the watchlist (11):</b> <a href="https://www.govinfo.gov/content/pkg/FR-2026-10-16/">GovInfo's FR-2026-10-16 package</a>, a route this brief had not used before &middot; <a href="https://text.npr.org/">text.npr.org</a> &middot; <a href="https://www.aljazeera.com/news/">Al Jazeera&rsquo;s news index</a> &middot; <a href="https://www.handelsblatt.com/">Handelsblatt</a>, which produced two leads &middot; <a href="https://www.statnews.com/">STAT</a> &middot; <a href="https://www.fox13news.com/tag/us/fl/pasco">FOX 13 Pasco</a> &middot; <a href="https://hcfl.gov/newsroom">Hillsborough County newsroom</a> &middot; <a href="https://www.bls.gov/schedule/news_release/2026_sched.htm">the BLS release calendar</a> &mdash; nothing today &middot; <a href="https://home.treasury.gov/news/press-releases">Treasury press releases</a> &mdash; returned nothing parseable &middot; Wikipedia&rsquo;s current-events portal for <a href="https://en.wikipedia.org/wiki/Portal:Current_events/2026_October_16">16</a> and <a href="https://en.wikipedia.org/wiki/Portal:Current_events/2026_October_15">15 October</a> &middot; <a href="https://www.gcaptain.com/">gCaptain</a>, which returned no parseable headlines this morning.</p>
+  <p><b>The negative check:</b> the <b>shooting at Silver Rail Elementary School in Bend, Oregon</b>, which killed three children and a teacher. It is the largest US story this brief is not carrying. The configuration's anti-topics exclude acts of violence with no policy consequence, and nothing reachable by 5am attached a policy change to it. The rule is the reader's own; it is recorded here so the cost of it is visible rather than hidden. Second place: <b>Brazil's presidential runoff</b>, polling a narrow Bolsonaro lead ahead of the 25 October vote, excluded because foreign elections run only when the result changes a US relationship.</p>
+  <p><b>Could not reach:</b> the <em>Federal Register</em>'s own <code>full_text/text/</code> endpoint, which returned <em>"Your IP address has been blocked &mdash; Support Code 02"</em> on six of six attempts; <a href="https://www.gcaptain.com/">gCaptain</a>, fetched but unparseable, so there is again no Hormuz or Bab el-Mandeb transit count &mdash; <b>28 consecutive days</b> without one, and still no war-risk premium; and any Hillsborough or Pinellas emergency order dated after 8 October.</p>
+
+  <h2 class="section">Dormant threads</h2>
+  <ul class="dorm">
+    <li><b>US fuel prices</b> &amp; <b>Russian diesel licence</b> &mdash; <b>woken and run as the fourth story</b>, on the President's fourth public demand that Ukraine stop striking refineries, and on the premium reaching $2.00. The <b>Graham Act implementation deadline is 18 October, Sunday, two days away, and nothing has been filed.</b></li>
+    <li><b>The long end &amp; Fed independence</b> &mdash; run as the fifth story, against this brief's own framing for a second day.</li>
+    <li><b>Tampa Bay dengue</b> &mdash; <b>closed as owed.</b> Nine days late, read from the primary weekly report, which also corrected this brief's 3 October method. The emergency-order status remains open.</li>
+    <li><b>Hormuz &amp; Bab el-Mandeb</b> &mdash; nothing reachable for a 28th day. <b>Riyadh airport is due to reopen tomorrow, 17 October</b>, which is the next dated test on that thread.</li>
+    <li><b>Removal of a Federal Reserve governor (Cook)</b> &mdash; no development of its own; the hearing is <b>5 November</b>. Its market consequence is the fifth story.</li>
+    <li><b>Firing squad &amp; lethal injection litigation</b> &mdash; touched, below the line, on an unconfirmed reversal.</li>
+    <li><b>Still owed, and named here so the debt is visible:</b> the <b>BIS "US content" tariff guidance</b> (named as a gap in print on 14 October, still unread); the <b>FMC Spanish-vessel proposed rule</b>; the second halves of the <b>SEC crypto custody</b>, <b>Transparency in Coverage</b>, <b>performance-fee</b>, <b>OPT</b> and <b>de minimis</b> proposals; the <b>BoJ statement</b>, <b>Berkshire release</b> and earlier <b>Florida arbovirus reports</b>, all now readable; <b>Alberta secession</b>, an admitted gap since 13 October; and the <b>skincare free-sample federal investigation</b>, which NPR carried again today.</li>
+    <li><b>Lab safety disclosures</b> &middot; <b>SNAP food-restriction demonstrations</b> &middot; <b>Federal statistical integrity</b> &middot; <b>Futenma</b> &middot; <b>Cornell</b> &middot; <b>Gulf states &amp; Article 51</b> &middot; <b>Indonesia free-meals programme</b> &middot; <b>Anak Krakatau</b> &middot; <b>Israel&ndash;Lebanon June framework</b> &middot; <b>EU&ndash;Greenland partnership</b> &middot; <b>Saxony-Anhalt government formation</b> &mdash; untouched.</li>
+  </ul>
+
+  <p style="margin-top:1.4rem">No open <code>brief-feedback</code> issues were waiting this morning. <b>Dates ahead:</b> <b>17 October</b>, Riyadh airport due to reopen; <b>18 October</b>, the Graham Act implementation deadline; <b>20 October</b>, the next EIA weekly retail price reading, the first containing this week's rises, and United Airlines results; <b>23 October</b>, Delta's postponed Atlanta&ndash;Riyadh launch; <b>25 October</b>, the Brazilian runoff; <b>28 October</b>, registration closes for EPA's renewable fuel hearing; <b>30 October</b>, comments close on the CDC entry order; <b>1 November</b>, the clocks go back unless the Senate acts; <b>2 November</b>, census comments, the Federal Reserve stress-test rule and REAP comments; <b>3 November</b>, the midterm elections and LULD amendment comments; <b>4 November</b>, the Treasury quarterly refunding, EPA's renewable fuel hearing, the FinCEN A7 comment close, FAA Part 450 comments, the NRC adverse-comment deadline, HHS child-welfare comments and both insider-lending comment files; <b>5 November</b>, EPA PM2.5 comments and the Cook committee hearing; <b>9 November</b>, OPT fee comments, the butalbital rule and the raisin order; <b>10 November</b>, Cook's post-hearing statement, and the CDC entry order lapses unless renewed; <b>12 November</b>, Colorado Class VI primacy takes effect and seabed-hearing registration closes; <b>13 November</b>, comments close on USCIS deference, the AP1000 renewal and the TCE extension; <b>16 November</b>, the deep seabed mining hearing and OPM FMLA comments; <b>23 November</b>, streaming-fraud comments; <b>around 28 November</b>, the EPA pest framework and the Super Intelligence legislative proposal; <b>30 November</b>, the GLOBE model and EPA greenhouse-gas-deadline comments; <b>1 December</b>, Big Cypress comments; <b>3 December</b>, the Hasan execution; <b>4 December</b>, two SEC comment files and the EPA renewable fuel comment close; <b>6 December</b>, <b>23-hour trading begins industry-wide</b> and the LULD overnight change becomes operative; <b>7 December</b>, Transparency in Coverage, two more SEC files, both hours-of-service pilots, the Trump Account comments and the de minimis comments; <b>14 December</b>, the CFTC crypto comments, the CBP rail comments, the deep seabed mining comments, the Cook Inlet comments, the three NCUA files, the Spanish-vessel comments, the OPM FMLA effective date, and the EPA and FDA rules take effect; <b>28 December</b>, the AP1000 renewal takes effect; <b>30 December</b>, Coast Guard mariner-training comments; <b>31 December</b>, the diesel tax deferral ends; <b>1 January 2027</b>, the EU ban on long-term Russian LNG contracts, and the 3.6% benefit increase reaches Social Security recipients; <b>28 January</b>, Rush's sentencing; <b>1 February 2027</b>, the delayed airline delay-cause rule; <b>10 February 2027</b>, the LULD amendment's temporary effectiveness lapses; <b>10 March 2027</b>, the extended greenhouse gas reporting deadline; <b>31 March 2027</b>, the 2026 renewable fuel compliance deadline, which EPA proposes to extend; <b>7 April 2027</b>, the Russian diesel and ICC wind-down licences expire; <b>1 July 2027</b>, statutory termination of de minimis; <b>31 December 2027</b>, the proposed TCE compliance date.</p>
+  <p><a href="../">Archive</a> &middot; Previous: <a href="2026-10-15.html">15 October</a></p>
+
+  <div class="submit">
+    <button type="button" id="send-feedback">Send feedback as a GitHub issue</button>
+  </div>
+</footer>
+
+</div>
+<script>
+(function () {
+  var owner = "historiocity", repo = "News-Agent";
+  document.getElementById("send-feedback").addEventListener("click", function () {
+    var lines = ["Feedback on Issue No. 42 (2026-10-16)", ""];
+    document.querySelectorAll(".fb input[type=radio]:checked").forEach(function (el) {
+      lines.push(el.name + ": " + el.value);
+    });
+    if (lines.length === 2) lines.push("(no radio answers selected)");
+    lines.push("", "Anything else:", "");
+    var url = "https://github.com/" + owner + "/" + repo + "/issues/new"
+      + "?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("brief-feedback: 2026-10-16")
+      + "&body=" + encodeURIComponent(lines.join("\n"));
+    window.open(url, "_blank");
+  });
+})();
+</script>
+</body>
+</html>
