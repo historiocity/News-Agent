@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Friday, 16 October 2026 (Grok edition)</title>
+<style>
+:root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+@media (prefers-color-scheme: dark) {
+:root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+.wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+.kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+.sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+.prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+nav ol { margin:0; padding-left:1.2rem; }
+nav li { margin:.25rem 0; }
+nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+a { color:var(--link); }
+article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+.secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+.meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+.chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+.chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+.chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+.sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+.div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+.div p { margin:.4rem 0; }
+.div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+.corr { background:var(--box); border-left:4px solid var(--accent); padding:.8rem 1rem; margin:0 0 1.6rem; font-size:.95rem; }
+.corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+.corr p { margin:.45rem 0; }
+details { margin-top:.8rem; }
+details summary { cursor:pointer; color:var(--link); }
+.exp { margin-top:.6rem; }
+.also-list { margin:0; }
+.also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+.also-list details:first-of-type { border-top:1px solid var(--rule); }
+.also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+.also-list .exp { font-size:.94rem; padding-left:.2rem; }
+footer { color:var(--muted); font-size:.88rem; }
+.fb { margin-top:1rem; font-size:.9rem; }
+.fb p { margin:.6rem 0 .2rem; }
+.fb label { display:block; margin:.15rem 0; }
+.submit { margin-top:2rem; }
+button { font:inherit; padding:.45rem .8rem; }
+ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+
+<body>
+<div class="wrap">
+<header>
+<p class="kicker">The Brief · Issue No. 42-grok · Friday, 16 October 2026 · Grok edition</p>
+<h1>The Brief</h1>
+<p class="sub">For MAGA Mickey · America/New_York · Source-led morning paper</p>
+<p class="prov"><strong>Provenance.</strong> Standing weekday calls: Federal Register RULE+PRORULE (16), PRESDOCU (0), NOTICE (113) for 16&nbsp;Oct; OFAC recent-actions 15&nbsp;Oct; Treasury daily CSV; AAA; EIA weekly diesel page; text.npr.org; Al Jazeera /news/ (thin parse); Handelsblatt; gCaptain; Fox&nbsp;13 Pasco; Freddie Mac PMMS; SEC Atkins statement; Treasury sb0660. Wikipedia’s 16&nbsp;Oct current-events page was nearly empty at gather. Claude’s Issue&nbsp;42 (<code>2026-10-16.html</code>) was read for accountability only after the slate was set — not as the menu. 48 sources this run; 26 outside the active watchlist (54%).</p>
+<p class="prov"><strong>Negative check</strong> (Handelsblatt + NPR + gCaptain + FR whole-day sweep + OFAC primary + AAA/EIA + Treasury CSV) reshaped the order: the FR NOTICE/SRO cluster produced the KPI-options and 23/5 leads; OFAC’s 15&nbsp;Oct package — not today’s Venezuela delisting notice — produced the sanctions lead; Handelsblatt and Guardian put Trump’s “disgrace” frame atop the oil chain; the issuer curve forced a correction on the long-end framing; Ars/Axios added the FTC lab probe. Claude’s Issue&nbsp;42 leads SEC KPI → 23/5 → Starlink → oil/diesel premium → yields → OFAC → EPA SRE → Florida dengue; this edition shares several primary documents but leads oil + Starshield, then KPI, 23/5, yields/Warsh, OFAC, EPA, FTC, Florida status.</p>
+</header>
+
+<nav>
+<ol>
+<li><a href="#s1">The oil chain on Friday: Trump calls Ukraine’s resumed refinery strikes “a disgrace,” diesel’s premium over regular hits two dollars, the UK tightens Russian oil sanctions as Washington still weighs relief — and the daily card average rose again while the weekly series waits until Tuesday</a></li>
+<li><a href="#s2">The order to slow Ukraine’s Starshield came from inside the White House, Reuters reports — receptors work again only up to about 100 mph, Musk says limits are a US government call, and a senior official says the President did not make the request</a></li>
+<li><a href="#s3">The SEC approved Cboe binary options on companies’ own earnings KPIs — and the contracts settle on the number as first reported, even if the issuer later restates it</a></li>
+<li><a href="#s4">American shares are cleared to trade 23 hours a day from 6 December — and this morning’s Federal Register carries Nasdaq’s overnight halt rules for ETPs in the new Night Session</a></li>
+<li><a href="#s5">The long end has fallen for three issuer sessions — 10-year to 5.10% — which is not what a hot CPI week was supposed to do; Warsh in Bangkok refuses to tip the 27–28 Oct meeting and calls the AI path “very bumpy”</a></li>
+<li><a href="#s6">Treasury’s “Economic Outcast” action designates Iraq’s International Development Bank and Cuba’s BICSA, and quietly extends Lukoil retail and Bulgarian licences into 2027</a></li>
+<li><a href="#s7">EPA says 2025 small-refinery exemptions created 1.76 billion RINs — 770 million more than it planned — and proposes to push that obligation into 2026 and 2027 renewable-fuel standards</a></li>
+<li><a href="#s8">The FTC has subpoenaed OpenAI and Anthropic over consumer harms from AI-agent security incidents — more than 50 pages of CIDs — after the Chair said existing breach tools can reach labs that lose control of agents</a></li>
+<li><a href="#s9">Florida &amp; Tampa Bay: Pasco’s dengue count remains at three under the county emergency; no new statewide FDOH week was readable here this morning</a></li>
+</ol>
+<p class="also"><a href="#also">Also today (11)</a>. Ranked below the line; each one opens.</p>
+</nav>
+
+<div class="corr" id="acct">
+<p class="t">Accountability: prior Grok frames</p>
+<p><strong>Energy ceasefire / Ryazan:</strong> yesterday closed the “pause” frame. Today’s new fact is Trump’s “disgrace” language and the two-dollar diesel–regular gap (lead&nbsp;1), plus the White House Starshield order (lead&nbsp;2).</p>
+<p><strong>10-year yield:</strong> yesterday’s issuer close 5.19% (14&nbsp;Oct). Today’s issuer close <strong>5.10%</strong> (15&nbsp;Oct). The long end fell through a hot PPI print — corrected in lead&nbsp;5.</p>
+<p><strong>Diesel instruments:</strong> AAA $6.3173 → <strong>$6.3261</strong> (fourth daily rise). EIA weekly still $6.179 (week of 12&nbsp;Oct); next print 20&nbsp;Oct. No weekly turn called.</p>
+<p><strong>CPI / COLA / hike odds:</strong> no new print; not reprised. Warsh speech and issuer yields carry the macro slot.</p>
+<p><strong>Omar denaturalisation / BofA–MS earnings / frozen-assets proposal:</strong> no new verifiable fact this morning → dormant.</p>
+<p><strong>Iran midterms correction (9&nbsp;Oct):</strong> stands; no new strike authorisation in today’s gather.</p>
+</div>
+
+<article id="s1">
+<h2>The oil chain on Friday: Trump calls Ukraine’s resumed refinery strikes “a disgrace,” diesel’s premium over regular hits two dollars, the UK tightens Russian oil sanctions as Washington still weighs relief — and the daily card average rose again while the weekly series waits until Tuesday</h2>
+<p class="meta">
+<span class="chip">Energy</span>
+<span class="chip">Geopolitics</span>
+<span class="chip">Macro</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The political channel.</strong> In a Newsmax interview aired Thursday, President Trump called Ukraine’s renewed strikes on Russian oil refineries “a disgrace”: “All he’s doing is making the world oil price higher… when you shoot at diesel refineries… he’s not doing a good service for the world” (Guardian, read). That is the new fact on a Thursday-to-Friday thread: yesterday’s brief recorded Kyiv ending the three-day pause and hitting Ryazan; today the White House is framing those strikes as the cause of the pump price while relations with Zelenskyy sour further. Zelenskyy, arriving in Brussels for the EU summit, did not answer the latest remarks and said he saw “no signals” Moscow was ready to end the war (Guardian).</p>
+<p><strong>The pump, on the right instruments.</strong> AAA’s national diesel average this morning is <strong>$6.3261</strong>, up 0.88¢ from yesterday’s $6.3173 and 4.76¢ above a week ago ($6.2785); regular is <strong>$4.3271</strong>, down 0.73¢ on the day. The diesel–regular gap is <strong>$1.999</strong> — two dollars to the penny. Under this brief’s 22&nbsp;Sep rule, the daily series is the level; the EIA weekly on-highway diesel, still <strong>$6.179</strong> for the week of 12&nbsp;Oct (posted 14&nbsp;Oct), is the trend, and its next release is <strong>20&nbsp;Oct</strong>. Four straight AAA rises against a weekly that fell 2.0¢ last week is not yet a weekly turn. <strong>Policy search on the price (8&nbsp;Oct rule):</strong> Trump’s “disgrace” framing and the still-open question of easing shadow-fleet sanctions (yesterday) are the live policy actions on this price; no new Federal Register licence on Russian diesel posted overnight.</p>
+<p><strong>The sanctions split.</strong> gCaptain reports the UK tightening Russian oil sanctions even as the US weighs relief for some shadow-fleet movements so “legal oil” can move on previously sanctioned vessels (headline/summary). That is the same supply lever as yesterday, now with an allied divergence. Brent remains a multi-feed instrument; this brief quotes physical and pump indicators ahead of any screen price.</p>
+<p><strong>Why one chain.</strong> The strikes, the presidential framing, the diesel premium, and the UK/US sanctions split are one supply shock seen from four places. Starshield’s temporary limit — a separate US lever on Kyiv — is lead&nbsp;2. <strong>What to watch:</strong> Tuesday’s EIA weekly diesel; any published shadow-fleet licence; whether Ryazan’s run rate is reported cut.</p>
+<p class="sources">Sources:
+<a href="https://www.theguardian.com/world/2026/oct/16/trump-calls-ukraines-resumption-of-strikes-on-russian-oil-refineries-a-disgrace">Guardian on Trump/Newsmax (read)</a> ·
+<a href="https://gasprices.aaa.com/">AAA national averages, 16 Oct (data)</a> ·
+<a href="https://www.eia.gov/petroleum/gasdiesel/">EIA weekly diesel table, week of 12 Oct / next 20 Oct (data)</a> ·
+<a href="https://gcaptain.com/uk-tightens-russian-oil-sanctions-as-u-s-weighs-relief/">gCaptain UK sanctions (headline)</a> ·
+<a href="https://www.investing.com/news/commodities-news/ukraine-hits-russian-refinery-as-zelenskiy-says-were-done-with-trumps-energy-truce-4952528">Reuters via Investing.com on Ryazan (summary)</a> ·
+<a href="https://www.benzinga.com/news/politics/26/10/62404570/diesel-is-near-6-33-a-gallon-but-trump-says-iran-defeat-will-send-prices-falling-like-a-rock-more-tax-relief-could-be-on-the-way">Benzinga diesel level (summary)</a> ·
+<a href="https://www.rigandrefinery.com/articles/ukraine-resumes-refinery-strikes-hits-ryazan-as-zelensky-ends-pause-ff4d9625">Rig & Refinery (summary)</a> ·
+<a href="https://gcaptain.com/trump-weighs-lifting-shadow-fleet-sanctions-as-tanker-rates-soar/">gCaptain shadow-fleet (headline)</a>
+</p>
+<div class="fb">
+<p>Oil/diesel as one causal chain today:</p>
+<label><input type="radio" name="fb-oil" value="one"> One chain, right</label>
+<label><input type="radio" name="fb-oil" value="split"> Split Starshield out was right</label>
+<label><input type="radio" name="fb-oil" value="shorter"> Shorter</label>
+</div>
+</article>
+
+<article id="s2">
+<h2>The order to slow Ukraine’s Starshield came from inside the White House, Reuters reports — receptors work again only up to about 100 mph, Musk says limits are a US government call, and a senior official says the President did not make the request</h2>
+<p class="meta">
+<span class="chip">Geopolitics</span>
+<span class="chip">US policy</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The new fact.</strong> The order to limit SpaceX’s military-grade Starshield service for Ukraine came from inside the White House, according to two US officials and a Western official briefed on the matter; Defense Department leaders received a message that the service needed to be slowed (Reuters via CNBC, read). Officials did not name who in the White House decided. A senior US official, asked about a presidential request, said: “No such request was ever made by the president.” The White House did not say whether another administration official made it.</p>
+<p><strong>What it did on the battlefield.</strong> Ukrainian officials said military-grade receptors stopped working on fast-moving objects, interfering with drone guidance over Ukrainian territory. A person in Ukraine’s Defence Ministry said Thursday that receptors were working again in motion, but only up to about <strong>100 mph (160 kph)</strong>. UK defence secretary Wes Streeting said US counterpart Pete Hegseth assured him the system was back up (Guardian briefing). Regiment commanders had reported lost drones and failed missions during a short shutdown (Washington Post summary).</p>
+<p><strong>Who owns the dial.</strong> Elon Musk said on X that Starshield systems are owned and controlled by the US government, so “any limits on speed or usage are decided by the US military and ultimately POTUS.” SpaceX did not comment to Reuters. The limit landed as Trump pressed Kyiv to stop refinery strikes he blames for fuel prices (lead&nbsp;1) and after Miami talks in which US envoys took a hard line on those strikes (Reuters).</p>
+<p><strong>Why it is here.</strong> This is the US channel on a foreign war: a Pentagon-bought communications backbone used as leverage over targeting choices that Washington says move the US pump. Balance on Ukraine stays at the standing level.</p>
+<p class="sources">Sources:
+<a href="https://www.cnbc.com/2026/10/16/order-to-limit-starshield-for-ukraine-came-from-inside-white-house-reuters-reports.html">Reuters via CNBC (read)</a> ·
+<a href="https://www.theguardian.com/world/2026/oct/16/ukraine-war-briefing-starlink-access-restored-says-uks-streeting-as-zelenskyy-rallies-support-in-brussels">Guardian Ukraine briefing (summary)</a> ·
+<a href="https://www.washingtonpost.com/business/2026/10/15/starshield-starlink-spacex-ukraine-russia-war/60ebfca4-c8d8-11f1-aefb-abe4112d087e_story.html">Washington Post (summary)</a> ·
+<a href="https://www.business-standard.com/world-news/us-says-trump-didn-t-order-curbs-on-ukraine-s-access-to-spacex-s-starshield-126101600191_1.html">Business Standard on senior official (summary)</a>
+</p>
+<div class="fb">
+<p>Starshield as its own lead:</p>
+<label><input type="radio" name="fb-starshield" value="right"> Right, separate from oil</label>
+<label><input type="radio" name="fb-starshield" value="fold"> Should fold into oil chain</label>
+<label><input type="radio" name="fb-starshield" value="less"> Too much</label>
+</div>
+</article>
+
+<article id="s3">
+<h2>The SEC approved Cboe binary options on companies’ own earnings KPIs — and the contracts settle on the number as first reported, even if the issuer later restates it</h2>
+<p class="meta">
+<span class="chip">US financials</span>
+<span class="chip">US policy</span>
+<span class="chip">AI &amp; tech</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The order (primary).</strong> On 13&nbsp;Oct the Commission approved Cboe’s proposal (SR-CBOE-2026-061; Release&nbsp;34-106659) to list cash-settled, European-style binary options on specified key performance indicators reported by certain stock issuers in earnings-related SEC filings. The approval order is published in today’s Federal Register (<strong>2026-21149</strong>). Chairman Atkins’s statement the same day stresses the products are NMS securities under exchange rules on accounts, margin, halts and market makers — and that the order “does not address—and does not foreclose—CFTC jurisdiction” over differently structured KPI contracts.</p>
+<p><strong>The load-bearing rule.</strong> Proposed settlement-value language states that if an applicable KPI “is restated after the expiration date and settlement,” the settlement value and exercise settlement amount “do not change”: “the value of the applicable KPI as reported by the issuer on the applicable expiration date is final… regardless of whether the KPI is later restated by the issuer” (FR full text, read). Calls pay if the reported KPI meets or exceeds the strike; puts pay if it is below. Eligible KPIs include line items such as Robinhood’s net income attributable to common stockholders and ARPU, among a listed set of issuers in the filing.</p>
+<p><strong>What it is not.</strong> This is exchange-traded securities options, not a CFTC event-contract market. Atkins framed the approval as ending a “turf war” void; the order itself is narrower. Trading has not been observed here — the legal mechanism is the story.</p>
+<p><strong>Why it leads.</strong> A retail-accessible bet on tomorrow’s earnings print that ignores a later restatement is a new transmission from corporate disclosure into price. Core US financials and policy.</p>
+<p class="sources">Sources:
+<a href="https://www.federalregister.gov/documents/2026/10/16/2026-21149/self-regulatory-organizations-cboe-exchange-inc-notice-of-filing-of-amendment-no-1-and-order">FR 2026-21149 full text (read)</a> ·
+<a href="https://www.sec.gov/newsroom/speeches-statements/atkins-101326-statement-commissions-approval-proposed-rule-change-permit-listing-binary-options-overlying-key">Atkins statement, 13 Oct (read)</a> ·
+<a href="https://natlawreview.com/article/sec-approval-opens-door-event-based-trading-securities-markets">National Law Review (summary)</a>
+</p>
+<div class="fb">
+<p>SEC KPI binary options:</p>
+<label><input type="radio" name="fb-kpi" value="lead"> Earns the lead</label>
+<label><input type="radio" name="fb-kpi" value="also"> Also-today weight</label>
+<label><input type="radio" name="fb-kpi" value="skip"> Too niche</label>
+</div>
+</article>
+
+<article id="s4">
+<h2>American shares are cleared to trade 23 hours a day from 6 December — and this morning’s Federal Register carries Nasdaq’s overnight halt rules for ETPs in the new Night Session</h2>
+<p class="meta">
+<span class="chip">US financials</span>
+<span class="chip">US policy</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The regime.</strong> On 10&nbsp;Apr the Commission approved Nasdaq’s extension of equity and ETP trading to 23 hours a day, five days a week. Industry materials put the start at <strong>Sunday 6&nbsp;Dec 2026</strong>: a Day Session consolidating existing hours (4:00&nbsp;a.m.–8:00&nbsp;p.m. ET) and a Night Session from <strong>9:00&nbsp;p.m. to 4:00&nbsp;a.m. ET</strong>, with a one-hour processing pause 8–9&nbsp;p.m. (Nasdaq 23/5 hub / NYSE extended-hours FAQ via search; FR filing).</p>
+<p><strong>Today’s filing.</strong> Nasdaq’s immediate-effectiveness filing SR-NASDAQ-2026-088 (Release&nbsp;34-106658), published today as <strong>2026-21137</strong>, amends Equity&nbsp;4 Rule&nbsp;4120 to set specific halt and open procedures for ETPs during 23/5 trading — including how newly listed ETPs behave in the Night Session and how a Nasdaq Halt Cross reopens them. Parallel circuit-breaker and halt cleanups have been filing across NYSE and Cboe venues this month; today’s NYSE Rule&nbsp;7.18 amendment (<strong>2026-21135</strong>) is a related Initial Listing Regulatory Halt cleanup.</p>
+<p><strong>Why it matters.</strong> Overnight US equity price discovery moves into Asia and Europe’s cash hours. The paperwork this morning is the operational layer — who halts an ETP at 11&nbsp;p.m. — not the April approval itself. <strong>What to watch:</strong> SIP readiness statements and broker overnight-margin policies before 6&nbsp;Dec.</p>
+<p class="sources">Sources:
+<a href="https://www.federalregister.gov/documents/2026/10/16/2026-21137/self-regulatory-organizations-the-nasdaq-stock-market-llc-notice-of-filing-and-immediate">FR 2026-21137 Nasdaq Rule 4120 (read)</a> ·
+<a href="https://www.federalregister.gov/documents/2026/10/16/2026-21135/self-regulatory-organizations-new-york-stock-exchange-llc-notice-of-filing-and-immediate">FR 2026-21135 NYSE Rule 7.18 (read)</a> ·
+<a href="https://www.nasdaq.com/23-5-trading">Nasdaq 23/5 Information Hub (summary via search)</a> ·
+<a href="https://www.nyse.com/publicdocs/nyse/NYSE_Extended_Hours_Trading_FAQ.pdf">NYSE Extended Hours FAQ (summary via search)</a>
+</p>
+<div class="fb">
+<p>23/5 trading story:</p>
+<label><input type="radio" name="fb-235" value="right"> Right weight</label>
+<label><input type="radio" name="fb-235" value="less"> Too operational</label>
+<label><input type="radio" name="fb-235" value="more"> Want broker/SIP detail</label>
+</div>
+</article>
+
+<article id="s5">
+<h2>The long end has fallen for three issuer sessions — 10-year to 5.10% — which is not what a hot CPI week was supposed to do; Warsh in Bangkok refuses to tip the 27–28 Oct meeting and calls the AI path “very bumpy”</h2>
+<p class="meta">
+<span class="chip">Macro</span>
+<span class="chip">US debt &amp; fiscal</span>
+<span class="chip">AI &amp; tech</span>
+<span class="chip new">Print</span>
+</p>
+<p><div class="corr"><p class="t">Correction / accountability</p><p>Yesterday’s CPI lead correctly printed the issuer 10-year close at <strong>5.19%</strong> (14&nbsp;Oct) and noted the curve flattened rather than sold off at the long end after the 3.7% print. The framing still implied hot inflation would keep term premium elevated. <strong>Three issuer closes later the long end is lower:</strong> 13&nbsp;Oct 5.21 → 14&nbsp;Oct 5.19 → 15&nbsp;Oct <strong>5.10</strong> (Treasury Daily Par Yield Curve CSV, columns enumerated: 10&nbsp;Yr is position 13 of 14 tenors). The 2-year fell to 4.77; the 30-year to 5.43. Vendor quotes this morning put the 10-year near 5.07 — direction only; this brief prints the issuer close.</p></div></p>
+<p><strong>What moved the story.</strong> After Wednesday’s CPI and Thursday’s PPI (wholesale prices +6.3% year-over-year in September — BLS via CNBC summary, biggest since 2022), Treasuries rallied anyway. Market desks tie the bid to an AI-financing rout and credit stress (CoreWeave and peers) more than to a dovish Fed (Reuters/Investing.com; Saxo wrap). That is the same AI-meets-bonds thread as yesterday, now visible in the issuer series.</p>
+<p><strong>Warsh (Fed rule: prints and decisions).</strong> In Bangkok for the IMF meetings on Friday, Chair Kevin Warsh declined to signal the <strong>27–28&nbsp;Oct</strong> decision: “I don’t prejudge meetings.” He praised “synchronous tightening” with “no free riders,” and said AI will make economies that use it well more productive while the path will be “very bumpy” (CNBC, AP summaries). CME FedWatch odds cited in those wraps put a hold near <strong>85–87%</strong>, up from roughly even after CPI. Under this brief’s Fed rule, the decision is the item; today’s speech is colour on a print week, not a path call.</p>
+<p><strong>Mortgage (Friday standing).</strong> Freddie Mac’s PMMS for the week of 15&nbsp;Oct: 30-year fixed <strong>7.40%</strong> (unchanged), 15-year <strong>6.71%</strong> (down from 6.73%).</p>
+<p class="sources">Sources:
+<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv">Treasury daily CSV (data)</a> ·
+<a href="https://www.cnbc.com/2026/10/16/feds-warsh-says-ai-development-path-will-be-very-bumpy-.html">CNBC on Warsh (summary)</a> ·
+<a href="https://apnews.com/article/us-economy-warsh-fed-ai-imf-4c80750c113a82a464a46f58a4fdab43">AP on Warsh (summary via search)</a> ·
+<a href="https://www.freddiemac.com/pmms">Freddie Mac PMMS (data)</a> ·
+<a href="https://www.cnbc.com/2026/10/16/us-treasury-yields-investors-hot-inflation-data-.html">CNBC yields wrap (summary)</a> ·
+<a href="https://www.investing.com/news/economy-news/is-the-ai-rout-making-bonds-safe-again-4950570">Reuters via Investing.com AI/bonds (summary)</a> ·
+<a href="https://www.home.saxo/en-gb/content/articles/macro/market-quick-take--meltdown-in-ai-stocks-yields-to-late-recovery---16-october-2026-16102026">Saxo market wrap (summary)</a> ·
+<a href="https://www.straitstimes.com/business/warsh-boosts-market-expectations-of-fed-rate-hold-in-october">Straits Times on Warsh (summary)</a>
+</p>
+<div class="fb">
+<p>Yields + Warsh package:</p>
+<label><input type="radio" name="fb-yields" value="right"> Right</label>
+<label><input type="radio" name="fb-yields" value="fed"> Less speech, more curve</label>
+<label><input type="radio" name="fb-yields" value="ai"> More on AI credit</label>
+</div>
+</article>
+
+<article id="s6">
+<h2>Treasury’s “Economic Outcast” action designates Iraq’s International Development Bank and Cuba’s BICSA, and quietly extends Lukoil retail and Bulgarian licences into 2027</h2>
+<p class="meta">
+<span class="chip">US policy</span>
+<span class="chip">Geopolitics</span>
+<span class="chip">Energy</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The designations (15&nbsp;Oct, primary).</strong> As part of Operation Economic Outcast, OFAC designated Iraq’s International Development Bank for Investment and Finance (IDB / Iraq Development Bank) under E.O.&nbsp;13902 for operating in Iran’s financial sector — Treasury says the bank supplied dollar access for Iran and maintained ties to Iran-aligned militia groups (Treasury press release sb0660, read). Iran-related General Licence&nbsp;FF authorises wind-down transactions involving IDB through <strong>30&nbsp;Oct 2026</strong>. Separately, State designated Havana-based Banco Internacional de Comercio S.A. (BICSA) under E.O.&nbsp;14404; FAQ&nbsp;1276 says foreign persons’ wind-down is not targeted through <strong>14&nbsp;Nov</strong>, while US-jurisdiction persons remain prohibited absent authorisation (OFAC recent-actions, read).</p>
+<p><strong>The Lukoil licences.</strong> The same day OFAC issued Russia-related General Licence&nbsp;128D (certain Lukoil retail stations outside Russia) and General Licence&nbsp;130B (named Lukoil entities in Bulgaria, including Neftohim Burgas), authorising covered transactions through <strong>12:01&nbsp;a.m. ET 24&nbsp;Apr 2027</strong> and superseding 130A (GL text, read). That is a widening of operating room for sanctioned Lukoil affiliates abroad, not a delisting of Lukoil itself.</p>
+<p><strong>What today’s Federal Register notice is not.</strong> FR notice <strong>2026-21212</strong> only unblocks one Venezuelan individual (Jorge Jesús Rodríguez Gómez) removed from the SDN List on 14&nbsp;Oct — codification, not the Economic Outcast package. The standing 11&nbsp;Sep trap applies.</p>
+<p><strong>Why it is here.</strong> An Iraqi bank in the dollar system, a Cuban bank in Iran’s network, and Lukoil operating licences are three US levers on the same day’s docket — finance, Cuba policy, and European diesel refining.</p>
+<p class="sources">Sources:
+<a href="https://home.treasury.gov/news/press-releases/sb0660">Treasury press release (read)</a> ·
+<a href="https://ofac.treasury.gov/recent-actions/20261015">OFAC recent-actions 15 Oct (read)</a> ·
+<a href="https://ofac.treasury.gov/media/937241/download?inline=">GL 130B text (read)</a> ·
+<a href="https://ofac.treasury.gov/media/937246/download?inline=">GL FF wind-down text (read)</a> ·
+<a href="https://ofac.treasury.gov/faqs/1276">OFAC FAQ 1276 (read)</a> ·
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/16/2026-21212.txt">FR 2026-21212 Venezuela delisting (read)</a>
+</p>
+<div class="fb">
+<p>OFAC package as one lead:</p>
+<label><input type="radio" name="fb-ofac" value="right"> Right</label>
+<label><input type="radio" name="fb-ofac" value="split"> Split Lukoil out</label>
+<label><input type="radio" name="fb-ofac" value="less"> Shorter</label>
+</div>
+</article>
+
+<article id="s7">
+<h2>EPA says 2025 small-refinery exemptions created 1.76 billion RINs — 770 million more than it planned — and proposes to push that obligation into 2026 and 2027 renewable-fuel standards</h2>
+<p class="meta">
+<span class="chip">Energy</span>
+<span class="chip">US policy</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The document.</strong> EPA’s proposed rule published today (<strong>2026-21155</strong>, RIN 2060-AX09) revises the 2026 and 2027 small-refinery exemption (SRE) reallocation volumes under the Renewable Fuel Standard. Comments close <strong>4&nbsp;Dec</strong>; a virtual hearing is set for <strong>4&nbsp;Nov</strong> (FR full text, read).</p>
+<p><strong>The miss.</strong> When EPA set the Set&nbsp;2 volumes on 1&nbsp;Apr 2026 it projected a 2025 exempted renewable volume obligation of about <strong>990 million RINs</strong> (from 7.55bn gallons of exempted fuel). Actual 2025 SREs produced an exempted RVO of <strong>1.76 billion RINs</strong> — <strong>770 million</strong> more than projected. Absent a fix, those extra RINs sit as carryover compliance currency.</p>
+<p><strong>Two proposed fixes.</strong> Approach&nbsp;1 splits the extra 770m equally into the 2026 and 2027 reallocation volumes (~1.4bn RINs each year). Approach&nbsp;2 leaves 2026 at 0.99bn and lifts 2027 from 1.04bn to <strong>1.81bn</strong> RINs. The proposal may also extend the 2026 compliance reporting deadline past 31&nbsp;Mar 2027.</p>
+<p><strong>Why it is here.</strong> This is the diesel-adjacent policy channel: small refineries excused from blending obligations shift the renewable burden onto everyone else, in a year when the pump story is already a lead. No wire reachable here carried the figures; they are in the preamble.</p>
+<p class="sources">Sources:
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/16/2026-21155.txt">FR 2026-21155 full text (read)</a> ·
+<a href="https://www.federalregister.gov/documents/2026/10/16/2026-21155/renewable-fuel-standard-rfs-program-reallocation-of-additional-2025-small-refinery-exemptions">FR HTML abstract</a>
+</p>
+<div class="fb">
+<p>EPA SRE reallocation:</p>
+<label><input type="radio" name="fb-sre" value="lead"> Earns a lead</label>
+<label><input type="radio" name="fb-sre" value="also"> Also-today</label>
+<label><input type="radio" name="fb-sre" value="skip"> Too technical</label>
+</div>
+</article>
+
+<article id="s8">
+<h2>The FTC has subpoenaed OpenAI and Anthropic over consumer harms from AI-agent security incidents — more than 50 pages of CIDs — after the Chair said existing breach tools can reach labs that lose control of agents</h2>
+<p class="meta">
+<span class="chip">AI &amp; tech</span>
+<span class="chip">US policy</span>
+<span class="chip">Lab safety</span>
+<span class="chip under">Single-sourced</span>
+</p>
+<p><div class="corr"><p class="t">Disclosure</p><p>Anthropic makes Claude, which writes the parallel Claude edition of this archive. This brief is the Grok edition. The probe is covered from external reporting only; neither lab’s response was obtained here.</p></div></p>
+<p><strong>What was reported.</strong> Axios, relayed by Ars Technica, reported that on Wednesday the FTC sent civil investigative demands to OpenAI and Anthropic spanning more than 50 pages — seeking documents on recent safety incidents, internal security measures, and marketing that may have misled consumers (Ars, read). Third parties targeted by agents are expected to be subpoenaed next. Both firms declined to comment to Ars; the FTC did not share the CIDs.</p>
+<p><strong>The legal theory.</strong> Chair Andrew Ferguson has said AI firms are liable when agents they release cause harm, and that audit trails so far show systems carrying out instructions they were given rather than acting beyond control (Reuters via Ars). He has argued existing FTC tools against companies that fail to disclose data breaches can apply to AI developers — a path to per-violation delay fines — while aligning with the administration’s view that no new statute is required. Separately this week, eight states sued OpenAI over alleged consumer harms (Reuters via Ars).</p>
+<p><strong>Why it is here.</strong> Standing lab-safety thread meets a live federal investigation. Single-sourced to the Axios account as relayed; labelled so. METR, the outside evaluator named in earlier probe coverage, may also be reached.</p>
+<p class="sources">Sources:
+<a href="https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/">Ars Technica on Axios (read)</a> ·
+<a href="https://www.axios.com/2026/10/15/ftc-openai-anthropic-ai-safety-investigation">Axios (headline)</a> ·
+<a href="https://www.cnbctv18.com/technology/anthropic-grants-outside-evaluator-metr-employee-level-access-in-ai-safety-push-20013094.htm">CNBC-TV18 on METR access (summary)</a> ·
+<a href="https://thedailyenergy.com/ferc-rejects-pjm-data-center-interconnection-plan/">Daily Energy on FERC/PJM (headline)</a> ·
+<a href="https://www.utilitydive.com/news/reliability-standards-ai-data-centers-crypto-miners-pass-final-nerc-ba/833094/">Utility Dive NERC standards (headline)</a>
+</p>
+<div class="fb">
+<p>FTC AI probe:</p>
+<label><input type="radio" name="fb-ftc" value="right"> Right weight</label>
+<label><input type="radio" name="fb-ftc" value="less"> Hold for primary CID</label>
+<label><input type="radio" name="fb-ftc" value="more"> Want state suits too</label>
+</div>
+</article>
+
+<article id="s9">
+<h2>Florida &amp; Tampa Bay: Pasco’s dengue count remains at three under the county emergency; no new statewide FDOH week was readable here this morning</h2>
+<p class="meta">
+<span class="chip">Florida</span>
+<span class="chip">Public health</span>
+</p>
+<p><strong>Local bar only.</strong> Fox&nbsp;13’s Pasco tag still carries the county at <strong>3</strong> dengue cases amid a declared local emergency (tag sweep). No fresh Florida DOH arbovirus weekly PDF was parseable this run, and no new board action cleared the bar. Early voting context for Pasco’s school-tax renewal (3&nbsp;Nov) is unchanged from yesterday. Empty would have been fine; this is a status check, not a new outbreak story.</p>
+<p><strong>NHC.</strong> The Atlantic outlook product was not cleanly readable this morning (page returned chrome without the text body); no named Atlantic system is being carried from secondary accounts.</p>
+<p class="sources">Sources:
+<a href="https://www.fox13news.com/tag/us/fl/pasco">Fox 13 Pasco tag (read)</a> ·
+<a href="https://www.nhc.noaa.gov/text/MIATWOAT.shtml">NHC MIATWOAT (fetch failed cleanly)</a>
+</p>
+<div class="fb">
+<p>Florida section today:</p>
+<label><input type="radio" name="fb-fl" value="ok"> Status check is enough</label>
+<label><input type="radio" name="fb-fl" value="skip"> Should have been empty</label>
+<label><input type="radio" name="fb-fl" value="more"> Want dengue statewide</label>
+</div>
+</article>
+
+
+<h2 class="section" id="also">Also today</h2>
+<p class="secnote">11 short items. Open any.</p>
+<div class="also-list">
+<details><summary>Freddie Mac: 30-year mortgage unchanged at 7.40%; 15-year 6.71%</summary>
+<div class="exp"><p>PMMS week of 15&nbsp;Oct: 30-year fixed averaged <strong>7.40%</strong> (unchanged week-over-week; 6.27% a year ago); 15-year <strong>6.71%</strong> (down from 6.73%; 5.52% a year ago). Standing Friday check while the long end moves (lead&nbsp;5). Source: <a href="https://www.freddiemac.com/pmms">Freddie Mac PMMS</a> (data).</p></div></details>
+<details><summary>DOE opens the 45Z clean-fuel emissions-value request process</summary>
+<div class="exp"><p>A Federal Register notice today (<strong>2026-21217</strong>) makes available DOE’s Emissions Value Request Process for Treasury/IRS administration of the §45Z Clean Fuel Production Credit — the route to a provisional emissions rate when a fuel pathway is not on the published table. Source: <a href="https://www.federalregister.gov/documents/full_text/text/2026/10/16/2026-21217.txt">FR 2026-21217</a> (read).</p></div></details>
+<details><summary>IRS finalises §357(c) non-applicability inside consolidated groups — effective today</summary>
+<div class="exp"><p>TD&nbsp;10059 (<strong>2026-21253</strong>): final regulations clarifying that certain liability assumptions in transfers between consolidated-group members do not reduce stock basis. Effective 16&nbsp;Oct. Housekeeping for tax lawyers; recorded because it is an immediate-effect Treasury rule. Source: <a href="https://www.federalregister.gov/documents/full_text/text/2026/10/16/2026-21253.txt">FR 2026-21253</a> (read).</p></div></details>
+<details><summary>Coast Guard delays mandatory electronic mariner course-completion filing until at least 25 Nov 2028</summary>
+<div class="exp"><p>Notification <strong>2026-21146</strong>: the system behind 46&nbsp;CFR&nbsp;10.403(a)(7) is “not yet fully operational,” so the electronic-submission requirement from the 2024 final rule will not be enforced before 25&nbsp;Nov&nbsp;2028. Source: <a href="https://www.federalregister.gov/documents/full_text/text/2026/10/16/2026-21146.txt">FR 2026-21146</a> (read).</p></div></details>
+<details><summary>Commerce final AD/CVD determinations on high-purity dissolving pulp from Brazil and Norway</summary>
+<div class="exp"><p>Three FR notices today (<strong>2026-21138</strong>, <strong>2026-21139</strong>, <strong>2026-21140</strong>) — final affirmative CVD (Brazil) and LTFV (Brazil, Norway). Repetition tell on a product name; rates not extracted here. Source: FR notices list (abstracts).</p></div></details>
+<details><summary>Handelsblatt: Warsh praises an “enormous investment wave” in AI; Merz–Macron auto pact</summary>
+<div class="exp"><p>Front page also led Trump’s condemnation of Ukrainian refinery strikes (lead&nbsp;1) and an ECB green light for UniCredit’s Commerzbank path. Used as negative-check and Europe wire, not as a US-channel auto story. Source: <a href="https://www.handelsblatt.com/">Handelsblatt</a> (front page).</p></div></details>
+<details><summary>gCaptain: UK tightens Russian oil sanctions as US weighs shadow-fleet relief</summary>
+<div class="exp"><p>Standing maritime desk; folded into lead&nbsp;1’s sanctions split. Also carried Hormuz attack tallies and tanker-rate pressure earlier in the week. Source: <a href="https://gcaptain.com/uk-tightens-russian-oil-sanctions-as-u-s-weighs-relief/">gCaptain</a> (headline).</p></div></details>
+<details><summary>NERC computational-load reliability standards clear final ballot</summary>
+<div class="exp"><p>Utility Dive reports NERC standards covering large computational loads (≥50&nbsp;MW) passed final ballot and await board adoption — the grid half of the AI capex story. Not a FERC order; recorded as watchlist-adjacent. Source: <a href="https://www.utilitydive.com/news/reliability-standards-ai-data-centers-crypto-miners-pass-final-nerc-ba/833094/">Utility Dive</a> (headline).</p></div></details>
+<details><summary>FERC rejected the core of PJM’s fast-track data-center interconnection plan</summary>
+<div class="exp"><p>Trade press: FERC rejected PJM’s proposed fast-track plan while accepting a large-load registry (Daily Energy). Continues the AI-power thread without a same-day FR order. Source: <a href="https://thedailyenergy.com/ferc-rejects-pjm-data-center-interconnection-plan/">Daily Energy</a> (headline).</p></div></details>
+<details><summary>DTN / farm desk: diesel pass-through remains the harvest cost story</summary>
+<div class="exp"><p>Standing off-watchlist check while the fuel shock runs: farm-level diesel costs ahead of harvest continue to track the AAA card average (lead&nbsp;1). No new DTN exclusive stood up beyond the desk’s beat role. Source: <a href="https://www.dtnpf.com/agriculture/web/ag/news">DTN Progressive Farmer</a> (index).</p></div></details>
+<details><summary>FreightWaves: Cass linehaul vs fuel surcharge — keep them separate</summary>
+<div class="exp"><p>Reminder instrument while diesel moves: Cass truckload linehaul excludes fuel surcharges; diesel passes through on the surcharge line indexed to EIA weekly. Source: <a href="https://www.freightwaves.com/">FreightWaves</a> (index).</p></div></details>
+</div>
+
+<h2 class="section">Negative check</h2>
+<p>Checked against text.npr.org, Handelsblatt’s front page, gCaptain, Guardian, CNBC/Reuters syndication, Federal Register API for 16&nbsp;Oct (16 rules/proposed, 0 presidential documents, 113 notices), OFAC 15&nbsp;Oct recent-actions and licence PDFs, Treasury CSV, AAA, EIA gas/diesel page, Freddie Mac PMMS, Fox&nbsp;13 Pasco, SEC Atkins statement, Ars Technica, and search for AP, WSJ, FT, Bloomberg, Washington Post. Al Jazeera’s /news/ index returned weak structured headlines this run. Wikipedia’s 16&nbsp;Oct current-events portal was nearly empty.</p>
+<p><strong>What it added or reordered:</strong> FR SRO notices → KPI options and 23/5 operational rules as leads. OFAC 15&nbsp;Oct package over today’s FR delisting notice. Guardian/Handelsblatt → Trump “disgrace” as the oil-chain advance. Issuer CSV → three-session long-end decline vs hot-inflation expectation. Ars/Axios → FTC CIDs on OpenAI/Anthropic.</p>
+<p><strong>What it rejected:</strong> Gen&nbsp;Z voter regret and midterms horse-race (NPR). Brewers/Dodgers (sports). Skincare scheme and “sick day kit” (consumer). MSCI Indonesia and Merz–Macron auto pact as leads (weak US channel; Merz–Macron noted in Also). Public-execution cancellation as a lead (personnel/spectacle; NPR headline only). Florida crime blotter on the Pasco tag. UniCredit/Commerzbank as a US-channel story.</p>
+
+<h2 class="section">Dormant / watched</h2>
+<ul class="dorm">
+<li><strong>Hormuz / Iran / Saudi–Houthi:</strong> background to the oil chain; no new confirmed US strike authorisation today.</li>
+<li><strong>Russian diesel licence GL 135 / shadow fleet:</strong> active via lead&nbsp;1; watch for any published easing licence.</li>
+<li><strong>Fed:</strong> decision 27–28&nbsp;Oct; October CPI 10&nbsp;Nov. Prints and decisions only.</li>
+<li><strong>Long end / Treasury:</strong> 10-year 5.10% (15&nbsp;Oct issuer); 20-year reopening 21&nbsp;Oct; refunding 4&nbsp;Nov.</li>
+<li><strong>Cook committee of inquiry:</strong> hearing 5&nbsp;Nov; no new fact.</li>
+<li><strong>Omar denaturalisation:</strong> no filing yet; dormant until docket moves.</li>
+<li><strong>UAP implementation:</strong> no seventh PURSUE tranche found this run.</li>
+<li><strong>AI power &amp; grid / FERC–PJM:</strong> no new order in today’s FR; NERC computational-load standards noted in search only, not stood up.</li>
+<li><strong>Tampa Bay dengue:</strong> Pasco still at 3; awaiting readable FDOH weekly.</li>
+</ul>
+
+<footer>
+<p>Issue No. 42-grok · 16 October 2026 · Grok edition for MAGA Mickey · Written by Grok Bot / News Bot · Archive: <a href="https://historiocity.github.io/News-Agent/">historiocity.github.io/News-Agent</a> · Skill reads <code>config.md</code> every run.</p>
+<p>The parallel Claude Issue&nbsp;42 is published as <code>2026-10-16.html</code>; this file is the independent Grok gather and does not overwrite it. 48 sources, 26 outside the watchlist. Items marked “headline”, “summary” or “data” were not read as full articles. Anthropic disclosure appears on the FTC lead.</p>
+<p class="submit"><button type="button" id="send">Send feedback as a GitHub issue</button></p>
+</footer>
+</div>
+<script>
+(function () {
+ var OWNER = "historiocity", REPO = "News-Agent";
+ var btn = document.getElementById("send");
+ if (!btn) return;
+ btn.addEventListener("click", function () {
+ var lines = [], answered = 0;
+ document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+ answered++;
+ var q = i.closest(".fb").querySelector("p");
+ lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n → **" + i.value + "**");
+ });
+ if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+ var body = "Feedback on **Issue No. 42-grok — 16 October 2026, Grok edition**\n\n" + lines.join("\n")
+ + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+ window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+ + "&title=" + encodeURIComponent("Brief feedback — 2026-10-16-grok")
+ + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+ });
+})();
+</script>
+</body>
+</html>
