@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Saturday, 17 October 2026 (Grok edition)</title>
+<style>
+:root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+@media (prefers-color-scheme: dark) {
+:root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+.wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+.kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+.sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+.prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+nav ol { margin:0; padding-left:1.2rem; }
+nav li { margin:.25rem 0; }
+nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+a { color:var(--link); }
+article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+.secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+.meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+.chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+.chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+.chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+.sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+.div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+.div p { margin:.4rem 0; }
+.div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+.corr { background:var(--box); border-left:4px solid var(--accent); padding:.8rem 1rem; margin:0 0 1.6rem; font-size:.95rem; }
+.corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+.corr p { margin:.45rem 0; }
+details { margin-top:.8rem; }
+details summary { cursor:pointer; color:var(--link); }
+.exp { margin-top:.6rem; }
+.also-list { margin:0; }
+.also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+.also-list details:first-of-type { border-top:1px solid var(--rule); }
+.also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+.also-list .exp { font-size:.94rem; padding-left:.2rem; }
+footer { color:var(--muted); font-size:.88rem; }
+.fb { margin-top:1rem; font-size:.9rem; }
+.fb p { margin:.6rem 0 .2rem; }
+.fb label { display:block; margin:.15rem 0; }
+.submit { margin-top:2rem; }
+button { font:inherit; padding:.45rem .8rem; }
+ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+
+<body>
+<div class="wrap">
+<header>
+<p class="kicker">The Brief · Issue No. 43-grok · Saturday, 17 October 2026 · Grok edition</p>
+<h1>The Brief</h1>
+<p class="sub">For MAGA Mickey · America/New_York · Source-led morning paper</p>
+<p class="prov"><strong>Provenance.</strong> Saturday Federal Register documents API returned <strong>count&nbsp;0</strong> for 17&nbsp;Oct (RULE+PRORULE, PRESDOCU, NOTICE) — expected; public-inspection stays offline until Monday 8:45am&nbsp;ET. Monday 19&nbsp;Oct pre-read already in the API (146 documents: 36 RULE/PRORULE, 3 PRESDOCU, 107 NOTICE) — labelled unpublished where used. Standing Saturday calls: AAA; EIA weekly diesel table; Treasury daily CSV (last business day Fri&nbsp;16&nbsp;Oct); OFAC recent-actions; whitehouse.gov/presidential-actions; text.npr.org; Al&nbsp;Jazeera /news/; Handelsblatt; gCaptain; Wikipedia current-events 16–17&nbsp;Oct; Fox&nbsp;13 Pasco; NHC MIATWOAT; FreightWaves; SCMP China; WHO Africa; House Foreign Affairs (Dem) press; Kyiv Independent; CBS/AP/Reuters syndication via search. Claude’s Issue&nbsp;43 (<code>2026-10-17.html</code>) was read for accountability only after the slate was set — not as the menu. <strong>52 sources this run; 29 outside the active watchlist (56%).</strong></p>
+<p class="prov"><strong>Negative check</strong> (Handelsblatt + White House EO primary + Kyiv Independent + WHO + FR Mon pre-read + gCaptain + AAA/EIA + Treasury CSV + NPR + Al&nbsp;Jazeera + Wikipedia) reshaped the order: the Graham Act waiver EO — which Handelsblatt led and which Claude’s Issue&nbsp;43 incorrectly listed as “nothing filed” before Sunday’s deadline — became the oil-chain apex; Russia’s overnight grid strike became lead&nbsp;2; the CFTC Monday casino-out / event-contracts-in pair moved up from the FR pre-read; Kenya’s third Bundibugyo case cleared the US-channel bar via the entry-order gap. Rejected as leads: Southern California Norte Fire and Oregon school shooting (anti-topics); Gen&nbsp;Z voter regret / midterms horse-race (NPR); Zacharia firing as a lead (personnel — Also today); sports; Dubai chocolate.</p>
+</header>
+
+<nav>
+<ol>
+<li><a href="#s1">The oil chain on Saturday: Trump’s Friday EO waives the Graham Act’s new Russia duties and sanctions two days before Sunday’s deadline — diesel’s premium over regular is $2.02, Brent settled $109.86 after touching $110, and UKMTO says most Hormuz ship attacks go unreported</a></li>
+<li><a href="#s2">Russia mounts one of its largest overnight strikes on Ukraine’s energy grid — Zelenskyy ties the attack to Washington’s Graham Act waiver and calls for a “sanctions blackout”</a></li>
+<li><a href="#s3">On Monday the CFTC takes casino-style gambling out of the “swap” definition and proposes to put sports-, politics-, and weather-event contracts in</a></li>
+<li><a href="#s4">Kenya confirms a third Bundibugyo Ebola case found in quarantine — and the US entry order that covers the DRC still does not name Kenya</a></li>
+<li><a href="#s5">Meeks and a bipartisan slate introduce the Prohibit Corrupt Russia Oil Deals Act to nullify OFAC’s Russian diesel licences</a></li>
+<li><a href="#s6">The issuer 10-year closed Friday at 5.09% — a fourth session lower — and the weekend has no new Treasury print</a></li>
+<li><a href="#s7">Europe’s answer to Starshield is GOVSATCOM association now and commercial capacity in early 2027 — IRIS² still aims at 2029</a></li>
+<li><a href="#s8">Monday’s Federal Register rewrites federal promotion, performance, and administrative-leave rules — OPM’s time-in-grade elimination among them</a></li>
+<li><a href="#s9">Florida &amp; Tampa Bay: Hillsborough extends its dengue local emergency through 22 October; Pasco still at three cases; NHC sees no tropical cyclone formation in seven days</a></li>
+</ol>
+<p class="also"><a href="#also">Also today (10)</a>. Ranked below the line; each one opens.</p>
+</nav>
+
+<div class="corr" id="acct">
+<p class="t">Accountability: prior Grok frames + Claude Issue 43</p>
+<p><strong>Graham Act:</strong> yesterday’s Grok led Trump’s “disgrace” framing and an open shadow-fleet question. <strong>Today’s new primary fact is the 16&nbsp;Oct EO that waives the Act’s new duties and most sanctions sections</strong> (lead&nbsp;1). Claude’s Issue&nbsp;43 dormant line said the implementation deadline is Sunday and “nothing has been filed / nothing reachable moved today” — that is wrong; the White House posted the order Friday.</p>
+<p><strong>Diesel instruments:</strong> AAA diesel <strong>$6.3276</strong> (up 0.15¢ from Fri’s $6.3261); regular <strong>$4.3085</strong> (down 1.86¢); premium <strong>$2.019</strong>. EIA weekly still <strong>$6.179</strong> (week of 12&nbsp;Oct); next print <strong>20&nbsp;Oct</strong>. No weekly turn called.</p>
+<p><strong>10-year yield:</strong> Fri issuer close (16&nbsp;Oct) <strong>5.09%</strong>, after 5.10% (15&nbsp;Oct) and 5.19% (14&nbsp;Oct). Fourth consecutive issuer decline from 5.21% on 13&nbsp;Oct.</p>
+<p><strong>Starshield:</strong> no new White House order overnight; today’s advance is the EU GOVSATCOM path (lead&nbsp;7), not a reprise of the 100&nbsp;mph receptor limit.</p>
+<p><strong>SEC KPI / 23/5 / OFAC Economic Outcast / EPA SRE / FTC CIDs:</strong> no new verifiable Saturday fact → dormant or Also. FTC Chair CNBC clip Fri is colour, not a new CID.</p>
+</div>
+
+<article id="s1">
+<h2>The oil chain on Saturday: Trump’s Friday EO waives the Graham Act’s new Russia duties and sanctions two days before Sunday’s deadline — diesel’s premium over regular is $2.02, Brent settled $109.86 after touching $110, and UKMTO says most Hormuz ship attacks go unreported</h2>
+<p class="meta">
+<span class="chip">Energy</span>
+<span class="chip">US policy</span>
+<span class="chip">Geopolitics</span>
+<span class="chip">Macro</span>
+<span class="chip new">New fact</span>
+</p>
+<p><div class="corr"><p class="t">Correction vs Claude Issue 43</p><p>Claude’s Saturday dormant note said the Graham Act implementation deadline is Sunday 18&nbsp;Oct and that nothing had been filed. <strong>The White House published the implementing EO on Friday 16&nbsp;Oct</strong> — primary text read here. Handelsblatt’s weekend front page led the same fact in German (“setzt neue Russland-Sanktionen per Dekret aus”).</p></div></p>
+<p><strong>The order (primary).</strong> On 16&nbsp;Oct President Trump signed <em>Implementing the Lindsey O. Graham Sanctioning Russia and Iran Act of 2026</em>. Section&nbsp;2 states the statutory duty increases — <strong>500% ad valorem</strong> on goods from the Russian Federation and <strong>100%</strong> on goods from the largest five importers of Russian crude/gas (and on the top five facilitators of Russian oil-sanctions evasion) — then Section&nbsp;4 waives them. Under §115 of the Act he certifies to Congress that the waiver is in the national interests of the United States. The waiver also covers the Act’s new sanctions and restrictions in §§102(a), 102(d), 102(e), 103–111, and 117. <strong>Existing Russia sanctions under earlier executive orders are expressly preserved.</strong> The waivers remain until the President or named cabinet officials “determine that further action is appropriate.” The Act was signed 18&nbsp;Sep; the duty clock ran toward Sunday 18&nbsp;Oct.</p>
+<p><strong>The pump, on the right instruments.</strong> AAA this morning: diesel <strong>$6.3276</strong> (up 0.15¢ from yesterday’s $6.3261; up 4.52¢ from a week ago’s $6.2824); regular <strong>$4.3085</strong> (down 1.86¢ on the day). Diesel–regular premium <strong>$2.019</strong>. Under the 22&nbsp;Sep rule, the daily card is the level; the EIA weekly on-highway diesel remains <strong>$6.179</strong> for the week of 12&nbsp;Oct (posted 14&nbsp;Oct), next release <strong>20&nbsp;Oct</strong>. Five AAA daily rises against a weekly that fell 2.0¢ last print is still not a weekly turn.</p>
+<p><strong>The screen and the strait.</strong> Brent crude futures settled Friday at <strong>$109.86</strong> (up 3.7%), having touched <strong>$110</strong> intraday — highest close since 19&nbsp;May (Business Recorder / WSJ / NBC summaries; instrument: Brent futures settlement as reported). Front-month WTI Nov closed <strong>$101.41</strong>. gCaptain: UKMTO’s weekly overview says <strong>most vessels struck in the region are not reporting incidents</strong> to UKMTO; it recorded 12 attacks in the latest period (10 in Hormuz). UKMTO counted <strong>254</strong> combined Hormuz transits for the seven days ending 14&nbsp;Oct (~70% below pre-conflict), while Adm.&nbsp;Brad Cooper (CENTCOM) said ~<strong>400</strong> merchant ships transited in a seven-day window he did not date-match — UKMTO cautions US-supplied facilitated-transit totals cannot be independently verified.</p>
+<p><strong>Why one chain.</strong> The waiver EO is the live US policy action on the same diesel shock as the pump averages, the Brent print, and the Hormuz fog. Ukraine’s overnight grid strike is the battlefield reply (lead&nbsp;2); the Meeks bill is the Hill reply (lead&nbsp;5). <strong>What to watch:</strong> Tuesday’s EIA weekly; any published shadow-fleet licence; whether the §115 certification text to Congress is released.</p>
+<p class="sources">Sources:
+<a href="https://www.whitehouse.gov/presidential-actions/2026/10/implementing-the-lindsey-o-graham-sanctioning-russia-and-iran-act-of-2026/">White House EO, 16 Oct (read)</a> ·
+<a href="https://www.handelsblatt.com/">Handelsblatt front page (read)</a> ·
+<a href="https://www.cbsnews.com/news/trump-waives-sanctions-tariffs-russian-oil-lindsey-graham/">CBS News (read)</a> ·
+<a href="https://apnews.com/article/russia-sanctions-trump-ukraine-e50c561ab805883bb4e484c092d8fadd">AP (summary via search)</a> ·
+<a href="https://gasprices.aaa.com/">AAA national averages, 17 Oct (data)</a> ·
+<a href="https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm">EIA weekly diesel table (data)</a> ·
+<a href="https://gcaptain.com/fog-of-war-deepens-in-hormuz-as-ukmto-says-most-ship-attacks-go-unreported/">gCaptain / UKMTO (read)</a> ·
+<a href="https://www.brecorder.com/news/40444629/oil-touches-usd110-a-barrel-for-first-time-since-may">Business Recorder on Brent settle (summary)</a> ·
+<a href="https://www.nbcnews.com/business/energy/oil-prices-hormuz-iran-ukraine-rcna603919">NBC on oil/tech (summary)</a>
+</p>
+<div class="fb">
+<p>Graham waiver inside the oil chain:</p>
+<label><input type="radio" name="fb-oil" value="one"> One chain, right</label>
+<label><input type="radio" name="fb-oil" value="split"> Split waiver as its own lead</label>
+<label><input type="radio" name="fb-oil" value="shorter"> Shorter</label>
+</div>
+</article>
+
+<article id="s2">
+<h2>Russia mounts one of its largest overnight strikes on Ukraine’s energy grid — Zelenskyy ties the attack to Washington’s Graham Act waiver and calls for a “sanctions blackout”</h2>
+<p class="meta">
+<span class="chip">Geopolitics</span>
+<span class="chip">Energy</span>
+<span class="chip">US policy</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The strike (Saturday).</strong> Ukrainian officials and President Zelenskyy described overnight 16–17&nbsp;Oct attacks as among the largest on Ukraine’s energy infrastructure of the war. Zelenskyy said Russian forces targeted <strong>more than 15</strong> key generation and transmission sites. The Air Force reported <strong>332</strong> drones launched (including jet-powered attack drones), of which <strong>289</strong> were downed; drones and ballistic missiles (Iskander-M or KN-23 class) struck 22 locations. Regional authorities reported <strong>seven</strong> killed and about <strong>90</strong> injured over the past day (Kyiv Independent, read).</p>
+<p><strong>The US channel.</strong> Zelenskyy’s same post tied the strike to Friday’s Graham Act waiver: America had “completely disregard[ed]” the Act that was “supposed to impose truly effective pressure on Russia,” and he called for a “sanctions blackout” rather than “financial rewards for Putin.” Russian envoy Kirill Dmitriev separately praised the waiver as “historic” (CBS). That is the Saturday advance on yesterday’s “disgrace” / Starshield thread — a new kinetic fact plus an explicit presidential linkage to the EO in lead&nbsp;1.</p>
+<p><strong>Balance.</strong> Ukraine weight stays at the standing level. The story is here for the US policy consequence, not as a foreign war diary.</p>
+<p class="sources">Sources:
+<a href="https://kyivindependent.com/russian-attacks-kill-7-injure-dozens-across-ukraine-amid-continued-strikes-on-energy-infrastructure/">Kyiv Independent (read)</a> ·
+<a href="https://www.cbsnews.com/news/trump-waives-sanctions-tariffs-russian-oil-lindsey-graham/">CBS on Zelenskyy/Dmitriev (read)</a> ·
+<a href="https://www.kyivpost.com/post/87367">Kyiv Post (summary via search)</a> ·
+<a href="https://www.rferl.org/a/russia-ukraine-civilians-killed-attack/33878396.html">RFE/RL (summary via search)</a>
+</p>
+<div class="fb">
+<p>Overnight grid strike as its own lead:</p>
+<label><input type="radio" name="fb-grid" value="right"> Right, separate from oil EO</label>
+<label><input type="radio" name="fb-grid" value="fold"> Should fold into oil chain</label>
+<label><input type="radio" name="fb-grid" value="less"> Too much Ukraine</label>
+</div>
+</article>
+
+<article id="s3">
+<h2>On Monday the CFTC takes casino-style gambling out of the “swap” definition and proposes to put sports-, politics-, and weather-event contracts in</h2>
+<p class="meta">
+<span class="chip">US financials</span>
+<span class="chip">US policy</span>
+<span class="chip under">Underreported</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>Saturday FR pre-read (label: unpublished until Monday).</strong> Two CFTC documents are already in Monday 19&nbsp;Oct’s Federal Register package (API count confirmed; full-text endpoints readable today):</p>
+<p><strong>Interim final rule 2026-21376</strong> — <em>Further Definition of “Swap” To Exclude Casino-Style Gambling Products</em> (RIN 3038-AF81). Effective <strong>19&nbsp;Oct 2026</strong>. Codifies the Commission’s longstanding position that casino-style gambling products, including sportsbook wagers and casino games, are excluded from the “swap” definition. Comments due 18&nbsp;Nov.</p>
+<p><strong>Proposed rule 2026-21377</strong> — <em>Further Definition of “Swap”—Inclusions</em> (RIN 3038-AF82). Proposes to further define “swap” to <strong>explicitly include event contracts</strong>, including those based on sports-, politics-, cultural-, and weather-related events. Same comment deadline.</p>
+<p><strong>Why it is here.</strong> Yesterday’s Grok led the SEC’s approval of Cboe binary options on issuers’ own earnings KPIs. Monday’s pair draws the CFTC’s jurisdictional line the other way: licensed casino products out; prediction-style event contracts in. That is the markets-structure story the weekend FR pre-read actually moved — not a calendar reprise. Documents are not yet “published” in the Monday book; treat as pre-read.</p>
+<p class="sources">Sources:
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/19/2026-21376.txt">FR 2026-21376 full text (read; Mon pre-read)</a> ·
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/19/2026-21377.txt">FR 2026-21377 full text (read; Mon pre-read)</a> ·
+<a href="https://www.federalregister.gov/api/v1/documents.json?conditions[publication_date][is]=2026-10-19">FR API 19 Oct (data)</a>
+</p>
+<div class="fb">
+<p>CFTC casino / event-contract pair:</p>
+<label><input type="radio" name="fb-cftc" value="lead"> Earns the lead</label>
+<label><input type="radio" name="fb-cftc" value="also"> Also-today weight</label>
+<label><input type="radio" name="fb-cftc" value="wait"> Hold until Monday publish</label>
+</div>
+</article>
+
+<article id="s4">
+<h2>Kenya confirms a third Bundibugyo Ebola case found in quarantine — and the US entry order that covers the DRC still does not name Kenya</h2>
+<p class="meta">
+<span class="chip">Science &amp; public health</span>
+<span class="chip">US policy</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The cases (WHO primary).</strong> WHO’s Africa office (16&nbsp;Oct) says Kenya confirmed its <strong>second and third</strong> Bundibugyo Ebola cases on 14 and 16&nbsp;Oct — a 39-year-old man and a 65-year-old woman, both close family members of Kenya’s first case, already in quarantine when they fell ill. Kenya has now confirmed <strong>three</strong> cases, including <strong>one death</strong> (WHO release, read).</p>
+<p><strong>The US channel.</strong> The standing US entry suspension / enhanced-screening package for the Central African outbreak has named the Democratic Republic of the Congo (and enhanced screening for recent travel from Uganda and South Sudan in earlier coverage). <strong>Kenya is not on that country list</strong> as of the sources checked this morning (AP/CDC situation summaries via search). A third domestic case found in quarantine is the new fact; the mismatch between the outbreak’s geography and the entry order is why it clears the altitude bar.</p>
+<p><strong>What it is not.</strong> Not a claim that Kenya’s outbreak equals the DRC’s case counts. Watch for any CDC or DHS amendment that adds Kenya.</p>
+<p class="sources">Sources:
+<a href="https://afro.who.int/countries/kenya/news/who-supports-kenyas-ebola-response-third-case-found-early-quarantine">WHO Africa, 16 Oct (read)</a> ·
+<a href="https://apnews.com/article/kenya-ebola-congo-25f722f20d89e9cf8977a5080e9d575c">AP (summary via search)</a> ·
+<a href="https://www.cdc.gov/ebola/situation-summary/index.html">CDC Ebola situation summary (headline)</a>
+</p>
+<div class="fb">
+<p>Kenya Ebola + entry-order gap:</p>
+<label><input type="radio" name="fb-ebola" value="right"> Right weight</label>
+<label><input type="radio" name="fb-ebola" value="less"> Too thin without CDC order change</label>
+<label><input type="radio" name="fb-ebola" value="more"> Want Congo case counts too</label>
+</div>
+</article>
+
+<article id="s5">
+<h2>Meeks and a bipartisan slate introduce the Prohibit Corrupt Russia Oil Deals Act to nullify OFAC’s Russian diesel licences</h2>
+<p class="meta">
+<span class="chip">US politics &amp; policy</span>
+<span class="chip">Energy</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The bill (16&nbsp;Oct, primary).</strong> House Foreign Affairs Ranking Member Gregory Meeks introduced the bipartisan <em>Prohibit Corrupt Russia Oil Deals Act</em> to block the administration’s Russian diesel arrangement. Per the committee press release (read): the bill would (1) prohibit the US International Development Finance Corporation from investing in Russian energy; (2) <strong>nullify OFAC general licences</strong> authorizing Russian fuel transactions and bar future ones; and (3) mandate sanctions on Russian energy-sector entities. Cosponsors listed include Democrats plus Republican <strong>Don Bacon (NE-02)</strong>.</p>
+<p><strong>Why it is here.</strong> It is the Hill’s same-day answer to the diesel licence and to Friday’s Graham Act waiver (lead&nbsp;1) — substance, not horse-race. It is introduced, not enacted. Pair with the bipartisan senators’ earlier letter urging enforcement of Graham Act tools (search/X news summaries).</p>
+<p class="sources">Sources:
+<a href="https://democrats-foreignaffairs.house.gov/2026/10/meeks-introduces-legislation-to-block-trump-s-russia-diesel-deal">HFAC Democrats press release (read)</a> ·
+<a href="https://www.politico.com/news/2026/10/16/house-democrat-bill-blocks-trump-russian-diesel-deal-01123646">Politico (summary via search)</a> ·
+<a href="https://www.cbsnews.com/news/trump-waives-sanctions-tariffs-russian-oil-lindsey-graham/">CBS on senators’ letter context (read)</a>
+</p>
+<div class="fb">
+<p>Meeks bill as a lead:</p>
+<label><input type="radio" name="fb-meeks" value="right"> Right</label>
+<label><input type="radio" name="fb-meeks" value="also"> Also-today</label>
+<label><input type="radio" name="fb-meeks" value="fold"> Fold into oil chain</label>
+</div>
+</article>
+
+<article id="s6">
+<h2>The issuer 10-year closed Friday at 5.09% — a fourth session lower — and the weekend has no new Treasury print</h2>
+<p class="meta">
+<span class="chip">Macro</span>
+<span class="chip">US debt &amp; fiscal</span>
+<span class="chip">Print</span>
+</p>
+<p><strong>Issuer series (Treasury CSV, headers enumerated).</strong> Last business-day close Friday 16&nbsp;Oct: 2-year <strong>4.74%</strong>, 10-year <strong>5.09%</strong>, 20-year <strong>5.47%</strong>, 30-year <strong>5.43%</strong>. Prior closes for the 10-year: 15&nbsp;Oct 5.10 → 14&nbsp;Oct 5.19 → 13&nbsp;Oct 5.21. That is <strong>four consecutive issuer sessions lower</strong> at the long end after a hot CPI week — the same surprise yesterday’s Grok flagged, now extended one more print. No weekend curve; next issuer print is Monday’s session.</p>
+<p><strong>Fed rule.</strong> No new Fed decision or print today. The 27–28&nbsp;Oct meeting remains the next decision item; Warsh’s Bangkok remarks stay Friday colour, not reprised as a path call.</p>
+<p class="sources">Sources:
+<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv">Treasury daily CSV (data)</a>
+</p>
+<div class="fb">
+<p>Weekend yields note:</p>
+<label><input type="radio" name="fb-yields" value="right"> Right as a print lead</label>
+<label><input type="radio" name="fb-yields" value="also"> Also-today is enough</label>
+<label><input type="radio" name="fb-yields" value="skip"> Skip on Saturdays</label>
+</div>
+</article>
+
+<article id="s7">
+<h2>Europe’s answer to Starshield is GOVSATCOM association now and commercial capacity in early 2027 — IRIS² still aims at 2029</h2>
+<p class="meta">
+<span class="chip">Geopolitics</span>
+<span class="chip">AI &amp; tech</span>
+<span class="chip">US policy</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The new European path.</strong> After this week’s Starshield speed limits on Ukraine, EU officials say Brussels is negotiating to <strong>fully associate Ukraine with GOVSATCOM</strong> (pooling existing member-state satellite capacity) and could add commercial services in <strong>early 2027</strong> as a bridge until <strong>IRIS²</strong> (~290 satellites) offers initial services around <strong>2029</strong> (Kyiv Post / Commission briefing via search; Handelsblatt summit wrap). Commission spokespeople have declined to claim battlefield parity with Starshield.</p>
+<p><strong>What is not new.</strong> No fresh White House order overnight on the 100&nbsp;mph receptor limit reported yesterday. Musk’s statement that Starshield limits are a US government call stands. This lead is the European substitution path — a US-channel story because the dial that slowed Starshield is in Washington.</p>
+<p class="sources">Sources:
+<a href="https://www.kyivpost.com/post/87186">Kyiv Post on GOVSATCOM (read via fetch)</a> ·
+<a href="https://www.handelsblatt.com/">Handelsblatt EU summit wrap (front page)</a> ·
+<a href="https://www.theguardian.com/world/live/2026/oct/16/eu-von-der-leyen-russia-sanctions-diesel-fuel-zelenskyy-donald-trump-membership-migration-latest-news-updates">Guardian EU live blog (summary)</a> ·
+<a href="https://audiovisual.ec.europa.eu/en/media/video/I-296250">EC midday briefing transcript excerpt (summary via search)</a>
+</p>
+<div class="fb">
+<p>GOVSATCOM follow-up:</p>
+<label><input type="radio" name="fb-govsat" value="right"> Right weight</label>
+<label><input type="radio" name="fb-govsat" value="also"> Also-today</label>
+<label><input type="radio" name="fb-govsat" value="dormant"> Too thin until a signed association</label>
+</div>
+</article>
+
+<article id="s8">
+<h2>Monday’s Federal Register rewrites federal promotion, performance, and administrative-leave rules — OPM’s time-in-grade elimination among them</h2>
+<p class="meta">
+<span class="chip">US politics &amp; policy</span>
+<span class="chip under">Underreported</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>Monday pre-read (unpublished until 19&nbsp;Oct).</strong> Among Monday’s 36 RULE/PRORULE documents, three OPM / OPM–OMB rules rewrite the civil-service internals:</p>
+<ul>
+<li><strong>Elimination of Time-in-Grade</strong> (OPM rule) — removes the longstanding requirement that competitive-service employees serve a minimum time at one grade before promotion to the next.</li>
+<li><strong>Managing Senior Professional Performance</strong> (OPM / OMB).</li>
+<li><strong>Administrative Leave for Workforce Realignment and Other Purposes</strong> (OPM).</li>
+</ul>
+<p><strong>Why it is here.</strong> Substance over personnel spectacle: these are the levers that change how the federal workforce is promoted, rated, and parked during realignments. Pair with the Postal Service rule on the same Monday book allowing foreign customs charges on certain parcels (Also today). Pre-read label applies.</p>
+<p class="sources">Sources:
+<a href="https://www.federalregister.gov/api/v1/documents.json?conditions[publication_date][is]=2026-10-19&conditions[type][]=RULE&conditions[type][]=PRORULE">FR API RULE/PRORULE 19 Oct (data)</a> ·
+titles confirmed in API results for Elimination of Time-in-Grade; Managing Senior Professional Performance; Administrative Leave for Workforce Realignment
+</p>
+<div class="fb">
+<p>OPM Monday package:</p>
+<label><input type="radio" name="fb-opm" value="right"> Right as a lead</label>
+<label><input type="radio" name="fb-opm" value="also"> Also-today</label>
+<label><input type="radio" name="fb-opm" value="wait"> Hold for full-text read Monday</label>
+</div>
+</article>
+
+<article id="s9">
+<h2>Florida &amp; Tampa Bay: Hillsborough extends its dengue local emergency through 22 October; Pasco still at three cases; NHC sees no tropical cyclone formation in seven days</h2>
+<p class="meta">
+<span class="chip">Florida</span>
+<span class="chip">Public health</span>
+</p>
+<p><strong>Hillsborough (primary).</strong> County Administrator Bonnie Wise signed an executive order extending the dengue state of local emergency through <strong>22&nbsp;Oct 2026</strong> (Hillsborough newsroom, 15&nbsp;Oct, read). Seven-day statutory limit; mosquito surveillance is showing dengue virus activity; aerial and ground treatments increased.</p>
+<p><strong>Pasco.</strong> Fox&nbsp;13’s Pasco tag still carries the county at <strong>three</strong> locally acquired dengue cases under its earlier emergency; no new case-count update cleared the bar this morning. Crime blotter items on the tag (dog attack, crashes) do not clear the local policy bar.</p>
+<p><strong>NHC.</strong> Atlantic Tropical Weather Outlook 2:00am&nbsp;EDT Sat 17&nbsp;Oct: <strong>“Tropical cyclone formation is not expected during the next 7 days.”</strong> (MIATWOAT, read).</p>
+<p class="sources">Sources:
+<a href="https://hcfl.gov/newsroom/2026/10/15/dengue-fever-prompts-hillsborough-to-extend-state-of-local-emergency-10-15-26">Hillsborough County, 15 Oct (read)</a> ·
+<a href="https://www.fox13news.com/tag/us/fl/pasco">Fox 13 Pasco tag (read)</a> ·
+<a href="https://www.nhc.noaa.gov/text/MIATWOAT.shtml">NHC MIATWOAT, 17 Oct (read)</a>
+</p>
+<div class="fb">
+<p>Florida section today:</p>
+<label><input type="radio" name="fb-fl" value="ok"> Hillsborough extension earns it</label>
+<label><input type="radio" name="fb-fl" value="skip"> Should have been empty</label>
+<label><input type="radio" name="fb-fl" value="more"> Want statewide FDOH week</label>
+</div>
+</article>
+
+
+<h2 class="section" id="also">Also today</h2>
+<p class="secnote">10 short items. Open any.</p>
+<div class="also-list">
+<details><summary>Katie Zacharia out as White House press secretary after five days</summary>
+<div class="exp"><p>White House officials said she was let go / “transitioning out” Friday after a panned debut briefing and bar-exam scrutiny; she confirmed departure on social media. Shortest modern tenure; leaves the podium empty inside three weeks of the midterms. Personnel anti-topic as a lead — recorded here for the messaging hole. Sources: <a href="https://www.theguardian.com/us-news/2026/oct/16/katie-zacharia-fired-press-secretary">Guardian (read)</a> · NPR/Reuters summaries.</p></div></details>
+<details><summary>OFAC issues Venezuela GL 60A for earthquake-relief transactions</summary>
+<div class="exp"><p>16&nbsp;Oct: General Licence 60A authorises transactions related to earthquake relief efforts in Venezuela; FAQ 1263 amended. Humanitarian licence, not a sanctions unwind. Source: <a href="https://ofac.treasury.gov/recent-actions/20261016">OFAC recent-actions 16 Oct (read)</a>.</p></div></details>
+<details><summary>Postal Service Monday rule: customs charges on certain parcels</summary>
+<div class="exp"><p>Monday FR pre-read includes “Customs Requirements and Payment Procedures for Certain Customs Charges” (Postal Service rule) — Claude flagged the never-arrived-parcel edge case. Full text not extracted here; note as Mon watch. Source: FR API 19 Oct titles.</p></div></details>
+<details><summary>FCC Upper C-Band Monday: cost catalog and radio-altimeter rebates</summary>
+<div class="exp"><p>Monday package carries the Upper C-Band (3.98–4.2 GHz) flexible-use rule plus Wireless Bureau notices seeking comment on the incumbent-transition cost catalog and proposed rebate categories for FAA-mandated radio-altimeter retrofits (docs 2026-21324, 2026-21321, 2026-21280). Spectrum half of the AI/wireless buildout. Source: FR API abstracts.</p></div></details>
+<details><summary>LA and Long Beach set September cargo records — combined 2.04m TEUs</summary>
+<div class="exp"><p>gCaptain / FreightWaves: Ports of Los Angeles and Long Beach both set all-time monthly records in September. Tariff-planning risk flagged by LA’s port chief even as volume prints a high. Source: <a href="https://gcaptain.com/">gCaptain</a> · <a href="https://www.freightwaves.com/">FreightWaves</a>.</p></div></details>
+<details><summary>Geotab launches a telematics-authorised fleet fuel card as diesel pressure hits carriers</summary>
+<div class="exp"><p>FreightWaves: Geotab’s fleet card uses vehicle telematics to authorise fuel purchases; company says diesel can vary as much as 77¢/gal between stations in the same town. Pass-through instrument for the AAA diesel shock. Source: <a href="https://www.freightwaves.com/">FreightWaves</a>.</p></div></details>
+<details><summary>House China committee releases results on ~30 scientists; research-security push</summary>
+<div class="exp"><p>SCMP: House Select Committee on China releases investigation results on some 30 scientists as the chair pushes stricter research-security rules; Beijing condemns targeting of institutions including Tsinghua. US-channel research/security story. Source: <a href="https://www.scmp.com/news/china">SCMP China desk</a>.</p></div></details>
+<details><summary>CFTC also finalises a rule excluding casino-style products’ twin: “Further Definition of Swap—Inclusions” is the NPRM half</summary>
+<div class="exp"><p>Recorded so the Also list points back to lead&nbsp;3’s pair — casino IFR + event-contract NPRM are one Monday package. Source: FR 2026-21377.</p></div></details>
+<details><summary>NPR: appeals court to weigh ownership of a president’s papers; ACA enrollment tweak after 760k removals</summary>
+<div class="exp"><p>text.npr.org Saturday index: presidential-papers ownership case teed up; separate item that after removing ~760k from ACA plans the administration is adding some people back. Substance crumbs, not leads. Source: <a href="https://text.npr.org/">text.npr.org</a>.</p></div></details>
+<details><summary>Wikipedia 16–17 Oct current events: thin on US policy; Sudan drone strike, Amazon deforestation low, Hungary–Ukraine thaw</summary>
+<div class="exp"><p>Used as negative check. 17&nbsp;Oct page had resort fire / India bus crash / Scotland plane crash — no US-channel lead. 16&nbsp;Oct had Nyala market strike, Amazon deforestation at multi-decade low, Magyar–Zelenskyy meeting. Source: Wikipedia current-events portals.</p></div></details>
+</div>
+
+<h2 class="section">Negative check</h2>
+<p>Checked against Handelsblatt, White House presidential-actions (EO primary), OFAC 16&nbsp;Oct, Treasury CSV, AAA, EIA weekly table, text.npr.org, Al&nbsp;Jazeera /news/, gCaptain, FreightWaves, SCMP China, WHO Africa, Kyiv Independent, Fox&nbsp;13 Pasco, NHC MIATWOAT, Wikipedia current-events 16–17&nbsp;Oct, FR API for 17&nbsp;Oct (0) and 19&nbsp;Oct pre-read (146), CBS/AP/Reuters/NBC syndication via search, House Foreign Affairs Dems press, and X news search for Graham/Ukraine. Al&nbsp;Jazeera’s index was reachable but thin on US-channel policy.</p>
+<p><strong>What it added or reordered:</strong> White House EO + Handelsblatt → Graham waiver as oil-chain apex (and a correction of Claude’s “nothing filed” line). Kyiv Independent → overnight grid strike as lead&nbsp;2. FR Mon pre-read → CFTC casino/event-contract pair and OPM package. WHO → Kenya third case. Meeks press → Hill diesel bill. gCaptain → Hormuz fog-of-war measurement dispute.</p>
+<p><strong>What it rejected:</strong> Norte Fire / Oregon school shooting (anti-topics). Zacharia as a lead (personnel). Gen&nbsp;Z regret and midterms horse-race (NPR). Sports. Dubai chocolate / headhunter features (Handelsblatt weekend). Merz CDU reform speech without US channel. AOC Michigan transfer (politics tactics).</p>
+
+<h2 class="section">Dormant / watched</h2>
+<ul class="dorm">
+<li><strong>Graham Act waiver:</strong> active via lead&nbsp;1; watch for §115 certification text and any cabinet “further action” determination.</li>
+<li><strong>Russian diesel licence GL&nbsp;135 / shadow fleet:</strong> active via leads 1 and 5; Meeks bill would nullify licences if enacted.</li>
+<li><strong>Starshield / GOVSATCOM:</strong> US limit unchanged overnight; EU path in lead&nbsp;7.</li>
+<li><strong>Fed:</strong> decision 27–28&nbsp;Oct; next CPI 10&nbsp;Nov. Prints and decisions only.</li>
+<li><strong>Long end / Treasury:</strong> 10-year 5.09% (16&nbsp;Oct issuer); 20-year reopening watch; refunding 4&nbsp;Nov.</li>
+<li><strong>SEC KPI binaries / 23/5 Night Session:</strong> no Saturday advance; 6&nbsp;Dec start still the date.</li>
+<li><strong>FTC OpenAI/Anthropic CIDs:</strong> no new primary document; Ferguson CNBC colour Fri only.</li>
+<li><strong>Cook committee of inquiry:</strong> hearing 5&nbsp;Nov; no new fact.</li>
+<li><strong>Omar denaturalisation:</strong> no filing yet.</li>
+<li><strong>UAP implementation:</strong> no new PURSUE tranche found.</li>
+<li><strong>Ebola entry order:</strong> watch for Kenya addition after third case.</li>
+</ul>
+
+<footer>
+<p>Issue No. 43-grok · 17 October 2026 · Grok edition for MAGA Mickey · Written by Grok Bot / News Bot · Archive: <a href="https://historiocity.github.io/News-Agent/">historiocity.github.io/News-Agent</a> · Skill reads <code>config.md</code> every run.</p>
+<p>The parallel Claude Issue&nbsp;43 is published as <code>2026-10-17.html</code>; this file is the independent Grok gather and does not overwrite it. Saturday FR count was 0 (stated on the face). 52 sources, 29 outside the watchlist. Items marked “headline”, “summary”, “data”, or “Mon pre-read” were handled as labelled. Anthropic/OpenAI FTC thread is dormant today — no new CID text.</p>
+<p class="submit"><button type="button" id="send">Send feedback as a GitHub issue</button></p>
+</footer>
+</div>
+<script>
+(function () {
+ var OWNER = "historiocity", REPO = "News-Agent";
+ var btn = document.getElementById("send");
+ if (!btn) return;
+ btn.addEventListener("click", function () {
+ var lines = [], answered = 0;
+ document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+ answered++;
+ var q = i.closest(".fb").querySelector("p");
+ lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n → **" + i.value + "**");
+ });
+ if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+ var body = "Feedback on **Issue No. 43-grok — 17 October 2026, Grok edition**\n\n" + lines.join("\n")
+ + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+ window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+ + "&title=" + encodeURIComponent("Brief feedback — 2026-10-17-grok")
+ + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+ });
+})();
+</script>
+</body>
+</html>
