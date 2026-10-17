@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief &mdash; Saturday, 17 October 2026</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .chip.alert { background:var(--accent); color:#fff; border:1px solid var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  .corr { background:var(--box); border-left:3px solid var(--accent); padding:.7rem .9rem; margin:0 0 1rem; font-size:.94rem; }
+  .corr p { margin:.4rem 0; }
+  .corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--accent); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  .short { border-bottom:1px solid var(--rule); padding:.7rem 0; margin:0; }
+  .short > summary { color:var(--fg); cursor:pointer; list-style:none; }
+  .short > summary::-webkit-details-marker { display:none; }
+  .short > summary::before { content:"▸ "; color:var(--link); }
+  .short[open] > summary::before { content:"▾ "; }
+  .short .body { margin-top:.6rem; padding-left:1.1rem; border-left:2px solid var(--rule); font-size:.96rem; }
+  .why { font-style:italic; color:var(--muted); }
+  figure { margin:1.2rem 0 0; }
+  figcaption { font-size:.84rem; color:var(--muted); margin-top:.4rem; line-height:1.5; }
+  svg { width:100%; height:auto; display:block; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+  ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>The Brief &mdash; Saturday, 17 October 2026</h1>
+  <p class="meta">No. 43 &middot; six leads, one local, nine below the line &middot; a Saturday carried almost entirely by Monday's <em>Federal Register</em>, which is already loaded and readable two days early.</p>
+  <p class="prov"><strong>Provenance.</strong> 17 sources checked, 9 of them pointing at no active thread. Four leads are new subjects, two are continuations. <em>Negative check</em> &mdash; the biggest story not here is the <b>Southern California wildfire</b> burning coastal homes under hot winds, with evacuation orders in force. It is excluded by the configuration's bar on natural-disaster disruption without a structural consequence, and nothing reachable this morning supplied one. Runner-up: the White House press secretary fired after five days in post, which is personnel churn, and which runs below the line only because of what the five days say about the process.</p>
+  <p class="prov"><strong>How a Saturday issue got six leads.</strong> The <em>Federal Register</em> publishes nothing on a Saturday &mdash; all three standing calls returned <b>count: 0</b>, verified rather than assumed. But <b>Monday 19 October's issue is already in the API, 146 documents, and GovInfo already serves its PDFs.</b> This brief read ten of them. That is the same trick that rescued the Columbus Day run on 12 October, and when it was checked on 13 October the preview had held exactly. <b>These documents are not yet published and could in principle be withdrawn before Monday.</b> Every one below is labelled with that risk attached.</p>
+</header>
+
+<nav aria-label="In this issue">
+  <h2 class="navh">In this issue</h2>
+  <ol>
+    <li><a href="#swap">The CFTC is taking sports betting out of its own statute on Monday, and putting prediction markets in</a></li>
+    <li><a href="#ebola">Kenya has a third Ebola case, and the US entry order does not cover Kenya</a></li>
+    <li><a href="#funds">Of $962m donors say they sent to the Ebola response, barely $200m could be traced</a></li>
+    <li><a href="#opm">Three rules on Monday rewrite how federal employees are promoted, rated and let go</a></li>
+    <li><a href="#postal">From Monday you can owe foreign customs charges on a parcel that never arrived</a></li>
+    <li><a href="#diesel">The diesel premium went through two dollars, a day after this brief said to watch for it</a></li>
+    <li><a href="#dengue">Florida &amp; Tampa Bay: the emergency this brief could not confirm on Friday is real, extended to 22 October</a></li>
+    <li><a href="#also">Also today (9)</a></li>
+  </ol>
+</nav>
+
+<article id="swap">
+  <h2>The CFTC is taking sports betting out of its own statute on Monday, and putting prediction markets in</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New thread</span>
+    <span class="chip under">Underreported</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Two Commodity Futures Trading Commission documents publish on Monday and must be read together. An <b>interim final rule, effective 19 October</b>, excludes casino-style gambling products from the definition of a "swap". A <b>proposed rule</b> does the opposite for something else: it explicitly <b>includes event contracts</b> &mdash; sports, politics, cultural and weather events &mdash; in that same definition. Comments on both close <b>18 November</b>.</p>
+  <p>The operative text is a two-part test. A product escapes the swap definition only if it is offered by someone <b>licensed to offer gambling under state law or under the Indian Gaming Regulatory Act</b>, acting within that licence and regulated as gambling by that state or tribe &mdash; <em>and</em> it is <b>not traded on an exchange, a board of trade, a swap execution facility or any other multilateral or negotiated market</b>. Sports wagers and casino games are then named as excluded.</p>
+  <p>So the line is venue and licence, not substance. The same bet on the same game is gambling at a sportsbook and a federally regulated swap on an exchange.</p>
+  <p>Why now is in the preamble, unusually plainly. <b>The Sixth Circuit, in <em>KalshiEX LLC v. Schuler</em>, found sports event contracts legally indistinguishable from casino-style wagers</b>, and worried that if they are swaps then every sports wager &mdash; in a casino, on an online book, between two friends in a bar &mdash; falls under the Commodity Exchange Act. The Ninth Circuit reasoned the same way in <em>KalshiEX, LLC v. Assad</em>. <b>Thirty-nine states and the District of Columbia</b> told the Commission courts are "hopelessly confused and divided". Kentucky said treating event contracts as swaps would transfer every ounce of authority over sports wagering to the CFTC; New Jersey told the Supreme Court nothing in the statute makes the CFTC the sole regulator of American sports gambling.</p>
+  <p><b>What to watch:</b> a challenge to the good-cause exception; what the states say by 18 November, having won the carve-out they wanted; and whether the inclusions proposal is finalised as drafted, since that is the half that claims territory.</p>
+
+  <div class="div">
+    <p class="t">Where the accounts diverge</p>
+    <p><b>The substance.</b> A dispute about law between the courts and the agency, now visible in the text of a rule. Two federal appellate courts have held that what matters is what a contract <em>is</em> &mdash; a sports event contract is sports gambling "regardless of whether the exchange calls them swaps", as the Ninth Circuit put it. Monday's rule holds that what matters is <em>where it trades and who is licensed</em>. Those cannot both be the governing test, and the rule is written so that the identical economic exposure falls on either side of the line depending only on the venue.</p>
+    <p><b>The cause.</b> The agency is not confused; it is cornered, and the preamble nearly says so. If substance governs, the CFTC becomes the national regulator of sports betting by accident, against the objection of 39 states, against tribal gaming revenue protected by its own federal statute, and with a case pending at the Supreme Court. The venue test is the only line that lets it keep the exchanges and disclaim the sportsbooks. The states' vantage is the mirror image: they wrote gaming law, they collect the tax, and they have no interest in the substance argument winning.</p>
+    <p><b>What it means for you.</b> Read Monday's pair as a jurisdictional settlement offer, not a clarification. The CFTC is giving the states everything outside the exchange in order to keep everything on it &mdash; and the thing on it is the fast-growing part. For the question this brief left open yesterday, the answer arrived in two days: <b>the CFTC has now spoken, and it is claiming event contracts rather than ceding them</b>, which puts it on a collision course with the SEC's own claim to the same ground. What would settle it is the Supreme Court taking the Kalshi question, or the two agencies filing against each other. Neither has happened.</p>
+  </div>
+
+  <p class="sources"><b>Confidence:</b> Primary source, with one caveat on the face of it: <b>these documents are dated Monday 19 October and are not yet published.</b> Both were read in full from GovInfo's PDFs of the FR-2026-10-19 package, including the operative regulatory text, the good-cause discussion and the voting summaries. <b>On each, the voting summary records Chairman Selig voting in the affirmative and names no other commissioner</b> &mdash; consistent with this brief's reporting that the Commission has been operating with one voting member. <b>Sources:</b> <a href="https://www.govinfo.gov/content/pkg/FR-2026-10-19/pdf/2026-21376.pdf">CFTC, Further Definition of "Swap" To Exclude Casino-Style Gambling Products, RIN 3038-AF81</a> &middot; <a href="https://www.govinfo.gov/content/pkg/FR-2026-10-19/pdf/2026-21377.pdf">CFTC, Further Definition of "Swap"&mdash;Inclusions, RIN 3038-AF82</a> &middot; yesterday's <a href="2026-10-16.html#kpi">binary KPI options</a> story</p>
+
+  <div class="fb">
+    <p><b>New thread: the swap definition, event contracts and the CFTC&ndash;SEC boundary.</b></p>
+    <label><input type="radio" name="fb-swap" value="follow"> Follow it &mdash; this is the jurisdictional fight of the year in markets</label>
+    <label><input type="radio" name="fb-swap" value="final"> Only the final rule and any court action</label>
+    <label><input type="radio" name="fb-swap" value="drop"> Too technical &mdash; drop it</label>
+  </div>
+</article>
+<article id="ebola">
+  <h2>Kenya has a third Ebola case, and the US entry order does not cover Kenya</h2>
+  <div class="meta">
+    <span class="chip">Science &amp; public health</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip cont">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Kenya's Health Ministry confirmed on <b>Friday 16 October</b> a third case of Bundibugyo virus disease: a <b>65-year-old woman</b>, a primary contact and close relative of the first two patients, <b>in quarantine since 6 October</b>. She developed fever, sore throat and malaise, was isolated and tested positive. Of <b>130 listed contacts, 127 have been traced</b> and are in quarantine. The ministry says there is no evidence of community spread and the public risk remains low.</p>
+  <p>The sequence is the point. Kenya's first patient had been ill in the DRC for about a month, travelled <b>by road into Uganda</b>, <b>flew to Nairobi on 3 October</b> and died on the 5th. Medication, the health minister said, may have masked his symptoms at airport screening. The second case was a family member already in quarantine; so is the third.</p>
+  <p>Now set that against the American instrument. On 15 October this brief reported the CDC order under <b>42 U.S.C. 265</b> (91 FR 65556) suspending entry of people travelling from <b>the DRC, Uganda and South Sudan</b> &mdash; expressly including lawful permanent residents. <b>Kenya is not on that list.</b> Nairobi is one of the largest aviation hubs in Africa and a principal connecting point for US-bound traffic, and the one case that moved internationally did so by crossing a land border and then boarding a plane in a country the order does not name.</p>
+  <p>That is not an argument for adding Kenya. It is the observation that a country-of-departure rule tracks borders while an outbreak tracks journeys, and the gap is now demonstrated rather than hypothetical. The DRC epidemic is the second-largest on record, with <b>more than 4,300 deaths</b> since May. <b>The Bundibugyo strain has no licensed vaccine</b>; candidates are in early human trials.</p>
+  <p><b>What to watch:</b> the order's <b>10 November</b> expiry, when it lapses unless renewed &mdash; the live question is whether the country list is extended, and Kenya is the test; and whether any Kenyan case appears outside the traced contact group, which is what "no community spread" currently rests on.</p>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration. The third case is reported by Al Jazeera quoting the Health Ministry's own statement; the first two cases, the 128&ndash;130 contact figures and the travel sequence are corroborated across earlier reporting from Daily Maverick, Dawan Africa and Australian outlets carrying the wire. <b>The ministry statement itself was not read at source.</b> The CDC order's terms are primary, read in full on 15 October. <b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/10/16/kenya-reports-third-bundibugyo-strain-ebola-case">Al Jazeera</a> &middot; <a href="https://www.dailymaverick.co.za/article/2026-10-06-kenya-confirms-first-ebola-case-imported-from-congo.md">Daily Maverick</a> &middot; <a href="https://www.dawan.africa/news/ministry-of-health-confirms-second-ebola-case-in-kenya-stresses-no-wider-community-spread">Dawan Africa</a> &middot; <a href="2026-10-15.html#ebola">15 October</a> on the entry order</p>
+
+  <div class="fb">
+    <p><b>Continuing thread: the DRC Ebola epidemic and the US entry suspension.</b></p>
+    <label><input type="radio" name="fb-ebola" value="spread"> Run it whenever the outbreak reaches a new country</label>
+    <label><input type="radio" name="fb-ebola" value="us"> Only when the US instrument changes</label>
+    <label><input type="radio" name="fb-ebola" value="less"> Too much Ebola for a US brief</label>
+  </div>
+</article>
+
+<article id="funds">
+  <h2>Of $962m donors say they sent to the Ebola response, barely $200m could be traced</h2>
+  <div class="meta">
+    <span class="chip">Science &amp; public health</span>
+    <span class="chip">Geopolitics</span>
+    <span class="chip new">New thread</span>
+    <span class="chip under">Underreported</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>At a press conference in Kinshasa on <b>14 October</b>, the director-general of the Africa Centres for Disease Control and Prevention, <b>Dr Jean Kaseya</b>, said donors report having disbursed about <b>$962m</b> to organisations implementing the Ebola response in the Democratic Republic of the Congo. A joint verification exercise with Congolese health authorities could trace <b>slightly more than $200m</b> of it to the structures actually running that response. <b>More than $700m could not be followed to a destination.</b></p>
+  <p>The precise claim matters and is narrower than the headline figure suggests. This is a <b>tracing failure, not a finding of theft</b>: money that donors recorded as disbursed to implementing partners could not be matched, in a joint exercise, to the clinics, surveillance teams and burial units on the other end. Some of that gap will be overheads, procurement held upstream, and partners' own accounting. How much is the question nobody has answered, and Kinshasa has said it will demand answers from the organisations concerned.</p>
+  <p>The American channel is direct. The United States is historically the largest single funder of outbreak response, this outbreak has produced a US entry suspension now in force, and the money moves through implementing partners that are substantially American NGOs and contractors. <b>If more than two-thirds of disbursed funds cannot be traced to delivery, the US cannot currently say what its own contribution bought.</b></p>
+  <p>Context on scale, from Africa CDC's own earlier statements: roughly <b>$2.997bn pledged</b> as of September, which Kaseya was careful to call pledges rather than money moved; about <b>$452m</b> cited as disbursed in August. Those are different snapshots on different bases and should not be reconciled into a series.</p>
+  <p><b>What to watch:</b> whether any named donor publishes a reconciliation; whether USAID's successor arrangements or Congress ask for one; and whether the verification exercise is repeated, because a second pass is what would separate slow accounting from missing money.</p>
+
+  <p class="sources"><b>Confidence:</b> Independent corroboration for the figures, which appear consistently across Africanews, francophone outlets reporting the Kinshasa press conference, and an Al Jazeera report citing Reuters. <b>No primary document was read</b> &mdash; neither the verification exercise nor an Africa CDC release &mdash; and no donor has been named. <b>Sources:</b> <a href="https://www.africanews.com/2026/10/15/africa-cdc-probes-missing-millions-meant-for-ebola-response/">Africanews</a> &middot; <a href="https://www.afrik.com/rdc-plus-de-700-millions-de-dollars-de-la-riposte-contre-ebola-restent-sans-tracabilite">Afrik.com</a> (paraphrased from French) &middot; <a href="https://www.aljazeera.com/news/2026/10/16/kenya-reports-third-bundibugyo-strain-ebola-case">Al Jazeera</a></p>
+
+  <div class="fb">
+    <p><b>New thread: accountability for outbreak-response money.</b></p>
+    <label><input type="radio" name="fb-funds" value="follow"> Follow it &mdash; where aid money goes is worth a standing slot</label>
+    <label><input type="radio" name="fb-funds" value="us"> Only if a US donor or US money is specifically implicated</label>
+    <label><input type="radio" name="fb-funds" value="drop"> Drop it</label>
+  </div>
+</article>
+<article id="opm">
+  <h2>Three rules on Monday rewrite how federal employees are promoted, rated and let go</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New thread</span>
+    <span class="chip under">Underreported</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The Office of Personnel Management has three final rules in Monday's issue. Separately each reads as housekeeping. Together they are a single programme, and this brief would have missed it by reading any one of them.</p>
+  <p><b>Elimination of time-in-grade.</b> Until now a candidate generally could not advance to a competitive-service General Schedule position at <b>GS-6 or above without 52 weeks</b> in a position one grade lower &mdash; two grades for certain two-grade-interval occupations. That requirement is removed. Occupational qualification standards still apply; the waiting period does not. Promotion speed inside the civil service has just been deregulated.</p>
+  <p><b>Administrative leave for workforce realignment</b>, effective <b>18 November</b>. This one addresses, by name, <b>deferred resignation programmes</b> &mdash; the mechanism used across government in 2025 &mdash; and clarifies when an agency may grant administrative leave during a reduction-in-force notice period. It also settles something sharper: when an agency may <b>accept or deny an employee's request to withdraw a resignation</b> tendered under such a programme. An agency may refuse to let you un-resign.</p>
+  <p><b>Managing senior professional performance</b>, effective <b>18 November</b>, issued jointly with the Office of Management and Budget. It covers senior-level and scientific-or-professional employees &mdash; the government's senior scientists and technical specialists &mdash; and aligns their appraisal with the Senior Executive Service. It also <b>removes the prohibition on a standardised distribution of performance rating levels</b>. Forced ranking of federal scientists is now permitted where it was barred.</p>
+  <p><b>What to watch:</b> whether the time-in-grade repeal shows up as faster promotions or as faster hiring of outsiders into mid-grade posts, which are different things; the first denial of a resignation withdrawal to be litigated; and whether any agency actually adopts a forced distribution.</p>
+
+  <p class="sources"><b>Confidence:</b> Primary source, subject to the same caveat as every document in this issue: <b>dated Monday 19 October, not yet published.</b> All three were read from GovInfo's PDFs. The administrative-leave rule drew 30 comments, including from two unions; the time-in-grade rule was adopted substantially as proposed. <b>Sources:</b> <a href="https://www.govinfo.gov/content/pkg/FR-2026-10-19/pdf/2026-21319.pdf">OPM, Elimination of Time-in-Grade</a> &middot; <a href="https://www.govinfo.gov/content/pkg/FR-2026-10-19/pdf/2026-21320.pdf">OPM, Administrative Leave for Workforce Realignment</a> &middot; <a href="https://www.govinfo.gov/content/pkg/FR-2026-10-19/pdf/2026-21316.pdf">OPM and OMB, Managing Senior Professional Performance</a></p>
+
+  <div class="fb">
+    <p><b>New thread: civil service structure &mdash; hiring, rating, separation.</b></p>
+    <label><input type="radio" name="fb-opm" value="follow"> Follow it &mdash; this is policy with a long tail</label>
+    <label><input type="radio" name="fb-opm" value="effect"> Only when something visible happens to real employees</label>
+    <label><input type="radio" name="fb-opm" value="drop"> Drop it</label>
+  </div>
+</article>
+
+<article id="postal">
+  <h2>From Monday you can owe foreign customs charges on a parcel that never arrived</h2>
+  <div class="meta">
+    <span class="chip">World economy</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New thread</span>
+    <span class="chip under">Underreported</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The Postal Service is revising the International Mail Manual, <b>effective 19 October</b>, to set out who pays when a foreign customs authority bills a charge on something you posted &mdash; including <b>after you have already bought the postage</b>. Comments close 18 November, after the rule is in force.</p>
+  <p>The trigger is named in the document: <b>on 1 July 2026 the European Commission eliminated its de minimis exemption for most low-value goods</b> entering the EU customs territory. The American de minimis repeal, which this brief has tracked all autumn, has a mirror image, and this is it arriving at the retail counter.</p>
+  <p>The mechanics. Where duties, taxes, import fees or other charges are assessed on a mailpiece and have not been paid in full, <b>the mailer is responsible for paying them, or for reimbursing the Postal Service</b>. Destination posts may add a <b>handling or delivery fee on top of the duty</b>, to cover clearing the item and collecting at the door &mdash; and the new text warns those processing charges <b>may apply even where no duty or tax is due</b>.</p>
+  <p>Then the sentence that makes this a story. The obligation holds <b>"regardless of whether the item is delivered, lost, damaged, or returned."</b> You can post a parcel, pay for postage, have the parcel lost in transit, and still owe the destination country's charges on it. The Postal Service also disclaims responsibility for the accuracy of what a foreign customs authority, postal operator or tax authority calculates.</p>
+  <p><b>What to watch:</b> the first reimbursement demands reaching ordinary senders and small exporters, which is when this becomes visible; whether the comment period after the fact changes anything; and whether other destination countries follow the EU, because the rule is written generally and is not EU-specific.</p>
+
+  <p class="sources"><b>Confidence:</b> Primary source; dated Monday, not yet published. The quoted phrase and the liability provisions were read from the amended manual text at new section 424, Unpaid Destination Customs Charges. <b>Sources:</b> <a href="https://www.govinfo.gov/content/pkg/FR-2026-10-19/pdf/2026-21310.pdf">USPS, Customs Requirements and Payment Procedures for Certain Customs Charges</a></p>
+
+  <div class="fb">
+    <p><b>New thread: de minimis repeal and what it costs individuals.</b></p>
+    <label><input type="radio" name="fb-postal" value="follow"> Follow the consumer-facing half of trade policy</label>
+    <label><input type="radio" name="fb-postal" value="big"> Only large trade developments</label>
+    <label><input type="radio" name="fb-postal" value="drop"> Drop it</label>
+  </div>
+</article>
+<article id="diesel">
+  <h2>The diesel premium went through two dollars, a day after this brief said to watch for it</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip cont">Continuation</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>AAA's national averages this morning: <b>diesel $6.3276</b>, up 0.15 cents overnight and a <b>fifth consecutive daily rise</b>. <b>Regular petrol $4.3085</b>, down 1.86 cents on the day and <b>5.84 cents on the week</b>. The two are moving apart faster than diesel alone is rising, because petrol is falling while diesel climbs.</p>
+  <p>So the premium is now <b>$2.0191</b>, through two dollars. Yesterday this brief put the number at $1.999, called it effectively two dollars, and named the threshold to watch: whether it would hold above $2.00, <b>because that is the level that passes into freight rates and then into shelf prices</b>. It went through within a day.</p>
+  <p>The year-on-year comparison is the one that shows what kind of move this is. Diesel is <b>+73.7%</b> against a year ago; regular is <b>+41.2%</b>. Twelve months ago the premium was <b>59 cents</b>, which is close to the ordinary relationship between the two fuels. It has more than tripled.</p>
+  <p>A caution about what this does and does not measure. The premium is a <b>daily card-reader average</b>, which is the right instrument for a level and the wrong one for a trend &mdash; the weekly EIA survey, this brief's trend instrument, last read <b>$6.179 for the week ending 12 October</b> and was falling. Both remain true, for the reasons set out in yesterday's divergence box. <b>Tuesday 20 October</b> brings the first weekly reading that contains this week's rises, and that is the number that will say whether the daily move is a trend or a wobble.</p>
+  <p><b>What to watch:</b> Tuesday's EIA print; whether petrol keeps falling, since half of this widening is coming from the petrol side and that is a different story about demand; and the first freight surcharge filings to move.</p>
+
+  <figure>
+<svg viewBox="0 0 700 300" width="100%" role="img" aria-label="AAA national diesel premium over regular petrol, five readings">
+<line x1="86" y1="237.6" x2="672" y2="237.6" stroke="#ccc" stroke-width="1"/>
+<text x="78" y="241.6" font-size="12" text-anchor="end" fill="#555">$0.50</text>
+<line x1="86" y1="175.9" x2="672" y2="175.9" stroke="#ccc" stroke-width="1"/>
+<text x="78" y="179.9" font-size="12" text-anchor="end" fill="#555">$1.00</text>
+<line x1="86" y1="114.1" x2="672" y2="114.1" stroke="#ccc" stroke-width="1"/>
+<text x="78" y="118.1" font-size="12" text-anchor="end" fill="#555">$1.50</text>
+<line x1="86" y1="52.4" x2="672" y2="52.4" stroke="#ccc" stroke-width="1"/>
+<text x="78" y="56.4" font-size="12" text-anchor="end" fill="#555">$2.00</text>
+<line x1="86" y1="52.4" x2="672" y2="52.4" stroke="#8a3324" stroke-width="1.5" stroke-dasharray="5 4"/>
+<path d="M86.0 226.4 L232.5 57.7 L379.0 62.8 L525.5 52.5 L672.0 50.0" fill="none" stroke="#b22" stroke-width="2.5"/>
+<circle cx="86.0" cy="226.4" r="4" fill="#b22"/>
+<text x="86.0" y="272" font-size="12" text-anchor="middle" fill="#555">year ago</text>
+<text x="96.0" y="231.4" font-size="12" text-anchor="start" fill="#333">$0.591</text>
+<circle cx="232.5" cy="57.7" r="4" fill="#b22"/>
+<text x="232.5" y="272" font-size="12" text-anchor="middle" fill="#555">month ago</text>
+<text x="232.5" y="79.7" font-size="12" text-anchor="middle" fill="#333">$1.957</text>
+<circle cx="379.0" cy="62.8" r="4" fill="#b22"/>
+<text x="379.0" y="272" font-size="12" text-anchor="middle" fill="#555">week ago</text>
+<text x="379.0" y="84.8" font-size="12" text-anchor="middle" fill="#333">$1.915</text>
+<circle cx="525.5" cy="52.5" r="4" fill="#b22"/>
+<text x="525.5" y="272" font-size="12" text-anchor="middle" fill="#555">yesterday</text>
+<text x="525.5" y="74.5" font-size="12" text-anchor="middle" fill="#333">$1.999</text>
+<circle cx="672.0" cy="50.0" r="4" fill="#b22"/>
+<text x="672.0" y="272" font-size="12" text-anchor="middle" fill="#555">today</text>
+<text x="672.0" y="72.0" font-size="12" text-anchor="middle" fill="#333">$2.019</text>
+<text x="672" y="43.4" font-size="12" text-anchor="end" fill="#8a3324" font-weight="bold">$2.00</text>
+<text x="86" y="292" font-size="11" fill="#777">AAA national averages, read 17 October 2026</text>
+</svg>    <figcaption>The AAA national diesel average minus the regular petrol average, at the five comparison points AAA publishes. Scale: the vertical axis runs $0.40 to $2.10 at <b>123.53 pixels per dollar</b>; all five plotted points were verified against that constant. The dashed line is $2.00. The premium is this brief's own arithmetic on AAA's two published averages, not a series AAA publishes. Note the x-axis is AAA's comparison set, not evenly spaced time.</figcaption>
+  </figure>
+
+  <p class="sources"><b>Confidence:</b> Primary source. Both averages were read directly from AAA this morning; the premium and the year-on-year percentages are this brief's arithmetic on them. The EIA weekly figure is from EIA's own series, read yesterday. <b>Sources:</b> <a href="https://gasprices.aaa.com/">AAA national averages</a> &middot; <a href="https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=pet&amp;s=emd_epd2d_pte_nus_dpg&amp;f=w">EIA weekly diesel series</a> &middot; <a href="2026-10-16.html#diesel">16 October</a></p>
+
+  <div class="fb">
+    <p><b>Continuing thread: diesel, petrol and the spread between them.</b></p>
+    <label><input type="radio" name="fb-diesel" value="daily"> Keep running it daily while the spread is moving</label>
+    <label><input type="radio" name="fb-diesel" value="weekly"> Weekly, on the EIA print</label>
+    <label><input type="radio" name="fb-diesel" value="petrol"> More on why petrol is falling, less on diesel</label>
+  </div>
+</article>
+
+<h2 class="sect">Florida &amp; Tampa Bay</h2>
+
+<article id="dengue">
+  <h2>The emergency this brief could not confirm on Friday is real, extended to 22 October</h2>
+  <div class="meta">
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip">Science &amp; public health</span>
+    <span class="chip cont">Continuation</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Yesterday this brief reported that the last Tampa Bay dengue emergency order it could find ran to 15 October, that no later order was reachable, and that it would not infer a lapse from a missing document. That was the right call and the answer is now on the county's own site.</p>
+  <p><b>Pinellas County's state of local emergency for dengue is in force and has been extended to 22 October</b>, by County Administrator <b>Barry Burton</b> under authority delegated by the Board of County Commissioners, which adopted the declaring resolution on <b>24 September</b>. The county's dengue page states plainly that Pinellas is under both a mosquito-borne illness alert and a state of local emergency.</p>
+  <p>What the declaration is <em>for</em> is the part worth knowing, and the county says it: the delegation lets the Administrator <b>approve mosquito-control expenditure quickly</b>, and it <b>preserves eligibility for state reimbursement</b> if state funding becomes available. It is a procurement and money instrument, not a restriction on anyone.</p>
+  <p>One concrete measure for residents. Pinellas Solid Waste has <b>waived the residential tire disposal fee</b>: up to <b>four tires</b> per resident, none more than <b>36 inches</b> in diameter, free at the Solid Waste Disposal Complex, <b>3095 114th Avenue North, St Petersburg</b>. Tires must be separated from other waste; rims may stay attached; a valid driver's licence is needed as proof of residency. Stored tires hold water and breed the mosquitoes that carry this virus, which is why the fee is the lever.</p>
+  <p>The county cites the Florida Department of Health report released <b>15 October</b> &mdash; the Week 40 report this brief read yesterday &mdash; for <b>37 confirmed Pinellas cases</b> and <b>351 across the Tampa Bay region</b>. Those are the same figures published here, from the same document.</p>
+  <p><b>What to watch:</b> the <b>22 October</b> expiry, which under Florida's seven-day rule means another decision next Thursday; the Week 41 report, not yet posted, which is the first that can carry October onsets; and Hillsborough, whose own order status this brief still cannot establish.</p>
+
+  <p class="sources"><b>Confidence:</b> Primary source. The extension, the delegated authority, the 24 September resolution and the tire-fee terms were read from Pinellas County's own news releases and dengue page. <b>Hillsborough remains unconfirmed:</b> the newsroom URL pattern that carried its 8 October order returns 404 for every date since, and no later order was found. <b>Sources:</b> <a href="https://pinellas.gov/news/pinellas-county-extends-state-of-local-emergency-for-dengue/">Pinellas County, emergency extension</a> &middot; <a href="https://pinellas.gov/news/pinellas-county-waives-residential-tire-disposal-fee-to-help-reduce-spread-of-dengue-fever/">tire disposal fee waiver</a> &middot; <a href="https://www.pinellas.gov/dengue/">county dengue page</a> &middot; <a href="2026-10-16.html#dengue">16 October</a></p>
+
+  <div class="fb">
+    <p><b>Continuing thread: the Tampa Bay dengue outbreak.</b></p>
+    <label><input type="radio" name="fb-dengue" value="practical"> More of the practical county-level detail, less of the case arithmetic</label>
+    <label><input type="radio" name="fb-dengue" value="cases"> Keep leading on the case numbers</label>
+    <label><input type="radio" name="fb-dengue" value="weekly"> Weekly only, on the state report</label>
+  </div>
+</article>
+<h2 class="section" id="also">Also today</h2>
+<p class="secnote">Nine items that did not clear the lead bar. Each expands in place; each ends with why it is below the line.</p>
+
+<details class="short" id="s-yields">
+  <summary><span class="chip">US debt &amp; fiscal</span> The three-session fall in the long end slowed almost to a stop on Friday, which is the answer to yesterday's question arriving early.</summary>
+  <div class="body">
+    <p>Treasury's Friday 16 October print, read from the CSV by enumerated column position: <b>ten-year 5.09%</b>, down one basis point; <b>twenty-year 5.47%</b>, down one; <b>thirty-year 5.43%</b>, unchanged; <b>two-year 4.74%</b>, down three.</p>
+    <p>Yesterday this brief reported three consecutive nine-basis-point falls at the long end and said to watch the next print. It came in at one. <b>A one-point move is not a move</b>, which is why this is below the line rather than leading. The run has flattened.</p>
+    <p>One detail does change. Because the two-year fell three while the ten-year fell one, <b>the ten-year minus two-year spread widened back from +33 to +35 basis points</b> after six sessions of compression. The twenty-minus-ten hump is <b>+38</b>, where it has sat all month and through every move in it.</p>
+    <p>The CSV had <b>15 columns</b> this morning, ten-year at position 12 &mdash; against 14 yesterday, 21 on 26 September and 26 on the 25th. Never carry the index between runs.</p>
+    <p><b>Below the line because</b> a one-basis-point day is the absence of news, and saying so honestly is worth four paragraphs, not a lead.</p>
+    <p><b>Confidence: Primary source.</b> <b>Sources:</b> <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-yield-curve-rates">Treasury Daily Par Yield Curve</a> &middot; <a href="2026-10-16.html#yields">16 October</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-emergencies">
+  <summary><span class="chip">Geopolitics</span> Three national emergencies are continued for another year on Monday, and one of them is the legal floor under the Ebola response.</summary>
+  <div class="body">
+    <p>Monday's issue carries exactly three presidential documents, all of them annual continuations of national emergencies declared under the International Emergency Economic Powers Act: the <b>Democratic Republic of the Congo</b>, <b>Sudan</b>, and <b>significant narcotics traffickers centred in Colombia</b>. All three notices are dated <b>15 October</b>.</p>
+    <p>The DRC emergency rests on <b>Executive Order 13413 of 27 October 2006</b>, declared over violence and atrocities threatening regional stability. Twenty years on it is also, incidentally, part of the legal architecture standing behind an American government response to an Ebola epidemic in the same country &mdash; sanctions authority and public-health authority running in parallel over the same territory, for entirely unrelated reasons.</p>
+    <p>An annual continuation is the least newsworthy document a president signs and the most reliable: it is how you can tell, without any announcement, that a twenty-year-old emergency is still switched on. There are dozens of them.</p>
+    <p><b>Below the line because</b> a continuation changes nothing by design, and the only new fact is the signature date.</p>
+    <p><b>Confidence: Primary source</b>, dated Monday and not yet published. <b>Sources:</b> <a href="https://www.govinfo.gov/content/pkg/FR-2026-10-19/pdf/2026-21432.pdf">Continuation, DRC</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-irs">
+  <summary><span class="chip">US financials</span> The IRS will take your credit card directly from Monday, and may charge you a fee for it.</summary>
+  <div class="body">
+    <p>Final Treasury and IRS regulations on payment of tax by commercially acceptable means take effect <b>19 October</b>. They implement a change made by the <b>Taxpayer First Act</b> allowing the IRS to <b>accept credit and debit card payments directly</b>, rather than routing taxpayers to third-party payment processors as it does now.</p>
+    <p>The regulations do two things at once. They <b>remove the restriction on the IRS paying a fee</b> under contracts related to card payments, and they <b>remove the restriction on the IRS imposing a fee or charge on people who pay by card</b>. Both limits go.</p>
+    <p>Today a taxpayer paying by card pays a processor's fee of roughly two per cent, which on a large balance is a serious sum. Cutting the processor out could reduce that. It could also simply move the fee from a private intermediary to the government, and the regulation is permissive rather than prescriptive on which happens.</p>
+    <p><b>Below the line because</b> the rule authorises a change without setting a fee, and until the IRS publishes what it will charge, nobody can say whether paying tax by card gets cheaper or not.</p>
+    <p><b>Confidence: Primary source</b>, dated Monday, not yet published. <b>Sources:</b> <a href="https://www.govinfo.gov/content/pkg/FR-2026-10-19/pdf/2026-21267.pdf">IRS, Regulations Regarding Payment of Tax by Commercially Acceptable Means</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-hormuz">
+  <summary><span class="chip">Geopolitics</span> Another Iranian mine claim in Hormuz, a 29th day with no transit count, and the one instrument that might have fixed it is blocked.</summary>
+  <div class="body">
+    <p>Al Jazeera's index this morning carried the IRGC Navy saying an oil supertanker struck a naval mine in the Strait of Hormuz and caught fire. Searching for corroboration returns a <b>31 August</b> IRGC claim about a supertanker and two mines, and a <b>14 October</b> IRNA report of a container ship sinking after a mine strike. <b>No independent confirmation of any of them, no vessel named, and every claim sourced to the IRGC or Iranian state media.</b></p>
+    <p>This brief's standing rule is that a belligerent's claim is not a count, applied here for the third time. What is missing is a physical series &mdash; daily transit numbers &mdash; unavailable now for <b>29 consecutive days</b>. gCaptain, which supplied it until late September, fetched empty again. This brief tried <b>UKMTO</b>, the obvious primary source for incidents in the strait: <b>Cloudflare 403</b>, index and incidents page alike.</p>
+    <p><b>Below the line because</b> an unverifiable claim from a party to the conflict is not a story, and the honest content here is the measurement gap rather than the mine.</p>
+    <p><b>Confidence: Unconfirmed.</b> <b>Sources:</b> <a href="https://www.aljazeera.com/news/">Al Jazeera index</a> &middot; <a href="https://oilprice.com/Latest-Energy-News/World-News/Iran-Says-Supertanker-Hit-by-Mines-in-Strait-of-Hormuz.amp.html">OilPrice, on the August claim</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-presssec">
+  <summary><span class="chip">US politics &amp; policy</span> A White House press secretary lasted five days, and two outlets cannot agree whether she was fired.</summary>
+  <div class="body">
+    <p>Katie Zacharia has left the post of White House press secretary after <b>five days</b>, which by Wikipedia's reckoning makes her the <b>shortest-serving press secretary in US history</b>. Personnel churn is on this brief's anti-topics list and would normally not appear at all.</p>
+    <p>It appears for one reason: the accounts differ on the central verb and the difference is not cosmetic. <b>NPR</b> reports that she is <b>"transitioning out", attributing that to the White House</b>. <b>Al Jazeera and Wikipedia both say she was fired.</b> Those are different events with different implications for who decided and why, and the gap between them is the White House's own characterisation sitting against everyone else's.</p>
+    <p>No primary document exists either way, and this brief did not reach the White House statement. The useful observation is narrow: when an administration's own words and the reporting diverge on whether someone was dismissed, within one news cycle, the five days are telling you something about process that the job title is not.</p>
+    <p><b>Below the line because</b> it is personnel churn with no policy consequence this brief can identify, which is exactly what the configuration excludes.</p>
+    <p><b>Confidence: Single-sourced</b> on either characterisation. <b>Sources:</b> <a href="https://text.npr.org/">NPR</a> &middot; <a href="https://en.wikipedia.org/wiki/Portal:Current_events/2026_October_16">Wikipedia current events</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-cpsc">
+  <summary><span class="chip">Energy &amp; grid</span> Fuel additives are not fuel, the product safety regulator decides, so their containers need no flame arrester.</summary>
+  <div class="body">
+    <p>The Consumer Product Safety Commission is issuing an interpretive rule, <b>effective 19 October</b>, reading the phrase <b>"flammable liquid fuels"</b> in the <b>Portable Fuel Container Safety Act of 2020</b> not to cover fuel additives.</p>
+    <p>The reasoning is textual. An additive is intended to be added to fuel for a purpose <b>unrelated to creating heat or power</b> &mdash; improving engine performance, cleaning components, extending engine life, stabilising fuel, preventing weather effects. On the Commission's reading, that puts it outside the statute even though the liquid in the bottle is itself flammable.</p>
+    <p>The practical effect is that containers of fuel additive do not require the <b>flame mitigation devices</b> the Act imposes on portable fuel containers &mdash; the flame arresters put there after a run of injuries from vapour ignition when petrol cans were poured near a flame. Whether an additive bottle poses the same risk is a factual question the interpretive rule does not reach, because it did not have to.</p>
+    <p><b>Below the line because</b> it is an interpretive rule, which binds nobody by itself, and no injury data was presented or read.</p>
+    <p><b>Confidence: Primary source</b>, dated Monday, not yet published. <b>Sources:</b> <a href="https://www.govinfo.gov/content/pkg/FR-2026-10-19/pdf/2026-21348.pdf">CPSC interpretive rule</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-alaska">
+  <summary><span class="chip">US politics &amp; policy</span> The Park Service is restoring the 1981 Alaska hunting framework it spent the last decade replacing.</summary>
+  <div class="body">
+    <p>A National Park Service final rule in Monday's issue amends the regulations for <b>hunting, fishing, trapping and other harvest activities in Alaska park areas</b>, and the procedures for restricting public use and access, including for subsistence.</p>
+    <p>The rule's own description of itself is the news: it <b>"restores the regulatory framework adopted to implement the Alaska National Interest Lands Conservation Act of 1980 in 1981"</b> &mdash; the framework that governed for more than three decades &mdash; with targeted updates after public comment. Restoring a 1981 rule means undoing what replaced it, and what replaced it was a decade of contested rulemaking over predator control and state-versus-federal authority on park lands.</p>
+    <p>The restored framework is described as recognising the distinct roles of the State of Alaska, the Federal Subsistence Management Program and the Park Service. A companion proposed rule in the same issue would allow off-road vehicles for subsistence use in <b>Gates of the Arctic</b>.</p>
+    <p><b>Below the line because</b> this brief read the summary and not the rule, so what the targeted updates actually change is unestablished, and that is where the whole dispute lives.</p>
+    <p><b>Confidence: Primary source</b> for the rule's existence and stated purpose only; dated Monday. <b>Sources:</b> <a href="https://www.govinfo.gov/content/pkg/FR-2026-10-19/pdf/2026-21299.pdf">NPS, Alaska; Wildlife, Harvest, and Access</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-commerce">
+  <summary><span class="chip">US politics &amp; policy</span> Commerce is trimming the rules on when its employees testify, and insists nothing changes.</summary>
+  <div class="body">
+    <p>A Commerce Department final rule in Monday's issue amends the regulations governing <b>testimony by current and former employees and the production of departmental documents in legal proceedings</b> &mdash; the department's Touhy regulations, which control whether a litigant can compel a federal official to testify or hand over records.</p>
+    <p>The department says it is removing language that is redundant, references other authorities, or offers unnecessary elaboration, to <b>"promote efficiency and simplicity"</b>, and states that it does so <b>without significantly altering any entitlements, obligations, or processes</b>.</p>
+    <p>That disclaimer is the thing worth filing. Touhy rules are what a plaintiff runs into when they need a government witness, and the elaboration being removed is, in litigation, often the part that tells you what the department must consider before refusing. A simplification that removes criteria and promises to change nothing is a claim that can only be tested the next time someone is refused.</p>
+    <p><b>Below the line because</b> the redline was not read, so whether anything of substance went with the surplusage is not established here.</p>
+    <p><b>Confidence: Primary source</b> for the summary only; dated Monday, not yet published. <b>Sources:</b> <a href="https://www.govinfo.gov/content/pkg/FR-2026-10-19/pdf/2026-21272.pdf">Commerce, Streamlining Testimony Regulations</a></p>
+  </div>
+</details>
+
+<details class="short" id="s-cband">
+  <summary><span class="chip">AI &amp; tech industry</span> Two upper C-band rules quietly switch on for real on Monday, their paperwork finally cleared.</summary>
+  <div class="body">
+    <p>The FCC is announcing that the Office of Management and Budget approved, on <b>21 September</b>, the information-collection requirements in two rules from its upper C-band order &mdash; <b>47 CFR 27.1412(e) and 27.1419</b>. Those amendatory instructions were published on <b>31 July</b> and become <b>effective 19 October</b>.</p>
+    <p>The underlying proceeding is the expansion of flexible use in the <b>3.98&ndash;4.2 GHz</b> band, the upper portion of C-band. The lower part of this band was the subject of the largest spectrum auction in American history; the upper part is the remaining inventory, and it matters because it is mid-band spectrum &mdash; the range that carries both capacity and distance, and the range mobile networks and satellite operators both want.</p>
+    <p>A Paperwork Reduction Act notice is the dullest document the FCC publishes and it is a reliable signal of commencement: a rule with an unapproved collection cannot operate, so the approval date is when the machinery actually starts.</p>
+    <p><b>Below the line because</b> this is a commencement notice for rules adopted in July, not a new decision, and the substantive order was not read.</p>
+    <p><b>Confidence: Primary source</b> for the dates and citations; dated Monday. <b>Sources:</b> <a href="https://www.govinfo.gov/content/pkg/FR-2026-10-19/pdf/2026-21324.pdf">FCC, Upper C-Band effective date announcement</a></p>
+  </div>
+</details>
+
+<div class="fb">
+  <p><b>One question about this tier as a whole.</b> Were the right things ranked below the line today?</p>
+  <label><input type="radio" name="fb-also" value="right"> About right</label>
+  <label><input type="radio" name="fb-also" value="promote"> Something here should have led &mdash; the Alaska rule or the IRS card fees</label>
+  <label><input type="radio" name="fb-also" value="demote"> Something that led belonged here</label>
+  <label><input type="radio" name="fb-also" value="fr"> Too much Federal Register, not enough of the rest of the world</label>
+</div>
+<footer>
+  <h2 class="section">Sources checked this run</h2>
+  <p><b>Watchlist-pointed (8):</b> the <a href="https://www.federalregister.gov/">Federal Register</a> documents API for <b>today &mdash; 0 rules, 0 notices, 0 presidential documents, verified not assumed</b> &middot; the same API for <b>Monday 19 October &mdash; 23 rules, 13 proposed rules, 107 notices, 3 presidential documents</b>, already loaded &middot; <a href="https://www.govinfo.gov/content/pkg/FR-2026-10-19/">GovInfo's FR-2026-10-19 package</a>, which already serves Monday's PDFs and from which <b>ten documents were read in full</b> &middot; <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-yield-curve-rates">Treasury's Daily Par Yield Curve</a>, by enumerated column position &middot; <a href="https://gasprices.aaa.com/">AAA Fuel Prices</a> &middot; the <a href="https://www.floridahealth.gov/statistics-data/population-surveillance/arbovirus-surveillance/">Florida DOH arbovirus index</a> &mdash; Week 41 not yet posted &middot; <a href="https://www.gcaptain.com/">gCaptain</a>, fetched empty for a second day &middot; the archive, for the entry order, the diesel chain, the yield thread and yesterday's named observable.</p>
+  <p><b>Outside the watchlist (9):</b> <a href="https://text.npr.org/">text.npr.org</a> &middot; <a href="https://www.aljazeera.com/news/">Al Jazeera's news index</a> and its <a href="https://www.aljazeera.com/news/2026/10/16/kenya-reports-third-bundibugyo-strain-ebola-case">Kenya Ebola report</a> &middot; <a href="https://www.handelsblatt.com/">Handelsblatt</a> &middot; Wikipedia's <a href="https://en.wikipedia.org/wiki/Portal:Current_events/2026_October_16">current-events portal for 16 October</a> &middot; <a href="https://www.pinellas.gov/dengue/">Pinellas County's dengue page</a> and <a href="https://pinellas.gov/news/">news releases</a>, both new to this brief &middot; <a href="https://hcfl.gov/residents/public-safety/emergency-management">Hillsborough emergency management</a> &middot; <a href="https://www.fox13news.com/tag/us/fl/pasco">FOX 13 Pasco</a> &mdash; all crime blotter, nothing cleared the local bar &middot; <a href="https://www.africanews.com/2026/10/15/africa-cdc-probes-missing-millions-meant-for-ebola-response/">Africanews</a> &middot; <b>UKMTO</b>, attempted for the first time as a chokepoint instrument and blocked.</p>
+  <p><b>The negative check:</b> the <b>Southern California wildfire</b> burning coastal homes under hot winds, with evacuation orders in force &mdash; excluded by the configuration's bar on natural-disaster disruption without a structural consequence. Runners-up: the <b>Oregon school shooting</b> follow-up, carried below the line nowhere because this brief excluded the event itself yesterday and nothing has changed that; and <b>Meta employees saying Lula's accounts were restricted during the Brazilian election</b>, which has a genuine US channel in a US platform acting on a head of state mid-campaign, and which is not here only because it could not be stood up beyond a single report this morning. It is the item most likely to return.</p>
+  <p><b>Could not reach:</b> <b>UKMTO</b>, Cloudflare 403 on both the index and the incidents page &mdash; worth recording because it was the obvious fix for the chokepoint gap and it is not available; <b>gCaptain</b>, fetched but yielded nothing parseable for a second consecutive day, so there is <b>no Hormuz or Bab el-Mandeb transit count for a 29th day</b> and still no war-risk premium; any <b>Hillsborough County</b> emergency order after 8 October; and the <em>Federal Register</em>'s own full-text endpoint, still blocking this session, which is why every document here came from GovInfo.</p>
+
+  <h2 class="section">Dormant threads</h2>
+  <ul class="dorm">
+    <li><b>DR Congo Ebola &amp; the US boarding ban</b> &mdash; <b>woken and run as the second story</b> on Kenya's third case, and a new thread opened beside it on the untraced response money. <b>The entry order lapses 10 November unless renewed.</b></li>
+    <li><b>US fuel prices</b> &mdash; run as the sixth story. The premium went through $2.00 the day after it was named as the thing to watch. <b>EIA's next weekly reading is Tuesday 20 October.</b></li>
+    <li><b>Tampa Bay dengue</b> &mdash; run as the local story; Friday's open question closed from the county's own site. <b>Pinellas expires again 22 October.</b></li>
+    <li><b>Long-end Treasury yields</b> &mdash; below the line: the three-session fall slowed to one basis point on Friday. No lead, by this brief's own suppressor rule.</li>
+    <li><b>CFTC rulemaking under a one-member commission</b> &mdash; woken hard. Monday's two swap documents both record <b>Chairman Selig alone</b> in the voting summary. This is the thread this brief flagged on 9 and 12 October; it is now producing rules that redraw a jurisdictional boundary.</li>
+    <li><b>Russian diesel licence &amp; the Graham Act</b> &mdash; the <b>implementation deadline is tomorrow, Sunday 18 October</b>, and nothing has been filed. Nothing reachable moved today.</li>
+    <li><b>Hormuz &amp; Bab el-Mandeb</b> &mdash; below the line. <b>Riyadh airport was due to reopen today, 17 October</b>; nothing reachable this morning confirmed whether it did, and that is owed tomorrow.</li>
+    <li><b>Still owed:</b> the <b>BIS "US content" tariff guidance</b>, unread since it was named as a gap on 14 October; the <b>FMC Spanish-vessel rule</b>; the second halves of the <b>SEC crypto custody</b>, <b>Transparency in Coverage</b>, <b>performance-fee</b>, <b>OPT</b> and <b>de minimis</b> proposals; the <b>BoJ statement</b>, <b>Berkshire release</b> and earlier <b>Florida arbovirus reports</b>; <b>Alberta secession</b>; the <b>skincare free-sample investigation</b>; and now <b>Meta and the Brazilian election</b>.</li>
+    <li><b>Lab safety disclosures</b> &middot; <b>SNAP food-restriction demonstrations</b> &middot; <b>Federal statistical integrity</b> &middot; <b>Futenma</b> &middot; <b>Cornell</b> &middot; <b>Gulf states &amp; Article 51</b> &middot; <b>Indonesia free-meals programme</b> &middot; <b>Anak Krakatau</b> &middot; <b>Israel&ndash;Lebanon June framework</b> &middot; <b>EU&ndash;Greenland partnership</b> &middot; <b>Saxony-Anhalt government formation</b> &mdash; untouched.</li>
+  </ul>
+
+  <p style="margin-top:1.4rem">No open <code>brief-feedback</code> issues were waiting this morning. <b>Dates ahead:</b> <b>18 October</b>, the Graham Act implementation deadline; <b>19 October</b>, the <em>Federal Register</em> issue this one was largely written from &mdash; the CFTC gambling exclusion, the three OPM rules, the Postal customs revision, the IRS card regulations and the CPSC interpretation all take effect; <b>20 October</b>, the next EIA weekly retail price reading and United Airlines results; <b>22 October</b>, the Pinellas dengue emergency expires again; <b>23 October</b>, Delta's postponed Atlanta&ndash;Riyadh launch; <b>25 October</b>, the Brazilian runoff; <b>28 October</b>, registration closes for EPA's renewable fuel hearing; <b>30 October</b>, comments close on the CDC entry order; <b>1 November</b>, the clocks go back unless the Senate acts; <b>2 November</b>, census comments, the Federal Reserve stress-test rule and REAP comments; <b>3 November</b>, the midterm elections and LULD amendment comments; <b>4 November</b>, the Treasury quarterly refunding, EPA's renewable fuel hearing, the FinCEN A7 comment close, FAA Part 450 comments, the NRC adverse-comment deadline, HHS child-welfare comments and both insider-lending comment files; <b>5 November</b>, EPA PM2.5 comments and the Cook committee hearing; <b>9 November</b>, OPT fee comments, the butalbital rule and the raisin order; <b>10 November</b>, Cook's post-hearing statement, and <b>the CDC entry order lapses unless renewed</b>; <b>12 November</b>, Colorado Class VI primacy takes effect and seabed-hearing registration closes; <b>13 November</b>, comments close on USCIS deference, the AP1000 renewal and the TCE extension; <b>16 November</b>, the deep seabed mining hearing and OPM FMLA comments; <b>18 November</b>, <b>comments close on both CFTC swap documents</b>, and the OPM administrative-leave and senior-professional rules and the Postal customs comments all fall due; <b>23 November</b>, streaming-fraud comments; <b>around 28 November</b>, the EPA pest framework and the Super Intelligence legislative proposal; <b>30 November</b>, the GLOBE model and EPA greenhouse-gas-deadline comments; <b>1 December</b>, Big Cypress comments; <b>3 December</b>, the Hasan execution; <b>4 December</b>, two SEC comment files and the EPA renewable fuel comment close; <b>6 December</b>, 23-hour trading begins industry-wide and the LULD overnight change becomes operative; <b>7 December</b>, Transparency in Coverage, two more SEC files, both hours-of-service pilots, the Trump Account comments and the de minimis comments; <b>14 December</b>, the CFTC crypto comments, the CBP rail comments, the deep seabed mining comments, the Cook Inlet comments, the three NCUA files, the Spanish-vessel comments, the OPM FMLA effective date, and the EPA and FDA rules take effect; <b>28 December</b>, the AP1000 renewal takes effect; <b>30 December</b>, Coast Guard mariner-training comments; <b>31 December</b>, the diesel tax deferral ends; <b>1 January 2027</b>, the EU ban on long-term Russian LNG contracts, and the 3.6% benefit increase reaches Social Security recipients; <b>28 January</b>, Rush's sentencing; <b>1 February 2027</b>, the delayed airline delay-cause rule; <b>10 February 2027</b>, the LULD amendment's temporary effectiveness lapses; <b>10 March 2027</b>, the extended greenhouse gas reporting deadline; <b>31 March 2027</b>, the 2026 renewable fuel compliance deadline, which EPA proposes to extend; <b>7 April 2027</b>, the Russian diesel and ICC wind-down licences expire; <b>1 July 2027</b>, statutory termination of de minimis; <b>31 December 2027</b>, the proposed TCE compliance date.</p>
+  <p><a href="../">Archive</a> &middot; Previous: <a href="2026-10-16.html">16 October</a></p>
+
+  <div class="submit">
+    <button type="button" id="send-feedback">Send feedback as a GitHub issue</button>
+  </div>
+</footer>
+
+</div>
+<script>
+(function () {
+  var owner = "historiocity", repo = "News-Agent";
+  document.getElementById("send-feedback").addEventListener("click", function () {
+    var lines = ["Feedback on Issue No. 43 (2026-10-17)", ""];
+    document.querySelectorAll(".fb input[type=radio]:checked").forEach(function (el) {
+      lines.push(el.name + ": " + el.value);
+    });
+    if (lines.length === 2) lines.push("(no radio answers selected)");
+    lines.push("", "Anything else:", "");
+    var url = "https://github.com/" + owner + "/" + repo + "/issues/new"
+      + "?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("brief-feedback: 2026-10-17")
+      + "&body=" + encodeURIComponent(lines.join("\n"));
+    window.open(url, "_blank");
+  });
+})();
+</script>
+</body>
+</html>
