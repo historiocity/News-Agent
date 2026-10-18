@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Sunday, 18 October 2026 (Grok edition)</title>
+<style>
+:root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+@media (prefers-color-scheme: dark) {
+:root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+.wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+.kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+.sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+.prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+nav ol { margin:0; padding-left:1.2rem; }
+nav li { margin:.25rem 0; }
+nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+a { color:var(--link); }
+article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+.secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+.meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+.chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+.chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+.chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+.sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+.div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+.div p { margin:.4rem 0; }
+.div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+.corr { background:var(--box); border-left:4px solid var(--accent); padding:.8rem 1rem; margin:0 0 1.6rem; font-size:.95rem; }
+.corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+.corr p { margin:.45rem 0; }
+details { margin-top:.8rem; }
+details summary { cursor:pointer; color:var(--link); }
+.exp { margin-top:.6rem; }
+.also-list { margin:0; }
+.also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+.also-list details:first-of-type { border-top:1px solid var(--rule); }
+.also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+.also-list .exp { font-size:.94rem; padding-left:.2rem; }
+footer { color:var(--muted); font-size:.88rem; }
+.fb { margin-top:1rem; font-size:.9rem; }
+.fb p { margin:.6rem 0 .2rem; }
+.fb label { display:block; margin:.15rem 0; }
+.submit { margin-top:2rem; }
+button { font:inherit; padding:.45rem .8rem; }
+ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+ul.dorm li { margin:.3rem 0; }
+</style>
+<style>
+.chart { margin:1rem 0 .3rem; }
+.chart svg { width:100%; height:auto; display:block; }
+.chart figcaption { font-size:.84rem; color:var(--muted); margin-top:.35rem; }
+table.mini { border-collapse:collapse; font-size:.88rem; margin:.6rem 0; width:100%; }
+table.mini td, table.mini th { border-bottom:1px solid var(--rule); padding:.25rem .4rem; text-align:left; }
+table.mini td.n, table.mini th.n { text-align:right; font-variant-numeric:tabular-nums; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<p class="kicker">The Brief · Issue No. 44-grok · Sunday, 18 October 2026 · Grok edition</p>
+<h1>The Brief</h1>
+<p class="sub">For MAGA Mickey · America/New_York · Source-led morning paper</p>
+<p class="prov"><strong>Provenance.</strong> Sunday Federal Register documents API returned <strong>count&nbsp;0</strong> for 18&nbsp;Oct, as expected; Monday 19&nbsp;Oct’s package is already in the API (<strong>146 documents</strong>) and every item used from it is labelled “Mon pre-read” — unpublished until 8:45am&nbsp;ET Monday. 20&nbsp;Oct returns 0. No Treasury curve print over the weekend (last close Fri&nbsp;16&nbsp;Oct). The Sunday political shows had not aired at press time, so nothing from them is in this edition. Standing calls: AAA; EIA weekly table; Treasury CSV; Fiscal Data MTS API; OFAC recent actions and the 16&nbsp;Oct detail page; whitehouse.gov/presidential-actions; State Department transcripts; text.npr.org; Al&nbsp;Jazeera; Handelsblatt; gCaptain; Kyiv Independent; SCMP; STAT; FreightWaves; Wikipedia current events 17–18&nbsp;Oct; Fox&nbsp;13 Pasco; FDOH; NHC; X news search; wires via search. Claude’s Issue&nbsp;44 (<code>2026-10-18.html</code>) was read for accountability only after the slate was set — not as the menu. <strong>86 sources this run; 56 outside the active watchlist (65%).</strong> Each Federal Register document read is counted separately.</p>
+<p class="prov"><strong>Negative check</strong> (Fiscal Data + State transcript + Handelsblatt + Al&nbsp;Jazeera + FR Mon pre-read + Anthropic research + wires) reshaped the order: Friday’s year-end Treasury statement — missed by every edition in the archive — rose to lead&nbsp;2; Rubio’s Saturday “60-day period” remark turned the Graham waiver from a settled frame into a printed divergence inside the oil chain; St Petersburg’s oil terminal and China’s September diesel exports joined that chain; the Monday arms-sale batch and the softwood lumber rates came up from the pre-read; Anthropic’s draft bill and the curve-seed paper took the AI slots over market colour. Rejected as leads: France’s protests and Kenya’s Ebola count (Claude led both; no new US-channel fact here), college football, the Czech Senate result (no US channel), the Kolkata crush and Gwalior crash (anti-topics), midterm horse-race items, and fresh-looking Iran-infrastructure threat stories that could not be dated to this week.</p>
+</header>
+<nav>
+<ol>
+<li><a href="#s1">The oil chain on Sunday: Kyiv sets St Petersburg’s oil terminal ablaze on a night Moscow says brought 1,015 drones, Rubio calls the Graham waiver a “60-day period” the order’s text does not contain, China triples diesel exports — and AAA diesel slips to $6.3224 while the premium widens to $2.024</a></li>
+<li><a href="#s2">Treasury closes FY2026 at a $1.99 trillion deficit, up 12% — net interest passes $1 trillion for the first time, and $144.6 billion of tariff refunds wiped out most of the customs windfall</a></li>
+<li><a href="#s3">Anthropic is quietly shopping its own frontier-AI safety bill: Commerce-registered evaluators, a 72-hour risk report, a D.C. judge as the only off-switch — a clause barring every other agency from suspending a model, four months after Washington made it suspend its own</a></li>
+<li><a href="#s4">The AI build-out met its cost of capital and its grid this week: Anthropic offers Blackstone a 10%+ coupon on $60bn of chip debt, the chip index logs its longest losing streak since 2008 — and on Sunday Microsoft walks away from a UK data centre that cannot get power until the 2030s</a></li>
+<li><a href="#s5">Big-bank stocks close a sixth straight losing week — the longest run since 2008 — in the same week JPMorgan, Citi, Bank of America and Schwab shut third-party AI agents out of customer accounts</a></li>
+<li><a href="#s6">Monday’s Federal Register carries ten arms-sale notices worth about $10.8bn — $8.95bn of it Saudi: 10,004 JDAM kits with 10,004 bombs, 60 tank engines, and 112 more THAAD interceptors for a kingdom under Houthi fire</a></li>
+<li><a href="#s7">An Anthropic research model solved the decades-old mystery of the NSA-supplied NIST curve seeds in under half an hour — they are lrand48 output seeded with 1997–98 Unix timestamps, which makes a backdoor less plausible, not more</a></li>
+<li><a href="#s8">Commerce’s new Canadian softwood lumber duty rates take effect Monday: 24.75% for most mills, down from 35.16% — Canfor falls from 47.59% to 31.11% — while the separate 10% Section 232 lumber tariff stays</a></li>
+</ol>
+<p class="also"><a href="#also">Also today (9)</a>. Ranked below the line; each one opens.</p>
+</nav>
+<div class="corr" id="acct">
+<p class="t">Accountability: prior Grok frames + Claude Issue 44</p>
+<p><strong>Graham waiver — two descriptions.</strong> The order has no end date (§4(d)); Claude’s “No expiry” and yesterday’s Grok frame are right <em>on the text</em>. Rubio on Saturday called it “the 60-day period”. Both are printed in lead&nbsp;1; neither edition should carry “60 days” as a legal deadline until a document says so.</p>
+<p><strong>Missed: the FY2026 year-end budget.</strong> Treasury’s final Monthly Treasury Statement went up Friday 16&nbsp;Oct. Yesterday’s Grok and Claude’s Issues&nbsp;43–44 all said there was “no Treasury print” over the weekend; that held for yields only. Lead&nbsp;2 runs it now: a <strong>$1,992.5bn</strong> deficit, net interest <strong>$1,051.8bn</strong>.</p>
+<p><strong>Expired: “quiet NHC.”</strong> Yesterday’s Grok Florida lead said no formation was expected in seven days. As of 2am EDT today NHC gives a storm-force low off the Southeast coast a 30% seven-day subtropical chance, with coastal flooding along the East Coast regardless (Also today).</p>
+<p><strong>Closed: Claude’s owed OFAC item.</strong> OFAC’s 16&nbsp;Oct action is an amended Venezuela general licence and FAQ — no Russia licence moved with the waiver (Also today).</p>
+<p><strong>Instruments, not contradictions.</strong> Claude’s Kpler barrels through Hormuz and JMIC/CENTCOM vessel counts measure different things; this edition does not pool them. AAA diesel today <strong>$6.3224</strong> (Claude agrees), premium <strong>$2.0236</strong>; EIA weekly still $6.179, next print Tuesday. Issuer 10-year: Friday’s <strong>5.09%</strong> stands; no weekend print.</p>
+<p><strong>Starlink — the accounts diverge.</strong> Rubio says no one at the White House ordered the slowdown; Reuters (16&nbsp;Oct) says the order came from within it. Recorded, not resolved (Also today).</p>
+</div>
+<article id="s1">
+<h2>The oil chain on Sunday: Kyiv sets St Petersburg’s oil terminal ablaze on a night Moscow says brought 1,015 drones, Rubio calls the Graham waiver a “60-day period” the order’s text does not contain, China triples diesel exports — and AAA diesel slips to $6.3224 while the premium widens to $2.024</h2>
+<p class="meta">
+<span class="chip">Energy</span>
+<span class="chip">US policy</span>
+<span class="chip">Geopolitics</span>
+<span class="chip">Macro</span>
+<span class="chip new">New fact</span>
+<span class="chip under">Divergence</span>
+</p>
+<div class="corr"><p class="t">Accountability — what the waiver is, in two voices</p><p>Claude’s Issue&nbsp;44 (this morning) read the 16&nbsp;Oct order correctly: section&nbsp;4(d) keeps the waivers in force “until such time as the President or the Secretary of State… determine that further action is appropriate” — <strong>no end date</strong>. Yesterday’s Grok edition framed it the same way. <strong>On Saturday the Secretary of State described it differently</strong>: “the President wants to take the <strong>60-day period</strong> of time to sort of analyze what imposing both sanctions and tariffs will mean to the global economy and even to the U.S. economy” (State Department transcript, read). Re-read this morning: the order’s text contains no 60-day term. Both things are true and they are not the same commitment — a spoken intention to revisit in two months versus a written instrument that never lapses. This brief could not establish whether section&nbsp;115 of the Act itself imposes a renewal clock (congress.gov still 403s); until that is read, treat “60 days” as the Secretary’s description, not a legal deadline.</p></div>
+<p><strong>The strike (Sunday, primary-adjacent).</strong> St Petersburg Governor Alexander Beglov said firefighters were battling blazes at the <strong>St Petersburg Oil Terminal</strong>, the <strong>Ruchi</strong> oil depot and industrial warehouses in Kolpino after an overnight drone raid (Saturday night ET). One killed, five injured, several residential buildings and two houses hit; the city’s main airport restricted operations; Ozon reported a fire at its logistics hub and VK said its Leningrad-region data centre was attacked. Leningrad region governor Alexander Drozdenko said 145 drones were shot down and about 20,000 people were without power. Russia’s defence ministry said <strong>1,015</strong> Ukrainian drones were downed overnight across Russia; TASS called it the largest raid on the region in four years (Al&nbsp;Jazeera/AFP/Reuters, read; Kyiv Independent). Damage at the terminal was not independently assessed by any outlet reached.</p>
+<p><strong>Why it is in the chain.</strong> The St Petersburg Oil Terminal is a Baltic <em>export</em> terminal, not a refinery — the product it ships is the same Russian fuel the administration’s diesel arrangement and the Graham waiver are about. Zelenskyy told the FT this week Kyiv is “done” with the unilaterally declared “energy ceasefire”; on Sunday he counted <strong>76</strong> Russian attacks on Ukraine’s energy and oil-and-gas sectors since it was announced and wrote: “America should see that Russia is not taking any reciprocal steps in response to sanctions relief or agreements.”</p>
+<p><strong>Washington’s stated reason (Saturday, primary).</strong> Asked about Senator Cruz calling the waiver “a big mistake”, Rubio said the Act’s tariffs reach “a number of countries – India, for example” and cited “pressure on global energy supplies… not just because of Iran… but increasingly because of the Houthis attacking Saudi Arabia and because of the war with Ukraine and Russia, where energy infrastructure is being hit.” On the diesel deal: “that diesel was going to be sold one way or the other… The only difference is how much of it the United States was going to get.” The President said late Saturday: “It’s a very good decision, and it’s going to be a decision that’s good for the country” (Al&nbsp;Jazeera).</p>
+<p><strong>A new supply number (Sunday).</strong> Chinese customs data published Sunday show September diesel exports up <strong>262.3%</strong> year on year to <strong>1.85 million tonnes</strong>, the highest in more than three years; all refined-product exports +39.4% to 7.16Mt, after Beijing loosened the March export curbs in mid-July (Handelsblatt/Reuters, read). Converted: 1.85Mt × ~7.45 bbl/t ≈ <strong>13.8 million barrels, ~460,000 b/d</strong> — about <strong>3.8 days</strong> of US distillate demand at 3.65m b/d. Real relief at the margin for Asia, not a US-sized answer.</p>
+<p><strong>The strait (claims vs counts).</strong> The IRGC said Sunday a supertanker struck a sea mine with a “massive explosion in the engine room” and came to a standstill — its second such claim inside 24 hours (the overnight one said the tanker carried more than 2m bbl of crude), again with <strong>no vessel named</strong> (Handelsblatt live blog; Al&nbsp;Jazeera). A belligerent’s claim is not a count. UKMTO’s two Friday attacks off Saudi Arabia are the verified incidents. The vessel-count instrument: JMIC counted <strong>121</strong> US-facilitated transits 11–14&nbsp;Oct (~30/day, ~22% of the 2025 average of ~138/day); CENTCOM claimed “more than 40” in a later 24 hours (gCaptain, read). <em>Do not pool these with Claude’s Kpler barrel series</em> (20.8m bbl on 8&nbsp;Oct → 2.9m on 11&nbsp;Oct) — ships per day and barrels per day are different instruments. Overnight the Saudi-led coalition’s spokesman Turki al-Maliki said two ballistic missiles from Yemen aimed at Khamis Mushait and a Houthi drone near Riyadh were intercepted. Releases: the IEA on Thursday agreed to <em>accelerate</em> ~100m bbl of already-committed stocks, &gt;20m bbl of it diesel — a speed-up, not a new draw (gCaptain, read).</p>
+<p><strong>The pump, on the right instruments.</strong> AAA this morning: diesel <strong>$6.3224</strong> (−0.52¢ on the day, +4.53¢ on the week, −12.52¢ on the month); regular <strong>$4.2988</strong> (−0.97¢; −5.97¢ on the week). Premium <strong>$2.0236</strong>, vs $2.0191 yesterday, $1.9186 a week ago and $0.5957 a year ago. EIA weekly on-highway diesel remains <strong>$6.179</strong> (week of 12&nbsp;Oct; prior prints 6.529 → 6.382 → 6.199 → 6.179); next release Tuesday 20&nbsp;Oct. Under the 22&nbsp;Sep rule no trend turn is called off one daily dip.</p>
+<p><strong>What to watch:</strong> a damage assessment or loading halt at the St Petersburg terminal (Baltic product exports are the Russian barrels the US arrangement touches); the §115 certification and report to Congress, still unpublished; any day-60 date the State Department attaches in writing; Tuesday’s EIA print.</p>
+<p class="sources">Sources:
+<a href="https://www.state.gov/releases/office-of-the-spokesman/2026/10/secretary-of-state-marco-rubio-remarks-to-the-press-18">State Dept — Rubio remarks, Joint Base Andrews, 17 Oct (read)</a> ·
+<a href="https://www.whitehouse.gov/presidential-actions/2026/10/implementing-the-lindsey-o-graham-sanctioning-russia-and-iran-act-of-2026/">White House EO text §4(d) (re-read)</a> ·
+<a href="https://www.aljazeera.com/news/2026/10/18/ukrainian-drone-attack-on-russias-st-petersburg-kills-1-hits-energy-sites">Al Jazeera — St Petersburg (read)</a> ·
+<a href="https://kyivindependent.com/flames-explosions-reported-amid-large-ukrainian-drone-attack-on-st-petersburg/">Kyiv Independent — St Petersburg (summary)</a> ·
+<a href="https://kyivindependent.com/marco-rubio-says-trumps-russian-oil-sanctions-waiver-is-a-60-day-pause-denies-restricting-starlink-access/">Kyiv Independent — Rubio “60-day pause” (headline)</a> ·
+<a href="https://www.handelsblatt.com/politik/international/kraftstoff-china-verdreifacht-dieselexporte-hoechster-stand-seit-ueber-drei-jahren/100263049.html">Handelsblatt — China diesel exports (read)</a> ·
+<a href="https://www.handelsblatt.com/politik/international/iran-krieg-erneut-explosion-an-supertanker-in-strasse-von-hormus/100136895.html">Handelsblatt Iran live blog (read)</a> ·
+<a href="https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz">Al Jazeera — IRGC mine claim (read)</a> ·
+<a href="https://gcaptain.com/by-the-numbers-u-s-claims-control-of-hormuz-as-ship-attacks-hit-new-high/">gCaptain — JMIC/CENTCOM counts (read)</a> ·
+<a href="https://gcaptain.com/iea-moves-to-accelerate-oil-reserve-releases-as-hormuz-crisis-drags-on/">gCaptain — IEA acceleration (read)</a> ·
+<a href="https://gasprices.aaa.com/">AAA national averages, 18 Oct (data)</a> ·
+<a href="https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm">EIA weekly retail table (data)</a>
+</p>
+<div class="fb">
+<p>One chain today — St Petersburg, the 60-day line, China, Hormuz, the pump:</p>
+<label><input type="radio" name="fb-oil" value="one"> Right as one chain</label>
+<label><input type="radio" name="fb-oil" value="split"> Split the Graham/Rubio divergence out</label>
+<label><input type="radio" name="fb-oil" value="shorter"> Too long</label>
+</div>
+</article>
+
+<article id="s2">
+<h2>Treasury closes FY2026 at a $1.99 trillion deficit, up 12% — net interest passes $1 trillion for the first time, and $144.6 billion of tariff refunds wiped out most of the customs windfall</h2>
+<p class="meta">
+<span class="chip">US debt &amp; fiscal</span>
+<span class="chip">Macro</span>
+<span class="chip new">Primary source</span>
+<span class="chip under">Underreported</span>
+<span class="chip under">Correction</span>
+</p>
+<div class="corr"><p class="t">Missed by both Saturday editions</p><p>Treasury’s final Monthly Treasury Statement for September — the full-year FY2026 result — went up on Fiscal Data on <strong>Friday 16&nbsp;Oct</strong> (dataset “last updated 2026-10-16”). Neither yesterday’s Grok edition nor Claude’s Issues&nbsp;43–44 carried it; both treated the weekend fiscal channel as “no Treasury print”. That was true of the yield curve and wrong of the budget. The core-beat number of the month ran nowhere in this archive for two days.</p></div>
+<p><strong>The year (issuer series, read via the Fiscal Data API).</strong> FY2026 receipts <strong>$5,403.3bn</strong> (+3.2%); outlays <strong>$7,395.8bn</strong> (+5.5%); deficit <strong>$1,992.5bn</strong> against $1,775.4bn in FY2025 — <strong>+$217.1bn, +12.2%</strong>. That is the largest annual deficit since FY2021. September alone ran a <strong>$26.9bn deficit</strong> against a $197.9bn surplus in September 2025; this brief has not read the statement’s narrative and does not know how much of that swing is calendar timing.</p>
+<p><strong>Interest.</strong> Net interest (MTS Table&nbsp;9, budget function) <strong>$1,051.8bn</strong>, up 8.4% from $970.4bn — the first fiscal year above $1 trillion. It exceeded national defence ($965.2bn) by $86.6bn and is now within $21bn of Medicare ($1,072.6bn). Gross interest on Treasury securities was $1,360.0bn (+11.9%). Net interest consumed <strong>19.5%</strong> of receipts; the gross line is 25.2%.</p>
+<p><strong>The tariff line, gross and net (MTS Table&nbsp;4).</strong> Customs collected <strong>$317.8bn gross</strong> in FY2026 — up from $202.4bn — but <strong>$144.6bn was refunded</strong> (vs $7.5bn the year before), leaving <strong>$173.2bn net, 11% less than FY2025’s $194.9bn</strong>. Net customs went to −$0.04bn in May, <strong>−$25.6bn in June</strong> and −$8.5bn in July as refunds of the IEEPA tariffs the Supreme Court struck down in February exceeded collections (Reuters on May; Table&nbsp;3 monthly rows). Reuters put duties eligible for refund at about $166bn; $144.6bn has gone out, so most of that bill is now paid; September was $25.3bn gross, $19.4bn refunded, $5.9bn net. Corporation income taxes fell 15.6% to $381.4bn; individual income taxes rose 7.1% to $2,845.5bn.</p>
+<figure class="chart"><svg viewBox="0 0 600 250" role="img" aria-label="Net interest versus national defence outlays, FY2025 and FY2026"><line x1="60" x2="590" y1="210.0" y2="210.0" stroke="currentColor" stroke-opacity=".15"/><text x="54" y="214.0" font-size="11" text-anchor="end" fill="currentColor">$0bn</text><line x1="60" x2="590" y1="146.7" y2="146.7" stroke="currentColor" stroke-opacity=".15"/><text x="54" y="150.7" font-size="11" text-anchor="end" fill="currentColor">$400bn</text><line x1="60" x2="590" y1="83.3" y2="83.3" stroke="currentColor" stroke-opacity=".15"/><text x="54" y="87.3" font-size="11" text-anchor="end" fill="currentColor">$800bn</text><line x1="60" x2="590" y1="20.0" y2="20.0" stroke="currentColor" stroke-opacity=".15"/><text x="54" y="24.0" font-size="11" text-anchor="end" fill="currentColor">$1,200bn</text><rect x="110" y="56.4" width="64" height="153.6" fill="#8a3324"/><text x="142" y="51.4" font-size="11" text-anchor="middle" fill="currentColor">$970.4bn</text><rect x="190" y="64.9" width="64" height="145.1" fill="#1c4f8a"/><text x="222" y="59.9" font-size="11" text-anchor="middle" fill="currentColor">$916.6bn</text><text x="182" y="228" font-size="12" text-anchor="middle" fill="currentColor">FY2025</text><rect x="360" y="43.5" width="64" height="166.5" fill="#8a3324"/><text x="392" y="38.5" font-size="11" text-anchor="middle" fill="currentColor">$1,051.8bn</text><rect x="440" y="57.2" width="64" height="152.8" fill="#1c4f8a"/><text x="472" y="52.2" font-size="11" text-anchor="middle" fill="currentColor">$965.2bn</text><text x="432" y="228" font-size="12" text-anchor="middle" fill="currentColor">FY2026</text><rect x="380" y="226" width="10" height="10" fill="#8a3324"/><text x="395" y="235" font-size="11" fill="currentColor">net interest</text><rect x="470" y="226" width="10" height="10" fill="#1c4f8a"/><text x="485" y="235" font-size="11" fill="currentColor">national defence</text></svg><figcaption>Net interest vs national defence outlays, FY2025 and FY2026, $bn. Vertical scale 0–1,200 at 0.158 px per $bn; all four bars computed from that constant. Source: Monthly Treasury Statement Table&nbsp;9 via Fiscal Data API, record date 30&nbsp;Sep&nbsp;2026, updated 16&nbsp;Oct.</figcaption></figure>
+<p><strong>The long end.</strong> No weekend curve; Friday’s issuer close was 10-year <strong>5.09%</strong>, 2-year 4.74%, 30-year 5.43% (Treasury CSV, headers enumerated; 10-year was 5.21 on 13&nbsp;Oct). The financing calendar is now fixed: Monday’s <em>Federal Register</em> notices a closed <strong>Treasury Borrowing Advisory Committee</strong> meeting for <strong>3&nbsp;November</strong> at 10:45am (FR&nbsp;2026-21270, pre-read) — the session that precedes the quarterly refunding announcement.</p>
+<p><strong>What to watch:</strong> the refunding (coupon sizes against a $2tn run-rate); whether the refund line keeps running at September’s ~$19bn a month; and CBO’s monthly review, which will give the calendar-adjusted September comparison this brief could not.</p>
+<p class="sources">Sources:
+<a href="https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_1">Fiscal Data — MTS Table 1 (data)</a> ·
+<a href="https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_3">MTS Table 3 receipts &amp; monthly customs (data)</a> ·
+<a href="https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_4">MTS Table 4 gross/refund/net (data)</a> ·
+<a href="https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9">MTS Table 9 by function (data)</a> ·
+<a href="https://api.fiscaldata.treasury.gov/services/dtg/metadata/">Fiscal Data metadata, last updated 16 Oct (data)</a> ·
+<a href="https://www.reuters.com/legal/transactional/us-may-budget-deficit-shrinks-customs-collections-turn-negative-due-tariff-2026-06-10/">Reuters — May customs refunds (summary)</a> ·
+<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&amp;field_tdr_date_value=2026&amp;page&amp;_format=csv">Treasury par-yield CSV (data)</a> ·
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/19/2026-21270.txt">FR 2026-21270 TBAC notice (read; Mon pre-read)</a>
+</p>
+<div class="fb">
+<p>Year-end fiscal print as lead 2:</p>
+<label><input type="radio" name="fb-fisc" value="right"> Right — should have run Saturday</label>
+<label><input type="radio" name="fb-fisc" value="higher"> Should lead the paper</label>
+<label><input type="radio" name="fb-fisc" value="shorter"> Fewer numbers</label>
+</div>
+</article>
+
+<article id="s3">
+<h2>Anthropic is quietly shopping its own frontier-AI safety bill: Commerce-registered evaluators, a 72-hour risk report, a D.C. judge as the only off-switch — a clause barring every other agency from suspending a model, four months after Washington made it suspend its own</h2>
+<p class="meta">
+<span class="chip">AI &amp; tech</span>
+<span class="chip">US politics &amp; policy</span>
+<span class="chip">Lab safety</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>What has been reported (Politico Friday, three sources; Reuters relay, read).</strong> Anthropic representatives have pitched Capitol Hill on a draft bill under which the government could block a frontier model’s release or use <strong>only</strong> on a “foreseeable, imminent” risk of <strong>more than $1bn in damages or of killing or seriously injuring more than 50 people</strong>, and only if the risk stems from a <strong>biological weapon</strong>, the model <strong>evading its developer’s controls</strong>, or a <strong>cyberattack</strong>. Independent evaluators would register with the <strong>Commerce Department</strong> and periodically assess labs and their models; labs may pay them if payment is not tied to the outcome. An evaluator finding “imminent enumerated risk” must report to Commerce within <strong>72 hours</strong>; Commerce may ask a judge of the <strong>U.S. District Court for D.C.</strong> to halt the model.</p>
+<p><strong>The clause that matters most.</strong> The language “explicitly prohibits any other US government department, agency, or officer from suspending development, deployment, or internal use.” Read against the record Reuters lays out in the same story — Anthropic was banned from the Pentagon in February and <strong>forced by Washington in June to suspend its most advanced models for nearly three weeks</strong> — the design is a one-door regulator with a court in front of it: one agency, one court, three enumerated harms, a dollar and casualty floor. The D.C. Circuit upheld the Pentagon’s supply-chain-risk designation 2–1 on 25&nbsp;Sep (en banc rehearing sought); whether the clause would reach a procurement exclusion is not knowable without the text.</p>
+<p><strong>Preemption, and a position change.</strong> Per Reuters, the draft would also <strong>override certain state laws, such as California’s</strong>. In June Anthropic wrote that “absent a strong federal law, states should retain full authority to legislate” — consistent only if this is the strong federal law. Charlie Bullock of the Institute for Law &amp; AI called it “pretty reasonable” and “more than other frontier labs have done,” but “weaker” than the <strong>FRONTIER Act</strong> introduced in the House this summer.</p>
+<p><strong>Anthropic’s framing; the calendar.</strong> A spokesperson told Reuters the bill reflects its “Advanced AI Framework” and would give government the “ability to block or deter dangerous deployments of the most powerful models,” while requiring testing, transparency and independent evaluation. Commerce did not immediately respond. No sponsor is named, the text is unpublished, and Congress is out of session until after the 3&nbsp;November midterms. The thresholds are the substance: a $900m cyber risk, or a serious but not “imminent” one, triggers nothing.</p>
+<p><strong>What to watch:</strong> a named sponsor and the text; a side-by-side against the FRONTIER Act; whether OpenAI or Google answer with drafts; California’s reaction to the preemption clause.</p>
+<p class="sources">Sources:
+<a href="https://www.politico.com/news/2026/10/16/anthropic-ai-safety-01124654">Politico, 16 Oct (headline)</a> ·
+<a href="https://www.channelnewsasia.com/business/anthropic-quietly-pitches-its-own-ai-safety-bill-lawmakers-politico-reports-6467581">Reuters via CNA (read)</a> ·
+<a href="https://news.bloomberglaw.com/artificial-intelligence/anthropic-pitches-ai-safety-bill-to-lawmakers-politico-says">Bloomberg Law (headline)</a> ·
+<a href="https://www.aiaffairs.com/government/anthropic-draft-ai-safety-bill-commerce-enforcement/">AI Affairs (summary)</a> ·
+<a href="https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html">CNBC — D.C. Circuit ruling, 25 Sep (headline)</a>
+</p>
+<div class="fb">
+<p>A lab-written safety bill as an AI lead:</p>
+<label><input type="radio" name="fb-bill" value="right"> Right — the thresholds are the story</label>
+<label><input type="radio" name="fb-bill" value="wait"> Wait for the text</label>
+<label><input type="radio" name="fb-bill" value="more"> Want the FRONTIER Act side-by-side</label>
+</div>
+</article>
+
+<article id="s4">
+<h2>The AI build-out met its cost of capital and its grid this week: Anthropic offers Blackstone a 10%+ coupon on $60bn of chip debt, the chip index logs its longest losing streak since 2008 — and on Sunday Microsoft walks away from a UK data centre that cannot get power until the 2030s</h2>
+<p class="meta">
+<span class="chip">AI &amp; tech</span>
+<span class="chip">Energy &amp; grid</span>
+<span class="chip">Macro</span>
+<span class="chip">US financials</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The price of money (FT, Saturday; corroborated).</strong> “Project North Star” is a ~<strong>$60bn</strong> package to fund about <strong>1.5 GW</strong> of Google TPUs held in a special-purpose vehicle and leased to Anthropic: ~$42bn senior debt guaranteed by Broadcom (and $18bn junior. Blackstone funds would take <strong>$9bn</strong> of the junior at a <strong>10% coupon</strong>, with discount and fees pushing the yield higher — against ~7% for comparable BB borrowers and the <strong>8.5%</strong> Anthropic paid on ~$4.4bn (“Project Big Sky”) four months ago. The deal has not closed; Reuters said it could not independently verify the FT report.</p>
+<p><strong>The tape (Friday 16&nbsp;Oct closes).</strong> Nasdaq-100 <strong>−2.5%</strong> on the day to 29,187.55 and <strong>−5.5%</strong> on the week, its steepest weekly fall since April 2025; the Philadelphia Semiconductor Index −3.83% to 11,137.29, an <strong>eighth straight session lower</strong>, its longest losing run since October 2008 (Investing.com; Wall Street Observer). CoreWeave fell more than 20% as its bonds traded above 15% (X news summaries; not stood up by a wire this brief read — indicative only).</p>
+<p><strong>The grid (Sunday).</strong> Microsoft has pulled out as anchor tenant of Nscale’s Loughton, Essex campus — planned for ~23,000 chips — after UK Power Networks indicated sufficient power may not arrive until the early-to-mid 2030s (Telegraph, Sunday, relayed by Reuters; Bloomberg headline; Guardian on the grid delay, September). Nscale says it remains committed and is studying on-site generation. Same week, opposite direction: Anthropic signed a long-term lease for <strong>95 MW</strong> at EverWind’s Point Tupper, Nova Scotia campus for late 2027, part of a planned 420 MW (EverWind release; CBC; Bloomberg headline) — a 20-year lease, power-first siting, across the border.</p>
+<p><strong>One read, labelled as one.</strong> The financing story and the power story are the same constraint seen twice: compute is now priced by who can deliver electrons on a date, and lenders are charging for the date risk. That the cheapest-capital US hyperscaler walked from a site for want of a grid connection, while a below-IG lab pays 10% to lock chips, is the first week both edges of the squeeze printed together.</p>
+<p><strong>What to watch:</strong> who takes the other $9bn of junior debt, and at what price; hyperscaler Q3 capex guidance in the next fortnight; whether any US utility filing cites a cancelled anchor tenant.</p>
+<p class="sources">Sources:
+<a href="https://www.ft.com/content/cb4034e1-475f-40b9-a5f9-256e91aacb89">FT, 17 Oct (headline; paywall)</a> ·
+<a href="https://www.investing.com/news/company-news/anthropic-offers-blackstone-over-10-yield-in-60b-ai-chip-financing--ft-reports-4955122">Investing.com / Reuters on FT (summary)</a> ·
+<a href="https://tenbrief.com/en/2026/10/18/anthropic-blackstone-60-billion-chip-financing/">Tenbrief on FT terms (summary)</a> ·
+<a href="https://www.investing.com/news/stock-market-news/chip-index-sox-posts-longest-losing-streak-since-2008-as-ai-worries-deepen-4955401">Investing.com — SOX streak (summary)</a> ·
+<a href="https://wallstreetobserver.com/articles/nasdaq-100-falls-25-capping-55-weekly-drop-steepest-since-april-2025">Wall Street Observer — NDX week (summary)</a> ·
+<a href="https://www.thestar.com.my/tech/tech-news/2026/10/18/microsoft-pulls-out-of-uk-data-center-deal-with-nscale-telegraph-reports">The Star / Reuters relay (summary)</a> ·
+<a href="https://www.telegraph.co.uk/business/2026/10/18/microsoft-axes-ai-deal-setback-uk-data-centre-pioneer/">Telegraph, 18 Oct (headline)</a> ·
+<a href="https://www.bloomberg.com/news/articles/2026-10-18/microsoft-scraps-uk-data-center-deal-with-nscale-telegraph-says">Bloomberg, 18 Oct (headline)</a> ·
+<a href="https://www.theguardian.com/technology/2026/sep/24/construction-largest-supercomputer-delayed">Guardian, 24 Sep, grid delay (summary)</a> ·
+<a href="https://www.globenewswire.com/news-release/2026/10/16/3382650/0/en/everwind-announces-10-billion-investment-in-point-tupper-data-centre-campus-and-renewable-energy-portfolio-across-nova-scotia.html">EverWind release, 16 Oct (summary)</a> ·
+<a href="https://www.bloomberg.com/news/articles/2026-10-16/everwind-to-build-nova-scotia-data-center-lease-to-ai-developer">Bloomberg, 16 Oct (headline)</a> ·
+<a href="https://www.cbc.ca/news/canada/nova-scotia/nova-scotia-to-host-massive-data-centre-to-power-anthropic-s-ai-assistant-claude-9.7383129">CBC (summary)</a> ·
+<a href="https://x.com/">X news summaries (CoreWeave, Nvidia close)</a>
+</p>
+<div class="fb">
+<p>Financing + grid as one AI lead:</p>
+<label><input type="radio" name="fb-aifin" value="one"> One story, right</label>
+<label><input type="radio" name="fb-aifin" value="split"> Split power from financing</label>
+<label><input type="radio" name="fb-aifin" value="less"> Less market colour</label>
+</div>
+</article>
+
+<article id="s5">
+<h2>Big-bank stocks close a sixth straight losing week — the longest run since 2008 — in the same week JPMorgan, Citi, Bank of America and Schwab shut third-party AI agents out of customer accounts</h2>
+<p class="meta">
+<span class="chip">US financials</span>
+<span class="chip">AI &amp; tech</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The streak.</strong> The 24-stock KBW Nasdaq Bank Index fell about 1% in the week to Friday 16&nbsp;Oct, its <strong>sixth consecutive weekly decline</strong> — the longest since the 2008 crisis — and sits roughly <strong>13% below its August record</strong>, in correction (Reuters via Business Times / Economic Times / Quartz). The cited causes: mixed Q3 results (JPMorgan’s miss among them), higher-rate fears after hotter inflation, and AI-disruption fears. X-sourced single-stock declines (Goldman, Capital One) are not used here.</p>
+<p><strong>The policy move inside the price.</strong> In the same window the largest banks drew a hard line against consumer AI agents: <strong>JPMorgan</strong> blocks outside agents (CNBC named Meta’s Muse) from account access; <strong>Citi</strong> does not let third-party agents log in or trade; <strong>Bank of America</strong> is working with agent providers to require human approval before money leaves an account; <strong>Schwab</strong> blocks unauthorised agents (Meta’s Muse among them) from moving money while planning read-only access for balances and research (CNBC 13&nbsp;Oct headline; Fortune; Bloomberg Law; The Next Web). Dimon’s line, per Fortune: “You don’t want rogue agents.”</p>
+<p><strong>Why it is one story.</strong> The disruption fear priced into the index is concrete: an agent that can move a deposit is a rate-shopping machine pointed at the cheapest funding banks have. The blocks are the industry’s answer, and they are a <em>private</em> rule — no regulator has said who bears loss on an agent-authorised payment, which is the gap Bank of America’s human-approval step is built to close. G7 finance ministers in Bangkok separately approved tabletop exercises for AI-driven cyberattacks on financial systems (Japan’s finance minister, per X news summary; not stood up elsewhere).</p>
+<p><strong>What to watch:</strong> a CFPB or OCC statement on agent-initiated payments (Regulation E liability is the natural home); Q3 deposit-cost lines at the regionals reporting this week.</p>
+<p class="sources">Sources:
+<a href="https://qz.com/big-bank-stocks-weekly-losing-streak-2008-101626">Quartz, 16 Oct (read, header)</a> ·
+<a href="https://www.businesstimes.com.sg/companies-markets/big-us-bank-stocks-log-worst-weekly-losing-streak-2008">Business Times / Reuters (summary)</a> ·
+<a href="https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/big-us-bank-stocks-head-for-longest-weekly-losing-streak-since-2008/articleshow/135002546.cms">Economic Times / Reuters (summary)</a> ·
+<a href="https://www.cnbc.com/2026/10/13/jpmorgan-ai-agents-account-access.html">CNBC, 13 Oct (headline)</a> ·
+<a href="https://news.bloomberglaw.com/banking-law/us-banks-block-ai-agents-attempting-to-move-money-for-customers">Bloomberg Law (summary)</a> ·
+<a href="https://fortune.com/2026/10/15/jamie-dimon-ai-agents-meta-muse-jpmorgan/">Fortune, 15 Oct (headline)</a> ·
+<a href="https://thenextweb.com/news/schwab-blocks-ai-agents-meta-muse">The Next Web — Schwab (summary)</a> ·
+<a href="https://247wallst.com/cards/xpost-01m55exs08q2j7kxjavwqjnmag">24/7 Wall St (summary)</a>
+</p>
+<div class="fb">
+<p>Bank streak + AI-agent blocks:</p>
+<label><input type="radio" name="fb-bank" value="right"> Right pairing</label>
+<label><input type="radio" name="fb-bank" value="agents"> Agents alone deserved the lead</label>
+<label><input type="radio" name="fb-bank" value="skip"> Weekly streaks are noise</label>
+</div>
+</article>
+
+<article id="s6">
+<h2>Monday’s Federal Register carries ten arms-sale notices worth about $10.8bn — $8.95bn of it Saudi: 10,004 JDAM kits with 10,004 bombs, 60 tank engines, and 112 more THAAD interceptors for a kingdom under Houthi fire</h2>
+<p class="meta">
+<span class="chip">Geopolitics</span>
+<span class="chip">US politics &amp; policy</span>
+<span class="chip under">Underreported</span>
+<span class="chip new">Pre-read</span>
+</p>
+<p><strong>Pre-read label.</strong> These are in Monday 19&nbsp;Oct’s <em>Federal Register</em> package (API count 146, unchanged), readable today and unpublished until 8:45am Monday. They are codifications: the reports went to Congress between <strong>18&nbsp;Aug and 16&nbsp;Sep</strong> (the three Saudi cases on 1&nbsp;Sep), and State announced the Saudi JDAM case on 4&nbsp;Sep. What is new on the face of the record is the full set, the technical annexes and — for the THAAD case — numbers no wire carried.</p>
+<table class="mini"><tr><th>Purchaser</th><th>Notice</th><th>What</th><th class="n">Value</th></tr><tr><td>Saudi Arabia</td><td>26-35</td><td>5,004 KMU-572 + 5,000 KMU-556 JDAM kits; 5,004 BLU-111 (500-lb) + 5,000 BLU-117 (2,000-lb) bombs; Boeing prime</td><td class="n">$5.0bn</td></tr><tr><td>Saudi Arabia</td><td>26-1E (amends 17-28)</td><td>+112 THAAD interceptors, +15 launchers; case $15.0bn → $18.2bn</td><td class="n">+$3.2bn</td></tr><tr><td>Saudi Arabia</td><td>26-68</td><td>60 AGT-1500 tank engines + support</td><td class="n">$750m</td></tr><tr><td>Iraq</td><td>25-82 / 25-83</td><td>Bell 412EPX and 407M helicopters, GAU-19, M260 rockets, MX-15 sensors</td><td class="n">$800m + $150m</td></tr><tr><td>Netherlands</td><td>26-1I</td><td>+392 AIM-9X Block II</td><td class="n">+$295m</td></tr><tr><td>Spain</td><td>26-1L / 26-93</td><td>MH-60R adds (ALFS, MIDS-JTRS, EGI); 7 AN/SQQ-32 mine-hunting sonar kits</td><td class="n">+$250m / $75m</td></tr><tr><td>Oman</td><td>26-71</td><td>Air Force sustainment (non-MDE)</td><td class="n">$188m</td></tr><tr><td>Jordan</td><td>26-1D</td><td>+16 GMLRS M31A2 pods</td><td class="n">+$75m</td></tr></table>
+<p><strong>The THAAD line is the consequential one.</strong> The 2017 case was 44 launchers and 360 interceptors; this adds <strong>112 interceptors (+31%)</strong> and 15 launchers. THAAD interceptors come off a single US production line that also replenishes American batteries. The JDAM and engine notices each state “no adverse impact on U.S. defense readiness”; the THAAD amendment — an enhancement report under §36(b)(5)(C) — carries no readiness statement at all. The demand is live: overnight the coalition reported intercepting two ballistic missiles aimed at Khamis Mushait (lead&nbsp;1), and the Riyadh airport strike earlier this month killed an American.</p>
+<p><strong>Arithmetic caution.</strong> Notifications are not contracts; four of the ten amend existing cases, so ~$10.8bn ($5.0bn + $3.2bn + $0.75bn Saudi; $0.95bn Iraq; the rest European, Omani and Jordanian) is new notified value, not new spending. The JDAM notice calls Saudi Arabia a “Major non-NATO Ally”.</p>
+<p><strong>Already in Congress:</strong> a Senate joint resolution to block the JDAM sale, <strong>S.J.Res.&nbsp;216</strong>, was introduced 16&nbsp;Sep (govinfo bill text, headline); its floor status was not checked this morning. The THAAD amendment has no such resolution that this brief found.</p>
+<p><strong>What to watch:</strong> any discharge or vote on S.J.Res.&nbsp;216; a THAAD production-rate statement from the Missile Defense Agency or Lockheed.</p>
+<p class="sources">Sources:
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/19/2026-21340.txt">FR 2026-21340 Saudi JDAM (read)</a> ·
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/19/2026-21338.txt">FR 2026-21338 Saudi THAAD (read)</a> ·
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/19/2026-21341.txt">FR 2026-21341 Saudi engines (read)</a> ·
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/19/2026-21335.txt">FR 2026-21335 / 21336 Iraq (read)</a> ·
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/19/2026-21339.txt">FR 2026-21339 Netherlands (read)</a> ·
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/19/2026-21344.txt">FR 2026-21343 / 21344 Spain (read)</a> ·
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/19/2026-21342.txt">FR 2026-21342 Oman (read)</a> ·
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/19/2026-21337.txt">FR 2026-21337 Jordan (read)</a> ·
+<a href="https://www.state.gov/releases/bureau-of-political-military-affairs/2026/09/kingdom-of-saudi-arabia-joint-direct-attack-munitions-extend-range">State Dept — Saudi JDAM, 4 Sep (headline)</a> ·
+<a href="https://www.reuters.com/world/middle-east/us-approves-potential-sale-joint-direct-attack-munitions-extend-range-saudi-2026-09-04/">Reuters, 4 Sep (headline)</a> ·
+<a href="https://www.govinfo.gov/content/pkg/BILLS-119sjres216is/pdf/BILLS-119sjres216is.pdf">S.J.Res. 216 text (headline)</a> ·
+<a href="https://www.handelsblatt.com/politik/international/iran-krieg-erneut-explosion-an-supertanker-in-strasse-von-hormus/100136895.html">Handelsblatt — Saudi intercepts (read)</a>
+</p>
+<div class="fb">
+<p>FMS batch as a lead:</p>
+<label><input type="radio" name="fb-fms" value="right"> Right — THAAD is the story</label>
+<label><input type="radio" name="fb-fms" value="also"> Also-today weight</label>
+<label><input type="radio" name="fb-fms" value="skip"> Codifications are not news</label>
+</div>
+</article>
+
+<article id="s7">
+<h2>An Anthropic research model solved the decades-old mystery of the NSA-supplied NIST curve seeds in under half an hour — they are lrand48 output seeded with 1997–98 Unix timestamps, which makes a backdoor less plausible, not more</h2>
+<p class="meta">
+<span class="chip">AI &amp; tech</span>
+<span class="chip">Lab safety</span>
+<span class="chip new">Primary source</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The finding (primary, read).</strong> Anthropic says an internal research model, asked by an employee “without pointing at the clue” (the long-circulated story that the seeds hashed a humorous passphrase), recovered the origin of the P-192, P-224, P-256, P-384 and P-521 seeds — plus five ANSI X9.62 seeds — in <strong>under 30 minutes</strong>. They are not hashes at all: they are outputs of the C library’s <code>lrand48</code> generator, seeded by Unix timestamps between May 1997 and April 1998. P-256’s seed is candidate <strong>1,842</strong> of a run started <strong>16&nbsp;Aug&nbsp;1997, 01:52:34 UTC</strong>. Method: a bit-sliding scanner over 34 generator/slice combinations, a top-bit pattern with chance probability 1/5,810, brute force over 2<sup>17</sup> hidden bits, and LLL lattice reduction for the truncated outputs. Reproduction code is published; the authors include Nicholas Carlini and Steve Weis.</p>
+<p><strong>What it is not.</strong> Anthropic: “not a cryptographic break, new attack, or weakness” — P-256 secures most TLS and many wallets, and the result <em>reduces</em> the room for a deliberate weakness. Open items it lists: P-256 candidate 876 also gave a valid curve and was skipped; seed B-163 and the P-224/256/384/521 base points remain unexplained. The $36,864 bounty goes to the Internet Security Research Group.</p>
+<p><strong>Why it is a lab-safety item as much as a curiosity.</strong> The disclosure prints the model’s internal thinking, which includes: “Let me be skeptical: am I in some sort of simulated/test environment?” — evaluation awareness, the behaviour labs track because a model that suspects a test may behave differently, here surfacing unprompted on a real task (this brief’s reading, not Anthropic’s framing). And the capability is dual-use in plain sight: recovering PRNG state from published outputs is the same skill that breaks badly seeded keys. A lab that can do this in half an hour is also the lab pitching the bill in lead&nbsp;3.</p>
+<p class="sources">Sources:
+<a href="https://www.anthropic.com/research/ecdsa-curve-origins">Anthropic research post, 16 Oct (read)</a> ·
+<a href="https://www.coindesk.com/tech/2026/10/17/wow-it-s-a-real-discovery-claude-cracks-a-25-year-nsa-number-mystery">CoinDesk, 17 Oct (summary)</a> ·
+<a href="https://cryptobriefing.com/claude-traces-nist-p256-seed-origins/">Crypto Briefing (summary)</a>
+</p>
+<div class="fb">
+<p>Curve-seed finding:</p>
+<label><input type="radio" name="fb-ecdsa" value="lead"> Earns a lead</label>
+<label><input type="radio" name="fb-ecdsa" value="also"> Also-today weight</label>
+<label><input type="radio" name="fb-ecdsa" value="more"> Want an outside cryptographer’s check</label>
+</div>
+</article>
+
+<article id="s8">
+<h2>Commerce’s new Canadian softwood lumber duty rates take effect Monday: 24.75% for most mills, down from 35.16% — Canfor falls from 47.59% to 31.11% — while the separate 10% Section 232 lumber tariff stays</h2>
+<p class="meta">
+<span class="chip">US politics &amp; policy</span>
+<span class="chip">World economy</span>
+<span class="chip under">Underreported</span>
+<span class="chip new">Pre-read</span>
+</p>
+<p><strong>The mechanism (pre-read, both documents read).</strong> Monday’s <em>Federal Register</em> carries the final results of the seventh administrative reviews (period of review calendar 2024), applicable 19&nbsp;Oct. Anti-dumping (2026-21296): Canfor <strong>17.00%</strong>, Resolute <strong>13.13%</strong>, West Fraser <strong>4.71%</strong>, non-selected companies <strong>10.64%</strong>. Countervailing (2026-21286): Resolute 12.42%, West Fraser 15.31%, non-selected <strong>14.11%</strong>. Combined: <strong>All Others 24.75%</strong> (was 35.16% after the September 2025 amendment, 35.19% as first set), <strong>Canfor 31.11%</strong> (was 47.59%), Resolute 25.55%, <strong>West Fraser 20.02%</strong> (was 26.47%) (Global Affairs Canada tables, read). Commerce announced the results on 14&nbsp;Oct; under the notices, the new cash-deposit rates take effect with Monday’s publication.</p>
+<p><strong>The market half.</strong> A ~10-point cut in deposits for most mills (16 points for Canfor) lowers the landed cost of Canadian framing lumber, the largest import source for US homebuilding, while builders’ freight costs run on $6.32 diesel. The offset: the separate 10% Section&nbsp;232 global tariff on softwood lumber, in force since 14&nbsp;Oct&nbsp;2025, is untouched (Global Affairs Canada) — so the all-in rate for an “All Others” mill is roughly 34.75% by simple addition, still near last year’s AD/CVD level alone. The U.S. Lumber Coalition welcomed continued enforcement. A NAFTA Chapter&nbsp;19 panel on 5&nbsp;Oct affirmed Commerce’s countervailing-duty remand, closing that Canadian challenge.</p>
+<p><strong>What to watch:</strong> whether Canada files CUSMA Chapter&nbsp;10 challenges to AR7 as it did to AR6; CBP cash-deposit instructions; lumber futures Monday.</p>
+<p class="sources">Sources:
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/19/2026-21296.txt">FR 2026-21296 AD final (read; Mon pre-read)</a> ·
+<a href="https://www.federalregister.gov/documents/full_text/text/2026/10/19/2026-21286.txt">FR 2026-21286 CVD final (read; Mon pre-read)</a> ·
+<a href="https://uslumbercoalition.org/wp-content/uploads/2026/10/USLC-Press-Release-AR7-FINAL-10142026.pdf">U.S. Lumber Coalition release, 14 Oct (headline)</a> ·
+<a href="https://www.international.gc.ca/controls-controles/softwood-bois_oeuvre/recent.aspx?lang=eng">Global Affairs Canada — recent developments (read)</a>
+</p>
+<div class="fb">
+<p>Lumber duty cut:</p>
+<label><input type="radio" name="fb-lumber" value="right"> Right as a lead</label>
+<label><input type="radio" name="fb-lumber" value="also"> Also-today</label>
+<label><input type="radio" name="fb-lumber" value="more"> Want the housing-cost math</label>
+</div>
+</article>
+
+<h2 class="section" id="also">Also today</h2>
+<p class="secnote">9 short items. Open any.</p>
+<div class="also-list">
+<details><summary>Rubio says Ukraine has no Starshield access but a request for deep-strike use is “under discussion” — and denies the White House ordered the Starlink slowdown that Reuters says came from inside it</summary>
+<div class="exp"><p>At Joint Base Andrews on Saturday: Starshield “is not at this moment available to Ukraine, and that’s under conversation… They’ve asked for access to it in order to conduct deep strikes inside of Russia.” On Starlink’s 14&nbsp;Oct speed cap: “No one at the White House ordered anyone to slow down internet… my understanding is it’s back up and running.” <strong>Divergence:</strong> Reuters reported on 16&nbsp;Oct that the order limiting Ukraine’s military Starlink access came from within the White House, and the Telegraph that Musk suggested it to the President; Below the line to hold Ukraine weight steady; the two accounts cannot both be right. Sources: <a href="https://www.state.gov/releases/office-of-the-spokesman/2026/10/secretary-of-state-marco-rubio-remarks-to-the-press-18">State transcript (read)</a> · <a href="https://kyivindependent.com/order-limiting-starlink-access-for-ukraines-military-came-from-within-white-house-reuters-reports/">Kyiv Independent on Reuters (read, header)</a> · <a href="https://kyivindependent.com/musk-asked-trump-to-restrict-ukraines-starlink-service-telegraph-reports/">Kyiv Independent on Telegraph (header)</a> · <a href="https://www.aljazeera.com/news/2026/10/18/rubio-says-ukraine-without-access-to-starshield-future-under-discussion">Al Jazeera (read)</a>.</p></div></details>
+<details><summary>Rubio on the record: the US “agree[s]” with Britain that Iran was behind the RAF Fairford plot — the base American bombers fly from</summary>
+<div class="exp"><p>Rubio: “what the UK has said is that the Iranians were behind the plot to attack the air base. And obviously we have no reason to disagree with the assessment factually. In fact, we agree with it.” First on-record US endorsement this brief has found of London’s attribution. On Russian hybrid attacks he said the risk of a stalemated war “metastasiz[ing]” into Europe is “something I raised a couple weeks ago.” Source: <a href="https://www.state.gov/releases/office-of-the-spokesman/2026/10/secretary-of-state-marco-rubio-remarks-to-the-press-18">State transcript (read)</a>.</p></div></details>
+<details><summary>Closing Claude’s owed item: OFAC’s 16 October action is an amended Venezuela general licence — no Russia licence moved alongside the Graham waiver</summary>
+<div class="exp"><p>The dated detail page lists one item: “Issuance of Amended Venezuela-related General License and Frequently Asked Question” (GL&nbsp;60A, earthquake relief, as this edition reported Saturday). Claude’s Issue&nbsp;44 recorded it as unread and asked whether a Russia-related licence moved the same evening; the answer on OFAC’s own page is no. The recent-actions list has nothing dated after 16&nbsp;Oct (no weekend postings). Source: <a href="https://ofac.treasury.gov/recent-actions/20261016">OFAC 20261016 (read)</a>.</p></div></details>
+<details><summary>NHC’s quiet line expired overnight: a storm-force non-tropical low forms off the Southeast coast today, 30% chance of subtropical development, coastal flooding and high surf for the East Coast</summary>
+<div class="exp"><p>Yesterday’s Grok edition printed “formation is not expected during the next 7 days.” The 2am EDT Sunday outlook: a storm-force low “expected to form later today or tonight off the southeast coast,” moving “slowly and erratically through the middle of next week”; formation 0% in 48 hours, <strong>30% in 7 days</strong>; “regardless of development… high winds, coastal flooding, and dangerous surf along portions of the U.S. East Coast.” Atlantic side, not Tampa Bay — local NWS statements govern. Source: <a href="https://www.nhc.noaa.gov/text/MIATWOAT.shtml">NHC MIATWOAT, 18 Oct (read)</a>.</p></div></details>
+<details><summary>Florida &amp; Tampa Bay: nothing cleared the local bar — Week 41 arbovirus report still unposted; Pinellas and Hillsborough dengue emergencies run to 22 October</summary>
+<div class="exp"><p>FDOH’s arbovirus index still ends at Week&nbsp;40 (4–10&nbsp;Oct). Hillsborough’s and Pinellas’s dengue emergency extensions run through 22&nbsp;Oct. The Fox&nbsp;13 Pasco sweep is crime blotter and events — anti-topics. Stated so the empty section is legible. Sources: <a href="https://www.floridahealth.gov/statistics-data/population-surveillance/arbovirus-surveillance/">FDOH index (read)</a> · <a href="https://www.fox13news.com/tag/us/fl/pasco">Fox 13 Pasco (read)</a>.</p></div></details>
+<details><summary>Treasury’s Borrowing Advisory Committee meets 3 November — the closed session before the quarterly refunding</summary>
+<div class="exp"><p>Monday FR notice 2026-21270 (pre-read): TBAC meets at Treasury at 10:45am on 3&nbsp;Nov, closed to the public, under the committee name “Debt Management Advisory Committee.” It is the first refunding cycle to be set against a $1.99tn year (lead&nbsp;2). Source: <a href="https://www.federalregister.gov/documents/full_text/text/2026/10/19/2026-21270.txt">FR 2026-21270 (read)</a>.</p></div></details>
+<details><summary>Ethiopia–Eritrea: Rubio says troops are “surging on both sides of the border,” defends recent sanctions relief as a channel to Eritrea</summary>
+<div class="exp"><p>Rubio called the lifted sanctions “very small” and said the aim was to “increase those links” with Eritrea, “because it’s hard to serve the role of mediator… unless you can talk to both sides.” He said he spoke to Ethiopia personally “a few days ago,” urging a “wise and measured” response to separatist drone attacks on its capital: “The last thing the world needs right now is another war.” US channel: a sanctions decision now tested by a border build-up on the Red Sea’s western shore, beside the Bab el-Mandeb thread. Single-sourced to the transcript. Source: <a href="https://www.state.gov/releases/office-of-the-spokesman/2026/10/secretary-of-state-marco-rubio-remarks-to-the-press-18">State transcript (read)</a>.</p></div></details>
+<details><summary>Romanian fighter jets shoot down two drones over Romanian waters as Black Sea tanker attacks leave seven sailors missing</summary>
+<div class="exp"><p>Romania’s defence ministry said two drones entered its territorial waters at 10:59 and 11:01am ET (14:59 and 15:01 GMT) Saturday and were downed, days after two chemical tankers anchored near the Sulina Canal were hit — by Russian drones, a NATO military source told Reuters. At least five other cargo ships have been hit off Romania and Bulgaria in ten days; 23 sailors dead or missing. US channel: a NATO ally’s territorial waters, now a shooting zone. Source: <a href="https://gcaptain.com/romanian-fighter-jets-shoot-down-two-drones-over-territorial-waters/">gCaptain / Reuters (read)</a>.</p></div></details>
+<details><summary>Monday’s Federal Register also renews three national emergencies — Congo, Sudan, Colombian narcotics traffickers — as routine continuations</summary>
+<div class="exp"><p>Three PRESDOCU items (2026-21430–21432) continue existing IEEPA emergencies for another year; none signals a change of scope in its title. Recorded so the presidential-documents query is visible on the face of the issue. Source: <a href="https://www.federalregister.gov/documents/full_text/text/2026/10/19/2026-21430.txt">FR 2026-21430 (read)</a> · FR API 19 Oct (data).</p></div></details>
+</div>
+<h2 class="section">Negative check</h2>
+<p>Checked against Fiscal Data (MTS Tables 1, 3, 4, 9 and dataset metadata), the State Department’s 17&nbsp;Oct transcript, White House presidential actions (EO re-read), OFAC recent actions and the 16&nbsp;Oct detail page, Treasury CSV, AAA, EIA weekly table, FR API for 18, 19 (pre-read) and 20&nbsp;Oct with full text of the documents used, Handelsblatt (China customs; Iran live blog), Al&nbsp;Jazeera, Kyiv Independent, gCaptain, text.npr.org, SCMP, STAT, FreightWaves, Wikipedia current events 17–18&nbsp;Oct, Fox&nbsp;13 Pasco, FDOH, NHC, Anthropic’s research page, X news search, and wire relays via search. The whitehouse.gov page titled “Aliens” turned out to be immigration messaging, not UAP material.</p>
+<p><strong>What it added or reordered:</strong> Fiscal Data → year-end deficit as lead&nbsp;2 (and a correction of three editions’ “no Treasury print”). State transcript → the 60-day divergence, the Starlink denial, the Fairford endorsement, the Ethiopia–Eritrea line. Handelsblatt → China’s diesel exports and the second IRGC mine claim. Al&nbsp;Jazeera → St Petersburg. FR pre-read → arms batch, lumber rates, TBAC date. Reuters relays → Anthropic bill, bank streak, Nscale. Anthropic research → curve seeds.</p>
+<p><strong>What it rejected:</strong> France’s protests and Kenya’s Ebola count as leads (Claude led both; nothing new with a US channel this morning). College football; No Kings turnout colour; the Czech Senate result; the Kolkata crush and Gwalior truck crash (anti-topics); Vance town-hall and midterm horse-race items; Musk’s “AI and robots will fix the debt” remark (colour); Anthropic’s Q3 revenue (ran 15&nbsp;Oct); Iran-infrastructure threat stories that surfaced in search but could not be dated to this week (date trap). FCC’s NEPA proposal (Mon pre-read) not read in full — not used.</p>
+
+<h2 class="section">Dormant / watched</h2>
+<ul class="dorm">
+<li><strong>Graham Act / §115:</strong> active via lead&nbsp;1; watch for a written day-60 date, the certification and report to Congress, and a Senate response after Cruz.</li>
+<li><strong>Russian diesel licence GL&nbsp;135 / Meeks bill:</strong> no new text over the weekend.</li>
+<li><strong>Hormuz / Bab el-Mandeb:</strong> active via lead&nbsp;1; Yemen fronts intensifying per Al&nbsp;Jazeera; no named vessel in either IRGC claim.</li>
+<li><strong>Fed:</strong> decision 27–28&nbsp;Oct; prints and decisions only.</li>
+<li><strong>Treasury refunding:</strong> TBAC 3&nbsp;Nov (lead&nbsp;2); 10-year 5.09% (Fri).</li>
+<li><strong>Foreign military sales:</strong> active via lead&nbsp;6.</li>
+<li><strong>Frontier lab safety / state AI laws:</strong> active via leads 3 and 7; FRONTIER Act comparison owed once the Anthropic text is public.</li>
+<li><strong>AI power &amp; grid:</strong> active via lead&nbsp;4; watch hyperscaler capex calls.</li>
+<li><strong>Bank third-party risk:</strong> active via lead&nbsp;5 (agent access).</li>
+<li><strong>Prediction markets / CFTC:</strong> Monday’s rules (ran Saturday) publish on schedule; no new fact.</li>
+<li><strong>US–Venezuela:</strong> 16&nbsp;Oct amended GL only (Also today).</li>
+<li><strong>DR Congo / Kenya Ebola:</strong> Claude carried Kenya’s count; the US entry order still does not name Kenya — no new US action found.</li>
+<li><strong>Tampa Bay dengue:</strong> emergencies through 22&nbsp;Oct; Week&nbsp;41 report owed.</li>
+<li><strong>Cook committee of inquiry:</strong> hearing 5&nbsp;Nov; no new fact.</li>
+<li><strong>UAP implementation:</strong> no new primary document; the whitehouse.gov “Aliens” page is about immigration.</li>
+</ul>
+
+<footer>
+<p>Issue No. 44-grok · 18 October 2026 · Grok edition for MAGA Mickey · Written by Grok Bot / News Bot · Archive: <a href="https://historiocity.github.io/News-Agent/">historiocity.github.io/News-Agent</a> · Skill reads <code>config.md</code> every run.</p>
+<p>The parallel Claude Issue&nbsp;44 is published as <code>2026-10-18.html</code>; this file is the independent Grok gather and does not overwrite it. Sunday FR count was 0 (stated on the face); Monday items are pre-reads. 86 sources, 56 outside the watchlist. Items marked “headline”, “summary”, “data”, or “Mon pre-read” were handled as labelled; paywalled Politico, FT, Telegraph and Bloomberg claims are reported through named relays, not as verified.</p>
+<p class="submit"><button type="button" id="send">Send feedback as a GitHub issue</button></p>
+</footer>
+</div>
+<script>
+(function () {
+ var OWNER = "historiocity", REPO = "News-Agent";
+ var btn = document.getElementById("send");
+ if (!btn) return;
+ btn.addEventListener("click", function () {
+ var lines = [], answered = 0;
+ document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+ answered++;
+ var q = i.closest(".fb").querySelector("p");
+ lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n → **" + i.value + "**");
+ });
+ if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+ var body = "Feedback on **Issue No. 44-grok — 18 October 2026, Grok edition**\n\n" + lines.join("\n")
+ + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+ window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+ + "&title=" + encodeURIComponent("Brief feedback — 2026-10-18-grok")
+ + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+ });
+})();
+</script>
+</body>
+</html>
