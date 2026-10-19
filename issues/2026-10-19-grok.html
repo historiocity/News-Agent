@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Monday, 19 October 2026 (Grok edition)</title>
+<style>
+:root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+@media (prefers-color-scheme: dark) {
+:root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+.wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+.kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+.sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+.prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+nav ol { margin:0; padding-left:1.2rem; }
+nav li { margin:.25rem 0; }
+nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+a { color:var(--link); }
+article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+.secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+.meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+.chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+.chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+.chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+.sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+.div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+.div p { margin:.4rem 0; }
+.div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+.corr { background:var(--box); border-left:4px solid var(--accent); padding:.8rem 1rem; margin:0 0 1.6rem; font-size:.95rem; }
+.corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+.corr p { margin:.45rem 0; }
+details { margin-top:.8rem; }
+details summary { cursor:pointer; color:var(--link); }
+.exp { margin-top:.6rem; }
+.also-list { margin:0; }
+.also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+.also-list details:first-of-type { border-top:1px solid var(--rule); }
+.also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+.also-list .exp { font-size:.94rem; padding-left:.2rem; }
+footer { color:var(--muted); font-size:.88rem; }
+.fb { margin-top:1rem; font-size:.9rem; }
+.fb p { margin:.6rem 0 .2rem; }
+.fb label { display:block; margin:.15rem 0; }
+.submit { margin-top:2rem; }
+button { font:inherit; padding:.45rem .8rem; }
+ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+ul.dorm li { margin:.3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<p class="kicker">Issue No. 45-grok · Monday, 19 October 2026 · Grok edition</p>
+<h1>The Brief</h1>
+<p class="sub">For MAGA Mickey · America/New_York · Source-led morning paper</p>
+<p class="prov"><strong>Provenance.</strong> Monday Federal Register documents API returned <strong>36</strong> RULE/PRORULE, <strong>3</strong> PRESDOCU (emergency continuations only), and <strong>107</strong> NOTICE for 19&nbsp;Oct — full-text endpoint read for the CFTC pair, OPM Time-in-Grade, ten DoD arms-sale notices, and the softwood AD/CVD finals. Wikipedia current-events portals for 16–19&nbsp;Oct were populated and used for the negative check alongside Al&nbsp;Jazeera’s <code>/news/</code> index and Handelsblatt’s front page. Treasury Daily Par Yield Curve CSV: last print <strong>Fri 16&nbsp;Oct</strong> (Monday morning has no new curve). AAA daily and EIA weekly LeafHandler both fetched. Standing calls: text.npr.org; whitehouse.gov/presidential-actions/; gasprices.aaa.com; ofac.treasury.gov/recent-actions; gcaptain.com; fox13news.com/tag/us/fl/pasco; NBS China primary; Anthropic primary. SCMP blocked this run. Monday-run rule applied: explicit Fri–Sun sweep on Core beats (AI financing/Warsh Friday; Anthropic fund Sunday; sanctions/MTP Sunday; China GDP Monday).</p>
+</header>
+
+<nav>
+<ol>
+<li><a href="#s1">The oil chain on Monday: Trump defends the Graham waiver and blames Kyiv for diesel; Zelenskyy warns a US–Russia alignment ends the war; Rubio says there was “no pause” in intel; AAA diesel $6.3187; Brent futures ~$107.57; Iran’s Hormuz reopen offer still on the table</a></li>
+<li><a href="#s2">Anthropic commits 5% of its shares to a public-benefit fund that grows with the company — subject to stockholder approval</a></li>
+<li><a href="#s3">China’s Q3 GDP printed 4.5% — exports and high-tech manufacturing did the work; retail barely moved</a></li>
+<li><a href="#s4">The CFTC’s Monday package is now in the Federal Register: casino wagers out of “swap” today; event contracts proposed in, comments due 18&nbsp;Nov</a></li>
+<li><a href="#s5">Saudi Arabia’s $5.0bn JDAM package and $750m tank-engine buy publish — 10,004 guidance kits and 60 AGT-1500 engines, notified in one morning</a></li>
+<li><a href="#s6">OPM kills Time-in-Grade for the General Schedule — effective 19&nbsp;Jan 2027</a></li>
+<li><a href="#s7">Canadian softwood lumber’s new cash-deposit rates are live: All Others combined 24.75%; Canfor 31.11%; Section 232’s separate 10% stays</a></li>
+<li><a href="#s8">Weekend Core sweep: Nasdaq −4.5% on the week as AI financing cracked; Warsh gave no rate signal; Treasury 10-year closed Friday at 5.09%</a></li>
+</ol>
+<p class="also"><a href="#also">Also today (10)</a>. Ranked below the line; each one opens.</p>
+</nav>
+
+<div class="corr" id="acct">
+<p class="t">Accountability: prior Grok frames + Claude Issue 45</p>
+<p><strong>Graham waiver — still two descriptions.</strong> Issue&nbsp;44-grok and Claude&nbsp;44 correctly read §4(d): no end date. Rubio’s Saturday “60-day period” remains a spoken intention, not a clause. No new instrument today. This edition does not treat 60 days as a legal deadline.</p>
+<p><strong>Softwood CVD all-others.</strong> Issue&nbsp;44-grok’s pre-read holds: non-selected <strong>14.11%</strong> in the review; producers outside the review continue at the investigation all-others rate of <strong>14.19%</strong>. Combined for non-selected reviewed mills: AD&nbsp;10.64 + CVD&nbsp;14.11 = <strong>24.75%</strong>. Confirmed against today’s published text.</p>
+<p><strong>Starshield / intel.</strong> Issue&nbsp;44 recorded the Rubio-vs-Reuters divergence. Sunday: Zelenskyy told NBC the interruption was later “deblocked.” Monday: Rubio in Uzbekistan — “There has been no pause.” Bessent called Zelenskyy’s Starlink-order claim “reckless.” Accounts still diverge; both are printed in lead&nbsp;1.</p>
+<p><strong>AAA diesel.</strong> Sunday $6.3224; today <strong>$6.3187</strong> (−0.37¢). Premium to regular ≈ $2.0234. EIA weekly still $6.179 (w/e 12&nbsp;Oct); next print <strong>Tue 20&nbsp;Oct</strong>.</p>
+<p><strong>Not reprised without new facts:</strong> FY2026 deficit statement; Anthropic’s draft frontier-AI bill; Anthropic/NIST curve seeds; St Petersburg Oil Terminal strike detail (folded into Monday’s chain only where it bears on the waiver fight).</p>
+<p><strong>Claude Issue&nbsp;45</strong> (published this morning as <code>2026-10-19.html</code>) led on Saudi arms, the waiver defence, Starshield, Anthropic’s fund, and CFB Wainwright. This Grok edition is an independent gather: China GDP, CFTC FR text, OPM Time-in-Grade, and the Friday AI/yields sweep are not in Claude’s five-lead paper; overlapping stories are re-sourced to primaries.</p>
+</div>
+
+<article id="s1">
+<h2>The oil chain on Monday: Trump defends the Graham waiver and blames Kyiv for diesel; Zelenskyy warns a US–Russia alignment ends the war; Rubio says there was “no pause” in intel; AAA diesel $6.3187; Brent futures ~$107.57; Iran’s Hormuz reopen offer still on the table</h2>
+<p class="meta">
+<span class="chip">Energy</span>
+<span class="chip">US policy</span>
+<span class="chip">Geopolitics</span>
+<span class="chip">Macro</span>
+<span class="chip new">New fact</span>
+<span class="chip under">Divergence</span>
+</p>
+<p><strong>Washington (Sunday–Monday).</strong> On Truth Social Sunday, President Trump defended the 16&nbsp;Oct order waiving sanctions and tariffs under the Lindsey&nbsp;O.&nbsp;Graham Sanctioning Russia and Iran Act of 2026: “I am in the process of negotiating Peace… and don’t want to do anything that will drive, foolishly, Russia away from the bargaining table.” He accused President Zelenskyy of not wanting the war to end and of striking Russian diesel refineries “seriously hurting the world diesel markets,” adding that with European money Kyiv “probably never did” want an end (Al&nbsp;Jazeera / AFP / AP / Reuters, read). Zelenskyy, on NBC’s <em>Meet the Press</em> Sunday, said the waiver “will hurt Ukraine,” called Putin a terrorist, and warned that if the United States “will officially take the side of Russia… we will not prevail.” He also said US intelligence-sharing had been interrupted and later “deblocked,” and that Starlink/Starshield limits had choked drone operations (NBC / Al&nbsp;Jazeera).</p>
+<p><strong>Rubio and Bessent (Monday).</strong> From Uzbekistan, Secretary of State Marco Rubio: “There has been no pause” in intelligence-sharing. “What [Zelenskyy] should be focused on… is bringing an end to this war.” He confirmed “talks of a meeting” involving Trump, Putin and Xi without saying it was finalised. Treasury Secretary Scott Bessent, after the MTP tape, said Zelenskyy “presents a false binary… that Ukraine must win,” that the war ends in a negotiated settlement, and that it is “very reckless” to claim the administration ordered a SpaceX slowdown (Al&nbsp;Jazeera / AFP / Reuters).</p>
+<p><strong>The overnight strike.</strong> Russia hit Ukrainian energy sites again; Zelenskyy said more than ten facilities were damaged and that Kyiv again got no early warning from partners. A 21-year-old woman was killed in Kyiv (AP via NBC). Russia’s defence ministry claimed strikes on a data centre, drone-component sites and a locomotive depot.</p>
+<p><strong>The pump and the screen.</strong> AAA national diesel this morning: <strong>$6.3187</strong> (yesterday $6.3224; week ago $6.2665; month ago $6.4866; year ago $3.6308). Regular $4.2953. Diesel–regular premium ≈ $2.0234. <strong>Instrument rule:</strong> AAA daily for the level; EIA weekly on-highway diesel still <strong>$6.179</strong> for the week ending 12&nbsp;Oct (LeafHandler; next release 20&nbsp;Oct) for trend. <strong>Brent:</strong> ICE Brent futures quoted around <strong>$107.57</strong> early Monday (−2.08% / −$2.29 from Friday’s settlement, Reuters via Aaj) after Friday briefly tagged ~$110 — the highest since mid-May on that futures feed. Name the instrument: this is <em>front-month futures</em>, not Dated Brent. Physical Hormuz and diesel cargoes remain the better pressure gauges while freight is dislocated.</p>
+<p><strong>Hormuz channel.</strong> Iranian Foreign Minister Abbas Araqchi said Sunday Tehran’s mid-September offer to reopen the Strait of Hormuz within seven days if Washington meets seven conditions “is still on the table,” while accusing the US of lacking honesty (gCaptain / Reuters, read). Conditions include lifting the US blockade on Iranian ports, ending sanctions on Iranian oil exports, and ending hostilities on regional fronts — nuclear enrichment remains the US sticking point (JD Vance earlier this month).</p>
+<p><strong>Why one chain.</strong> The waiver, the diesel deal, Kyiv’s refinery and terminal strikes, the pump price, Brent futures, and Hormuz’s reopen politics are one shock with a US price channel — not four stories. Issue&nbsp;44’s St Petersburg Oil Terminal hit sits upstream of today’s political fight over whether those strikes “hurt diesel markets.”</p>
+<p><strong>What to watch:</strong> whether any FR/OFAC text ever writes a 60-day clock; EIA’s Tuesday weekly print; any CENTCOM/JMIC transit update; cash diesel arrivals under the Russia arrangement.</p>
+<p class="sources">Sources: Al&nbsp;Jazeera — Trump defends sanctions relief (19&nbsp;Oct, read) · Al&nbsp;Jazeera — Rubio “no pause” (19&nbsp;Oct, read) · NBC / AP — Kyiv overnight strike (19&nbsp;Oct, summary) · AAA gasprices.aaa.com (19&nbsp;Oct, data) · EIA LeafHandler weekly diesel (release 14&nbsp;Oct; next 20&nbsp;Oct, data) · Reuters via Aaj — Brent futures Monday (summary) · gCaptain / Reuters — Araqchi Hormuz (18&nbsp;Oct, read) · whitehouse.gov — Graham implementing action (prior, standing)</p>
+<div class="fb">
+<p>Oil chain as one Monday lead — right weight?</p>
+<label><input type="radio" name="fb1" value="Right as lead"> Right as lead</label>
+<label><input type="radio" name="fb1" value="Split waiver politics from pump"> Split waiver politics from pump</label>
+<label><input type="radio" name="fb1" value="Too long — cut Hormuz"> Too long — cut Hormuz</label>
+</div>
+</article>
+
+<article id="s2">
+<h2>Anthropic commits 5% of its shares to a public-benefit fund that grows with the company — subject to stockholder approval</h2>
+<p class="meta">
+<span class="chip">AI &amp; tech</span>
+<span class="chip">US financials</span>
+<span class="chip new">New fact</span>
+<span class="chip under">Conflict disclosed</span>
+</p>
+<div class="corr"><p class="t">Conflict disclosure</p><p>Anthropic makes Claude. This brief’s Grok editions still cover Anthropic on the Core AI beat under the same rule as prior issues: never soften coverage; disclose the industry conflict; source externally and to the primary. Holding the story would itself be an editorial choice.</p></div>
+<p><strong>The commitment (Sunday primary).</strong> Anthropic said it will commit <strong>5%</strong> of its shares to a new <strong>Anthropic Public Benefit Fund</strong>, a wholly owned LLC, if stockholders approve. The board may add <strong>another 2%</strong> at its discretion for every <strong>50%</strong> increase in company value above an unpublished baseline. Combined with co-founder pledges (80% of their equity) and an employee equity-donation match (~half of staff), Anthropic says “roughly <strong>20%</strong>” of shares will be dedicated to the public good, plus any milestone add-ons (anthropic.com/news/public-benefit-fund, read).</p>
+<p><strong>What the fund can and cannot do.</strong> The company frames the LLC — not a 501(c)(3) — as giving “adjustability” between large nonprofit donations and “direct distributions to specific populations,” naming labour-market impacts as an example alongside an existing <strong>$200&nbsp;million</strong> commitment to study and address them. “None of the Anthropic equity held by the LLC will be used for lobbying or political giving, in the US or abroad.” Governance details, voting rights of the fund’s shares, and the valuation baseline are promised “in the coming months,” with a public-benefit report also forthcoming.</p>
+<p><strong>Market context (not in the post).</strong> On a $965&nbsp;billion valuation tied to the May $65&nbsp;billion raise (secondary reporting), 5% is roughly $48&nbsp;billion of paper — a figure Anthropic’s post does not print. OpenAI’s foundation arrangement (foundation controls the group) is the structural foil: here the company would own the fund that holds the shares. Listing chatter in early October pointed at marketing as soon as the week of 9&nbsp;Nov (etf.net / wires, secondary).</p>
+<p><strong>What to watch:</strong> stockholder vote date; whether fund shares vote; the unpublished baseline; how this sits beside last week’s chip-financing / IPO-valuation pressure covered in Issue&nbsp;44.</p>
+<p class="sources">Sources: Anthropic — “Investing in the public benefit” (18&nbsp;Oct, read) · AP / Guardian / Al&nbsp;Jazeera write-ups (19&nbsp;Oct, secondary) · etf.net structural comparison (18&nbsp;Oct, secondary)</p>
+<div class="fb">
+<p>Anthropic fund lead — keep, shorten, or recuse?</p>
+<label><input type="radio" name="fb2" value="Keep as lead with disclosure"> Keep as lead with disclosure</label>
+<label><input type="radio" name="fb2" value="Also-today only"> Also-today only</label>
+<label><input type="radio" name="fb2" value="Recuse on Anthropic corporate stories"> Recuse on Anthropic corporate stories</label>
+</div>
+</article>
+
+<article id="s3">
+<h2>China’s Q3 GDP printed 4.5% — exports and high-tech manufacturing did the work; retail barely moved</h2>
+<p class="meta">
+<span class="chip">Macro</span>
+<span class="chip">World economy</span>
+<span class="chip">US channel</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The print (Monday primary).</strong> China’s National Bureau of Statistics: Q3 GDP <strong>+4.5%</strong> year-on-year (Q2 was +4.3%); first three quarters <strong>+4.6%</strong> to about <strong>107.11&nbsp;trillion yuan</strong> (~$15.94&nbsp;trillion). Q3 rose <strong>1.2%</strong> quarter-on-quarter. NBS deputy head Mao Shengyong said the YTD pace is in line with the official <strong>4.5–5%</strong> annual target and that output added 5.7&nbsp;trillion yuan — the largest same-period increase in five years (NBS English release / english.www.gov.cn / Xinhua, read).</p>
+<p><strong>Composition.</strong> YTD: primary +3.7%, secondary +3.8%, tertiary +5.2%. Industrial value-added +5.3%; equipment manufacturing +10.2%; high-tech manufacturing <strong>+14.3%</strong>; industrial robots +29.1%, lithium-ion batteries +39.5%, 3D-printing equipment +62.5%. Goods trade YTD <strong>+18.8%</strong> to 39.94&nbsp;trillion yuan (imports +22.3%); September trade alone +27.5%. Retail sales of consumer goods only <strong>+1.1%</strong> YTD — the soft domestic demand line. Urban surveyed unemployment averaged 5.2%; real disposable income +4.4%.</p>
+<p><strong>US channel.</strong> The growth mix — export- and electronics/AI-adjacent manufacturing — is exactly the surplus Washington’s tariff and industrial policy are aimed at. It is also the supply side of the chip and battery capex the Friday AI selloff was pricing. A China print that clears the target on exports while retail stalls is a US trade and inflation input, not a foreign-interest item.</p>
+<p><strong>What to watch:</strong> US October trade data; any Bessent–He channel readout; whether Beijing adds domestic-demand stimulus into Q4.</p>
+<p class="sources">Sources: NBS / english.www.gov.cn — Q3 GDP (19&nbsp;Oct, read) · Xinhua (19&nbsp;Oct, read) · AP summary (19&nbsp;Oct) · Al&nbsp;Jazeera economy desk (headline)</p>
+<div class="fb">
+<p>China GDP as a Core-adjacent lead?</p>
+<label><input type="radio" name="fb3" value="Right — US trade channel clear"> Right — US trade channel clear</label>
+<label><input type="radio" name="fb3" value="Also-today"> Also-today</label>
+<label><input type="radio" name="fb3" value="Drop — altitude bar"> Drop — altitude bar</label>
+</div>
+</article>
+
+<article id="s4">
+<h2>The CFTC’s Monday package is now in the Federal Register: casino wagers out of “swap” today; event contracts proposed in, comments due 18&nbsp;Nov</h2>
+<p class="meta">
+<span class="chip">US financials</span>
+<span class="chip">US policy</span>
+<span class="chip">Underreported</span>
+<span class="chip new">Primary</span>
+</p>
+<p><strong>What published (read).</strong> Two documents, both 19&nbsp;Oct:</p>
+<ul>
+<li><strong>Interim final rule 2026-21376</strong> (RIN 3038-AF81) — <em>Further Definition of “Swap” To Exclude Casino-Style Gambling Products</em>. Effective <strong>today</strong>. Codifies the Commission’s longstanding position that casino-style gambling, including sportsbook and casino-game wagers, is outside the Commodity Exchange Act “swap” definition. Comments due <strong>18&nbsp;Nov 2026</strong>.</li>
+<li><strong>NPRM 2026-21377</strong> (RIN 3038-AF82) — <em>Further Definition of “Swap”—Inclusions</em>. Proposes to define “swap” to <strong>explicitly include event contracts</strong> based on sports-, politics-, cultural-, and weather-related events. Comments due <strong>18&nbsp;Nov 2026</strong>.</li>
+</ul>
+<p><strong>Why it matters on a Monday.</strong> Issue&nbsp;43-grok previewed the Monday package from the Commission’s own announcement. Today is the primary: effective date, docket numbers, and a 30-day comment clock on both. The pair draws a hard line — state-regulated casino products out; exchange-traded event/prediction contracts in under CFTC swap jurisdiction — at a one-member commission (Chairman Selig), a posture this brief flagged on 12&nbsp;Oct.</p>
+<p><strong>What to watch:</strong> comment-file size by mid-November; any Congressional letter; how Kalshi / Polymarket-class venues respond in filings.</p>
+<p class="sources">Sources: FR full text 2026-21376 (read) · FR full text 2026-21377 (read) · Issue 43-grok preview (accountability)</p>
+<div class="fb">
+<p>CFTC FR package — lead or confirmation short?</p>
+<label><input type="radio" name="fb4" value="Lead — primary text is the news"> Lead — primary text is the news</label>
+<label><input type="radio" name="fb4" value="Also-today confirmation"> Also-today confirmation</label>
+<label><input type="radio" name="fb4" value="Drop — already ran Saturday"> Drop — already ran Saturday</label>
+</div>
+</article>
+
+<article id="s5">
+<h2>Saudi Arabia’s $5.0bn JDAM package and $750m tank-engine buy publish — 10,004 guidance kits and 60 AGT-1500 engines, notified in one morning</h2>
+<p class="meta">
+<span class="chip">Geopolitics</span>
+<span class="chip">US policy</span>
+<span class="chip">Underreported</span>
+<span class="chip new">Primary</span>
+</p>
+<div class="corr"><p class="t">Accountability — Issue 44 pre-read vs today’s text</p><p>Issue&nbsp;44-grok’s Monday pre-read tallied ten arms-sale notices at about $10.8bn with $8.95bn Saudi including 112 THAAD interceptors. <strong>Today’s published package is not identical to that preview’s headline mix.</strong> The load-bearing Saudi lines that published this morning are Transmittal <strong>26-35</strong> ($5.0&nbsp;billion JDAM) and <strong>26-68</strong> ($750&nbsp;million AGT-1500 engines). Other notices in the ten cover Iraq helicopters, Oman support, Spain sonar upgrades, and Jordan — values read where the text gave them. Do not merge Saturday’s preview totals with Monday’s kit counts without checking each transmittal.</p></div>
+<p><strong>Saudi JDAM (Transmittal 26-35, FR 2026-21340, read).</strong> Major defence equipment: <strong>5,004</strong> KMU-572 JDAM guidance kits; <strong>5,000</strong> KMU-556 JDAM kits; <strong>5,004</strong> BLU-111 500-lb bombs; <strong>5,000</strong> BLU-117 2,000-lb bombs. Total estimated value <strong>$5.0&nbsp;billion</strong> (MDE $2.0bn / other $3.0bn), national funds. Delivered to Congress 1&nbsp;Sep 2026. Non-MDE includes FMU-139 fuzes, DSU-38/40 detectors, and logistics.</p>
+<p><strong>Saudi tank engines (Transmittal 26-68, FR 2026-21341, read).</strong> <strong>Sixty (60) AGT-1500</strong> tank engines plus containers, spares and CLS — total <strong>$750&nbsp;million</strong> (MDE $300m / other $450m).</p>
+<p><strong>Also in the day’s ten:</strong> Iraq Bell 412EPX / 407M packages (about $800m and $150m in two notices); Oman F-16-related support ~$188m; Spain AN/SQQ-32(V)3+ mine-hunting sonar kits ($75m in one notice). Abstracts alone are useless on these — every figure above is from the full-text endpoint.</p>
+<p><strong>US channel.</strong> Precision munitions and Abrams-engine sustainment for Saudi Arabia land in the same week Houthi strikes on the kingdom and Red Sea export hubs are ongoing (prior issues; GCC condemnation on Al&nbsp;Jazeera’s weekend index). The notifications are Congressional notice under AECA §36(b), not deliveries.</p>
+<p class="sources">Sources: FR full text 2026-21340, 2026-21341, 2026-21335–21344 (read) · Issue 44-grok Mon pre-read (accountability)</p>
+<div class="fb">
+<p>Saudi JDAM lead after Saturday’s preview?</p>
+<label><input type="radio" name="fb5" value="Yes — kit counts are the news"> Yes — kit counts are the news</label>
+<label><input type="radio" name="fb5" value="Also-today only"> Also-today only</label>
+<label><input type="radio" name="fb5" value="Drop — preview was enough"> Drop — preview was enough</label>
+</div>
+</article>
+
+<article id="s6">
+<h2>OPM kills Time-in-Grade for the General Schedule — effective 19&nbsp;Jan 2027</h2>
+<p class="meta">
+<span class="chip">US policy</span>
+<span class="chip">Underreported</span>
+<span class="chip new">Primary</span>
+</p>
+<p><strong>The rule (FR 2026-21319, read).</strong> Final rule eliminating the Time-in-Grade (TIG) restriction on advancement into competitive-service General Schedule positions. Under the prior 5&nbsp;CFR part&nbsp;300 subpart&nbsp;F rule, a candidate generally could not advance to a covered GS-6+ job without 52 weeks in a position no more than one grade lower (two grades for some two-grade-interval lines). <strong>That requirement is removed.</strong> Occupational qualification standards and agency job-related requirements remain. Effective <strong>19&nbsp;January 2027</strong>. OPM says it adopts the 28&nbsp;May 2026 proposal (91&nbsp;FR&nbsp;31669) substantially as proposed; conforming amendments hit 5&nbsp;CFR parts 315, 316, 352 and 410.</p>
+<p><strong>Companion, same day.</strong> FR 2026-21320 finalises administrative-leave rules for workforce realignment, deferred-resignation programs, and RIF notice periods — effective <strong>18&nbsp;November 2026</strong> (read opening; 30 comments on the June proposal).</p>
+<p><strong>Why it clears the bar.</strong> TIG has structured federal promotion timing for decades. Removing it is a structural HR rewrite for the competitive service, not a personnel anecdote — and no reachable wire carried it this morning. The repetition tell did not fire; the dull-title / near-term-effective-date tell did.</p>
+<p class="sources">Sources: FR full text 2026-21319 (read) · FR full text 2026-21320 opening (read)</p>
+<div class="fb">
+<p>OPM Time-in-Grade as a lead?</p>
+<label><input type="radio" name="fb6" value="Right — structural and unread"> Right — structural and unread</label>
+<label><input type="radio" name="fb6" value="Also-today"> Also-today</label>
+<label><input type="radio" name="fb6" value="Drop"> Drop</label>
+</div>
+</article>
+
+<article id="s7">
+<h2>Canadian softwood lumber’s new cash-deposit rates are live: All Others combined 24.75%; Canfor 31.11%; Section 232’s separate 10% stays</h2>
+<p class="meta">
+<span class="chip">US policy</span>
+<span class="chip">World economy</span>
+<span class="chip">Trade</span>
+<span class="chip new">Primary</span>
+</p>
+<p><strong>Published today (both documents read).</strong> Seventh administrative reviews, POR calendar 2024, applicable <strong>19&nbsp;Oct 2026</strong>.</p>
+<ul>
+<li><strong>AD (2026-21296):</strong> Canfor <strong>17.00%</strong>; Resolute <strong>13.13%</strong>; West Fraser <strong>4.71%</strong>; non-selected companies <strong>10.64%</strong>.</li>
+<li><strong>CVD (2026-21286):</strong> Resolute <strong>12.42%</strong>; West Fraser <strong>15.31%</strong>; non-selected companies <strong>14.11%</strong>; producers/exporters outside the review continue at the investigation all-others subsidy rate of <strong>14.19%</strong>.</li>
+</ul>
+<p><strong>Combined (simple addition, as in Issue&nbsp;44):</strong> All Others (non-selected reviewed) <strong>24.75%</strong> (was 35.16% after the Sep 2025 amendment); Canfor <strong>31.11%</strong> (was 47.59%); Resolute <strong>25.55%</strong>; West Fraser <strong>20.02%</strong>. The separate <strong>10% Section&nbsp;232</strong> global softwood tariff (in force since 14&nbsp;Oct 2025) is untouched — so an All Others mill’s rough all-in cash deposit is ~34.75% before freight.</p>
+<p><strong>Market half.</strong> A ~10-point cut in AD/CVD deposits against $6.32 diesel freight is a housing-input story. CBP cash-deposit instructions and any CUSMA Chapter&nbsp;10 challenge are the next observables.</p>
+<p class="sources">Sources: FR full text 2026-21296 (read) · FR full text 2026-21286 (read) · Issue 44-grok pre-read (accountability)</p>
+<div class="fb">
+<p>Softwood confirmation lead after Sunday’s pre-read?</p>
+<label><input type="radio" name="fb7" value="Yes — rates are now live"> Yes — rates are now live</label>
+<label><input type="radio" name="fb7" value="Also-today"> Also-today</label>
+<label><input type="radio" name="fb7" value="Drop"> Drop</label>
+</div>
+</article>
+
+<article id="s8">
+<h2>Weekend Core sweep: Nasdaq −4.5% on the week as AI financing cracked; Warsh gave no rate signal; Treasury 10-year closed Friday at 5.09%</h2>
+<p class="meta">
+<span class="chip">Macro</span>
+<span class="chip">AI &amp; tech</span>
+<span class="chip">US financials</span>
+<span class="chip">Monday sweep</span>
+</p>
+<p><strong>Why this is here.</strong> Monday-run rule (config, 21&nbsp;Sep): front pages have moved on; Core beats need an explicit Fri–Sun sweep. Friday’s AI/financing rout and Warsh’s Bangkok remarks were not in Sunday’s Grok edition as a lead.</p>
+<p><strong>Markets (Friday close, secondary wires).</strong> Nasdaq Composite <strong>−2.1%</strong> Friday and about <strong>−4.5%</strong> on the week — worst week since June, four-week win streak snapped. S&amp;P&nbsp;500 roughly <strong>−2%</strong> on the week. Dow held a weekly gain (~+0.7%) on bank strength. CoreWeave (CRWV) saw another sharp drop (reports of −7% to −12% Friday after Wednesday’s debt scare; bond yields reported above 15%). Semis and memory extended losses; Roundhill Memory ETF (DRAM) further red.</p>
+<p><strong>Fed (Friday).</strong> Chair Kevin Warsh, at IMF meetings in Bangkok, praised a “synchronous tightening” abroad, warned AI’s path will be “very bumpy,” and — per CNBC/AP summaries — gave <strong>no signal</strong> on the 27–28&nbsp;Oct meeting. CME FedWatch (as reported Friday): elevated odds of a hold this month and a December hike still the modal path. This brief does not run Fed state-of-play on a quiet day; Friday’s print is the decision-adjacent remark.</p>
+<p><strong>Issuer yields (Treasury CSV, read).</strong> Daily Par Yield Curve, <strong>Fri 16&nbsp;Oct 2026</strong>: 2-year <strong>4.74%</strong>, 10-year <strong>5.09%</strong>, 30-year <strong>5.43%</strong>. (Thu 15&nbsp;Oct 10-year was 5.10%.) No weekend print; Monday’s curve posts this evening.</p>
+<p><strong>Anthropic financing foil.</strong> FT-via-Reuters Friday: Anthropic offering Blackstone a <strong>&gt;10%</strong> yield on a ~$9&nbsp;billion chip-lease debt structure — the cost-of-capital story Issue&nbsp;44 led, still unresolved into the fund announcement.</p>
+<p class="sources">Sources: Treasury daily CSV 2026 (read; Fri 16&nbsp;Oct row) · Yahoo Finance / AP / Kitco / Reuters Friday wraps (secondary) · CNBC — Warsh Bangkok (summary) · Reuters — Anthropic/Blackstone FT report (16&nbsp;Oct, secondary)</p>
+<div class="fb">
+<p>Friday AI/yields sweep as Monday lead?</p>
+<label><input type="radio" name="fb8" value="Right — Monday rule worked"> Right — Monday rule worked</label>
+<label><input type="radio" name="fb8" value="Also-today"> Also-today</label>
+<label><input type="radio" name="fb8" value="Drop — stale by Monday"> Drop — stale by Monday</label>
+</div>
+</article>
+
+<h2 class="section" id="also">Also today</h2>
+<p class="secnote">Ten items. Ranked below the line; each opens.</p>
+<div class="also-list">
+
+<details><summary>OPM’s companion admin-leave rule for deferred resignations and RIF notice periods — effective 18&nbsp;Nov</summary>
+<div class="exp"><p>FR 2026-21320 finalises when agencies may use administrative leave in workforce-realignment and deferred-resignation programs and during RIF notice windows, and when they may refuse a resignation withdrawal. Effective <strong>18&nbsp;Nov 2026</strong>. Thirty comments on the June proposal. Same morning as Time-in-Grade. <em>Source: FR full text opening (read).</em></p></div></details>
+
+<details><summary>FCC Upper C-Band paperwork: OMB approval makes two July amendatory instructions effective today</summary>
+<div class="exp"><p>FR 2026-21324 announces OMB approval (21&nbsp;Sep) of information collections under control number 3060-1272 for the Upper C-Band (3.98–4.2&nbsp;GHz) flexible-use order (FCC&nbsp;26-46). Amendatory instructions 26 and 35 (47&nbsp;CFR 27.1412(e) and 27.1419), published 31&nbsp;Jul, are effective <strong>19&nbsp;Oct</strong>. Procedural, not a new spectrum decision. <em>Source: FR 2026-21324 (read).</em></p></div></details>
+
+<details><summary>Kenya’s Bundibugyo Ebola count reaches eight — US entry-order gap from Issue&nbsp;43 still unclosed</summary>
+<div class="exp"><p>Al&nbsp;Jazeera (19&nbsp;Oct): Kenya confirms an eighth case in the Bundibugyo outbreak. Issue&nbsp;43 noted the CDC/HHS entry order did not name Kenya; no new US primary action found this morning. <em>Sources: Al&nbsp;Jazeera (headline/summary); Issue 43 accountability.</em></p></div></details>
+
+<details><summary>Macron denounces nationwide French rioting and looting; Handelsblatt leads on limited curfews</summary>
+<div class="exp"><p>Weekend cost-of-living / political unrest. Macron vowed accountability for those who “sought to bring down the Republic” (NPR headline; Al&nbsp;Jazeera). Handelsblatt: interior minister resignation refused; limited curfews ordered. US channel thin — altitude bar keeps it below the line. <em>Sources: Al&nbsp;Jazeera; Handelsblatt; text.npr.org.</em></p></div></details>
+
+<details><summary>Four Canadian service members killed in CFB Wainwright fire — Carney statement</summary>
+<div class="exp"><p>NPR / wires: Prime Minister Carney said four service members were killed and dozens injured in a fire at the Alberta base. Claude Issue&nbsp;45 corrects a prior toll; this edition records the Monday figure only. <em>Source: text.npr.org / Carney statement via wires.</em></p></div></details>
+
+<details><summary>WFP cuts monthly Gaza food aid for about 500,000 people on funding shortages</summary>
+<div class="exp"><p>Wikipedia current-events 19&nbsp;Oct (tertiary): World Food Programme reduces recipients over funding. Named for the negative check; no new US appropriations action found this morning — altitude bar applies. <em>Source: Wikipedia current events 19&nbsp;Oct (tertiary only).</em></p></div></details>
+
+<details><summary>Three national-emergency continuations publish: DRC, Sudan, Colombia narcotics</summary>
+<div class="exp"><p>PRESDOCU count was three, all continuations (2026-21430/21431/21432) — Colombia significant narcotics traffickers, Sudan, DRC. No new sanctions architecture. <em>Source: FR PRESDOCU API (19&nbsp;Oct).</em></p></div></details>
+
+<details><summary>Pope Leo XIV leaves hospital and greets crowds after lung-cancer surgery</summary>
+<div class="exp"><p>NPR / Al&nbsp;Jazeera: gradual return to duties. No US policy channel — short only. <em>Sources: text.npr.org; Al&nbsp;Jazeera.</em></p></div></details>
+
+<details><summary>Turkey to receive some diesel from the US–Russia supply arrangement — gCaptain</summary>
+<div class="exp"><p>gCaptain headline: Turkey will get some diesel from the US–Russia supply deal. Detail thin on the front page; recorded as a physical distribution signal inside the oil chain. <em>Source: gCaptain (headline).</em></p></div></details>
+
+<details><summary>Pasco / Tampa Bay local sweep: no item cleared the local bar this morning</summary>
+<div class="exp"><p>fox13news.com/tag/us/fl/pasco fetched; NHC Atlantic outlook not separately elevated. Dengue county emergencies from prior issues not re-checked to a new primary today — Florida section empty rather than padded. <em>Source: fox13 Pasco tag (sweep).</em></p></div></details>
+
+</div>
+
+<h2 class="section" id="neg">Negative check</h2>
+<p class="secnote"><strong>Negative check</strong> (Wikipedia 16–19&nbsp;Oct + Al&nbsp;Jazeera <code>/news/</code> + Handelsblatt + FR whole-day list + NBS) reshaped the slate:</p>
+<ul>
+<li><strong>Promoted:</strong> China Q3 GDP (absent from Sunday’s Grok paper and from Claude&nbsp;45’s five leads) — cleared altitude via US trade/AI-supply channel.</li>
+<li><strong>Promoted:</strong> Anthropic Public Benefit Fund (Sunday primary) over continuing the draft-bill / NIST-seeds Anthropic threads without new facts.</li>
+<li><strong>Promoted:</strong> OPM Time-in-Grade — dull title, January effective date, zero wire coverage; FR whole-day sweep.</li>
+<li><strong>Reframed:</strong> Saudi arms from Saturday’s “$10.8bn / THAAD” preview to today’s actual JDAM kit-count publications — correction box in lead&nbsp;5.</li>
+<li><strong>Held below the line:</strong> France riots, Gaza WFP cut, Pope, Alberta base fire — real events, weak US structural channel for this brief’s altitude bar.</li>
+<li><strong>Excluded by altitude bar (named):</strong> Tirana protests; Brazilian runoff debate; Australian MP car attack; Gwalior temple truck deaths — foreign events with no honest US channel.</li>
+<li><strong>UAP:</strong> no new implementing document; whitehouse.gov “Aliens” remains immigration.</li>
+</ul>
+
+<h2 class="section">Dormant / watched</h2>
+<ul class="dorm">
+<li><strong>Graham Act waiver:</strong> still no end date in §4(d); Rubio “60-day” remains spoken.</li>
+<li><strong>Starshield / Starlink:</strong> Zelenskyy “deblocked” vs Rubio “no pause” vs Bessent “reckless” — unresolved.</li>
+<li><strong>CFTC event-contract NPRM:</strong> comment deadline 18&nbsp;Nov.</li>
+<li><strong>EIA weekly diesel:</strong> next print Tue 20&nbsp;Oct.</li>
+<li><strong>Treasury curve:</strong> Monday print due this evening; Friday 10-year 5.09% stands.</li>
+<li><strong>Kenya Ebola / US entry order:</strong> Kenya still unnamed in the order we last read.</li>
+<li><strong>Cook FR committee of inquiry:</strong> hearing 5&nbsp;Nov; no new fact.</li>
+<li><strong>Tampa Bay dengue:</strong> prior emergencies; Week report owed.</li>
+<li><strong>UAP implementation:</strong> no new primary.</li>
+</ul>
+
+<footer>
+<p>Issue No. 45-grok · 19 October 2026 · Grok edition for MAGA Mickey · Written by Grok Bot / News Bot · Archive: <a href="https://historiocity.github.io/News-Agent/">historiocity.github.io/News-Agent</a> · Skill reads <code>config.md</code> every run.</p>
+<p>The parallel Claude Issue&nbsp;45 is published as <code>issues/2026-10-19.html</code>; this file is the independent Grok gather and does not overwrite it. Federal Register Monday package was read from the live API and full-text endpoint (not a pre-read). <strong>52 sources, 31 outside the active watchlist (60%).</strong> Items marked “headline”, “summary”, “data”, or “secondary” were handled as labelled; paywalled FT/Bloomberg/CNBC article bodies are reported through named relays, not as verified. Anthropic conflict disclosed in lead&nbsp;2 and again here.</p>
+<p class="submit"><button type="button" id="send">Send feedback as a GitHub issue</button></p>
+</footer>
+</div>
+<script>
+(function () {
+ var OWNER = "historiocity", REPO = "News-Agent";
+ var btn = document.getElementById("send");
+ if (!btn) return;
+ btn.addEventListener("click", function () {
+ var lines = [], answered = 0;
+ document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+ answered++;
+ var q = i.closest(".fb").querySelector("p");
+ lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n → **" + i.value + "**");
+ });
+ if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+ var body = "Feedback on **Issue No. 45-grok — 19 October 2026, Grok edition**\n\n" + lines.join("\n")
+ + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+ window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+ + "&title=" + encodeURIComponent("Brief feedback — 2026-10-19-grok")
+ + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+ });
+})();
+</script>
+</body>
+</html>
