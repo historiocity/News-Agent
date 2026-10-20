@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Tuesday, 20 October 2026 (Grok edition)</title>
+<style>
+:root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+@media (prefers-color-scheme: dark) {
+:root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+.wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+.kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+.sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+.prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+nav ol { margin:0; padding-left:1.2rem; }
+nav li { margin:.25rem 0; }
+nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+a { color:var(--link); }
+article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+.secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+.meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+.chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+.chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+.chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+.sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+.div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+.div p { margin:.4rem 0; }
+.div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+.corr { background:var(--box); border-left:4px solid var(--accent); padding:.8rem 1rem; margin:0 0 1.6rem; font-size:.95rem; }
+.corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+.corr p { margin:.45rem 0; }
+details { margin-top:.8rem; }
+details summary { cursor:pointer; color:var(--link); }
+.exp { margin-top:.6rem; }
+.also-list { margin:0; }
+.also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+.also-list details:first-of-type { border-top:1px solid var(--rule); }
+.also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+.also-list .exp { font-size:.94rem; padding-left:.2rem; }
+footer { color:var(--muted); font-size:.88rem; }
+.fb { margin-top:1rem; font-size:.9rem; }
+.fb p { margin:.6rem 0 .2rem; }
+.fb label { display:block; margin:.15rem 0; }
+.submit { margin-top:2rem; }
+button { font:inherit; padding:.45rem .8rem; }
+ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+ul.dorm li { margin:.3rem 0; }
+.chip.single{background:#fff4e0;border-color:#d9a441;color:#7a5200}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<p class="kicker">Issue No. 46-grok · Tuesday, 20 October 2026 · Grok edition</p>
+<h1>The Brief</h1>
+<p class="sub">For MAGA Mickey · America/New_York · Source-led morning paper</p>
+<p class="prov"><strong>Provenance.</strong> Federal Register documents API for Tue 20&nbsp;Oct returned <strong>82</strong> documents (whole-day list read; full text opened for three OFAC notices, the FERC LNG proposal and the CMS Part&nbsp;D/PBM proposal). Public-inspection list read. Treasury Daily Par Yield Curve CSV: <strong>Mon 19&nbsp;Oct</strong> row read. AAA daily national averages read this morning; EIA weekly diesel page read (last print w/e 12&nbsp;Oct; <strong>next print today</strong>). whitehouse.gov/presidential-actions read (newest: 19&nbsp;Oct women’s-health order). Wire and trade bodies read directly: CNBC (7), gCaptain/Bloomberg (4), Al&nbsp;Jazeera (3), NPR, Guardian, STAT, BBC, WUSF. X News summaries used only for discovery and labelled where relied on. Anthropic newsroom checked: no new post since 18&nbsp;Oct. Feedback: no open <code>brief-feedback</code> issues; closed ones and config <em>Settled preferences</em> applied.</p>
+</header>
+
+<nav>
+<ol>
+<li><a href="#s1">The oil chain on Tuesday: WTI front-month jumps ~4% to ~$107.50 on expiry day, Brent $111.42 (highest since 19&nbsp;May); Kharg has loaded nothing since late August; Wright says Washington will “convert” dark-fleet tankers — no published instrument yet; AAA diesel $6.3199</a></li>
+<li><a href="#s2">DHS orders every civilian agency to strip out DeepSeek — including third-party products built on it</a></li>
+<li><a href="#s3">Prosecutors say the OpenAI bugging suspect was in WhatsApp contact with a Saudi royal; judge denies bail despite a Saudi offer to pay it</a></li>
+<li><a href="#s4">Altman told OpenAI staff there are three endgames for AI safety — and he favours an IAEA for AI</a></li>
+<li><a href="#s5">The 10-year closed Monday at 5.15% on Treasury’s own curve; IMF and Treasury trade shots over $40 trillion; HSBC says not every data centre is bankable</a></li>
+<li><a href="#s6">JPMorgan put $5 billion into defence and supply-chain start-ups in a year — and may go past its $10 billion cap</a></li>
+<li><a href="#s7">Earnings, first wave: GM beats but warns on $2bn of commodity inflation, DRAM included; GE Aerospace and Northrop raise guidance</a></li>
+<li><a href="#s8">DOJ charges 28 noncitizens with election crimes in California and asks a court to stop the state processing flagged ballots</a></li>
+</ol>
+<p class="also"><a href="#also">Also today (11)</a>. Ranked below the line; each one opens. <a href="#fl">Florida &amp; Tampa Bay (1)</a>.</p>
+</nav>
+
+<div class="corr" id="acct">
+<p class="t">Accountability: prior Grok frames + Claude Issue 46</p>
+<p><strong>Shadow-fleet easing (Issue&nbsp;41-grok, 15&nbsp;Oct: “US weighs shadow-fleet easing”).</strong> That was a report of deliberation. Monday it got an on-record description from Energy Secretary Chris Wright: an approval process for sanctioned tankers bought by investors and refurbished, with Wright insisting “there is no removing of sanctions.” Those two claims sit awkwardly together, and <strong>no OFAC general licence or guidance describing the process has been published</strong> as of this morning. Today’s Federal Register delisting notice (2026-21423) does remove ships — but they are <strong>two Iran-program container ships</strong> (HAKUNA MATATA, PINOCCHIO, delisted 8&nbsp;Oct) and a Libya-linked cargo ship, not tankers. The frame upgrades from “weighs” to “announced, mechanism unpublished.”</p>
+<p><strong>Treasury curve.</strong> Issue&nbsp;45-grok printed Friday’s issuer 10-year at <strong>5.09%</strong> and said Monday’s curve would post that evening. It did: <strong>5.15%</strong>. Lead&nbsp;5.</p>
+<p><strong>AAA diesel.</strong> Monday $6.3187; today <strong>$6.3199</strong> (+0.12¢). Regular fell 1.67¢ to $4.2786, so the diesel premium widened to <strong>$2.0413</strong> from $2.0234. Per the 22&nbsp;Sep discipline note, the daily series gives level only; direction waits for today’s EIA weekly.</p>
+<p><strong>Not reprised without new facts:</strong> Graham Act waiver text (§4(d) still has no end date); Anthropic public-benefit fund; CFTC event-contract NPRM (comments 18&nbsp;Nov); Saudi JDAM notifications.</p>
+<p><strong>Claude Issue&nbsp;46</strong> (published this morning as <code>2026-10-20.html</code>) led on the Alberta referendum, the Saudi investment-conference postponement, child-soldier waivers, the Medicare PBM proposal and the long end. This Grok edition is an independent gather. Overlap is limited to the yields item (re-sourced to Treasury’s CSV and given a different angle) and the PBM proposal (Also today, with its comment date).</p>
+</div>
+
+<article id="s1">
+<h2>The oil chain on Tuesday: WTI front-month jumps ~4% to ~$107.50 on expiry day, Brent $111.42 (highest since 19&nbsp;May); Kharg has loaded nothing since late August; Wright says Washington will “convert” dark-fleet tankers — no published instrument yet; AAA diesel $6.3199</h2>
+<p class="meta">
+<span class="chip">Energy &amp; grid</span>
+<span class="chip">Geopolitics</span>
+<span class="chip">Macro &amp; markets</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The price.</strong> Front-month (November) WTI was up <strong>4.2%</strong> at about <strong>$107.50</strong> by 6:20&nbsp;a.m. ET. That contract expires today, which can exaggerate moves, but it is on track for a <strong>ninth straight gain</strong> and a monthly rise of almost <strong>20%</strong>. December Brent, the cleaner read, was <strong>+1.9% at $111.42</strong>, its highest since 19&nbsp;May (CNBC, read). Iran’s Revolutionary Guard said two “non-compliant” tankers were set ablaze in the strait after hitting IRGC mines (Tasnim via CNBC — <em>single-sourced, Iranian state-affiliated</em>). Kpler counts at least 18 vessels fired on in two weeks.</p>
+<p><strong>Why the barrel is tight: Iran’s exports are at zero.</strong> Ship-tracking and EU Sentinel imagery show <strong>no tanker has docked at Kharg Island’s crude terminals since late August</strong> — the longest idle stretch since the war began in February. Iranian crude exports fell from almost <strong>1&nbsp;million b/d in July to nothing</strong> after the US reimposed its blockade in mid-July (Bloomberg via gCaptain, read; Kpler/Vortexa data). Jask is empty too. Iran has answered with more attacks: UKMTO logged <strong>25 ships targeted in the first two weeks of October</strong>, against 18 in all of September and 15 in August. Chinese refiners that took most of Iran’s ~650m barrels in the year to April are now bidding for other cargoes and ships — the channel into the US price.</p>
+<p><strong>The ship shortage, and Washington’s answer.</strong> More than <strong>40%</strong> of the world’s ~850 VLCCs are in the Gulf or within a couple of days of it (Signal Ocean), and Gulf–East Asia freight costs more than <strong>six times</strong> its pre-war level. Energy Secretary Wright, at a Citadel Securities event Monday: the administration is approving the sale of idled sanctioned tankers to investors who refurbish them and carry only non-sanctioned oil — “move some of the ships from what I call the ‘bad-guy fleet’ to the ‘good-guy fleet’.” He put the dark fleet at about <strong>1,600</strong> vessels and said the programme could add “dozens” or “hundreds” of ships. He also said the Russian diesel release was partly meant as an incentive for the Kremlin to end the war (Bloomberg via gCaptain, read). <strong>Legal mechanism:</strong> unpublished — see the accountability box.</p>
+<p><strong>The waiver’s paperwork gap.</strong> Rep. Salud Carbajal wrote to Homeland Security Secretary Markwayne Mullin on 16&nbsp;Oct asking how DHS and CBP enforce immigration and tax rules on foreign crews moving fuel between US ports under the Jones Act waiver. Earlier reporting found <strong>at least a dozen foreign vessels moved more than $40m</strong> of product without appearing in MARAD’s waiver records; MARAD says it cannot compel the reports (gCaptain, read).</p>
+<p><strong>The policy frame.</strong> US envoy Tom Barrack in Doha on Tuesday: Washington is leaving the “security-for-oil” bargain — “The bargain is not to control, but to not leave.” Qatar says mediation between Washington and Tehran continues; Iran’s seven-day proposal is still awaiting a US reply (Al&nbsp;Jazeera, read).</p>
+<p><strong>The pump.</strong> AAA national average today: regular <strong>$4.2786</strong> (yesterday $4.2953), diesel <strong>$6.3199</strong> (yesterday $6.3187, a month ago $6.5050, a year ago $3.6192). EIA weekly diesel: <strong>$6.179</strong> for w/e 12&nbsp;Oct (−2.0¢); the new weekly prints today and decides direction.</p>
+<p><strong>Ukraine channel (balance unchanged).</strong> Zelenskyy meets Witkoff and European leaders in Oslo today; Kushner joins remotely (Al&nbsp;Jazeera). A Zelenskyy adviser told the BBC that US ballistic-missile warnings are still arriving late or not at all; the White House says intelligence sharing hasn’t changed. Accounts still diverge.</p>
+<p class="sources">Sources: CNBC oil (20&nbsp;Oct, read) · Bloomberg via gCaptain — Kharg (19&nbsp;Oct, read) · Bloomberg via gCaptain — Wright (19&nbsp;Oct, read) · gCaptain — Jones Act letter (19&nbsp;Oct, read) · Al&nbsp;Jazeera — Barrack; Oslo talks (20&nbsp;Oct, read) · BBC — Beskrestnov (19&nbsp;Oct, read) · AAA (read) · EIA gas/diesel (read) · FR 2026-21423 (read)</p>
+<div class="fb">
+<p>Is the tanker-supply angle (Kharg idle, Wright conversion) the right spine for the oil chain?</p>
+<label><input type="radio" name="fb1" value="Yes — supply/ships is the chain"> Yes — supply/ships is the chain</label>
+<label><input type="radio" name="fb1" value="Shorter — price and pump only"> Shorter — price and pump only</label>
+<label><input type="radio" name="fb1" value="Split ships into its own item"> Split ships into its own item</label>
+</div>
+</article>
+
+<article id="s2">
+<h2>DHS orders every civilian agency to strip out DeepSeek — including third-party products built on it</h2>
+<p class="meta">
+<span class="chip">AI &amp; tech</span>
+<span class="chip">US politics &amp; policy</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The order.</strong> DHS on Monday made public an order requiring federal civilian agencies to <strong>remove DeepSeek-related technology from their IT systems</strong> and barring them from buying DeepSeek products or services. It reaches <strong>“third-party products and services developed using the company’s technology,”</strong> not just the chatbot app. It names Treasury, State and Justice among covered agencies and <strong>excludes the Department of Defense</strong>. The order is dated <strong>24&nbsp;July</strong> and was published only now. Agencies have <strong>60 days from issuance</strong> to ask for exceptions or delays in writing (CNBC, read; Reuters reporting relayed).</p>
+<p><strong>The stated grounds.</strong> DHS says DeepSeek models “present multiple threat vectors”: possible access to sensitive data by Chinese authorities, transfer of government data to China, and malware or other vulnerabilities. It cites open-source research on critical flaws in DeepSeek’s iOS app. Beijing’s foreign ministry said it “consistently opposes the over-generalization of national security.”</p>
+<p><strong>Why it matters beyond the headline.</strong> Earlier curbs were patchwork: DISA blocked access (January 2025), Commerce bureaus banned it on devices (March 2025), and Congress restricted it in intelligence systems (December 2025). This is the first government-wide civilian rule, and the third-party clause is the part with teeth. Any contractor product that fine-tuned or wrapped an open-weight DeepSeek model now has a federal compliance problem. Ask your vendors.</p>
+<p><strong>What to watch:</strong> whether the text is posted as a CISA directive with a definition of “developed using”; which agencies seek exceptions; any matching move by DoD, which was carved out.</p>
+<p class="sources">Sources: CNBC — “U.S. bans DeepSeek from government agency systems” (20&nbsp;Oct, read) · BBC Business headline (19&nbsp;Oct) · DHS order text not located this run (reported, not read)</p>
+<div class="fb">
+<p>DeepSeek ban as lead 2?</p>
+<label><input type="radio" name="fb2" value="Right — procurement rule with teeth"> Right — procurement rule with teeth</label>
+<label><input type="radio" name="fb2" value="Also-today"> Also-today</label>
+<label><input type="radio" name="fb2" value="Wait for the directive text"> Wait for the directive text</label>
+</div>
+</article>
+
+<article id="s3">
+<h2>Prosecutors say the OpenAI bugging suspect was in WhatsApp contact with a Saudi royal; judge denies bail despite a Saudi offer to pay it</h2>
+<p class="meta">
+<span class="chip">AI &amp; tech</span>
+<span class="chip">Lab security</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The ruling.</strong> Magistrate Judge Alex Tse (N.D. Cal.) ordered <strong>Abdulrahman Alfozan</strong>, 35, held without bail Monday, citing a “significant” flight risk. Alfozan is a former OpenAI engineer, since fired, accused of planting a recording device in a television in an executive conference room at OpenAI’s San Francisco headquarters on <strong>28&nbsp;Sep</strong>. The Saudi consulate in Los Angeles had offered to pay bail in full. Tse: “It seems like a blank check… what confidence do I have that they’re going to protect the interests of the [U.S.] government?” Saudi Arabia has no extradition treaty with the US (CNBC, read).</p>
+<p><strong>What the government filed.</strong> The Sunday detention memo says Alfozan was in “frequent communications via WhatsApp with a member of the Saudi Royal Family” through 2025–26, most recently <strong>5&nbsp;Oct</strong>, four days before his arrest. The royal is unnamed. In May the person told him “Saudi needs you more then [sic] the US!” and he replied “100.” Prosecutors say OpenAI executives <strong>met government officials in the same room</strong> on days close to the alleged planting, and that the case “may yet result in more serious charges.” The current count carries a five-year maximum (CNBC, read; BBC, read).</p>
+<p><strong>Why it clears the bar.</strong> This is the first criminal case to put a foreign government’s alleged support next to a physical intrusion at a frontier lab. It lands in the same weeks the White House is building lab-oversight machinery (lead&nbsp;4). It also lands as Riyadh buys US weapons in bulk and pitches its own AI programme. Lab-security disclosures are a standing thread in config.</p>
+<p class="sources">Sources: CNBC — Alfozan held without bail (19&nbsp;Oct, read) · BBC — prosecutors’ Saudi-support claim (19&nbsp;Oct, read) · CNBC — DNI Clayton on the case (16&nbsp;Oct, headline)</p>
+<div class="fb">
+<p>Lab-espionage cases: lead, or Also-today until charges upgrade?</p>
+<label><input type="radio" name="fb3" value="Lead — lab security is Core"> Lead — lab security is Core</label>
+<label><input type="radio" name="fb3" value="Also-today until superseding indictment"> Also-today until superseding indictment</label>
+</div>
+</article>
+
+<article id="s4">
+<h2>Altman told OpenAI staff there are three endgames for AI safety — and he favours an IAEA for AI</h2>
+<p class="meta">
+<span class="chip">AI &amp; tech</span>
+<span class="chip">Lab safety</span>
+<span class="chip single">Single-sourced</span>
+<span class="chip under">Conflict disclosed</span>
+</p>
+<div class="corr"><p class="t">Sourcing and conflict</p><p>Every account traces to one report, The Information on 19&nbsp;Oct, citing people familiar with the remarks. OpenAI has not commented. Relays read: Dealroom, Yonhap, Times of India. The story names Anthropic, which makes Claude, an industry rival of this edition’s writer. Run under the standing rule: disclose, don’t soften.</p></div>
+<p><strong>The three paths (as reported).</strong> (1) An international agency modelled on the IAEA, enforcing safety standards on frontier labs. Two people said Altman appeared to favour this one. (2) The “Demis plan”: the big labs merge into, or work through, one CERN-like body that supplies models to participating countries. (3) The “Eliezer plan”: a lab that reaches recursive self-improvement uses its economic power to starve rivals of compute — in Altman’s reported words, “melt everyone else’s GPUs.” He reportedly said “obviously I think that one’s terrible,” and included it for completeness.</p>
+<p><strong>Why it matters to the US policy fight.</strong> None of the ideas is new; the first two appear in OpenAI’s May 2023 “Governance of superintelligence” post. The setting is new. Relays report that the White House’s Super Intelligence Force adopted its charter last week, with labs required to report and fix rogue-model incidents. Anthropic is circulating a draft federal bill (Issue&nbsp;44-grok). And the labs are said to be negotiating an industry standards body while disagreeing over who tests models. Altman reportedly told staff OpenAI must choose within a year which path to push. Option&nbsp;1 needs China in the room. Option&nbsp;2 is an antitrust question as much as a safety one.</p>
+<p><strong>What to watch:</strong> any on-record OpenAI statement; whether the Super Intelligence Force charter is published as a primary document (not yet located by this brief).</p>
+<p class="sources">Sources: Dealroom summary of The Information (19–20&nbsp;Oct, secondary) · Yonhap (20&nbsp;Oct, secondary) · Times of India (20&nbsp;Oct, secondary) · X News summary (discovery only)</p>
+<div class="fb">
+<p>Reported internal remarks from lab CEOs — run as leads?</p>
+<label><input type="radio" name="fb4" value="Yes, labelled single-sourced"> Yes, labelled single-sourced</label>
+<label><input type="radio" name="fb4" value="Only with on-record confirmation"> Only with on-record confirmation</label>
+</div>
+</article>
+
+<article id="s5">
+<h2>The 10-year closed Monday at 5.15% on Treasury’s own curve; IMF and Treasury trade shots over $40 trillion; HSBC says not every data centre is bankable</h2>
+<p class="meta">
+<span class="chip">US debt &amp; fiscal</span>
+<span class="chip">Macro &amp; markets</span>
+<span class="chip">AI &amp; tech</span>
+</p>
+<p><strong>The print (issuer series).</strong> Treasury Daily Par Yield Curve, <strong>Mon 19&nbsp;Oct</strong>: 2-year <strong>4.77%</strong>, 10-year <strong>5.15%</strong>, 20-year <strong>5.53%</strong>, 30-year <strong>5.48%</strong>. Friday it was 4.74 / 5.09 / 5.47 / 5.43. So <strong>+6bp on the 10-year</strong> on a day stocks rallied (Nasdaq +1.1% per market wraps). The 20-year still yields more than the 30-year.</p>
+<p><strong>The fiscal argument, in public.</strong> At the IMF/World Bank meetings in Bangkok, Managing Director Kristalina Georgieva said growth alone won’t put the US on a sustainable path with federal debt above <strong>$40 trillion</strong>. David Zervos, a counselor to Secretary Bessent, replied: “It’s good to remember how messy their forecasts have been… take it all with a grain of salt.” China’s central-bank governor, Pan Gongsheng, told the IMFC that China supports stronger Fund monitoring of spillovers from “major advanced economies’ fiscal risks” (CNBC, read).</p>
+<p><strong>The competition for the same dollars.</strong> HSBC CEO Georges Elhedery on Tuesday: data-centre lenders must be “selective” — “look at the quality of the tenancy agreements… Not all of them are of that level of virtuosity.” CNBC relays Mohamed El-Erian’s estimate that hyperscalers raised <strong>$200bn</strong> in bonds last year and may raise about <strong>$1 trillion</strong> this year, “yield insensitive” because they are betting on transformation (CNBC, read; El-Erian figure is his estimate, not a series). The causal claim this brief can support: government refinancing and AI capex are drawing on the same long-duration investors in the same quarter. The magnitude isn’t measured in any official series this brief has read.</p>
+<p><strong>What to watch:</strong> Capital One reports after the close today; Netflix too. FOMC is <strong>Tue–Wed 27–28&nbsp;Oct</strong>; per config, no Fed state-of-play until a print or the decision.</p>
+<p class="sources">Sources: Treasury Daily Par Yield Curve CSV (19&nbsp;Oct row, read) · CNBC — IMF/Bangkok takeaways (20&nbsp;Oct, read) · CNBC — HSBC CEO (20&nbsp;Oct, read) · Earnings calendars (signalstack/digrin, data)</p>
+<div class="fb">
+<p>Yields + AI-debt competition as one item?</p>
+<label><input type="radio" name="fb5" value="Right — one funding story"> Right — one funding story</label>
+<label><input type="radio" name="fb5" value="Keep yields separate"> Keep yields separate</label>
+</div>
+</article>
+
+<article id="s6">
+<h2>JPMorgan put $5 billion into defence and supply-chain start-ups in a year — and may go past its $10 billion cap</h2>
+<p class="meta">
+<span class="chip">US financials</span>
+<span class="chip">Geopolitics</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The number.</strong> JPMorgan said Monday it made <strong>$5 billion</strong> of start-up investments in the first year of its Security and Resiliency Initiative. It had pledged <strong>$10 billion over a decade</strong>. Co-President Doug Petno told CNBC the bank may expand past that figure. Most stakes are undisclosed. Two known ones: <strong>Hadrian</strong> (automated defence-parts factories; JPM co-led a $1.4bn round in August) and <strong>Castelion</strong> (low-cost “Blackbeard” hypersonic missile; $1bn round). The investment arm is run by former Berkshire executive <strong>Todd Combs</strong>, who reports to Dimon. Separately, the bank says it has financed or facilitated <strong>$230bn+</strong> toward a <strong>$1.5 trillion</strong> ten-year target, and has extended the initiative to Europe and Canada (CNBC, read).</p>
+<p><strong>Why it matters.</strong> The largest US bank is acting as a direct equity investor in weapons and industrial start-ups. That is a departure from the lender-and-adviser model; JPMorgan spun off One Equity Partners more than a decade ago. Petno, widely seen as a Dimon successor candidate, runs the programme. Credit exposure, equity-risk capital treatment and conflicts with advisory clients are the questions a regulator would ask. None was answered Monday.</p>
+<p><strong>Also on JPMorgan (X summary, not verified to a primary):</strong> a reported ₦50bn deposit with Nigeria’s central bank toward a merchant-banking licence. Held at this label.</p>
+<p class="sources">Sources: CNBC — “JPMorgan Chase’s first $5 billion of defense investments” (19&nbsp;Oct, read) · X News summary (Nigeria item; unverified)</p>
+<div class="fb">
+<p>JPM strategic-investment stories: lead or below the line?</p>
+<label><input type="radio" name="fb6" value="Lead — JPM gets standing attention"> Lead — JPM gets standing attention</label>
+<label><input type="radio" name="fb6" value="Also-today"> Also-today</label>
+</div>
+</article>
+
+<article id="s7">
+<h2>Earnings, first wave: GM beats but warns on $2bn of commodity inflation, DRAM included; GE Aerospace and Northrop raise guidance</h2>
+<p class="meta">
+<span class="chip">Macro &amp; markets</span>
+<span class="chip">Trade</span>
+</p>
+<p><strong>GM.</strong> Beat Q3 estimates, narrowed 2026 guidance to adjusted EBIT <strong>$14.5–15.5bn</strong> (EPS $12.75–13.75) from $14–16bn, and raised automotive free cash flow guidance to <strong>$11.5–12.5bn</strong>. New multiyear buyback: <strong>$20bn</strong>. The inflation line: commodity costs of about <strong>$2bn, the high end of guidance</strong>, explicitly including logistics and <strong>DRAM chips</strong>. AI-driven memory demand is now showing up as a car-maker’s cost. Gross tariff costs are tracking the <strong>low end</strong> of $2.5–3.5bn. EV-pullback charges are “substantially completed” at $11.2bn. Q3 net income was $3.3bn. Shares were about −5% premarket despite the beat (CNBC, read).</p>
+<p><strong>GE Aerospace.</strong> Orders <strong>$19.0bn (+49%)</strong>, GAAP revenue $14.1bn (+16%), adjusted EPS $2.25 (+36%); full-year guidance raised “across the board.” Free cash flow fell 14% to $2.0bn (company release, via search excerpt).</p>
+<p><strong>Northrop Grumman.</strong> Sales <strong>$11.1bn, +7%</strong>, net earnings $1.1bn; 2026 guidance raised. Reuters headline says revenue slightly missed. RTX and Lockheed report this morning too (8-K/release excerpts). The defence names are reporting in the same week as the Saudi notifications and the JPMorgan defence-equity push.</p>
+<p class="sources">Sources: CNBC — GM Q3 (20&nbsp;Oct, read) · GE Aerospace Q3 release (20&nbsp;Oct, excerpt) · Northrop 8-K via StockTitan; Reuters headline via TradingView (20&nbsp;Oct, excerpt)</p>
+<div class="fb">
+<p>Earnings roundups: keep as one lead on heavy days?</p>
+<label><input type="radio" name="fb7" value="Yes — one roundup"> Yes — one roundup</label>
+<label><input type="radio" name="fb7" value="Only the macro-signal line (e.g. DRAM)"> Only the macro-signal line (e.g. DRAM)</label>
+</div>
+</article>
+
+<article id="s8">
+<h2>DOJ charges 28 noncitizens with election crimes in California and asks a court to stop the state processing flagged ballots</h2>
+<p class="meta">
+<span class="chip">US politics &amp; policy</span>
+<span class="chip">Courts</span>
+<span class="chip new">New fact</span>
+</p>
+<p><strong>The actions.</strong> The Justice Department on Monday announced charges against <strong>28 noncitizens</strong> (green-card holders, per the Guardian) for election crimes in California. It also filed an <strong>emergency request in federal court</strong> to stop California from processing ballots returned by registered voters the federal government calls “likely noncitizens.” The state says it has asked how those conclusions were reached and hasn’t been told. Background: last week DOJ delivered a flash drive of <strong>20,000 names</strong> to Los Angeles County with a 48-hour deadline. Local and state officials declined and DOJ sued. On Friday Acting Deputy AG Trent McCotter warned officials they could be prosecuted for knowingly processing such ballots (NPR, read).</p>
+<p><strong>Why it clears the bar.</strong> This is substance, not tactics. A federal court is being asked to intervene in a state’s ballot processing <strong>two weeks before the 3&nbsp;Nov election</strong>, and election officials have been threatened with prosecution. NPR notes noncitizen voting has never been found to be widespread. Election-law scholar Rick Hasen names the risks as disenfranchising eligible voters and building a record to contest results. A Republican county recorder in Arizona says officials nationwide are watching. This connects to the DHS election-administration thread (§203 jurisdictions list, opened 20&nbsp;Sep).</p>
+<p><strong>What to watch:</strong> the court’s ruling on the emergency request; whether DOJ discloses the matching method; copycat demands to other states.</p>
+<p class="sources">Sources: NPR — “DOJ charges 28 in California…” (19&nbsp;Oct, read) · Guardian — First Thing / DoJ charges (19–20&nbsp;Oct, headline) · NPR Up First (20&nbsp;Oct, headline)</p>
+<div class="fb">
+<p>Federal–state election-administration fights: lead through 3 Nov?</p>
+<label><input type="radio" name="fb8" value="Yes — on court action only"> Yes — on court action only</label>
+<label><input type="radio" name="fb8" value="Also-today"> Also-today</label>
+</div>
+</article>
+
+<h2 class="section" id="also">Also today</h2>
+<p class="secnote">Eleven items. Ranked below the line; each opens.</p>
+<div class="also-list">
+
+<details><summary>FERC proposes letting LNG plants do some work without case-specific orders — comments due 21&nbsp;Dec</summary>
+<div class="exp"><p>FR 2026-21443 (proposed rule): FERC would set procedures for authorising certain activities at LNG plants <strong>without case-specific authorisation orders</strong> under Natural Gas Act §§3 and 7. Comments due <strong>Mon 21&nbsp;Dec 2026</strong>. Found by the whole-day FR read; no wire coverage seen. Bears on how fast US export capacity can be modified while Qatar’s cargoes reroute via the Red Sea (gCaptain headline). <em>Source: FR abstract (read).</em></p></div></details>
+
+<details><summary>CMS proposes rules for the 2026 appropriations law’s PBM accountability section — comments due 15&nbsp;Dec</summary>
+<div class="exp"><p>FR 2026-21420 implements CAA 2026 §6219 (Part&nbsp;D low-income cost-sharing adjustments), §6220 (REAL Health Providers Act) and <strong>§6224 (Modernizing and Ensuring PBM Accountability)</strong>. Comments by <strong>5&nbsp;p.m. EST Tue 15&nbsp;Dec</strong>. Claude&nbsp;46 leads on the delinking substance; this edition records the docket and deadline. <em>Source: FR abstract (read).</em></p></div></details>
+
+<details><summary>FinCEN flags $270m of suspected student-aid fraud from ~100 SARs</summary>
+<div class="exp"><p>Treasury (19&nbsp;Oct): after a July alert, banks filed nearly 100 suspicious-activity reports covering <strong>20,000+ transactions since February</strong>, about <strong>$270m</strong>, now referred to investigators. Treasury says the figures are not a complete measure of the fraud. The release names “ghost student” synthetic identities built with AI tools. <em>Source: Treasury press release sb0663 (search excerpt); ABA Banking Journal.</em></p></div></details>
+
+<details><summary>Supreme Court takes the Montgomery County magnet-school case — race-neutral policies, disparate-impact proof</summary>
+<div class="exp"><p>Cert granted Monday in the Association for Education Fairness’s challenge to admissions to four Maryland magnet middle schools. The question: must a group claiming to be targeted by a race-neutral policy show it was disproportionately harmed to prove intentional discrimination? Lower courts dismissed the suit because Asian-American admits exceeded their share of applicants. Ruling expected by June. <em>Source: Al&nbsp;Jazeera/AP/Reuters (read).</em></p></div></details>
+
+<details><summary>Deep-sea mining: first US offshore minerals lease sale set for 19&nbsp;Nov — 31.5m acres off American Samoa</summary>
+<div class="exp"><p>Interior’s Marine Minerals Administration issued the Final Leasing Notice for sale PACM-1, <strong>Thu 19&nbsp;Nov</strong>. Two areas (16.3m and 15.2m acres), <strong>$3m minimum bid</strong>, 20-year primary term, royalties <strong>2%</strong> for five years then <strong>5%</strong>. A lease allows surveys only; mining needs separate approvals. Oceana opposes. <em>Source: gCaptain (read).</em></p></div></details>
+
+<details><summary>TPS for ~101,000 Ukrainians and 1,800 Sudanese expired Monday — DHS says they “retain protection,” no end date</summary>
+<div class="exp"><p>DHS said an announcement “will be made at the appropriate time” and gave no duration. It did not say whether work permits continue. More than 1 million people from 13 countries have already lost TPS. <em>Source: Guardian (read).</em></p></div></details>
+
+<details><summary>Executive order creates an NIH women’s-health division within 90 days and a White House task force led by Susie Wiles</summary>
+<div class="exp"><p>Signed 19&nbsp;Oct. HHS pays the task force’s administrative costs. Funding for the new division is not disclosed, and it does not replace the existing Office of Research on Women’s Health. Members include RFK&nbsp;Jr., Hegseth, acting FDA Commissioner Kyle Diamantas and CDC Director Erica Schwartz. <em>Sources: whitehouse.gov presidential actions (title read); STAT (read).</em></p></div></details>
+
+<details><summary>OFAC’s Federal Register catch-up: Mexican cartel/SDGT designations (13&nbsp;Oct), an Iran-petrochemical (E.O. 13902) tranche (15&nbsp;Oct), delistings</summary>
+<div class="exp"><p>FR 2026-21445 (E.O. 14059 + 13224, Cartel del Noreste-linked names), 2026-21398 (E.O. 13902; the lists are published as images), and 2026-21423 (removals, including two Iran-linked container ships). These are publication of earlier actions, not new ones. <em>Source: FR full text (read).</em></p></div></details>
+
+<details><summary>ITC opens AD/CVD investigations into seamless carbon and alloy pipe from Georgia and India</summary>
+<div class="exp"><p>FR 2026-21458: institution of antidumping and countervailing duty investigations and scheduling of preliminary phase. Trade-mechanism half only; the market-effect half waits for preliminary rates. <em>Source: FR title (read).</em></p></div></details>
+
+<details><summary>NYSE extends options trading hours as round-the-clock trading spreads</summary>
+<div class="exp"><p>NYSE is the latest exchange to lengthen options sessions (CNBC, 19&nbsp;Oct, headline). Market-structure item; effective dates not read this run. <em>Source: CNBC (headline).</em></p></div></details>
+
+<details><summary>Saudi Arabia postpones its flagship investor conference to 2027 as Houthi attacks on the kingdom escalate</summary>
+<div class="exp"><p>CNBC (19&nbsp;Oct). Claude&nbsp;46 leads on it. Here it is context for the Saudi arms notifications (Issue&nbsp;45-grok) and the Alfozan case (lead&nbsp;3). Houthis also hit a Yemeni camp, killing 50 recruits (BBC), but that adds no new Bab el-Mandeb shipping fact. <em>Sources: CNBC; BBC (headlines).</em></p></div></details>
+
+</div>
+
+<h2 class="section" id="fl">Florida &amp; Tampa Bay</h2>
+<details><summary>Miami’s archbishop accuses AG Uthmeier of “bullying” Catholic schools over vaccine exemptions — voucher money is the lever</summary>
+<div class="exp"><p>In a July letter, AG James Uthmeier warned that Catholic schools, which mostly serve state-voucher students, could risk voucher funding if they do not grant religious exemptions to school vaccination requirements such as measles. The bishops replied in August that they “do not have to justify” their policy. Archbishop Thomas Wenski said Monday that the Church does not consider these vaccines objectionable, and that the letter was an improper attempt to influence church teaching. Ties to the Florida school vaccine rule thread (64D-3.046). Florida law allows religious opt-outs; the question is whether a private school taking voucher money must honour them. <em>Source: WUSF/News Service of Florida (read).</em></p></div></details>
+
+<h2 class="section" id="neg">Negative check</h2>
+<p class="secnote"><strong>Negative check</strong> (whole-day FR list, X News, BBC/AJ/Guardian/NPR/CNBC/STAT/WUSF feeds, Claude&nbsp;46’s slate) reshaped the slate:</p>
+<ul>
+<li><strong>Promoted:</strong> the DeepSeek civilian-agency ban. It was on no watchlist thread and not in Claude&nbsp;46. Core AI policy with a procurement mechanism.</li>
+<li><strong>Promoted:</strong> the Alfozan detention memo over another Anthropic corporate item. The lab-security thread had a new court filing; the Anthropic newsroom had nothing new.</li>
+<li><strong>Reframed:</strong> the oil chain’s spine moved from waiver politics (Issues&nbsp;43–45) to physical supply: Kharg idle, ships, the Wright conversion. The FR delisting read caught that no tanker instrument has been published.</li>
+<li><strong>Found by the FR read, no coverage seen:</strong> FERC’s LNG authorisation NOPR.</li>
+<li><strong>Held below the line:</strong> Saudi conference postponement; TPS non-decision; SCOTUS magnet-school grant.</li>
+<li><strong>Excluded by altitude bar (named):</strong> Alberta referendum (Claude led; no US instrument moved); French unrest and curfews; Albanian protests; Israeli election explainers; Kenya cult verdict; Colombian mine collapse; Rays–Brewers World Series (anti-topic).</li>
+<li><strong>UAP:</strong> no new implementing document. A widely shared Dr. Phil interview alleging recovered craft is second-hand by his own account. Excluded.</li>
+</ul>
+
+<h2 class="section">Dormant / watched</h2>
+<ul class="dorm">
+<li><strong>Wright tanker “conversion”:</strong> awaiting OFAC licence or guidance text.</li>
+<li><strong>EIA weekly diesel:</strong> prints today. Decides whether the AAA plateau near $6.32 is a turn.</li>
+<li><strong>Graham Act waiver:</strong> §4(d) still has no end date.</li>
+<li><strong>Super Intelligence Force charter:</strong> reported adopted; primary not located.</li>
+<li><strong>DOJ v. California ballots:</strong> emergency ruling pending.</li>
+<li><strong>CFTC event-contract NPRM:</strong> comments 18&nbsp;Nov. <strong>Deep-sea lease sale:</strong> 19&nbsp;Nov.</li>
+<li><strong>FOMC:</strong> 27–28&nbsp;Oct. Prints and decision only.</li>
+<li><strong>Kenya Ebola / US entry order:</strong> no new US primary.</li>
+<li><strong>UAP implementation:</strong> no new primary.</li>
+</ul>
+
+<footer>
+<p>Issue No. 46-grok · 20 October 2026 · Grok edition for MAGA Mickey · Written by Grok Bot / News Bot · Archive: <a href="https://historiocity.github.io/News-Agent/">historiocity.github.io/News-Agent</a> · Skill reads <code>config.md</code> every run.</p>
+<p>The parallel Claude Issue&nbsp;46 is published as <code>issues/2026-10-20.html</code>; this file is the independent Grok gather and does not overwrite it. <strong>44 sources checked, 30 outside the active watchlist (68%).</strong> Items marked “headline”, “excerpt”, “summary” or “secondary” were handled as labelled. The DHS DeepSeek order and the Super Intelligence Force charter were reported, not read. Bloomberg bodies are via gCaptain’s licensed reprints. Anthropic conflict disclosed in lead&nbsp;4.</p>
+<p class="submit"><button type="button" id="send">Send feedback as a GitHub issue</button></p>
+</footer>
+</div>
+<script>
+(function () {
+ var OWNER = "historiocity", REPO = "News-Agent";
+ var btn = document.getElementById("send");
+ if (!btn) return;
+ btn.addEventListener("click", function () {
+ var lines = [], answered = 0;
+ document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+ answered++;
+ var q = i.closest(".fb").querySelector("p");
+ lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n → **" + i.value + "**");
+ });
+ if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+ var body = "Feedback on **Issue No. 46-grok — 20 October 2026, Grok edition**\n\n" + lines.join("\n")
+ + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+ window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+ + "&title=" + encodeURIComponent("Brief feedback — 2026-10-20-grok")
+ + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+ });
+})();
+</script>
+</body>
+</html>
