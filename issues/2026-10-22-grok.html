@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Thursday, 22 October 2026 (Grok edition)</title>
+<style>
+:root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+@media (prefers-color-scheme: dark) {
+:root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+.wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+.kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+.sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+.prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+nav ol { margin:0; padding-left:1.2rem; }
+nav li { margin:.25rem 0; }
+nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+a { color:var(--link); }
+article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+.secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+.meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+.chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+.chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+.chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+.sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+.div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+.div p { margin:.4rem 0; }
+.div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+.corr { background:var(--box); border-left:4px solid var(--accent); padding:.8rem 1rem; margin:0 0 1.6rem; font-size:.95rem; }
+.corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+.corr p { margin:.45rem 0; }
+details { margin-top:.8rem; }
+details summary { cursor:pointer; color:var(--link); }
+.exp { margin-top:.6rem; }
+.also-list { margin:0; }
+.also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+.also-list details:first-of-type { border-top:1px solid var(--rule); }
+.also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+.also-list .exp { font-size:.94rem; padding-left:.2rem; }
+footer { color:var(--muted); font-size:.88rem; }
+.fb { margin-top:1rem; font-size:.9rem; }
+.fb p { margin:.6rem 0 .2rem; }
+.fb label { display:block; margin:.15rem 0; }
+.submit { margin-top:2rem; }
+button { font:inherit; padding:.45rem .8rem; }
+ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+ul.dorm li { margin:.3rem 0; }
+.chip.single{background:#fff4e0;border-color:#d9a441;color:#7a5200}
+.chip.conf { font-weight:600; }
+.chip.c-pri { background:#e3efe3; color:#24572a; }
+.chip.c-ic { background:#e2ebf5; color:#1c4f8a; }
+.chip.c-single { background:#fff4e0; color:#7a5200; }
+.chip.c-unconf { background:#f6e1dc; color:#8a3324; }
+@media (prefers-color-scheme: dark) { .chip.c-pri{background:#1f3322;color:#9fd3a5} .chip.c-ic{background:#1d2a3a;color:#8ab4e8} .chip.c-single{background:#3a2e17;color:#e8c27a} .chip.c-unconf{background:#3a201b;color:#d98b76} }
+.exp .div { margin:.7rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<p class="kicker">Issue No. 48-grok · Thursday, 22 October 2026 · Grok edition</p>
+<h1>The Brief</h1>
+<p class="sub">For MAGA Mickey · America/New_York · Source-led morning paper</p>
+<p class="sub"><em>Thursday’s paper: the Houthis are now killing people at Saudi airports and oilfields, Washington is pulling diplomats and reportedly planning post-midterm strikes on Iran, and Brent is near $112. Separately, AI found two flaws in PHP, the language behind most of the web, and the race to patch them is on, with Florida’s voter-lookup tools among the casualties.</em></p>
+<p class="prov"><strong>Provenance.</strong> 42 sources checked: 38 news and agency feeds, plus the Federal Register (96 documents today), Treasury’s par-yield CSV (21&nbsp;Oct row), AAA’s national averages (22&nbsp;Oct) and the CBP, NRC and EO entries read in the register. 34 of the 42 are general sources, not watchlist checks. The 8 watchlist-specific sources are gCaptain, OilPrice, Kyiv Independent, Treasury, AAA, EIA, the Fed and the SEC. 47 articles and documents were read in full. <strong>Leads:</strong> 4 new subjects (PHP flaws, DOJ election monitors, EPA citizen-suit ruling, the bond-holder retreat) and 4 continuations (oil chain, AI credit, Tesla/SpaceX, Canada). <strong>Independent accounts compared per lead:</strong> L1&nbsp;oil&nbsp;11 · L2&nbsp;PHP&nbsp;7 · L3&nbsp;AI credit&nbsp;5 · L4&nbsp;Tesla&nbsp;3 · L5&nbsp;Canada&nbsp;2 · L6&nbsp;DOJ monitors&nbsp;1 (plus DOJ’s own statements) · L7&nbsp;EPA ruling&nbsp;1 (plus the parties’ statements) · L8&nbsp;bonds&nbsp;4 (plus Treasury’s series). <strong>Negative check:</strong> the biggest story on other front pages that this paper does not lead is the $25bn New Mexico judgment against Meta. Running the check moved Meta’s <em>earnings</em> (the new non-voting share class to pay for AI) into lead&nbsp;3, where it changes the AI-financing story, and kept the verdict below the line, because Claude’s Issue&nbsp;48 covers it in full and neither paper has read the judgment. The check also promoted the Canada story: Claude’s edition said no US document behind the accusation could be reached, but the BBC has the embassy’s fact sheet, so it leads here.</p>
+</header>
+<nav>
+<ol>
+<li><a href="#s1">The oil chain on Thursday: Houthi strikes kill four at a Saudi airport and oilfield, the US orders diplomats out, and Brent tops $111 on reports of post-midterm strikes on Iran</a></li>
+<li><a href="#s2">AI found two remote-takeover flaws in PHP, which runs most of the web; the NSA says patch or pull your site offline, and attacks began before the disclosure</a></li>
+<li><a href="#s3">AI money gets dearer: CoreWeave’s bonds yield about 15%, junk issuance is paused until after the midterms, and Meta creates a non-voting stock to fund its build-out</a></li>
+<li><a href="#s4">Tesla’s Q3: it beat estimates, but profit fell and the two main accounts don’t agree on by how much; the SpaceX merger committees overshadow it</a></li>
+<li><a href="#s5">The US embassy in Ottawa publishes a fact sheet accusing Canadian ministers of planning to influence the midterms; Carney, Joly and Ford deny it</a></li>
+<li><a href="#s6">DOJ starts telling counties it will monitor them on Election Day, in Florida among four other states, and didn’t tell the states first</a></li>
+<li><a href="#s7">A federal judge rules the EPA cannot dismiss a citizen suit over the gas turbines powering Musk’s Memphis data centre</a></li>
+<li><a href="#s8">The big bond holders step back: Norway’s $2.3tn fund lost $29.7bn on bonds and plans to cut its Treasuries, France’s 10-year touched 5%, and the US 10-year sits at 5.13%</a></li>
+</ol>
+<p class="also"><a href="#also">Also today (9)</a>. Ranked below the line; each one opens. <a href="#fl">Florida &amp; Tampa Bay (2)</a>.</p>
+</nav>
+<div class="corr" id="acct">
+<p class="t">Accountability: prior Grok frames</p>
+<p><strong>Yesterday’s freight figure holds.</strong> Issue&nbsp;47-grok cited Goldman’s estimate of crude freight above $35 a barrel on Middle East routes. The IEA now puts Gulf-to-Asia shipping above <strong>$37 a barrel</strong> by mid-October, five times pre-war (IEA via gCaptain). The two agree, so the “ships, not barrels” frame stands.</p>
+<p><strong>Yesterday’s flows box needs a new caveat.</strong> We said Kpler showed Gulf exports “fractionally above” pre-war. Today two reports using Kpler’s same week give two different pre-war baselines, 18.5 and 23.3 million barrels a day. So “above pre-war” depends on which baseline you use; see the first divergence box in lead&nbsp;1. We should not have stated it without the baseline.</p>
+<p><strong>Diesel.</strong> We reported EIA’s weekly diesel up 9.7¢ to $6.276 and made no claim about distillate stocks, so Claude’s withdrawal of its stock-draw explanation today does not touch this paper. AAA’s daily diesel this morning is <strong>$6.3090</strong>, down 0.84¢ on the day. We do not read a trend into that: a daily average shows the level, and the weekly EIA series shows direction.</p>
+</div>
+
+<article id="s1">
+<h2>The oil chain on Thursday: Houthi strikes kill four at a Saudi airport and oilfield, the US orders diplomats out, and Brent tops $111 on reports of post-midterm strikes on Iran</h2>
+<p class="meta"><span class="chip">Energy &amp; grid</span><span class="chip">Geopolitics</span><span class="chip">Macro &amp; markets</span><span class="chip new">New fact</span><span class="chip conf c-ic">Independent corroboration</span></p>
+<p><strong>What happened.</strong> On Wednesday evening, an attack on King Fahd International Airport in Dammam, in Saudi Arabia’s oil-producing Eastern Province, killed two people and injured eight, according to the Saudi civil aviation authority (BBC, Guardian). Earlier the same day, debris from a drone intercepted over the <strong>Shaybah</strong> oilfield killed two more. The energy ministry says the drone was aimed at an Aramco processing plant and operations were not affected. The Houthis have not claimed either attack. Saudi authorities count at least 21 people killed in attacks on the kingdom’s airports since 1&nbsp;October (BBC). State has ordered non-emergency staff and their families out of Saudi Arabia, and spokesperson Tommy Pigott says the order covers <strong>Saudi Arabia only</strong> (CBS, Guardian, CNBC). The New York Times reports US and Israeli plans for a “short but intensive” operation against Iran <strong>after the 3&nbsp;November midterms</strong>, which Trump has not approved (relayed by CNBC and the Guardian). The IRGC claims seven vessels were hit or struck mines in the past day. UKMTO has confirmed two tanker strikes, on 20 and 21&nbsp;October, with crews safe (gCaptain).</p>
+<p><strong>Where it lands.</strong> Brent was <strong>$111.74</strong> at 6:30&nbsp;a.m. ET, up 2.7%, and WTI was $99.30 (CNBC). AAA this morning: diesel <strong>$6.3090</strong>, regular <strong>$4.2701</strong> (up 0.57¢), a premium of <strong>$2.04</strong> (AAA, read). Airlines are pricing it in. American now expects a deeper 2026 loss on fuel despite record revenue, and Southwest cut its profit forecast (CNBC). The first Russian diesel cargo under the Trump–Putin deal, about 300,000 barrels, sails for the US today (Novak via Bloomberg/gCaptain). That is about a third of one day of US distillate demand.</p>
+<p><strong>Why it matters.</strong> The barrels are still moving, but the cost of moving them keeps rising, and now so does the risk at the Saudi end, the supplier that has done most to refill the market. Aramco says it is asking foreign governments for access to their <strong>strategic</strong> storage and wants to double its overseas capacity (Nasser via Bloomberg/gCaptain).</p>
+<p><strong>What to watch:</strong> whether a Houthi strike hits an export terminal rather than a field perimeter; whether the drawdown spreads beyond Saudi Arabia; and EIA’s weekly diesel print on Monday.</p>
+<details><summary>Dig deeper</summary>
+<div class="exp">
+<p><strong>Freight is where the shock is.</strong> The IEA says moving crude from the Gulf to Asia cost more than <strong>$37 a barrel</strong> by mid-October. For a 2-million-barrel VLCC that is more than $74m a cargo, against under $15m before the war (IEA via gCaptain). The system keeping the oil moving is improvised: pipelines to the Red Sea, short shuttles through Hormuz under US protection, and ship-to-ship transfers in the Gulf of Oman. UKMTO counts 32 attacks on ships around the Arabian peninsula this month, against 16 in all of September (Bloomberg via gCaptain).</p>
+<p><strong>Saudi output.</strong> JODI data show Saudi crude production at a record-low <strong>6.24m b/d</strong> in August while exports rose to 4.45m b/d, the highest since March, because it drew on stocks and loaded on both coasts (Reuters via OilPrice). Bloomberg says output recovered by a third in September to more than 8m b/d. Riyadh has moved government staff to remote work, and the Future Investment Initiative conference due on 26–29&nbsp;October has been postponed to 2027 (AFP via OilPrice). Aramco is studying raising its east–west pipeline capacity to 10m b/d from 7m.</p>
+<p><strong>The Russian diesel offsets little.</strong> Moscow pledges 500,000 tonnes in a first phase, with no timetable. Analysts call the deal too small to move prices before the vote, and Senator Tillis has said it may be illegal (Bloomberg via gCaptain).</p>
+</div></details>
+<div class="div">
+<span class="t">Divergence: are Gulf exports above pre-war or not?</span>
+<p><b>Substance (facts, about definitions).</b> Bloomberg, citing Kpler, says Persian Gulf crude and condensate flows hit <strong>24.6m b/d</strong> in the week to 18&nbsp;October, against a pre-war level of “at least 18.5m b/d.” Vortexa puts the same week at <strong>18m b/d</strong>. The WSJ, also citing Kpler, says Middle East shipments averaged more than 24m b/d that week, against a pre-war average of <strong>23.3m b/d</strong> (via gCaptain). For October to date, Kpler says 16.7m and Vortexa 15.4m.</p>
+<p><b>Cause.</b> Mundane. The two firms count different things: Kpler includes Red Sea and Gulf of Oman loadings and ship-to-ship transfers, while Vortexa sums shipments from seven producers. Most tankers are sailing with their transponders off, which makes every count partly an estimate. Loadings also come in convoy bunches, so one strong week overstates the trend. The two pre-war baselines almost certainly cover different products: crude plus condensate, against all oil.</p>
+<p><b>What it means.</b> Use the month-to-date figures, 15–17m b/d, and treat any “above pre-war” headline as a one-week spike measured against whichever baseline flatters it. On either count, supply is short of normal and transport is the bottleneck. This would be settled by a full month of matched Kpler and Vortexa data on the same definition, which October’s close will give.</p>
+</div>
+<div class="div">
+<span class="t">Divergence: how many died at Dammam, and in Riyadh on 10 October?</span>
+<p><b>Substance (facts, minor).</b> CNBC and The Hill say the Dammam strike killed “at least one” and injured eight. The BBC and the Guardian, citing GACA’s statement, say two were killed. For the 10&nbsp;October Riyadh airport strike, the BBC says 13 killed and 308 injured, and CBS says 12 killed and more than 300 injured, including one American.</p>
+<p><b>Cause.</b> Timing. The “at least one” reports went out overnight, before the civil aviation authority’s Thursday statement named two dead, a Saudi citizen and an Indian resident. The Riyadh gap looks like a later death or a revision that one outlet carried and the other did not.</p>
+<p><b>What it means.</b> Go with two at Dammam, since that is the official figure and the later one. For Riyadh, the 13/308 figure is the more recent and specific count, but this paper has not seen the Saudi statement behind either. Nothing here changes the point that the attacks are getting more lethal.</p>
+</div>
+<div class="div">
+<span class="t">Divergence: is the US pulling out of Saudi Arabia only, or the wider Gulf?</span>
+<p><b>Substance (facts).</b> NBC and AFP reported that families were also being withdrawn from the UAE, Jordan, Qatar and Bahrain, and Reuters said Washington planned to pull family members from other missions (Guardian, CNBC). State’s spokesperson called reports of wider withdrawals “inaccurate” and said the order covers Saudi Arabia only. CBS reports several other embassies are on “restricted operations,” which reduces staff without an ordered departure.</p>
+<p><b>Cause.</b> Both can be true. An ordered departure is a formal, mandatory step. Restricted operations lets posts send people home quietly. Reporters hearing about staff leaving Doha or Abu Dhabi may be hearing about restricted operations, and State is denying only the formal step. Officials also told NBC and CBS that the US military is quietly reducing its footprint in the region.</p>
+<p><b>What it means.</b> Believe State on the formal order, and believe the reporting that the regional footprint is shrinking. The two together are consistent with preparation for the post-midterm operation the Times describes, which is the thing that matters for oil. This would be settled by an ordered departure for a second Gulf post, or a Pentagon statement on force posture.</p>
+</div>
+<p><em>Inside the story, unconfirmed:</em> the IRGC’s claim of seven vessels hit is <span class="chip conf c-unconf">Unconfirmed</span>. Only two strikes are on UKMTO’s record, and no hull has been named.</p>
+<p class="sources">Sources: BBC; Guardian; CBS; CNBC (two pieces); The Hill (headline); OilPrice (Paraskova; JODI via Reuters); gCaptain (Bloomberg on flows; Bloomberg on Aramco; Bloomberg on Russian diesel; IEA freight; UKMTO tanker strikes); AAA national averages (read). <em>Independent accounts compared: 11.</em></p>
+<div class="fb"><p>The chain now runs from Yemen and Iran to the pump. Is that still one story to you?</p>
+<label><input type="radio" name="fb1" value="Yes, one chain"> Yes, one chain</label>
+<label><input type="radio" name="fb1" value="Split the Yemen-Saudi war out"> Split the Yemen–Saudi war out</label>
+<label><input type="radio" name="fb1" value="Shorter: prices and freight only"> Shorter: prices and freight only</label></div>
+</article>
+
+<article id="s2">
+<h2>AI found two remote-takeover flaws in PHP, which runs most of the web; the NSA says patch or pull your site offline, and attacks began before the disclosure</h2>
+<p class="meta"><span class="chip">AI &amp; tech industry</span><span class="chip">US politics &amp; policy</span><span class="chip new">New subject</span><span class="chip conf c-ic">Independent corroboration</span></p>
+<p><strong>What happened.</strong> On Wednesday, the PHP project shipped emergency fixes for two flaws, CVE-2026-109618 and CVE-2026-109619. Both let an attacker run their own code on a web server without logging in (The Verge, quoting the PHP Group). PHP is the server language behind about <strong>69% of websites</strong> whose language is known, WordPress among them (W3Techs via The Verge). The NSA told organisations that cannot patch immediately to take their systems offline, and said federal agencies must patch at once (BBC, Guardian). Britain’s NCSC said the same and told operators to check for backdoors. Japan’s prime minister asked the public to act “tonight.” Wikipedia, 4chan, DeviantArt, several Dutch and Finnish government sites, the Paris police prefecture and UK councils went offline as a precaution (Verge, Guardian).</p>
+<p><strong>How it was found.</strong> The security firm Calif found one flaw using OpenAI’s GPT-5.6 Sol under OpenAI’s “Patch the Planet” programme, and Google-owned Wiz found them independently with its own agent, Gemini 4 Argon and GPT-5.6 Sol (TechCrunch, Guardian). Wiz says exploiting them used to take a chain of steps “at the edge of what human researchers could practically achieve,” and that language models remove that barrier.</p>
+<p><strong>Why it matters.</strong> This is the first internet-wide emergency in which AI both found the hole and makes it cheap to exploit. Now that the patch is public, the gap between disclosure and mass exploitation is measured in hours. The long tail of unmaintained sites will be exposed for weeks.</p>
+<p><strong>What to watch:</strong> whether CISA adds the CVEs to its known-exploited list; Cloudflare’s count of attacks; and whether any big US breach is traced to it.</p>
+<details><summary>Dig deeper</summary>
+<div class="exp">
+<p><strong>What the bugs are.</strong> In the first, PHP can be interrupted while running out of memory, leaving half-built request data that cleanup then treats as valid. In the second, internal state from one request survives after its memory is freed, and the next request handled by the same worker uses it. Both lead to remote code execution: an attacker can get passwords, API keys, certificates and databases, and use the server to attack others (The Verge). PHP 8.1 and older are out of support and will get no fix, so those sites must upgrade to a current release, which TechCrunch gives as 8.5.12. Hosted builders such as Squarespace and Wix do not run PHP. GoDaddy says any PHP site should assume it is affected.</p>
+<p><strong>The policy angle.</strong> The White House says it learned of the flaw on Friday (Guardian). The NSA’s “take it offline” advice is unusual for a commodity web stack, and it lands 12 days before an election run on county websites. Lead&nbsp;6’s DOJ monitors and the Florida voter-lookup outage below are both downstream.</p>
+<p><strong>A conflict to state plainly.</strong> OpenAI, a competitor of this paper’s maker, is the main source for the “frontier AI found it” framing. The assessment of severity rests on the PHP Group, Wiz, the NSA and the NCSC, not on OpenAI.</p>
+</div></details>
+<div class="div">
+<span class="t">Divergence: was it being exploited before disclosure?</span>
+<p><b>Substance (facts).</b> TechCrunch, following OpenAI, says the flaws were found before hackers and that there were “no reports of exploits in the wild.” Amazon’s security chief says a decoy server caught an exploit attempt on <strong>17&nbsp;October</strong>, four days before disclosure (Guardian). Cloudflare’s chief executive says it saw “thousands” of attempts in the 10 hours before the announcement (BBC), and its CTO says early attacks are emerging (Verge). The BBC reports that details leaked online this week and forced the announcement early.</p>
+<p><b>Cause.</b> Timing and vantage. OpenAI’s post and TechCrunch’s story reflect the disclosure-day position of the researchers. Amazon and Cloudflare are looking at their own network traffic and published later. A leak during the embargo explains both: the researchers had no evidence of exploitation when they wrote, and the attackers already had the details.</p>
+<p><b>What it means.</b> Assume exploitation began before patches were public. Amazon’s attempt from an anonymous address is direct evidence. Any PHP server that was unpatched on 17–21&nbsp;October should be checked for compromise, not just patched, which is the NCSC’s advice. This would be settled by a CISA known-exploited listing or an incident report naming a victim.</p>
+</div>
+<div class="div">
+<span class="t">Divergence: did it take frontier AI, and how old are the bugs?</span>
+<p><b>Substance (significance, plus a minor fact).</b> OpenAI says “frontier AI” was key. The researcher who found the flaw told the Guardian they used models <em>available to the public</em>. On age, TechCrunch says every version since PHP&nbsp;5 in 2004, The Verge says “roughly 20 years,” and the BBC and the Guardian say versions from the past decade, or “more than a decade.”</p>
+<p><b>Cause.</b> OpenAI has a commercial interest in crediting its newest model. The researcher has none. GPT-5.6 Sol is OpenAI’s current public model, so both statements can be literally true. On age, the outlets are probably counting two things: when the code pattern first appeared, and which supported versions are affected.</p>
+<p><b>What it means.</b> For the reader, the second reading matters more. If public models can find and weaponise this class of bug, so can attackers, and that is Wiz’s point. The exact age doesn’t change the action needed. This would be settled by Calif’s and Wiz’s technical write-ups, which name the first affected commit.</p>
+</div>
+<p class="sources">Sources: TechCrunch (Bort); The Verge (O’Brien, Peters); Guardian; BBC (three pieces); CNBC; FT (headline); Suncoast Searchlight via WUSF. <em>Independent accounts compared: 7.</em></p>
+<div class="fb"><p>AI-found security flaws: a standing thread?</p>
+<label><input type="radio" name="fb2" value="Yes, follow AI-driven vulnerability disclosures"> Yes, follow them</label>
+<label><input type="radio" name="fb2" value="Only internet-wide ones like this"> Only internet-wide ones like this</label>
+<label><input type="radio" name="fb2" value="No"> No</label></div>
+</article>
+
+<article id="s3">
+<h2>AI money gets dearer: CoreWeave’s bonds yield about 15%, junk issuance is paused until after the midterms, and Meta creates a non-voting stock to fund its build-out</h2>
+<p class="meta"><span class="chip">AI &amp; tech industry</span><span class="chip">US financials</span><span class="chip">Macro &amp; markets</span><span class="chip new">New fact</span><span class="chip conf c-ic">Independent corroboration</span></p>
+<p><strong>The credit side.</strong> CoreWeave’s unsecured debt now yields about <strong>15%</strong>. Its five-year credit default swaps are near <strong>1,067 basis points</strong>, up 30% in October, and the stock is down 29% this month, to a value of about $34bn against a $90bn peak (CNBC). It has $20.7bn of debt due by 2030. Nebius is down 27% this month and IREN 32%. Australia’s NextDC fell 40% after cutting guidance. Credit-desk sources told CNBC the high-yield market for data-centre debt is <strong>effectively on hold until after the midterms</strong>, because investors want permitting and regulatory fights settled first. This morning, Nvidia’s Jensen Huang said demand for these “neocloud” firms is “off the charts” but “there’s a scarcity of capital” (CNBC).</p>
+<p><strong>The equity side.</strong> Meta reported Q3 revenue of <strong>$64bn</strong>, up 26%, with costs up 68% (TechCrunch). It raised the bottom of its 2026 capex range to <strong>$135–145bn</strong> (The Verge). It will create a <strong>new class of non-voting stock</strong>, distributed to all shareholders as a dividend and tradable from 2027, “usable for capital raising, employee compensation, acquisitions” while preserving the founder’s voting control (CFO Susan Li, on the call).</p>
+<p><strong>Why it matters.</strong> Both stories are about the same thing: how the build-out gets paid for when debt is expensive. Firms with only debt markets are being repriced. Meta is building a way to raise equity without diluting control.</p>
+<p><strong>What to watch:</strong> whether Nscale goes ahead with its NYSE listing; the first high-yield data-centre deal after 3&nbsp;November; and how big Meta’s first issue of the new class is.</p>
+<div class="div">
+<span class="t">Divergence: demand problem or money problem?</span>
+<p><b>Substance (significance).</b> Huang says the fundamentals are strong and only working capital is missing, and that it is “going to get solved.” Barclays’ credit analyst calls sentiment “decidedly negative.” CNBC’s credit sources say lenders are waiting on politics, not demand. Nebius said on Tuesday that AI computing prices are <em>rising</em> (CNBC).</p>
+<p><b>Cause.</b> Vantage and interest. Nvidia sells the chips, owns about 9% of CoreWeave, and benefits when neoclouds raise money. Credit analysts price the chance of default on borrowers with about two-thirds of revenue from one customer, Microsoft. Both can be right: rising compute prices show demand, and 15% yields show that lenders doubt the borrowers can hold their margins through refinancing.</p>
+<p><b>What it means.</b> Read it as a financing problem, not a demand collapse. The weak link is leveraged middlemen, not the hyperscalers, which can fund from cash flow or, like Meta, design new instruments. This would be settled by whether the high-yield market reopens after 3&nbsp;November at lower yields, or whether a neocloud has to raise money on distressed terms.</p>
+</div>
+<p class="sources">Sources: CNBC (CoreWeave; Huang; Nebius); TechCrunch (Ropek); The Verge (Meta release and call). <em>Independent accounts compared: 5. The CoreWeave yield, CDS and debt figures come from one CNBC report; Meta’s figures are corroborated by two outlets quoting the release and the call.</em></p>
+<div class="fb"><p>AI financing: how much do you want?</p>
+<label><input type="radio" name="fb3" value="Keep it as a lead when credit moves"> Keep it as a lead when credit moves</label>
+<label><input type="radio" name="fb3" value="Weekly roundup instead"> Weekly roundup instead</label>
+<label><input type="radio" name="fb3" value="Only defaults or big deals"> Only defaults or big deals</label></div>
+</article>
+
+<article id="s4">
+<h2>Tesla’s Q3: it beat estimates, but profit fell and the two main accounts don’t agree on by how much; the SpaceX merger committees overshadow it</h2>
+<p class="meta"><span class="chip">Macro &amp; markets</span><span class="chip">AI &amp; tech industry</span><span class="chip">Continuation</span><span class="chip conf c-ic">Independent corroboration</span></p>
+<p><strong>The numbers both accounts agree on.</strong> Net income was <strong>$787m</strong>. Automotive revenue fell 3% to about <strong>$20.6bn</strong>, energy revenue fell 16% to $2.9bn, and services rose a third to $4.6bn. Free cash flow fell 62% to about $1.5bn (Ars Technica, CNBC). Regulatory-credit sales fell to $113m from $417m, because the US has abolished the credits and rivals no longer need them (Ars). Even so, Tesla beat analysts’ estimates, and the shares slipped about 3% after hours (CNBC). Active FSD subscriptions rose 67% to 1.74 million. Tesla says Optimus production has started in California and that it will begin selling Cybercabs by the end of the year (TechCrunch).</p>
+<p><strong>The bigger story is above the company.</strong> On Tuesday’s SpaceX call, Musk said special committees at both companies are studying a merger, and that there is “no guarantee” they agree terms (BBC). He declined to add anything on Wednesday. A combination would join a company valued at about $1.5tn with one valued at about $2tn. It would also bring Starshield, the satellite service at the centre of the Ukraine slowdown row, into a listed carmaker.</p>
+<p><strong>Why it matters.</strong> A falling-margin carmaker that spends heavily on AI is being priced as an option on SpaceX. The merger terms, not Tesla’s quarter, will decide what shareholders own.</p>
+<p><strong>What to watch:</strong> any filing from either special committee; and Tesla’s Q4 delivery guidance.</p>
+<div class="div">
+<span class="t">Divergence: profit down 43% or 29%, and capex $4.7bn or $3.73bn?</span>
+<p><b>Substance (facts).</b> Ars Technica says net profit fell <strong>43%</strong> to $787m and capex rose 110% to <strong>$4.7bn</strong>. CNBC says net income attributable to common shareholders fell <strong>29%</strong>, from $1.11bn to $787m, and capex “more than doubled” to <strong>$3.73bn</strong>.</p>
+<p><b>Cause.</b> Most likely different lines in the same deck. CNBC’s arithmetic checks out: $787m against $1.11bn is a 29% fall. A 43% fall to $787m implies a base of about $1.38bn, which matches a different prior-year figure, such as net income including minority interests or an adjusted line. On capex, one outlet may be using cash capex and the other capex including finance leases or accruals. Neither outlet has an interest in the difference. Ars was writing quickly after the release.</p>
+<p><b>What it means.</b> Use <strong>29%</strong>: it is the figure whose base is published and whose arithmetic holds. Treat capex as “roughly doubled, $3.7–4.7bn” until the line is checked. This would be settled by the cash-flow statement in Tesla’s 10-Q, due within weeks, which this paper did not read.</p>
+</div>
+<p class="sources">Sources: Ars Technica; CNBC (earnings); BBC (merger call); TechCrunch (Cybercab, Optimus). <em>Independent accounts compared: 3. Tesla’s own deck was not read.</em></p>
+<div class="fb"><p>Tesla–SpaceX: what level of detail?</p>
+<label><input type="radio" name="fb4" value="Follow the merger closely"> Follow the merger closely</label>
+<label><input type="radio" name="fb4" value="Only filings and terms"> Only filings and terms</label>
+<label><input type="radio" name="fb4" value="Less Musk overall"> Less Musk overall</label></div>
+</article>
+
+<article id="s5">
+<h2>The US embassy in Ottawa publishes a fact sheet accusing Canadian ministers of planning to influence the midterms; Carney, Joly and Ford deny it</h2>
+<p class="meta"><span class="chip">US politics &amp; policy</span><span class="chip">World economy</span><span class="chip">Continuation</span><span class="chip conf c-single">Single-sourced</span></p>
+<p><strong>What happened.</strong> On Wednesday, the US Embassy in Ottawa released a fact sheet saying the Canadian government “brushes off concerns about potential interference in U.S. elections,” while its ministers and premiers “openly describe plans to influence American politics in official documents and public appearances” (BBC, quoting the document). The evidence it cites is <strong>trade politics, not covert action</strong>. It quotes Industry Minister Mélanie Joly, asked about tariffs if Democrats win the midterms, saying “that’s exactly why I’m meeting so many governors and potential presidential candidates.” It also cites Ontario Premier Doug Ford urging retaliatory tariffs aimed at states in “the current administration’s base of support.” Earlier this month, Ambassador Pete Hoekstra said US officials were “closely watching” Canadian politicians.</p>
+<p><strong>The answer.</strong> Prime Minister Mark Carney said the US started the trade actions and Canada’s responses protect Canadian jobs. He was speaking at the launch of a nearly <strong>C$9bn</strong> aid package for industries hit by US tariffs, with Joly and Ford beside him. Ford said he has “no interest at all” in interfering in US elections (BBC).</p>
+<p><strong>Why it matters.</strong> It is an official US document, issued 12 days before the election, that treats targeted retaliatory tariffs and meetings with opposition politicians as election interference. That stretches the term to cover what allies do in any trade war, and it gives Washington a frame to answer Canadian retaliation politically rather than at the WTO or under USMCA.</p>
+<p><strong>What to watch:</strong> whether State or the White House repeats the charge, and whether any measure follows (sanctions, visa limits, or a trade action citing interference).</p>
+<div class="div">
+<span class="t">Divergence: interference, or trade retaliation?</span>
+<p><b>Substance (significance).</b> The facts are not in dispute: Joly met US governors and candidates, and Ford urged tariffs aimed at politically significant states. The embassy calls this a plan to influence American politics. Canada calls it a response to US tariffs and an effort to attract investment.</p>
+<p><b>Cause.</b> Interest and timing. The embassy is speaking for an administration that has made foreign interference a midterm theme. Canada’s leaders are defending a retaliation strategy that is openly designed to hurt politically, the way tariffs targeted at bourbon or soybeans have always been. Joly’s quote is the strongest single piece of evidence. It links her meetings to a midterm outcome, but what she describes is lobbying, not covert action.</p>
+<p><b>What it means.</b> On the evidence in the fact sheet as reported, this is political trade retaliation of a kind allies have long used, not interference in the sense of covert or illegal influence. Nothing reported alleges spending, disinformation or contact with election systems. It would become something more if the US published evidence of Canadian money, advertising or FARA (foreign-agent registration) breaches. Until then, read it as trade-war escalation.</p>
+</div>
+<p class="sources">Sources: BBC (quoting the embassy fact sheet, Carney, Ford, and Joly via CBC); Al Jazeera (headline). <em>Independent accounts compared: 2, but only the BBC quotes the fact sheet, so the story is marked Single-sourced. The fact sheet itself was not reached on the embassy’s website this run. Claude’s Issue&nbsp;48 carries this below the line because it could not reach the document.</em></p>
+<div class="fb"><p>US–Canada: right weight?</p>
+<label><input type="radio" name="fb5" value="Right, lead when Washington escalates"> Right; lead when Washington escalates</label>
+<label><input type="radio" name="fb5" value="More: this is a core trade story"> More: this is a core trade story</label>
+<label><input type="radio" name="fb5" value="Less"> Less</label></div>
+</article>
+
+<article id="s6">
+<h2>DOJ starts telling counties it will monitor them on Election Day, in Florida among four other states, and didn’t tell the states first</h2>
+<p class="meta"><span class="chip">US politics &amp; policy</span><span class="chip new">New subject</span><span class="chip under">Underreported</span><span class="chip conf c-single">Single-sourced</span></p>
+<p><strong>What happened.</strong> The Justice Department began notifying counties this week that it wants to monitor them on 3&nbsp;November. So far they are in <strong>Colorado, Florida, Minnesota, Texas and Washington</strong>, and the list is still growing (NPR). Civil Rights Division head Harmeet Dhillon has said DOJ will send <strong>1,000 observers</strong>, “the largest monitoring effort” in its history. In 2022, the Biden DOJ monitored 64 jurisdictions in 24 states. A DOJ spokesperson says the full list will be shared “closer to the election.”</p>
+<p><strong>The departure from practice.</strong> In past cycles, states were notified at the same time as their counties. This time they were not, according to officials in three states, who say they have been scrambling since Tuesday to find out where DOJ will be. After NPR asked about it, several states then received notice (NPR). In Wyoming’s August primary, the Republican governor complained of “aggressive” and “irregular” behaviour by monitors, and the Republican Laramie County clerk said they showed “complete disregard” for state law. DOJ disputes that.</p>
+<p><strong>Why it matters.</strong> Monitoring is routine and lawful. The scale, the skipped state notice, and the administration’s stated aim of taking more control of elections are not routine. Florida is on the list, and early voting there began this week.</p>
+<p><strong>What to watch:</strong> which Florida counties were notified; any state that refuses monitors access to counting rooms; and the final list.</p>
+<div class="div">
+<span class="t">Divergence: why Adams County and not Weld?</span>
+<p><b>Substance (significance).</b> Adams County, Colorado, which includes part of the toss-up 8th District, was notified. Weld County, which covers much of the same district and has a Republican clerk, was not. Adams’ Democratic clerk says his first thought was that it is “politically motivated” and possibly intimidation. DOJ says Adams is covered by Section&nbsp;203 of the Voting Rights Act, which requires election materials in voters’ own languages, and Weld is not.</p>
+<p><b>Cause.</b> Both explanations fit the facts. Section&nbsp;203 coverage is a published, objective list, and it is a standard basis for monitoring. The clerk is a Democrat in a contested district who is reacting to an administration that has questioned mail ballots.</p>
+<p><b>What it means.</b> DOJ’s explanation can be checked, and on this pair it holds: Section&nbsp;203 coverage is real and does differ between the two counties. The test is the full list. If the notified counties track Section&nbsp;203 coverage and past practice, the clerk’s reading weakens. If they cluster in Democratic-run counties in competitive districts regardless of coverage, it strengthens.</p>
+</div>
+<p class="sources">Sources: NPR (Election Day monitoring; DOJ spokesperson Kiersten Pels; Adams County clerk Josh Zygielbaum). <em>Independent accounts compared: 1, plus DOJ’s on-record statements, so the story is marked Single-sourced. NBC’s Wyoming reporting is cited as relayed by NPR.</em></p>
+<div class="fb"><p>Federal role in the midterm (DOJ, FCC, CISA): follow it?</p>
+<label><input type="radio" name="fb6" value="Yes, lead on each concrete step"> Yes, lead on each concrete step</label>
+<label><input type="radio" name="fb6" value="One roundup before 3 Nov"> One roundup before 3&nbsp;Nov</label>
+<label><input type="radio" name="fb6" value="No"> No</label></div>
+</article>
+
+<article id="s7">
+<h2>A federal judge rules the EPA cannot dismiss a citizen suit over the gas turbines powering Musk’s Memphis data centre</h2>
+<p class="meta"><span class="chip">Energy &amp; grid</span><span class="chip">AI &amp; tech industry</span><span class="chip">US politics &amp; policy</span><span class="chip new">New fact</span><span class="chip conf c-single">Single-sourced</span></p>
+<p><strong>What happened.</strong> On Tuesday, US District Judge Debra Brown ruled that “nothing” in the Clean Air Act lets the EPA Administrator “unilaterally dismiss a citizen suit” (Ars Technica, quoting the order). The case is the NAACP’s suit, backed by Earthjustice, over unpermitted gas turbines powering the Colossus data centre in Memphis, which belongs to xAI, now SpaceXAI after its merger. The suit seeks the best available pollution controls and penalties of up to <strong>$124,426 per day per violation</strong>. The administration had argued that the EPA can end such suits whenever the President decides not to enforce, and that big penalties against AI firms racing to build would “not serve the public interest.” The judge called it an “extraordinary position.” She noted that the narrow exception the government relied on applies only when the EPA itself is enforcing, and the government has said it will not sue SpaceXAI.</p>
+<p><strong>Why it matters.</strong> Building off-grid gas generation and permitting it later has become a common way to get data centres running fast, and Colossus was the first case to expose it. Had the government won, it could have blocked every citizen suit over data-centre pollution, or any Clean Air Act suit at all. The ruling keeps private enforcement alive, so building first and permitting later now carries financial risk. That connects to lead&nbsp;3: credit desks say lenders want permitting risk settled before they lend.</p>
+<p><strong>What to watch:</strong> whether DOJ appeals to the Fifth Circuit; and whether other suits over data-centre turbines cite the ruling.</p>
+<p class="sources">Sources: Ars Technica (quoting Judge Brown’s order and Earthjustice’s release). <em>Independent accounts compared: 1, so the story is marked Single-sourced. The order itself was not read. Conflict noted: SpaceXAI is a competitor of this paper’s maker.</em></p>
+<div class="fb"><p>Data-centre pollution and permitting fights: lead or short item?</p>
+<label><input type="radio" name="fb7" value="Lead when a court or agency rules"> Lead when a court or agency rules</label>
+<label><input type="radio" name="fb7" value="Short item"> Short item</label>
+<label><input type="radio" name="fb7" value="Drop"> Drop</label></div>
+</article>
+
+<article id="s8">
+<h2>The big bond holders step back: Norway’s $2.3tn fund lost $29.7bn on bonds and plans to cut its Treasuries, France’s 10-year touched 5%, and the US 10-year sits at 5.13%</h2>
+<p class="meta"><span class="chip">US debt &amp; fiscal</span><span class="chip">Macro &amp; markets</span><span class="chip new">New fact</span><span class="chip conf c-pri">Primary source</span></p>
+<p><strong>The US curve (Treasury, read).</strong> Wednesday’s par yields: 2-year <strong>4.81%</strong>, 10-year <strong>5.13%</strong>, 20-year <strong>5.47%</strong>, 30-year <strong>5.42%</strong>. The 10-year is up one basis point on the day and four on the week. Its gap below the 20-year, +34 basis points, is the second straight narrowing after weeks at +38.</p>
+<p><strong>The holders.</strong> Norway’s sovereign fund, the world’s largest single investor, reported a third-quarter loss of <strong>278bn kroner ($29.7bn)</strong>. Its fixed income lost 3.5% and its equities returned 0.5% (CNBC). Last month it said it wants to <strong>cut its US Treasury holdings</strong> as part of a lower allocation to government debt. In Paris, the 10-year yield on French government bonds (OATs) crossed <strong>5%</strong> on Wednesday for the first time since 2002, then eased to about 4.98–4.99%, as riots and a stalled budget weigh on it (CNBC, Guardian). The Guardian reports that some Japanese fund managers have stopped lending to France altogether. France’s deficit was 5.1% of GDP last year and its debt 115.6%.</p>
+<p><strong>Why it matters.</strong> The marginal buyer of long-dated government debt is getting choosier everywhere. France shows what happens when a fiscal story and a political one coincide. Norway shows a giant holder deliberately trimming Treasuries. For a US curve already at 5.13% on the 10-year and 5.4% beyond 20 years, foreign appetite matters more at each auction.</p>
+<p><strong>What to watch:</strong> the bid-to-cover and indirect (foreign) share at next week’s 2-, 5- and 7-year auctions; and whether France forces its budget through without a vote under Article&nbsp;49.3, as its finance minister says it might.</p>
+<details><summary>Dig deeper</summary>
+<div class="exp"><p><strong>What this does not show.</strong> One fund’s plan to trim is not a buyers’ strike, and the US curve did not move on the Norwegian news. On Thursday the WSJ headlined “French government-bond yields jump, spread widens as Treasury yields fall,” which suggests that money leaving euro debt has so far been going <em>into</em> Treasuries, not out of them. The case for watching is about structure: Norway, Japanese managers and others are saying out loud that they want less sovereign duration. On Treasury’s numbers, the US now pays more than 5% for 10-year money while that is happening.</p>
+<p><strong>A claim this paper is not repeating.</strong> CNBC’s NBIM story says major central banks “including the U.S. Federal Reserve began rate-hiking cycles” in the third quarter. This paper has not verified a Fed hike in that period against a Fed statement, so it is not repeated as fact.</p></div></details>
+<p class="sources">Sources: Treasury Daily Par Yield Curve CSV (21&nbsp;Oct row, read); CNBC (NBIM Q3; French OAT); Guardian (French borrowing costs); WSJ (headline); France 24 (headline). <em>Independent accounts compared: 4, plus Treasury’s series.</em></p>
+<div class="fb"><p>Foreign demand for Treasuries: lead when it moves, or fold into the rates item?</p>
+<label><input type="radio" name="fb8" value="Lead when it moves"> Lead when it moves</label>
+<label><input type="radio" name="fb8" value="Fold into rates"> Fold into rates</label>
+<label><input type="radio" name="fb8" value="Less Europe"> Less Europe</label></div>
+</article>
+
+<h2 class="section" id="also">Also today</h2>
+<p class="secnote">9 items. Ranked below the line; each opens. Confidence markers sit inside each expansion.</p>
+<div class="also-list">
+<details id="a1"><summary>US politics &amp; policy · A New Mexico judge orders Meta to pay $25bn after a jury found it misled users over data access, five times the FTC’s 2019 record.</summary>
+<div class="exp"><p><span class="chip conf c-ic">Independent corroboration</span></p><p>State District Judge Francis Mathew entered the judgment on Wednesday for more than 43 million violations of New Mexico’s consumer-protection law. The case grew out of Cambridge Analytica (BBC, CNBC, TechCrunch, France 24, Al Jazeera all agree on the figure). The penalty is counted per violation, which is how a state of about 2.1 million people produces a number of this size, and it is the obvious target for appeal. Meta argues no New Mexican was shown to have seen the statements or been harmed. Meta’s Q3 call flagged “a number of youth-related trials” in the coming months, and Australia has filed a separate suit over harm to children (Al Jazeera). <em>Below the line because:</em> neither this paper nor Claude has read the judgment or the per-violation amount, Claude’s Issue&nbsp;48 leads it in full with a divergence box, and the question that decides it, remittitur or appeal, is months away. <em>Sources: BBC, CNBC, TechCrunch, France 24, Al Jazeera.</em></p></div></details>
+
+<details id="a2"><summary>Geopolitics · Witkoff calls Putin “a humanitarian” as Russia frees Stephen Hubbard; hours later Russian missiles, one reportedly carrying a cluster warhead, hit Kyiv.</summary>
+<div class="exp"><p><span class="chip conf c-ic">Independent corroboration</span></p><p>Putin released Hubbard, a 74-year-old former teacher, unilaterally and without a swap, and the Kremlin agreed “in principle” to technical-level three-way talks (Guardian, CBS, Al Jazeera). Witkoff also thanked Putin for the diesel deal. Overnight, Russia fired 21 missiles and 210 drones. A presidential adviser says one Iskander carried a K5 cluster warhead, and Russia aimed at Kyiv substations (Kyiv Independent). Ukraine sent about 630 drones at the Moscow region (Sobyanin via Al Jazeera). <em>Divergence on the toll (facts, scope and timing):</em> Kyiv prosecutors say 1 killed and 24 injured, the emergency service says 1 and 22, and Zelensky says 2 killed and 34 injured. Zelensky’s figure includes Kyiv <em>Oblast</em>, the surrounding region, as well as the city, and the counts were published hours apart. Use Zelensky’s figure for the region and the prosecutors’ for the city. <em>Below the line because:</em> the talks have no text, and the Ukraine balance is set by the config. It leads if the technical talks get a date. <em>Sources: Guardian, CBS, Al Jazeera, Kyiv Independent, France 24.</em></p></div></details>
+
+<details id="a3"><summary>AI &amp; tech industry · Rubio says Ukraine’s Starlink access is Musk’s decision; Reuters’ officials say it came from the White House.</summary>
+<div class="exp"><p><span class="chip conf c-ic">Independent corroboration</span></p><p>The Starshield slowdown capped service at 160 km/h, which broke the guidance of Ukraine’s fast interceptor drones, according to Zelensky adviser Serhii Beskrestnov. Rubio now puts the decision with SpaceX (AP/Reuters via Al Jazeera), and Trump says he doesn’t know who ordered it (CNBC). <em>Divergence (facts):</em> the WSJ says Musk ordered it. Reuters, quoting two US officials and a Western official, says the decision came from the White House, and Zelensky agrees with that version. Musk himself suggested Washington. Each account comes from a party with a reason to place the blame elsewhere, except Reuters’ Western official. The evidence leans toward a decision made jointly and now disowned by both sides. A SpaceX or administration document would settle it. <em>Below the line because:</em> Claude leads it today, and there has been no new document. <em>Sources: Al Jazeera, CNBC, WSJ (relayed), Reuters (relayed), BBC.</em></p></div></details>
+
+<details id="a4"><summary>US politics &amp; policy · FCC Chair Carr warns broadcasters that airing “fake polls” could breach news-distortion rules; two former chairs, one from each party, say the FCC has no such authority.</summary>
+<div class="exp"><p><span class="chip conf c-ic">Independent corroboration</span></p><p>The trigger was “Wedgewood Polls,” which admitted fabricating data that aggregators including the New York Times had picked up. Carr’s post named no poll and no broadcaster (Ars Technica). Former chairs Tom Wheeler (D) and Mark Fowler (R), with seven former officials, call it an attempt to scare broadcasters into self-censorship. Commissioner Anna Gomez says good-faith reporting of public polls is not a hoax. <em>Divergence (significance):</em> Carr presents it as consumer protection. The former chairs see a pattern, given his probe of ABC’s stations. The aggregators that ran the polls hold no FCC licences, so the warning reaches only broadcasters who reported the aggregators, which supports the former chairs’ reading. It would become a lead if an investigation is opened. <em>Below the line because:</em> it is a warning with no proceeding behind it. <em>Sources: Ars Technica (quoting Carr, the former officials’ statement and Gomez).</em></p></div></details>
+
+<details id="a5"><summary>AI &amp; tech industry · Google DeepMind researchers are resigning over military AI contracts, one speaking out despite her contract.</summary>
+<div class="exp"><p><span class="chip conf c-single">Single-sourced</span></p><p>London research engineer Sofia Liguori told the BBC that Google’s push into military AI makes her “ashamed to work at Google.” The BBC says it has spoken to several others who have left or are leaving. Google says it reviews public-sector contracts against its AI principles and has channels for raising concerns without retaliation. <em>Below the line because:</em> resignations are personnel news unless they change a contract or a policy, and the BBC gives no count. It would lead on a policy change or a named contract. <em>Sources: BBC.</em></p></div></details>
+
+<details id="a6"><summary>US financials · Barclays will cut 5,000 jobs, about 5% of staff, and calls AI “the icing on the cake, not the cake.”</summary>
+<div class="exp"><p><span class="chip conf c-ic">Independent corroboration</span></p><p>1,000 posts have already gone and 4,000 more go by year-end, mostly in UK retail banking and back-office work in India. Q3 profit was £2.3bn, up on the year but slightly below forecast (BBC, CNBC). Chief executive C.&nbsp;S. Venkatakrishnan says the cuts come from a three-year modernisation, with AI to be used “at scale.” The point for US bank-watchers is the framing: a large bank is publicly attributing job cuts partly to AI while playing down AI’s share. That is the first test of whether AI savings are real or a relabelling of old cost programmes. <em>Below the line because:</em> it is a foreign bank with no direct US channel, and the AI share of the cuts is unquantified. <em>Sources: BBC, CNBC.</em></p></div></details>
+
+<details id="a7"><summary>Energy &amp; grid · Holtec’s two-unit SMR-300 at Palisades, Michigan, has its first construction application, including a limited work authorisation, on public notice at the NRC.</summary>
+<div class="exp"><p><span class="chip conf c-pri">Primary source</span></p><p>Today’s Federal Register carries the fourth and last weekly NRC notice that it has received the first part of a phased construction permit application. The applicant is Palisades SMR, a Holtec subsidiary, for “Pioneer Units 1 and 2” at the Palisades Energy Center in Covert, Michigan, and the application includes a limited work authorisation request (FR 2026-21588). A separate notice today records a one-time licence amendment at the restarted Palisades reactor to move a fuel assembly by a non-standard route (FR 2026-21594). An LWA lets some site work begin before the full construction permit. It is the regulatory step that turns small-reactor plans into poured concrete. <em>Below the line because:</em> this is notice of an application, not an NRC decision. It leads when the NRC dockets the application or rules on the LWA. <em>Sources: Federal Register, 22&nbsp;Oct.</em></p></div></details>
+
+<details id="a8"><summary>US politics &amp; policy · CBP delays the formal-entry rules for mail parcels under the de minimis suspension, and modifies the test of its new postal entry process.</summary>
+<div class="exp"><p><span class="chip conf c-pri">Primary source</span></p><p>CBP extends the compliance date for its 24&nbsp;June rule requiring formal entry for international mail that is dutiable under Chapters 98 and 99, subject to other agencies’ requirements, or claiming free-trade-agreement treatment. It says “the public will benefit from more time” (FR 2026-21600). A companion notice changes the test of the electronic informal-entry process for mail (FR 2026-21570). Claude’s Issue&nbsp;48 puts the new date at 20&nbsp;January. This paper read only the abstract and did not verify that date. <em>Below the line because:</em> it is a delay in machinery that is already law, and the tariff liability itself is unchanged. <em>Sources: Federal Register, 22&nbsp;Oct.</em></p></div></details>
+
+<details id="a9"><summary>Science &amp; public health · An executive order creates a women’s health division at NIH within 90 days and a White House task force above it.</summary>
+<div class="exp"><p><span class="chip conf c-pri">Primary source</span></p><p>“Advancing Women’s Health To Improve Outcomes in All Phases of Life” is printed today (FR 2026-21666). Claude’s Issue&nbsp;48 read the full order and reports the 90-day deadline, a task force co-chaired by the HHS Secretary and the White House Chief of Staff, and the absence of any new appropriation. This paper read the register entry and Claude’s account, not the full PDF. The sceptical reading is that a division without money competes with existing institutes for grants. <em>Below the line because:</em> it is a reorganisation that adds no dollars, and Claude leads it with the full text. <em>Sources: Federal Register, 22&nbsp;Oct; Claude Issue&nbsp;48.</em></p></div></details>
+<div class="fb"><p>Did the right things land below the line today?</p>
+<label><input type="radio" name="fbA" value="Yes"> Yes</label>
+<label><input type="radio" name="fbA" value="Meta verdict should have led"> The Meta verdict should have led</label>
+<label><input type="radio" name="fbA" value="Ukraine items should have led"> Ukraine items should have led</label>
+<label><input type="radio" name="fbA" value="Too many items"> Too many items</label></div>
+</div>
+
+<h2 class="section" id="fl">Florida &amp; Tampa Bay</h2>
+<p class="secnote">Local bar. Two items cleared it.</p>
+<div class="also-list">
+<details id="f1"><summary>The PHP flaw took down voter-lookup tools across Florida on the first days of early voting; voter rolls and voting itself are unaffected, the vendor says.</summary>
+<div class="exp"><p><span class="chip conf c-single">Single-sourced</span></p><p>VR Systems, the Tallahassee firm behind many county supervisor-of-elections sites, took some public lookup tools offline at 10&nbsp;a.m. Wednesday in response to the PHP warnings (lead&nbsp;2). In Sarasota, voters could not see sample ballots or find polling places. Volunteers in Manatee were reduced to pointing voters at district maps (Suncoast Searchlight via WUSF). COO Ben Martin says it “does not affect the ability to vote” or the voter rolls, and gave no restoration time. The state’s own registration lookup appeared to be working. <em>For Pasco and Pinellas voters:</em> check your polling place by phone with the county supervisor’s office if the website tool is down. This paper did not confirm whether Pasco’s or Pinellas’ tools were affected. <em>Sources: Suncoast Searchlight via WUSF.</em></p></div></details>
+<details id="f2"><summary>Florida family physicians petition to block the Health Department’s repeal of four school-vaccine requirements, arguing the rulemaking ran past its legal deadline.</summary>
+<div class="exp"><p><span class="chip conf c-single">Single-sourced</span></p><p>The Florida Academy of Family Physicians, joined by a Jacksonville doctor, an immunocompromised patient and a school nurse, filed with the Division of Administrative Hearings on Friday. They challenge the repeal of requirements for hepatitis&nbsp;B, chickenpox, Hib and pneumococcal vaccines. They argue the department let the rulemaking sit for 225 days against a 180-day limit without the required quarterly explanations, and that Surgeon General Ladapo’s “philosophical beliefs” cannot override the department’s statutory duty (WUSF). The requirements are an agency rule, so the department can repeal them without the Legislature, which this year rejected ending all mandates. <em>Why it clears the local bar:</em> it decides what Pasco and Pinellas schools may require from next year. <em>Sources: WUSF / Health News Florida.</em></p></div></details>
+</div>
+
+<footer>
+<p class="dorm"><strong>Dormant / not checked for movement today:</strong> UAP disclosure (no new paperwork found in today’s register or feeds); CFTC event contracts; Ebola entry order (Claude carries Nigeria’s sequencing); Fed (no print or decision today).</p>
+<p>Issue No. 48-grok · 22 October 2026 · Grok edition for MAGA Mickey · Written by Grok Bot / News Bot · Archive: <a href="https://historiocity.github.io/News-Agent/">historiocity.github.io/News-Agent</a> · Skill reads <code>config.md</code> every run.</p>
+<p><strong>Source comparison this issue:</strong> 19 confidence markers, one for each of the 19 stories (8 leads, 9 Also today, 2 Florida): 4 Primary source · 9 Independent corroboration · 6 Single-sourced · 0 Unconfirmed. One more Unconfirmed tag is inline, on the IRGC’s seven-ships claim in lead&nbsp;1. <strong>Divergence boxes:</strong> 9 boxed, in leads 1 (three), 2 (two), 3, 4, 5 and 6, plus 3 short divergence analyses inside Also-today items 2, 3 and 4, for 12 in all. For comparison: Claude’s Issue&nbsp;48 today has 13 stories with markers and 2 divergence boxes, and Issue&nbsp;10 (2026-09-10b) had 18 markers and 3 boxes.</p>
+<p><strong>Sources checked this run (42):</strong> BBC (World, Business, Tech, US &amp; Canada), Al Jazeera, NPR (News, Politics), CNBC (Top, Finance, Tech, Politics), Guardian (World, US, Business, Tech), Ars Technica, The Verge, TechCrunch, The Hill, Politico, STAT, gCaptain, Federal Reserve, SEC, WUSF, Tampa Bay Times, OpenAI News, DW, France 24, CBS, ABC, WSJ Markets, FT, SCOTUSblog, Lawfare, OilPrice, Kyiv Independent, CNN, the Federal Register API, Treasury’s par-yield CSV, AAA and EIA. Not reachable or not read in full: The Hill’s article pages (empty fetch), the WSJ and FT (paywalls; headlines only), the US Embassy Ottawa fact sheet (not found on the site), EIA’s weekly distillate-stocks page (it did not parse), and Tesla’s deck and the Meta judgment (not read). Bloomberg articles were read through gCaptain’s licensed reprints. Conflicts disclosed in leads 2, 3 and 7.</p>
+<p class="submit"><button type="button" id="send">Send feedback as a GitHub issue</button></p>
+</footer>
+</div>
+<script>
+(function () {
+ var OWNER = "historiocity", REPO = "News-Agent";
+ var btn = document.getElementById("send");
+ if (!btn) return;
+ btn.addEventListener("click", function () {
+ var lines = [], answered = 0;
+ document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+ answered++;
+ var q = i.closest(".fb").querySelector("p");
+ lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n → **" + i.value + "**");
+ });
+ if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+ var body = "Feedback on **Issue No. 48-grok — 22 October 2026, Grok edition**\n\n" + lines.join("\n")
+ + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+ window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+ + "&title=" + encodeURIComponent("Brief feedback — 2026-10-22-grok")
+ + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+ });
+})();
+</script>
+</body>
+</html>
