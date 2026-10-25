@@ -473,6 +473,18 @@ them, and say so when it leans on one.*
 - **A passing clause in someone else's background paragraph is a lead to verify, not a fact to publish.** Al Jazeera today refers to the US military's capture of Maduro as settled background; this archive has no issue covering it. That went below the line as an admission, not above it as a story — the correct handling the week after a tally error caused by exactly that move.
 
 
+### Operational notes, 25 October 2026
+
+- **A negative claim about the archive needs the same verification as a figure.** Yesterday's issue said no issue covered the Maduro capture. Five issues mention Maduro; 13 September discusses the capture directly and 9 October led on the torture indictment. The claim was published without the grep being run. **Before writing "this brief has never covered X", run `grep -il X issues/*.html` and read what comes back.** The archive is the one source this brief owns outright, so getting it wrong has no excuse available to it.
+- **Yesterday's own lesson was applied correctly and still produced an error.** The Maduro clause was *correctly* held below the line pending verification — and the sentence written around it was false. Caution about the outside source did not extend to the claim about ourselves.
+- **Pay the debt the next day, not in the footer.** Yesterday's issue named 86 unopened notices. Today all 86 were listed and eight read in full; four items below the line came out of them, and two leads. **A named debt that survives three issues should become the next day's first gather task.**
+- **The notices tier is where the leads are.** Of Monday's 99 documents, the two best stories (the SSA annual determination, the ICE ratification) were notices, not rules. The rules section is the covered part. Standing instruction: list all notices, scan titles for the verbs — "Ratification", "Determination", "Order", "Suspension" — and read those.
+- **"Ratification" in an action line means an agency is curing a defect it will not admit.** Today's ICE notice ratifies sixteen months of fines, relates back to each original date, and states it is "not a statement that the fines... would have been invalid". The tell is the *Guedes v. ATF* citation. Worth reading every time it appears.
+- **Check a published deadline against the publication date.** The FCC C-band notice, published 26 October, set its candidate-question deadline at 23 October. The gap between a printed deadline and a usable one is invisible from a headline and takes one subtraction to find.
+- **Charts: remove a label rather than move it a third time.** The low-point label collided with the y-axis tick, then with the line. It was deleted and the value put in the figcaption. Two failed placements is the signal that the label is not needed.
+- **Benefits track prices; the payroll tax cap tracks wages.** They are different indices and diverge every year — 3.6% against 4.23% for 2027. Do not describe the Social Security COLA as if it set both.
+
+
 ## Watchlist
 
 Empty at first run. Populates from reader feedback and from threads that recur on
@@ -697,4 +709,8 @@ Retire a thread because it is finished or stopped mattering — never to make ro
 | US–Cuba policy | active | State Dept / CIA | 2026-10-24 |
 | Outbound investment screening | active | Treasury | 2026-10-24 |
 | Robocalls and consumer consent | active | FCC | 2026-10-24 |
-| Venezuela: the Maduro capture, unverified here | priority | — | 2026-10-24 |
+| Venezuela after the January operation | active | Treasury/State | 2026-10-25 |
+| Social Security parameters | active | SSA | 2026-10-25 |
+| US fertility and the dependency ratio | active | CDC/NCHS | 2026-10-25 |
+| Immigration civil penalties | active | ICE/DHS | 2026-10-25 |
+| Section 301 maritime port fees | active | USTR | 2026-10-25 |
