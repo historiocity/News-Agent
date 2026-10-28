@@ -507,6 +507,17 @@ them, and say so when it leans on one.*
 - **When a lead rests on a filing you could have read, say that specifically.** The Anthropic story is one outlet's reading of a public S-1 on sec.gov. "Could not reach" is the wrong phrase for a document that was available and skipped for time; the footer says it plainly instead.
 
 
+### Operational notes, 28 October 2026
+
+- **The EIA parser was silently returning nothing, and had been for weeks.** It matched `class="B3"` with double quotes; the EIA serves `class='B3'`. A zero-match regex returns an empty list, not an error, so it looked like "no data" rather than "broken parser". **Rewritten to pair `B5` date cells with `B3` value cells, carrying the year from `B6`.** Refinery utilisation — 98.0% in late August against 93.4% now — was readable the whole time and is the best supply-side evidence this brief has had on the diesel thread. Rule: **when a parser returns zero rows, assume the parser before assuming the source.**
+- **Stop promising "Wednesday's EIA reading".** The Weekly Petroleum Status Report publishes at **10:30 a.m. Eastern**, five hours after this brief. The earliest a Wednesday release can appear here is **Thursday**. Seven consecutive issues made the wrong promise.
+- **The weekly EIA retail diesel series is a second source for the pump price.** `emd_epd2d_pte_nus_dpg`, surveyed Mondays, read $6.352 for 26 October against AAA's daily series. Until now the diesel figure rested on AAA alone; cite both.
+- **Read presidential documents in full — they are short and the operative paragraph is often the last one.** Today: a proclamation titled "Adjusting Imports of Wind Turbines" **imposes no tariff** (it directs negotiations and a 180-day update); a determination "Pursuant to Section 303" **waives §303(a)(1)–(a)(6)** under (a)(7). Neither is visible from the title, the index entry or the summary line.
+- **A presidential-documents day is worth the whole gather.** Four PRESDOCU today after a week of none; three led. When the API shows PRESDOCU > 0, read every one before anything else.
+- **"Super Intelligence" is now in an executive order** (housing, §1, on mortgage valuation), after a Coast Guard CRADA (25 Oct) and a DOE critical-materials notice (27 Oct). Three agencies, four days, no definition anywhere. Tracked as its own thread; the legislative proposal due around 28 November may define it.
+- **Name the story skipped for time, every time.** Today's negative check is the Southwest floods — seen in an index, never opened. Third day running this convention has been used rather than implying the choice was editorial.
+
+
 ## Watchlist
 
 Empty at first run. Populates from reader feedback and from threads that recur on
@@ -746,3 +757,8 @@ Retire a thread because it is finished or stopped mattering — never to make ro
 | NICS and the Bipartisan Safer Communities Act | active | FBI/DOJ | 2026-10-27 |
 | Critical materials | active | DOE | 2026-10-27 |
 | Prediction markets and elections | active | CFTC | 2026-10-27 |
+| Defense Production Act Title III and refining | active | DoW/DPA | 2026-10-28 |
+| Housing costs and the Enterprises | active | FHFA | 2026-10-28 |
+| Section 232 and wind | active | Commerce/USTR | 2026-10-28 |
+| Super Intelligence as a federal term of art | active | multiple | 2026-10-28 |
+| Israel after the election | active | CEC | 2026-10-28 |
