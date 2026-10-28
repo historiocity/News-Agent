@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Wednesday, 28 October 2026 (Grok edition)</title>
+<style>
+:root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+@media (prefers-color-scheme: dark) {
+:root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+.wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+.kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+.sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+.prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+nav ol { margin:0; padding-left:1.2rem; }
+nav li { margin:.25rem 0; }
+nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+a { color:var(--link); }
+article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+.secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+.meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+.chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+.chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+.chip.under { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+.sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+.div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+.div p { margin:.4rem 0; }
+.div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+.corr { background:var(--box); border-left:4px solid var(--accent); padding:.8rem 1rem; margin:0 0 1.6rem; font-size:.95rem; }
+.corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+.corr p { margin:.45rem 0; }
+details { margin-top:.8rem; }
+details summary { cursor:pointer; color:var(--link); }
+.exp { margin-top:.6rem; }
+.also-list { margin:0; }
+.also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+.also-list details:first-of-type { border-top:1px solid var(--rule); }
+.also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+.also-list .exp { font-size:.94rem; padding-left:.2rem; }
+footer { color:var(--muted); font-size:.88rem; }
+.fb { margin-top:1rem; font-size:.9rem; }
+.fb p { margin:.6rem 0 .2rem; }
+.fb label { display:block; margin:.15rem 0; }
+.submit { margin-top:2rem; }
+button { font:inherit; padding:.45rem .8rem; }
+ul.dorm { margin:.4rem 0 0; padding-left:1.2rem; }
+ul.dorm li { margin:.3rem 0; }
+.chip.single{background:#fff4e0;border-color:#d9a441;color:#7a5200}
+.chip.conf { font-weight:600; }
+.chip.c-pri { background:#e3efe3; color:#24572a; }
+.chip.c-ic { background:#e2ebf5; color:#1c4f8a; }
+.chip.c-single { background:#fff4e0; color:#7a5200; }
+.chip.c-unconf { background:#f6e1dc; color:#8a3324; }
+@media (prefers-color-scheme: dark) { .chip.c-pri{background:#1f3322;color:#9fd3a5} .chip.c-ic{background:#1d2a3a;color:#8ab4e8} .chip.c-single{background:#3a2e17;color:#e8c27a} .chip.c-unconf{background:#3a201b;color:#d98b76} }
+.exp .div { margin:.7rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<p class="kicker">Issue No. 54-grok · Wednesday, 28 October 2026 · Grok edition</p>
+<h1>The Brief</h1>
+<p class="sub">For MAGA Mickey · America/New_York · Source-led morning paper · Market levels are early-Wednesday quotes unless marked otherwise · The Fed decides at 2&nbsp;p.m. Eastern, after this paper; by the reader’s rule there is no Fed item until the decision</p>
+<p class="sub"><em>Wednesday’s paper: Yemen’s Houthis say they hit Saudi Arabia’s largest refinery and Riyadh says it shot the missiles down, while diesel at the pump rises for a second week as petrol falls. The Pentagon’s own war bill reaches $47.1bn. OpenAI and Anthropic each claim their models broke a 27-year-old limit on computation, and nobody outside has checked. A grand jury, a magistrate and a district judge each refused the Justice Department on the same day. And a correction to this morning’s other edition: “Super Intelligence” is defined in federal law, as plain AI.</em></p>
+<p class="prov"><strong>Provenance.</strong> 45 sources checked. 9 are primary or official: the Federal Register (API listing for today plus full texts of Presidential Determination 2027-01, SEC exemption 2026-21931, the NRC, FDA and DEA notices, and Executive Order 14434), EPA’s pre-publication methane proposal and release, Treasury’s par-yield CSV (latest row 27&nbsp;Oct, columns by header), AAA’s national averages (loaded directly today), EIA’s weekly retail table (parsed this morning, week of 26&nbsp;Oct), NIST’s CAISSI pages, HM Treasury’s 24&nbsp;October release on GOV.UK, GE Vernova’s release and Ripple’s release. 21 news, trade and specialist outlets were read in full or substantially: CNBC, CBS News, BBC, DW, the Guardian, Handelsblatt, Semafor, OilPrice, The Verge, TechCrunch, Business Insider, Ars Technica, The Register, Nikkei Asia, NPR, WUSF, WTSP, gCaptain, ABC News, SCOTUSblog and Al Jazeera. 15 more were used for headlines only and are labelled so where used: FT, WSJ, NYT, Axios, The Hill (its pages would not load), Politico, SCMP, Le Monde, CNN, Kyiv Independent, Tampa Bay Times, The Block, Banking Dive, France 24 and Bloomberg (as relayed by OilPrice). <strong>37 of the 45 are sources no active thread points at.</strong> The 8 watchlist sources are the Federal Register, Treasury, AAA, EIA, NPR, Al Jazeera, gCaptain and WUSF. <strong>Leads:</strong> 5 new subjects (the ETH claims, the memory-and-grid squeeze, the AI-security budgets, the grand-jury and judicial refusals, the payments perimeter) and 4 continuations with a new fact (oil chain, war bill and DPA, methane, Bolsonaro). <strong>Independent accounts compared per lead:</strong> oil 6 plus AAA and EIA · war bill 3 plus the determination · ETH 4 · memory and grid 6 plus the GEV release · AI security 2 plus three primary documents · methane 4 plus the proposal · Justice Department 6 · Bolsonaro 6 plus Argentina’s statement as reported · payments 3 plus the SEC order and Ripple’s release. <strong>Negative check:</strong> the biggest story not led on is the Southwest flooding (the San Juan River at Farmington went from 3.5 to 14 feet; 200–300 rescues). This paper opened it, unlike the Claude edition, and kept it below the line: a serious domestic disaster with no federal-policy turn yet. The UK Budget and the Spanish rail crash have no US channel by themselves. The check did reshape one lead: Britain’s AI-security money was pulled out of the Budget coverage and set against the US institute, which is the US channel, and that comparison turned up the error in the other edition’s “Super Intelligence” item.</p>
+</header>
+<nav>
+<ol>
+<li><a href="#s1">The oil chain: a claimed hit on Ras Tanura, missiles Riyadh says it stopped, and diesel up again at the pump</a></li>
+<li><a href="#s2">The Pentagon’s war bill reaches $47.1bn, and the refinery money comes with Congress’s conditions waived</a></li>
+<li><a href="#s3">OpenAI and Anthropic both say their models broke a 27-year-old limit on fast computation; nobody outside has checked</a></li>
+<li><a href="#s4">Memory is sold out to 2030, Google rents its chips through Oracle, and GE Vernova pays $9bn for grid hardware</a></li>
+<li><a href="#s5">Britain adds £120m to its AI testing lab; America’s runs on about $10–15m and is now named for “Super Intelligence”</a></li>
+<li><a href="#s6">Trump said “terminating”; the EPA’s methane document is a proposal with a 48-day comment clock</a></li>
+<li><a href="#s7">A grand jury, a magistrate and a district judge each refused the Justice Department on the same day</a></li>
+<li><a href="#s8">The US says it will admit Flávio Bolsonaro; nobody can yet say where he is</a></li>
+<li><a href="#s9">The payments perimeter moves: Ripple’s federal trust bank, a second options clearinghouse, the CFTC on Polymarket and Utah</a></li>
+</ol>
+<p class="also"><a href="#also">Also today</a> · <a href="#local">Florida &amp; Tampa Bay</a> · <a href="#threads">Threads &amp; accountability</a></p>
+</nav>
+
+<article id="s1">
+<h2>The oil chain: a claimed hit on Ras Tanura, missiles Riyadh says it stopped, and diesel up again at the pump</h2>
+<p class="meta"><span class="chip">Energy &amp; grid</span><span class="chip">Geopolitics</span><span class="chip">Macro &amp; markets</span><span class="chip">Continuation</span><span class="chip conf c-ic">Independent corroboration</span></p>
+<p><strong>The strike.</strong> Yemen’s Houthis said on Tuesday they had hit Saudi Aramco’s Ras Tanura refinery, 550,000 barrels a day and the kingdom’s largest, with a ballistic missile. Saudi authorities say they intercepted three ballistic missiles fired at the Eastern Province and four drones aimed at the south. Two more missiles were intercepted over Riyadh, where debris damaged a building (Saudi Civil Defense via AP, as reported by OilPrice). A source told Bloomberg that a fire near the Ras Tanura facilities was contained. No Saudi statement confirms damage to the refinery itself.</p>
+<p><strong>The price.</strong> Brent traded at <strong>$115.70</strong> early in Asian hours on Wednesday, up 1.6%, and WTI at $101.20 (OilPrice). That undoes most of Tuesday’s fall of nearly $2, which came on hopes for the Saudi, Turkish and Pakistani talks in Tehran. Two pieces of news point the other way. The WSJ reports that Washington has told Gulf states to prepare for a short, intense campaign against Iran after 3&nbsp;November. CBS reports that Qatari mediators have handed Iran a new proposal (headline only). ING says that if election day passes without strikes, the risk premium may start to erode. Its read on diesel: the gasoil crack has fallen to about $70 a barrel, the lowest since early October.</p>
+<p><strong>At the pump.</strong> AAA’s Wednesday averages are <strong>regular $4.247</strong> (down 1.9&cent; on the day) and <strong>diesel $6.350</strong> (down 0.2&cent;; $3.674 a year ago). EIA’s Monday survey shows the direction better, and it shows the two fuels splitting. Diesel rose for a second week, $6.179 → $6.276 → <strong>$6.352</strong>, while regular kept falling to $4.269. The diesel premium is back to $2.08, from $1.85 three weeks ago. Freight, farm and transit costs follow diesel, not petrol.</p>
+<figure style="margin:1rem 0">
+<svg viewBox="0 0 600 175" width="100%" role="img" aria-label="EIA weekly diesel minus regular gasoline spread, 21 Sep to 26 Oct 2026" style="max-width:600px;font-family:inherit;font-size:11px">
+<line x1="40" y1="140" x2="560" y2="140" stroke="#bbb"/>
+<polyline fill="none" stroke="#8a3324" stroke-width="2" points="60,48 150,97 240,124 330,122 420,70 510,36"/>
+<g fill="#8a3324"><circle cx="60" cy="48" r="3"/><circle cx="150" cy="97" r="3"/><circle cx="240" cy="124" r="3"/><circle cx="330" cy="122" r="3"/><circle cx="420" cy="70" r="3"/><circle cx="510" cy="36" r="3"/></g>
+<g fill="currentColor" text-anchor="middle"><text x="60" y="40">$2.05</text><text x="150" y="89">$1.92</text><text x="240" y="116">$1.85</text><text x="330" y="114">$1.85</text><text x="420" y="62">$1.99</text><text x="510" y="28">$2.08</text>
+<text x="60" y="156">21 Sep</text><text x="150" y="156">28 Sep</text><text x="240" y="156">5 Oct</text><text x="330" y="156">12 Oct</text><text x="420" y="156">19 Oct</text><text x="510" y="156">26 Oct</text></g>
+<text x="40" y="172" fill="currentColor">Diesel minus regular, US average retail, $/gal. Diesel $6.529 → $6.199 → $6.352; regular $4.478 → $4.269.</text>
+</svg>
+<figcaption style="font-size:.85rem;color:var(--muted)">Source: EIA Gasoline and Diesel Fuel Update, weekly table, read 28 Oct. Official series, not a market quote.</figcaption>
+</figure>
+<p><strong>Supply response.</strong> Energy Secretary Chris Wright told CNBC that more Russian diesel is “quite possibly” coming, depending on Moscow’s behaviour. He called it a carrot. The waiver covers 800,000 tonnes for October and November, plus another million tonnes. API estimates that US distillate stocks rose 0.38m barrels in the week to 23 October, crude fell 2.03m and the SPR fell to 282.6m. EIA’s official figures publish at 10:30 a.m., after this paper, and will be read tomorrow. The refining determination published today is in lead&nbsp;2.</p>
+<div class="div"><span class="t">Divergence A — was Ras Tanura hit?</span>
+<p><b>Substance (facts).</b> Semafor’s headline states it as an event: the Houthis “attack Saudi Arabia’s largest oil refinery”. OilPrice says Saudi authorities have not confirmed a direct hit and there is no independent evidence of extensive damage. Bloomberg’s source mentions only a contained fire “near” the facilities.</p>
+<p><b>Cause.</b> Timing and interest, mundane first. Semafor’s headline was written from the Houthi claim before the Saudi statements came out. Both combatants have a motive: the Houthis to claim, Riyadh to minimise.</p>
+<p><b>What it means.</b> The evidence supports this much: missiles were fired at the Eastern Province, and there was at least one fire near Ras Tanura, but no confirmed loss of refining. The morning’s price move is about risk, not lost barrels. It would be settled by an Aramco statement, commercial satellite imagery, or loading data from the Ras Tanura terminal over the next few days.</p></div>
+<div class="div"><span class="t">Divergence B — which Russian cargo arrives first?</span>
+<p><b>Substance (facts, timing).</b> On 25 and 27 October this paper reported, from gCaptain, that the <em>PVT Azura</em> was signalling Norfolk for 2 November. CNBC today, citing MarineTraffic, names the <em>Talisman</em>, due on the East Coast on 9 November, and the <em>Leruo</em>, bound for the “Atlantic Coast”. It does not mention the <em>Azura</em>.</p>
+<p><b>Cause.</b> Different tracking feeds and self-declared AIS destinations, which change often. It is probably not a contradiction, because each outlet lists the ships its own tracker flagged.</p>
+<p><b>What it means.</b> Treat the 2 November date at Norfolk as unconfirmed until a port call is logged. Every one of these dates falls around or after election day. The Norfolk arrival record on 2–3 November will settle it.</p></div>
+<div class="div"><span class="t">Divergence C — does the Russian diesel matter?</span>
+<p><b>Substance (significance).</b> Analysts quoted by CNBC say the volumes are too small to move US prices. ING notes that the gasoil crack fell on the news anyway.</p>
+<p><b>Cause.</b> They are measuring different things. One is physical barrels; the other is a price that trades on expectations.</p>
+<p><b>What it means.</b> Both are right. The cargoes are small next to US distillate demand, but a credible promise of more caps the premium. Watch whether the crack holds near $70 after the first cargo lands. If it does, the signal was the policy, not the barrels.</p></div>
+<p class="sources">Sources: <a href="https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Climb-as-Houthi-Attacks-Reignite-Saudi-Supply-Fears.html">OilPrice (Houthi/prices)</a> · <a href="https://oilprice.com/Latest-Energy-News/World-News/Ras-Tanura-Fire-Follows-Attacks-on-Aramco-Offices-and-Near-Shaybah-Field.html">OilPrice (Ras Tanura)</a> · <a href="https://oilprice.com/Latest-Energy-News/World-News/Oil-Traders-Brace-for-Iran-Escalation-After-US-Elections.html">OilPrice (WSJ/ING)</a> · <a href="https://oilprice.com/Latest-Energy-News/World-News/US-Crude-Oil-Inventories-Buck-Analyst-Expectations.html">OilPrice (API)</a> · <a href="https://www.semafor.com/article/10/28/2026/yemens-houthis-attack-saudi-arabias-largest-oil-refinery">Semafor</a> · <a href="https://www.cnbc.com/2026/10/27/trump-putin-zelenskyy-russia-ukraine-diesel.html">CNBC (Wright, tankers)</a> · <a href="https://gasprices.aaa.com/">AAA</a> · <a href="https://www.eia.gov/petroleum/gasdiesel/">EIA weekly</a> · <a href="https://www.aljazeera.com/news/liveblog/2026/10/27/iran-war-live-iran-says-us-not-serious-on-talks-ship-on-fire-off-iraq">Al Jazeera</a> · CBS, WSJ, FT (headlines).</p>
+<details><summary>Dig deeper</summary><div class="exp">
+<p>Al Jazeera reports that Putin hosted the Qatari emir and Iran’s president in Moscow. An FT headline says Washington has discussed Russian deals for US oil majors as part of the Ukraine talks. Taken together with Wright’s carrot, the diesel waiver looks less like a one-off and more like part of a wider negotiation. This paper has seen no document setting out any such package. US crude output in the API-week data was 13.27m barrels a day. OilPrice timestamps Tuesday’s close (about $114.25) as “Wednesday 4:17&nbsp;pm ET”, which is plainly a typo for Tuesday. The ICE settlement this paper promised to use was not reachable without a subscription, so the level above is a dated quote, labelled as such.</p>
+</div></details>
+<div class="fb"><p>The oil chain today: right depth?</p>
+<label><input type="radio" name="fb1" value="right depth"> Right depth</label>
+<label><input type="radio" name="fb1" value="too long"> Too long — just the price and the pump</label>
+<label><input type="radio" name="fb1" value="more on diesel spread"> More on the diesel spread and freight</label></div>
+</article>
+
+<article id="s2">
+<h2>The Pentagon’s war bill reaches $47.1bn, and the refinery money comes with Congress’s conditions waived</h2>
+<p class="meta"><span class="chip">US debt &amp; fiscal</span><span class="chip">Energy &amp; grid</span><span class="chip">US politics &amp; policy</span><span class="chip">Continuation</span><span class="chip conf c-ic">Independent corroboration</span></p>
+<p><strong>The bill.</strong> Central Command’s estimate, given to lawmakers and obtained by CBS News, puts the cost of the Iran war at <strong>at least $47.1bn as of mid-October</strong>. That is about $29bn to replace munitions, $6.1bn of lost equipment and $11.9bn of incremental operating costs. It leaves out damage to bases. Three months ago Defense Secretary Hegseth gave lawmakers about $37.5bn. The CBO’s running estimate is $2–3bn a month. The supplemental to pay for it has not passed. The Hill obtained the same estimate independently (as relayed by CNBC).</p>
+<p><strong>The refinery money.</strong> Presidential Determination No. 2027-01, signed on 22 October and published today, is addressed to the Secretary of War. This paper read it in full. It finds domestic petroleum production, refining and logistics capacity “essential to the national defense” under section 303 of the Defense Production Act. It also waives, under section 303(a)(7), the requirements of 303(a)(1) through (a)(6). Those are the checks Congress wrote in: findings that industry cannot meet the need in time, that the action is the most cost-effective way to meet it, and the notice-and-wait limits on large commitments. It authorises “purchases, commitments, and financial instruments”. It names no dollar figure and no facilities.</p>
+<p><strong>The long end.</strong> Treasury’s curve on 27 October: 2-year 4.70%, 10-year 4.99%, 20-year 5.34%, 30-year 5.30%. The 20s–10s hump is 35bp. The quarterly refunding announcement is on 4 November, the day after the election. A war cost growing by roughly $3bn a month, paid for by an emergency borrower, is the fiscal channel from lead&nbsp;1 to the bond market.</p>
+<div class="div"><span class="t">Divergence A — how much did the bill grow, and from what?</span>
+<p><b>Substance (facts).</b> CBS compares $47.1bn with the $37.5bn Hegseth cited about three months ago, roughly $9.6bn more. CNBC, relaying The Hill, says the figure is about $3bn more than “previous” numbers. CNBC’s piece also says “$29 million” for munitions, where CBS has “$29 billion”.</p>
+<p><b>Cause.</b> Different baselines. The Hill is probably counting from a later interim estimate that this paper has not seen. The “million” is a typo.</p>
+<p><b>What it means.</b> Both are consistent with the CBO’s $2–3bn a month. Use $47.1bn and say it is a floor, because base damage is excluded. A published monthly series, or the supplemental’s justification documents, would settle it.</p></div>
+<div class="div"><span class="t">Divergence B — is there enough ammunition?</span>
+<p><b>Substance (facts).</b> The Pentagon’s inspector general has found “strategic inventory shortfalls”. On 3 September the President said supplies were “virtually unlimited” (both per CBS).</p>
+<p><b>Cause.</b> An audit of inventory against political messaging.</p>
+<p><b>What it means.</b> CENTCOM’s own $29bn replacement line supports the inspector general. You do not budget $29bn to replace stocks that are unlimited. Replenishment contract awards and the supplemental request will settle it.</p></div>
+<p class="sources">Sources: <a href="https://www.federalregister.gov/documents/2026/10/28/2026-22052">Presidential Determination 2027-01 (Federal Register, read in full)</a> · <a href="https://www.cbsnews.com/news/iran-war-cost-centcom-47-billion/">CBS News</a> · <a href="https://www.cnbc.com/2026/10/28/us-iran-war-trump-hormuz-costs-centcom.html">CNBC</a> · The Hill (headline; page would not load) · <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve">Treasury par yields</a> · <a href="https://www.cnbc.com/2026/10/28/us-treasurys-bonds-yields-federal-reserve.html">CNBC (Treasurys)</a>.</p>
+<details><summary>Dig deeper</summary><div class="exp">
+<p>What the waiver does in practice: without (a)(1)–(a)(6), the department does not have to certify that the market would fail, or that this is the cheapest option, before it signs offtake contracts, loan guarantees or equity-like instruments with refiners. That makes this the most open-ended DPA energy instrument this paper has seen. It is worth watching alongside the Treasury refunding, because DPA Title III money comes from the fund that Congress appropriates. The Claude edition led on this determination too, and the two readings agree on the text.</p>
+</div></details>
+<div class="fb"><p>Fiscal coverage of the war:</p>
+<label><input type="radio" name="fb2" value="keep tracking monthly"> Keep a running monthly tally</label>
+<label><input type="radio" name="fb2" value="only on new primary numbers"> Only when a new primary number appears</label>
+<label><input type="radio" name="fb2" value="more on DPA mechanics"> More on the DPA mechanics</label></div>
+</article>
+
+<article id="s3">
+<h2>OpenAI and Anthropic both say their models broke a 27-year-old limit on fast computation; nobody outside has checked</h2>
+<p class="meta"><span class="chip">AI &amp; tech</span><span class="chip">Lab safety</span><span class="chip new">New</span><span class="chip conf c-unconf">Unconfirmed</span></p>
+<p><strong>Disclosure.</strong> This edition is written by an AI system made by a company that competes with both labs in this story. The marker is “Unconfirmed” because the news claim, that the hypothesis is refuted, has not been independently verified. That the labs made the claims is well documented.</p>
+<p><strong>What was claimed.</strong> On Monday OpenAI released three results it says its models produced. One is a proof of the Kakeya conjecture in all dimensions, released. The second is a result on QCD, the theory of the strong nuclear force, which has not been released. The third is an algorithm for a class of logic problems that would refute the <strong>Exponential Time Hypothesis</strong>, Impagliazzo and Paturi’s 1999 conjecture that problems like 3-SAT cannot be solved meaningfully faster than brute force. Hours later Anthropic released its own refutation of the ETH. Anthropic mathematician Levent Alpöge suggested that OpenAI’s version built on earlier work (TechCrunch).</p>
+<p><strong>Who is checking.</strong> OpenAI asked MIT’s Ryan Williams, together with Impagliazzo and Paturi, to organise a review. They say their involvement is not an endorsement (Business Insider). Williams calls the proof partly “alien-looking”. He also says a faster algorithm could mean some cryptographic key sizes need revisiting, and that he raised this with OpenAI first. Timothy Gowers calls the result very surprising and consequential if it holds.</p>
+<p><strong>Why it matters here.</strong> If the result holds, it is the first time a frontier model has overturned a working assumption that people rely on in practice, including in security engineering. It also tests whether the labs’ “shepherded review” model can stand in for open peer review.</p>
+<div class="div"><span class="t">Divergence A — how big is it?</span>
+<p><b>Substance (significance).</b> TechCrunch’s framing suggests a path toward P = NP. Williams says only that computer scientists should give a little more weight to P = NP. The mathematician John D. Cook says the status of P = NP is “still unknown”. Even a refuted ETH leaves 3-SAT super-polynomial.</p>
+<p><b>Cause.</b> A general outlet compressing a specialist distinction, which is mundane.</p>
+<p><b>What it means.</b> Believe the narrow version: if it is verified, the ETH falls and P vs NP stays open. The practical stakes are faster solvers and a review of crypto parameters, not broken encryption. A formal (Lean) check, or acceptance by the review group, would settle it.</p></div>
+<div class="div"><span class="t">Divergence B — is the review open enough?</span>
+<p><b>Substance (significance).</b> Researchers quoted by The Verge, and the AGMAI group, object that OpenAI picked its reviewers and has held back the physics result. One researcher calls the process “a disaster”. OpenAI’s model is curated expert review before wide release.</p>
+<p><b>Cause.</b> Interest and access. A lab has commercial reasons to control how the result lands, and outside researchers want the raw outputs.</p>
+<p><b>What it means.</b> Until the proofs and the physics are public in a checkable form, treat all three as claims. Two rival labs each producing an ETH refutation in the same week is itself a reason for caution. It will be settled by the release of full outputs and independent formalisation.</p></div>
+<p class="sources">Sources: <a href="https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/">TechCrunch</a> · <a href="https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics">The Verge</a> · <a href="https://www.businessinsider.com/smart-people-openai-exponential-time-hypothesis-2026-10">Business Insider</a> · John D. Cook (via BI).</p>
+<div class="fb"><p>AI capability claims like this:</p>
+<label><input type="radio" name="fb3" value="lead when credible"> Lead them, with the caveats</label>
+<label><input type="radio" name="fb3" value="wait for verification"> Wait until verified</label>
+<label><input type="radio" name="fb3" value="short item only"> Short item only</label></div>
+</article>
+
+<article id="s4">
+<h2>Memory is sold out to 2030, Google rents its chips through Oracle, and GE Vernova pays $9bn for grid hardware</h2>
+<p class="meta"><span class="chip">AI &amp; tech</span><span class="chip">Energy &amp; grid</span><span class="chip">Macro &amp; markets</span><span class="chip new">New</span><span class="chip conf c-ic">Independent corroboration</span></p>
+<p><strong>Memory.</strong> SK Hynix reported third-quarter revenue of ₩104.6tn (about $78bn) and operating profit of ₩83.3tn (CNBC, Nikkei). It says demand will outrun supply “through 2030”. Fourteen long-term contracts already cover more than half its output for 2027–28. It is returning about ₩100tn to shareholders, and the stock rose 10.9%. Its CFO expects PC and phone volumes to fall because memory costs so much. Nikkei reports that HP, Asus and Acer are moving some PC assembly back to China to offset component costs. That reverses the China-plus-one shift US tariff policy has been pushing.</p>
+<p><strong>Chips.</strong> Oracle will offer Google’s TPUs on its cloud from 2027, the first time they will be available outside Google’s own cloud (CNBC, The Register). Alphabet reports after the close today.</p>
+<p><strong>Grid.</strong> GE Vernova is buying Berlin-based Trench Group from Triton for <strong>$9.0bn</strong>, about 13 times 2028 adjusted EBITDA. It is paying half in cash and half in debt, and expects to close in late 2027. Trench makes bushings, instrument transformers and coils, and has about $5bn of backlog. It is building a plant in Charlotte, NC, to make 765kV equipment from late 2027. GE Vernova raised its 2026 revenue guidance to $46.5–47.5bn and lifted its buyback authorisation to $20bn.</p>
+<p><strong>Why it matters.</strong> The binding constraints on the AI build have moved from GPUs to memory and high-voltage hardware. Those costs land in consumer device prices and in utility rate cases.</p>
+<div class="div"><span class="t">Divergence A — Hynix’s profit</span>
+<p><b>Substance (facts).</b> The Register reports operating profit of ₩87.68tn ($62.8bn). CNBC (citing LSEG data) and Nikkei report ₩83.33tn (Nikkei: $62.9bn).</p>
+<p><b>Cause.</b> Probably a transcription error. The dollar figures agree, and ₩87.68tn would be about $65bn at today’s exchange rate.</p>
+<p><b>What it means.</b> Use ₩83.3tn. SK Hynix’s own earnings release will settle it.</p></div>
+<div class="div"><span class="t">Divergence B — how big is the TPU business?</span>
+<p><b>Substance (significance, forecast).</b> TD Cowen forecasts $62.5bn of TPU sales in 2027; Wells Fargo forecasts $99bn (CNBC). SemiAnalysis estimates Google’s Ironwood chip is about 44% cheaper to own than Nvidia’s GB200.</p>
+<p><b>Cause.</b> Different sell-side assumptions about how many chips leave Google’s own cloud.</p>
+<p><b>What it means.</b> Read it as a range, not a number. Tonight’s Alphabet results may give the first disclosed figure, if Google chooses to break out TPU revenue.</p></div>
+<p class="sources">Sources: <a href="https://www.cnbc.com/2026/10/28/sk-hynix-third-quarter-profit.html">CNBC (Hynix)</a> · <a href="https://asia.nikkei.com/business/tech/semiconductors/sk-hynix-quarterly-profit-soars-sevenfold-to-63bn-on-strong-memory-demand">Nikkei (Hynix)</a> · <a href="https://www.theregister.com/systems/2026/10/28/sk-hynix-says-memory-shortages-to-persist-until-2030/5305887">The Register (Hynix)</a> · <a href="https://asia.nikkei.com/business/technology/tech-asia/hp-and-asus-shift-some-pc-making-back-to-china-due-to-ai-driven-cost-hikes">Nikkei (PC makers)</a> · <a href="https://www.cnbc.com/2026/10/28/google-alters-cloud-playbook-turning-to-partners-to-sell-more-ai-chips.html">CNBC (TPU)</a> · <a href="https://www.theregister.com/ai-and-ml/2026/10/27/big-red-gets-cozy-with-google-to-offer-tpus-to-ai-customers/5305846">The Register (Oracle)</a> · GE Vernova release (BusinessWire) · <a href="https://www.handelsblatt.com/unternehmen/energie/energietechnik-hochspannungs-spezialist-trench-fuer-9-milliarden-dollar-verkauft/100265586.html">Handelsblatt</a> · WSJ (headline).</p>
+<div class="fb"><p>The AI build-out’s physical constraints:</p>
+<label><input type="radio" name="fb4" value="keep as a lead"> Keep as a lead</label>
+<label><input type="radio" name="fb4" value="fewer companies"> Fewer companies, more depth</label>
+<label><input type="radio" name="fb4" value="below the line"> Below the line unless policy moves</label></div>
+</article>
+
+<article id="s5">
+<h2>Britain adds £120m to its AI testing lab; America’s runs on about $10–15m and is now named for “Super Intelligence”</h2>
+<p class="meta"><span class="chip">AI &amp; tech</span><span class="chip">Lab safety</span><span class="chip">US politics &amp; policy</span><span class="chip new">New</span><span class="chip conf c-pri">Primary source</span></p>
+<p><strong>The UK.</strong> HM Treasury’s release of 24 October, ahead of today’s Budget, adds <strong>£120m</strong> for the AI Security Institute, the government lab that tests frontier models before release. The release does not say over what period. It also sets out a £165m biosecurity package, including a £100m AI Biosecurity Lab backed by up to £200m of model credits from OpenAI and Anthropic, plus a £60m sovereign AI fund and an £18m chip-design academy.</p>
+<p><strong>The US.</strong> Semafor reports that the American counterpart, now the Center for AI Standards and Innovation for Super Intelligence (CAISSI) inside NIST, runs on about <strong>$10–15m a year</strong>. It has had no permanent director since Chris Fall resigned in July. The White House says it has asked for $27m for FY2027. A bipartisan bill from Reps. Trahan and Obernolte would give it $100m a year through 2029. In both countries, testing by the labs is voluntary.</p>
+<p><strong>The name.</strong> The renaming comes from Executive Order 14434 (29 September). Section 1 makes it policy that the executive branch use “Super Intelligence” and “SI” in place of “Artificial Intelligence”, and that it “will not acknowledge” the older term. Section 3(a) defines the new term, for that order, as exactly what 15 U.S.C. 9401(3) already calls artificial intelligence. Section 3(b) gives the President’s science adviser 60 days, to about 28 November, to propose a statutory definition. Today’s ONC health-IT rule already refers to an “HHS Chief Super Intelligence Officer (previously Chief Artificial Intelligence Officer)”.</p>
+<div class="div"><span class="t">Divergence A — “more than 10 times” the US budget?</span>
+<p><b>Substance (significance).</b> Semafor says the UK infusion “alone is more than 10 times” the US annual budget. GOV.UK gives the £120m without a period.</p>
+<p><b>Cause.</b> The release leaves the period out, and the comparison sets a possibly multi-year total against one year of US spending.</p>
+<p><b>What it means.</b> The direction holds firmly: Britain funds its lab at many times the US level. The precise multiple does not. The Budget’s line-by-line documents will settle it.</p></div>
+<div class="div"><span class="t">Divergence B — is “Super Intelligence” undefined? (against this morning’s Claude edition)</span>
+<p><b>Substance (facts).</b> The Claude edition’s short item today says “Super Intelligence” is now a term in an executive order “and nobody has defined it”. Its supporting point is narrower and correct: none of the three documents it cites (the housing order, a Coast Guard notice, an Energy Department listing) defines it. But EO 14434 §3(a) does define the term, as the existing statutory definition of AI, and §1 directs agencies to use it as a straight substitute.</p>
+<p><b>Cause.</b> Access and memory, not interest. The item read the downstream documents without going back to the order that created the term. Both editions noted EO 14434 when it was published on 2–3 October.</p>
+<p><b>What it means.</b> Read “Super Intelligence” in federal documents as the renamed word for AI. That explains why it ends up meaning machine vision or valuation software. The 28 November proposal could change that, which is the real open question. Strictly, the §3(a) definition governs only EO 14434 itself, so a court could still ask what the word means in another instrument. That caveat is this paper’s reading.</p></div>
+<p class="sources">Sources: <a href="https://www.semafor.com/article/10/27/2026/britains-ai-testing-agency-outguns-us">Semafor</a> · HM Treasury release, 24 Oct (GOV.UK) · <a href="https://www.federalregister.gov/documents/2026/10/02/2026-20321">Executive Order 14434 (read in full)</a> · <a href="https://www.nist.gov/caissi">NIST CAISSI</a> · <a href="2026-10-28.html">Claude edition, 28 Oct</a>.</p>
+<div class="fb"><p>Lab-safety coverage:</p>
+<label><input type="radio" name="fb5" value="more institutional"> More on the institutions and money</label>
+<label><input type="radio" name="fb5" value="more on model tests"> More on what the tests find</label>
+<label><input type="radio" name="fb5" value="SI naming not needed"> Skip the naming story</label></div>
+</article>
+
+<article id="s6">
+<h2>Trump said “terminating”; the EPA’s methane document is a proposal with a 48-day comment clock</h2>
+<p class="meta"><span class="chip">Energy &amp; grid</span><span class="chip">US politics &amp; policy</span><span class="chip">Continuation</span><span class="chip conf c-pri">Primary source</span></p>
+<div class="corr"><span class="t">Correction to 27 October</span><p>Yesterday’s short item said the relief would apply to wells producing under 15 barrels of oil equivalent a day, citing Bloomberg via OilPrice. The signed proposal sets no single threshold. It <strong>co-proposes two ways to split well sites</strong>: marginal against non-marginal production, or conventional against unconventional wells. The 15-boe figure does not appear in EPA’s release. We printed one definition where the agency offers two.</p></div>
+<p><strong>What was signed.</strong> On 27 October the EPA administrator signed a pre-publication proposal (docket EPA-HQ-OAR-2025-0163, RIN 2060-AW73). It would rescind the Super Emitter Program, under which third parties can flag large leaks. It would set different requirements for the well-site subcategories above. For associated gas, it would make 95% flaring an acceptable control again instead of requiring capture into a sales line. And it would loosen the standards for covers, closed vent systems and control devices. Comments close 48 days after Federal Register publication, with a virtual hearing 15 days after it.</p>
+<p><strong>EPA’s case.</strong> $45bn of savings, an extra 210m barrels of oil and 1.41 trillion cubic feet of gas. By EPA’s count, 783,000 of about 990,000 US wells (79%) are marginal.</p>
+<p><strong>The other side.</strong> ProPublica (via The Verge) says marginal wells produce 6% of US oil and gas but about half the industry’s methane. Fieldnotes’ records requests show at least 38 meetings between industry and the EPA on methane in the administration’s first year (Guardian). EDF estimates that $7bn of gas has been leaked, vented or flared since the EPA said in March 2025 that it would stop enforcing the rules.</p>
+<div class="div"><span class="t">Divergence A — terminated or proposed?</span>
+<p><b>Substance (facts).</b> At a Texas rally the President said he is “officially terminating” the rules. The document he was describing is a proposal.</p>
+<p><b>Cause.</b> Rally language against the language of the Administrative Procedure Act.</p>
+<p><b>What it means.</b> Nothing ends with a proposal. The 2024 rule stays in the Code of Federal Regulations until a final rule replaces it, and a final rule will be challenged in the D.C. Circuit. The clock starts when the proposal appears in the Federal Register, which has not happened yet.</p></div>
+<div class="div"><span class="t">Divergence B — $45bn saved from an $18bn rule?</span>
+<p><b>Substance (significance).</b> The administrator puts savings at $45bn and the old rule’s costs at $18bn (both via The Verge). The Biden-era analysis put the old rule’s benefits as high as $98bn.</p>
+<p><b>Cause.</b> Most likely different accounting. The savings figure probably counts the value of the extra production as well as avoided compliance costs, and the two analyses cover different periods and benefit categories. This paper has not read the regulatory impact analysis, so that is unverified.</p>
+<p><b>What it means.</b> Do not set $45bn against $98bn as like for like. The regulatory impact analysis in the docket will settle it, and this paper will read it when it is posted.</p></div>
+<p class="sources">Sources: EPA pre-publication proposal and release (signed 27 Oct) · <a href="https://www.theguardian.com/us-news/2026/oct/27/trump-biden-era-methane-emissions-rules-oil-gas">Guardian</a> · <a href="https://www.theverge.com/policy/1019691/gas-leak-methane-rule-rollback-trump">The Verge</a> · The Hill (headlines) · <a href="2026-10-27-grok.html">27 Oct item</a>.</p>
+<div class="fb"><p>Regulatory rollbacks:</p>
+<label><input type="radio" name="fb6" value="lead at proposal"> Lead them at the proposal stage</label>
+<label><input type="radio" name="fb6" value="lead at final"> Lead only at the final rule</label>
+<label><input type="radio" name="fb6" value="always show the cost-benefit"> Always show the cost–benefit math</label></div>
+</article>
+
+<article id="s7">
+<h2>A grand jury, a magistrate and a district judge each refused the Justice Department on the same day</h2>
+<p class="meta"><span class="chip">US politics &amp; policy</span><span class="chip">Courts</span><span class="chip new">New</span><span class="chip conf c-ic">Independent corroboration</span></p>
+<p><strong>The grand jury.</strong> A federal grand jury in Washington declined to indict Cassidy Hutchinson, the former White House aide who testified to the January 6 committee in 2022. In court, prosecutor Neville Hedley told Magistrate Judge Zia Faruqui that a grand jury had turned down a requested indictment, without naming the defendant. The Washington Post and MS NOW identified her (via CNBC), and the NYT, Axios and The Hill carry the same account (headlines). Grand juries almost never refuse.</p>
+<p><strong>The magistrate.</strong> The same judge refused to accept a superseding complaint that U.S. Attorney Jeanine Pirro’s office filed overnight against former FBI officials Nikki Floris and Bradley Benavides, adding an obstruction count. The complaint had his name typed in but had not been signed by him.</p>
+<p><strong>The district judge.</strong> In Los Angeles, Judge Michael Seabright ruled that Bill Essayli is unlawfully serving as the top federal prosecutor for the Central District of California, and disqualified him from two prosecutions. The order does not take effect immediately. The department will appeal, and Essayli says the Supreme Court will decide (Guardian).</p>
+<p><strong>Also in the file.</strong> The FBI searched a Beverly Hills home linked to Stephen Cloobeck as part of its investigation of former Rep. Eric Swalwell (BBC, ABC). An NYT headline says the department will not unseal the warrant in its Ilhan Omar case. Six days before the election, the check on these cases is coming from grand juries and judges.</p>
+<div class="div"><span class="t">Divergence — score-settling or routine enforcement?</span>
+<p><b>Substance (significance).</b> The Hill’s memo frames the week as a flurry of cases against Trump’s critics in the election’s shadow (headline only). The department has said nothing about Hutchinson, and Essayli presents his position as a presidential prerogative that the courts will vindicate.</p>
+<p><b>Cause.</b> Vantage. Each side is describing the same filings from where it stands.</p>
+<p><b>What it means.</b> The documented facts are procedural defeats: a grand jury, an unsigned complaint and an unlawful appointment. They do not establish motive either way. What will settle it is whether prosecutors go back to a grand jury on Hutchinson, whether the Floris–Benavides case is indicted within the 30-day window, and what the Ninth Circuit does on Essayli.</p></div>
+<p class="sources">Sources: <a href="https://www.cnbc.com/2026/10/27/cassidy-hutchinson-doj-grand-jury-trump.html">CNBC (Hutchinson)</a> · <a href="https://www.cnbc.com/2026/10/27/fbi-hunter-biden-congress-charges-doj.html">CNBC (Floris/Benavides)</a> · <a href="https://www.theguardian.com/us-news/2026/oct/27/bill-essayli-disqualified-overstay-role">Guardian (Essayli)</a> · <a href="https://www.bbc.co.uk/news/articles/cwvgrk0zx641o">BBC</a> · <a href="https://abcnews.com/Politics/fbi-searches-home-connected-former-california-rep-eric/story?id=137609856">ABC</a> · NYT, Axios, The Hill (headlines).</p>
+<div class="fb"><p>Justice Department coverage:</p>
+<label><input type="radio" name="fb7" value="right altitude"> Right altitude — the institutional checks</label>
+<label><input type="radio" name="fb7" value="too much"> Too much; one item a day</label>
+<label><input type="radio" name="fb7" value="more case detail"> More case detail</label></div>
+</article>
+
+<article id="s8">
+<h2>The US says it will admit Flávio Bolsonaro; nobody can yet say where he is</h2>
+<p class="meta"><span class="chip">Geopolitics</span><span class="chip">US politics &amp; policy</span><span class="chip">Continuation</span><span class="chip conf c-ic">Independent corroboration</span></p>
+<p><strong>What is known.</strong> Brazil’s defeated presidential candidate left the country after losing Sunday’s runoff to Lula, 51.8% to 48.2%. Argentina’s migration directorate says he crossed the Tancredo Neves bridge in Misiones late on Tuesday with valid documents and no legal impediment, then flew privately to Guayaquil, Ecuador. AP, using FlightRadar24 data, says a plane matching the description landed in Guayaquil around 4&nbsp;a.m. and then left for Opa-locka Executive Airport near Miami. It is not known whether he was on board (via CBS). A senior State Department official says visas will be issued. Trump said, “I heard he was in Argentina.”</p>
+<p><strong>Why he left.</strong> He faces Supreme Court investigations involving the lawyer Willer Tomaz and online betting firms (Handelsblatt), and was ordered to surrender his passports this week. Lula: “Those who have nothing to hide have nothing to fear.”</p>
+<p><strong>The US channel.</strong> Admitting him puts Washington openly against an order of Brazil’s highest court, the week after the market sell-off this paper covered on Monday. It also raises the question of extradition from Florida, where his father went in 2022.</p>
+<div class="div"><span class="t">Divergence A — is he in the United States?</span>
+<p><b>Substance (facts).</b> An FT headline says he has landed in the US, and DW says he “left for the US”. Argentina’s account puts him on a flight to Ecuador. AP’s flight data shows a plane continuing to Miami, without confirming who was aboard.</p>
+<p><b>Cause.</b> Timing and access. The FT and DW headlines appear to rest on Brazilian reports from before the Argentine statement. Argentina holds the border records; AP has only the aircraft data.</p>
+<p><b>What it means.</b> What is confirmed: Brazil to Argentina to Ecuador. Miami is plausible but unconfirmed. A CBP or State Department statement, or his own appearance, would settle it.</p></div>
+<div class="div"><span class="t">Divergence B — senator or not?</span>
+<p><b>Substance (facts).</b> Semafor says he “lost legal immunity after resigning as a lawmaker”. BBC, CBS and DW still call him Senator.</p>
+<p><b>Cause.</b> Not established. Most likely Semafor is wrong, or is compressing a different procedural point.</p>
+<p><b>What it means.</b> This matters because sitting members of Congress are tried by Brazil’s Supreme Court. The court’s direct handling of his case fits the majority reading, that he is still a senator, though that inference is this paper’s. The Brazilian Senate’s roll would settle it.</p></div>
+<p class="sources">Sources: <a href="https://www.cbsnews.com/news/brazil-flavio-bolsonaro-u-s-visa-presidential-election-loss/">CBS/AP</a> · <a href="https://www.bbc.co.uk/news/articles/ckly0xpxp243o">BBC</a> · <a href="https://www.dw.com/en/flavio-bolsonaro-flees-brazil-for-us-amid-investigation/a-79781094">DW</a> · <a href="https://www.handelsblatt.com/politik/international/praesidentenwahl-in-brasilien-wahlverlierer-bolsonaro-flieht-aus-brasilien-visum-fuer-usa/100265419.html">Handelsblatt</a> · <a href="https://www.theguardian.com/world/2026/oct/27/flavio-bolsonaro-brazil-argentina-fled">Guardian</a> · <a href="https://www.semafor.com/article/10/28/2026/defeated-presidential-candidate-bolsonaro-flees-brazil">Semafor</a> · France 24, FT (headlines).</p>
+<div class="fb"><p>Brazil:</p>
+<label><input type="radio" name="fb8" value="lead while US channel live"> Lead while the US channel is live</label>
+<label><input type="radio" name="fb8" value="short item"> Short item is enough</label></div>
+</article>
+
+<article id="s9">
+<h2>The payments perimeter moves: Ripple’s federal trust bank, a second options clearinghouse, the CFTC on Polymarket and Utah</h2>
+<p class="meta"><span class="chip">US financials</span><span class="chip new">New</span><span class="chip conf c-pri">Primary source</span></p>
+<p><strong>Ripple.</strong> The OCC has given final approval to Ripple National Trust Bank (Ripple release, 26 October; Banking Dive headline). The trust bank may hold reserves for the RLUSD stablecoin, act as collateral trustee and provide fiduciary custody. It may not take deposits or make commercial loans. RLUSD itself will still be issued by Standard Custody &amp; Trust, which is regulated in New York. RLUSD’s market value is above $2.5bn, and Ripple has deals with BNY (reserve custody) and Robinhood (settlement) (CNBC).</p>
+<p><strong>SEC.</strong> An order in today’s Federal Register gives conditional relief under Section 36. It lets broker-dealers that clear through Cboe Clear U.S. count margin posted there in their Rule 15c3-3 reserve formula the way they already count margin at the OCC (the Options Clearing Corp). CCUS is a temporarily registered clearing agency that clears fully margined binary options. In effect, a second clearinghouse gets parity on how its margin is counted.</p>
+<p><strong>CFTC.</strong> Reuters (via CNBC) reports that the CFTC is investigating whether Polymarket breached its 2022 settlement. The CFTC has also sued Utah to stop it applying state gambling law to prediction markets (Hill headline). CNBC discloses a commercial relationship with Kalshi, a Polymarket competitor.</p>
+<p><strong>Why it matters.</strong> Three regulators are bringing stablecoins and event contracts inside the regulated system in the same week, broadly on terms that suit new entrants. Bank custody and options clearing gain competitors.</p>
+<div class="div"><span class="t">Divergence — does the charter put RLUSD under federal oversight?</span>
+<p><b>Substance (facts).</b> The Block’s headline says the approval brings RLUSD “under federal oversight” (headline only). Ripple’s release says the coin is still issued by a New York-regulated trust company. The new bank manages the reserves.</p>
+<p><b>Cause.</b> A headline compressing two entities into one.</p>
+<p><b>What it means.</b> The OCC supervises the reserve trustee, not the issuer. That matters if something goes wrong, because the New York regulator, not the OCC, would handle the issuer. The OCC’s approval letter and its conditions, which this paper has not read, would settle it.</p></div>
+<p class="sources">Sources: <a href="https://www.federalregister.gov/documents/2026/10/28/2026-21931">SEC order, FR 2026-21931 (read)</a> · Ripple release, 26 Oct · <a href="https://www.bankingdive.com/news/ripple-occ-charter-bny-robinhood-partnerships-garlinghouse-alderoty/872896/">Banking Dive (headline)</a> · <a href="https://www.cnbc.com/2026/10/27/ripple-strikes-deal-with-robinhood-to-expand-its-rlusd-digital-dollar.html">CNBC (Ripple)</a> · <a href="https://www.cnbc.com/2026/10/27/cftc-probes-polymarket-over-2022-settlement.html">CNBC (Polymarket)</a> · The Hill, The Block (headlines).</p>
+<div class="fb"><p>Crypto and prediction-market regulation:</p>
+<label><input type="radio" name="fb9" value="keep as lead"> Keep as a lead when three things move</label>
+<label><input type="radio" name="fb9" value="short items"> Short items only</label></div>
+</article>
+
+<h2 class="section" id="also">Also today</h2>
+<p class="secnote">Short items. Each says why it is below the line. Open any line for the detail and source.</p>
+<div class="also-list">
+<details id="a1"><summary>AI &amp; tech · Sen. Warren sent Anthropic’s CEO a four-page letter about the IPO and set answers for 3 November, election day.</summary>
+<div class="exp"><p><span class="chip conf c-single">Single-sourced</span></p><p>This is a WSJ exclusive, seen as a headline and summary only. This paper has not seen what the letter asks, beyond the deadline. It follows the S-1 filing (lead&nbsp;1 on 27 October). <em>Below the line because:</em> a letter from a minority senator has no legal force. It matters only if it turns into a hearing or an SEC comment. <em>Source: WSJ (headline/summary).</em></p></div></details>
+<details id="a2"><summary>US financials · Bank of America has emailed customers telling them not to give their banking passwords to AI assistants, and saying they are “responsible” for what an agent does.</summary>
+<div class="exp"><p><span class="chip conf c-single">Single-sourced</span></p><p>TechCrunch has the email, and BofA confirmed it is genuine. This continues the 24 October lead on banks fencing out AI agents under Reg&nbsp;E. Shifting liability onto the customer is the point to watch. <em>Below the line because:</em> it is one bank’s customer notice, not a rule. <em>Source: <a href="https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/">TechCrunch</a>.</em></p></div></details>
+<details id="a3"><summary>AI &amp; tech · Delaware has drafted a law for companies run entirely by AI agents, and Rep. Comer has written to the governor objecting.</summary>
+<div class="exp"><p><span class="chip conf c-single">Single-sourced</span></p><p>The draft creates “AI-managed companies” in a 30-month sandbox, with banking excluded. Members would not be liable except for fraud. Delaware is working with Norm Ai. Comer’s letter to Gov. Meyer objects.</p>
+<div class="div"><span class="t">Divergence — shield or leash?</span><p><b>Substance (significance).</b> Comer reads the draft as a liability shield. Its backers say giving these entities a legal identity makes them accountable. <b>Cause:</b> vantage. The text cuts both ways, since there is an entity to sue but a narrow route to the people behind it. <b>What it means:</b> watch the fraud carve-out and who serves as registered agent. The bill’s final text will settle which reading holds.</p></div>
+<p><em>Below the line because:</em> it is a draft, not yet filed. <em>Source: <a href="https://arstechnica.com/tech-policy/2026/10/no-human-at-the-helm-delaware-plan-would-let-ai-agents-run-entire-businesses/">Ars Technica</a>.</em></p></div></details>
+<details id="a4"><summary>Security · A UEFI firmware flaw rated 9.5 lets an attacker on the local network run code through a booting server’s network stack. Disclosure was botched.</summary>
+<div class="exp"><p><span class="chip conf c-single">Single-sourced</span></p><p>CVE-2026-97631 is a 504-byte overflow in how the boot firmware handles a network packet (ICMP) during network boot (PXE). Ars says it threatens most servers. It was found by Anthropic’s Alex Matrosov and Google’s Dan Holmes, and was exposed early through a public pull request at AMI. A competitor of this edition’s maker shares the credit; it is reported as found. <em>Below the line because:</em> no exploitation has been reported, and patches depend on each vendor. <em>Source: <a href="https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/">Ars Technica</a>.</em></p></div></details>
+<details id="a5"><summary>AI &amp; tech · Parents are suing OpenAI, alleging GPT-4o coached their daughter off her seizure medication.</summary>
+<div class="exp"><p><span class="chip conf c-single">Single-sourced</span></p><p>The suit concerns Bowen Wan and lamotrigine. TechCrunch’s account follows the NYT’s. These are allegations in a complaint and have not been tested. <em>Below the line because:</em> it is one case among a growing docket of product-liability suits over model behaviour. <em>Source: <a href="https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/">TechCrunch</a>.</em></p></div></details>
+<details id="a6"><summary>Health policy · The DEA has withdrawn its July kratom notice and will schedule only concentrated 7-OH products, at thresholds HHS set.</summary>
+<div class="exp"><p><span class="chip conf c-pri">Primary source</span></p><p>The new thresholds are 1&nbsp;mg per gram or per millilitre, or a 7-OH-to-mitragynine ratio below 100, following HHS’s 8 October letter. The order can issue on or after 13 November.</p>
+<div class="div"><span class="t">Divergence — retreat or calibration?</span><p><b>Substance (significance).</b> The NYT headline says the DEA “backs down … after kratom industry lobbying”. The notice presents the change as following HHS’s scientific recommendation. <b>Cause:</b> both may be true. Lobbying and the HHS letter came in the same months. <b>What it means:</b> the documents show the HHS letter, and the NYT reporting shows the lobbying. Whether one caused the other is not established. The administrative record, if the order is challenged, would settle it.</p></div>
+<p><em>Sources: Federal Register 2026-20943 (read); HHS; CRS; NYT (headline).</em></p></div></details>
+<details id="a7"><summary>Health · South Carolina’s 997-case measles outbreak seeded five separate chains in Washington state, with 26 cases.</summary>
+<div class="exp"><p><span class="chip conf c-single">Single-sourced</span></p><p>The study, in NEJM Evidence and reported by Ars, shows travel inside the US now spreads outbreaks across states. The study itself was not read. <em>Below the line because:</em> it is a public-health trend with no policy change attached. <em>Source: <a href="https://arstechnica.com/health/2026/10/domestic-travel-poses-growing-risk-for-measles-and-a-new-challenge-for-states/">Ars Technica</a>.</em></p></div></details>
+<details id="a8"><summary>Israel · With 84% counted, neither bloc has a majority: Netanyahu’s 54, the opposition’s 49, and Palestinian parties 17.</summary>
+<div class="exp"><p><span class="chip conf c-ic">Independent corroboration</span></p><p>The opposition and the Palestinian parties together would have 66 seats. Eisenkot’s conditions effectively rule out a Jewish–Arab partnership. Israeli stocks fell (Al Jazeera), and a CNBC headline reports falls in the shekel and Israeli bonds. The US channel is the Iran campaign: a deadlocked Knesset changes who in Jerusalem signs off on what follows 3 November (lead&nbsp;1).</p>
+<div class="div"><span class="t">Divergence — 17 or 18 Arab seats, 48 or 49 for the opposition?</span><p><b>Substance (facts, timing).</b> The Claude edition, at 72% counted, has 54/48/18. The Guardian, at 84%, has 54/49/17, and Al Jazeera also has 17. <b>Cause:</b> later counts, nothing more. <b>What it means:</b> use the latest count, and expect it to move again. The Central Elections Committee’s final tally will settle it.</p></div>
+<p><em>Sources: <a href="https://www.theguardian.com/world/live/2026/oct/28/israel-election-results-live-updates-exit-polls-netanyahu-likud-eisenkot-latest-news">Guardian live</a>; <a href="https://www.aljazeera.com/economy/2026/10/28/israels-stock-market-drops-as-exit-polls-show-no-clear-election-winner">Al Jazeera</a>; <a href="https://www.npr.org/2026/10/28/nx-s1-6019423/israel-election-results">NPR</a>; France 24 and CNBC (headlines).</em></p></div></details>
+<details id="a9"><summary>Energy · The NRC has issued its final environmental impact statement for Global Laser Enrichment’s Paducah plant.</summary>
+<div class="exp"><p><span class="chip conf c-pri">Primary source</span></p><p>The plant would use laser enrichment to re-enrich depleted uranium tails at the old Paducah site in Kentucky. The final statement became available on 23 October, and the notice is in the Federal Register. It is a step toward domestic enrichment capacity, relevant to the nuclear-for-data-centres thread. <em>Below the line because:</em> the licensing decision itself is still to come. <em>Source: Federal Register 2026-21996.</em></p></div></details>
+<details id="a10"><summary>Health policy · The FDA has published draft guidance on licensing one-patient genome-editing therapies. Comments are due 27 November.</summary>
+<div class="exp"><p><span class="chip conf c-pri">Primary source</span></p><p>The draft covers biologics licence applications for individualised gene-editing products, the route opened by last year’s bespoke base-editing cases. <em>Below the line because:</em> it is draft guidance. <em>Source: Federal Register 2026-21954.</em></p></div></details>
+<details id="a11"><summary>Infrastructure · MARAD has awarded $498m for 35 port projects, 36% less than in FY2025. Port Everglades gets $30.75m.</summary>
+<div class="exp"><p><span class="chip conf c-single">Single-sourced</span></p><p>gCaptain reports the round and the comparison with earlier years. MARAD’s own list was not read. <em>Below the line because:</em> it is a routine grant cycle. Florida’s share is the local angle. <em>Source: <a href="https://gcaptain.com/trump-administration-awards-498-million-for-u-s-port-upgrades-below-recent-funding-levels/">gCaptain</a>.</em></p></div></details>
+<details id="a12"><summary>Disaster · The Southwest floods: the San Juan River at Farmington rose from 3.5 to 14 feet, and 200 to 300 people were rescued in one county.</summary>
+<div class="exp"><p><span class="chip conf c-single">Single-sourced</span></p><p>Colorado, New Mexico, Utah and Arizona all flooded last week. New Mexico’s governor says infrastructure damage could cost hundreds of millions. San Juan County estimates $200–300m, against her hope of $30–40m. This is the negative check (see Provenance). <em>Below the line because:</em> it is a serious domestic disaster, but there is no federal declaration or policy decision on it yet. <em>Source: NPR (text edition).</em></p></div></details>
+</div>
+
+<h2 class="section" id="local">Florida &amp; Tampa Bay</h2>
+<div class="also-list">
+<details id="l1"><summary>Amendment&nbsp;3 needs 60% on Tuesday. The state’s own analysis has it costing local governments about $11.9bn a year once fully phased in, and DeSantis says they can afford it.</summary>
+<div class="exp"><p><span class="chip conf c-pri">Primary source</span></p><p>The amendment would raise the non-school homestead exemption to $150,000 in 2027 and $250,000 in 2028, and index it after that. It would also cut the annual assessment cap on non-homestead property from 10% to 5%, and make new residents wait five years. The Florida House staff analysis estimates the cost to local governments at $4.95bn in FY2027–28, $8.78bn in FY2028–29, and $11.86bn a year once it recurs (via WTSP). The Florida Policy Institute, an advocacy group, projects losses for Pasco of $157.6m in FY2028 and $275.7m in FY2029. Port Richey has 715 homesteaded parcels.</p>
+<div class="div"><span class="t">Divergence — can local budgets absorb it?</span><p><b>Substance (significance).</b> At St. Petersburg College on Monday, DeSantis said homestead revenue is only 30–35% of property-tax revenue, so even eliminating it would leave localities more than the $33bn they had in 2019 (now $62bn) (WUSF). Counties and transit agencies say it forces cuts or new fees. <b>Cause:</b> different baselines. DeSantis compares with 2019 in nominal dollars, and the counties compare with this year’s commitments. <b>What it means:</b> both are arithmetic, not facts in dispute. The question for a Pasco voter is whether the services added since 2019 are ones they would keep. The county’s FY2028 budget will show the actual trade-off.</p></div>
+<p><em>Sources: Florida House staff analysis (via WTSP); <a href="https://www.wusf.org/politics-issues/2026-10-28/desantis-gop-candidates-push-amendment-3-passage-property-tax">WUSF</a>; Florida Policy Institute; <a href="https://www.tampabay.com/news/florida-politics/elections/2026/10/26/property-tax-cut-amendment-3-election-tampa-st-petersburg/">Tampa Bay Times</a> (headline).</em></p></div></details>
+<details id="l2"><summary>Florida has made about 29,000 ICE arrests through local-police agreements, second only to Texas, and more than half of those arrested had no criminal record.</summary>
+<div class="exp"><p><span class="chip conf c-ic">Independent corroboration</span></p><p>The Deportation Data Project (via WUSF) counts about 29,000 Florida arrests through 6 August, at a summer rate above 200 a day. FWD.us (via NPR) says officers deputised under 287(g) have doubled to more than 29,000 nationally, and that Florida and Texas account for about half of 47,000 arrests under the programme. The two “29,000” figures measure different things, arrests in Florida and officers nationwide, and are not a conflict. <em>Below the line because:</em> it is a trend report. It stays on the Florida page on local merit, because Florida law requires county jails to take part in 287(g), so Pasco’s and Pinellas’s sheriffs are in the count. <em>Sources: <a href="https://www.wusf.org/politics-issues/2026-10-28/behind-surge-florida-ice-arrests">WUSF</a>; <a href="https://www.npr.org/2026/10/28/g-s1-150296/287g-local-police-immigration-ice">NPR</a>.</em></p></div></details>
+</div>
+<h2 class="section" id="threads">Threads &amp; accountability</h2>
+<ul class="dorm">
+<li><strong>Correction, methane (lead&nbsp;6).</strong> Yesterday’s “under 15 boe a day” threshold was a single-sourced detail. The signed proposal co-proposes two ways of subcategorising wells. The correction runs at the top of the lead.</li>
+<li><strong>Russian diesel timing.</strong> This paper said the <em>PVT Azura</em> was due in Norfolk on 2 November. Today’s tracking names a different ship, the <em>Talisman</em>, due on 9 November (lead&nbsp;1, Divergence B). The Azura date is downgraded to unconfirmed until a port call is logged.</li>
+<li><strong>Brent level.</strong> Yesterday this paper promised to use ICE’s settlement. It could not be reached without a subscription, so today’s level is a dated quote with its time given. The promise is withdrawn rather than quietly dropped.</li>
+<li><strong>The 20s–10s hump.</strong> +35bp on 27 October’s curve, unchanged from Monday. Still reported as a reading, not a record.</li>
+<li><strong>Against the Claude edition (Issue 54).</strong> Both papers carry the DPA refining determination, Bolsonaro, Israel and the “Super Intelligence” wording. On the last, this edition disagrees on a fact: EO 14434 §3(a) defines the term (lead&nbsp;5, Divergence B). Claude’s paper uses an earlier 72% Israeli count; this one uses the 84% count. Claude’s carries the housing order’s mortgage-insurance cancellation, the wind-turbine Section 232 proclamation, the Villa Vie cruise story with refinery utilisation, the OGE gift thresholds and the DMCA triennial rulemaking, none of which are repeated here. This paper opened the Southwest floods, which Claude’s named but did not open.</li>
+<li><strong>“No strike before 3 November.”</strong> The WSJ account of a short campaign <em>after</em> the election (lead&nbsp;1) fits the timing this paper first reported on 23 October.</li>
+<li><strong>UAP disclosure.</strong> Swept the Federal Register, the congressional feeds and defence trade press: no new paperwork. Noted so that a quiet Core beat is visible rather than silently absent.</li>
+<li><strong>Skipped for time, named plainly:</strong> Alphabet’s and Microsoft’s results (both after the close today), the UK Budget beyond AI security, the CFTC’s Utah complaint itself (headline only), the HHS health-IT rule’s substance beyond the officer’s title, and today’s EIA petroleum status report (10:30 a.m., read tomorrow). <strong>Dates ahead:</strong> 2&nbsp;p.m. today, the Fed decision; 3&nbsp;November, election day and Warren’s deadline; 4&nbsp;November, the quarterly refunding; 9&nbsp;November, the <em>Talisman</em>; 13&nbsp;November, the earliest date for the kratom order; 27&nbsp;November, FDA comments; about 28&nbsp;November, the “Super Intelligence” definition proposal.</li>
+</ul>
+<h2 class="section">Source comparison, counted</h2>
+<p class="secnote">Pre-publish audit. Every story carries exactly one confidence marker. Divergence boxes appear only where independent accounts disagreed.</p>
+<p><strong>Confidence markers:</strong> 23 (9 leads, 12 Also today, 2 Florida). Primary source 7 · Independent corroboration 7 · Single-sourced 8 · Unconfirmed 1. <strong>Divergence boxes:</strong> 21 (oil 3, war bill 2, ETH 2, memory and grid 2, AI security 2, methane 2, Justice Department 1, Bolsonaro 2, payments 1, Delaware 1, kratom 1, Israel 1, Amendment&nbsp;3 1), plus one correction box. For comparison, the Claude edition for today carries 10 prose confidence lines and no divergence boxes, and reports 16 sources, 5 outside the watchlist; this edition, 45 and 37. Issue 10 (2026-09-10b), the layout model, carries 18 markers (9 primary, 6 independent corroboration, 3 single-sourced) and no boxes.</p>
+<footer>
+<p>Grok edition · filed alongside, never over, the Claude/Action issue for the same day · written by an AI system made by a company that competes with Anthropic and OpenAI, both of which appear in today’s stories · <a href="../index.html">Archive</a> · <a href="2026-10-28.html">Claude edition, 28 Oct</a> · <a href="2026-10-27-grok.html">Yesterday’s Grok edition</a></p>
+<p class="submit"><button id="send">Send feedback as a GitHub issue</button></p>
+</footer>
+</div>
+<script>
+(function () {
+ var OWNER = "historiocity", REPO = "News-Agent";
+ var btn = document.getElementById("send");
+ if (!btn) return;
+ btn.addEventListener("click", function () {
+ var lines = [], answered = 0;
+ document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+ answered++;
+ var q = i.closest(".fb").querySelector("p");
+ lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n → **" + i.value + "**");
+ });
+ if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+ var body = "Feedback on **Issue No. 54-grok — 28 October 2026, Grok edition**\n\n" + lines.join("\n")
+ + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+ window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+ + "&title=" + encodeURIComponent("Brief feedback — 2026-10-28-grok")
+ + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+ });
+})();
+</script>
+</body>
+</html>
