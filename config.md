@@ -528,6 +528,16 @@ them, and say so when it leans on one.*
 - **A second housing rule the day after a housing executive order is a programme.** USDA's accessory-dwelling-unit rule landed the morning after the FHFA order. Watch for the same pattern across departments within 24–48 hours of any executive order.
 
 
+### Operational notes, 30 October 2026
+
+- **Run the disconfirming test before publishing, not after.** Yesterday's fuel lead argued refinery utilisation explained the diesel price and named the seasonal comparison as the check it had not done. Running it took one extra parse of a series already being fetched, and it **falsified the claim**: late-October utilisation by year is 2022 90.6, 2023 85.4, 2024 89.1, 2025 86.0, **2026 92.8** — a four-year high, after the shallowest maintenance dip of the five. **Naming a missing check is better than hiding one and is not a substitute for doing it when the data is in hand.**
+- **Always read a level against its own history before calling it low.** 98.0 → 92.8 looks like a collapse and is a strong number for the date. The EIA weekly series goes back to 1990 on the same page already being fetched; extracting a same-week-by-year comparison is a few lines. **Do this for any series before attributing a price to it.**
+- **Two withdrawn mechanisms on one thread in nine days.** Inventories (22 Oct), refining (30 Oct). The pattern is reaching for a cause from whichever series was read most recently. **Standing rule for this thread: no mechanism without (a) a series with a direction, (b) a same-period comparison across years, and (c) at least one alternative ruled out.** Distillate demand, exports and the crack spread are unexamined and owed.
+- **When a lead rests on another outlet's exclusive that the relayer has not confirmed, say "single-sourced upstream" in the chip and in the first paragraph.** The Alaska spoiler story is a New York Times report NPR explicitly has not independently confirmed; the brief reports that the allegation was made and what followed, not that it is true.
+- **Section 338 of the Tariff Act of 1930** is the authority behind the Canada duties: up to 50 per cent against discrimination, with power to exclude a country's goods entirely. Near-dormant for ninety years, so almost no case law. Four proclamations since 20 July; scope changes land in annexes and take effect the same morning.
+- **Truncated axes get said out loud.** Today's bar chart starts at 84 per cent, and the figcaption says so and says it exaggerates the visual difference. Any non-zero baseline is disclosed in the caption from now on.
+
+
 ## Watchlist
 
 Empty at first run. Populates from reader feedback and from threads that recur on
@@ -775,3 +785,7 @@ Retire a thread because it is finished or stopped mattering — never to make ro
 | Federal personnel data breaches | active | DHS | 2026-10-29 |
 | Methane standards reconsideration | active | EPA | 2026-10-29 |
 | Compounding and enforcement discretion | active | HHS/FDA | 2026-10-29 |
+| VA home loans | active | VA | 2026-10-30 |
+| Section 338 and Canada | active | White House | 2026-10-30 |
+| Senior military dismissals | active | DoW | 2026-10-30 |
+| Accreditation and federal student aid | active | Education | 2026-10-30 |
