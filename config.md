@@ -548,6 +548,16 @@ them, and say so when it leans on one.*
 - **Record what a comment window's length says.** Infant formula: four months. ACA verification: 31 days. Section 301 port fees: seven days over a weekend. The spread between them is itself reportable.
 
 
+### Operational notes, 1 November 2026
+
+- **The diesel thread is closed and the last step came from someone else's reporting.** Saturday established the price is set internationally and named the cause as unanswered; Sunday's oil earnings (Exxon $15.4bn, Shell $10.8bn, Chevron $9.9bn — $36bn+ in a quarter, Brent ~$113 against ~$70 pre-war) supplied it. **Worth stating in print when the brief's contribution was ruling things out rather than finding the answer.** The capital-allocation detail — buybacks and dividends, not drilling — is what says the price will not self-correct soon.
+- **Scanning the whole notices list on a Saturday or Sunday pays.** Monday's 87 notices produced three leads (cost of incarceration, OMB essential-medicines RFI, FTZ refusals) that no thread pointed at. Second time this has worked (25 Oct was the first). **Make the weekend pre-read a full notices scan, not just rules.**
+- **"Idle" is the word to search for in a capacity RFI.** OMB is canvassing for mothballed US and near-shore plant for the ASPR 86 List — not for who would build, but who already built and stopped. That phrasing dates the urgency. A reopened comment period usually means a thin response; say so as an inference, not a fact.
+- **Watch the Foreign-Trade Zone Board's notification decisions as a tariff-policy signal.** 28 October: two refusals (Stadler passenger rolling stock; AuroraTe galvanizing) and one limited approval (Tesla battery storage). An FTZ is the pressure valve for tariffed components; refusals push applicants from a months-long notice into a year-long full application. **Owed: the board's normal approval rate**, without which "unusual" is unmeasured.
+- **Two leads today named a check not done** (incarceration cost vs inflation, asserted from memory; FTZ approval rate, unmeasured). Flagged in their confidence lines. **The 29 October practice failed within a day when it was adopted; the test is whether these are done before either claim is repeated.**
+- **A dates-ahead entry that resolves by nothing happening still gets closed out.** The clocks went back and the Senate did not act; that got two sentences below the line and was removed from the list, rather than being dropped silently.
+
+
 ## Watchlist
 
 Empty at first run. Populates from reader feedback and from threads that recur on
@@ -801,3 +811,7 @@ Retire a thread because it is finished or stopped mattering — never to make ro
 | Accreditation and federal student aid | active | Education | 2026-10-30 |
 | Infant formula standards | active | FDA | 2026-10-31 |
 | Section 232 findings without tariffs | active | Commerce/USTR | 2026-10-31 |
+| Exchange security and state-sponsored theft | active | FBI/Treasury | 2026-11-01 |
+| Cost of federal incarceration | active | BOP | 2026-11-01 |
+| Essential medicines manufacturing | active | OMB/ASPR | 2026-11-01 |
+| Foreign-trade zones and tariff mitigation | active | FTZ Board | 2026-11-01 |
