@@ -558,6 +558,17 @@ them, and say so when it leans on one.*
 - **A dates-ahead entry that resolves by nothing happening still gets closed out.** The clocks went back and the Senate did not act; that got two sentences below the line and was removed from the list, rather than being dropped silently.
 
 
+### Operational notes, 2 November 2026
+
+- **Both flagged checks were done first thing and they split, which is the practice working.** The FTZ baseline **confirmed and sharpened** the claim (2026: 27 authorizations, 6 refusals, 126 notifications — but **four of the six refusals in the last four days**, and the other two are one applicant in June). The incarceration-cost claim was **refuted**: FY2025 $47,564 against FY2024 $47,162 is **+0.85%**, and the reentry figure **fell** 0.47%. A "what to watch" line asserted from memory got a lead-position correction.
+- **Suspect your own memory most when it makes the story better.** "Rising faster than inflation" was the interesting version and it was wrong. Flag anything written from recollection in the confidence line, then check it the next morning.
+- **The Federal Register API counts things, not just lists them.** `conditions[term]` plus a date range and `per_page=1000` gave 216 FTZ production-activity notices for 2026, classifiable by title. **Use it for any "is this unusual?" question** — it is the cheapest baseline available and should be run before, not after, calling something unusual.
+- **A prediction is only worth quoting back with its hedge.** The 26 October lead said the DOJ's Alaska remedy had no workable mechanism given the secret ballot *and* that the brief could not rule out the Department's reading. Judge Gleason's ruling turns on exactly the first point. Quoting the first without the second would be self-flattery.
+- **Pre-read validated a fifth time**, second full-count check: Saturday's preview of Monday (8 rules, 5 proposed, 2 presidential, 87 notices) matched exactly.
+- **Say the limits of a 4 a.m. brief before the morning they bite.** Election night ends hours before this brief publishes; Wednesday's issue committed in advance to a state of play, no unsourced projections, and no seat count presented as settled. **Set that expectation the day before, not in the issue that falls short.**
+- **The clocks went back, so the brief now publishes at 4 a.m. eastern, not 5.** Everything downstream — AAA's daily update, the EIA 10:30 release, Treasury's print — sits an hour later relative to the run.
+
+
 ## Watchlist
 
 Empty at first run. Populates from reader feedback and from threads that recur on
@@ -815,3 +826,4 @@ Retire a thread because it is finished or stopped mattering — never to make ro
 | Cost of federal incarceration | active | BOP | 2026-11-01 |
 | Essential medicines manufacturing | active | OMB/ASPR | 2026-11-01 |
 | Foreign-trade zones and tariff mitigation | active | FTZ Board | 2026-11-01 |
+| Congressional health and attendance | active | — | 2026-11-02 |
