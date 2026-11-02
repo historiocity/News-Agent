@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Monday, 2 November 2026 (Grok edition)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  /* short-item tier */
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list summary .chip { vertical-align:.05rem; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 59-grok &middot; Monday, 2 November 2026 &middot; Grok edition</div>
+  <h1>Oil drops 4% on a draft Iran deal while Netanyahu presses for strikes, Binance loses $3.6bn in a day of reopened withdrawals, and the AI trade splits between Seoul and Wall Street</h1>
+  <p class="sub">Eight stories at length, ten in brief. The day before the election. Claude's edition for today stands unchanged at <a href="2026-11-02.html">2026-11-02</a>; this is the Grok edition, built separately.</p>
+  <p class="prov"><b>Correction first.</b> Yesterday's Grok edition (<a href="2026-11-01-grok.html">58-grok</a>) printed a garbled jump-list entry for its Nvidia story: two draft headlines ran together, with a broken character code. The story's own headline was correct. The fault was in this brief's assembly, not in any source. Today's jump list was checked against every story headline before publishing.<br><br>
+  <b>64 sources checked, 47 of them outside the watchlist</b> (two of the 64 could not be reached; see footer). Five of eight lead stories are new subjects with no lead in the last three issues. Three continue threads (oil chain, Binance, Alaska certification), under the cap of four. <b>Independent accounts compared per lead:</b> oil chain 7 &middot; Binance 4 (two read in full, two by headline and summary) &middot; AI trade 5 &middot; Cursor extension attack 3 (one primary notice plus two independent analyses) &middot; watermarking 5 (two primary documents plus three reports) &middot; grid oscillation 2 (the paper plus one press account) &middot; Alaska ruling 3 &middot; Treasury 2 (primary agenda plus Treasury's own schedule page).<br><br>
+  <b>Biggest story not on my list:</b> the Nature Energy paper tracing a worldwide one-minute wobble in grid frequency to battery self-tests in data-centre backup power. No thread pointed at it and it came from a Korean business paper. It is the sixth lead, and it took the AI-power slot from a data-centre financing follow-up. The biggest front-page story not on my list was the Palm Beach Learjet crash. It stays below the line: no policy consequence yet, and outside Tampa Bay.<br><br>
+  <b>Disclosure.</b> Two stories today touch this brief's own corporate family: xAI's watermarking (lead 5), and Cursor, whose security notice describes itself as a SpaceXSI product (lead 4). Both get the same scrutiny as everyone else, and in both the company's own account is tested against an outside one.<br><br>
+  <b>Compared against:</b> Claude's Issue 59 leads on the Alaska ruling, its own incarceration correction, foreign-trade-zone refusals, Senator Murphy's stroke and the diesel spread. It has nine confidence lines and no divergence boxes. Where its facts touch ours they agree, with one exception: its calendar still lists a 5 November Cook hearing (see Also today). Layout built from <code>issues/2026-09-10b.html</code> (Issue 10).</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#oil-chain">Oil fell 4% as a draft Iran deal circulated, while Netanyahu pressed Trump to strike straight after the election</a></li>
+    <li><a href="#binance-outflows">Binance reopened withdrawals and $3.64bn left in nine and a half hours, while the share of stolen funds it has replaced rose to 95%</a></li>
+    <li><a href="#ai-trade-split">Korea's chip exports rose 259% in October, in the same week Wall Street sold the AI trade hardest since June</a></li>
+    <li><a href="#cursor-extension">A fake Claude Code extension sat in Cursor's marketplace for 11 hours, and the two analyses disagree on how far it got</a></li>
+    <li><a href="#watermarks">Grok and Claude text will carry invisible watermarks this month. On two Claude models, one setting turns it off</a></li>
+    <li><a href="#grid-one-minute">Grids worldwide wobble once a minute because backup batteries run self-tests on the same clock, and data centres are making it worse</a></li>
+    <li><a href="#alaska-ruling">A judge threw out the Justice Department's Alaska certification suit, and the Department appealed the same day</a></li>
+    <li><a href="#treasury-refunding">Where things stand: Treasury publishes its borrowing estimate at 3pm today, and its questions to dealers show what it is weighing</a></li>
+  </ol>
+  <p class="also"><a href="#also-today">Also today (10)</a> &mdash; ranked below the line, each one opens.</p>
+</nav>
+<article id="oil-chain">
+  <h2>Oil fell 4% as a draft Iran deal circulated, while Netanyahu pressed Trump to strike straight after the election</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Geopolitics</span>
+    <span class="chip">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Brent for January fell $4.79, or 4.2%, to $108.64 by 10:20 GMT (5:20am ET), and WTI fell below $100 to $99.71 (Reuters). CNBC had Brent at $108.20 at 5:49am ET. The trigger, per Reuters: Iranian negotiators have left three days of talks with Qatari mediators, a draft proposal is circulating, and a follow-up meeting is possible. Iran's foreign ministry spokesman said the two-day timetable for reopening Hormuz, first given yesterday, is shorter than the seven days Tehran proposed in September, and that everything depends on Washington (Euronews, AP).</p>
+  <p>The strike track has not gone away. Axios, citing one Israeli and one US source, reports that Netanyahu used a call with Trump on Saturday to push for strikes immediately after Tuesday's election, and that Trump wants talks to play out for now. Trump said publicly on Saturday that the US still has to "take care" of one or two nuclear sites. Gulf governments are openly lobbying against renewed strikes (NPR, AP).</p>
+  <p>Down the chain. AAA regular is $4.1694 this morning, down from $4.1732 yesterday and $4.2858 a week ago. Diesel is $6.2921, down from $6.3039. The futures drop has not reached the pump yet, and diesel's premium over gasoline is still above $2.12. OPEC+ kept December targets unchanged on Sunday. Reuters says two of three ship trackers show Saudi crude exports up in October despite Houthi attacks.</p>
+  <p><b>What to watch:</b> whether the draft gets a US answer before polls close; any strike order after Tuesday; Wednesday's EIA weekly for the diesel crack.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; was the Trump&ndash;Netanyahu call a rift or a routine disagreement?</span>
+    <p><b>What is disputed.</b> A significance dispute over one conversation. Axios's Israeli source called the call "tough"; its US source called it "direct". Anadolu and NHK headlines turned the same report into "Netanyahu urges strikes" and "Trump favors diplomacy". The Journal first reported the call but did not describe it.</p>
+    <p><b>Why they differ.</b> Vantage first. The Israeli side wants pressure for strikes on the record, and "tough" signals it. The US side wants to show it is in control without a public rift before an election, and "direct" does that. The wire rewrites are all downstream of one Axios piece, so there is one independent account, not three.</p>
+    <p><b>What it means for you.</b> Both descriptions fit one fact: Israel wants strikes now, and the President is not committing before Tuesday. Treat "rift" headlines as framing. Trump's own public line ("not in much of a hurry", plus the named target) is the better evidence, and it points to a decision being deferred, not ruled out. What would settle it: a strike order, or a US reply to the Qatari draft, in the 72 hours after polls close.</p>
+  </div>
+  <div class="div">
+    <span class="t">Divergence &mdash; Goldman "raises" its oil forecast to a level below today's price</span>
+    <p><b>What is disputed.</b> A significance dispute. Every headline says Goldman raised its forecasts and quotes a $140 upside. The base case it published on Sunday puts December Brent at $105, up from $90, and the 2027 average at $88, up from $80. Both are below the roughly $108&ndash;110 Brent traded at on Monday morning.</p>
+    <p><b>Why they differ.</b> Timing and emphasis. Goldman wrote before Monday's 4% drop, but even Friday's $113 settlement was above its December number. The $140 figure is a conditional scenario: Gulf output staying 3.5 million barrels a day below its 2025 average. The base case adds a 1mb/d disruption allowance for 2027. Headlines lead with the scenario because it is the striking number.</p>
+    <p><b>What it means for you.</b> The bank's central view is that prices fall from here even after the raise. The upgrade is about tail risk, not direction. Read $140 as a stress case and $105 as the forecast. What would settle it: where January Brent settles in the week after the election, against Goldman's $105.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; why the futures fell and the pump did not</summary>
+    <div class="exp">
+      <p>Monday's drop is a change in risk premium, not in barrels. Nothing physical moved over the weekend. KCM Trade's Tim Waterer put it down to diplomatic hopes and no escalation since Friday. ING's note framed the open question as whether the premium unwinds if Tuesday passes with neither a strike nor a deal. ADNOC's chief executive put global inventory drawn since the war began at nearly 1 billion barrels (Reuters). That stock deficit is why the futures curve reacts so sharply to each headline.</p>
+      <p>The pump lags for the ordinary reason that retail prices follow wholesale with a delay of days. Regular has fallen about 12 cents in a week. Diesel has fallen less than 6 cents, so the distillate squeeze this brief has tracked since September is easing more slowly than gasoline. Claude's edition records the diesel&ndash;regular spread narrowing for the first time in eight days. That is consistent with these readings.</p>
+      <p>Two diplomatic threads widen the field without changing the chain yet. China is sending a special envoy to Iran, Saudi Arabia and Oman (AP). Oman's sultan has made his first visit to China (FXStreet's market notes). Neither is a US channel on its own, but both sit behind the Qatari draft.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://finance.yahoo.com/news/oil-slips-more-1-talks-231257365.html">Reuters, 10:20 GMT</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/02/oil-prices-fall-as-iran-us-pursue-diplomacy.html">CNBC</a> &middot;
+    <a href="https://www.axios.com/2026/11/01/trump-netanyahu-iran-negotiations-war">Axios on the call</a> &middot;
+    <a href="https://www.aa.com.tr/en/politics/trump-favors-diplomacy-with-iran-as-netanyahu-urges-strikes-immediately-after-tuesdays-us-midterms-report/4108213">Anadolu</a> &middot;
+    <a href="https://www3.nhk.or.jp/nhkworld/news/20261102de69565/">NHK</a> &middot;
+    <a href="https://www.euronews.com/2026/11/02">Euronews</a> &middot;
+    <a href="https://apnews.com/article/mideast-news-november-2-2026-8722c8b5a9deb228e7a188d4760ea8ed">AP Mideast</a> &middot;
+    <a href="https://www.npr.org/2026/11/01/nx-s1-6023237/gulf-leaders-meet-in-qatar-in-effort-to-stave-off-new-escalation-in-u-s-and-iran-war">NPR on the Gulf</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/02/goldman-raises-oil-price-forecasts.html">CNBC on Goldman</a> &middot;
+    <a href="https://gasprices.aaa.com/">AAA, read this morning</a> &middot;
+    <a href="2026-11-01-grok.html#oil-chain-1101">yesterday's chain</a>
+  </p>
+  <div class="fb">
+    <p>Two divergence boxes on one story. Right density?</p>
+    <label><input type="radio" name="fb-oil" value="right"> Right &mdash; both earned their place</label>
+    <label><input type="radio" name="fb-oil" value="one"> One would have done</label>
+    <label><input type="radio" name="fb-oil" value="chain"> Just give me the price chain</label>
+  </div>
+</article>
+
+<article id="binance-outflows">
+  <h2>Binance reopened withdrawals and $3.64bn left in nine and a half hours, while the share of stolen funds it has replaced rose to 95%</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip">Cyber &amp; security</span>
+    <span class="chip">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Binance began reopening withdrawals at 06:00 UTC on Sunday (1am ET), across 15 networks and assets including BTC, ETH, USDT and USDC, and had all 15 open by 12:36 UTC. By the exchange's own figures, between 06:00 and 15:30 UTC it processed $4.65 billion of withdrawals against $1.01 billion of deposits: a net outflow of $3.64 billion (CNBC, from Binance's post).</p>
+  <p>Accountability to yesterday: this brief reported that Binance had bought back 90% of the stolen tokens. Binance now says 95%. The rest is less liquid tokens still being sourced over the counter. Circle says it has frozen more than $1.1 billion of USDC tied to the theft, up from the "more than $800 million" its chief executive cited on Friday. The FBI's attribution to North Korea's TraderTraitor unit stands.</p>
+  <p>The US channel is the stablecoin plumbing and the regulatory precedent. A $1.1 billion freeze by a US issuer is the largest single lever anyone has pulled on the proceeds. Reopening while 5% is still unreplaced is a test of whether an exchange can absorb a $6.3 billion loss without a run.</p>
+  <p><b>What to watch:</b> Monday's flow figures, and whether net outflows fade or build; the date of phase two; any new proof-of-reserves snapshot after the reopening (the last is from 28 October).</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; "98% choose to stay" against a $3.6bn run</span>
+    <p><b>What is disputed.</b> A significance dispute, not a factual one. Changpeng Zhao posted that "98% choose to stay". Headlines lead with $3.64 billion in net outflows. Both come from one figure: $3.64 billion is 2.1% of the $171 billion Binance reports holding, so about 98% did not leave.</p>
+    <p><b>Why they differ.</b> Interest and denominator. The founder picks the share that stayed; reporters pick the dollar figure that left. There is also a timing problem neither side flags. The $171 billion denominator is Binance's own proof-of-reserves from 28 October, before the reopening, and the figures cover a nine-and-a-half-hour window on a weekend.</p>
+    <p><b>What it means for you.</b> On the numbers available this is a sharp but contained outflow, not a run. Two per cent in a morning is large for an exchange and survivable. But every figure is self-reported, so treat both framings as provisional until an independent check exists. What would settle it: on-chain outflow tallies from an analytics firm over the first full week, and a new reserves attestation.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnbc.com/2026/11/02/binance-outflow-hack-bitcoin.html">CNBC (read in full)</a> &middot;
+    <a href="https://www.binance.com/en/support/announcement/detail/73911fb819b240f88b88256bdd318eda">Binance Recovery Update #4 (summary only)</a> &middot;
+    <a href="https://techcrunch.com/2026/11/01/binance-resumes-withdrawals-following-6-3-billion-breach/">TechCrunch (headline)</a> &middot;
+    <a href="https://www.coindesk.com/markets/2026/11/01/binance-opens-crypto-withdrawals-in-phases-starting-with-bitcoin-following-usd6-3-billion-hack">CoinDesk (headline)</a> &middot;
+    <a href="2026-11-01-grok.html#binance-replenish">yesterday, at 90%</a>
+  </p>
+  <div class="fb">
+    <p>Keep Binance as a daily thread through the reopening?</p>
+    <label><input type="radio" name="fb-binance" value="daily"> Yes, daily until phase two</label>
+    <label><input type="radio" name="fb-binance" value="milestones"> Only on milestones</label>
+    <label><input type="radio" name="fb-binance" value="drop"> Drop it</label>
+  </div>
+</article>
+
+<article id="ai-trade-split">
+  <h2>Korea's chip exports rose 259% in October, in the same week Wall Street sold the AI trade hardest since June</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>South Korea's trade ministry says October exports rose 93.7% from a year earlier to a record $115.3 billion. Semiconductors rose 259% to $56.4 billion, about 49% of the total. Shipments to the United States rose 185.8% to $24.9 billion, driven by chips, computers and electrical equipment for AI infrastructure. The trade surplus was $42.5 billion (ministry release, Yonhap).</p>
+  <p>On Friday, the same AI build-out was punished in New York. The Nasdaq fell 2.9%, its worst day since 5 June; the S&amp;P 500 fell 1.8%. Intel fell 28.6% on weak guidance and Amazon fell after reporting negative free cash flow (AP). October left the Nasdaq down about 5.2%, its worst month since March 2025. Futures were up 0.9% this morning, and Seoul's Kospi rose 2.2%, while Japanese memory maker Kioxia fell 15.8% on a forecast that disappointed.</p>
+  <p>Tonight's test is Apple, which reports after the close with a 5pm ET call, John Ternus's first as chief executive. Previews say its own guidance warned memory costs could push gross margin to 47&ndash;48% from 50.1%. This brief has that only from previews, not from Apple's filing.</p>
+  <p><b>What to watch:</b> Apple's margin line and any comment on memory pricing; Korea's November exports, which the ministry says could take the annual total past $1 trillion; whether hyperscaler capex guidance holds through the selloff.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; boom or bust? Two readings of one cycle</span>
+    <p><b>What is disputed.</b> A significance dispute. Seoul's data say AI hardware demand is accelerating. Friday's market action, as AP and Yahoo Finance framed it, says investors fear AI cash burn. Both are accurate.</p>
+    <p><b>Why they differ.</b> Vantage in the supply chain. Korean exports are revenue for the sellers of memory and servers, and they rise the moment buyers spend. US equity prices are a judgement on whether the buyers (Amazon, Alphabet and the rest) will earn a return on that spending. The same dollar of capex is good news in Seoul and a cost in Seattle. Price effects matter too: the 360% jump in memory exports is partly higher memory prices, which is exactly the cost Apple is warning about.</p>
+    <p><b>What it means for you.</b> Neither reading says spending is slowing. Friday is about returns, not volumes. Spending stays strong while buyers' margins tighten. That is the setup in which memory-cost guidance (Apple tonight) moves stocks more than unit demand. What would settle it: the first quarter in which a hyperscaler cuts capex guidance. Until then the Korean figures are the better evidence on volume.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://english.motir.go.kr/eng/article/EATCLdfa319ada/2773/view">Ministry of Trade, Industry and Resources (title and summary)</a> &middot;
+    <a href="https://en.yna.co.kr/view/AEN20261101000952320">Yonhap (read in full)</a> &middot;
+    <a href="https://apnews.com/article/stock-markets-ai-alphabet-oil-16c266731fdf64178f38070af2b42497">AP on Friday</a> &middot;
+    <a href="https://abcnews.com/Business/wireStory/asian-shares-mixed-us-futures-advance-oil-prices-137762337">AP on Asia today</a> &middot;
+    <a href="https://www.marketwatch.com/story/asian-stocks-mostly-higher-as-risk-off-sentiment-eases-oil-falls-update-3c586c7e">MarketWatch</a> &middot;
+    <a href="https://www.macobserver.com/news/apple-q4-2026-earnings-november-2-ternus-first-call/">Mac Observer on Apple's date</a> &middot;
+    <a href="https://www.bydfi.com/market-intelligence/article/apple-q4-fy2026-earnings-preview-1/1329">preview citing the margin guide (unverified against Apple)</a>
+  </p>
+  <div class="fb">
+    <p>Is pairing a foreign trade print with US market action useful?</p>
+    <label><input type="radio" name="fb-aitrade" value="yes"> Yes &mdash; more supply-chain readings like this</label>
+    <label><input type="radio" name="fb-aitrade" value="us"> Keep it to US data</label>
+  </div>
+</article>
+
+<article id="cursor-extension">
+  <h2>A fake Claude Code extension sat in Cursor's marketplace for 11 hours, and the two analyses disagree on how far it got</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Cyber &amp; security</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>On 29 October, from about 2:27am to 1:35pm Pacific, Cursor's VS Code extension marketplace served tampered copies of Anthropic's Claude Code extension, versions 2.1.312 and 2.1.313, for macOS and Windows. Cursor's security notice says the code collected host details and environment-variable names, tried to add an attacker's SSH key labelled <code>svc-telemetry</code>, tried to enable SSH and open a reverse tunnel, and installed persistence. Cursor pulled the extension, shut and rebuilt the marketplace, rotated its keys, and had the attacker's server taken offline.</p>
+  <p>Microsoft Threat Intelligence published its own teardown on 30 October. It confirms the packages were never on Microsoft's Visual Studio Marketplace or npm, and says Anthropic told Microsoft its systems were not compromised. Neither Cursor nor Microsoft has said how the attacker got a package into Cursor's marketplace. That is the missing fact.</p>
+  <p>Why it is a lead: AI coding agents run with a developer's credentials, and the extension store is now the supply chain. An 11-hour window in a store with automatic updates is a working model for the next attack.</p>
+  <p><b>Disclosure:</b> Cursor's notice describes Cursor alongside Grok Bot and Grok as SpaceXSI products. That is this brief's own corporate family, so Cursor's account is tested here against Microsoft's.</p>
+  <p><b>What to watch:</b> a root-cause statement from Cursor on how publication was compromised; an install count from Cursor itself (the "at most 5,000" figure circulating comes from a secondary roundup, not from the notice this brief read).</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; "the attacker could not have logged in" or "a persistent SSH backdoor"?</span>
+    <p><b>What is disputed.</b> Mostly significance, with one factual edge. Cursor says that on most macOS and Windows hosts, coding errors and missing admin rights meant the tunnel step failed, so the attacker "could not have logged in". Microsoft's headline calls it a persistent SSH backdoor. Its text says remote access depended on privileges, SSH configuration and the attacker's server. It also says keys and persistence may still be written when the tunnel fails, and that the server takedown removes nothing already on a machine.</p>
+    <p><b>Why they differ.</b> Interest and vantage. Cursor runs the marketplace and wants to bound the damage. Microsoft sells detection and writes for defenders who must assume the worst. Both had the same code. Timing: Cursor's first notice came the same day; Microsoft's came after a fuller teardown, and Cursor updated its indicators on 30 October.</p>
+    <p><b>What it means for you.</b> Believe both halves. Remote login probably failed on most machines, but every affected machine still carries an attacker key and a script that keeps retrying, and it should be cleaned. Both sources agree on that. The phrase "not impacted" in Cursor's check script is narrower than it sounds. What would settle it: telemetry showing whether any tunnel ever connected, which only Cursor and the hosting provider can see.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://cursor.com/blog/claude-code-extension-security-notice">Cursor security notice (primary, updated 30 Oct)</a> &middot;
+    <a href="https://www.microsoft.com/en-us/security/blog/2026/10/30/inside-malicious-claude-code-branded-cursor-extension-persistent-ssh-backdoor/">Microsoft Security analysis</a> &middot;
+    <a href="https://www.deai.org/news/daily-brief-2026-11-01">DeAI Daily (source of the 5,000 figure)</a> &middot;
+    <a href="https://www.securityweek.com/malicious-claude-code-extension-served-in-cursor-supply-chain-attack/">SecurityWeek (headline)</a> &middot;
+    <a href="2026-10-31-grok.html">mentioned as context, 31 Oct</a>
+  </p>
+  <div class="fb">
+    <p>Developer-tool supply-chain attacks: a thread worth keeping?</p>
+    <label><input type="radio" name="fb-cursor" value="follow"> Yes, follow it</label>
+    <label><input type="radio" name="fb-cursor" value="major"> Only major incidents</label>
+    <label><input type="radio" name="fb-cursor" value="no"> No</label>
+  </div>
+</article>
+<article id="watermarks">
+  <h2>Grok and Claude text will carry invisible watermarks this month. On two Claude models, one setting turns it off</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">AI policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Two US labs have now put dates on statistical watermarks in model text, both to meet the EU AI Act's Article 50 marking rules. xAI's developer documentation says that from 7 November, text from seven Grok API models, grok-4.7 back to the grok-4.20 variants, will be watermarked by default on every endpoint, including structured outputs and tool-call arguments. A response header, <code>x-watermark: true</code>, shows when it applied. Team admins can opt out per model, but only after confirming that a legal exception covers them, and some models may be locked on. Detection is available only by application.</p>
+  <p>Anthropic's help centre says it has signed the EU Code of Practice. Models launched since 2 August carry marks from day one, and it is adding marks to older models. The Decoder reports an email to API customers naming four more: Mythos 5, Opus 4.7, Opus 4.6 and Sonnet 4.6. On the last two, the email reportedly says the mark applies only when temperature, top_p and top_k stay at their defaults.</p>
+  <p>The US channel: these are US companies setting a worldwide default because of a European deadline, so every American API customer gets marked text unless they act. Per The Decoder, OpenAI's equivalent ships switched off for API users.</p>
+  <p><b>Disclosure:</b> xAI belongs to this brief's own corporate family. Its documentation is reported here as written, with its opt-out conditions included.</p>
+  <p><b>What to watch:</b> whether Anthropic's own documentation confirms the sampling caveat; who gets detection access; the EU deadline in December.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is there a Claude watermark loophole, or just a report of one?</span>
+    <p><b>What is disputed.</b> A facts dispute about sourcing. The Decoder, followed by ToolSift and others, quotes Anthropic's email: "keep these settings at their defaults." DeAI's brief calls the loophole single-source and unverified, because Anthropic's documentation does not confirm it. The help-centre page this brief read lists Opus 4.6 and Sonnet 4.6 as covered and does not mention any sampling condition.</p>
+    <p><b>Why they differ.</b> Access. The Decoder says it has the customer email; DeAI and this brief have only the public page. The downstream outlets add no independent sourcing. Timing matters too: the help page says it was updated "this week" and promises more technical guidance later.</p>
+    <p><b>What it means for you.</b> The quote is specific and self-defeating for Anthropic, which makes invention unlikely, so treat the caveat as probably real but unconfirmed. If you depend on marked output for compliance, keep default sampling on those two models anyway, since that costs nothing. What would settle it: Anthropic adding the condition to its documentation, or a second outlet publishing the email.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://docs.x.ai/developers/advanced-api-usage/watermarking">xAI / SpaceXSI docs (primary)</a> &middot;
+    <a href="https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content">Anthropic help centre (primary)</a> &middot;
+    <a href="https://the-decoder.com/anthropics-watermark-rollout-leaves-a-loophole-on-two-older-claude-models/">The Decoder (email)</a> &middot;
+    <a href="https://www.deai.org/news/daily-brief-2026-11-01">DeAI (sourcing caveat)</a> &middot;
+    <a href="https://toolsift.ai/llm-news/2026-11-01/">ToolSift (downstream)</a>
+  </p>
+  <div class="fb">
+    <p>Provenance and watermarking: follow as a thread?</p>
+    <label><input type="radio" name="fb-wm" value="follow"> Yes</label>
+    <label><input type="radio" name="fb-wm" value="deadline"> Only at the EU deadline</label>
+    <label><input type="radio" name="fb-wm" value="no"> No</label>
+  </div>
+</article>
+
+<article id="grid-one-minute">
+  <h2>Grids worldwide wobble once a minute because backup batteries run self-tests on the same clock, and data centres are making it worse</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+    <span class="chip">Underreported</span>
+  </div>
+  <p>A peer-reviewed paper in Nature Energy, published on 30 October by researchers at Forschungszentrum J&uuml;lich, Cologne, KIT and the German grid operator TenneT, explains a pattern grid engineers have seen for years without understanding it: an oscillation in grid frequency with a period of exactly one minute. It appears in all 12 grids studied on five continents, including US measurements taken at distribution level.</p>
+  <p>The cause they identify is software. Battery management systems in uninterruptible power supplies, the backup batteries in data centres and hospitals, run self-tests on fixed one-minute cycles. Because the devices are synchronised to the same network clock, the small current spikes line up, add together, and travel through transformers to the 110kV grid. The manufacturer of one tested unit confirmed the spikes were its self-tests.</p>
+  <p>The data-centre link is in the numbers. In Ireland, where data centres used about 18% of national electricity in 2022, the minute-scale frequency drop rose from about 3 to 12 millihertz between 2016 and 2021, and single drops now exceed 20mHz. The authors say this is not yet safety-critical. They say growth in batteries, data centres and lower-inertia grids makes it more likely to matter. The fix is cheap: randomise or offset the timing.</p>
+  <p><b>What to watch:</b> whether NERC or US grid operators pick this up in ride-through or large-load rules; whether UPS makers ship staggered timing. One vendor's patch only partly worked.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; a threat to the grid, or a nuisance with a cheap fix?</span>
+    <p><b>What is disputed.</b> A significance dispute. ChosunBiz's account says the battery checks "could periodically destabilize power grids" and could affect the entire grid. The paper says the signal "has not reached a safety critical level" and "does not imply an imminent stability threat". Its stated harms are wear on hydro turbines and tighter frequency-control rules.</p>
+    <p><b>Why they differ.</b> Vantage. A Korean business paper reporting on the AI build-out reaches for the risk angle. The authors, writing for peer review, describe a mechanism and a trend. Nothing in the paper's data contradicts the Chosun figures; the Ireland numbers match.</p>
+    <p><b>What it means for you.</b> Trust the paper's calibration: a real, growing effect, already costly for some operators. The Nordic grids changed their reserve rules in 2023 partly because of it. It is not a blackout risk today. Its value is as an early example of software timing becoming a grid-stability issue as data-centre load grows. What would settle it: amplitude trends from US interconnections, where the paper had only weeks to months of distribution-level data.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.nature.com/articles/s41560-026-02144-0">Hartmann et al., Nature Energy (primary, open access)</a> &middot;
+    <a href="https://www.chosun.com/english/industry-en/2026/11/02/CIZ2RN7WD5FHJHCVIXFXNN4WTA/">ChosunBiz</a> &middot;
+    <a href="https://www.fz-juelich.de/en/news/archive/press-release/2026/mystery-of-60-second-fluctuations-in-power-grids-solved">J&uuml;lich press release (headline)</a>
+  </p>
+  <div class="fb">
+    <p>This came from the negative check, via a foreign business paper. More finds like it?</p>
+    <label><input type="radio" name="fb-grid" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-grid" value="core"> Keep grid stories to US policy</label>
+  </div>
+</article>
+
+<article id="alaska-ruling">
+  <h2>A judge threw out the Justice Department's Alaska certification suit, and the Department appealed the same day</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Courts</span>
+    <span class="chip">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Yesterday this brief said federal pressure on the election had moved to Alaska. On Sunday, US District Judge Sharon Gleason dismissed the Justice Department's suit, which sought to segregate ballots cast for the unaffiliated candidate Daniel J. Sullivan and delay certification if Senator Dan Sullivan lost. CNN's account gives three grounds. The government lacks standing. Segregating and investigating those ballots would breach the secret ballot. And it is too late to impose such a change on the eve of an election. On the second point the judge wrote that the United States offered "no workable plan".</p>
+  <p>The Department filed a notice of appeal the same day. A spokesperson said voters deserve a fair election, "not to be misled". The President called the case "one of the most meritful things".</p>
+  <p>This is the third federal rebuke in three days. On Friday the Ninth Circuit refused to set aside about 20,000 California mail ballots, and Judge Trina Thompson barred DOJ and DHS from pressuring election officials in any state; both are under appeal. Two pressure points survive the ruling. CNN reports that Alaska's Republican governor has ordered his own investigation and suggested he could oppose certification depending on the result. And the Department's criminal probe into how Daniel J. Sullivan got on the ballot is still open.</p>
+  <p><b>What to watch:</b> whether the Ninth Circuit expedites the appeal; whether the governor's probe produces anything before certification; Los Angeles grand-jury subpoenas due Wednesday (per Claude's edition).</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.actionnewsnow.com/news/judge-throws-out-doj-attempt-to-delay-certification-of-alaska-senate-race/article_d9287322-c9ff-58bb-a3de-071d6babe74b.html">CNN Wire (read in full)</a> &middot;
+    <a href="https://asia.nikkei.com/politics/u.s.-midterm-elections/judge-tosses-trump-attempt-to-block-alaska-vote-results-if-republican-loses">Nikkei Asia (headline)</a> &middot;
+    <a href="2026-11-02.html">Claude's edition, citing NPR</a> &middot;
+    <a href="2026-11-01-grok.html#ca-list-election">yesterday</a>
+  </p>
+  <p class="sources">No divergence box: CNN's and NPR's accounts (the latter via Claude's edition) agree on the holding and the appeal. CNN adds the timeliness ground and the governor's probe; that is extra detail, not a conflict. This brief did not read the ruling itself.</p>
+  <div class="fb">
+    <p>Election-law coverage after Tuesday:</p>
+    <label><input type="radio" name="fb-alaska" value="rulings"> Rulings and certification only</label>
+    <label><input type="radio" name="fb-alaska" value="all"> Everything, through certification</label>
+    <label><input type="radio" name="fb-alaska" value="less"> Less</label>
+  </div>
+</article>
+
+<article id="treasury-refunding">
+  <h2>Where things stand: Treasury publishes its borrowing estimate at 3pm today, and its questions to dealers show what it is weighing</h2>
+  <div class="meta">
+    <span class="chip">US debt &amp; fiscal</span>
+    <span class="chip">Where things stand</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Nothing has printed yet. Treasury publishes its marketable borrowing estimates this afternoon, and the refunding statement with auction sizes follows on Wednesday, 4 November. The previous estimate, from August, put privately held net marketable borrowing for October to December at $628 billion, assuming an $850 billion cash balance at the end of December. Yesterday's Grok edition set this up after a $1.99 trillion deficit year in which interest outran defence.</p>
+  <p>The new fact this morning is the dealer agenda for the 29&ndash;30 October meetings, which shows what Treasury asked the primary dealers. Three questions stand out. First, whether to stop auctioning bills and floating-rate notes on Fed decision days, at the price of five or six auctions on some neighbouring days. Second, how the larger buybacks of 10&ndash;30-year bonds announced on 19 August have affected liquidity and dealers' capacity. Third, what "structural changes in investor demand" mean for future coupon sizes. Treasury has said it will keep coupon sizes unchanged for several quarters. The agenda asks dealers for auction-size forecasts through FY2029, which is how Treasury tests whether that promise holds.</p>
+  <p><b>What to watch:</b> today's October&ndash;December figure against $628 billion; whether Wednesday's statement keeps the "at least several quarters" language on coupon sizes; any buyback expansion.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://home.treasury.gov/system/files/221/Dealer-Agenda-November-2026.pdf">Dealer agenda, November 2026 refunding (primary, read in full)</a> &middot;
+    <a href="https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents">Treasury refunding documents page</a> &middot;
+    <a href="https://home.treasury.gov/news/press-releases/sb0584">August borrowing estimate</a> &middot;
+    <a href="2026-11-01-grok.html#refunding-1101">yesterday's set-up</a>
+  </p>
+  <p class="sources">No divergence: one primary document and Treasury's own schedule. No independent account has interpreted the agenda yet.</p>
+  <div class="fb">
+    <p>Refunding coverage on Wednesday:</p>
+    <label><input type="radio" name="fb-treas" value="lead"> Lead with it</label>
+    <label><input type="radio" name="fb-treas" value="short"> A short item unless sizes change</label>
+  </div>
+</article>
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Ten things I saw and ranked below the line. Each one opens &mdash; the line is my judgement, what is behind it is the substance.</p>
+
+<div class="also-list">
+
+<details id="a-cook-delay">
+  <summary><span class="chip">Fed</span> The White House hearing on Governor Lisa Cook is no longer on 5 November. Hassett says it moves to December; Cook's lawyers will not confirm a date.</summary>
+  <div class="exp">
+    <p>Kevin Hassett, who sits on the three-person committee the President set up to examine the mortgage allegations, told Bloomberg TV on 29 October that Cook's team had agreed to a December date. Reuters reports that Cook's lawyers declined to confirm any date. They had earlier said she would not be available until after the Fed's 8&ndash;9 December meeting. The Supreme Court ruled in June that she cannot be removed at will, but may be removed for cause after a chance to defend herself. The hearing is that process.</p>
+    <div class="div">
+      <span class="t">Divergence &mdash; is there a hearing on Thursday?</span>
+      <p><b>What is disputed.</b> A facts dispute about a date. Claude's edition this morning lists "5 November &hellip; the Cook committee hearing" in its calendar. Reuters, on 30 October, reports the hearing delayed to December.</p>
+      <p><b>Why they differ.</b> Timing, the mundane cause. The 5 November date was set in October and the delay was reported three days ago. A forward calendar carried from issue to issue will keep a stale date until someone rechecks it.</p>
+      <p><b>What it means for you.</b> Expect no hearing on Thursday. The December date is the White House's account and is unconfirmed by Cook's side, so treat it as likely but not fixed. What would settle it: a date confirmed by both sides, or a committee notice.</p>
+    </div>
+    <p class="btl"><b>Below the line because</b> this brief covers the Fed through prints and decisions. A removal process matters when it produces a decision, and that is now at least a month away.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.investing.com/news/economic-indicators/white-house-hearing-on-feds-cook-delayed-to-december-hassett-says-4988548">Reuters via Investing.com</a> &middot; <a href="2026-11-02.html">Claude's calendar</a></p>
+  </div>
+</details>
+
+<details id="a-stevens">
+  <summary><span class="chip">US politics</span> Rep. Haley Stevens, a Michigan Democrat, endorsed Republican Mike Rogers for the Senate two days before the vote. Her chief of staff and several aides resigned.</summary>
+  <div class="exp">
+    <p>Stevens lost the Democratic primary to Abdul El-Sayed. In a video she said El-Sayed had told her she was no longer welcome in his campaign. This followed a dispute over an outside ad she called antisemitic, and his ties to the streamer Hasan Piker. She says she remains a Democrat. The state party chair says she is not a member of the Michigan Democratic Party. Senate Minority Leader Chuck Schumer called it "a despicable betrayal". Rep. Debbie Dingell said Stevens had told her several times she would not do this. NBC News counts more than 2 million Michigan votes already cast, which limits what any late endorsement can move. The seat is open; Gary Peters is retiring.</p>
+    <p class="btl"><b>Below the line because</b> it is campaign drama with uncertain effect on a race already largely voted. The result on Tuesday is the story.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.nbcnews.com/politics/2026-election/haley-stevens-endorses-gop-mike-rogers-michigan-senate-race-el-sayed-rcna606831">NBC News (read in full)</a> &middot; <a href="https://www.npr.org/2026/11/01/nx-s1-6020993/michigan-senate-race-abdul-el-sayed-haley-stevens-mike-rogers">NPR</a> &middot; <a href="https://thehill.com/homenews/campaign/6187753-haley-stevens-defends-endorsing-mike-rogers/">The Hill</a></p>
+  </div>
+</details>
+
+<details id="a-daybreak-blue">
+  <summary><span class="chip">AI &amp; tech industry</span> OpenAI told Daybreak Blue users it will train on their sessions from 29 November even with the model-improvement setting off, then promised a separate opt-out after a backlash.</summary>
+  <div class="exp">
+    <p>Daybreak Blue is OpenAI's advanced account-security mode for personal accounts. An email reproduced on OpenAI's community forum says session content may be used to improve models from 29 November, overriding the usual "Improve the model for everyone" switch. A follow-up email reported by The Decoder and others promises a separate opt-out before that date. Interface and default are unpublished. Sessions flagged in safety review may still be used for safety work. Business and enterprise accounts are reportedly unaffected. The pattern is the point: users who chose a higher-security mode would receive weaker data protection than users who did not.</p>
+    <p class="btl"><b>Below the line because</b> the opt-out is a promise, not a shipped control, and every account this brief read traces back to the same two emails.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://community.openai.com/t/daybreak-blue-data-use-to-improve-models/1411182">OpenAI community forum thread</a> &middot; <a href="https://themorningbuild.com/digest/2026-11-01/">The Morning Build</a> &middot; <a href="https://newruntime.com/posts/openai-adds-a-separate-opt-out-for-daybreak-879b11/">New Runtime</a></p>
+  </div>
+</details>
+
+<details id="a-learjet">
+  <summary><span class="chip">Florida</span> A Learjet 60 flying from Austin to the Bahamas crashed onto a road in Palm Beach County on Sunday, killing all nine on board. NTSB briefs today.</summary>
+  <div class="exp">
+    <p>The aircraft, N722BD, came down near Cresthaven and Greenacres at about 12:50pm local time. Dashcam video shows a steep nose-down dive. Transportation Secretary Duffy confirmed nine dead (AP). The FAA says the NTSB leads the investigation. Early reports of air-traffic audio mention icing, turbulence and a rapid overspeed descent, and a Miami Herald expert raised icing. None of that is a finding, and the NTSB has issued no cause. The site is a few miles from Mar-a-Lago, which is why it reached the national front pages. Nothing suggests a connection.</p>
+    <p class="btl"><b>Below the line because</b> it is a tragedy with no policy consequence yet, outside Tampa Bay. The NTSB preliminary report, in about a month, is where it could become one.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://apnews.com/article/palm-beach-plane-crash-ffdee609e7916ff7fcd178d2b8e69b39">AP</a> &middot; <a href="https://www.ainonline.com/aviation-news/business-aviation/2026-11-01/florida-learjet-crash-claims-nine">AIN</a> &middot; <a href="https://www.faa.gov/newsroom/statements/accident_incidents">FAA statements</a></p>
+  </div>
+</details>
+
+<details id="a-thaad-recycle">
+  <summary><span class="chip">Geopolitics</span> A widely shared Chosun headline today, "Iran Destroys $500 Million THAAD Radar", describes a strike from March, not a new attack.</summary>
+  <div class="exp">
+    <p>Chosun Ilbo's English site ran the headline among its most-read items this morning, with a 2 November date. The event it matches is the destruction of an AN/TPY-2 radar at Muwaffaq Salti Air Base in Jordan in early March. Satellite imagery reported by CNN on 5 March showed it, and Bloomberg and The Straits Times reported it at the time. This brief found no report of a new radar loss this weekend.</p>
+    <div class="div">
+      <span class="t">Divergence &mdash; new strike or old one, and $300m or $500m?</span>
+      <p><b>What is disputed.</b> Facts: the date and the value. Chosun's headline implies a current event and gives $500 million. March reporting described a radar valued at around $300 million, with CNN's "just shy of half a billion" apparently covering a wider cost estimate.</p>
+      <p><b>Why they differ.</b> Most likely a feature or analysis piece republished under a news-style headline. That is common on aggregator-fed "most read" lists. The value gap is two different things being priced: the radar alone, or the radar with its support equipment.</p>
+      <p><b>What it means for you.</b> Do not treat it as weekend escalation; it does not change the oil chain above. What would settle it: a CENTCOM statement or new imagery, and there has been neither.</p>
+    </div>
+    <p class="btl"><b>Below the line because</b> it is a correction of someone else's framing, not news, and it is here so the headline does not travel unchallenged.</p>
+    <p class="sources"><span class="chip">Unconfirmed</span> <a href="https://www.chosun.com/english/world-en/2026/11/02/GILIKP3ULREGZDC276P7VJ4BUM/">Chosun (headline only)</a> &middot; <a href="https://www.cnn.com/2026/03/05/middleeast/radar-bases-us-missile-defense-iran-war-intl-invs">CNN, 5 March</a> &middot; <a href="https://www.straitstimes.com/world/middle-east/iran-hits-key-us-radar-in-jordan-deepening-gulf-missile-defence-woes">Straits Times, March</a></p>
+  </div>
+</details>
+
+<details id="a-gold-btc">
+  <summary><span class="chip">Macro &amp; markets</span> Gold is back under $4,000. It traded near $3,907 in Asia after falling through that level last week, and bitcoin was around $78,400.</summary>
+  <div class="exp">
+    <p>MarketWatch had spot gold up 0.8% at $3,906.85 an ounce overnight, recovering some ground after breaking below $4,000. FXStreet's 1:20am ET levels had gold at $3,908 and bitcoin up 0.6% at $78,394. The dollar was at about 157.7 yen. Gold below $4,000 with Brent above $100 is an unusual pairing for a war market. The likeliest reading is that higher US yields and expectations of a December Fed hike are outweighing the haven bid, but this brief has not checked real yields this morning.</p>
+    <p class="btl"><b>Below the line because</b> it is one session's levels from market wraps, and the explanation is inference, not a print.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.marketwatch.com/story/asian-stocks-mostly-higher-as-risk-off-sentiment-eases-oil-falls-update-3c586c7e">MarketWatch / Dow Jones</a> &middot; <a href="https://www.fxstreet.com/analysis/equities-start-nov-on-a-positive-note-after-octs-rout-202611020545">FXStreet levels</a></p>
+  </div>
+</details>
+
+<details id="a-china-pmi">
+  <summary><span class="chip">World economy</span> China's official factory index fell back into contraction in October, and its central bank and securities regulator met financial firms on Monday to discuss supporting markets.</summary>
+  <div class="exp">
+    <p>AP reports the weekend PMI back below 50. Chinese media report that the People's Bank and the CSRC met financial institutions on Monday about market support. The Shanghai Composite rose 1.1% anyway and is down 14.6% over the year. The US channel runs through Korea's export numbers in the AI-trade lead: China took $27 billion of Korean exports in October, mostly chips and wireless equipment. Weak Chinese factories alongside strong Chinese chip imports point to AI-specific demand rather than a broad industrial recovery.</p>
+    <p class="btl"><b>Below the line because</b> this brief has not read the NBS release itself or the exact figure, and the US channel is indirect.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://abcnews.com/Business/wireStory/asian-shares-mixed-us-futures-advance-oil-prices-137762337">AP via ABC News</a></p>
+  </div>
+</details>
+
+<details id="a-uap">
+  <summary><span class="chip">UAP</span> Where things stand: no new federal UAP release since PURSUE Release 07 on 23 October (28 documents, no video). The War Department's UFO page blocked this brief's fetch.</summary>
+  <div class="exp">
+    <p>The most recent release under the Presidential Unsealing and Reporting System for UAP Encounters is Release 07, published 23 October. It contained 28 documents and no videos, per a tracker summarising the official page. AARO's latest annual report is the FY2025 edition, published 20 July 2026. This brief could not open war.gov/ufo directly (access denied), so the release details come from a secondary tracker and search summaries, not from the official page.</p>
+    <p class="btl"><b>Below the line because</b> nothing moved, and the core-beat catalyst, Release 08, has no published date.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.war.gov/ufo/">war.gov/ufo (blocked)</a> &middot; <a href="https://uap.cuttingstraight.com/developments/">tracker</a> &middot; <a href="https://www.aaro.mil/Congressional-Press-Products/">AARO products</a></p>
+  </div>
+</details>
+
+<details id="a-anthropic-blocks">
+  <summary><span class="chip">AI &amp; tech industry</span> A user claims Anthropic is automatically blocking accounts whose work looks like distillation or model training. There is no confirmation and no policy statement.</summary>
+  <div class="exp">
+    <p>The Morning Build summarises a public post alleging that an account was tagged and blocked, with sessions downgraded or killed, while running tasks described as distillation, research automation, or fine-tuning (RFT/SFT) workflows. Anthropic's usage terms have long barred using outputs to train competing models. What is new, if true, is automated enforcement that may catch legitimate research. One account, no corroboration, no comment from Anthropic.</p>
+    <p class="btl"><b>Below the line because</b> it is one unverified user post. It belongs here only so a second report can be matched against it.</p>
+    <p class="sources"><span class="chip">Unconfirmed</span> <a href="https://themorningbuild.com/digest/2026-11-01/">The Morning Build</a></p>
+  </div>
+</details>
+
+<details id="a-prints-week">
+  <summary><span class="chip">Macro &amp; markets</span> Where things stand on prints: ISM manufacturing at 10:00 ET today, Australia's rate decision tonight, and the October jobs report on Friday, 6 November.</summary>
+  <div class="exp">
+    <p>Today brings the October ISM and S&amp;P Global manufacturing PMIs. Overnight brings the Reserve Bank of Australia's decision and Korea's October CPI. Friday brings the US unemployment rate and payrolls for October, the first jobs report after the Fed's 10&ndash;2 hold. Two members dissented in favour of a hike at that meeting, and Reuters describes a December hike as widely expected. Japan's markets are closed Tuesday. Nothing has printed at the time of writing. Per this brief's Fed rule, the jobs report gets a lead on Saturday only if it moves the December decision.</p>
+    <p class="btl"><b>Below the line because</b> a calendar is not a fact. The prints lead when they exist.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.fxstreet.com/analysis/equities-start-nov-on-a-positive-note-after-octs-rout-202611020545">FXStreet weekly calendar</a> &middot; <a href="https://www.investing.com/news/economic-indicators/white-house-hearing-on-feds-cook-delayed-to-december-hassett-says-4988548">Reuters on December expectations</a></p>
+  </div>
+</details>
+
+</div>
+
+<div class="fb" style="border-top:1px solid var(--rule); padding-top:1rem; margin-top:1.5rem;">
+  <p><b>One question about this whole section:</b> were the right things ranked below the line?</p>
+  <label><input type="radio" name="fb-also" value="right"> About right</label>
+  <label><input type="radio" name="fb-also" value="promote"> Some of these should have led</label>
+  <label><input type="radio" name="fb-also" value="drop"> Some should have been dropped entirely</label>
+  <label><input type="radio" name="fb-also" value="fewer"> Fewer short items, more depth up top</label>
+</div>
+
+<button class="submit" id="send">Send my feedback &rarr;</button>
+<p class="sources" style="text-align:center">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+<footer>
+  <h4>Sources checked this run &mdash; 64, of which 47 outside the watchlist</h4>
+  <p><b>Pointed at by a thread (17):</b> Reuters oil wire (via Yahoo Finance) &middot; CNBC oil &middot; AAA daily averages &middot; Treasury dealer agenda (PDF) &middot; Treasury refunding documents page &middot; CNBC on Binance flows &middot; Binance Recovery Update #4 (summary) &middot; TechCrunch (Binance) &middot; CoinDesk (Binance) &middot; CNN Wire on Alaska (via Action News Now) &middot; Reuters on Cook (via Investing.com) &middot; war.gov/ufo (blocked) &middot; AARO press products &middot; Federal Register API (failed) &middot; Supreme Court docket search &middot; Claude's Issue 59 &middot; NPR on the Gulf states.</p>
+  <p><b>Not pointed at by any thread (47):</b> Euronews daily archive &middot; NPR Morning News Brief &middot; Washington Post 'The 7' &middot; NBC Morning Rundown &middot; Anadolu morning briefing &middot; Axios (Ravid) &middot; NHK World &middot; Anadolu on Netanyahu &middot; AP Mideast roundup &middot; Arab News (Reuters) &middot; CNBC on Goldman &middot; New Straits Times on Goldman &middot; MarketWatch Asia &middot; AP global markets (via ABC) &middot; FXStreet Asia update &middot; Bloomberg markets wrap (headline) &middot; AP on Friday's selloff &middot; Yonhap &middot; Korea trade ministry release &middot; Chosun on grid batteries &middot; Chosun THAAD headline &middot; Nature Energy (Hartmann et al.) &middot; Jülich press release &middot; Cursor security notice &middot; Microsoft Security blog &middot; DeAI Daily Brief &middot; SecurityWeek &middot; ToolSift LLM news &middot; The Morning Build &middot; SecureResearch AI brief &middot; BleepingComputer &middot; xAI/SpaceXSI developer docs &middot; Anthropic help centre &middot; The Decoder &middot; OpenAI community forum &middot; New Runtime &middot; NBC News on Stevens &middot; NPR on Stevens &middot; The Hill &middot; AP on the Learjet crash &middot; AIN &middot; FAA statements page &middot; Mac Observer &middot; BYDFi Apple preview &middot; CNN, 5 March (radar) &middot; Straits Times (radar) &middot; Nikkei Asia.</p>
+
+  <h4>The negative check</h4>
+  <p><i>What is the biggest story today that is not on my list, and why is it not?</i> The Nature Energy finding on one-minute grid oscillations from synchronised battery self-tests. It was on no beat line or thread because it was published as physics, not as energy policy, and it surfaced only through a Korean business paper. It leads at number six and pushed a data-centre financing follow-up off the page. Second: the Cursor marketplace attack, which the 31 October Grok edition mentioned only in passing; it is promoted to a lead today because Microsoft's teardown makes it standable against two accounts. Largest front-page story not on my list: the Palm Beach Learjet crash, held below the line.</p>
+
+  <h4>Threads swept as a by-product, no trigger fired</h4>
+  <p>White House executive-power planning (no new reporting since Reuters on 31 October) &middot; California voter list (Ninth Circuit ruling Friday already covered) &middot; Nvidia&ndash;Nscale financing &middot; OpenAI Rosalind-6 (covered yesterday) &middot; Section 232 options &middot; Fed decision (next 8&ndash;9 December) &middot; Florida dengue (no new Pasco or Pinellas figure found) &middot; UAP releases (Release 07 still the latest).</p>
+
+  <h4>Could not reach</h4>
+  <p>Federal Register API (non-JSON response, so today's 8 rules, 5 proposed rules, 2 presidential documents and 87 notices are taken from Claude's count and were not read by this brief) &middot; war.gov/ufo (access denied) &middot; AP Stevens and Learjet articles (fetch timed out; headlines and summaries used) &middot; Judge Gleason's ruling (not located; CNN and NPR accounts used) &middot; Apple's prior-quarter guidance document (margin figure from previews only) &middot; Anthropic's customer email (known only through The Decoder).</p>
+
+  <h4>About this issue</h4>
+  <ul>
+    <li>Grok edition, produced on the morning schedule and published after 7:00 ET. Eight lead stories, ten short items. Five leads are new subjects; three are follow-ups, under the cap of four.</li>
+    <li>Confidence markers: 18 (8 leads + 10 short items). Primary source 5 &middot; Independent corroboration 5 &middot; Single-sourced 6 &middot; Unconfirmed 2. Divergence boxes: 9 (7 on leads, 2 in short items). Two leads carry an explicit no-divergence note instead of a box, because their accounts agreed.</li>
+    <li>Markup built from <code>issues/2026-09-10b.html</code> (Issue 10): its stylesheet, header, nav, article, divergence, short-item, feedback and footer structures. No prior Grok edition's HTML was used.</li>
+    <li>Every quotation is under fifteen words and attributed; everything else is paraphrase. Non-English material: none quoted.</li>
+    <li>No open brief-feedback issues were waiting; the three most recent closed ones (#20, #7, #3) were re-read for weights (negative-check finds wanted; single-sourced items run with labels; Fed prints-only).</li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n  → **" + i.value + "**");
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on **Issue No. 59-grok — 2 November 2026, Grok edition**\n\n" + lines.join("\n")
+      + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-11-02-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
