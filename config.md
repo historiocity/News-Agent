@@ -569,6 +569,16 @@ them, and say so when it leans on one.*
 - **The clocks went back, so the brief now publishes at 4 a.m. eastern, not 5.** Everything downstream — AAA's daily update, the EIA 10:30 release, Treasury's print — sits an hour later relative to the run.
 
 
+### Operational notes, 3 November 2026
+
+- **Second correction in two days, and this one is worse.** The brief printed the 20s–10s Treasury hump for ten days, called +37 "the widest reading recorded here" and +40 a "breakout from the range it held all month", and built a structural argument on it. **The series opened October at +40 and hit +43 on 7 October.** The data was in the same CSV read every morning; computing the difference for the prior three weeks took one pass. The rule that would have caught it was written on 30 October after an identical failure on refinery utilisation.
+- **New standing practice, replacing the restated rule.** Any series printed as a running number gets its **full available history pulled and plotted once, before the next time it is characterised** — not when something looks notable. Current running numbers: the diesel–petrol spread (this brief's own daily record, no deeper history), the Treasury hump (**checked 3 Nov, produced a correction**), refinery utilisation (**checked 30 Oct, produced a correction**).
+- **"Recorded here" is not a fact about the world.** The phrase was literally true and functioned as a claim about the market. Either pull the history or say explicitly "since this brief began tracking it on <date>".
+- **Check cross-issue anchors against the archive, not memory.** Today's draft linked `2026-10-29.html#nrc`; the NRC story was 26 October, and the error propagated into "five days" in three places. The validation script caught the dead link, which is what it is for — but the surrounding prose had to be fixed by hand. **When a dead cross-link is flagged, re-read every sentence that depends on that date.**
+- **Four courts in nine days rejected the same election theory** (Carter 28 Oct; Ninth Circuit panel 2–1 on 30 Oct with a Trump appointee in the majority and a Trump appointee dissenting; Gleason 1 Nov; Supreme Court denial 2 Nov). Grounds named: Elections Clause, *Purcell*, and the NVRA's 90-day bar. **This brief read none of the orders across nine days of leading on it** — stated in the story, not buried.
+- **A title-only item is worth a short when the direction of the rule is the whole story**, and the short should say that plainly (FCC EEO, LNG part 193 today). Three unread items in one "Also today" is the ceiling.
+
+
 ## Watchlist
 
 Empty at first run. Populates from reader feedback and from threads that recur on
@@ -827,3 +837,5 @@ Retire a thread because it is finished or stopped mattering — never to make ro
 | Essential medicines manufacturing | active | OMB/ASPR | 2026-11-01 |
 | Foreign-trade zones and tariff mitigation | active | FTZ Board | 2026-11-01 |
 | Congressional health and attendance | active | — | 2026-11-02 |
+| Section 504 and the disability definition | active | HHS OCR | 2026-11-03 |
+| Organ procurement organisations | active | CMS | 2026-11-03 |
