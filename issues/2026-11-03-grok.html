@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Tuesday, 3 November 2026 (Grok edition)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  /* short-item tier */
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list summary .chip { vertical-align:.05rem; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 60-grok &middot; Tuesday, 3 November 2026 &middot; Grok edition</div>
+  <h1>Secret US strikes on Qeshm on the eve of the vote, an Anthropic filing that says AI may soon be speeding up AI, and a borrowing estimate that went up while looking down</h1>
+  <p class="sub">Eight stories at length, eight in brief. Election day. Claude's edition for today stands unchanged at <a href="2026-11-03.html">2026-11-03</a>. This is the Grok edition, built separately.</p>
+  <p class="prov"><b>Corrections first.</b> Yesterday's Grok edition led its oil short with Brent down 4.2 per cent at $108.64. That was a 5:20 a.m. snapshot, and the session settled down 7.6 per cent at $104.77. Sunday's edition carried a Goldman forecast of $571bn for Treasury's quarterly borrowing, and the actual figure was $618bn. Both were labelled correctly at the time (a time-stamped price, a forecast), and both are followed up below rather than left standing.<br><br>
+  <b>78 sources checked, 43 of them outside the watchlist.</b> Three of eight leads are new subjects. The negative check moved the Anthropic filing to second, and brought in the Nvidia and Brave stories. <b>Source comparison:</b> 16 confidence markers, one on every story (5 Primary source, 7 Independent corroboration, 4 Single-sourced, 0 Unconfirmed), and 7 divergence boxes. Claude's Issue 60 has 9 confidence lines and no boxes. Independent accounts compared per lead are listed in the footer.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#qeshm-oil">The US struck Qeshm Island in secret hours after Vance talked up a deal, and oil gave back a third of Monday's fall</a></li>
+    <li><a href="#anthropic-s1a">Anthropic's amended IPO filing says its own threshold for AI-accelerated AI research may be met imminently, and lists $895bn of compute it has promised to pay for</a></li>
+    <li><a href="#election-day">Polls are open after a record early vote, with every court challenge to the count turned away and some results not due for days</a></li>
+    <li><a href="#treasury-borrowing">Treasury's borrowing estimate came in at $618bn, $47bn above the forecast this brief printed, and the next quarter is $800bn</a></li>
+    <li><a href="#ai-trade-apple">Memory costs are squeezing Apple's margins while memory makers' shares fall, and Asia's chip markets dropped up to 4%</a></li>
+    <li><a href="#nvidia-51">Nvidia is telling Asian cloud operators to keep most of their capacity away from Chinese customers, and checking with inspections</a></li>
+    <li><a href="#brave-suit">The New York Times and three other papers have sued Brave, alleging it sold scraped journalism to AI labs</a></li>
+    <li><a href="#binance">Binance's net outflows reached $4.7bn as it reopened more networks, and the run is slowing, not stopping</a></li>
+  </ol>
+  <p class="also"><a href="#also-today">Also today (8)</a> &mdash; ranked below the line, each one opens.</p>
+</nav>
+<article id="qeshm-oil">
+  <h2>The US struck Qeshm Island in secret hours after Vance talked up a deal, and oil gave back a third of Monday's fall</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Geopolitics</span>
+    <span class="chip">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>US forces hit Iran's Qeshm Island, at the mouth of the Strait of Hormuz, late on Monday. The Wall Street Journal broke it, and Reuters and AP confirmed it through US officials. They called the strikes defensive, aimed at surface-to-air missiles being used against US aircraft. The Journal adds that this was one of a series of smaller strikes in recent weeks that were kept quiet so they would not look like a return to the full campaign. CENTCOM did not comment.</p>
+  <p>The timing is the story. On Monday afternoon JD Vance said he and the President "feel pretty good" about a settlement. Trump, asked whether he would resume strikes after the election, said "no". On Tuesday a senior Iranian official told Reuters the two sides were far from a deal and Tehran would reject "excessive demands". Iranian outlets warned of a forceful reply. Qatar says both sides are still reviewing bridging proposals.</p>
+  <p>The causal chain runs straight to the pump. Brent settled at $104.77 on Monday, down 7.6 per cent, its steepest daily fall in months, on the Qatari draft. By mid-morning in London on Tuesday it was back to about $106&ndash;107. <b>Correction of emphasis:</b> yesterday's Grok edition reported the fall as 4.2 per cent at $108.64. That was accurate at 5:20 a.m. Eastern, but the session ended almost twice as deep. A pre-dawn print is a snapshot, and this brief labelled it too much like a result.</p>
+  <p><b>What to watch:</b> whether Iran answers Qeshm with action or only words before polls close; whether the White House publicly acknowledges the earlier secret strikes; and Wednesday's EIA weekly.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is the diplomatic track alive or not?</span>
+    <p><b>What is disputed.</b> A significance dispute. Nobody disputes that talks are happening or that the strikes happened. Washington (Vance, Trump) and the Qatari mediator describe progress. A senior Iranian official describes a deal as distant. Iran's parliament speaker says "the ball is in the US' court."</p>
+    <p><b>Why they differ.</b> Each side is talking to its own audience on the most audience-heavy day of the year. The administration wants falling oil and a peace narrative in voters' minds while polls are open. Tehran cannot look soft the morning after being bombed. Qatar's job as mediator is to say talks are alive. These are mundane incentives, and none of them is evidence either way.</p>
+    <p><b>What it means for you.</b> Weight actions over statements. Strikes are continuing in secret, and Iran is still enforcing the strait's closure against shipping (Guardian). Monday's 7.6 per cent drop priced a deal that neither side's actions support yet. Expect the price to stay headline-driven, with a $10&ndash;20 risk premium that TD Securities says persists until the war ends. A published text with a sequencing clause on who moves first at Hormuz would settle this. Another tanker attack would settle it the other way.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://live.euronext.com/en/financial-news/oil-rises-iran-says-war-deal-remains-distant-us-strikes-qeshm">Reuters, oil and the Iranian official (via Euronext)</a> &middot;
+    <a href="https://www.theguardian.com/world/2026/nov/03/us-strikes-irans-qeshm-island">Guardian (read in full)</a> &middot;
+    <a href="https://www.cnn.com/2026/11/02/politics/us-strikes-iran-qeshm-island">CNN</a> &middot;
+    <a href="https://www.euronews.com/2026/11/03/iran-warns-of-new-battlefield-after-reported-us-strike-on-qeshm">Euronews on Iran's warning</a> &middot;
+    <a href="https://www.thenationalnews.com/business/energy/2026/11/03/oil-prices-cross-105-after-us-strikes-on-irans-qeshm-island/">The National on settlement prices</a> &middot;
+    <a href="https://www.fxstreet.com/news/brent-higher-for-longer-price-regime-td-securities-202611030653">TD Securities (via FXStreet)</a> &middot;
+    <a href="2026-11-02-grok.html">yesterday's Grok edition</a>
+  </p>
+  <div class="fb">
+    <p>Oil and Iran on election day:</p>
+    <label><input type="radio" name="fb-qeshm" value="lead"> Keep it as the lead chain</label>
+    <label><input type="radio" name="fb-qeshm" value="short"> Shorter unless the strait changes</label>
+  </div>
+</article>
+
+<article id="anthropic-s1a">
+  <h2>Anthropic's amended IPO filing says its own threshold for AI-accelerated AI research may be met imminently, and lists $895bn of compute it has promised to pay for</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Lab safety</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Anthropic filed an amended S-1 with the SEC ahead of its listing. This brief read the filing itself. Two passages matter.</p>
+  <p><b>The risk factor.</b> The filing says internal estimates and expectations about future models, not current ones, "indicate that we may imminently meet" the Responsible Scaling Policy's definition of "dramatically accelerated progress attributable to AI." It says no current model has been designated as over that line and the data is still being assessed. It also admits that the company has in the past spotted big jumps in its rate of development only after they had happened. A lab putting that in a securities filing, where misstatement carries legal liability, is a different kind of statement from a blog post.</p>
+  <p><b>The money.</b> Purchase commitments and leases total about $895.4 billion, "substantially all" for compute and infrastructure. About $447.5 billion falls before the end of 2030, and $69.8 billion within twelve months of 30 September. Reported deals include $121.3 billion with Google, $120.5 billion with SpaceX, $110 billion with Amazon and $44.9 billion with Microsoft (DCD, citing the filing). Q3 revenue was about $17 billion. The Q3 net loss of $23.29 billion is driven mainly by non-cash changes in the fair value of convertible notes and derivatives, which come to $94.3 billion over nine months, per the filing.</p>
+  <p><b>What to watch:</b> the RSP capability report the filing promises; pricing and the debt rating at listing; whether Nscale and Lambda secure the financing their Anthropic contracts depend on.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; "very close to self-building AI," or a disclosed estimate about a defined threshold?</span>
+    <p><b>What is disputed.</b> A significance dispute. TechCrunch's headline says Anthropic is "very close to RSI capability, aka self-building AI", and Gizmodo's is similar. The filing says something narrower. It refers to a specific RSP threshold about the <i>rate</i> of progress, based on estimates for future models. It also says the company does not expect to let Claude build its successors without human supervision.</p>
+    <p><b>Why they differ.</b> Vantage and format. Headlines compress "may imminently meet a defined acceleration threshold" into the more vivid concept. Lawyers write risk factors to disclose the worst plausible case, which pushes the wording toward alarm rather than away from it.</p>
+    <p><b>What it means for you.</b> Believe the narrower reading, and do not dismiss it. This is not a claim that recursive self-improvement exists. It is a sworn admission that the lab's own measures may soon show AI substantially speeding up AI research, and that its detection lags. The RSP report the filing promises would settle it, especially if it says which capability evaluations triggered the estimate.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; why the loss number is not what it looks like, and the commitment number is</summary>
+    <div class="exp">
+      <p>A $23.29 billion quarterly loss on $17 billion of revenue reads like a business burning through cash. Most of it isn't cash. As Anthropic's valuation has risen, its outstanding convertible notes and similar instruments are worth more, and accounting rules book that increase as an expense. The filing puts these fair-value changes at $94.3 billion for the first nine months of 2026, against $20.1 billion a year earlier. They vanish on conversion at the IPO. Anyone quoting the loss as an operating figure is misreading it.</p>
+      <p>The commitments are the opposite: real, contractual and mostly non-cancellable. The filing calls them "substantial fixed obligations" with take-or-pay terms. Set $69.8 billion due in the next twelve months against nine-month revenue of about $33 billion (AI Weekly's tally from the filing) and you get the core bet. Revenue has to keep compounding to meet bills already signed. DCD notes that quarter-on-quarter growth slowed to 47 per cent from 144 per cent in Q2. That is the line to watch, not the headline loss.</p>
+      <p>The two Nscale and Lambda contracts, worth $44.6 billion and $41.3 billion, depend on those firms raising financing. That ties this filing to Nvidia's reported talks to guarantee Nscale debt, covered in the 1 November Grok edition. Disclosure: SpaceX, named as a $120.5 billion compute counterparty, is in this brief's own corporate family.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm">Anthropic S-1/A (primary, risk factor and commitments read)</a> &middot;
+    <a href="https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/">TechCrunch</a> &middot;
+    <a href="https://gizmodo.com/anthropic-claims-to-be-closing-in-on-recursive-self-improvement-2000834175">Gizmodo</a> &middot;
+    <a href="https://www.datacenterdynamics.com/en/news/anthropic-s-1-update-reveals-8954bn-in-cloud-and-data-center-commitments/">DatacenterDynamics</a> &middot;
+    <a href="https://aiweekly.co/ai-news-today">AI Weekly</a>
+  </p>
+  <div class="fb">
+    <p>Lab-safety disclosures in financial filings:</p>
+    <label><input type="radio" name="fb-s1a" value="more"> Read these closely every time</label>
+    <label><input type="radio" name="fb-s1a" value="less"> Only the headline numbers</label>
+  </div>
+</article>
+
+<article id="election-day">
+  <h2>Polls are open after a record early vote, with every court challenge to the count turned away and some results not due for days</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>All 435 House seats, 35 Senate seats and 36 governorships are on the ballot. NPR, AP and Slate all say Democrats are favoured to take the House, where they need three seats. In the Senate they need a net gain of four, which NPR calls "anyone's guess". The Supreme Court on Monday evening denied the Justice Department's last application to make California separate about 20,000 mail ballots from people it called likely non-citizens. That makes four courts in nine days. Claude's edition this morning covers the legal grounds in detail.</p>
+  <p>The clock for tonight. The first polls close at 6 p.m. Eastern in Kentucky and Indiana. Georgia and South Carolina follow at 7, North Carolina and Ohio at 7:30, Maine, New Hampshire and Florida at 8, and Michigan, Texas and Minnesota at 9. Alaska's last polls close at 1 a.m. Its Senate race may be pivotal, and it was shaken last week by a New York Times report that allies of the Democrat, Mary Peltola, recruited a second "Dan Sullivan" onto the ballot. Peltola and the DSCC deny it. A former campaign manager has since tried to retract her account (ABC).</p>
+  <p>Florida counts fast. Slate expects Democrats to fall short in the state's Senate and governor races, but notes the result offers an early read on how Latino voters have shifted.</p>
+  <p><b>What to watch:</b> the Los Angeles grand-jury subpoenas returnable Wednesday; whether DOJ warning letters to county tabulators stand; and Alaska, where the count runs days.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; 50, 54 or 57 million early votes?</span>
+    <p><b>What is disputed.</b> A facts dispute that is mostly about timing. AP says "more than 50 million." NPR says "more than 54 million." CBS, citing the University of Florida Voting Lab, says more than 57 million. On Sunday, the 1 November Grok edition had Reuters near 50 million and Le Monde above 52 million.</p>
+    <p><b>Why they differ.</b> Each figure is a snapshot of a tally that rose by millions a day, taken at a different hour. States also report mail ballots received at different points in processing. The UF lab aggregates the most states and is updated most often.</p>
+    <p><b>What it means for you.</b> Use "more than 57 million (UF Voting Lab)" as the latest count. Treat the lower numbers as older readings, not rival ones. Nobody disputes the record. The figure that matters tonight is Republican election-day turnout, which NPR says decides whether Democrats' early lead holds.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.npr.org/2026/11/03/nx-s1-5992757/election-day-live-updates-key-races">NPR</a> &middot;
+    <a href="https://apnews.com/article/election-takeaways-midterms-trump-democrats-takeover-republicans-1cb09c8674598632ec3e4307eda5fbb8">AP</a> &middot;
+    <a href="https://www.cbsnews.com/live-updates/election-day-2026-midterms/">CBS live</a> &middot;
+    <a href="https://slate.com/news-and-politics/2026/11/2026-midterm-election-results-guide.html">Slate poll-closing guide</a> &middot;
+    <a href="https://abcnews.com/Politics/peltola-campaign-fire-after-report-recruited-dan-sullivan/story?id=137646458">ABC on Alaska</a> &middot;
+    <a href="2026-11-03.html">Claude's Issue 60</a>
+  </p>
+  <div class="fb">
+    <p>Tomorrow's issue on the results:</p>
+    <label><input type="radio" name="fb-elec" value="full"> Lead with control of Congress and what it changes</label>
+    <label><input type="radio" name="fb-elec" value="policy"> Only the policy consequences, skip the horse race</label>
+  </div>
+</article>
+
+<article id="treasury-borrowing">
+  <h2>Treasury's borrowing estimate came in at $618bn, $47bn above the forecast this brief printed, and the next quarter is $800bn</h2>
+  <div class="meta">
+    <span class="chip">US debt &amp; fiscal</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Treasury published its estimate at 3 p.m. Monday. It expects $618 billion of privately held net marketable borrowing for October to December, assuming $850 billion cash at year-end. That is $10 billion below August's $628 billion. Treasury's own release explains why: the quarter began with $984 billion in cash, $34 billion more than assumed. Without that cushion, the estimate is <b>$24 billion higher</b> than in August. For January to March 2027, the first estimate is $800 billion, assuming the cash balance rises to $1 trillion.</p>
+  <p><b>Accountability.</b> On Sunday this brief carried a Goldman Sachs forecast of about $571 billion, labelled as a forecast, and said to watch whether it landed there. It did not. The actual figure was $47 billion higher. The cash-balance effect Goldman expected was real, but cash flows ran the other way.</p>
+  <p>The refunding statement at 8:30 a.m. Wednesday sets the sizes of next week's 3-year, 10-year and 30-year auctions. In August those were $58 billion, $42 billion and $25 billion, and Treasury said it expected to keep coupon sizes unchanged "for at least the next several quarters." Yesterday's long end: the 10-year at 4.91 per cent and the 20-year at 5.31 (Treasury par curve).</p>
+  <p><b>What to watch:</b> whether Wednesday's statement keeps the "several quarters" wording; buyback sizes; and whether the $800 billion quarter is financed with more bills.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; a cut, or a rise dressed as one?</span>
+    <p><b>What is disputed.</b> Significance. Reuters' headline reads "cuts fourth-quarter borrowing estimate." One analysis (Plutux) calls the cut a "cash-balance illusion."</p>
+    <p><b>Why they differ.</b> Both are quoting the same release. A headline takes the top-line number, while the release's second sentence nets out the cash balance. Reuters' body text gives the $24 billion too, so this is about which figure leads, not a factual error.</p>
+    <p><b>What it means for you.</b> The underlying need went up, by Treasury's own account. The $10 billion cut is a cash-management effect, not a smaller deficit. Wednesday's coupon guidance will settle whether Treasury sees this as a trend worth bigger auctions.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://home.treasury.gov/news/press-releases/sb0675">Treasury release (primary, read in full)</a> &middot;
+    <a href="https://www.investing.com/news/economy-news/us-treasury-cuts-fourthquarter-borrowing-estimate-to-618-billion-4992645">Reuters (via Investing.com)</a> &middot;
+    <a href="https://capitalfinancebureau.com/news/treasury-borrowing-estimate-618-billion-q4-2026/">Capital Finance Bureau</a> &middot;
+    <a href="https://plutux.ai/insights/20261103_treasury_q4_borrowing_estimate_618b">Plutux</a> &middot;
+    <a href="2026-11-01-grok.html">1 November Grok edition (Goldman forecast)</a>
+  </p>
+  <div class="fb">
+    <p>Refunding tomorrow:</p>
+    <label><input type="radio" name="fb-tsy" value="lead"> Lead with it</label>
+    <label><input type="radio" name="fb-tsy" value="short"> Short unless sizes change</label>
+  </div>
+</article>
+<article id="ai-trade-apple">
+  <h2>Memory costs are squeezing Apple's margins while memory makers' shares fall, and Asia's chip markets dropped up to 4%</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Apple reported its fiscal fourth quarter after Monday's close. The quarter beat estimates, and the shares fell about 2.8 per cent after hours. This was John Ternus's first call as chief executive. Gross margin was 47.9 per cent, including about a point of tariff-refund benefit. Apple guided the holiday quarter to <b>45&ndash;46 per cent</b>, blaming rising memory costs and the cloud cost of the Siri AI features. It expects memory prices to keep rising past December. Services growth was guided at 8&ndash;9 per cent against the roughly 10.7 per cent analysts expected (CNBC, Reuters).</p>
+  <p>Asia sold chips on Tuesday. The Kospi fell about 4 per cent, Taiwan's Taiex 3.6 per cent, SK Hynix 5.9 per cent, Samsung 4.6 per cent and MediaTek 7.4 per cent (Dow Jones via MarketScreener). Reuters said Taiwan was on track to confirm a correction, down 13.1 per cent from its early-October peak. S&amp;P futures fell for a fourth day.</p>
+  <p><b>Accountability.</b> Yesterday's Grok edition reported previews that put margins at 47&ndash;48 per cent and said this brief had them "only from previews." The reported quarter landed inside that range. The guide for the next quarter is the new information, and it is a full two points lower. The same edition led on Korean exports rising 93.7 per cent. Today's selloff is in the same shares.</p>
+  <p><b>What to watch:</b> memory contract prices for November; whether other device makers echo Apple's guide; and Nvidia's results later this month.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; why do the sellers of memory fall on the day a buyer says memory is getting dearer?</span>
+    <p><b>What is disputed.</b> Significance. Apple's guide is good news for the revenue of SK Hynix and Samsung. Their shares fell anyway. UOB and Bank of America describe a rotation out of tech on worries about AI spending. Pepperstone's Chris Weston says the market is "losing patience" with spending that hasn't yet paid off.</p>
+    <p><b>Why they differ.</b> Both readings come from the same price. A memory squeeze helps suppliers now. It also shows the AI build-out is pricing out consumer devices, and that cuts both ways. Foreign outflows from Korea and Taiwan, which BofA calls dominant, move those indices regardless of earnings. Funds trim their biggest winners first ahead of a US event.</p>
+    <p><b>What it means for you.</b> Read Tuesday as positioning before the election, not a verdict on memory demand. Apple's guide is a fundamental data point that is bullish for memory pricing. A second day of Korean selling after the US results would mean more than today's.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/">Apple newsroom</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/02/apple-aapl-q4-2026-earnings-live-updates.html">CNBC</a> &middot;
+    <a href="https://www.streetinsider.com/Reuters/Apple+forecasts+margin+drop+in+holiday+quarter+as+rising+memory+costs+bite/27274443.html">Reuters on Apple</a> &middot;
+    <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-apple-tops-q4-2026-estimates-but-shares-fall-after-hours-93CH-4993172">Investing.com call transcript</a> &middot;
+    <a href="https://ae.marketscreener.com/news/oil-rises-asian-stocks-mixed-amid-caution-over-mideast-tensions-u-s-midterms-update-ce785fd9df8af326">Dow Jones Asia wrap (via MarketScreener)</a> &middot;
+    <a href="https://live.euronext.com/en/financial-news/asian-stocks-retreat-ahead-us-midterms-oil-steadies">Reuters Asia markets</a>
+  </p>
+  <div class="fb">
+    <p>The AI-spending trade:</p>
+    <label><input type="radio" name="fb-aitrade" value="more"> Track it daily through earnings</label>
+    <label><input type="radio" name="fb-aitrade" value="less"> Only on fundamental news</label>
+  </div>
+</article>
+
+<article id="nvidia-51">
+  <h2>Nvidia is telling Asian cloud operators to keep most of their capacity away from Chinese customers, and checking with inspections</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">US policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>The Financial Times reports that Nvidia has verbally told cloud and neocloud customers that at least 51 per cent of their services must go to non-Chinese firms, or they risk losing access to its hardware. Enforcement in Singapore, Malaysia and Japan reportedly includes physical data-centre inspections, contract audits and interviews with end users. It follows a July cut of more than half of Nvidia's approved Asian customer list, also reported by the FT. It also extends Commerce Department guidance from May aimed at routes through which Tencent and Alibaba reportedly reached Blackwell chips through overseas data centres (AI Weekly's summary).</p>
+  <p>The US channel is direct. This is export control carried out by a private company. A chipmaker is acting as compliance officer for Washington's China policy, on terms it sets, enforced by contract instead of by regulation. It moves the line from "where are the chips" to "who rents the compute". The second question is the one export rules have struggled to reach.</p>
+  <p><b>What to watch:</b> whether Commerce formalises a percentage test; how Malaysian and Singaporean operators with mostly Chinese demand respond; and Nvidia's own comment, which none of the accounts carries.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; worldwide, or three countries?</span>
+    <p><b>What is disputed.</b> Facts, about scope. Seoul Economic Daily and SiliconReport describe the 51 per cent rule as applying to cloud customers generally, and to future contracts only, with existing leases exempt. AI Weekly and Crypto Briefing frame it around Singapore, Malaysia and Japan.</p>
+    <p><b>Why they differ.</b> All of them are rewriting the same FT report, which this brief could not read past the paywall. The simplest explanation is that the rule is general and the inspections are concentrated in those three countries, and different rewrites stressed different halves.</p>
+    <p><b>What it means for you.</b> Treat the rule as reported and unconfirmed by Nvidia. Treat the scope as uncertain. This is one source with several echoes, so it is marked single-sourced. A Nvidia statement, or a second outlet with its own sourcing, would settle it.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.siliconreport.com/nvidia-tells-cloud-clients-to-sell-51-to-non-chinese-firms-ft-says">SiliconReport (citing FT)</a> &middot;
+    <a href="https://en.sedaily.com/international/2026/11/03/nvidia-tells-cloud-clients-51-percent-of-capacity-must-go">Seoul Economic Daily</a> &middot;
+    <a href="https://finance.yahoo.com/technology/ai/articles/nvidia-halves-asia-buyer-list-033140201.html">FT via Yahoo on the July cut</a> &middot;
+    <a href="https://aiweekly.co/ai-news-today">AI Weekly</a>
+  </p>
+  <div class="fb">
+    <p>Chip export enforcement:</p>
+    <label><input type="radio" name="fb-nv" value="keep"> Keep it as a thread</label>
+    <label><input type="radio" name="fb-nv" value="drop"> Only when Commerce acts</label>
+  </div>
+</article>
+
+<article id="brave-suit">
+  <h2>The New York Times and three other papers have sued Brave, alleging it sold scraped journalism to AI labs</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Courts</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The New York Times, and the publishers of the New York Daily News, Chicago Tribune and Orlando Sentinel, filed suits in federal court in Manhattan against Brave Software, the browser and search company. They allege that Brave scraped their journalism into its search index, sold access to that index to AI companies, and helped users get around paywalls. The claims are copyright infringement, circumvention under the DMCA and unjust enrichment. The Verge reports that the complaint names Anthropic, Perplexity, Mistral, xAI and Cohere among Brave's AI customers.</p>
+  <p>The new feature is the target. Earlier publisher suits went after model makers directly. This one goes after the supplier in the middle, a search index licensed as AI training and grounding data. If it succeeds, the legal risk moves down the AI supply chain to whoever sells crawled content. The paywall claim is the sharper one, because circumvention does not depend on fair use.</p>
+  <p><b>Disclosure:</b> xAI, named as a Brave customer, is in this brief's own corporate family. Nothing here has been adjudicated, and this brief did not read the complaint itself.</p>
+  <p><b>What to watch:</b> Brave's answer; whether any named AI customer is added as a defendant; and whether the paywall claim survives a motion to dismiss.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://nytco-assets.nytimes.com/2026/11/new-york-times-brave-complaint-11-2-26.pdf">NYT complaint (PDF, not read)</a> &middot;
+    <a href="https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times">The Verge</a> &middot;
+    <a href="https://news.bloomberglaw.com/ip-law/new-york-times-daily-news-sue-over-ai-scraping-selling-content">Bloomberg Law</a> &middot;
+    <a href="https://www.mlex.com/mlex/articles/2545132/brave-faces-us-infringment-circumvention-claims-for-ai-copying-from-new-york-times">MLex</a>
+  </p>
+  <p class="sources">No divergence box: the three accounts agree on the parties, claims and court.</p>
+  <div class="fb">
+    <p>AI copyright cases:</p>
+    <label><input type="radio" name="fb-brave" value="keep"> Follow this one</label>
+    <label><input type="radio" name="fb-brave" value="rulings"> Only rulings</label>
+  </div>
+</article>
+
+<article id="binance">
+  <h2>Binance's net outflows reached $4.7bn as it reopened more networks, and the run is slowing, not stopping</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip">Crypto</span>
+    <span class="chip">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Binance says customers have pulled a net $4.72 billion since withdrawals reopened in phases on 1 November, after the $6.3 billion hack. By Monday it had processed $4.65 billion of withdrawals against $1.01 billion of deposits, or $3.64 billion net (CNBC). The higher cumulative figure, reported later through AP and Reuters, includes Monday's later flows. On Tuesday it reopened withdrawals on more networks, among them BSC, Ethereum, Solana, XRP, Arbitrum, Optimism, Tron and Base (Reuters). It says withdrawals are stabilising. Bitcoin was flat at about $76,800.</p>
+  <p>The US channel is the exchange's dollar liquidity and its stablecoin links. A $4.7 billion drain on top of a $6.3 billion loss is about $11 billion of stress in a week. So far it has cleared without a halt, which is what the 90 per cent buyback, reported on 1 November, was designed to make possible.</p>
+  <p><b>What to watch:</b> net flows once the big networks reopen, which is the real test; a new reserves attestation; and any finding on how the breach happened.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; $3.6bn or $4.7bn?</span>
+    <p><b>What is disputed.</b> A small facts dispute that comes down to timing. BBC and CNBC report $3.6 billion. Reuters and AP, both citing Binance, report $4.72 billion.</p>
+    <p><b>Why they differ.</b> The first figure is Binance's tally as of Monday morning. The second adds later flows. Both are Binance's own numbers, and no independent chain analysis has been published.</p>
+    <p><b>What it means for you.</b> Use $4.72 billion as the latest figure. Treat both as self-reported. On-chain flow data from an independent tracker would settle it and test the "stabilising" claim.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnbc.com/2026/11/02/binance-outflow-hack-bitcoin.html">CNBC</a> &middot;
+    <a href="https://www.bbc.com/news/articles/cwj34gdmnly4o">BBC</a> &middot;
+    <a href="https://www.centraloregondaily.com/news/consumer/binance-says-customers-pulled-net-4-7-billion-after-hack-as-crypto-world-weighs-risk/article_df11daa2-8686-56e3-9048-f82b500dcb4d.html">AP (via Central Oregon Daily)</a> &middot;
+    <a href="https://www.investing.com/news/economy-news/binance-to-reopen-withdrawals-for-more-assets-on-several-networks-4993418">Reuters on reopening</a> &middot;
+    <a href="https://www.coindesk.com/markets/2026/11/01/binance-opens-crypto-withdrawals-in-phases-starting-with-bitcoin-following-usd6-3-billion-hack">CoinDesk</a>
+  </p>
+  <div class="fb">
+    <p>Binance:</p>
+    <label><input type="radio" name="fb-bnb" value="keep"> Keep daily until flows settle</label>
+    <label><input type="radio" name="fb-bnb" value="short"> Move it below the line</label>
+  </div>
+</article>
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Eight things seen and ranked below the line. Each one opens.</p>
+<div class="also-list">
+
+<details id="a-hump">
+  <summary><span class="chip">Macro &amp; markets</span> <span class="chip">Primary source</span> Claude's edition corrects its Treasury-curve "record" against October. The full 2026 series makes the point stronger: the 20s&ndash;10s gap is near the bottom of this year's range, not the top.</summary>
+  <div class="exp">
+    <p>This brief pulled every business day of 2026 from Treasury's par-yield file this morning: 210 sessions. The twenty-year minus ten-year gap peaked at <b>+62 basis points on 6 January</b>. Its median for the year is +53. Its low is +34, on 21 October. Monday's +40 (20-year 5.31, 10-year 4.91) is in the bottom part of the year's range. Claude's Issue 60 checked back to 1 October and found +43 on 7 October. That is correct, and it understates the point, because the gap has narrowed over the year rather than widened.</p>
+    <p>Grok editions printed the gap at +35 to +36 between 27 and 29 October without calling it a record, so there is no false claim to retract. But they also printed it without any history. Under the configuration's new rule, that history is now on file: the year's high was 62.</p>
+    <p class="btl"><b>Below the line because</b> it is a correction to a framing, not news. Wednesday's refunding is the event the curve is waiting for.</p>
+    <p class="sources"><a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value=2026">Treasury par yield curve, 2026</a> &middot; <a href="2026-11-03.html">Claude's Issue 60</a></p>
+  </div>
+</details>
+
+<details id="a-goldman">
+  <summary><span class="chip">AI &amp; tech industry</span> <span class="chip">US financials</span> <span class="chip">Independent corroboration</span> Goldman Sachs has taken Claude Code and GitHub's AI coding tools away from most traders and bankers, months after its technology chief praised the experiments.</summary>
+  <div class="exp">
+    <p>Internal guidance updated in October limits the tools to engineers. "Strats", who combine trading, quantitative work and software, keep access. Goldman cited productivity and risk management. Traders had used the tools to monitor client flows, model positions and produce material (Bloomberg Law, Quartz, PYMNTS). It is the first big bank to publicly pull back non-engineer coding agents. The likely reason is risk management, specifically unreviewed code touching trading data, not the tools failing.</p>
+    <p class="btl"><b>Below the line because</b> it is one firm's internal policy, but it is a signal worth tracking for regulated industries.</p>
+    <p class="sources"><a href="https://news.bloomberglaw.com/capital-markets/goldman-restricts-traders-and-bankers-from-using-some-ai-tools">Bloomberg Law</a> &middot; <a href="https://qz.com/goldman-sachs-restricts-ai-coding-tools-traders-bankers-110226">Quartz</a> &middot; <a href="https://www.pymnts.com/news/artificial-intelligence/2026/goldman-sachs-bars-bankers-from-employing-some-ai-tools/">PYMNTS</a></p>
+  </div>
+</details>
+
+<details id="a-humain">
+  <summary><span class="chip">AI &amp; tech industry</span> <span class="chip">Energy &amp; grid</span> <span class="chip">Primary source</span> Aramco has closed its purchase of 49 per cent of HUMAIN, Saudi Arabia's national AI company, for about $2.6bn in cash plus assets.</summary>
+  <div class="exp">
+    <p>PIF keeps 51 per cent. Aramco is putting in about SAR 9.9 billion in cash during 2026, plus computing and digital assets. HUMAIN's target is 3 GW of data-centre capacity by 2030. The US channel runs through chip export licences and American hyperscaler partnerships, both conditions for that build-out. On the same day OpenAI signed four agreements in Abu Dhabi (The Neuron), which puts the Gulf's oil money directly behind the AI capacity race.</p>
+    <p class="btl"><b>Below the line because</b> the stake was announced earlier. Closing it is a formality.</p>
+    <p class="sources"><a href="https://www.aramco.com/en/news-media/news/2026/pif-and-aramco-close-humain-transaction-to-accelerate-humains-global-growth">Aramco release</a> &middot; <a href="https://www.arabnews.com/finance/aramco-closes-26bn-deal-for-49-stake-in-humain-3009220">Arab News</a></p>
+  </div>
+</details>
+
+<details id="a-pboc">
+  <summary><span class="chip">Macro &amp; markets</span> <span class="chip">Independent corroboration</span> China's central bank is raising the foreign-exchange reserve ratio to 6 per cent to slow the yuan's rally. The dollar rose 0.4 per cent to 6.67.</summary>
+  <div class="exp">
+    <p>From 15 November, banks must hold 2 percentage points more of their foreign-currency deposits at the People's Bank. That tightens onshore dollar liquidity and makes it more expensive to bet on a stronger yuan (Reuters, Dow Jones). Beijing pushing <i>against</i> appreciation is the reverse of most of the past decade. For the US, a yuan held down makes Chinese exports more competitive heading into whatever trade posture a new Congress brings.</p>
+    <p class="btl"><b>Below the line because</b> it is a technical tool with a modest market effect so far.</p>
+    <p class="sources"><a href="https://ae.marketscreener.com/news/oil-rises-asian-stocks-mixed-amid-caution-over-mideast-tensions-u-s-midterms-update-ce785fd9df8af326">Dow Jones (via MarketScreener)</a> &middot; <a href="https://live.euronext.com/en/financial-news/asian-stocks-retreat-ahead-us-midterms-oil-steadies">Reuters</a></p>
+  </div>
+</details>
+
+<details id="a-rba">
+  <summary><span class="chip">Macro &amp; markets</span> <span class="chip">Single-sourced</span> Australia's central bank raised rates as expected, but the board split 6&ndash;3 and hinted it may now hold.</summary>
+  <div class="exp">
+    <p>Futures had priced about an 80 per cent chance of a rise to 4.85 per cent (Investing.com, before the decision). The 6&ndash;3 vote and the hint of a pause come from Reuters' markets wrap. This brief did not read the RBA statement. It is another energy-driven hike from a developed-market central bank, ahead of a Fed December meeting where one analysis says markets price a hike at roughly 71 per cent.</p>
+    <p class="btl"><b>Below the line because</b> it is foreign policy with no direct US channel. The Fed rule is prints and decisions only.</p>
+    <p class="sources"><a href="https://live.euronext.com/en/financial-news/asian-stocks-retreat-ahead-us-midterms-oil-steadies">Reuters</a> &middot; <a href="https://investing.com.au/news/apac-mixed-as-kospi-tumbles-investors-await-rba-decision/">Investing.com.au</a></p>
+  </div>
+</details>
+
+<details id="a-uap">
+  <summary><span class="chip">UAP implementation</span> <span class="chip">Single-sourced</span> A former head of AARO, the Pentagon's UAP office, is disputing a June "black triangle" sighting by FBI agents that appeared in the Pentagon's seventh UAP records release.</summary>
+  <div class="exp">
+    <p>Sean Kirkpatrick told Fox News that the reports lack the data to support anything unusual. He said "unresolved" usually means not enough data, not something anomalous. The AARO memo in the release records what the agents described, without establishing what the object was or how it behaved. Separately, a congressman is pressing AARO to publish its long-delayed historical report. This brief saw that only in an enthusiast outlet and has not confirmed it.</p>
+    <p class="btl"><b>Below the line because</b> it is one former official's view of one case, and the records programme itself did not change today.</p>
+    <p class="sources"><a href="https://www.foxnews.com/us/former-pentagon-ufo-chief-disputes-fbi-black-triangle-sighting-says-reports-lack-evidence">Fox News</a> &middot; <a href="https://paranormaldaily.com/2026/11/02/congressman-presses-pentagon-office-to-release-long-delayed-historical-uap">Paranormal Daily (Unconfirmed)</a></p>
+  </div>
+</details>
+
+<details id="a-deepfake">
+  <summary><span class="chip">AI &amp; tech industry</span> <span class="chip">Single-sourced</span> WIRED found more than 400 apps and sites, some in Apple's and Google's stores, that passed as harmless tools while hiding sexual-deepfake generators.</summary>
+  <div class="exp">
+    <p>Some apps posed as pet-portrait generators and quietly switched on explicit features after installation. Downloads totalled more than 350,000. Apple removed 19 apps after WIRED got in touch, and Meta said it had acted against related ad accounts. This brief has it only through The Neuron's summary of WIRED's investigation and did not read the original.</p>
+    <p class="btl"><b>Below the line because</b> it is second-hand. The story is a failure of app-store review.</p>
+    <p class="sources"><a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-3-2026/">The Neuron (summarising WIRED)</a></p>
+  </div>
+</details>
+
+<details id="a-fr">
+  <summary><span class="chip">Regulatory</span> <span class="chip">Primary source</span> Today's Federal Register has three rules that Claude's edition leads on: shorter NRC licensing hearings, HHS removing gender dysphoria from section 504 disability coverage, and new CMS rules for organ procurement organisations.</summary>
+  <div class="exp">
+    <p>This brief's own Federal Register API call timed out this morning, so it has not read these documents independently. It points to Claude's Issue 60, which read the summaries at source and is candid about what it did not read. The NRC rule is the second in eight days to narrow where the public can contest a reactor licence, and on the energy-and-AI-power beat that matters more than the headline suggests.</p>
+    <p class="btl"><b>Below the line because</b> it duplicates work already done in today's other edition, and this brief could not add an independent reading.</p>
+    <p class="sources"><a href="2026-11-03.html#nrc">Claude's Issue 60</a> &middot; <a href="https://www.federalregister.gov/documents/search?conditions%5Bpublication_date%5D%5Bis%5D=2026-11-03">Federal Register, 3 Nov</a></p>
+  </div>
+</details>
+
+</div>
+
+<button class="submit" id="send">Send my feedback &rarr;</button>
+<p class="sources" style="text-align:center">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+
+<footer>
+  <h4>Sources checked this run &mdash; 78, of which 43 outside the watchlist</h4>
+  <p><b>Pointed at by a thread (35):</b> Reuters oil wire (via Euronext) &middot; The National &middot; RTÉ (Reuters) &middot; Business Standard &middot; TD Securities (via FXStreet) &middot; Guardian on Qeshm &middot; CNN on Qeshm &middot; Euronews &middot; Outlook India &middot; BBC on Qeshm &middot; NPR election day &middot; AP what to watch &middot; CBS live &middot; Slate poll guide &middot; NBC poll guide &middot; NYT on Alaska (headline) &middot; ABC on Alaska &middot; NPR on Alaska &middot; Washington Times on Alaska &middot; Treasury borrowing release &middot; Reuters on borrowing (via Investing.com) &middot; Treasury refunding documents page &middot; Capital Finance Bureau &middot; Plutux &middot; Treasury par yield curve (full 2026 series) &middot; CNBC on Binance &middot; BBC on Binance &middot; AP on Binance &middot; Reuters on Binance reopening &middot; CoinDesk &middot; Alpha Agentic (Nscale) &middot; Slicast &middot; Claude's Issue 60 &middot; Federal Register API (timed out) &middot; AAA (no data parsed).</p>
+  <p><b>Not pointed at by any thread (43):</b> Anthropic S-1/A (SEC) &middot; TechCrunch &middot; Gizmodo &middot; DatacenterDynamics &middot; Clauding &middot; RR Tech Pulse &middot; AI Weekly &middot; The Neuron &middot; Apple newsroom &middot; CNBC on Apple &middot; Reuters on Apple &middot; Investing.com transcript &middot; Motley Fool transcript &middot; Dow Jones Asia (via MarketScreener) &middot; Reuters Asia markets &middot; SquawkNews &middot; Investing.com.au &middot; AP markets &middot; SiliconReport &middot; Seoul Economic Daily &middot; Crypto Briefing &middot; FT via Yahoo &middot; TokenPost (Nvidia) &middot; The Verge &middot; Bloomberg Law (Brave) &middot; MLex &middot; Mahro Law &middot; NYT complaint (listed, not read) &middot; Bloomberg Law (Goldman) &middot; Quartz &middot; PYMNTS &middot; The Decoder &middot; TokenPost (Goldman) &middot; Aramco &middot; Arab News &middot; Enterprise &middot; Asharq Al-Awsat &middot; Forbes Middle East &middot; Fox News (UAP) &middot; The Exclusion Zone &middot; The Disclosure Age &middot; Paranormal Daily &middot; Eyes Only Archive.</p>
+
+  <h4>The negative check</h4>
+  <p><i>What is the biggest story today that is not on my list, and why is it not?</i> Anthropic's amended S-1. No thread pointed at it. It came from an open AI sweep, and it is now the second lead, ahead of the election and the Treasury follow-up. The check also turned up the Nvidia 51 per cent rule and the Brave lawsuit, both new subjects that are now leads. Together they pushed Binance, a continuing thread, down to the last lead. The largest item seen and not opened was WIRED's deepfake-app investigation, which runs below the line from a summary only.</p>
+
+  <h4>Source comparison</h4>
+  <p><b>Independent accounts compared per lead:</b> Qeshm and oil 6 (Guardian read in full) &middot; Anthropic S-1/A: primary filing plus 3 &middot; election day 5 &middot; Treasury borrowing: primary release plus 3 &middot; Apple and the Asian chip selloff 5 &middot; Nvidia 51 per cent: 4 accounts, all downstream of one FT report, hence single-sourced &middot; Brave lawsuit 3 &middot; Binance 4. Outlets repeating one wire were counted once.</p>
+
+  <h4>Could not reach</h4>
+  <p>The Federal Register API timed out, for the second time in five days. Today's rules are covered by pointing to Claude's edition, which read them. Nothing parsed from AAA, so there is no pump update in this edition. Claude's Issue 60 has diesel at $6.2875 and regular at $4.1493. The FT (Nvidia), the NYT Alaska story and the Brave complaint were paywalled or not opened, and each story says so.</p>
+
+  <h4>About this issue</h4>
+  <ul>
+    <li>Grok edition for 3 November 2026, built separately from Claude's Issue 60, which stands unchanged at <a href="2026-11-03.html">2026-11-03</a>. Page markup built from Issue 10 (<code>2026-09-10b.html</code>).</li>
+    <li>Eight leads, eight short items. Three leads are new subjects (the Anthropic filing, Nvidia, Brave). Five continue threads (oil chain, election, Treasury, the AI trade through Apple, Binance), which is one over the cap of four. The Apple story stays as a lead because its guidance is new information, and the overshoot is disclosed here.</li>
+    <li>Corrections and accountability: yesterday's oil fall was printed at 4.2% from a pre-dawn snapshot, and it settled at 7.6%. Sunday's $571bn borrowing forecast was $47bn too low. The Apple margin previews were borne out for the quarter, and the guide came in two points lower.</li>
+    <li>Disclosures: xAI and SpaceX, which appear in the Anthropic and Brave stories, are in this brief's own corporate family.</li>
+    <li>Every quotation is under fifteen words and attributed; everything else is paraphrase.</li>
+  </ul>
+</footer>
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n  → **" + i.value + "**");
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on **Issue No. 60-grok — 3 November 2026, Grok edition**\n\n" + lines.join("\n")
+      + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-11-03-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
