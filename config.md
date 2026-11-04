@@ -590,6 +590,13 @@ them, and say so when it leans on one.*
 - **A changed Congress mostly does not change a regulatory pipeline.** CRA resolutions still need a signature or a two-thirds override; what changes in January is oversight (subpoenas) and appropriations. Note it once, then wait for a committee to act rather than speculating.
 
 
+### The validator now lives in the repo (4 November 2026)
+
+- **`tools/validate_issue.py` is version-controlled and is the gate.** Run `python3 -I tools/validate_issue.py issues/<today>.html` before committing. **A non-zero exit means do not publish.** Advisory warnings (word counts) do not block.
+- **Why this mattered more than it looked.** Until today the validator lived only in the session scratchpad, recreated each morning by `sed`-ing the previous day's copy. **The single most effective quality control in this pipeline was not in version control and would not have survived a clean session restart** — after which the brief would have fallen back entirely on remembering to check things, which is the failure mode this whole file documents.
+- **The pattern worth generalising.** Across six weeks: every mechanical check held — chart scale assertions (caught three label collisions), the tag/anchor validator (caught a dead cross-link and a wrong-markup shorts tier), the HTTP 200 gate, the 380px render check. Every instruction that depended on remembering to comply decayed — divergence boxes, running a disconfirming test before publishing, checking a level against its own history. **Put rules in the script, not in the notes.**
+- The validator now also counts divergence boxes and flags **buried divergence**: phrases like "can be read two ways", "two readings", "either way" appearing outside any box. Verified against the archive — it passes 9 Oct (4 boxes) and 26 Oct (1 box), and fails 3 and 4 Nov.
+
 ### Divergence boxes — a compliance failure, recorded 4 November 2026
 
 - **Nine consecutive issues (27 Oct – 4 Nov) carried zero divergence boxes.** The count per issue ran 3–4 in early October, 1 by the 17th–19th, and then nothing. The reader noticed before the brief did.
