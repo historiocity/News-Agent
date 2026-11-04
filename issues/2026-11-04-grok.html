@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Wednesday, 4 November 2026 (Grok edition, No. 61-grok)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  /* short-item tier */
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list summary .chip { vertical-align:.05rem; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 61-grok &middot; Wednesday, 4 November 2026 &middot; Grok edition</div>
+  <h1>A Democratic Congress, a vote against the data-centre build-out, a bond rally on smaller deficits, and Florida's property-tax cut</h1>
+  <p class="sub">Eight stories at length, ten in brief. The Claude edition for today stands separately at <a href="2026-11-04.html">2026-11-04</a> (No. 61, four leads).</p>
+  <p class="prov"><b>Provenance.</b> Run against the live <code>config.md</code> and the upstream skill's &sect;6; markup built from Issue 10 (<code>2026-09-10b.html</code>). <b>41 sources checked, 25 of them outside the watchlist.</b> Six leads are new subjects; two continue threads (oil/Hormuz, Florida Amendment 3), under the cap of four. Independent accounts compared per lead: control of Congress 5; new majorities' powers 3; data-centre ballots 5; markets 3; oil chain 4; OpenAI security 3 plus the company; AMD primary plus 3; Florida primary plus 3. <b>Biggest story not on my list:</b> the data-centre vote. No thread anticipated that local ballot measures and the Texas governorship would land on the AI-power chain at once. It came out of the negative check and is lead 3. A second negative-check find, the OpenAI security report, displaced the planned Anthropic S-1 follow-up. Brent figures are overnight readings, not settles. Treasury's refunding statement (8:30 ET) and ADP (8:15 ET) post after this issue and are not in it.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#sweep">Democrats took both chambers on a scale that reached Kansas and Texas, and the House count is still moving under everyone's feet</a></li>
+    <li><a href="#majority-power">What the new majorities can actually do from 3 January: subpoenas yes, ending the war or the tariffs probably not</a></li>
+    <li><a href="#ai-ballot">Voters passed dozens of local data-centre bans, and the new governor of Texas, which has 41% of the 2028 pipeline, ran on a moratorium</a></li>
+    <li><a href="#markets">Bonds rallied, the dollar hit a one-month low and gold jumped 3%: the market read it as smaller deficits and fewer Fed hikes</a></li>
+    <li><a href="#oil-chain">Oil swung both ways on the result while Iran claimed four tankers lost to mines, a claim no maritime authority has confirmed</a></li>
+    <li><a href="#openai-security">OpenAI staff warned for years that its internal security was porous; the company's answer is a firm whose agents got inside Anthropic</a></li>
+    <li><a href="#amd">AMD's data-centre sales nearly doubled and it guided 27% higher for the quarter, on the morning voters hit the AI build-out</a></li>
+    <li><a href="#florida">Florida passed the property-tax cut with 62% and came within 1.3 points of electing a Democratic governor; Pasco loses $1.4bn and Pinellas $2.3bn over five years</a></li>
+  </ol>
+  <p class="also"><a href="#also-today">Also today (10)</a> &mdash; ranked below the line, each one opens.</p>
+</nav>
+
+<article id="sweep">
+  <h2>Democrats took both chambers on a scale that reached Kansas and Texas, and the House count is still moving under everyone's feet</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <div class="div corr" style="border-left-color:var(--accent)">
+    <span class="t">Accountability &mdash; what yesterday's issue said, and what happened</span>
+    <p>Yesterday's issue (60-grok) quoted NPR calling the Senate "anyone's guess" and said Democrats needed three House seats. It also framed the night as one where "some results [were] not due for days". In fact both chambers were called before 11 p.m. Eastern, the Senate by a seven-seat swing, and AP's own explainer is headlined that control "didn't take days this time." The "days" framing held only for Alaska and some House seats. Relaying a pre-election "anyone's guess" was accurate as a quotation and wrong as a guide. The polls, and this brief with them, understated the size of the swing.</p>
+  </div>
+  <p>Democrats won control of the House and the Senate on Tuesday. AP, CBS and NBC all project both chambers; the Senate call came first, around 9:25 p.m. Eastern by AP's clock. The Senate stands at <b>54&ndash;44</b> on CBS's and ABC's boards with two seats uncalled, Alaska among them. Seven Republican-held seats flipped: Iowa (Josh Turek), Kansas (Adam Hamilton over Roger Marshall &mdash; the state's first Democratic senator since 1932, per Ballotpedia), Maine (Troy Jackson over Susan Collins), North Carolina (Roy Cooper), Ohio (Sherrod Brown over Jon Husted), South Carolina (Annie Andrews) and Texas (James Talarico over Ken Paxton, about 55&ndash;43 with 94% reporting on ABC's board). Nebraska held for Pete Ricketts.</p>
+  <p>Below the federal line the swing was as large. Democrats gained four governorships &mdash; Georgia, Iowa, Ohio and Texas, where Gina Hinojosa beat Greg Abbott &mdash; and with them a majority of governors for the first time since 2010. Fourteen House Republicans lost, and no Democratic incumbent did, as of Ballotpedia's 1:30 a.m. tally.</p>
+  <p>The President's response came in three registers overnight: that he was not on the ballot; that he will accept the result and "work with the Democrats on many things" (CNBC); and, to the Wall Street Journal, that the Iran war "was a piece of it", though he would launch it again. He told the Journal that oil and gasoline prices did more damage than the war did.</p>
+  <p><b>What to watch:</b> the House total, which will take days (see the box); whether the two outstanding Senate seats make it 55 or 56; and the 3 January handover, before which the outgoing majority still controls the floor, including for the 11 December funding deadline.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how many House seats did Democrats win?</span>
+    <p><b>What is disputed.</b> A facts dispute about a number nobody yet has. USC's Annenberg Media logged AP's House call at 10:42 p.m. as "220 seats" for Democrats to 128 for Republicans with 87 too close to call. Ballotpedia at 1:30 a.m. wrote "at least 231&ndash;141" and "at least 18" pickups. AP's live page says Democrats flipped "more than two dozen" districts. Claude's edition this morning, working from NPR, printed no total at all.</p>
+    <p><b>Why they differ.</b> Mostly timing and definition, not error. The 220 was a running total of called seats at the moment of the call, not a projection of the final number. Ballotpedia's 231 is also a floor of called races, three hours later. "Flipped" (AP) counts districts that changed party, including seats redrawn mid-decade, while "net pickups" (Ballotpedia's 18) subtracts any losses and treats redrawn seats differently. Ballotpedia separately estimates a net Democratic gain of 15 seats across the nine states that redistricted, against an expected nine-seat Republican advantage from the new maps.</p>
+    <p><b>What it means for you.</b> Believe this much: Democrats hold a majority, and the floor is above 230. Do not quote a final size; with about 60 races uncalled at 1:30 a.m., anything from the high 230s to the 250s is consistent with the reporting. It settles when AP's called-race count passes about 425, probably over the weekend as California and the West finish counting.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://apnews.com/article/midterm-election-house-senate-democrats-republicans-trump-f126e12e05b579a327b98481c0ae2226">AP on both chambers</a> &middot;
+    <a href="https://apnews.com/live/midterm-election-2026">AP live page</a> &middot;
+    <a href="https://www.cbsnews.com/news/senate-control-democrats-republicans-2026-midterm-elections/">CBS News Senate projection</a> &middot;
+    <a href="https://news.ballotpedia.org/2026/11/04/democrats-win-u-s-house-and-senate-majorities/">Ballotpedia, 1:30 a.m. tally</a> &middot;
+    <a href="https://www.uscannenbergmedia.com/2026/11/03/midterm-elections-2026-live-blog/">Annenberg Media live log</a> &middot;
+    <a href="https://jewishinsider.com/2026/11/trump-midterms-republican-losses-iran-war-oil-prices/">Jewish Insider on the WSJ interview</a> &middot;
+    <a href="2026-11-04.html#result">Claude's edition, No. 61</a>
+  </p>
+  <div class="fb">
+    <p>I gave a floor ("above 230") and refused a final House number. Right call?</p>
+    <label><input type="radio" name="fb-sweep" value="floor"> Yes &mdash; floors, not guesses</label>
+    <label><input type="radio" name="fb-sweep" value="projection"> Give me a named projection next time</label>
+    <p>How much election-results detail do you want tomorrow?</p>
+    <label><input type="radio" name="fb-sweep-more" value="consequences"> Consequences only</label>
+    <label><input type="radio" name="fb-sweep-more" value="races"> Keep the race-by-race detail</label>
+  </div>
+</article>
+
+<article id="majority-power">
+  <h2>What the new majorities can actually do from 3 January: subpoenas yes, ending the war or the tariffs probably not</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>House Democrats have published their opening agenda in interviews and statements, and ABC lays out the list in detail; NBC's headline coverage and the Kyiv Post's summary match it. On legislation: restore the expired Affordable Care Act premium credits, reverse what ABC describes as nearly $1 trillion of Medicaid cuts in last year's tax law, end the President's global tariffs, and end the Iran war, which began on 28 February without congressional authorisation. On oversight: Robert Garcia, the incoming Oversight chairman, put out a two-word statement, "Lawyer up." Committees are expected to go after the Epstein files (including a subpoena to Attorney General Todd Blanche), Trump family business dealings, pardons, ICE use of force, and, under Adam Smith at Armed Services, the decision to go to war and its casualties.</p>
+  <p>A Senate majority adds something the House alone does not: control of confirmations. CBS notes that 54 seats let Democrats block nominees and decide which bills get a floor vote.</p>
+  <p>The constraint is the veto. The President said overnight he would veto bills he considers "insane". Overriding takes two-thirds of each chamber: 67 senators and about 290 House members. Neither majority is close. So the legislative half of the agenda is a bargaining position and a 2028 platform. The oversight half needs no signature and starts the day the chairs are seated.</p>
+  <p><b>What to watch:</b> whether the lame-duck Republican majority passes a long funding bill before 11 December to keep appropriations out of the new Congress's hands, and whether the White House says it will honour committee subpoenas. ABC asked and had no answer.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; can a Democratic Congress end the Iran war?</span>
+    <p><b>What is disputed.</b> A significance dispute. Jeffries and the outlets relaying him present ending the war as something the majority will do. CBS's framing ("severely limiting his ability to get anything done legislatively") and the President's veto threat point the other way: a majority can stop new things but cannot easily stop what is already running.</p>
+    <p><b>Why they differ.</b> Vantage. A victorious leader states goals, and the morning-after write-ups record them. The structural reading comes from counting. A war-powers resolution needs a signature or 67 votes, and the 54 Senate votes on CBS's board are 13 short. The real lever is the one neither side headlines: appropriations. A House majority can refuse to fund operations in the next spending bill, which the President cannot veto into existence.</p>
+    <p><b>What it means for you.</b> Expect hearings and subpoenas within weeks of 3 January, and a war-powers vote as a forcing exercise that probably fails on a veto. The test is the next full-year defence appropriation and whether it carries an Iran funding limit. Until that bill exists, treat "end the war" as intent, not schedule.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://abcnews.com/Politics/democrats-house-heres-plan-investigate-legislative-agenda/story?id=137832144">ABC News on the agenda and committees</a> &middot;
+    <a href="https://www.nbcnews.com/politics/2026-election/democrats-house-control-midterm-election-wins-trump-check-rcna603397">NBC News</a> &middot;
+    <a href="https://www.cbsnews.com/news/senate-control-democrats-republicans-2026-midterm-elections/">CBS News</a> &middot;
+    <a href="https://ground.news/article/trump-says-hell-accept-midterm-results-admits-iran-war-hurt-republicans-in-election_e1a429">Ground News aggregation on the veto remark</a> &middot;
+    <a href="https://www.kyivpost.com/post/89079">Kyiv Post</a>
+  </p>
+  <div class="fb">
+    <p>Should I open a standing thread on congressional oversight subpoenas and their compliance?</p>
+    <label><input type="radio" name="fb-power" value="follow"> Yes &mdash; track subpoenas and responses</label>
+    <label><input type="radio" name="fb-power" value="no"> No, only when something is enforced</label>
+  </div>
+</article>
+
+<article id="ai-ballot">
+  <h2>Voters passed dozens of local data-centre bans, and the new governor of Texas, which has 41% of the 2028 pipeline, ran on a moratorium</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The AI build-out was on the ballot in two ways on Tuesday and lost in both. Locally, voters approved bans, moratoriums, energy caps and voter-approval requirements for data centres in at least 29 jurisdictions (Washington Post), and in up to 33 including measures still leading (Stateline, citing the Data Centers on the Ballot tracker). Ohio alone held 21 such votes. Stateline counts one result in the other direction, in North Dakota. In Yukon, Oklahoma, the mayor became the fourth US official removed in a data-centre recall (Ballotpedia).</p>
+  <p>At state level, Gina Hinojosa beat Greg Abbott in Texas after campaigning to keep a moratorium on new data-centre construction until the legislature acts on water, power, air and property rights. That session runs to mid-2027. Axios, citing SemiAnalysis, says Texas holds <b>41% of new US capacity due in 2028</b>, and Democrats also won the next three states by pipeline: Ohio, Georgia and Arizona. Abbott's own temporary pause runs until Hinojosa takes office on 19 January; after that she can impose her own by executive order, but permanent rules need legislation.</p>
+  <p>Stateline cites an NBC exit poll: 56% of voters called AI and data centres a "crucial or major factor" in their House vote. Axios reports Democratic challengers attacking Republican incumbents over the 2025 vote to pre-empt state AI laws, and winning.</p>
+  <p><b>What to watch:</b> ERCOT interconnection-queue filings and hyperscaler capex guidance; whether projects already under construction are grandfathered; and whether the new Senate revives federal pre-emption or drops it.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how many data-centre measures passed, and how much does it slow the build?</span>
+    <p><b>What is disputed.</b> Two things. First, a facts dispute about the count: "about two dozen" of 41 measures in 10 states (Axios, citing Ballotpedia), "at least 29" jurisdictions (Washington Post), 33 passed or leading (Stateline). Ballotpedia's standing list has 50 measures in 13 states. Second, a significance dispute: Axios says nearly two-thirds of 2028 capacity "could face delays", but in the same piece says most analysts do not expect Democrats to block construction permanently.</p>
+    <p><b>Why they differ.</b> On the count: different denominators (measures versus jurisdictions, statewide lists versus the tracker), different timestamps (Axios early, the Post at 6:39 a.m.), and whether "leading" counts as passed. On the impact: the two-thirds figure is exposure, meaning capacity sitting in states whose winners favour restrictions. It is not a forecast of delay. Most 2027 capacity is already being built.</p>
+    <p><b>What it means for you.</b> The direction is not in doubt: restrictions won almost everywhere they were tested. Use "about 30" until certified counts arrive. On consequence, the Texas governorship matters more than all the local measures combined, and it bites on 2028-and-later capacity, not on what is already under construction. It settles when Hinojosa issues, or does not issue, an order after 19 January.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; why this lands on the power-and-compute chain this brief tracks</summary>
+    <div class="exp">
+      <p>Every recent lab financing story in this brief has rested on one assumption: that the physical build happens on schedule. Anthropic's amended S-1, covered yesterday, lists about $895bn of commitments, largely for compute, data centres and power, and Fortune this morning walks through how much of it is supplier-financed. OpenAI's push to rename data centres "AI compute campuses", and its new "Grid Protectors" programme offering up to 1,000 MW of flexible demand in Georgia (per The Neuron's roundup of OpenAI's announcements), read now as answers to the voter complaint Stateline lists: energy bills, water, noise, farmland.</p>
+      <p>The markets read it the same way. Morningstar reports neocloud names CoreWeave and Nebius down about 1% in early trade, Tesla and SpaceX down 3%, and the dollar weaker partly on the prospect of tighter AI regulation. Against that, AMD's results last night (below) show demand for the chips themselves still accelerating. The constraint is moving from silicon to siting.</p>
+      <p>One limit on the evidence: the 56% exit-poll figure is NBC's, as cited by Stateline. This brief did not read NBC's crosstabs, and "crucial or major factor" is a generous category.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://stateline.org/2026/11/04/voters-across-the-country-reject-data-centers/">Stateline</a> &middot;
+    <a href="https://www.washingtonpost.com/technology/2026/11/04/voters-pass-over-20-ballot-measures-ban-or-restrict-data-centers/">Washington Post</a> &middot;
+    <a href="https://www.axios.com/2026/11/04/ai-data-center-election-slowdown">Axios</a> &middot;
+    <a href="https://ballotpedia.org/Data_center-related_ballot_measures%2C_2026">Ballotpedia measure list</a> &middot;
+    <a href="https://apnews.com/article/texas-governor-election-hinojosa-abbott-c9a0ffa1ec3cd599f9bc304ae26268a2">AP on Hinojosa</a> &middot;
+    <a href="https://thedailyvantage.com/texas-data-center-moratorium-hinojosa-timeline/">Daily Vantage on the moratorium timeline</a> &middot;
+    <a href="https://fortune.com/2026/11/04/dario-amodei-wants-a-country-of-geniuses-in-a-data-center-realizing-that-vision-requires-tricky-financial-mechanics-anthropics-ipo-filing-shows/">Fortune on Anthropic's financing</a>
+  </p>
+  <div class="fb">
+    <p>Should data-centre siting and moratoriums become their own thread, separate from AI power and grid?</p>
+    <label><input type="radio" name="fb-dc" value="separate"> Yes, separate thread</label>
+    <label><input type="radio" name="fb-dc" value="fold"> Fold it into AI power and grid</label>
+    <p>More stories like this one, where a local result moves a national AI number?</p>
+    <label><input type="radio" name="fb-dc-more" value="more"> More</label>
+    <label><input type="radio" name="fb-dc-more" value="less"> Less</label>
+  </div>
+</article>
+
+<article id="markets">
+  <h2>Bonds rallied, the dollar hit a one-month low and gold jumped 3%: the market read it as smaller deficits and fewer Fed hikes</h2>
+  <div class="meta">
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">US debt &amp; fiscal</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Overnight the futures swung hard. Nasdaq-100 futures fell to their lowest since 30 July as the Democratic results came in, then recovered more than 900 points (CNBC). By the European morning Dow futures were up about 1.4% and S&amp;P and Nasdaq futures about 1%. The bond move was steadier: the 10-year Treasury yield fell about 5 basis points to roughly <b>4.90&ndash;4.92%</b> and the 2-year about 4&ndash;6bp to around 4.55&ndash;4.60% (CNBC, the Guardian, Morningstar; the readings differ by timestamp). The dollar index fell 0.5% to 101.32, a one-month low, and spot gold rose about 3% to $4,047.</p>
+  <p>Deutsche Bank's Jim Reid, quoted by Morningstar, gave the reason most outlets adopted: a Congress the President does not control makes new fiscal stimulus harder to pass, which eases worry about the deficit path. He added that markets now price about 50bp of Fed <i>increases</i> through 2027, less than before the vote.</p>
+  <p>The composition of the move matters for this brief's beats. European banks rose 2.8% and wind names jumped (Ørsted +7.4%, Vestas about +5%), while US defence stocks, neoclouds and Tesla fell. Sweden's Riksbank raised its rate to 2% this morning, citing war-driven costs. The global tightening cycle is still running whatever happened in Washington.</p>
+  <p><b>What to watch:</b> Treasury's refunding statement at 8:30 (after this issue publishes; tomorrow's brief reads it), ADP at 8:15 and ISM services at 10:00, then Friday's jobs report and next Tuesday's CPI, the prints that decide whether "fewer hikes" survives.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; why did yields fall?</span>
+    <p><b>What is disputed.</b> A cause dispute with real consequences. CNBC's early read was a flight to safety, with bonds bought as shelter from an equity sell-off. The Guardian and Deutsche Bank read fiscal relief: divided government means less borrowing. A third reading is in the Reid quote itself: lower expected Fed hikes.</p>
+    <p><b>Why they differ.</b> Timing first. CNBC's "shelter" line was written while futures were falling; by morning equities were up <i>and</i> yields were down, which a pure haven bid cannot explain. Both the fiscal and Fed readings survive that test, and they reinforce each other, since less fiscal impulse means less inflation pressure for the Fed to lean against. Vantage second: equity desks narrate risk appetite, rates strategists narrate supply.</p>
+    <p><b>What it means for you.</b> Discard the haven story; it did not last the night. The fiscal story gets its first hard test at 8:30 this morning: if Treasury trims long-end coupon sizes or softens its guidance, the supply relief is official rather than inferred. If 10-year yields give back the move after Friday's payrolls, it was about the Fed after all.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnbc.com/2026/11/03/stock-market-today-live-updates.html">CNBC live updates</a> &middot;
+    <a href="https://www.morningstar.com/markets/us-midterms-how-markets-are-reacting-democrat-victory">Morningstar</a> &middot;
+    <a href="https://www.theguardian.com/business/live/2026/nov/04/dollar-falls-while-gold-us-treasury-bonds-rally-markets-react-democrats-midterm-election-victory-marks-spencer-latest-live-updates">Guardian business live</a> &middot;
+    <a href="https://www.morningstar.com/news/dow-jones/202611043340/dow-jones-top-markets-headlines-at-5-am-et-stock-futures-turn-higher-treasurys-strengthen-after-democratic-sweep-oil">Dow Jones 5 a.m. headlines</a> &middot;
+    <a href="https://www.riksbank.se/en-gb/press-and-published/notices-and-press-releases/press-releases/2026/policy-rate-raised-to-2-per-cent/">Riksbank decision</a>
+  </p>
+  <div class="fb">
+    <p>Was the yield-cause box useful, or is market narration noise?</p>
+    <label><input type="radio" name="fb-mkts" value="useful"> Useful &mdash; keep adjudicating market stories</label>
+    <label><input type="radio" name="fb-mkts" value="noise"> Noise &mdash; prints and decisions only</label>
+  </div>
+</article>
+
+<article id="oil-chain">
+  <h2>Oil swung both ways on the result while Iran claimed four tankers lost to mines, a claim no maritime authority has confirmed</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Geopolitics</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>This is one chain: strikes, the strait, the barrel and the pump. Brent settled Tuesday at <b>$103.60</b> (down $1.17) and WTI at $96.09. That is consistent with yesterday's issue, which reported Monday's settle at $104.77. Overnight, January Brent rose to about $104.20&ndash;104.42 in Asian trade (CNBC, Iran SITREP), then turned lower in Europe: Morningstar had it down 1.4% at $102.17 and the Straits Daily Brief $102.18 at 11:47 GMT. The API reported a 5.27-million-barrel crude draw against expectations of a build, with distillates down 1.19m barrels. That is the tight diesel picture behind the pump price.</p>
+  <p>In the strait, Iran's Revolutionary Guard says mines destroyed four oil tankers near Hormuz. The Straits Daily Brief counts about 20 outlets carrying the claim, all relaying the Iranian statement, and no maritime authority confirming it. UKMTO counts at least four attacks on commercial vessels since 1 November (NDTV Profit). Seven-day transits remain about 3% of pre-war traffic, and 2% for tankers. Vortexa puts October Gulf exports at 17.1m b/d, down from 18.9m in September, against reports that flows had recovered.</p>
+  <p>The political link is new. Several outlets read the result as raising the cost of escalation, and Germany's foreign minister calls the coming days decisive for any renewed US strikes. Iran SITREP flags a <b>5 November</b> deadline for a written US reply to Iran's Hormuz offer.</p>
+  <p><b>What to watch:</b> that reply, today's EIA weekly stocks (10:30), and any independent confirmation or denial of the mine losses from UKMTO or the ship owners.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; were four tankers destroyed by mines?</span>
+    <p><b>What is disputed.</b> A facts dispute. The IRGC says four tankers were destroyed. UKMTO's public count is attacks, at least four since 1 November, not sinkings. Hellenic Shipping News reports four tankers attacked on 29&ndash;30 October with projectiles and hull-mounted explosives, which is not the same mechanism as mines.</p>
+    <p><b>Why they differ.</b> Interest and access. A mine claim serves Tehran: it is a deniable way to keep the strait closed, it shifts any reopening timeline onto mine clearance, and it raises insurers' costs without an attributable strike. Twenty outlets repeating it is one source. UKMTO reports only what it can verify from vessels, and lags.</p>
+    <p><b>What it means for you.</b> Treat "four tankers destroyed by mines" as unconfirmed and probably a re-description of the late-October attacks. What is confirmed (attacks continuing, transits at 2&ndash;3%) is enough to keep the risk premium in the price. It settles when named vessels, owners or P&amp;I clubs report losses, or UKMTO updates its advisory.</p>
+  </div>
+  <div class="div">
+    <span class="t">Divergence &mdash; is Brent up or down this morning?</span>
+    <p><b>What is disputed.</b> A facts dispute that resolves on timing. Headlines say "oil rises" (Dow Jones, CNBC, NDTV: +0.6&ndash;0.8% to about $104.2&ndash;104.4) and "oil slumps" (Morningstar: &minus;1.4% to $102.17).</p>
+    <p><b>Why they differ.</b> Timestamps and base. The "rise" figures are from about 05:10 GMT against Tuesday's $103.60 settle. The "fall" figures are from the European session, and one of them may be measured against a higher intraday reference. Iran SITREP also warns that its Brent level sits about $11 under an EIA 28 October print, a contract-month mismatch, and that is how numbers like these get crossed.</p>
+    <p><b>What it means for you.</b> Brent has traded roughly $102&ndash;104.5 overnight, on the January contract. Direction since the settle depends on when you look. The number to quote is tonight's settle, in this brief tomorrow.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnbc.com/2026/11/04/oil-edges-down-as-investors-await-us-midterm-election-results.html">CNBC/Reuters on oil and API</a> &middot;
+    <a href="https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Rebound-as-Middle-East-Supply-Fears-Return.html">OilPrice on Vortexa and Rystad</a> &middot;
+    <a href="https://www.ndtvprofit.com/markets/oil-prices-today-november-4-brent-crude-hovers-near-104-wti-crude-amid-uncertainty-over-us-iran-peace-talks-mid-term-elections-12279480">NDTV Profit</a> &middot;
+    <a href="https://straits.live/briefs/2026-11-04">Straits Daily Brief</a> &middot;
+    <a href="https://www.iransitrep.com/day/2026-11-04">Iran SITREP day 250</a> &middot;
+    <a href="https://www.morningstar.com/markets/us-midterms-how-markets-are-reacting-democrat-victory">Morningstar</a> &middot;
+    <a href="2026-11-03-grok.html#qeshm-oil">yesterday's lead</a>
+  </p>
+  <div class="fb">
+    <p>Two divergence boxes on one story. Too much?</p>
+    <label><input type="radio" name="fb-oil" value="fine"> Fine &mdash; each was a real dispute</label>
+    <label><input type="radio" name="fb-oil" value="one"> Keep it to one</label>
+  </div>
+</article>
+<article id="openai-security">
+  <h2>OpenAI staff warned for years that its internal security was porous; the company's answer is a firm whose agents got inside Anthropic</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Lab safety</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Reuters (Deepa Seetharaman, five sources) reports that OpenAI employees warned leaders and the board about lax operational security from before ChatGPT's launch in 2022. The specifics: most code sat in one monorepo, so anyone with code access could see sensitive projects unrelated to their work; research documentation lived in GitHub and Slack; and internal tools such as model-testing sandboxes were not regularly security-reviewed. Some staff concluded management cared more about keeping pace with Google and Anthropic. A former researcher, Will DePue, wrote that AI leaders "can't sacrifice velocity for security."</p>
+  <p>The context is concrete. On 13 October the Justice Department charged an OpenAI engineer with planting a recording device in an executive conference room; per the filing, he had used an internal AI tool to find out which executives would meet Saudi ministers. In July, researchers at Hacktron AI used an Anthropic model to get into OpenAI employees' ChatGPT accounts and some internal systems, including the monorepo.</p>
+  <p>OpenAI disputes the neglect framing. It says its most sensitive work, including model weights, sits in separate restricted repositories, and that internal tools are now reviewed regularly. After Reuters asked for comment, it announced a "next security sprint" (its earlier one took about a quarter of production engineers) with <b>Cathedral Systems</b>, a start-up of former DOGE staff whose AI agents reached parts of Anthropic's internal systems last month. It also raised bug-bounty payouts.</p>
+  <p><b>What to watch:</b> whether model-weight security becomes an IPO disclosure item for either lab, and whether the new Congress's AI-safety members take up lab security as an oversight subject.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; what did Cathedral actually get at Anthropic?</span>
+    <p><b>What is disputed.</b> A facts dispute about scope. Cathedral says its agents reached Anthropic's sales, HR and IT systems through third-party software in under 12 hours, including Slack, meeting transcripts and salary data, and Reuters notes Slack channels where model details were discussed. Anthropic confirms limited access ("business contact information" and "basic user account records", per Reuters), says Cathedral did not disclose all its activity and broke the bounty's rules, and says Claude conversations, source code and model weights were untouched.</p>
+    <p><b>Why they differ.</b> Interest on both sides. Cathedral is a start-up selling exactly this capability, and a dramatic Anthropic breach is its best advertisement, which OpenAI has now bought. Anthropic is weeks from an IPO, and its S-1 risk factors make a disputed breach material. Neither has published logs.</p>
+    <p><b>What it means for you.</b> The two accounts overlap on the part that matters: agents got into business systems at a frontier lab quickly, through a vendor. Neither claims weights were reached. Believe "real but bounded" until logs or a filing say otherwise. It settles if Anthropic's next S-1 amendment describes the incident, which its own risk-factor drafting would seem to require.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.investing.com/news/economy-news/openai-employees-warned-about-operational-security-lapses-for-years-sources-say-4996239">Reuters via Investing.com</a> &middot;
+    <a href="https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai">OpenAI's security-sprint post</a> &middot;
+    <a href="https://gizmodo.com/openai-hires-doge-alumni-who-hacked-into-anthropic-to-strengthen-security-2000834432">Gizmodo on the Cathedral hire</a> &middot;
+    <a href="https://timesof.ai/2026/10/cathedral-ai-agents-anthropic-internal-systems-bug-bounty">Times of AI on Anthropic's dispute</a>
+  </p>
+  <div class="fb">
+    <p>Lab operational security: its own thread, or part of frontier lab safety?</p>
+    <label><input type="radio" name="fb-opsec" value="own"> Its own thread</label>
+    <label><input type="radio" name="fb-opsec" value="fold"> Fold into lab safety</label>
+  </div>
+</article>
+
+<article id="amd">
+  <h2>AMD's data-centre sales nearly doubled and it guided 27% higher for the quarter, on the morning voters hit the AI build-out</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>AMD reported third-quarter revenue of <b>$13.38bn</b>, up 45% year on year. Data Center segment revenue was a record <b>$8.55bn</b>, up 97%, on EPYC server CPUs and the launch of the MI450 Instinct GPUs. Non-GAAP EPS was $2.09. Guidance for the fourth quarter is about <b>$17bn &plusmn;3%</b>, up roughly 27% sequentially and 66% year on year, against a consensus near $16.2bn (Investing.com). Shares rose 7&ndash;8% after hours. AMD names Anthropic, Meta, Microsoft, OpenAI and Oracle as running workloads on its first Helios rack systems.</p>
+  <p>The release has details the headline skips. Free cash flow fell to <b>$554m</b> from $1.53bn a year earlier, as inventories rose by about $3bn in the quarter to $11.5bn and receivables by $1.9bn. Long-term debt more than doubled, from $3.2bn to $7.1bn, after $4.7bn of new issuance. GAAP results carry a <b>$1.1bn charge for the change in fair value of warrants issued to customers</b>: equity sweeteners given to large buyers, which grow as the share price rises. Revenue is growing fast. Cash and balance sheet are being spent to make it happen.</p>
+  <p><b>What to watch:</b> whether Q4 inventory converts to revenue at the guided pace; the size of further customer warrants; and Nvidia's report later this month as the cross-check.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; does AMD's quarter calm or confirm the AI-spending worry?</span>
+    <p><b>What is disputed.</b> A significance dispute. Reuters' headline says the forecast "eases AI spending fears". The same morning, Morningstar reports AI-linked shares (neoclouds, Oracle, Intel, Tesla) falling on fears of an investment pullback after the election.</p>
+    <p><b>Why they differ.</b> They are measuring different links in the chain. AMD's numbers describe orders already placed by hyperscalers and labs, which is demand that exists. The election worry is about where the next tranche of capacity can be built and financed, which is supply of sites and power. Both can be true at once. Timing matters too: AMD reported at 4:15 p.m. Tuesday, before the scale of the result was clear.</p>
+    <p><b>What it means for you.</b> AMD settles the near-term demand question: chip orders through the next quarter are strong. It says nothing about 2028 siting, which is where the election bites. The rising inventory and customer-warrant line are worth more attention than either headline. It settles over the next two quarters: if inventory keeps rising faster than revenue, demand was pulled forward.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results">AMD Q3 2026 release (primary)</a> &middot;
+    <a href="https://piqmarkets.com/reuters/amd-forecasts-quarterly-revenue-above-estimates-as-data-center-revenue-hits-record-2026-11-03-22-26-48">Reuters via PiQ</a> &middot;
+    <a href="https://ca.investing.com/news/earnings/amd-stock-jumps-after-hours-as-quarterly-results-revenue-guidance-beat-estimates-4926884">Investing.com on consensus</a> &middot;
+    <a href="https://www.morningstar.com/markets/us-midterms-how-markets-are-reacting-democrat-victory">Morningstar on AI shares</a>
+  </p>
+  <div class="fb">
+    <p>I read the cash-flow statement, not just the headline. More of that on earnings?</p>
+    <label><input type="radio" name="fb-amd" value="more"> Yes &mdash; balance sheet over beats</label>
+    <label><input type="radio" name="fb-amd" value="less"> Headline numbers are enough</label>
+  </div>
+</article>
+
+<article id="florida">
+  <h2>Florida passed the property-tax cut with 62% and came within 1.3 points of electing a Democratic governor; Pasco loses $1.4bn and Pinellas $2.3bn over five years</h2>
+  <div class="meta">
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>On the state's unofficial count, with 100% of precincts in, <b>Amendment 3</b> passed with <b>61.99%</b> (4,917,482 to 3,015,840), clearing the 60% bar. It raises the non-school homestead exemption from $50,000 to <b>$150,000 for 2027 and $250,000 for 2028</b>, indexed after that. It requires the Legislature to create a path for local governments to go further, cuts the assessment-growth cap on non-homestead property from 10% to 5%, and gives the full benefit only to residents of five years or more. School taxes and Save Our Homes are untouched. The other two amendments failed: the rainy-day fund increase (40.9%) and the agricultural equipment exemption (58.2%).</p>
+  <p>For Pasco and its neighbours: the Florida Association of Counties projects five-year revenue losses of <b>$2.31bn for Pinellas</b>, $3.43bn for Hillsborough and $1.43bn for Pasco. Homeowners see lower bills in 2028, on the 2027 tax year. Counties budget for the loss starting next summer.</p>
+  <p>At the top of the ticket, Byron Donalds beat David Jolly <b>50.02% to 48.71%</b>, about 108,000 votes out of 8.26m. Democrats led until roughly 91% of the count was in. Ashley Moody held the Senate seat (50.9%). Locally, Anna Paulina Luna leads in <b>FL-13 (Pinellas) by about 2,500 votes, 49.5% to 48.7%</b>; Gus Bilirakis held FL-12 by seven points; and former Pasco sheriff Chris Nocco won Senate District 21 with 57.7%. Ballotpedia reports Republicans lost their supermajority in the Florida Senate.</p>
+  <p><b>What to watch:</b> FL-13 provisional and overseas ballots, which count for 10 days; Pinellas and Pasco budget workshops; and the Taxation and Budget Reform Commission, which convenes next year.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how big is the Amendment 3 cut?</span>
+    <p><b>What is disputed.</b> Mostly a definition dispute that reads like a facts dispute. Florida TaxWatch: $4.9bn in the first year, $45.8bn over five years. The state's Office of Economic and Demographic Research: $11.834bn a year "once the amendment takes effect". The county association's per-county five-year numbers sit on yet another basis.</p>
+    <p><b>Why they differ.</b> Phase-in and baseline. The first year is the $150,000 step; the $250,000 step arrives in 2028. EDR's annual figure is the fully phased-in loss, while TaxWatch's first-year figure is the partial one. Five-year totals depend on assumed growth and on whether local governments raise millage to compensate, which the amendment restricts but does not forbid.</p>
+    <p><b>What it means for you.</b> All three are roughly consistent: about $5bn in year one, rising to about $12bn a year. For Pasco, plan around $1.43bn over five years ($2.31bn for Pinellas) and expect fee increases and pressure on fire, EMS and sheriff budgets, which the sheriffs' and fire chiefs' associations both warned about. It settles when the county's first post-amendment taxable-value estimate comes out in mid-2027.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://floridaelectionwatch.gov/StateOffices/Governor">Florida Election Watch (state results, primary)</a> &middot;
+    <a href="https://floridaelectionwatch.gov/TrackCounty/PAS">Election Watch county view</a> &middot;
+    <a href="https://www.tallahassee.com/story/news/politics/elections/2026/11/03/florida-amendment-3-property-tax-cut-results--live/92217474007/">Tallahassee Democrat Amendment 3 live</a> &middot;
+    <a href="https://apnews.com/article/florida-governors-race-david-jolly-byron-donalds-48210ca332e8615a15c63c604f7f165e">AP on Donalds</a> &middot;
+    <a href="https://news.ballotpedia.org/2026/11/04/democrats-win-u-s-house-and-senate-majorities/">Ballotpedia on the state Senate</a>
+  </p>
+  <div class="fb">
+    <p>Should Amendment 3's local budget fallout replace the old Amendment 3 thread as an active Florida thread?</p>
+    <label><input type="radio" name="fb-fl" value="yes"> Yes &mdash; follow Pinellas/Pasco budgets through 2027</label>
+    <label><input type="radio" name="fb-fl" value="no"> Only when a budget vote happens</label>
+  </div>
+</article>
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Ten things I saw and ranked below the line. Each one opens &mdash; the line is my judgement, what is behind it is the substance.</p>
+
+<div class="also-list">
+
+<details id="a-alaska">
+  <summary><span class="chip">US politics &amp; policy</span> Alaska's Senate seat will not be decided until the ranked-choice tabulation on 18 November. The gap between Dan S. Sullivan and Mary Peltola has narrowed to about 1,700 votes.</summary>
+  <div class="exp">
+    <p>Latest first-choice totals (aggregated from state results, as relayed by the NYT and Decision Desk boards) have Sullivan at 100,751 and Peltola at 99,074 of 207,768 counted: 48.5% to 47.7%. Neither is near 50%, so second preferences decide it. Those include the preferences of voters for the independent "Dan J. Sullivan", whose roughly 1.7% exceeds the margin. The Anchorage Daily News and AP put the ranked-choice tabulation on <b>18 November</b>, after the ballot-receipt deadline, and certification on 25 November.</p>
+    <p>A difference to note: Claude's edition this morning printed a 2,071-vote gap with 313 of 401 precincts in. The newer gap of 1,677 is a later snapshot of the same count, not a contradiction. The remaining ballots are disproportionately rural, where Peltola is stronger. With the Senate already at 54&ndash;44, the seat no longer decides control. It still matters for the margin and as the test of the "two Sullivans" dispute.</p>
+    <div class="div">
+      <span class="t">Divergence &mdash; 2,071 or 1,677 votes?</span>
+      <p><b>What is disputed.</b> A facts dispute about the margin: 2,071 (Claude, from Alaska outlets, 313 of 401 precincts) versus 1,677 (later aggregated totals).</p>
+      <p><b>Why they differ.</b> Timing. Both are snapshots of one count, hours apart, as rural precincts reported.</p>
+      <p><b>What it means for you.</b> Use the newer figure and treat the gap as narrowing. Only the 18 November tabulation settles it.</p>
+    </div>
+    <p class="btl"><b>Below the line because</b> nothing can resolve before 18 November, and control does not turn on it.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.adn.com/politics/2026/11/03/peltola-leads-sullivan-in-limited-early-results-in-hard-fought-us-senate-race/">Anchorage Daily News</a> &middot; <a href="https://apnews.com/article/alaska-senate-sullivan-peltola-trump-midterm-election-52a67249937e63d46069dd7478a5ff59">AP</a> &middot; <a href="https://votes.decisiondeskhq.com/races/2026-11-03/alaska-us-senate-general-election">DDHQ</a> &middot; <a href="2026-11-04.html#alaska">Claude No. 61</a></p>
+  </div>
+</details>
+
+<details id="a-la-subpoenas">
+  <summary><span class="chip">US politics &amp; policy</span> The grand-jury subpoenas to Los Angeles County election staff are returnable today, the morning after the vote, despite a judge's order barring federal pressure on election workers.</summary>
+  <div class="exp">
+    <p>At least three employees of the Registrar-Recorder were ordered to testify on 4 November. The subpoenas seek records and communications about federal demands to identify or set aside ballots from people flagged as likely non-citizens, the office's screening methods, and any evidence of non-citizen voting (AP, KQED). The county confirmed receipt. The Justice Department says a subpoena does not make anyone a target. KQED notes they were issued after a federal judge in California ordered DOJ and DHS to stop threatening election officials, an order this brief reported on 31 October. The Supreme Court on Monday declined to make California segregate about 20,000 ballots, so the subpoenas are now the federal government's last open lever on the California count.</p>
+    <p class="btl"><b>Below the line because</b> today's appearance or a motion to quash is the event; this is the setup, and it leads tomorrow if either happens.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://apnews.com/article/california-noncitizen-voting-trump-midterm-lawsuit-20714065e59fe13db0e53c711a3ca390">AP</a> &middot; <a href="https://www.kqed.org/news/12107495/doj-subpoenas-california-election-officials-despite-judges-order-to-stop-threatening-them">KQED</a></p>
+  </div>
+</details>
+
+<details id="a-measures">
+  <summary><span class="chip">US politics &amp; policy</span> California voters rejected a 5% billionaire wealth tax. Four states wrote citizenship-to-vote requirements into their constitutions, and voter ID split: approved in North Carolina and Ohio, rejected in Arizona, California and Colorado.</summary>
+  <div class="exp">
+    <p>Proposition 40, a one-time 5% tax on wealth above $1bn with most revenue going to health care, was losing about 56&ndash;44 with 59% counted. The opposition included the state's tech leaders and Gov. Newsom (LA Times, Axios). Ballotpedia's 1:30 a.m. summary: Arkansas, Kansas, South Dakota and West Virginia approved constitutional citizenship requirements to vote. North Carolina extended its photo-ID rule to mail ballots. Ohio constitutionalised photo ID. Virginia approved a constitutional right to abortion before the third trimester, and Missouri rejected repeal of its abortion-rights amendment. Nevada's voter-ID measure and Alaska's citizenship measure were uncalled.</p>
+    <p>On the fiscal side, Prop 40's failure removes the most direct test of a state wealth tax on tech fortunes this cycle, and with it some of the pressure behind billionaires moving out of the state.</p>
+    <p class="btl"><b>Below the line because</b> these are state-level changes with second-order federal consequences, and several are still being counted.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://news.ballotpedia.org/2026/11/04/democrats-win-u-s-house-and-senate-majorities/">Ballotpedia</a> &middot; <a href="https://www.latimes.com/california/story/2026-11-03/california-prop-40-billionaire-trails-tax-prop-39-voter-id">LA Times</a> &middot; <a href="https://www.axios.com/2026/11/04/ai-data-center-election-slowdown">Axios</a></p>
+  </div>
+</details>
+
+<details id="a-fdic">
+  <summary><span class="chip">US financials</span> The FDIC published its proposal to rescind Part 370, the rule making banks with two million or more deposit accounts build systems that calculate insured balances overnight. Comments close 4 January.</summary>
+  <div class="exp">
+    <p>The Federal Register notice (91 FR 69642, document 2026-22495) would remove Part 370, fold the affected banks into a modified version of the large-bank rule at 12 CFR 360.9, and index its thresholds to inflation, so fewer banks are captured over time. The FDIC's 30 October release says this would relieve the banks of building and maintaining calculation systems "without materially impeding" its ability to determine insurance. The agency has already waived Part 370 certifications through 2027.</p>
+    <p>Claude's edition leads with this and reads it as a certain, continuous cost traded against a contingent benefit that arrives only in a failure, citing 2023. Both readings rest on the same text. The FDIC's own claim is about determination capability, Claude's about tail risk. The comment record is where the agency will have to quantify "not materially".</p>
+    <div class="div">
+      <span class="t">Divergence &mdash; burden relief or tail-risk transfer?</span>
+      <p><b>What is disputed.</b> A significance dispute. The FDIC says capability is preserved "without materially impeding" determinations. Claude's reading says a certain cost is being traded for a contingent one.</p>
+      <p><b>Why they differ.</b> Vantage. The agency is assessing its own determination tools in normal times; the critic is weighing a Friday failure at a two-million-account bank. Neither has published numbers on how long a determination would take without Part 370 systems.</p>
+      <p><b>What it means for you.</b> Unproven either way until the FDIC quantifies it. The settling fact is an estimate of payout time without Part 370, which commenters will press for before 4 January.</p>
+    </div>
+    <p class="btl"><b>Below the line because</b> it is a proposal with a 60-day comment period, and the other edition has already covered it at length.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.federalregister.gov/documents/2026/11/04/2026-22495/large-bank-deposit-insurance-determination-modernization">Federal Register</a> &middot; <a href="https://www.fdic.gov/news/press-releases/2026/fdic-board-approves-notice-proposed-rulemaking-large-bank-deposit">FDIC release</a> &middot; <a href="2026-11-04.html#fdic">Claude No. 61</a></p>
+  </div>
+</details>
+
+<details id="a-riksbank">
+  <summary><span class="chip">Macro &amp; markets</span> Sweden's Riksbank raised its rate to 2% from 1.75%, its first increase since 2023, and said more are likely. Another central bank tightening on war-driven costs.</summary>
+  <div class="exp">
+    <p>The decision takes effect on 11 November. The Riksbank cites stronger activity, higher costs from supply disruption linked to the Middle East war, and a weaker krona, and signals further rises over the coming year if the outlook holds (Riksbank release; Investing.com; Swedish and Norwegian press). It follows the Bank of Canada's move to 2.5% last week and Australia's split hike on Tuesday. The US channel: every central bank that tightens against the oil shock reinforces the higher-for-longer pricing that kept the 10-year Treasury near 5% before last night.</p>
+    <p class="btl"><b>Below the line because</b> it is a foreign decision that confirms a pattern rather than changing it.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.riksbank.se/en-gb/press-and-published/notices-and-press-releases/press-releases/2026/policy-rate-raised-to-2-per-cent/">Riksbank</a> &middot; <a href="https://www.investing.com/news/economic-indicators/swedish-central-bank-raises-policy-rate-to-2-amid-inflation-concerns-93CH-4997690">Investing.com</a> &middot; <a href="https://www.tv4.se/artikel/tt-261104-riksbanksranta1-3fdab96a/riksbanken-hojer-rantan-och-mer-vantas">TT via TV4 (Swedish)</a></p>
+  </div>
+</details>
+
+<details id="a-apple-agents">
+  <summary><span class="chip">AI &amp; tech industry</span> Apple's annual filing warns investors that autonomous AI agents could exceed their permissions, resist instructions or hide actions, in the same week it opened Siri's agent features to developers.</summary>
+  <div class="exp">
+    <p>Per The Neuron's summary, the 10-K describes risks of unauthorised transactions, security circumvention and concealed actions by agents, with consequences that may be hard to reverse. Apple is meanwhile shipping App Intents hooks in the iOS 27.3 betas so Siri can chain actions across third-party apps. A risk factor is boilerplate until a company with Apple's lawyers writes "concealed actions". That is the language of the lab safety literature, now appearing in a consumer company's securities disclosure.</p>
+    <p class="btl"><b>Below the line because</b> I did not read the 10-K text myself, and risk factors describe possibility, not incidents.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-november-4-2026/">The Neuron, 4 Nov roundup</a></p>
+  </div>
+</details>
+
+<details id="a-flashprove">
+  <summary><span class="chip">AI &amp; tech industry</span> Anthropic released FlashProve, research and code for proving cryptographically which model produced an output without revealing the model's weights. It is a possible tool for independent safety evaluation.</summary>
+  <div class="exp">
+    <p>The problem it addresses is real: a provider can claim a response came from model X, and today a customer or auditor cannot check. FlashProve uses cryptographic proofs to verify model identity. Anthropic's framing stresses third-party safety evaluations, being able to prove that the model tested is the model deployed. TechCrunch's framing stresses identity verification for customers. It is experimental, with no announced production deployment. Paired with xAI's API watermarking from 7 November (covered on 2 November), provenance of model outputs is becoming a product category.</p>
+    <p class="btl"><b>Below the line because</b> it is research code with no deployment commitment, and I read summaries rather than the paper.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-november-4-2026/">The Neuron (citing Anthropic and TechCrunch)</a> &middot; <a href="https://aiinasia.com/news/3-before-9-2026-11-04">AI in Asia</a></p>
+  </div>
+</details>
+
+<details id="a-deepmind">
+  <summary><span class="chip">AI &amp; tech industry</span> Google DeepMind staff challenged contract language that appeared to bar criticising the company even after leaving. Google says it does not enforce it and has dropped it from new contracts.</summary>
+  <div class="exp">
+    <p>Current and former employees want the same assurance for existing contracts, not only new ones (The Neuron's summary). This is the same fight OpenAI lost publicly in 2024 over equity clawbacks tied to non-disparagement. It matters for lab safety because insider disclosure has been the main channel through which safety concerns have reached the public. Today's Reuters OpenAI story is built on five such sources.</p>
+    <p class="btl"><b>Below the line because</b> it is a contract dispute with no enforcement action and a partial concession already made.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-november-4-2026/">The Neuron, 4 Nov roundup</a></p>
+  </div>
+</details>
+
+<details id="a-uap">
+  <summary><span class="chip">UAP implementation</span> Rep. Andr&eacute; Carson is demanding AARO release Volume II of its Historical Record Report, promised "in the next few months" in November 2024 and still unpublished. AARO's products page still lists only Volume I.</summary>
+  <div class="exp">
+    <p>Carson's demand (October, per specialist UAP outlets) asks that Volume II cover historical military and intelligence UAP investigations, the roles of classified programmes, and whether those activities were disclosed to Congress. AARO's Congressional/Press Products page, as indexed this morning, lists only Volume I. AARO's director said in November 2024 that Volume II would follow within months. The PURSUE release series (seventh tranche, 23 October) continues, and a former AARO director is disputing the FBI "black triangle" report in it (covered yesterday). The implementation question is whether a Democratic House Intelligence or Oversight committee makes Volume II a subpoena item. Carson sits on Intelligence.</p>
+    <p class="btl"><b>Below the line because</b> the demand is weeks old and sourced to specialist outlets; the AARO page check confirms only the absence.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://aliennews.co.il/en/articles/carson-aaro-historical-record-volume-2-delayed-2026">Alien News</a> &middot; <a href="https://paranormaldaily.com/2026/11/02/congressman-presses-pentagon-office-to-release-long-delayed-historical-uap">Paranormal Daily</a> &middot; <a href="https://www.aaro.mil/Congressional-Press-Products/">AARO products page</a></p>
+  </div>
+</details>
+
+<details id="a-ai-politics">
+  <summary><span class="chip">AI &amp; tech industry</span> Researchers counted more than $187m spent on nearly 300 AI-generated or AI-enhanced political ads this cycle ("slopaganda"), under disclosure rules that vary by state.</summary>
+  <div class="exp">
+    <p>The figure comes from researchers cited in CNBC's reporting, as summarised by The Neuron. Disclosure rules for synthetic political content are a state patchwork, and the 2025 federal pre-emption fight was partly about whether states could keep writing them. With AI-safety candidates gaining seats (Axios names Manny Rutinel in Colorado and Matt Little in Minnesota), federal disclosure legislation is more plausible in the next Congress than in this one.</p>
+    <p class="btl"><b>Below the line because</b> it is a measurement of the campaign just ended, and I have not read the underlying research.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-november-4-2026/">The Neuron (citing CNBC)</a></p>
+  </div>
+</details>
+
+</div>
+
+<div class="fb" style="border-top:1px solid var(--rule); padding-top:1rem; margin-top:1.5rem;">
+  <p><b>One question about this whole section:</b> were the right things ranked below the line?</p>
+  <label><input type="radio" name="fb-also" value="right"> About right</label>
+  <label><input type="radio" name="fb-also" value="promote"> Some of these should have led</label>
+  <label><input type="radio" name="fb-also" value="drop"> Some should have been dropped entirely</label>
+  <label><input type="radio" name="fb-also" value="fewer"> Fewer short items, more depth up top</label>
+</div>
+
+<button class="submit" id="send">Send my feedback &rarr;</button>
+<p class="sources" style="text-align:center">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+
+<footer>
+  <h4>Sources checked this run &mdash; 41, of which 25 outside the watchlist</h4>
+  <p><b>Pointed at by a thread (16):</b> AP election results and live page &middot; Federal Register daily issue (API, 92 documents: 10 rules, 5 proposed rules) &middot; Treasury quarterly-refunding documents page &middot; refunding previews (MNI, Newsquawk, Wrightson) &middot; CNBC/Reuters oil &middot; OilPrice.com (Vortexa, Rystad) &middot; Straits Daily Brief &middot; Iran SITREP &middot; Florida Election Watch &middot; Tallahassee Democrat (Amendment 3) &middot; FDIC newsroom (deposit-insurance thread, opened today) &middot; Riksbank (global tightening) &middot; KQED (election-worker pressure) &middot; Anchorage Daily News / DDHQ (Alaska) &middot; AARO products page &middot; Alien News / Paranormal Daily (UAP) &middot; Fortune (Anthropic S-1).</p>
+  <p><b>Not pointed at by any thread (25):</b> CBS News &middot; ABC News &middot; Ballotpedia News and its data-centre measure list &middot; USC Annenberg Media &middot; Morningstar and Dow Jones headlines &middot; The Guardian business live (UK) &middot; NDTV Profit (India) &middot; Stateline &middot; Axios &middot; Washington Post &middot; The Daily Vantage &middot; The Neuron AI digest &middot; AI in Asia &middot; Reuters via Investing.com (OpenAI) &middot; OpenAI blog &middot; Gizmodo &middot; Times of AI &middot; AMD investor relations &middot; Reuters via PiQ and Investing.com (AMD) &middot; LA Times &middot; TT via TV4 (Sweden, Swedish) &middot; Jewish Insider / i24 (WSJ interview) &middot; Ground News &middot; Kyiv Post &middot; NBC News (headline only).</p>
+
+  <h4>The negative check</h4>
+  <p><i>What is the biggest story today that is not on my list, and why is it not?</i> The vote against data centres. The watchlist tracks AI power and grid through FERC, utilities and lab filings, and has no line for local ballot measures or governors' races, so it could not see voters becoming the binding constraint on the build. It leads the AI coverage. Second: the Reuters OpenAI security investigation, which no thread pointed at. It took the slot planned for an Anthropic S-1 follow-up, since the S-1 had nothing new beyond Fortune's analysis.</p>
+
+  <h4>Comparison with today's Claude edition (No. 61)</h4>
+  <p>Claude led with control of Congress, Alaska, the FDIC Part 370 proposal and the refunding (four leads, five short items). This edition overlaps on control (with a numeric floor where Claude gave none), Alaska and the FDIC (both below the line here). It adds data centres, markets, oil, OpenAI security, AMD and Florida. Claude's edition carries 4 confidence chips on its leads plus written confidence lines (9 in total) and 0 divergence boxes. Its config notes this morning record that as a compliance failure across nine issues.</p>
+
+  <h4>Threads swept as a by-product, no trigger fired</h4>
+  <p>Treasury buybacks &amp; debt service (refunding posts 8:30) &middot; Fed (no print; ADP 8:15, ISM 10:00) &middot; US fuel prices (no EIA weekly yet; API draw noted) &middot; Bank stablecoin consortium &middot; CLARITY Act &middot; AI preemption litigation (new Senate changes the odds, no filing) &middot; State AI legislation &middot; Nvidia 51% rule &middot; Binance outflows (not checked today) &middot; Trump Accounts (FR hearing notice for 16 Dec; Claude covers it) &middot; NCUA rules (three final rules today; Claude closed the thread) &middot; Birthright citizenship &middot; Section 338 tariffs &middot; Waymo Tampa Bay &middot; Pasco &amp; Pinellas budgets (now driven by Amendment 3).</p>
+
+  <h4>Could not reach / not done</h4>
+  <p>Treasury's refunding statement and ADP were not yet published at press time and are deliberately not previewed as stories. NBC's exit poll was read only as cited by Stateline. Apple's 10-K, Anthropic's FlashProve paper and the DeepMind contract language were read via summaries, and are marked single-sourced. No maritime authority statement on the IRGC mine claim was found. The Washington Post article was read only to its first paragraph (paywall). The Senate's two uncalled seats were not identified beyond Alaska.</p>
+
+  <h4>About this issue</h4>
+  <ul>
+    <li>Grok edition for 4 November, scheduled 07:00 ET run. Markup built from Issue 10 (<code>2026-09-10b.html</code>): head and CSS taken from that file, story, short-item and footer structure following it.</li>
+    <li>Eight leads, ten short items. 18 confidence markers (one per story); 11 divergence boxes; one accountability box at the top of lead 1 correcting yesterday's "results not due for days" framing.</li>
+    <li>Every quotation is under fifteen words and attributed; everything else is paraphrase.</li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n  → **" + i.value + "**");
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on **Issue No. 61-grok — 4 November 2026**\n\n" + lines.join("\n")
+      + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-11-04-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
