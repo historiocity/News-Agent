@@ -590,6 +590,16 @@ them, and say so when it leans on one.*
 - **A changed Congress mostly does not change a regulatory pipeline.** CRA resolutions still need a signature or a two-thirds override; what changes in January is oversight (subpoenas) and appropriations. Note it once, then wait for a committee to act rather than speculating.
 
 
+### Divergence boxes — a compliance failure, recorded 4 November 2026
+
+- **Nine consecutive issues (27 Oct – 4 Nov) carried zero divergence boxes.** The count per issue ran 3–4 in early October, 1 by the 17th–19th, and then nothing. The reader noticed before the brief did.
+- **Nothing was removed.** `SKILL.md` §6 has carried the rule unchanged since 10 September, with the three-part shape: substance, cause, what it means for the reader. The skill is loaded every morning. **This was non-compliance with a live instruction, not drift in the configuration — there is nothing to restore and no quota to add.**
+- **The failure mode: confidence lines were allowed to absorb the job.** From about 25 October the issues carried increasingly careful sourcing disclosure — "did not read X", "one outlet", "comparison not run". That is honesty about *how solid the facts are*. A divergence box is honesty about *how the same solid facts are read two ways*. **The second is the one with reader value in it, and the first was treated as covering it. It does not.**
+- **Do not accept "it was a primary document" as an excuse.** The drift to Federal Register leads made it feel as though there were no two camps. The disagreements were there and were being written into single clauses instead of boxes: the FDIC deposit-insurance proposal ("lesson learned" vs "the cost was never worth it"), the organ procurement rule (the brief literally wrote "can be read two ways" and did not use the box), the NRC adjudication rules ("streamlining and narrowing are the same operation from different ends"), section 504 (a live circuit split), the oil majors returning the windfall instead of drilling (political price vs structural).
+- **Test before publishing:** scan the drafted leads for the phrases "can be read two ways", "two readings", "either… or", "the question is whether". **Each one is a divergence box that was compressed into a clause.** Give it the box or delete the clause.
+- **No quota.** The skill's bar is right: where sources genuinely agree there is no box, and staged even-handedness is worse than none. The requirement is to work a real disagreement when one exists, not to manufacture symmetry.
+
+
 ## Watchlist
 
 Empty at first run. Populates from reader feedback and from threads that recur on
