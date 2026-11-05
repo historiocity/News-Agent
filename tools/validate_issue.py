@@ -102,11 +102,54 @@ def main(path):
         if outside:
             block(f"buried divergence — these phrases appear outside any divergence box: {outside}")
 
+    # --- gather (SKILL.md §2) --------------------------------------------
+    # The survey decayed silently over six weeks: distinct source domains fell
+    # 10 -> 4 while every mechanical check stayed green, because nothing counted
+    # them. These count them.
+    domains = sorted({
+        re.sub(r"^www\.", "", m.group(1)).lower()
+        for m in re.finditer(r'href="https?://([^/"]+)', s)
+        if "historiocity" not in m.group(1) and "github" not in m.group(1)
+    })
+    print(f"source domains: {len(domains)}  {' '.join(domains)}")
+    if len(domains) < 8:
+        block(
+            f"only {len(domains)} distinct source domains. §2 requires 14–18 sources "
+            "with at least half outside the watchlist; under 8 domains means the "
+            "survey did not happen and the topic list is one outlet's front page."
+        )
+
+    # The provenance line must state the balance, and the balance must hold.
+    pm = re.search(
+        r"(\d+)\s+sources checked,?\s*(?:and\s+)?(\d+)\s+of them outside the watchlist",
+        re.sub(r"<[^>]+>", " ", s), re.I,
+    )
+    if not pm:
+        block(
+            "provenance line does not state 'N sources checked, M of them outside "
+            "the watchlist' — §2 requires the balance be auditable, not asserted."
+        )
+    else:
+        tot, out = int(pm.group(1)), int(pm.group(2))
+        print(f"provenance: {tot} sources, {out} outside the watchlist")
+        if not (14 <= tot <= 18) and tot < 14:
+            block(f"provenance claims {tot} sources checked; §2 requires 14–18")
+        if out * 2 < tot:
+            block(
+                f"provenance claims {out} of {tot} sources outside the watchlist; "
+                "§2 requires at least half. This is the load-bearing rule in §2."
+            )
+
     # --- house format ----------------------------------------------------
     shorts = re.findall(r'<details class="short" id="([^"]+)">(.*?)</details>', s, re.S)
     print(f"shorts: {len(shorts)}")
     if not shorts:
         block('no <details class="short"> items — wrong markup for the "Also today" tier')
+    elif len(shorts) < 6:
+        block(
+            f"only {len(shorts)} short items. §5 expects typically 8–15. A thin "
+            "'Also today' tier is the first visible symptom of a skipped survey."
+        )
 
     nav = len(re.findall(r'<nav[^>]*>.*?</nav>', s, re.S)) and len(
         re.findall(r'<li><a href="#', re.search(r"<nav[^>]*>(.*?)</nav>", s, re.S).group(1))

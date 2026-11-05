@@ -642,6 +642,48 @@ Colorado families live within reach of one participating preschool. Whether that
 is useful is a judgement this brief cannot make about itself, and the feedback
 controls have been empty every morning since they were added.
 
+### The survey, 5 November 2026 — second failure of the same kind
+
+**A reader said the topic list looked thin. It was, and it is measurable.**
+Distinct source domains per issue: 20 Oct 10, 23 Oct 10, 27 Oct 9, 29 Oct 6,
+2 Nov 4, 4 Nov 8, 5 Nov first edition 6. Short items: 8, 8, 5, 4, 5, 4. Beats
+per issue: 9 down to 6. **Geopolitics, world economy, public health and the
+local section stopped appearing entirely.** The parallel -grok edition in the
+same repository ran 27–53 domains over the same period.
+
+**Cause: the only news input was `text.npr.org`.** With one index page as the
+news source, the topic list is that page's front page. Every other source was a
+data feed pulled the same way every morning, which is why the mechanical parts
+of the brief stayed strong while the subject range collapsed. **§2 of the skill
+predicts this failure in its own text** — "the runs got better at documents and
+narrower in subject, because the documents were always the same ones" — and
+names the half-outside rule as "the load-bearing part of this section". It was
+not being followed and nothing counted it.
+
+**This is the same shape as the divergence-box failure found yesterday: an
+instruction that lived only in the skill, checked only by intention.** Two in
+two days. The conclusion from yesterday holds and should be applied harder —
+anything stated as a requirement needs a counter in the validator on the day it
+is adopted, or it will decay invisibly while everything that *is* counted
+stays green.
+
+**Now enforced by `tools/validate_issue.py`:** blocks under 8 distinct source
+domains; blocks unless the provenance line states "N sources checked, M of them
+outside the watchlist" in those words, with N ≥ 14 and M ≥ N/2; blocks under 6
+short items. Regression-checked: fails 2026-11-02, 2026-11-03 and 2026-11-04,
+passes the second edition of 2026-11-05.
+
+**What one hour of the actual survey returned:** two leads and five shorts, and
+answers to four items the footer had been carrying as owed or dormant — the arch
+(a decision taken the same afternoon), pharmacy benefit managers (CVS spinning
+out Caremark), Israel after the election, and the Gulf. **The arch is the
+indictment: a dated decision on the brief's own owed list, hours away, found
+only because a front page was finally opened.**
+
+**Still not done today** and still unenforced: non-English press read in the
+original, and a trade or specialist publication off the beat list. Both are §2
+requirements. Add counters for them before claiming they are being met.
+
 ## Watchlist
 
 Empty at first run. Populates from reader feedback and from threads that recur on
