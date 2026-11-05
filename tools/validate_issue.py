@@ -82,12 +82,19 @@ def main(path):
         "the question is whether", "either way", "it is equally consistent",
         "on the other hand", "a different reading",
     ]
-    text = re.sub(r"<[^>]+>", " ", s).lower()
+    # Scoped to editorial prose. The footer is provenance and may name the rule
+    # it is enforcing; the check exists to catch a disagreement disposed of in a
+    # clause inside a story, not to stop the brief describing its own standard.
+    prose = " ".join(
+        re.findall(r"<article id=.*?</article>", s, re.S)
+        + re.findall(r'<details class="short".*?</details>', s, re.S)
+    )
+    text = re.sub(r"<[^>]+>", " ", prose).lower()
     found = sorted({t for t in tells if t in text})
     if found:
         # Only a problem if the phrase sits outside a divergence box.
         outside = []
-        boxes = " ".join(re.findall(r'<div class="div">(.*?)</div>', s, re.S)).lower()
+        boxes = " ".join(re.findall(r'<div class="div">(.*?)</div>', prose, re.S)).lower()
         boxes = re.sub(r"<[^>]+>", " ", boxes)
         for t in found:
             if text.count(t) > boxes.count(t):
@@ -124,9 +131,18 @@ def main(path):
     for m in re.finditer(r'<article id="([^"]+)">(.*?)</article>', s, re.S):
         body = re.sub(r'<p class="sources">.*', "", m.group(2), flags=re.S)
         body = re.sub(r'<p class="corr">.*?</p>', "", body, flags=re.S)
+        # A divergence box is its own unit: the target describes the narrative,
+        # so count it separately and report both, or a lead whose substance sits
+        # in the box reads as thin when it is not.
+        boxw = len(
+            re.sub(r"<[^>]+>", " ", " ".join(
+                re.findall(r'<div class="div">(.*?)</div>', body, re.S))).split()
+        )
+        body = re.sub(r'<div class="div">.*?</div>', "", body, flags=re.S)
         n = len(re.sub(r"<[^>]+>", " ", body).split())
         if n and not (240 <= n <= 430):
-            warn(f"lead '{m.group(1)}' is {n} words (target ~250–400)")
+            extra = f" + {boxw} in the divergence box" if boxw else ""
+            warn(f"lead '{m.group(1)}' is {n} narrative words{extra} (target ~250–400)")
 
     for sid, body in shorts:
         n = len(re.sub(r"<[^>]+>", " ", body).split())

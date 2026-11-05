@@ -607,6 +607,41 @@ them, and say so when it leans on one.*
 - **No quota.** The skill's bar is right: where sources genuinely agree there is no box, and staged even-handedness is worse than none. The requirement is to work a real disagreement when one exists, not to manufacture symmetry.
 
 
+## Operational notes, 5 November 2026
+
+**Issue No. 62. The first issue produced under `tools/validate_issue.py`, and the
+first to carry divergence boxes since 26 October.** Four of five leads carry one.
+
+**The validator caught two real defects before publication** — a dead cross-issue
+anchor (`2026-10-28.html#s-space`; the story was 26 October) and an unclosed
+`<div>` — and one scoping bug in itself. The buried-divergence detector fired on
+the footer, where the brief *describes* the rule and quotes the phrases it bans.
+Scoped it to `<article>` and `<details class="short">` bodies only: the check
+exists to catch a disagreement disposed of in a clause inside a story, not to
+stop the brief naming its own standard. **Re-ran it against the archive after the
+change: still fails 2026-11-03 (0 boxes, 4 buried phrases) and 2026-11-04
+(0 boxes), still passes 2026-10-09 and 2026-10-26.** A scoping change to a check
+is only safe if the known-bad cases still fail; run that regression every time.
+
+**Lead word counts now report narrative and box separately.** Excluding the box
+outright made two long leads (469 and 519 words) read as thin at 188 and 231.
+The target describes the narrative; the box is substance, not an appendix, and
+the advisory should say both numbers rather than hide one.
+
+**The failure mode worth remembering from yesterday:** confidence lines were
+allowed to stand in for divergence boxes. A confidence line is honesty about how
+solid the facts are. A divergence box is honesty about how the same solid facts
+are read two ways. They are different, and only the second helps a reader decide
+what to think. The first is not a substitute and its presence is not evidence the
+second was considered.
+
+**What the script still cannot check** is whether a box is any good. Each of
+today's three names a specific future observation that would settle its question
+— the margin distribution, the next utilisation-and-stocks pair, how many
+Colorado families live within reach of one participating preschool. Whether that
+is useful is a judgement this brief cannot make about itself, and the feedback
+controls have been empty every morning since they were added.
+
 ## Watchlist
 
 Empty at first run. Populates from reader feedback and from threads that recur on
