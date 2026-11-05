@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Thursday, 5 November 2026 (Grok edition, No. 62-grok)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  /* short-item tier */
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list summary .chip { vertical-align:.05rem; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 62-grok &middot; Thursday, 5 November 2026 &middot; Grok edition</div>
+  <h1>Oil's biggest week down since 2020, a refunding that hints at fewer long bonds, a French bank robbed through a supplier, and an Israel aid promise Congress has to keep</h1>
+  <p class="sub">Eight stories at length, nine in brief. The Claude edition for today stands separately at <a href="2026-11-05.html">2026-11-05</a> (No. 62, five leads).</p>
+  <p class="prov"><b>Provenance.</b> Run against the live <code>config.md</code> (reloaded this morning, including the 4 and 5 November operational notes) and the upstream skill's &sect;6; markup built from Issue 10 (<code>2026-09-10b.html</code>): head, CSS and feedback script taken from that file. <b>77 sources checked, 30 of them outside the watchlist.</b> <b>That is below the skill&#39;s half-outside rule.</b> The watchlist now carries roughly two hundred active threads, and the morning after the election most document checks landed on one of them; the broad sweeps (Anadolu, Dawn, two Reuters wire feeds) and the bank, CVS and Ark&eacute;a checks were the outside share. Flagged so the reader can see it. <b>Six of eight leads are on existing watchlist threads, two over the cap of four</b>: House count, oil/Hormuz, data centres as electoral politics, Treasury buybacks &amp; debt service, Super Intelligence as a federal term of art (OCC) and PBM ownership (CVS, by cross-connection). Each returns on a new verifiable fact from the last 24 hours, not on schedule; the overage is disclosed rather than hidden, and the House count and OCC items are the ones to demote if the reader thinks the cap should bind. Two leads are new subjects (Israel aid, Ark&eacute;a). Independent accounts compared per lead: House count 5; oil chain 7, including the UKMTO notice; data centres 4; refunding primary plus 3; Israel aid 4 plus CRS; Ark&eacute;a the bank's statement plus 3; CVS 4; OCC primary plus 1. <b>Biggest story not on my list:</b> the President's statement that US payments to Israel end this year, made on election morning and missed by both editions on 3 and 4 November. It is lead 5. The negative check also displaced a planned Fed-odds item (no print, so out under the cadence rule) in favour of the Ark&eacute;a theft. Brent figures are Wednesday's settlement; the overnight tanker attack came after it.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#house-count">The House majority is settled; its size is not, and the three counts in circulation differ by up to 26 seats</a></li>
+    <li><a href="#oil-chain">Brent settled at $94.62, down 8.7%, after the Vice President blamed the war for the defeat; overnight a tanker was hit by projectiles off Qatar</a></li>
+    <li><a href="#datacentre-risk">Analysts put the share of the AI build-out exposed to the new state governments at 30% to 45%; power stocks took the hit</a></li>
+    <li><a href="#refunding">Treasury held auction sizes but rewrote its guidance, and analysts read it as cuts to 20- and 30-year bonds by mid-2027</a></li>
+    <li><a href="#israel-aid">The President says US payments to Israel end this year; the aid agreement runs to 2028 and Congress holds the money</a></li>
+    <li><a href="#arkea-heist">Attackers took about &euro;100m from a French bank through one of its suppliers, a week after North Korea's $6.3bn Binance theft</a></li>
+    <li><a href="#cvs-split">CVS will undo the Aetna merger and split in two by 2028, on the day health stocks rallied on the Democratic win</a></li>
+    <li><a href="#occ-si">The national bank regulator issued exam guidance on "Super Intelligence" and told examiners not to treat it as its own risk</a></li>
+    <li><a href="#also-today">Also today (9)</a> &mdash; ranked below the line, each one opens.</li>
+  </ol>
+</nav>
+
+<article id="house-count">
+  <h2>The House majority is settled; its size is not, and the three counts in circulation differ by up to 26 seats</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Two days after the vote, nobody disputes that Democrats control both chambers from 3 January. What is still moving is the margin. NBC's Decision Desk this morning has 242 House seats called for Democrats and 151 for Republicans, with 35 seats flipped for a net gain of 34, and a model estimate of 259 to 176 once every race is called. Ballotpedia, writing at 5:30 a.m. from Decision Desk HQ calls, has at least 233 to 138, 30 seats changed hands, 64 races uncalled, and a DDHQ projection of 249. Hakeem Jeffries told reporters he expects at least 255.</p>
+  <p>The Senate is firmer: at least 54 to 44, with Alaska and Mississippi uncalled. Ballotpedia classes the Senate result as a wave by its own historical test (top fifth of seat swings against the president's party) and says the House does not yet qualify, because a net loss of 26 is short of the 48 its test requires.</p>
+  <p>The other fact that changed yesterday is on the losing side. Speaker Mike Johnson told staff he will not run for minority leader; Jim Jordan and Steve Scalise both told colleagues they want the job. Jeffries said nobody in his caucus has raised impeachment, and described the agenda as affordability and accountability.</p>
+  <p><b>What to watch:</b> California's count, which routinely takes weeks; the Alaska ranked-choice tabulation set for 18 November; and the Republican leadership vote, which decides who negotiates the first appropriations deal with a Democratic House.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is it 233, 242 or 259?</span>
+    <p><b>What is disputed.</b> A facts dispute in appearance, a timing and method difference in substance. The 233 and 242 are both counts of seats called; the 249, 255 and 259 are projections of where the count will end. Mixing the two kinds is how the same morning produces headlines that disagree by 26 seats.</p>
+    <p><b>Why they differ.</b> Timing first: Ballotpedia's snapshot is from 5:30 a.m. on DDHQ calls, NBC's page updates continuously on its own desk's calls. Desks call races at different speeds by design. Method second: NBC's estimate comes from a model that uses past and current vote counts and no polling; DDHQ's 249 is a separate projection; Jeffries's 255 is a party leader's floor, which serves him to set high. None of these is a motivated distortion; they are measuring different things at different minutes.</p>
+    <p><b>What it means for you.</b> Treat the majority as certain and the final size as somewhere between about 249 and 259. Ballotpedia's "not a wave" verdict on the House is the claim most sensitive to which number lands, since a net gain in the mid-30s is still well short of its 48-seat threshold either way it falls. What would settle it: the last California and Arizona calls. Do not quote a single seat total as final before then, which is the rule this brief held yesterday.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.nbcnews.com/politics/2026-elections/house-results">NBC News House results</a> &middot;
+    <a href="https://news.ballotpedia.org/2026/11/05/democrats-senate-gains-qualify-as-a-wave-election-while-house-gains-so-far-fall-short/">Ballotpedia on the wave test</a> &middot;
+    <a href="https://www.cbsnews.com/live-updates/house-election-results-2026/">CBS News live updates (Johnson, Jeffries)</a> &middot;
+    <a href="https://www.usatoday.com/story/news/politics/elections/2026/11/05/midterm-election-results-updates--live/92387129007/">USA Today, 6:34 a.m.</a> &middot;
+    <a href="https://www.270towin.com/news/2026/11/04/the-morning-after-uncalled-house-races_1847.html">270toWin uncalled races</a>
+  </p>
+  <div class="fb">
+    <p>How much of the seat count do you want until it is final?</p>
+    <label><input type="radio" name="fb-house" value="daily"> A line every day until the last call</label>
+    <label><input type="radio" name="fb-house" value="final"> Only the final number</label>
+    <p>Republican leadership race: worth following?</p>
+    <label><input type="radio" name="fb-gopleader" value="yes"> Yes, it decides the appropriations fight</label>
+    <label><input type="radio" name="fb-gopleader" value="no"> No, personnel</label>
+  </div>
+</article>
+
+<article id="oil-chain">
+  <h2>Brent settled at $94.62, down 8.7%, after the Vice President blamed the war for the defeat; overnight a tanker was hit by projectiles off Qatar</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>One chain, three links. <b>The politics:</b> Vice President JD Vance said on Wednesday that the Iran war was why Republicans lost. The President, at the White House ballroom site, called that largely true because the war raised gasoline prices in the short term, and said he would launch it again to keep Iran from a nuclear weapon (ABC, NBC, BBC, AP and Politico all carry the same exchange). Qatar says it is stepping up mediation; Iran's stated price remains sanctions relief, an end to the blockade and released funds, and no breakthrough has been announced.</p>
+  <p><b>The price:</b> the front-month Brent future settled at $94.62, down $8.98 or 8.67%, its first close below $100 since early October. WTI fell 7.8% to $88.62. Reuters notes Brent is down nearly 20% this week, the biggest weekly fall since April 2020 if it holds. Energy was the worst S&amp;P sector at &minus;4.8% while the Dow gained 3.03%, its best day since April 2025.</p>
+  <p><b>The water:</b> at 23:20 UTC Wednesday (6:20 p.m. Eastern) the UK's maritime trade office logged a verified report of a tanker struck by two unidentified projectiles 50 nautical miles north of Madinat ash Shamal, Qatar. Separately, Iran's Revolutionary Guard said a large tanker hit a mine on an "unauthorized route" south of the strait, a second supertanker caught fire, and a tug sent to help also burned.</p>
+  <p><b>What to watch:</b> the Brent open after the overnight attack; whether shipowners or flag states name the vessels; and the next Qatari statement on the interim text.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; a market pricing peace while ships are still being hit</span>
+    <p><b>What is disputed.</b> Two things. A facts dispute about the overnight incidents: the IRGC describes mines and fires on an Iranian-defined route near the strait; UKMTO describes projectiles at a position in the central Gulf, well west of Hormuz. They may be different events. And a significance dispute about the price: oil traders treat Vance's remark and Qatar's mediation as the start of an exit, while the attack log shows the war's shipping effect unchanged.</p>
+    <p><b>Why they differ.</b> The IRGC's "unauthorized route" language serves its claim to control who transits; blaming mines on route choice shifts responsibility onto ship operators. UKMTO reports what a ship or its operator told it and marks it verified, but adds nothing on cause. On price, futures trade on the probability of a political exit, and the election moved that probability within hours; physical risk moves only when a route is safe, which is slower and visible only in incident counts.</p>
+    <p><b>What it means for you.</b> Treat one tanker attack off Qatar as confirmed and the IRGC's three-vessel account as unconfirmed. Treat the price fall as real but contingent on a deal that does not yet exist: an 8.7% day built on a remark rather than a text can partly reverse on one bad night at sea. What would settle the price question is a published interim agreement or a run of days with no incident report; what would settle the facts is the vessels' names and positions.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.ukmto.org/-/media/ukmto/products/20261105-ukmto_warning-196-26.pdf?rev=21551561384d4d77a20f66bf7251abad">UKMTO warning 196-26</a> &middot;
+    <a href="https://www.arabnews.com/middle-east/irans-irgc-says-two-tankers-and-tugboat-caught-fire-in-strait-of-hormuz-3009888">Arab News on the IRGC statement</a> &middot;
+    <a href="https://www.aa.com.tr/en/world/morning-briefing-nov-5-2026/4112214">Anadolu morning briefing</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/04/oil-price-iran-war-us-election-strait-hormuz.html">CNBC on the settle</a> &middot;
+    <a href="https://www.investing.com/news/economy-news/trading-day-oil-tanks-stocks-leap-on-us-midterms-5001616">Reuters Trading Day</a> &middot;
+    <a href="https://abcnews.com/Politics/vance-blames-iran-war-republicans-midterms-defeat-trump/story?id=137849295">ABC on Vance and the President</a> &middot;
+    <a href="https://www.al-monitor.com/originals/2026/11/iran-us-still-far-apart-deal-end-war-qatar-pushes-mediation">Al-Monitor on the Qatari talks</a>
+  </p>
+  <div class="fb">
+    <p>Is one combined oil-and-Hormuz story the right shape?</p>
+    <label><input type="radio" name="fb-oil" value="keep"> Keep it as one chain</label>
+    <label><input type="radio" name="fb-oil" value="split"> Split price from security</label>
+  </div>
+</article>
+
+<article id="datacentre-risk">
+  <h2>Analysts put the share of the AI build-out exposed to the new state governments at 30% to 45%; power stocks took the hit</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Yesterday this brief reported that voters passed local data-centre bans and that the new Texas governor ran on a moratorium. Wednesday's market put prices on it. Core Scientific fell 11.6% and IREN 12.5% (Reuters); the power names fell harder than the chipmakers, with Vistra down 13.8%, NRG 13.5% and Quanta Services 11.7%, against Nvidia down 3.2%. Neocloud stocks slipped again before Thursday's open, CoreWeave 1.6% and Nebius 2.2%.</p>
+  <p>The new estimates of exposure: UBS says about 30% of expected US data-centre capacity additions in 2028 could be at risk from construction pauses. Goldman Sachs says state and local Democratic wins would likely bring temporary halts touching some 45% of planned expansion, but expects them to be short-lived. Morgan Stanley flags Ohio, where Governor-elect Amy Acton creates delay risk for the state's largest project, a 10-gigawatt site involving Nvidia. Georgia, where Keisha Lance Bottoms won and Atlanta is the most active construction market per CBRE, is the third state named. Elon Musk's reaction: "Data centres in space looking pretty appealing right now."</p>
+  <p><b>A correction of scale.</b> Yesterday's headline gave Texas 41% of the 2028 pipeline. The figure Reuters cites today, from GLJ Research, is about a quarter of capacity due online by 2030. Those measure different windows, and this brief did not reconcile them; read Texas's share as a quarter to two-fifths depending on the horizon, not as one number.</p>
+  <p><b>What to watch:</b> the first executive action from the Texas, Georgia or Ohio governors-elect after January; and whether any developer announces a relocation rather than a delay.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; pause, permanent cut, or a move to another state?</span>
+    <p><b>What is disputed.</b> Significance. All three banks see the same election; they differ on duration and on whether capacity is lost or relocated. UBS frames a share at risk; Goldman a larger share that pauses briefly; HSBC's analysts say the plausible outcome is not broad moratoriums but more regulation and oversight, or data centres simply moving from Texas to other states.</p>
+    <p><b>Why they differ.</b> The denominators differ (2028 additions versus total planned expansion), which explains part of the 30-versus-45 gap before any judgement enters. The rest is a judgement about state politics: Goldman's short-lived view assumes governors trade pauses for concessions on power bills; HSBC's relocation view assumes developers chase permits. Reuters itself corrected its story overnight to remove a reference to specific state results in Goldman's analysis, a sign the early numbers were moving.</p>
+    <p><b>What it means for you.</b> The robust part is that the binding constraint on the AI build-out is now permitting and local consent, not chips; that is why power and grid contractors fell four times as far as Nvidia. The fragile part is any single percentage. What would settle it: interconnection-queue withdrawals in Texas and Georgia over the next two quarters, which show whether projects die or move.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.investing.com/news/stock-market-news/analysistrumps-midterm-drubbing-demonstrates-the-power-of-datacentre-opponents-4998061">Reuters analysis (Goldman, HSBC, Morgan Stanley, GLJ)</a> &middot;
+    <a href="https://www.investing.com/news/stock-market-news/ai-datacenter-stocks-slip-as-democratic-sweep-clouds-expansion-plans-5003196">Reuters premarket (UBS)</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html">CNBC</a> &middot;
+    <a href="https://www.marketwatch.com/story/data-center-stocks-down-after-democrats-win-congress-683bf8e2">MarketWatch</a> &middot;
+    <a href="2026-11-04-grok.html">yesterday's lead</a>
+  </p>
+  <div class="fb">
+    <p>The AI-power chain is now a political story. More of it?</p>
+    <label><input type="radio" name="fb-dc" value="more"> More, with state-level detail</label>
+    <label><input type="radio" name="fb-dc" value="same"> This level is right</label>
+    <label><input type="radio" name="fb-dc" value="less"> Less</label>
+  </div>
+</article>
+
+<article id="refunding">
+  <h2>Treasury held auction sizes but rewrote its guidance, and analysts read it as cuts to 20- and 30-year bonds by mid-2027</h2>
+  <div class="meta">
+    <span class="chip">US debt &amp; fiscal</span>
+    <span class="chip">Continuation</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Wednesday's quarterly refunding statement sells $125bn of new securities next week, a 3-year note of $58bn on Monday 9 November, a 10-year of $42bn on Tuesday and a 30-year bond of $25bn on Thursday 12 November, refunding about $97bn of maturing debt and raising about $28bn of new cash. Sizes across the curve are unchanged for the quarter, and TIPS sizes too.</p>
+  <p>The change is in the words. Treasury now expects to keep coupon and floating-rate auction sizes steady "for the next several quarters"; Reuters reports the previous phrase began "at least", and that its dropping is what analysts noticed. It says it is watching Federal Reserve purchases of bills and growing private demand for bills, and will consult market participants on structural demand and the costs of different issuance profiles. The 7-year note moves to a quarterly new issue with two reopenings, bill sizes fall in December and rise in January, and buybacks of up to $70bn are planned across the curve.</p>
+  <p>Context from the market: the 10-year yield fell seven basis points on Wednesday to 4.89%, after a selloff last month that Reuters says took 10- and 30-year yields to their highest since 2002.</p>
+  <p><b>What to watch:</b> next week's three auctions, especially Thursday's 30-year, the maturity analysts expect to shrink; and the next refunding on 3 February 2027.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; a signal, or housekeeping?</span>
+    <p><b>What is disputed.</b> Significance. The text is not in doubt. Analysts quoted by Reuters read "several" as about two quarters and expect larger 2- to 7-year sales and smaller 20- and 30-year sales in the first half of 2027. The literal reading is that nothing changed: every size is the same and Treasury still says it will be guided by financing at the lowest cost over time.</p>
+    <p><b>Why they differ.</b> Dealers read refunding statements for word changes because Treasury telegraphs moves a quarter or two ahead; that is their job and their trading edge. Treasury has an interest in keeping options open after a long-end selloff without committing to a cut that would look like a reaction. Both are reading the same document correctly at different levels.</p>
+    <p><b>What it means for you.</b> Lean towards the signal reading: removing a floor ("at least") while adding a consultation on structural demand is how Treasury prepared earlier shifts, and the 20- and 30-year auctions have been the weak ones. The trade-off is real either way: shorter issuance is cheaper now but rolls over more often at whatever rates prevail later. What would settle it is the February statement, and the auction results next week before it.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://home.treasury.gov/news/press-releases/sb0678">Treasury refunding statement, 4 Nov</a> &middot;
+    <a href="https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents">refunding documents</a> &middot;
+    <a href="https://www.investing.com/news/economy-news/us-treasury-shifts-language-opening-door-to-auction-size-changes-4999444">Reuters on the language shift</a> &middot;
+    <a href="https://news.bgov.com/private-equity/us-treasury-keeps-quarterly-refunding-steady-at-125-billion">Bloomberg</a> &middot;
+    <a href="https://www.swissinfo.ch/eng/stocks%2c-bonds-climb-after-us-election-as-oil-sinks%3a-markets-wrap/92323391">Bloomberg markets wrap</a>
+  </p>
+  <div class="fb">
+    <p>Refunding statements: how much detail?</p>
+    <label><input type="radio" name="fb-refund" value="more"> This much, every quarter</label>
+    <label><input type="radio" name="fb-refund" value="less"> Only when sizes change</label>
+  </div>
+</article>
+
+<article id="israel-aid">
+  <h2>The President says US payments to Israel end this year; the aid agreement runs to 2028 and Congress holds the money</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>In a Fox News phone interview on election morning, the President said he and Benjamin Netanyahu agreed "months ago" to stop roughly $4bn a year in US funding, and that "by the end of this year we won't be paying Israel." He added the US would still help if needed and that Israel can buy American weapons. The Israeli prime minister's office has not commented, per the BBC; Reuters, AP and the Washington Post carried the same remarks.</p>
+  <p>The current memorandum of understanding, signed in 2016, covers fiscal 2019 to 2028: $38bn, of which $33bn is Foreign Military Financing grants and $5bn missile defence, or $3.8bn a year. The Congressional Research Service notes that such memoranda are not legally binding and that Congress appropriates the money; in June it reported that a fourth memorandum was being negotiated, with Netanyahu publicly seeking to phase aid out in favour of joint projects. In May he told CBS he wanted to take it to zero over ten years.</p>
+  <p>The politics changed on Tuesday. A July House amendment to cut $3.3bn failed 314 to 104, with 103 Democrats in favour. Quinnipiac in September found 67% of Democrats think the US is too supportive of Israel. And in Israel, on this brief's thread on the government after last week's election, Netanyahu's position weakened on Thursday as an ultra-Orthodox party withheld support and an Arab-led party endorsed Gadi Eisenkot (Reuters).</p>
+  <p><b>What to watch:</b> the FMF line in the next foreign-operations appropriations bill; any new memorandum text; a statement from Jerusalem.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; this year, or over ten?</span>
+    <p><b>What is disputed.</b> Facts about timing and substance. The President says payments stop at the end of 2026 under an agreed deal. The only documents say $3.8bn a year to 2028, and Netanyahu's own stated plan was a decade-long drawdown. The BBC says it is unclear which funds the President meant.</p>
+    <p><b>Why they differ.</b> The claim came on election morning in a phone interview where the President also accused Democrats of using Israel aid as a talking point; that is a campaign vantage. The CRS account is an official analyst working from signed texts. Neither government has published a new agreement, so nobody outside the two leaders can check the "deal".</p>
+    <p><b>What it means for you.</b> Believe the direction, doubt the date. Both governments say they want US grant aid to fall, and the incoming Democratic majority is the least supportive Congress on this question in decades, so the end state is more plausible this week than last. But nothing legally stops at year-end unless appropriators zero the line. What would settle it: a signed fourth memorandum, or the fiscal 2027 appropriations text.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.bbc.com/news/articles/cmx2dlx86n9yo">BBC</a> &middot;
+    <a href="https://www.reuters.com/5f374b32b07b/world/middle-east/trump-says-us-will-stop-paying-israel-after-year-end-2026-11-03/">Reuters</a> &middot;
+    <a href="https://apnews.com/article/trump-israel-military-aid-hardware-5cad93330300b2d45a9665d5eccb2ab2">AP</a> &middot;
+    <a href="https://www.washingtonpost.com/world/2026/11/03/trump-stop-4-billion-annual-funding-israeli-arms-purchases/">Washington Post</a> &middot;
+    <a href="https://www.congress.gov/crs-product/IN12695">CRS Insight IN12695</a> &middot;
+    <a href="https://jadidan.news/en/source/al-monitor.com">Reuters on Netanyahu's coalition</a>
+  </p>
+  <div class="fb">
+    <p>This was missed by both editions on election day and found by the negative check. Follow it?</p>
+    <label><input type="radio" name="fb-israel" value="follow"> Yes, until a text or appropriation</label>
+    <label><input type="radio" name="fb-israel" value="no"> No</label>
+  </div>
+</article>
+
+<article id="arkea-heist">
+  <h2>Attackers took about &euro;100m from a French bank through one of its suppliers, a week after North Korea's $6.3bn Binance theft</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip">Security</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Cr&eacute;dit Mutuel Ark&eacute;a, a Brittany-based cooperative group, said on Thursday it is missing about &euro;100m after Wednesday's attack and cannot yet say how much it will recover (Reuters). The bank's own question-and-answer statement explains the route: the attackers reached Ark&eacute;a through the platform of one of its service providers, then used the bank's own account, not customer accounts, to send transfers to other banks, from where the money may have been converted to cryptocurrency. It denies press reports that the entry was through its online bank Fortuneo. Customer transfers were delayed and mostly resumed Wednesday morning; part of the money was blocked; police and supervisors are involved.</p>
+  <p>Reuters calls it a rare successful heist against a large financial institution. It lands a week after the $6.3bn theft from Binance, which the FBI attributes to North Korea's TraderTraitor group and which Binance says began with a fake job interview that compromised an engineer's computer.</p>
+  <p><b>Why a French bank belongs in this brief:</b> the entry point was a vendor. US bank regulators' proposal to rescind and replace their 2023 third-party risk guidance, a thread this brief has carried since 15 September (FR 2026-18859), closes for comment on 16 November. A supplier-borne theft from the bank's own treasury account is the case that guidance exists for.</p>
+  <p><b>What to watch:</b> attribution; the recovered amount; whether any comment letter on the US proposal cites it.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; &euro;100m, &euro;118m, or $100m?</span>
+    <p><b>What is disputed.</b> A facts dispute about the amount. Press reports on Wednesday put it at &euro;118m ($133m). Ark&eacute;a's statement declined to confirm that figure and validated only "the order of magnitude". Reuters on Thursday reports the bank saying about &euro;100m. AFP's English headline says around $100m.</p>
+    <p><b>Why they differ.</b> Timing and currency, mundane both. The &euro;118m appeared first, before the bank had counted what was blocked; the &euro;100m is the bank's later figure; the AFP headline looks like a currency slip, since &euro;100m is about $113m. The bank has an interest in a lower number, but it also has supervisors reading the same figure.</p>
+    <p><b>What it means for you.</b> Use about &euro;100m gross, from the bank, and treat the net loss as unknown until recovery is reported. The bank says the sum is no threat to its solvency, which is plausible at this scale. What would settle it: the half-year accounts or a supervisor's statement.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cm-arkea.com/arkea/banque/assurances/pa_38386/en/informations-complementaires-suite-a-l-attaque-dont-le-credit-mutuel-arkea-a-ete-victime">Cr&eacute;dit Mutuel Ark&eacute;a statement (French)</a> &middot;
+    <a href="https://finance.yahoo.com/markets/crypto/articles/french-bank-credit-mutuel-arkea-114732734.html">Reuters via Yahoo Finance</a> &middot;
+    <a href="https://www.afp.com/en/french-bank-says-cyberattack-stole-around-100-mn">AFP</a> &middot;
+    <a href="https://cryptoslate.com/french-bank-resumes-transfers-after-133-million-attack-but-leaves-crypto-loss-unconfirmed/">CryptoSlate on the &euro;118m report</a> &middot;
+    <a href="https://www.investing.com/news/economy-news/binance-says-hackers-used-fake-job-interview-to-compromise-computer-before-63-billion-attack-4995603">Reuters on the Binance entry</a>
+  </p>
+  <div class="fb">
+    <p>Financial-sector cyber incidents abroad: worth a lead when there is a US channel?</p>
+    <label><input type="radio" name="fb-arkea" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-arkea" value="short"> Below the line</label>
+  </div>
+</article>
+
+<article id="cvs-split">
+  <h2>CVS will undo the Aetna merger and split in two by 2028, on the day health stocks rallied on the Democratic win</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip">US policy</span>
+    <span class="chip">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>CVS Health said Wednesday it will separate into two listed companies by the first half of 2028, dismantling the structure it built with the $78bn purchase of Aetna in 2018. One company keeps the CVS Health name under chief executive David Joyner and holds Aetna, the Caremark pharmacy-benefit manager, Oak Street Health, Signify Health and specialty pharmacy. The other, CVS Pharmacy, holds roughly 9,000 drugstores under Prem Shah. Third-quarter sales were $108.40bn against $102.87bn a year earlier, ahead of estimates, and the shares still fell 12.5%, the second-worst S&amp;P move after FIS.</p>
+  <p>It went against the sector. Reuters lists big health stocks with double-digit gains on the Democratic sweep: Centene up 12.6%, Universal Health Services 10.9%, Moderna 13.1%.</p>
+  <p>It lands on this brief's thread on PBM delinking and the ownership question: February's appropriations law and an October CMS proposed rule already cut benefit-manager pay in Medicare Part D loose from list prices, and state co-ownership bans go at the structure CVS is now dismantling.</p>
+  <p><b>What to watch:</b> the separation filing, and the terms of the commercial agreements Joyner says will preserve the links between pharmacy and benefit manager.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; strength, or getting ahead of the law?</span>
+    <p><b>What is disputed.</b> Significance: why now. Joyner told CNBC the split comes "out of a position of strength", pointing to Aetna's Medicare recovery and a stable pharmacy. Leerink analyst Michael Cherny agreed on the pharmacy, but said the rationale could extend to state scrutiny of vertical integration: Tennessee and Arkansas have passed laws banning co-ownership of benefit managers and pharmacies, which CVS is fighting in court.</p>
+    <p><b>Why they differ.</b> A chief executive announcing a breakup has every reason to frame it as choice rather than pressure; an analyst covering the sector has reason to read the regulatory map. The timing evidence fits both: the turnaround numbers did improve, and the co-ownership bans and bipartisan pressure on benefit managers predate this week.</p>
+    <p><b>What it means for you.</b> The two readings converge on one test. If the separation documents bind pharmacy and benefit manager together with long, exclusive contracts, the integration survives in contract form, and that is exactly what a co-ownership ban is meant to reach, so the regulatory reading would be the stronger one. If the contracts are short and open, the strength story holds. The Form 10 will show which.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnbc.com/2026/11/04/cvs-to-split-off-drugstore-business.html">CNBC</a> &middot;
+    <a href="https://seekingalpha.com/news/4665296-cvs-health-stock-falls-despite-q3-beat">Seeking Alpha</a> &middot;
+    <a href="https://www.investing.com/news/economy-news/trading-day-oil-tanks-stocks-leap-on-us-midterms-5001616">Reuters Trading Day (sector moves)</a> &middot;
+    <a href="https://www.barrons.com/articles/healthcare-stocks-midterms-a4fbc389?mod=RTA">Barron's on health stocks</a>
+  </p>
+  <div class="fb">
+    <p>Corporate restructurings with a policy angle: wanted?</p>
+    <label><input type="radio" name="fb-cvs" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-cvs" value="no"> Only if a regulator is involved</label>
+  </div>
+</article>
+
+<article id="occ-si">
+  <h2>The national bank regulator issued exam guidance on "Super Intelligence" and told examiners not to treat it as its own risk</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Continuation</span>
+    <span class="chip">Underreported</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The Office of the Comptroller of the Currency, which supervises national banks, on Wednesday gave its examiners a framework for evaluating banks' use of what it calls Super Intelligence and agentic Super Intelligence in normal-course business, and the associated risks and controls (news release 2026-97). Reuters described it as the regulator's first-ever AI guidance for examiners.</p>
+  <p>The substance is a deregulatory choice. Examiners may use the framework to spot AI-specific issues, but the OCC says they should not treat the technology as a separate and distinct risk category, and banks should not be required to define a separate AI risk appetite. The agency calls its approach technology-neutral and says it will update the framework regularly as the technology and stakeholder feedback evolve.</p>
+  <p>This brief has carried the term since October as a thread (Super Intelligence as a federal term of art); this is the first supervisory document to use it. Two things make it worth a slot. First, the vocabulary: a federal supervisor adopting "Super Intelligence" as its term of art for systems banks already run is a choice about how the field will be described in exam reports. Second, the practical effect: with no separate risk category, AI failures are judged under existing operational, model and third-party risk rules, which ties this directly to the third-party guidance whose comment period closes on 16 November.</p>
+  <p>Limits: this brief read the release, not the framework document, and has no second account beyond the Reuters headline. No other bank regulator has said whether it will follow.</p>
+  <p><b>What to watch:</b> whether the Fed and FDIC adopt the same terms, and the first enforcement action that cites the framework.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://occ.gov/news-issuances/news-releases/2026/nr-occ-2026-97.html">OCC news release 2026-97</a> &middot;
+    <a href="https://www.investing.com/news/economy-news/us-bank-regulator-issues-firstever-ai-guidance-for-examiners-4998329">Reuters</a>
+  </p>
+  <div class="fb">
+    <p>Underreported regulator documents like this: more?</p>
+    <label><input type="radio" name="fb-occ" value="more"> More</label>
+    <label><input type="radio" name="fb-occ" value="less"> Less</label>
+  </div>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Nine things I saw and ranked below the line. Each one opens: the line is my judgement, what is behind it is the substance.</p>
+
+<div class="also-list">
+
+<details class="short" id="a-jobs">
+  <summary><span class="chip">Macro &amp; markets</span> Private payrolls rose 86,000 in October and the services index eased to 54.5, while services input prices stayed at 73.0. Friday's government jobs report is the print that counts.</summary>
+  <div class="exp">
+    <p>ADP's October number matched September's revised gain of 86,000. ISM's services index slipped to 54.5 from 54.9, against a Reuters poll expecting 54.8, its 28th month of expansion. New orders fell to 55.9 from 59.8. Supplier deliveries jumped to 56.7 from 53.2, meaning slower deliveries for a 23rd month, which ISM respondents tie to the Iran war and tariffs. Prices paid eased a point to 73.0, still high. Services employment rose to 51.4 from 50.1.</p>
+    <p>Reuters' survey has Friday's nonfarm payrolls at 65,000 after September's 29,000, with unemployment at 4.2%. The Fed held at 3.75% to 4.00% last Wednesday and said inflation remains elevated; Reuters reports economists expect a December rise. Oil's 20% fall this week would reach these price indices only with a lag.</p>
+    <p class="btl"><b>Below the line because</b> under this brief's Fed rule, prints run and previews do not, and these are second-tier prints ahead of Friday's.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://mediacenter.adp.com/2026-11-04-ADP-National-Employment-Report-Private-Sector-Employment-Increased-by-86,000-Jobs-in-October">ADP release</a> &middot; <a href="https://www.prnewswire.com/news-releases/services-pmi-at-54-5-october-2026-ism-services-pmi-report-302928112.html">ISM services report</a> &middot; <a href="https://www.investing.com/news/economy-news/us-services-sector-activity-cools-slightly-in-october-inflation-remains-elevated-5000201">Reuters</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-gop-leader">
+  <summary><span class="chip">US politics</span> Mike Johnson will not seek to lead House Republicans in the minority; Jim Jordan and Steve Scalise are running. Hakeem Jeffries is set to become the first Black Speaker on 3 January.</summary>
+  <div class="exp">
+    <p>Johnson told staff on a call that he will not run for minority leader when the new Congress is seated (CBS, AP, USA Today, Washington Post). Jordan and Scalise have both told colleagues they want the job; The Hill reports Jordan has formally entered. On the other side, AP reports Jeffries is expected to be elected Speaker on 3 January, making history as the first Black Speaker. He told reporters nobody in his caucus has raised impeachment and that the party has been focused on affordability and accountability.</p>
+    <p>The practical stake is the first spending negotiation of the new Congress: the minority leader is the Republican negotiator facing a Democratic House and Senate and a Republican White House, and a Jordan leadership would sit nearer the President than a Scalise one.</p>
+    <p class="btl"><b>Below the line because</b> it is personnel until the vote, and the vote is not scheduled.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://apnews.com/article/speaker-johnson-house-republicans-elections-b8490666bc9fb634fad8c9222f1483ec">AP</a> &middot; <a href="https://thehill.com/homenews/house/6198024-jim-jordan-house-gop-minority-leader-scalise-mike-johnson-2026-midterms/">The Hill</a> &middot; <a href="https://apnews.com/article/hakeem-jeffries-election-house-democrats-017ab70f264d4abe90da0325c1f03350">AP on Jeffries</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-binance">
+  <summary><span class="chip">Crypto &amp; security</span> The FBI attributes the 29 October Binance theft of $6.3bn to North Korea's TraderTraitor group, and Binance says the way in was a fake job interview.</summary>
+  <div class="exp">
+    <p>Binance says attackers compromised an engineer's computer through a fake job interview, then obtained unauthorized wallet-signing access and drained hot wallets. The FBI has named TraderTraitor, the North Korean unit associated with several of the largest crypto thefts on record. Binance says it has replenished 95% of affected assets, is restoring withdrawals in phases and will absorb the losses rather than pass them to users; its co-chief executive says the company is in very strong financial health.</p>
+    <p>This brief covered the buyback and outflows on 1 and 2 November. The new facts are the entry method and the attribution, and they rhyme with the Ark&eacute;a attack in today's lead: the soft target in both cases was a person or a vendor, not the core system.</p>
+    <p class="btl"><b>Below the line because</b> the theft itself was covered last week; this is attribution and method, folded into the bank-heist lead as context.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.investing.com/news/economy-news/binance-says-hackers-used-fake-job-interview-to-compromise-computer-before-63-billion-attack-4995603">Reuters</a> &middot; <a href="https://www.euronews.com/2026/11/01/fbi-blames-north-korea-for-63-billion-binance-crypto-hack">Euronews on the FBI</a> &middot; <a href="2026-11-02-grok.html">2 November issue</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-anthropic">
+  <summary><span class="chip">AI &amp; tech industry</span> Anthropic is set to start marketing its IPO to investors next week, into the data-centre selloff, with third-quarter revenue of $16.96bn, up 47% on the quarter.</summary>
+  <div class="exp">
+    <p>Reuters reports Anthropic is preparing to begin formally marketing shares to prospective investors next week. The amended S-1 filed on Monday showed quarterly revenue of $16.96bn, up 47% from the previous quarter, with growth slowing and the net loss narrowing; this brief covered the filing's $895.4bn of compute and lease commitments and its warning about a Responsible Scaling Policy threshold on 3 November. The company also released FlashProve, an open-source prototype that produces a cryptographic proof that a response came from a committed set of model weights; summaries put proving cost at about 72 times the GPU time of ordinary serving. And the head of product for Claude Code, Cat Wu, announced her departure on 3 November.</p>
+    <p>Timing is the point: an issuer whose obligations are mostly compute goes to market the week the market repriced data-centre permitting risk.</p>
+    <p class="btl"><b>Below the line because</b> the marketing has not started; it leads when the price range is filed.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.investing.com/news/stock-market-news/analysistrumps-midterm-drubbing-demonstrates-the-power-of-datacentre-opponents-4998061">Reuters</a> &middot; <a href="https://64bit.co.uk/posts/daily-brief-2026-11-04">64bit on the S-1/A</a> &middot; <a href="https://atlas.prashish.com/daily/2026-11-04">AI Atlas on FlashProve</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-openai">
+  <summary><span class="chip">AI &amp; tech industry</span> OpenAI says two staff used GPT-6 Astra to design a working hardware device, enclosure to firmware, with no direct human edits, and is candid that it missed manufacturing tolerances.</summary>
+  <div class="exp">
+    <p>According to OpenAI's post, the model produced the enclosure, circuit board, firmware and interface, and prototypes were built within a month. OpenAI says it missed tolerances and assembly details and that human review is still required, and that token use across its hardware teams is up 23-fold since February. In a separate 3 November post it describes customers including Chip Ganassi Racing and Mazda using ChatGPT and Codex for CAD revisions, circuit-board design and simulation. It also released Images 2.6, which makes GIFs in one step, and says users now generate over 4 billion images a week, up from 3 billion in September.</p>
+    <p>These are the company's own claims with no independent test; the error rates and time saved are not published.</p>
+    <p class="btl"><b>Below the line because</b> it is a vendor demonstration, read through summaries rather than the posts themselves, with no outside measurement.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://64bit.co.uk/posts/daily-brief-2026-11-04">64bit</a> &middot; <a href="https://atlas.prashish.com/daily/2026-11-04">AI Atlas</a> &middot; <a href="https://blog.jiufeng.ai/blog/ai-news-2026-11-04">Jiufeng summary</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-ai-debt">
+  <summary><span class="chip">Macro &amp; markets</span> Meta raised &euro;9bn in its first euro bond on a record &euro;53bn of orders, and banks are syndicating a roughly $40bn chip-financing loan for SpaceX: the AI build-out is now a debt-market story.</summary>
+  <div class="exp">
+    <p>Bloomberg reports Meta's debut euro bond drew &euro;53bn of orders, the most for any corporate deal in Europe, and raised &euro;9bn. Separately, Goldman Sachs and Apollo are in talks with investors to sell portions of a roughly $40bn chip financing for SpaceX. Both arrived on the day data-centre and power stocks fell on the election result.</p>
+    <p>The pairing is the signal: equity investors marked down the build-out on permitting risk while bond investors queued to fund it. Debt holders are paid first and price the chance of default, not the chance of upside, so the two markets can disagree on the same projects without either being wrong. The test is whether spreads on this kind of paper widen if Texas or Georgia actually pause projects.</p>
+    <p class="btl"><b>Below the line because</b> both rest on one Bloomberg wrap, and the SpaceX deal is in talks rather than done.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.swissinfo.ch/eng/stocks%2c-bonds-climb-after-us-election-as-oil-sinks%3a-markets-wrap/92323391">Bloomberg markets wrap via swissinfo</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-chips">
+  <summary><span class="chip">AI &amp; tech industry</span> Qualcomm fell about 10% before Thursday's open on a smartphone-chip miss, after Arm's guidance underwhelmed and Micron dropped 7% on Wednesday.</summary>
+  <div class="exp">
+    <p>Reuters reports Qualcomm down 10.2% in premarket trading after quarterly smartphone-chip sales missed estimates; Bloomberg says its profit forecast reflects higher component prices. Arm's revenue forecast left investors underwhelmed, Bloomberg adds, a sign its push into AI data-centre chips has not yet met expectations. On Wednesday's broad rally the memory and AI-chip names went the other way: Micron down 7.0%, SanDisk 7.9%, Nvidia 3.2%, while Microsoft rose 6.7% and Amazon 6.1%.</p>
+    <p>Higher component prices are the thread to keep: memory costs that lift Micron's revenue are an input cost for handset chipmakers.</p>
+    <p class="btl"><b>Below the line because</b> individual earnings moves without a policy or sector consequence beyond the day.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.investing.com/news/stock-market-news/ai-datacenter-stocks-slip-as-democratic-sweep-clouds-expansion-plans-5003196">Reuters premarket</a> &middot; <a href="https://www.swissinfo.ch/eng/stocks%2c-bonds-climb-after-us-election-as-oil-sinks%3a-markets-wrap/92323391">Bloomberg wrap</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-korea">
+  <summary><span class="chip">Defence</span> South Korea will move its anti-piracy naval unit closer to the Strait of Hormuz and ask parliament to extend its deployment, after pressure from the President.</summary>
+  <div class="exp">
+    <p>The Defence Ministry confirmed a Yonhap report that the Cheonghae unit, now operating against piracy near the Gulf of Aden, will extend operations to waters nearer Hormuz. The deployment expires at the end of 2026, and the government will put a motion to the National Assembly to extend it. Reuters ties the decision to the President's pressure on allies to support the war.</p>
+    <p>It cuts against the market's reading in today's oil lead: allies are still adding naval presence near the strait while traders price an exit. It is a small unit, and the motion has not been voted.</p>
+    <p class="btl"><b>Below the line because</b> a modest deployment pending a parliamentary vote, with one wire account.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://jadidan.news/en/source/al-monitor.com">Reuters via Al-Monitor feed</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-tampa">
+  <summary><span class="chip">Tampa Bay</span> Pasco renewed its one-mill school levy and Pinellas elected a Democrat to its county commission over a Republican incumbent; Chris Nocco won the state Senate seat and Pasco has an interim sheriff.</summary>
+  <div class="exp">
+    <p>In Pasco, voters approved renewal of the one-mill school property-tax levy, re-elected Commissioner Seth Weightman and chose Kimberly Coward and Matt Geiger for the School Board (Hernando Sun). Former sheriff Chris Nocco won the State Senate District 21 special election, and Jeff Harrington was appointed interim Pasco sheriff (WUSF). In Pinellas, Democrat Tim Hughes beat Republican incumbent Brian Scott for County Commission District 2 (Axios Tampa Bay).</p>
+    <p>The levy renewal matters locally because of yesterday's lead: Amendment 3's homestead exemption takes about $1.4bn from Pasco over five years on the estimate this brief reported yesterday, so a voter-approved school millage is one of the few revenue lines that does not shrink with it.</p>
+    <p class="btl"><b>Below the line because</b> these results were read from the outlets' summaries, not the county canvass, and none changes policy before January.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.wusf.org/politics-issues/2026-11-04/chris-nocco-wins-state-senate-special-election-jeff-harrington-interim-pasco-sheriff">WUSF</a> &middot; <a href="https://www.hernandosun.com/2026/11/03/pascos-picks-who-won-county-commission-and-school-board-races/">Hernando Sun</a> &middot; <a href="https://www.axios.com/local/tampa-bay/2026/11/04/who-won-tampa-bay-key-midterm-races">Axios Tampa Bay</a></p>
+  </div>
+</details>
+
+</div>
+
+<div class="fb">
+  <p>Were the right things ranked below the line today?</p>
+  <label><input type="radio" name="fb-also" value="right"> Yes</label>
+  <label><input type="radio" name="fb-also" value="promote"> Something here should have led</label>
+  <label><input type="radio" name="fb-also" value="cut"> Some of it should not be here at all</label>
+</div>
+
+<button class="submit" id="send">Send my feedback &rarr;</button>
+
+<footer>
+  <h4>Sources checked this run (77; 30 outside the watchlist, below the half-outside rule)</h4>
+  <p>Treasury refunding statement &middot; Treasury refunding documents page &middot; Bloomberg/BGov on refunding &middot; Reuters on refunding language &middot; NBC News House results &middot; CBS News live updates &middot; Ballotpedia News &middot; USA Today live &middot; 270toWin &middot; Bloomberg markets wrap &middot; AP markets &middot; WSJ live coverage &middot; CNBC markets live &middot; Reuters Trading Day &middot; Brent settlement reports (RIM, avenews) &middot; Anadolu Agency morning briefing &middot; Dawn (Reuters wires) &middot; Al-Monitor/Reuters wire feed &middot; StreetInsider Reuters feed &middot; Reuters on Israel aid &middot; AP on Israel aid &middot; BBC on Israel aid &middot; Washington Post on Israel aid &middot; CRS Insight IN12695 &middot; Crédit Mutuel Arkéa statement &middot; Reuters via Yahoo on Arkéa &middot; AFP on Arkéa &middot; CryptoSlate on Arkéa &middot; MarketWatch health care &middot; CNBC on CVS &middot; Seeking Alpha on CVS &middot; Barron's on health stocks &middot; ADP release &middot; ISM services release &middot; Reuters on ISM &middot; ABC on Vance &middot; NBC on the President's appearance &middot; BBC on Vance &middot; AP on Vance &middot; Politico on Vance &middot; Arab News on IRGC &middot; UKMTO warning 196-26 &middot; Iran International &middot; AP tanker off Qatar &middot; OilPrice.com &middot; Reuters on Binance entry &middot; Euronews on FBI attribution &middot; Fortune India on Binance &middot; CNBC data-centre stocks &middot; MarketWatch data-centre stocks &middot; Reuters data-centre analysis &middot; Reuters data-centre premarket &middot; WUSF &middot; Hernando Sun &middot; Axios Tampa Bay &middot; WTSP &middot; WMNF &middot; OCC release 2026-97 &middot; Federal Register FDIC large-bank proposal &middot; Federal Reserve Reg O notice &middot; Reuters on OCC AI guidance &middot; Fed-odds reports (TokenPost, Business Recorder, sembr) &middot; Qatar MOFA &middot; The Peninsula &middot; Al-Monitor on Qatar talks &middot; Euronews on Qatar &middot; AP on Johnson &middot; The Hill on Jordan &middot; AP on Jeffries &middot; Supreme Court docket &middot; war.gov UAP releases &middot; AI Atlas &middot; 64bit &middot; SEN-X &middot; The Neuron &middot; Jiufeng AI news &middot; Claude edition No. 62.</p>
+
+  <h4>Comparison with today's Claude edition (No. 62)</h4>
+  <p>Claude led with the diesel crack spread, the failure of the mid-decade gerrymanders, the Latino swing, a Supreme Court preschool argument and four renewed national emergencies (five leads, four short items). It carries 4 divergence boxes and 7 confidence labels by text count. This edition does not overlap on any lead; it takes oil through the price and the overnight attack rather than the refining margin, and adds the House count, data centres, the refunding, Israel aid, the Ark&eacute;a theft, CVS and the OCC framework. This edition: 17 confidence markers (one per story) and 7 divergence boxes.</p>
+
+  <h4>Threads swept as a by-product, no trigger fired</h4>
+  <p>Fed (no print today; Friday payrolls) &middot; US fuel prices (EIA weekly is in Claude's lead; not repeated) &middot; UAP disclosure (latest PURSUE release 23 October; no Release 08 date) &middot; Bank stablecoin consortium &middot; Nvidia 51% rule &middot; AI preemption litigation &middot; Birthright citizenship &middot; Alaska ranked-choice count (18 November) &middot; Florida Amendment 3 (passed; local revenue effects in the Tampa item) &middot; Waymo Tampa Bay.</p>
+
+  <h4>Could not reach / not done</h4>
+  <p>The AP Vance story and the NPR Binance explainer timed out and were read through other outlets' accounts. The OCC framework document itself was not read, only its release. The Qatari mediation terms were read through summaries of The Peninsula and Al-Monitor. OpenAI's posts were read through summaries. Tampa Bay results were read from outlet summaries, not county canvass pages. The Washington Post was not read past its headline. No vessel names for the overnight Gulf incidents were found.</p>
+
+  <h4>About this issue</h4>
+  <ul>
+    <li>Grok edition for 5 November, scheduled 07:00 ET run. Markup built from Issue 10 (<code>2026-09-10b.html</code>): head, CSS and feedback script taken from that file; story, short-item and footer structure following it.</li>
+    <li>Eight leads, nine short items. 17 confidence markers; 7 divergence boxes. One correction of scale in lead 3 (Texas's share of the data-centre pipeline).</li>
+    <li>Every quotation is under fifteen words and attributed; everything else is paraphrase.</li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n  → " + i.value);
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on Issue No. 62-grok — 5 November 2026\n\n" + lines.join("\n")
+      + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-11-05-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
