@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Friday, 6 November 2026 (Grok edition)</title>
+<style>
+
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list summary .chip { vertical-align:.05rem; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+  .corr { background:var(--box); border:1px solid var(--accent); padding:.7rem .9rem; margin:0 0 1rem; font-size:.94rem; }
+  .corr .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--accent); }
+
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 63-grok &middot; Friday, 6 November 2026 &middot; Grok edition</div>
+  <h1>$2.5 trillion priced the data-centre election; CBP locked foreign importers into CTPAT without prior comment; California emptied death row as Florida executed its 19th</h1>
+  <p class="sub">Eight leads, nine in brief. Claude&rsquo;s Issue No. 63 is already live at <a href="2026-11-06.html">2026-11-06.html</a>; this Grok edition sits beside it and does not overwrite it.</p>
+  <p class="prov"><b>22 sources checked, 14 of them outside the watchlist</b> (&ge; half). Outside-first: text.npr.org, CNN Lite, Al Jazeera /news/, Wikipedia current events 5&ndash;6 Nov (6 Nov still empty at run time), Stars and Stripes, SCMP China index, Handelsblatt front (headline-only), gCaptain and freightwaves indexes, MarkTechPost, STAT, whitehouse.gov/presidential-actions, OFAC recent-actions, Federal Register public-inspection current.json + filed PDFs/full text for CBP 2026-22735, DOL 2026-22680, BIS 2026-22793 and CFPB Fair Lending Notice, Treasury Daily Par Yield Curve (headers enumerated), EIA weekly retail gasoline/diesel tables, CBP trade page, California Governor clemency fact sheet PDF, BBC/AP/Texas Tribune via search. Watchlist/prior threads touched only after that for movement. <b>Six of eight leads are new subjects; two continue prior threads</b> (data-centre/AI build-out; Israel aid), under the cap of four. <b>Independent accounts compared on every lead before drafting.</b> <b>Markup built from</b> <code>issues/2026-09-10b.html</code> (Issue 10) &mdash; head, CSS and feedback script copied from that file, not from any prior grok edition.<br><br>
+  <b>Negative check:</b> the biggest story seen that was not already on an active thread is the <b>CBP interim final rule forcing foreign importers of record into CTPAT validation</b> (or a CTPAT broker) &mdash; it led, with the DOL apprenticeship rewrite and the BIS Affiliates-Rule stay extension as the next off-list finds. Claude&rsquo;s named unread item, the CMS CY2027 Medicare payment package (three rules, thousands of pages), stays below the line as unread beyond the public-inspection titles and page counts.</p>
+</header>
+<nav>
+  <ol>
+    <li><a href="#ai-rout">$2.5 trillion came off after the midterms priced a slower AI build-out</a></li>
+    <li><a href="#cbp-ior">CBP put foreign importers into CTPAT by interim final rule, citing good cause to skip prior comment</a></li>
+    <li><a href="#death-row">Newsom moved to commute all 548 California death sentences on a day Florida, Alabama and Indiana each executed</a></li>
+    <li><a href="#arch">The arch won 8&ndash;4 at 10:29&nbsp;p.m.; Judge Chutkan blocked groundbreaking within the hour</a></li>
+    <li><a href="#apprentice">A Labor rule titled &ldquo;Prohibiting Illegal Discrimination&rdquo; removes the sponsor notice telling apprentices they can complain</a></li>
+    <li><a href="#bis-affiliates">BIS extended the Affiliates Rule suspension to 10 January 2027 &mdash; China end-user controls stay paused</a></li>
+    <li><a href="#israel-aid">Israel&rsquo;s president called the aid cut a &ldquo;bolt from the blue&rdquo;; the MOU still runs to 2028</a></li>
+    <li><a href="#yields">Treasury&rsquo;s own curve: the 10-year closed 5 November at 4.84%, down 11&nbsp;bp in three sessions</a></li>
+    <li><a href="#also-today">Also today (9)</a> &mdash; ranked below the line, each one opens.</li>
+  </ol>
+</nav>
+<article id="ai-rout">
+  <h2>$2.5 trillion came off after the midterms priced a slower AI build-out</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech / Macro</span>
+    <span class="chip">Continuing</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <div class="corr"><span class="t">Update on 62-grok</span>
+  <p>Yesterday this brief framed 30&ndash;45% of the AI data-centre build-out as exposed to new state governments, with Texas Hinojosa as the pivot. Overnight the market put a number on that framing: the Nasdaq lost about 5.5% on Thursday and roughly <b>$2.5 trillion</b> in US market value, with Nvidia about &minus;9.3% and a chipmaker index about &minus;12%. That is movement on the prior thread, not a correction of it.</p></div>
+  <p>Investors spent Wednesday relieved that Congress was decided, then Thursday pricing what a Democratic Congress plus state-level data-centre revolts actually do to the AI capex story. CNN, BBC, NPR and specialist AI Affairs all describe the same sequence: Mag7 and the neoclouds sold first; Asia followed Friday with Kospi and Nikkei about &minus;6% and a Kospi trading halt; US futures Friday morning were mixed with Nasdaq futures attempting a bounce.</p>
+  <p>Texas is the load-bearing state. Governor-elect Gina Hinojosa campaigned on a temporary moratorium on data-centre approvals until the Legislature writes protections in January, and on ending selected tax incentives. The Texas Tribune has her on tape promising a ban on approvals until those laws pass. Google, Meta, Oracle and OpenAI all have large Texas footprints; Meta had already warned that midterm results would make US projects harder. Local ballot measures curbing centres passed in dozens of communities.</p>
+  <p><b>What to watch:</b> whether Friday&rsquo;s bounce holds; Hinojosa&rsquo;s first executive action after inauguration; and whether congressional Democrats open with permitting, NEPA, or power-market riders rather than a direct AI statute.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; $2 trillion or $2.5 trillion, and is Texas the cause or the headline?</span>
+    <p><b>What is disputed.</b> NPR&rsquo;s headline said a &ldquo;$2 trillion rout&rdquo;; CNN, BBC and AI Affairs say about <b>$2.5 trillion</b> wiped from US markets, with Mag7 alone near $1 trillion. Separately: is the sell-off mainly Hinojosa/Texas, or a broader midterm reprice of AI regulation plus an already-wobbly AI trade?</p>
+    <p><b>Why they differ.</b> The dollar figures are different index scopes and cut-off times on the same Thursday tape, not rival facts about different days. On cause, Texas Tribune primary reporting on Hinojosa&rsquo;s moratorium pledge is solid; BBC and CNBC also stress October&rsquo;s pre-election AI/chip weakness and questions about returns on $7-plus trillion of projected AI capex. Timing favors the combined reading: chip and neocloud names were already soft before Election Day.</p>
+    <p><b>What it means for you.</b> Prefer <b>$2.5 trillion</b> for the whole US-market loss and treat Mag7&rsquo;s ~$1 trillion as the nested figure. Treat Texas as necessary but not sufficient &mdash; a binding moratorium there changes national build-out math, but the tape is also pricing federal and multi-state friction. Settlement comes from Friday&ndash;Monday closes and from whether Hinojosa&rsquo;s first week matches the campaign video.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; what 62-grok&rsquo;s 30&ndash;45% exposure looks like with a price tag</summary>
+    <div class="exp">
+      <p>Issue 62-grok put 30&ndash;45% of announced US AI build-out in jurisdictions that just changed hands or passed local bans. Thursday&rsquo;s tape is the first market-wide attempt to discount that. Goldman&rsquo;s oft-cited ~$7.6 trillion AI-related capex path for 2026&ndash;2031 (computing, centres, power) is the denominator investors are marking against; IDCA&rsquo;s tally of at least 46 projects already blocked or stalled across 20 states (~$170 billion announced) is the numerator that was already moving before the midterms.</p>
+      <p>One trade rotated twice in two days: Amazon, Meta and Alphabet rose Wednesday on the idea that restrictions might cut their own spend and free cash, then fell Thursday as investors priced slower industry-wide construction. That flip is the tell that the market has not settled on whether constraint is bullish for incumbents or bearish for the whole stack.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://lite.cnn.com/2026/11/05/markets/asian-markets-us-rout-ai-investment-intl-hnk">CNN Lite on the $2.5T global rip</a> &middot;
+    <a href="https://www.bbc.com/news/articles/cmn04705rd8jo">BBC on Nasdaq &minus;5.5% and Mag7 ~$1T</a> &middot;
+    <a href="https://text.npr.org">NPR text index / AI crackdown framing</a> &middot;
+    <a href="https://www.texastribune.org/2026/11/04/data-center-texas-pause-gina-hinojosa-governor-policies/">Texas Tribune on Hinojosa moratorium</a> &middot;
+    <a href="https://www.aiaffairs.com/markets/us-stocks-lose-25-trillion-ai-data-centre-fears/">AI Affairs on closes and Kospi halt</a> &middot;
+    <a href="2026-11-05-grok.html#ai-buildout">62-grok data-centre exposure lead</a>
+  </p>
+  <div class="fb">
+    <p>Market-pricing of a policy thread: right altitude, or too much tape?</p>
+    <label><input type="radio" name="fb-ai" value="keep"> Keep pricing the build-out this way</label>
+    <label><input type="radio" name="fb-ai" value="policy"> More statute/executive, less index points</label>
+    <label><input type="radio" name="fb-ai" value="less"> Less AI-capex for a bit</label>
+  </div>
+</article><article id="cbp-ior">
+  <h2>CBP put foreign importers into CTPAT by interim final rule, citing good cause to skip prior comment</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Underreported</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>U.S. Customs and Border Protection&rsquo;s interim final rule <em>Heightened Requirements for Foreign Importers of Record</em> (FR Doc. 2026-22735) publishes today and takes effect <b>5 January 2027</b>. Foreign importers of record may make formal entry &mdash; and most informal consumption entries that need Forms 3461 or 7501 &mdash; only if they are CTPAT-validated or use a CTPAT-validated licensed broker. Brokers must verify a client&rsquo;s U.S.-IOR status before declaring it, keep the verification five years, and can seek delayed compliance; full broker compliance is expected by <b>6 May 2027</b>. Comments are accepted through the effective date.</p>
+  <p>The rule implements Section 2 of Executive Order 14411 and invents a regulatory definition of a U.S. IOR (citizen/LPR individual, or a U.S.-organised entity that is majority-owned by qualifying U.S. persons or that holds significant unencumbered U.S. real property). Everyone else is foreign. CBP&rsquo;s own trade page and the filed text both say the point is to stop foreign parties evading customs and trade laws and to level enforcement with domestic IORs.</p>
+  <p>Procedurally it is an interim final rule: CBP invoked APA good cause to skip <em>prior</em> notice and comment, then opened a 60-day post-publication comment window. That is the underreported half. The substance will remake who can clear a container; the process choice is what every trade counsel will litigate first.</p>
+  <p><b>What to watch:</b> broker petitions for delayed compliance before 5 January; the first test cases on the new U.S.-IOR definition; and whether commenters force a supplemental rule.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; &ldquo;without notice and comment&rdquo; or &ldquo;comment after the fact&rdquo;?</span>
+    <p><b>What is disputed.</b> Characterisation. One reading (Claude&rsquo;s lead today; trade blogs) is that customs enforcement changed without notice and comment. The other is that this is a standard IFR: no prior comment, but a real post-publication comment period and a 60-day delayed effective date.</p>
+    <p><b>Why they differ.</b> Both start from the same primary document. &ldquo;Without notice and comment&rdquo; compresses the APA good-cause finding that excused <em>pre</em>-publication procedures. &ldquo;Comment after the fact&rdquo; stresses the open docket through 5 January 2027. KPMG&rsquo;s institutional note and CBP&rsquo;s page both accurately restate the IFR mechanics; they disagree with the compressed headline only on emphasis.</p>
+    <p><b>What it means for you.</b> Prefer the precise form: <b>no prior notice-and-comment; comments accepted through the effective date; good-cause finding in the preamble.</b> That is enough to flag litigation risk without overstating that the public was shut out entirely. Watch whether a court treats the good-cause record as thin &mdash; that, not CTPAT itself, is the near-term kill switch.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; what the new U.S. IOR test actually does</summary>
+    <div class="exp">
+      <p>The 81-page public-inspection PDF (31 Federal Register pages once typeset) creates 19 CFR part 110 and amends parts 111, 141, 142 and 171. The practical fork is binary for a foreign principal: join CTPAT and get validated, or hire a CTPAT broker who may have to step in as IOR when the foreign party is neither owner nor purchaser. Mis-declaring U.S. IOR status can trigger live-entry requirements and loss of immediate-delivery privileges; brokers face 19 U.S.C. &sect;1592 exposure.</p>
+      <p>Read off the filed text and CBP&rsquo;s summary page; KPMG&rsquo;s tax note matches both on effective dates and the 51% ownership / real-property tests. No wire front page carried it this morning &mdash; it came from the public-inspection desk.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://public-inspection.federalregister.gov/2026-22735.pdf">FR public-inspection PDF 2026-22735</a> &middot;
+    <a href="https://www.federalregister.gov/documents/full_text/text/2026/11/06/2026-22735.txt">Full text</a> &middot;
+    <a href="https://www.cbp.gov/trade/strengthening-customs-enforcement">CBP Strengthening Customs Enforcement page</a> &middot;
+    <a href="https://kpmg.com/us/en/taxnewsflash/news/2026/11/cbp-foreign-importers-of-record.html">KPMG institutional note</a> &middot;
+    FR public-inspection current.json (filed 5 Nov 08:45 ET)
+  </p>
+  <div class="fb">
+    <p>Dull-title FR finds that remake trade compliance: more of these?</p>
+    <label><input type="radio" name="fb-cbp" value="more"> Yes &mdash; keep mining the desk</label>
+    <label><input type="radio" name="fb-cbp" value="ok"> Current balance is fine</label>
+    <label><input type="radio" name="fb-cbp" value="less"> Too much process, not enough markets</label>
+  </div>
+</article>
+<article id="death-row">
+  <h2>Newsom moved to commute all 548 California death sentences on a day Florida, Alabama and Indiana each executed</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>California Governor Gavin Newsom announced Thursday he is commuting every current death sentence in the state &mdash; <b>548 people</b> (529 men, 19 women) &mdash; to life without parole. His office&rsquo;s fact sheet is explicit about what it is not: no releases, no parole eligibility, no pardons, no changes to convictions or restitution, and those inmates are carved out of new Board of Parole Hearings commutation/resentencing regs. About <b>382</b> cases need approval from four California Supreme Court justices because of prior felonies; the rest the governor can commute directly. California&rsquo;s last execution was 17 January 2006; a 2019 moratorium already held the chamber closed.</p>
+  <p>The same day, three states carried out lethal injections. Florida executed Jesse Guardado &mdash; the state&rsquo;s <b>19th</b> execution of 2026, tying its modern record. Indiana executed Jeffrey Weisheit before dawn Eastern; Alabama executed later Thursday. AP, Guardian, CNN and USA Today all pair the California announcement with the triple execution day; Death Penalty Information Center confirms California still holds the largest condemned population.</p>
+  <p>For this reader the Florida half is local merit, not colour. Guardado&rsquo;s case (Walton County, 2004) is state policy continuing at record pace while the largest death row in the country is being emptied by clemency.</p>
+  <p><b>What to watch:</b> the California Supreme Court&rsquo;s handling of the 382; whether prosecutors keep seeking death in new California cases (the statute remains); and whether other governors copy the mass-commutation template.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; did Newsom empty death row, or start a process that still needs the Court?</span>
+    <p><b>What is disputed.</b> Headlines say Newsom &ldquo;commutes all 548&rdquo; or &ldquo;empties death row.&rdquo; The primary fact sheet splits the population: 166 he can finish alone; 382 require four justices&rsquo; assent under the state constitution.</p>
+    <p><b>Why they differ.</b> Wire ledes optimise for the intention and the headcount; the governor&rsquo;s own PDF optimises for the legal mechanism. Both are accurate about different stages. CNN notes the 382 figure; AP emphasises the same-day executions and Florida&rsquo;s record-tying 19.</p>
+    <p><b>What it means for you.</b> Treat <b>548 as the ask and ~166 as already inside the governor&rsquo;s unilateral power</b>; the rest is contingent on the Court. Nothing about Florida, Alabama or Indiana&rsquo;s Thursday executions is contingent &mdash; those are done. The national split is the story: one coast emptying the row by paperwork while three states used the chamber the same day.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.gov.ca.gov/wp-content/uploads/2026/11/11-5-26-External-Fact-Sheet-Clemency-Action.pdf">CA Governor clemency fact sheet (5 Nov)</a> &middot;
+    <a href="https://lite.cnn.com/2026/11/05/us/california-death-row-commutation">CNN Lite</a> &middot;
+    <a href="https://apnews.com/article/indiana-alabama-florida-executions-f38f70d09b512c4d7245fd5e75ee91df">AP on the triple execution day</a> &middot;
+    <a href="https://www.theguardian.com/us-news/2026/nov/05/executions-florida-alabama-indiana">Guardian</a> &middot;
+    <a href="https://lite.cnn.com/2026/11/05/us/executions-indiana-florida-alabama">CNN on Florida&rsquo;s 19th</a>
+  </p>
+  <div class="fb">
+    <p>Death-penalty substance on a Florida execution day: keep, or too grim for the brief?</p>
+    <label><input type="radio" name="fb-death" value="keep"> Keep when the policy split is this sharp</label>
+    <label><input type="radio" name="fb-death" value="fl-only"> Florida executions only, skip other states</label>
+    <label><input type="radio" name="fb-death" value="less"> Less capital-punishment coverage</label>
+  </div>
+</article>
+<article id="arch">
+  <h2>The arch won 8&ndash;4 at 10:29&nbsp;p.m.; Judge Chutkan blocked groundbreaking within the hour</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>After more than eight hours of public comment &mdash; CNN counted 120-plus speakers, many veterans &mdash; the National Capital Planning Commission approved final site plans for President Trump&rsquo;s roughly <b>250-foot</b> memorial arch at Memorial Circle by <b>8&ndash;4</b> around <b>10:29&nbsp;p.m.</b> Thursday. The four no votes were the commissioners not appointed by Trump. The administration had told the court it might excavate the same day.</p>
+  <p>U.S. District Judge Tanya Chutkan then issued a 14-day temporary restraining order barring the government from initiating or effectuating construction or excavation. AP, NPR, NBC, BBC and DW all have the sequence: commission approval, then the TRO before midnight or within about an hour, with a written opinion probing the administration&rsquo;s shifting justifications (including a late national-security turn) and finding local governments likely to suffer immediate traffic and economic harm. D.C. and Virginia are plaintiffs; an earlier veterans&rsquo; suit is consolidated. Chutkan ordered a Monday status report on compliance.</p>
+  <p>The legal fight underneath is whether a century-old statute authorising columns at the site can stretch to a 250-foot arch without a fresh Act of Congress. Chutkan&rsquo;s opinion, as quoted in DW/AP, calls that stretch improbable.</p>
+  <p><b>What to watch:</b> the 14-day clock; the Monday status report; and whether Congress is asked for authorising language while the TRO is live.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; &ldquo;moments after,&rdquo; &ldquo;within an hour,&rdquo; or &ldquo;before midnight&rdquo;?</span>
+    <p><b>What is disputed.</b> Timing language only. NPR&rsquo;s headline said a judge blocked construction &ldquo;moments after&rdquo; approval; CNN said &ldquo;within an hour&rdquo; of the 10:29&nbsp;p.m. vote; Claude&rsquo;s edition compressed to &ldquo;approved at 10:29&nbsp;p.m. then blocked before midnight.&rdquo; All three describe the same evening.</p>
+    <p><b>Why they differ.</b> Stopwatch precision versus deadline framing. The commission vote time is tightly reported; the TRO docket timestamps vary slightly across desks. No outlet claims the injunction came the next calendar day.</p>
+    <p><b>What it means for you.</b> Believe the sequence, not the adverb: <b>approved late Thursday evening, enjoined the same night on a 14-day TRO.</b> The substance that matters is the congressional-authorisation question inside the opinion, which will outlast the two-week pause.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://lite.cnn.com/2026/11/05/politics/trump-arch-ncpc-final-approval">CNN Lite (10:29 p.m., 8&ndash;4, TRO)</a> &middot;
+    <a href="https://apnews.com/article/trump-washington-arch-planning-commission-246d15697c00b065bc8ab8c614d50ca7">AP</a> &middot;
+    <a href="https://www.npr.org/2026/11/06/nx-s1-6031990/trump-arch-planning-commission-injunction">NPR</a> &middot;
+    <a href="https://www.bbc.com/news/articles/cq99zd93ryvko">BBC</a> &middot;
+    <a href="https://www.nbcnews.com/politics/trump-administration/trump-triumphal-arch-approval-opposition-asks-judge-to-block-rcna607642">NBC News</a>
+  </p>
+  <div class="fb">
+    <p>Capital-projects litigation as a lead: right call?</p>
+    <label><input type="radio" name="fb-arch" value="yes"> Yes &mdash; process and injunctions matter</label>
+    <label><input type="radio" name="fb-arch" value="short"> Should have been Also today</label>
+    <label><input type="radio" name="fb-arch" value="skip"> Skip vanity-project fights</label>
+  </div>
+</article><article id="apprentice">
+  <h2>A Labor rule titled &ldquo;Prohibiting Illegal Discrimination&rdquo; removes the sponsor notice telling apprentices they can complain</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Underreported</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The Employment and Training Administration&rsquo;s final rule <em>Prohibiting Illegal Discrimination in Registered Apprenticeship Programs</em> (FR Doc. 2026-22680; RIN 1205-AC21) publishes today and is effective 60 days after publication (calendar math: about <b>5 January 2027</b>). The summary is blunt: it removes what DOL now calls &ldquo;onerous and legally questionable affirmative action requirements&rdquo; on Registered Apprenticeship sponsors, streamlines nondiscrimination obligations, and makes conforming edits to the part 29 labor standards.</p>
+  <p>Inside the 283-page public-inspection PDF, revised &sect;30.4 on complaints is the hinge that earns the lead. The rule <b>removes the investigative requirements for Registration Agencies and the notice requirement for program sponsors</b> that previously obliged sponsors to give apprentices written notice of how to file discrimination complaints. Agencies are instead directed to refer complainants to the enforcement body with jurisdiction (typically the EEOC or a state FEPA). Anti-harassment training mandates and utilisation/goal machinery for sponsors with five or more apprentices also go.</p>
+  <p>The title says &ldquo;prohibiting illegal discrimination.&rdquo; The operative deletions remove the affirmative-action apparatus and the sponsor-level complaint notice. Both can be true; only one is the surprise in the table of contents.</p>
+  <p><b>What to watch:</b> state apprenticeship agencies that kept stricter notice rules; EEOC intake volume from apprentices; and the first lawsuit arguing the title and the deletions point different ways.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; civil-rights streamlining, or a quieter complaint channel?</span>
+    <p><b>What is disputed.</b> Significance, not the text. DOL&rsquo;s frame is burden reduction and ending legally questionable race/sex goal-setting after recent equal-protection cases. Labor and civil-rights readers (and Claude&rsquo;s lead today) frame the deleted sponsor notice as the part apprentices will feel: the poster/notice that told them how to complain is gone from the sponsor&rsquo;s duties.</p>
+    <p><b>Why they differ.</b> Same PDF, different load-bearing section. Affirmative-action rescission is the volume of the preamble; &sect;30.4&rsquo;s notice deletion is a shorter clause with direct workplace effects. Timing: this is a final rule after NPRM comment, not an IFR, so the process fight is weaker than on the CBP rule above.</p>
+    <p><b>What it means for you.</b> Hold both. The AA rescission is the policy headline; the notice deletion is the compliance headline for every sponsor and every apprentice. If you care which apprentices still learn the complaint path, watch whether Registration Agencies publish a substitute referral notice of their own.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://public-inspection.federalregister.gov/2026-22680.pdf">FR public-inspection PDF 2026-22680</a> &middot;
+    FR PI current.json (title, 283 pages, filed 5 Nov 08:45 ET) &middot;
+    Claude Issue 63 lead for the notice-deletion emphasis (compared, not copied)
+  </p>
+  <div class="fb">
+    <p>Rules whose titles invert their deletions: flag more of these?</p>
+    <label><input type="radio" name="fb-app" value="yes"> Yes &mdash; title/text mismatches are news</label>
+    <label><input type="radio" name="fb-app" value="ok"> Once is enough</label>
+    <label><input type="radio" name="fb-app" value="skip"> Too inside-baseball</label>
+  </div>
+</article>
+<article id="bis-affiliates">
+  <h2>BIS extended the Affiliates Rule suspension to 10 January 2027 &mdash; China end-user controls stay paused</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech / Geopolitics</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Underreported</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The Bureau of Industry and Security filed a four-page final rule/stay, <em>Extension of the Suspension of Expansion of End-User Controls for Affiliates of Certain Listed Entities</em> (FR Doc. 2026-22793; RIN 0694-AK34), for publication 9 November. Effective that day, the September 2025 &ldquo;Affiliates Rule&rdquo; (90 FR 47201) &mdash; which would have extended end-user controls to affiliates of certain listed entities &mdash; remains stayed through <b>10 January 2027</b>. The prior one-year suspension had been set to lapse 9 November 2026.</p>
+  <p>In plain terms: a tool that would have pulled more Chinese (and other) corporate affiliates into the U.S. export-control net stays on ice for another two months. BIS cites ECRA authorities and notes these changes can be imposed without prior notice and comment. No wire that this brief reached treated the filing as a Thursday/Friday story; it surfaced from the public-inspection desk beside the CMS pile.</p>
+  <p>For the AI stack this is the quiet twin of the noisy data-centre election. Model weights, chips and tooling move under EAR end-user rules; pausing affiliate coverage keeps a known compliance cliff from arriving this coming Monday.</p>
+  <p><b>What to watch:</b> whether January 10 is another short stay or the real restart; any paired OFAC or Entity List adds that do by designation what the Affiliates Rule would have done by ownership.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; routine stay, or a China-policy tell?</span>
+    <p><b>What is disputed.</b> How much to read into a four-page stay. Trade counsel will treat it as calendar management. China hawks will treat a second extension, filed the week after a midterm loss, as evidence the administration is not ready to turn the affiliate spigot back on.</p>
+    <p><b>Why they differ.</b> The document itself is almost empty of justification beyond the stay dates and ECRA boilerplate &mdash; there is little primary text to adjudicate. Motive is being inferred from timing (post-midterm, pre-Monday lapse) rather than from a stated negotiation.</p>
+    <p><b>What it means for you.</b> Bank the operable fact: <b>affiliate end-user expansion stays suspended through 10 January 2027</b>. Treat motive as unsettled until BIS or the White House says more. Pair it with OFAC&rsquo;s 4&ndash;5 November Iran/Cuba/cyber actions rather than with the Nasdaq tape.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.federalregister.gov/public-inspection/raw_text/202/622/793.txt">BIS raw public-inspection text 2026-22793</a> &middot;
+    FR PI current.json (4 pages, special filing 5 Nov 16:15 ET)
+  </p>
+  <div class="fb">
+    <p>Quiet export-control calendar items: lead-worthy?</p>
+    <label><input type="radio" name="fb-bis" value="yes"> Yes when they move China/AI controls</label>
+    <label><input type="radio" name="fb-bis" value="short"> Also-today is enough</label>
+    <label><input type="radio" name="fb-bis" value="skip"> Skip stays without new substance</label>
+  </div>
+</article>
+<article id="israel-aid">
+  <h2>Israel&rsquo;s president called the aid cut a &ldquo;bolt from the blue&rdquo;; the MOU still runs to 2028</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">Continuing</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <div class="corr"><span class="t">Accountability to 62-grok</span>
+  <p>Yesterday&rsquo;s lead held: Trump said on Election Day that ~$4 billion a year in aid ends this year, while the 2016 memorandum of understanding runs through FY2028 at $3.8 billion. That framing still holds. New overnight is the Israeli reaction and the implementation fog.</p></div>
+  <p>President Isaac Herzog, per CNN&rsquo;s Thursday/Friday coverage, described Trump&rsquo;s announcement as a shock &mdash; &ldquo;like a bolt from the blue.&rdquo; Netanyahu&rsquo;s office had declined to confirm the Election Day claim. Trump&rsquo;s Fox &amp; Friends interview (Reuters, NBC, Guardian, PolitiFact, AP) said the idea was Netanyahu&rsquo;s, that Israel would still buy U.S. weapons, and that cutting the grant removes a talking point used by the left.</p>
+  <p>Mechanism is unresolved. The MOU is not a statute that auto-terminates on a phone interview. Congress appropriates; a new Democratic majority will have its own say. PolitiFact and AP both note that an abrupt 2026-end cut is hard to execute and that loan guarantees and weapons purchases would remain even if grants taper.</p>
+  <p><b>What to watch:</b> any written U.S.&ndash;Israel paper that actually amends the MOU; the first FY2027 appropriations mark; and whether Herzog&rsquo;s reaction hardens into an Israeli cabinet line.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; $4 billion pledge versus $3.8 billion MOU, and can it end &ldquo;this year&rdquo;?</span>
+    <p><b>What is disputed.</b> Two numbers and one calendar. Trump said &ldquo;$4 billion&rdquo; ending at year-end 2026. The operative MOU is $3.8 billion a year through FY2028 ($3.3 billion FMF + $0.5 billion missile defense). Separately: is year-end 2026 operable, or aspirational?</p>
+    <p><b>Why they differ.</b> Round-number politics versus the memorandum text. Outlets that lead with Trump&rsquo;s words keep $4 billion; outlets that open the MOU keep $3.8 billion. On timing, White House non-answers to PolitiFact leave the mechanical path unspecified; AP&rsquo;s analysis treats 2027 as the earliest plausible wind-down even if Congress agrees.</p>
+    <p><b>What it means for you.</b> Same rule as 62-grok: <b>quote Trump&rsquo;s $4 billion, footnote the $3.8 billion MOU, and do not treat year-end 2026 as settled policy until there is paper.</b> Herzog&rsquo;s &ldquo;bolt from the blue&rdquo; weakens the claim that this was a long-negotiated bilateral plan, which is a fact about Israeli messaging even if the U.S. decision stands.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://lite.cnn.com/2026/11/05/middleeast/israel-trump-aid-election-latam-intl">CNN on Herzog reaction</a> &middot;
+    <a href="https://www.nbcnews.com/politics/2026-election/trump-says-us-will-stop-4b-military-aid-israel-end-2026-rcna607210">NBC on the Fox interview</a> &middot;
+    <a href="https://www.reuters.com/world/middle-east/trump-says-us-will-stop-paying-israel-after-year-end-2026-11-03/">Reuters</a> &middot;
+    <a href="https://politifact.com/article/2026/nov/03/trump-netanyahu-israel-gaza-el-sayed-michigan/">PolitiFact on MOU mechanics</a> &middot;
+    <a href="2026-11-05-grok.html">62-grok Israel-aid lead</a>
+  </p>
+  <div class="fb">
+    <p>Continuing this thread after the Election Day spike: still useful?</p>
+    <label><input type="radio" name="fb-isr" value="follow"> Follow until there is paper</label>
+    <label><input type="radio" name="fb-isr" value="pause"> Pause until Congress acts</label>
+    <label><input type="radio" name="fb-isr" value="drop"> Drop it</label>
+  </div>
+</article>
+<article id="yields">
+  <h2>Treasury&rsquo;s own curve: the 10-year closed 5 November at 4.84%, down 11&nbsp;bp in three sessions</h2>
+  <div class="meta">
+    <span class="chip">US debt &amp; fiscal / Macro</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Issuer series, not a vendor ticker. Treasury&rsquo;s Daily Par Yield Curve Rates for November 2026, headers enumerated on the TextView table (1 Mo through 30 Yr), show:</p>
+  <p>2 Nov &mdash; 10-year <b>4.91</b>, 30-year 5.28<br>
+  3 Nov &mdash; 10-year <b>4.95</b>, 30-year 5.32<br>
+  4 Nov &mdash; 10-year <b>4.90</b>, 30-year 5.28<br>
+  5 Nov &mdash; 10-year <b>4.84</b>, 30-year 5.25; 2-year 4.46</p>
+  <p>That is an 11&nbsp;bp drop in the 10-year from Monday&rsquo;s 4.95 local high to Thursday&rsquo;s 4.84, with the long end softer in parallel, as the post-midterm equity rally reversed into the AI/data-centre sell-off. No new refunding guidance printed overnight; 62-grok&rsquo;s note that refunding guidance had dropped &ldquo;at least&rdquo; language still stands without a fresh Treasury release to update.</p>
+  <p>Fed: no decision and no scheduled print this morning &mdash; so no Fed item, per standing preference.</p>
+  <p><b>What to watch:</b> Monday&rsquo;s Treasury print after Friday&rsquo;s equity bounce attempt; any WY&amp;M or Senate Finance signal on issuance once the new majority organises.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; flight-to-quality from the AI rout, or just the midterm rates fade?</span>
+    <p><b>What is disputed.</b> Cause of the 11&nbsp;bp move. One reading ties Thursday&rsquo;s bond bid directly to the Nasdaq shock. Another notes the 10-year was already off its 3 Nov high on Wednesday, before the worst of the tech tape, consistent with a midterm-settlement fade in term premium.</p>
+    <p><b>Why they differ.</b> Daily curve points are not labelled with motives. Wednesday&rsquo;s 4.90 already gave back 5&nbsp;bp; Thursday&rsquo;s further 6&nbsp;bp arrived with the equity crash. Both chronological facts are on the Treasury table; attribution is inference.</p>
+    <p><b>What it means for you.</b> Bank the levels from the issuer. Treat &ldquo;why&rdquo; as unresolved until a refunding statement or a week of closes separates election settlement from AI-capex fear. Do not invent a basis-point story from a blocked CNBC page when Treasury&rsquo;s table is up.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202611">Treasury Daily Par Yield Curve, Nov 2026</a> &middot;
+    <a href="2026-11-05-grok.html">62-grok refunding note (no new guidance overnight)</a>
+  </p>
+  <div class="fb">
+    <p>Issuer-series yields as a standing lead when the tape moves: right?</p>
+    <label><input type="radio" name="fb-yld" value="yes"> Yes &mdash; keep using Treasury&rsquo;s table</label>
+    <label><input type="radio" name="fb-yld" value="only-big"> Only on &ge;10&nbsp;bp days</label>
+    <label><input type="radio" name="fb-yld" value="less"> Less rates coverage</label>
+  </div>
+</article><h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Worth knowing, not at lead length. Each opens. One confidence marker per item.</p>
+<div class="also-list">
+
+<details class="short" id="oil-chain">
+<summary><span class="chip">Energy</span> Brent rebounded toward ~$98&ndash;99 after Wednesday&rsquo;s slide to $94.62; EIA weekly regular gasoline is $4.153 and on-highway diesel $6.292 (w/e 2 Nov).</summary>
+<div class="exp"><p>One causal chain, not two stories. Trading Economics showed Brent around <b>$98.71</b> Friday morning after 62-grok&rsquo;s Wednesday settlement print of <b>$94.62 (&minus;8.7%)</b> with the Qatar-tanker shock. That is a partial rebound on the screen, not a new chokepoint event overnight &mdash; gCaptain&rsquo;s maritime index did not surface a fresh Hormuz/Bab el-Mandeb closure headline this run.</p>
+<p>Pump: EIA&rsquo;s weekly retail table (headers dated through 11/02/26) has regular gasoline at <b>$4.153</b> (prior week $4.269) and on-highway diesel all-types at <b>$6.292</b> (prior week $6.352). AAA&rsquo;s national card average was Cloudflare-blocked this morning, so daily pump is not claimed. NPR&rsquo;s &ldquo;don&rsquo;t hold your breath&rdquo; framing on post-blue-wave fuel relief matches the weekly series: diesel is still above $6 even as crude whipped around.</p>
+<p class="btl"><b>Below the line because</b> there was no new strike/chokepoint print today &mdash; only a screen rebound and a weekly EIA update.</p>
+<p><span class="chip">Independent corroboration</span> on the weekly EIA levels; Brent screen level is single-vendor and labelled as such.</p>
+<p class="sources"><b>Sources:</b> <a href="https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm">EIA weekly retail gasoline/diesel</a> &middot; <a href="https://tradingeconomics.com/commodity/brent-crude-oil">Trading Economics Brent (vendor)</a> &middot; text.npr.org fuel headline &middot; 62-grok Brent lead</p></div>
+</details>
+<details class="short" id="cms">
+<summary><span class="chip">US policy</span> CMS filed three CY2027 Medicare payment rules on the public-inspection desk &mdash; unread beyond titles and page counts.</summary>
+<div class="exp"><p>Claude&rsquo;s negative-check item. Public inspection shows: Physician Fee Schedule and related Part B changes (2026-22743, <b>2,468 pages</b>, special filing pub 9 Nov); Hospital Outpatient / ASC (2026-22739, 1,270 pages, pub 6 Nov); Home Health PPS (2026-22750, 447 pages, pub 9 Nov); plus Medicare Drug Price Negotiation / Part D (2026-22792, 695 pages). This brief did not read the PDFs.</p>
+<p class="btl"><b>Below the line because</b> consequence is likely high but the documents were not opened &mdash; listing them unread is the honest move.</p>
+<p><span class="chip">Primary source</span> for the existence, titles and page counts only.</p>
+<p class="sources"><b>Sources:</b> FR public-inspection current.json</p></div>
+</details>
+<details class="short" id="cfpb">
+<summary><span class="chip">US financials</span> CFPB&rsquo;s Fair Lending Report for calendar 2025 reframes enforcement around &ldquo;actual identifiable victims,&rdquo; away from prior disparate-impact emphasis.</summary>
+<div class="exp"><p>FR notice 2026-22645 (30 pages) publishes the Bureau&rsquo;s Fair Lending Report. The filed text says the 2025 programme refocused regulation, supervision and enforcement on statutory authority and identified consumer harm, and that under President Trump the Bureau does not engage in or facilitate &ldquo;unconstitutional racial classification&rdquo; in fair-lending enforcement. It is a notice of a report already posted 1 October 2026, not a new binding rule.</p>
+<p class="btl"><b>Below the line because</b> it is a retrospective report notice, not a regulation with an immediate effective date.</p>
+<p><span class="chip">Primary source</span></p>
+<p class="sources"><b>Sources:</b> <a href="https://www.federalregister.gov/documents/full_text/text/2026/11/06/2026-22645.txt">FR text 2026-22645</a></p></div>
+</details>
+<details class="short" id="ofac">
+<summary><span class="chip">Geopolitics</span> OFAC on 5 November added cyber and transnational-criminal designations plus Cuba designations and a Cuba-related determination.</summary>
+<div class="exp"><p>Primary recent-actions page dated 20261105. Separate from the 4 November Iran-related package. No attempt here to list every SDN without the full CSV; the actionable point for U.S. persons is that a fresh designation tranche landed mid-week and should be screened.</p>
+<p class="btl"><b>Below the line because</b> designations without a named U.S. corporate enforcement action stay short.</p>
+<p><span class="chip">Primary source</span></p>
+<p class="sources"><b>Sources:</b> <a href="https://ofac.treasury.gov/recent-actions/20261105">OFAC 5 Nov recent actions</a></p></div>
+</details>
+<details class="short" id="hegseth">
+<summary><span class="chip">US politics</span> Hegseth faces a renewed impeachment push after the Democratic midterm wins; Republicans are peeling off.</summary>
+<div class="exp"><p>Stars and Stripes and CNN both describe post-midterm impeachment pressure on Defense Secretary Pete Hegseth, including over Iran-related messaging and a &ldquo;fight, fight, fight&rdquo; video. This is personnel/politics with a live congressional channel now that Democrats hold both chambers &mdash; altitude bar cleared barely.</p>
+<p class="btl"><b>Below the line because</b> no article of impeachment has been filed; it is pressure, not process.</p>
+<p><span class="chip">Independent corroboration</span></p>
+<p class="sources"><b>Sources:</b> <a href="https://www.stripes.com/theaters/us/2026-11-05/hegseth-could-face-impeachment-massie-23371684.html">Stars and Stripes</a> &middot; CNN Lite Hegseth items</p></div>
+</details>
+<details class="short" id="melania">
+<summary><span class="chip">Geopolitics</span> Melania Trump publicly touted a rare Russia&ndash;Ukraine agreement she says she brokered; a wider ceasefire still eludes the administration.</summary>
+<div class="exp"><p>NPR text index and CNN both carry the First Lady elevating her diplomatic role on a Russia&ndash;Ukraine track. Details of what was agreed remain thin in reachable copy; treat the existence of her claim as confirmed and the scope of any agreement as not yet independently documented.</p>
+<p class="btl"><b>Below the line because</b> the underlying deal text is not public.</p>
+<p><span class="chip">Independent corroboration</span> that she made the claim; <em>substance of the agreement</em> still thin.</p>
+<p class="sources"><b>Sources:</b> text.npr.org &middot; CNN Lite Melania/Ukraine item</p></div>
+</details>
+<details class="short" id="doj-cr">
+<summary><span class="chip">US policy</span> The head of the Justice Department&rsquo;s Civil Rights Division has resigned, per NPR&rsquo;s Friday text index.</summary>
+<div class="exp"><p>NPR lists &ldquo;Head of Justice Department office on Civil Rights resigns&rdquo; among Friday headlines. Direct article fetch was not completed this run; name, effective date and any accompanying letter are not verified here beyond the headline.</p>
+<p class="btl"><b>Below the line because</b> headline-only until the resignation letter or DOJ notice is read.</p>
+<p><span class="chip">Single-sourced</span></p>
+<p class="sources"><b>Sources:</b> <a href="https://text.npr.org">text.npr.org</a></p></div>
+</details>
+<details class="short" id="ms-senate">
+<summary><span class="chip">US politics</span> Mississippi&rsquo;s Senate race is still counting, with a live fight over which ballots are in.</summary>
+<div class="exp"><p>CNN Lite: ballot-counting dispute in the Scott Colom vs Cindy Hyde-Smith contest. NPR&rsquo;s Friday index also flags House and Senate races not yet called. Horse-race tactics stay out; the institutional point is that control margins depend on uncalled seats two days after Election Day.</p>
+<p class="btl"><b>Below the line because</b> no certified flip yet &mdash; process story, not outcome.</p>
+<p><span class="chip">Independent corroboration</span></p>
+<p class="sources"><b>Sources:</b> CNN Lite Mississippi item &middot; text.npr.org uncalled-races item</p></div>
+</details>
+<details class="short" id="paraguay">
+<summary><span class="chip">World / US channel thin</span> Paraguay&rsquo;s president faces resignation, impeachment and criminal investigation after the ueno bank collapse.</summary>
+<div class="exp"><p>AP/Reuters/CNN: Santiago Pe&ntilde;a under pressure after ueno bank&rsquo;s collapse; Chamber of Deputies moved toward impeachment. Wikipedia current events 5 Nov carried it. US-channel test is weak (regional financial stability, possible remittance/OFAC second-order only) &mdash; recorded for the negative-check file, not elevated.</p>
+<p class="btl"><b>Below the line because</b> altitude bar: foreign crisis without a clear U.S. policy or price channel.</p>
+<p><span class="chip">Independent corroboration</span></p>
+<p class="sources"><b>Sources:</b> Wikipedia current events 5 Nov &middot; CNN Lite Paraguay item</p></div>
+</details>
+</div>
+<div class="fb" style="border-top:1px solid var(--rule); padding-top:1rem; margin-top:1.5rem;">
+  <p><b>One question about this whole section:</b> were the right things ranked below the line?</p>
+  <label><input type="radio" name="fb-also" value="right"> About right</label>
+  <label><input type="radio" name="fb-also" value="promote"> Some of these should have led</label>
+  <label><input type="radio" name="fb-also" value="drop"> Some should have been dropped entirely</label>
+  <label><input type="radio" name="fb-also" value="fewer"> Fewer short items, more depth up top</label>
+</div>
+
+<button class="submit" id="send">Send my feedback &rarr;</button>
+<p class="sources" style="text-align:center">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+
+<footer>
+  <h4>Sources checked this run &mdash; 22, of which 14 outside the watchlist</h4>
+  <p><b>Outside the watchlist (14):</b> text.npr.org &middot; CNN Lite (+ three story pages) &middot; Al Jazeera /news/ &middot; Wikipedia Portal:Current events 5&ndash;6 Nov &middot; Stars and Stripes &middot; SCMP China index &middot; Handelsblatt front &middot; gCaptain / maritime-news index &middot; FreightWaves index &middot; MarkTechPost &middot; STAT &middot; whitehouse.gov/presidential-actions &middot; OFAC recent-actions (index + 20261105) &middot; Federal Register public-inspection current.json and filed texts/PDFs for 2026-22735, 2026-22680, 2026-22793, 2026-22645 &middot; CBP Strengthening Customs Enforcement page &middot; California Governor clemency fact sheet PDF &middot; Treasury Daily Par Yield Curve Nov 2026 &middot; EIA weekly retail gasoline/diesel table &middot; Trading Economics Brent &middot; BBC/AP/Texas Tribune/KPMG/PolitiFact via search.</p>
+  <p><b>Pointed at by threads / prior issues (8):</b> prior Grok 62-grok (accountability) &middot; Claude Issue 63 (divergence competition, not a source for facts) &middot; Israel-aid thread &middot; AI/data-centre build-out thread &middot; oil/pump/chokepoint chain &middot; Treasury refunding/issuance &middot; UAP implementation (no paperwork hit today) &middot; Florida local sweep (WUSF index reached; no separate FL lead beyond the execution).</p>
+
+  <h4>The negative check</h4>
+  <p><i>What is the biggest story today that is not on my list, and why is it not?</i> The CBP foreign-IOR / CTPAT interim final rule. It was not on an active thread; it came off the public-inspection desk among dull titles; it leads. The DOL apprenticeship rewrite and the BIS Affiliates stay were the next off-list finds. CMS CY2027 payment rules are the largest <em>unread</em> package and stay in Also today as unread.</p>
+
+  <h4>Confidence and divergence audit</h4>
+  <p>Markers on leads+shorts: <b>Primary source 7</b> &middot; <b>Independent corroboration 9</b> &middot; <b>Single-sourced 1</b> &middot; <b>Unconfirmed 0</b> (17 total). Divergence boxes: <b>8</b> (one on every lead). Claude Issue 63 comparison target: ~5 Primary / 6 Independent on 6 leads with ~5 divergence boxes; Issue 10 bar ~18 markers / 3 boxes. This edition is at or above both on box density and within range on markers.</p>
+
+  <h4>Could not reach / unread</h4>
+  <p>AAA gasprices.aaa.com Cloudflare-blocked. Handelsblatt and SCMP fronts fetched but article bodies thin/paywalled. gCaptain category page returned weak headline extraction. Reuters/AP/Bloomberg/WSJ/FT/NYT front pages refused or paywalled as usual &mdash; reached via search summaries and syndicators. CMS CY2027 PDFs (thousands of pages) not read. NPR article pages not fully fetched (index used; member-station path not completed for every slug). Wikipedia 6 Nov portal still unpopulated at run time.</p>
+
+  <h4>Brief-feedback</h4>
+  <p>Open <code>brief-feedback</code> issues: none (<code>gh issue list --label brief-feedback --state open</code> returned empty). No config.md watchlist edit this run.</p>
+
+  <h4>About this issue</h4>
+  <ul>
+    <li>Issue No. 63-grok, Friday 6 November 2026, America/New_York. Weekday re-derived from the date.</li>
+    <li>Eight lead stories, nine short items. Six leads are new subjects; two continue prior threads (data-centre/AI; Israel aid), under the cap of four.</li>
+    <li><b>Markup built from</b> <code>issues/2026-09-10b.html</code> (Issue 10) &mdash; not from any prior grok edition.</li>
+    <li>Filename <code>issues/2026-11-06-grok.html</code>; does not overwrite Claude&rsquo;s <code>2026-11-06.html</code>.</li>
+    <li>Every quotation under fifteen words and attributed; everything else paraphrase. No invented figures.</li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n  → " + i.value);
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on Issue No. 63-grok — 6 November 2026\n\n" + lines.join("\n")
+      + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-11-06-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
