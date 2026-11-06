@@ -684,6 +684,66 @@ only because a front page was finally opened.**
 original, and a trade or specialist publication off the beat list. Both are §2
 requirements. Add counters for them before claiming they are being met.
 
+## Operational notes, 6 November 2026
+
+**Issue No. 63. Six leads, eight shorts, five divergence boxes, nine source
+domains. The validator passed on the first run** — the first time since it was
+written, and the gather floors added yesterday all cleared without a rewrite.
+
+### CORRECTION TO THE PRE-READ RULE (6 November)
+
+**The standing note says the next business day's Federal Register is already in
+the documents API by the hour this brief runs, and records that as validated
+three to five times. That did not hold this morning and the rule as written is
+wrong.** The documents API returned **count 0 for 6 November and for every date
+after it**, against 119 / 102 / 81 / 92 / 111 on the five preceding business
+days, and GovInfo had no `FR-2026-11-06` package.
+
+**The documents existed the whole time.** The public inspection desk
+(`/api/v1/public-inspection-documents/current.json`) showed **80 documents
+scheduled for 6 November**, 6 for 9 November and 1 for 10 November, filed on the
+4th and 5th, each with `publication_date` set and a PDF at
+`https://public-inspection.federalregister.gov/<doc-number>.pdf`.
+
+**The corrected rule: read the public inspection desk, not the documents index.**
+It is strictly better — the same documents, several hours earlier, with the
+filed PDF attached, and it does not depend on when the published index
+populates. Query the desk first every morning and use `publication_date` to
+bucket by day. The documents index is the confirmation, not the source. Both
+primary-source leads today (the CBP importer-of-record rule and the Labor
+apprenticeship rule) came off the desk, read from the filed PDF.
+
+**What went wrong in the old note is worth naming**: "validated N times" was
+treated as proof of a rule when all it established was that the behaviour had
+held on N mornings. A timing-dependent observation needs a mechanism, not a
+tally. The desk is better because of what it *is*, not because it has worked
+before.
+
+### Other notes
+
+- **Treasury hump: +43bp (20y−10y) on 5 November, widest since 7 October, against
+  a 2026 range of +34 to +62 — the high being 6 January.** Checked against the
+  whole year before writing, which is the 3 November rule working.
+- **Two-year fell 12bp to 4.46%, a forty-session low** — not a low for the year;
+  mid-August was 4.15%. The chart says so in its own caption.
+- **Chart label collision caught by the mandatory screenshot readback.** The
+  "4 Nov" annotation overlapped the plotted line at 900px; removed rather than
+  nudged, per the standing rule.
+- **Non-English press failed for the second day running.** gCaptain and Le Monde
+  fetched but defeated the extraction; El País returned 403. §2 requires reading
+  it in the original and this brief has not managed it twice. **Not yet a machine
+  check — and it should be one, since that is the lesson of the last three days.**
+- **CDC measles page returns 403**, so the Wisconsin death runs without a national
+  denominator.
+
+### Standing question to the reader, unanswered as of this run
+
+Yesterday's audit of unauthorised drift proposed: cut "dates ahead" and the "still
+owed" list from the issue and keep them here; cap the footer; raise the source
+floor from 8 domains to 15. **No answer has been received and nothing has been
+removed.** Do not implement any of it unilaterally — that would repeat the
+original error. The lists stay in the issue until the reader says otherwise.
+
 ## Watchlist
 
 Empty at first run. Populates from reader feedback and from threads that recur on
