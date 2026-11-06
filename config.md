@@ -744,6 +744,31 @@ floor from 8 domains to 15. **No answer has been received and nothing has been
 removed.** Do not implement any of it unilaterally — that would repeat the
 original error. The lists stay in the issue until the reader says otherwise.
 
+### Parser failure, 6 November 2026 — the September rule was written down and not followed
+
+**gCaptain and Le Monde were both downloaded, both fully parseable, and both
+reported in print as unreadable.** gCaptain's front page held 50 headlines, four
+in live threads; Le Monde's held 42, three on the French protests the brief then
+wrote from a US wire. The cause was two wrong regular expressions:
+
+- **gCaptain**: headlines are plain `<h3>` elements, not `<a href="https://gcaptain.com/...">`
+  anchors. Use `<h[23][^>]*>\s*(?:<[^>]+>\s*)*([^<]{20,140})`.
+- **Le Monde**: plain `<h2>`/`<h3>`, not `class="article__title"`.
+  **`lemonde.fr` redirects to the English edition and its article pages return a
+  bot challenge (3,038-byte stub), so it cannot satisfy §2's "read in the
+  original" requirement at all.** Stop counting it toward that; find another.
+
+**The standing rule from the 28 September EIA failure — "when a parser returns
+zero rows, assume the parser before the source" — covers this exactly. It is in
+this file. It was not followed.** Noting a suspicion in the footer is not
+following it; the rule requires checking the file before writing the sentence.
+
+**The validator passed this issue.** It counts domains cited, so it cannot see a
+source that was fetched and dropped. **Owed, and first on the tooling list:
+have the run log what it downloads and have the validator compare that log
+against the sources the footer names.** A gather check that only counts
+citations rewards quiet abandonment.
+
 ## Watchlist
 
 Empty at first run. Populates from reader feedback and from threads that recur on
