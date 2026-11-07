@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Saturday, 7 November 2026 (Grok edition, Issue 64-grok)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  /* short-item tier */
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list summary .chip { vertical-align:.05rem; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 64-grok &middot; Saturday, 7 November 2026 &middot; Grok edition</div>
+  <h1>Payrolls run hot and the long-term jobless pile up, Treasury drops a 2020 plan to track $250 wires, and Washington presses Beijing before Shenzhen</h1>
+  <p class="sub">Ten stories at length, ten in brief. Weekend paper: Friday's documents, Friday night's strikes, Saturday morning's prices.</p>
+  <p class="prov"><b>How this issue was made.</b> Written to the upstream skill's &sect;6, with the markup built from Issue 10 (<a href="2026-09-10b.html">2026-09-10b</a>). Stories were picked from this run's own gathering. The same-day Claude edition was not opened until the copy below was finished, and then only to compare counts and check facts.<br><br>
+  <b>50 sources checked, 34 of them outside the watchlist.</b> Seven of the ten leads are new subjects. Three continue threads, under the cap of four: the Iran oil chain, the AI sell-off (<a href="2026-11-06-grok.html">yesterday's lead</a>) and DOJ's AI litigation unit, which has now been folded into a new task force. <b>Independent accounts compared per lead:</b> jobs, the BLS release plus 3; AI rout 4; Treasury wire rule, the primary document only, with no news coverage found; Iran chain 6; US&ndash;China, 2 readouts plus 5; DOJ task force, the memo and release plus 3; Medicaid suit, the complaint plus 4; measles 4; chief of staff 4; rail preemption, the statement plus 1. <b>Biggest story not on my list:</b> Stephen Miller replacing Susie Wiles, with a run of DOJ resignations alongside it. No thread pointed at either and it runs as a lead. The same check brought in the measles count and the four-state Medicaid suit. Those two pushed a second Florida Amendment 3 follow-up and the Binance-heist thread out of the paper.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#jobs-october">Payrolls rose 165,000 against a 59,000 forecast, while the number out of work for six months or more reached 2 million</a></li>
+    <li><a href="#ai-rout">The Nasdaq won back 1.1% on Friday, while Microsoft cut back its neocloud suppliers and Ramp's data showed AI spending flat</a></li>
+    <li><a href="#fincen-travel">Treasury and the Fed withdrew the 2020 plan to cut the cross-border wire-records threshold from $3,000 to $250, crypto included</a></li>
+    <li><a href="#iran-chain">Friday's "minor" strikes on Qeshm, a seafarer killed on a tanker, and Brent near $98 after a double-digit weekly fall</a></li>
+    <li><a href="#us-china">Bessent and Greer told Beijing to deliver on Busan, while 600,000 Nvidia chips wait in Hong Kong for Chinese approval</a></li>
+    <li><a href="#doj-sitf">Justice launched a "Super Intelligence" Task Force that absorbs its AI litigation unit and will advise against "burdensome regulation"</a></li>
+    <li><a href="#medicaid-suit">Four states sued to avoid running Medicaid work requirements from 1 January, saying the funding threat is unconstitutional coercion</a></li>
+    <li><a href="#measles">CDC counts 5,182 measles cases this year, the most since 1991, and a ruling on US elimination status is due next week</a></li>
+    <li><a href="#miller">Stephen Miller becomes chief of staff, and the Miami US attorney who ran the "grand conspiracy" probe resigned</a></li>
+    <li><a href="#stb-preemption">The rail regulator restated how far federal law overrides state and local limits on rail-served projects</a></li>
+    <li><a href="#also-today">Also today (10)</a> &mdash; ranked below the line, each one opens.</li>
+  </ol>
+</nav>
+
+<article id="jobs-october">
+  <h2>Payrolls rose 165,000 against a 59,000 forecast, while the number out of work for six months or more reached 2 million</h2>
+  <div class="meta">
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The Bureau of Labor Statistics said Friday that nonfarm payrolls rose 165,000 in October. The average monthly gain over the prior twelve months was 48,000. August was revised up to 186,000 from 133,000 and September to 60,000 from 29,000, so the two months together are 84,000 higher than first reported. Unemployment was 4.1%, which BLS describes as "changed little". It has stayed between 4.1% and 4.3% since March. Average hourly earnings rose 0.4% on the month to $38.00 and are up 3.1% on the year. Most of the hiring came in professional and business services (+70,000), health care (+42,000), transportation and warehousing (+25,000) and manufacturing (+19,000).</p>
+  <p>The household survey looks weaker. The number of long-term unemployed, people out of work for 27 weeks or more, held at 2.0 million, or 27.6% of everyone unemployed. People working part time because they could not get full-time hours rose 339,000 to 4.8 million.</p>
+  <p>CNBC put the Dow Jones consensus at 59,000, and the consensus expected unemployment to stay at 4.2%. On Treasury's own curve the 2-year yield rose from 4.46% to 4.51% on the day and the 10-year from 4.84% to 4.86%. Semafor reports that CME FedWatch odds of a December rate rise jumped 12 points after the release. The Fed held at 3.75&ndash;4.00% last week, as <a href="2026-11-05-grok.html">this brief reported</a>.</p>
+  <p><b>What to watch:</b> the November jobs report on 4 December, and the inflation prints before the December decision.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; a hot labour market or a stuck one?</span>
+    <p><b>What is disputed.</b> This is a dispute about significance. The facts are not in question. Semafor reads the release as strengthening the case for a December rate rise. CNBC leads with a "disturbing" trend: the average spell of unemployment now exceeds 27 weeks, which it says is the longest outside the pandemic since 2016, and the long-term share is the highest since late 2021.</p>
+    <p><b>Why they differ.</b> They are reading different surveys from the same release. Semafor's market piece is built on the establishment survey of employers, which drives payrolls, revisions and wages. CNBC's labour feature is built on the household survey and quotes an Indeed economist describing a market where employers neither hire nor fire much. Both readings are accurate. They answer different questions: what the Fed will do, and how a person who loses a job will fare.</p>
+    <p><b>What it means for you.</b> For rates, the establishment numbers carry the weight. A 165,000 print, 84,000 of upward revisions and 0.4% wage growth push the Fed toward a rise, and the 2-year yield moved accordingly. The household weakness changes slowly and will not move a December decision on its own. Treat this as a hawkish print. The December 4 report settles it: if payrolls hold up and the long-term share keeps climbing, both readings are right at once.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; why the revisions matter more than the headline</summary>
+    <div class="exp">
+      <p>September was first reported at 29,000, a number that suggested the labour market was stalling. It is now 60,000. Add August's upward revision and two months that looked weak look ordinary, which changes the story the Fed has been telling itself since the summer. The prior twelve-month average of 48,000 is the useful baseline. October's print is more than three times that, and the gains are broad: business services, health care, couriers and factories. They are not concentrated in government or one seasonal line.</p>
+      <p>The wage number matters for the same reason. A 0.4% monthly rise is an annualised pace near 5%, well above the 3.1% year-on-year figure. That is the kind of reading that keeps services inflation sticky while oil is still elevated by the Iran war.</p>
+      <p>Against that, the 339,000 rise in involuntary part-time work is large for one month. The household survey is noisy, and BLS itself calls most of its October changes "little". Since benefits run out after 26 weeks in most states, a long-term jobless count that rises while initial claims stay low is consistent with CNBC's argument. People are not being laid off in large numbers. Those who are laid off are not being rehired.</p>
+      <p>The forecasts also differed: Dow Jones had 59,000, and the Reuters poll cited in this brief on 5 November had 65,000. Against either forecast the miss was about 100,000, which is why the 2-year yield moved.</p>
+    </div>
+  </details>
+  <p class="sources">Sources: <a href="https://www.bls.gov/news.release/empsit.nr0.htm">BLS Employment Situation, October 2026 (primary)</a> &middot; <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202611">Treasury daily par yield curve (primary)</a> &middot; <a href="https://www.cnbc.com/2026/11/06/long-term-unemployment-october-jobs-report.html">CNBC on long-term unemployment</a> &middot; <a href="https://www.semafor.com/article/11/06/2026/us-adds-165000-jobs-in-october-far-exceeding-expectations">Semafor</a> &middot; <a href="https://www.cnbc.com/2026/11/05/stock-market-today-live-updates.html">CNBC markets (consensus)</a></p>
+  <div class="fb">
+    <p>Was the two-survey split useful, or just the print and the market reaction?</p>
+    <label><input type="radio" name="fb-jobs" value="split-useful"> Useful &mdash; keep reading both surveys</label>
+    <label><input type="radio" name="fb-jobs" value="print-only"> Print and reaction only</label>
+  </div>
+</article>
+
+<article id="ai-rout">
+  <h2>The Nasdaq won back 1.1% on Friday, while Microsoft cut back its neocloud suppliers and Ramp's data showed AI spending flat</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech</span>
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p><a href="2026-11-06-grok.html">Yesterday's lead</a> covered Thursday's sell-off. Friday brought a partial rebound and two new facts that bear on how long the drop lasts. The Nasdaq rose 1.09% to 24,579.42 and the S&amp;P 500 0.31% to 7,376.86. The Dow fell 0.46% to 51,285.73. On Thursday the Nasdaq had fallen 5.5%, which took it into correction, the S&amp;P 4.4% and the Dow more than 1,800 points. Micron rose 5% on Friday after a 17% drop, and Nvidia about 3% after a 9% drop (CNBC). Semafor says the sell-off spread abroad: Taiwan had record losses and South Korea halted trading after an 8% fall.</p>
+  <p>The first new fact: CNBC, citing people familiar with the plans and following an earlier Bloomberg report, says Microsoft is cutting the number of neocloud partners it uses and favouring its own data centres. Two people said it chose not to renew a deal with Oracle. Microsoft's statement said only that it reviews investments against demand. CoreWeave, Nebius and IREN are each down roughly half over the past month. The second new fact comes from Ramp's spending data, reported by TechCrunch: corporate spending on AI tokens grew only 1.5% across August and September, against 42% in July, even as volumes rose.</p>
+  <p>The political trigger has not changed. Semafor counts about 40 state and local anti-data-centre measures passed this week. It argues that most require concessions rather than halts and will not affect compute before 2029.</p>
+  <p><b>What to watch:</b> which neoclouds Microsoft drops, and the CoreWeave and Nebius earnings, which CNBC frames as the next test of the data-centre trade.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; the worst day since when?</span>
+    <p><b>What is disputed.</b> This is a factual dispute. Semafor calls Thursday the "worst market rout since 2020". CNBC says the three indexes posted their worst one-day losses since April 2025, and its homepage put it at 18 months.</p>
+    <p><b>Why they differ.</b> The likely explanation is ordinary: Semafor's sentence comes from a short global wrap that names no index or measure, so it may mean dollar losses or the global spread. CNBC names the indexes, gives each percentage and dates the comparison. Neither outlet has a stake in the label. It is a difference in precision.</p>
+    <p><b>What it means for you.</b> Use CNBC's version: worst one-day US index losses since April 2025, the tariff-shock sessions. "Since 2020" is not supported for a one-day index move unless Semafor names a measure. Exchange closing data for April 2025 against 5 November 2026 would settle it. Nothing in this brief depends on the label. The point is that the AI trade fell further in one day than at any time since the tariff shock.</p>
+  </div>
+  <p class="sources">Sources: <a href="https://www.cnbc.com/2026/11/05/stock-market-today-live-updates.html">CNBC markets</a> &middot; <a href="https://www.cnbc.com/2026/11/06/microsoft-moves-to-consolidate-its-relationships-with-neoclouds-in-ai.html">CNBC on Microsoft and neoclouds</a> &middot; <a href="https://www.semafor.com/article/11/06/2026/stock-selloff-goes-global-in-worst-rout-since-2020">Semafor, global rout</a> &middot; <a href="https://www.semafor.com/article/11/06/2026/theres-a-silver-lining-for-data-center-builders-amid-the-blue-wave">Semafor, data-centre measures</a> &middot; <a href="https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/">TechCrunch on Ramp's data</a></p>
+  <div class="fb">
+    <p>Second day on the AI sell-off. Is that the right cadence?</p>
+    <label><input type="radio" name="fb-rout" value="right"> Right &mdash; it has new facts</label>
+    <label><input type="radio" name="fb-rout" value="less"> Only on a new print or a filing</label>
+  </div>
+</article>
+
+<article id="fincen-travel">
+  <h2>Treasury and the Fed withdrew the 2020 plan to cut the cross-border wire-records threshold from $3,000 to $250, crypto included</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+    <span class="chip">Underreported</span>
+  </div>
+  <p>A notice on the Federal Register's public-inspection list, to be published Monday 9 November, says FinCEN and the Federal Reserve Board are withdrawing their joint proposal of 27 October 2020 (85 FR 68005). The proposal would have cut the threshold in the Bank Secrecy Act's Recordkeeping Rule and Travel Rule from $3,000 to $250 for transfers that begin or end outside the United States. It would also have stated that both rules cover transactions in convertible virtual currency and in digital assets with legal tender status. The agencies say they "will not take further action" on it.</p>
+  <p>The notice gives two reasons. More than five years have passed, so the agencies want fresh public comment before adopting anything similar. And crypto markets have changed, including through the GENIUS Act stablecoin statute of July 2025. The notice adds that the withdrawal tells the public no final rule will come without a new chance to comment. It summarises nearly 3,000 comments, most of them form letters. Banks and money transmitters said $250 would be costly and would push remittances into less-regulated channels. Crypto firms opposed the virtual-currency clarification, while some banks and money transmitters supported it.</p>
+  <p>The practical effect: the $3,000 line set in 1995 stands, and there is no stated federal rule on how the Travel Rule applies to crypto. That comes in the same week OFAC sanctioned eight Canadian money-services firms for moving Iranian funds partly through crypto (see <a href="#a-ofac-canada">Also today</a>).</p>
+  <p><b>What to watch:</b> whether a new proposal follows, and whether it raises the threshold for inflation, as some commenters asked.</p>
+  <details>
+    <summary>Dig deeper &mdash; what changes, and what does not</summary>
+    <div class="exp">
+      <p>Nothing changes in day-to-day compliance. The $3,000 thresholds in 31 CFR 1020.410(a) and 1010.410(e) and (f), and in the Fed's Regulation S, stay as they are. What changes is the outlook. For six years banks, money transmitters and exchanges have had to plan around a possible twelvefold cut in the threshold for cross-border transfers. That possibility is now formally gone. The notice also describes a split in which crypto service providers opposed applying the rules to virtual currency, while some depository institutions and money transmitters supported it. Banks have long wanted competing crypto rails held to the same record-keeping rules they follow. This withdrawal leaves that question open.</p>
+      <p>The notice ties the decision to the stablecoin statute and to a White House digital-assets report, and says future changes should be fit for purpose. In practice, any Travel Rule for crypto will now be written alongside the stablecoin regime rather than imported from wire transfers. The tension worth noting is that enforcement and rulemaking are moving in opposite directions. In the same week, OFAC designated Canadian exchanges with listed TRON addresses for laundering Iranian money, while the record-keeping rule that would have reached smaller crypto transfers was withdrawn.</p>
+      <p>I found no news coverage of the withdrawal in the sources checked. It is on the public-inspection list ahead of Monday's publication. The marker is Primary source because the account above is the agencies' own document and nothing else.</p>
+    </div>
+  </details>
+  <p class="sources">Sources: <a href="https://public-inspection.federalregister.gov/2026-22809.pdf">FinCEN/Federal Reserve withdrawal notice, FR 2026-22809 (primary, public inspection)</a> &middot; <a href="https://ofac.treasury.gov/recent-actions/20261106">OFAC recent actions, 6 November</a></p>
+  <div class="fb">
+    <p>This came from the Federal Register's public-inspection list, not a news story. More finds like this?</p>
+    <label><input type="radio" name="fb-fincen" value="more"> Yes &mdash; more regulatory finds</label>
+    <label><input type="radio" name="fb-fincen" value="enough"> This balance is right</label>
+    <label><input type="radio" name="fb-fincen" value="less"> Less &mdash; prefer reported stories</label>
+  </div>
+</article>
+
+<article id="iran-chain">
+  <h2>Friday's "minor" strikes on Qeshm, a seafarer killed on a tanker, and Brent near $98 after a double-digit weekly fall</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">Energy &mdash; one causal chain</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Trump said on Friday that US forces had carried out "minor" strikes on Iran, destroying in a few minutes what he called an anti-aircraft device (AP, via NBC). Iranian state media reported two explosions in the Suza area of Qeshm Island, in the Strait of Hormuz. NBC adds reports of explosions on Hengam and around Bandar Abbas. These were the first strikes since Tuesday's midterms. The US also struck Qeshm on Monday (CNBC). A day earlier, Thursday, the Marshall Islands-flagged products tanker <i>Velos Sapphire</i> was hit by what its Greek manager believes was a missile while sailing unladen toward Bahrain. One seafarer was killed (Reuters, via gCaptain).</p>
+  <p>Prices are not reflecting the attacks. Trading Economics has Brent at $97.76 on 6 November, down 0.54% on the day and more than 12.5% on the week. Semafor says it briefly neared $100 on Friday. AAA's national average for regular gasoline is $4.037 this morning, down 12 cents on the week. FGE's Fereidun Fesharaki told Bloomberg that Iran's exports are close to zero under the US blockade, with only 200,000&ndash;300,000 barrels a day leaving via Iraq. He said a deal is unlikely and fresh strikes likely. On diplomacy, the Guardian reports a Qatari plan under which Iran would admit UN inspectors to its bombed nuclear sites and reopen Hormuz on the second day of implementation. One more risk has surfaced: the FT, via Ars Technica, reports Windward tracking three sanctioned tankers and an Iranian fishing boat near Hormuz subsea cables in October, after Iranian threats against the cables.</p>
+  <p><b>What to watch:</b> whether Iran answers the Qatari plan, EIA's weekly retail prices on Monday, and whether insurers reprice Gulf transits after the <i>Velos Sapphire</i> death.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; what was hit, and how far oil fell</span>
+    <p><b>What is disputed.</b> Two factual points. First, the target: Trump says the US destroyed an Iranian anti-aircraft system. Iranian TV, quoted by Al Jazeera, says Iran's air defences shot down a US MQ-9 drone over Qeshm. CNBC adds that Trump never explicitly said his remarks referred to Qeshm. Second, the size of the oil move: Trading Economics has Brent down more than 12.5% on the week, while Bloomberg's FGE piece says about 15%.</p>
+    <p><b>Why they differ.</b> On the strike, each government's account serves its own purpose. Washington calls it minor and defensive, which suits a White House that wants a deal. Tehran claims a shootdown, which suits a government under blockade. The two claims can both be true: a drone could be lost in a strike on an air-defence site. CENTCOM's only comment was that the situation was "relatively calm". On oil, the explanation is timing and measurement. Bloomberg's piece was published during Friday's session, and Trading Economics prices a CFD, not the settlement.</p>
+    <p><b>What it means for you.</b> The US did strike again, and Iran has not shown a downed MQ-9. Treat the drone claim as unconfirmed until there is wreckage or a US acknowledgement. For prices, take "down 12&ndash;15% on the week, near $98" as the honest range. The pump is following crude down with the usual lag. The real risk is the shipping attacks, not the strikes. A dead crew member on a tanker in the Gulf is what moves war-risk premiums.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; the chain from Qeshm to the pump</summary>
+    <div class="exp">
+      <p>Qeshm sits in the narrow part of the strait opposite Bandar Abbas, which is why each strike there gets read as a Hormuz event. The supply facts have not changed. Iran's own exports are close to zero under the US blockade, per FGE, so another strike on Iranian air defences removes no barrels. What moves the price is the risk to everyone else's barrels. The <i>Velos Sapphire</i> was unladen and heading for Bahrain, so it was not carrying Iranian oil. That a non-Iranian products tanker could be hit and a crew member killed is the cost that shows up in freight and insurance.</p>
+      <p>The diplomatic track is more detailed than it was a week ago. The Guardian's account of the Qatari plan says Iran would not have to commit to sending its enriched-uranium stockpile abroad, with other options under discussion, and that Hormuz would open on day two. CNBC quotes Trump saying Iran wants a deal "very badly". FGE thinks Tehran now sees a weakened president and will hold out. These are predictions, not facts. The settling observation is whether inspectors enter.</p>
+      <p>The subsea-cable report adds a risk that has nothing to do with oil. Six active cables cross the strait, and Iraq, Kuwait, Bahrain and Qatar depend entirely on them, according to Windward via the FT. One corridor the loitering ships visited is used by 2Africa, a cable whose consortium includes Meta. A cable cut would be a data-centre and connectivity problem across the Gulf, not an energy one.</p>
+    </div>
+  </details>
+  <p class="sources">Sources: <a href="https://www.nbcnews.com/news/us-news/us-military-carries-new-targeted-strikes-iran-rcna607969">AP via NBC</a> &middot; <a href="https://www.aljazeera.com/news/2026/11/7/trump-confirms-new-us-strikes-on-irans-qeshm-island">Al Jazeera</a> &middot; <a href="https://www.cnbc.com/2026/11/07/trump-us-minor-strikes-iran-qeshm-island.html">CNBC</a> &middot; <a href="https://www.theguardian.com/world/2026/nov/07/strait-of-hormuz-qatar-plan-iran-nuclear-inspections">Guardian on the Qatari plan</a> &middot; <a href="https://gcaptain.com/seafarer-killed-in-suspected-missile-attack-on-tanker-in-gulf/">Reuters via gCaptain (tanker)</a> &middot; <a href="https://gcaptain.com/iran-oil-exports-near-zero-but-peace-deal-not-likely-fge-says/">Bloomberg via gCaptain (FGE)</a> &middot; <a href="https://tradingeconomics.com/commodity/brent-crude-oil">Trading Economics Brent</a> &middot; <a href="https://gasprices.aaa.com/">AAA</a> &middot; <a href="https://arstechnica.com/gadgets/2026/11/ships-loiter-near-subsea-cables-amid-irans-warnings-to-trump/">Ars Technica on cables</a></p>
+  <div class="fb">
+    <p>Should subsea-cable risk join the oil chain as a standing part of this story?</p>
+    <label><input type="radio" name="fb-iran" value="cables-in"> Yes &mdash; it is the same chokepoint</label>
+    <label><input type="radio" name="fb-iran" value="cables-separate"> Separate item, only on an incident</label>
+  </div>
+</article>
+
+<article id="us-china">
+  <h2>Bessent and Greer told Beijing to deliver on Busan, while 600,000 Nvidia chips wait in Hong Kong for Chinese approval</h2>
+  <div class="meta">
+    <span class="chip">World economy &mdash; US channel</span>
+    <span class="chip">AI &amp; tech</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>On Friday morning, Treasury Secretary Scott Bessent and Trade Representative Jamieson Greer held a videoconference with Vice Premier He Lifeng. USTR's readout says Greer stressed "concrete actions" by China on agricultural purchases, rare earths and other critical minerals. Treasury's readout says Bessent "raised concerns about recent Chinese actions" and that the US will closely assess whether China is implementing the deal. According to Reuters, carried by Nikkei Asia, the Busan arrangement expires on 10 January. It caps Trump-era tariffs on Chinese goods at about 20%, and China pledged 25 million tonnes of soybeans a year for three years plus $17 billion more in farm purchases. Al Jazeera reports that China's Commerce Ministry said on Thursday it would buy more US farm goods only if the two sides carry out their "30 billion for 30 billion" reciprocal tariff cut. Trump and Xi are expected to meet at APEC in Shenzhen on 18&ndash;19 November and at the G20 in Miami on 14&ndash;15 December.</p>
+  <p>Chips are a second point of leverage. Reuters, citing two people, reports that about 600,000 Nvidia H200s are sitting in Hong Kong while Beijing withholds approval for large-scale imports. Several Chinese internet companies have each received about 10,000. An eight-card H200 server was offered in China for more than 6 million yuan (about $900,000) at the end of October, roughly triple its price a year earlier. Separately, the chairs of the House China, Foreign Affairs and Intelligence committees have asked Jensen Huang to a closed briefing on 18 November, the day Shenzhen opens. The request follows a New York Times report that US intelligence believes he was targeted by a Chinese spying operation (Ars Technica). Nvidia rejects the claims.</p>
+  <p><b>What to watch:</b> whether Shenzhen produces the tariff-cut implementation China says it is waiting for, and whether Huang attends on the 18th.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; complaint or accusation, and how big the tariff package is</span>
+    <p><b>What is disputed.</b> First, how to characterise the call, which is a dispute of significance. Handelsblatt headlines it as Washington accusing China of breaching the deal. DW and Reuters say Washington "urged" or "warned". Second, an apparent conflict over the size of the tariff package: Reuters describes the September proposal as a $60 billion package, while China's ministry calls it "30 billion for 30 billion".</p>
+    <p><b>Why they differ.</b> The tariff figures agree once you add them up: $30 billion of cuts on each side makes $60 billion in total. Reuters gives the sum and Beijing gives the reciprocity. On tone, the US readouts never use the word "violation". Handelsblatt, writing for a German business audience that watches whether the trade truce holds, translates Bessent's "concerns about recent Chinese actions" as an accusation. That is a fair reading of the subtext, but it is stronger than the text.</p>
+    <p><b>What it means for you.</b> Washington is complaining on the record ahead of Shenzhen without saying the deal is broken. That leaves room to declare success there. China's position is plain: farm purchases depend on tariff cuts. The deal expires on 10 January. A dated tariff-cut implementation, or a rare-earth licensing announcement, would show the truce holding. Silence from Shenzhen would mean the 10 January expiry becomes the real deadline.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; why the chip stockpile belongs in a trade story</summary>
+    <div class="exp">
+      <p>The H200 figure rests on a single source. Reuters reported it exclusively, and DCD, Semafor, CNA and The Next Web are all rewrites. The marker on this story reflects the primary readouts, so read the chip number as Reuters' alone. Reuters also cites an earlier report from The Information that Beijing told Alibaba, ByteDance and DeepSeek that total approvals might come to fewer than 200,000 chips, and that it wants Chinese processors used for inference. If that cap holds, most of the Hong Kong stockpile is never going to clear.</p>
+      <p>For the US this is the reverse of the usual export-control story. Washington licensed the H200 for China, with a 25% export levy according to DCD. Beijing is the side holding back, to limit dependence on US technology. That gives China something to trade in Shenzhen at no cost, because approving imports it already wants to allow can be presented as a concession. For Nvidia shareholders, a widely shared industry summary says the company booked a $0.4 billion charge for excess H200 inventory in its quarter to 26 July. I did not read the 10-Q itself.</p>
+      <p>The Huang request is a separate matter but lands on the same date. The committees' letter, as quoted by Ars, frames it around PRC access to sensitive US technology. It centres on a Megaspeed executive. Megaspeed is a Singapore cloud company that has bought billions of dollars of Nvidia chips.</p>
+    </div>
+  </details>
+  <p class="sources">Sources: <a href="https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/readout-ambassador-greers-call-chinas-vice-premier-he-lifeng">USTR readout (primary)</a> &middot; <a href="https://home.treasury.gov/news/press-releases/sb0684">Treasury readout (primary)</a> &middot; <a href="https://asia.nikkei.com/economy/trade-war/trump-tariffs/us-urges-china-to-meet-rare-earths-commitments-ahead-of-trump-xi-meetings">Reuters via Nikkei Asia</a> &middot; <a href="https://www.aljazeera.com/economy/2026/11/6/us-urges-china-to-honour-busan-trade-deal-commitments">Al Jazeera (MOFCOM)</a> &middot; <a href="https://www.dw.com/en/us-asks-china-to-uphold-busan-trade-deal-commitments/a-79882939">DW</a> &middot; <a href="https://www.handelsblatt.com/politik/international/handelskonflikt-usa-werfen-china-verstoss-gegen-handelsdeal-vor/100268065.html">Handelsblatt (German; paraphrased)</a> &middot; <a href="https://www.channelnewsasia.com/east-asia/nvidia-chips-pile-up-hong-kong-china-withhold-import-approval-6527371">Reuters via CNA (H200)</a> &middot; <a href="https://arstechnica.com/tech-policy/2026/11/nvidia-ceo-jensen-huang-summoned-by-congress-over-chinese-espionage-concerns/">Ars Technica (Huang)</a></p>
+  <div class="fb">
+    <p>Trade truce and chip leverage together, or as two stories?</p>
+    <label><input type="radio" name="fb-china" value="together"> Together &mdash; it is one negotiation</label>
+    <label><input type="radio" name="fb-china" value="split"> Split them</label>
+  </div>
+</article>
+
+<article id="doj-sitf">
+  <h2>Justice launched a "Super Intelligence" Task Force that absorbs its AI litigation unit and will advise against "burdensome regulation"</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech &mdash; policy</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The Justice Department announced the DOJ Super Intelligence Task Force (DOJ-SITF) on Thursday. The founding memo, signed by Attorney General Todd Blanche on 13 October and published with the announcement, cites Executive Order 14434, "Inaugurating the Era of Super Intelligence" (29 September). It names Associate Attorney General Stanley Woodward and Associate Deputy Attorney General Stephen Weiss as co-chairs.</p>
+  <p>The memo gives the task force six jobs. It will organise DOJ's criminal and civil enforcement involving super intelligence, settle conflicts between cases, recommend enforcement priorities, and act as DOJ's point of contact with the presidential Super Intelligence Force, which Jay Clayton chairs. It also absorbs the AI task force Attorney General Bondi announced on 9 January, the preemption-litigation unit this brief has tracked as a thread, and takes over DOJ's affirmative civil AI litigation. Through DOJ's legal-policy and legislative offices it will advise on proposals that promote innovation "without burdensome regulation". Components and US attorneys may be asked to notify the task force before opening investigations or bringing charges in super-intelligence matters. Members come from the Antitrust, Civil, Criminal and National Security divisions, the FBI and the Solicitor General's office.</p>
+  <p>This creates one office inside DOJ that coordinates AI prosecutions, suits against state AI laws and legislative advice. The Register reports that Pentagon CTO Emil Michael told a WSJ conference that details on the AI regulatory landscape will come later this month.</p>
+  <p><b>What to watch:</b> that regulatory-landscape document, and the first state AI law the task force challenges.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; who runs it</span>
+    <p><b>What is disputed.</b> A factual point. The Register reports the task force is "headed up by" Director of National Intelligence Jay Clayton alongside Woodward and Weiss. DOJ's release and memo name only Woodward and Weiss, as designees of the Attorney General, and describe Clayton as chair of the separate presidential Super Intelligence Force. Nextgov and Akin's tracker match DOJ.</p>
+    <p><b>Why they differ.</b> The explanation is ordinary: there are two bodies with nearly identical names, the presidential "SI Force" and the DOJ "SI Task Force", and the release mentions Clayton in the same paragraph as the co-chairs. The Register also abbreviates it "SINTF", which appears nowhere in DOJ's documents.</p>
+    <p><b>What it means for you.</b> Go with the primary documents. DOJ-SITF is run by DOJ officials and liaises with Clayton's body. The difference matters: a task force chaired by an intelligence official would sit outside DOJ's prosecutorial chain, and this one sits inside it. The memo settles the question. It is the controlling text.</p>
+  </div>
+  <p class="sources">Sources: <a href="https://www.justice.gov/opa/pr/department-justice-launches-super-intelligence-task-force">DOJ release (primary)</a> &middot; <a href="https://www.justice.gov/opa/media/1470291/dl?inline=">Blanche memo, 13 Oct (primary)</a> &middot; <a href="https://www.nextgov.com/artificial-intelligence/2026/11/department-justice-forms-ai-task-force/417074/">Nextgov</a> &middot; <a href="https://www.akingump.com/en/insights/ai-law-and-regulation-tracker/department-of-justice-launches-super-intelligence-task-force">Akin AI tracker</a> &middot; <a href="https://www.theregister.com/ai-and-ml/2026/11/06/dojs-super-intelligence-task-force-up-and-running/5308074">The Register</a></p>
+  <div class="fb">
+    <p>Fold this into the AI preemption thread, or keep it as its own?</p>
+    <label><input type="radio" name="fb-sitf" value="fold"> Fold &mdash; same fight</label>
+    <label><input type="radio" name="fb-sitf" value="own"> Own thread &mdash; it is broader than preemption</label>
+  </div>
+</article>
+
+<article id="medicaid-suit">
+  <h2>Four states sued to avoid running Medicaid work requirements from 1 January, saying the funding threat is unconstitutional coercion</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Oregon, Minnesota, New Mexico and Washington filed <i>Oregon v. Oz</i> (No. 6:26-cv-2435, D. Or., Eugene Division) on Thursday. The defendants are CMS Administrator Mehmet Oz, HHS Secretary Robert F. Kennedy Jr. and their agencies. The suit targets the work requirement that H.R. 1 imposes on the Affordable Care Act expansion population, which starts on 1 January 2027. The complaint argues the law turns Medicaid from a health programme into a vehicle for encouraging work, and that Congress did this by amendment instead of repealing the expansion. It argues that the penalty for refusing, the loss of all federal Medicaid funding, is coercion that exceeds the spending power, relying on the Supreme Court's 2012 decision. Bloomberg Law reports the states want an injunction barring the government from withholding funds if they decline to implement the requirement.</p>
+  <p>The numbers show what is at stake. In Minnesota, 1.2 million people are on Medicaid and 243,000 would have to meet the requirement, according to MPR News. That means showing 80 hours a month of work, school or volunteering, or qualifying for an exemption. The exemptions in the statute include the medically frail, totally disabled veterans and parents of children 13 and under.</p>
+  <p>STAT reports that the suit comes less than a week after a federal judge, in a separate case, found that implementation would cause irreparable harm. It notes the suit could buy time for the new Democratic Congress, which takes office in January, to change the law.</p>
+  <p><b>What to watch:</b> a motion for a preliminary injunction and its hearing date. Any order has to arrive before 1 January to matter.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; who the requirement covers</span>
+    <p><b>What is disputed.</b> A factual point. MPR News says Minnesotans aged 21 to 64 who apply will have to show 80 hours a month. The complaint, quoting the statute, defines the people covered as expansion enrollees aged 19 to 64, minus the exempt groups.</p>
+    <p><b>Why they differ.</b> The likely explanation is a reporting error or a state-specific detail that was compressed. MPR is working from the Minnesota attorney general's briefing, while the complaint cites 42 U.S.C. &sect;1396a(xx)(9) directly. Nothing in the material I read suggests Minnesota has a different age floor, and the federal requirement sets the minimum.</p>
+    <p><b>What it means for you.</b> Use the statute: 19 to 64. That adds two years of young adults to the count, so Minnesota's 243,000 figure may itself be computed on a different basis. CMS's implementing guidance, or Minnesota's own eligibility notice, would settle it.</p>
+  </div>
+  <p class="sources">Sources: <a href="https://litigationtracker.law.georgetown.edu/wp-content/uploads/2026/11/Oregon-v.-Oz_2026.11.05_COMPLAINT.pdf">Complaint, via Georgetown litigation tracker (primary)</a> &middot; <a href="https://www.ag.state.mn.us/Office/Communications/2026/11/06_Medicaid-Eligibility.asp">Minnesota AG release</a> &middot; <a href="https://www.mprnews.org/story/2026/11/06/ellison-sues-trump-administration-over-new-medicaid-work-requirements">MPR News</a> &middot; <a href="https://stateline.org/2026/11/06/repub/four-state-ags-sue-over-trumps-medicaid-work-requirements/">Stateline</a> &middot; <a href="https://news.bloomberglaw.com/health-law-and-business/states-sue-trump-again-to-stop-medicaid-work-requirements">Bloomberg Law (summary)</a> &middot; <a href="https://www.statnews.com/2026/11/06/states-sue-trump-delay-medicaid-work-requirements/">STAT (lede only)</a></p>
+  <p class="sources">One error in a source: Minnesota's release says the penalty is the loss of all <i>Medicare</i> funding. The complaint and every other account say Medicaid, so that word is a typo in the release.</p>
+  <div class="fb">
+    <p>Follow this to a ruling?</p>
+    <label><input type="radio" name="fb-medicaid" value="follow"> Yes &mdash; through the January deadline</label>
+    <label><input type="radio" name="fb-medicaid" value="ruling-only"> Only if a court rules</label>
+  </div>
+</article>
+
+<article id="measles">
+  <h2>CDC counts 5,182 measles cases this year, the most since 1991, and a ruling on US elimination status is due next week</h2>
+  <div class="meta">
+    <span class="chip">Science &amp; public health</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>CDC data show 5,182 confirmed measles cases in the US so far in 2026, the highest annual total since 1991. That is more than double 2025's 2,289 (Al Jazeera, and AFP via France 24). Of these, 4,993 are linked to outbreaks. Children under five make up 18% of cases and those aged five to 19 another 41%. Kindergarten vaccination coverage fell from 95.2% in the 2019&ndash;20 school year to 92.4% in 2025&ndash;26.</p>
+  <p>Deaths are rising faster than the national count shows. Wisconsin has reported a baby's death from measles, the state's first in more than 35 years. It was the third measles death reported in the US this week, after a New York child on Monday and an unvaccinated person in Jefferson County, Pennsylvania, on Wednesday (Ars Technica). Ars also reports that experts will decide next week whether the US has lost its measles elimination status.</p>
+  <p>NBC's headline calls losing elimination status a "huge embarrassment to public health". It is also the clearest scorecard so far for the past year's changes to federal vaccine policy, which this brief has tracked as a thread.</p>
+  <p><b>What to watch:</b> next week's elimination decision, and whether CDC's death count catches up with the states'.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; four deaths or eight?</span>
+    <p><b>What is disputed.</b> A factual dispute about the death toll. Al Jazeera reports that CDC counts four measles deaths in 2026. AFP, via France 24, reports that state health agencies count at least eight. Al Jazeera itself says CDC's total runs below the states', particularly Pennsylvania's.</p>
+    <p><b>Why they differ.</b> The most likely reason is the reporting process. CDC adds a death once a state's case report is confirmed and transmitted, which takes days or weeks. States announce on their own schedule. Three deaths were announced this week alone, so a federal count published around the same time would trail. There is no sign of deliberate undercounting in the material I read, though Al Jazeera's wording leaves that open.</p>
+    <p><b>What it means for you.</b> Treat at least eight as the floor and CDC's four as lagging. A CDC update that rises to match the states would settle it. If it does not rise after the states' reports are filed, that would be a story in itself. One more point: Ars's "first death in over 35 years" refers to Wisconsin, not the country.</p>
+  </div>
+  <p class="sources">Sources: <a href="https://www.aljazeera.com/news/2026/11/7/cdc-reports-more-than-5000-measles-cases-highest-number-in-35-years">Al Jazeera</a> &middot; <a href="https://www.france24.com/en/live-news/20261106-us-reports-highest-number-of-measles-cases-in-35-years">AFP via France 24 (as summarised by Wikipedia's current-events portal; not opened directly)</a> &middot; <a href="https://arstechnica.com/health/2026/11/wisconsin-reports-measles-death-of-a-baby-first-death-in-over-35-years/">Ars Technica</a> &middot; NBC News headline on elimination</p>
+  <div class="fb">
+    <p>Measles is not on any beat line. Add it as a thread through the elimination decision?</p>
+    <label><input type="radio" name="fb-measles" value="thread"> Yes</label>
+    <label><input type="radio" name="fb-measles" value="decision-only"> Only the decision itself</label>
+  </div>
+</article>
+
+<article id="miller">
+  <h2>Stephen Miller becomes chief of staff, and the Miami US attorney who ran the "grand conspiracy" probe resigned</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Trump announced on Truth Social on Friday afternoon that Stephen Miller, his deputy chief of staff and the architect of the mass-deportation programme, will replace Susie Wiles as White House chief of staff (Guardian). Handelsblatt describes Wiles as the more moderate voice and reads the move as a sign that Trump will not change course after the midterms. Hakeem Jeffries, expected to become Speaker, called for Miller to be fired. Chuck Schumer said Trump "couldn't have made a worse choice". The White House communications director called Miller the agenda's biggest advocate.</p>
+  <p>Justice is losing senior people at the same time. NBC reports that Attorney General Todd Blanche announced the resignation of Jason Reding Qui&ntilde;ones, US attorney for the Southern District of Florida. His office ran the "grand conspiracy" investigation, which sought to charge officials over Trump investigations dating back to the 2016 campaign. NBC calls it one of a slate of high-profile DOJ resignations this week. The Guardian's headline counts two DOJ resignations on Friday, his among them. Joe diGenova, who worked under him in the same office, resigned in September and told NBC that headquarters had stepped in on the investigation.</p>
+  <p>The policy consequence is the main point. The chief of staff controls what reaches the president. With immigration's chief architect in that job and a Democratic Congress arriving in January, expect enforcement and the immigration agenda to be pushed harder through executive action, not softened. The SDFL departure is also a Florida story: the office is based in Miami.</p>
+  <p><b>What to watch:</b> who replaces Miller in his policy role, who is named to lead SDFL, and whether the conspiracy probe survives the change.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; ousted or resigned?</span>
+    <p><b>What is disputed.</b> A factual dispute about how Wiles left. The Guardian says Trump confirmed she had been ousted. NBC, citing a source, says she resigned, partly because of the scale of the Republican losses.</p>
+    <p><b>Why they differ.</b> The Guardian is working from Trump's own post. NBC's account comes from someone close enough to describe her reasons, probably her side. Each version suits its teller: a president who removed his chief of staff looks decisive, and an aide who resigned over a defeat looks principled. It is common in Washington departures for both versions to be partly true.</p>
+    <p><b>What it means for you.</b> The policy consequence is the same either way: Miller holds the job. The difference matters only for whether Wiles stays an ally. Treat it as a forced departure presented as a resignation until she speaks on the record. Her first public statement, or silence, will settle it.</p>
+  </div>
+  <p class="sources">Sources: <a href="https://www.theguardian.com/us-news/2026/nov/07/stephen-miller-democrats-react">Guardian</a> &middot; <a href="https://www.nbcnews.com/politics/justice-department/trump-doj-appointee-led-grand-conspiracy-probe-trump-foes-resigns-rcna607839">NBC on the DOJ resignation</a> &middot; NBC headline on Wiles &middot; <a href="https://www.theguardian.com/us-news/2026/nov/06/doj-officials-resign">Guardian on DOJ resignations</a> &middot; Handelsblatt front page (German; paraphrased)</p>
+  <div class="fb">
+    <p>Personnel at this level, with the policy angle spelled out. Worth a lead?</p>
+    <label><input type="radio" name="fb-miller" value="lead"> Yes, when the job controls policy</label>
+    <label><input type="radio" name="fb-miller" value="short"> Short item only</label>
+  </div>
+</article>
+
+<article id="stb-preemption">
+  <h2>The rail regulator restated how far federal law overrides state and local limits on rail-served projects</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy &mdash; regulation</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+    <span class="chip">Underreported</span>
+  </div>
+  <p>The Surface Transportation Board has issued a policy statement in Docket EP 791 on its jurisdiction and on preemption under the ICC Termination Act. It is on the Federal Register's public-inspection list and becomes final on 9 November. It answers a 19 September 2025 letter from six railroad and shipper groups asking for guidance. Board members Fuchs, Hedlund and Schultz replied five days later that a statement was coming. The Board says its precedents are "generally consistent" but scattered, use different terms and are hard for the public to follow. It calls the statement non-exhaustive and says it makes no binding determinations.</p>
+  <p>FreightWaves highlights two substantive points. First, a modified test for when local rules aimed at a railroad's customer, such as a transload or off-loading facility, are really regulating rail service. The test asks whether the facility exists to receive or tender common-carrier rail service, and whether the government action restricts or dictates that service. Second, an argument that any government or private effort to take exclusive possession of a railroad right-of-way is categorically preempted, with no need for a case-by-case look at the effect on operations.</p>
+  <p>This affects every county fighting a rail-served terminal or industrial project. Under this framework, a zoning denial aimed at a facility's rail use is easier to challenge before the Board.</p>
+  <p><b>What to watch:</b> the first local dispute decided under the new framework, and whether states challenge the categorical rule on rights-of-way.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; a restatement or a widening?</span>
+    <p><b>What is disputed.</b> A dispute about significance. FreightWaves calls the statement "sweeping" and says it signals broader protection for rail-served projects. The Board presents it as a consolidation of long-standing precedent with no binding effect.</p>
+    <p><b>Why they differ.</b> Both describe the same text. The Board has a reason to call its guidance continuous with past rulings, because that is what makes it hard to attack in court. A trade outlet writing for shippers and railroads looks at where the framework departs from earlier decisions, and FreightWaves notes the statement questions parts of past rulings on privately owned terminals. The departures are real but narrow.</p>
+    <p><b>What it means for you.</b> FreightWaves has the better reading of the effect and the Board has the better reading of the legal form. Nothing binds anyone today. But a statement that frames the analysis in railroads' favour will be cited in every dispute that follows. A Board decision applying it to a contested local denial will show whether it widens preemption in practice.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; why a non-binding statement still matters</summary>
+    <div class="exp">
+      <p>Preemption fights under the ICC Termination Act usually turn on one question: is the local government regulating "transportation by rail carrier", or a nearby business that happens to use rail? Under past decisions, a customer-owned terminal often fell outside federal protection, so the county's permit rules applied. The new two-question test moves attention to the rail service itself. If a facility exists to send and receive rail cars, and the local action limits volume, timing or access, the Board now signals the action may be preempted even though the railroad does not own the facility.</p>
+      <p>The rights-of-way argument is the bigger change. Eminent-domain takings of rail corridors for trails, roads or development have normally been judged by how much they interfere with operations. Treating exclusive-possession takings as categorically preempted would remove that balancing step. That matters to states and cities trying to acquire unused or lightly used corridors.</p>
+      <p>I found the statement through the public-inspection sweep and corroborated it only against FreightWaves. It runs about 25,000 words, and I read its summary, background and the sections FreightWaves highlights, not every page.</p>
+    </div>
+  </details>
+  <p class="sources">Sources: <a href="https://public-inspection.federalregister.gov/2026-22811.pdf">STB policy statement, EP 791, FR 2026-22811 (primary, public inspection)</a> &middot; <a href="https://www.freightwaves.com/news/stb-signals-broader-protection-for-rail-served-projects-against-state-and-local-restrictions">FreightWaves</a></p>
+  <div class="fb">
+    <p>This came from the document sweep, not a beat. Was it worth a lead?</p>
+    <label><input type="radio" name="fb-stb" value="lead"> Yes</label>
+    <label><input type="radio" name="fb-stb" value="short"> Short item would do</label>
+  </div>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Ten things I saw and ranked below the line. Each one opens: the line is my judgement, and the substance is behind it.</p>
+
+<div class="also-list">
+
+<details class="short" id="a-ofac-canada">
+  <summary><span class="chip">US financials</span> OFAC sanctioned eight Canadian money-exchange firms in Ontario and British Columbia for moving money for sanctioned Iranian entities, partly through crypto. Treasury calls the campaign "Operation Economic Outcast".</summary>
+  <div class="exp">
+    <p>OFAC's 6 November action lists the firms under Executive Order 13902, the Iran sectoral order, with notices of secondary-sanctions risk. Among them are Amin Exchange of North Vancouver, Farah Exchange of North York, and B Galaxy Inc., trading as Cryptoyal. Several entries list TRON wallet addresses and Canadian money-services registration numbers. Al Jazeera, via Reuters, reports that Treasury says some of the firms converted rials into crypto and that some served an alleged drug-trafficking boss. Bessent's statement says Canada cannot be a safe haven for people who help Iran evade sanctions. Anyone who transacts with the firms now risks exposure to US sanctions, and the published wallet addresses give exchanges something concrete to screen against.</p>
+    <p class="btl"><b>Below the line because</b> designations like this are routine Iran-programme enforcement. It would rise if Ottawa responded or if Canadian banks were named.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://ofac.treasury.gov/recent-actions/20261106">OFAC recent actions, 6 Nov</a> &middot; <a href="https://www.aljazeera.com/economy/2026/11/7/us-treasury-sanctions-eight-canadian-money-exchange-firms-over-iran-ties">Al Jazeera / Reuters</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-cuba">
+  <summary><span class="chip">Geopolitics</span> Washington blocked five Cuban-flagged vessels and opened Cuba's marine, manufacturing, electronics and technology sectors to sanctions on foreign firms.</summary>
+  <div class="exp">
+    <p>On 5 November OFAC published a determination under Executive Order 14404 covering the electronics, manufacturing, marine and technology sectors of Cuba's economy. That allows sanctions on foreign persons who operate in those sectors. The State Department designated eight companies and two individuals, according to gCaptain. Among them is Cyprus-based Caroil Transport Marine, which manages the tankers <i>Esperanza</i>, <i>Gloria C</i> and <i>Maria Cristina</i>, now identified as blocked property, and Panama-based Tentacool Commercial. The targets are accused of supporting Havana through fuel shipments, offshore networks and military procurement. The sectoral determination is the part with lasting effect: shipping, insurance and port firms anywhere in the world that serve Cuba's fleet now carry US sanctions risk.</p>
+    <p class="btl"><b>Below the line because</b> Cuba's oil logistics matter to the US mainly through migration and the Florida Straits, and this is one more step in a programme already under way.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://ofac.treasury.gov/recent-actions/20261105">OFAC recent actions, 5 Nov</a> &middot; <a href="https://gcaptain.com/u-s-targets-cubas-oil-tanker-fleet-in-new-sanctions-crackdown/">gCaptain</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-blue-marlin">
+  <summary><span class="chip">Energy &amp; grid</span> MARAD licensed Blue Marlin, a $1 billion offshore crude export port 99 miles off Louisiana that can load very large crude carriers, at up to 2 million barrels a day.</summary>
+  <div class="exp">
+    <p>Transportation Secretary Sean Duffy announced on Thursday that the Maritime Administration has approved the deepwater port licence for Blue Marlin Offshore Port, an Energy Transfer affiliate. The port sits in West Cameron Block 509 and reuses existing offshore platforms connected to crude hubs in Texas and southwest Louisiana. It is designed for 80,000 barrels an hour and for loading VLCCs in deep water rather than at congested inland ports. DOT estimates 1,052 construction jobs. Deep-water VLCC loading is the cheaper way to send US crude long-haul, and that matters more while Gulf supply is disrupted.</p>
+    <p class="btl"><b>Below the line because</b> a licence is not a final investment decision and first loadings are years away. It becomes a lead if Energy Transfer commits capital.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://gcaptain.com/marad-approves-1-billion-offshore-crude-oil-export-port-off-louisiana/">gCaptain, reporting DOT's announcement</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-faa-space">
+  <summary><span class="chip">Science &amp; space</span> FAA proposed three rules easing commercial launch and reentry licensing. They follow Trump's 3 November proclamation declaring outer space open to permanent American settlement.</summary>
+  <div class="exp">
+    <p>The proclamation, "The American Declaration of Freedom in Space", calls the solar system the province of all humans. It declares space open to exploration, use and "the establishment of a permanent presence" by Americans, consistent with US law and international obligations. It sets no rules of its own. The FAA proposals on Monday's public-inspection list do. All three amend Part 450 and describe themselves as burden-reducing. One clarifies when an operator need not abort a flight (FAA-2026-9943). One clarifies flight-safety limit objectives. The third would let an operator meet the multiple-casualty protection for an uncontrolled atmospheric return by showing the vehicle will break up enough (FAA-2026-9942). Comments are due 30 days after publication.</p>
+    <p class="btl"><b>Below the line because</b> these are technical licensing changes with a short comment window. They matter to launch companies and to people who live under reentry paths, not yet to the wider economy.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.whitehouse.gov/presidential-actions/2026/11/the-american-declaration-of-freedom-in-space/">Proclamation</a> &middot; <a href="https://public-inspection.federalregister.gov/2026-22782.pdf">FAA NPRM 2026-22782</a> &middot; <a href="https://public-inspection.federalregister.gov/2026-22784.pdf">FAA NPRM 2026-22784</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-realpage">
+  <summary><span class="chip">AI &amp; tech &mdash; antitrust</span> DOJ answered the two public comments on its settlement with landlord Willow Bridge in the RealPage algorithmic-rent case and will now ask the court to enter it.</summary>
+  <div class="exp">
+    <p>Under the Tunney Act, the Antitrust Division filed its response in <i>United States v. RealPage</i> (M.D.N.C. No. 1:24-cv-00710) on the proposed final judgment against Willow Bridge Property Company. The government and several states added Willow Bridge as a defendant in January 2025. The complaint alleges that its agreements with RealPage and other landlords to share data and align rents violate Section 1 of the Sherman Act. DOJ received two comments and says the remedy remains appropriate. Once the response is published on Monday, it will move for entry. The case is the government's main test of whether pricing software that pools competitors' data counts as collusion.</p>
+    <p class="btl"><b>Below the line because</b> it is a procedural step for one defendant. The rulings on RealPage itself are the story.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://public-inspection.federalregister.gov/2026-22832.pdf">DOJ response to comments, FR 2026-22832</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-kalshi">
+  <summary><span class="chip">US financials</span> Kalshi lost again in two appeals courts this week and Arkansas sued it. The courts keep holding that state gambling law reaches prediction-market sports contracts.</summary>
+  <div class="exp">
+    <p>Ars Technica reports that the full Ninth Circuit refused to rehear its August panel ruling that Nevada may stop Kalshi's sports bets, with no judge asking for a vote. The Second Circuit on Tuesday upheld the refusals to block New York and Connecticut from enforcing their laws, and kept Coinbase's loss to Connecticut in place on the same issues. Arkansas Attorney General Tim Griffin then sued in state court, alleging gambling offered to 18-year-olds without licences or taxes. Utah filed criminal charges a week earlier. Kalshi says it is a federally regulated exchange and that only the CFTC can regulate it. Ars notes the administration backs Kalshi and that Donald Trump Jr. advises the company. With the Sixth Circuit's September ruling, three circuits have now gone against Kalshi. Ars expects the Supreme Court may have to settle it.</p>
+    <p class="btl"><b>Below the line because</b> it is one company's litigation run, and the decisive step, a Supreme Court petition, has not been filed.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://arstechnica.com/tech-policy/2026/11/kalshi-court-losses-pile-up-as-judges-refuse-to-block-state-gambling-laws/">Ars Technica</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-chainalysis">
+  <summary><span class="chip">AI &amp; tech &mdash; security</span> Chainalysis says attackers using AI-agent techniques took names, password hashes and live tokens for all of its users. Its customers include the FBI, ICE and the Air Force.</summary>
+  <div class="exp">
+    <p>The blockchain-analytics company first called the October incident a breach of "non-sensitive" data. In Wednesday's update it disclosed an on-path, or adversary-in-the-middle, attack that exposed a subset of passwords. Later that day it said an investigation on Monday had found names, usernames, password hashes and live tokens for all users exposed. It took down its login page and its know-your-transaction service, cut access to Reactor and Data Solutions, and has made credential rotation mandatory as access returns through IP allow-lists. It says it has found no sign that investigation or attribution data was accessed or altered. Ars notes the two-day gap before disclosure and that the compromised infrastructure has not been identified. Federal agencies use this vendor to trace stolen crypto, which is why the scope of the breach matters beyond its own customers.</p>
+    <p class="btl"><b>Below the line because</b> the scale of the harm is unknown until Chainalysis says whether the intercepted traffic could be decrypted.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://arstechnica.com/security/2026/11/chainalysis-says-hackers-stole-credentials-and-tokens-for-all-of-its-customers/">Ars Technica, from Chainalysis's statements</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-dte">
+  <summary><span class="chip">Energy &amp; grid</span> DTE raised its five-year utility capital plan by almost $10 billion to about $44 billion and said data-centre demand is the main reason. It has 2.4 GW of data-centre load fully secured.</summary>
+  <div class="exp">
+    <p>On its third-quarter call DTE said DTE Electric accounts for $39 billion of the plan. That includes about $23 billion for generation (7.6 GW of solar and wind, 2.1 GW of combined-cycle gas replacing the Monroe coal plant, and 2.7 GW of storage) and $12 billion for distribution. Of the 2.4 GW secured, 1.4 GW is an Oracle project in Saline Township with Related Digital and OpenAI, ramping in 2027&ndash;28. The other 1 GW is a Google campus near Detroit, where Google says it will cover the electricity and infrastructure costs. The CFO said new equity supports the plan. Who pays is the household-bill question here. Google's cost commitment is the kind of concession Semafor says many of this week's local data-centre measures require.</p>
+    <p class="btl"><b>Below the line because</b> it comes from an earnings call. The rate case that puts these costs into Michigan bills is where it becomes consequential.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.datacenterdynamics.com/en/news/dte-energy-ups-five-year-utility-investment-plan-to-44bn-cites-data-center-demand/">DCD, from DTE's earnings call</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-crusoe">
+  <summary><span class="chip">AI &amp; tech</span> Crusoe sold its unfinished Wyoming data-centre project to Google. Google plans to put $17 billion into the campus after reportedly doubting Crusoe's costs and timeline.</summary>
+  <div class="exp">
+    <p>TechCrunch reports that Crusoe confirmed the sale on Friday. Crusoe is the Denver developer recently valued at $30.9 billion, and it had announced the site with Blackstone-backed Tallgrass, aiming eventually for 10 GW. Google had declined to become the project's customer under Crusoe and is now taking over development. Bloomberg reported the plan in June. The price was not disclosed. Crusoe is still building a Google site near Amarillo. This fits a pattern in today's AI-rout story: independent developers and neoclouds are losing projects to hyperscalers that would rather own capacity, the same move CNBC reports at Microsoft.</p>
+    <p class="btl"><b>Below the line because</b> it confirms a June report rather than adding a new fact. Its value is as one more instance of the consolidation trend.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/">TechCrunch</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-live-local">
+  <summary><span class="chip">Florida &amp; Tampa Bay</span> A Sarasota judge ruled the county cannot use rural zoning to block Live Local Act apartments. The ruling could open the way for more than 7,600 units and weakens the county's position in four similar pending suits.</summary>
+  <div class="exp">
+    <p>Circuit Judge Hunter W. Carroll's 4 November order rejected Sarasota County's argument that Live Local does not apply in rural districts where the only commercial uses allowed are minor ones such as veterinary clinics. He ordered a project of more than 600 apartments near the Celery Fields to proceed through review. Five other developers have sued on the same theory, and four of those cases are before the same judge. The 2025 amendment to Live Local requires approval in any district that allows some commercial or industrial use, provided rents are set for households earning up to 120% of area median income. Successful challengers can recover up to $250,000 in costs. County Attorney Joshua Moye had warned the case was an uphill battle. Commissioners will take it up on 17 November. Live Local is a state law, so developers in Pasco and Pinellas can make the same argument about rural parcels, though a circuit ruling in Sarasota does not bind other counties.</p>
+    <p class="btl"><b>Below the line because</b> it is a trial-court ruling in a neighbouring county, and an appeal is possible.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.wusf.org/politics-issues/2026-11-07/judge-deals-death-blow-to-sarasota-countys-fight-against-live-local-act">Suncoast Searchlight via WUSF</a></p>
+  </div>
+</details>
+
+</div>
+
+<div class="fb" style="border-top:1px solid var(--rule); padding-top:1rem; margin-top:1.5rem;">
+  <p><b>One question about this whole section:</b> were the right things ranked below the line?</p>
+  <label><input type="radio" name="fb-also" value="right"> About right</label>
+  <label><input type="radio" name="fb-also" value="promote"> Some of these should have led</label>
+  <label><input type="radio" name="fb-also" value="drop"> Some should have been dropped entirely</label>
+  <label><input type="radio" name="fb-also" value="fewer"> Fewer short items, more depth up top</label>
+</div>
+
+<button class="submit" id="send">Send my feedback &rarr;</button>
+<p class="sources" style="text-align:center">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+
+<footer>
+  <h4>Accountability and corrections</h4>
+  <p><b>No prior Grok framing turned out wrong this run.</b> I checked the last three Grok issues against today's sources. Yesterday's reading of the curve (10-year at 4.84% on 5 November) matches Treasury's series, and the 10-year closed at 4.86% on the 6th. Yesterday's "$2.5 trillion" for the AI sell-off matches Semafor's figure. One forecast missed, and the miss is recorded here: on <a href="2026-11-05-grok.html">5 November</a> this brief carried a Reuters poll of 65,000 for October payrolls. The print was 165,000, with 84,000 of upward revisions. That item called Friday's report "the print that counts", which it was. The forecast was the poll's, not the brief's.</p>
+
+  <h4>Sources checked this run &mdash; 50, of which 34 outside the watchlist</h4>
+  <p><b>Pointed at by a thread (16):</b> BLS Employment Situation &middot; Treasury daily par yield curve &middot; AAA national average &middot; EIA weekly retail gasoline and diesel table &middot; EIA Brent spot history &middot; Trading Economics Brent &middot; OFAC recent actions (index plus the 5 and 6 November detail pages) &middot; Federal Register documents API (6 November rules, proposed rules, presidential documents and notices) &middot; Federal Register public-inspection list (documents for 9 November) &middot; White House presidential actions &middot; Federal Reserve press releases &middot; gCaptain &middot; Data Center Dynamics &middot; WUSF &middot; Fox 13 Pasco feed &middot; NHC Atlantic outlook.</p>
+  <p><b>Not pointed at by any thread (34):</b> text.npr.org &middot; Al Jazeera news index &middot; Wikipedia current-events portal (6 and 7 November) &middot; FreightWaves &middot; TechCrunch &middot; The Register &middot; Ars Technica &middot; STAT &middot; Semafor &middot; Guardian US &middot; BBC News &middot; CNBC &middot; NBC News &middot; American Banker (headlines) &middot; DefenseScoop &middot; Handelsblatt (German) &middot; DW &middot; South China Morning Post &middot; Nikkei Asia &middot; Le Monde (English) &middot; MarkTechPost &middot; USTR press office &middot; Treasury press releases &middot; DOJ Office of Public Affairs and the SITF memo &middot; Nextgov &middot; Akin AI regulation tracker &middot; Minnesota Attorney General &middot; Georgetown litigation tracker (Oregon v. Oz complaint) &middot; Stateline &middot; MPR News &middot; Bloomberg Law (summary) &middot; Reuters via CNA and Investing.com (H200) &middot; The Next Web &middot; Silicon Report.</p>
+
+  <h4>The negative check</h4>
+  <p><i>What is the biggest story today that is not on my list, and why is it not?</i> Stephen Miller replacing Susie Wiles, with DOJ resignations alongside it, including the Miami US attorney. No thread or beat line pointed at White House staffing, and the anti-topics list warns against personnel churn. It runs as a lead because the chief of staff controls policy flow. The check also changed the paper in two ways. The measles count, found on the Wikipedia portal and Al Jazeera, came in as a lead, and the four-state Medicaid suit, found on STAT's front page, came in too. Together they pushed out a second-day Florida Amendment 3 item (already covered <a href="2026-11-04-grok.html">4 November</a>) and the Binance-heist thread. The US&ndash;China call came from the foreign-press sweep (Handelsblatt, then DW) before any US wire front page carried it.</p>
+
+  <h4>Threads swept as a by-product, no trigger fired</h4>
+  <p>Fed decision (no decision; the prints are in the jobs lead) &middot; US fuel prices (EIA weekly not updated since 4 November; AAA used) &middot; Florida Amendment 3 (passed; WUSF's Suncoast follow-up adds county estimates but no new state fact) &middot; Binance heist (incident report and FBI attribution already covered) &middot; Bank stablecoin consortium &middot; CLARITY Act &middot; Frontier lab safety disclosures (TechCrunch's Anthropic RSI piece is dated 2 November, already covered) &middot; State AI legislation &middot; Solar AD/CVD duties (new Commerce notices on India, Indonesia and Laos cells on the 9 November list, not read) &middot; UAP disclosure implementation and AARO records contract (nothing in the FR sweep) &middot; Tampa Bay dengue (latest Pasco item on Fox 13 is from September) &middot; Waymo Tampa Bay.</p>
+
+  <h4>Could not reach, or read only in part</h4>
+  <p>BLS refused the shell fetch, so the release was read through the fetch tool. Politico, The Hill, CBO, the SEC newsroom, FERC news and El Pa&iacute;s returned blocks or empty pages. CoinDesk and Utility Dive rendered no headlines. STAT and Bloomberg Law were read to the lede only, and American Banker's articles were paywalled, so only headlines were used. The New York Times report on Huang was not read; Ars's account was used. The France 24/AFP measles piece was read only through Wikipedia's summary and is labelled that way. The 25,000-word STB statement was read in part, as stated in the story.</p>
+
+  <h4>About this issue</h4>
+  <ul>
+    <li>Issue No. 64-grok, Saturday 7 November 2026. Grok edition, filed beside the same day's Claude edition without replacing it.</li>
+    <li>Ten lead stories and ten short items. Seven leads are new subjects and three are follow-ups, under the cap of four.</li>
+    <li>Confidence markers: 20, one per story. Divergence boxes: 9.</li>
+    <li>Every quotation is under fifteen words and attributed, at most one per source per story. Non-English sources are paraphrased.</li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n  → " + i.value);
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on Issue No. 64-grok — 7 November 2026 (Grok edition)\n\n" + lines.join("\n")
+      + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-11-07-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
