@@ -769,6 +769,57 @@ have the run log what it downloads and have the validator compare that log
 against the sources the footer names.** A gather check that only counts
 citations rewards quiet abandonment.
 
+## Operational notes, 7 November 2026
+
+**Issue No. 64. Six leads, ten shorts, six divergence boxes, twelve source
+domains** — the widest since 19 October.
+
+### Two defects the validator caught, and one it caught only because I stopped truncating it
+
+1. **Every issue since 5 November carried `<title>The Brief — Thursday, 5
+   November 2026`.** The `head -65` copy-forward brings the previous day's
+   `<title>` with it and nothing downstream rewrites it. **6 November published
+   with the wrong date in the browser tab, in bookmarks and in every share
+   preview.** Fixed in both files today.
+2. **I did not see that warning yesterday because I piped the validator through
+   `tail -6` and `tail -8`.** The check fired; I cut it off. **Never pipe
+   `validate_issue.py` through `head` or `tail`. Read all of it.**
+3. **Seven source domains on the first pass — blocked.** Correct response was to
+   go and check more sources, not to relabel. Retried cdc.gov (403 again),
+   OFAC recent actions (renders its table in JavaScript — unreadable, record it
+   as such), GovInfo, and read two NPR files. One of them, the October payroll
+   print of 165,000, should have been in yesterday's markets lead and was not.
+
+### What was built today
+
+- **`tools/pdftext.py`** — the PDF text extractor is now in the repository. It
+  had lived only in the scratchpad and was rewritten from scratch this morning
+  after the container was replaced. Same mistake as the validator before
+  4 November. **Anything the run cannot work without belongs in `tools/`.**
+- **A logging fetch wrapper.** Every fetch records url, HTTP status, bytes and
+  local file to `fetchlog.tsv`. The footer's "could not reach" paragraph was
+  written from that file rather than from memory. **This is the direct answer to
+  6 November, when two downloaded front pages were reported as unreachable.**
+- **Still not done:** wire the log into `validate_issue.py`, so a source named in
+  the footer must appear in the log, and a 200 in the log must be either cited
+  or named as fetched-and-unread. Today's compliance was manual and therefore
+  not reliable. **This is the first thing owed on the tooling.**
+
+### Corrected parsers (from 6 November, now used)
+
+- **gCaptain**: `<h[23][^>]*>\s*(?:<[^>]+>\s*)*([^<]{20,140})` — plain `<h3>`,
+  not anchors. Worked today; produced two shorts.
+- **Le Monde**: plain `<h2>`/`<h3>`. **But `lemonde.fr` redirects to the English
+  edition and its article pages return a 3,038-byte bot challenge, so it cannot
+  satisfy §2's "read in the original". Not attempted today. A replacement
+  non-English source is owed and this is the third day it has been missed.**
+
+### Standing question to the reader, unanswered
+
+The 5 November proposal — cut "dates ahead" and the owed list from the issue,
+cap the footer, raise the source floor to 15 — has had no reply. **Nothing
+removed. Do not implement unilaterally.**
+
 ## Watchlist
 
 Empty at first run. Populates from reader feedback and from threads that recur on
