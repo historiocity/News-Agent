@@ -25,7 +25,7 @@ def warn(msg):
     WARN.append(msg)
 
 
-def main(path):
+def main(path, log_path=None):
     s = open(path, encoding="utf-8").read()
     issue_dir = os.path.dirname(path)
     date = os.path.basename(path).replace(".html", "")
@@ -140,6 +140,61 @@ def main(path):
                 "§2 requires at least half. This is the load-bearing rule in §2."
             )
 
+    # --- fetch log cross-check (SKILL.md §2, "record what you checked") -----
+    # On 6 November two front pages were downloaded, never parsed, and then
+    # reported in print as unreachable. Counting cited domains cannot catch
+    # that -- only comparing the footer against what the run actually fetched
+    # can. Pass the run's fetchlog.tsv as the second argument.
+    if log_path:
+        try:
+            rows = [l.rstrip("\n").split("\t") for l in open(log_path) if l.strip()]
+        except OSError as e:
+            block(f"fetch log {log_path} could not be read: {e}")
+            rows = []
+        fetched_ok, fetched_bad = {}, {}
+        for r in rows:
+            if len(r) < 4:
+                continue
+            url, code = r[0], r[1]
+            host = re.sub(r"^www\.", "", url.split("/")[2]).lower()
+            (fetched_ok if code == "200" else fetched_bad).setdefault(host, []).append(code)
+        cited = {
+            re.sub(r"^www\.", "", m.group(1)).lower()
+            for m in re.finditer(r'href="https?://([^/"]+)', s)
+        }
+        text_l = re.sub(r"<[^>]+>", " ", s).lower()
+        print(f"fetch log: {len(rows)} requests, {len(fetched_ok)} hosts returned 200")
+
+        # (a) A host fetched successfully must be cited, or named in the prose
+        #     as fetched-and-unread. Silence about it is the failure mode.
+        silent = [
+            h for h in sorted(fetched_ok)
+            if h not in cited and h.split(".")[-2:] != []
+            and not any(h in c or c in h for c in cited)
+            and h.split(".")[0] not in text_l and h.split(".")[-2] not in text_l
+        ]
+        if silent:
+            block(
+                "fetched and never mentioned: " + ", ".join(silent) +
+                " -- each returned 200. Cite it, or say in the issue that it was "
+                "fetched and not read. Dropping it silently is what happened on 6 November."
+            )
+
+        # (b) Do not call a host unreachable when the log says it answered.
+        for h in sorted(fetched_ok):
+            if fetched_bad.get(h):
+                continue
+            for phrase in ("could not reach", "unreadable", "defeated"):
+                for m in re.finditer(re.escape(phrase), text_l):
+                    seg = text_l[max(0, m.start() - 400):m.start() + 400]
+                    if h in seg or h.split(".")[0] in seg:
+                        warn(
+                            f"'{h}' returned 200 in the fetch log but appears near "
+                            f"'{phrase}' in the issue -- check the claim is about a "
+                            "specific page, not the source."
+                        )
+                        break
+
     # --- house format ----------------------------------------------------
     shorts = re.findall(r'<details class="short" id="([^"]+)">(.*?)</details>', s, re.S)
     print(f"shorts: {len(shorts)}")
@@ -205,4 +260,4 @@ def main(path):
 
 
 if __name__ == "__main__":
-    sys.exit(main(sys.argv[1]))
+    sys.exit(main(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else None))

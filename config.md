@@ -820,6 +820,67 @@ The 5 November proposal — cut "dates ahead" and the owed list from the issue,
 cap the footer, raise the source floor to 15 — has had no reply. **Nothing
 removed. Do not implement unilaterally.**
 
+## Operational notes, 8 November 2026
+
+**Issue No. 65. Six leads, nine shorts, six divergence boxes, nine source
+domains.** Validator passed on the first pass, fetch-log check included.
+
+### The fetch-log cross-check is built (the thing owed since 6 November)
+
+`validate_issue.py` now takes the run's `fetchlog.tsv` as a second argument:
+
+    python3 -I tools/validate_issue.py issues/<date>.html <rundir>/fetchlog.tsv
+
+- **Blocks** on any host that returned 200 and is then neither cited in the
+  issue nor named in its prose as fetched-and-unread.
+- **Warns** when a host that answered 200 appears near "could not reach",
+  "unreadable" or "defeated".
+- Tested against a synthetic log before use: blocks on a dropped source,
+  passes a clean one. **This is the direct answer to 6 November.**
+
+### Three parser faults in two days, all mine, all caught by the same rule
+
+1. **The fetch wrapper logged to `$(dirname $0)`**, i.e. into `tools/` — the log
+   would have been committed. Now `${FETCHLOG:-$PWD/fetchlog.tsv}`.
+2. **EIA year regex** failed on `<td class='B6'>&nbsp;&nbsp;2026-Oct</td>` and
+   returned zero 2026 rows. Correct pattern:
+   `<td class='B6'>(?:&nbsp;|\s)*(\d{4})`. **Assume the parser before the
+   source — followed in about a minute this time.**
+3. Friday's gCaptain and Le Monde regexes, already recorded.
+
+**That rule has caught this class three times in six weeks. It is the highest-
+value line in this file.**
+
+### §2 non-English requirement met for the first time since 5 November
+
+**Deutsche Welle's German service (`dw.com/de/themen/s-9077`) works**: `lang=de`,
+40 headlines off `<h[234]>`, article pages readable. It produced the sixth lead —
+the ANC's collapse to 31% in the South African municipal elections — **which
+appeared on neither CNN Lite nor Al Jazeera's front page.** Use DW as the
+standing non-English source; Le Monde cannot serve (English edition, bot
+challenge on articles).
+
+### Substantive
+
+- **The six-week diesel question is answered.** Reuters, from refiners' Q3
+  results: Hormuz freight and war-risk premiums force heavy-crude discounts,
+  and US Gulf Coast refiners (>70% configured for heavy) capture them.
+  **Verified independently from EIA: Q3 2026 crack $94.41 vs $34.53 in Q3 2025
+  = 2.73×; October $106.51 vs $37.13.** New leading indicator to track: the
+  **WCS discount to WTI**, which is the first link in the chain and is not yet
+  in the morning pull. Add it.
+- **The 5 November Israel divergence box resolved in the direction it implied.**
+  67 endorsements, Eisenkot has the mandate, 28 days to ~6 December. Second half
+  — portfolios versus external support — still open.
+- **Negative check named for a third day without being read** (Drug Price
+  Negotiation rule). Naming it repeatedly is becoming a habit rather than a
+  disclosure. Read it before it publishes tomorrow or drop it.
+
+### Standing question to the reader, unanswered
+
+The 5 November proposal (cut "dates ahead" and the owed list from the issue, cap
+the footer, raise the source floor to 15) has had no reply. **Nothing removed.**
+
 ## Watchlist
 
 Empty at first run. Populates from reader feedback and from threads that recur on
