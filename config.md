@@ -881,6 +881,60 @@ challenge on articles).
 The 5 November proposal (cut "dates ahead" and the owed list from the issue, cap
 the footer, raise the source floor to 15) has had no reply. **Nothing removed.**
 
+## Operational notes, 9 November 2026
+
+**Issue No. 66. Six leads, nine shorts, six divergence boxes, nine source
+domains.** Validator passed first time with the fetch-log check; **no parser
+faults**, after three in the two preceding days. The corrected gCaptain, DW and
+EIA patterns all worked first time, which is what writing them down was for.
+
+### What the three days of tooling bought
+
+- **Fetch-log cross-check ran clean.** Every host returning 200 is cited or
+  named as unread, confirmed by the validator rather than asserted.
+- **The negative check finally discharged.** The Drug Price Negotiation rule was
+  named three mornings running and read this morning: **new 42 CFR part 429,
+  effective 5 December 2026, applicable from initial price applicability year
+  2029**, codifying what had been run through guidance. Naming something three
+  times is the limit; read it or drop it.
+- **A promise slipped within one day and was recorded rather than dropped.**
+  Yesterday's lead named the WCS discount to WTI as the leading indicator to
+  start tracking; `economicdashboard.alberta.ca/api/oilprice/` returned 404.
+  **Try the Alberta government's published WCS series or the Canada Energy
+  Regulator tomorrow.** This is in the issue footer too, deliberately.
+
+### Sources
+
+- **Deutsche Welle in German is now load-bearing**, not a box-tick: it produced
+  the sixth lead (Copernicus: October the warmest on record, 15.35°C, 1.75°
+  above pre-industrial, third month running above 1.5) and two shorts
+  (Zaporizhzhia, Merz/Aigner). Neither English front page had the climate story.
+- **gCaptain continues to be the highest-yield off-watchlist source**, as the
+  old note said before it fell out of the rotation: Iraq's Hormuz understanding
+  and $60bn loss figure, the Black Sea strikes, Arctic LNG 2, Egypt gas cuts.
+
+### Substantive
+
+- **The midterms are now visibly moving Iran policy**, and the ordering matters:
+  Iraq's Omani-lane understanding and its export recovery (2.65 → 3.5m bpd
+  across October) **predate the election**, so the practical de-escalation came
+  first and the rhetoric followed. That makes it less reversible than a change
+  of tone.
+- **Yesterday's DOJ lead said the absence of formal markers was the honest
+  position and that it would be the first thing to change. It changed in a day**
+  — the attorney general said on television that Democrats who investigate
+  should be "worried". Still no grand jury, subpoena or case.
+- **The Venezuelan earthquake was on the owed list for 21 consecutive mornings
+  and another outlet did the work.** That is the cost of a long owed list that
+  is never worked: the item stays named and nothing happens.
+- **Diesel premium narrowed for the first time in five days** ($2.1630 from
+  $2.1726). One day is not a turn; Wednesday's EIA release is the instrument.
+
+### Standing question to the reader, unanswered
+
+The 5 November proposal (cut "dates ahead" and the owed list from the issue, cap
+the footer, raise the source floor to 15) has had no reply. **Nothing removed.**
+
 ## Watchlist
 
 Empty at first run. Populates from reader feedback and from threads that recur on
