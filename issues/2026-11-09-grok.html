@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Monday, 9 November 2026 (Grok edition, Issue 66-grok)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  /* short-item tier */
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list summary .chip { vertical-align:.05rem; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 66-grok &middot; Monday, 9 November 2026 &middot; Grok edition</div>
+  <h1>Nvidia's board opens an inquiry into its own founder, Congress comes back for the lame duck, and the AI debt bill comes due on Tuesday</h1>
+  <p class="sub">Eight stories at length, one Florida item, nine in brief. Markup built from Issue 10 (<a href="2026-09-10b.html">2026-09-10b.html</a>).</p>
+  <p class="prov"><b>58 sources checked, 44 of them outside the watchlist.</b> Four lead stories are new subjects found today (the lame-duck Congress, Coinbase's charter, the Goldman Sachs arbitration case and the Space Force laser-link gap) and the Florida item is new. Four continue threads, at the cap: Nvidia, the Iran oil chain, CoreWeave, and the physician fee schedule, which an earlier Grok edition named as an unread public-inspection document but never reported. Two threads that had no new fact today were demoted to Also today rather than repeated as leads: the BIS Affiliates Rule stay, which takes effect today but was reported on 6 November, and measles, whose numbers have not moved since 7 November. Each lead was compared across at least two independent accounts, or the primary document plus one; the count is given under each story.<br><br>
+  <b>Biggest story not on my list:</b> Nvidia. The intelligence memo was reported on 7 November, but Sunday's admission and board inquiry turned a reported allegation into a governance event at the world's second-largest company, and it leads. The negative check also promoted the Goldman Sachs case, which surfaced on SCOTUSblog rather than on any beat sweep. <b>Monday's Federal Register</b> was read from public inspection (103 documents); the CMS fee-schedule rule and the BIS stay are both from it.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#nvidia-huang">Nvidia's board will investigate whether its chief executive was the target of Chinese intelligence, and Congress wants him on 18 November</a></li>
+    <li><a href="#lame-duck">Congress returns with about a month to fund the government, a debt limit some Republicans want raised before they lose the gavel, and a defense bill that can carry chip controls</a></li>
+    <li><a href="#iran-oil">Rubio calls Tehran's terms "outrageous" while Trump calls new strikes "highly unlikely"; Brent eases to $97.58 and pump prices keep falling</a></li>
+    <li><a href="#coreweave">CoreWeave reports Tuesday with its bonds yielding over 16 per cent and quarterly interest guided above $860 million</a></li>
+    <li><a href="#coinbase-occ">The OCC gave Coinbase a full national trust charter, as bankers sue to stop exactly this</a></li>
+    <li><a href="#pfs-2027">Medicare's physician pay rate falls about 2 per cent on 1 January, because a one-year bump expires</a></li>
+    <li><a href="#goldman-brown">The Supreme Court will decide whether a credit-card arbitration clause beats bankruptcy protection</a></li>
+    <li><a href="#sdn-lasers">The Space Force's Golden Dome data network cannot talk to its own missile-tracking satellites, sources say</a></li>
+    <li><a href="#fl-medicaid">Florida: the 11th Circuit says the state's Medicaid cut-off letters did not tell people why</a></li>
+    <li><a href="#also-today">Also today (9)</a> &mdash; ranked below the line, each one opens.</li>
+  </ol>
+</nav>
+
+<article id="nvidia-huang">
+  <h2>Nvidia's board will investigate whether its chief executive was the target of Chinese intelligence, and Congress wants him on 18 November</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">US financials</span>
+    <span class="chip">Continuing thread</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>On Sunday, Nvidia's board said a committee of independent directors, with outside counsel, will investigate reporting that co-founder and chief executive Jensen Huang was the target of a foreign intelligence effort. In an email to staff the same day, Huang admitted being unfaithful to his wife and said he had "fallen short" of his responsibility to the company. He did not name the woman. The reporting he was answering, first in The New York Times and then the Financial Times, says US intelligence believes Alice Huang, a former executive at the Singapore cloud company Megaspeed, was recruited by China's Ministry of State Security to get close to him. The two are not related.</p>
+  <p>Megaspeed matters on its own. CBS reports it bought more than $4.8 billion of Nvidia hardware, and CNBC notes it rents Nvidia GPU capacity from Southeast Asian data centres, which can give customers remote access to advanced chips housed outside China. Export controls on the chips themselves do not directly cover that route. Bloomberg reported in December 2025 that Washington was examining whether its chips reached China, which Megaspeed denied.</p>
+  <p>The shares fell about 5 per cent before Monday's open. Beijing's foreign ministry called the spy account baseless. The chairs of the House China, Foreign Affairs and Intelligence committees have asked Huang to a closed joint briefing on Wednesday, 18 November. Nvidia has not said whether he will attend.</p>
+  <p><b>What to watch:</b> whether Huang appears on the 18th, and the scope the board gives its inquiry. A must-pass defense bill in the lame duck is the vehicle for any new export control (see the next story).</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; was anything compromised?</span>
+    <p><b>What is disputed.</b> This is a dispute about facts. Nvidia's board says it has "no reason to believe" national security or company secrets were compromised, and a spokesman said the company trusts it would have been told of a genuine threat. The intelligence memo, as reported, says a Chinese service ran an operation against the chief executive. The Times also reported that Huang never received a defensive briefing, the warning the intelligence community usually gives to a likely target.</p>
+    <p><b>Why they differ.</b> Access and interest. The board has Huang's account and its own logs. It has not seen the memo, and it has a $4.5 trillion market value to steady. The newspapers have the memo second-hand and cannot see what Nvidia's systems show. Both statements can be true at once: an operation can be real and still have failed to get anything. The "we would have been told" argument runs into the missing briefing, though. If the government did not warn Huang, its silence is not evidence that nothing happened.</p>
+    <p><b>What it means for you.</b> Treat the targeting as credibly reported but not confirmed by any agency on the record. Treat "nothing was compromised" as the company's opening position, not a finding. The board's conclusion, and whether the committees' closed session produces a public letter, would settle more than either side's statement so far. For a shareholder, Huang's job is the open question; a Yale governance scholar told TechCrunch he puts it at "about a 50-50," while Dan Ives of Yorkville Ives &amp; Co. called removal talk "comedy". Neither view is evidence.</p>
+  </div>
+  <p class="sources"><b>Sources (4 independent accounts compared):</b>
+    <a href="https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-email-board-of-directors-statement.html">Board statement and Huang's email, via CNBC (primary text)</a> &middot;
+    <a href="https://www.cbsnews.com/news/nvidia-jensen-huang-investigation-china-intelligence/">CBS News</a> &middot;
+    <a href="https://arstechnica.com/tech-policy/2026/11/nvidia-ceo-jensen-huang-summoned-by-congress-over-chinese-espionage-concerns/">Ars Technica on the committee letter</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/9/why-is-nvidias-jensen-huang-at-the-centre-of-a-us-china-spy-scandal">Al Jazeera</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/09/megaspeed-nvidia-jensen-huang-alice-huang.html">CNBC on Megaspeed</a> &middot;
+    <a href="https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/">TechCrunch on the memo</a>
+  </p>
+</article>
+
+<article id="lame-duck">
+  <h2>Congress returns with about a month to fund the government, a debt limit some Republicans want raised before they lose the gavel, and a defense bill that can carry chip controls</h2>
+  <div class="meta">
+    <span class="chip">US debt &amp; fiscal</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Both chambers come back today for the lame duck of the 119th Congress. The hard date is <b>Friday, 11 December</b>, when the current stopgap expires. Avoiding a shutdown needs another continuing resolution or full-year bills, and either needs 60 Senate votes. CNBC's reading is that Democrats, who take both chambers in January, have little reason to agree a full year now when they could write it themselves in a few weeks. Senator Patty Murray, the likely next Appropriations chair, said as much on election night. The current chair, Susan Collins, lost her seat.</p>
+  <p>The debt limit is the item that matters most for this brief. Senator Kevin Cramer and others have urged Republicans to raise it while they still control both chambers. The federal debt passed $40 trillion in September. A lame-duck increase would take a hostage away from the incoming majority. Leaving it alone hands the next fight to a Democratic Congress and a Republican White House.</p>
+  <p>The National Defense Authorization Act also has to pass. Semafor reports it could carry tighter chip-export language, which is where the Nvidia story above lands in law. Democrats' House leader Hakeem Jeffries says he is a "hard yes" on impeaching Defense Secretary Hegseth, and ABC and Breaking Defense both put that on the lame-duck agenda.</p>
+  <p><b>What to watch:</b> the length of any stopgap, because a date in January means Democrats write the full year; whether a debt-limit increase rides on it; and NDAA export-control text.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how big is the incoming Senate majority?</span>
+    <p><b>What is disputed.</b> A dispute about facts, partly one of timing. CNBC says Democrats "could emerge with as many as 56" seats. ABC's results page on Sunday night projected 54, with Alaska (Peltola 48.2, Sullivan 47.9, 74 per cent counted) and Mississippi (Colom 49.1, Hyde-Smith 48.8, 97 per cent counted) still uncalled.</p>
+    <p><b>Why they differ.</b> The figures are not in conflict. CNBC is counting the ceiling, 54 plus two uncalled races where Democrats lead narrowly, and ABC is counting calls. Both margins are under one point, which is recount territory in some states.</p>
+    <p><b>What it means for you.</b> Use 54 as the number that is settled. Whether it becomes 56 changes how much the new majority can do without Republican votes, though not the 60-vote filibuster arithmetic for spending bills. The two calls, and any recount requests, will settle it.</p>
+  </div>
+  <p class="sources"><b>Sources (4 independent accounts compared):</b>
+    <a href="https://www.cnbc.com/2026/11/09/congress-government-funding-debt-limit-elections.html">CNBC on the agenda and the debt limit</a> &middot;
+    <a href="https://abcnews.com/Politics/congress-returns-crowded-lame-duck-session-hegseth-impeachment/story?id=137918357">ABC News, with Senate projections</a> &middot;
+    <a href="https://breakingdefense.com/2026/11/what-now-budget-fight-hegseth-impeachment-on-deck-for-defense-focused-lawmakers-after-midterms/">Breaking Defense</a> &middot;
+    <a href="https://www.semafor.com/article/11/06/2026/nvidia-faces-a-more-hostile-washington">Semafor on NDAA export controls</a> &middot;
+    <a href="https://floridaphoenix.com/">Florida Phoenix (States Newsroom) on the year-end list</a>
+  </p>
+</article>
+
+<article id="iran-oil">
+  <h2>Rubio calls Tehran's terms "outrageous" while Trump calls new strikes "highly unlikely"; Brent eases to $97.58 and pump prices keep falling</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Continuing thread</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Here is the chain, in order. On Sunday Trump told CNN that resuming the war was "highly unlikely" if talks move toward an agreement on Iran's nuclear programme and reopening Hormuz. Hours later, in Florida, Secretary of State Rubio said Iran's demands were "outrageous and ridiculous" and that no breakthrough was near. Today Trump and Vice President Vance meet Qatar's prime minister, Sheikh Mohammed bin Abdulrahman Al Thani, who carried Iran's latest proposal on Thursday. Rubio then goes to Paris for the G7 foreign ministers.</p>
+  <p>CNBC ties the overnight fall in crude to the President's remark. At 5:25 a.m. Eastern, Brent was down 0.75 per cent at $97.58 and December WTI was at $90.45. AAA's national regular average is <b>$4.0093</b> this morning, down from $4.0203 yesterday and $4.1694 a week ago. Diesel is $6.1723, down from $6.2921 a week ago. The diesel premium over gasoline narrowed slightly, to $2.163 from $2.173 yesterday.</p>
+  <p>Supply is still being hit. A drone struck Iraq's Khor Mor gas field on Sunday night and cut 2,500 to 2,800 megawatts, more than 70 per cent of Kurdistan's power, and no one has claimed it. Iraq says it has a US understanding to export through an Omani-side lane, and its exports recovered to about 3.5 million barrels a day in October.</p>
+  <p><b>What to watch:</b> anything that comes out of the Qatar meeting; EIA's weekly retail prices on Tuesday, 10 November, which measure the trend better than AAA's daily card.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; what did Iran actually propose?</span>
+    <p><b>What is disputed.</b> Mostly facts, about sequence. Rubio says Tehran proposed shortening the timetable for restarting talks from seven days to two. Al Jazeera, drawing on AP and Reuters, describes a two-day proposal built with Qatari mediators that Iran will discuss only after Washington meets seven preconditions. Iran's foreign ministry spokesman said today that sanctions must be lifted and the war ended on every front before negotiations begin.</p>
+    <p><b>Why they differ.</b> Vantage and interest. Each side is describing the other's offer in the way that best justifies its own position: Rubio's version makes Iran sound like it is rushing, and Iran's makes the US the obstacle. Al Jazeera's account is closest to the mediator. The three accounts fit together if the "two days" is the length of a talks window and the seven demands are the price of entering it.</p>
+    <p><b>What it means for you.</b> Neither side has published the text, so assume there is no agreed process yet, whatever the oil price says. Monday's fall in crude reflects Trump's remark about strikes, not progress on terms. A readout from today's White House meeting that names a venue or a date would be the first real sign of movement.</p>
+  </div>
+  <p class="sources"><b>Sources (5 independent accounts compared):</b>
+    <a href="https://www.cnbc.com/2026/11/09/us-iran-war-trump-hormuz.html">CNBC on Rubio, Trump and crude</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/9/qatar-pm-to-meet-trump-whats-the-latest-on-us-iran-negotiations">Al Jazeera on the Qatar meeting</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/9/drone-attack-suspends-production-at-iraqs-khor-mor-gasfield">Al Jazeera on Khor Mor</a> &middot;
+    <a href="https://gcaptain.com/iraq-has-reached-understandings-with-us-to-allow-oil-exports-through-hormuz/">gCaptain (Reuters) on Iraq's lane</a> &middot;
+    <a href="https://gcaptain.com/iran-suggests-blasts-are-not-us-attacks-as-both-sides-report-ships-hit/">gCaptain (Reuters) on the Qeshm blasts</a> &middot;
+    <a href="https://gasprices.aaa.com/">AAA national averages, 9 Nov (primary)</a>
+  </p>
+</article>
+
+<article id="coreweave">
+  <h2>CoreWeave reports Tuesday with its bonds yielding over 16 per cent and quarterly interest guided above $860 million</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">Continuing thread</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>CoreWeave, the largest of the "neocloud" companies that rent out Nvidia GPUs, reports third-quarter results after the close on <b>Tuesday, 10 November</b>. Nebius follows on Thursday. Both have lost about half their market value in a month. For this brief, the bond market is the story. A CoreWeave note with a 9.625 per cent coupon now yields more than 16 per cent, and five-year credit default swaps, the price of insuring its debt, are in the 1,150 to 1,290 basis-point range. Those are distressed levels.</p>
+  <p>The company's own guidance explains why. Third-quarter interest expense is guided at $860 million to $940 million, up from $640 million in the second quarter and $267 million a year earlier, against operating income of $200 million to $260 million. At the end of June it had $35.6 billion of debt and $5.5 billion of cash. It is guiding $35 billion to $39 billion of capital spending this year, and new unsecured borrowing would be priced near where its bonds now trade. Microsoft supplied about two-thirds of its 2025 revenue and is reported to be trimming its neocloud suppliers.</p>
+  <p>Chief executive Mike Intrator says the election changes nothing for existing customer commitments. The market has not believed him so far. Nvidia, which is an investor in CoreWeave and Nebius, is having its own week.</p>
+  <p><b>What to watch:</b> on Tuesday, actual interest expense against guidance, any new financing, and whether backlog is converting into billable revenue.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how wide are the swaps, and which bond?</span>
+    <p><b>What is disputed.</b> A small facts dispute that is mostly about timing. CNBC on Monday has five-year CDS "above 1,240 basis points, up 50 per cent" in a month, and names 2031 bonds above 16 per cent. CNBC on Friday, citing Deutsche Bank, had them above 1,289 on Thursday and easing to about 1,155 on Friday, and named the 2032 note. 24/7 Wall St. also names the 2032 note.</p>
+    <p><b>Why they differ.</b> CDS quotes move intraday and differ by dealer, and the three figures belong to three different moments. The 2031/2032 discrepancy most likely reflects two issues trading at similar yields. The 9.625 per cent 2032 note is the one named with a coupon in several places.</p>
+    <p><b>What it means for you.</b> Read the level as somewhere around 1,150 to 1,300 basis points, which is distressed either way. No single print matters on its own. The direction after Tuesday's results is the reading worth taking.</p>
+  </div>
+  <p class="sources"><b>Sources (4 independent accounts compared):</b>
+    <a href="https://www.cnbc.com/2026/11/09/coreweave-debt-credit-risk-neoclouds.html">CNBC, 9 Nov</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html">CNBC, 6 Nov, citing Deutsche Bank</a> &middot;
+    <a href="https://247wallst.com/investing/2026/11/07/coreweaves-bonds-now-yield-more-than-16-days-before-earnings/">24/7 Wall St.</a> &middot;
+    <a href="https://fxnews.ai/news/coreweave-cds-1000bp-earnings-credit-test/">FXNews on the June balance sheet</a> &middot;
+    <a href="https://www.techtimes.com/articles/330277/20261109/coreweave-q3-earnings-159-revenue-growth-vs-900m-quarterly-interest-tuesday.htm">Tech Times on guidance</a>
+  </p>
+</article>
+
+<article id="coinbase-occ">
+  <h2>The OCC gave Coinbase a full national trust charter, as bankers sue to stop exactly this</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The Office of the Comptroller of the Currency gave Coinbase final approval on Friday, 6 November, to charter Coinbase National Trust Company. That upgrades the conditional approval it had in April. Coinbase announced it this morning. The charter covers custody of digital assets for institutions and lets Coinbase operate under one federal regulator instead of state-by-state licences. It cannot take deposits or make loans. Coinbase says it wants to move next into issuing and servicing stablecoins, white-label stablecoins for other firms, and payments.</p>
+  <p>The scale is the point. American Banker counts nearly two dozen national trust charters approved or conditionally approved under this administration. Decrypt puts Coinbase after Circle and Ripple among crypto firms with final approval. The OCC has also conditionally chartered World Liberty Financial, which is linked to the President's family. Since the GENIUS Act, a federal trust charter has been a route into issuing compliant stablecoins.</p>
+  <p>The charter also brings federal preemption of some state financial laws, and American Banker names that as one of the two main attractions. The Independent Community Bankers of America has sued the OCC over these approvals, and Senator Elizabeth Warren, who is likely to chair Senate Banking from January, calls them illegal.</p>
+  <p><b>What to watch:</b> the ICBA suit, and whether a Democratic Banking Committee goes after the OCC's chartering authority rather than individual firms.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; regulation or a side door?</span>
+    <p><b>What is disputed.</b> Significance. Coinbase presents the charter as stricter oversight, "clear rules and rigorous oversight" in its own statement. The community bankers say it is a "side door" into banking without the obligations of a bank, and Warren says the approvals exceed the OCC's authority.</p>
+    <p><b>Why they differ.</b> Interest, mostly. Coinbase gains preemption and a federal stamp. Community banks see new competitors entering custody and payments without a full bank's obligations. Both describe the same charter accurately. The legal question underneath, how far a trust charter can extend beyond fiduciary activity, is unsettled, and that is why there is a lawsuit.</p>
+    <p><b>What it means for you.</b> The charter is real and in force. Its durability depends on the courts and on next year's Congress, not on the OCC. If the ICBA wins, the remedy would reach every charter in this wave, not just Coinbase's.</p>
+  </div>
+  <p class="sources"><b>Sources (4 independent accounts compared):</b>
+    <a href="https://www.coinbase.com/blog/coinbase-launches-national-trust-company-with-federally-regulated-institutional-grade-custody-offering">Coinbase announcement (primary)</a> &middot;
+    <a href="https://www.americanbanker.com/news/coinbase-gets-final-occ-charter-approval">American Banker</a> &middot;
+    <a href="https://www.coindesk.com/policy/2026/11/09/coinbase-gets-full-u-s-trust-charter-from-federal-banking-regulator">CoinDesk</a> &middot;
+    <a href="https://decrypt.co/382816/coinbase-joins-circle-ripple-with-final-occ-approval-for-federal-trust-bank-charter">Decrypt</a>
+  </p>
+</article>
+
+<article id="pfs-2027">
+  <h2>Medicare's physician pay rate falls about 2 per cent on 1 January, because a one-year bump expires</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">US debt &amp; fiscal</span>
+    <span class="chip">Continuing thread</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The calendar-year 2027 Physician Fee Schedule final rule (CMS-1848-F, FR Doc. 2026-22743) is published today and takes effect 1 January. It sets two conversion factors, the dollar multiplier behind every Medicare physician payment: <b>$32.9548</b> for clinicians in qualifying alternative payment models, down 1.83 per cent from $33.5675, and <b>$32.6286</b> for everyone else, down 2.31 per cent from $33.4009.</p>
+  <p>The cut is the law working as written. Last year's reconciliation act gave a one-time 2.5 per cent increase for 2026 only. Its expiry outweighs the statutory updates of 0.75 and 0.25 per cent, and a −0.12 per cent budget-neutrality adjustment comes on top. The final factors are below the proposed $33.17 and $32.84 because that adjustment moved from +0.53 per cent in the proposal to −0.12 in the final rule.</p>
+  <p>Inside the rule, CMS replaces the G2211 add-on code with modifiers that raise the base visit payment by 16 per cent. It cuts payment for a minor procedure done on the same day as a visit by 20 per cent, scaled back from a proposed 50. It keeps its mandatory Ambulatory Specialty Model for heart failure, starting 1 January. OMB rates the whole rule economically significant.</p>
+  <p><b>What to watch:</b> whether the lame duck restores the 2.5 per cent, which would need a vehicle and offsets; and the specialty impact tables, which decide who actually loses.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; 1.83 or 1.86 per cent?</span>
+    <p><b>What is disputed.</b> A facts dispute about arithmetic. The rule says −1.83 and −2.31 per cent. The American College of Cardiology's summary says −1.86 and −2.36. The American College of Radiology, ASCRS and IDSA all repeat CMS's figures.</p>
+    <p><b>Why they differ.</b> The mundane reason is that the ACC computed the change itself, probably from rounded factors, while the other three copied CMS. The dollar factors are the same in every account. Only the percentage differs.</p>
+    <p><b>What it means for you.</b> Use the rule's own −1.83 and −2.31. The dollar figures are what claims are paid on. The more substantive disagreement is about significance: the ACC says the package will "make it harder" to deliver care, while the rule text presents the cut as required by statute. Both are correct, because the cut comes from a law Congress chose to make temporary.</p>
+  </div>
+  <p class="sources"><b>Sources (primary plus 4 accounts compared):</b>
+    <a href="https://www.federalregister.gov/documents/2026/11/09/2026-22743/medicare-and-medicaid-programs-cy-2027-payment-policies-under-the-physician-fee-schedule-and-other">Final rule, FR 2026-22743 (primary)</a> &middot;
+    <a href="https://www.acc.org/Latest-in-Cardiology/Articles/2026/11/05/14/15/CMS-Releases-Final-2027-Medicare-Physician-Fee-Schedule-and-Hospital-OPPS-Rules">American College of Cardiology</a> &middot;
+    <a href="https://www.ascrs.org/news/ascrs-news/2027-medicare-physician-fee-schedule-final-rule-released">ASCRS</a> &middot;
+    <a href="https://www.idsociety.org/news--publications-new/articles/2026/idsa-advocates-for-increased-reimbursement-for-id-physicians-impact-of-the-cy-2027-medicare-physician-fee-schedule/">IDSA</a> &middot;
+    <a href="https://edge.sitecorecloud.io/americancoldf5f-acrorgf92a-productioncb02-3650/media/ACR/Files/Medicare-Medicaid/MPFS/CY2027-MPFS-FR-Initial-Summary.pdf">American College of Radiology summary</a>
+  </p>
+</article>
+
+<article id="goldman-brown">
+  <h2>The Supreme Court will decide whether a credit-card arbitration clause beats bankruptcy protection</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>On Friday, 6 November, the Court agreed to hear <em>Goldman Sachs Bank USA v. Brown</em>, which will be argued this term. Two of the bank's credit-card customers, Rhea Brown and Gregory Maze, filed for bankruptcy. They say Goldman kept trying to collect despite the automatic stay, which bars creditors from pursuing a debtor once a bankruptcy is filed, and they sued inside the bankruptcy case. Goldman invoked the arbitration clause in the cardholder agreement. The bankruptcy court refused to send the claim to arbitration, and so did the district court and, by 2 to 1, the Fourth Circuit. The majority said arbitration would conflict with the core purposes of the Bankruptcy Code.</p>
+  <p>Goldman told the Court the ruling squarely conflicts with the Second Circuit. That split is why the case was taken. The question reaches beyond one bank. Goldman itself told the Court the practical stakes are large, and stay-violation suits are one of the few ways debtors can make an issuer pay for collecting when it should not. If Goldman wins, those claims go to private arbitration. If it loses, bankruptcy judges keep them.</p>
+  <p>For this brief's standing interest in large US banks, the case is a test of how far the Federal Arbitration Act reaches into the bankruptcy courts, where judges have historically kept control of claims that go to the heart of a case. Whichever side wins, the ruling will be cited well beyond credit cards.</p>
+  <p><b>What to watch:</b> the argument date, and whether the Solicitor General files in support of either side.</p>
+  <p class="sources"><b>Sources (1 account; the cert grant is on the Court's docket):</b>
+    <a href="https://www.scotusblog.com/2026/11/supreme-court-agrees-to-weigh-in-on-goldman-sachs-arbitration-dispute/">SCOTUSblog, Amy Howe</a>
+  </p>
+</article>
+
+<article id="sdn-lasers">
+  <h2>The Space Force's Golden Dome data network cannot talk to its own missile-tracking satellites, sources say</h2>
+  <div class="meta">
+    <span class="chip">US debt &amp; fiscal</span>
+    <span class="chip">Geopolitics</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>Breaking Defense reports, citing industry, former-government and current Space Force sources, that the laser terminals on SpaceX's Space Data Network Backbone, which SpaceX calls "Plasers", cannot exchange data with the terminals on the Space Development Agency's Tracking Layer or Space Systems Command's medium-orbit missile-warning satellites. Those two government systems cannot talk to each other either. SpaceX won a $2.29 billion contract in May to fast-track the backbone toward Golden Dome's 2028 deadline.</p>
+  <p>The proposed fix is 12 or 13 "Space Exchange Point" translator satellites at $12 million to $14 million each. That is roughly $150 million to $180 million for the satellites. The sources put the wider overhaul at up to $1 billion. The root cause, they say, is the Air Force's 2025 decision to swap SDA's open-standard Transport Layer for SpaceX's constellation after SDA had already built to its own published standard. Space Systems Command declined to comment and SpaceX did not respond.</p>
+  <p>This matters for spending as much as for defense. It is the kind of cost a Democratic Congress is likely to examine first, and Ars Technica expects the new majority to strip back Golden Dome. The sources also said the problem could have been avoided by agreeing standards earlier.</p>
+  <p><b>What to watch:</b> a SEP line in the next budget request or a reprogramming notice; any Space Force statement on terminal standards.</p>
+  <p class="sources"><b>Sources (1 account, multiple unnamed sources):</b>
+    <a href="https://breakingdefense.com/2026/11/key-space-force-satellites-cant-talk-to-each-other-likely-requiring-1b-solution-sources/">Breaking Defense</a> &middot;
+    <a href="https://arstechnica.com/space/2026/11/new-democratic-congress-will-likely-strip-the-gilding-from-trumps-golden-dome/">Ars Technica on Golden Dome's prospects (context, not corroboration)</a>
+  </p>
+</article>
+
+<h2 class="section" id="florida">Florida &amp; Tampa Bay</h2>
+<p class="secnote">One item cleared the local bar today.</p>
+
+<article id="fl-medicaid">
+  <h2>The 11th Circuit says Florida's Medicaid cut-off letters did not tell people why</h2>
+  <div class="meta">
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>A federal appeals court has upheld a permanent injunction requiring Florida to state clearly, in Medicaid termination notices, why it decided someone no longer qualified financially. In a 23-page opinion issued Thursday, 5 November, Judge Barbara Lagoa agreed with the trial court that the notices did not clearly communicate the decision, the reason for it, or who it applied to. Those are the letters the state sent during the post-pandemic eligibility review. The trial ruling, by U.S. District Judge Marcia Morales Howard in Jacksonville, ran to 273 pages after a six-day bench trial.</p>
+  <p>The local stake is procedural and large. The ruling covers the notices sent statewide, Pasco and Pinellas included, and the state now has to send ones that would survive a challenge. The state agencies did not respond to requests for comment. Any Supreme Court petition would have to start before Governor DeSantis leaves office in January, and Governor-elect Byron Donalds has not said where he stands.</p>
+  <p>The lower court found that the other sources the state pointed to, such as online portals and call centres, did not make up for the defective letters. The plaintiffs are represented by the National Health Law Program and Florida Health Justice Project. That finding is what makes the ruling expensive for the state: it cannot fix the problem with a website.</p>
+  <p><b>What to watch:</b> a cert petition or its absence by early January; whether the new notices arrive alongside next year's federal Medicaid work requirements.</p>
+  <p class="sources"><b>Sources (1 account):</b>
+    <a href="https://floridaphoenix.com/2026/11/06/federal-appeals-court-finds-floridas-medicaid-termination-letters-insufficient/">Florida Phoenix</a>
+  </p>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Nine things I saw and ranked below the line. Each one opens.</p>
+
+<div class="also-list">
+
+<details class="short" id="a-bis">
+  <summary><span class="chip">AI &amp; tech industry</span> The BIS Affiliates Rule stay is published and takes effect today, so the 50 per cent ownership rule for export controls stays off until Sunday, 10 January 2027.</summary>
+  <div class="exp">
+    <p>FR Doc. 2026-22793 extends the stay of the rule that would extend Entity List, Military End-User List and certain sanctions restrictions to any foreign company 50 per cent or more owned by a listed party. Without it, the rule would have come back on 10 November. The new end date matches the two-month extension of the US-China truce agreed in September. Law firm Nixon Peabody calls it "a pure timing measure", with the 50 per cent threshold unchanged.</p>
+    <div class="div">
+      <span class="t">Divergence &mdash; the rule's own dates</span>
+      <p><b>What is disputed.</b> Facts, inside one document. The background section says BIS published the Affiliates Rule on 20 September 2025. The DATES paragraph of the same rule says it was published on 30 September 2025 at 90 FR 47201. Nixon Peabody's timeline has 29 September effective and 30 September published.</p>
+      <p><b>Why they differ.</b> Almost certainly a typo in the background section. The Federal Register citation fixes the publication date.</p>
+      <p><b>What it means for you.</b> Use 30 September 2025. It changes nothing about today, but this brief cites the dates in a primary document, so it notes when they do not agree with each other.</p>
+    </div>
+    <p class="btl"><b>Below the line because</b> the substance was reported on 6 November, when the rule went on public inspection. Today is the formality.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.federalregister.gov/documents/2026/11/09/2026-22793/extension-of-the-suspension-of-expansion-of-end-user-controls-for-affiliates-of-certain-listed">FR 2026-22793</a> &middot; <a href="https://www.nixonpeabody.com/insights/alerts/2026/11/06/bis-formally-suspends-the-affiliates-rule-until-january-10-2027">Nixon Peabody</a> &middot; <a href="https://www.cassidylevy.com/news/bis-extends-suspension-of-affiliates-rule-until-january-2027/">Cassidy Levy Kent</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-measles">
+  <summary><span class="chip">Science &amp; public health</span> The Pan American Health Organization's verification commission meets Tuesday to Friday on whether the US has lost measles elimination status; CDC counts 5,182 cases this year.</summary>
+  <div class="exp">
+    <p>The US has had transmission since 20 January 2025, past the 12-month threshold. The commission will judge whether a single viral lineage has circulated without a break, and its recommendation goes to PAHO's director. Wisconsin reported its first measles death since 1990, an infant, and New York and Pennsylvania each reported a death in the same week.</p>
+    <div class="div">
+      <span class="t">Divergence &mdash; four deaths or eight?</span>
+      <p><b>What is disputed.</b> Facts. State health departments have reported at least eight measles deaths this year. CDC's official count is four.</p>
+      <p><b>Why they differ.</b> Method. CIDRAP reports that this year CDC is not automatically adding deaths that states have confirmed. It is not a disagreement about whether those people died.</p>
+      <p><b>What it means for you.</b> Use the state count, eight, as the floor. Whether CDC's toll converges with it is the thing to watch.</p>
+    </div>
+    <p class="btl"><b>Below the line because</b> the case count and PAHO date were reported on 7 November. The decision, not the meeting, is the news.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.cidrap.umn.edu/measles/us-measles-total-2026-tops-5100-cases">CIDRAP on cases</a> &middot; <a href="https://www.cidrap.umn.edu/measles/baby-wisconsin-has-died-measles-3rd-such-us-death-week">CIDRAP on deaths</a> &middot; <a href="https://www.paho.org/en/news/14-10-2026-measles-and-rubella-elimination-regional-monitoring-and-re-verification-commission">PAHO</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-china-ppi">
+  <summary><span class="chip">Macro &amp; markets</span> China's producer prices rose 5.7 per cent in October, the fastest since June 2022, while consumer inflation slowed to 0.7 per cent.</summary>
+  <div class="exp">
+    <p>The consensus forecast was 5.3 per cent. Mining and raw materials drove the rise, and one economist put it down to strong external demand. Core consumer inflation slowed to 0.8 per cent. The US channel is import prices. Chinese factory-gate inflation feeds through to American goods prices with a lag, on top of tariffs.</p>
+    <p class="btl"><b>Below the line because</b> it is a foreign print whose US effect is lagged and indirect.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.cnbc.com/2026/11/09/china-wholesale-inflation-rises-consumer.html">CNBC, citing NBS figures</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-blue-marlin">
+  <summary><span class="chip">Energy &amp; grid</span> MARAD licensed Blue Marlin, a $1 billion offshore crude-export port 99 miles off Cameron Parish, Louisiana, sized for 2 million barrels a day.</summary>
+  <div class="exp">
+    <p>The port is an Energy Transfer affiliate project. It would load very large crude carriers directly in deep water at up to 80,000 barrels an hour, using converted platform infrastructure. It is the fourth deepwater port licensed under this administration. Transportation Secretary Duffy announced it on Thursday.</p>
+    <p class="btl"><b>Below the line because</b> a licence is not a final investment decision, and it is years from loading a barrel.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://gcaptain.com/marad-approves-1-billion-offshore-crude-oil-export-port-off-louisiana/">gCaptain, on the DOT announcement</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-cuba">
+  <summary><span class="chip">Geopolitics</span> State and Treasury blocked five Cuban-flagged vessels and opened Cuba's marine, manufacturing and electronics sectors to sanctions on foreign firms.</summary>
+  <div class="exp">
+    <p>The action targets eight companies and two individuals, including the Cyprus-based tanker manager Caroil Transport Marine, and blocks the tankers Esperanza, Gloria C and Maria Cristina. The new Treasury sector determination matters more than the named ships, because it lets future designations reach any foreign company working in those sectors.</p>
+    <p class="btl"><b>Below the line because</b> the US channel is narrow: fuel to Cuba, not US prices.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://gcaptain.com/u-s-targets-cubas-oil-tanker-fleet-in-new-sanctions-crackdown/">gCaptain</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-medicaid-work">
+  <summary><span class="chip">US politics &amp; policy</span> Four states sued again to delay Medicaid work requirements, under 60 days before the 1 January start.</summary>
+  <div class="exp">
+    <p>Oregon filed in the District of Oregon, joined by Minnesota, New Mexico and Washington. The suit argues the administration lacks authority to force the change and cites sovereign, fiscal and public-health harm. It comes less than a week after another federal judge found implementation would cause irreparable harm. The 2025 reconciliation law requires 80 hours a month of work, volunteering or school. NPR reports Nebraska's early rollout has already cut off a cancer patient in error.</p>
+    <p class="btl"><b>Below the line because</b> it is a filing, not a ruling. An injunction would lead.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.statnews.com/2026/11/06/states-sue-trump-delay-medicaid-work-requirements/">STAT</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-fincen">
+  <summary><span class="chip">US financials</span> The withdrawal of the $250 cross-border wire-records proposal is formally published today. The $3,000 threshold stands.</summary>
+  <div class="exp">
+    <p>FinCEN and the Fed withdraw the 2020 joint proposal that would have cut the recordkeeping and travel-rule threshold from $3,000 to $250 for transfers that begin or end abroad, and that would have applied it explicitly to convertible virtual currency. The agencies say they will take no further action on it.</p>
+    <p class="btl"><b>Below the line because</b> it was reported on 7 November. Today is publication.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://public-inspection.federalregister.gov/2026-22809.pdf">FR 2026-22809 (public inspection)</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-binance">
+  <summary><span class="chip">US financials</span> Binance resumed withdrawals after its $6.3 billion hack and says 90 per cent of stolen user assets are covered; its CFO is leaving.</summary>
+  <div class="exp">
+    <p>American Banker notes that the FBI's alert asking companies to help freeze the funds names only crypto services, which leaves US banks out of the recovery effort. The figure is $6.3 billion at CNBC and TechCrunch and $6.4 billion at American Banker. That difference is likely valuation timing for the stolen tokens.</p>
+    <p class="btl"><b>Below the line because</b> it has no direct exposure for US banks, as the FBI alert itself shows.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.americanbanker.com/news/6-4-billion-binance-heist-leaves-banks-off-the-hook">American Banker</a> &middot; <a href="https://techcrunch.com/2026/11/07/binance-cfo-is-leaving-to-pursue-a-new-venture-after-6-3-billion-hack/">TechCrunch</a> &middot; <a href="https://www.cnbc.com/markets/">CNBC markets</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-fed">
+  <summary><span class="chip">Macro &amp; markets</span> Treasury's own curve for Friday, 6 November: 2-year 4.51, 10-year 4.86, 30-year 5.26. No print or decision today.</summary>
+  <div class="exp">
+    <p>The 10-year was at 4.95 on Tuesday, election day, so it has fallen 9 basis points since. San Francisco Fed President Daly said on Friday that more hikes are likely. Under this brief's settled rule, that is a speech, not a print, and it is noted rather than run as a story.</p>
+    <p class="btl"><b>Below the line because</b> the reader asked for Fed prints and decisions only.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202611">Treasury daily par yield curve</a></p>
+  </div>
+</details>
+
+</div>
+
+<div class="fb" style="border-top:1px solid var(--rule); padding-top:1rem; margin-top:1.5rem;">
+  <p><b>One question about this whole section:</b> were the right things ranked below the line?</p>
+  <label><input type="radio" name="fb-also" value="right"> About right</label>
+  <label><input type="radio" name="fb-also" value="promote"> Some of these should have led</label>
+  <label><input type="radio" name="fb-also" value="drop"> Some should have been dropped entirely</label>
+  <label><input type="radio" name="fb-also" value="fewer"> Fewer short items, more depth up top</label>
+</div>
+
+<button class="submit" id="send">Send my feedback &rarr;</button>
+<p class="sources" style="text-align:center">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+
+<footer>
+  <h4>Sources checked this run &mdash; 58, of which 44 outside the watchlist</h4>
+  <p><b>Watchlist and standing sources (14):</b> CNBC (world, markets, tech) &middot; Guardian (US, business) &middot; Al Jazeera (news, economy) &middot; gCaptain &middot; BBC &middot; NPR &middot; AAA &middot; Treasury yield curve &middot; Federal Register public inspection &middot; Wikipedia current events &middot; SCOTUSblog &middot; SCMP &middot; Le Monde &middot; Tampa Bay Times.</p>
+  <p><b>Outside the watchlist (44):</b> Ars Technica &middot; The Register &middot; DatacenterDynamics &middot; American Banker &middot; Breaking Defense &middot; Defense News &middot; Florida Phoenix &middot; FreightWaves &middot; STAT &middot; CIDRAP &middot; Japan Times &middot; DW English &middot; DW German &middot; TechCrunch &middot; The Verge &middot; Semafor &middot; Hacker News &middot; MarketWatch &middot; Yahoo Finance &middot; Times of India &middot; Euronews &middot; CBS News &middot; ABC News &middot; Fox News &middot; New York Post &middot; Stars and Stripes &middot; BIS rule text 2026-22793 &middot; FinCEN/Fed withdrawal 2026-22809 &middot; CMS rule 2026-22743 &middot; Nixon Peabody &middot; Cassidy Levy Kent &middot; Coinbase &middot; CoinDesk &middot; Decrypt &middot; Eighth Circuit opinion in <i>Corner Post</i> &middot; ABA Banking Journal &middot; American College of Radiology &middot; IDSA &middot; ACC &middot; ASCRS &middot; Tech Times &middot; 24/7 Wall St. &middot; PAHO &middot; Medical Daily.</p>
+
+  <h4>The negative check</h4>
+  <p><i>What is the biggest story today that is not on my list, and why is it not?</i> Nvidia was technically on the list (Megaspeed was reported 7 November), but Sunday's admission was not, and it moved to the lead. Off-list finds that made the paper: the Goldman Sachs cert grant and the Space Force laser-terminal gap. Off-list and omitted: COP31 opening in Antalya (no US commitment at stake today); the 26 October Eighth Circuit swipe-fee ruling (two weeks old, and the cap stands until the mandate issues); the Citi Tampa campus shooting last Wednesday (crime with no policy consequence, under the anti-topics).</p>
+
+  <h4>Could not reach</h4>
+  <p>AP News, Axios, Politico, The Hill and France 24 returned interstitial or blocked pages. CENTCOM's press page returned 400. Utility Dive returned empty. The Euronews piece on the US AI safety centre losing its head would not render and is not reported. No vendor quote is used for a basis-point level. Yields are Treasury's own series, and crude is the CNBC snapshot with its timestamp.</p>
+
+  <h4>Accountability</h4>
+  <p>No earlier Grok framing was contradicted this run. Yesterday's AAA regular of $4.0203 matches the "yesterday" column in today's AAA table. AAA's own headline says the national average "falls 12 cents in one week", but its table shows 16.0 cents ($4.1694 to $4.0093). The headline was probably written earlier in the week, so this issue uses the table.</p>
+
+  <h4>About this issue</h4>
+  <ul>
+    <li>Scheduled 7:00 a.m. Eastern run. Eight leads, one Florida item, nine short items. 18 confidence markers: 4 Primary source, 7 Independent corroboration, 7 Single-sourced, 0 Unconfirmed. 8 divergence boxes.</li>
+    <li>Stories were selected and written from this run's own gathering. Claude's edition for 9 November was not opened until this draft was finished. The live config file's operational notes, which every run must reload, do describe some of that edition's stories in passing.</li>
+    <li>Markup built from Issue 10 (2026-09-10b.html), not from any previous Grok edition.</li>
+    <li>Every quotation is under fifteen words and attributed; everything else is paraphrase.</li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n  → " + i.value);
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on Issue No. 66-grok — 9 November 2026, Grok edition\n\n" + lines.join("\n")
+      + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-11-09-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
