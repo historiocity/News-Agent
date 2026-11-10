@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Tuesday, 10 November 2026 (Issue 67-grok)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  /* short-item tier */
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list summary .chip { vertical-align:.05rem; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+</style>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 67-grok &middot; Tuesday, 10 November 2026 &middot; Grok edition</div>
+  <h1>Waller ties December's hike to this morning's CPI, USDA's own numbers put 6.3 million people off SNAP, and Anthropic marks its IPO down from the draft</h1>
+  <p class="sub">Eight stories at length, including Florida, and eleven in brief. Built from the Issue 10 framework.</p>
+  <p class="prov"><b>66 sources checked, 46 of them outside the watchlist.</b> Six more refused the fetch and are not counted (listed in the footer). Four lead stories are new subjects: Waller's speech, the SNAP and jobless-benefit rules, the Big Bend order, and Pinellas licence-plate cameras. Four continue threads, at the cap: Anthropic's IPO, Nvidia, the Iran&ndash;oil&ndash;pump chain, and the Hegseth vote. <b>Biggest story not on my list:</b> the three safety-net rules in today's Federal Register. They were on no thread, I found them by reading the day's whole rule list, and they became the second lead. The second negative-check find was the Supreme Court's major-questions holding in the Big Bend order, which most coverage treated as a wall story. <b>Independent accounts compared per lead:</b> Waller 4 &middot; safety-net rules 3 documents + 2 accounts &middot; Anthropic 6 &middot; Nvidia 6 &middot; Iran chain 12 &middot; Hegseth 3 &middot; Big Bend 4 &middot; Pinellas 4. <b>Timing:</b> October CPI is due at 8:30 a.m. ET, after this edition closed, and is not in it. Neither is this week's EIA retail print.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#waller-cpi">Waller says he will vote to raise rates in December even if this morning's inflation print is good</a></li>
+    <li><a href="#snap-ui-rules">Three rules tightening food aid and jobless benefits, and USDA's own estimate is 6.3 million people losing SNAP</a></li>
+    <li><a href="#anthropic-ipo">Anthropic launched its IPO roadshow at $70&ndash;78, smaller than the draft it pulled back</a></li>
+    <li><a href="#nvidia-megaspeed">Commerce stepped back from the Megaspeed case after Nvidia's lawyer called; the FBI is looking at Huang</a></li>
+    <li><a href="#iran-oil-pump">"Effectively over": Brent near $91, gasoline under $4, US tankers leave English bases</a></li>
+    <li><a href="#hegseth-impeachment">A Republican has forced a House vote on impeaching Hegseth over the Iran war</a></li>
+    <li><a href="#scotus-big-bend">The Court restarted the Big Bend wall and abolished the "constitutional" major-questions claim</a></li>
+    <li><a href="#fl-flock">Florida: a third Pinellas deputy charged over licence-plate cameras, and a gap in state law</a></li>
+    <li><a href="#also-today">Also today (11)</a></li>
+  </ol>
+</nav>
+
+<article id="waller-cpi">
+  <h2>Waller says he will vote to raise rates in December even if this morning's inflation print is good, and for half a point if it is not</h2>
+  <div class="meta">
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Fed Governor Christopher Waller, speaking in London hours before the October consumer price index (8:30 a.m. ET today), set out his vote in advance. If October inflation improves on September, as he expects, he says he will still back a 25 basis-point increase at the 8&ndash;9 December FOMC meeting. If core CPI comes in at around 0.3 per cent or higher, like the previous two months, he says a 50 basis-point move should be considered, because hiking only a quarter point "would put our credibility at risk."</p>
+  <p>This is the speech text on the Board's own site, not a wire paraphrase. Its reasoning matters more than the headline. Waller says the Fed's earlier signalling of hikes already tightened markets, so the hikes now have to be delivered or rates will fall in a way that loosens policy. He calls September's inflation data plainly bad: PCE up 0.5 per cent on the month and 3.7 per cent on the year, core PCE 3.1 per cent. He says more than 70 per cent of core services components were rising faster than 3 per cent.</p>
+  <p>Two of his inputs run straight through this brief's other leads. He cites reports that Hormuz insurance and ship-to-ship transfers are adding $20&ndash;30 a barrel, which a settlement would remove. He also cites a Fed staff note published 9 November finding that oil shocks now pass into core inflation more persistently than before 2020. And he names high-tech goods prices tied to the AI build-out as something he is watching in today's print.</p>
+  <p><b>What to watch:</b> core CPI month-on-month against Waller's 0.3 per cent line. BLS will publish no year-on-year rate this month, because October 2025 was never collected during the shutdown. Futures had about an 85 per cent chance of a December hike priced at Monday's close, per Reuters. PPI follows Friday.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how much did Waller move the odds of a half-point hike?</span>
+    <p><b>What is disputed.</b> A significance dispute. American Banker reads the speech as all but locking in a December hike. Reuters leads on the quarter point, with the half point as a conditional. FXStreet's desk says futures put no weight on 50 basis points before he spoke, and that he made today's CPI a choice between 25 and 50.</p>
+    <p><b>Why they differ.</b> The audiences differ. Reuters writes for a general wire and leads on the base case. American Banker writes for bankers pricing deposits and loans, so a near-certain hike is their headline. FXStreet writes for traders, for whom the news is the change in the tail. They agree on every quoted sentence, and they published within the same hour.</p>
+    <p><b>What it means for you.</b> Read it as one governor, a well-known hawk on this cycle, saying where he stands. It is not a committee forecast. American Banker notes two members already dissented for a hike in October. The odds that matter are the ones in futures after 8:30. If core prints 0.3 or higher, a 50 basis-point December move becomes a live question for the first time. At 0.2 it goes back to being one governor's conditional.</p>
+  </div>
+  <p class="sources">
+    <a href="https://www.federalreserve.gov/newsevents/speech/waller20261110a.htm">Waller, "The Economic Outlook and Some Thoughts on Labor Market Dynamism" (Board text)</a> &middot;
+    <a href="https://www.investing.com/news/economy-news/feds-waller-plans-to-support-at-least-a-quarterpoint-rate-hike-in-december-5014429">Reuters via Investing.com</a> &middot;
+    <a href="https://www.americanbanker.com/news/waller-calls-for-raising-interest-rates-25-basis-points-at-least">American Banker</a> &middot;
+    <a href="https://www.fxstreet.com/analysis/hawks-fly-in-as-feds-waller-puts-50bps-hike-on-table-and-ecbs-lane-backs-hike-202611101041">FXStreet desk note</a> &middot;
+    <a href="https://www.bls.gov/schedule/2026/11_sched_list.htm">BLS November release calendar</a>
+  </p>
+  <div class="fb">
+    <p>The CPI number itself lands after this edition. Should a print that arrives at 8:30 hold the morning edition back?</p>
+    <label><input type="radio" name="fb-waller" value="hold"> Yes &mdash; wait for the print on CPI and jobs days</label>
+    <label><input type="radio" name="fb-waller" value="ontime"> No &mdash; publish on time and cover the print tomorrow</label>
+  </div>
+</article>
+
+<article id="snap-ui-rules">
+  <h2>One Federal Register issue carries three rules tightening food aid and jobless benefits, and USDA's own estimate is 6.3 million people losing SNAP</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Underreported</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Today's Federal Register carries three proposed rules that together tighten access to the two main federal income supports for people out of work or on low pay.</p>
+  <p><b>SNAP categorical eligibility (FR 2026-22936).</b> USDA would end "broad-based" categorical eligibility. Today a household can qualify for SNAP automatically by receiving any TANF-funded benefit, including non-cash services. Under the proposal, only households receiving TANF <em>assistance</em> as defined at 45 CFR 260.31 would qualify that way. USDA's own regulatory impact analysis estimates about $44.6 billion less in federal SNAP benefits over fiscal 2027&ndash;31. It puts the effect at <b>3.2 million households containing 6.3 million people</b> in fiscal 2029, the first full year. School districts would have to process about 197,000 more school-meal applications, because SNAP enrolment currently qualifies children automatically. USDA tried a narrower version of this in July 2019. Comments close 10 December.</p>
+  <p><b>SNAP work-requirement waivers (FR 2026-22944).</b> This rule codifies the 2025 reconciliation act's changes to the three-month time limit for adults without dependants. Outside Alaska and Hawaii, an area now qualifies for a waiver only if unemployment is above 10 per cent. USDA would also tighten the data needed to request a waiver and rewrite the definition of a homeless individual. Comments close 10 December.</p>
+  <p><b>Unemployment insurance (FR 2026-22903).</b> Labor would set a national floor of five qualifying work-search activities per benefit week. Claimants would have to report them before being paid. States could no longer issue a warning instead of finding a claimant ineligible. Comments close 11 January 2027.</p>
+  <p><b>What to watch:</b> the comment dockets, the state response (House Agriculture Democrats say 46 states use broad-based eligibility), and whether the incoming Democratic House tries an appropriations rider. None of the three is final, and the rules would land after the new Congress is seated.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; "targeting" or "kicking off": the same 6.3 million</span>
+    <p><b>What is disputed.</b> Significance, not the number. Both sides use USDA's figure. USDA says the rule targets benefits to households that actually qualified for TANF, and notes that SNAP reached a record of nearly 45 million participants as broad-based eligibility spread. Rep. Angie Craig, ranking Democrat on House Agriculture, calls it an effort to "kick an additional 6.3 million Americans off SNAP." She says 5.5 million have already left SNAP since the 2025 act.</p>
+    <p><b>Why they differ.</b> Each is describing a different group inside the same 6.3 million. USDA's own text shows that many households qualifying only through broad-based eligibility have resources or incomes above the federal SNAP limits. Those are the households the rule is aimed at. But the same rule also removes automatic eligibility for people who would pass the federal test and now face new paperwork. USDA's burden section counts 73.9 per cent of affected households as facing that paperwork. Craig's 5.5 million figure is her committee's, and I could not check it against a USDA series.</p>
+    <p><b>What it means for you.</b> Take the 6.3 million as the government's own estimate of people who stop receiving SNAP. It is not an opponent's projection. The open question is the split between people above the federal limits and eligible people lost to paperwork, and USDA does not publish that split. It would show up in the final rule's revised impact analysis, or in state-level estimates filed during the comment period.</p>
+  </div>
+  <p class="sources">
+    <a href="https://www.federalregister.gov/documents/2026/11/10/2026-22936/supplemental-nutrition-assistance-program-reforming-categorical-eligibility">FR 2026-22936, categorical eligibility (full text read)</a> &middot;
+    <a href="https://www.federalregister.gov/documents/2026/11/10/2026-22944/modification-to-work-requirements-for-able-bodied-adults">FR 2026-22944, ABAWD time limit</a> &middot;
+    <a href="https://www.federalregister.gov/documents/2026/11/10/2026-22903/unemployment-insurance-program-national-minimum-weekly-work-search-requirements">FR 2026-22903, UI work search</a> &middot;
+    <a href="https://democrats-agriculture.house.gov/news/documentsingle.aspx?DocumentID=3157">House Agriculture Democrats</a> &middot;
+    <a href="https://www.cbsnews.com/">CBS News on the UI proposal (front page)</a>
+  </p>
+  <div class="fb">
+    <p>This came from reading the whole Federal Register issue, not from the news. Keep doing that?</p>
+    <label><input type="radio" name="fb-snap" value="yes"> Yes &mdash; the document sweep is the point</label>
+    <label><input type="radio" name="fb-snap" value="less"> Less &mdash; only when the press has it too</label>
+  </div>
+</article>
+
+<article id="anthropic-ipo">
+  <h2>Anthropic launched its IPO roadshow at $70&ndash;78 a share, a smaller deal than the draft it pulled back from bankers last night</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Anthropic announced this morning that it has started marketing its initial public offering. The deal is 825 million Class A shares at $70 to $78: 801.35 million sold by the company and 23.65 million by existing holders. The underwriters get a 30-day option on 123.75 million more. It intends to list on the Nasdaq Global Select Market as "ANT", with Goldman Sachs and Morgan Stanley named for the prospectus. At the top of the range, the base deal raises about $64.4 billion, of which about $62.5 billion goes to the company. If the underwriters take the full option, the total is about $74 billion. Handelsblatt led its front page on the $64 billion figure.</p>
+  <p>The launch followed a mishap. Late Monday, Reuters reported that an Anthropic representative had sent banks a filing showing 866.7 million shares at $70&ndash;80, or $69.3 billion at the top. The representative then followed up to say the pricing was inaccurate and an updated filing would follow. The same draft described a $26 billion private placement of Class N shares alongside the IPO, from Alphabet, Nvidia, AMD, Broadcom, Micron, Microsoft and TSMC. Today's announcement does not mention the placement, and I have not confirmed it in the amended S-1, because sec.gov refused this run's fetch.</p>
+  <p>Why it matters here: this is the largest test yet of whether public markets will fund frontier-model losses at the scale the labs plan to spend. The Times of India's summary of the S-1 gives first-half 2026 revenue of $16.3 billion and a net loss of $80.7 billion. Most of the loss is fair-value accounting on financing instruments, not cash burn. Bloomberg reports investors discussing $1.1&ndash;1.3 trillion, below earlier talk of up to $2 trillion, after last week's AI sell-off.</p>
+  <p><b>What to watch:</b> pricing, expected next week; whether the private placement survives in the final prospectus; and whether the range moves during the roadshow.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; $69.3 billion or $64.4 billion?</span>
+    <p><b>What is disputed.</b> Facts, and they have been settled. Reuters' Monday-night figure came from 866.7 million shares at up to $80. Today's company announcement is 825 million at up to $78.</p>
+    <p><b>Why they differ.</b> Timing, and nothing else. Reuters accurately reported a draft that was circulated and then retracted. Bloomberg Law calls the retracted number outdated. Anthropic's own release, published hours later, is the document of record. Reuters said it could not determine which details were wrong, and the gap now answers that: both the share count and the top of the range came down.</p>
+    <p><b>What it means for you.</b> Use $64.4 billion at the top of the base deal. Treat any valuation figure as investor talk until the deal prices. A smaller deal at a lower top price fits the reporting that investors pushed back on valuation after the sell-off. The final price and share count next week will settle it.</p>
+  </div>
+  <p class="sources">
+    <a href="https://www.anthropic.com/news/roadshow-launch">Anthropic, roadshow launch (10 Nov)</a> &middot;
+    <a href="https://www.investing.com/news/stock-market-news/exclusiveanthropic-aims-to-raise-up-to-693-billion-in-blockbuster-ipo-5013861">Reuters via Investing.com, the retracted draft</a> &middot;
+    <a href="https://news.bloomberglaw.com/capital-markets/anthropic-seeks-to-raise-69-3-billion-via-its-ipo-reuters-says">Bloomberg Law</a> &middot;
+    <a href="https://www.business-standard.com/world-news/anthropic-retracts-69-3-bn-ipo-figures-says-revised-details-to-follow-126111000143_1.html">Business Standard (Bloomberg valuation talk)</a> &middot;
+    <a href="https://timesofindia.indiatimes.com/business/international-business/69-3-billion-ipo-anthropic-shares-price-details-with-banks-then-retracts/articleshow/135700013.cms">Times of India on S-1 financials</a> &middot;
+    <a href="https://www.handelsblatt.com/">Handelsblatt front page</a> &middot;
+    <a href="2026-11-05-grok.html#a-anthropic">5 Nov short item</a>
+  </p>
+  <div class="fb">
+    <p>Do you want the IPO tracked through pricing and the first 13F season, or only at pricing?</p>
+    <label><input type="radio" name="fb-ant" value="track"> Track it &mdash; it is a core-beat event</label>
+    <label><input type="radio" name="fb-ant" value="pricing"> Pricing only</label>
+  </div>
+</article>
+<article id="nvidia-megaspeed">
+  <h2>Commerce investigators stepped back from the Megaspeed chip-smuggling case after Nvidia's top lawyer contacted them, and the FBI is now looking at Huang</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The Nvidia story moved in three directions overnight.</p>
+  <p><b>The export-control case.</b> The New York Times reported, with NBC independently confirming the core, that in August 2025 Nvidia's general counsel, Tim Teter, contacted Bureau of Industry and Security agents investigating Megaspeed. Megaspeed is the Singapore data-centre company suspected of diverting Nvidia chips to China. Teter told the agents that Under Secretary Jeff Kessler had approved the contact. The agents declined to meet and raised concerns internally. The Justice Department then asked Commerce to pause its part of the case, and DOJ is now running a criminal investigation. A Commerce official told the Times that Kessler told staff to handle the case by the book. Nothing reported so far shows Nvidia changed the outcome. But a politically appointed export-control chief whose name was invoked in a live enforcement case is now a possible subject himself.</p>
+  <p><b>The FBI.</b> At a White House briefing Monday, Trump said "I know the FBI is looking into" Jensen Huang's relationship with Alice Huang, the former Megaspeed executive US officials believe worked for Beijing. He said Huang told him he had no idea she was a spy, and that he believes him. Beijing called the allegations groundless.</p>
+  <p><b>The lawsuit.</b> Shareholder Mark Kistenmacher filed a proposed securities class action in federal court in San Jose on Monday under Rule 10b-5. It covers buyers from 9 October to 8 November. It alleges that Nvidia's October statements clearing Megaspeed were misleading given the CEO's relationship.</p>
+  <p><b>What to watch:</b> the 18 November congressional date for Huang reported in yesterday's edition. Also whether he travels to APEC with Trump: SCMP reports his attendance is in doubt. Watch, too, any move to put Megaspeed on the Entity List, which the Times says other agencies proposed and Commerce did not act on.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; what Nvidia's lawyer asked for, and what Monday's fall cost</span>
+    <p><b>What is disputed.</b> Two facts. First, the contact itself. The Times, relayed by Export Compliance Daily and Investing.com, describes an <em>email to the agents</em> asking for a meeting and citing Kessler's permission. Bloomberg describes a <em>call to Kessler</em> asking whether BIS had a hand in Singapore's detention of a Megaspeed executive. Second, the market loss. Courthouse News gives a 5 per cent fall and $192 billion. The BBC gives "more than 4 per cent" and about $250 billion.</p>
+    <p><b>Why they differ.</b> The contact accounts probably describe two steps in one sequence, a call to the under secretary and then an email to his agents citing it, each sourced from a different side. Bloomberg's sources sound closer to Nvidia's account, the Times' closer to the agents'. On the stock, one outlet is using the close and the other an intraday or differently based market value. They cannot both be right: a 4&ndash;5 per cent move on a company of roughly $4.5 trillion is about $180&ndash;225 billion.</p>
+    <p><b>What it means for you.</b> Treat the call and the email as both likely to be true. The email is the more consequential, because it is what the agents escalated. On the money, use "about $200 billion", not $250 billion. A congressional or inspector-general request for the Teter&ndash;Kessler records would settle the first question; Monday's official closing price settles the second.</p>
+  </div>
+  <p class="sources">
+    <a href="https://www.nbcnews.com/tech/tech-news/nvidia-investigation-justice-fbi-commerce-jensen-huang-alice-china-rcna608397">NBC News</a> &middot;
+    <a href="https://exportcompliancedaily.com/article/2026/11/10/report-bis-pauses-chip-smuggling-probe-after-agents-flag-kesslernvidia-interaction-2611090045">Export Compliance Daily</a> &middot;
+    <a href="https://www.investing.com/news/stock-market-news/nvidia-intervention-preceded-transfer-of-chip-probe-to-justice-department-5012839">Investing.com on the NYT report</a> &middot;
+    <a href="https://news.bloomberglaw.com/artificial-intelligence/nvidia-intervened-in-us-probe-of-megaspeed-chip-smuggling">Bloomberg</a> &middot;
+    <a href="https://www.bbc.com/news/articles/cqg7x7dpvym8o">BBC on Trump's remarks</a> &middot;
+    <a href="https://www.courthousenews.com/nvidia-shareholder-sues-over-ceos-undisclosed-affair-with-purported-spy/">Courthouse News on the complaint</a> &middot;
+    <a href="https://www.scmp.com/news/china">SCMP China desk</a> &middot;
+    <a href="2026-11-09-grok.html#nvidia-huang">yesterday's lead</a>
+  </p>
+  <div class="fb">
+    <p>Is this running at the right size &mdash; a lead every day while it moves?</p>
+    <label><input type="radio" name="fb-nvda" value="right"> Right size</label>
+    <label><input type="radio" name="fb-nvda" value="short"> Short item unless there is a document</label>
+  </div>
+</article>
+
+<article id="iran-oil-pump">
+  <h2>Trump calls the Iran war "effectively over"; Brent is near $91, regular gasoline is under $4, and US tankers are leaving English bases</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics &rarr; Energy</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>One shock, one chain, running from policy to the pump.</p>
+  <p><b>Policy.</b> After meeting Qatar's prime minister on Monday, Trump said "Iran militarily is effectively over." He added that the US is keeping the status quo, which Al Jazeera notes still means the naval blockade of Iranian ports and Task Force Iron Gate. Iranian officials called the remarks fake news. Le Monde reports Qatar's prime minister then joined G7 talks on Iran.</p>
+  <p><b>Threat.</b> The same day, KC-135 tankers left RAF Mildenhall for Germany, with others sent to Spain and Scotland. Mildenhall and Lakenheath were raised to Force Protection Condition Charlie over an unspecified Iranian threat, according to the WSJ via Stars and Stripes, with CBS and the BBC reporting the moves. Saudi Arabia said its East&ndash;West pipeline was hit in the Medina region, causing a contained fire, and that flows continued. It also intercepted missiles aimed at Riyadh.</p>
+  <p><b>Flows.</b> Iraq says it has reached understandings with Washington to export through a lane near Oman. Its exports recovered to about 3.5 million barrels a day in October, from 2.65 million in September. Kpler counts 31 LNG cargoes through Hormuz in October, the most since February. The Saudi shipper Bahri says it is moving tankers through in coordination with the US military.</p>
+  <p><b>Price.</b> Brent was $90.65 on Trading Economics' feed this morning and about $91 on oilprice.com's futures screen. Handelsblatt and oilprice headlines have it trading under $90 for the first time since August. AAA's national regular average today is <b>$3.979</b>. The last EIA weekly print, for the week of 2 November, had regular at $4.153 and diesel at $6.292. This week's EIA print, moved to today by the Veterans Day holiday, had not been published when this edition closed.</p>
+  <p><b>What to watch:</b> today's EIA print for whether diesel falls as fast as gasoline. Waller's speech argues it will not, because of refining limits. Also watch whether the "status quo" includes the blockade after a deal is signed.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; under $4 "since July" or "since August", and what pushed it there</span>
+    <p><b>What is disputed.</b> One fact and one significance question. NBC and CBS say gasoline is below $4 for the first time since July. GasBuddy says since early August. NBC and the oil desks frame the drop as Iran de-escalation. GasBuddy's Patrick De Haan says it is mostly seasonal, since prices have fallen in the month before every election since 2006 except 2010.</p>
+    <p><b>Why they differ.</b> Different instruments. AAA's card-reader average and GasBuddy's station-report average differ by a few cents, and around $4 a few cents moves the crossing date by weeks. On cause, De Haan is answering the claim that the election did it, and the networks are writing the war story. Both are partly right: he also credits more oil moving through Hormuz.</p>
+    <p><b>What it means for you.</b> Quote AAA's $3.979 as today's level. Use EIA's weekly series, not either daily, for direction. Expect gasoline to keep easing on seasonal supply. The test of the war-premium explanation is diesel, which seasonality does not help in November. If EIA shows diesel falling more slowly than gasoline today, Waller's refining point is the better reading.</p>
+  </div>
+  <div class="div">
+    <span class="t">Divergence &mdash; is the war over?</span>
+    <p><b>What is disputed.</b> Significance. The White House says militarily it is over. In the same 24 hours, the record shows a pipeline strike, missiles at Riyadh, US aircraft moved away from an Iranian threat in England, a blockade still in force, and Tehran rejecting the characterisation.</p>
+    <p><b>Why they differ.</b> "Effectively over" describes US offensive operations, which Trump told reporters are not needed at this point, in Haaretz's account. The other facts describe Iranian and proxy capacity to strike back, which is a separate question. Trump also said he is keeping the status quo at the request of Iran's neighbours, which helps explain why Doha is pressing for a deal.</p>
+    <p><b>What it means for you.</b> For prices, the market has taken the offensive half at face value, with Brent down about 15 per cent in a month. The risk it is now underpricing is the other half. The signal to watch is whether war-risk premiums fall. Waller says insurance and transfer costs are what keep $20&ndash;30 a barrel in the price.</p>
+  </div>
+  <p class="sources">
+    <a href="https://www.aljazeera.com/news/2026/11/9/trump-calls-iran-war-effectively-over-after-talks-with-qatar-pm">Al Jazeera</a> &middot;
+    <a href="https://www.stripes.com/branches/air_force/2026-11-10/us-relocates-aircraft-mildenhall-iran-threat-23420098.html">Stars and Stripes</a> &middot;
+    <a href="https://www.cbsnews.com/news/raf-mildenhall-us-tanker-relocation-iran-threat-military-aircraft-moved/">CBS</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/10/saudi-arabia-downs-missiles-fired-at-riyadh-after-houthi-attack-on-pipeline">Al Jazeera on the pipeline</a> &middot;
+    <a href="https://gcaptain.com/iraq-has-reached-understandings-with-us-to-allow-oil-exports-through-hormuz/">gCaptain/Reuters on Iraq</a> &middot;
+    <a href="https://oilprice.com/Latest-Energy-News/World-News/LNG-Traffic-Through-Hormuz-Hits-Highest-Level-Since-Iran-War-Began.html">oilprice/Kpler LNG</a> &middot;
+    <a href="https://oilprice.com/Latest-Energy-News/World-News/US-Military-Coordinates-With-Saudi-Oil-Tankers-on-Risky-Hormuz-Crossings.html">oilprice on Bahri</a> &middot;
+    <a href="https://tradingeconomics.com/commodity/brent-crude-oil">Trading Economics Brent</a> &middot;
+    <a href="https://gasprices.aaa.com/">AAA</a> &middot;
+    <a href="https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm">EIA weekly retail</a> &middot;
+    <a href="https://www.gasbuddy.com/go/gas-falls-below-4-for-the-first-time-since-august-and-no-the-election-didnt-do-it">GasBuddy</a> &middot;
+    <a href="https://www.nbcnews.com/">NBC front page</a> &middot;
+    <a href="https://www.lemonde.fr/en/">Le Monde</a> &middot;
+    <a href="2026-11-09-grok.html#iran-oil">yesterday's chain</a>
+  </p>
+  <div class="fb">
+    <p>Two divergence boxes on one story: useful, or too much?</p>
+    <label><input type="radio" name="fb-iran" value="useful"> Useful &mdash; they are different disputes</label>
+    <label><input type="radio" name="fb-iran" value="one"> One box, the sharper one</label>
+  </div>
+</article>
+<article id="hegseth-impeachment">
+  <h2>A Republican has forced a House vote on impeaching the Defense Secretary over the Iran war, due within two legislative days</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Rep. Thomas Massie, a Kentucky Republican, introduced a privileged resolution on the House floor Monday with eight articles of impeachment against Defense Secretary Pete Hegseth. CBS describes the text as 34 pages. Three articles charge him with waging war on Iran without congressional authorisation, in violation of the 1973 War Powers Resolution. Others cite disregard for civilian protections, including a strike on an Iranian school, the Caribbean boat strikes, the capture of Venezuela's Nicol&aacute;s Maduro, and the Pentagon's pursuit of Sen. Mark Kelly over a video urging troops to refuse illegal orders.</p>
+  <p>The mechanism is what makes this news rather than noise. A privileged resolution forces the Speaker to schedule action within two legislative days. Roll Call says that puts a vote as early as Wednesday. Speaker Mike Johnson must first rule on whether it is privileged; precedent favours treating impeachment that way. The House can then vote on the articles, or on a motion to table them or refer them to committee. A tabling vote is the likeliest form, and it would put every member on record on the Iran war before the new Congress is seated. Massie first filed in September, and leadership recessed the House early rather than vote.</p>
+  <p>Trump said he would stand by Hegseth even if he is impeached. Hegseth scheduled a rare Pentagon briefing for this morning. Conviction would need two-thirds of the Senate.</p>
+  <p>Yesterday's edition listed impeachment as an agenda item, after Democratic leader Hakeem Jeffries said he was a "hard yes." What has changed is that a Republican filed it, and the clock has started.</p>
+  <p><b>What to watch:</b> whether Johnson rules it privileged; whether the vote is on tabling or on the articles; how many Republicans cross; and whether outgoing members who lost last week turn up, which Roll Call flags as a factor in the count.</p>
+  <p class="sources">
+    <a href="https://rollcall.com/2026/11/09/massie-moves-to-force-hegseth-impeachment-vote/">Roll Call</a> &middot;
+    <a href="https://www.cbsnews.com/news/pete-hegseth-impeachment-vote-house-thomas-massie/">CBS News</a> &middot;
+    <a href="https://abcnews.go.com/">ABC News front page (Trump "stand by")</a> &middot;
+    <a href="https://elpais.com/">El Pa&iacute;s</a> &middot;
+    <a href="2026-11-09-grok.html#lame-duck">yesterday's lame-duck lead</a>
+  </p>
+  <div class="fb">
+    <p>War-powers votes: follow each one, or only the outcome?</p>
+    <label><input type="radio" name="fb-heg" value="each"> Each vote, with the tally</label>
+    <label><input type="radio" name="fb-heg" value="outcome"> Outcome only</label>
+  </div>
+</article>
+
+<article id="scotus-big-bend">
+  <h2>The Supreme Court restarted the Big Bend border wall and held there is no such thing as a "constitutional" major-questions claim</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy &middot; courts</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>In <em>Mullin v. Friends of the Ruidosa Church</em> (No. 26A560), decided Monday in an unsigned four-page order, the Court stayed a West Texas district court injunction. That injunction had halted border-barrier construction in what Customs and Border Protection calls the Big Bend Sector. Justice Jackson noted she would deny the stay. The stay lasts while the government seeks review and ends automatically if certiorari is denied.</p>
+  <p>The holding reaches further than one stretch of wall. Section 102 of the 1996 immigration act lets the Homeland Security secretary waive "all legal requirements" to build barriers quickly. It also bars courts from hearing anything except constitutional claims. Judge Kathleen Cardone got around that bar by treating the major-questions doctrine as a constitutional rule grounded in the separation of powers. The Court rejected the move outright. It says major questions is a canon of statutory interpretation, and "There is no such thing" as a constitutional major-questions claim. It said the government is very likely to win on jurisdiction.</p>
+  <p>The practical effect is that the waiver power is close to unreviewable again. Where Congress has limited review to constitutional claims, plaintiffs cannot recast a statutory-authority argument as a constitutional one to get into court. Expect that line to be cited well beyond immigration.</p>
+  <p><b>What to watch:</b> the cert petition; whether construction resumes inside Big Bend National Park itself; and whether the new Congress tries to amend the Section 102 waiver.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is the wall going into the national park?</span>
+    <p><b>What is disputed.</b> Facts. Al Jazeera's headline says the Court allowed the wall "in Big Bend National Park." NPR and NBC say West Texas or "the Big Bend area." The order itself never mentions the park; it speaks of the Big Bend Sector, a Border Patrol unit.</p>
+    <p><b>Why they differ.</b> The sector and the park are different geographies with the same name. SCOTUSblog, which is closest to the filings, says the waiver region "includes parts of" the national park. Headlines compress that to the park, which is the more vivid noun.</p>
+    <p><b>What it means for you.</b> The accurate statement is that construction may resume across a Border Patrol sector that includes parts of the park. Whether barrier segments actually run through park land depends on the alignment in the waiver notices (91 FR 7298 and later amendments), not on this order. Those maps, or DHS's construction schedule, will settle it.</p>
+  </div>
+  <p class="sources">
+    <a href="https://www.supremecourt.gov/opinions/26pdf/26a560_onkq.pdf">The order, 26A560 (read in full)</a> &middot;
+    <a href="https://www.scotusblog.com/2026/11/supreme-court-allows-trump-administration-to-continue-border-wall-construction/">SCOTUSblog</a> &middot;
+    <a href="https://www.npr.org/2026/11/09/nx-s1-6019424/border-wall-big-bend-texas-trump">NPR</a> &middot;
+    <a href="https://www.aljazeera.com/news/">Al Jazeera headline</a>
+  </p>
+  <div class="fb">
+    <p>Emergency-docket orders with doctrinal reach: lead, or short item?</p>
+    <label><input type="radio" name="fb-bigbend" value="lead"> Lead when the reasoning travels</label>
+    <label><input type="radio" name="fb-bigbend" value="short"> Short item</label>
+  </div>
+</article>
+
+<h2 class="section" id="florida">Florida &amp; Tampa Bay</h2>
+
+<article id="fl-flock">
+  <h2>Pinellas has arrested a third deputy for misusing licence-plate cameras, and the State Attorney says Florida law may not reach what one of them did</h2>
+  <div class="meta">
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Former Pinellas deputy Ronald Scott resigned and was arrested on 5 November on four felony counts, WTSP reports: three of unauthorised computer access and one of official misconduct. He is accused of running more than 100 searches on the Flock automated licence-plate-reader system and other law-enforcement databases. The searches, from February to about June, tracked his estranged wife, her boyfriend and others. He is the third Pinellas deputy charged over Flock misuse this autumn.</p>
+  <p>The local consequence is a gap in state law, not one officer. Pinellas&ndash;Pasco State Attorney Bruce Bartlett dropped charges against an earlier deputy, Karl Gwynne. Gwynne was accused of about 300 searches to track a woman he had arrested and hoped to date. Bartlett wrote in a court filing that Florida statutes "do not address the misconduct reported." A third former deputy, Travis Stanton, still faces a harassment charge for allegedly using the system to find a 17-year-old. Sheriff Bob Gualtieri acknowledged disagreements with Bartlett over the statute's elements. Bartlett's circuit covers both Pinellas and Pasco, so the gap applies to New Port Richey too.</p>
+  <p>How Scott was caught matters as well. Gualtieri said the misuse surfaced only through a new, more thorough audit tool from Flock. Gwynne's case surfaced after a TCPalm reporter's inquiry prompted an audit. The sheriff, who leads a national pro-ALPR campaign, says the technology is not the problem.</p>
+  <p><b>What to watch:</b> a bill for the 2027 session that makes personal misuse of ALPR data a crime in its own right; whether Pasco's sheriff's office (now under Jeff Harrington, appointed after Chris Nocco resigned) publishes its own audit; and whether the Scott charges survive the same statutory challenge.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is this a few bad deputies, or an oversight failure?</span>
+    <p><b>What is disputed.</b> Significance. Gualtieri told reporters he is confident all previous misuse has now been caught, and that critics who blame ALPR are wrong. Creative Loafing and WUSF's reporting shows two of the three cases were found only after outside pressure or a new vendor tool, months after the searches.</p>
+    <p><b>Why they differ.</b> Vantage and interest. The sheriff runs the system and campaigns for it nationally, so he has every reason to frame each case as individual misconduct the system caught. The reporters are counting how it was caught, and the answer is late and partly by accident. There is also a minor spelling conflict: WUSF has "Gwynee" in one place, and Creative Loafing has "Gwynne". I use the latter.</p>
+    <p><b>What it means for you.</b> The evidence supports both a real deterrent, since arrests are happening, and a detection system that until recently could not find this. The confidence that "all" past misuse is caught rests on an audit tool only weeks old. Gualtieri said the earlier audits were less comprehensive. A re-run of the new tool over the full retention history, with the number of flagged queries published, would settle it.</p>
+  </div>
+  <p class="sources">
+    <a href="https://www.wusf.org/courts-law/2026-11-10/third-pinellas-deputy-arrested-alleged-misuse-flock-cameras-spy-on-wife-others">WUSF</a> &middot;
+    <a href="https://www.cltampa.com/news/pinellas-sheriff-arrests-another-deputy-for-alleged-flock-camera-misuse/">Creative Loafing Tampa</a> &middot;
+    <a href="https://www.wtsp.com/article/news/crime/pinellas-county-sheriff-deputy-arrested/67-c43f8715-6897-4b41-9cb3-2b31f7efb3dd">WTSP</a> &middot;
+    <a href="https://www.fox13news.com/news/gov-desantis-appoints-jeff-harrington-permanent-pasco-sheriff">FOX 13 on the Pasco sheriff</a>
+  </p>
+  <div class="fb">
+    <p>Is local surveillance oversight the kind of Florida story you want here?</p>
+    <label><input type="radio" name="fb-flock" value="yes"> Yes &mdash; follow the statute fix</label>
+    <label><input type="radio" name="fb-flock" value="no"> No &mdash; too close to crime blotter</label>
+  </div>
+</article>
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Eleven things I saw and ranked below the line. Each one opens &mdash; the line is my judgement, what is behind it is the substance.</p>
+
+<div class="also-list">
+
+<details class="short" id="a-us-china-deadlines">
+  <summary><span class="chip">World economy &middot; trade</span> Washington and Beijing have both pushed their trade-truce deadlines to 9&ndash;10 January 2027, a week before Trump and Xi meet at APEC. All three US instruments now expire together.</summary>
+  <div class="exp">
+    <p>Today's Federal Register carries USTR's notice suspending the Section 301 port fees and ship-to-shore crane duties on China's maritime, logistics and shipbuilding sectors. The suspension, effective 9 November, runs until 11:59 p.m. ET on 9 January 2027 "to allow for further discussion." The year-long suspension agreed in November 2025 had expired on 9 November. China's commerce ministry extended its own suspension of rare-earth, industrial-diamond and lithium-battery export controls to 10 January, according to Reuters (via gCaptain and the Straits Times). The BIS affiliates-rule stay covered here yesterday ends on the same date. Reuters says the two sides proposed a $60 billion reciprocal tariff-cut package in September that is still not final.</p>
+    <p>A smaller related item: the Pentagon delisted WuXi AppTec from its Section 1260H list of Chinese military companies.</p>
+    <div class="div">
+      <span class="t">Divergence &mdash; did the administration choose to delist WuXi?</span>
+      <p><b>What is disputed.</b> Facts about cause. STAT's headline says the administration removed WuXi. The notice itself says the delisting complies with a 7 August preliminary injunction from the D.C. district court, and that it is without prejudice to relisting.</p>
+      <p><b>Why they differ.</b> Headline compression. The notice is the primary document, and it names the court order.</p>
+      <p><b>What it means for you.</b> Read it as court-compelled, not a concession in the talks. An appeal of the injunction, or a relisting on new grounds, would show the government's actual intent.</p>
+    </div>
+    <p class="btl"><b>Below the line because</b> extending a deadline keeps the status quo. The meeting is where the substance will be.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.federalregister.gov/documents/2026/11/10/2026-22867/notice-of-modification-of-section-301-action-chinas-targeting-of-the-maritime-logistics-and-shipbuilding-sectors-for-dominance">USTR notice, FR 2026-22867</a> &middot; <a href="https://gcaptain.com/china-extends-us-trade-truce-by-two-months/">gCaptain/Reuters</a> &middot; <a href="https://www.straitstimes.com/asia/east-asia/china-extends-suspension-of-new-rare-earth-controls-until-january">Straits Times</a> &middot; <a href="https://www.federalregister.gov/documents/2026/11/10/2026-22840/notice-of-removal-of-designated-chinese-military-company">DoD 1260H notice</a> &middot; <a href="https://www.statnews.com/">STAT</a> &middot; <a href="2026-11-09-grok.html#a-bis">yesterday's BIS item</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-ohio-datacentres">
+  <summary><span class="chip">Energy &amp; grid</span> The full Ohio tally is in: every data-centre measure on last week's local ballots went against the developers, and organisers are now collecting signatures for a statewide constitutional ban on large facilities.</summary>
+  <div class="exp">
+    <p>The Statehouse News Bureau's town-by-town list, published this morning, shows outright bans on facilities above 25 MW passing in Trenton (80 per cent), Sunbury (79), Pataskala (74), Defiance (65), Conneaut (64) and Oregon (61). Urbana voted for a 7.5 MW cap and recalled its mayor. Hubbard, Granville and Upper Sandusky passed blanket bans. Wilmington reversed four rezonings of more than 500 acres, and Ashville rejected an EdgeConneX agreement. Perry now requires bonds behind developers' incentive promises. Conserve Ohio says it is collecting signatures for a statewide amendment. DCD counts similar votes in Maine, Illinois and Kansas.</p>
+    <div class="div">
+      <span class="t">Divergence &mdash; 14, 18 or 21 measures?</span>
+      <p><b>What is disputed.</b> Facts, but only about counting. DCD says "at least 14" restrictions passed in Ohio. A WKYC headline says data centres went 0 for 21. Search summaries of the Statehouse list give 18 communities.</p>
+      <p><b>Why they differ.</b> Timing and definitions. DCD's piece is a running tally updated as races were called. WKYC appears to count each question, including Wilmington's four separate referendums and advisory votes. Others count communities.</p>
+      <p><b>What it means for you.</b> The direction is unanimous and not in dispute. Use "every measure, in roughly 18 communities," and wait for certified county results before quoting a single number.</p>
+    </div>
+    <p class="btl"><b>Below the line because</b> the votes were a week ago and ran here on 4&ndash;5 November. Today's new facts are the full count and the statewide petition.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.statenews.org/section/the-ohio-newsroom/2026-11-10/heres-how-every-data-center-related-ballot-measure-fared-in-ohio">Statehouse News Bureau</a> &middot; <a href="https://www.datacenterdynamics.com/en/news/local-data-center-moratoria-limits-and-restrictions-voted-in-across-the-us/">DCD</a> &middot; <a href="https://www.wkyc.com/article/news/politics/elections/data-centers-0-for-21-ballot-initiatives-ohio/95-84fbfc05-d91c-4e47-882e-0f7d2bc23e71">WKYC (headline only; page refused)</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-ai-power-deals">
+  <summary><span class="chip">Energy &amp; grid</span> On the other side of the ledger, the power queue is still growing: PPL's Pennsylvania pipeline hit 35.3 GW, Riot signed a $28 billion, 910 MW lease in Texas, and Holtec's Palisades small-reactor application entered public notice today.</summary>
+  <div class="exp">
+    <p>PPL told investors its advanced-stage data-centre pipeline in Pennsylvania grew by 3.5 GW to 35.3 GW, the eleventh straight quarterly rise. About 11.4 GW is signed and 8.5 GW is under construction. It agreed terms to supply about 2 GW to a QTS campus from gas plants due in 2032&ndash;33, with fuel cells and batteries from 2029. Riot's Corsicana lease runs 15 years, and up to $54 billion with extensions, delivered in phases from September 2027 to July 2028. The NRC began four weeks of notices today on part two of Holtec's construction-permit application for two SMR-300 units, Pioneer 1 and 2, at Palisades in Michigan.</p>
+    <div class="div">
+      <span class="t">Divergence &mdash; who is Riot's tenant?</span>
+      <p><b>What is disputed.</b> Facts. DCD and Riot's release say an unnamed frontier AI lab. CoinDesk and Colocation Scout name Anthropic.</p>
+      <p><b>Why they differ.</b> Access. The release withholds the name, and the trade outlets appear to have it from the filing's financing terms or from sources.</p>
+      <p><b>What it means for you.</b> Treat Anthropic as likely but unconfirmed. Its S-1, being marketed today, is the document that would confirm it.</p>
+    </div>
+    <p class="btl"><b>Below the line because</b> these are earnings-call and filing facts from the past week, not a single decision.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.datacenterdynamics.com/en/news/ppl-advanced-stage-data-center-pipeline-hits-35gw-in-pennsylvania/">DCD on PPL</a> &middot; <a href="https://www.datacenterdynamics.com/en/news/riot-platforms-signs-910mw-agreement-with-unnamed-frontier-ai-lab/">DCD on Riot</a> &middot; <a href="https://www.coindesk.com/tech/2026/11/05/bitcoin-miner-riot-could-pay-anthropic-12-interest-under-usd28-billion-ai-deal">CoinDesk</a> &middot; <a href="https://www.federalregister.gov/documents/2026/11/10/2026-22884/smr-llc-palisades-smr-llc-pioneer-units-1-and-2-receipt-of-construction-permit-application">NRC notice, FR 2026-22884</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-mexc">
+  <summary><span class="chip">US financials</span> FinCEN's order cutting the crypto exchange MEXC out of the US financial system is published today and takes effect 10 December. It puts likely illicit flows since 2021 at $16.7 billion.</summary>
+  <div class="exp">
+    <p>The order, under the Russian money-laundering section of the FY2022 defence bill, finds MEXC to be of "primary money laundering concern." It bars covered US institutions from transmitting funds involving the exchange and its Seychelles, Estonian, Swiss, UK and former Singapore affiliates. FinCEN's blockchain analysis cites about $1.87 billion with exposure to Iran, including more than $1 billion in direct Iranian transactions despite MEXC's own ban. It also cites about $1.99 billion tied to cybercrime, and roughly $129 million with the sanctioned exchange Garantex after its designation. MEXC handles about $1 billion a day. Treasury announced the action on 6 November as part of "Operation Economic Outcast."</p>
+    <p><b>Correction to yesterday's short item:</b> the Binance theft was $6.43 billion, not $6.3 billion. The FBI attributed it to North Korea on Saturday and published 628 addresses. American Banker reports about $3.21 billion still sits in those addresses, per Elliptic.</p>
+    <p class="btl"><b>Below the line because</b> the action was announced last week. Publication sets the date that matters for banks, 10 December.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.federalregister.gov/documents/2026/11/10/2026-22962/imposition-of-special-measure-prohibiting-the-transmittal-of-funds-involving-mexc-global">FinCEN order, FR 2026-22962</a> &middot; <a href="https://home.treasury.gov/news/press-releases/sb0685">Treasury release</a> &middot; <a href="https://www.americanbanker.com/news/6-4-billion-binance-heist-leaves-banks-off-the-hook">American Banker on Binance</a> &middot; <a href="2026-11-09-grok.html#a-binance">yesterday's item</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-iran-freezers">
+  <summary><span class="chip">Geopolitics</span> Five federal agencies have warned that hackers are sabotaging refrigeration controls worldwide. US officials suspect Iran-linked actors are behind freezer failures at about six military commissaries.</summary>
+  <div class="exp">
+    <p>CISA, the FBI and the departments of Health and Human Services, Agriculture and Transportation issued joint warnings Thursday. They say attackers can force units into continuous heating or defrost cycles and hide real temperatures from operators. The warning does not name a culprit. Separately, Defense One and Nextgov report that US officials suspect Iran-linked hackers caused freezer failures at roughly six commissaries from late August. Cyber Command and Defense Department investigators are working the case. France has blamed Iran for attacks on hundreds of supermarkets in October and on three regional blood banks overnight Sunday, and Le Monde reports Paris has vowed a tough response. The Register says France calls it a purely sabotage-driven campaign. This is the domestic half of the "is the war over" question in the lead above.</p>
+    <p class="btl"><b>Below the line because</b> the US attribution is anonymous and preliminary, and the advisory deliberately names no one.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.defenseone.com/threats/2026/11/warn-refrigerator-hacks-attacks-military/417076/">Defense One on the joint warning</a> &middot; <a href="https://www.defenseone.com/threats/2026/11/officials-suspect-iran-series-cyberattacks-military-base-freezers/416992/">Defense One/Nextgov on attribution</a> &middot; <a href="https://www.theregister.com/">The Register</a> &middot; <a href="https://www.lemonde.fr/en/france/article/2026/11/10/france-vows-tough-response-to-freezer-cyberattack-blamed-on-iran_6776728_7.html">Le Monde (headline; article page served a bot check)</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-cftc-access">
+  <summary><span class="chip">US financials</span> The CFTC issued final interpretive guidance, effective today, on how exchanges listing event contracts must grant "impartial access." It is the regulator's first formal word on prediction-market gatekeeping since the midterms.</summary>
+  <div class="exp">
+    <p>FR 2026-22863 interprets Regulation 38.151(b), which requires designated contract markets to give members and traders competitive, open, fair and impartial access. The Commission says it issues the guidance after significant time spent overseeing the listing and trading of event contracts. In practice, it describes which access criteria an exchange may use when it admits or excludes participants. That is the lever an exchange would use against insiders on election and sports contracts. CBS's analysis found Kalshi traders' favourites won 95 per cent of congressional and governors' races, which is the commercial backdrop. The circuit split over whether states can regulate these contracts, tracked in this brief since September, is not touched by an interpretation.</p>
+    <p class="btl"><b>Below the line because</b> it is guidance, not a rule, and I have read the summary and scope sections but not the full criteria.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.federalregister.gov/documents/2026/11/10/2026-22863/dcm-impartial-access-requirements">FR 2026-22863</a> &middot; <a href="https://www.cbsnews.com/">CBS on Kalshi's midterm record</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-russian-diesel">
+  <summary><span class="chip">Energy &amp; grid</span> Two tankers of Russian diesel bound for the US East Coast have changed course, a sign that traders are not sure Treasury's authorisation protects them from a congressional ban.</summary>
+  <div class="exp">
+    <p>The tankers Talisman and Leruo loaded at Primorsk in October and declared US East Coast destinations. By 5 November Leruo was signalling Brazil, and a third cargo sat in the North Atlantic with no declared port, oilprice.com reports. Treasury has authorised Russian diesel transactions under Trump's arrangement with Putin to ease fuel prices, but lawmakers warn that US importers could still breach a statutory ban. That is the legal-mechanism half of a trade story whose market half is the diesel price in the lead above: EIA's last weekly print was $6.292. Semafor separately reports Rosneft rationing at Russian filling stations after renewed Ukrainian strikes, which tightens the same barrels.</p>
+    <p class="btl"><b>Below the line because</b> it rests on one outlet's tanker tracking, and I could not read the statute or the authorisation it describes.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://oilprice.com/Energy/Crude-Oil/US-Traders-Weigh-the-Cost-of-Taking-Trumps-Russian-Diesel.html">oilprice.com</a> &middot; <a href="https://www.semafor.com/">Semafor (Rosneft rationing)</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-prop40">
+  <summary><span class="chip">US debt &amp; fiscal</span> California voters rejected Proposition 40, a 5 per cent wealth tax on about 200 billionaires that its backers said would raise around $100 billion over five years to replace federal health cuts.</summary>
+  <div class="exp">
+    <p>The AP projected the result on Monday. The opposition committee, Building a Better California, raised $333.1 million, ABC reports, with Sergey Brin its top donor at $102 million. The measure was written as a response to the Medicaid and health-funding cuts in the 2025 reconciliation act. Le Monde notes it was designed with French-American economists, and El Pa&iacute;s and NPR carried the result. The fiscal channel for this brief is precedent: the largest state has now turned down a wealth tax at the ballot box.</p>
+    <p class="btl"><b>Below the line because</b> it is a state measure that failed, so nothing changes, and the national fiscal consequence is indirect.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://abcnews.com/Politics/californias-prop-40-billionaires-tax-measure-rejected-ap/story?id=137999519">ABC/AP</a> &middot; <a href="https://text.npr.org/">NPR</a> &middot; <a href="https://www.lemonde.fr/en/">Le Monde</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-medicaid-expansion">
+  <summary><span class="chip">US politics &amp; policy</span> Democratic statehouse wins have put Medicaid expansion back in play in at least four of the ten holdout states: Georgia, Kansas, Texas and Wisconsin. Florida is not among them.</summary>
+  <div class="exp">
+    <p>States Newsroom's survey, run by the Florida Phoenix, notes Georgia Governor-elect Keisha Lance Bottoms called full expansion a day-one priority. KFF's Larry Levitt said he would not have expected much movement in the ten holdout states before last Tuesday. Under the ACA, the federal government pays 90 per cent of the cost for adults up to 138 per cent of the poverty line, and forty states have expanded, adding nearly 20 million people. Florida's statewide offices stayed Republican, so the Florida channel is nil for now. The federal channel is the money: each expansion draws a 90 per cent federal match, at a time when the SNAP rules in today's second lead run the other way.</p>
+    <p class="btl"><b>Below the line because</b> no legislature has acted, and the timetable runs to the 2027 sessions.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://floridaphoenix.com/2026/11/09/repub/democratic-wins-put-medicaid-expansion-back-in-play-in-holdout-states/">States Newsroom via Florida Phoenix</a> &middot; <a href="https://www.statnews.com/">STAT (paywalled headline)</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-ukraine-talks">
+  <summary><span class="chip">Geopolitics</span> US-mediated talks between Russia and Ukraine began in Abu Dhabi, the first three-way round since negotiations broke off. Russia struck Ukraine's grid hours before they opened.</summary>
+  <div class="exp">
+    <p>NPR, DW, the Guardian and Al Jazeera all report the opening. The Guardian has US officials seeking a final end to the war, and Zelensky says battlefield gains strengthen Kyiv's hand. European diplomats are pressing Rubio for a role, per Al Jazeera. Handelsblatt reports Lavrov demanding a follow-on arrangement before any ceasefire. Yle's correspondent reads the make-up of the Russian delegation as a bad sign. The US channel is the Russian-diesel arrangement in the item above and the sanctions relief on the table. This brief keeps Ukraine at its current weight, per your standing preference.</p>
+    <p class="btl"><b>Below the line because</b> an opening session is not an outcome. A text or a ceasefire date would make it a lead.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://text.npr.org/">NPR</a> &middot; <a href="https://www.dw.com/en/">DW</a> &middot; <a href="https://www.theguardian.com/us">Guardian</a> &middot; <a href="https://www.aljazeera.com/news/">Al Jazeera</a> &middot; <a href="https://yle.fi/uutiset">Yle</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-uap-trump">
+  <summary><span class="chip">UAP disclosure</span> Trump told 60 Minutes that pilots had described "very strange" encounters, but said he has seen no evidence of a secret programme. There is no new paperwork on the disclosure beat.</summary>
+  <div class="exp">
+    <p>SCMP's write-up of the Sunday interview has Trump describing the pilots as credible, and his own position as not much of a believer. On the paperwork that this brief tracks: the latest AARO/PURSUE release is still Release 07 of 23 October, and ODNI's NDA-waiver guidance is still the 31 July preliminary version. I found no detailed implementing guidance closing the contractor gap. A President saying on camera that he has seen no evidence of a programme is relevant to the disclosure fight, since much of the pressure from Congress has assumed the executive is withholding one. But it is a remark, not a document.</p>
+    <p class="btl"><b>Below the line because</b> talk is not paperwork. The beat's trigger remains ODNI's final guidance or a new AARO release.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.scmp.com/news/china/diplomacy/article/3373863/trump-recounts-pilots-very-strange-ufo-stories-says-he-remains-sceptical">SCMP</a> &middot; <a href="https://www.aaro.mil/Congressional-Press-Products/">AARO products page</a></p>
+  </div>
+</details>
+
+</div>
+
+<div class="fb" style="border-top:1px solid var(--rule); padding-top:1rem; margin-top:1.5rem;">
+  <p><b>One question about this whole section:</b> were the right things ranked below the line?</p>
+  <label><input type="radio" name="fb-also" value="right"> About right</label>
+  <label><input type="radio" name="fb-also" value="promote"> Some of these should have led</label>
+  <label><input type="radio" name="fb-also" value="drop"> Some should have been dropped entirely</label>
+  <label><input type="radio" name="fb-also" value="fewer"> Fewer short items, more depth up top</label>
+</div>
+
+<button class="submit" id="send">Send my feedback &rarr;</button>
+<p class="sources" style="text-align:center">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+
+<footer>
+  <h4>Sources checked this run &mdash; 66, of which 46 outside the watchlist</h4>
+  <p><b>Pointed at by a thread or standing series (20):</b> Federal Reserve Board (Waller speech; press releases) &middot; BLS release calendar (via search; bls.gov refused direct fetch) &middot; EIA weekly retail gasoline and diesel table &middot; AAA national average &middot; Treasury daily par yield curve (10-year 4.88 per cent on 9 November; context only) &middot; Treasury Fiscal Data, Debt to the Penny (api.fiscaldata.treasury.gov: $40.553 trillion on 6 November; first above $40 trillion on 18 August) &middot; Treasury press releases (MEXC) &middot; Federal Register documents API and full text (108 documents for 10 November, 98 for 9 November; RULE, PRORULE and NOTICE read as lists) &middot; OFAC recent actions &middot; White House presidential actions (whitehouse.gov) &middot; NHC Atlantic outlook (no formation expected in seven days) &middot; Supreme Court opinions (26A560) &middot; gCaptain &middot; Trading Economics Brent &middot; WUSF &middot; FOX 13 Pasco feed &middot; Statehouse News Bureau / Ohio Newsroom &middot; DatacenterDynamics &middot; anthropic.com newsroom &middot; AARO products page.</p>
+  <p><b>Not pointed at by any thread (46):</b> Wikipedia current-events portal (negative check) &middot; text.npr.org &middot; Al Jazeera &middot; NBC News &middot; CBS News &middot; ABC News (abcnews.go.com and abcnews.com) &middot; PBS NewsHour (its "debt nears $40 trillion" segment is from 17 August and stale) &middot; the Guardian &middot; Semafor &middot; Techmeme &middot; American Banker &middot; STAT &middot; Defense One &middot; Breaking Defense (breakingdefense.com; nothing used) &middot; The Debrief (thedebrief.org; nothing on the UAP paperwork) &middot; FreightWaves (Xeneta: Asia&ndash;US West Coast spot rates up 343 per cent since the war began; not used) &middot; oilprice.com &middot; Florida Phoenix &middot; Yahoo Finance &middot; Handelsblatt &middot; Le Monde &middot; El Pa&iacute;s &middot; Yle &middot; Nikkei Asia (SoftBank's first-half loss; China blocking its $5.4 billion ABB robotics deal; not used) &middot; SCMP &middot; Haaretz &middot; DW &middot; The Register &middot; Wesley Chapel Record (wesleychapelrecord.com; Amendment 3 projections: Pasco's first-year loss $128.1 million; no new fact since 4&ndash;5 November) &middot; Creative Loafing Tampa &middot; Courthouse News &middot; BBC &middot; GasBuddy &middot; SCOTUSblog &middot; Stars and Stripes &middot; Roll Call &middot; House Agriculture Committee Democrats &middot; Reuters (via Investing.com, CNA and gCaptain) &middot; Bloomberg Law &middot; Business Standard &middot; Times of India &middot; Export Compliance Daily &middot; FXStreet &middot; Straits Times &middot; CoinDesk (article via search; front page returned 429) &middot; WTSP.</p>
+
+  <h4>Could not reach</h4>
+  <p>sec.gov (403), so Anthropic's amended S-1 was not read directly &middot; bls.gov (403; schedule confirmed via search) &middot; Politico, Axios, The Hill and Utility Dive (403) &middot; Folha de S.Paulo (500) &middot; WKYC (403; headline only) &middot; the Fed's November SLOOS URL (404; the October survey was released 5 November and is not news today) &middot; Le Monde's article page returned a bot challenge, though its front page fetched.</p>
+
+  <h4>The negative check</h4>
+  <p><i>What is the biggest story today that is not on my list, and why is it not?</i> The USDA and Labor safety-net rules. No thread covers food aid or unemployment insurance, and the wires had barely touched them. They lead at number two. The second find was the Big Bend order's reasoning. The negative check also went through the midterm aftermath (House and Senate GOP leadership elections today, Trump's fraud claims), and I left that out as personnel and politics with no policy fact yet.</p>
+
+  <h4>Threads swept as a by-product, no trigger fired</h4>
+  <p>UAP disclosure implementation (no ODNI final guidance) &middot; AARO records contract &middot; Treasury buybacks &amp; debt service &middot; Fed decision (next on 8&ndash;9 December) &middot; Florida Amendment 3 (passed with 61.99 per cent; nothing new since 5 November) &middot; Tampa Bay dengue &middot; Pasco &amp; Pinellas budgets &middot; Atlantic hurricanes (NHC quiet) &middot; Section 338 tariffs &amp; Canada &middot; Bank stablecoin consortium &middot; Measles elimination review (PAHO commission sits this week, covered 9 November) &middot; Israel aid MOU (no new fact since 3 November).</p>
+
+  <h4>Accountability to prior editions</h4>
+  <ul>
+    <li><b>Correction:</b> the 9 November short item put the Binance theft at $6.3 billion. The FBI and American Banker figure is $6.43 billion. Corrected in <a href="#a-mexc">a-mexc</a>.</li>
+    <li>The 9 November chain said Brent had eased to $97.58. It has since fallen about another $7, and gasoline has crossed under $4. The direction that edition described held.</li>
+    <li>The 9 November lame-duck lead listed Hegseth impeachment as an agenda item. It is now a filed privileged resolution with a clock running.</li>
+  </ul>
+
+  <h4>About this issue</h4>
+  <ul>
+    <li>Markup built from Issue 10 (<code>2026-09-10b.html</code>), not from any earlier Grok edition. Eight leads (four new, four continuing) and eleven short items. 19 confidence markers: 7 Primary source, 9 Independent corroboration, 3 Single-sourced, 0 Unconfirmed. 11 divergence boxes.</li>
+    <li>Stories were selected and written independently. Claude's edition for today was not opened until this draft was finished, and was then used only to compare counts and check facts.</li>
+    <li><b>Disclosure:</b> the live <code>config.md</code> carries operational notes dated 10 November from the other edition's run. I read only their section headings, which name no stories. None of it was used for selection.</li>
+    <li>Every quotation is under fifteen words and attributed; everything else is paraphrase. Non-English sources (Handelsblatt, El Pa&iacute;s, Yle) are paraphrased in translation.</li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n  → " + i.value);
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on Issue No. 67-grok — 10 November 2026, Grok edition\n\n" + lines.join("\n")
+      + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-11-10-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
