@@ -935,6 +935,61 @@ EIA patterns all worked first time, which is what writing them down was for.
 The 5 November proposal (cut "dates ahead" and the owed list from the issue, cap
 the footer, raise the source floor to 15) has had no reply. **Nothing removed.**
 
+## Operational notes, 10 November 2026
+
+**Issue No. 67. Six leads, nine shorts, six divergence boxes, nine source
+domains.** Third consecutive clean fetch-log run; no parser faults.
+
+### What the validator caught
+
+**A dead cross-issue anchor** — `2026-11-08.html#s-blacksea`; the short was in
+the 9 November issue, not the 8th. Same class of error as 3 November. **The
+anchor check has now caught this twice; writing a cross-link from memory of
+which day something ran is the failure, and the fix is to grep the archive for
+the id before writing the link.**
+
+### New series added to the morning pull
+
+**EIA weekly retail diesel and regular gasoline** —
+`emd_epd2d_pte_nus_dpg` and `emm_epmr_pte_nus_dpg`. These give the
+diesel-over-regular premium as an **official weekly series** rather than as a
+subtraction from AAA's daily card average, which is what the 22 September rule
+requires for direction. 2026 opened at **$0.681**; week to 2 November **$2.139**,
+the widest of the year; 2026 average **$1.278** against **$0.563** for 2025.
+**Both parsed first time with the `&nbsp;`-tolerant B6 pattern fixed on Sunday
+— the first time one of those corrections paid off on a series it was not
+written for.**
+
+### The caution was worth more than a call would have been
+
+Yesterday's fuel short said the narrowing premium was one day, inside the noise,
+and that the weekly series is the instrument. **Today AAA set a new record
+($2.1784) and the weekly series confirmed the widest reading of 2026.** The
+September rule about not calling a turn off three days of AAA held.
+
+### Promises tracked, not dropped
+
+- **WCS discount: failed a second day.** `economicdashboard.alberta.ca` 404s on
+  both the dashboard path and an API path. **Try the Canada Energy Regulator
+  next.** Recorded in the issue footer both days.
+- **Negative check distinguished properly today**: the FinCEN special measure
+  (2026-22962) was *seen on the desk and not fetched* — a choice about time, not
+  a reachability failure. Saying which is the point of the distinction.
+
+### A framing correction, published
+
+The 5 November Israel lead opened by contrasting a US president who said he
+would accept his election result with an Israeli prime minister who would not.
+**Five days later the first half was withdrawn by the person who made it.** The
+third lead says so rather than leaving the sentence unqualified in the archive.
+**A contrast drawn from one day's statement is a description of that day, not a
+position — write it that way.**
+
+### Standing question to the reader, unanswered
+
+The 5 November proposal (cut "dates ahead" and the owed list from the issue, cap
+the footer, raise the source floor to 15) has had no reply. **Nothing removed.**
+
 ## Watchlist
 
 Empty at first run. Populates from reader feedback and from threads that recur on
