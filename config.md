@@ -990,6 +990,72 @@ position — write it that way.**
 The 5 November proposal (cut "dates ahead" and the owed list from the issue, cap
 the footer, raise the source floor to 15) has had no reply. **Nothing removed.**
 
+## Operational notes, 11 November 2026
+
+**Issue No. 68. Six leads, twelve shorts, six divergence boxes, eight source
+domains.** Validator blocked three times before passing; all three were real.
+
+### `tools/eia.py` now exists, with the rule as an assertion
+
+**The distillate stocks parse returned zero rows: EIA prints stock levels with
+thousands separators (`105,138`), so `float()` threw on every value and the
+parser produced an empty list rather than an error.** Third silent parser
+failure in six weeks (quote style 28 Sep, year cell 8 Nov, separators today).
+
+**The EIA parser is now in the repo at `tools/eia.py`**, with comma stripping,
+the `&nbsp;`-tolerant year pattern, the single-quoted class attributes — and
+**an assertion that a zero-row parse is a parser failure, not a source
+failure.** That rule has been written in this file since September and relied
+on someone noticing; it now raises. Tested against all four series used today
+and against a 404 page.
+
+### What the validator caught, and a weakness in it
+
+1. **Two dead cross-issue anchors** (`2026-11-07.html#arch`, actually 6 Nov;
+   `2026-11-08.html#s-paraguay`, actually 7 Nov). Second day running.
+   **Grep the archive for the id before writing a cross-link. Every time.**
+2. **Only six source domains.** gCaptain and Deutsche Welle were both fetched
+   and both left unparsed — the 6 November failure in miniature. **The
+   fetch-log check did NOT catch it**, because both hosts were *named in the
+   footer's source list*, which satisfies the "mentioned in the issue" escape
+   hatch without any content coming from them. The domain floor caught it
+   instead. **Weakness to fix: naming a source in the sources paragraph should
+   not count as using it.**
+   The right response was to go and read them, which produced three shorts,
+   two of them substantial.
+
+### What those two unread front pages contained
+
+- **The Section 301 China ship port fee suspension was extended on 9 November
+  to 9 January 2027** — a date on this brief's own list that expired and was
+  renewed, and it was found in a trade publication rather than in the Federal
+  Register read every morning. **Check the dates list against the day's
+  documents, not just against the day's news.**
+- **A London case between the Baltic Exchange and Mercuria has exposed internal
+  notes calling the benchmark tanker rate a "nonsense rate" during the Iran
+  war.** That benchmark is the first link in the chain this brief has used
+  since 8 November to explain the American diesel margin. **Owed, and it may
+  undermine a published explanation.**
+
+### Substantive
+
+- **Waller floated 50bp for December if core CPI stays at 0.3, and named the AI
+  buildout and energy prices as what he is watching** — so two of this brief's
+  threads now have a monetary transmission channel. Two-year **+17bp to 4.73,
+  the largest one-day rise of 2026** (checked across all 215 sessions).
+- **The two diesel instruments disagreed for the first time**: AAA a fifth
+  record ($2.1877), EIA's weekly survey down to $2.132 from the year's peak
+  $2.139. The 22 September rule says the weekly one governs direction.
+- **Distillate stocks 99.3m barrels, below every weekly reading of 2025 and
+  2024.** First time the brief has charted stocks in six weeks on the thread.
+- **WCS discount: failed on a third publisher.** Stop promising it daily; find
+  the Alberta government series or drop the undertaking.
+
+### Standing question to the reader, unanswered
+
+The 5 November proposal (cut "dates ahead" and the owed list from the issue, cap
+the footer, raise the source floor to 15) has had no reply. **Nothing removed.**
+
 ## Watchlist
 
 Empty at first run. Populates from reader feedback and from threads that recur on
