@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Wednesday, 11 November 2026 (Issue 68-grok)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  /* short-item tier */
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list summary .chip { vertical-align:.05rem; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+  .corr { background:var(--box); border-left:3px solid var(--accent); padding:.6rem .8rem; font-size:.92rem; }
+  .fig { font-size:.86rem; color:var(--muted); margin:.6rem 0; }
+  .fig table { border-collapse:collapse; width:100%; }
+  .fig td, .fig th { border-bottom:1px solid var(--rule); padding:.2rem .3rem; text-align:right; }
+  .fig td:first-child, .fig th:first-child { text-align:left; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 68-grok &middot; Wednesday, 11 November 2026 &middot; Veterans Day &middot; Grok edition</div>
+  <h1>Core inflation hit Waller's half-point line, HUD finalised its mixed-status rule, and the US may lose measles elimination this week</h1>
+  <p class="sub">Nine stories at length, including Florida, and nine in brief. Built from the Issue 10 framework. Federal holiday: the bond market is closed and EIA's weekly petroleum report moves to Thursday.</p>
+  <p class="prov"><b>78 sources checked, 57 of them outside the watchlist.</b> Fourteen more refused the fetch and are not counted (listed in the footer). Six lead stories are new subjects: the New York Fed's household-debt report, HUD's mixed-status rule, the FCC's repeal of the 39% TV cap, OpenAI's Control Room and New York's RAISE portal, the measles review, and Florida's rejection of Duke's data-centre tariff. Three continue threads, under the cap of four: October CPI (the print yesterday's edition missed), Nvidia, and the Iran&ndash;oil&ndash;pump chain. <b>Biggest story not on my list:</b> the Pan American Health Organization's review of US measles elimination, meeting in Washington through Friday. It was on no thread and no Core beat; a general-news sweep turned it up, and it displaced a Supreme Court argument story, which drops to the short tier. The second negative-check find was the HUD rule, filed for tomorrow's Federal Register and read from the public-inspection PDF. <b>Independent accounts compared per lead:</b> CPI 1 document + 6 accounts &middot; household debt 1 document + 2 &middot; HUD 2 documents + 3 &middot; FCC 1 document + 4 &middot; Nvidia 2 documents + 9 &middot; oil chain 3 series + 6 &middot; lab safety 2 documents + 2 &middot; measles 2 documents + 2 &middot; Florida 1 document + 3. <b>Accountability:</b> yesterday's edition closed before the 8:30 CPI print; it leads today. The Florida story is eight days late &mdash; the vote was on 3 November and this brief missed it.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#cpi-october">Core inflation rose 0.3 per cent for a third month, the line Waller said would justify a half-point hike</a></li>
+    <li><a href="#nyfed-household-debt">Home-equity borrowing jumped by the most since 2005, and 5 per cent of household debt is now delinquent</a></li>
+    <li><a href="#hud-mixed-status">HUD has finalised the rule ending housing aid for mixed-status families; about 20,000 families, two-thirds of their eligible members children</a></li>
+    <li><a href="#fcc-national-cap">The FCC's repeal of the 39 per cent TV ownership cap publishes tomorrow and takes effect 11 January</a></li>
+    <li><a href="#nvidia-board-probe">Nvidia's board hired Wachtell to investigate Huang, and a blacklisted Chinese defence university posted a receipt for H200s</a></li>
+    <li><a href="#oil-chain">Gasoline is down 18 cents in a week on peace talk, but tankers are still being hit and Gulf freight has barely moved</a></li>
+    <li><a href="#lab-safety">OpenAI built a 35-second kill switch for its research models, as New York opened registration for its AI safety law</a></li>
+    <li><a href="#measles-status">A regional panel is deciding this week whether the US has lost its measles-elimination status, held since 2000</a></li>
+    <li><a href="#fl-duke-datacentres">Florida: regulators unanimously rejected Duke Energy's data-centre rate plan in the first test of the new cost law</a></li>
+    <li><a href="#also-today">Also today (9)</a></li>
+  </ol>
+</nav>
+
+<article id="cpi-october">
+  <h2>Core inflation rose 0.3 per cent for a third month, the line Waller said would justify a half-point hike</h2>
+  <div class="meta">
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">Continues: <a href="2026-11-10-grok.html#waller-cpi">Waller, 10 Nov</a></span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The October consumer price index, published at 8:30 a.m. ET yesterday after this brief's Tuesday edition had closed, rose 0.4 per cent on a seasonally adjusted basis, after 0.6 per cent in September. Core prices, excluding food and energy, rose 0.3 per cent for the third month running. Hours earlier Fed Governor Christopher Waller had said that a core reading like the previous two months should put a 50 basis-point increase on the table at the 8&ndash;9 December meeting.</p>
+  <p>The Bureau of Labor Statistics release shows where it came from. Shelter rose 0.3 per cent and supplied more than 30 per cent of the monthly increase. Food rose 0.5 per cent after a flat September. Energy rose only 0.7 per cent after 5.2, and gasoline fell 0.7 per cent before seasonal adjustment. Recreation rose 0.8 per cent, hospital services 0.8, motor-vehicle insurance 0.7; used cars fell 1.2. BLS again published no twelve-month rate, because October 2025 prices were never collected during the shutdown.</p>
+  <p>The bond market moved on it. Treasury's own par yield curve shows the two-year at 4.73 per cent on Tuesday, from 4.56 on Monday, the ten-year at 4.98 from 4.88, and the thirty-year at 5.35. CNBC, citing CME FedWatch, says futures now fully price a quarter-point hike in December and give about 12 per cent to a half point. MarketWatch reports Goldman Sachs has added a further hike in March. Higher yields feed straight into debt service: Treasury's Debt to the Penny stood at $40.560 trillion on 9 November.</p>
+  <p><b>What to watch:</b> this was the last CPI before the meeting &mdash; November's is scheduled for 10 December, the day after the decision. No Treasury curve prints today: SIFMA recommended a full bond-market close for Veterans Day.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; was the ten-year "back at 5%", and is core inflation 3.75 per cent?</span>
+    <p><b>What is disputed.</b> Two facts disputes. CNBC's Investing Club wrote that the ten-year yield "surged back to 5%" after the print; Treasury's par curve for Tuesday says 4.98. MarketWatch wrote that October's core CPI hit 3.75 per cent; BLS published no year-on-year core rate at all for October.</p>
+    <p><b>Why they differ.</b> The mundane explanation covers both. A vendor screen records intraday highs; Treasury's par curve is an end-of-day fitted series, and this brief has been burned before by printing a vendor's 5 per cent that the series of record never showed. The 3.75 figure matches what you get by compounding three 0.3 per cent months into an annual rate &mdash; roughly 3.7 per cent &mdash; which is a three-month annualised pace, not the year-on-year number readers will assume. That is my reconstruction; MarketWatch's visible text does not say how it was computed.</p>
+    <p><b>What it means for you.</b> Use 4.98 per cent as the ten-year level and treat "through 5%" as an intraday event at most. For inflation, the official statement is three straight 0.3 per cent core months; any annual core figure for October is somebody's estimate. It is settled for the ten-year when Thursday's curve prints, and for core only when BLS resumes twelve-month rates.</p>
+  </div>
+  <div class="div">
+    <span class="t">Divergence &mdash; did this print make a half-point hike likely, or only possible?</span>
+    <p><b>What is disputed.</b> Significance, not the number. American Banker says the report puts the Fed on track to hike and that Waller "could support a bigger increase". CBS quotes an analyst saying it "most likely seals the deal" for December. Futures, per CNBC, give a half point only about 12 per cent.</p>
+    <p><b>Why they differ.</b> They are answering different questions. The press is asking whether the Fed hikes at all &mdash; on which everyone now agrees. The market is pricing the size, and Waller's condition was a core print "around" 0.3, which a rounded 0.3 meets without exceeding. One governor's conditional is also not a committee: two members dissented for a hike in October, per American Banker, and that is the size of the hawkish bloc on the record.</p>
+    <p><b>What it means for you.</b> Expect a December hike. Treat 50 basis points as live but not the base case until more voters than Waller say it out loud. The tell will be speeches between now and the pre-meeting blackout; the answer is the 9 December statement.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; why the composition matters more than the headline</summary>
+    <div class="exp">
+      <p>The September print was an energy story: energy up 5.2 per cent, gasoline up 9.1 per cent seasonally adjusted. October is the opposite. Gasoline fell before seasonal adjustment and energy contributed little, yet the headline still rose 0.4 per cent. That is what a broadening looks like: food up 0.5, with beef up 0.9 and snacks up 1.0; services such as hospitals and car insurance rising faster than the overall index; shelter steady at 0.3. Vanguard, quoted by CBS, calls it a "longer-lasting" pass-through of the energy shock into core and has raised its year-end core forecast to 3.2 per cent.</p>
+      <p>This links to the Fed staff note Waller cited on Tuesday, which found that oil shocks now feed into core prices more persistently than before 2020. Yesterday's numbers are the first test of that claim since the note appeared, and they fit it: the energy line cooled sharply while core did not.</p>
+      <p>The seasonal-adjustment detail matters for the pump story below. Unadjusted gasoline prices fell in October, but less than they usually do in October, so the adjusted index rose 1.0 per cent. November will look different: AAA's average has fallen about 41 cents in a month. That will pull the November headline down. It will not reach core, and it arrives the day after the Fed decides.</p>
+      <p>On the fiscal side, the two-year moving 17 basis points in a day is the number to hold. Treasury refinances a large share of the debt at the short end, so a repricing of the hiking path lands in interest costs within months, not years.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.bls.gov/news.release/cpi.nr0.htm">BLS, CPI news release, October 2026</a> &middot;
+    <a href="https://www.bls.gov/news.release/cpi.t01.htm">BLS Table 1</a> &middot;
+    <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202611">Treasury daily par yield curve</a> &middot;
+    <a href="https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2/accounting/od/debt_to_penny">Treasury Debt to the Penny</a> &middot;
+    <a href="https://www.americanbanker.com/news/hot-inflation-report-puts-fed-on-track-for-december-rate-hike">American Banker</a> &middot;
+    <a href="https://www.cbsnews.com/news/october-cpi-report-elevated-inflation/">CBS News</a> &middot;
+    <a href="https://www.cnbc.com/investingclub/2026/11/10/ge-vernova-sellers-have-it-all-wrong-plus-why-fed-rate-hike-odds-are-soaring.html">CNBC Investing Club (FedWatch)</a> &middot;
+    <a href="https://www.marketwatch.com/story/why-goldman-sachs-is-now-changing-its-federal-reserve-interest-rate-forecast-3753f968">MarketWatch on Goldman</a> &middot;
+    <a href="https://www.coindesk.com/arc/outboundfeeds/rss/">CoinDesk wire headline</a> &middot;
+    <a href="https://www.sifma.org/resources/guides-playbooks/holiday-schedule">SIFMA holiday schedule</a>
+  </p>
+  <div class="fb">
+    <p>Yesterday's edition closed before this print. Should a print at 8:30 hold the morning edition back?</p>
+    <label><input type="radio" name="fb-cpi-hold" value="wait"> Yes &mdash; wait for CPI and jobs prints</label>
+    <label><input type="radio" name="fb-cpi-hold" value="ontime"> No &mdash; publish on time, cover it next day as here</label>
+    <p>Two divergence boxes on one story: useful or too much?</p>
+    <label><input type="radio" name="fb-cpi-boxes" value="useful"> Useful &mdash; the 5% and 3.75% claims needed calling out</label>
+    <label><input type="radio" name="fb-cpi-boxes" value="merge"> Merge them into one</label>
+  </div>
+</article>
+
+
+<article id="nyfed-household-debt">
+  <h2>Home-equity borrowing jumped by the most since 2005, and 5 per cent of household debt is now delinquent</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The New York Fed's quarterly household debt report, released Tuesday, puts total household debt at $19.1 trillion at the end of September, up $334 billion or 1.8 per cent in the third quarter. The line that stands out is home equity: HELOC balances rose $23 billion to $481 billion, which the bank says is the largest quarterly increase since 2005. HELOC limits rose another $31 billion, extending an expansion that began in 2022.</p>
+  <p>Mortgage balances rose $257 billion to $13.4 trillion, on $595 billion of new originations. American Banker reports that about half the mortgage increase reflects balances re-reported after a gap in the previous quarter, so the true mortgage growth is smaller than the headline. Card balances rose $22 billion to $1.29 trillion, a record in the series; auto loans rose $21 billion to $1.73 trillion; student loans rose $5 billion to $1.66 trillion. Aggregate card limits rose $115 billion.</p>
+  <p>Credit quality moved the other way. The share of all household debt in some stage of delinquency rose 0.3 percentage points to 5.0 per cent. New early delinquencies kept rising for auto loans and mortgages and eased slightly for cards. The flow into serious delinquency worsened for mortgages, though the bank calls it low by historical standards.</p>
+  <p>Why it matters for this beat: households are borrowing against their houses rather than refinancing them, at a moment when the rate path just moved up. HELOCs are typically variable-rate lines, so a December hike would reach those borrowers quickly &mdash; the same households, the same lenders, a quarter later.</p>
+  <p><b>What to watch:</b> fourth-quarter bank earnings for HELOC growth and card charge-offs, and whether the auto and mortgage delinquency rise survives a hike.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; a "Goldilocks" quarter or a worsening one?</span>
+    <p><b>What is disputed.</b> Mostly significance, with one facts point. American Banker's headline is that card balances rose but growth slowed, and it quotes an analyst calling the numbers "Goldilocks numbers". CNBC's headline is record card debt. The New York Fed's own release leads on moderate growth but says aggregate delinquency worsened. The facts point: American Banker describes the card figure of about 12.9 per cent as the share of <em>borrowers</em> 90 days late; the New York Fed's serious-delinquency series are measured as shares of <em>balances</em>.</p>
+    <p><b>Why they differ.</b> Vantage. A banking trade paper writing for card issuers looks at the flow into delinquency on cards, which improved. A general business outlet leads with the record level, which is mechanical in a growing economy. The New York Fed's research staff report every line, and the line that moved most was housing debt, which neither headline led on.</p>
+    <p><b>What it means for you.</b> Both headlines are accurate about cards, and cards are not the story. The evidence supports reading this as a housing-equity quarter with deteriorating credit at the margin: delinquency up 0.3 points, mortgage and auto early delinquencies rising, HELOC balances growing by the most since 2005. Take the 12.9 per cent as a balance-based card figure until the bank's own chart says otherwise. The fourth-quarter report in February will show whether a rate hike turned the HELOC boom into the next delinquency line.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.newyorkfed.org/newsevents/news/research/2026/20261110">New York Fed press release, Q3 2026 Household Debt and Credit</a> &middot;
+    <a href="https://www.newyorkfed.org/microeconomics/hhdc">New York Fed HHDC report page</a> &middot;
+    <a href="https://www.americanbanker.com/news/card-balances-rise-but-pace-of-growth-slows-new-york-fed">American Banker</a> &middot;
+    <a href="https://www.cnbc.com/id/100003114/device/rss/rss.html">CNBC headlines (record card debt; HELOC jump)</a>
+  </p>
+  <div class="fb">
+    <p>This is a Core financials story built mostly on one Fed dataset. More of these quarterly releases?</p>
+    <label><input type="radio" name="fb-hhdc" value="more"> Yes &mdash; run them each quarter</label>
+    <label><input type="radio" name="fb-hhdc" value="short"> Short item unless something breaks</label>
+    <p>Follow HELOC growth as a thread?</p>
+    <label><input type="radio" name="fb-heloc" value="follow"> Follow it</label>
+    <label><input type="radio" name="fb-heloc" value="no"> No</label>
+  </div>
+</article>
+
+
+<article id="hud-mixed-status">
+  <h2>HUD has finalised the rule ending housing aid for mixed-status families; about 20,000 families, two-thirds of their eligible members children</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The Department of Housing and Urban Development has filed its final "Verification of Eligible Status" rule for publication in tomorrow's Federal Register (document 2026-23003), and it takes effect on 14 December. Secretary Scott Turner announced it on Tuesday evening. It covers public housing, Housing Choice Vouchers, project-based Section 8 and below-market Section 236 units.</p>
+  <p>The rule does two things. Every household member, of any age, must now prove US citizenship or eligible immigration status; today a member can simply decline to claim status, and a citizen can sign a declaration. And "prorated" assistance &mdash; where a family keeps a subsidy cut to cover only its eligible members &mdash; becomes temporary, pending verification of everyone. In practice that ends assistance for households that include an ineligible member. Families can get extensions of up to 60 days to produce documents, and housing agencies may defer termination for up to 18 months.</p>
+  <p>HUD's own regulatory impact analysis, quoted in the preamble, sizes it. About 20,000 mixed-status families received assistance as of December 2024. Children under 18 are roughly 65 per cent of the eligible members of those families. About 16,000 of the families have children, and HUD expects them to leave together rather than split up. HUD assumes at most about 990 households will contest and be formally evicted. HUD also concedes that, because replacement households need larger subsidies, fewer households will be served unless Congress appropriates more.</p>
+  <p>The preamble says about 1.05 per cent of existing tenants are estimated to lack ready access to documents. They are mostly citizens, and they face the new paperwork too.</p>
+  <p><b>What to watch:</b> litigation before 14 December; how many agencies use the 18-month deferral; and whether the incoming Democratic House attaches an appropriations rider. Housing advocates such as the National Housing Law Project have said they will fight it.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; 200,000 tenants, 80,000 people or 20,000 families?</span>
+    <p><b>What is disputed.</b> Partly facts, mostly framing. HUD's press release says a HUD&ndash;DHS audit found "nearly 200,000 tenants" with incomplete or unknown eligibility verification. HUD's own impact analysis says the rule's direct target is about 20,000 mixed-status families. Commenters quoted in the preamble, and advocates since, put the people in those families at nearly 80,000.</p>
+    <p><b>Why they differ.</b> Each figure counts something different, and each source picks the one that serves its case. The 200,000 is tenants whose files are incomplete, which includes citizens with missing paperwork; it is not a count of ineligible people. The 20,000 is households with at least one member who is ineligible or has not claimed status. The 80,000 counts everyone in those households, most of whom are eligible &mdash; commenters reading HUD's analysis count about 55,100 eligible people &mdash; and HUD says two-thirds of the eligible members are children. The press release uses the biggest number; advocates use the people count; the analysis uses households.</p>
+    <p><b>What it means for you.</b> The rule removes assistance from about 20,000 households. Most people in them are eligible. HUD's own document says the benefit is reprioritising aid, not saving money, and that fewer households will be served without new appropriations. Read the 200,000 as a measure of paperwork gaps, not of ineligibility. The first real count will come from agencies' termination notices after 14 December.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; what the preamble concedes, and where the litigation will aim</summary>
+    <div class="exp">
+      <p>The statutory hook is Section 214 of the Housing and Community Development Act of 1980, which bars HUD from assisting people other than citizens and specified categories of noncitizens. Under current regulations a family with an ineligible member can keep a subsidy reduced in proportion, indefinitely. HUD now argues that proration was meant to be a temporary bridge and that letting it run indefinitely misreads the statute. That is the legal question a court will be asked: whether prorated assistance, which HUD itself says the statute preserves in some cases, can be made temporary by regulation.</p>
+      <p>The preamble is unusually candid on cost. Because eligible members of mixed families have higher average incomes and pay more of their own rent, replacing them with fully eligible families needs a larger subsidy per person. HUD says plainly that, absent more money, fewer households would be assisted, and that the rule's benefit is reprioritisation under Section 214 rather than savings. Commenters drew on the analysis to say the number of eligible people assisted in those households falls from about 55,100 to 24,100, and that HUD would need $311&ndash;385 million more to serve the same number of households. Those are commenters' readings of HUD's analysis, quoted in HUD's own preamble; HUD does not dispute the direction.</p>
+      <p>On homelessness, HUD calls the net effect "ambiguous": displaced mixed-status families may become homeless, offset by fully eligible households, some formerly homeless, who get the freed units. HUD puts upfront implementation costs at $17&ndash;33 million.</p>
+      <p>Two points shape the litigation. First, the rule applies to current tenants, not only applicants, which raises reliance and notice arguments. Second, the 18-month deferral is at HUD's discretion and, by the rule's own terms, available only where the statute permits. Expect challenges filed in districts with the largest concentrations &mdash; commenters named California and Massachusetts &mdash; before 14 December.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://public-inspection.federalregister.gov/2026-23003.pdf">Final rule, FR 2026-23003 (public-inspection PDF)</a> &middot;
+    <a href="https://www.federalregister.gov/documents/2026/11/12/2026-23003/housing-and-community-development-act-of-1980-verification-of-eligible-status">Federal Register listing (effective date)</a> &middot;
+    <a href="https://www.hud.gov/news/hud-no-26-091">HUD press release No. 26-091</a> &middot;
+    <a href="https://www.nhlp.org/nhlp-on-new-hud-rule-trump-separates-and-evicts-immigrant-families-in-order-to-destroy-federal-housing-programs/">National Housing Law Project statement</a> &middot;
+    <a href="https://www.nahro.org/news/hud-publishes-mixed-status-final-rule/">NAHRO summary (via search)</a> &middot;
+    <a href="https://news.bloomberglaw.com/us-law-week/hud-tightens-rules-around-immigrant-families-housing-aid">Bloomberg Law (summary via search)</a>
+  </p>
+  <div class="fb">
+    <p>This came from reading tomorrow's Federal Register today. Follow the litigation as a thread?</p>
+    <label><input type="radio" name="fb-hud" value="follow"> Yes &mdash; until a court rules</label>
+    <label><input type="radio" name="fb-hud" value="no"> No &mdash; one story is enough</label>
+    <p>Was the 200,000/20,000/80,000 box worth the space?</p>
+    <label><input type="radio" name="fb-hud-box" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-hud-box" value="no"> No</label>
+  </div>
+</article>
+
+
+<article id="fcc-national-cap">
+  <h2>The FCC's repeal of the 39 per cent TV ownership cap publishes tomorrow and takes effect 11 January</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The Federal Communications Commission's order abolishing the national television ownership cap has been filed for publication in tomorrow's Federal Register (document 2026-23040). The repeal of 47 CFR 73.3555(e) takes effect on 11 January 2027. The commission voted on 6 August and released the text on 1 October; publication is the step that starts the effective-date clock and, per Communications Daily, opens the door to the legal challenges everyone expects.</p>
+  <p>The cap bars any one company from owning stations that reach more than 39 per cent of US television households &mdash; up to 78 per cent in practice, because a UHF station counts for only half its market's households. In its place the commission will review, case by case, any deal that would have broken the cap, against its goals of localism, competition and viewpoint diversity. The order says some such deals may be approved and some denied, and calls the change a shift from a blanket ban to individual review.</p>
+  <p>Its legal theory is that Congress, in the 2004 appropriations act, only told the commission to "modify its rules" to set 39 per cent, and that the power to modify includes the power to change them again. The same 2004 law removed the cap from the four-yearly ownership review.</p>
+  <p>The politics moved the same day. At a Senate Commerce hearing on Tuesday, Democrats opposed Danielle Thumann Severs, the President's nominee for a vacant seat and a senior counsel to Chairman Brendan Carr. Roll Call and Ars Technica report Democrats fear a three-Republican quorum would let the President remove the sole Democrat, Anna Gomez, and they promised to investigate Carr from January.</p>
+  <p><b>What to watch:</b> petitions for review after publication, which circuit they land in, and the first station deal filed above 39 per cent.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; a rule the FCC may repeal, or a limit Congress set?</span>
+    <p><b>What is disputed.</b> A legal-significance dispute about the same history. Radio &amp; Television Business Report headlines the move as erasing a "Congressionally-Mandated" cap. The FCC's own order says the 2004 law only instructed it to modify its rules and that the commission "has always retained authority" to change the cap.</p>
+    <p><b>Why they differ.</b> Both describe the same 2004 statute. It did set the 39 per cent figure, by directing the commission to write it into its rules, and it shielded the figure from periodic review. Whether that makes 39 per cent a statutory floor or merely a starting point is exactly what will be litigated. The FCC leans on a D.C. Circuit line describing the earlier 35 per cent cap as "the starting point"; the trade press, writing for broadcasters who will buy and sell under the new regime, reaches for the shorthand its readers use.</p>
+    <p><b>What it means for you.</b> The FCC's reading of "modify its rules" is plausible on the text, and it asserted the same authority in 2016. But Congress removing the cap from routine review is the strongest point against it: it suggests Congress meant the number to stay put. Treat the repeal as effective from 11 January but legally exposed. A court ruling, or a rider from the incoming Congress restoring the cap, would settle it.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://public-inspection.federalregister.gov/2026-23040.pdf">FCC Report and Order summary, FR 2026-23040 (public-inspection PDF)</a> &middot;
+    <a href="https://www.federalregister.gov/documents/2026/11/12/2026-23040/national-television-multiple-ownership-rule">Federal Register listing (effective date)</a> &middot;
+    <a href="https://rbr.com/repealed-fcc-deletes-congressionally-mandated-national-tv-reach-cap/">RBR</a> &middot;
+    <a href="https://communicationsdaily.com/news/2026/10/02/FCC-Releases-Order-to-Eliminate-National-TV-Cap-2610010072">Communications Daily (via search)</a> &middot;
+    <a href="https://rollcall.com/2026/11/10/threats-to-broadcasters-hang-over-fcc-nominee-hearing/">Roll Call on the nominee hearing</a> &middot;
+    <a href="https://arstechnica.com/tech-policy/2026/11/democrats-oppose-plan-to-stack-fcc-with-republicans-plan-probes-of-chairman-carr/">Ars Technica</a>
+  </p>
+  <div class="fb">
+    <p>Media-ownership rules are not a configured beat. Did this earn a lead?</p>
+    <label><input type="radio" name="fb-fcc" value="yes"> Yes &mdash; regulation of this size belongs here</label>
+    <label><input type="radio" name="fb-fcc" value="short"> Short item would have done</label>
+    <p>Follow the court challenge?</p>
+    <label><input type="radio" name="fb-fcc-follow" value="follow"> Follow it</label>
+    <label><input type="radio" name="fb-fcc-follow" value="no"> No</label>
+  </div>
+</article>
+
+
+<article id="nvidia-board-probe">
+  <h2>Nvidia's board hired Wachtell to investigate Huang, and a blacklisted Chinese defence university posted a receipt for H200s</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Continues: <a href="2026-11-10-grok.html#nvidia-megaspeed">Megaspeed, 10 Nov</a></span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Three things moved since yesterday's edition. First, the independent members of Nvidia's board have retained Joon H. Kim, a former acting US Attorney for the Southern District of New York, and his firm Wachtell, Lipton, Rosen &amp; Katz to run the investigation the board announced on Sunday. The board's Sunday statement said it had "no reason to believe" national security or company secrets were compromised and that it has confidence in Jensen Huang.</p>
+  <p>Second, Reuters found procurement records showing that Northwestern Polytechnical University in Xi'an &mdash; a defence-linked school on the Commerce Department's Entity List since 2001 &mdash; bought two H200 chips last month for 874,700 yuan, about $123,000, through a domestic supplier, Shaanxi Bosuan Network Technology. The same records show five contracts this year for rented computing on H200s and other Nvidia processors. H200 exports need a US licence, and licences for listed institutions are normally denied. Al Jazeera carried the Reuters findings.</p>
+  <p>Third, Washington's pressure widened. Sen. Michael Bennet wrote to State, Commerce, Justice and the intelligence director asking for punitive measures against Megaspeed, the Singapore firm the alleged spy worked for; Semafor reports Commerce has handed its probe to Justice and is resisting adding Megaspeed to the Entity List. Republican Sen. Kevin Cramer, of the Banking Committee, told Politico "I just think he's got to go", per The Independent. A shareholder filed a proposed class action in California on Monday alleging investors were misled.</p>
+  <p>The stock fell 5.47 per cent on Tuesday after a drop of more than 4 per cent on Monday, per Techmeme's aggregation, and CNBC reports a rebound of about 5 per cent.</p>
+  <p><b>What to watch:</b> third-quarter results on 17 November; whether House committee chairs subpoena Huang; and whether Commerce lists Megaspeed.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; $4.8 billion or $7.5 billion; $430 billion or a trillion?</span>
+    <p><b>What is disputed.</b> Two sets of numbers, both facts disputes on their face. Reporting summarised in the shareholder-suit coverage says Megaspeed bought more than $4.8 billion of Nvidia chips over two years. The Information reports the Huang relationship "facilitated" more than $7.5 billion of Nvidia sales into China. On the market damage, The Guardian says Nvidia has lost $430 billion of value since the spy allegations; Handelsblatt says about a trillion dollars in a week.</p>
+    <p><b>Why they differ.</b> Different quantities and different windows, not contradictions. $4.8 billion is one customer's purchases; $7.5 billion is a broader claim about sales the relationship helped, reaching beyond Megaspeed, from a paywalled report I could read only as a headline. The Guardian measures from the allegations; Handelsblatt's week includes the AI sell-off that began before them.</p>
+    <p><b>What it means for you.</b> Hold $4.8 billion as the better-sourced Megaspeed figure and $7.5 billion as one outlet's unverified wider estimate. For the stock, use the smaller number as the scandal's cost; the larger one blends in the sector sell-off. The investigation report, if it is published, or the 17 November filing would settle the exposure.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://nvidianews.nvidia.com/news/statement-from-the-independent-members-of-the-nvidia-board">Nvidia independent directors' statement</a> &middot;
+    <a href="https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors">Nvidia board statement, 8 Nov</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/11/chinese-university-buys-nvidia-ai-h200-chips-despite-us-ban-records-show">Al Jazeera on Reuters' NWPU records</a> &middot;
+    <a href="https://www.semafor.com/article/11/11/2026/senator-presses-trump-administration-on-megaspeed-probe">Semafor on Bennet</a> &middot;
+    <a href="https://www.independent.co.uk/news/world/americas/us-politics/cramer-jensen-huang-nvidia-spy-b3082950.html">The Independent on Cramer</a> &middot;
+    <a href="https://political.org/2026/11/10/shareholder-sues-nvidia-and-ceo-jensen-huang-alleging-investors-were-misled-over-spy-affair-reports/">Political.org on the suit</a> &middot;
+    <a href="https://www.dw.com/en/megaspeed-and-the-battle-to-go-high-end-nvidia-chips-into-china/a-79909129">DW on Megaspeed</a> &middot;
+    <a href="https://www.theguardian.com/us">The Guardian (business live headline)</a> &middot;
+    <a href="https://www.handelsblatt.com/">Handelsblatt (headline)</a> &middot;
+    <a href="https://finance.yahoo.com/markets/article/nvidia-stock-drops-3-extending-decline-on-report-alleged-chinese-spy-linked-to-nvidia-ceo-aided-75-billion-in-china-chip-shipm">Yahoo Finance on The Information's $7.5bn report</a> &middot;
+    <a href="https://www.techmeme.com/">Techmeme</a> &middot;
+    <a href="https://www.cnbc.com/id/100003114/device/rss/rss.html">CNBC</a>
+  </p>
+  <div class="fb">
+    <p>Nvidia has led or run four days straight. Is that the right cadence?</p>
+    <label><input type="radio" name="fb-nvda" value="daily"> Yes &mdash; daily while it moves</label>
+    <label><input type="radio" name="fb-nvda" value="milestones"> Only at milestones (earnings, subpoena, report)</label>
+    <p>Keep export-control enforcement in this story or split it out?</p>
+    <label><input type="radio" name="fb-nvda-split" value="together"> Together</label>
+    <label><input type="radio" name="fb-nvda-split" value="split"> Split it out</label>
+  </div>
+</article>
+
+
+<article id="oil-chain">
+  <h2>Gasoline is down 18 cents in a week on peace talk, but tankers are still being hit and Gulf freight has barely moved</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; oil</span>
+    <span class="chip">Continues: <a href="2026-11-10-grok.html#iran-oil-pump">Iran&ndash;oil&ndash;pump chain, 10 Nov</a></span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p><b>The pump.</b> AAA's national average for regular is $3.943 this morning, down from $3.979 yesterday, $4.124 a week ago and $4.359 a month ago; a year ago it was $3.072. Diesel is $6.131. The EIA's Monday survey agrees on direction: regular $3.995, down 15.8 cents on the week, and diesel $6.127, down 16.5 cents.</p>
+  <p><b>The barrel.</b> Brent fell to its lowest since August on Tuesday, briefly below $90 according to OilPrice.com, before bouncing to about $93.25 this morning on Trading Economics' contract-for-difference series. That is 12.6 per cent down on the month. The American Petroleum Institute estimated a 9.0-million-barrel US crude build last week and a further release from the Strategic Petroleum Reserve, leaving it at 279.5 million barrels. The government's own count, normally out today, moves to noon tomorrow because of the holiday.</p>
+  <p><b>The chokepoint.</b> President Trump said on Monday he saw "positive momentum" toward ending the war, and Secretary of State Rubio, in Paris for the G7, said strikes were not needed while the economic campaign worked. Iran's security chief, Mohsen Rezaei, called reports of talks in Qatar "a pure lie" and said Hormuz stays shut until Washington meets Iran's seven conditions, which include lifting sanctions and the US naval blockade. On Tuesday a vessel operated by ADNOC Logistics was damaged in an attack in UAE waters, and UKMTO reported a tanker hit by a projectile 19 nautical miles north-east of Lima, Oman. Iraq says it has a US understanding to export through a lane near Oman and shipped about 3.5 million barrels a day in October.</p>
+  <p><b>The chain.</b> The barrel is pricing a settlement; the strait is not yet open. A VLCC from the Gulf to China still costs $72&ndash;74 million, $36&ndash;37 a barrel, barely changed in two weeks, and roughly $20 a barrel more than loading just outside the strait.</p>
+  <p><b>What to watch:</b> the EIA weekly at noon tomorrow; any US reply to the seven conditions; and where the first Russian diesel cargo bound for the US, now stopped off the coast, ends up; the President's energy chief says it will eventually be sold on the global market, per Reuters via gCaptain.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is the war "effectively over" for oil?</span>
+    <p><b>What is disputed.</b> An interpretation dispute between two markets. Crude futures have fallen to a three-month low on expectations of a deal. Freight markets for the same route have hardly moved, and attacks continue: OilPrice.com counts at least 16 tankers struck in the strait this month, only 11 of them reported by UKMTO; Trading Economics counted 37 vessels attacked in October.</p>
+    <p><b>Why they differ.</b> Each prices a different horizon. Futures trade the expected supply over coming months, and so price the chance of a deal. A tanker charter prices the voyage now, through a strait that is still being hit, with crew, insurance and ship-time costs. Rezaei's denial is also aimed at that gap: he says Washington is talking up negotiations to bring oil prices down.</p>
+    <p><b>What it means for you.</b> Pump prices should keep easing for a while, because retail follows the barrel with a lag. But the fall rests on talks that one side says are not happening. Freight is the better real-time sign: if Gulf charter rates fall toward other routes, the strait is genuinely reopening. If talks fail, the barrel has further to snap back than the freight does.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://gasprices.aaa.com/">AAA national averages</a> &middot;
+    <a href="https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm">EIA weekly retail prices</a> &middot;
+    <a href="https://www.eia.gov/petroleum/supply/weekly/schedule.php">EIA WPSR holiday schedule</a> &middot;
+    <a href="https://tradingeconomics.com/commodity/brent-crude-oil">Trading Economics, Brent</a> &middot;
+    <a href="https://oilprice.com/Energy/Crude-Oil/Oil-Falls-to-Lowest-Level-Since-August.html">OilPrice.com on the low and freight</a> &middot;
+    <a href="https://oilprice.com/Latest-Energy-News/World-News/API-Shows-Sharp-Build-in-US-Crude-Oil-Distillate-Inventories.html">OilPrice.com on API</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/11/iran-denies-talks-with-us-says-hormuz-will-stay-shut-until-demands-are-met">Al Jazeera on Rezaei</a> &middot;
+    <a href="https://gcaptain.com/adnoc-vessel-damaged-in-gulf-attack-as-ukmto-reports-fresh-tanker-strike-near-hormuz/">gCaptain on ADNOC and UKMTO 201-26</a> &middot;
+    <a href="https://gcaptain.com/iraq-has-reached-understandings-with-us-to-allow-oil-exports-through-hormuz/">gCaptain/Reuters on Iraq</a> &middot;
+    <a href="https://gcaptain.com/russian-diesel-tanker-awaits-orders-off-u-s-coast-amid-import-ban-dispute/">gCaptain on the Russian diesel cargo</a>
+  </p>
+  <div class="fb">
+    <p>Is the freight-versus-futures framing useful for reading the pump?</p>
+    <label><input type="radio" name="fb-oil" value="yes"> Yes &mdash; keep watching freight</label>
+    <label><input type="radio" name="fb-oil" value="no"> No &mdash; pump and Brent are enough</label>
+    <p>How often should the oil chain run while prices fall?</p>
+    <label><input type="radio" name="fb-oil-freq" value="daily"> Daily</label>
+    <label><input type="radio" name="fb-oil-freq" value="moves"> Only on big moves</label>
+  </div>
+</article>
+
+
+<article id="lab-safety">
+  <h2>OpenAI built a 35-second kill switch for its research models, as New York opened registration for its AI safety law</h2>
+  <div class="meta">
+    <span class="chip">AI lab safety</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>OpenAI said on Tuesday that it has deployed "Control Room", a central system that tracks every model workload across its research infrastructure and can stop one when safety or security concerns arise. Once a job is stopped, further output from the model is denied within at most 35 seconds; the company says the lag comes from a caching layer for authorisation, and that it is working to bring it to zero. The system fails closed: if Control Room itself goes down, model output stops. Every research workload doing agentic inference must be tied to an approved "safety case" before it gets a job ID. OpenAI says its public model-serving stack already had a well-developed ability to take deployments down.</p>
+  <p>The same day, New York's Department of Financial Services opened its RAISE Act portal. The law's obligations start on 1 January 2027. Any developer that has trained a model with more than 10<sup>26</sup> operations must report critical safety incidents within 72 hours, or within 24 hours to authorities if there is an imminent risk of death or serious injury. "Large" developers, those with more than $500 million in annual revenue, must also register, publish a safety framework, and give the state a quarterly summary of catastrophic risk from <i>internal</i> use of their models. That clause reaches exactly the research-lab use Control Room governs.</p>
+  <p>The two are not formally linked. But together they mark a shift: lab safety moving from model release decisions to the labs' own internal use of agents, where The Register notes recent incidents of agents exceeding their brief. The Register also observes OpenAI has not said why it built the switch now.</p>
+  <p><b>What to watch:</b> which labs register with New York before 1 January; whether others publish comparable stop mechanisms; and the first incident report filed under the law.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; has New York's AI safety law "taken effect"?</span>
+    <p><b>What is disputed.</b> Timing. TechCrunch headlined Tuesday's news as OpenAI and Anthropic facing new oversight "as New York's AI safety law takes effect". The regulator's own page says registration and the reporting regime apply "beginning January 1, 2027".</p>
+    <p><b>Why they differ.</b> What started on Tuesday is the portal: developers can now open accounts and are encouraged to do so early. The duties themselves &mdash; registration, incident reports, quarterly risk summaries &mdash; begin in seven weeks. The headline treats the administrative launch as the legal start.</p>
+    <p><b>What it means for you.</b> No lab is yet obliged to report anything to New York. The first real test of the law is whether the large labs register by 1 January, and whether any company argues it falls outside the definitions. Until then, OpenAI's Control Room is a voluntary commitment described only by OpenAI.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://openai.com/index/control-room">OpenAI, "Control Room" (blocked the fetch; read via search excerpts)</a> &middot;
+    <a href="https://www.theregister.com/ai-and-ml/2026/11/11/openai-builds-a-kill-switch-for-its-research-models/5309006">The Register</a> &middot;
+    <a href="https://www.dfs.ny.gov/digit/Frontier-Developers">NY DFS, information for frontier developers</a> &middot;
+    <a href="https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/">TechCrunch</a>
+  </p>
+  <div class="fb">
+    <p>Lab safety leads are rare. Was this the right weight?</p>
+    <label><input type="radio" name="fb-lab" value="lead"> Lead &mdash; yes</label>
+    <label><input type="radio" name="fb-lab" value="short"> Short item would do</label>
+    <label><input type="radio" name="fb-lab" value="more"> Want more of this</label>
+  </div>
+</article>
+
+
+<article id="measles-status">
+  <h2>A regional panel is deciding this week whether the US has lost its measles-elimination status, held since 2000</h2>
+  <div class="meta">
+    <span class="chip">US health policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The Pan American Health Organization's independent verification commission is meeting in Washington from 10 to 13 November and will decide whether endemic measles transmission has been re-established in the United States. The test is uninterrupted circulation of the same virus genotype and lineage for 12 months or more. For the US, PAHO set the analysis period to run from 20 January 2025, the onset of the reported outbreaks. The commission recommends; PAHO's director, Jarbas Barbosa, decides. A PAHO spokesperson told Reuters the determination is expected to be made public early next week.</p>
+  <p>The numbers going in are the worst in a generation. The CDC counted 5,182 cases this year as of 5 November, the highest annual tally since 1991, per the Associated Press; 96 per cent were unvaccinated or of unknown status. Pennsylvania alone has 1,505, followed by South Carolina and Utah. Mexico and Bolivia are also on PAHO's watch list. Canada lost its status a year ago, which cost the Americas region its measles-free label.</p>
+  <p>Noel Brewer, a University of North Carolina professor who chairs an independent US advisory panel on measles, presented the CDC's status report to the commission on Tuesday. He would not give details, but told Reuters that whatever the ruling, "we have a huge problem with measles."</p>
+  <p>This story was not on the watchlist; the negative check found it.</p>
+  <p><b>What to watch:</b> the PAHO announcement early next week; whether Mexico's status falls with it; and any change in federal vaccine guidance in response.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; whose failure, and does the label matter?</span>
+    <p><b>What is disputed.</b> Two interpretations. Public-health experts quoted by Reuters say Health Secretary Robert F. Kennedy Jr.'s moves to cut the childhood schedule fed hesitancy and the outbreak. The Department of Health and Human Services says national vaccination rates were falling before he took office. On significance, the CDC director, Erica Schwartz, says that if the status is lost the agency will do "the same exact thing that we've been doing today"; a former senior CDC official, Demetre Daskalakis, calls it a sign of a wider dismantling of public health.</p>
+    <p><b>Why they differ.</b> Both claims about cause can be partly true: coverage was eroding before 2025, and an outbreak lasting 12 months is also a test of the response since then. The commission judges transmission, not blame. On significance, the label changes no law or funding by itself; its weight is reputational and diagnostic.</p>
+    <p><b>What it means for you.</b> Reuters and PAHO's own framing both treat loss as the live possibility; the test turns on whether genome sequencing shows one lineage circulating for a year, which is the analysis US health authorities were still completing in March. The practical risk is unchanged either way: two MMR doses protect, and outbreaks concentrate where coverage is low.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.paho.org/en/news/14-10-2026-measles-and-rubella-elimination-regional-monitoring-and-re-verification-commission">PAHO, commission meeting 10&ndash;13 Nov</a> &middot;
+    <a href="https://www.paho.org/en/news/2-3-2026-update-review-measles-elimination-status">PAHO, review criteria and analysis period</a> &middot;
+    <a href="https://wtvbam.com/2026/11/11/us-faces-loss-of-measles-free-status-as-experts-meet-for-review/">Reuters via WTVB</a> &middot;
+    <a href="https://www.insurancejournal.com/news/east/2026/11/10/892220.htm">AP via Insurance Journal</a> &middot;
+    <a href="https://www.nbcnews.com/health/health-news/us-measles-cases-resurgence-data-charts-vaccination-rcna607113">NBC News data investigation (headline)</a>
+  </p>
+  <div class="fb">
+    <p>Should public-health stories like this rank as leads?</p>
+    <label><input type="radio" name="fb-measles" value="yes"> Yes, when a federal status is at stake</label>
+    <label><input type="radio" name="fb-measles" value="short"> Short items only</label>
+    <p>Report the PAHO decision next week?</p>
+    <label><input type="radio" name="fb-measles-follow" value="follow"> Yes</label>
+    <label><input type="radio" name="fb-measles-follow" value="no"> No</label>
+  </div>
+</article>
+
+
+<article id="fl-duke-datacentres">
+  <h2>Florida: regulators unanimously rejected Duke Energy's data-centre rate plan in the first test of the new cost law</h2>
+  <div class="meta">
+    <span class="chip">Florida</span>
+    <span class="chip new">New subject (late: vote was 3 Nov)</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="corr"><b>Late catch.</b> This vote took place on Tuesday 3 November. No Grok edition reported it until today; it surfaced in Tuesday's Tampa Bay Times follow-up.</p>
+  <p>The Florida Public Service Commission voted 5&ndash;0 to deny Duke Energy Florida's proposed "large load" tariff for data centres, the first test of SB 484, the law Gov. Ron DeSantis signed this spring and which took effect on 1 July. The law requires regulators to "reasonably ensure" each large customer "bears its own full cost of service" and that the cost is not shifted to everyone else.</p>
+  <p>Commissioners found two problems. Duke's tariff excluded some large customers who meet the law's definition, and Duke failed to show its existing rates and contract terms would make data centres pay their full cost. Duke had largely proposed to treat data centres like other big industrial users, a class the Times notes is already subsidised by residents and small businesses, and said it would bring a data-centre-specific structure in 2027 alongside its next base-rate request.</p>
+  <p>The chair, Gabriella Passidomo Smith, said she understood Duke's argument that data centres could lower bills "in theory", but "that theoretical scenario does not address the statute we have before us." The commission's staff had recommended denial. All five commissioners are DeSantis appointees.</p>
+  <p>For Duke customers across much of Pasco and Pinellas, the vote means no data-centre cost structure is yet approved. Duke can refile; it would not say when. Tampa Electric's own proposal is still awaiting review.</p>
+  <p><b>What to watch:</b> Duke's refiling; the Tampa Electric decision; and whether the cost figures, redacted at Duke's request, become public.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how much would residents have paid?</span>
+    <p><b>What is disputed.</b> Magnitude, and it cannot be checked. Consumer advocates said Duke's plan could saddle Floridians with billions of dollars of bill increases. Duke says it is focused on "ensuring that data centers pay their full cost of service" and argued data centres could lower bills.</p>
+    <p><b>Why they differ.</b> The exact figure of potential costs was redacted from the public record at Duke's request, per the Tampa Bay Times. So neither side's number can be tested against the filing, and the commission ruled on the plan's structure, not on a dollar amount.</p>
+    <p><b>What it means for you.</b> The ruling protects bills for now by refusing a structure, not by finding a number. The real figure will matter when Duke refiles and in its 2027 rate case; ask that the redaction be lifted then.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.tampabay.com/news/environment/2026/11/10/duke-energy-florida-data-center-electric-bill/">Tampa Bay Times</a> &middot;
+    <a href="https://www.wusf.org/politics-issues/2026-11-04/regulators-reject-dukes-data-center-rate-structure">WUSF</a> &middot;
+    <a href="https://baynews9.com/fl/tampa/news/2026/11/11/florida-public-service-commission-rejected-duke-energy-floridas-proposal-for-handling-cost-tied-to-data-centers">Bay News 9</a> &middot;
+    <a href="https://www.floridapsc.com/news-links/12359">Florida PSC news release</a>
+  </p>
+  <div class="fb">
+    <p>Was this local enough to earn a Florida lead?</p>
+    <label><input type="radio" name="fb-fl" value="yes"> Yes &mdash; it hits our bill</label>
+    <label><input type="radio" name="fb-fl" value="no"> No</label>
+    <p>A week late is too late. Should the Florida sweep run daily even when nothing seems to be happening?</p>
+    <label><input type="radio" name="fb-fl-sweep" value="daily"> Yes, daily</label>
+    <label><input type="radio" name="fb-fl-sweep" value="weekly"> Weekly roundup is fine</label>
+  </div>
+</article>
+
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Nine things I saw and ranked below the line. Each one opens &mdash; the line is my judgement, what is behind it is the substance.</p>
+
+<div class="also-list">
+
+<details class="short" id="a-hegseth">
+  <summary><span class="chip">US politics &amp; policy</span> The House voted 211&ndash;204 to send Rep. Thomas Massie's impeachment resolution against Defense Secretary Pete Hegseth to committee, ending it in this Congress.</summary>
+  <div class="exp">
+    <p>The Clerk's roll call 317 records the question as a motion to refer H.Res. 1655: 210 Republicans for, Massie the only Republican against, 203 Democrats against, with seven Republicans and eleven Democrats not voting. Massie, who lost his primary this year after the President and Hegseth campaigned against him, forced the vote by filing the resolution as privileged. It charged Hegseth over the conduct of the Iran war and strikes in Yemen, Venezuela and the Caribbean. NBC reports that even Republican critics of Hegseth said his actions did not reach "high crimes and misdemeanors."</p>
+    <div class="div">
+      <span class="t">Divergence &mdash; tabled or referred?</span>
+      <p><b>What is disputed.</b> A small facts dispute about procedure. ABC's headline says the House "tables" the resolution; the Clerk's record and NBC describe a motion to refer it to committee.</p>
+      <p><b>Why they differ.</b> Both kill the resolution in practice, and headline writers use "table" loosely. Procedurally they differ: a referred resolution sits in the Judiciary Committee rather than being disposed of.</p>
+      <p><b>What it means for you.</b> The effect is the same in this Congress. In January, with a Democratic majority, a referred resolution or a new one could be taken up by the committee.</p>
+    </div>
+    <p class="btl"><b>Below the line because</b> it led yesterday as a pending vote and the outcome was expected.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://clerk.house.gov/evs/2026/roll317.xml">House Clerk, roll call 317</a> &middot; <a href="https://www.nbcnews.com/politics/congress/republican-led-house-rejects-hegseth-impeachment-effort-rcna608534">NBC News</a> &middot; <a href="https://abcnews.go.com/">ABC News (headline)</a> &middot; <a href="2026-11-10-grok.html#hegseth-impeachment">yesterday's story</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-sunvalley">
+  <summary><span class="chip">US politics &amp; policy</span> The Supreme Court heard a challenge to agencies' power to impose civil fines in-house, and the Chief Justice sounded sceptical of the government.</summary>
+  <div class="exp">
+    <p>The case is <i>Department of Labor v. Sun Valley Orchards</i>. The department fined a New Jersey farm about half a million dollars over conditions for H-2A farmworkers, including unsafe water and failure to pay promised wages. The farm argues that fines imposed through an agency's own proceedings, rather than by a court and jury, are unconstitutional. Chief Justice John Roberts suggested administrations had stretched executive authority. The Deputy Solicitor General, Sarah Harris, called a rule that civil penalties always belong in Article III courts "kind of the nuclear option", warning it would disrupt Medicare, Medicaid and student loans. Justice Ketanji Brown Jackson pressed the farm's lawyer on what Congress intended. SCOTUSblog's preview frames the case as a test of the Court's history-and-tradition method for agency adjudication.</p>
+    <p class="btl"><b>Below the line because</b> argument is not a ruling, and NPR describes the justices as divided. A decision is likely by June; if it broadly limits in-house penalties, it leads.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://text.npr.org/nx-s1-6034950">NPR</a> &middot; <a href="https://www.scotusblog.com/2026/11/whose-tradition-which-history-agency-adjudication-and-sun-valley-orchards/">SCOTUSblog preview</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-fairford">
+  <summary><span class="chip">Geopolitics (US channel)</span> The Justice Department unsealed an eight-count indictment charging three Iran-backed operatives over nearly 20 attacks and plots in Europe and the US, including a September plot at RAF Fairford, where American forces were stationed.</summary>
+  <div class="exp">
+    <p>The superseding indictment, in the Southern District of New York, charges Mohammad Baqer Saad Dawood al-Saadi, Mohsen Mohajeri and Mohammad Ali al-Hassani with supporting Kata'ib Hizballah and the Revolutionary Guards. Prosecutors allege al-Hassani orchestrated the Fairford plot from Iran using contacts in Britain, and that al-Saadi &mdash; already jailed in New York since May on charges including an attempted synagogue bombing &mdash; helped coordinate from jail by passing coded messages through third parties. Attorney General Todd Blanche said anyone plotting against a base housing US servicemembers would be prosecuted. The FBI director's quoted statement in the release names the base "RAF Fairfield", an error in the government's own text. The Guardian and Al Jazeera carried the charges.</p>
+    <p class="btl"><b>Below the line because</b> it is a charging document &mdash; allegations, not findings &mdash; and does not change the war or the oil chain today.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.justice.gov/opa/pr/three-iranian-backed-operatives-indicted-their-roles-nearly-20-terrorist-attacks-and">DOJ release</a> &middot; <a href="https://www.theguardian.com/us-news/2026/nov/10/prosecutors-charge-iranian-operative-uk-air-force-attack">The Guardian</a> &middot; <a href="https://www.aljazeera.com/news/2026/11/11/us-charges-3-iranian-backed-men-over-alleged-plot-at-uk-fairford-air-base">Al Jazeera</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-bannon">
+  <summary><span class="chip">US politics &amp; policy</span> The Justice Department asked a court to vacate Steve Bannon's contempt-of-Congress conviction "in the interests of justice"; his lawyers do not oppose.</summary>
+  <div class="exp">
+    <p>A jury convicted Bannon in under three hours of deliberation for defying the January 6 committee's subpoena, and an appeals court upheld the verdict. NPR reports legal experts see a pattern in which, with both sides now agreeing, no one is left to defend a conviction in court. That is the same rationale the department used this spring to drop seditious-conspiracy convictions of Oath Keepers and Proud Boys leaders. In those cases lawyers for Rep. Jamie Raskin asked the appeals court to appoint a friend of the court to defend the judgments; judges dismissed the charges without doing so. The department did not comment to NPR.</p>
+    <p class="btl"><b>Below the line because</b> it is a motion, not a ruling, and the consequence is to the norm rather than to policy. The test is whether the court appoints an amicus.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://text.npr.org/g-s1-152713">NPR</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-anthropic-ipo">
+  <summary><span class="chip">AI &amp; tech industry</span> Anthropic's bankers are weighing a higher IPO price that would value the company at $1.5 trillion, the Financial Times reports.</summary>
+  <div class="exp">
+    <p>Per Semafor's summary of the FT, the extra proceeds would pay for computing. The Information reports the listing would leave each of the seven founders with stakes worth about $18 billion, and that Alphabet and Amazon could eventually hold 27 per cent between them. Semafor also notes OpenAI told investors revenue grew about 50 per cent on the quarter to $10 billion while operating losses widened. That is the backdrop: the AI sell-off and the Nvidia affair have not, on this reporting, cooled demand for the largest private lab listing.</p>
+    <p class="btl"><b>Below the line because</b> it is a reported deliberation, not a filing or a price. It ran as a continuing item yesterday.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.semafor.com/article/11/11/2026/anthropics-bankers-mull-raising-ipo-valuation-to-15t">Semafor on the FT report</a> &middot; <a href="2026-11-10-grok.html#anthropic-ipo">yesterday</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-coreweave">
+  <summary><span class="chip">AI &amp; tech industry</span> CoreWeave beat on third-quarter revenue, raised its full-year outlook and pointed to $9 billion of customer prepayments in the next three months; the stock rose after hours.</summary>
+  <div class="exp">
+    <p>Revenue was $3.66 billion against a $3.56 billion consensus, per Yahoo Finance citing Bloomberg data, and the loss per share was $1.27 against $1.46 expected. Full-year revenue guidance rose to $13&ndash;13.3 billion from $12&ndash;13 billion. Chief executive Michael Intrator called it a breakout quarter, with adjusted operating margins in double digits a quarter early. The shares had fallen more than 40 per cent in a month on worries about the debt that finances AI data centres. That makes CoreWeave the market's test case for whether AI infrastructure can carry its borrowing; prepayments are customer cash up front, which eases exactly that worry.</p>
+    <p class="btl"><b>Below the line because</b> one company's beat does not settle the financing question, and the after-hours move may not hold.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://finance.yahoo.com/markets/stocks/article/coreweave-stock-pops-as-q3-revenue-beats-estimates-company-raises-full-year-outlook-211533280.html">Yahoo Finance</a> &middot; <a href="https://www.techmeme.com/">Techmeme</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-faro">
+  <summary><span class="chip">US financials</span> Banks in the 21-member stablecoin consortium have pledged about $270 million to fund five years of operations, Bloomberg reports.</summary>
+  <div class="exp">
+    <p>PYMNTS, summarising Bloomberg, says the backers include Goldman Sachs, Citigroup, Santander and Deutsche Bank. The venture, called Project Faro internally, would issue a dollar stablecoin, is expected to be incorporated in the US, and is looking for a chief executive. The consortium's plans became public earlier this year. The relevance is US financial structure: big banks moving from tokenised deposits, which stay inside one bank, to a shared stablecoin that can circulate on public blockchains. Such a coin would compete with the existing dollar stablecoin issuers.</p>
+    <p class="btl"><b>Below the line because</b> it is funding for a company that has no product, no chief executive and no charter yet.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.pymnts.com/cryptocurrency/2026/goldman-and-citi-help-fund-270-million-stablecoin-venture/">PYMNTS on Bloomberg's report</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-msha">
+  <summary><span class="chip">US politics &amp; policy</span> The mine-safety agency has proposed changes to its 2024 silica rule that keep the exposure limit, and finalised removal of outdated diesel-particulate limits; both publish tomorrow.</summary>
+  <div class="exp">
+    <p>The proposed rule (FR 2026-23048) revises compliance methods, exposure monitoring, respiratory protection, medical surveillance and recordkeeping in the 2024 standard, which set a permissible exposure limit of 50 micrograms per cubic metre with an action level of 25. The agency says the changes add clarity "while maintaining strong protection of miners"; the exposure figures themselves are not reopened in the summary. Comments are due 60 days after publication, and there is a virtual public hearing on 15 December. A separate final rule (FR 2026-23050) removes diesel-particulate limits for underground metal and non-metal mines, on the agency's account because they contain effective dates and limits that no longer apply. The diesel rule cites the President's February 2025 deregulation order.</p>
+    <p class="btl"><b>Below the line because</b> the proposal's effect depends on the detail of monitoring and medical surveillance, which this brief has not yet compared clause by clause against 2024.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://public-inspection.federalregister.gov/2026-23048.pdf">MSHA proposed rule, FR 2026-23048</a> &middot; <a href="https://public-inspection.federalregister.gov/2026-23050.pdf">MSHA final rule, FR 2026-23050</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-ibm">
+  <summary><span class="chip">AI &amp; tech industry</span> IBM's consulting arm, its largest division, will stop sponsoring US work visas and green cards for most roles.</summary>
+  <div class="exp">
+    <p>A spokesperson told Reuters the company's participation in high-skilled visa programmes had been declining for years and the decision reflected how "skill availability and client needs have evolved." USCIS data show only 1,611 H-1B petitions approved for IBM in fiscal 2026, so the direct number is modest. The context is the administration's pressure on large employers to cut H-1B use. The signal is that a major consulting employer, historically a heavy user of the programme, is choosing to exit most of it. Al Jazeera carried the Reuters report; Semafor ran it as a headline.</p>
+    <p class="btl"><b>Below the line because</b> the direct effect is small and the wider shift is inferred, not shown.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.aljazeera.com/news/2026/11/10/ibms-biggest-division-ends-most-us-foreign-worker-sponsorships">Al Jazeera/Reuters</a> &middot; <a href="https://www.semafor.com/">Semafor (headline)</a></p>
+  </div>
+</details>
+
+</div>
+
+<div class="fb" style="border-top:1px solid var(--rule); padding-top:1rem; margin-top:1.5rem;">
+  <p><b>One question about this whole section:</b> were the right things ranked below the line?</p>
+  <label><input type="radio" name="fb-also" value="right"> About right</label>
+  <label><input type="radio" name="fb-also" value="promote"> Some of these should have led</label>
+  <label><input type="radio" name="fb-also" value="drop"> Some should have been dropped entirely</label>
+  <label><input type="radio" name="fb-also" value="fewer"> Fewer short items, more depth up top</label>
+</div>
+
+<button class="submit" id="send">Send my feedback &rarr;</button>
+<p class="sources" style="text-align:center">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+
+
+<footer>
+  <h4>Sources checked this run &mdash; 78, of which 57 outside the watchlist</h4>
+  <p><b>Pointed at by a thread or a Core print (21):</b> BLS (CPI release and schedule) &middot; EIA (weekly retail prices, WPSR schedule) &middot; Federal Reserve press and speeches (federalreserve.gov) &middot; New York Fed household-debt report &middot; AAA gas prices &middot; Treasury yield curve (home.treasury.gov) &middot; Treasury Fiscal Data debt API &middot; OFAC recent actions &middot; White House (whitehouse.gov) &middot; Federal Register and its public-inspection desk (counted once) &middot; Trading Economics &middot; House Clerk roll calls &middot; Nvidia newsroom &middot; CFTC &middot; FDIC &middot; SCOTUSblog &middot; gCaptain &middot; OilPrice.com &middot; Department of Energy (energy.gov) &middot; Florida PSC &middot; CNBC.</p>
+  <p><b>Not pointed at by any thread (57):</b> ABC News &middot; Al Jazeera &middot; American Banker &middot; Ars Technica &middot; Nikkei Asia &middot; Bay News 9 &middot; Breaking Defense (breakingdefense.com) &middot; CBS News &middot; CoinDesk &middot; Data Center Dynamics (datacenterdynamics.com) &middot; Defense One (defenseone.com) &middot; DW &middot; El Pa&iacute;s (elpais.com) &middot; Wikipedia (current events) &middot; BBC (feeds.bbci.co.uk) &middot; Dow Jones feeds (feeds.content.dowjones.io) &middot; Yahoo Finance &middot; Florida Phoenix (floridaphoenix.com) &middot; Fox 13 Tampa (fox13news.com) &middot; FreightWaves &middot; Financial Times &middot; Haaretz &middot; Handelsblatt &middot; HUD &middot; The Independent &middot; Insurance Journal &middot; Justice Department &middot; Los Angeles Times (latimes.com) &middot; Le Figaro (lefigaro.fr) &middot; Le Monde (lemonde.fr) &middot; MarketWatch &middot; NBC News &middot; National Housing Law Project &middot; PAHO &middot; PBS &middot; Political.org &middot; Punchbowl News &middot; PYMNTS &middot; RBR &middot; Roll Call &middot; South China Morning Post (scmp.com) &middot; Semafor &middot; Der Spiegel &middot; STAT (statnews.com) &middot; Tampa Bay Times &middot; TechCrunch &middot; Techmeme &middot; NPR (text.npr.org) &middot; The Debrief (thedebrief.org) &middot; The Guardian &middot; The Register &middot; The Verge (theverge.com) &middot; War on the Rocks (warontherocks.com) &middot; WTVB (Reuters) &middot; WUSF &middot; NHK World &middot; Yle.</p>
+  <p>Several outside sources produced no story today; they are listed because they were read, and the share rule counts reading, not using.</p>
+
+  <h4>The negative check</h4>
+  <p><i>What is the biggest story today that is not on my list, and why is it not?</i> PAHO's measles-elimination review. No thread and no Core beat covered it; a general sweep through Reuters (via WTVB) and AP (via Insurance Journal) found it, and it took a lead slot from the Supreme Court's agency-penalties argument, which drops to the short tier. Second find: HUD's mixed-status final rule, filed for tomorrow's Federal Register and read from the public-inspection PDF. Third: Florida's Duke vote, eight days old &mdash; a miss, flagged at the top of that story.</p>
+
+  <h4>Threads swept as a by-product, no trigger fired</h4>
+  <p>Fed path (no new decision; CPI is the print) &middot; Treasury debt ($40.56 trillion on 9 November, Fiscal Data) &middot; OFAC actions &middot; CFTC and FDIC releases &middot; UAP implementation (The Debrief front page; nothing new) &middot; Venezuela licensing (NPR on ExxonMobil weighing a return; no licence action) &middot; Bab el-Mandeb (no transit count) &middot; Florida school and county budgets (Tampa Bay Times on Pinellas school closures; not consequential beyond the district) &middot; Ohio data-centre bans (ran yesterday; Data Center Dynamics' tally of at least 14 Ohio measures adds detail, no new action).</p>
+
+  <h4>Could not reach</h4>
+  <p>Fourteen hosts refused or 404'd and are not counted: Axios, The Hill, Utility Dive, FTC, FERC, Lawfare, CBO, NRC, WFLA, SEC, OCC, OpenAI (403 &mdash; Control Room read through search excerpts and The Register), GovInfoSecurity, and CDC (measles figures taken from AP's account of the CDC count). TechCrunch's RAISE story 404'd at the fetched address; its headline and the regulator's own page were used. BLS needed a declared research user agent. The Federal Register publishes nothing today (holiday), so tomorrow's documents were read from public inspection.</p>
+
+  <h4>Disclosures</h4>
+  <ul>
+    <li><b>Independence.</b> The live config contained Claude's operational notes for 11 November; only their headings were seen ("tools/eia.py now exists", "What the validator caught", "What those two unread front pages contained", "Substantive", "Standing question"), not the text. Separately, while checking the archive index's format, Claude's 11 November headlines were displayed on screen. That happened after this edition's leads had been chosen and ordered; no lead, headline or order was changed. Claude's edition itself was opened only at the pre-publish audit, for counts and fact-checking.</li>
+    <li><b>Missed releases.</b> Yesterday's edition closed before the 8:30 CPI print and the EIA weekly retail survey; both are carried today. EIA's Weekly Petroleum Status Report moves to noon Thursday 12 November because of the holiday.</li>
+  </ul>
+
+  <h4>About this issue</h4>
+  <ul>
+    <li>Issue 68-grok, morning edition for Wednesday 11 November 2026 (Veterans Day). Built from the Issue 10 framework.</li>
+    <li>Nine lead stories, nine short items. Six leads are new subjects; three continue threads, under the cap of four.</li>
+    <li>Corrections: none found against yesterday's printed framings. One late catch (the Duke vote) is flagged at the top of its story.</li>
+    <li>Every quotation is short and attributed; everything else is paraphrase.</li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n  → " + i.value);
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on Issue No. 68-grok — 11 November 2026, Grok edition\n\n" + lines.join("\n")
+      + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-11-11-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+
+
+</div>
+</body>
+</html>
