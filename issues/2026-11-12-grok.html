@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Thursday, 12 November 2026 (Grok edition, Issue 69-grok)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  /* short-item tier */
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list summary .chip { vertical-align:.05rem; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 69-grok &middot; Thursday, 12 November 2026 &middot; morning, Grok edition</div>
+  <h1>Nvidia&rsquo;s board met on its founder&rsquo;s future, the White House told Congress that oversight may be criminal, and Washington moved on chips</h1>
+  <p class="sub">Ten stories at length, eight in brief. Markup built from Issue 10 (<a href="2026-09-10b.html">2026-09-10b</a>). Grok edition, compiled independently of the same-day Claude edition.</p>
+  <p class="prov"><b>70 sources checked, 44 of them outside the watchlist.</b> Six lead stories are new subjects; four continue threads from recent issues (Nvidia, chip exports, the AI-financing / Anthropic IPO thread, and the Iran&ndash;oil&ndash;pump chain), at the cap of four. <b>Independent accounts compared per lead:</b> Nvidia 5 &middot; chip exports 4 &middot; Bowman/AI debt 3 (speech text + 2) &middot; OCC 2 (primary + 1) &middot; White House letter 4 &middot; Interior land 1 + watchdog (single) &middot; oil chain 6 &middot; Starshield 3 (all from the Ukrainian side) &middot; ICE 1 (single) &middot; Oculina 2 (primary + 1). <b>Biggest story not on my list:</b> the White House counsel&rsquo;s letter warning the incoming Oversight chair &mdash; no thread pointed at it; it came from the Roll Call and CBS front pages and now leads the policy half. The negative check also added the Starshield throttling and ICE&rsquo;s record year, and pushed the Brooklyn building collapse and the Mississippi Senate result out (disaster without policy channel; election result already covered).</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#nvidia-board">Nvidia&rsquo;s board met Wednesday night to decide whether to remove Jensen Huang, after a second affair was reported</a></li>
+    <li><a href="#chip-exports">Washington is moving to close the remote-access route Chinese firms use to rent US chips</a></li>
+    <li><a href="#bowman-ai-debt">A Fed vice chair put AI debt at $800 billion this year and named an equity correction as a risk, a week before Anthropic prices</a></li>
+    <li><a href="#occ-si">The OCC has told its examiners how to grade banks that hand decisions to AI agents</a></li>
+    <li><a href="#wh-oversight">The White House counsel told the incoming Oversight chair that some investigations &ldquo;may cross the line into blatant criminality&rdquo;</a></li>
+    <li><a href="#interior-land">Interior&rsquo;s four-year plan commits, for the first time in writing, to selling federal land</a></li>
+    <li><a href="#hormuz-chain">Gasoline fell 19 cents in a week, but Gulf refined-product exports are at barely a third of pre-war levels, which is why diesel is still $6.10</a></li>
+    <li><a href="#starshield">Ukraine says Starshield has been systematically slowed for days, as US envoys sit down with Putin</a></li>
+    <li><a href="#ice-record">ICE deported a record 483,200 people in fiscal 2026, according to DHS figures</a></li>
+    <li><a href="#fl-oculina">Florida: federal regulators have proposed reopening part of the Oculina Bank reef&rsquo;s protected zone to shrimp trawling</a></li>
+    <li><a href="#also-today">Also today (8)</a> &mdash; ranked below the line, each one opens.</li>
+  </ol>
+</nav>
+
+<article id="nvidia-board">
+  <h2>Nvidia&rsquo;s board met Wednesday night to decide whether to remove Jensen Huang, after a second affair was reported</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Continuing</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Nvidia&rsquo;s directors met on Wednesday evening to decide whether to remove their co-founder and chief executive. The Wall Street Journal first reported that the board was preparing to oust him; Semafor confirmed it independently and added that some directors favour the chief financial officer, Colette Kress, as interim chief, possibly paired with a new chief operating officer. Bloomberg reported that an outside search firm has been hired. Apple&rsquo;s hardware chief, Johny Srouji, is among the names being considered for the permanent job. As of Thursday morning no decision had been announced.</p>
+  <p>The trigger was a second relationship. The New York Times reported that Huang had an affair with Kimberly Powell, Nvidia&rsquo;s vice-president for health care and his direct report. That came on top of the affair he has admitted with Alice Huang (no relation), a former executive at Megaspeed, a Singapore data-centre company that US intelligence reportedly identified as a Chinese intelligence asset. Asked about Powell, Huang told the Times reporter he should not be calling him directly, and then hung up. The board&rsquo;s Wachtell-led inquiry, a shareholder class action filed Monday, and an FBI investigation that the President mentioned this week are all still running.</p>
+  <p>Why it matters: Nvidia is not only the AI chip supplier. It also finances a large share of the build-out, through equity stakes and backstops for its own customers. Its shares fell about 8 per cent in after-hours trading to a 52-week low, which hit Nasdaq futures.</p>
+  <p><b>What to watch:</b> a board statement; whether an interim chief is named before US markets open; and whether the Coons&ndash;Warren document-preservation letter is followed by subpoenas.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how far did the stock fall, and has the board decided?</span>
+    <p><b>What is disputed.</b> This is a dispute about facts, on two points. The size of the drop is reported as &ldquo;more than 8%&rdquo; (Semafor, DW, CNBC), &ldquo;almost 10%&rdquo; (Nikkei) and &ldquo;5%+&rdquo; before the bell (the Techmeme summary line). Headlines also run from &ldquo;weighs&rdquo; to &ldquo;moves to oust&rdquo; to &ldquo;set to be fired&rdquo;.</p>
+    <p><b>Why they differ.</b> The cause is timing, not motive. Nikkei measured the low point of a thin after-hours session, Semafor and DW measured the late after-hours level, and the 5 per cent figure is from the pre-market session hours later. On the decision, the WSJ and Semafor both report preparation and a meeting. The stronger verbs come from aggregators and re-writes, not from any account that has an outcome.</p>
+    <p><b>What it means for you.</b> Use roughly 8 per cent as the overnight move and treat the regular-session open as the first real price. Treat the removal as likely but not done. The only thing that settles it is a company statement or an 8-K naming an interim chief executive.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.semafor.com/article/11/11/2026/nvidia-board-preparing-to-oust-ceo-jensen-huang-name-interim-ceo">Semafor on Kress and the board meeting</a> &middot;
+    <a href="https://www.datacenterdynamics.com/en/news/nvidias-jensen-huang-accused-of-second-affair-with-staffer-board-considers-ouster/">DCD on the second affair (NYT)</a> &middot;
+    <a href="https://www.dw.com/en/nvidia-board-reportedly-weighs-ousting-huang-amid-alleged-affairs-with-exec-and-suspected-chinese-spy/a-79925002">DW</a> &middot;
+    <a href="https://asia.nikkei.com/business/technology/artificial-intelligence/nvidia-shares-plunge-almost-10-on-report-board-may-oust-jensen-huang">Nikkei Asia on the share move</a> &middot;
+    <a href="https://www.nbcnews.com/tech/tech-news/megaspeed-statement-nvidia-jensen-huang-alice-us-exports-chips-china-rcna608939">NBC on Megaspeed&rsquo;s statement</a> &middot;
+    <a href="2026-11-11-grok.html#nvidia-board-probe">previous: the Wachtell probe, 11 Nov</a>
+  </p>
+  <div class="fb">
+    <p>Nvidia has led three days running. Keep it at the top until the board acts?</p>
+    <label><input type="radio" name="fb-nvidia" value="lead"> Yes &mdash; lead until resolved</label>
+    <label><input type="radio" name="fb-nvidia" value="short"> Move it to a short item unless there&rsquo;s a decision</label>
+  </div>
+</article>
+
+<article id="chip-exports">
+  <h2>Washington is moving to close the remote-access route Chinese firms use to rent US chips</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Continuing</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The Huang affair is now driving export policy. The Information reports, and Semafor relays, that the Commerce Department is finalising a long-awaited rule to close the &ldquo;remote access&rdquo; loophole. Under that loophole, Chinese companies have used advanced US chips without importing them, by renting compute in data centres in third countries. The current rules control where chips are shipped, not who uses them over a network. That gap is the one Megaspeed, a Southeast Asian data-centre operator, is accused of exploiting at scale.</p>
+  <p>Congress is moving too. CNBC reports that Senator Kevin Cramer (R-N.D.), who sits on the Banking Committee, repeated his call for Huang to resign. Members of both parties are pushing to attach chip export bills to this year&rsquo;s defence authorisation, and Senator Tom Cotton has asked Commerce to bar the Chinese memory maker CXMT. Senators Coons and Warren have asked Lutnick, Rubio and Stephen Miller to preserve their Nvidia export records. Megaspeed said on Thursday that it has cooperated with BIS inspections and has hired a US law firm to take a &ldquo;census&rdquo; of its GPUs. Beijing told Washington to stop fabricating espionage narratives as cover for a technology blockade.</p>
+  <p>Why it matters: Huang was the most effective voice for selling to China. With him weakened, the policy can turn faster than it could have last month, just before a Trump&ndash;Xi meeting in Shenzhen.</p>
+  <p><b>What to watch:</b> the rule appearing at OIRA or in the Federal Register&rsquo;s public-inspection queue, and the conference text of the defence bill.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is a crackdown actually imminent?</span>
+    <p><b>What is disputed.</b> This is a dispute about facts, over timing. The Information says Commerce will &ldquo;soon&rdquo; close the loophole, and posts on X circulating its report say &ldquo;next week&rdquo;. The White House says the President has &ldquo;complete confidence&rdquo; in Lutnick, which reads as no change of course at the top.</p>
+    <p><b>Why they differ.</b> Both can be true. A rule that has been in the works for a long time can be finalised without any change of policy direction, and the White House is defending a person, not a policy. The &ldquo;next week&rdquo; detail cannot be traced to anyone who has seen the rule.</p>
+    <p><b>What it means for you.</b> Treat a remote-access rule as probable this quarter, not confirmed for next week. It is settled when the rule shows up in the public-inspection queue. Defence-bill language is a separate and slower track.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.semafor.com/article/11/12/2026/the-us-is-set-to-further-curb-ai-tech-exports-to-china">Semafor, relaying The Information</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-congress-resign-ai-chips.html">CNBC on Congress and the NDAA bills</a> &middot;
+    <a href="https://www.nbcnews.com/tech/tech-news/megaspeed-statement-nvidia-jensen-huang-alice-us-exports-chips-china-rcna608939">NBC on Megaspeed and Beijing</a> &middot;
+    <a href="https://www.scmp.com/news/china">SCMP on the Shenzhen summit run-up</a>
+  </p>
+  <div class="fb">
+    <p>Track the remote-access rule as a standing thread?</p>
+    <label><input type="radio" name="fb-exports" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-exports" value="no"> Only when it publishes</label>
+  </div>
+</article>
+
+<article id="bowman-ai-debt">
+  <h2>A Fed vice chair put AI debt at $800 billion this year and named an equity correction as a risk, a week before Anthropic prices</h2>
+  <div class="meta">
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">Continuing</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Michelle Bowman, the Fed&rsquo;s Vice Chair for Supervision, gave a speech on Tuesday (the Board posted the text) that put numbers on the AI financing boom. She said AI-related debt is rising fast across corporate bonds, private credit and project finance, and is on track to pass $800 billion this year. She also said hyperscalers and chip designers taking equity stakes in smaller firms that buy their products creates &ldquo;the appearance of circular financing&rdquo;. Among her risks to the outlook she listed a large correction in equity valuations if AI returns fall short. A shock like that, in her words, would likely slow the AI buildout and soften both activity and inflation.</p>
+  <p>The same speech gives a decomposition of inflation that is worth keeping. She estimates that tariffs, energy and AI-related demand each account for roughly a quarter of above-target core PCE inflation, and that core PCE was probably about 3.3 per cent in October. She also notes the Strategic Petroleum Reserve is down to a bit under 50 days of crude imports.</p>
+  <p>Why it matters now: Anthropic&rsquo;s IPO, the first by a frontier lab, is set to price on 18 November and trade the next day. Semafor reports it would raise about $90 billion, and the FT says bankers are weighing a higher price. TSMC has set aside up to $1 billion for Anthropic and OpenAI shares (Nikkei). Nvidia&rsquo;s crisis this week is the kind of shock Bowman described.</p>
+  <p><b>What to watch:</b> the final IPO price range, and whether the Board&rsquo;s next Financial Stability Report repeats her AI-debt figure.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; was this a warning about Anthropic?</span>
+    <p><b>What is disputed.</b> This is a dispute about significance. Semafor presents the speech as a Fed warning attached to Anthropic&rsquo;s listing. American Banker reads the same speech as mainly about inflation, with Bowman stopping short of endorsing a December hike. The text never mentions Anthropic or IPOs. The correction risk is one item on a list of risks.</p>
+    <p><b>Why they differ.</b> The cause is vantage. Semafor covers the IPO beat and read the speech for what it said about the IPO. American Banker covers the Fed and read it for policy. Both quote her accurately.</p>
+    <p><b>What it means for you.</b> Read it as an official tally of AI leverage, which is new and citable, and not as a targeted call on one listing. The $800 billion figure is the number to keep. What settles how seriously the Board takes it is whether the figure, or a larger one, appears in the Board&rsquo;s own financial-stability publications.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.federalreserve.gov/newsevents/speech/bowman20261110a.htm">Bowman speech, 10 Nov (Federal Reserve)</a> &middot;
+    <a href="https://www.americanbanker.com/news/feds-bowman-says-there-is-still-work-to-do-on-inflation">American Banker</a> &middot;
+    <a href="https://www.semafor.com/article/11/11/2026/anthropic-ipo-could-lead-to-large-correction-in-markets-fed-official-says">Semafor</a> &middot;
+    <a href="https://asia.nikkei.com/business/technology/artificial-intelligence/tsmc-earmarks-up-to-1bn-to-buy-anthropic-and-openai-shares">Nikkei on TSMC</a> &middot;
+    <a href="2026-11-11-grok.html#a-anthropic-ipo">previous: the $1.5T price talk, 11 Nov</a>
+  </p>
+  <div class="fb">
+    <p>Official speeches that carry new numbers, outside the Fed print-and-decision rule: useful?</p>
+    <label><input type="radio" name="fb-bowman" value="yes"> Yes, when the number is new</label>
+    <label><input type="radio" name="fb-bowman" value="no"> No &mdash; prints and decisions only</label>
+  </div>
+</article>
+
+<article id="occ-si">
+  <h2>The OCC has told its examiners how to grade banks that hand decisions to AI agents</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The Office of the Comptroller of the Currency has issued Bulletin 2026-54, a supervisory framework for its examiners on how national banks use what the agency calls &ldquo;super intelligence&rdquo; (SI) and agentic SI. The OCC uses that term where most people would say AI. It is the first examiner-facing document from a US bank regulator aimed at systems that act on their own rather than advise a person.</p>
+  <p>What it says: examiners should not treat SI as a separate risk category, and banks do not have to set a separate SI risk appetite. Instead, examiners apply the existing model-risk, governance, technology, compliance and operational-risk standards. They scale scrutiny to the consequences of the use case, how much decision-making authority has been handed to the system, and how much human oversight remains. American Banker counts six pillars: purpose, risks, controls, human oversight, resilience and testing. The bulletin says that for higher-consequence uses examiners may expect tighter limits on autonomy and more independent validation.</p>
+  <p>Why it matters: the biggest banks are already deploying agents. American Banker reports this week that JPMorganChase has signed with OpenAI to use its Codex agents to write and ship code, and to use OpenAI models for security work. The framework tells them how that work will be examined, and makes autonomy, rather than the model, the thing being graded.</p>
+  <p><b>What to watch:</b> whether the Fed and FDIC issue matching guidance, and the first exam findings that cite the bulletin.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; new expectations, or none?</span>
+    <p><b>What is disputed.</b> This is a dispute about significance. American Banker&rsquo;s headline says banks &ldquo;need strong controls&rdquo; when they delegate to AI. The bulletin itself says it &ldquo;does not establish supervisory expectations for banks&rdquo; and that banks are not expected to use it.</p>
+    <p><b>Why they differ.</b> Both are accurate. Formally, the document is a resource for examiners. In practice, what examiners are told to look for becomes what banks build for. The OCC has its own reason to downplay it: guidance labelled as binding would draw challenges.</p>
+    <p><b>What it means for you.</b> Treat it as the de facto standard for national banks. The OCC&rsquo;s disclaimer protects the agency more than it frees the banks. What would settle it is the first Matter Requiring Attention that cites autonomy controls.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-97.html">OCC news release 2026-97</a> &middot;
+    <a href="https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-54.html">OCC Bulletin 2026-54</a> &middot;
+    <a href="https://www.americanbanker.com/news/occ-banks-need-strong-controls-when-delegating-to-ai-agents">American Banker on the framework</a> &middot;
+    <a href="https://www.americanbanker.com/news/jpmorganchase-to-use-openai-models-for-coding-security">American Banker on JPMorganChase and OpenAI</a>
+  </p>
+  <div class="fb">
+    <p>Bank-regulator AI guidance: follow it as a thread?</p>
+    <label><input type="radio" name="fb-occ" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-occ" value="no"> Only binding rules</label>
+  </div>
+</article>
+
+<article id="wh-oversight">
+  <h2>The White House counsel told the incoming Oversight chair that some investigations &ldquo;may cross the line into blatant criminality&rdquo;</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>White House Counsel Will Scharf has written to Representative Robert Garcia (D-Calif.), the ranking member expected to chair House Oversight from January. The letter, dated Monday, argues that Congress has only limited authority to investigate a presidential administration. It says threats against executive officials, or process &ldquo;designed merely to abuse&rdquo;, could amount to criminality, and that unlawful subpoenas &ldquo;may warrant further investigation&rdquo;. It leans on the requirement that congressional inquiries serve a legitimate legislative purpose. Roll Call obtained the letter from a White House official. CBS, NBC and PBS have reported its text.</p>
+  <p>Garcia replied on Wednesday that the administration has &ldquo;something to hide&rdquo; and that Congress has broad authority to investigate the executive.</p>
+  <p>Why it matters: this is the opening position in the fight that will shape the next two years, once Democrats control both chambers. The legal terrain favours Congress more than the letter suggests. Legislative acts, subpoenas included, are protected by the Speech or Debate Clause. And the &ldquo;legitimate legislative purpose&rdquo; test is broad, though the Supreme Court tightened it for a president&rsquo;s personal records in <em>Trump v. Mazars</em> (2020). The practical weapon is delay. Subpoena fights that run through the courts can outlast a Congress.</p>
+  <p><b>What to watch:</b> the first Oversight subpoenas in January; whether the Justice Department opens anything; and whether agencies start refusing document requests now, before the handover.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; a threat to prosecute, or a legal warning?</span>
+    <p><b>What is disputed.</b> This is a dispute about how to characterise the letter. Roll Call says it threatens to prosecute lawmakers. NBC&rsquo;s headline says investigating the White House &ldquo;may be a crime&rdquo;. The text itself uses conditional language (&ldquo;may cross&rdquo;, &ldquo;may warrant further investigation&rdquo;) and names no statute and no prosecution.</p>
+    <p><b>Why they differ.</b> The press is reading intent from context: the President has threatened to prosecute critics before. The letter&rsquo;s authors wrote it to be deniable. Neither side is misquoting.</p>
+    <p><b>What it means for you.</b> The precise reading is a warning written to deter, without a commitment to prosecute. Its main effect is to chill career officials who might cooperate with Congress, not lawmakers, who are constitutionally protected. What would settle it is a referral, a grand-jury subpoena, or a Justice Department statement on Speech or Debate.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://rollcall.com/2026/11/11/white-house-warns-democrats-against-aggressive-oversight/">Roll Call (obtained the letter)</a> &middot;
+    <a href="https://www.cbsnews.com/news/white-house-counsel-will-scharf-house-oversight-committee-robert-garcia-investigations/">CBS on the text</a> &middot;
+    <a href="https://www.nbcnews.com/politics/white-house/white-house-warns-congressional-democrats-investigating-us-may-crime-rcna608752">NBC</a> &middot;
+    <a href="https://www.pbs.org/newshour/show/white-house-threatens-democrats-over-plans-to-investigate-trump-officials">PBS NewsHour</a>
+  </p>
+  <div class="fb">
+    <p>Executive&ndash;Congress oversight fights: follow as a thread from January?</p>
+    <label><input type="radio" name="fb-oversight" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-oversight" value="no"> Only court rulings</label>
+  </div>
+</article>
+
+<article id="interior-land">
+  <h2>Interior&rsquo;s four-year plan commits, for the first time in writing, to selling federal land</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>The Interior Department&rsquo;s new four-year strategic plan, released on Wednesday, says it will reduce the size of the federal estate by offering states, localities and Tribes the chance to buy federal land. Interior manages about 480 million acres. Bloomberg, the only outlet so far to read the document closely, reports that the plan gives no acreage, no price basis and no list of parcels. The plan presents the sales as a way to concentrate resources on &ldquo;nationally significant&rdquo; lands. The department did not respond to Bloomberg&rsquo;s request for details.</p>
+  <p>The new part is the commitment, not the idea. Interior and HUD had already proposed building housing on &ldquo;underutilised&rdquo; federal land. But Save Our Parks, a watchdog group, notes that Secretary Burgum had previously said selling public land was not on the administration&rsquo;s agenda. A strategic plan is the document agency budgets and performance targets are written against.</p>
+  <p>Why it matters: most federal land is in the West, so the direct effect there is large and in Florida small. The fiscal effect is real but one-off: sale proceeds arrive once, while the lands&rsquo; recurring grazing, mineral and recreation receipts stop.</p>
+  <p><b>What to watch:</b> whether the plan&rsquo;s performance measures set an acreage target; land-use plan amendments, since under FLPMA a parcel must be identified for disposal before it can be sold; and the first disposal notices in the Federal Register.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; policy shift or housekeeping?</span>
+    <p><b>What is disputed.</b> This is a dispute about significance. To the watchdog it is an admission that a sell-off is coming. Interior&rsquo;s wording describes optional sales to other governments, not auctions to private buyers.</p>
+    <p><b>Why they differ.</b> The advocate has an interest in reading it maximally and the agency in reading it minimally. The text supports something in between: sale is now stated policy, but the plan sets no scale.</p>
+    <p><b>What it means for you.</b> Believe that sales are now official intent. Do not believe any acreage figure until one is published. What settles the scale is the performance target in the plan&rsquo;s appendix or in the FY2028 budget justification.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://finance.yahoo.com/economy/policy/articles/trump-plans-sell-public-land-235339247.html">Bloomberg via Yahoo Finance on the strategic plan</a>
+  </p>
+  <div class="fb">
+    <p>I ran this single-sourced because the document is the news. Right call?</p>
+    <label><input type="radio" name="fb-land" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-land" value="wait"> Wait for the document</label>
+  </div>
+</article>
+
+<article id="hormuz-chain">
+  <h2>Gasoline fell 19 cents in a week, but Gulf refined-product exports are at barely a third of pre-war levels, which is why diesel is still $6.10</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Continuing</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>This is one chain, read from the pump back to the strait. AAA&rsquo;s national average for regular is $3.908 this morning, down from $4.100 a week ago and $4.356 a month ago. Diesel is $6.098, down only 16 cents in the week, and still almost $2.34 above a year ago. Brent was quoted at $92.08 on Thursday on a vendor page, down 12.9 per cent in a month as the market prices a settlement.</p>
+  <p>Physical flows have recovered less than prices. FGE&rsquo;s chairman says Middle Eastern crude exports, pipelines included, are back to 80&ndash;85 per cent of pre-war levels. Refined-product exports, however, are at 35&ndash;40 per cent: Gulf producers are putting crude first because refineries remain vulnerable to drones (OilPrice, citing FGE and Vortexa). Qatari LNG loadings are at about half their pre-war rate. The Russian diesel Washington arranged to receive has not arrived. A tanker carrying about 300,000 barrels turned around roughly 400 nautical miles off New York, and Reuters reports that US buyers and banks are wary of the sanctions waiver&rsquo;s legal footing.</p>
+  <p>The strait itself is not settled. Iran&rsquo;s chief negotiator, Ghalibaf, told Al Jazeera that Hormuz will &ldquo;never return&rdquo; to its pre-war status under an Iran&ndash;Oman oversight arrangement. Israel&rsquo;s security cabinet has ordered the military to raise its readiness (Israeli broadcaster KAN, via Al Jazeera). Tehran has warned that it would hit US bases as far away as Europe if the US resumes strikes.</p>
+  <p><b>What to watch:</b> diesel, not gasoline. The gap closes when Gulf product exports recover, and not before.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is the energy shock ending?</span>
+    <p><b>What is disputed.</b> This is a dispute about significance. Futures and the gasoline average say the shock is fading. Data on physical flows, and Iran&rsquo;s stated terms for the strait, say the supply chain has not normalised.</p>
+    <p><b>Why they differ.</b> They measure different things. Brent prices expectations about the future, and gasoline tracks crude closely. Diesel depends on refined product, and the Gulf&rsquo;s product exports are the part still missing. Bowman made the same point this week: refinery damage in the Gulf and in Russia has widened margins.</p>
+    <p><b>What it means for you.</b> Expect gasoline relief to continue while talks hold. Expect diesel, and the freight and food costs that follow it, to lag. A collapse in talks or an Israeli strike would reverse the gasoline move within days. The settling observation is the product-export share returning above 60 per cent.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://gasprices.aaa.com/">AAA national averages</a> &middot;
+    <a href="https://tradingeconomics.com/commodity/brent-crude-oil">Trading Economics, Brent (vendor quote)</a> &middot;
+    <a href="https://oilprice.com/Energy/Energy-General/Crude-Is-Back-at-80-in-the-Gulf-but-Refined-Products-Are-Stuck-at-35.html">OilPrice on crude versus products</a> &middot;
+    <a href="https://gcaptain.com/russian-diesel-tanker-makes-u-turn-after-heading-to-u-s/">gCaptain/Bloomberg on the diesel tanker</a> &middot;
+    <a href="https://gcaptain.com/russian-diesel-faces-u-s-buyer-resistance-despite-trump-sanctions-waiver/">Reuters via gCaptain on buyer resistance</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/11/strait-of-hormuz-will-never-return-to-pre-war-status-ghalibaf">Al Jazeera, Ghalibaf</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/12/iran-warns-of-expanded-retaliation-as-israel-reportedly-readies-to-attack">Al Jazeera on Israeli readiness</a> &middot;
+    <a href="https://www.pbs.org/newshour/show/indictment-sheds-light-on-alleged-iran-backed-plots-across-u-s-and-europe">PBS on the Europe-bases warning</a> &middot;
+    <a href="2026-11-11-grok.html#oil-chain">previous: 11 Nov</a>
+  </p>
+  <div class="fb">
+    <p>Is the diesel-versus-gasoline split the right lens for this chain?</p>
+    <label><input type="radio" name="fb-oil" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-oil" value="crude"> Lead with crude and the strait</label>
+  </div>
+</article>
+
+<article id="starshield">
+  <h2>Ukraine says Starshield has been systematically slowed for days, as US envoys sit down with Putin</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>President Zelensky said on Thursday that Ukraine&rsquo;s military has had &ldquo;significant disruptions&rdquo; to Starshield, the military version of SpaceX&rsquo;s Starlink, for several days. He said the restrictions are systematic, not random errors, and apply across the front line and in occupied territory. The specific restriction is a cap of about 161 km/h (100 mph) on terminals in motion. NBC reports the system normally works well above that. The cap matters because Ukraine mounts terminals on interceptor drones that chase Russia&rsquo;s jet-powered drones. Zelensky said strikes have already got through because interceptors could not reach the speed they needed. Ukraine first raised speed limits last month.</p>
+  <p>The timing is what makes this a US story. Envoys Witkoff and Kushner arrived in Moscow this week to meet Putin after the Abu Dhabi talks. SpaceX did not comment to NBC, and neither the company nor the administration has explained the restriction.</p>
+  <p>Why it matters: if a US contractor&rsquo;s service can be throttled during US-brokered negotiations, then US space services can be used as leverage, and every allied buyer will price that in. Handelsblatt today covers Europe&rsquo;s push to reduce its reliance on US systems such as Patriot and Starlink. Defence One reported last month that the outage would hurt the US space industry&rsquo;s export prospects.</p>
+  <p><b>What to watch:</b> whether the cap lifts after the Moscow meeting, and any statement from SpaceX or the Pentagon.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; deliberate leverage, or a technical policy?</span>
+    <p><b>What is disputed.</b> This is a dispute about facts, over cause. Ukraine says the limits are deliberate and systematic. Some commentators are linking them to pressure during the talks. There is no counter-account at all: SpaceX and Washington have said nothing.</p>
+    <p><b>Why they differ.</b> Ukraine can see the effect, but not the decision behind it. A speed cap on moving terminals is also a known anti-misuse setting, and that is the mundane explanation to check first. What is unusual, by Kyiv&rsquo;s account, is that the cap came back now, along the whole front line, after Ukraine complained about it last month.</p>
+    <p><b>What it means for you.</b> The restriction is well evidenced; the motive is not. Whether the cap moves after the Moscow meeting will be the best test available.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.nbcnews.com/world/ukraine/ukraine-starshield-limits-russia-war-trump-musk-rcna608938">NBC News</a> &middot;
+    <a href="https://kyivindependent.com/starshield-speed-restrictions-return-hampering-efforts-to-intercept-russian-drones-zelensky-says/">Kyiv Independent</a> &middot;
+    <a href="https://www.handelsblatt.com/politik/international/ukraine-us-satelliteninternet-starshield-laut-ukraine-wieder-gedrosselt/27982126.html">Handelsblatt (German)</a> &middot;
+    <a href="https://abcnews.com/International/witkoff-kushner-arrive-moscow-meet-putin-discuss-ukraine/story?id=138070892">ABC on the Moscow meeting</a>
+  </p>
+  <div class="fb">
+    <p>Ukraine gets space here only with a US channel. Was this one strong enough?</p>
+    <label><input type="radio" name="fb-starshield" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-starshield" value="no"> No &mdash; short item</label>
+  </div>
+</article>
+
+<article id="ice-record">
+  <h2>ICE deported a record 483,200 people in fiscal 2026, according to DHS figures</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>Department of Homeland Security figures obtained by CBS News show that Immigration and Customs Enforcement deported 483,200 people in the fiscal year that ended on 30 September. That is the highest annual total in ICE&rsquo;s reported history, up from 442,640 in fiscal 2025. ICE also made more than 491,000 immigration arrests. Almost 475,000 were administrative arrests for civil immigration violations, not criminal charges, which is also a record.</p>
+  <p>The mix is the substance. Administrative arrests are interior enforcement: people taken into custody away from the border, usually at home or work. That is what has changed most under this administration, and it is the part voters reacted to. The figures arrive just after the midterm losses. The President has acknowledged that parts of the campaign may have gone too far, and he told 60 Minutes that undocumented workers such as landscapers and hotel maids could be allowed to stay under a bipartisan deal. CBS also reports that he has given Stephen Miller a bigger role, which points the other way.</p>
+  <p>Why it matters: removals at this pace affect labour supply in construction, agriculture and hospitality, which bears on wage and price data. They are also the baseline against which any deal would be judged.</p>
+  <p><b>What to watch:</b> ICE&rsquo;s official annual report, which would turn these from figures CBS obtained into published data, and any bill text behind the 60 Minutes remark.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cbsnews.com/news/ice-deportations-arrests-hit-record-high/">CBS News (DHS figures)</a> &middot;
+    <a href="https://finance.yahoo.com/">Yahoo Finance front page on the 60 Minutes remark</a>
+  </p>
+  <div class="fb">
+    <p>Enforcement statistics like these: lead tier or short item?</p>
+    <label><input type="radio" name="fb-ice" value="lead"> Lead</label>
+    <label><input type="radio" name="fb-ice" value="short"> Short item</label>
+  </div>
+</article>
+
+<article id="fl-oculina">
+  <h2>Florida: federal regulators have proposed reopening part of the Oculina Bank reef&rsquo;s protected zone to shrimp trawling</h2>
+  <div class="meta">
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>NOAA Fisheries has proposed, in today&rsquo;s Federal Register (FR 2026-23020), to open a &ldquo;shrimp fishery access area&rdquo; along the eastern edge of the northern extension of the Oculina Bank Habitat Area of Particular Concern. Rock-shrimp trawling is currently prohibited there. The rule would implement Amendments 11 and 12, which the South Atlantic Fishery Management Council approved. NOAA describes the purpose as restoring access to historic rock-shrimp grounds and reaching optimum yield &ldquo;while minimizing impacts&rdquo; to deep-water corals. Comments close on 14 December.</p>
+  <p>The Oculina Bank is a deep reef of ivory tree coral, about 130 nautical miles long, lying at 200&ndash;300 feet off Florida&rsquo;s east coast from Fort Pierce to Flagler Beach. It is spawning habitat for grouper and red snapper. As the Florida Phoenix recounts, trawling destroyed much of it before scientists had fully mapped it, and in 1984 it became the first protected area of its kind.</p>
+  <p>Why it clears the local bar: this is a decision about a Florida reef, with Florida fisheries on both sides. The rock-shrimp fleet based around Cape Canaveral gains grounds, while the recreational and commercial grouper and snapper fisheries depend on the reef. Damage to deep coral is effectively permanent on human timescales.</p>
+  <p><b>What to watch:</b> the rule&rsquo;s habitat maps, to see whether the access area overlaps mapped live coral, and positions from Florida&rsquo;s wildlife commission and congressional delegation before 14 December.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; restoring historic grounds, or trawling a protected reef?</span>
+    <p><b>What is disputed.</b> This is a dispute about significance, and possibly about facts. NOAA frames the change as a narrow edge adjustment that returns fishermen to grounds they used before. The Florida Phoenix and the Florida Oceanographic Society frame it as letting destructive gear into a protected reef.</p>
+    <p><b>Why they differ.</b> The council process puts fishery interests at the table, and the proposal reflects that. Conservation groups weigh irreversible damage over yield. Neither side is inventing anything. The factual question is whether coral grows in the access strip.</p>
+    <p><b>What it means for you.</b> If the strip is bare sand at the edge of the zone, this is a modest change. If it overlaps living coral, it is a real loss. The rule&rsquo;s environmental assessment and survey maps settle which, and they are what to read before commenting.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.federalregister.gov/documents/2026/11/12/2026-23020/coral-coral-reefs-and-livehardbottom-habitats-of-the-south-atlantic-and-the-shrimp-fishery-of-the-south-atlantic-regi">Federal Register 2026-23020 (proposed rule)</a> &middot;
+    <a href="https://floridaphoenix.com/2026/11/12/feds-consider-letting-destructive-shrimping-into-protected-florida-reef/">Florida Phoenix</a>
+  </p>
+  <div class="fb">
+    <p>Florida items from outside Tampa Bay: in scope?</p>
+    <label><input type="radio" name="fb-oculina" value="yes"> Yes, state-level is fine</label>
+    <label><input type="radio" name="fb-oculina" value="local"> Keep it to Tampa Bay</label>
+  </div>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Eight things I saw and ranked below the line. Each one opens &mdash; the line is my judgement, what is behind it is the substance.</p>
+
+<div class="also-list">
+
+<details class="short" id="a-yttrium">
+  <summary><span class="chip">World economy</span> China&rsquo;s extension of its rare-earth export pause to 10 January leaves out the metal hurting buyers most: yttrium, whose exports are at about two-fifths of their usual level.</summary>
+  <div class="exp">
+    <p>Beijing on Monday extended the pause on its October 2025 rare-earth controls by two months. Yttrium falls under a separate licensing regime from April 2025, covering seven medium and heavy rare earths, which the pause never touched. Bloomberg data cited by OilPrice show China&rsquo;s yttrium-oxide exports running at roughly 40 per cent of their 2023&ndash;24 average, with almost none going to Japan this year. Argus prices it near $1.15 million a tonne in Europe, a large multiple of China&rsquo;s domestic price. Yttrium is used in thermal-barrier coatings for jet engines and turbines and in some semiconductors, so this is a defence and aerospace input problem for the US. That puts it on the table for the Trump&ndash;Xi meeting in Shenzhen.</p>
+    <p class="btl"><b>Below the line because</b> it is a price and a trade flow, not a new policy decision. The decision that matters is whether the April licences get loosened at Shenzhen.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://oilprice.com/Metals/Commodities/Yttriums-125-Fold-Price-Gap-Looms-Over-Trump-Xi-Talks-in-Shenzhen.html">OilPrice, citing Reuters, Bloomberg and Argus</a> &middot; <a href="https://asia.nikkei.com/business/materials/rare-earth-yttrium-soars-9-fold-in-a-year-amid-china-curbs">Nikkei headline on the nine-fold rise</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-tsmc">
+  <summary><span class="chip">AI &amp; tech industry</span> TSMC has set aside up to $1 billion to buy shares in Anthropic and OpenAI ahead of their listings, a rare move for a company that seldom invests in its customers.</summary>
+  <div class="exp">
+    <p>Nikkei Asia reports that the chip foundry has earmarked up to $1 billion to back the two frontier labs as both move towards public markets. TSMC has historically kept out of equity positions in its customers and suppliers, so this is a change of habit. It also adds TSMC to the list of suppliers holding stakes in the companies that buy from them, the pattern Bowman called &ldquo;the appearance of circular financing&rdquo; this week. Anthropic is set to price on 18 November.</p>
+    <p class="btl"><b>Below the line because</b> at up to $1 billion it is small against IPO proceeds near $90 billion. It matters as a pattern, which the Bowman lead covers.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://asia.nikkei.com/business/technology/artificial-intelligence/tsmc-earmarks-up-to-1bn-to-buy-anthropic-and-openai-shares">Nikkei Asia</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-jpm-openai">
+  <summary><span class="chip">US financials</span> JPMorganChase has signed with OpenAI to use its Codex agents to write, review and ship code, and OpenAI models for cybersecurity.</summary>
+  <div class="exp">
+    <p>OpenAI&rsquo;s president, Greg Brockman, announced the contract, according to American Banker. The bank rarely names its vendors. It already runs an internal LLM Suite that offers employees several models, and its engineering teams use Anthropic&rsquo;s Claude. Where the biggest US bank goes on technology, other banks tend to follow. Agents that write and ship code are exactly the kind of delegated authority the OCC&rsquo;s new examiner framework tells examiners to scale scrutiny to.</p>
+    <p class="btl"><b>Below the line because</b> a vendor contract is a step within a trend; the OCC framework that governs it is the lead.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.americanbanker.com/news/jpmorganchase-to-use-openai-models-for-coding-security">American Banker</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-cftc-casino">
+  <summary><span class="chip">US financials</span> The CFTC has codified, effective on publication, that casino-style gambling is not a &ldquo;swap&rdquo;. That marks out the edge of its claim over prediction markets.</summary>
+  <div class="exp">
+    <p>The commission has issued an interim final rule excluding casino-style gambling products, such as sportsbook wagers and casino games, from the statutory swap definition. Chairman Michael Selig said such products &ldquo;are not derivatives&rdquo;. The rule takes effect when it is published in the Federal Register, with 30 days for comment. Context: the CFTC is separately suing Utah to block state enforcement against event contracts it says it regulates. Drawing a clear line around casino games strengthens its argument that the event contracts on the other side of the line are federal territory.</p>
+    <p class="btl"><b>Below the line because</b> it codifies a position the agency already held. The fight that matters is the Utah case.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.cftc.gov/PressRoom/PressReleases/9309-26">CFTC release 9309-26</a> &middot; <a href="https://www.cftc.gov/PressRoom/PressReleases">CFTC press list (Utah suit)</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-osc-space">
+  <summary><span class="chip">AI &amp; tech industry</span> The Pentagon&rsquo;s Office of Strategic Capital has lent $450 million in three loans to US space firms, including $150 million to Rocket Lab for its delayed Neutron rocket.</summary>
+  <div class="exp">
+    <p>Breaking Defense reports three recent loans. Rocket Lab got $150 million, announced Monday, to raise Neutron&rsquo;s flight rate beyond its first launch, which has slipped into next year. Stoke Space got $150 million on 26 October. A third went to space monitoring capacity. The OSC was set up to lend into supply chains the military depends on. Launch capacity is the bottleneck for national-security payloads, and a second reusable medium-lift provider reduces reliance on SpaceX, which is relevant on the day of the Starshield story.</p>
+    <p class="btl"><b>Below the line because</b> the sums are modest and the loans were announced over several weeks; this is a pattern note.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://breakingdefense.com/2026/11/dod-pushes-out-3-loans-totally-450m-to-bolster-us-space-companies/">Breaking Defense</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-medicare-pfs">
+  <summary><span class="chip">US politics &amp; policy</span> Medicare will cut 2.3 per cent from the baseline rate it uses to pay doctors in 2027, and family physicians warn it will thin access for patients in both traditional Medicare and Medicare Advantage.</summary>
+  <div class="exp">
+    <p>CMS announced the 2027 physician-payment cut last week, Yahoo Finance reports. The baseline used to calculate payments to doctors falls 2.3 per cent. The American Academy of Family Physicians says any cut to primary-care payments puts practices at risk and worsens shortages. Medicare Advantage plans often benchmark their payments to the traditional fee schedule, so the cut carries over. Congress has reversed or softened these cuts in most recent years, usually in December spending legislation, and the 11 December funding deadline is the vehicle to watch.</p>
+    <p class="btl"><b>Below the line because</b> it is a scheduled annual cut that Congress habitually reverses. It becomes news if the December bill leaves it in place.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://finance.yahoo.com/healthcare/article/how-cuts-to-what-medicare-pays-doctors-could-hit-retirees-110000748.html">Yahoo Finance</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-debt">
+  <summary><span class="chip">US debt &amp; fiscal</span> Total public debt outstanding was $40.560 trillion on 9 November, per Treasury&rsquo;s daily series, of which $32.764 trillion is held by the public.</summary>
+  <div class="exp">
+    <p>Treasury&rsquo;s Debt to the Penny shows $40,559.8 billion total on 9 November, up $7.0 billion from 6 November. Debt held by the public was $32,763.8 billion and intragovernmental holdings $7,796.0 billion. The Treasury par curve has no new data since 10 November, because the bond market was shut for Veterans Day on Wednesday. On 10 November the 10-year closed at 4.98 and the 30-year at 5.35, both covered in the previous issue. Nikkei reports Asian currencies weakening on Thursday as markets price further Fed hikes, with the yen near 160 to the dollar.</p>
+    <p class="btl"><b>Below the line because</b> it is a level check with no new auction or print today. Thursday&rsquo;s curve is the next data point.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/">Treasury Debt to the Penny</a> &middot; <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve">Treasury par yield curve</a> &middot; <a href="https://asia.nikkei.com/business/markets/currencies/fed-hike-certainty-pushes-asian-currencies-lower-with-yen-down-near-160">Nikkei on the yen</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-fl-amend3">
+  <summary><span class="chip">Florida &amp; Tampa Bay</span> Voters in 26 of 27 Florida counties approved school sales or property taxes on the same ballot that passed Amendment 3&rsquo;s property-tax cut.</summary>
+  <div class="exp">
+    <p>WUSF counts 26 of 27 county school-tax measures approved or renewed, alongside an overwhelming vote for Amendment 3. Amendment 3 raises the homestead exemption from next year and is expected to shrink local government revenue. A political scientist quoted by WUSF reads the result as voters willing to pay more for their own schools. A Tampa Bay Times column today forecasts fallout, new fees and fights over what gets cut.</p>
+    <div class="div">
+      <span class="t">Divergence &mdash; a mandate for schools, or a squeeze for everyone else?</span>
+      <p><b>What is disputed.</b> This is a dispute about significance. Is the double vote a coherent preference, or are two votes pulling against each other? <b>Why they differ.</b> The academic reading looks at the voter: people protect the services they see. The local-politics reading looks at county budgets: dedicated school levies are walled off, so the Amendment 3 cut lands on the rest, including roads, parks and public safety. <b>What it means for you.</b> In Pasco and Pinellas, expect services other than schools to absorb the cut. The first proposed county budgets next spring will show where.</p>
+    </div>
+    <p class="btl"><b>Below the line because</b> the budget effect starts next year; the first numbers come with the spring budget proposals.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.wusf.org/education/2026-11-12/florida-voters-approve-school-taxes-amid-amendment-3">WUSF</a> &middot; <a href="https://www.tampabay.com/viewpoints/2026/11/12/florida-amendment-three-homestead-exemption/">Tampa Bay Times column</a></p>
+  </div>
+</details>
+
+</div>
+
+<div class="fb" style="border-top:1px solid var(--rule); padding-top:1rem; margin-top:1.5rem;">
+  <p><b>One question about this whole section:</b> were the right things ranked below the line?</p>
+  <label><input type="radio" name="fb-also" value="right"> About right</label>
+  <label><input type="radio" name="fb-also" value="promote"> Some of these should have led</label>
+  <label><input type="radio" name="fb-also" value="drop"> Some should have been dropped entirely</label>
+  <label><input type="radio" name="fb-also" value="fewer"> Fewer short items, more depth up top</label>
+</div>
+
+<button class="submit" id="send">Send my feedback &rarr;</button>
+<p class="sources" style="text-align:center">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+
+<footer>
+  <h4>Sources checked this run &mdash; 70, of which 44 outside the watchlist</h4>
+  <p><b>Pointed at by a thread or the local section (26):</b> AAA national and Florida averages &middot; EIA weekly petroleum page &middot; Trading Economics Brent (vendor) &middot; gCaptain &middot; OilPrice &middot; OFAC recent actions &middot; Federal Reserve press releases &middot; Federal Reserve speeches (Bowman text) &middot; Treasury daily par yield curve &middot; Treasury press &middot; Debt to the Penny API &middot; Federal Register daily issue (124 documents) &middot; Federal Register public inspection &middot; White House presidential actions &middot; OCC &middot; FDIC &middot; CFTC &middot; DOE newsroom &middot; SCOTUSblog &middot; The Debrief (UAP) &middot; Techmeme &middot; DatacenterDynamics &middot; Florida Phoenix &middot; Tampa Bay Times &middot; WUSF &middot; FOX 13 Tampa.</p>
+  <p><b>Not pointed at by any thread (44):</b> NPR text &middot; NBC News &middot; CBS News &middot; ABC News &middot; PBS NewsHour &middot; The Guardian US &middot; Los Angeles Times &middot; Yahoo Finance &middot; CNBC &middot; MarketWatch &middot; BBC World feed &middot; Semafor &middot; Roll Call &middot; Punchbowl &middot; Wikipedia current events &middot; Al Jazeera &middot; Deutsche Welle &middot; Handelsblatt (German) &middot; Der Spiegel international &middot; Le Monde (French) &middot; Le Figaro (French) &middot; El Pa&iacute;s (Spanish) &middot; Yle (Finnish) &middot; NHK &middot; Nikkei Asia &middot; South China Morning Post &middot; Haaretz &middot; Kyiv Independent &middot; Defense One &middot; Breaking Defense &middot; War on the Rocks &middot; American Banker &middot; PYMNTS &middot; Insurance Journal &middot; CoinDesk &middot; FreightWaves &middot; The Register &middot; Ars Technica &middot; The Verge &middot; TechCrunch &middot; STAT &middot; Interior Department newsroom &middot; Federal Register agency API pulls (NOAA, MSHA, HUD, FCC, Fed) &middot; FreightWaves port-fee notice.</p>
+
+  <h4>The negative check</h4>
+  <p><i>What is the biggest story today that is not on my list, and why is it not?</i> The White House counsel&rsquo;s letter to Rep. Garcia. No thread pointed at it, and it now runs as a lead. The same sweep added Starshield and ICE&rsquo;s record year as leads, and it pushed out two stories that dominate front pages: the Brooklyn building collapse (a disaster with no policy channel) and the Mississippi Senate result (an election outcome already covered, with no new policy fact).</p>
+
+  <h4>Accountability</h4>
+  <p>Three items the 11 November issue said would publish today did so, as stated. The FCC&rsquo;s national-cap repeal is FR 2026-23040, effective 11 January 2027. HUD&rsquo;s verification-of-status rule is FR 2026-23003, effective 14 December. The MSHA rules removing the diesel-particulate limits and four other provisions are effective 14 December, and the silica proposal&rsquo;s comments close on 11 January. No corrections are owed from the 9&ndash;11 November issues.</p>
+
+  <h4>Threads swept as a by-product, no trigger fired</h4>
+  <p>Measles elimination status (the PAHO commission sits until Friday, no ruling yet) &middot; SNAP categorical-eligibility proposal (no new fact since 10 Nov) &middot; Sun Valley Orchards (argued; covered 11 Nov) &middot; lab safety disclosures (nothing new reached; one Hugging Face interview returned 404) &middot; state AI legislation &middot; UAP disclosure implementation (nothing on The Debrief or the agency pages checked) &middot; USTR China port-fee suspension (covered 10 Nov) &middot; Fed prints (none today; the Bowman speech runs as an AI-debt story, not as Fed state-of-play) &middot; Pasco and Pinellas budgets.</p>
+
+  <h4>Could not reach</h4>
+  <p>AP, Reuters (401), Politico, Axios, The Hill, Lawfare, Utility Dive, FERC, NRC newsroom, SEC press, BLS schedule and PPI (403), DOL, CBO, FTC (404), WFLA, France 24, TreasuryDirect auctions (505), FT RSS (empty), Guardian Nvidia live blog (404). The Information is paywalled and is cited only through Semafor&rsquo;s summary.</p>
+
+  <h4>About this issue</h4>
+  <ul>
+    <li>Grok edition, Issue 69-grok, morning run of 12 November 2026. Markup built from Issue 10 (<code>2026-09-10b.html</code>), not from a previous Grok edition.</li>
+    <li>Ten lead stories and eight short items. Six leads are new subjects and four are continuations, at the cap.</li>
+    <li>Confidence markers: 18 stories, 18 markers (Primary source 5 &middot; Independent corroboration 5 &middot; Single-sourced 8 &middot; Unconfirmed 0). Divergence boxes: 10 (nine leads, one short item). The ICE lead carries no box because there is only one account, so there was nothing to compare.</li>
+    <li><b>Independence disclosure.</b> I did not open the same-day Claude edition while selecting or writing. Two exposures to disclose. First, the live <code>config.md</code> contains Claude&rsquo;s &ldquo;Operational notes, 12 November&rdquo; section; I saw only its two headings, which name no stories. Second, at about 07:21 ET, while checking the format of <code>index.html</code> for the archive entry, I saw the index line for Claude&rsquo;s Issue 69 and its six headlines. By then my lead list, including Nvidia and the White House letter, was already fixed, and no copy had been written. Nothing was added, dropped or re-ordered because of it, and no figure from those headlines is used here.</li>
+    <li>Every quotation is under fifteen words and attributed; everything else is paraphrase. Weekdays re-derived from dates: 12 November 2026 is a Thursday.</li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n  → " + i.value);
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on Issue No. 69-grok — 12 November 2026, Grok edition\n\n" + lines.join("\n")
+      + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("brief-feedback: 2026-11-12-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
