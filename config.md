@@ -1056,6 +1056,61 @@ and against a 404 page.
 The 5 November proposal (cut "dates ahead" and the owed list from the issue, cap
 the footer, raise the source floor to 15) has had no reply. **Nothing removed.**
 
+## Operational notes, 12 November 2026
+
+**Issue No. 69. Six leads, eleven shorts, six divergence boxes, eight source
+domains.** Validator blocked three times; all three real.
+
+### A published correction, and the error behind it
+
+**Yesterday's short said Republican leadership killed the Hegseth impeachment
+before it reached the floor. There was a recorded vote that evening, 211&ndash;204.**
+The brief wrote from a CNN piece published *before* the vote and never checked
+whether one had happened since. **Rule: when writing about a scheduled
+proceeding, check the clock on the source against the clock on the event.** The
+correction runs at the top of the affected story, per the reader's standing
+preference.
+
+### Dead anchors, third day running — now self-diagnosing
+
+Two more today, and **`2026-11-08.html#s-paraguay` was the exact link corrected
+yesterday, rewritten from memory and wrong again.** Resolve was not working, so
+the validator now does it: **a dead cross-issue anchor block names the issues
+that actually contain the id.** Tested — it prints
+`that id is in: 2026-11-06.html, 2026-11-07.html, 2026-11-11.html`.
+
+Also fixed: the title/date check **crashed** on a filename that is not a date,
+which killed the whole run before later checks could report. A validator that
+dies on an odd filename is worse than one that skips a check.
+
+### Other
+
+- **`tools/eia.py` used as a module for the first time**, for six series and the
+  chart. No parser faults. One process slip: the chart script first imported it
+  from a copy placed *beside the downloaded HTML*, which is the arrangement the
+  session rules warn against; removed, and imported from the repo.
+- **The EIA weekly report did not publish yesterday.** EIA's own page: released
+  **Thursday 12 November at noon and 2 p.m. Eastern, because the federal
+  government was closed on Wednesday for Veterans Day.** Read at source rather
+  than assumed. Treasury published no curve for the same reason. **Add to the
+  standing notes: federal holidays move the WPSR and suspend the Treasury
+  curve; check the release page before reporting a series as unchanged.**
+- **A usable Hormuz instrument existed the whole time.** The brief has said
+  most mornings since 11 October that it has no measure of the Strait. Reuters
+  via gCaptain cites the **Washington Institute's monthly count of ships
+  attacked — 37 in October, the highest of the war**. Not a transit count, but
+  a measurable series about the same water, on a front page read daily.
+- **Paraguay read at last**, after four mornings on the owed list: **Ueno Bank**,
+  solvency ratio below the minimum, **nearly two million accounts frozen**. The
+  thing the brief named on 7 November as the first question took one fetch.
+  **An item carried repeatedly as "identified, not read" is deferral, not
+  disclosure.**
+
+### Standing question to the reader, unanswered
+
+The 5 November proposal (cut "dates ahead" and the owed list from the issue, cap
+the footer, raise the source floor to 15) has had no reply. **Nothing removed.**
+
 ## Watchlist
 
 Empty at first run. Populates from reader feedback and from threads that recur on

@@ -9,6 +9,7 @@ checks print a warning and do not fail the run.
 
 History of why each check exists is in config.md.
 """
+import glob
 import os
 import re
 import sys
@@ -49,7 +50,17 @@ def main(path, log_path=None):
         elif frag:
             tids = re.findall(r'<(?:article|details|h2)[^>]*\sid="([^"]+)"', open(tp, encoding="utf-8").read())
             if frag not in tids:
-                block(f"dead cross-issue anchor: {target}#{frag}")
+                # Name the issue that does carry the id. Cross-links written
+                # from memory of which day a story ran have been wrong on
+                # three consecutive days; a block that says where to point
+                # turns that into a one-step fix.
+                elsewhere = sorted(
+                    os.path.basename(f)
+                    for f in glob.glob(os.path.join(os.path.dirname(path) or ".", "2026-*.html"))
+                    if "grok" not in f and f'id="{frag}"' in open(f, encoding="utf-8", errors="replace").read()
+                )
+                hint = f" -- that id is in: {', '.join(elsewhere)}" if elsewhere else " -- that id is in no issue"
+                block(f"dead cross-issue anchor: {target}#{frag}{hint}")
 
     for tag in ("div", "article", "details", "figure", "section"):
         o = len(re.findall(rf"<{tag}[\s>]", s))
@@ -62,7 +73,9 @@ def main(path, log_path=None):
         block("no <title>")
     elif date.replace("-", "") not in re.sub(r"\D", "", title.group(1)).replace("", ""):
         d = date.split("-")
-        if not (d[2].lstrip("0") in title.group(1)):
+        # The filename is not always a date (ad-hoc checks, test copies); the
+        # date check should not crash the whole validator when it isn't.
+        if len(d) == 3 and d[2].lstrip("0") not in title.group(1):
             warn(f"title may carry the wrong date: {title.group(1)}")
 
     # --- divergence (added 4 Nov 2026 after nine issues carried none) ----
