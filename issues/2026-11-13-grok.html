@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Friday, 13 November 2026 (Grok edition)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  /* short-item tier */
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list summary .chip { vertical-align:.05rem; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 70-grok &middot; Friday, 13 November 2026 &middot; Grok edition</div>
+  <h1>Huang is out at Nvidia, the 10-year is back above 5.10 per cent, and Trump says he no longer needs a deal with Iran</h1>
+  <p class="sub">9 stories at length, 10 in brief. Every story carries a confidence marker; 7 carry a divergence box.</p>
+  <p class="prov"><b>87 sources checked, 63 of them outside the watchlist.</b> Gathered outside-in: wires, foreign and trade outlets and primary documents first, watchlist sources after. Five lead stories are new subjects found today; three continue threads from recent editions (Nvidia, rates, Iran and oil), under the cap of four. Yesterday&rsquo;s Ukraine lead was demoted to Also today. <b>Biggest story not on my list:</b> the global Microsoft 365 outage &mdash; no beat or thread pointed at it, and it leads.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#nvidia-huang">Jensen Huang has resigned as Nvidia&rsquo;s chief executive, and the intelligence agencies still disagree on whether the woman at the centre of it was a spy</a></li>
+    <li><a href="#treasuries-5pct">The 10-year Treasury yield is back above 5.10 per cent, and markets now treat a December rate rise as certain</a></li>
+    <li><a href="#iran-oil">Trump says the US no longer needs a deal with Iran; Brent jumped to $96 and Iran claims a strike on a US radar in Bahrain</a></li>
+    <li><a href="#home-sales">Existing home sales fell to their lowest rate since August 2010</a></li>
+    <li><a href="#microsoft-outage">Microsoft 365 is into a second day of a global outage that took down Outlook, Teams and Copilot</a></li>
+    <li><a href="#ai-freeze-suit">Four nonprofits have asked a San Francisco court to freeze frontier AI at five labs, the same week Anthropic&rsquo;s IPO drew six times the orders</a></li>
+    <li><a href="#mexico-tariffs">Trump threatened to double tariffs on Mexico immediately unless it stops a migrant caravan</a></li>
+    <li><a href="#f35-parts">GAO says the F-35 programme cannot locate more than 17,000 parts worth up to $2.5 billion</a></li>
+    <li><a href="#fl-clearwater">Florida: the Cabinet votes Tuesday on paying $20.5 million for 30 acres at the north tip of Clearwater Beach</a></li>
+    <li><a href="#also-today">Also today (10)</a> &mdash; ranked below the line, each one opens.</li>
+  </ol>
+</nav>
+
+<article id="nvidia-huang">
+  <h2>Jensen Huang has resigned as Nvidia&rsquo;s chief executive, and the intelligence agencies still disagree on whether the woman at the centre of it was a spy</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Nvidia announced on Thursday morning that Huang had resigned as chief executive and from the board, ending a 33-year tenure. Chief financial officer Colette Kress, a 13-year veteran, is interim CEO; the board says it is weighing internal and external candidates and has named no succession plan. The trigger was a second relationship reported on Wednesday, with Kimberly Powell, a vice president who reported to him, on top of last weekend&rsquo;s disclosure of an affair with Alice Huang (no relation), a Singapore-based businesswoman US agencies believe was a Chinese intelligence asset.</p>
+<p>The market price: shares closed down 4.3 per cent at $166.19 after falling as much as 14.3 per cent intraday, and CBS puts the loss since last week&rsquo;s close at almost $500 billion. The policy price is larger. Huang was the industry&rsquo;s most effective lobbyist against tighter export controls, and Republicans are now turning on Commerce Secretary Howard Lutnick over Megaspeed, the chip firm linked to Alice Huang that, by one House Republican&rsquo;s account, Trump directed three times be blacklisted. Huang has agreed to testify before Congress, and GOP members want Lutnick in the same chair.</p>
+<p><b>Accountability.</b> Yesterday&rsquo;s edition led on the board meeting to decide whether to remove him. That question is now answered; the open one is the security case, below.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; was Alice Huang actually a spy?</span>
+    <p><b>What is disputed.</b> A facts dispute. The premise that drove a week of coverage and the share-price fall is that US intelligence assessed her as a Chinese asset. CNN, citing multiple officials, reports that some at the Office of the Director of National Intelligence call that characterisation over-torqued and that CIA officials are not convinced the intercepts show she knowingly passed information to Beijing. Other administration officials say it strains belief that she was not.</p>
+<p><b>Why they differ.</b> Mundane first: agencies are reviewing the same intercepts separately, and an assessment of risk is not a finding of espionage. Attorney General Blanche said on Thursday that no conclusion has been reached, and Trump said he did not know whether it had been determined. Interest matters too: tech allies of Huang (David Sacks called the narrative collapsing) have a stake in the weaker reading; China hawks pressing Lutnick have a stake in the stronger one.</p>
+<p><b>What it means for you.</b> Treat &ldquo;spy&rdquo; as unproven and &ldquo;counterintelligence risk&rdquo; as well supported; the resignation stands on the undisclosed relationship with a direct report regardless. What would settle it: a DOJ charging decision, or a declassified ODNI assessment for the hearings.</p>
+  </div>
+  <p class="sources"><b>Independent accounts compared: 4.</b> <a href="https://www.cbsnews.com/news/nvidia-stock-nvda-ceo-jensen-huang/">CBS News on the share move</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/12/why-did-nvidia-ceo-jensen-huang-resign-and-who-is-colette-kress">Al Jazeera on the board sequence</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/12/colette-kress-nvidia-cfo-interim-ceo-candidate.html">CNBC on Kress</a> &middot;
+    <a href="https://kesq.com/news/national-politics/cnn-us-politics/2026/11/12/us-intel-isnt-sure-if-businesswoman-spied-on-nvidia-for-china-doesnt-mean-she-wasnt-a-risk-sources-say/">CNN (via KESQ) on the intelligence split</a> &middot;
+    <a href="https://www.semafor.com/article/11/12/2026/nvidia-fallout-fuels-questions-about-lutnicks-staying-power">Semafor on Lutnick</a> &middot;
+    <a href="https://www.techmeme.com/261112/p72">Techmeme thread</a></p>
+  <div class="fb">
+    <p>Was this worth leading with?</p>
+    <label><input type="radio" name="fb-nvidia-huang" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-nvidia-huang" value="lower"> Should have been below the line</label>
+    <label><input type="radio" name="fb-nvidia-huang" value="drop"> Not for me</label>
+  </div>
+</article>
+
+<article id="treasuries-5pct">
+  <h2>The 10-year Treasury yield is back above 5.10 per cent, and markets now treat a December rate rise as certain</h2>
+  <div class="meta">
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Treasury&rsquo;s own par curve for 12 November has the 10-year at 5.10 per cent and the 2-year at 4.86, up 12 and 13 basis points from the last session before Veterans Day; the 30-year is 5.43. Dow Jones data put the 10-year&rsquo;s four-day rise at 27 basis points, the largest since late September, and the level the highest since 21 October. Short maturities rose most, which is the signature of a market repricing the Fed rather than the deficit.</p>
+<p>The Fed path: CME FedWatch and Kalshi both price a December rise as near-certain, with roughly one chance in eight that it is half a point. Governor Waller said on 10 November that a core CPI reading near 0.3 per cent would put 50 basis points on the table; October core came in at exactly 0.3. Goldman added a March rise to its forecast. Separately, Governor Barr warned that deregulating in a &ldquo;risk-on environment&rdquo; is a recipe for trouble.</p>
+<p>Why it matters to you: this is the rate mortgages, car loans and corporate refinancing key off, and it moved the same day the housing figures below landed. The 30-year auction drew weak demand, per Yonhap&rsquo;s market report.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; was this an oil selloff or a Fed selloff?</span>
+    <p><b>What is disputed.</b> A significance dispute over cause. CNBC and Yonhap Infomax lead with oil: Trump&rsquo;s &ldquo;we don&rsquo;t need a deal&rdquo; post lifted Brent about 3 per cent and yields climbed through the session. Bloomberg leads with the Fed: traders bracing for a faster pace of rises after a hot CPI and hawkish officials.</p>
+<p><b>Why they differ.</b> Timing and vantage. Wednesday was a bond-market holiday, so Thursday absorbed two days of news at once &mdash; Tuesday&rsquo;s CPI rout, the Nvidia shock (which briefly pulled the 10-year down to 4.88 at 8 a.m.) and Trump&rsquo;s post. Intraday desks see the post move prices; macro desks see the curve flatten.</p>
+<p><b>What it means for you.</b> The curve settles it better than the narratives: the 2-year rose more than the 10-year, so most of the move was Fed expectations, with oil adding to it. If Brent falls back and yields do not, that confirms it.</p>
+  </div>
+  <p class="sources"><b>Independent accounts compared: 4.</b> <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value=2026">Treasury daily par yield curve</a> &middot;
+    <a href="https://www.federalreserve.gov/newsevents/speech/waller20261110a.htm">Waller, 10 November</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/12/us-treasurys-bonds-yields.html">CNBC</a> &middot;
+    <a href="https://news.bloomberglaw.com/international-trade/treasuries-fall-as-traders-boost-wagers-on-fed-rate-hikes-2">Bloomberg</a> &middot;
+    <a href="https://www.morningstar.com/news/dow-jones/2026111212961/10-year-treasury-yield-rises-to-5102-data-talk">Dow Jones data</a> &middot;
+    <a href="https://en.infomaxai.com/news/articleView.html?idxno=148358">Yonhap Infomax</a> &middot;
+    <a href="https://news.kalshi.com/p/fed-interest-rate-odds-traders-see-87-chance-of-quarter-point-hike-in-december">Kalshi pricing</a> &middot;
+    <a href="https://www.americanbanker.com/news/fed-s-barr-warns-about-deregulation-in-a-risk-on-environment">American Banker on Barr</a></p>
+  <div class="fb">
+    <p>Was this worth leading with?</p>
+    <label><input type="radio" name="fb-treasuries-5pct" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-treasuries-5pct" value="lower"> Should have been below the line</label>
+    <label><input type="radio" name="fb-treasuries-5pct" value="drop"> Not for me</label>
+  </div>
+</article>
+
+<article id="iran-oil">
+  <h2>Trump says the US no longer needs a deal with Iran; Brent jumped to $96 and Iran claims a strike on a US radar in Bahrain</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; oil</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>One chain, three links. On Thursday Trump posted that &ldquo;we don&rsquo;t need a deal with Iran,&rdquo; three days after calling the war militarily over. Brent, which had fallen about 25 per cent from its late-October high of $118 on peace expectations, rose roughly 3.7 per cent to about $96; WTI closed at $88.74. Overnight, after state media reported &ldquo;enemy fire&rdquo; on a telecommunications tower in Sirik on the Hormuz coast, the Revolutionary Guards said they had targeted and destroyed a US early-warning radar in Bahrain, home of the Fifth Fleet &mdash; the first such claim against US assets in a Gulf state since early September. AP says the Guards also reported a tanker hitting a mine in the strait.</p>
+<p>The paperwork moved too. Today&rsquo;s Federal Register carries the President&rsquo;s periodic determination, dated 28 October, that non-Iranian oil supply is sufficient to keep sanctions pressure on Iranian crude purchases &mdash; the legal predicate for the sanctions regime staying in place regardless of talks. The same issue publishes OFAC&rsquo;s new Iran-related general licences.</p>
+<p>At the pump, AAA&rsquo;s national average fell below $4 for the first time since July, to $3.90, down nearly 20 cents in a week &mdash; still the most expensive November on record.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; did Iran hit anything in Bahrain?</span>
+    <p><b>What is disputed.</b> A facts dispute. The Guards and Fars say the radar was destroyed. AP, Reuters, RFE/RL and Al Jazeera all say the claim could not be verified, and neither Washington nor Manama had commented by this morning.</p>
+<p><b>Why they differ.</b> Access and interest: Iranian state outlets are the only source, and the claim serves as a deterrent signal whatever happened. RFE/RL notes the Guards&rsquo; statement stops short of blaming the US for the Sirik strike, which suggests calibration rather than escalation.</p>
+<p><b>What it means for you.</b> Treat the strike as Unconfirmed. The market relevance is the rhetoric on both sides, not the radar. A CENTCOM statement or commercial satellite imagery would settle it.</p>
+  </div>
+  <div class="div">
+    <span class="t">Divergence &mdash; crude is up, so why is gasoline down?</span>
+    <p><b>What is disputed.</b> A significance dispute between data series. Oil reports show crude rising on Thursday; AAA shows the pump at a four-month low.</p>
+<p><b>Why they differ.</b> Timing: retail prices lag crude by one to two weeks, and AAA cites the switch to cheaper winter-blend fuel and lower autumn demand. AAA&rsquo;s figures reflect the 25 per cent crude slide since late October, not Thursday&rsquo;s bounce.</p>
+<p><b>What it means for you.</b> Expect the decline at the pump to slow or stall next week if Brent holds near $96. If Brent goes back toward $90, the fall continues.</p>
+  </div>
+  <p class="sources"><b>Independent accounts compared: 5.</b> <a href="https://oilprice.com/Latest-Energy-News/World-News/Brent-Briefly-Hits-94-After-Trump-Says-US-Has-No-Need-for-Iran-Deal.html">OilPrice on the Trump post</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/13/iran-says-it-struck-us-radar-site-in-bahrain">Al Jazeera</a> &middot;
+    <a href="https://apnews.com/article/iran-us-bahrain-radar-strait-hormuz-5d73a23b5b8647d2515c35b267b36c08">AP</a> &middot;
+    <a href="https://www.rferl.org/a/iran-us-sirik-bahrain-war-nuclear-talks/33897951.html">RFE/RL</a> &middot;
+    <a href="https://www.federalregister.gov/documents/2026/11/13/2026-23233/presidential-determination-pursuant-to-section-1245d4b-and-c-of-the-national-defense-authorization">Presidential Determination 2027-02</a> &middot;
+    <a href="https://gasprices.aaa.com/for-the-first-time-since-july-national-average-drops-below-4/">AAA</a> &middot;
+    <a href="https://www.cbsnews.com/live-updates/iran-war-us-nuclear-strait-of-hormuz/">CBS live updates</a></p>
+  <div class="fb">
+    <p>Was this worth leading with?</p>
+    <label><input type="radio" name="fb-iran-oil" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-iran-oil" value="lower"> Should have been below the line</label>
+    <label><input type="radio" name="fb-iran-oil" value="drop"> Not for me</label>
+  </div>
+</article>
+
+<article id="home-sales">
+  <h2>Existing home sales fell to their lowest rate since August 2010</h2>
+  <div class="meta">
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The National Association of Realtors reported October resales at a seasonally adjusted 3.75 million annual rate, down 5.5 per cent on the month and 8.8 per cent on the year, and below the 3.85 million Reuters&rsquo; poll expected. The median price was $416,700, up just 0.4 per cent on a year earlier. Inventory rose to 1.59 million homes, 5.1 months of supply, the most since November 2015.</p>
+<p>The mechanism is mortgage rates. Closings in October reflect contracts signed in August and September, when Freddie Mac&rsquo;s 30-year rate passed 7 per cent and reached 7.40 &mdash; up 142 basis points since the war began in February. NAR&rsquo;s Lawrence Yun called rates the highest since 2000, apart from one month in 2023. Thursday&rsquo;s bond move (above) means relief is not coming in November.</p>
+<p>Locally, the Suncoast Tampa Association of Realtors has Tampa Bay sales down about 5.2 per cent on a year ago. Some agents are telling out-of-state buyers to close before year-end: under Amendment 3, which raises the homestead exemption toward $250,000 over two years, later arrivals wait five years for the full exemption, the Tampa Bay Times reports.</p>
+  <p class="sources"><b>Independent accounts compared: 2.</b> <a href="https://www.nar.realtor/newsroom/existing-home-sales-decreased-5-5-percent-october-nar-report">NAR release</a> &middot;
+    <a href="https://finance.yahoo.com/real-estate/articles/us-existing-home-sales-slump-150246718.html">Reuters (via Yahoo Finance)</a> &middot;
+    <a href="https://www.tampabay.com/news/real-estate/2026/11/12/tampa-bay-housing-market-development-amendment-3-tax/">Tampa Bay Times on Amendment 3 and sales</a></p>
+  <div class="fb">
+    <p>Was this worth leading with?</p>
+    <label><input type="radio" name="fb-home-sales" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-home-sales" value="lower"> Should have been below the line</label>
+    <label><input type="radio" name="fb-home-sales" value="drop"> Not for me</label>
+  </div>
+</article>
+
+<article id="microsoft-outage">
+  <h2>Microsoft 365 is into a second day of a global outage that took down Outlook, Teams and Copilot</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Exchange Online, and with it Outlook, Teams and the Copilot assistant, has been failing since Thursday across regions. Microsoft&rsquo;s status updates say recovery has been completed in parts of Asia-Pacific and is being extended elsewhere, mail delivery is catching up, and it has stretched the email timeout to 48 hours so delayed messages are not lost. It says it has no evidence of malicious activity and will publish a post-incident report.</p>
+<p>Reach: Downdetector logged reports from 74 countries within an hour, per DW. Britain&rsquo;s NHS reported serious impact, Deutsche Bahn struggled to send diverted-train timetables, and the Guardian&rsquo;s live coverage lists UK police and schools. Microsoft at one point said its fixes were &ldquo;not taking as expected.&rdquo;</p>
+<p>Why it leads: this is the single point of failure most US businesses and agencies run their mail through. If your organisation is on Microsoft 365, assume intermittent mail delays today.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; what actually broke?</span>
+    <p><b>What is disputed.</b> A facts dispute over cause, still moving. Microsoft&rsquo;s status page says servers unexpectedly became unavailable and a process that establishes secure connections was overwhelmed; it is also reverting a recent network change that correlated with the start. A university IT status page relaying Microsoft&rsquo;s guidance said the issue was confined to the Microsoft 365 network gateway. The Guardian reports Microsoft pointing to server settings.</p>
+<p><b>Why they differ.</b> Timing: these are successive updates during an active incident, each relayed at a different hour. All three are compatible with a configuration change that tipped gateway servers into failure.</p>
+<p><b>What it means for you.</b> Believe &ldquo;not a cyberattack, a change gone wrong&rdquo; for now. The post-incident report settles it.</p>
+  </div>
+  <p class="sources"><b>Independent accounts compared: 4.</b> <a href="https://statusstack.com/service/microsoftexchangeonline/incidents/01a1d0a2-9912-705b-8054-51d301f4d7e1">Microsoft Exchange Online status (mirrored)</a> &middot;
+    <a href="https://www.dw.com/en/microsoft-rules-out-malicious-activity-as-cause-for-global-outage/a-79935611">DW</a> &middot;
+    <a href="https://www.cbsnews.com/news/microsoft-battling-major-outage/">CBS News</a> &middot;
+    <a href="https://www.cio.com/article/4248249/microsoft-struggles-to-get-m365-services-back-online-after-widespread-outage.html">CIO</a> &middot;
+    <a href="https://status.its.uq.edu.au/issues/20072/">University of Queensland IT status</a> &middot;
+    <a href="https://www.theguardian.com/technology/live/2026/nov/13/microsoft-outage-down-today-live-update-outlook-teams-365-when-fixed-latest-status-cause-news">Guardian live</a></p>
+  <div class="fb">
+    <p>Was this worth leading with?</p>
+    <label><input type="radio" name="fb-microsoft-outage" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-microsoft-outage" value="lower"> Should have been below the line</label>
+    <label><input type="radio" name="fb-microsoft-outage" value="drop"> Not for me</label>
+  </div>
+</article>
+
+<article id="ai-freeze-suit">
+  <h2>Four nonprofits have asked a San Francisco court to freeze frontier AI at five labs, the same week Anthropic&rsquo;s IPO drew six times the orders</h2>
+  <div class="meta">
+    <span class="chip">AI lab safety</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Public Citizen, the Irreplaceable Education Fund, Heat Initiative and the Alliance for Secure AI filed suit on Thursday in San Francisco Superior Court against Anthropic, Google, Meta, OpenAI and SpaceX&rsquo;s AI unit. They seek an emergency injunction barring the companies from developing or deploying systems more capable than their current models, and from using AI to run AI research autonomously, until safeguards exist. The complaint leans on the companies&rsquo; own published warnings about bioweapons and cyberattack risk.</p>
+<p>The legal odds are long: a state court ordering a halt to national research programmes would be without precedent, and no hearing date has been reported. The significance is political. Al Jazeera ties the filing to the Democratic midterm sweep, and Semafor reports AI safety groups pressing Democrats to step up oversight of the administration&rsquo;s AI policy.</p>
+<p>The contrast: Bloomberg reports Anthropic&rsquo;s IPO, seeking up to $64.4 billion plus a $26 billion private placement, is about six times oversubscribed &mdash; potentially the largest listing ever, with existing backers prioritised.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is this a suit to halt AI or to cap it?</span>
+    <p><b>What is disputed.</b> A facts dispute about scope. Al Jazeera&rsquo;s headline says the groups sued to &ldquo;halt AI development.&rdquo; The complaint and Public Citizen&rsquo;s release ask for something narrower: no models beyond current capability and no autonomous AI research and development.</p>
+<p><b>Why they differ.</b> Headline compression, mainly. The narrower ask is also the one a court could conceivably grant, which is why the filers framed it that way.</p>
+<p><b>What it means for you.</b> Read it as a demand for a capability ceiling, not a shutdown. Products you use today would not be touched even if it succeeded. Whether a judge sets an injunction hearing will show how seriously the court takes it.</p>
+  </div>
+  <p class="sources"><b>Independent accounts compared: 3.</b> <a href="https://www.courthousenews.com/wp-content/uploads/2026/11/Irreplaceable-et-al-v.-Anthropic-et-al.pdf">The complaint</a> &middot;
+    <a href="https://www.citizen.org/news/coalition-of-nonprofits-files-landmark-lawsuit-to-stop-development-of-advanced-ai-systems-at-anthropic-google-meta-openai-and-spacexsi-that-proliferate-bioweapons-and-cyberattacks/">Public Citizen release</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/12/us-nonprofits-sue-tech-giants-to-halt-ai-development">Al Jazeera</a> &middot;
+    <a href="https://www.courthousenews.com/san-francisco-court-asked-to-freeze-ai-development-stave-off-catastrophic-harm/">Courthouse News</a> &middot;
+    <a href="https://finance.yahoo.com/markets/stocks/articles/anthropic-ipo-six-times-oversubscribed-210014195.html">Bloomberg (via Yahoo) on the IPO book</a></p>
+  <div class="fb">
+    <p>Was this worth leading with?</p>
+    <label><input type="radio" name="fb-ai-freeze-suit" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-ai-freeze-suit" value="lower"> Should have been below the line</label>
+    <label><input type="radio" name="fb-ai-freeze-suit" value="drop"> Not for me</label>
+  </div>
+</article>
+
+<article id="mexico-tariffs">
+  <h2>Trump threatened to double tariffs on Mexico immediately unless it stops a migrant caravan</h2>
+  <div class="meta">
+    <span class="chip">Trade &amp; tariffs</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>In a Truth Social post on Thursday, Trump said Mexico must stop the caravans &ldquo;NOW&rdquo; or tariffs would be &ldquo;IMMEDIATELY DOUBLED.&rdquo; He did not say which tariffs, whether USMCA exemptions would survive, or when. Today the main exposure is a 25 per cent tariff on goods that do not qualify under USMCA, plus steel duties under negotiation.</p>
+<p>Stakes: Mexico is the largest US trading partner, with $96.34 billion of two-way trade in September alone, $38.9 billion of it through Laredo, per FreightWaves. Semafor notes the threat lands with Stephen Miller now elevated to chief of staff, which it reads as closing off any post-midterm softening on immigration.</p>
+<p>For the reader: a doubled tariff on non-USMCA goods would hit autos, parts and produce first. Watch whether a formal order or Federal Register notice follows; the post alone changes nothing at the border.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is there a caravan problem at all?</span>
+    <p><b>What is disputed.</b> Facts. Trump describes a migrant influx. President Sheinbaum said at her Thursday briefing that no caravan has reached the northern border since January 2025, while acknowledging two are moving through southern Mexico. Sizes differ: Reuters put the group at about 1,500, EFE at roughly 2,000 at the outset.</p>
+<p><b>Why they differ.</b> Interest on both sides: the threat is leverage in live trade talks, and Sheinbaum must show she is in control. The size gap is timing, since caravans shed people as they move.</p>
+<p><b>What it means for you.</b> Sheinbaum&rsquo;s record supports her on the border, and Semafor notes crossings have plummeted. The tariff risk is real but conditional; a caravan dispersed in southern Mexico, as before, would defuse it.</p>
+  </div>
+  <p class="sources"><b>Independent accounts compared: 2.</b> <a href="https://www.freightwaves.com/news/trump-threatens-to-double-mexico-tariffs-over-alleged-migrant-influx">FreightWaves</a> &middot;
+    <a href="https://www.semafor.com/article/11/13/2026/us-president-donald-trump-threatens-new-mexico-tariffs">Semafor</a> &middot;
+    <a href="https://www.dw.com/en/migrant-caravan-heads-to-us-mexico-border/video-79921266">DW video on the caravan</a></p>
+  <div class="fb">
+    <p>Was this worth leading with?</p>
+    <label><input type="radio" name="fb-mexico-tariffs" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-mexico-tariffs" value="lower"> Should have been below the line</label>
+    <label><input type="radio" name="fb-mexico-tariffs" value="drop"> Not for me</label>
+  </div>
+</article>
+
+<article id="f35-parts">
+  <h2>GAO says the F-35 programme cannot locate more than 17,000 parts worth up to $2.5 billion</h2>
+  <div class="meta">
+    <span class="chip">Defense</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>A new Government Accountability Office report finds that, as of March 2026, more than 17,000 F-35 parts worth about $1.3 billion were missing from the programme&rsquo;s inventory system; officials told GAO the figure could reach $2.5 billion once missing cost data and acquisition expenses are counted. The cause is contractor records that are not routinely fed into the Pentagon&rsquo;s system of record, across a supply chain of roughly 26 million parts at more than 700 sites and some 4,000 suppliers.</p>
+<p>GAO did not link it to the separate Pentagon investigation into F-35 components shipped from Australia that ended up in Hong Kong, but the two together are a counterintelligence problem as much as an accounting one. It lands the week the Nvidia affair put technology leakage to China at the top of the agenda.</p>
+<p>For the reader: this is the most expensive weapons programme in history, and the audit finding is the kind a Democratic House will use in oversight next year.</p>
+  <p class="sources"><b>Independent accounts compared: 1.</b> <a href="https://breakingdefense.com/2026/11/pentagon-cant-track-thousands-of-f-35-parts-gao/">Breaking Defense</a> &middot;
+    <a href="https://www.gao.gov/products/gao-27-108713">GAO-27-108713 (blocked our fetch; not read directly)</a></p>
+  <div class="fb">
+    <p>Was this worth leading with?</p>
+    <label><input type="radio" name="fb-f35-parts" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-f35-parts" value="lower"> Should have been below the line</label>
+    <label><input type="radio" name="fb-f35-parts" value="drop"> Not for me</label>
+  </div>
+</article>
+
+<article id="fl-clearwater">
+  <h2>Florida: the Cabinet votes Tuesday on paying $20.5 million for 30 acres at the north tip of Clearwater Beach</h2>
+  <div class="meta">
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The 17 November Cabinet agenda asks the Governor and Cabinet to spend $20.5 million of Florida Forever money on 30 acres at the northern end of Clearwater Beach Island, beside Caladesi Island State Park, including a 3,400-square-foot beachfront house. The Tampa Bay Times reports the package was listed at $37.5 million in 2024. The state&rsquo;s case is access to Caladesi and a buffer for nearly 18 miles of protected barrier islands in the Pinellas County Aquatic Preserve, which a state report says development increasingly threatens.</p>
+<p>The same agenda carries about $220 million for conservation easements on roughly 55,000 acres of farmland statewide, including $77.75 million for the Osceola Prairie ranch near Avon Park Air Force Range, with $15 million expected from the Pentagon.</p>
+<p>Why it is here on local merit: it is a Pinellas beach, one county south of New Port Richey, and a yes vote takes that stretch of shoreline out of private development.</p>
+  <p class="sources"><b>Independent accounts compared: 2.</b> <a href="https://www.tampabay.com/news/environment/2026/11/12/clearwater-beach-florida-caladesi-island-state-park/">Tampa Bay Times</a> &middot;
+    <a href="https://www.wusf.org/politics-issues/2026-11-12/florida-cabinet-to-consider-clearwater-beach-island-land-and-other-easements">WUSF on the Cabinet agenda</a></p>
+  <div class="fb">
+    <p>Was this worth leading with?</p>
+    <label><input type="radio" name="fb-fl-clearwater" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-fl-clearwater" value="lower"> Should have been below the line</label>
+    <label><input type="radio" name="fb-fl-clearwater" value="drop"> Not for me</label>
+  </div>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">10 things I saw and ranked below the line. Each one opens.</p>
+
+<div class="also-list">
+
+<details class="short" id="a-ukraine">
+  <summary><span class="chip">US politics &amp; policy</span> US envoys Witkoff and Kushner and Putin agreed in Moscow to resume direct Ukraine talks after a nine-month pause; the Kremlin says Putin will take it up with Trump at APEC in China later this month.</summary>
+  <div class="exp">
+    <p>The Kremlin called Thursday&rsquo;s talks useful and said the US backed Putin&rsquo;s idea of a joint humanitarian mission to a city in eastern Ukraine. It repeated that NATO must not expand. Russia struck Kyiv with missiles and drones hours after the earlier Abu Dhabi round ended, the Kyiv Independent reports, and Yle reports a Bild story that Moscow wants Finland out of NATO, which Finland&rsquo;s defence minister called outrageous.</p>
+<p class="btl"><b>Below the line because</b> it continues yesterday&rsquo;s lead with no signed outcome, and the cap on continuing leads is full.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.aljazeera.com/news/2026/11/12/us-envoys-arrive-in-moscow-for-russia-ukraine-talks-with-putin">Al Jazeera</a> &middot; <a href="https://kyivindependent.com/russia-attacks-kyiv-with-ballistic-missiles-hours-after-peace-talks-end/">Kyiv Independent</a> &middot; <a href="https://yle.fi/uutiset">Yle (Finnish)</a></p>
+  </div>
+</details>
+<details class="short" id="a-spacex-tesla">
+  <summary><span class="chip">AI &amp; tech industry</span> SpaceX and Tesla merger talks are advancing, with an announcement possible as soon as December, Bloomberg reports.</summary>
+  <div class="exp">
+    <p>It would be the largest deal ever. Boards are working on terms and governance; an early-2027 slip has been discussed. SpaceX&rsquo;s AI unit is also a defendant in the lawsuit above.</p>
+<p class="btl"><b>Below the line because</b> it is a report of talks, from one outlet, with no filing.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://finance.yahoo.com/markets/stocks/articles/spacex-tesla-talks-record-merger-202235758.html">Bloomberg (via Yahoo Finance)</a></p>
+  </div>
+</details>
+<details class="short" id="a-faro">
+  <summary><span class="chip">US financials</span> Banks behind Project Faro, the bank-led stablecoin venture, committed $270 million over five years.</summary>
+  <div class="exp">
+    <p>American Banker reports the funding as the step from pilot to proving scale. It joins OUSD, a consortium stablecoin from more than 140 firms, in the bank-sector answer to Tether and Circle.</p>
+<p class="btl"><b>Below the line because</b> it is funding, not launch.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.americanbanker.com/payments/news/banks-pour-270-million-into-project-faro-stablecoin">American Banker</a></p>
+  </div>
+</details>
+<details class="short" id="a-swipe">
+  <summary><span class="chip">US financials</span> Retailers sued the OCC and NCUA, arguing they wrongly used federal preemption to exempt banks from Illinois&rsquo; ban on interchange fees on taxes and tips.</summary>
+  <div class="exp">
+    <p>The suits say the regulators misread federal banking law and skipped required rulemaking. The Illinois law is the first of its kind, and other states are watching it.</p>
+<p class="btl"><b>Below the line because</b> it is a filing on one state&rsquo;s law; a ruling would promote it.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.americanbanker.com/news/retailers-file-lawsuit-against-occ-ncua-swipe-fee-rule">American Banker</a></p>
+  </div>
+</details>
+<details class="short" id="a-vanhollen">
+  <summary><span class="chip">US politics &amp; policy</span> Sen. Chris Van Hollen will challenge Chuck Schumer for Senate Democratic leader in the new majority; Sanders says he will not back Schumer.</summary>
+  <div class="exp">
+    <p>The leadership vote decides who sets the floor for the oversight agenda Democrats have promised. CBS and ABC both report the challenge.</p>
+<p class="btl"><b>Below the line because</b> it is a party contest with no vote date yet.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.cbsnews.com/news/chris-van-hollen-challenge-chuck-schumer-senate-majority-leader-democrat/">CBS News</a> &middot; <a href="https://abcnews.com/Politics/maryland-sen-chris-van-hollen-challenge-sen-chuck/story?id=138097994">ABC News</a></p>
+  </div>
+</details>
+<details class="short" id="a-psa">
+  <summary><span class="chip">Health</span> The American Cancer Society now recommends routine PSA screening for prostate cancer.</summary>
+  <div class="exp">
+    <p>CBS, ABC, STAT and FOX 13 all report the change. For men in the screening age range it is a reason to raise PSA at the next physical.</p>
+<p class="btl"><b>Below the line because</b> it is guidance from a private society, not a coverage mandate.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.cbsnews.com/news/prostate-cancer-screening-guidelines/">CBS News</a> &middot; <a href="https://www.statnews.com/">STAT</a> &middot; <a href="https://www.fox13news.com/news/american-cancer-society-updates-prostate-cancer-screening-guidelines">FOX 13</a></p>
+  </div>
+</details>
+<details class="short" id="a-germany">
+  <summary><span class="chip">World economy</span> Germany&rsquo;s parliament passed a 2027 budget with new borrowing exceeded only once before, at the height of the pandemic.</summary>
+  <div class="exp">
+    <p>DW reports the figure. It means more German bunds competing with Treasuries for the same global savings while US yields are already above 5 per cent.</p>
+<p class="btl"><b>Below the line because</b> the US channel is indirect.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.dw.com/en/germany-news-parliament-agrees-on-debt-laden-2027-budget/live-79936897">DW</a></p>
+  </div>
+</details>
+<details class="short" id="a-copper">
+  <summary><span class="chip">Macro &amp; markets</span> Copper rose above $14,500 a tonne as supply tightens, while aluminium gave up its war premium.</summary>
+  <div class="exp">
+    <p>Copper is the wiring for data centres and the grid, so this is an AI build-out cost that does not show up in chip prices.</p>
+<p class="btl"><b>Below the line because</b> one outlet, and no new supply fact behind it.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://oilprice.com/Metals/Commodities/Copper-Surges-Above-14500-as-Supply-Squeeze-Deepens.html">OilPrice</a></p>
+  </div>
+</details>
+<details class="short" id="a-debt">
+  <summary><span class="chip">US debt &amp; fiscal</span> Total public debt outstanding was $40.584 trillion on 10 November, up $24.3 billion in a day, per Treasury&rsquo;s Debt to the Penny.</summary>
+  <div class="exp">
+    <p>It was $40.560 trillion on 9 November in the last edition. Vanguard&rsquo;s chief executive, Salim Ramji, told Yahoo Finance the gap between optimistic stocks and a nervous bond market, over deficits and inflation, is a key 2027 risk.</p>
+<p class="btl"><b>Below the line because</b> it is a daily data point.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/">Treasury Debt to the Penny</a> &middot; <a href="https://finance.yahoo.com/markets/article/vanguard-ceo-salim-ramji-warns-bond-market-volatility-could-be-a-key-2027-risk-222157006.html">Yahoo Finance on Ramji</a></p>
+  </div>
+</details>
+<details class="short" id="a-pbi">
+  <summary><span class="chip">Florida &amp; Tampa Bay</span> The FAA has proposed amending Class C airspace around what the Federal Register now calls President Donald J. Trump International Airport in Palm Beach County.</summary>
+  <div class="exp">
+    <p>It is a routine airspace notice, but it is the first Federal Register use of the new name we have seen.</p>
+<p class="btl"><b>Below the line because</b> it is administrative.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.federalregister.gov/documents/2026/11/13/2026-23109/amendment-of-class-c-airspace-president-donald-j-trump-international-airport-fl">Federal Register</a></p>
+  </div>
+</details>
+
+</div>
+
+<div class="fb" style="border-top:1px solid var(--rule); padding-top:1rem; margin-top:1.5rem;">
+  <p><b>One question about this whole section:</b> were the right things ranked below the line?</p>
+  <label><input type="radio" name="fb-also" value="right"> About right</label>
+  <label><input type="radio" name="fb-also" value="promote"> Some of these should have led</label>
+  <label><input type="radio" name="fb-also" value="drop"> Some should have been dropped entirely</label>
+  <label><input type="radio" name="fb-also" value="fewer"> Fewer short items, more depth up top</label>
+</div>
+
+<button class="submit" id="send">Send my feedback &rarr;</button>
+<p class="sources" style="text-align:center">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+
+<footer>
+  <h4>Sources checked this run &mdash; 87, of which 63 outside the watchlist</h4>
+  <p><b>Pointed at by a thread or the local section (24):</b> AAA &middot; EIA weekly petroleum &middot; Trading Economics Brent (vendor) &middot; gCaptain &middot; OilPrice &middot; OFAC recent actions &middot; Federal Reserve press and speeches &middot; Treasury yield curve and press &middot; Debt to the Penny API &middot; Federal Register daily issue and public inspection &middot; White House presidential actions and briefings &middot; OCC &middot; FDIC &middot; CFTC &middot; DOE newsroom &middot; SCOTUSblog &middot; The Debrief (UAP) &middot; Techmeme &middot; DatacenterDynamics &middot; Florida Phoenix &middot; Tampa Bay Times &middot; WUSF &middot; FOX 13 Tampa &middot; Kalshi Fed-path pricing.</p>
+  <p><b>Not pointed at by any thread (63):</b> abcnews.com &middot; abcnews.go.com &middot; arstechnica.com &middot; asia.nikkei.com &middot; breakingdefense.com &middot; en.wikipedia.org &middot; feeds.bbci.co.uk &middot; feeds.bloomberg.com &middot; feeds.content.dowjones.io &middot; feeds.washingtonpost.com &middot; finance.yahoo.com &middot; kyivindependent.com &middot; punchbowl.news &middot; rollcall.com &middot; rss.nytimes.com &middot; techcrunch.com &middot; text.npr.org &middot; warontherocks.com &middot; aljazeera.com &middot; americanbanker.com &middot; cbsnews.com &middot; cnbc.com &middot; coindesk.com &middot; defenseone.com &middot; doi.gov &middot; dw.com &middot; eenews.net &middot; freightwaves.com &middot; ft.com &middot; haaretz.com &middot; handelsblatt.com &middot; insurancejournal.com &middot; latimes.com &middot; lefigaro.fr &middot; lemonde.fr &middot; nbcnews.com &middot; nextgov.com &middot; pbs.org &middot; pymnts.com &middot; scmp.com &middot; semafor.com &middot; spiegel.de &middot; statnews.com &middot; theguardian.com &middot; theregister.com &middot; theverge.com &middot; www3.nhk.or.jp &middot; yle.fi &middot; CNN (via KESQ) &middot; Dow Jones/Morningstar &middot; Bloomberg (via Bloomberg Law) &middot; Yonhap Infomax &middot; Investing.com (Reuters copy) &middot; AP &middot; RFE/RL &middot; Euronews &middot; CIO &middot; Anadolu Agency &middot; Microsoft Exchange status mirror &middot; University of Queensland IT status &middot; Courthouse News &middot; Public Citizen &middot; NAR newsroom.</p>
+  <p><b>Every host that answered in this run&rsquo;s fetch log:</b> abcnews.com &middot; abcnews.go.com &middot; api.fiscaldata.treasury.gov &middot; arstechnica.com &middot; asia.nikkei.com &middot; breakingdefense.com &middot; en.wikipedia.org &middot; feeds.bbci.co.uk &middot; feeds.bloomberg.com &middot; feeds.content.dowjones.io &middot; feeds.washingtonpost.com &middot; finance.yahoo.com &middot; floridaphoenix.com &middot; gasprices.aaa.com &middot; gcaptain.com &middot; home.treasury.gov &middot; kyivindependent.com &middot; ofac.treasury.gov &middot; oilprice.com &middot; punchbowl.news &middot; rollcall.com &middot; rss.nytimes.com &middot; techcrunch.com &middot; text.npr.org &middot; thedebrief.org &middot; tradingeconomics.com &middot; warontherocks.com &middot; www.aljazeera.com &middot; www.americanbanker.com &middot; www.cbsnews.com &middot; www.cftc.gov &middot; www.cnbc.com &middot; www.coindesk.com &middot; www.datacenterdynamics.com &middot; www.defenseone.com &middot; www.doi.gov &middot; www.dw.com &middot; www.eenews.net &middot; www.eia.gov &middot; www.energy.gov &middot; www.fdic.gov &middot; www.federalregister.gov &middot; www.federalreserve.gov &middot; www.fox13news.com &middot; www.freightwaves.com &middot; www.ft.com &middot; www.haaretz.com &middot; www.handelsblatt.com &middot; www.insurancejournal.com &middot; www.latimes.com &middot; www.lefigaro.fr &middot; www.lemonde.fr &middot; www.nbcnews.com &middot; www.nextgov.com &middot; www.occ.gov &middot; www.pbs.org &middot; www.pymnts.com &middot; www.scmp.com &middot; www.scotusblog.com &middot; www.semafor.com &middot; www.spiegel.de &middot; www.statnews.com &middot; www.tampabay.com &middot; www.techmeme.com &middot; www.theguardian.com &middot; www.theregister.com &middot; www.theverge.com &middot; www.whitehouse.gov &middot; www.wusf.org &middot; www3.nhk.or.jp &middot; yle.fi. Most were front pages or feeds scanned for headlines; the stories cited above were read in full.</p>
+
+  <h4>Confidence and divergence</h4>
+  <p>Markers: 6 Primary source &middot; 7 Independent corroboration &middot; 6 Single-sourced &middot; 0 Unconfirmed, across 19 stories. Divergence boxes: 7. Each lead states how many independent accounts were compared. Iran&rsquo;s Bahrain radar claim is treated as Unconfirmed inside its lead.</p>
+
+  <h4>The negative check</h4>
+  <p><i>What is the biggest story today that is not on my list, and why is it not?</i> The Microsoft 365 outage: no thread pointed at it, and it now leads. The same sweep promoted the existing-home-sales low, the AI freeze lawsuit, the Mexico tariff threat and the GAO F-35 audit, and pushed Ukraine talks below the line. Left out: the Brooklyn building collapse (a disaster with no policy channel) and Grammy nominations.</p>
+
+  <h4>Accountability</h4>
+  <p>Yesterday&rsquo;s lead asked whether Nvidia&rsquo;s board would remove Huang; he resigned. Yesterday&rsquo;s debt figure ($40.560 trillion on 9 November) is updated in Also today. No corrections to prior editions today.</p>
+
+  <h4>Could not reach</h4>
+  <p>GAO&rsquo;s report page returned 403, so the F-35 story rests on Breaking Defense&rsquo;s reading and is marked Single-sourced. Reuters, AP, Politico, Axios, The Hill, BLS, CBO, FERC, NRC, SEC, DOL, Lawfare, Utility Dive, El Pa&iacute;s, France 24 and WFLA blocked direct fetch; AP and Politico were read through search results instead. FTC and one OCC page returned 404.</p>
+
+  <h4>About this issue</h4>
+  <ul>
+    <li>Grok edition for 13 November, produced by the scheduled morning run. Page markup built from Issue 10 (<a href="2026-09-10b.html">2026-09-10b</a>), not from any earlier Grok edition.</li>
+    <li>Stories were selected and written from this run&rsquo;s own gathering. Claude&rsquo;s same-day edition was opened only after this draft was finished, to compare marker and box counts.</li>
+    <li>9 lead stories, 10 short items. Every quotation is under fifteen words and attributed; everything else is paraphrase.</li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n  → *"+"*" + i.value + "*"+"*");
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on *"+"*Issue No. 70-grok — 13 November 2026, Grok edition*"+"*\n\n" + lines.join("\n")
+      + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-11-13-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
