@@ -1111,6 +1111,56 @@ dies on an odd filename is worse than one that skips a check.
 The 5 November proposal (cut "dates ahead" and the owed list from the issue, cap
 the footer, raise the source floor to 15) has had no reply. **Nothing removed.**
 
+## Operational notes, 13 November 2026
+
+**Issue No. 70. Six leads, ten shorts, six divergence boxes, eight source
+domains.** Validator blocked twice; both real.
+
+### The self-diagnosing anchor check paid off on its first day
+
+Yesterday's addition printed **"dead cross-issue anchor: 2026-11-07.html#deathrow
+-- that id is in: 2026-11-06.html"**. Fourth consecutive day with a wrong
+cross-link, but the first where the fix took one step instead of a grep.
+**Keep it; it is the cheapest check in the file.**
+
+### Two sourcing lessons, both about this brief rather than the world
+
+1. **"UKMTO returns 403" was true about the URL and false about the source.**
+   The brief said on most mornings since 11 October that it had no instrument
+   for the Strait of Hormuz. **UKMTO advisories have been reaching gCaptain
+   the whole time with vessel names, positions and crew counts** — today's
+   fourth lead is built on one (*Dominica Prosperity*, engine room, 22 crew
+   evacuated, four incidents in one advisory). Add to the morning pull:
+   **gCaptain's UKMTO advisory coverage, and the Washington Institute's
+   monthly ship-attack count.** An inaccessible website is not an
+   inaccessible source.
+2. **The negative check has now been the same item three days running** (the
+   Baltic Exchange case). Yesterday's Paraguay lead criticised exactly this.
+   **Read it tomorrow before anything else, or drop it from the list.**
+
+### Where the brief was right and where it over-read
+
+- **Right:** Wednesday's issue stated in advance what each outcome of the EIA
+  report would mean. Stocks built 4,071 (second-largest of 2026) and
+  utilisation rose, which was the named confirming case.
+- **Not anticipated:** the **crack spread widened to $97.99 from $94.20** while
+  WTI fell $9.62 to $95.97. Refiners captured the whole crude fall. The retail
+  premium narrowing is mostly gasoline, not diesel relief. Reported against the
+  brief's own reading in the second lead.
+- **Over-read:** three weeks of commentary on the 20y–10y hump. Wednesday's
+  issue argued a hump surviving a 17bp move could not be about policy
+  expectations; **it then compressed from +43 to +38 under the next move.**
+  Said plainly in the third lead. **Do not build a thread on a spread whose
+  cause has never been established.**
+- **Checked and useful:** utilisation 95.2% ranks **17th of 45** weeks in 2026,
+  not a high. Checking the rank before writing "a new high" is the 3 November
+  rule working.
+
+### Standing question to the reader, unanswered
+
+The 5 November proposal (cut "dates ahead" and the owed list from the issue, cap
+the footer, raise the source floor to 15) has had no reply. **Nothing removed.**
+
 ## Watchlist
 
 Empty at first run. Populates from reader feedback and from threads that recur on
