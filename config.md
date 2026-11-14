@@ -1161,6 +1161,60 @@ cross-link, but the first where the fix took one step instead of a grep.
 The 5 November proposal (cut "dates ahead" and the owed list from the issue, cap
 the footer, raise the source floor to 15) has had no reply. **Nothing removed.**
 
+## Operational notes, 14 November 2026
+
+**Issue No. 71. Six leads, eleven shorts, six divergence boxes, nine source
+domains.** Validator blocked twice; both real.
+
+### The three-day negative check is discharged, and a thread is retired
+
+- **Baltic Exchange case read first thing**, as this file said yesterday it
+  must be. Leads third. **Key finding for this brief's own reasoning: the
+  contested period is March–July, not the autumn window the freight
+  explanation covers.** Not refuted — but the explanation rests on TD3C, a
+  benchmark produced by a **thirty-person company** (pre-tax profit £379,000,
+  owned by Singapore Exchange) from broker assessments, **with guidance that
+  let derivatives priced off the index feed back into it**. Working response:
+  stop depending on one benchmark; use freight evidence that does not pass
+  through TD3C (CMA CGM results, IEA export figures).
+- **The 20y–10y hump thread is retired**, with a chart of the whole year.
+  **2026 range +34 to +62; the three weeks this brief wrote about sit inside an
+  eight-basis-point band near the bottom.** Called a record on 26 October,
+  corrected 3 November, then described as unexplained for three weeks without
+  establishing there was anything to explain. **Rule: plot the year before
+  writing about the week.**
+
+### A prediction that held, and a date this brief got wrong
+
+- **7 November's measles lead named the exact test**: twelve months of
+  unbroken same-strain transmission, settled by genotype linkage, confirmed by
+  a CDC or PAHO statement. **PAHO's expert commission has now made that
+  determination on that test.** Utah's linkage preprint had been public since
+  August. **Naming the right test is worth more than being early.**
+- **But the brief twice wrote "9 November" for its own 7 November lead**, and
+  the anchor check caught it. **Third day running that a self-reference was
+  misdated. The self-diagnosing anchor message is now doing this work every
+  morning; when it fires, fix the prose date too, not just the href.**
+
+### Sources
+
+- **Three 403s today: the Washington Institute, the IEA and the CDC.** The WI
+  attack count was added to the pull yesterday and refused on its first
+  attempt. **cdc.gov has refused for a week — which is why today's lead on an
+  American public health determination contains no American public health
+  data.**
+- The domain floor blocked at seven and the honest fix was to *attempt* the two
+  refused sources rather than relabel; both were tried, both 403'd, both are
+  now cited as refused. **Attempt before claiming "could not reach".**
+- **The chart today sits inside a `<details>`**, so the screenshot step timed
+  out on an invisible element. Fixed by opening all details before
+  screenshotting. Keep that in the render script.
+
+### Standing question to the reader, unanswered
+
+The 5 November proposal (cut "dates ahead" and the owed list from the issue, cap
+the footer, raise the source floor to 15) has had no reply. **Nothing removed.**
+
 ## Watchlist
 
 Empty at first run. Populates from reader feedback and from threads that recur on
