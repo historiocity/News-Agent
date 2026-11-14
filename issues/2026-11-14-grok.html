@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Saturday, 14 November 2026 (Grok edition)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  /* short-item tier */
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list summary .chip { vertical-align:.05rem; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 71-grok &middot; Saturday, 14 November 2026 &middot; Grok edition</div>
+  <h1>A telecom failure grounded the country&rsquo;s flights, the Fed put a number on AI debt, and Trump will sit down with Xi and Putin</h1>
+  <p class="sub">9 stories at length, 10 in brief. Every story carries a confidence marker; 5 carry a divergence box.</p>
+  <p class="prov"><b>80 sources checked, 57 of them outside the watchlist.</b> Gathered outside-in: wires, foreign and trade outlets and primary documents first, watchlist sources after. Seven lead stories are new subjects found today; two continue threads from recent editions (Nvidia, Iran and oil), under the cap of four. Yesterday&rsquo;s rates and Microsoft leads were demoted to Also today; yesterday&rsquo;s Mexico-tariff and AI-lawsuit leads were dropped for lack of a new fact. <b>Biggest story not on my list:</b> the nationwide FAA ground stop &mdash; no beat or thread pointed at it, and it leads.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#faa-ground-stop">A telecom failure grounded every departing flight in the US for more than four hours, and Duffy now wants $50 billion</a></li>
+    <li><a href="#fed-fsr-ai-debt">The Fed&rsquo;s stability report says AI data-centre borrowing has hit $680 billion this year and now makes up almost a third of investment-grade issuance</a></li>
+    <li><a href="#nvidia-lutnick">Bessent publicly blamed Commerce for the Nvidia chip leak; Lutnick will testify on 10 December as Trump advisers discuss whether he should go</a></li>
+    <li><a href="#trilateral">Trump will meet Xi and Putin together next week in China, the first such three-way meeting, with nuclear arms on the table</a></li>
+    <li><a href="#oil-hormuz">The IEA now sees an oil surplus this quarter even as Hormuz traffic stays 65 per cent below normal; pump prices are under $4 and the Jones Act waiver runs on</a></li>
+    <li><a href="#medicaid-work">CMS will let states delay enforcing Medicaid work requirements until July, six months past the 1 January start</a></li>
+    <li><a href="#measles">The US has lost the measles-elimination status it held for 26 years, as the year&rsquo;s death toll reached 10</a></li>
+    <li><a href="#scotus-asylum">The Supreme Court will decide whether Trump can bar nearly all asylum claims at the southern border</a></li>
+    <li><a href="#florida-fpl">Florida: the state&rsquo;s consumer advocate told the Supreme Court that regulators rubber-stamped FPL&rsquo;s $7 billion rate hike in a deal shaped by data-centre interests</a></li>
+    <li><a href="#also-today">Also today (10)</a> &mdash; ranked below the line, each one opens.</li>
+  </ol>
+</nav>
+
+<article id="faa-ground-stop">
+  <h2>A telecom failure grounded every departing flight in the US for more than four hours, and Duffy now wants $50 billion</h2>
+  <div class="meta">
+    <span class="chip">US policy &amp; infrastructure</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The FAA halted departures nationwide on Friday afternoon after what Transportation Secretary Sean Duffy called &ldquo;instability&rdquo; in radar and communications at the air route traffic control centres, beginning about 3:36 p.m. Eastern. The stop was lifted after a little more than four hours, but cancellations ran into Saturday: ABC&rsquo;s running count is more than 12,500 flights cancelled across Friday and Saturday, and Data Center Dynamics put delays and cancellations above 11,000. It is the longest nationwide ground stop in 25 years, per Al Jazeera.</p>
+<p>At the White House on Friday night Duffy blamed &ldquo;decades-old analog equipment&rdquo; whose routers were overloaded with data, said the FAA&rsquo;s $12.5 billion modernisation is not enough, and asked Congress for $50 billion for a complete replacement. Homeland Security Secretary Markwayne Mullin said nothing so far points to a cyberattack, though officials are not ruling it out.</p>
+<p>Locally: Tampa International reported 156 of 536 flights delayed and 96 cancelled before the stop lifted, per FOX 13. Duffy said he expects the system to be back to normal before Thanksgiving travel. Why it matters: the $50 billion ask lands on a lame-duck Congress already juggling appropriations, and the cause decides whether the fix is money or contractor accountability.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; old hardware, or a botched upgrade?</span>
+    <p><b>What is disputed.</b> A facts dispute over cause. Duffy says old analog routers overloaded on their own. Mullin, at the same briefing, said the FAA&rsquo;s new equipment and patches were overwhelming the older system. CBS, citing multiple sources, reports an update to the private communications network that links air traffic control &mdash; operated by L3Harris &mdash; caused it to reboot and crash.</p>
+<p><b>Why they differ.</b> Interest and access. Duffy is making the case for a large appropriation, which an old-equipment story supports; Mullin was speaking off the cuff; CBS&rsquo;s sources are inside the system and describe a triggering event, which is compatible with an old system being fragile. Counts differ too (ABC 12,500 cancellations over two days, DCD 11,000 delayed or cancelled, Business Insider nearly 9,500 halted) because each measures a different thing over a different window.</p>
+<p><b>What it means for you.</b> Both can be true: an update was the trigger, old hardware the vulnerability. Treat &ldquo;old tech&rdquo; as the administration&rsquo;s framing until the FAA or L3Harris publishes a timeline. What would settle it: a preliminary incident report naming whether a change was pushed to the network before 3:36 p.m.</p>
+  </div>
+  <p class="sources"><b>Independent accounts compared: 4.</b> <a href="https://abcnews.com/US/nationwide-ground-stop-ordered-airports-faa/story?id=138121848">ABC News</a> &middot;
+    <a href="https://www.cbsnews.com/news/faa-issues-nationwide-ground-stop/">CBS News (L3Harris update)</a> &middot;
+    <a href="https://www.datacenterdynamics.com/en/news/us-flights-resume-after-telecommunications-outage-causes-nationwide-ground-stop/">Data Center Dynamics (Mullin quote)</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/14/faa-ground-stop-lifted-why-were-us-flights-grounded-and-whats-next">Al Jazeera</a> &middot;
+    <a href="https://www.foxbusiness.com/politics/duffy-sounds-alarm-over-aging-faa-system-after-nationwide-air-travel-shutdown">Fox Business on the $50bn ask</a> &middot;
+    <a href="https://www.businessinsider.com/dhs-demands-50-billion-to-prevent-another-huge-faa-fiasco-2026-11">Business Insider</a> &middot;
+    <a href="https://www.fox13news.com/news/faa-ground-stop-how-is-tampa-international-airport-impacted">FOX 13 on Tampa International</a></p>
+  <div class="fb">
+    <p>Was this worth leading with?</p>
+    <label><input type="radio" name="fb-faa-ground-stop" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-faa-ground-stop" value="lower"> Should have been below the line</label>
+    <label><input type="radio" name="fb-faa-ground-stop" value="drop"> Not for me</label>
+  </div>
+</article>
+
+<article id="fed-fsr-ai-debt">
+  <h2>The Fed&rsquo;s stability report says AI data-centre borrowing has hit $680 billion this year and now makes up almost a third of investment-grade issuance</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The Federal Reserve&rsquo;s semiannual Financial Stability Report, released Friday, devotes a box to &ldquo;Leverage in the Data Center Buildout.&rdquo; Its numbers: debt issued for advanced computing reached more than $680 billion by October 2026, about five times the $130 billion of all of 2023; such borrowing rose from under 6 per cent of non-financial investment-grade corporate issuance in 2023 to about 31 per cent this year; outstanding public debt tied to it exceeds $1.1 trillion. Off the debt line, not-yet-commenced leases alone exceed $1 trillion undiscounted.</p>
+<p>The report says hyperscaler capital spending is tracking the 1990s telecom build-out and may soon surpass its pace, and that the &ldquo;complex interlinkages&rdquo; among builders, public credit, private lenders and special-purpose vehicles need close monitoring. Equity valuations stay elevated, which it attributes partly to enthusiasm for &ldquo;super intelligence&rdquo;; hedge fund leverage is the highest since 2013. In the Fed&rsquo;s survey of market contacts, AI was the most frequently cited risk, ahead of a risk-asset correction, higher long-term rates, cyberattacks and fiscal debt sustainability.</p>
+<p>Why it matters to you: this is the Fed putting a number on the AI financing chain the same week Nvidia lost about $585 billion in market value. Note the timing &mdash; the report reflects information available as of 28 October, before the Nvidia shock.</p>
+  <p class="sources"><b>Independent accounts compared: 2.</b> <a href="https://www.federalreserve.gov/publications/files/financial-stability-report-20261113.pdf">Federal Reserve, Financial Stability Report (PDF)</a> &middot;
+    <a href="https://www.americanbanker.com/news/fed-warns-of-financial-risks-from-ai-driven-market-optimism">American Banker</a> &middot;
+    <a href="https://finance.yahoo.com/economy/policy/article/fed-says-its-monitoring-the-data-center-build-out-for-risks-to-the-financial-system-224116947.html">Yahoo Finance</a></p>
+  <div class="fb">
+    <p>Was this worth leading with?</p>
+    <label><input type="radio" name="fb-fed-fsr-ai-debt" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-fed-fsr-ai-debt" value="lower"> Should have been below the line</label>
+    <label><input type="radio" name="fb-fed-fsr-ai-debt" value="drop"> Not for me</label>
+  </div>
+</article>
+
+<article id="nvidia-lutnick">
+  <h2>Bessent publicly blamed Commerce for the Nvidia chip leak; Lutnick will testify on 10 December as Trump advisers discuss whether he should go</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Treasury Secretary Scott Bessent said on CNBC on Friday that Treasury, the Pentagon, USTR and State had favoured putting Singapore-based Megaspeed on the export Entity List &ldquo;for months, but Commerce has the pen.&rdquo; Megaspeed, previously led by Alice Huang, is suspected of routing advanced Nvidia chips to China. Commerce Secretary Howard Lutnick has agreed to testify before Senate Banking on 10 December, a US official told CBS; Republican senators including Jim Banks accuse Commerce of using loopholes to let sales proceed.</p>
+<p>Nvidia&rsquo;s independent directors, working with a former federal prosecutor, are continuing their investigation of Jensen Huang despite his resignation, NBC reports; the company has lost about $585 billion in market value this week. Commerce had not responded to CBS by publication.</p>
+<p><b>Accountability.</b> Yesterday&rsquo;s lead flagged Lutnick&rsquo;s position as the next question. It is now open inside the administration, not just in the press.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is Lutnick&rsquo;s job actually in danger?</span>
+    <p><b>What is disputed.</b> A significance dispute. The White House said Thursday that Trump has &ldquo;complete confidence&rdquo; in Lutnick. CNN, citing people familiar, reports advisers have begun discussing whether he should be dismissed and that Trump has fielded calls raising alarms. NBC frames the Bessent comments as a long-running Cabinet feud breaking into view rather than a firing signal.</p>
+<p><b>Why they differ.</b> Timing and vantage: the White House statement predates Bessent&rsquo;s remarks; CNN&rsquo;s sources are advisers with their own positions in the fight; Trump and Lutnick are longtime friends, which both outlets note.</p>
+<p><b>What it means for you.</b> Treat ouster talk as real but unresolved. What would settle it: whether Commerce adds Megaspeed to the Entity List before 10 December &mdash; a listing would be Lutnick conceding the point; a resignation or a renewed endorsement from Trump himself would end it.</p>
+  </div>
+  <p class="sources"><b>Independent accounts compared: 4.</b> <a href="https://www.cbsnews.com/news/howard-lutnick-scott-bessent-nvidia-megaspeed-testimony/">CBS News</a> &middot;
+    <a href="https://www.cnn.com/2026/11/13/politics/bessent-lutnick-nvidia-megaspeed-blame">CNN</a> &middot;
+    <a href="https://www.nbcnews.com/politics/white-house/nvidia-trump-administration-feud-bessent-lutnick-china-chips-rcna609048">NBC News on the feud</a> &middot;
+    <a href="https://www.nbcnews.com/tech/tech-news/nvidia-investigation-jensen-huang-continue-departure-sources-say-rcna609136">NBC News on the board probe</a> &middot;
+    <a href="https://www.scmp.com/news/china/diplomacy/article/3374409/bessent-blames-us-commerce-department-not-restricting-nvidia-chip-exports-china">South China Morning Post</a></p>
+  <div class="fb">
+    <p>Was this worth leading with?</p>
+    <label><input type="radio" name="fb-nvidia-lutnick" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-nvidia-lutnick" value="lower"> Should have been below the line</label>
+    <label><input type="radio" name="fb-nvidia-lutnick" value="drop"> Not for me</label>
+  </div>
+</article>
+
+<article id="trilateral">
+  <h2>Trump will meet Xi and Putin together next week in China, the first such three-way meeting, with nuclear arms on the table</h2>
+  <div class="meta">
+    <span class="chip">US channel abroad</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Senior US officials said Friday evening that Trump will hold a first-ever trilateral meeting with Xi Jinping and Vladimir Putin on the sidelines of the APEC summit in Shenzhen; DW reports it is set for Thursday. White House spokeswoman Olivia Wales said he will discuss reducing nuclear weapons, whose proliferation he considers &ldquo;very dangerous.&rdquo; Iran will also be raised; Ukraine will not, officials told ABC. Trump meets Xi separately first and will not hold a one-on-one with Putin. Elon Musk travels with the delegation but will not attend the trilateral.</p>
+<p>Officials set expectations low: &ldquo;We do not expect to get to any kind of agreement,&rdquo; one said, calling it an entry point. Context: the US&ndash;Russia New START treaty expired in February, leaving the two largest arsenals without major limits, and China said in October it was not realistic to ask it to join trilateral disarmament talks.</p>
+<p>Why it matters to you: any arms framework is the largest long-run defence-budget variable, and the same summit carries the trade and chip-export agenda that the Nvidia affair has just complicated.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; has China agreed to a three-way meeting?</span>
+    <p><b>What is disputed.</b> A facts dispute over whether the meeting is confirmed by all three. The White House and US officials describe it as scheduled. DW reports Chinese state media have mentioned only &ldquo;bilateral&rdquo; talks for Xi, and Moscow and Beijing had not commented.</p>
+<p><b>Why they differ.</b> Access and interest: Washington announced first and has reason to lock it in publicly; Beijing has a stated position against trilateral nuclear talks and may not want to be seen conceding the format before the summit.</p>
+<p><b>What it means for you.</b> Treat the meeting as likely but the nuclear agenda as one-sided until Beijing confirms. What would settle it: a Chinese foreign ministry readout naming a three-way session.</p>
+  </div>
+  <p class="sources"><b>Independent accounts compared: 4.</b> <a href="https://abcnews.com/Politics/trump-meet-putin-xi-china-week-us-officials/story?id=138128914">ABC News</a> &middot;
+    <a href="https://www.cnn.com/2026/11/13/politics/trump-putin-xi-meeting">CNN</a> &middot;
+    <a href="https://www.dw.com/en/trump-to-meet-xi-putin-for-three-way-huddle-on-nuclear-arms-talks/a-79946408">DW (with Reuters)</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china">Al Jazeera</a> &middot;
+    <a href="https://www.handelsblatt.com/politik/international/ukraine-weisses-haus-kuendigt-dreiertreffen-trumps-mit-xi-und-putin-an/100269831.html">Handelsblatt</a></p>
+  <div class="fb">
+    <p>Was this worth leading with?</p>
+    <label><input type="radio" name="fb-trilateral" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-trilateral" value="lower"> Should have been below the line</label>
+    <label><input type="radio" name="fb-trilateral" value="drop"> Not for me</label>
+  </div>
+</article>
+
+<article id="oil-hormuz">
+  <h2>The IEA now sees an oil surplus this quarter even as Hormuz traffic stays 65 per cent below normal; pump prices are under $4 and the Jones Act waiver runs on</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; oil</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>One chain, four links. <b>Supply:</b> the International Energy Agency said Friday global supply will exceed demand by 1.7 million barrels a day in the fourth quarter, reversing its earlier deficit forecast, as Gulf exports (ex-Oman) recovered to 18.4 million barrels a day in October, 26 per cent below pre-war levels; it detailed 71 million barrels of remaining emergency-stock releases through February, including 15 million of diesel. Brent slipped to about $95.7 after the report.</p>
+<p><b>Chokepoint:</b> UKMTO counts Hormuz traffic still about 65 per cent below pre-war levels. The UN told the Security Council on Friday that at least 25 seafarers have been killed in and around the strait since February, with October the worst month for incidents; Al Jazeera reports a fifth tanker hit in 24 hours. <b>Pump:</b> AAA&rsquo;s national average fell below $4 for the first time since July, to $3.90, down nearly 20 cents in a week; Florida is not among the ten most expensive states. <b>Policy:</b> a White House official told Reuters the Jones Act waiver for foreign-flagged fuel tankers has been extended 90 days, keeping voyage-by-voyage approval; only 48 such voyages have been approved since August.</p>
+<p>Why it matters to you: falling pump prices are the supply recovery showing up, not the strait reopening &mdash; a single bad week in Hormuz still reverses it.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is the oil shock over?</span>
+    <p><b>What is disputed.</b> A significance dispute. The IEA reads the data as &ldquo;tentative signs of rebalancing&rdquo; and a surplus. UKMTO and the UN read the same weeks as the most dangerous yet for shipping, with traffic still a third of normal.</p>
+<p><b>Why they differ.</b> Vantage: the IEA measures barrels, which are moving through &ldquo;dark crossings&rdquo; with transponders off and alternative routes; UKMTO measures ship transits and cautions it cannot verify US-reported figures; the UN counts casualties. Each is accurate for what it measures.</p>
+<p><b>What it means for you.</b> The supply side has adapted, so prices fall, but the route is no safer. What would settle it: UKMTO transits rising toward pre-war levels without a rise in incidents. A smaller facts point: FreightWaves on Friday had the waiver extension as expected, length unknown; OilPrice, citing a White House official via Reuters, has 90 days. The later, on-record account is the one to rely on.</p>
+  </div>
+  <p class="sources"><b>Independent accounts compared: 5.</b> <a href="https://gcaptain.com/world-oil-market-is-returning-to-surplus-as-gulf-exports-recover/">gCaptain/Reuters on the IEA report</a> &middot;
+    <a href="https://gcaptain.com/gulf-oil-exports-recover-as-hormuz-shipping-struggles/">gCaptain on UKMTO</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/14/un-says-25-seafarers-killed-in-around-hormuz-since-february">Al Jazeera on the UN briefing</a> &middot;
+    <a href="https://gasprices.aaa.com/for-the-first-time-since-july-national-average-drops-below-4/">AAA</a> &middot;
+    <a href="https://oilprice.com/Latest-Energy-News/World-News/Trump-Extends-Jones-Act-Waiver-For-Another-90-Days.html">OilPrice on the waiver</a> &middot;
+    <a href="https://www.freightwaves.com/news/white-house-to-extend-jones-act-waiver-as-deadline-nears-sources-say">FreightWaves</a></p>
+  <div class="fb">
+    <p>Was this worth leading with?</p>
+    <label><input type="radio" name="fb-oil-hormuz" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-oil-hormuz" value="lower"> Should have been below the line</label>
+    <label><input type="radio" name="fb-oil-hormuz" value="drop"> Not for me</label>
+  </div>
+</article>
+
+<article id="medicaid-work">
+  <h2>CMS will let states delay enforcing Medicaid work requirements until July, six months past the 1 January start</h2>
+  <div class="meta">
+    <span class="chip">US policy substance</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The Centers for Medicare &amp; Medicaid Services announced Friday a six-month &ldquo;hold harmless&rdquo; period for the work requirement in last year&rsquo;s One Big Beautiful Bill Act. The requirement still formally starts 1 January &mdash; states that opt in will begin checking whether working-age expansion enrollees without dependent children work, study or volunteer 80 hours a month &mdash; but no one in those states loses coverage for non-compliance before 1 July. The delay is optional.</p>
+<p>Some states are already enforcing: Nebraska, which started 1 May, had removed or denied more than 1,000 people through August, per state figures cited by NBC. Top congressional Democrats had asked for more time, per States Newsroom.</p>
+<p>Why it matters to you: this is the largest coverage change in the 2025 law, and the delay moves its first terminations past the start of the new Congress, where Democrats now hold the Senate.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; policy choice or legal retreat?</span>
+    <p><b>What is disputed.</b> A significance dispute over cause. CMS presents the delay as a response to states&rsquo; progress and requests. NBC calls it a striking turn for an administration that had defended the timeline for months. STAT reports that a federal judge recently rejected the government&rsquo;s medical-frailty definition and ruled states lacked adequate time and resources.</p>
+<p><b>Why they differ.</b> Interest and access: CMS is describing its own decision; STAT covers the litigation beat; NBC is weighing the political shift after the midterms.</p>
+<p><b>What it means for you.</b> The court ruling is a documented pressure that CMS&rsquo;s statement does not mention, so treat the delay as at least partly forced. What would settle it: whether CMS appeals the ruling or rewrites the frailty definition.</p>
+  </div>
+  <p class="sources"><b>Independent accounts compared: 3.</b> <a href="https://www.nbcnews.com/politics/politics-news/trump-administration-delays-medicaid-work-requirements-six-months-rcna609256">NBC News</a> &middot;
+    <a href="https://www.statnews.com/2026/11/13/medicaid-work-requirements-implementation-delayed-six-months/">STAT</a> &middot;
+    <a href="https://floridaphoenix.com/2026/11/13/repub/states-need-more-time-to-prep-for-medicaid-work-requirements-top-dems-in-congress-say/">States Newsroom via Florida Phoenix</a></p>
+  <div class="fb">
+    <p>Was this worth leading with?</p>
+    <label><input type="radio" name="fb-medicaid-work" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-medicaid-work" value="lower"> Should have been below the line</label>
+    <label><input type="radio" name="fb-medicaid-work" value="drop"> Not for me</label>
+  </div>
+</article>
+
+<article id="measles">
+  <h2>The US has lost the measles-elimination status it held for 26 years, as the year&rsquo;s death toll reached 10</h2>
+  <div class="meta">
+    <span class="chip">Health</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>An independent commission reporting to the Pan American Health Organization determined that the US no longer qualifies as having eliminated measles, a source close to the process told CNN on Friday; the Wall Street Journal reported it first. The standard is a year of uninterrupted transmission of the same strain. Pennsylvania and Wisconsin each reported a measles-associated death on Friday, including a baby, bringing the 2026 total to 10, with cases at their highest in more than 30 years; ABC puts the count above 5,400.</p>
+<p>Nearly all cases are in people unvaccinated or of unknown vaccination status, CNN reports. Why it matters to you: the status itself carries no penalty, but it is the formal record that MMR coverage has fallen below the level that stops spread &mdash; relevant to schools and travel this winter.</p>
+  <p class="sources"><b>Independent accounts compared: 3.</b> <a href="https://www.cnn.com/2026/11/13/health/us-measles-elimination-status">CNN</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/14/measles-associated-deaths-reach-10-in-us-after-two-more-deaths-reported">Al Jazeera</a> &middot;
+    <a href="https://abcnews.com/Health/measles-cases-nationwide-top-5400-outbreaks-spread-us/story?id=138108176">ABC News case count</a></p>
+  <div class="fb">
+    <p>Was this worth leading with?</p>
+    <label><input type="radio" name="fb-measles" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-measles" value="lower"> Should have been below the line</label>
+    <label><input type="radio" name="fb-measles" value="drop"> Not for me</label>
+  </div>
+</article>
+
+<article id="scotus-asylum">
+  <h2>The Supreme Court will decide whether Trump can bar nearly all asylum claims at the southern border</h2>
+  <div class="meta">
+    <span class="chip">US policy substance</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The justices agreed Friday to hear the challenge to Trump&rsquo;s first-day proclamation suspending entry for migrants &ldquo;engaged in the invasion&rdquo; at the southern border and barring them from claiming asylum until he declares the invasion over. The administration&rsquo;s lawyers call it his &ldquo;single most effective policy&rdquo;; the ACLU argues asylum is a right written into federal law that a proclamation cannot abolish.</p>
+<p>It joins other Trump immigration cases already on the term&rsquo;s docket, including third-country removals and mandatory detention, CNN notes. Why it matters to you: the ruling, likely by June, decides whether the current low border numbers rest on a durable legal footing or on a policy a future president could not repeat.</p>
+  <p class="sources"><b>Independent accounts compared: 3.</b> <a href="https://www.cnn.com/2026/11/13/politics/supreme-court-trump-asylum-policy">CNN</a> &middot;
+    <a href="https://www.latimes.com/politics/story/2026-11-13/supreme-court-agrees-to-rule-on-trumps-asylum-ban-at-southern-border">Los Angeles Times</a> &middot;
+    <a href="https://www.cbsnews.com/news/supreme-court-trump-asylum-u-s-mexico-border/">CBS News</a></p>
+  <div class="fb">
+    <p>Was this worth leading with?</p>
+    <label><input type="radio" name="fb-scotus-asylum" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-scotus-asylum" value="lower"> Should have been below the line</label>
+    <label><input type="radio" name="fb-scotus-asylum" value="drop"> Not for me</label>
+  </div>
+</article>
+
+<article id="florida-fpl">
+  <h2>Florida: the state&rsquo;s consumer advocate told the Supreme Court that regulators rubber-stamped FPL&rsquo;s $7 billion rate hike in a deal shaped by data-centre interests</h2>
+  <div class="meta">
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>Public Counsel Walt Trierweiler, appointed by the Legislature to represent utility customers, filed a brief on Thursday asking the Florida Supreme Court to reverse the Public Service Commission&rsquo;s approval of Florida Power &amp; Light&rsquo;s $7 billion base-rate increase and send the case back for line-by-line review. FPL&rsquo;s 12 million customers have paid the new rates since January.</p>
+<p>The increase came from a settlement between FPL and mostly large-business intervenors &mdash; industrial firms, Walmart, and an association of unnamed companies interested in building data centres &mdash; that the public counsel refused to sign. He argues the commission has &ldquo;become addicted&rdquo; to such settlements and that utilities have moved closer to regulating themselves.</p>
+<p>Why it matters to you: FPL serves more than half of Florida, and the court could decide how much say the customer advocate has in future rate cases &mdash; the same who-pays-for-data-centres question Congress is debating this week.</p>
+  <p class="sources"><b>Independent accounts compared: 1.</b> <a href="https://www.tampabay.com/news/environment/2026/11/13/fpl-florida-electric-bill-rate-increase-data-center/">Tampa Bay Times</a></p>
+  <div class="fb">
+    <p>Was this worth leading with?</p>
+    <label><input type="radio" name="fb-florida-fpl" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-florida-fpl" value="lower"> Should have been below the line</label>
+    <label><input type="radio" name="fb-florida-fpl" value="drop"> Not for me</label>
+  </div>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">10 things I saw and ranked below the line. Each one opens.</p>
+
+<div class="also-list">
+
+<details class="short" id="tsy-1113">
+  <summary><span class="chip">Macro &amp; markets</span> The 10-year Treasury closed Friday at 5.15 per cent, up from 5.10, per Treasury&rsquo;s par curve; the 2-year was 4.88 and the 30-year 5.47.</summary>
+  <div class="exp">
+    <p>Up another 5 basis points on the week&rsquo;s last session. Fed Governor Jefferson said Friday inflation will guide decisions; no rate decision until December.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value=2026">Treasury par yield curve</a></p>
+  </div>
+</details>
+<details class="short" id="debt-1112">
+  <summary><span class="chip">US debt &amp; fiscal</span> Total public debt outstanding was $40.609 trillion on 12 November, up $24.4 billion from 10 November, per Treasury&rsquo;s Debt to the Penny.</summary>
+  <div class="exp">
+    <p>Updates yesterday&rsquo;s $40.584 trillion figure.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/">Debt to the Penny</a></p>
+  </div>
+</details>
+<details class="short" id="baaja">
+  <summary><span class="chip">AI power &amp; grid</span> The Senate&rsquo;s permitting bill, BAAJA &mdash; which would make data centres pay both existing and new grid costs &mdash; faces its next cloture vote Monday evening, with final passage possible Thursday.</summary>
+  <div class="exp">
+    <p>Monday&rsquo;s 73&ndash;25 vote on 9 November was only cloture on the motion to proceed, followed by a 62&ndash;21 vote to proceed on the 10th, per the Senate Democrats&rsquo; floor record. Hill Heat lists the remaining sequence: cloture on the text around 6 p.m. Monday, then votes early Wednesday and final passage Thursday; 17 state attorneys general oppose it. One trade outlet, RealtyToday, headlined that the Senate had &ldquo;passed&rdquo; the bill; it has not. The House must still act before 3 January. Grid Strategies estimates about $55 billion in transmission charges to data centres over ten years.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://hillheat.news/p/17-attorneys-general-v-13-baaja-backers">Hill Heat</a> &middot; <a href="https://www.democrats.senate.gov/floor/wrap-up/">Senate Democrats floor wrap-up</a> &middot; <a href="https://www.techtimes.com/articles/330362/20261110/senate-votes-73-25-advance-bill-making-data-centers-pay-old-new-grid-costs.htm">Tech Times</a> &middot; <a href="https://oilprice.com/Energy/Energy-General/Will-the-Senates-BAAJA-Bill-Let-AI-Giants-Outmuscle-Utilities.html">OilPrice analysis</a></p>
+  </div>
+</details>
+<details class="short" id="msft">
+  <summary><span class="chip">AI &amp; tech industry</span> Microsoft says Outlook and Teams are restored, but The Register counted the Microsoft 365 outage past 27 hours with fixes repeatedly failing; a cyberattack has not been ruled out.</summary>
+  <div class="exp">
+    <p>Continuing from yesterday&rsquo;s lead. DW reports Microsoft saying all services work again; The Register&rsquo;s timeline shows repeated failed fixes. The difference is timing &mdash; check status before relying on it Monday.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.theregister.com/saas/2026/11/13/microsofts-massive-m365-outage-stretches-past-27-hours-as-its-fixes-keep-failing/5309609">The Register</a> &middot; <a href="https://www.dw.com/en/">DW</a></p>
+  </div>
+</details>
+<details class="short" id="health-aid">
+  <summary><span class="chip">US policy substance</span> The State Department plans to withhold or redirect nearly all of the roughly $605 million Congress set for international family planning, and move nearly $1 billion into a health fund benefiting US firms, per documents obtained by CNN.</summary>
+  <div class="exp">
+    <p>CNN cites an internal budget report and a memo to lawmakers; the administration had not publicly confirmed the figures. Congress&rsquo;s appropriators are the check.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.cnn.com/2026/11/14/world/trump-administration-foreign-aid-global-health-diverted-intl">CNN</a></p>
+  </div>
+</details>
+<details class="short" id="ukraine-nato">
+  <summary><span class="chip">US channel abroad</span> Zelenskyy says the US asked, for the first time, whether Kyiv would cede Donbas territory in exchange for a NATO path; Washington has not confirmed.</summary>
+  <div class="exp">
+    <p>Reported by Al Jazeera and Handelsblatt from Zelenskyy&rsquo;s own account; he says any security deal could go to a referendum (DW). Officials say Ukraine will not be on next week&rsquo;s trilateral agenda.</p>
+    <p class="sources"><span class="chip">Unconfirmed</span> <a href="https://www.aljazeera.com/news/2026/11/14/three-killed-in-russia-as-ukraine-claims-us-floated-nato-membership-option">Al Jazeera</a> &middot; <a href="https://www.handelsblatt.com/politik/international/ukraine-usa-schlagen-laut-selnskyj-donbass-rueckzug-gegen-nato-beitritt-vor/27982126.html">Handelsblatt</a></p>
+  </div>
+</details>
+<details class="short" id="student-loans">
+  <summary><span class="chip">US financials</span> More than 9 million federal student-loan borrowers are in default, owing $234 billion, and wage garnishment and tax-refund seizures are expected to start next year.</summary>
+  <div class="exp">
+    <p>Per States Newsroom, citing advisers who expect collections to resume in 2027 after repeated pauses.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://floridaphoenix.com/2026/11/13/repub/collections-are-coming-for-millions-of-student-loans-in-default/">States Newsroom via Florida Phoenix</a></p>
+  </div>
+</details>
+<details class="short" id="nola">
+  <summary><span class="chip">US policy &amp; infrastructure</span> An asphalt tanker struck and capsized a docked American Cruise Lines riverboat in New Orleans; all aboard were accounted for and 32 were taken to hospital, none critically.</summary>
+  <div class="exp">
+    <p>The Marshall Islands-flagged Atlantic Asphalt hit the American Heritage below the Crescent City Connection at about 12:30 p.m. local time Friday. Cause not yet established.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://gcaptain.com/miracle-on-the-mississippi-all-accounted-for-after-tanker-capsizes-cruise-ship-in-new-orleans/">gCaptain/Reuters</a> &middot; <a href="https://www.cbsnews.com/news/tanker-cruise-collision-mississippi-river-new-orleans/">CBS News</a></p>
+  </div>
+</details>
+<details class="short" id="anthropic-ipo">
+  <summary><span class="chip">AI &amp; tech industry</span> Anthropic&rsquo;s IPO next week seeks up to $64.4 billion plus $26 billion privately, which would be the largest listing ever; Bloomberg reports orders at about six times the shares offered.</summary>
+  <div class="exp">
+    <p>Via Handelsblatt, citing Bloomberg. Lands the week the Fed flagged AI as the top cited financial-stability risk.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.handelsblatt.com/finanzen/maerkte/ki-anthropic-boersengang-offenbar-schon-sechsfach-ueberzeichnet/100269621.html">Handelsblatt (Bloomberg)</a></p>
+  </div>
+</details>
+<details class="short" id="starship">
+  <summary><span class="chip">AI &amp; tech industry</span> SpaceX&rsquo;s 15th Starship flight reached orbit during Friday&rsquo;s ground stop, but the booster recovery was aborted and the booster was lost in the Gulf.</summary>
+  <div class="exp">
+    <p>NBC and DW report the aborted booster recovery; the New York Post reports the booster exploded in the Gulf of Mexico. NBC explains why the launch could proceed under the ground stop.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://nypost.com/2026/11/14/us-news/spacexs-starship-soars-into-orbit-after-booster-explodes-in-gulf-of-mexico/">New York Post</a> &middot; <a href="https://www.dw.com/en/">DW</a></p>
+  </div>
+</details>
+
+</div>
+
+<div class="fb" style="border-top:1px solid var(--rule); padding-top:1rem; margin-top:1.5rem;">
+  <p><b>One question about this whole section:</b> were the right things ranked below the line?</p>
+  <label><input type="radio" name="fb-also" value="right"> About right</label>
+  <label><input type="radio" name="fb-also" value="promote"> Some of these should have led</label>
+  <label><input type="radio" name="fb-also" value="drop"> Some should have been dropped entirely</label>
+  <label><input type="radio" name="fb-also" value="fewer"> Fewer short items, more depth up top</label>
+</div>
+
+<button class="submit" id="send">Send my feedback &rarr;</button>
+<p class="sources" style="text-align:center">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+
+<footer>
+  <h4>Sources checked this run &mdash; 80, of which 57 outside the watchlist</h4>
+  <p><b>Pointed at by a thread or the local section (23):</b> AAA &middot; EIA weekly petroleum &middot; Trading Economics Brent (vendor) &middot; gCaptain &middot; OilPrice &middot; OFAC recent actions &middot; Federal Reserve press and speeches &middot; Treasury yield curve and press &middot; Debt to the Penny API &middot; Federal Register daily issue and public inspection &middot; White House presidential actions and briefings &middot; FDIC &middot; CFTC &middot; DOE newsroom &middot; SCOTUSblog &middot; The Debrief (UAP) &middot; Techmeme &middot; DatacenterDynamics &middot; Florida Phoenix &middot; Tampa Bay Times &middot; WUSF &middot; FOX 13 Tampa &middot; Kalshi Fed-path pricing.</p>
+  <p><b>Not pointed at by any thread (57):</b> abcnews.com &middot; abcnews.go.com &middot; arstechnica.com &middot; asia.nikkei.com &middot; breakingdefense.com &middot; en.wikipedia.org &middot; feeds.bbci.co.uk &middot; feeds.content.dowjones.io &middot; finance.yahoo.com &middot; lite.cnn.com &middot; nypost.com &middot; punchbowl.news &middot; raw.githubusercontent.com &middot; rollcall.com &middot; techcrunch.com &middot; text.npr.org &middot; warontherocks.com &middot; aljazeera.com &middot; americanbanker.com &middot; businessinsider.com &middot; cbsnews.com &middot; cnbc.com &middot; cnn.com &middot; coindesk.com &middot; defenseone.com &middot; dw.com &middot; foxbusiness.com &middot; foxnews.com &middot; freightwaves.com &middot; ft.com &middot; haaretz.com &middot; handelsblatt.com &middot; insurancejournal.com &middot; latimes.com &middot; lefigaro.fr &middot; lemonde.fr &middot; nbcnews.com &middot; pbs.org &middot; pymnts.com &middot; scmp.com &middot; semafor.com &middot; spiegel.de &middot; statnews.com &middot; theguardian.com &middot; theregister.com &middot; theverge.com &middot; www3.nhk.or.jp &middot; yle.fi &middot; CNBC (via search) &middot; Hill Heat &middot; Tech Times &middot; RealtyToday &middot; Senate Democrats floor record &middot; Reuters (via gCaptain and OilPrice) &middot; Bloomberg (via Handelsblatt) &middot; Wall Street Journal (via CNN and Al Jazeera) &middot; Guardian (via search).</p>
+  <p><b>Every host that answered in this run&rsquo;s fetch log:</b> abcnews.com &middot; abcnews.go.com &middot; api.fiscaldata.treasury.gov &middot; arstechnica.com &middot; asia.nikkei.com &middot; breakingdefense.com &middot; en.wikipedia.org &middot; feeds.bbci.co.uk &middot; feeds.content.dowjones.io &middot; finance.yahoo.com &middot; floridaphoenix.com &middot; gasprices.aaa.com &middot; gcaptain.com &middot; home.treasury.gov &middot; lite.cnn.com &middot; nypost.com &middot; ofac.treasury.gov &middot; oilprice.com &middot; punchbowl.news &middot; raw.githubusercontent.com &middot; rollcall.com &middot; techcrunch.com &middot; text.npr.org &middot; thedebrief.org &middot; tradingeconomics.com &middot; warontherocks.com &middot; www.aljazeera.com &middot; www.americanbanker.com &middot; www.businessinsider.com &middot; www.cbsnews.com &middot; www.cftc.gov &middot; www.cnbc.com &middot; www.cnn.com &middot; www.coindesk.com &middot; www.datacenterdynamics.com &middot; www.defenseone.com &middot; www.dw.com &middot; www.eia.gov &middot; www.energy.gov &middot; www.fdic.gov &middot; www.federalregister.gov &middot; www.federalreserve.gov &middot; www.fox13news.com &middot; www.foxbusiness.com &middot; www.foxnews.com &middot; www.freightwaves.com &middot; www.ft.com &middot; www.haaretz.com &middot; www.handelsblatt.com &middot; www.insurancejournal.com &middot; www.latimes.com &middot; www.lefigaro.fr &middot; www.lemonde.fr &middot; www.nbcnews.com &middot; www.pbs.org &middot; www.pymnts.com &middot; www.scmp.com &middot; www.scotusblog.com &middot; www.semafor.com &middot; www.spiegel.de &middot; www.statnews.com &middot; www.tampabay.com &middot; www.techmeme.com &middot; www.theguardian.com &middot; www.theregister.com &middot; www.theverge.com &middot; www.whitehouse.gov &middot; www.wusf.org &middot; www3.nhk.or.jp &middot; yle.fi. Most were front pages or feeds scanned for headlines; the stories cited above were read in full.</p>
+
+  <h4>Confidence and divergence</h4>
+  <p>Markers: 3 Primary source &middot; 11 Independent corroboration &middot; 4 Single-sourced &middot; 1 Unconfirmed, across 19 stories. Divergence boxes: 5. Each lead states how many independent accounts were compared. Two disagreements in short items (BAAJA &ldquo;passed&rdquo; vs. cloture only; Microsoft restored vs. still failing) are resolved inline.</p>
+
+  <h4>The negative check</h4>
+  <p><i>What is the biggest story today that is not on my list, and why is it not?</i> The FAA ground stop: no thread pointed at it, and it now leads. The same sweep promoted the Fed&rsquo;s stability report, the Medicaid delay, measles status and the asylum case, and pushed rates and Microsoft below the line. Left out: the Brooklyn building collapse and the Peoria ethanol-plant device (no policy channel yet), and the Alaska governor&rsquo;s race (no Core link).</p>
+
+  <h4>Accountability</h4>
+  <p>Yesterday&rsquo;s Nvidia lead named Lutnick as the next question; Bessent has now made it one publicly. Yesterday&rsquo;s 10-year figure (5.10 per cent) and debt figure ($40.584 trillion) are updated in Also today. No corrections to prior editions today.</p>
+
+  <h4>Could not reach</h4>
+  <p>Reuters, AP, Politico, Axios, The Hill, BLS, CBO, FERC, NRC, SEC, Lawfare, Utility Dive, El Pa&iacute;s, WFLA and the Washington Post blocked direct fetch; Reuters copy was read through gCaptain and OilPrice. CMS&rsquo;s guidance and the Supreme Court order list were not fetched directly, so those leads rest on independent press accounts. Le Monde&rsquo;s Nvidia piece was paywalled. The Florida lead rests on one outlet.</p>
+
+  <h4>About this issue</h4>
+  <ul>
+    <li>Grok edition for 14 November, produced by the scheduled morning run. Page markup built from Issue 10 (<a href="2026-09-10b.html">2026-09-10b</a>), not from any earlier Grok edition.</li>
+    <li>Stories were selected and written from this run&rsquo;s own gathering. Claude&rsquo;s same-day edition was opened only after this draft was finished, to compare marker and box counts.</li>
+    <li>9 lead stories, 10 short items. Every quotation is under fifteen words and attributed; everything else is paraphrase.</li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n  → *"+"*" + i.value + "*"+"*");
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on *"+"*Issue No. 71-grok — 14 November 2026, Grok edition*"+"*\n\n" + lines.join("\n")
+      + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-11-14-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
