@@ -1215,6 +1215,78 @@ domains.** Validator blocked twice; both real.
 The 5 November proposal (cut "dates ahead" and the owed list from the issue, cap
 the footer, raise the source floor to 15) has had no reply. **Nothing removed.**
 
+## Operational notes, 15 November 2026
+
+**Issue No. 72. Eight leads, fourteen shorts, eight divergence boxes, thirteen
+source domains.** Validator passed clean on the first run.
+
+### The biggest finding is about this brief, not the world
+
+**The correction published on 18 September was itself wrong.** It said Treasury's
+Daily Par Yield Curve showed the ten-year at 4.88/4.91/4.94/4.86 on 14-17
+September and that "the 5% crossing did not happen in the series of record".
+**Those four numbers are the seven-year column.** The ten-year reads
+4.97/5.00/5.01/4.94 on the same four dates; the crossing happened on 15
+September, exactly where the withdrawn lead said. The Fed's H.15, which that box
+said it had not reached, was reached today and matches Treasury on both tenors.
+
+- **New standing rule: address a column by its header, never by its position.**
+  Treasury's 2026 CSV has fifteen columns and the ten-year at index twelve; the
+  2023 and 2024 files have fourteen and the ten-year at eleven, because the file
+  gained a 1.5-month tenor in 2025. Counting lands you on the seven-year.
+- **Second rule: when a correction turns on one cell, print the neighbouring
+  cells.** The 18 September box did rule out a tenor mix-up -- it checked the
+  twenty and the thirty. It did not check the adjacent column.
+- **Still withdrawn and still owed:** "highest since July 2007". Verified today
+  only that the par ten-year did not reach 5.00% in 2023, 2024 or 2025 (closest
+  4.98% on 19 October 2023). 2008-2022 not pulled.
+
+### Sources
+
+- **supremecourt.gov answered**, after this file had recorded no order data for
+  weeks. **Its order-list links are single-quoted** -- `href='/orders/...'` --
+  so a double-quoted href regex finds nothing on a page that fetched 200. Same
+  class of bug as the EIA `class='B3'` failure in September. **When a page
+  fetches and the extractor returns zero rows, suspect the extractor.** Three
+  order lists were read in the original and produced two shorts and a lead-tier
+  find (the section 11(a) grant in *Robinhood v. Sodha*).
+- **bls.gov returned 403 for the first time**, on both the PPI release and the
+  landing page. The **public API at api.bls.gov works without a key** and gave
+  the headline PPI index directly -- but its **unregistered daily allowance is
+  small and ran out after four series**. Budget those calls, or register a key.
+- **text.npr.org returned 200 with no headlines at all.** It has been the
+  standing wire sweep since 13 September. CNN Lite and Al Jazeera covered for it.
+- **ams.usda.gov serves a September 2022 file at WA_FV190.** Not usable for
+  current truck rates; the 25% freight figure stayed attributed to its wire.
+- **iea.org 403 for the second consecutive day.** Still owed.
+- **Florida: three sources attempted, none usable** (wfla.com 403, tampabay.com
+  no dated links, pascocountyfl.net navigation only). Section omitted.
+
+### Tooling
+
+- **The validator's correction-box stripper never matched the house markup.** It
+  looked for `<p class="corr">`; every issue emits `<div class="corr">`. It also
+  counted a "Dig deeper" `<details>` expansion as narrative, so a lead built to
+  §6's spec (250 visible plus a ~500-word expansion) could not pass. Both fixed;
+  each is now counted and reported separately, and a new advisory fires when an
+  expansion is far from ~500 words. Re-run on 14 November: no change.
+- **The chart generator now asserts that no two labels overlap**, from their
+  computed boxes, before emitting. It caught nothing this morning; the screenshot
+  readback caught what it cannot see -- a label running into the *data line* --
+  and the 13 November label was **removed**, not nudged, per the standing rule.
+
+### Thread accounting, said out loud
+
+Eight leads: three new subjects, four continuations at §4's cap, and one
+correction of this brief's own record counted separately. If a correction were
+counted as a continuation the issue would be over the cap, so the provenance
+line states the arithmetic rather than hiding it.
+
+### Standing question to the reader, unanswered
+
+The 5 November proposal (cut "dates ahead" and the owed list from the issue, cap
+the footer, raise the source floor to 15) has had no reply. **Nothing removed.**
+
 ## Watchlist
 
 Empty at first run. Populates from reader feedback and from threads that recur on
@@ -1415,7 +1487,7 @@ Retire a thread because it is finished or stopped mattering — never to make ro
 | Treasury auction rules (Uniform Offering Circular) | active | **15 Oct, new thread.** Treasury final amendments to the **Uniform Offering Circular** for marketable book-entry bills, notes and bonds. **91 FR 65456, effective 15 October.** Mostly housekeeping, but one operational change: **requires submitters to provide ALL CUSTOMER BID INFORMATION BEFORE THE NONCOMPETITIVE AUCTION CLOSE**, tightening the window for dealers and brokers aggregating noncompetitive bids (the route individuals use via TreasuryDirect). **Timing: three weeks before the 4 NOVEMBER quarterly refunding.** Rule not read. | 2026-10-15 |
 | Palisades small modular reactors (Holtec) | active | **15 Oct, new thread.** NRC notice of a **phased construction permit application including a LIMITED WORK AUTHORIZATION request** from SMR, LLC on behalf of **Palisades SMR, LLC** (Holtec International) for a **dual-unit SMR-300 plant at the Palisades Energy Center, Covert, Michigan** - **Pioneer Unit 1 and Pioneer Unit 2**. 91 FR 65608; third of four weekly notices from 1 October. **Two unusual features: Palisades is the first American reactor ever RETURNED TO SERVICE after closure, so the SMRs reuse an existing grid connection, cooling water and licensed workforce - the largest cost advantage available to new nuclear; and the LIMITED WORK AUTHORIZATION would let construction begin before the permit issues, at the applicant's risk, which decides whether approval means first concrete years later or now.** Application not read. **Watch whether the LWA is granted - it would be the first of its kind for an SMR.** | 2026-10-15 |
 | New World screwworm & the northward barrier | active | **15 Oct, new thread.** FDA issued **four Emergency Use Authorizations** for animal products against **New World screwworm (Cochliomyia hominivorax)**, 91 FR 65562. **Elanco US**: application on or around wounds to prevent infestation in **sheep, cattle, goats, swine, camelids** and captive/captured **cervids, American bison, bighorn sheep, Sonoran pronghorn**. **Zoetis**: treatment. **The US eradicated screwworm in 1966 via sterile-male release and has held the barrier in Central America since; the barrier has been moving north.** **EUAs for animal drugs are rare and four at once is a statement about expected need. The species list is the tell: it covers the commercial herd AND the wildlife reservoir that would make reintroduction permanent.** No US detection reported in what was read; notice not read. **Watch for a confirmed US case.** | 2026-10-15 |
-| NCUA rulemaking programme | closed | **15 Oct, new thread.** Three NCUA proposed rules in one morning, all comments closing **14 December**: **Central Liquidity Facility** (91 FR 65481) would adopt as permanent the revisions made by interim final rules of **29 April 2020 and 24 March 2021**, remove lapsed provisions, drop certain filing requirements and membership-approval criteria, and change capital-stock-subscription adjustment timing; **Powers of Federal Credit Unions** (91 FR 65479) would confirm no advisory opinion from NCUA general counsel is needed before petitioning the Board about an activity outside preapproved incidental powers; third covers corporate credit unions and fidelity bond coverage. **THE CLF IS THE CREDIT UNION SYSTEM'S LENDER OF LAST RESORT, and its pandemic-era expansion has run on interim rules for five and a half years with some provisions already lapsed. Finalising them decides what the facility looks like in the next liquidity event.** None read beyond abstracts. | 2026-10-15 |
+| NCUA rulemaking programme | active | **15 Oct, new thread.** Three NCUA proposed rules in one morning, all comments closing **14 December**: **Central Liquidity Facility** (91 FR 65481) would adopt as permanent the revisions made by interim final rules of **29 April 2020 and 24 March 2021**, remove lapsed provisions, drop certain filing requirements and membership-approval criteria, and change capital-stock-subscription adjustment timing; **Powers of Federal Credit Unions** (91 FR 65479) would confirm no advisory opinion from NCUA general counsel is needed before petitioning the Board about an activity outside preapproved incidental powers; third covers corporate credit unions and fidelity bond coverage. **THE CLF IS THE CREDIT UNION SYSTEM'S LENDER OF LAST RESORT, and its pandemic-era expansion has run on interim rules for five and a half years with some provisions already lapsed. Finalising them decides what the facility looks like in the next liquidity event.** None read beyond abstracts. | 2026-10-15 |
 | Airline delay-cause reporting (DOT §511(b)) | active | **15 Oct, new thread.** DOT **delaying the effective date** of its 3 September 2026 final rule on **Cause of Airline Delay and Cancellation Categories under Section 511(b) of the FAA Reauthorization Act of 2024** to **1 FEBRUARY 2027**. 91 FR 65456. **Section 511(b) exists because the delay categories airlines use are their own - whether a delay is "air carrier", "extreme weather" or "national aviation system" determines what a passenger is owed and how on-time performance reads, and Congress legislated standard categories because the self-reporting was unfalsifiable.** A five-month delay is not a repeal, **but it moves the first standardised reporting past the winter - the season the data would be most revealing about.** Notice not read; no reason for the delay established. | 2026-10-15 |
 | Binary options on reported company KPIs | active | **16 Oct, new thread. LED THE ISSUE. UNDERREPORTED - no reachable outlet carried it.** SEC Release **34-106659**, SR-CBOE-2026-061, signed 13 Oct, **91 FR 65854**, accelerated approval. Binary options settling on a named financial metric in an earnings filing rather than on share price. **$1 exercise settlement amount, multiplier of one, 25,000-contract position limit.** **22 issuers** incl. Apple, Alphabet, Amazon, AMD, BofA, Citigroup, Coinbase, Ford, Intel, JPMorgan, Marathon Digital, Meta, Microsoft, Netflix, NVIDIA, Palantir, Robinhood, SoFi, **SpaceX (listed since June 2026, ADV ~290m shares 12-22 June)**, Super Micro, Target, Tesla, Disney. **A restatement after expiry does not change settlement.** Jurisdictional dispute in the comments: commenters say these are event contracts (CFTC), relying on the pre-Dodd-Frank CD Options order being stale; the Commission reached for the CEA's definition of 'option' because the Exchange Act has none. **Wake on:** the options disclosure document publishing, the first listed series, or a CFTC response or petition for review. | 2026-10-16 |
 | 23/5 equity trading and the overnight rulebook | active | **16 Oct, new thread. UNDERREPORTED.** **23-hour, five-day trading commences industry-wide 6 December 2026** (stated in LTSE's filing). Nasdaq: day session **4:00am-8:00pm ET**, new **Night Session 9:00pm-4:00am**, systems 'technically and functionally separate', quoting in abeyance at handover. SEC has approved **Overnight Protected Bands** under the LULD plan (Amendment 27). LTSE amending clearly-erroneous-executions Rule 11.270 to match, operative at commencement. **Wake on:** further exchange halt/auction/erroneous-trade filings before 6 Dec, the launch itself, and the first overnight halt. | 2026-10-16 |
@@ -1476,3 +1548,6 @@ Retire a thread because it is finished or stopped mattering — never to make ro
 | Section 504 and the disability definition | active | HHS OCR | 2026-11-03 |
 | Organ procurement organisations | active | CMS | 2026-11-03 |
 | Deposit insurance and resolution readiness | active | FDIC | 2026-11-04 |
+| Jones Act waiver and the coastwise trade | active | **15 Nov, new thread.** Trump extended by **90 days** the waiver of the Jones Act's US-build, US-flag, US-crew requirement for cargo moving between US ports, **effective 12am Monday 16 November**, two days before the prior waiver lapsed; breadth unchanged from the August narrowing that requires case-by-case vessel-availability review. **338 voyages on foreign vessels since the first waiver in March** (Cato analysis of government data); California took 23m barrels of additional product against 8m a year earlier; **about 90m barrels, mostly refined fuels, moved under the waiver.** Shipbuilders urged the president to let it lapse. **The price effect is a rate differential the administration has never published, only the barrel counts.** Wakes on: the proclamation text; release of any vessel-availability determination; a published Jones Act vs foreign rate spread for Gulf-to-East-Coast clean products; legislation on the waiver authority; the ~14 February 2027 expiry. | 2026-11-15 |
+| Appropriated global health money and the power of the purse | active | **15 Nov, new thread.** A leaked preliminary FY2026 State Department allocation and a memo to lawmakers show **about $605m of the $607.5m Congress appropriated for international family planning diverted or withheld**, and close to **$1bn moved into a global health innovation fund benefiting US corporations**. A **September Rubio memo** sends tens of millions to the "energy security needs" of US partners. **Eight countries at zero since 2024** (Afghanistan, CAR, Gambia, Somalia, South Africa, Sudan, Timor-Leste, Yemen); South Africa, Tanzania and Zimbabwe each down >$100m (Public Citizen with PIH and PAI). State cites "the authorities available to the president and the secretary". Precedent: $1.35bn redirected to cover the USAID closure. **THE LEGAL QUESTION IS REPROGRAMMING VERSUS IMPOUNDMENT AND IT IS NOT YET ESTABLISHED.** Wakes on: a GAO opinion; a special message proposing rescission; the transfer authority cited by section number; Public Citizen's FOIA releases. | 2026-11-15 |
+| Securities Act section 11(a) and omitted interim results | active | **15 Nov, new thread.** *Robinhood Markets v. Sodha*, No. 25-944, **certiorari granted 13 November limited to one question**: whether an issuer can be liable under the misleading-omissions prong of **section 11(a) of the Securities Act of 1933** for failing to disclose material interim financial information, **without an additional inquiry into whether the omission made an affirmative statement misleading.** Section 11 is near-strict liability with no intent or reliance element; removing the make-misleading limit would expose every registration statement to any material interim number not volunteered. Argument expected early 2027, decision before July. Read in the Court's own order list; no wire sweep carried it. Wakes on: the merits briefs, argument, and the opinion. | 2026-11-15 |

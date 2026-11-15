@@ -241,19 +241,36 @@ def main(path, log_path=None):
     # --- length advisories ------------------------------------------------
     for m in re.finditer(r'<article id="([^"]+)">(.*?)</article>', s, re.S):
         body = re.sub(r'<p class="sources">.*', "", m.group(2), flags=re.S)
-        body = re.sub(r'<p class="corr">.*?</p>', "", body, flags=re.S)
-        # A divergence box is its own unit: the target describes the narrative,
-        # so count it separately and report both, or a lead whose substance sits
-        # in the box reads as thin when it is not.
-        boxw = len(
-            re.sub(r"<[^>]+>", " ", " ".join(
-                re.findall(r'<div class="div">(.*?)</div>', body, re.S))).split()
-        )
-        body = re.sub(r'<div class="div">.*?</div>', "", body, flags=re.S)
+
+        # Three units inside a lead are not narrative and are counted apart.
+        # Each one used to inflate the narrative figure until it stopped meaning
+        # anything:
+        #   the divergence box    -- a lead whose substance sits in the box
+        #                            reads as thin when it is not;
+        #   the correction box    -- the stripper here matched <p class="corr">,
+        #                            which the house markup has never emitted;
+        #                            it is <div class="corr"> (15 Nov);
+        #   the "Dig deeper"      -- SKILL.md §6 asks for ~250 visible plus a
+        #   <details> expansion      ~500-word expansion, so counting them
+        #                            together guarantees the warning fires on a
+        #                            lead built exactly to spec (15 Nov).
+        def _take(pattern):
+            nonlocal body
+            chunks = re.findall(pattern, body, re.S)
+            body = re.sub(pattern, "", body, flags=re.S)
+            return len(re.sub(r"<[^>]+>", " ", " ".join(chunks)).split())
+
+        boxw = _take(r'<div class="div">(.*?)</div>')
+        corrw = _take(r'<div class="corr">(.*?)</div>')
+        expw = _take(r"<details>(.*?)</details>")
         n = len(re.sub(r"<[^>]+>", " ", body).split())
+        parts = [(boxw, "the divergence box"), (corrw, "the correction box"),
+                 (expw, "the expansion")]
+        extra = "".join(f" + {w} in {label}" for w, label in parts if w)
         if n and not (240 <= n <= 430):
-            extra = f" + {boxw} in the divergence box" if boxw else ""
             warn(f"lead '{m.group(1)}' is {n} narrative words{extra} (target ~250–400)")
+        if expw and not (300 <= expw <= 650):
+            warn(f"lead '{m.group(1)}' expansion is {expw} words (target ~500)")
 
     for sid, body in shorts:
         n = len(re.sub(r"<[^>]+>", " ", body).split())
