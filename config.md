@@ -1287,6 +1287,80 @@ line states the arithmetic rather than hiding it.
 The 5 November proposal (cut "dates ahead" and the owed list from the issue, cap
 the footer, raise the source floor to 15) has had no reply. **Nothing removed.**
 
+## Operational notes, 16 November 2026
+
+**Issue No. 73. Eight leads, twelve shorts, two Florida items, eight divergence
+boxes, nineteen source domains.** Validator blocked once (a `#faatech` anchor
+written without its `s-` prefix) and that was real.
+
+### The September correction is now fully closed
+
+Yesterday restored the 5% crossing; today restored the claim that travelled with
+it. **Twenty annual Treasury files: the last session at or above 5.00% before
+this year was 19 July 2007, at 5.04%. 2008-2025 is eighteen calendar years and
+4,502 sessions with none.** The original 15 September lead was right to the
+month. New fact found on the way: **2007's peak was 5.26%; 2026's is 5.31% on
+5 October, so October was the highest in the twenty-year file.**
+
+- **New standing rule: withdraw only what the error touches.** The 18 September
+  box retracted "highest since July 2007" not because it was doubted but because
+  it was unverified, and those are different. Flag the rest as unverified with a
+  named way to check it. The named way here was nineteen HTTP requests.
+- **The ten-year's column index by file: 9 (2007-2021, twelve columns), 11
+  (2022-2024, fourteen), 12 (2025-2026, fifteen).** It moves three times in
+  twenty years. `tools/chart_yield.py` now re-reads the header per file.
+
+### Sources
+
+- **text.npr.org served no headlines for the second day running.** Treat it as
+  broken, not quiet. It has been the standing wire sweep since 13 September;
+  **a replacement general wire sweep is needed.**
+- **bls.gov 403 for the second day** (core PPI series still unnamed, still not
+  printed). **iea.org 403 for the third.**
+- **supremecourt.gov answers but Monday order lists post later in the Eastern
+  morning than this brief runs.** Not a failure; a scheduling fact. If Monday
+  grants matter, the run has to look again later or wait a day.
+- **The Federal Register public inspection desk at 09:00 UTC holds the day's
+  own issue, already read the previous morning, plus a few Sunshine Act notices
+  for tomorrow.** The desk is a yesterday-evening source, not a this-morning one.
+- **ntsb.gov renders its press releases client-side**, so the New Orleans
+  findings were cited through the wire that attended the briefing.
+- **WUSF fetches cleanly and carries News Service of Florida copy.** It supplied
+  both Florida items on the first morning the local section has run in weeks.
+  **Add it to the standing local pull; wfla.com has 403'd two days running and
+  tampabay.com yields no dated links.**
+
+### A nine-month gap, recorded
+
+**Minab** -- a US cruise missile hitting a girls' school in late February,
+more than 150 dead, cause attributed to AI-assisted targeting under time
+pressure with stale intelligence -- **has never appeared in this brief**, in a
+file carrying the Iran war as a standing thread and the AI industry as a core
+beat. Found today in a German-language piece about the Geneva autonomous-weapons
+talks. Said plainly in the fourth lead rather than slipped in. **Single-sourced,
+and the underlying investigation is unnamed by the source and unread here.**
+
+### Tooling
+
+Three validator changes, all of which flagged a correct issue today:
+
+- **The nav-link check assumed exactly `leads + 1`**, which blocks any issue
+  whose local section renders -- the first such day since the check was written.
+  Now `leads + 1 + (1 if the local section renders)`.
+- **A `<figcaption>` was counted as narrative.** It is provenance for a figure
+  exactly as `<p class="sources">` is provenance for the story, and that was
+  already stripped. A 320-word lead with a chart read as 450. Counted separately
+  now and reported. *Changed on a morning when it was flagging this brief's own
+  output -- the justification is the `sources` precedent already in the file,
+  not the warning.*
+- **`tools/chart_yield.py` takes several CSVs and `--mark`**, so a multi-year
+  chart is just the year files listed together; the header is re-read per file.
+
+### Standing question to the reader, unanswered
+
+The 5 November proposal (cut "dates ahead" and the owed list from the issue, cap
+the footer, raise the source floor to 15) has had no reply. **Nothing removed.**
+
 ## Watchlist
 
 Empty at first run. Populates from reader feedback and from threads that recur on
@@ -1551,3 +1625,7 @@ Retire a thread because it is finished or stopped mattering — never to make ro
 | Jones Act waiver and the coastwise trade | active | **15 Nov, new thread.** Trump extended by **90 days** the waiver of the Jones Act's US-build, US-flag, US-crew requirement for cargo moving between US ports, **effective 12am Monday 16 November**, two days before the prior waiver lapsed; breadth unchanged from the August narrowing that requires case-by-case vessel-availability review. **338 voyages on foreign vessels since the first waiver in March** (Cato analysis of government data); California took 23m barrels of additional product against 8m a year earlier; **about 90m barrels, mostly refined fuels, moved under the waiver.** Shipbuilders urged the president to let it lapse. **The price effect is a rate differential the administration has never published, only the barrel counts.** Wakes on: the proclamation text; release of any vessel-availability determination; a published Jones Act vs foreign rate spread for Gulf-to-East-Coast clean products; legislation on the waiver authority; the ~14 February 2027 expiry. | 2026-11-15 |
 | Appropriated global health money and the power of the purse | active | **15 Nov, new thread.** A leaked preliminary FY2026 State Department allocation and a memo to lawmakers show **about $605m of the $607.5m Congress appropriated for international family planning diverted or withheld**, and close to **$1bn moved into a global health innovation fund benefiting US corporations**. A **September Rubio memo** sends tens of millions to the "energy security needs" of US partners. **Eight countries at zero since 2024** (Afghanistan, CAR, Gambia, Somalia, South Africa, Sudan, Timor-Leste, Yemen); South Africa, Tanzania and Zimbabwe each down >$100m (Public Citizen with PIH and PAI). State cites "the authorities available to the president and the secretary". Precedent: $1.35bn redirected to cover the USAID closure. **THE LEGAL QUESTION IS REPROGRAMMING VERSUS IMPOUNDMENT AND IT IS NOT YET ESTABLISHED.** Wakes on: a GAO opinion; a special message proposing rescission; the transfer authority cited by section number; Public Citizen's FOIA releases. | 2026-11-15 |
 | Securities Act section 11(a) and omitted interim results | active | **15 Nov, new thread.** *Robinhood Markets v. Sodha*, No. 25-944, **certiorari granted 13 November limited to one question**: whether an issuer can be liable under the misleading-omissions prong of **section 11(a) of the Securities Act of 1933** for failing to disclose material interim financial information, **without an additional inquiry into whether the omission made an affirmative statement misleading.** Section 11 is near-strict liability with no intent or reliance element; removing the make-misleading limit would expose every registration statement to any material interim number not volunteered. Argument expected early 2027, decision before July. Read in the Court's own order list; no wire sweep carried it. Wakes on: the merits briefs, argument, and the opinion. | 2026-11-15 |
+| Head Start and the early-years workforce | active | **16 Nov, new thread.** Final rule (RIN 0970-AD21, 45 CFR 1302.90) **rescinds the wage and benefit requirements added in 2024**: a pay scale for all staff, education-staff wages comparable to public preschool teachers, a salary sufficient to cover basic costs of living, parity across Head Start Preschool and Early Head Start, and specified benefits. Effective 60 days after 16 Nov publication; rescinded well before the **2031** compliance date. **Nearly 300 comments, including two multi-signatory letters from Members of Congress**, mostly opposed. **ACF's own RIA calls the ~$2.1bn an eventual annual TRANSFER -- to staff who would otherwise lose hours or jobs, from staff who would have been paid more -- not a saving.** Legal theory: the 2007 standards contained no federal wage regulation, so the Act's non-regression clause is not breached. **Severability clause between (e) and (f) signals the agency expects litigation.** Wakes on: any suit; enrolment and vacancy data; appropriations language; the effective date. | 2026-11-16 |
+| Force protection and the conduct of the Iran war | active | **16 Nov, new thread.** Army Maj. Stephen Ramsbottom, a survivor of the **1 March strike on a makeshift operations centre at Kuwait's Shuaiba port that killed six US Army Reserve soldiers**, filed a whistleblower disclosure with both Armed Services committees. Alleges he raised the lack of aerial protection and was told it was not a concern; **a counter-drone system was discussed and never arrived, and he does not know if it was ever ordered**; no physician, no fixed aid station, one ambulance. Pentagon said at the time the building was fortified; a source described concrete barriers good against car bombs only. **THE CHECKABLE CLAIM IS THE REQUISITION: either it exists or it does not.** Filed weeks before Democrats take Congress and subpoena power in January. Wakes on: committee action; the Army's own investigation; the requisition record; a Pentagon response. | 2026-11-16 |
+| Autonomous and AI-assisted weapons | active | **16 Nov, new thread.** A US cruise missile aimed at the IRGC **hit a girls' school in Minab, Iran, in late February, killing more than 150, most of them schoolchildren**; investigations cited by Handelsblatt attribute it to time pressure, outdated intelligence and over-trust in AI-supported target planning. Not an autonomous strike -- a human approved it. The **128 states party to the UN Convention on Certain Conventional Weapons** are attempting again, in Geneva, to constrain autonomous weapons; the CCW has discussed this since 2014, works by consensus, and has produced no binding instrument. **THE REGULATORY FIGHT IS OVER THE DEFINITION: states that field these systems define autonomy as the machine firing, which exempts decision-support; campaigners define it as meaningful human control, which does not. A treaty on the narrow definition would not have changed Minab.** **Honest limits: single non-English source; the investigations are unnamed by it and unread here; no US, Iranian or UN document seen; the casualty figure is uncorroborated. This brief missed Minab for nine months.** Wakes on: a Geneva mandate and its definition; any US assessment; corroboration of the casualty count; January congressional investigations reaching targeting practice. | 2026-11-16 |
+| Pressure on NATO's edges, short of attack | active | **16 Nov, new thread.** Drones struck **three commercial ships near Romania's Sulina canal** late on 15 Nov -- Greek-flagged tanker *Evia Petrol V*, bulk carrier *Marsol*, products tanker *Ali Najafov* (St Kitts and Nevis) -- no casualties; Romania scrambled jets twice and declined to name an origin. **Estonia closes its Russian border crossings from 1 December** after eight arrests over a GRU-ordered arson attempt on a defence technology firm. **THE DIVERGENCE IS EVIDENTIARY, NOT POLITICAL: Estonia has detainees and an attribution, Romania has wreckage; attribution obliges a response, and Romania's options in a shared sea lane are worse than Estonia's at a land border.** US channel: the Sulina export route, the Brussels sanctions list reaching US correspondent banking, and NATO air policing the US underwrites while the Navy's weight is in the Gulf. Wakes on: Romanian attribution; Article 4 consultations; Black Sea war-risk premiums; repetition at Sulina. | 2026-11-16 |

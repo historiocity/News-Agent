@@ -222,8 +222,17 @@ def main(path, log_path=None):
     nav = len(re.findall(r'<nav[^>]*>.*?</nav>', s, re.S)) and len(
         re.findall(r'<li><a href="#', re.search(r"<nav[^>]*>(.*?)</nav>", s, re.S).group(1))
     )
-    if nav and nav != leads + 1:
-        block(f"nav has {nav} links for {leads} leads (expected {leads + 1} including Also today)")
+    # The jump list carries every lead, then "Also today", then the local
+    # section when it renders. SKILL.md §5 makes the local section conditional,
+    # so the expected count is conditional too -- this check blocked a correct
+    # issue on 16 November, the first day the Florida section ran since the
+    # check was written.
+    local = bool(re.search(r'<h2 class="section" id="(florida|local)[^"]*"', s))
+    want = leads + 1 + (1 if local else 0)
+    if nav and nav != want:
+        block(f"nav has {nav} links for {leads} leads (expected {want}: "
+              f"one per lead, Also today"
+              + (", and the local section)" if local else ")"))
 
     if "**" in re.sub(r"<[^>]+>", "", s):
         block("stray markdown asterisks in rendered text")
@@ -261,11 +270,16 @@ def main(path, log_path=None):
             return len(re.sub(r"<[^>]+>", " ", " ".join(chunks)).split())
 
         boxw = _take(r'<div class="div">(.*?)</div>')
+        # A figcaption is provenance for a figure -- the series, the scale note,
+        # what is marked -- in the same way <p class="sources"> is provenance
+        # for the story, and that is already stripped above. Counting it as
+        # narrative made a 320-word lead with a chart read as 450.
+        capw = _take(r"<figcaption>(.*?)</figcaption>")
         corrw = _take(r'<div class="corr">(.*?)</div>')
         expw = _take(r"<details>(.*?)</details>")
         n = len(re.sub(r"<[^>]+>", " ", body).split())
         parts = [(boxw, "the divergence box"), (corrw, "the correction box"),
-                 (expw, "the expansion")]
+                 (expw, "the expansion"), (capw, "the figure caption")]
         extra = "".join(f" + {w} in {label}" for w, label in parts if w)
         if n and not (240 <= n <= 430):
             warn(f"lead '{m.group(1)}' is {n} narrative words{extra} (target ~250–400)")
