@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Monday, 16 November 2026 (Grok edition, Issue 73-grok)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  /* short-item tier */
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list summary .chip { vertical-align:.05rem; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+</style></head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 73-grok &middot; Monday, 16 November 2026 &middot; Grok edition</div>
+  <h1>Washington wants to crown AI &ldquo;national champions&rdquo; while it argues over who runs the biggest one, and the router that grounded America is in a lab</h1>
+  <p class="sub">Eight stories at length, nine in brief. Built from the Issue 10 framework (2026-09-10b). Config and archive loaded; this issue is saved to the News-Agent archive.</p>
+  <p class="prov"><b>90 sources checked, 66 of them outside the watchlist</b> (70 answered). Four lead stories are on subjects with no story in the last three issues (AI champions list, the Vulcan failure, international enrolment, the Justice Department letters to Senate Democrats); four continue threads, at the cap of four (Nvidia, the FAA ground stop, the Gulf chokepoints and oil, the Trump&ndash;Xi&ndash;Putin meeting). Independent accounts compared per lead: champions 1 (one newspaper report carried by one wire; labelled), Nvidia 4, Vulcan 3, FAA 4, Gulf and oil 5, trilateral 3, enrolment 1 survey via one wire, Justice letters 3. <b>Biggest story not on my list:</b> the administration's plan to name more than two dozen AI &ldquo;national champions&rdquo;, which no beat or thread pointed at; it leads. The negative check also promoted the Vulcan failure and the enrolment survey, and dropped three candidates that had no new fact since earlier issues (the asylum case, Medicaid work-requirement delay, the AI-freeze lawsuit). No Florida item cleared the local bar for a lead; one runs in brief.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#ai-champions">The White House plans to name more than two dozen AI firms, Nvidia among them, as &ldquo;national champions&rdquo;</a></li>
+    <li><a href="#nvidia-board">Bessent gives Nvidia's board ten days and wants an outsider; Huang's allies want him back, and the spy case underneath is wobbling</a></li>
+    <li><a href="#vulcan-leo">ULA's Vulcan failed ten minutes after launch, losing 40 Amazon satellites and grounding the rocket until the cause is found</a></li>
+    <li><a href="#faa-routers">The FAA has switched off broadcasting on all 69 routers of the type that grounded the country; the fight is now over money and L3Harris</a></li>
+    <li><a href="#gulf-oil">Three tankers hit mines over the weekend and a third carrier arrived, yet Florida gas is at an eight-month low</a></li>
+    <li><a href="#trilateral">Trump leaves for Asia; Washington says it expects no nuclear agreement from Thursday's meeting with Xi and Putin</a></li>
+    <li><a href="#intl-students">New international enrolment at US colleges fell 15 per cent this fall</a></li>
+    <li><a href="#doj-oversight">A US attorney has warned Warren, Blumenthal and Slotkin over investigations they have not yet opened</a></li>
+    <li><a href="#also-today">Also today (9)</a> &mdash; ranked below the line, each one opens.</li>
+  </ol>
+</nav>
+
+<article id="ai-champions">
+  <h2>The White House plans to name more than two dozen AI firms, Nvidia among them, as &ldquo;national champions&rdquo;</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>The administration plans to designate more than two dozen artificial-intelligence companies as US &ldquo;national champions&rdquo;, including Nvidia, Amazon, Microsoft, OpenAI and Anthropic, the Wall Street Journal reported on Sunday, citing people familiar with the plans. The stated purpose is to help the companies expand overseas and compete with Chinese rivals. Reuters carried the report without independent confirmation, and every other account I found traces back to it, so this runs labelled single-sourced.</p>
+  <p>Why it matters: a formal champion list is industrial policy by name. It implies the government will lean on export finance, diplomacy and possibly procurement to push particular American firms into foreign markets, which is the model Washington has criticised China for. It also lands at an awkward moment. Nvidia is on the list four days after its chief executive resigned over an affair with a woman US officials suspect of working for Chinese intelligence, and while the Treasury Secretary is publicly questioning whether the company chased illicit sales into China (next story).</p>
+  <p>What is not known is the substance: what a designation confers, whether there are conditions such as export-control compliance, who chose the names, and whether it needs a statute, an executive order or nothing at all. Without that, the list is a signal of intent, not a policy.</p>
+  <p><b>What to watch:</b> an executive order or Commerce notice with the actual list and benefits; whether compliance conditions are attached given the Nvidia inquiry; and whether congressional China hawks, who are pushing tighter chip-export rules in the defence bill, object to a champion label for a company under investigation.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://finance.yahoo.com/news/trump-administration-name-nvidia-other-041705933.html">Reuters, carrying the Wall Street Journal report</a> &middot;
+    <a href="https://www.investing.com/news/stock-market-news/us-plans-to-name-nvidia-among-ai-national-champions-wsj-reports-5028365">Investing.com (same wire)</a>
+  </p>
+  <div class="fb">
+    <p>Industrial-policy stories like this, before the document exists: run them labelled, or wait for the order?</p>
+    <label><input type="radio" name="fb-champions" value="run-labelled"> Run them labelled, as here</label>
+    <label><input type="radio" name="fb-champions" value="wait"> Wait for the document</label>
+  </div>
+  <div class="fb">
+    <p>Follow the champions programme as a thread?</p>
+    <label><input type="radio" name="fb-champions-follow" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-champions-follow" value="no"> No</label>
+  </div>
+</article>
+
+<article id="nvidia-board">
+  <h2>Bessent gives Nvidia's board ten days and wants an outsider; Huang's allies want him back, and the spy case underneath is wobbling</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Continuing</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Three things moved over the weekend. On Fox News on Sunday, Treasury Secretary Scott Bessent said Nvidia's board should look outside the company for Jensen Huang's successor and that he wants answers on export-control compliance from the board and outside counsel within ten days. He asked whether Nvidia pressed &ldquo;seemingly illicit sales to goose their revenues&rdquo;, but said no new law is needed, only enforcement. That puts him at odds with the bipartisan push, led by Senators Jim Banks and Elizabeth Warren, to tighten chip rules in the year-end defence bill.</p>
+  <p>Second, the Financial Times reported that Huang is discussing a return as chief executive with confidants, and that an ally is assembling a &ldquo;war room&rdquo; of Silicon Valley executives to lobby the board and seek White House support. Elon Musk has backed a petition for his return. The FT also reported the board has floated Arm's Rene Haas; Trump has praised Tim Cook. Colette Kress is interim CEO.</p>
+  <p>Third, Megaspeed, the Singapore data-centre company at the centre of the smuggling questions, said on Sunday that Alice Huang left her executive role on 30 August 2025 and has held no position since. It said some media claims about its operations are not supported by verifiable evidence and that outside counsel is running an internal investigation.</p>
+  <p><b>What to watch:</b> Nvidia reports quarterly results on Tuesday, 17 November, with Kress on the call; Bessent's ten-day clock runs to about 25 November; congressional hearings with Huang, general counsel Tim Teter and Commerce Secretary Howard Lutnick are expected within a month. Lutnick is reported to be travelling to China with the President this week.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is the espionage allegation established?</span>
+    <p><b>What is disputed.</b> A facts dispute about the central claim. The New York Times reporting that began this cited US intelligence officials who believe Alice Huang was recruited by China's Ministry of State Security. CNN reported on Thursday that the intelligence agencies have not established that she was spying, and that some CIA officials are unconvinced the intercepts show she knowingly passed information. Beijing calls the allegation groundless; Megaspeed now says she left the firm more than a year ago.</p>
+    <p><b>Why they differ.</b> Mostly access and timing. Both newspapers are describing an internal intelligence debate from different ends: the Times's sources hold the suspicion, CNN's hold the doubt, and neither has published the underlying evidence. Interest matters too. People who want tighter chip controls benefit from the strong version; Huang's allies, now lobbying for his return, benefit from the weak one. Megaspeed's date is self-reported and, as one outlet noted, comes nearly two years after her board exit, so it narrows the window rather than answering the question.</p>
+    <p><b>What it means.</b> Treat &ldquo;suspected&rdquo; as the honest word: there is a real suspicion inside the government and a real dispute about it, and no public evidence either way. The resignation does not rest on it alone: the reported affairs with two Nvidia employees are a separate problem for the board. What would settle it: charges or a declassified summary; the outside counsel's GPU census at Megaspeed; or Nvidia's answers to Bessent within ten days.</p>
+  </div>
+  <details class="exp">
+    <summary>Dig deeper</summary>
+    <p>The policy fight underneath matters more than the boardroom drama. Huang was the most prominent advocate of selling more US chips into China, and in August 2025 he won the H20 arrangement under which the government took 15 per cent of those sales. His fall has given momentum to the opposite camp in Congress. Bessent's position is distinctive: he is the harshest administration voice on Nvidia's conduct, but he argues the existing rules suffice, which is the Commerce Department's turf. That reads as pressure on Lutnick, whose department Bessent has said was responsible for chip licensing, and whose former firm's financing of Asian data centres the New York Times examined at the weekend (reported headline; I could not open the article).</p>
+    <p>For markets, the sequence this week is unusually tight: Nvidia results on Tuesday, Anthropic's IPO pricing on Wednesday and first trade on Thursday (see Also today). Nvidia shares fell before the bell on Monday. A board that is asked by Treasury to hire an outsider, while its founder campaigns to return, cannot give guidance on leadership on Tuesday's call; listen for what Kress says about China revenue and export compliance instead.</p>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.aljazeera.com/news/2026/11/15/us-treasury-chief-calls-for-outsider-to-lead-embattled-tech-firm-nvidia">Al Jazeera on Bessent's Fox interview</a> &middot;
+    <a href="https://www.foxbusiness.com/technology/jensen-huang-weighs-nvidia-ceo-comeback-ally-plans-war-room-report">Fox Business on the FT comeback report</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/16/megaspeed-firm-at-centre-of-nvidia-scandal-says-alice-huang-left-in-2025">Al Jazeera on Megaspeed's statement</a> &middot;
+    <a href="https://abcnews.com/Technology/wireStory/megaspeed-alice-huang-left-2025-company-conducts-internal-138155916">AP via ABC</a> &middot;
+    <a href="https://www.businessinsider.com/intelligence-jensen-huang-downfall-shaky-nvidia-china-spy-gpus-2026-11">Business Insider on the CNN intelligence report</a> &middot;
+    <a href="https://finance.yahoo.com/markets/article/nvidias-first-post-jensen-earnings-and-anthropics-ipo-what-to-watch-this-week-110000732.html">Yahoo Finance week ahead</a> &middot;
+    <a href="https://www.semafor.com/article/11/15/2026/trump-to-meet-xi-and-putin-in-china">Semafor on Lutnick's travel</a> &middot;
+    <a href="https://www.newsmax.com/newsfront/howard-lutnic-chips-data-centers/2026/11/15/id/1276360/">Newsmax on the NYT Lutnick report (headline only)</a> &middot;
+    <a href="2026-11-15-grok.html">yesterday's edition</a>
+  </p>
+  <div class="fb">
+    <p>Cadence on Nvidia: daily while it moves, or only on hard events (earnings, hearings, charges)?</p>
+    <label><input type="radio" name="fb-nvidia" value="daily"> Daily while it moves</label>
+    <label><input type="radio" name="fb-nvidia" value="events"> Hard events only</label>
+  </div>
+</article>
+
+<article id="vulcan-leo">
+  <h2>ULA's Vulcan failed ten minutes after launch, losing 40 Amazon satellites and grounding the rocket until the cause is found</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>A United Launch Alliance Vulcan lifted off from Cape Canaveral at 12:40 p.m. Eastern on Sunday carrying 40 Amazon Leo broadband satellites and failed to reach orbit after an anomaly about ten minutes into flight, during the burn of the Centaur V upper stage. ULA said it has no specific data yet on the cause. According to Spaceflight Now, as reported by GeekWire, it is ULA's first total mission failure since the Boeing&ndash;Lockheed joint venture was formed in 2006.</p>
+  <p>It was Vulcan's first flight in nine months and the first of 38 Vulcan launches Amazon has bought, on a version built for its constellation. The Register reports Amazon has more than 200 satellites in orbit and plans 20 or more launches in 2027; the next Vulcan mission, expected within weeks, is now almost certainly on hold. Amazon said there is risk with any inaugural mission and that it still trusts ULA.</p>
+  <p>Why it matters beyond Amazon: ULA is one of the Pentagon's main national-security launch providers, alongside SpaceX. A return-to-flight investigation leaves both the government and Amazon's Starlink rival more dependent on SpaceX, whose Starship returned from orbit on Saturday. The six Northrop boosters, which caused problems on two earlier flights, appeared to perform normally; the upper stage uses L3Harris RL10 engines and the first stage Blue Origin BE-4s.</p>
+  <p><b>What to watch:</b> ULA's preliminary finding and a return-to-flight date; whether the Space Force pauses national-security missions assigned to Vulcan; and Amazon's revised 2027 schedule.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.geekwire.com/2026/amazon-loses-40-leo-satellites-as-ula-vulcan-launch-failure-deals-setback-to-tech-giants-">GeekWire, citing Spaceflight Now</a> &middot;
+    <a href="https://www.theregister.com/networks/2026/11/16/amazon-loses-first-batch-of-broadband-satellites-launched-on-custom-rocket/5310000">The Register</a> &middot;
+    <a href="https://abcnews.com/Technology/wireStory/spacexs-starship-returns-orbit-captured-launch-pad-arms-138148467">AP via ABC on Starship's return</a>
+  </p>
+  <div class="fb">
+    <p>Space launch as AI/tech infrastructure: keep stories like this?</p>
+    <label><input type="radio" name="fb-vulcan" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-vulcan" value="no"> No</label>
+  </div>
+</article>
+
+<article id="faa-routers">
+  <h2>The FAA has switched off broadcasting on all 69 routers of the type that grounded the country; the fight is now over money and L3Harris</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Continuing</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Transportation Secretary Sean Duffy said on Sunday that the FAA has disabled the broadcast function on all 69 routers of the kind that took down air-traffic communications on Friday. The suspect unit, at a radio site in El Dorado, Arkansas, where contractor L3Harris was replacing copper wiring with fibre, is in L3Harris's lab in Florida with FAA staff and the FBI. When it came back on, a system in Amarillo, Texas, replaced about three weeks earlier, also began flooding the network; that router is being examined too. Al Jazeera reports the faulty unit sent about 1,000 log-on attempts every four or five seconds. Duffy said there are no signs of a foreign cyberattack, and airlines expected to be near full capacity by Monday.</p>
+  <p>The new fact is the paper trail. CBS found Inspector General audits going back to 2006 on the FAA's telecommunications contract with Harris, now L3Harris, including a 2024 finding that ten of eleven extensions were improperly authorised, adding 57 months and $1.5 billion. Duffy says he is &ldquo;stuck with L3Harris&rdquo; until a new network exists.</p>
+  <p>The money fight is now on the lame-duck agenda. The administration wants $50 billion; Senator Brian Schatz proposes taking part of it from the extra $60 billion given to ICE; Representative Rosa DeLauro says the agency already has historic funding and needs a competent partner.</p>
+  <p><b>What to watch:</b> the root-cause finding from the L3Harris lab; any supplemental FAA request attached to the December funding deadline; and Thanksgiving week, the first full-volume test of the patched network.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; old equipment or a botched upgrade, and is the fix more money?</span>
+    <p><b>What is disputed.</b> Both facts and significance. The administration's account is decades-old equipment that needs $50 billion to replace; Duffy told CBS the suspect router should have been replaced in 2006. The other account, from Democrats and the audit record, is that the outage started during upgrade work by the incumbent contractor, at a site and a second router that had just been modernised, and that the problem is contract management, not appropriations.</p>
+    <p><b>Why they differ.</b> Interest first: the administration is asking Congress for money before the gavels change hands in January, and Democrats want leverage over how it is spent. But the mundane explanation covers most of it: both are true at once. An old network failed while being upgraded piecemeal by the firm that owns much of it. The Amarillo detail, a three-week-old system that also flooded, is the one fact that points away from &ldquo;too old&rdquo; and towards installation or configuration.</p>
+    <p><b>What it means.</b> The evidence so far supports &ldquo;upgrade-induced failure on a fragile legacy network&rdquo;. That makes both claims partly right and makes neither $50 billion nor &ldquo;they already have the money&rdquo; a sufficient answer. Believe meanwhile that the immediate risk is managed (broadcasting is off). The lab finding on whether the Arkansas router was faulty or misinstalled will settle which half dominates.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://abcnews.com/Politics/transportation-secretary-duffy-atc-routers-ability-broadcast-data/story?id=138155545">ABC News, Duffy on This Week</a> &middot;
+    <a href="https://www.cbsnews.com/news/faa-ground-stop-warnings-records/">CBS News investigative unit on the audits</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/16/after-a-nationwide-ground-stop-us-faces-aviation-infrastructure-questions">Al Jazeera on the funding fight</a> &middot;
+    <a href="https://rollcall.com/2026/11/16/this-week-permitting-bill-hits-senate-floor-amid-aviation-funding-fight/">Roll Call, week ahead</a> &middot;
+    <a href="2026-11-14-grok.html">14 November edition</a>
+  </p>
+  <div class="fb">
+    <p>Keep following the FAA after the outage, or only if it recurs or Congress acts?</p>
+    <label><input type="radio" name="fb-faa" value="follow"> Follow it</label>
+    <label><input type="radio" name="fb-faa" value="events"> Only on recurrence or action</label>
+  </div>
+</article>
+
+<article id="gulf-oil">
+  <h2>Three tankers hit mines over the weekend and a third carrier arrived, yet Florida gas is at an eight-month low</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">Continuing</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>One chain, from the strait to the pump. In the Gulf, Semafor reports three oil tankers caught fire over the weekend after hitting mines in the Strait of Hormuz; Iran's navy, via state media, described a Saturday strike in the eastern strait. Iran's Revolutionary Guards claimed a second drone attack on a US radar at Bahrain on Sunday; Bahrain says it intercepted the drones. Al Jazeera reports the USS Theodore Roosevelt has arrived, giving Central Command three carriers. Reuters, via Semafor, reports Trump has told advisers he may hold off on striking Iran if there are no new provocations.</p>
+  <p>On Monday, Iran's foreign minister said a ten-nation regional bloc meeting in Islamabad backed Tehran's plan to reopen Hormuz within two days of an initial ceasefire. Washington has rejected Iran's seven conditions, which include releasing frozen assets and lifting the naval blockade, as unacceptable. Tehran also said UN inspectors will not return to damaged nuclear sites until the war has &ldquo;permanently ended&rdquo;.</p>
+  <p>At the pump, the direction is down despite all of that. AAA says the national average is below $4 for the first time since July. Florida averaged $3.62 on Sunday, down 19 cents in a week, 61 cents in a month and 81 cents below the late-September peak, because global supply now exceeds demand. Trump has extended the Jones Act shipping waiver by 90 days from 12 a.m. Monday, Bloomberg reports via gCaptain, unchanged in scope, over shipbuilders' objections.</p>
+  <p><b>What to watch:</b> Tuesday's EIA weekly retail print (17 November) for the trend; CENTCOM on the Bahrain claim; and whether the Islamabad plan draws any US response.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; did Iran hit Bahrain, and did the bloc back Iran?</span>
+    <p><b>What is disputed.</b> Two facts disputes. Iran says its drones struck a US radar at Bahrain; Bahrain says they were intercepted, and the US military denied a similar Iranian claim last week. And Araghchi says the regional bloc backed his two-day plan; CBS notes no other attending country confirmed it.</p>
+    <p><b>Why they differ.</b> Vantage and interest. Each Iranian claim is made by the party that benefits from appearing effective and diplomatically supported, and is reported from state media; the denials come from the defender, which benefits from appearing secure. Neither side has shown imagery. Timing helps a little: Bahrain's account is a same-day statement, not a later revision.</p>
+    <p><b>What it means.</b> Lean towards interception at Bahrain: two denials in a week from the parties with eyes on the base, against claims without evidence. Treat the bloc's backing as Iran's description until Pakistan, Turkey or another member says the same in its own words. The tanker mine strikes are better attested, by satellite imagery and Iran's own navy. Settling it: a CENTCOM statement, commercial imagery of the Riffa site, a joint communique from Islamabad.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.semafor.com/article/11/15/2026/iran-attacks-bahrain-as-talks-stall">Semafor</a> &middot;
+    <a href="https://www.cbsnews.com/live-updates/iran-war-us-nuclear-oil-strait-of-hormuz/">CBS News live updates</a> &middot;
+    <a href="https://www.aljazeera.com/news/liveblog/2026/11/16/iran-war-live-tehran-warns-it-may-strike-first-before-another-us-attack">Al Jazeera live</a> &middot;
+    <a href="https://gcaptain.com/oil-tanker-on-fire-after-hitting-mine-in-hormuz/">gCaptain (Reuters) on the mine strike</a> &middot;
+    <a href="https://gcaptain.com/trump-to-extend-shipping-waiver-for-oil-fertilizer-for-90-days/">gCaptain (Bloomberg) on the waiver</a> &middot;
+    <a href="https://www.fox13news.com/news/florida-gas-prices-drop-8-month-low">FOX 13 on AAA Florida prices</a> &middot;
+    <a href="https://gasprices.aaa.com/">AAA</a> &middot;
+    <a href="2026-11-15-grok.html">yesterday's edition</a>
+  </p>
+  <div class="fb">
+    <p>Is the strait-to-pump chain still the right single story, now that prices are falling while the Gulf heats up?</p>
+    <label><input type="radio" name="fb-gulf" value="one"> One story, as here</label>
+    <label><input type="radio" name="fb-gulf" value="split"> Split it</label>
+  </div>
+</article>
+
+<article id="trilateral">
+  <h2>Trump leaves for Asia; Washington says it expects no nuclear agreement from Thursday's meeting with Xi and Putin</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">Continuing</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>President Trump travels this week to the ASEAN summit in Manila and then to China, where Beijing says a China&ndash;US&ndash;Russia meeting is set for Thursday on the sidelines of the APEC summit in Shenzhen. NPR reports the White House confirmed on Friday that he will meet Xi Jinping and Vladimir Putin together, and that he will be in the region for about three days. Elon Musk is joining him; Semafor reports Commerce Secretary Lutnick is also expected, despite scrutiny over the Nvidia investigations.</p>
+  <p>The new fact is the expectation-setting. A White House official told NPR the administration does not expect any agreement on denuclearisation and called the meeting an &ldquo;entry point&rdquo; for talks on reducing stockpiles. The same official said Ukraine is not meant to come up. Beijing has described the meeting as having &ldquo;groundbreaking significance&rdquo;, NBC reports.</p>
+  <p>Why it matters for a US reader: CNN calls it a historic sit-down: a three-way meeting of the leaders of the three largest nuclear powers. Trump goes in after heavy midterm losses and with the Nvidia affair hanging over his Commerce Secretary, which NPR's sources say weakens his hand.</p>
+  <p><b>What to watch:</b> any joint text after Thursday; whether arms-control working groups are announced; and trade items. The US&ndash;China trade council met for the first time on 13 November with the tariff package unfinished.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; historic summit or a photo with no agenda?</span>
+    <p><b>What is disputed.</b> A significance dispute; the facts of the meeting are agreed. Beijing calls it groundbreaking. Washington's own officials say there will be no agreement. A former US ambassador told NPR that China strongly opposes being drawn into trilateral nuclear talks at all.</p>
+    <p><b>Why they differ.</b> Interest. China gets the status of hosting both leaders without committing to anything, and praising the format costs it nothing. Washington lowers expectations so that no deal is not a failure. China's resistance has a specific reason: a precedent of talking nuclear numbers with the two larger arsenals locks in an unequal frame.</p>
+    <p><b>What it means.</b> The evidence supports the low reading on substance and the high reading on imagery: expect a photograph and perhaps an agreement to keep talking, not limits. The test is whether China accepts any follow-on arms-control channel. A named working group would mean more than the meeting itself.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://text.npr.org/nx-s1-6041738">NPR</a> &middot;
+    <a href="https://www.semafor.com/article/11/15/2026/trump-to-meet-xi-and-putin-in-china">Semafor</a> &middot;
+    <a href="https://www.scmp.com/news/china/diplomacy/article/3374523/china-us-russia-trilateral-set-thursday-be">South China Morning Post (headline; article blocked)</a> &middot;
+    <a href="https://www.nbcnews.com/">NBC News front page</a> &middot;
+    <a href="https://www.cnn.com/2026/11/13/politics/trump-putin-xi-meeting">CNN</a> &middot;
+    <a href="2026-11-14-grok.html">14 November edition</a>
+  </p>
+  <div class="fb">
+    <p>How much space for summit previews before anything is agreed?</p>
+    <label><input type="radio" name="fb-tri" value="as-here"> As here</label>
+    <label><input type="radio" name="fb-tri" value="outcome-only"> Only the outcome</label>
+  </div>
+</article>
+
+<article id="intl-students">
+  <h2>New international enrolment at US colleges fell 15 per cent this fall</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>The Institute of International Education's fall snapshot, released on Monday, shows total international enrolment at US campuses down 9 per cent from last year and first-time international students down 15 per cent. Participation in Optional Practical Training, the post-graduation work programme, fell 6 per cent. More than 800 colleges answered. All of this comes to me through one Associated Press story, run by both CNN and ABC, so it carries the single-source label; the Los Angeles Times separately headlines a California decline at twice the national rate.</p>
+  <p>The policy context: DHS has proposed charging schools $70,000 for each student in OPT (not yet final, and expected to be challenged); it finalised a rule capping student stays at four years without approval, which a judge has temporarily blocked; and it has ended the legal status of thousands of students. DHS Secretary Markwayne Mullin says the changes close loopholes.</p>
+  <p>Why it matters: international students pay mostly full tuition and feed graduate science programmes and the tech hiring pipeline. A 15 per cent fall in new arrivals compounds for four years. Of the schools surveyed, 95 per cent expect students to look elsewhere if OPT is limited.</p>
+  <p><b>What to watch:</b> the OPT fee rule's final form and the lawsuits; IIE's full data next year; spring visa issuance.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is policy the cause?</span>
+    <p><b>What is disputed.</b> A significance dispute over attribution. Faculty advocates quoted in the story say the administration has made the US feel unsafe. The survey's own respondents point to policy too: 88 per cent blame the visa process and 70 per cent travel restrictions. IIE's research head says politics is not the only reason, citing global competition and the rising cost of a US degree.</p>
+    <p><b>Why they differ.</b> Vantage. Schools answering a survey naturally name the external factor they cannot control. IIE, which publishes the series, has reason to separate long-run cost trends from one administration's actions.</p>
+    <p><b>What it means.</b> The size and timing of the drop, concentrated in new students and OPT, fit a policy shock better than slow cost trends, which would not move one cohort 15 per cent. Believe policy is the main driver and cost a background one. Settling it: whether rival destinations (UK, Canada, Australia) gained the students, which would confirm diversion rather than falling demand.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://abcnews.com/US/wireStory/fewer-students-traveling-abroad-study-us-universities-report-138169810">AP via ABC News</a> &middot;
+    <a href="https://www.cnn.com/2026/11/16/us/international-student-college-enrollment-hnk">CNN (same AP text)</a> &middot;
+    <a href="https://www.latimes.com/">Los Angeles Times front page</a>
+  </p>
+  <div class="fb">
+    <p>Higher-education and immigration data like this: more, or less?</p>
+    <label><input type="radio" name="fb-students" value="more"> More</label>
+    <label><input type="radio" name="fb-students" value="less"> Less</label>
+  </div>
+</article>
+
+<article id="doj-oversight">
+  <h2>A US attorney has warned Warren, Blumenthal and Slotkin over investigations they have not yet opened</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Aaron Reitz, the US Attorney for the Southern District of Texas, sent Senator Elizabeth Warren a letter on Sunday demanding she preserve documents about inquiries into people close to President Trump, NBC reports. Similar letters went to Senators Richard Blumenthal and Elissa Slotkin. Reitz pointed to a 11 November letter from Warren, Blumenthal and Representative Robert Garcia asking a Trump fundraiser on the National Park Foundation board to keep records about funding for the White House ballroom. He accused Warren of being eager to wield her future gavel against the President's associates; Fox News's account says he raised possible legal consequences if records are not kept.</p>
+  <p>Why it matters for this brief: Warren is the likely incoming chair of the Senate Banking Committee in January, which oversees the banks, payments firms and crypto companies this brief follows. A federal prosecutor signalling legal exposure for a committee chair's information requests is a new tactic. CNN reports Democrats have already been sending letters on the Trump family's crypto ties and cabinet officials' links to the industries they regulate, and that one targeted organisation quietly handed over records after Election Day.</p>
+  <p><b>What to watch:</b> any response from Senate counsel or the Speech or Debate Clause argument; whether the Justice Department takes any formal step beyond letters; and the first subpoenas after 3 January.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; document preservation or intimidation?</span>
+    <p><b>What is disputed.</b> A significance dispute; the letters' existence and wording are not contested. Reitz frames them as protecting private citizens from &ldquo;sweeping&rdquo; demands. CNN's sources describe third-party requests as standard oversight practice backed by long legal precedent.</p>
+    <p><b>Why they differ.</b> Interest is obvious on both sides. The more useful point is vantage: Reitz writes as a prosecutor, which is what gives a preservation letter its weight, while the lawyers CNN quotes are describing settled congressional practice.</p>
+    <p><b>What it means.</b> On the law as it stands, congressional information requests to third parties are routine, and a US attorney has no clear authority over a sitting senator's legislative work. Read the letters as positioning for executive-privilege fights next year rather than as the first step in a case. It would change only if the department opened a matter or went to court.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.nbcnews.com/politics/congress/us-attorney-warns-sen-elizabeth-warren-investigating-trump-associates-rcna609532">NBC News</a> &middot;
+    <a href="https://www.cnn.com/2026/11/16/politics/trump-block-democrats-investigations">CNN on the oversight strategy</a> &middot;
+    <a href="https://www.foxnews.com/politics/federal-prosecutor-warns-sen-warren-legal-consequences-records-arent-preserved-tru">Fox News</a>
+  </p>
+  <div class="fb">
+    <p>Oversight fights: follow them as a thread, or only when a court or subpoena is involved?</p>
+    <label><input type="radio" name="fb-doj" value="thread"> Follow as a thread</label>
+    <label><input type="radio" name="fb-doj" value="court"> Only courts and subpoenas</label>
+  </div>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Nine things I saw and ranked below the line. Each one opens &mdash; the line is my judgement, what is behind it is the substance.</p>
+
+<div class="also-list">
+
+<details class="short" id="a-anthropic-ipo">
+  <summary><span class="chip">AI &amp; tech industry</span> Anthropic's IPO is reported nearly seven times covered ahead of pricing on Wednesday and first trade on Thursday; bankers are weighing a price above the range.</summary>
+  <div class="exp">
+    <p>Bloomberg, as reported by Gulf News, says orders cover close to seven times the shares on offer, hotter than SpaceX's book at the same stage. The filing targets 825 million shares at $70&ndash;78 for up to $64.4 billion, plus a $26 billion private placement bought by seven compute suppliers led by Alphabet and Nvidia, with Nvidia committing up to $10 billion. Combined, up to $90.4 billion would be the largest listing ever. Retail gets about 20 per cent of the deal. Pricing is expected on 18 November and Nasdaq trading on 19 November; Semafor values it at about $1.4 trillion, and a price above the range could reach $1.5 trillion. Nvidia reports the day before pricing.</p>
+    <p class="btl"><b>Below the line because</b> the deal terms ran in earlier issues; the new fact is the order book, which is reported, not filed.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://gulfnews.com/business/anthropic-ipo-orders-hit-nearly-7-times-shares-on-offer-1.500748696">Gulf News (Bloomberg)</a> &middot; <a href="https://www.semafor.com/article/11/15/2026/anthropic-ipo-set-to-define-ai-trade">Semafor</a> &middot; <a href="https://finance.yahoo.com/markets/article/nvidias-first-post-jensen-earnings-and-anthropics-ipo-what-to-watch-this-week-110000732.html">Yahoo Finance</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-tsy10">
+  <summary><span class="chip">US debt &amp; fiscal</span> The 10-year Treasury closed Friday at 5.15 per cent on the Treasury's own par curve, up five basis points on the day; the 30-year was 5.47.</summary>
+  <div class="exp">
+    <p>Treasury's Daily Par Yield Curve for 13 November: 2-year 4.88, 10-year 5.15, 20-year 5.52, 30-year 5.47. The 10-year was 5.10 on 12 November and 4.98 on 10 November (11 November was a federal holiday, so no curve), a 17 basis-point rise since 10 November as the AI sell-off and the Nvidia affair hit risk assets. These are the issuer's numbers, per the standing rule on market levels.</p>
+    <p class="btl"><b>Below the line because</b> it is a print on a moving series, not a new development; it leads if the long end breaks out.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value=2026">Treasury Daily Par Yield Curve</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-unicredit">
+  <summary><span class="chip">US financials</span> The Federal Reserve and the European Commission have both approved UniCredit's takeover of Commerzbank, Handelsblatt reports.</summary>
+  <div class="exp">
+    <p>The Commission found no competition concerns, noting that the two banks' combined share of German small and mid-sized business lending is moderate, and flagged only trade finance as an area of strong joint position with many alternatives. Competition Commissioner Teresa Ribera said Europe needs stronger, cross-border banks. The Fed's approval covers Commerzbank's US operations. It creates one of Europe's largest lenders, a competitor to US banks in European corporate and trade finance.</p>
+    <p class="btl"><b>Below the line because</b> the US channel is regulatory approval rather than a change for US banks.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.handelsblatt.com/finanzen/banken-versicherungen/banken/banken-eu-und-fed-erlauben-commerzbank-uebernahme-durch-unicredit/100270206.html">Handelsblatt (German)</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-goldman-scotus">
+  <summary><span class="chip">US financials</span> The Supreme Court will decide whether a bankruptcy court can refuse to enforce a credit-card arbitration clause, in Goldman Sachs Bank v. Brown.</summary>
+  <div class="exp">
+    <p>Granted on Friday afternoon for the 2026&ndash;27 term. Two bankrupt cardholders say Goldman kept trying to collect despite the automatic stay; Goldman asked to arbitrate; the bankruptcy court, the district court and a divided 4th Circuit panel refused, saying arbitration would conflict with the Bankruptcy Code. A ruling for Goldman would push more stay-violation claims against card issuers out of bankruptcy court and into arbitration, which matters to every large US card lender.</p>
+    <p class="btl"><b>Below the line because</b> argument is months away.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.scotusblog.com/2026/11/supreme-court-agrees-to-weigh-in-on-goldman-sachs-arbitration-dispute/">SCOTUSblog</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-gold-btc">
+  <summary><span class="chip">Macro &amp; markets</span> Gold is at its lowest since October 2025 and Bitcoin has fallen below $70,000, as the AI sell-off resumed on Monday.</summary>
+  <div class="exp">
+    <p>Handelsblatt reports gold at its lowest level since October 2025; Fox Business and Yahoo Finance report Bitcoin below $70,000, with crypto stocks sliding premarket. Goldman Sachs, per Handelsblatt, expects the oil market to move into a significant surplus despite supply risks. The common thread is a falling bid for hedges and speculative assets as yields rise (see the 10-year above). Neither series is from an issuer, so treat the levels as approximate.</p>
+    <p class="btl"><b>Below the line because</b> these are vendor levels on a single morning.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.handelsblatt.com/finanzen/maerkte/devisen-rohstoffe/gold-edelmetall-notiert-auf-tiefstem-stand-seit-oktober-2025/100270118.html">Handelsblatt</a> &middot; <a href="https://finance.yahoo.com/markets/crypto/articles/crypto-stocks-slide-premarket-bitcoin-105729561.html">Yahoo Finance</a> &middot; <a href="https://www.foxbusiness.com/video/6408354291112">Fox Business</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-permitting">
+  <summary><span class="chip">Energy &amp; grid</span> The Senate's bipartisan permitting overhaul is the main floor business this week, Roll Call reports.</summary>
+  <div class="exp">
+    <p>The permitting bill, which bears on how fast transmission lines, generation and the grid capacity that AI data centres need can be approved, competes this lame-duck week with the aviation funding fight and the Senate Democratic leadership contest. The December funding deadline looms behind all three, and Senator Van Hollen wants to use it to cut off Iran war funding. Roll Call's preview gives no detail on the bill text or vote timing.</p>
+    <p class="btl"><b>Below the line because</b> a floor schedule is not a vote; it leads when there is a cloture vote or text.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://rollcall.com/2026/11/16/this-week-permitting-bill-hits-senate-floor-amid-aviation-funding-fight/">Roll Call</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-starshield">
+  <summary><span class="chip">Geopolitics</span> Zelenskyy has asked Washington to lift remaining limits on SpaceX's Starshield, saying throttled links leave Ukraine's interceptor drones unable to stop Russian attacks on the grid.</summary>
+  <div class="exp">
+    <p>Zelenskyy says interceptor drones lose their link to operators at about 161 km/h. He has told his defence and foreign ministries to work with the US and SpaceX. The service was slowed in October and partly restored after Ukrainian criticism. DW notes the US government and SpaceX have given partly contradictory answers about who imposed the limit. Russia launched more than 2,300 drones in the past week, by Zelenskyy's count. The US channel: Starshield is SpaceX's government service, so the decision sits with Washington or SpaceX, whichever actually imposed the limit.</p>
+    <p class="btl"><b>Below the line because</b> it is a request, not a decision, and Ukraine coverage stays at the reader's settled balance.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.dw.com/en/zelenskyy-urges-removal-of-starshield-limits-on-ukraine/a-79953300">DW</a> &middot; <a href="https://www.pbs.org/newshour/world/zelenskyy-says-starshield-restrictions-threaten-ukraines-energy-defenses-ahead-of-winter">AP via PBS</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-core-sci">
+  <summary><span class="chip">Energy &amp; grid</span> Core Scientific says it will be out of Bitcoin mining by year-end; colocation for AI was 92.5 per cent of its third-quarter revenue.</summary>
+  <div class="exp">
+    <p>Data Center Dynamics, working from the company's 5 November earnings call and its 10-Q, reports total quarterly revenue of $232.9 million against $81.1 million a year earlier, with colocation at $215.4 million. Revenue from mining for its own account fell to $12.3 million from $57.4 million. It sold 3,374 Bitcoin in the first nine months of 2026 to fund capital spending and held 32 at the end of September. The point for this brief: powered sites built for crypto are being converted to AI load, which is one way data-centre demand reaches the grid faster than new interconnections can.</p>
+    <p class="btl"><b>Below the line because</b> the call was eleven days ago; what is new is the filing detail, and it is one company.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.datacenterdynamics.com/en/news/core-scientific-to-exit-bitcoin-mining-by-end-of-2026-as-it-grows-ai-colo-business/">Data Center Dynamics</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-fl-derby">
+  <summary><span class="chip">Florida &amp; Tampa Bay</span> Plans for the 130-acre former Derby Lane site in north St. Petersburg include 380 rental homes under the Live Local Act and a new casino.</summary>
+  <div class="exp">
+    <p>WUSF, citing St. Pete Rising, reports Winter Park developer Hillpointe's first phase: 300 apartments and 80 townhomes on about 28 acres at 10490 Gandy Blvd. N. It is filed under Florida's Live Local Act, which lets qualifying rentals bypass some local zoning if at least 40 per cent stay affordable for 30 years. Hillpointe has not said how many units would be income-restricted or at what rents. The wider plan adds commercial and industrial space and a gaming venue on Gandy Boulevard. The Live Local Act bypass is the reason this is a local-merit item: it limits what St. Petersburg's council can decide.</p>
+    <p class="btl"><b>Below the line because</b> it is a proposal with no filing date or rents yet.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.wusf.org/economy-business/2026-11-16/derby-lane-redevelopment-plans-revealed-housing-new-casino">WUSF</a></p>
+  </div>
+</details>
+
+</div>
+
+<div class="fb">
+  <p>Were the right things ranked below the line today?</p>
+  <label><input type="radio" name="fb-also" value="right"> Yes</label>
+  <label><input type="radio" name="fb-also" value="promote"> Something here should have led</label>
+  <label><input type="radio" name="fb-also" value="cut"> Some of these should not run at all</label>
+</div>
+
+<button class="submit" id="send">Send my feedback &rarr;</button>
+<p class="sources" style="text-align:center">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+
+<footer>
+  <h4>Sources checked this run &mdash; 90, of which 66 outside the watchlist (70 answered)</h4>
+  <p><b>Pointed at by a thread (24):</b> Treasury par yield curve &middot; Treasury Fiscal Data (debt) &middot; EIA &middot; AAA &middot; gCaptain &middot; OilPrice &middot; OFAC &middot; Federal Reserve press &middot; BLS &middot; CBO &middot; FDIC &middot; OCC &middot; FERC &middot; SEC &middot; NRC &middot; CFTC &middot; SCOTUSblog &middot; Techmeme (Nvidia thread) &middot; Tampa Bay Times &middot; FOX 13 Tampa &middot; WUSF &middot; Florida Phoenix &middot; WFLA &middot; White House.</p>
+  <p><b>Not pointed at by any thread (66):</b> Federal Register API &middot; Wikipedia current events &middot; NPR text &middot; Al Jazeera &middot; NBC &middot; CBS &middot; ABC (two hosts) &middot; PBS &middot; Guardian &middot; BBC feed &middot; CNN (two hosts) &middot; Fox News &middot; Fox Business &middot; New York Post &middot; Washington Post &middot; Politico &middot; The Hill &middot; Axios &middot; Semafor &middot; Reuters &middot; Yahoo Finance &middot; CNBC &middot; MarketWatch feed &middot; FT &middot; Business Insider &middot; Forbes &middot; Newsmax &middot; Gulf News &middot; Hindustan Times &middot; Insurance Journal &middot; American Banker &middot; PYMNTS &middot; CoinDesk &middot; Trading Economics &middot; Data Center Dynamics &middot; The Register &middot; Ars Technica &middot; The Verge &middot; TechCrunch &middot; GeekWire &middot; FreightWaves &middot; Utility Dive &middot; DOE &middot; FTC &middot; Roll Call &middot; Punchbowl &middot; Breaking Defense &middot; Defense One &middot; War on the Rocks &middot; Lawfare &middot; STAT &middot; The Debrief &middot; LA Times &middot; Handelsblatt &middot; Le Monde &middot; Le Figaro &middot; Der Spiegel &middot; El Pa&iacute;s &middot; DW &middot; Yle &middot; NHK &middot; Haaretz &middot; Nikkei Asia &middot; SCMP.</p>
+
+  <p><b>Fetched and read for screening, not cited in a story:</b> americanbanker.com (swipe-fee suit, run 13 Nov; OCC AI playbook) &middot; arstechnica.com &middot; breakingdefense.com (Pentagon &ldquo;Super Intelligence Office&rdquo;, run 12 Nov) &middot; defenseone.com &middot; federalregister.gov (today's 21 rules and notices; the FCC submarine-cable item is only a correcting amendment) &middot; federalreserve.gov &middot; feeds.content.dowjones.io (MarketWatch feed) &middot; floridaphoenix.com (asylum, Medicaid and Oculina items, all run earlier) &middot; insurancejournal.com (AI-freeze lawsuit, run 13 Nov) &middot; lefigaro.fr &middot; lemonde.fr &middot; nypost.com &middot; statnews.com &middot; tampabay.com &middot; thedebrief.org (no UAP item) &middot; theguardian.com &middot; theverge.com &middot; tradingeconomics.com &middot; warontherocks.com &middot; whitehouse.gov (no new presidential action beyond Federal Register items).</p>
+
+  <h4>The negative check</h4>
+  <p><i>What is the biggest story today that is not on my list, and why is it not?</i> The planned AI &ldquo;national champions&rdquo; designation, carried by one newspaper report; no beat or thread pointed at it, and it leads. The Vulcan failure and the IIE enrolment survey also came from the sweep rather than the watchlist and both lead. The check removed three candidates (Supreme Court asylum grant, Medicaid work-requirement delay, the frontier-AI freeze lawsuit) because earlier issues already ran them and nothing new happened. It also demoted Ukraine to a short item and kept Starship's catch out (reported on Saturday).</p>
+
+  <h4>Accountability and corrections</h4>
+  <p>No corrections today. On 14 November this brief said the FAA's cause was disputed between &ldquo;old routers overloaded on their own&rdquo; and &ldquo;new equipment overwhelming the old system&rdquo;. Sunday's detail, a three-week-old Amarillo unit also flooding, leans toward the second reading; the box in today's FAA story updates that framing rather than reversing it.</p>
+
+  <h4>Threads swept, no trigger fired</h4>
+  <p>Fed (no print, no decision) &middot; UAP disclosure (nothing new in reachable sources) &middot; lab safety disclosures &middot; state AI legislation &middot; US&ndash;China trade council (no new fact since 13 November) &middot; Bab el-Mandeb transit counts (no new count) &middot; CPI/PPI (no release) &middot; Florida dengue.</p>
+
+  <h4>Could not reach</h4>
+  <p>403 or no response: Utility Dive, El Pa&iacute;s, The Hill, Axios, SEC press, BLS (CPI and schedule pages, third day), NRC, CBO, FERC, Lawfare, WFLA, Politico, Washington Post, Forbes, Reuters business, Treasury Fiscal Data; 404 at FTC, OCC and two article URLs; SCMP article pages (headline only); Handelsblatt's Goldman oil piece rendered empty. text.npr.org answered with headlines today.</p>
+
+  <h4>About this issue</h4>
+  <ul>
+    <li>Grok edition, produced by the morning run on 16 November 2026, built from the Issue 10 framework (2026-09-10b.html), not from a previous Grok edition.</li>
+    <li>Eight lead stories, nine short items. Four leads are new subjects; four continue threads, at the cap of four.</li>
+    <li>Every story carries one confidence marker. Six divergence boxes. Every quotation is under fifteen words and attributed; everything else is paraphrase.</li>
+  </ul>
+</footer>
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n  → " + i.value);
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on Issue No. 73-grok — 16 November 2026\n\n" + lines.join("\n")
+      + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-11-16-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
