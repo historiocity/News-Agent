@@ -1361,6 +1361,79 @@ Three validator changes, all of which flagged a correct issue today:
 The 5 November proposal (cut "dates ahead" and the owed list from the issue, cap
 the footer, raise the source floor to 15) has had no reply. **Nothing removed.**
 
+## Operational notes, 17 November 2026
+
+**Issue No. 74. Seven leads, ten shorts, two Florida items, seven divergence
+boxes, fourteen source domains.** Validator passed first time. **No chart** --
+said so in the provenance rather than shipping a decorative one.
+
+### Three long documents were available and two could be read
+
+**BIS, *Addressing Remote Access to Advanced Semiconductors* (117pp), and DOL
+ETA's PERM proposal (350pp), both read in the original; they took the whole
+morning's document budget.** Four more rules totalling 1,176 pages were named in
+a short and not read, with the omission stated. **That pattern worked: Sunday's
+equivalent admission about the Head Start rule became Monday's second lead.**
+Keep it. **The HIPAA privacy final rule (363pp, 2026-23429) is first tomorrow.**
+
+### What the BIS rule says, for the file
+
+New §744.24: licence required for advanced "Super Intelligence" items destined
+for a data centre **anywhere** giving direct or indirect access to **more than
+12,000,000 aggregate TPP** to an entity headquartered or ultimately parented in
+Macau or Country Group D:5, **at one site or across digitally-linked sites**.
+Licences now needed for **Indonesia, Malaysia, Singapore, Thailand, Brazil**,
+with a carve-out for US-parented recipients. The **AI Diffusion Rule is formally
+rescinded**. "Commercial recommender system" is defined to **exclude anything
+generating novel content**. De minimis unavailable where the end use is known.
+**This is the answer to the loophole this brief described on 15 November, and
+Singapore -- where Megaspeed is headquartered -- is on the named list.**
+
+### A mechanism this brief had wrong for six weeks
+
+**Tanker freight rates are not a risk gauge; they are a price for tonne-miles.**
+VLCC Gulf--China fell to **308 Worldscale on 13 Nov, --64% from 841 on 8 Oct**,
+*while* attacks continued, because Gulf exports recovering to near pre-war
+volumes shortened average voyages faster than attacks removed ships. **Rule: a
+freight rate can collapse while the waterway gets more dangerous. Stop reading
+rates as danger.** Awkwardness named in print: the collapse is measured by the
+Baltic Exchange, the index this brief said on 14 November it would stop
+depending on.
+
+### Precision wins
+
+- **UKMTO describes Monday's first casualty as hit by an "unidentified
+  projectile".** Sunday's issue carried Iran's claim of three tankers striking
+  **mines**. Different ships, different days, so not a refutation -- but it is
+  the first independent characterisation since, and it describes the older
+  method. Keep the mine/limpet/projectile distinction explicit every time.
+- **Al Jazeera called California "the first state" to sue OpenAI over the July
+  incident. True of US states only: British Columbia sued OpenAI and Sam Altman
+  personally on 22 September, and this brief led on it.** The archive caught
+  what the wire did not. **Read your own back issues before accepting a "first".**
+- **The AAA diesel premium made a new high today at $2.2030**, above the
+  $2.1960 of 14 November, two days after this brief noted the record run had
+  stopped. Said so plainly. **Diesel is falling about a cent a day; regular is
+  falling three.**
+
+### Sources
+
+- **iea.org 403 for the fourth day; bls.gov 403 for the third.** Both now block
+  figures this brief is using at one remove through analysts and wires.
+- **supremecourt.gov has answered four days running**, and Monday's order list
+  was up by the time this run reached it -- unlike yesterday. The Monday list
+  posts later in the Eastern morning; it is readable by the following run at the
+  latest.
+- **text.npr.org not attempted** after two blank mornings. **A replacement
+  general wire sweep is owed and overdue.**
+- **WUSF supplied both Florida items for a second day.** It is now the standing
+  local source.
+
+### Standing question to the reader, unanswered
+
+The 5 November proposal (cut "dates ahead" and the owed list from the issue, cap
+the footer, raise the source floor to 15) has had no reply. **Nothing removed.**
+
 ## Watchlist
 
 Empty at first run. Populates from reader feedback and from threads that recur on
@@ -1629,3 +1702,6 @@ Retire a thread because it is finished or stopped mattering — never to make ro
 | Force protection and the conduct of the Iran war | active | **16 Nov, new thread.** Army Maj. Stephen Ramsbottom, a survivor of the **1 March strike on a makeshift operations centre at Kuwait's Shuaiba port that killed six US Army Reserve soldiers**, filed a whistleblower disclosure with both Armed Services committees. Alleges he raised the lack of aerial protection and was told it was not a concern; **a counter-drone system was discussed and never arrived, and he does not know if it was ever ordered**; no physician, no fixed aid station, one ambulance. Pentagon said at the time the building was fortified; a source described concrete barriers good against car bombs only. **THE CHECKABLE CLAIM IS THE REQUISITION: either it exists or it does not.** Filed weeks before Democrats take Congress and subpoena power in January. Wakes on: committee action; the Army's own investigation; the requisition record; a Pentagon response. | 2026-11-16 |
 | Autonomous and AI-assisted weapons | active | **16 Nov, new thread.** A US cruise missile aimed at the IRGC **hit a girls' school in Minab, Iran, in late February, killing more than 150, most of them schoolchildren**; investigations cited by Handelsblatt attribute it to time pressure, outdated intelligence and over-trust in AI-supported target planning. Not an autonomous strike -- a human approved it. The **128 states party to the UN Convention on Certain Conventional Weapons** are attempting again, in Geneva, to constrain autonomous weapons; the CCW has discussed this since 2014, works by consensus, and has produced no binding instrument. **THE REGULATORY FIGHT IS OVER THE DEFINITION: states that field these systems define autonomy as the machine firing, which exempts decision-support; campaigners define it as meaningful human control, which does not. A treaty on the narrow definition would not have changed Minab.** **Honest limits: single non-English source; the investigations are unnamed by it and unread here; no US, Iranian or UN document seen; the casualty figure is uncorroborated. This brief missed Minab for nine months.** Wakes on: a Geneva mandate and its definition; any US assessment; corroboration of the casualty count; January congressional investigations reaching targeting practice. | 2026-11-16 |
 | Pressure on NATO's edges, short of attack | active | **16 Nov, new thread.** Drones struck **three commercial ships near Romania's Sulina canal** late on 15 Nov -- Greek-flagged tanker *Evia Petrol V*, bulk carrier *Marsol*, products tanker *Ali Najafov* (St Kitts and Nevis) -- no casualties; Romania scrambled jets twice and declined to name an origin. **Estonia closes its Russian border crossings from 1 December** after eight arrests over a GRU-ordered arson attempt on a defence technology firm. **THE DIVERGENCE IS EVIDENTIARY, NOT POLITICAL: Estonia has detainees and an attribution, Romania has wreckage; attribution obliges a response, and Romania's options in a shared sea lane are worse than Estonia's at a land border.** US channel: the Sulina export route, the Brussels sanctions list reaching US correspondent banking, and NATO air policing the US underwrites while the Navy's weight is in the Gulf. Wakes on: Romanian attribution; Article 4 consultations; Black Sea war-risk premiums; repetition at Sulina. | 2026-11-16 |
+| Iranian planning against the US homeland | active | **17 Nov, new thread.** Seven US officials tell CNN new intelligence indicates Iran is **developing plans to target senior administration officials with a radiological dispersal device or a chemical weapon in Washington**; characterised as option-generation rather than imminent, but **two sources say the plotting is very specific, including locations and targets**. Several interagency meetings in the past week. **The Secret Service moved Treasury Secretary Scott Bessent into military housing last week** over Iranian threats. White House: "no credible threats to the homeland" -- **which is a term of art meaning specific, credible AND imminent, so both statements can be true**. **HONEST LIMITS: one newsroom, seven unnamed officials, no document, no second outlet, and the sources themselves say Iran's capability to execute is debated.** Wakes on: any NTAS bulletin or FBI/DHS advisory; a second newsroom matching; further protective-detail changes; a prosecution; January committee briefings. | 2026-11-17 |
+| PERM, Schedule A and the labour market test | active | **17 Nov, new thread.** DOL ETA NPRM (RIN 1205-AC29, 20 CFR 656, 350pp) would **eliminate further administration of Schedule A**, whose Group I has contained only **professional nurses and physical therapists since the 1990s** (Group II: exceptional ability in the sciences, arts, performing arts). Removing it forces a full labour market test on every hospital sponsoring a foreign-trained nurse. Also: stronger minimum recruitment standards; expanded notice of filing; employer signature on all supporting documents; **new layoff protections and reporting duties explicitly reaching employers using third-party staffing companies**, after DOL-OIG found fraudulent applications and coercive wage-kickback schemes among tech staffing firms. Scale: **108,786 certified PERM applications a year (FY23-25), 132,621 with Schedule A, ~26,277 employers; 99.61% already e-file; net ten-year effect ~$164m of savings.** Comments close 60 days after publication. **THE STATUTORY QUESTION IS WHETHER THERE IS A SHORTAGE OF NURSES OR A SHORTAGE AT THE OFFERED WAGE -- hospitals count vacancies, DOL counts wages, and neither answers it alone.** Wakes on: hospital association and nursing union comments; whether Schedule A is severed in a final rule; state nurse-staffing data after. | 2026-11-17 |
+| Shadow-fleet service providers and EU sanctions | active | **17 Nov, new thread.** EU added **12 individuals and 101 entities**, reaching **owners, managers, insurers and financiers** rather than hulls, including firms in the **UAE, Oman, the Seychelles and China**. Named: Russian nationals **Igor Konfino and Daniil Mosin**, managers of **White Agate Marine, Citrine Marine and Serpentine Marine**, whose vessels were already designated. **THE THEORY: a sanctioned hull is sold, renamed and reflagged within weeks, but a manager with a banking relationship and an insurer whose certificate a port state accepts are not quickly replaced.** Counter-evidence in the same week: Gulf exporters restoring volumes via ship-to-ship transfers and dark crossings, i.e. tonnage already outside reach. **US channel is correspondent banking -- an EU designation becomes counterparty risk for any dollar-clearing bank without any US action.** Wakes on: OFAC mirroring; loadings at Primorsk and Novorossiysk; reflagging or reincorporation by the named managers; insurer withdrawals. | 2026-11-17 |
