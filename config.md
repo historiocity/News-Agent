@@ -1434,6 +1434,80 @@ depending on.
 The 5 November proposal (cut "dates ahead" and the owed list from the issue, cap
 the footer, raise the source floor to 15) has had no reply. **Nothing removed.**
 
+## Operational notes, 18 November 2026
+
+**Issue No. 75. Eight leads, six shorts, two Florida items, eight divergence
+boxes, sixteen source domains.** Validator blocked once, and it was real.
+
+### The anchor check earned its keep again
+
+**`2026-11-17.html#s-neworleans` was dead: that short ran on the 16th.** Third
+time in a fortnight the self-diagnosing message has named the right file in one
+step. **Per the 14 November rule, the prose was fixed too, not just the href** --
+the sentence now says the board briefed on Sunday and this brief reported it on
+Monday, which is what happened.
+
+### Six shorts, not ten, and said so
+
+Eight leads took the morning. **Rather than pad the tier, the issue ran six and
+the tier's feedback question asks the reader whether that was the right trade.**
+Two German-language items that deserved shorts did not get them and the footer
+says so. **"Never manufacture volume" beats hitting a typical count.**
+
+### The week's outages have a common cause after all
+
+Monday this brief declined to call Microsoft, the FAA, United and Chase a trend,
+on the ground that they had nothing technical in common, and kept only the
+narrow observation that three of four were caused by routine maintenance or an
+update. **NSANet makes it four of five, and the DNI supplied the chain:
+PHP vulnerabilities found last month, exploited faster with AI assistance, an
+emergency global patch cycle, and systems that would not restart.** **The narrow
+observation was the right thing to keep; the trend claim would have been right
+for the wrong reason.**
+
+- **NSA's own statement ("temporary degradation during scheduled routine
+  maintenance") and the DNI's ("an emergency patch for vulnerabilities found
+  last month") are not the same event.** Printed both, side by side.
+- **cisa.gov was added to the pull this morning because of this story and
+  returned 403 on its first attempt.** The one source that would say whether
+  other agencies hit the same failure mode is unreachable.
+
+### A correction to this brief's own explanation, made in the box
+
+Yesterday's lead explained the 64% VLCC rate collapse as falling tonne-miles.
+**Today's data shows that is incomplete: Suezmax and Aframax volume through
+Hormuz hit a wartime high above 2m bpd, so part of the freed VLCC capacity is
+supertankers taken out of service by attacks and replaced by two smaller hulls.**
+And **ballast tanker capacity sailing toward the Gulf is down ~40% since
+end-August**, which means the record export recovery is partly running on a
+buffer. **Rule: when a rate moves, ask whether the fleet composition changed,
+not just the voyage length.**
+
+### Confidence upgraded on the record, not by a second newsroom
+
+Yesterday's dirty-bomb lead was labelled single-sourced. **The president
+threatened Iran over it and the homeland security secretary warned of all-out
+war -- neither denied the plan.** The issue says plainly: **upgrade from
+single-sourced to corroborated by official response, and leave the capability
+question where the sources left it.** **An administration's reaction to a leak
+is evidence about the leak.**
+
+### Sources
+
+- **iea.org 403 for the fifth day; bls.gov for the fourth.** Both now block
+  figures used here at one remove.
+- **EIA's ULSD spot and WTI series still end 6 November** -- they move with the
+  Wednesday WPSR, **which lands hours after this brief runs**. That is why there
+  has been no crack spread and no chart for two days, and it is a structural
+  limit of a 5am run, not a failure.
+- **tampabay.com: three consecutive days of no dated links.** WUSF is carrying
+  the local section alone.
+
+### Standing question to the reader, unanswered
+
+The 5 November proposal (cut "dates ahead" and the owed list from the issue, cap
+the footer, raise the source floor to 15) has had no reply. **Nothing removed.**
+
 ## Watchlist
 
 Empty at first run. Populates from reader feedback and from threads that recur on
@@ -1705,3 +1779,7 @@ Retire a thread because it is finished or stopped mattering — never to make ro
 | Iranian planning against the US homeland | active | **17 Nov, new thread.** Seven US officials tell CNN new intelligence indicates Iran is **developing plans to target senior administration officials with a radiological dispersal device or a chemical weapon in Washington**; characterised as option-generation rather than imminent, but **two sources say the plotting is very specific, including locations and targets**. Several interagency meetings in the past week. **The Secret Service moved Treasury Secretary Scott Bessent into military housing last week** over Iranian threats. White House: "no credible threats to the homeland" -- **which is a term of art meaning specific, credible AND imminent, so both statements can be true**. **HONEST LIMITS: one newsroom, seven unnamed officials, no document, no second outlet, and the sources themselves say Iran's capability to execute is debated.** Wakes on: any NTAS bulletin or FBI/DHS advisory; a second newsroom matching; further protective-detail changes; a prosecution; January committee briefings. | 2026-11-17 |
 | PERM, Schedule A and the labour market test | active | **17 Nov, new thread.** DOL ETA NPRM (RIN 1205-AC29, 20 CFR 656, 350pp) would **eliminate further administration of Schedule A**, whose Group I has contained only **professional nurses and physical therapists since the 1990s** (Group II: exceptional ability in the sciences, arts, performing arts). Removing it forces a full labour market test on every hospital sponsoring a foreign-trained nurse. Also: stronger minimum recruitment standards; expanded notice of filing; employer signature on all supporting documents; **new layoff protections and reporting duties explicitly reaching employers using third-party staffing companies**, after DOL-OIG found fraudulent applications and coercive wage-kickback schemes among tech staffing firms. Scale: **108,786 certified PERM applications a year (FY23-25), 132,621 with Schedule A, ~26,277 employers; 99.61% already e-file; net ten-year effect ~$164m of savings.** Comments close 60 days after publication. **THE STATUTORY QUESTION IS WHETHER THERE IS A SHORTAGE OF NURSES OR A SHORTAGE AT THE OFFERED WAGE -- hospitals count vacancies, DOL counts wages, and neither answers it alone.** Wakes on: hospital association and nursing union comments; whether Schedule A is severed in a final rule; state nurse-staffing data after. | 2026-11-17 |
 | Shadow-fleet service providers and EU sanctions | active | **17 Nov, new thread.** EU added **12 individuals and 101 entities**, reaching **owners, managers, insurers and financiers** rather than hulls, including firms in the **UAE, Oman, the Seychelles and China**. Named: Russian nationals **Igor Konfino and Daniil Mosin**, managers of **White Agate Marine, Citrine Marine and Serpentine Marine**, whose vessels were already designated. **THE THEORY: a sanctioned hull is sold, renamed and reflagged within weeks, but a manager with a banking relationship and an insurer whose certificate a port state accepts are not quickly replaced.** Counter-evidence in the same week: Gulf exporters restoring volumes via ship-to-ship transfers and dark crossings, i.e. tonnage already outside reach. **US channel is correspondent banking -- an EU designation becomes counterparty risk for any dollar-clearing bank without any US action.** Wakes on: OFAC mirroring; loadings at Primorsk and Novorossiysk; reflagging or reincorporation by the named managers; insurer withdrawals. | 2026-11-17 |
+| Change control and critical systems | active | **18 Nov, new thread.** **NSANet, the NSA's internal classified network, went down**; the campus was closed to essential personnel hours after an all-clear. **NSA: "temporary degradation during scheduled routine maintenance". DNI Jay Clayton on Fox Business: an emergency patch for major vulnerabilities found last month. These are not the same event.** The vulnerabilities are in **PHP (~70% of the world's websites); AI tools helped researchers exploit them**, triggering a global patch scramble the NSA itself urged. No evidence of a cyberattack. **FIFTH SIGNIFICANT OUTAGE IN EIGHT DAYS -- Microsoft, the FAA ground stop, United, Chase, NSANet -- AND FOUR OF THE FIVE WERE CAUSED BY PLANNED CHANGES, NOT ATTACKERS. The common cause is change control at scale, which is an argument about process rather than security.** **cisa.gov added to the morning pull for this story and returned 403 on its first attempt.** Wakes on: restoration time; any CISA advisory on patch-induced failure; intelligence committee briefings; another agency reporting the same failure mode; any revision of the no-attack assessment. | 2026-11-18 |
+| Medical records privacy and the HIPAA Privacy Rule | active | **18 Nov, new thread.** HHS OCR final rule (RIN 0945-AA00, 45 CFR 160 and 164, 363pp), publishing 19 Nov, effective +60 days, **compliance +240 days**, finalising a 2021 NPRM. **Gains for individuals: access response cut from 30 calendar days to 15** (30-day extension retained); definitions added for *electronic health record* and *personal health application*; lighter identity verification; fee structure amended to specify when ePHI must be free; **covered entities must post estimated fee schedules on their websites**; providers offering a summary must say the right to a copy survives. **Losses and widenings: the right to direct records to a third party is narrowed to electronic copies in an EHR (following Ciox); *health care operations* is amended to cover individual-level care coordination; and disclosure to SOCIAL SERVICES AGENCIES, COMMUNITY-BASED ORGANISATIONS AND HCBS PROVIDERS is clarified as permitted WITHOUT AUTHORISATION -- recipients who are not covered entities and so sit outside HIPAA enforcement once the record arrives.** **No consent step is added anywhere; the disclosures are permitted, not required.** Severability section present, unread. Wakes on: OCR enforcement posture; state laws above the HIPAA floor; litigation; the compliance date. | 2026-11-18 |
+| The 56-seat Senate and certification | active | **18 Nov, new thread.** **Mary Peltola projected over Sen. Dan Sullivan in Alaska**, a state Trump won by 13 points in 2024; first Native American senator from Alaska. **Democrats projected at 56 seats in January** -- short of 60, so the legislative filibuster binds, but decisive for committee ratios, subpoena authority and confirmations. **The race was upended by a spoiler candidate carrying the incumbent's name, which drew administration litigation and clouded whether a Peltola win would be certified.** **THE NUMBER THAT DECIDES WHICH READING IS RIGHT IS THE CERTIFIED MARGIN AGAINST THE SPOILER'S VOTE TOTAL, AND THIS BRIEF DOES NOT HAVE IT.** Cross-connects the election-certification-and-DOJ thread. Wakes on: Alaska's certification and the certified margin; disposition of the suit; a concession; seating in January. | 2026-11-18 |
+| State authority over automated driving | active | **18 Nov, new thread.** **California DMV found Waymo's driverless vehicles an "imminent hazard to public safety" and barred them from state freeways**; **Waymo paused freeway operations in all thirteen of its markets**, not only California (it ran freeway operations in five: SF Bay Area, LA County, Phoenix, Miami, Austin). Cited: **three Waymo vehicles entering an active construction zone on US-101**; one attempting to pass CHP cars conducting a traffic break on Highway 280; and **"recurrent incursions" into active construction zones**. **THE PRECEDENT IS THE STORY: a state licensing authority halted an automated driving capability nationwide in days, with no rulemaking, on a finding it wrote itself -- faster than any federal instrument. Expect preemption arguments.** Runs beside NHTSA's FMVSS 108 ADS lighting proposal, which is federal equipment rulemaking on a separate track. **The missing number is Waymo's construction-zone incursion rate per million miles against a human baseline; the company has it, the DMV has not published it.** Wakes on: resumption conditions; other state DMVs; NHTSA or congressional preemption moves; published incident data. | 2026-11-18 |
