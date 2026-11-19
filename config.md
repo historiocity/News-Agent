@@ -1508,6 +1508,71 @@ is evidence about the leak.**
 The 5 November proposal (cut "dates ahead" and the owed list from the issue, cap
 the footer, raise the source floor to 15) has had no reply. **Nothing removed.**
 
+## Operational notes, 19 November 2026
+
+**Issue No. 76. Eight leads, five shorts, two Florida items, eight divergence
+boxes, fourteen source domains.** Validator passed first time.
+
+### The named test resolved, and naming it was the whole value
+
+For four mornings this file carried one sentence: *the test is whether the crack
+spread narrows from $97.99*. **Yesterday's EIA release: ULSD $4.265 (-35.3c),
+WTI $90.78 (-$5.19), crack spread $88.35, down $9.64 in a week.** Ranked before
+being characterised, per the 3 November rule: **lowest since 7 August, 15th of
+46 weeks in 2026; peak $115.83 on 18 Sep, low $32.03 on 9 Jan -- so the margin
+unwound to August, not to January, and is still ~2.8x the January level.**
+Utilisation 95.7% is **15th of 46 and NOT a high** (2026 max 98.0).
+
+**Naming the exact test in advance is what made a routine data release the lead.
+Keep doing it.**
+
+### And the same day, the policy moved against the mechanism
+
+**CENTCOM now treats any ship receiving cargo by ship-to-ship transfer from a
+blockaded vessel carrying Iranian-loaded cargo as evading the blockade** --
+"stopped, boarded, diverted, captured, or directed to proceed to the Iranian
+port where the cargo originated." **That is precisely the manoeuvre this brief
+identified on 17-18 November as how Gulf exports recovered to 11.4m bpd.** The
+two cover different oil but share hulls, crews, insurers and transfer sites.
+**The thing to watch is an actual interdiction, not the advisory.**
+
+### The week's most uncomfortable fact, stated
+
+**At the NSA, the systems that stayed up were the oldest and most heavily
+compartmented ones; the modernised interconnected ones went down.** Set beside
+the FAA asking Congress for $50bn to replace decades-old equipment with modern
+interconnected equipment, that is an argument neither institution wants to have,
+and the issue made it in the third lead's divergence box. **Rule for this file:
+modernisation reduces the number of failures and increases the blast radius of
+the ones that remain. Say both halves.**
+
+### Conflict disclosed in the story, not the footer
+
+**The fifth lead is Anthropic's $81.3bn flotation -- the largest ever -- and
+this brief is written with a model made by Anthropic.** The disclosure runs in a
+box at the top of the story, in the slot this file reserves for corrections,
+and again in the provenance line and the confidence note. **The feedback
+question asks the reader directly whether the conflict makes this brief the
+wrong place for the story.** That is the right standing treatment.
+
+### Sources
+
+- **iea.org 403 for the sixth consecutive day; bls.gov for the fifth.** The IEA
+  export figures sit underneath the first lead and are held only through
+  analysts' characterisations.
+- **Al Jazeera's Shenzhen trilateral article 404'd**, so a first Trump-Putin-Xi
+  meeting is absent from this issue. **Recorded in the footer as owed rather
+  than written from a headline.**
+- **supremecourt.gov has answered five consecutive mornings**, after a long
+  stretch this file recorded as unreachable. A short says so explicitly: the
+  correction of that record matters more than any single order.
+- **tampabay.com: four consecutive days of no dated links.**
+
+### Standing question to the reader, unanswered
+
+The 5 November proposal (cut "dates ahead" and the owed list from the issue, cap
+the footer, raise the source floor to 15) has had no reply. **Nothing removed.**
+
 ## Watchlist
 
 Empty at first run. Populates from reader feedback and from threads that recur on
@@ -1780,6 +1845,10 @@ Retire a thread because it is finished or stopped mattering — never to make ro
 | PERM, Schedule A and the labour market test | active | **17 Nov, new thread.** DOL ETA NPRM (RIN 1205-AC29, 20 CFR 656, 350pp) would **eliminate further administration of Schedule A**, whose Group I has contained only **professional nurses and physical therapists since the 1990s** (Group II: exceptional ability in the sciences, arts, performing arts). Removing it forces a full labour market test on every hospital sponsoring a foreign-trained nurse. Also: stronger minimum recruitment standards; expanded notice of filing; employer signature on all supporting documents; **new layoff protections and reporting duties explicitly reaching employers using third-party staffing companies**, after DOL-OIG found fraudulent applications and coercive wage-kickback schemes among tech staffing firms. Scale: **108,786 certified PERM applications a year (FY23-25), 132,621 with Schedule A, ~26,277 employers; 99.61% already e-file; net ten-year effect ~$164m of savings.** Comments close 60 days after publication. **THE STATUTORY QUESTION IS WHETHER THERE IS A SHORTAGE OF NURSES OR A SHORTAGE AT THE OFFERED WAGE -- hospitals count vacancies, DOL counts wages, and neither answers it alone.** Wakes on: hospital association and nursing union comments; whether Schedule A is severed in a final rule; state nurse-staffing data after. | 2026-11-17 |
 | Shadow-fleet service providers and EU sanctions | active | **17 Nov, new thread.** EU added **12 individuals and 101 entities**, reaching **owners, managers, insurers and financiers** rather than hulls, including firms in the **UAE, Oman, the Seychelles and China**. Named: Russian nationals **Igor Konfino and Daniil Mosin**, managers of **White Agate Marine, Citrine Marine and Serpentine Marine**, whose vessels were already designated. **THE THEORY: a sanctioned hull is sold, renamed and reflagged within weeks, but a manager with a banking relationship and an insurer whose certificate a port state accepts are not quickly replaced.** Counter-evidence in the same week: Gulf exporters restoring volumes via ship-to-ship transfers and dark crossings, i.e. tonnage already outside reach. **US channel is correspondent banking -- an EU designation becomes counterparty risk for any dollar-clearing bank without any US action.** Wakes on: OFAC mirroring; loadings at Primorsk and Novorossiysk; reflagging or reincorporation by the named managers; insurer withdrawals. | 2026-11-17 |
 | Change control and critical systems | active | **18 Nov, new thread.** **NSANet, the NSA's internal classified network, went down**; the campus was closed to essential personnel hours after an all-clear. **NSA: "temporary degradation during scheduled routine maintenance". DNI Jay Clayton on Fox Business: an emergency patch for major vulnerabilities found last month. These are not the same event.** The vulnerabilities are in **PHP (~70% of the world's websites); AI tools helped researchers exploit them**, triggering a global patch scramble the NSA itself urged. No evidence of a cyberattack. **FIFTH SIGNIFICANT OUTAGE IN EIGHT DAYS -- Microsoft, the FAA ground stop, United, Chase, NSANet -- AND FOUR OF THE FIVE WERE CAUSED BY PLANNED CHANGES, NOT ATTACKERS. The common cause is change control at scale, which is an argument about process rather than security.** **cisa.gov added to the morning pull for this story and returned 403 on its first attempt.** Wakes on: restoration time; any CISA advisory on patch-induced failure; intelligence committee briefings; another agency reporting the same failure mode; any revision of the no-attack assessment. | 2026-11-18 |
+| The AI flotation and the public market | active | **19 Nov, new thread. DISCLOSURE: this brief is written with a model made by Anthropic, the subject of this thread; coverage carries the disclosure in the story, not only the footer.** Priced 18 Nov at **$83, above a $70-78 range**, **980m shares, $81.3bn raised -- the largest flotation on record, passing SpaceX's $75bn by $6.3bn.** Share count raised from 825m. **~956m newly issued vs ~24m from the seven co-founders (2.4%), so it is structured as a financing, not an exit.** Trades on Nasdaq as ANT from 19 Nov. **Prices into the fortnight Nvidia lost ~$2tn, its founder resigned, its board refused his return, and Commerce made remote chip access a licensing question.** **AN IPO PRICE IS A BANK'S ORDER BOOK, NOT A MARKET; the first informative price is the first-day close and the first useful one is after the lock-up.** Wakes on: first-day close vs $83; lock-up expiry; first reported quarter; whether Nvidia guidance shows this capital arriving as orders. | 2026-11-19 |
+| The 2027 oversight agenda | active | **19 Nov, new thread.** Democratic lawmakers sent **dozens of document-preservation letters** to administration officials and allies ahead of taking committee control and subpoena power in January; **Rep. Robert Garcia, poised to chair House Oversight, sent a dozen on 18 Nov alone, including to Vice President JD Vance.** Scope runs from the president's sons' business dealings to the Iran war. **A PRESERVATION LETTER IS NOT A SUBPOENA: it creates a dated record of notice, which is what converts a later deletion from a lapse into an obstruction question. Sending them in November is the only way to freeze evidence during two months of powerlessness.** Publishing the target list early is a negotiating position as much as a plan. Wakes on: the full recipient list; pre-emptive privilege assertions; whether January subpoenas track these letters; the Senate's parallel effort at 56 seats. | 2026-11-19 |
+| Foreign operations against US company employees | active | **19 Nov, new thread.** **Igor D'iu**, a Russian national, arrested in the US and charged in October with **acting as an agent of a foreign government, interstate stalking and fraud** over an operation against employees of **Palantir** (not named in court documents; identified by two sources), which supplies Ukraine with targeting, operations and war-crimes software. Court documents say he believed he was gathering information "for the Motherland". DOJ: he **entered through Mexico over the summer** and worked with unnamed co-conspirators reached **only through an encrypted messaging app**, who supplied instructions, equipment and money. **THE TARGET SET IS THE STORY -- not networks or classified work, but the PEOPLE who work there, inside the US, run remotely and cheaply. That reaches every software, logistics and satellite firm with Ukraine contracts.** Prosecutors charge what they can prove, and stalking is easier to prove than espionage, so the charge sheet understates the alleged purpose by design. Wakes on: the indictment's description of the co-conspirators; whether the foreign-agent count survives; similar approaches at other firms; any FBI advisory to industry. | 2026-11-19 |
+| Criminal liability for mariners | active | **19 Nov, new thread.** **Darris Ornel Jefferson, 39, indicted on federal seaman's manslaughter -- the first such prosecution of a US ship pilot**, over the 19 July 2024 collision of the bulk carrier *Yangze 7* with the towing vessel *Miss Peggy* near Lynchburg, Texas. The towboat capsized and sank with five aboard; four rescued, **deckhand Aquarius Lowman, 25, found dead**. Indictment follows an NTSB investigation. **The statute reaches masters, officers, pilots and engineers on MISCONDUCT, NEGLIGENCE OR INATTENTION TO DUTY -- a lower threshold than ordinary manslaughter's recklessness, applied to a narrow class.** **THE PROFESSION'S OBJECTION IS NOT SELF-PROTECTION: safety investigation depends on mariners speaking freely to the NTSB, and a prosecution that follows an investigation teaches them not to.** Compulsory pilotage means every large vessel entering a US port must employ one, and there are only a few thousand. Wakes on: arraignment and plea; whether the NTSB record is admitted; pilots' association responses; a second such charge; whether New Orleans takes the same path. | 2026-11-19 |
 | Medical records privacy and the HIPAA Privacy Rule | active | **18 Nov, new thread.** HHS OCR final rule (RIN 0945-AA00, 45 CFR 160 and 164, 363pp), publishing 19 Nov, effective +60 days, **compliance +240 days**, finalising a 2021 NPRM. **Gains for individuals: access response cut from 30 calendar days to 15** (30-day extension retained); definitions added for *electronic health record* and *personal health application*; lighter identity verification; fee structure amended to specify when ePHI must be free; **covered entities must post estimated fee schedules on their websites**; providers offering a summary must say the right to a copy survives. **Losses and widenings: the right to direct records to a third party is narrowed to electronic copies in an EHR (following Ciox); *health care operations* is amended to cover individual-level care coordination; and disclosure to SOCIAL SERVICES AGENCIES, COMMUNITY-BASED ORGANISATIONS AND HCBS PROVIDERS is clarified as permitted WITHOUT AUTHORISATION -- recipients who are not covered entities and so sit outside HIPAA enforcement once the record arrives.** **No consent step is added anywhere; the disclosures are permitted, not required.** Severability section present, unread. Wakes on: OCR enforcement posture; state laws above the HIPAA floor; litigation; the compliance date. | 2026-11-18 |
 | The 56-seat Senate and certification | active | **18 Nov, new thread.** **Mary Peltola projected over Sen. Dan Sullivan in Alaska**, a state Trump won by 13 points in 2024; first Native American senator from Alaska. **Democrats projected at 56 seats in January** -- short of 60, so the legislative filibuster binds, but decisive for committee ratios, subpoena authority and confirmations. **The race was upended by a spoiler candidate carrying the incumbent's name, which drew administration litigation and clouded whether a Peltola win would be certified.** **THE NUMBER THAT DECIDES WHICH READING IS RIGHT IS THE CERTIFIED MARGIN AGAINST THE SPOILER'S VOTE TOTAL, AND THIS BRIEF DOES NOT HAVE IT.** Cross-connects the election-certification-and-DOJ thread. Wakes on: Alaska's certification and the certified margin; disposition of the suit; a concession; seating in January. | 2026-11-18 |
 | State authority over automated driving | active | **18 Nov, new thread.** **California DMV found Waymo's driverless vehicles an "imminent hazard to public safety" and barred them from state freeways**; **Waymo paused freeway operations in all thirteen of its markets**, not only California (it ran freeway operations in five: SF Bay Area, LA County, Phoenix, Miami, Austin). Cited: **three Waymo vehicles entering an active construction zone on US-101**; one attempting to pass CHP cars conducting a traffic break on Highway 280; and **"recurrent incursions" into active construction zones**. **THE PRECEDENT IS THE STORY: a state licensing authority halted an automated driving capability nationwide in days, with no rulemaking, on a finding it wrote itself -- faster than any federal instrument. Expect preemption arguments.** Runs beside NHTSA's FMVSS 108 ADS lighting proposal, which is federal equipment rulemaking on a separate track. **The missing number is Waymo's construction-zone incursion rate per million miles against a human baseline; the company has it, the DMV has not published it.** Wakes on: resumption conditions; other state DMVs; NHTSA or congressional preemption moves; published incident data. | 2026-11-18 |
