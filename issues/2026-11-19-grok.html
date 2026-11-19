@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Thursday, 19 November 2026 (Grok edition, Issue 76-grok)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  /* short-item tier */
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list summary .chip { vertical-align:.05rem; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+  .corr { background:var(--box); border-left:3px solid var(--accent); padding:.6rem .9rem; margin:.6rem 0 1rem; font-size:.94rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 76-grok &middot; Thursday, 19 November 2026 &middot; Grok edition</div>
+  <h1>A &ldquo;peace declaration&rdquo; only two capitals are describing, Anthropic&rsquo;s record listing day, and the defence money running out of road</h1>
+  <p class="sub">9 stories at length, 9 in brief. Built on the Issue 10 (2026-09-10b) layout. Claude&rsquo;s edition for today is at <a href="2026-11-19.html">2026-11-19</a>.</p>
+  <p class="prov"><b>82 sources checked, 55 of them outside the watchlist</b> (17 of the 82 refused or failed; listed in the footer). Outside-watchlist wires, foreign and trade front pages were read before the document sources the threads point at. <b>5 of 9 leads are new subjects; 4 continue threads</b> (the Shenzhen trilateral, Anthropic&rsquo;s IPO, Gulf oil, the outages), at the cap of four. Nvidia, also a running thread, is held to a short item. <b>Biggest story not on my list:</b> the collapse of the defence reconciliation bill, found on Breaking Defense and Semafor with no thread pointing at it; it is lead three. The negative check also promoted the Palantir espionage case and the data-centre power numbers, and demoted the US-China commission report to a short item because only a summary could be reached.<br><br>
+  <b>Accounts compared per lead:</b> summit: 5 independent (NPR, Fox News, DW/Xinhua, Le Figaro relaying AFP/Reuters, Yle) plus Nikkei and BBC &middot; anthropic: 3 accounts of one company release (CNBC, ABC, Al Jazeera) plus Bloomberg headline &middot; defense: 3 (Breaking Defense, Defense One, Semafor) &middot; gulf: primary advisory (CENTCOM/NAVCENT via Reuters) plus 3 (UKMTO via gCaptain, Al Jazeera, OilPrice/Vortexa) &middot; outages: 5 (CNN, CBS, The Register, TechCrunch, CNBC) plus NY Post &middot; palantir: 4 (CNN, BBC, ABC, CBS); DOJ quotes via BBC &middot; power: 2 independent studies via 2 outlets (CBS, CNBC) &middot; greenland: 2 (CBS, Al Jazeera) &middot; fl-flood: 3 (ABC, CNN, CBS Miami).<br><br>
+  <b>Disclosure.</b> The live <code>config.md</code>, loaded at the start of this run, already held Claude&rsquo;s 19 November operational notes, whose opening covers a crack-spread release and the CENTCOM ship-to-ship advisory. I stopped reading them there. The CENTCOM advisory is in the Gulf lead because gCaptain&rsquo;s front page carried it in this run&rsquo;s own sweep and the Gulf is a standing thread; its facts come only from the sources cited under it. The crack-spread figures were not used. Claude&rsquo;s edition itself was not opened until this draft was finished.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#summit">Trump, Xi and Putin sat at one table for 80 minutes. Beijing and Moscow call the result a &ldquo;peace declaration&rdquo;; Washington has not said what it signed</a></li>
+    <li><a href="#anthropic">Anthropic priced at $83 and raised $81.3bn, the largest IPO ever; it starts trading on Nasdaq today as &ldquo;ANT&rdquo;</a></li>
+    <li><a href="#defense">The $350bn defence reconciliation bill is dead, Senate Republicans lack 50 votes for a smaller one, and Golden Dome is getting about half its ask</a></li>
+    <li><a href="#gulf">CENTCOM extends the Iran blockade to ship-to-ship transfers, the relay that has kept Gulf oil moving, while tankers keep getting hit near Hormuz</a></li>
+    <li><a href="#outages">The NSA outage reached a Georgia hub for Middle East intelligence; a second critical PHP patch lands today</a></li>
+    <li><a href="#palantir">A Russian man who crossed from Mexico is charged with spying on Palantir staff in Palo Alto because of the company&rsquo;s work for Ukraine</a></li>
+    <li><a href="#power">America&rsquo;s biggest data centres already use 1.8% of its electricity, and the IEA says global data-centre demand could double by 2030</a></li>
+    <li><a href="#greenland">Denmark ratifies the Greenland security deal 109&ndash;0, clearing the way for more US bases without a Senate vote</a></li>
+    <li><a href="#fl-flood">More than a foot of rain on Florida&rsquo;s Atlantic coast, a record St. Johns River at Cocoa, and two more days of flood threat</a></li>
+    <li><a href="#also-today">Also today (9)</a> &mdash; ranked below the line, each one opens.</li>
+  </ol>
+</nav>
+
+<article id="summit">
+  <h2>Trump, Xi and Putin sat at one table for 80 minutes. Beijing and Moscow call the result a &ldquo;peace declaration&rdquo;; Washington has not said what it signed</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics / US policy</span>
+    <span class="chip">Continuing &middot; Shenzhen trilateral</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The first three-way meeting of American, Chinese and Russian leaders took place on Thursday at the Kylin Villa in Shenzhen, on the sidelines of APEC. It lasted about an hour and twenty minutes, according to DW and the New York Post. Trump left directly for the airport around 5am ET and, Fox News reported, was not expected to speak publicly before flying home.</p>
+  <p>In front of cameras, Xi said great powers at peace keep the world secure; Trump said &ldquo;we are really making history.&rdquo; Xinhua quoted Xi calling for nuclear weapons to be comprehensively banned and destroyed. NPR&rsquo;s account is that the three came with different agendas: Trump on nuclear reductions and Iran, Putin on ending the Ukraine war on Moscow&rsquo;s terms, Xi on avoiding both.</p>
+  <p>Afterwards, Chinese state media and the Kremlin said, as relayed by AFP and Reuters, that the three had adopted a joint &ldquo;peace declaration&rdquo;. Finland&rsquo;s Yle summarised its published text: a pledge to preserve strategic stability, keep talking about nuclear security and non-proliferation, reform the UN, and a line that the International Criminal Court and similar bodies must not exceed their jurisdiction. Le Figaro and Al Jazeera also report a commitment to stable energy and oil-product supplies.</p>
+  <p><b>What it means for you:</b> the oil-supply language matters more for pump prices than the nuclear language does, and only if it is followed by Russian or Chinese action. <b>What to watch:</b> whether the White House publishes the declaration&rsquo;s text or describes it differently.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; was there an agreement, or just a photograph?</span>
+    <p><b>What is disputed.</b> A <b>significance dispute</b> with a facts edge. Chinese and Russian state outlets describe an adopted joint declaration and Xi called the summit &ldquo;positive, constructive and fruitful.&rdquo; US outlets in this run (Fox News, NPR) describe no major breakthrough; NPR says the key deliverable was arguably the image itself.</p>
+    <p><b>Why they differ.</b> Timing first: US reports were filed as Trump left, before the joint text circulated, and the White House has not briefed. Interest second: Beijing hosted and wants the summit to look productive; Moscow wants to be seen at the top table. US domestic outlets are weighing it against what Trump said he wanted, which was nuclear reductions.</p>
+    <p><b>What it means for you.</b> Both are compatible: a declaration exists, and on this run&rsquo;s reading it contains commitments to keep talking, not numbers or deadlines. Treat it as atmospherics until a US official confirms the text. A follow-on date for nuclear talks, or a named oil-supply measure, would settle it.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; the ICC line</summary>
+    <div class="exp">
+      <p>The clause that the ICC must not exceed its jurisdiction is the one item with a clear beneficiary: Putin is under an ICC arrest warrant. The US is not an ICC member and has sanctioned its officials before, so the line costs Washington little, but it is the first time a US president has put his name to it alongside Moscow, if the text Yle summarised is final.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://text.npr.org/nx-s1-6040432">NPR</a> &middot;
+    <a href="https://www.dw.com/en/apec-summit-trilateral-talks-between-trump-xi-putin-end/live-79964719">DW live</a> &middot;
+    <a href="https://www.foxnews.com/politics/trumps-historic-summit-xi-putin-marks-diplomatic-milestone-breakthroughs-remain-elusive">Fox News</a> &middot;
+    <a href="https://www.lefigaro.fr/international/en-direct-a-shenzhen-donald-trump-xi-jinping-et-vladimir-poutine-se-retrouvent-pour-un-face-a-face-inedit-20261119">Le Figaro live</a> &middot;
+    <a href="https://yle.fi/a/74-20257880">Yle</a> &middot;
+    <a href="https://asia.nikkei.com/politics/international-relations/apec/xi-trump-putin-put-nuclear-arms-ukraine-war-on-table-at-historic-summit">Nikkei Asia</a> &middot;
+    <a href="https://www.bbc.co.uk/news/articles/cr9d75we51j1o">BBC analysis</a>
+  </p>
+  <div class="fb">
+    <p>Was the summit right as the lead?</p>
+    <label><input type="radio" name="fb-summit" value="right"> Right lead</label>
+    <label><input type="radio" name="fb-summit" value="lower"> Should have been lower</label>
+    <label><input type="radio" name="fb-summit" value="short"> A short item was enough</label>
+  </div>
+</article>
+<article id="anthropic">
+  <h2>Anthropic priced at $83 and raised $81.3bn, the largest IPO ever; it starts trading on Nasdaq today as &ldquo;ANT&rdquo;</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech / US financials</span>
+    <span class="chip">Continuing &middot; Anthropic IPO</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Anthropic said late on Wednesday that it and its seven co-founders sold about 980 million shares at $83, above the $70&ndash;$78 range it marketed last week, when it planned 825 million shares. That raises $81.3bn, ahead of SpaceX&rsquo;s initial $75bn in June ($85.7bn after its overallotment). CNBC puts the fully diluted value at about $1.5 trillion.</p>
+  <p>The company&rsquo;s own filing shows why this is a test of the AI trade rather than a victory lap: $16.3bn of revenue in the first half of 2026, up nearly 14-fold, against a net loss of $80.7bn over the same six months, ABC reported. Google, Microsoft, Nvidia and AMD have agreed to invest a further $26bn at the IPO price, and Anthropic is a large buyer of their chips and cloud capacity.</p>
+  <p>For ordinary savers the route in is the index: a Nasdaq rule change in May allows &ldquo;fast entry&rdquo; to the Nasdaq-100 for some very large listings, ABC noted, so index funds in 401(k)s are likely to hold the stock soon.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how much did Anthropic raise: $81.3bn or $107.3bn?</span>
+    <p><b>What is disputed.</b> A <b>facts dispute that is really a definitions dispute</b>. CNBC, ABC and Al Jazeera report $81.3bn. Bloomberg&rsquo;s headline and CoinDesk report $107.3bn.</p>
+    <p><b>Why they differ.</b> The larger figure adds the $26bn private placement to the tech companies to the public offering. Both numbers come from the same company release; they count different things. The circularity is worth noting: much of that $26bn comes from firms that sell Anthropic its compute.</p>
+    <p><b>What it means for you.</b> For record comparisons with SpaceX, $81.3bn is the like-for-like number. For how much cash Anthropic has to spend, $107.3bn is closer. Nothing further will settle it; just check which a headline is using.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html">CNBC</a> &middot;
+    <a href="https://abcnews.com/Business/anthropic-announces-price-83-share-ipo/story?id=138245320">ABC News</a> &middot;
+    <a href="https://www.aljazeera.com/economy/2026/11/19/anthropic-raises-81-3bn-in-biggest-ipo-of-all-time">Al Jazeera</a> &middot;
+    <a href="https://www.bloomberg.com/news/articles/2026-11-18/anthropic-is-said-to-price-ipo-at-83-per-share">Bloomberg (headline)</a>
+  </p>
+</article>
+<article id="defense">
+  <h2>The $350bn defence reconciliation bill is dead, Senate Republicans lack 50 votes for a smaller one, and Golden Dome is getting about half its ask</h2>
+  <div class="meta">
+    <span class="chip">US debt &amp; fiscal / US policy</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The outgoing House Armed Services chairman, Mike Rogers, said on Wednesday that a $350bn reconciliation bill is &ldquo;not going to happen,&rdquo; though a skinnied-down version might, to cover the hole Venezuela and Iran operations have made in the defence budget, Breaking Defense reported. Semafor reports Senate Republicans are at least temporarily abandoning a party-line defence bill because they do not have 50 votes, and are turning to negotiations with Democrats.</p>
+  <p>The deadlines are tight: the continuing resolution funding the Pentagon runs out on 11 December, and Democrats take both chambers on 3 January. Senator Kevin Cramer told Semafor that without 50 votes for a budget resolution, December leaves no time for two vote-a-ramas.</p>
+  <p>Meanwhile, Senate appropriators released a nearly $1.1 trillion fiscal 2027 defence draft on Monday. Defense One reports it puts about $9.4bn toward Golden Dome, against a $17.5bn request that the administration had placed almost entirely in reconciliation, and Breaking Defense says it pays for that and for drones and munitions with cuts to shipbuilding, F-35 purchases and research.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; did appropriators back Golden Dome or cut it?</span>
+    <p><b>What is disputed.</b> A <b>significance dispute</b> over the same number. Breaking Defense frames the Senate draft as putting billions behind Golden Dome. Defense One frames it as slashing the request roughly in half.</p>
+    <p><b>Why they differ.</b> Both are true from different baselines. Measured against the base budget, where only about $398m was requested, $9.4bn is a large increase. Measured against the $17.5bn total ask, most of which sat in a reconciliation bill now not expected to pass, it is a cut. Breaking Defense covers programmes and industry; Defense One here leans on budget analysts.</p>
+    <p><b>What it means for you.</b> The more stable money is the $9.4bn in the regular bill, if it passes. With reconciliation fading, that is the realistic ceiling for now. A new continuing resolution on 11 December that carries over old levels would mean neither number arrives.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://breakingdefense.com/2026/11/350-billion-reconciliation-bill-not-going-to-happen-hasc-chair/">Breaking Defense (Rogers)</a> &middot;
+    <a href="https://breakingdefense.com/2026/11/a-1-1-trillion-pentagon-budget-sets-up-a-fight-on-capitol-hill/">Breaking Defense ($1.1tn)</a> &middot;
+    <a href="https://www.defenseone.com/policy/2026/11/appropriators-slash-trumps-17b-golden-dome-request-draft-bill/417326/">Defense One</a> &middot;
+    <a href="https://www.semafor.com/article/11/19/2026/republicans-turn-to-democrats-for-pentagon-money">Semafor</a>
+  </p>
+</article>
+<article id="gulf">
+  <h2>CENTCOM extends the Iran blockade to ship-to-ship transfers, the relay that has kept Gulf oil moving, while tankers keep getting hit near Hormuz</h2>
+  <div class="meta">
+    <span class="chip">Oil &amp; chokepoints</span>
+    <span class="chip">Continuing &middot; Gulf oil</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>US Central Command said in a Wednesday advisory that any ship receiving cargo by ship-to-ship transfer from a blockaded vessel carrying Iranian-loaded cargo may be treated as evading the blockade, even if it never enters Iranian waters. Such ships may be stopped, boarded, diverted or captured, the advisory says. Neutral transit through Hormuz to non-Iranian destinations is not affected, according to the same NAVCENT update. The blockade was reimposed on 14 July after a draft understanding with Tehran collapsed, Reuters (via gCaptain) noted.</p>
+  <p>The attacks continue. UKMTO logged two tanker attacks in the strait on Monday, both causing engine-room fires, and one on Sunday. Al Jazeera&rsquo;s live page on Thursday reports five tankers ablaze after hitting naval mines in and around Hormuz; the IRGC Navy claims two were being escorted by US jets on an unauthorised route.</p>
+  <p>Prices have not jumped. OilPrice puts Brent at about $92 and WTI at about $83, with forecasters warning of a glut as OPEC+ output rises and Russian exports hold. Vortexa said Iranian restrictions have not yet reduced the volume moving through the Gulf shuttle relay, because exporters added another stage of ship-to-ship transfers.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is the Gulf supply squeeze easing or tightening?</span>
+    <p><b>What is disputed.</b> A <b>significance dispute</b>. Vortexa and the oversupply forecasters say flows are holding and the market is heading for a glut. The incident stream from UKMTO and Al Jazeera, plus the CENTCOM advisory, points the other way.</p>
+    <p><b>Why they differ.</b> Vantage: Vortexa measures barrels moved, which lag risk; UKMTO and wire reports measure incidents, which are noisy and partly sourced to the IRGC, a combatant. Timing: the CENTCOM advisory is one day old and Vortexa&rsquo;s comment predates it. The advisory targets Iranian-origin cargo, not the Gulf states&rsquo; relay, but both use the same hulls, crews and transfer sites.</p>
+    <p><b>What it means for you.</b> Today&rsquo;s evidence supports flows holding. What would change that is an actual US interdiction of a ship-to-ship transfer, or insurers pulling cover for relay tankers. Until then, the glut reading carries more weight for pump prices.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://gcaptain.com/u-s-targets-ship-to-ship-transfers-in-expanded-iran-maritime-blockade/">gCaptain / Reuters (CENTCOM advisory)</a> &middot;
+    <a href="https://gcaptain.com/ukmto-reports-two-tanker-attacks-in-strait-of-hormuz/">gCaptain (UKMTO)</a> &middot;
+    <a href="https://www.aljazeera.com/news/liveblog/2026/11/19/iran-war-live-saudi-led-coalition-strikes-yemen-ships-on-fire-in-hormuz">Al Jazeera live</a> &middot;
+    <a href="https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Steady-as-Hormuz-Tanker-Threats-Offset-Supply-Glut-Fears.html">OilPrice</a>
+  </p>
+</article>
+<article id="outages">
+  <h2>The NSA outage reached a Georgia hub for Middle East intelligence; a second critical PHP patch lands today</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech / national security</span>
+    <span class="chip">Continuing &middot; outages</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The National Security Agency&rsquo;s IT disruption, now two days long, also hit a Georgia facility that supports signals intelligence and cyber operations focused on the Middle East, where the US is at war with Iran, four sources told CNN. Officials stressed that the most sensitive collection systems are working, with back-ups in place, and that some old, compartmented networks were untouched.</p>
+  <p>CBS, citing multiple sources, ties the NSA outage to urgent patching for PHP2Shell, a pair of critical PHP flaws found with AI help and the subject of an FBI, NSA and CISA warning on 21 October. DNI Jay Clayton made the same link on Fox Business. The Register reports the PHP Foundation will ship another critical security release today between 9:00 and 9:30am ET, including a remote-code-execution flaw.</p>
+  <p>On the FAA, CBS reports that L3Harris&rsquo;s network centre in Melbourne, Florida took several hours to pinpoint the El Dorado, Arkansas router site during Friday&rsquo;s ground stop. Transportation Secretary Duffy said L3Harris &ldquo;didn&rsquo;t identify and isolate.&rdquo; Microsoft&rsquo;s Satya Nadella blamed Outlook&rsquo;s outage on a latent bug and warned that much critical infrastructure is &ldquo;unpatchable.&rdquo;</p>
+  <p>FBI Director Kash Patel skipped Wednesday&rsquo;s House threat hearing on the outages and sent his deputy, after being billed the night before as an honoured guest at a $50,000-a-head Mar-a-Lago fundraiser, CNBC reported.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; one common cause, or several?</span>
+    <p><b>What is disputed.</b> A <b>facts dispute</b> about cause. Clayton&rsquo;s framing, reported by the NY Post and CBS, is a common cause: institutions updating legacy systems in a rush. The specific accounts differ: CBS ties the NSA to PHP2Shell; the FAA failure involved a new router and a contractor&rsquo;s fault-finding; Nadella describes a latent Microsoft bug.</p>
+    <p><b>Why they differ.</b> Clayton speaks for the government as a whole and has a reason to offer a single reassuring explanation. Reporters with sources inside each incident see different mechanisms. The mundane reading is that a heavy, AI-accelerated patch cycle raised the odds of failures that each had their own trigger.</p>
+    <p><b>What it means for you.</b> Believe &ldquo;no attack&rdquo;: no account in this run contradicts it. Do not take &ldquo;one cause&rdquo; literally. Today&rsquo;s PHP release is a live test: if more outages follow this week, the patch-cycle explanation strengthens.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://lite.cnn.com/2026/11/18/politics/nsa-outage-disrupts-georgia-intel-hub-middle-east-intelligence">CNN</a> &middot;
+    <a href="https://www.cbsnews.com/news/national-security-agency-network-outage-software-vulnerability/">CBS (NSA)</a> &middot;
+    <a href="https://www.cbsnews.com/news/ground-stop-l3harris-system-outage/">CBS (L3Harris)</a> &middot;
+    <a href="https://www.theregister.com/patches/2026/11/18/get-ready-for-another-critical-php-security-release-to-drop/5310911">The Register</a> &middot;
+    <a href="https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/">TechCrunch</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/18/kash-patel-hearing-mar-a-lago-gala.html">CNBC (Patel)</a> &middot;
+    <a href="https://nypost.com/2026/11/18/us-news/dni-jay-clayton-affirms-widespread-tech-outages-not-coordinated-result-of-updating-legacy-systems/">NY Post (Clayton)</a>
+  </p>
+</article>
+<article id="palantir">
+  <h2>A Russian man who crossed from Mexico is charged with spying on Palantir staff in Palo Alto because of the company&rsquo;s work for Ukraine</h2>
+  <div class="meta">
+    <span class="chip">National security / AI &amp; tech</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Federal prosecutors in San Francisco have charged Igor D&rsquo;iu with acting as an agent of a foreign government, interstate stalking and possessing falsified identity documents, after what they describe as a covert operation in Palo Alto. The charging papers do not name the company; CNN (two sources), the BBC and ABC identify it as Palantir, whose software Ukraine uses for targeting and war-crimes investigations.</p>
+  <p>According to the Justice Department, D&rsquo;iu travelled from Istanbul to Mexico in June, entered the US unlawfully, and took instructions, equipment and money from co-conspirators over an encrypted app. He believed he was working for &ldquo;the Motherland,&rdquo; court documents say, and was found with two Russian passports. US Attorney Craig Missakian said the case describes a state-sponsored operation to harass employees of an American defence company.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; harassment campaign or a way into Palantir&rsquo;s systems?</span>
+    <p><b>What is disputed.</b> A <b>significance dispute</b>. The public charges and the US Attorney describe stalking and harassing employees. Two sources told CNN the aim was to &ldquo;get into the company&rsquo;s systems&rdquo; rather than target individuals.</p>
+    <p><b>Why they differ.</b> Prosecutors charge what they can prove in court; intent to penetrate networks may sit in sealed material or be unproven. CNN&rsquo;s sources are anonymous and familiar with the case, which gives access but cannot be checked.</p>
+    <p><b>What it means for you.</b> The charged conduct is the floor. Treat the systems-access aim as plausible but unconfirmed. A superseding indictment or a detention-hearing filing describing digital targeting would settle it.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://lite.cnn.com/2026/11/18/politics/russian-arrested-charges-spied-palantir">CNN</a> &middot;
+    <a href="https://www.bbc.co.uk/news/articles/cq20xg80ly47o">BBC</a> &middot;
+    <a href="https://abcnews.com/Politics/feds-arrest-alleged-russian-agent-stalked-employees-silicon/story?id=138258488">ABC News</a> &middot;
+    <a href="https://www.cbsnews.com/news/russia-agent-charges-spying-silicon-valley/">CBS News</a>
+  </p>
+</article>
+<article id="power">
+  <h2>America&rsquo;s biggest data centres already use 1.8% of its electricity, and the IEA says global data-centre demand could double by 2030</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech / power</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>A Harvard study published this week in Nature Sustainability found that 403 hyperscale data centres consumed 82 terawatt-hours between May 2024 and April 2025, 1.8% of US electricity, roughly Missouri&rsquo;s use. The lead author told CBS the figure likely understates today&rsquo;s load: the count of large facilities has more than doubled since, with about 2,000 more planned.</p>
+  <p>Separately, the International Energy Agency warned that global data-centre use could reach about 1,000 TWh a year by 2030 under its stated-policies scenario, roughly double, and that grid capacity, supply chains and local opposition could delay projects, CNBC reported. In several regions, including Texas and Virginia, capacity waiting to connect already exceeds current peak demand.</p>
+  <p><b>What it means for you:</b> the cost of new lines and transformers lands in utility rates; this is the mechanism behind the data-centre backlash already visible in the midterms.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cbsnews.com/news/hyperscale-data-centers-electricity-harvard-study/">CBS News (Harvard study)</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/19/data-center-electricity-demand-iea.html">CNBC (IEA)</a>
+  </p>
+</article>
+<article id="greenland">
+  <h2>Denmark ratifies the Greenland security deal 109&ndash;0, clearing the way for more US bases without a Senate vote</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics / US policy</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>All 109 members of the Folketing present voted on Thursday for the security agreement the US, Denmark and Greenland signed in September, without debate or abstention, Al Jazeera and CBS report. Greenland&rsquo;s parliament passed it earlier this month. CBS says the deal paves the way for more US bases on the island and eases tensions over Trump&rsquo;s repeated calls to take control of it.</p>
+  <p>It is an executive agreement, not a treaty, so the Senate does not vote. It takes effect once Denmark and Greenland notify the US by diplomatic note that their parliaments have finished.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cbsnews.com/news/greenland-security-deal-us-denmark-danish-lawmakers/">CBS News</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/19/denmark-parliament-approves-security-deal-with-greenland-and-us">Al Jazeera</a>
+  </p>
+</article>
+<article id="fl-flood">
+  <h2>More than a foot of rain on Florida&rsquo;s Atlantic coast, a record St. Johns River at Cocoa, and two more days of flood threat</h2>
+  <div class="meta">
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Plantation has recorded 16.4 inches over two days, Hollywood 13.8 and Fort Lauderdale 12.2, ABC reports. In Hollywood more than a foot fell in hours, the mayor declared an emergency, parts of I-95 and the Turnpike closed, and Temple Sinai&rsquo;s roof collapsed, CNN reported. The St. Johns River near Cocoa reached a record 17.8 feet, cutting off neighbourhoods in Cocoa and Rockledge.</p>
+  <p>More rain is due Thursday and Friday: a Level 3 of 4 flood threat on the Space Coast, extending to Orlando on Friday, ABC says. CNN says the system could take on tropical characteristics and snarl early Thanksgiving travel up the East Coast. Tampa Bay is outside the threat area; CBS Miami reports Hollywood&rsquo;s water receding.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://abcnews.com/US/florida-flooding-threat-continues-storm-system-develop-tropical/story?id=138282549">ABC News</a> &middot;
+    <a href="https://lite.cnn.com/2026/11/18/weather/florida-flooding-rain-storm-thanksgiving-travel-climate">CNN</a> &middot;
+    <a href="https://www.cbsnews.com/miami/live-updates/south-florida-flooding-live-updates-heavy-rain-broward-miami-dade/">CBS Miami live</a>
+  </p>
+</article>
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">9 things I saw and ranked below the line. Each one opens &mdash; the line is my judgement, what is behind it is the substance.</p>
+
+<div class="also-list">
+
+<details class="short" id="a-nvidia">
+  <summary><span class="chip">AI &amp; tech</span> Nvidia&rsquo;s board says it does not intend to reinstate Jensen Huang, hours after he said he would be honoured to return.</summary>
+  <div class="exp">
+    <p>Board chair Harvey Jones said so on Tuesday&rsquo;s earnings call, ABC reported. Nikkei reports Nvidia has stopped shipping Hopper chips to China after revenue there more than tripled; shares rose about 5% after hours.</p>
+    <p class="btl"><b>Below the line because</b> it is a follow-up on a thread at the cap, and the decision closes rather than opens a question.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://abcnews.com/Business/nvidia-forms-national-security-committee-feds-probe-company/story?id=138206932">ABC News</a> &middot; <a href="https://asia.nikkei.com/business/tech/semiconductors/nvidia-board-says-jensen-huang-will-not-return-as-ceo">Nikkei Asia</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-intel">
+  <summary><span class="chip">AI &amp; tech</span> Intel has signed its first outside customer for its 18A-family chip process, CEO Lip-Bu Tan said, without naming it.</summary>
+  <div class="exp">
+    <p>Intel&rsquo;s technology chief said on X the customer is on 18A-P, in risk production since June. It is the milestone Intel&rsquo;s foundry turnaround has been waiting for.</p>
+    <p class="btl"><b>Below the line because</b> the customer is unnamed and the deal size unknown.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.cnbc.com/2026/11/18/intel-first-18a-foundry-customer.html">CNBC</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-uscc">
+  <summary><span class="chip">Geopolitics &middot; China</span> The US-China commission&rsquo;s annual report to Congress warns that unusually active Trump&ndash;Xi engagement is masking Beijing&rsquo;s push to outcompete the US in AI, supply chains and military power.</summary>
+  <div class="exp">
+    <p>Released Wednesday, on the eve of Shenzhen.</p>
+    <p class="btl"><b>Below the line because</b> only Nikkei&rsquo;s summary was reached; the report itself was not.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://asia.nikkei.com/politics/international-relations/us-china-tensions/china-using-trump-xi-stability-to-build-strategic-edge-us-panel-warns">Nikkei Asia</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-tps">
+  <summary><span class="chip">US politics &amp; policy</span> The administration has asked the Supreme Court, for the third time, to let it end Temporary Protected Status for Venezuelans.</summary>
+  <div class="exp">
+    <p>Solicitor General Sauer says Judge Edward Chen&rsquo;s ruling that ending TPS was unlawful will inflict severe harm; Al Jazeera says it takes effect Friday unless blocked.</p>
+    <p class="btl"><b>Below the line because</b> a procedural step; the decision is the story.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.scotusblog.com/2026/11/trump-administration-asks-supreme-court-to-block-lower-court-ruling-keeping-protected-status-in-/">SCOTUSblog</a> &middot; <a href="https://www.aljazeera.com/news/2026/11/19/trump-makes-third-supreme-court-bid-to-end-venezuelan-migrant-protections">Al Jazeera</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-cftc">
+  <summary><span class="chip">US financials</span> The CFTC has sued Louisiana after a state court shut down more than 30 prediction-market companies there without a hearing, and has a similar suit against Arkansas.</summary>
+  <div class="exp">
+    <p>Chairman Michael Selig called it an eleventh-hour emergency lawsuit. CoinDesk headlines another federal appeals court ruling against Kalshi.</p>
+    <p class="btl"><b>Below the line because</b> the federal-state jurisdiction fight is weeks old; this widens it rather than resolving it.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.cftc.gov/PressRoom/PressReleases/9326-26">CFTC release</a> &middot; <a href="https://www.cftc.gov/PressRoom/PressReleases/9325-26">CFTC (Arkansas)</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-aibank">
+  <summary><span class="chip">US financials &middot; AI</span> Banks including Ally and Chase are telling customers they are liable for what AI agents do with their accounts.</summary>
+  <div class="exp">
+    <p>Ally told customers that AI can hallucinate or misread instructions; Chase warned authorised transactions may not be reversible, Business Insider reports from emails it reviewed.</p>
+    <p class="btl"><b>Below the line because</b> it is a policy notice, not a loss event, but worth knowing before you link an agent to a bank account.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.businessinsider.com/bank-liable-ai-agents-mistakes-2026-11">Business Insider</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-php">
+  <summary><span class="chip">AI &amp; tech</span> A critical PHP security update ships today at 9:00&ndash;9:30am ET.</summary>
+  <div class="exp">
+    <p>The PHP Foundation says the critical issues need non-default or uncommon setups. See the outages lead for why this matters.</p>
+    <p class="btl"><b>Below the line because</b> it is folded into the outages lead.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.theregister.com/patches/2026/11/18/get-ready-for-another-critical-php-security-release-to-drop/5310911">The Register</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-exec">
+  <summary><span class="chip">Florida &amp; Tampa Bay</span> Florida plans its 20th execution of the year tonight, a state record, with two more set for December.</summary>
+  <div class="exp">
+    <p>Thomas Overton, convicted of 1991 murders in Monroe County and who maintains his innocence, is scheduled for 6pm at Florida State Prison.</p>
+    <p class="btl"><b>Below the line because</b> a continuing record rather than a policy change.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://floridaphoenix.com/2026/11/18/florida-is-scheduled-to-carry-out-a-record-20th-execution-on-thursday/">Florida Phoenix</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-dmv">
+  <summary><span class="chip">Florida &amp; Tampa Bay</span> Florida&rsquo;s driver and vehicle registration system is not working, again.</summary>
+  <div class="exp">
+    <p>The Tampa Bay Times front page carries it; the article body was paywalled in this run.</p>
+    <p class="btl"><b>Below the line because</b> details beyond the headline could not be read.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.tampabay.com/news/florida-politics/2026/11/18/florida-dmv-drivers-license-orion-fasano-adam-ross/">Tampa Bay Times</a></p>
+  </div>
+</details>
+
+</div>
+
+<div class="fb" style="border-top:1px solid var(--rule); padding-top:1rem; margin-top:1.5rem;">
+  <p><b>One question about this whole section:</b> were the right things ranked below the line?</p>
+  <label><input type="radio" name="fb-also" value="right"> About right</label>
+  <label><input type="radio" name="fb-also" value="promote"> Some of these should have led</label>
+  <label><input type="radio" name="fb-also" value="drop"> Some should have been dropped entirely</label>
+  <label><input type="radio" name="fb-also" value="fewer"> Fewer short items, more depth up top</label>
+</div>
+
+<button class="submit" id="send">Send my feedback &rarr;</button>
+<p class="sources" style="text-align:center">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+
+<footer>
+  <h4>Sources checked this run &mdash; 82, of which 55 outside the watchlist</h4>
+  <p><b>Not pointed at by any thread (55):</b> freightwaves.com &middot; statnews.com &middot; breakingdefense.com &middot; defenseone.com &middot; axios.com [unreachable] &middot; thehill.com [unreachable] &middot; lite.cnn.com &middot; en.wikipedia.org &middot; text.npr.org &middot; theguardian.com &middot; elpais.com [unreachable] &middot; lemonde.fr &middot; cbsnews.com &middot; semafor.com &middot; nbcnews.com &middot; aljazeera.com &middot; thedebrief.org &middot; feeds.content.dowjones.io &middot; scmp.com &middot; techcrunch.com &middot; haaretz.com &middot; latimes.com &middot; cnbc.com &middot; lawfaremedia.org [unreachable] &middot; www3.nhk.or.jp &middot; theverge.com &middot; warontherocks.com &middot; coindesk.com &middot; rollcall.com &middot; pbs.org &middot; lefigaro.fr &middot; abcnews.go.com &middot; arstechnica.com &middot; politico.com [unreachable] &middot; reuters.com [unreachable] &middot; washingtonpost.com [unreachable] &middot; businessinsider.com &middot; feeds.bbci.co.uk &middot; techmeme.com &middot; feeds.bbci.co.uk &middot; insurancejournal.com &middot; dw.com &middot; theregister.com &middot; foxbusiness.com &middot; spiegel.de &middot; pymnts.com &middot; apnews.com [unreachable] &middot; yle.fi &middot; ft.com &middot; finance.yahoo.com &middot; asia.nikkei.com &middot; handelsblatt.com &middot; cnbc.com &middot; nypost.com &middot; foxnews.com.</p>
+  <p><b>Pointed at by a thread (27):</b> gcaptain.com &middot; fox13news.com &middot; americanbanker.com &middot; floridaphoenix.com &middot; gasprices.aaa.com &middot; federalreserve.gov &middot; ofac.treasury.gov &middot; federalreserve.gov &middot; whitehouse.gov &middot; cftc.gov &middot; sec.gov [unreachable] &middot; fdic.gov &middot; scotusblog.com &middot; oilprice.com &middot; home.treasury.gov &middot; cbo.gov [unreachable] &middot; ferc.gov [unreachable] &middot; ftc.gov [unreachable] &middot; wfla.com [unreachable] &middot; occ.gov [unreachable] &middot; datacenterdynamics.com &middot; utilitydive.com [unreachable] &middot; bls.gov [unreachable] &middot; eia.gov &middot; wusf.org &middot; nrc.gov [unreachable] &middot; tampabay.com.</p>
+  <p>Article pages fetched to stand stories up are cited under each story and are not counted again. Also read for stories: handelsblatt.com and yle.fi article pages, scotusblog.com, businessinsider.com, defenseone.com and semafor.com articles (their front pages are counted above where fetched), and uscc.gov&rsquo;s home page, which did not yet surface the report.</p>
+
+  <h4>The negative check</h4>
+  <p><i>What is the biggest story today that is not on my list, and why is it not?</i> The defence money squeeze: no thread pointed at reconciliation or Golden Dome, and the lame-duck deadline of 11 December makes it the fiscal story of the week. Runner-up: the ICJ&rsquo;s genocide ruling against Myanmar, which led several foreign front pages but has no US channel, so it does not run. GTA VI&rsquo;s launch again dominated tech and business front pages and is excluded as entertainment.</p>
+
+  <h4>Confidence markers and divergence boxes</h4>
+  <p>18 stories, 18 markers (Independent corroboration: 9 &middot; Primary source: 3 &middot; Single-sourced: 6); 6 divergence boxes. Leads without a box (data-centre power, Greenland, Florida flooding) had independent accounts that agreed.</p>
+
+  <h4>Accountability to earlier issues</h4>
+  <p>18 November: Anthropic pricing was reported for Wednesday and first trade Thursday; it priced at $83 on Wednesday and trades today, as reported. 18 November: the outages lead said Clayton would testify to House Homeland Security; the hearing went ahead Wednesday with Secretary Mullin, and FBI Director Patel sent a deputy. 18 November: the Shenzhen meeting was run short because it had produced only arrival news; today it produced a text and leads. No corrections today.</p>
+
+  <h4>Could not reach</h4>
+  <p>axios.com (403) &middot; thehill.com (403) &middot; elpais.com (403) &middot; sec.gov (403) &middot; cbo.gov (403) &middot; ferc.gov (403) &middot; ftc.gov (404) &middot; lawfaremedia.org (403) &middot; wfla.com (403) &middot; politico.com (403) &middot; reuters.com (401) &middot; washingtonpost.com (000) &middot; occ.gov (404) &middot; utilitydive.com (403) &middot; bls.gov (403) &middot; apnews.com (403) &middot; nrc.gov (403). The AP pricing story (403) and CoinDesk article pages (429) were not reached; CoinDesk&rsquo;s feed headline is used only to note the $107bn figure. The Tampa Bay Times DMV story was paywalled.</p>
+
+  <h4>Seen, not run</h4>
+  <p>North Korean hackers using Sky&rsquo;s stablecoin system (CoinDesk headline; article not reached) &middot; Musk saying his midterm spending was foolish &middot; Jeffries nominated for Speaker (procedural) &middot; Kerch bridge hit a third time &middot; ICEYE&rsquo;s bid for Avio &middot; Equinor hack &middot; LA&ndash;Long Beach port strike risk &middot; Fed rate-hike commentary (this brief runs prints and decisions only).</p>
+
+  <h4>About this issue</h4>
+  <ul>
+    <li>Grok edition for 19 November, produced by the scheduled morning routine. Layout built from Issue 10 (2026-09-10b.html), not from any previous Grok edition.</li>
+    <li>9 lead stories, 9 short items. 5 leads are new subjects; 4 are follow-ups, at the cap of four.</li>
+    <li>Every quotation is under fifteen words and attributed; everything else is paraphrase.</li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n  → " + i.value + "");
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on Issue No. 76-grok — 19 November 2026 (Grok edition)\n\n" + lines.join("\n")
+      + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-11-19-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
