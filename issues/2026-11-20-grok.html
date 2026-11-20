@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Friday, 20 November 2026 (Grok edition, Issue 77-grok)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  /* short-item tier */
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list summary .chip { vertical-align:.05rem; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+  .corr { background:var(--box); border-left:3px solid var(--accent); padding:.6rem .9rem; margin:.6rem 0 1rem; font-size:.94rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 77-grok &middot; Friday, 20 November 2026 &middot; Grok edition</div>
+  <h1>The AI trade cracks on Anthropic&rsquo;s first day, Washington swaps its cyber chief, and the Shenzhen text turns out to be talk</h1>
+  <p class="sub">7 stories at length, 12 in brief. Built on the Issue 10 (2026-09-10b) layout. Claude&rsquo;s edition for today is at <a href="2026-11-20.html">2026-11-20</a>.</p>
+  <p class="prov"><b>91 sources checked, 59 of them outside the watchlist</b> (16 of the front pages refused or failed; listed in the footer). Outside-watchlist wires, foreign and trade front pages were read before the document sources the threads point at, and the last two Grok editions were opened only afterwards, for accountability. <b>3 of 7 leads are new subjects; 4 continue threads</b> (Anthropic&rsquo;s IPO, the outages, Nvidia, and deep-seabed mining, whose 19 November lease sale was the thread&rsquo;s threshold event), at the cap of four. The Shenzhen trilateral and Gulf oil, also running threads, are held to short items. <b>Biggest story not on my list:</b> the first US seabed-mining lease sale, which sits on no thread or beat line and surfaced on gCaptainthe first US seabed-mining lease sale, found on gCaptain&rsquo;s front page and on no thread or beat line;rsquo;s and ABCthe first US seabed-mining lease sale, found on gCaptain&rsquo;s front page and on no thread or beat line;rsquo;s front pages; it runs as lead seven with the Kenya minerals award. The negative check also surfaced the Florida inspector-general firing (Tampa Bay Times front page), which became the Florida lead. The UAP sweep found no new official action, so that core beat does not appear.<br><br>
+  <b>Accounts compared per lead:</b> ai-rout: 6 independent (CBS, Al Jazeera, Guardian, Yahoo Finance, BBC, Nikkei) plus TechCrunch and the METR document &middot; cyber-director: 8 (CBS, CNN, NBC, Defense One/Nextgov, Reuters via Guardian, Semafor, Fox News, Axios via TechCrunch) plus BBC on the outages &middot; nvidia-chips: 6 (LA Times, Guardian, CNBC, Handelsblatt, ABC, NBC) plus Nikkei &middot; permitting: 4 (CBS, NBC, Roll Call, Reuters via OilPrice) &middot; bank-vendors: 4 (ABC, Reuters via Claims Journal, The Register, Bloomberg via American Banker) &middot; minerals: 2 on the lease sale (Reuters via gCaptain, AP via ABC) plus BBC (and Reuters via BBC) on Kenya; Interior’s own notice not reached &middot; fl-ig: 2 principals on the record (Mitchell’s post; the governor’s press secretary via the Herald) plus Herald/Times reporting and CiberCuba’s relay.<br><br>
+  <b>Disclosure.</b> The live <code>config.md</code> carried a 16-line addition from this morning&rsquo;s Claude run when it was loaded. I did not read that addition. For beats and the watchlist I used the version of <code>config.md</code> from the previous commit (128ff8a), so none of Claude&rsquo;s 20 November notes reached selection or copy. Claude&rsquo;s edition and today&rsquo;s refreshed <code>index.html</code> were not opened until this draft was finished.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#ai-rout">Anthropic listed at a record and the market sold everything else: the Dow lost 1,101 points, Asia fell 5–6%, and Anthropic is down 6% before its second session</a></li>
+    <li><a href="#cyber-director">The White House’s cyber chief is out after a week of outages; the Pentagon’s CIO takes over, and officials still say the outages were not attacks</a></li>
+    <li><a href="#nvidia-chips">California subpoenas Nvidia, and House papers show Commerce approved 879,000 AI chips for Chinese buyers</a></li>
+    <li><a href="#permitting">The Senate passes the permitting overhaul 62–33, including a rule that big data centres pay for their own grid hookups; the House takes it up after Thanksgiving</a></li>
+    <li><a href="#bank-vendors">JPMorgan, Visa and Mastercard confirm hackers reached their vendors; the banks say names and emails, the extortion crew says more</a></li>
+    <li><a href="#minerals">Washington holds its first seabed-mining lease sale, off American Samoa, at the minimum price, and a US group wins Kenya’s biggest critical-minerals tender</a></li>
+    <li><a href="#fl-ig">Florida’s emergency-management watchdog says she was fired for trying to oversee Alligator Alcatraz; the governor’s office says she just refused to resign</a></li>
+    <li><a href="#also-today">Also today (12)</a> &mdash; ranked below the line, each one opens.</li>
+  </ol>
+</nav>
+
+<article id="ai-rout">
+  <h2>Anthropic listed at a record and the market sold everything else: the Dow lost 1,101 points, Asia fell 5–6%, and Anthropic is down 6% before its second session</h2>
+  <div class="meta">
+    <span class="chip">Macro &amp; markets / AI &amp; tech</span>
+    <span class="chip">Continuing &middot; Anthropic IPO</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Anthropic opened on Nasdaq on Thursday at $111.50, 34% above its $83 offer price, and closed at $97.17, up 17% (Yahoo Finance, Nikkei, BBC). Everything around it fell. The Dow closed down 1,101 points, or 2.2%, at 49,097; the S&amp;P 500 lost 2% and the Nasdaq 2.3%, with more than 90% of S&amp;P stocks lower, CBS reported. Analysts quoted by CBS named no single catalyst.</p>
+  <p>Overnight the selling moved to the markets that make AI hardware. Al Jazeera reports Japan’s Nikkei 225 down 5.1%, Korea’s Kospi down 5.2% and Taiwan’s Taiex down 6.2% on Friday; Hong Kong lost 1.9%. Before New York opened, Anthropic itself was trading 6% lower, according to the Guardian’s markets live page.</p>
+  <p>The money went to bonds. On Treasury’s own par curve the 10-year closed Thursday at 5.04%, its fifth straight lower close from 5.15% on 13 November (see Also today).</p>
+  <p><b>What it means for you:</b> the listing did not do what bulls hoped, which was to prove that public investors will pay up for AI and lift the rest of the trade. If you hold broad index funds, you hold a large share of the companies that fell. <b>What to watch:</b> Anthropic’s second-day close, and whether Asia’s chip names keep falling when Tokyo and Taipei reopen on Monday.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how big was the IPO, and what is Anthropic worth?</span>
+    <p><b>What is disputed.</b> Mostly a <b>significance dispute</b> about which number to print. The raise is reported as $81.3bn (Yahoo Finance, CNN) and as $107.3bn (CoinDesk, Techmeme summaries). The value is reported as $1.27tn (Yahoo), roughly $1.3tn (Guardian), $1.5tn (Yahoo, at the offer price), $1.76tn (BBC) and “$2tn” or more (several headlines at the open).</p>
+    <p><b>Why they differ.</b> Definitions explain all of it. A Techmeme summary of the deal splits the raise: 980m shares at $83 is $81.3bn in the IPO, plus a separate $26bn private placement, which makes $107.3bn. On value, the Guardian gives both readings at the close: about $1.3tn on shares outstanding and $1.75tn fully diluted, which counts options and other convertible claims. The $2tn-plus figures are fully diluted values at the $111.50 opening price.</p>
+    <p><b>What it means for you.</b> Use $81.3bn as the IPO and $107.3bn as total new money. For the company’s value, use the fully diluted figure, about $1.75tn at Thursday’s close, because that is what a buyer of the whole company would pay for. Anything above $2tn was true for a few minutes on Thursday. The final prospectus filed with the SEC will fix the share counts.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; the safety promise and the lab’s own pace</summary>
+    <div class="exp">
+      <p>At the opening bell Dario Amodei repeated that Anthropic would not bend to commercial or political pressure and that its AI would “remain under human control,” TechCrunch reported. Investors are now pricing that promise next to a finding about how fast the company is moving.</p>
+      <p>On 5 November METR, an outside evaluator that Anthropic gave unusual internal access, published its assessment. It estimated that Anthropic is improving its models on well-specified tasks at about twice its March 2024–October 2025 rate, with wide uncertainty: anything from 1.3 to 3 times would not surprise it. METR attributed most of the speed-up to Anthropic’s own use of AI in research, and said it saw no bottleneck likely to stop further acceleration within twelve months.</p>
+      <p>That finding is now feeding public forecasts (see Also today). For a shareholder it matters in two directions: it supports the revenue story and it raises the chance that Anthropic’s own safety policy obliges it to slow down. Contrary Research reports that the amended IPO filing says Anthropic “may imminently meet” that policy’s threshold for AI-driven acceleration. This run did not read the filing, so treat that sentence as reported, not checked.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cbsnews.com/news/dow-tumbles-wall-street-ai-fears/">CBS News</a> &middot;
+    <a href="https://www.aljazeera.com/economy/2026/11/20/asias-stock-markets-dive-as-anthropic-debut-fails-to-allay-ai-bubble-fears">Al Jazeera</a> &middot;
+    <a href="https://www.theguardian.com/business/live/2026/nov/20/asia-stocks-worst-anthropic-ipo-ai-stock-market-latest-updates-news">Guardian markets live</a> &middot;
+    <a href="https://finance.yahoo.com/technology/live/anthropic-ipo-live-anthropic-stock-begins-trading-in-record-81b-raise-with-15t-valuation-192410598.html">Yahoo Finance</a> &middot;
+    <a href="https://www.bbc.co.uk/news/articles/c3x29ggenz12o">BBC</a> &middot;
+    <a href="https://asia.nikkei.com/business/markets/ipo/anthropic-closes-17-above-ipo-price-after-34-opening-surge">Nikkei Asia</a> &middot;
+    <a href="https://techcrunch.com/2026/11/19/at-nasdaq-opening-bell-anthropic-ceo-recommits-to-pacing-ai-development/">TechCrunch</a> &middot;
+    <a href="https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/">METR assessment (primary)</a>
+  </p>
+  <div class="fb">
+    <p>Was this the right lead?</p>
+    <label><input type="radio" name="fb-ai-rout" value="right"> Yes</label>
+    <label><input type="radio" name="fb-ai-rout" value="anthropic"> Lead with Anthropic alone</label>
+    <label><input type="radio" name="fb-ai-rout" value="markets"> Lead with the market, not the company</label>
+  </div>
+</article>
+<article id="cyber-director">
+  <h2>The White House’s cyber chief is out after a week of outages; the Pentagon’s CIO takes over, and officials still say the outages were not attacks</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy / AI &amp; tech</span>
+    <span class="chip">Continuing &middot; outages</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Sean Cairncross is leaving as national cyber director, the post that coordinates federal cybersecurity policy. A White House official confirmed it to CBS, CNN and NBC on Thursday. Kirsten Davies, the Defense Department’s Senate-confirmed chief information officer, takes over in an acting capacity, according to sources quoted by CNN, NBC, Defense One and Reuters.</p>
+  <p>He goes after a week in which a Microsoft network upgrade, an FAA router installation, the NSA’s internal network and bank payment systems all failed. The administration’s explanation has not changed. Homeland Security Secretary Markwayne Mullin told lawmakers he is “98% confident” the outages were not foreign attacks, CBS reported, and the Director of National Intelligence called them separate maintenance failures, according to Reuters via the Guardian.</p>
+  <p>The reason given for the change is about the man, not the outages. Unnamed sources told CNN, Reuters and Defense One that Trump backed the firing because Cairncross “lacked the strong cyber credentials” for the job. CBS adds that Stephen Miller, chief of staff since earlier this month, had long wanted him out. Cairncross, a lawyer and former RNC chief operating officer, was confirmed 59–35 in August 2025 with no cybersecurity background (TechCrunch).</p>
+  <p><b>What it means for you:</b> nothing here says the outages were attacks. The practical question is who sets cyber policy in January. <b>What to watch:</b> a nomination sent to the Senate before the Republican majority ends on 3 January.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; fired, or resigned?</span>
+    <p><b>What is disputed.</b> A <b>facts dispute</b> about how he left. Defense One, citing a White House official and two others, says he was fired. CNN’s and Reuters’ source says Trump “fully supported firing” him. Semafor found a senior White House official who strongly denies he was fired and says he resigned without being asked. Axios, as relayed by TechCrunch, calls the split amicable and timed so a successor can be confirmed. Fox has both: fired, plus an official saying he did not want another two years.</p>
+    <p><b>Why they differ.</b> Every version is anonymous and comes from inside one White House. CNN and Reuters use word-for-word the same quote, which suggests one source talking to both. The “fired” version suits people who want to show the outages had consequences. The “resigned” version suits people who do not want the departure read as an admission that the outages were a security failure. Cairncross’s own statement says only “I leave my role” and praises the president.</p>
+    <p><b>What it means for you.</b> On the evidence, he was pushed. Two newsrooms have the White House saying the president backed his firing, and Fox confirmed it independently. Whether he also wanted to go cannot be settled and makes no difference to policy. What would settle it: a formal letter of resignation, or Cairncross saying more.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; what the office does, and the confirmation clock</summary>
+    <div class="exp">
+      <p>Congress created the office in 2021. Cairncross was its third Senate-confirmed director. It coordinates the national cyber strategy, which this administration published in March, and it has worked on AI security with the Office of Science and Technology Policy. NBC reports that Cairncross was in the White House discussions after Commerce ordered Anthropic to take down its two most capable models over the summer.</p>
+      <p>Davies can act in the job, but the post needs a confirmed director. If the White House wants its own pick confirmed by this Senate, the nomination has to move during the lame-duck weeks, which also have to carry appropriations and the permitting bill. A nomination that slips into January goes to a Democratic Senate.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cbsnews.com/news/white-house-national-cyber-director-sean-cairncross-leaving/">CBS News</a> &middot;
+    <a href="https://www.cnn.com/2026/11/19/politics/national-cyber-director-replaced-sean-cairncross">CNN</a> &middot;
+    <a href="https://www.nbcnews.com/politics/white-house/national-cyber-director-sean-cairncross-leaving-kirsten-davies-replaci-rcna610329">NBC News</a> &middot;
+    <a href="https://www.defenseone.com/policy/2026/11/pentagon-cio-replaces-white-house-cyber-director-sean-cairncross-major-shakeup/417359/">Defense One / Nextgov</a> &middot;
+    <a href="https://www.theguardian.com/us-news/2026/nov/19/white-house-cyber-director-ousted">Guardian (Reuters)</a> &middot;
+    <a href="https://www.semafor.com/article/11/19/2026/cairncross-departs-abruptly-after-widespread-tech-outages">Semafor</a> &middot;
+    <a href="https://www.foxnews.com/politics/trumps-national-cyber-director-sean-cairncross-fired">Fox News</a> &middot;
+    <a href="https://techcrunch.com/2026/11/20/the-u-s-national-cyber-director-is-stepping-down/">TechCrunch (Axios)</a> &middot;
+    <a href="https://www.bbc.co.uk/news/articles/c6z0kly2lll7o">BBC explainer</a>
+  </p>
+  <div class="fb">
+    <p>Keep following the outages thread?</p>
+    <label><input type="radio" name="fb-cyber" value="yes"> Yes, until the cause is settled</label>
+    <label><input type="radio" name="fb-cyber" value="policy"> Only for policy changes</label>
+    <label><input type="radio" name="fb-cyber" value="no"> No, close it</label>
+  </div>
+</article>
+<article id="nvidia-chips">
+  <h2>California subpoenas Nvidia, and House papers show Commerce approved 879,000 AI chips for Chinese buyers</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech / US policy</span>
+    <span class="chip">Continuing &middot; Nvidia / chips</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Two new official actions on Thursday. California Attorney General Rob Bonta served Nvidia with an investigative subpoena. He wants to know whether its advanced chips or confidential information reached China and whether the company misled investors, the LA Times and Guardian report. Bonta said the conduct of Nvidia and its former chief executive “raises bright red flags.”</p>
+  <p>In Washington, the House Foreign Affairs Committee voted to release Commerce Department licensing records. CNBC reports they show the Bureau of Industry and Security approved sales of more than 879,000 AI chips to Chinese companies, including Alibaba and Tencent, as of May. Some went to firms on the Pentagon’s list of Chinese military companies. Companies had requested 3.4 million chip sales between December and May. Nvidia told CNBC it followed the rules in force at the time and has since stopped shipping H200s to China.</p>
+  <p>This comes on top of the Jensen Huang scandal. Huang resigned after admitting an affair; reports say it was with Alice Huang, an executive linked to Megaspeed, a Singapore buyer of Nvidia hardware under investigation for diverting chips. Senate Banking Chairman Tim Scott has asked Huang to testify on 3 December and Commerce Secretary Lutnick to appear too; Commerce says Lutnick will (ABC).</p>
+  <p><b>What it means for you:</b> Nvidia now faces a state securities inquiry as well as federal ones, and the licensing record turns the political fight toward Commerce. <b>What to watch:</b> Huang’s answer on 3 December and any Justice Department response to the experts’ letter below.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is 879,000 a scandal or a rounding error?</span>
+    <p><b>What is disputed.</b> A <b>significance dispute</b> with a number in it. Democrats on the committee say the record shows export rules were not enforced. Bernstein’s Stacy Rasgon told CNBC it is “not that many”: about one approval per four requests, which looks like a working process. Handelsblatt, writing from the same records, gives a much smaller figure: 272,000 older processors approved by May for Tencent, Alibaba, Baidu and BYD, including 150,000 for Tencent.</p>
+    <p><b>Why they differ.</b> The numbers measure different things. 879,000 is every approval to Chinese companies; 272,000 is the subtotal for four named groups. The judgments split by interest. The committee minority wants oversight of Commerce; a sell-side analyst is weighing Nvidia’s revenue at risk. Timing matters for the military-list point: Handelsblatt notes Alibaba, Baidu and BYD were put on the Pentagon list in February, taken off, and added again in June. Tencent has been on it since January 2025.</p>
+    <p><b>What it means for you.</b> Both are partly right. The volume is small next to Nvidia’s sales. The approvals to Tencent, a company already on the Pentagon list, are the part that needs explaining. The question is no longer only what Nvidia knew. It is what Commerce approved and why. The licence-by-licence record, if the committee publishes it, would settle how many approvals went to listed firms while they were listed.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; the Justice Department letter and the chip revenue at stake</summary>
+    <div class="exp">
+      <p>NBC reports that 15 national-security and AI-policy figures, including a former CIA officer, wrote to Attorney General Todd Blanche on Tuesday. They ask whether Nvidia kept selling to customers or middlemen after it had evidence that chips were being routed to China, or “deliberately blinded itself” to violations. No Justice Department response has been reported.</p>
+      <p>On the money: CNBC says Nvidia reported $2.4bn of quarterly revenue from H200 and related China sales on Tuesday, and that China and Hong Kong customers were about 9.5% of revenue. An earlier statement that H200 shipments were under 1% of data-centre revenue covered the quarter ended July, so the two figures are not in conflict. On Monday Washington also issued a rule to curb Chinese access to AI chips through data centres in Southeast Asia (Nikkei Asia), which this brief covered on 17 November.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.latimes.com/california/story/2026-11-19/california-subpoenas-nvidia-as-questions-about-ceo-affair-ai-chips-mount">LA Times</a> &middot;
+    <a href="https://www.theguardian.com/technology/2026/nov/20/california-investigates-nvidia-over-whether-chip-exports-ended-up-in-china">Guardian</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/19/nvidia-amd-china-chip-sales-congress.html">CNBC</a> &middot;
+    <a href="https://www.handelsblatt.com/technik/ki/amd-und-nvidia-us-regierung-geraet-wegen-chipexporten-nach-china-unter-druck/100271465.html">Handelsblatt (German)</a> &middot;
+    <a href="https://abcnews.com/Politics/house-senate-republicans-call-howard-lutnick-jensen-huang/story?id=138111390">ABC News</a> &middot;
+    <a href="https://www.nbcnews.com/tech/tech-news/doj-urged-investigate-nvidia-china-chip-smuggling-rcna609879">NBC News</a> &middot;
+    <a href="https://asia.nikkei.com/business/technology/artificial-intelligence/nvidia-scandal-sparks-washington-blame-game-over-china-chip-exports">Nikkei Asia</a>
+  </p>
+  <div class="fb">
+    <p>Is the Nvidia thread getting the right space?</p>
+    <label><input type="radio" name="fb-nvidia" value="right"> About right</label>
+    <label><input type="radio" name="fb-nvidia" value="more"> More: lead with it</label>
+    <label><input type="radio" name="fb-nvidia" value="less"> Less: short items only</label>
+  </div>
+</article>
+<article id="permitting">
+  <h2>The Senate passes the permitting overhaul 62–33, including a rule that big data centres pay for their own grid hookups; the House takes it up after Thanksgiving</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy / Energy &amp; grid</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The Senate on Thursday night passed the Bipartisan American Affordability and Jobs Act (BAAJA) by 62–33 and sent it to the House, CBS, NBC and Roll Call report. Fifteen members of the Democratic caucus voted yes with almost all Republicans. Thirty-one Democrats voted no, along with Republicans Josh Hawley and Mike Rounds. President Trump backs it.</p>
+  <p>The bill, written by Shelley Moore Capito, Sheldon Whitehouse, Mike Lee and Martin Heinrich, sets tighter deadlines for environmental reviews, speeds up approval of transmission lines and limits agencies’ power to revoke permits already issued. It covers power lines, wind and solar, hard-rock mining and oil drilling. The Senate voted on the authors’ revised text and took no further amendments, Roll Call says.</p>
+  <p>One clause lands directly on household power bills. NBC, citing the Bipartisan Policy Center, reports that new data centres of 20 megawatts or more would have to pay the full extra cost of the infrastructure built to serve them, rather than spreading it across ratepayers.</p>
+  <p><b>What it means for you:</b> it is the first federal attempt to make AI’s power build-out pay its own way at the grid connection. It also makes new pipelines and power lines easier to build. <b>What to watch:</b> House Majority Leader Steve Scalise says “the details matter.” If the House changes the text, it goes back to a Senate that turns Democratic in January.</p>
+  <details>
+    <summary>Dig deeper &mdash; who objected, and why the window is short</summary>
+    <div class="exp">
+      <p>Most Senate Democrats who voted no said the bill weakens environmental protection and helps fossil-fuel projects. Some tribal organisations objected to looser consultation rules (NBC). Supporters on the left argue that the current permitting system blocked the clean-energy projects the Inflation Reduction Act paid for.</p>
+      <p>Majority Leader Thune told reporters the fastest route to law is for the House to pass the Senate bill unchanged. The House returns after Thanksgiving. Any change means another Senate vote in a short lame-duck session that also has to deal with defence spending.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cbsnews.com/news/senate-bipartisan-permitting-reform-bill-energy-baaja-trump/">CBS News</a> &middot;
+    <a href="https://www.nbcnews.com/politics/congress/senate-passes-sweeping-bill-simplifying-permitting-rules-build-america-rcna610196">NBC News</a> &middot;
+    <a href="https://rollcall.com/2026/11/19/sweeping-permitting-overhaul-passes-senate-on-to-house">Roll Call</a> &middot;
+    <a href="https://oilprice.com/Latest-Energy-News/World-News/Senate-Passes-Sweeping-Energy-Permitting-Reform-Bill-in-62-33-Vote.html">OilPrice (Reuters)</a>
+  </p>
+  <div class="fb">
+    <p>Follow the permitting bill through the House?</p>
+    <label><input type="radio" name="fb-permit" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-permit" value="final"> Only if it becomes law</label>
+    <label><input type="radio" name="fb-permit" value="no"> No</label>
+  </div>
+</article>
+<article id="bank-vendors">
+  <h2>JPMorgan, Visa and Mastercard confirm hackers reached their vendors; the banks say names and emails, the extortion crew says more</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>JPMorgan Chase said on Thursday that outside companies it uses were hit by a cyberattack, and that the attackers probably got marketing data that may include customer names and email addresses. Mastercard said a vendor exposed email addresses of a small group of cardholders in one benefit programme. Visa said a vendor in Asia-Pacific was breached and no payment data was involved. ABC, Reuters (via Claims Journal) and The Register have the statements; American Banker, carrying Bloomberg, reports JPMorgan Reserve cardholders’ emails were exposed.</p>
+  <p>All three say their own systems and payment networks were not touched. All three say this is unrelated to this week’s outages, including Monday’s Chase payment failure, which the bank blamed on a software bug. None would name the vendors or say when the breach happened. Chase says it will contact affected customers and offer free credit monitoring.</p>
+  <p><b>What it means for you:</b> if you hold a Chase card, especially a Sapphire Reserve, or a Visa or Mastercard benefit product, expect convincing phishing that uses your real name. Card numbers are not reported stolen. <b>What to watch:</b> a state data-breach filing, which would put a number on affected customers.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; vendor marketing lists, or the banks themselves?</span>
+    <p><b>What is disputed.</b> A <b>facts dispute</b> about scope. The Register reports that a Russia-linked extortion crew called n0n posted all three firms to its leak site on Monday, presenting them as compromised. The companies say only vendors were breached and only contact data was exposed.</p>
+    <p><b>Why they differ.</b> Timing and interest. The crew’s claim came first and is meant to pressure the firms into paying. The companies’ statements came after investigation, and they have their own interest in keeping it narrow. But a bank or card network that makes a breach disclosure in writing faces regulators if it is wrong. Reuters adds that the OCC and Treasury were calling banks within minutes of Monday’s outage, so supervisors are already watching.</p>
+    <p><b>What it means for you.</b> Believe the firms on what was taken, for now. Their written statements are specific and legally exposed; the gang has shown nothing. Leak sites overstate as a matter of business. This would change if n0n publishes samples that include account or card data, or if a state attorney-general filing shows a breach count larger than a marketing list.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://abcnews.com/US/jpmorgan-chase-reports-cyberattack-party-service-providers/story?id=138287705">ABC News</a> &middot;
+    <a href="https://www.claimsjournal.com/news/national/2026/11/20/341437.htm">Claims Journal (Reuters)</a> &middot;
+    <a href="https://www.theregister.com/security/2026/11/19/chase-visa-mastercard-confirm-third-party-cyberattacks-that-may-have-exposed-customers-info/5311175">The Register</a> &middot;
+    <a href="https://www.americanbanker.com/news/vendor-attack-exposes-jpmorgan-reserve-cardholder-emails">American Banker (Bloomberg)</a>
+  </p>
+  <div class="fb">
+    <p>Do you want vendor breaches at the big banks covered as leads?</p>
+    <label><input type="radio" name="fb-bank" value="yes"> Yes, JPMorgan especially</label>
+    <label><input type="radio" name="fb-bank" value="short"> Short items unless accounts are hit</label>
+    <label><input type="radio" name="fb-bank" value="no"> No</label>
+  </div>
+</article>
+<article id="minerals">
+  <h2>Washington holds its first seabed-mining lease sale, off American Samoa, at the minimum price, and a US group wins Kenya’s biggest critical-minerals tender</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy / Geopolitics</span>
+    <span class="chip">Continuing &middot; deep-seabed mining</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Interior completed the first US offshore critical-minerals lease sale on Thursday, gCaptain (carrying Reuters) and ABC (carrying AP) report. Two lease areas covering more than 31.5 million acres of seabed, 150–240 miles east of Pago Pago and 4,630–20,100 feet deep, drew $6m in high bids. That is exactly the $3m minimum for each area. Interior did not name the winners. Secretary Doug Burgum called it “a historic step.”</p>
+  <p>The sale went ahead three days after a federal judge in Hawaii ruled that the National Marine Fisheries Service broke the Endangered Species Act in its review of the sale. American Samoa’s governor opposes mining in the territory’s waters, and Oceana says most of the more than 76,000 public comments were against it.</p>
+  <p>Separately, the BBC reports that Frontier Minerals, a group of three US companies (Bunker Hill Mining, American Resources and ReElement Technologies), won the tender for Kenya’s Mrima Hill deposit. It beat seven bidders, including Chinese and Australian firms. The site is estimated to hold more than $60bn of minerals, including niobium, which is used in defence and aerospace alloys. Two losing bidders plan to challenge the award, Reuters reports via the BBC.</p>
+  <p><b>What it means for you:</b> these are two concrete steps in the push to source critical minerals outside China. Both are options to explore, not mines. <b>What to watch:</b> Interior naming the winning bidders, and the court’s remedy order in Hawaii.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; “historic” sale, or a floor-price sale?</span>
+    <p><b>What is disputed.</b> A <b>significance dispute</b>. Interior calls it historic. The bids landed exactly on the floor: $3m each for two areas together larger than South Carolina, with no winner named.</p>
+    <p><b>Why they differ.</b> Interior wants the programme to look as if it has momentum. Bids at the minimum usually mean little or no competition. Interior has not said how many bidders took part, which is the number that would show demand. Opponents (Oceana, the territorial government) have their own interest in making the sale look unwanted. The court ruling adds legal risk that a bidder would price in.</p>
+    <p><b>What it means for you.</b> Read it as the start of a process with thin demand so far, not a rush. The leases are cheap options on exploring nodules and crusts that nobody yet mines commercially in US waters. The bidder count and names will settle it. So will whether the court’s ESA ruling forces the review to be redone before any permits are issued.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://gcaptain.com/u-s-holds-historic-deep-sea-mining-lease-sale/">gCaptain (Reuters)</a> &middot;
+    <a href="https://abcnews.com/US/wireStory/deep-sea-mining-auctions-spark-environmental-concerns-american-138253336">ABC News (AP)</a> &middot;
+    <a href="https://www.bbc.co.uk/news/articles/cm9q84gp0gr3o">BBC on Kenya</a>
+  </p>
+  <div class="fb">
+    <p>Should critical minerals be a standing thread?</p>
+    <label><input type="radio" name="fb-minerals" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-minerals" value="big"> Only big awards and court rulings</label>
+    <label><input type="radio" name="fb-minerals" value="no"> No</label>
+  </div>
+</article>
+<article id="fl-ig">
+  <h2>Florida’s emergency-management watchdog says she was fired for trying to oversee Alligator Alcatraz; the governor’s office says she just refused to resign</h2>
+  <div class="meta">
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip new">New</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Mandi Mitchell, the inspector general of the Florida Division of Emergency Management (FDEM) for four years, said on LinkedIn that she was fired on Wednesday “for political reasons.” She wrote that her office had been blocked from independent oversight of Alligator Alcatraz and other immigration enforcement, and that the chief of investigations who led that oversight was fired the same day.</p>
+  <p>Governor DeSantis’s press secretary, Alex Lanfranconi, replied that every employee of the governor’s office had been asked for a resignation letter as part of the transition to Governor-elect Byron Donalds, and that when Mitchell refused, “she was fired,” the Miami Herald/Tampa Bay Times reports.</p>
+  <p>The money behind it is the state’s disaster fund. The Herald reports that more than 70% of the emergency fund, over $1.2bn, has gone to immigration enforcement since summer 2025, under a standing emergency declaration. FDEM’s report on the fund due on 15 July arrived nearly two months late, and the 15 October quarterly report had not been delivered when she was fired, according to Herald/Times reporting relayed by CiberCuba.</p>
+  <p><b>What it means for you:</b> this is the agency that pays for hurricane response, and its watchdog is gone with the fund’s reports overdue. <b>What to watch:</b> whether the Legislature asks for the overdue report, and whom Donalds appoints after 5 January.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; a normal transition, or the removal of oversight?</span>
+    <p><b>What is disputed.</b> A <b>facts dispute</b> about motive; the sequence is agreed. Both sides say she was asked to resign, refused and was fired. She says the reason was her oversight of immigration spending. The governor’s office says it was a routine request made to everyone.</p>
+    <p><b>Why they differ.</b> Both sides are the interested parties, and neither has published documents. The transition explanation is plausible for political appointees. It explains less well why her chief of investigations, who was leading the Alligator Alcatraz review, was fired the same day, if her account of that is accurate. Mitchell has not said what oversight was blocked or by whom.</p>
+    <p><b>What it means for you.</b> Hold judgement on motive, but the fact that matters is not disputed: FDEM’s oversight office has been emptied while its largest spending programme is behind on reporting. Three things would settle it: whether other agency inspectors general who refused were also fired, whether the chief of investigations was a political appointee, and Mitchell’s promised next steps, which may include a whistleblower filing.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.linkedin.com/posts/mandi-mitchell-esq-cig-cisa-37a102104_i-paid-my-own-money-today-to-go-get-fired-share-7529021274837131267-a66F/">Mandi Mitchell on LinkedIn (primary)</a> &middot;
+    <a href="https://www.miamiherald.com/news/politics-government/state-politics/article318164504.html">Miami Herald / Tampa Bay Times</a> &middot;
+    <a href="https://www.tampabay.com/news/florida-politics/2026/11/19/inspector-general-alligator-alcatraz-fired-emergency-management/">Tampa Bay Times</a> &middot;
+    <a href="https://en.cibercuba.com/noticias/2026-11-20-u1-e199894-s27061-nid346180-inspectora-general-emergencias-florida-denuncia">CiberCuba (relaying Herald/Times)</a>
+  </p>
+  <div class="fb">
+    <p>Is state-agency oversight the kind of Florida story you want?</p>
+    <label><input type="radio" name="fb-fl" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-fl" value="money"> Only where state money is involved</label>
+    <label><input type="radio" name="fb-fl" value="no"> No</label>
+  </div>
+</article>
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">12 things I saw and ranked below the line. Each one opens &mdash; the line is my judgement, what is behind it is the substance.</p>
+
+<div class="also-list">
+
+<details class="short" id="a-shenzhen">
+  <summary><span class="chip">Geopolitics &middot; US policy</span> The White House has published the Shenzhen declaration: nuclear-risk talks, more refined fuel and a shield against the ICC, with nothing on Ukraine or Iran.</summary>
+  <div class="exp">
+    <p><b>Update to yesterday’s lead.</b> On 19 November this brief said “Washington has not said what it signed.” The White House posted the text at 8:53am ET on Thursday, about two hours after that issue went live. It matches what Beijing and Moscow described. The line was accurate when written and has been overtaken.</p>
+    <p>The text, on whitehouse.gov, commits the three powers to UN reform, a plan “to increase the production and supply of refined petroleum products,” a statement that the ICC must not abuse its jurisdiction, and a dialogue on nuclear risk and proliferation. It sets no dates or volumes. ABC notes it does not mention Ukraine or Iran. Trump holds a news conference on Friday.</p>
+    <div class="div"><span class="t">Divergence &mdash; historic agreement, or a photo opportunity?</span>
+    <p><b>What is disputed.</b> A <b>significance dispute</b>; the text is no longer in doubt. Fox calls it a historic joint declaration. The BBC says spectacle, little substance; ABC says no tangible breakthroughs.</p>
+    <p><b>Why they differ.</b> US outlets measure it against what Trump said he wanted, which was nuclear cuts and help on Iran. Beijing and Moscow gain from simply being seen at the table. The White House issued no fact sheet saying what the US got.</p>
+    <p><b>What it means for you.</b> The text supports the sceptics. The ICC clause mainly helps Putin, who is under an ICC warrant. A dated nuclear-risk meeting or a named fuel-export step would change that.</p></div>
+    <p class="btl"><b>Below the line because</b> every commitment is to talk or to aim; it becomes a lead when one of them gets a date or a volume.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.whitehouse.gov/briefings-statements/2026/11/u-s-russia-china-heads-of-state-declaration-toward-peace/">White House text (primary)</a> &middot; <a href="https://abcnews.com/Politics/trump-china-trip-iran-ukraine-peace-declaration-takeaways/story?id=138292154">ABC News</a> &middot; <a href="https://www.foxnews.com/world/trump-putin-xi-issue-4-point-declaration-historic-summit">Fox News</a> &middot; <a href="https://www.bbc.co.uk/news/articles/cwn70vrjlg8ro">BBC analysis</a> &middot; <a href="2026-11-19-grok.html#summit">Grok edition, 19 Nov</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-oil">
+  <summary><span class="chip">Energy &amp; grid &middot; oil chain</span> Iran is attacking more tankers near Hormuz just as oil and pump prices fall fastest; gasoline is $3.72, its biggest three-week drop outside 2008.</summary>
+  <div class="exp">
+    <p>This is one chain. Bloomberg data carried by gCaptain show Iranian attacks on Hormuz tankers rising since October, with at least two seafarers missing after attacks this week. Brent has still fallen about a fifth this month as Gulf exports neared pre-war levels. OilPrice puts Brent around $92, down from over $118 in late October. AAA says WTI settled at $83.26 on Wednesday.</p>
+    <p>At the pump, AAA’s national average is $3.72, down 18 cents in a week. CNN’s review of AAA data finds a 50.5-cent fall since 29 October, the largest three-week drop outside the 2008 crisis, and 26 straight days of declines. AAA says another 15-cent fall by Thanksgiving would avoid a holiday record (the record is $3.58, set in 2022). The Shenzhen declaration’s line on more refined fuel (lead above) adds no volume.</p>
+    <div class="div"><span class="t">Divergence &mdash; glut ahead, or a squeeze?</span>
+    <p><b>What is disputed.</b> A <b>significance dispute</b> about direction. The IEA, cited by gCaptain, says supply is outpacing demand for the first time since the war began. OilPrice argues that ship-to-ship transfers in the Gulf of Oman are tying up supertankers and could cut Hormuz exports.</p>
+    <p><b>Why they differ.</b> The IEA looks at monthly balances; the tanker argument is about this month’s logistics. gCaptain notes flows have recently dipped and it is unclear whether attacks or normal volatility caused it.</p>
+    <p><b>What it means for you.</b> For pump prices over the next weeks, the glut reading has the evidence: prices are falling on rising exports. Weekly export tracking from Hormuz is the thing to watch; two weeks of declines would shift the balance.</p></div>
+    <p class="btl"><b>Below the line because</b> prices are moving in the reader’s favour on known causes; the risk case is a reversal, not today’s news.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://gcaptain.com/iran-intensifies-hormuz-tanker-attacks-just-as-oil-prices-slide/">gCaptain (Bloomberg)</a> &middot; <a href="https://oilprice.com/Energy/Crude-Oil/Hormuz-Oil-Exports-Could-Decline-amid-Inbound-Tanker-Shortage.html">OilPrice</a> &middot; <a href="https://gasprices.aaa.com/gas-prices-keep-dropping-as-thanksgiving-approaches/">AAA (primary)</a> &middot; <a href="https://www.cnn.com/2026/11/19/economy/gas-prices-fall">CNN</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-10y">
+  <summary><span class="chip">US debt &amp; fiscal</span> The 10-year Treasury yield fell for a fifth straight day to 5.04% on Thursday, as money left stocks.</summary>
+  <div class="exp">
+    <p>Treasury’s daily par yield curve: the 10-year was 5.15% on 13 November, then 5.12, 5.10, 5.07 and 5.04 through Thursday. The 2-year fell from 4.88% to 4.76% and the 30-year from 5.47% to 5.40% over the same days. This brief reported 5.10% for Tuesday on 18 November; the series has kept falling since.</p>
+    <p>Thursday’s move came with the 2% fall in stocks (lead story). A lower long rate helps mortgage and corporate borrowing costs at the margin, and it reduces the government’s cost of new debt, since a growing share of Treasury’s borrowing is refinanced every year.</p>
+    <p class="btl"><b>Below the line because</b> an 11-basis-point move in a week is a market move, not a fiscal event; it matters if it holds through the next auction.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202611">Treasury daily par yield curve (primary)</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-warpowers">
+  <summary><span class="chip">US politics &amp; policy</span> The Senate rejected the Iran war powers resolution 48–51, the first such vote since the midterms.</summary>
+  <div class="exp">
+    <p>Roll Call and the Guardian report the vote. The House adopted the concurrent resolution in September. Republicans Susan Collins, Lisa Murkowski and Rand Paul voted yes; Democrat John Fetterman voted no. Departing Republicans Thom Tillis and Bill Cassidy, who have sometimes backed such measures, voted no this time.</p>
+    <p>Even if it had passed it would have been largely symbolic: a concurrent resolution does not go to the president. The Guardian notes that one measure did clear both chambers in June and was ignored. Senator Tim Kaine says more votes are planned once Democrats control both chambers in the 120th Congress.</p>
+    <p class="btl"><b>Below the line because</b> the result was expected and changes nothing until January.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://rollcall.com/2026/11/19/iran-resolution-blocked-in-first-war-powers-vote-since-midterms">Roll Call</a> &middot; <a href="https://www.theguardian.com/us-news/2026/nov/19/senate-iran-war-powers-resolution-rejected">Guardian</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-alaska">
+  <summary><span class="chip">US politics &amp; policy</span> The Justice Department has dropped its lawsuit to block certification of Alaska’s Senate race, telling an appeals court it is moot.</summary>
+  <div class="exp">
+    <p>ABC reports that DOJ filed Thursday evening, after the AP projected on Tuesday that Democrat Mary Peltola won. The suit, filed before the election on the president’s instruction, argued that a similarly named candidate confused voters. A federal judge had dismissed it on 1 November. CBS has the same filing.</p>
+    <p>This closes the last legal question over the result this brief reported on 18 November: a 56-seat Democratic Senate from January.</p>
+    <p class="btl"><b>Below the line because</b> the result was already settled; this removes a tail risk rather than changing anything.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://abcnews.com/Politics/doj-dropping-alaska-midterms-senate-certification-lawsuit-case/story?id=138307517">ABC News</a> &middot; <a href="https://www.cbsnews.com/">CBS News front page</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-tps">
+  <summary><span class="chip">US politics &amp; policy</span> An appeals court has let the administration go ahead, for now, with ending deportation protection for Venezuelans.</summary>
+  <div class="exp">
+    <p>Al Jazeera reports that on Wednesday an appeals court set aside a lower-court order, issued by Judge Edward Chen, that had required the government to restore Temporary Protected Status for Venezuelans. Chen had ruled in September 2025 that the administration overstepped its authority in cutting short extensions granted under President Biden.</p>
+    <p>Yesterday this brief reported the administration’s third request to the Supreme Court on the same programme. Today’s ruling gives the government what it was seeking there, at least for now. Whether the Supreme Court application is withdrawn has not been reported.</p>
+    <p class="btl"><b>Below the line because</b> it is one step in long-running litigation, and the account here is from one outlet.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.aljazeera.com/news/2026/11/19/us-appeals-court-lets-trump-end-tps-deportation-protections-for-venezuelans">Al Jazeera</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-venezuela">
+  <summary><span class="chip">Geopolitics</span> The US and Venezuela’s interim government have signed a military cooperation agreement, ten months after US forces seized Maduro.</summary>
+  <div class="exp">
+    <p>The BBC reports that Defense Secretary Pete Hegseth signed it with interim president Delcy Rodríguez in Caracas on Wednesday. Hegseth said Venezuela had gone from the region’s most aggressive threat to a “compliant security partner.” Few details have been published. Military cooperation had been cut off since 2005.</p>
+    <p>The US channel is direct: basing, training and oil security in a country with the world’s largest proven crude reserves.</p>
+    <p class="btl"><b>Below the line because</b> no text or terms are public, and it rests on one account.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.bbc.co.uk/news/articles/cmwy8pyqlq5vo">BBC</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-openai-cyber">
+  <summary><span class="chip">AI &amp; tech &middot; lab safety</span> OpenAI has put on general sale the cyber capabilities it limited to vetted security teams two weeks ago, PYMNTS reports.</summary>
+  <div class="exp">
+    <p>According to PYMNTS, GPT-6.2 carries the same vulnerability-finding and exploitation capabilities that OpenAI had restricted to approved defenders, on the grounds that general release was too risky. The rest of the article is behind a registration wall and this run did not read it.</p>
+    <p>This touches the gated-capability thread in this brief’s watchlist: the question was what criteria would decide when a restricted capability is released. If the report is right, the gate lasted about two weeks, and banks should assume attackers have the same tools as their defenders.</p>
+    <p class="btl"><b>Below the line because</b> one trade-press account, partly paywalled; it needs OpenAI’s own release notes before it can lead.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.pymnts.com/news/artificial-intelligence/2026/openai-unlocks-cyber-power-as-google-slashes-ai-costs/">PYMNTS</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-forecasts">
+  <summary><span class="chip">AI &amp; tech &middot; lab safety</span> Two AI forecasting groups have moved their superintelligence estimates earlier after METR’s report on Anthropic’s pace.</summary>
+  <div class="exp">
+    <p>Defense One reports that Sentinel now expects superhuman AI around 2028 rather than 2031, and that the AI Futures Project says progress is running faster than its own 2027 scenario assumed. Both cite METR’s 5 November assessment, which found Anthropic improving its models at roughly twice its earlier rate, mostly because of its own use of AI in research.</p>
+    <p>A researcher at the Institute for AI Policy and Strategy told Defense One that slow, deliberate processes will not keep pace. This is the policy question the Anthropic listing (lead story) now sits under.</p>
+    <p class="btl"><b>Below the line because</b> forecasts are opinion; the underlying METR finding is two weeks old and the revisions add no new measurement.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.defenseone.com/threats/2026/11/i-was-seriously-wrong-ai-experts-say-superintelligent-ai-may-arrive-soon-next-year/417348/">Defense One</a> &middot; <a href="https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/">METR (primary)</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-fdic">
+  <summary><span class="chip">US financials</span> The FDIC has proposed how deposits placed through custodians would be treated under the new housing law, with comments due 19 January.</summary>
+  <div class="exp">
+    <p>In today’s Federal Register, the FDIC proposes changes to its brokered-deposit rules to carry out section 901 of the 21st Century ROAD to Housing Act, which deals with custodial deposits. Whether a deposit counts as brokered affects how banks can fund themselves and what they pay for deposit insurance.</p>
+    <p>Custodial accounts are how fintech apps and stablecoin issuers keep customer money at banks, so the definition decides how cheaply those arrangements can be funded.</p>
+    <p class="btl"><b>Below the line because</b> it is a proposal with a 60-day comment period; the final definition is what matters.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.federalregister.gov/documents/2026/11/20/2026-23669/custodial-deposits-implementing-the-21st-century-road-to-housing-act">Federal Register 2026-23669 (primary)</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-kalshi">
+  <summary><span class="chip">US financials</span> A federal appeals court has ruled that Maryland can police Kalshi’s sports contracts, deepening a split that now looks headed for the Supreme Court.</summary>
+  <div class="exp">
+    <p>Reuters, via Insurance Journal, reports a 2–1 Fourth Circuit decision on Tuesday that Kalshi cannot stop Maryland’s gaming regulator from enforcing state law against its unlicensed sports wagers. Two other appeals courts have also ruled against Kalshi; a third held that New Jersey could not regulate it, and New Jersey has taken that case to the Supreme Court.</p>
+    <p>On the federal side, the CFTC has sued Louisiana and Arkansas to defend its exclusive jurisdiction (CFTC releases, 13 November; covered here on 19 November). The CFTC also asked Kalshi to pause its contracts on what Trump will say.</p>
+    <p class="btl"><b>Below the line because</b> it is one more ruling in a split already visible; the Supreme Court’s decision on whether to take a case is the event.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.insurancejournal.com/news/east/2026/11/19/893181.htm">Insurance Journal (Reuters)</a> &middot; <a href="https://www.cftc.gov/PressRoom/PressReleases">CFTC press releases</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-flood">
+  <summary><span class="chip">Florida &amp; Tampa Bay</span> More flooding on Florida’s east coast: Broward had more than 17 inches of rain and Palm Bay ordered evacuations, while Tampa Bay was largely spared.</summary>
+  <div class="exp">
+    <p>CBS reports that more than 17 inches fell in parts of Broward County, up to eight inches east of Orlando by Thursday afternoon, and mandatory and voluntary evacuations in Palm Bay. Waters were receding by Thursday night. WUSF reports that Palm Beach County neighbourhoods were still flooded a week after nearly two feet fell on Palm Beach and Brevard over three days last week. Scientists quoted by WUSF say such “rain bombs” may become more common.</p>
+    <p>Fox 13 forecasts drier air for the Tampa area over the weekend. This brief reported the record St. Johns River level at Cocoa yesterday.</p>
+    <p class="btl"><b>Below the line because</b> it is disruption without a structural change yet; it becomes a lead if insurers or the state change flood policy.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.cbsnews.com/news/photos-videos-devastating-south-florida-flooding-schools-closed-evacuations/">CBS News</a> &middot; <a href="https://www.wusf.org/environment/2026-11-19/how-much-rain-can-florida-take-recent-rain-bombs-offer-troubling-preview">WUSF</a> &middot; <a href="https://www.fox13news.com/">Fox 13</a></p>
+  </div>
+</details>
+
+</div>
+
+<div class="fb" style="border-top:1px solid var(--rule); padding-top:1rem; margin-top:1.5rem;">
+  <p><b>One question about this whole section:</b> were the right things ranked below the line?</p>
+  <label><input type="radio" name="fb-also" value="right"> About right</label>
+  <label><input type="radio" name="fb-also" value="promote"> Some of these should have led</label>
+  <label><input type="radio" name="fb-also" value="drop"> Some should have been dropped entirely</label>
+  <label><input type="radio" name="fb-also" value="fewer"> Fewer short items, more depth up top</label>
+</div>
+
+<button class="submit" id="send">Send my feedback &rarr;</button>
+<p class="sources" style="text-align:center">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+
+<footer>
+  <h4>Sources checked this run &mdash; 91, of which 59 outside the watchlist</h4>
+  <p><b>Not pointed at by any thread (59):</b> lite.cnn.com &middot; freightwaves.com &middot; text.npr.org &middot; aljazeera.com &middot; scmp.com &middot; en.wikipedia.org &middot; thehill.com [unreachable] &middot; elpais.com &middot; statnews.com &middot; lemonde.fr &middot; defenseone.com &middot; axios.com [unreachable] &middot; breakingdefense.com &middot; nbcnews.com &middot; theguardian.com &middot; thedebrief.org &middot; semafor.com &middot; cbsnews.com &middot; haaretz.com &middot; pbs.org &middot; abcnews.go.com &middot; theregister.com &middot; techmeme.com &middot; feeds.content.dowjones.io &middot; rollcall.com &middot; www3.nhk.or.jp &middot; techcrunch.com &middot; theverge.com &middot; arstechnica.com &middot; latimes.com &middot; lawfaremedia.org [unreachable] &middot; cnbc.com &middot; coindesk.com &middot; warontherocks.com &middot; lefigaro.fr &middot; feeds.bbci.co.uk &middot; feeds.bbci.co.uk &middot; dw.com &middot; insurancejournal.com &middot; ft.com &middot; politico.com [unreachable] &middot; spiegel.de &middot; washingtonpost.com [unreachable] &middot; reuters.com [unreachable] &middot; foxnews.com &middot; businessinsider.com &middot; asia.nikkei.com &middot; handelsblatt.com &middot; foxbusiness.com &middot; finance.yahoo.com &middot; yle.fi &middot; cnbc.com &middot; apnews.com [unreachable] &middot; pymnts.com &middot; nypost.com &middot; metr.org (5 Nov assessment, via search) &middot; miamiherald.com (via search) &middot; linkedin.com (Mitchell post, via search) &middot; UAP sweep: ufowatch.com daily briefing and first.contact timeline (via search).</p>
+  <p><b>Pointed at by a thread (32):</b> gcaptain.com &middot; americanbanker.com &middot; fox13news.com &middot; floridaphoenix.com &middot; gasprices.aaa.com &middot; ofac.treasury.gov &middot; federalreserve.gov &middot; federalreserve.gov &middot; whitehouse.gov &middot; sec.gov [unreachable] &middot; oilprice.com &middot; cftc.gov &middot; ftc.gov [unreachable] &middot; scotusblog.com &middot; fdic.gov &middot; home.treasury.gov &middot; cbo.gov [unreachable] &middot; ferc.gov [unreachable] &middot; occ.gov [unreachable] &middot; wfla.com [unreachable] &middot; wusf.org &middot; tampabay.com &middot; datacenterdynamics.com &middot; utilitydive.com [unreachable] &middot; eia.gov &middot; bls.gov [unreachable] &middot; nrc.gov [unreachable] &middot; federalregister.gov JSON API (20 Nov daily issue, 111 documents) &middot; home.treasury.gov daily par yield curve CSV &middot; whitehouse.gov briefings &amp; statements index and declaration text &middot; federalreserve.gov press-release and speech JSON feeds &middot; eia.gov Brent and WTI daily spot pages (no usable rows parsed).</p>
+  <p>Article pages fetched to stand stories up are cited under each story and are not counted again. Also read for stories: theregister.com, claimsjournal.com, rollcall.com, foxnews.com and nbcnews.com article pages; Federal Register documents 2026-23732 (OPM civil-service rules, a confirmation of an October effective date) and 2026-23713 (DHS HAVANA Act interim rule) were read and not used.</p>
+
+  <h4>The negative check</h4>
+  <p><i>What is the biggest story today that is not on my list, and why is it not?</i> The first US offshore critical-minerals lease sale. No thread and no beat line covers seabed minerals; it surfaced on a maritime trade front page (gCaptain) and ABCNo thread and no beat line covers seabed minerals, and it only appeared on a maritime trade front page.rsquo;s wire column. It leads with the Kenya award as one minerals story. Runner-up: the Florida inspector-general firing, now the Florida lead. GTA VI and Anthropic&rsquo;s founders&rsquo; wealth dominated many front pages and are excluded as entertainment and personality.</p>
+
+  <h4>Confidence markers and divergence boxes</h4>
+  <p>19 stories, 19 markers (Independent corroboration: 10 &middot; Primary source: 4 &middot; Single-sourced: 5); 8 divergence boxes. The one lead without a box (permitting) had four accounts that agreed on the vote, the text and the House path.</p>
+
+  <h4>Accountability to earlier issues</h4>
+  <p><b>19 November, Shenzhen lead:</b> &ldquo;Washington has not said what it signed&rdquo; was overtaken two hours after publication, when the White House posted the text. It is flagged at the top of today&rsquo;s Shenzhen short item. <b>20 October:</b> that edition gave the seabed lease sale as set for 19 November; it was held that day (lead). It was accurate at the time, so this is an update, not a correction. <b>18 November:</b> the 10-year at 5.10% on Tuesday is confirmed by the par curve and has fallen to 5.04% since. <b>18 November:</b> Nvidia&rsquo;s halt to China shipments is confirmed by the company to CNBC. <b>19 November:</b> the TPS short item reported a Supreme Court application; an appeals court has since given the government the same relief (short item). No corrections today.</p>
+
+  <h4>Could not reach</h4>
+  <p>thehill.com (403) &middot; axios.com (403) &middot; sec.gov (403) &middot; ftc.gov (404) &middot; cbo.gov (403) &middot; ferc.gov (403) &middot; occ.gov (404) &middot; lawfaremedia.org (403) &middot; wfla.com (403) &middot; politico.com (403) &middot; washingtonpost.com (timeout) &middot; reuters.com (401) &middot; utilitydive.com (403) &middot; bls.gov (403) &middot; apnews.com (403) &middot; nrc.gov (403). CoinDesk&rsquo;s article on the $107bn figure returned 429; the split between the IPO and the private placement comes from a Techmeme summary. EIA spot-price pages loaded but did not parse, so oil levels come from AAA (WTI) and OilPrice (Brent). The Tampa Bay Times inspector-general story was paywalled; its content is used through the Miami Herald version and CiberCuba&rsquo;s relay. Anthropic&rsquo;s amended S-1 was not read.</p>
+
+  <h4>Seen, not run</h4>
+  <p>Golden Dome cut by Senate appropriators (run here on 19 November; nothing new) &middot; Intuit selling Mailchimp to Bending Spoons for $3.68bn &middot; AMD falls on a short-seller report about China exposure (CNBC headline only) &middot; Lenders seeking to stop SpaceX launching $40bn of chips into orbit (FT, paywalled) &middot; DeSantis sets the Miami-Dade state Senate special election for 26 January and 6 April after an ACLU lawsuit (Florida Phoenix) &middot; Supreme Court to hear the asylum-suspension case (SCOTUSblog; order date not confirmed this run) &middot; Rep. Burlison hires a UAP whistleblower as an adviser (staffing, no official action) &middot; ICJ Myanmar genocide ruling and UK&ndash;EU reset (no US channel) &middot; Fed speeches this week (this brief runs prints and decisions only).</p>
+
+  <h4>About this issue</h4>
+  <ul>
+    <li>Grok edition for 20 November, produced by the scheduled morning routine. Layout built from Issue 10 (2026-09-10b.html), not from any previous Grok edition.</li>
+    <li>7 lead stories, 12 short items. 3 leads are new subjects; 4 are follow-ups, at the cap of four.</li>
+    <li><b>Pre-publish change:</b> the draft ran the Shenzhen declaration as a lead and counted the seabed sale as new. The audit found the seabed sale sits on an active watchlist thread, which made five follow-ups against a cap of four. Shenzhen moved to Also today with its headline line, update note and divergence box shortened; no other lead or headline changed. The thread was noticed while reading Claude&rsquo;s edition for the count comparison and then confirmed in this brief&rsquo;s own <code>config.md</code> (previous commit).</li>
+    <li>Every quotation is under fifteen words and attributed; everything else is paraphrase.</li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n  → " + i.value + "");
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on Issue No. 77-grok — 20 November 2026 (Grok edition)\n\n" + lines.join("\n")
+      + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-11-20-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
