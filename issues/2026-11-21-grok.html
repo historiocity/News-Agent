@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Saturday, 21 November 2026 (Grok edition, Issue 78-grok)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  /* short-item tier */
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list summary .chip { vertical-align:.05rem; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 78-grok &middot; Saturday, 21 November 2026 &middot; Grok edition</div>
+  <h1>Wall Street slides into correction, the SEC turns to Nvidia&rsquo;s books, and a machine-checked proof of the Riemann hypothesis survives its first night</h1>
+  <p class="sub">10 stories at length, 11 in brief. Built on the Issue 10 (2026-09-10b) layout. Claude&rsquo;s edition for today is at <a href="2026-11-21.html">2026-11-21</a>.</p>
+  <p class="prov"><b>82 sources checked, 58 of them outside the watchlist</b> (19 front pages refused or failed; listed in the footer). Wires and front pages outside the watchlist, plus foreign and trade outlets, were read before the document sources the threads point at. The last three Grok editions were opened only afterwards, for accountability. <b>6 of 10 leads are new subjects; 4 continue threads</b> (the AI sell-off, Nvidia, the outages and breaches, and Hormuz oil), at the cap of four. The Senate permitting bill, Thursday&rsquo;s lead, has no new fact and does not run. <b>Biggest story not on my list:</b> the claimed Riemann-hypothesis proof. It sits on no thread or beat line, surfaced on Techmeme and DW, and runs as lead three. The negative check also caught the Pentagon&rsquo;s eighth UAP release (found by the UAP beat sweep, on no front page) and the Citizens flood mandate (FOX 13), which became the UAP and Florida leads.<br><br>
+  <b>Accounts compared per lead:</b> ai-correction: 4 independent (AP, CBS, Bloomberg, CNBC) plus Treasury&rsquo;s par curve; CBS and AP share a wire quote, so counted as partly overlapping &middot; nvidia-sec: 5 (Reuters, CNBC, Al Jazeera, Yahoo Finance, DCD) plus The Verge and Bloomberg Tax relays of Reuters &middot; riemann-claude: the verification page and notes (primary) plus 4 accounts (Scientific American, Nature, TechCrunch, DW) &middot; dc-tax: 2 independent (AP, Business Insider) plus the PBS clip; X claim about Finland checked and not stood up &middot; fbi-usda-breach: 4 (CNN, NBC, Nextgov/FCW, Bloomberg Government) plus the White House release and Breaking Defense &middot; hormuz-pump: 4 (ABC/UKMTO&ndash;IMO data, Al Jazeera, Bloomberg via gCaptain, OilPrice) plus AAA&rsquo;s own series &middot; uap-pursue-8: the Department of War release (primary) plus CBS and the UAP Browser index; Davies Daily for Volume II &middot; debt-limit-2027: 2 independent (Semafor, Bipartisan Policy Center) plus Yahoo Finance on the Johnson bill and Treasury&rsquo;s curve &middot; kalshi-ny: 3 (Reuters, ABC, a docket summary) plus Gambity on the motion text and CFTC releases &middot; fl-citizens-flood: 2 independent (FOX 13, Hillsborough County) plus broker guidance; WUSF for FPL.<br><br>
+  <b>Disclosure.</b> When the live <code>config.md</code> was loaded, its heading list showed a &ldquo;21 November 2026 &mdash; operational notes&rdquo; section from this morning&rsquo;s Claude run. I did not read it. Only the standing sections (beats, altitude bar, local section, anti-topics, settled preferences) and the watchlist&rsquo;s thread-name column were read. No git diff or log of Claude&rsquo;s commits was opened. Claude&rsquo;s edition was not opened until this draft was finished.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#ai-correction">The S&amp;P 500 and the Dow are in correction after a 3.7% Friday, the Nasdaq is negative for 2026, and Anthropic gave back a day of gains</a></li>
+    <li><a href="#nvidia-sec">The SEC is looking at Nvidia&rsquo;s accounting, its shares fell 14%, and Trump wants Jensen Huang back</a></li>
+    <li><a href="#riemann-claude">An Anthropic mathematician says he and Claude proved the Riemann hypothesis, and independent checkers say the machine-checked proof holds</a></li>
+    <li><a href="#dc-tax">Trump threatens a &ldquo;tremendous tax&rdquo; on US companies that build AI data centres abroad; he has no mechanism yet and says he has not told his officials</a></li>
+    <li><a href="#fbi-usda-breach">Hackers reached the FBI&rsquo;s national crime database and a USDA farm-payment system, while officials keep saying last week&rsquo;s outages were not attacks</a></li>
+    <li><a href="#hormuz-pump">Hormuz attacks are at their highest since the war began, yet Brent fell 5% on the week and US gasoline is down 18 cents to $3.66</a></li>
+    <li><a href="#uap-pursue-8">The Pentagon&rsquo;s eighth UAP file release includes a 2009 contractor plan for an underground vault for &ldquo;exotic material or tissue&rdquo;</a></li>
+    <li><a href="#debt-limit-2027">Thune says the debt ceiling will be left to the Democratic Congress; the limit is about $764bn away and could bind in February</a></li>
+    <li><a href="#kalshi-ny">A federal judge refused to stop New York&rsquo;s case against Kalshi; a state judge hears a request Monday that Kalshi and the CFTC say could shut it nationwide</a></li>
+    <li><a href="#fl-citizens-flood">Florida &amp; Tampa Bay: from 1 January every Citizens homeowner policy with wind cover must carry flood insurance, in a flood zone or not</a></li>
+    <li><a href="#also-today">Also today (11)</a> &mdash; ranked below the line, each one opens.</li>
+  </ol>
+</nav>
+
+<article id="ai-correction">
+  <h2>The S&amp;P 500 and the Dow are in correction after a 3.7% Friday, the Nasdaq is negative for 2026, and Anthropic gave back a day of gains</h2>
+  <div class="meta">
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The selling that started on Anthropic&rsquo;s listing day got worse on Friday. The S&amp;P 500 fell 3.7%, the Nasdaq Composite 5.3% to 22,618 and the Dow 1.9%. The S&amp;P is now more than 10% below its 6 October record, which puts it in correction for the first time since March 2025, and it has fallen for seven straight sessions, the longest run since early 2020. The Dow is also in correction and closed below 50,000 for the first time since June. The Nasdaq has given back everything it gained this year.</p>
+  <p>Chips led the fall. The Philadelphia semiconductor index dropped 10.7%; AMD fell 13.3%, Micron 13.9%, Broadcom 12.2% and Nvidia 14% (its own story is below). Other AI-buildout names such as Corning and Bloom Energy fell too, while General Mills and Lennar rose. That pattern looks like investors moving out of AI, not a sell-off in everything. Anthropic fell for the first time, by 8.5% at the close (AP), which leaves it still above its $83 IPO price and well below Thursday&rsquo;s intraday high of $115.10.</p>
+  <p>Bonds rallied. Treasury&rsquo;s own par curve has the 10-year at 4.92% on Friday, down from 5.04% on Thursday, and the 2-year at 4.63%, down from 4.76%. That is a 12-basis-point fall in a day, so borrowing costs eased even as stocks dropped. The VIX briefly touched 40, its highest since the April 2025 tariff shock.</p>
+  <p><b>What to watch:</b> whether the S&amp;P closes 20% below its high (bear-market territory; it is a little over 10% down now); whether the 10-year stays below 5%; and Anthropic&rsquo;s first full week of trading, which starts Monday.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how bad was the week, and is the VIX showing fear?</span>
+    <p><b>What is disputed.</b> There are two disputes. On <b>facts</b>, accounts rank the week differently. AP says it was the S&amp;P&rsquo;s worst week since April 2025. A Bloomberg piece filed during the session called it the worst in seven months. Yahoo Finance said the worst of 2026, with the Dow&rsquo;s worst week since March 2020. Anthropic&rsquo;s Friday drop is given as 8.5% (AP) and 9.3% (CBS). On <b>significance</b>, Baird&rsquo;s Michael Antonelli says the idea that AI can keep spending without limit is &ldquo;ending as we speak,&rdquo; while Cboe&rsquo;s Mandy Xu says the VIX jump was mostly mechanical, not a rush for protection.</p>
+    <p><b>Why they differ.</b> The mundane causes come first. Bloomberg&rsquo;s piece was written before the close, when the S&amp;P was down 3.6%, and it measured a shorter window. &ldquo;Worst since April 2025&rdquo; and &ldquo;worst of 2026&rdquo; are both true, because April 2025 falls before this year. The two Anthropic figures were taken at different times of day: CBS&rsquo;s 9.3% (to $88.14) was an intraday reading, and AP&rsquo;s 8.5% is the close. On significance, Cboe sells volatility products and wants to explain moves in its index. A strategist is paid to call regimes. Each is answering a different question.</p>
+    <p><b>What it means for you.</b> Use AP&rsquo;s closing figures: down 3.7% on the day, worst week since April 2025, correction confirmed. Xu&rsquo;s reading is supported by the bond market: buyers bid up Treasuries in an orderly way, and credit stress did not show up in the sources read today. That means investors are rotating out of AI, not panicking. It would turn into the scarier story if high-yield spreads widen sharply or the 10-year starts rising while stocks fall.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; what actually changed this week, and what did not</summary>
+    <div class="exp">
+      <p>Two things are new since Thursday&rsquo;s issue. The index-level damage is now formally a correction, and the sell-off reached the bond market as a flight to safety. Twelve basis points off the 10-year in a day cuts mortgage and corporate borrowing costs, and it cuts Treasury&rsquo;s interest bill at the margin. That matters for the debt-ceiling story below.</p>
+      <p>What has not changed is the earnings picture. Nvidia beat expectations this week and still fell. The case for selling is about the future: whether data-centre building slows after a midterm in which candidates sceptical of data centres won, and whether export curbs cut chipmakers&rsquo; foreign sales. CBS and AP both name the chip-export policy. None of that shows up in a profit report yet. If it is wrong, the rebound will be fast.</p>
+      <p>For Anthropic, the useful number is the IPO price. After Friday&rsquo;s close the stock is still roughly 7% above where the institutions bought it. A first-week drop below $83 would be the first real test of the record listing, and it would change the story from a cooling of hype to a broken deal.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://abcnews.com/Business/wireStory/asia-shares-drop-ai-worries-echoing-wall-streets-138309523">AP via ABC News</a> &middot;
+    <a href="https://www.cbsnews.com/news/stocks-enter-correction-territory-ai-fears/">CBS News</a> &middot;
+    <a href="https://finance.yahoo.com/markets/options/articles/vix-hits-highest-level-since-212233067.html">Bloomberg via Yahoo Finance (VIX)</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html">CNBC on Nvidia&rsquo;s streak</a> &middot;
+    <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202611">Treasury daily par yield curve</a>
+  </p>
+  <div class="fb">
+    <p>Is this the right depth for a market move this size?</p>
+    <label><input type="radio" name="fb-ai-correction" value="more"> More: add positioning and credit</label>
+    <label><input type="radio" name="fb-ai-correction" value="right"> About right</label>
+    <label><input type="radio" name="fb-ai-correction" value="less"> Less: the prints alone</label>
+  </div>
+</article>
+
+<article id="nvidia-sec">
+  <h2>The SEC is looking at Nvidia&rsquo;s accounting, its shares fell 14%, and Trump wants Jensen Huang back</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Three developments on Friday made the Nvidia crisis worse. Reuters, citing two people briefed on the matter, reported that SEC enforcement staff are examining possible accounting problems at the company. The Wall Street Journal reported on Tuesday that an SEC investigation existed but could not say what it covered. The SEC declined to comment, and Nvidia did not respond. Reuters could not say when the inquiry opened or which accounting questions it covers.</p>
+  <p>The stock fell about 14% on the day. That is its seventh straight weekly loss, the longest streak since 2008. Across those seven weeks it is down 46%, roughly $2.6 trillion of market value, according to CNBC, and it now ranks fourth by value behind Apple, Microsoft and Alphabet. The slide began before Jensen Huang resigned on 12 November over reported affairs, one of them with an alleged Chinese spy. Interim CEO Colette Kress and new chair Harvey Jones now hold the company.</p>
+  <p>President Trump then stepped into the company&rsquo;s governance. At his Friday press conference he said he would like Huang to be given &ldquo;a second chance&rdquo; after a public apology, questioned whether the new leadership could match him, and said he had discussed Huang with Xi Jinping in Shenzhen.</p>
+  <p><b>What to watch:</b> whether Nvidia&rsquo;s board answers the President; whether Nvidia discloses the SEC inquiry in a filing, since the 18 November issue noted it had held back its quarterly report; and whether the inquiry turns out to be about how the company reports revenue by region, the area analysts have pointed to.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; did Huang come up with Xi or not?</span>
+    <p><b>What is disputed.</b> This is a <b>facts</b> dispute. Earlier on Friday, Treasury Secretary Scott Bessent said Huang did not come up in the Trump&ndash;Xi talks. Hours later Trump said he did raise Huang and that Xi praised him.</p>
+    <p><b>Why they differ.</b> Both men were at the summit, so this is not a case of one side lacking access. The likeliest explanation is timing and scope: Bessent was probably describing the formal sessions he attended, while Trump may mean a side conversation. Each also has a reason to frame it his way. Treasury wants the chip-policy talks to look free of personal favours, and Trump is now publicly backing Huang.</p>
+    <p><b>What it means for you.</b> Believe Trump on the narrow point. Only he can know what he said privately, and he volunteered it against his own Treasury Secretary&rsquo;s account. It matters because a US President raising an ousted CEO with China&rsquo;s leader, when that CEO&rsquo;s alleged partner is accused of spying for China, will draw questions from the incoming Democratic Congress. A readout from either government would settle it, or Bessent revising his account.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.reuters.com/5f374b32b07b/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/">Reuters (SEC probe)</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html">CNBC</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/21/trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang">Al Jazeera</a> &middot;
+    <a href="https://finance.yahoo.com/markets/article/trump-critiques-jensen-huangs-replacement-as-he-wades-deeper-into-nvidia-turmoil-210729338.html">Yahoo Finance</a> &middot;
+    <a href="https://www.datacenterdynamics.com/en/news/nvidia-ceo-jensen-huang-resigns-after-multiple-affairs/">DCD on the resignation</a> &middot;
+    <a href="https://www.theverge.com/tech/1039305/nvda-down-sec-investigation-accounting">The Verge</a>
+  </p>
+  <div class="fb">
+    <p>Nvidia has led or nearly led four issues running. Cadence?</p>
+    <label><input type="radio" name="fb-nvidia-sec" value="right"> Right while it moves</label>
+    <label><input type="radio" name="fb-nvidia-sec" value="less"> Only on filings and rulings</label>
+    <label><input type="radio" name="fb-nvidia-sec" value="more"> More on the China-spy thread</label>
+  </div>
+</article>
+
+<article id="riemann-claude">
+  <h2>An Anthropic mathematician says he and Claude proved the Riemann hypothesis, and independent checkers say the machine-checked proof holds</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Levent Alpöge, a mathematician on Anthropic&rsquo;s technical staff, posted a note on Friday saying that, working with Claude, he had found a proof of the Riemann hypothesis. The hypothesis was stated in 1859 and is one of the Clay Millennium Prize problems. It predicts a hidden regularity in how the prime numbers are spread out. With the note he published a complete proof in Lean, a programming language whose compiler checks every step of a mathematical argument.</p>
+  <p>The machine check has largely held up overnight. MIT&rsquo;s Andrew Sutherland has posted a verification page (last updated 04:30 ET Saturday). It reports that all 175,187 modules compile, that the main theorems use only Lean&rsquo;s three standard axioms, and that two independently written proof checkers accept the whole proof. A separate check confirms the theorems prove the statement as officially set, so the code has not quietly redefined the problem. Two final runs were still going. Sutherland told Scientific American the chance anything is wrong is &ldquo;approximately zero.&rdquo; The result also covers the generalised version for Dirichlet L-functions.</p>
+  <p>Separately, Stanford&rsquo;s Ravi Vakil posted a human-written proof of the generalised hypothesis by postdoc Alessandro Masullo, the product of 12 years of work. It has not been machine-checked.</p>
+  <p><b>What to watch:</b> the remaining runs on Sutherland&rsquo;s page; whether Alpöge publishes a write-up humans can follow; and any response from the Clay Institute, whose prize rules require publication and two years of acceptance.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; proved, or only checked?</span>
+    <p><b>What is disputed.</b> This is a dispute about <b>significance</b>, not facts. Nobody quoted disputes that the Lean code compiles. Sutherland and Kevin Buzzard (Imperial College) treat a clean compile plus a matching statement as strong evidence the theorem is true. Andrew Granville (Montreal) told Nature the human-readable write-up is &ldquo;garbled.&rdquo; Alpöge himself says he does not yet fully understand the argument, which he says ran to more than 250,000 pages of material generated with Claude.</p>
+    <p><b>Why they differ.</b> They are answering different questions. The Lean community asks whether the theorem is true, and a kernel check answers that better than peer review does. Analytic number theorists ask whether mathematicians have learned anything, and nobody can tell yet. Interest matters too. Alpöge works for Anthropic and announced days after its IPO, which he called &ldquo;horrible&rdquo; timing. That is a reason to rely on the outside checkers, not on him, and they are independent of Anthropic.</p>
+    <p><b>What it means for you.</b> Treat the formal result as very probably correct, pending the two unfinished runs. Remaining risks are a bug in the shared proof library&rsquo;s definitions or in the build process, which the checkers list themselves. Treat the claim that mathematics now understands why the hypothesis is true as unsettled. For the AI beat, the significance is already clear: an AI lab&rsquo;s model was central to settling the field&rsquo;s best-known open problem, in a form any machine can check. What would settle the human question is a write-up that number theorists can follow and endorse.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; why this matters beyond mathematics</summary>
+    <div class="exp">
+      <p>Three consequences for the AI beat. First, capability. This is the clearest public case yet of a frontier model doing original, open-ended research, and the result does not depend on trusting the model, because the proof checker is the referee. That combination, a model that generates and a formal system that verifies, can be reused wherever correctness can be written down: chip design, cryptographic protocols, safety-critical software.</p>
+      <p>Second, the market. The claim landed on the worst day for AI stocks in this cycle and did not stop the selling; Anthropic shares fell about 9%. Investors are pricing spending and power, not capability. That gap between a technical breakthrough and how the stock trades is worth tracking.</p>
+      <p>Third, verification. If Masullo&rsquo;s human proof also holds, two independent routes will have reached the same theorem within days. That would be the strongest confirmation possible. It would also blunt the story that AI alone did it, a point Masullo made directly in his preface: &ldquo;we are still here.&rdquo;</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://math.mit.edu/~drew/grh/">Sutherland verification page (MIT)</a> &middot;
+    <a href="https://github.com/Deicyde/riemann-hypothesis/blob/main/verification/NOTES.md">Verification notes (GitHub)</a> &middot;
+    <a href="https://www.scientificamerican.com/article/the-ai-riemann-hypothesis-proof-is-almost-certainly-true-independent-mathematicians-attest/">Scientific American</a> &middot;
+    <a href="https://www.nature.com/articles/d41586-026-03812-7">Nature</a> &middot;
+    <a href="https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/">TechCrunch</a> &middot;
+    <a href="https://www.dw.com/en/anthropic-researcher-uses-ai-to-solve-maths-greatest-riddle/a-80008428">DW</a>
+  </p>
+  <div class="fb">
+    <p>Do you want AI-research milestones like this as leads?</p>
+    <label><input type="radio" name="fb-riemann" value="yes"> Yes, when formally verified</label>
+    <label><input type="radio" name="fb-riemann" value="short"> Short item unless policy follows</label>
+    <label><input type="radio" name="fb-riemann" value="no"> No</label>
+  </div>
+</article>
+
+<article id="dc-tax">
+  <h2>Trump threatens a &ldquo;tremendous tax&rdquo; on US companies that build AI data centres abroad; he has no mechanism yet and says he has not told his officials</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>At his Friday White House press conference, President Trump said US tech companies that build AI data centres in other countries will face &ldquo;a tremendous tax.&rdquo; According to AP, he gave no detail and said he had not yet told his own officials about the plan. Business Insider quotes him saying the administration is &ldquo;not going to allow&rdquo; companies to build abroad, and that if they will not build in Texas or California they should go to West Virginia.</p>
+  <p>In the same remarks he told towns resisting data centres to take the money: make the builders pay the community, but do not shut them out. That message is aimed at the local opposition that, by AP&rsquo;s account, has become the main bottleneck on permits and was a live issue in the midterms Democrats won.</p>
+  <p>The companies exposed are the largest. Amazon, Google, Microsoft and OpenAI all back projects abroad, built to serve regional users, meet data-residency laws, or find power and land that are scarce at home. A post on X claimed Trump ordered Google to stop work on data centres in Finland. Nothing in the sources read today supports it, and it is treated here as unconfirmed.</p>
+  <p>The legal route is the open question. A new tax needs an act of Congress, and from 3 January both chambers are Democratic. The tariff powers the administration has used apply to goods entering the country, not to servers running abroad. <b>What to watch:</b> whether Treasury or Commerce turns the remark into anything written: an executive order, an export-licence condition on chips going to foreign sites, or a request to Congress.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://abcnews.com/Technology/wireStory/trump-plans-penalize-us-tech-companies-build-ai-138323831">AP via ABC News</a> &middot;
+    <a href="https://www.businessinsider.com/trump-warning-building-overseas-data-centers-2026-11">Business Insider</a> &middot;
+    <a href="https://www.pbs.org/newshour/">PBS NewsHour (clip)</a> &middot;
+    <a href="https://www.datacenterdynamics.com/en/news/us-senate-passes-bill-requiring-data-centers-to-pay-more-for-grid-infrastructure/">DCD on the Senate grid-cost provision</a>
+  </p>
+  <div class="fb">
+    <p>Follow this until it becomes paper?</p>
+    <label><input type="radio" name="fb-dc-tax" value="yes"> Yes: a lead when anything is written</label>
+    <label><input type="radio" name="fb-dc-tax" value="short"> Short items until then</label>
+    <label><input type="radio" name="fb-dc-tax" value="no"> Drop it</label>
+  </div>
+</article>
+
+<article id="fbi-usda-breach">
+  <h2>Hackers reached the FBI&rsquo;s national crime database and a USDA farm-payment system, while officials keep saying last week&rsquo;s outages were not attacks</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Two federal intrusions came to light on Friday as the White House changed cyber chiefs. The FBI is investigating an apparent breach of the National Crime Information Center, the database federal, state and local police use for warrants and background checks. CNN and NBC each cite two people briefed on the investigation. CNN says it is the second NCIC intrusion in recent months. Nobody has said publicly who did it or what was taken.</p>
+  <p>At the Agriculture Department, a security incident forced staff to reset every database password and take applications offline over several days. Nextgov/FCW, citing three people and an internal email, says the outage hit the financial tools that move money between USDA and farmers. It is not clear whether data was stolen.</p>
+  <p>Officials are holding to the line that the earlier outages were not attacks. A White House release quotes the Director of National Intelligence and the Secretary of State saying there is &ldquo;no indication of a cyberattack&rdquo; behind the failures at the banks, the NSA and the FAA. Bloomberg Government reports Homeland Security Secretary Mullin saying Iran has targeted US infrastructure but is not behind the outages. Pentagon CIO Kirsten Davies is now acting national cyber director after Sean Cairncross&rsquo;s exit, which was Thursday&rsquo;s lead.</p>
+  <p><b>What to watch:</b> a public FBI or USDA statement with dates and scope; whether farm payments are delayed going into December; and whether Davies&rsquo;s first move is a public incident report, which the incoming Democratic committees will demand anyway.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; when did USDA know?</span>
+    <p><b>What is disputed.</b> This is a <b>facts</b> dispute about timing. NBC says USDA employees were told on Thursday that a system had been targeted. Nextgov/FCW has an email dated Monday from an acting assistant CIO ordering all database passwords reset because a security incident had been found.</p>
+    <p><b>Why they differ.</b> This probably has an ordinary explanation. Nextgov had the internal IT email, which went to technical staff. NBC&rsquo;s sources described a wider notice to employees, which naturally comes later. Nobody is shown to be wrong. They are describing different audiences.</p>
+    <p><b>What it means for you.</b> Take Monday as the date USDA&rsquo;s security centre found the incident, since the email is the document. That means the breach was known inside government for most of the week in which officials were publicly playing down cyber risk. That does not make the outage explanation false, because the outages and the breaches can be different events, but it is the gap Congress will ask about. A USDA incident timeline would settle it.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://lite.cnn.com/2026/11/20/politics/fbi-hacked-again-target-crime-database">CNN</a> &middot;
+    <a href="https://www.nbcnews.com/politics/justice-department/fbi-investigating-potential-breach-crime-database-rcna610536">NBC News (FBI)</a> &middot;
+    <a href="https://www.nextgov.com/cybersecurity/2026/11/usda-grapples-security-breach-it-staff-take-multiple-systems-offline/417350/">Nextgov/FCW (USDA)</a> &middot;
+    <a href="https://www.whitehouse.gov/releases/2026/11/no-indication-of-a-cyberattack-dni-clayton-and-secretary-rubio-on-recent-tech-outages/">White House release</a> &middot;
+    <a href="https://news.bgov.com/bloomberg-government-news/mullin-says-iran-hit-key-infrastructure-not-behind-tech-outages">Bloomberg Government</a> &middot;
+    <a href="https://breakingdefense.com/2026/11/pentagon-cio-davies-tapped-as-acting-national-cyber-director/">Breaking Defense (Davies)</a>
+  </p>
+  <div class="fb">
+    <p>The outage/breach thread has run all week. Keep it as a lead?</p>
+    <label><input type="radio" name="fb-fbi-usda" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-fbi-usda" value="merge"> Only with new attribution</label>
+    <label><input type="radio" name="fb-fbi-usda" value="short"> Short items</label>
+  </div>
+</article>
+
+<article id="hormuz-pump">
+  <h2>Hormuz attacks are at their highest since the war began, yet Brent fell 5% on the week and US gasoline is down 18 cents to $3.66</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>This is one causal chain. The strait is more dangerous than at any point since February, and oil and gasoline prices are falling anyway. The UK Maritime Trade Operations centre logged 31 attacks in and around the Strait of Hormuz in October and about 19 in November through the 18th, against 53 in the seven months from March to September. On Saturday, Iran said a tanker was burning after hitting a mine, and the Revolutionary Guard said it shot down two US drones. Both claims come from Iranian state media and have not been independently confirmed.</p>
+  <p>Prices moved the other way. Brent ended the week near $91, down about 5%. Bloomberg reports that US Mars sour crude, which traded at a record $17.50 premium to WTI in the spring, has fallen to a $4 discount as heavy barrels from Venezuela, Canada and the Gulf flood the market. In short, enough supply is getting through, or around, the strait to outweigh the attacks.</p>
+  <p>At the pump, AAA&rsquo;s national average for regular is $3.659 on Saturday, down from $3.841 a week ago and $4.264 a month ago, but still 57 cents above a year ago. Diesel is $5.865, down from $6.037 a week ago. The 18 November issue had gasoline at $3.75 and Brent near $92; both have kept falling.</p>
+  <p><b>What to watch:</b> the EIA weekly retail price on Monday, which is the series to read for the trend rather than AAA&rsquo;s daily figure; whether war-risk premiums rise enough to reverse the slide; and any hit on a loaded VLCC, which would test how much risk the market can absorb.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how many attacks?</span>
+    <p><b>What is disputed.</b> This is a <b>facts</b> dispute about the count. UKMTO&rsquo;s figures give about 50 attacks in October and November so far. The UN&rsquo;s International Maritime Organization has confirmed 34 for the same period, and about 50 for March to September against UKMTO&rsquo;s 53.</p>
+    <p><b>Why they differ.</b> This comes from method, not motive. UKMTO logs incidents as they are reported, including ones not yet verified and some in the surrounding gulfs. The IMO counts only confirmed attacks and is slower. Both are official bodies with no reason to exaggerate.</p>
+    <p><b>What it means for you.</b> Both series say the same thing that matters: the attack rate roughly doubled or tripled in the autumn. Use the IMO figure if you need a floor and UKMTO&rsquo;s for direction. For prices the count matters less than whether loaded tankers are being stopped, and the supply data say mostly not. If IMO&rsquo;s confirmed count starts catching up to UKMTO&rsquo;s, the reports are being verified, not inflated.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://abcnews.com/International/strait-hormuz-attacks-increased-highest-level-iran-war/story?id=138304456">ABC News (UKMTO/IMO data)</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/21/irans-irgc-downs-us-drone-over-hormuz-as-efforts-to-end-war-remain-stalled">Al Jazeera</a> &middot;
+    <a href="https://gcaptain.com/iran-war-oil-premium-evaporates-as-global-crude-supplies-surge/">Bloomberg via gCaptain (Mars crude)</a> &middot;
+    <a href="https://oilprice.com/Energy/Crude-Oil/Tankers-Are-Being-Hit-Daily-So-Why-Is-Oil-Falling.html">OilPrice weekly</a> &middot;
+    <a href="https://gasprices.aaa.com/">AAA national averages</a>
+  </p>
+  <div class="fb">
+    <p>Is the one-chain format still right for oil?</p>
+    <label><input type="radio" name="fb-hormuz" value="right"> Yes</label>
+    <label><input type="radio" name="fb-hormuz" value="more"> Add a chart</label>
+    <label><input type="radio" name="fb-hormuz" value="less"> Shorter</label>
+  </div>
+</article>
+
+<article id="uap-pursue-8">
+  <h2>The Pentagon&rsquo;s eighth UAP file release includes a 2009 contractor plan for an underground vault for &ldquo;exotic material or tissue&rdquo;</h2>
+  <div class="meta">
+    <span class="chip">UAP disclosure</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The Department of War published its eighth batch of declassified UAP files on Friday under PURSUE, the administration&rsquo;s rolling disclosure programme, and said work on the next batch is under way. No schedule was given. CBS counts 43 files, mostly 1950s Air Force and CIA records, plus newer material.</p>
+  <p>The document drawing attention is a 538-page report from July 2009 by Bigelow Aerospace Advanced Space Studies. It was written for the Defense Intelligence Agency&rsquo;s threat-study programme, which Congress funded at Senator Harry Reid&rsquo;s urging. It describes a planned 5,000-square-foot vault under 15 to 20 feet of earth in North Las Vegas to hold hardware and biological samples the company hoped to obtain. A copy had leaked online, but this is the first official release. There is no public record that the vault was built. A DIA official later judged the contractor&rsquo;s reports of &ldquo;limited value,&rdquo; and the programme ended in 2012.</p>
+  <p>The newer items are thinner. A 2023 civil air-surveillance radar file records eight detections at 55,000&ndash;70,000 feet over 84 seconds. If they were one object, the Pentagon says that implies at least 1,650 mph, but it adds that the data are &ldquo;not sufficient&rdquo; to say they were. Three military clips show white dots.</p>
+  <p><b>Implementation gap:</b> AARO&rsquo;s Historical Record Report Volume II, which the FY2023 intelligence act required by about mid-2024, is still not published. Rep. Andre Carson has demanded it, and House Democrats are reported to be planning a UAP select committee for January. <b>What to watch:</b> release nine, and whether the new House makes Volume II its first document demand.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.war.gov/News/Releases/Release/Article/4655441/department-of-war-publishes-eighth-release-of-unidentified-anomalous-phenomena/">Department of War release</a> &middot;
+    <a href="https://www.cbsnews.com/news/ufo-files-pentagon-contractor/">CBS News</a> &middot;
+    <a href="https://uapbrowser.com/en/releases/release-08">UAP Browser release index</a> &middot;
+    <a href="https://www.daviesdaily.com/carson-ufo-select-committee-house-democrats.html">Davies Daily on Volume II</a>
+  </p>
+  <div class="fb">
+    <p>Is this the right altitude for the UAP beat?</p>
+    <label><input type="radio" name="fb-uap" value="right"> Yes: paperwork first</label>
+    <label><input type="radio" name="fb-uap" value="more"> More on the documents themselves</label>
+    <label><input type="radio" name="fb-uap" value="less"> Only statutory milestones</label>
+  </div>
+</article>
+
+<article id="debt-limit-2027">
+  <h2>Thune says the debt ceiling will be left to the Democratic Congress; the limit is about $764bn away and could bind in February</h2>
+  <div class="meta">
+    <span class="chip">US debt &amp; fiscal</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Senate Majority Leader John Thune told Semafor on Thursday that Republicans probably lack the votes to raise the debt ceiling on party lines in either chamber before their majority ends. He said the issue &ldquo;probably ends up getting punted&rdquo; into next year, and expects a deadline in the second half of 2027 once Treasury uses its accounting tools. Any year-end party-line bill would be about defence money, not the debt limit. That leaves President Trump to negotiate an increase with a Democratic House and Senate.</p>
+  <p>The Bipartisan Policy Center puts numbers on it. The July 2025 tax-and-spending law raised the limit by $5 trillion to $41.1 trillion. Debt has since grown $4.2 trillion, leaving about $764 billion of room. BPC expects the limit to be reached in February or March 2027. Cash and extraordinary measures would then last roughly six to nine months before the &ldquo;X date&rdquo; when Treasury can no longer pay every bill. It says debt has risen faster than projected, partly because tariffs brought in less than expected.</p>
+  <p>The other long-run fiscal problem came up the same week. Sen. Ron Johnson introduced a bill that would cover any Social Security trust-fund shortfall with transfers from the Treasury. Brookings&rsquo; Jessica Riedl estimates it would add $45 trillion to the debt over three decades. The trust fund is projected to run short in about six years.</p>
+  <p><b>What to watch:</b> Treasury&rsquo;s formal debt-limit letter to Congress; the long end of the curve, where the 10-year fell to 4.92% on Friday; and whether incoming Democratic leaders tie the limit to other demands.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.semafor.com/article/11/19/2026/thune-trump-and-democrats-will-have-to-negotiate-on-debt">Semafor (Thune interview)</a> &middot;
+    <a href="https://bipartisanpolicy.org/issue-brief/the-debt-limit-returns-in-2027-what-to-expect/">Bipartisan Policy Center</a> &middot;
+    <a href="https://finance.yahoo.com/economy/policy/article/generational-theft-harsh-pushback-follows-a-plan-to-fund-social-security-with-more-government-borrowing-160247441.html">Yahoo Finance on the Johnson bill</a> &middot;
+    <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202611">Treasury par yield curve</a>
+  </p>
+  <div class="fb">
+    <p>Should the debt limit become a standing thread now?</p>
+    <label><input type="radio" name="fb-debt" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-debt" value="later"> From the Treasury letter</label>
+    <label><input type="radio" name="fb-debt" value="no"> Only near the X date</label>
+  </div>
+</article>
+
+<article id="kalshi-ny">
+  <h2>A federal judge refused to stop New York&rsquo;s case against Kalshi; a state judge hears a request Monday that Kalshi and the CFTC say could shut it nationwide</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The fight over whether states can regulate prediction markets reached a hearing date this week. On Thursday, US District Judge Vernon Broderick sent New York Attorney General Letitia James&rsquo;s case against Kalshi back to state court. On Friday, at an emergency hearing, Judge Lorna Schofield refused the Commodity Futures Trading Commission&rsquo;s request to block the state. She said the CFTC had &ldquo;not established a likelihood of success&rdquo; on its claim that federal law overrides state gambling laws.</p>
+  <p>That leaves the state&rsquo;s renewed request for a temporary restraining order before Justice Melissa Crane, with a hearing set for 11:30 a.m. on Monday, 23 November. New York says Kalshi&rsquo;s sports contracts need a state gaming licence and that the platform breaks state rules on betting on New York college teams and by people under 21.</p>
+  <p>This is a US-financials story because of what the CFTC said in court. Its lawyer argued the order would &ldquo;completely shut down&rdquo; a federally regulated exchange, and Kalshi&rsquo;s counsel said it would probably force every open position to be liquidated. Schofield noted that three federal appeals courts have said states can regulate Kalshi and one has said New Jersey cannot. That split makes a Supreme Court case likely. The CFTC is also suing Louisiana and Arkansas on the same question.</p>
+  <p><b>What to watch:</b> Crane&rsquo;s ruling on Monday and how far any order reaches; a CFTC appeal to the Second Circuit; and a petition to the Supreme Court, which the split invites.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; would the order shut Kalshi down nationwide?</span>
+    <p><b>What is disputed.</b> There are two disputes. On <b>scope</b>, which is a facts question about the draft order, the CFTC and Kalshi say it would halt Kalshi nationwide. New York&rsquo;s lawyer says the lawsuit does not seek a shutdown and that no evidence of market disruption has been offered. On <b>sequence</b>, ABC dates the federal remand to Friday. Reuters and the court docket put it on Thursday, 19 November.</p>
+    <p><b>Why they differ.</b> On scope, each side is arguing a motion, so both statements are advocacy. Read the text instead. As reported by Gambity, the renewed motion would bar Kalshi from doing business &ldquo;within or from New York&rdquo; with people anywhere. Kalshi operates from New York, so the nationwide claim follows from that wording. It is not just rhetoric. On sequence, ABC&rsquo;s story was filed late Friday and compressed two days of rulings.</p>
+    <p><b>What it means for you.</b> Take the remand as Thursday, per the docket. On scope, the risk is real if Crane grants the order as drafted, because the reach comes from Kalshi being based in New York. If you hold positions on Kalshi, Monday is the date to watch. A narrower order covering sports contracts offered to New Yorkers would show the nationwide warnings were overstated. An order as drafted would show they were accurate.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://finance.yahoo.com/markets/options/articles/us-judge-rejects-cftc-emergency-235013741.html">Reuters via Yahoo Finance</a> &middot;
+    <a href="https://abcnews.com/US/kalshi-prediction-market-crippled-judge-grants-restraining-order/story?id=138329957">ABC News</a> &middot;
+    <a href="https://newyorkpredictions.com/legal">Docket summary (NewYorkPredictions)</a> &middot;
+    <a href="https://gambity.com/article/breaking/new-york-ag-refiled-tro-motion-seeks-to-halt-kalshi-statewide-breaking">Gambity on the TRO text</a> &middot;
+    <a href="https://www.cftc.gov/PressRoom/PressReleases">CFTC press releases</a>
+  </p>
+  <div class="fb">
+    <p>Prediction-market jurisdiction: lead-worthy?</p>
+    <label><input type="radio" name="fb-kalshi" value="yes"> Yes, it is market structure</label>
+    <label><input type="radio" name="fb-kalshi" value="short"> Short items</label>
+    <label><input type="radio" name="fb-kalshi" value="no"> No</label>
+  </div>
+</article>
+
+<article id="fl-citizens-flood">
+  <h2>Florida &amp; Tampa Bay: from 1 January every Citizens homeowner policy with wind cover must carry flood insurance, in a flood zone or not</h2>
+  <div class="meta">
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The last phase of the state&rsquo;s flood-insurance mandate for Citizens Property Insurance takes effect on Friday, 1 January 2027. From then, any new Citizens policy that includes wind coverage must also carry flood insurance, whatever the home&rsquo;s flood zone or value. Existing policyholders must comply at their next renewal. Condo unit owners and renters are exempt. Hillsborough County flagged the change in a 13 November notice, and FOX 13 reports Citizens is now sending reminders.</p>
+  <p>This matters locally because Citizens, the state-backed insurer of last resort, covers tens of thousands of Tampa Bay homes, including many outside mapped flood zones. Broker guidance says the flood policy generally has to match the Citizens dwelling (Coverage A) limit, and proof must be filed at renewal. Without it, Citizens will not renew. Citizens has not published what the added cost will be. It depends on location, and a private or NFIP flood policy outside a high-risk zone is usually far cheaper than one inside.</p>
+  <p>Also in Florida household costs this week: the state&rsquo;s Office of Public Counsel is asking the Florida Supreme Court to overturn regulators&rsquo; approval of FPL&rsquo;s $7 billion, four-year rate increase. It argues the settlement was made with commercial customers covering less than 1% of accounts. No oral argument date is set.</p>
+  <p><b>What to watch:</b> your own Citizens renewal date, since the requirement applies at the first renewal after 1 January; and any Citizens rate filing that shows how many policies drop coverage instead of adding flood.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.fox13news.com/news/not-flood-zone-citizens-will-still-require-flood-insurance-starting-jan-1">FOX 13 Tampa Bay</a> &middot;
+    <a href="https://hcfl.gov/newsroom/2026/11/13/flood-coverage-becomes-mandatory-for-citizens-property-insurance-customers-in-2027">Hillsborough County newsroom</a> &middot;
+    <a href="https://mcgriffwilliams.com/flood/citizens-2027/">McGriff-Williams broker guidance</a> &middot;
+    <a href="https://www.wusf.org/economy-business/2026-11-20/florida-consumer-advocate-challenges-fpls-historic-7-billion-rate-hike-at-the-state-supreme-court">WUSF on the FPL appeal</a>
+  </p>
+  <div class="fb">
+    <p>Florida household-cost items like this: useful?</p>
+    <label><input type="radio" name="fb-fl" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-fl" value="more"> More of them</label>
+    <label><input type="radio" name="fb-fl" value="no"> Not at this length</label>
+  </div>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">11 things I saw and ranked below the line. Each one opens &mdash; the line is my judgement, what is behind it is the substance.</p>
+
+<div class="also-list">
+
+<details class="short" id="a-port">
+  <summary><span class="chip">Macro &amp; markets</span> The LA&ndash;Long Beach port strike was averted early Saturday: employers and the 250-member watchmen&rsquo;s union reached a tentative deal hours after the contract expired.</summary>
+  <div class="exp">
+    <p>The Pacific Maritime Association said on Saturday it had a tentative agreement with ILWU Local 26, which represents about 250 port security watchmen. The deal still needs ratification by members, and the old contract is extended until then. The union is small, but its members work at terminals handling about 85% of Long Beach cargo and a third of Los Angeles&rsquo;s. Thousands of longshore workers were expected to honour any picket, which would have stopped those terminals in what the ports say is their busiest year on record. More than 110 trade groups, including the NRF, the US Chamber and the trucking association, had urged a deal on Friday.</p>
+    <p>The employers&rsquo; offer as they described it: a $3,200 bonus, average full-time pay rising from more than $170,000 to $198,000, and pensions up to $93,200. The union has not commented on the terms.</p>
+  <div class="div">
+      <span class="t">Divergence &mdash; whose pay numbers?</span>
+      <p><b>What is disputed.</b> <b>Facts.</b> The wage, bonus and pension figures above come only from the employers. Agri-Pulse reports the union does not trust them, and the union has given no figures of its own.</p>
+      <p><b>Why they differ.</b> The employers&rsquo; association published its offer to win the public argument before the deadline. The union stayed silent during mediation, which is normal practice.</p>
+      <p><b>What it means for you.</b> Treat the figures as the employers&rsquo; offer, not settled terms. The ratified contract, or the union&rsquo;s summary to members, would settle it.</p>
+    </div>
+    <p class="btl"><b>Below the line because</b> nothing stopped. It becomes a story only if ratification fails.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.pmanet.org/press_releases/statement-from-the-pacific-maritime-association-on-contract-talks-with-ilwu-local-26-at-ports-of-la-and-long-beach/">PMA statement, 18 Nov</a> &middot; <a href="https://www.devdiscourse.com/article/international/4010320-southern-california-port-employers-watchmen-union-reach-tentative-deal">Reuters via Devdiscourse</a> &middot; <a href="https://www.freightwaves.com/news/la-long-beach-port-strike-risk-grows-as-employers-say-ilwu-talks-stalled">FreightWaves</a> &middot; <a href="https://gcaptain.com/more-than-110-trade-groups-urge-deal-as-la-long-beach-port-strike-deadline-nears/">gCaptain</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-asylum">
+  <summary><span class="chip">US politics &amp; policy</span> The Supreme Court agreed on Friday to decide whether the administration can suspend asylum at the southern border, a policy the D.C. Circuit struck down.</summary>
+  <div class="exp">
+    <p>The case, Mullin v. Refugee and Immigrant Center for Education and Legal Services, comes from the 20 January 2025 proclamation that declared an &ldquo;invasion&rdquo; at the border and suspended entry, cutting off asylum claims. The appeals court in Washington held the suspension exceeded the President&rsquo;s authority under the immigration statute. The grant adds to an immigration docket that already includes third-country removals and no-hearing detention. The Court also took a securities-fraud pleading case for the 2026&ndash;27 term.</p>
+    <p class="btl"><b>Below the line because</b> a cert grant decides nothing; argument and a ruling are months away.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.scotusblog.com/2026/11/supreme-court-agrees-to-hear-case-on-trump-administrations-suspension-of-asylum/">SCOTUSblog</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-warpowers">
+  <summary><span class="chip">US politics &amp; policy</span> The Senate rejected the House-passed Iran war-powers resolution 48&ndash;51 in its first such vote since the midterms.</summary>
+  <div class="exp">
+    <p>Republicans Collins, Murkowski and Paul voted for it; Democrat Fetterman voted against. Departing Republicans Tillis and Cassidy, who have backed similar measures before, voted no this time. Even if it had passed, it is a concurrent resolution and would have been largely symbolic. Sen. Tim Kaine says more war-powers votes are planned once Democrats hold both chambers in January.</p>
+    <p class="btl"><b>Below the line because</b> it failed and was symbolic. The binding version comes in the next Congress.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://rollcall.com/2026/11/19/iran-resolution-blocked-in-first-war-powers-vote-since-midterms">Roll Call</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-poland">
+  <summary><span class="chip">Geopolitics</span> An object crashed in eastern Poland during one of Russia&rsquo;s largest strikes on Ukraine, and Poland&rsquo;s leaders call it a deliberate provocation timed to NATO drills.</summary>
+  <div class="exp">
+    <p>The Polish military is investigating a suspected airspace violation after an object came down near Nowy Lipowiec, about 60 km from the Ukrainian border, on Friday morning. Nearby schools closed. Defence Minister Kosiniak-Kamysz said he believed it was a Russian provocation timed to European exercises under way in Poland, and Prime Minister Tusk convened security chiefs. In Ukraine, Russian strikes hit three Kyiv bridges. The US channel is NATO&rsquo;s Article 4 machinery and the US forces stationed in Poland.</p>
+  <div class="div">
+      <span class="t">Divergence &mdash; missile, or unknown object?</span>
+      <p><b>What is disputed.</b> <b>Facts.</b> AP&rsquo;s newer alert headline, citing the Polish leader, calls it a Russian missile crash, while the body of the same story says officials could not yet tell what the object was.</p>
+      <p><b>Why they differ.</b> This is a timing problem. The alert headline reflects later political statements, and the body text was written before them. Leaders spoke before the military had finished investigating.</p>
+      <p><b>What it means for you.</b> Treat it as an unidentified object with a probable Russian origin until the Polish military names it. Debris identification would settle it.</p>
+    </div>
+    <p class="btl"><b>Below the line because</b> no NATO consultation has been requested in the sources read, and the object is unidentified.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://abcnews.com/International/wireStory/unidentified-object-appears-crashed-poland-after-russian-attacks-138315055">AP via ABC News</a> &middot; <a href="https://www.aljazeera.com/news/2026/11/20/poland-condemns-russian-provocation-after-airspace-violations">Al Jazeera</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-milai">
+  <summary><span class="chip">AI &amp; tech</span> Bessent says Trump and Xi agreed in Shenzhen that major military AI decisions must involve humans; nothing written has been published.</summary>
+  <div class="exp">
+    <p>Treasury Secretary Bessent told reporters the two leaders agreed that humans must be involved in significant military AI decisions. He gave no text, scope or verification mechanism, and no text has been published. A human role in nuclear command decisions was already agreed by Biden and Xi in 2024, so whether this goes further depends on wording no one has released.</p>
+    <p class="btl"><b>Below the line because</b> it is a verbal readout from one official, and the Huang episode above shows how readouts can conflict.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.reuters.com/world/china/trump-xi-agreed-that-military-ai-decisions-should-involve-humans-bessent-says-2026-11-20/">Reuters</a> &middot; <a href="https://www.scmp.com/news/china/diplomacy/article/3375321/xi-trump-agree-military-ai-decisions-must-involve-humans-bessent-says">SCMP (headline; page blocked)</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-ccw">
+  <summary><span class="chip">AI &amp; tech</span> UN talks on &ldquo;killer robots&rdquo; ended Saturday with an agreement to &ldquo;elaborate&rdquo; rules by 2028 and no ban; the US was among the opponents of binding negotiations.</summary>
+  <div class="exp">
+    <p>128 parties to the Convention on Certain Conventional Weapons agreed in Geneva to begin elaborating an instrument on lethal autonomous weapons over two years. Nearly 100 states had pushed for binding negotiations. The US, Russia and Israel opposed, and some delegations rejected the word &ldquo;negotiate&rdquo;. Russia&rsquo;s procedural objections cancelled some sessions. Campaigners called the result weakened. The Swiss chair called it a concrete step.</p>
+    <p class="btl"><b>Below the line because</b> no rule changes for two years, and the US position did not move.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.aljazeera.com/news/2026/11/21/nations-agree-to-draft-rules-for-killer-robots-at-arms-control-summit">Al Jazeera</a> &middot; <a href="https://www.dw.com/en/killer-robots-talks-at-un-end-with-no-legally-binding-ban/a-80008584">DW</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-cook">
+  <summary><span class="chip">US politics &amp; policy</span> Fed Governor Lisa Cook will not attend the White House hearing on whether to fire her; her lawyer calls it a threat to Fed independence.</summary>
+  <div class="exp">
+    <p>Abbe Lowell wrote that Cook has no legal duty to attend, and a duty to the Fed to decline. He objected to Kevin Hassett&rsquo;s role and to being asked for documents before seeing the evidence. The White House earlier said it might draw &ldquo;adverse inferences&rdquo; if she stayed away. It has not said whether it will hold the hearing without her. Senate Banking Democrats call it a show trial.</p>
+    <p class="btl"><b>Below the line because</b> no removal has happened. A firing would be the story, and would go straight to court.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.semafor.com/article/11/20/2026/feds-lisa-cook-speaks-ahead-of-hearing">Semafor</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-spacex">
+  <summary><span class="chip">AI &amp; tech</span> SpaceX sold $32bn of bonds to buy Nvidia chips, structured to stay off its own balance sheet, as part of a $40bn-plus package.</summary>
+  <div class="exp">
+    <p>Bloomberg says the three-part, relatively high-yield deal, run by Goldman Sachs and Apollo, finances chips that SpaceX will lease for about five years. It may become a template for other AI compute borrowing. SpaceX stock fell after the sale. It is worth noting on a day when markets questioned AI capex: borrowing kept off the books is how a spending boom gets hard to measure.</p>
+    <p class="btl"><b>Below the line because</b> it is one financing; it becomes a lead if the structure spreads or a lender balks.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://finance.yahoo.com/technology/ai/articles/spacex-sells-32-billion-ai-234112045.html">Bloomberg via Yahoo Finance</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-openai">
+  <summary><span class="chip">AI &amp; tech</span> OpenAI now requires its review and approval for any gateway or router that resells access to its models, a step against Chinese distillation.</summary>
+  <div class="exp">
+    <p>Services like OpenRouter let one account reach hundreds of models. US agencies and Anthropic have accused Chinese labs of copying American models by routing queries through such intermediaries, which hide the end user. Semafor says the new rule covers every service between OpenAI and its users, not only grey-market &ldquo;transfer stations&rdquo;.</p>
+    <p class="btl"><b>Below the line because</b> it is a company policy with no government action attached, yet.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.semafor.com/article/11/20/2026/openai-tightens-grip-on-model-resellers">Semafor</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-crwd">
+  <summary><span class="chip">AI &amp; tech</span> CrowdStrike is in talks to buy Zscaler, Bloomberg and Reuters report; Zscaler jumped 18% after hours and CrowdStrike fell 8%.</summary>
+  <div class="exp">
+    <p>CrowdStrike, worth about $235bn after roughly doubling this year, would be buying a company valued near $32bn, down 13% this year. That would be among the largest cybersecurity deals on record. CrowdStrike declined to comment. The timing, during a week of federal outages and breaches, puts security consolidation in front of antitrust reviewers and the new Congress.</p>
+    <p class="btl"><b>Below the line because</b> talks are not a deal, and there is no price yet.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.cnbc.com/2026/11/20/zscaler-crowdstrike-deal.html">CNBC</a> &middot; <a href="https://www.reuters.com/legal/litigation/crowdstrike-talks-acquire-zscaler-source-says-2026-11-20/">Reuters</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-fdic">
+  <summary><span class="chip">US financials</span> The FDIC has proposed letting smaller banks take custodial deposits without counting them as brokered, implementing the ROAD to Housing Act.</summary>
+  <div class="exp">
+    <p>The proposal appeared in Friday&rsquo;s Federal Register after a board vote on Tuesday. Brokered deposits are treated as less stable funding and are restricted once a bank falls below well capitalised. Taking custodial balances out of that count gives small banks a cheaper funding channel, including from fintech and payments partners. The comment period opens with publication.</p>
+    <p class="btl"><b>Below the line because</b> it is a proposal in a technical funding category; the final rule is the event.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.federalregister.gov/documents/search?conditions%5Bpublication_date%5D%5Bis%5D=2026-11-20&amp;conditions%5Bagencies%5D%5B%5D=federal-deposit-insurance-corporation">Federal Register, 20 Nov</a> &middot; <a href="https://www.americanbanker.com/news/fdic-proposes-custodial-deposit-flexibility-for-small-banks">American Banker</a> &middot; <a href="https://www.fdic.gov/news/press-releases">FDIC press releases</a></p>
+  </div>
+</details>
+
+</div>
+
+<div class="fb" style="border-top:1px solid var(--rule); padding-top:1rem; margin-top:1.5rem;">
+  <p><b>One question about this whole section:</b> were the right things ranked below the line?</p>
+  <label><input type="radio" name="fb-also" value="right"> About right</label>
+  <label><input type="radio" name="fb-also" value="promote"> Some of these should have led</label>
+  <label><input type="radio" name="fb-also" value="drop"> Some should have been dropped entirely</label>
+  <label><input type="radio" name="fb-also" value="fewer"> Fewer short items, more depth up top</label>
+</div>
+
+<button class="submit" id="send">Send my feedback &rarr;</button>
+<p class="sources" style="text-align:center">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+
+<footer>
+  <h4>Sources checked this run &mdash; 82, of which 58 outside the watchlist</h4>
+  <p><b>Not pointed at by any thread (58):</b> en.wikipedia.org &middot; statnews.com &middot; breakingdefense.com &middot; lite.cnn.com &middot; aljazeera.com &middot; defenseone.com &middot; freightwaves.com &middot; cbsnews.com &middot; lemonde.fr &middot; theguardian.com &middot; semafor.com &middot; feeds.content.dowjones.io &middot; techcrunch.com &middot; lefigaro.fr &middot; nbcnews.com &middot; coindesk.com &middot; theverge.com &middot; cnbc.com &middot; haaretz.com &middot; arstechnica.com &middot; warontherocks.com &middot; nhk.or.jp &middot; foxnews.com &middot; latimes.com &middot; pbs.org &middot; cnbc.com &middot; pymnts.com &middot; businessinsider.com &middot; scmp.com &middot; rollcall.com &middot; foxbusiness.com &middot; feeds.bbci.co.uk &middot; abcnews.go.com &middot; thedebrief.org &middot; insurancejournal.com &middot; feeds.bbci.co.uk &middot; dw.com &middot; ft.com &middot; finance.yahoo.com &middot; theregister.com &middot; spiegel.de &middot; techmeme.com &middot; handelsblatt.com &middot; yle.fi &middot; text.npr.org &middot; asia.nikkei.com &middot; nypost.com &middot; X news search (connector) &middot; math.mit.edu (Sutherland verification page) &middot; github.com verification notes &middot; scientificamerican.com &middot; nature.com &middot; nextgov.com &middot; bipartisanpolicy.org &middot; hcfl.gov (Hillsborough County newsroom) &middot; mcgriffwilliams.com (broker guidance) &middot; gambity.com &middot; news.bgov.com (via search).</p>
+  <p><b>Pointed at by a thread (24):</b> floridaphoenix.com &middot; gasprices.aaa.com &middot; gcaptain.com &middot; ofac.treasury.gov &middot; fox13news.com &middot; whitehouse.gov &middot; federalreserve.gov &middot; americanbanker.com &middot; cftc.gov &middot; federalreserve.gov &middot; home.treasury.gov &middot; fdic.gov &middot; oilprice.com &middot; scotusblog.com &middot; datacenterdynamics.com &middot; eia.gov &middot; tampabay.com &middot; wusf.org &middot; federalregister.gov JSON API (20 Nov daily issue, 111 documents) &middot; home.treasury.gov daily par yield curve CSV &middot; war.gov UAP release page (PURSUE batch 8) &middot; UAP sweep via search (AARO records page reporting, Davies Daily) &middot; Kalshi/CFTC docket summary (newyorkpredictions.com) &middot; pmanet.org (PMA statement).</p>
+  <p>Article pages fetched to stand stories up are cited under each story and are not counted again. Federal Register items read and not used: OPM civil-service rule amendments and the DHS HAVANA Act rule (both seen in the 20 November edition).</p>
+
+  <h4>The negative check</h4>
+  <p><i>What is the biggest story today that is not on my list, and why is it not?</i> The claimed Riemann-hypothesis proof. No thread covers AI research results, only AI policy, chips and lab safety. It leads the AI-research slot. Runners-up: the Pentagon UAP release, a core beat whose rolling batches have no thread entry of their own, and the Citizens flood mandate. Both run as leads. GTA VI&rsquo;s record launch, Fiona the hippo, the Palisades arson verdict and the Mexican cartel capture led several front pages and are excluded as entertainment or crime without policy consequence.</p>
+
+  <h4>Confidence markers and divergence boxes</h4>
+  <p>21 stories, 21 markers (Independent corroboration: 11 &middot; Primary source: 4 &middot; Single-sourced: 6); 8 divergence boxes. Leads without a box (data-centre tax, UAP release, debt limit, Florida) had accounts that agreed on the facts and their weight.</p>
+
+  <h4>Accountability to earlier issues</h4>
+  <p><b>20 November, markets lead:</b> said Anthropic was down 6% before its second session. It closed down 8.5% (AP), so the indication understated the fall. <b>20 November, permitting lead:</b> the House takes it up after Thanksgiving, which is unchanged. <b>18 November, oil:</b> Brent near $92 and gasoline at $3.75. Both have fallen further (about $91 and $3.659), which is consistent with the direction that issue gave. <b>18 November, Nvidia:</b> said the company held back its quarterly filing. The SEC inquiry reported Friday is the first official scrutiny of the accounts themselves. <b>19 November, Shenzhen:</b> Bessent&rsquo;s military-AI readout is new and runs as a short item. No corrections today.</p>
+
+  <h4>Could not reach</h4>
+  <p>axios.com (403) &middot; thehill.com (403) &middot; ftc.gov (404) &middot; sec.gov (403) &middot; ferc.gov (403) &middot; cbo.gov (403) &middot; politico.com (403) &middot; apnews.com (403) &middot; wfla.com (403) &middot; apnews.com (403) &middot; elpais.com (403) &middot; lawfaremedia.org (403) &middot; washingtonpost.com (timeout) &middot; utilitydive.com (403) &middot; nrc.gov (403) &middot; reuters.com (401) &middot; apnews.com (403) &middot; bls.gov (403) &middot; occ.gov (404). SCMP&rsquo;s military-AI story returned 403, so the claim rests on Reuters. AP&rsquo;s Riemann story returned 403. The Register&rsquo;s report of Chinese AI agents exploiting a zero-day returned 404 and was not used. EIA&rsquo;s weekly retail page did not parse, so pump prices come from AAA&rsquo;s daily series, and no trend turn is called off it.</p>
+
+  <h4>Seen, not run</h4>
+  <p>Senate permitting bill (Thursday&rsquo;s lead; no new fact) &middot; Johnson Social Security bill (folded into the debt lead) &middot; COP31 running into overtime (no US channel today) &middot; Denmark expels a Russian diplomat over a plot against a US-Ukrainian rapper &middot; Kalshi&ndash;Illinois tax fight &middot; Lumentum&ndash;Marvell $115bn deal (Semafor interview, no new terms) &middot; USDA &ldquo;Bigfoot files&rdquo; FOIA release (not UAP; novelty) &middot; Virginia&rsquo;s first measles death this year (no policy action) &middot; St. Johns River record flooding (east coast; covered 19 November) &middot; Fed speeches (this brief runs prints and decisions only).</p>
+
+  <h4>About this issue</h4>
+  <ul>
+    <li>Grok edition for 21 November, produced by the scheduled morning routine. Layout built from Issue 10 (2026-09-10b.html), not from any previous Grok edition.</li>
+    <li>10 lead stories including Florida, 11 short items. 6 leads are new subjects; 4 are follow-ups, at the cap of four.</li>
+    <li><b>Post-audit fact fix (disclosed):</b> the draft gave Anthropic&rsquo;s Friday move as a fall to $88.14, which is CBS&rsquo;s intraday figure. The count comparison against Claude&rsquo;s edition showed a different closing price, so I re-checked against AP, whose 8.5% is the closing move, and corrected the markets lead, its divergence box and the accountability note to use it. No lead, ordering or headline changed.</li>
+    <li>Every quotation is under fifteen words and attributed; everything else is paraphrase.</li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n  → " + i.value + "");
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on Issue No. 78-grok — 21 November 2026 (Grok edition)\n\n" + lines.join("\n")
+      + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-11-21-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
