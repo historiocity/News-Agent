@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Sunday, 22 November 2026 (Grok edition, Issue 79-grok)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  /* short-item tier */
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list summary .chip { vertical-align:.05rem; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 79-grok &middot; Sunday, 22 November 2026 &middot; Grok edition</div>
+  <h1>AI prompts are leaking through the model resellers, Trump offers Democrats a credit-card cap, and an executive order tells contractors to check with the White House before talking to Congress</h1>
+  <p class="sub">9 stories at length, 11 in brief. A Sunday with no market prints; the weekend&rsquo;s documents, rulings and disclosures carry the edition. Built on the Issue 10 (2026-09-10b) layout. Claude&rsquo;s edition for today is at <a href="2026-11-22.html">2026-11-22</a>.</p>
+  <p class="prov"><b>94 sources checked, 73 of them outside the watchlist</b> (12 front pages refused or failed; listed in the footer). Wires, foreign front pages (Handelsblatt, Le Monde, El Pa&iacute;s, Le Figaro, Spiegel, Nikkei, SCMP, Yle, Straits Times, ABC Australia, CBC, France 24, DW) and trade outlets were read before the document sources the threads point at. The last three Grok editions were opened only afterwards, for accountability. <b>8 of 9 leads are new subjects; 1 continues a thread</b> (Gulf oil, which carries a correction to yesterday&rsquo;s Brent figure). <b>Biggest story not on my list:</b> the Dragos prompt-leak research. No thread covers the security of the AI inference market. It surfaced on Techmeme and Ars Technica, OpenRouter confirmed it on Sunday, and it leads. The negative check also turned up the Fifth Circuit&rsquo;s proxy-quorum ruling (on CNN&rsquo;s front page as a &ldquo;spending law&rdquo; story) and the Hegseth Canada memo (CBC, Breaking Defense). Both became leads, and they pushed out a markets recap, which had no new trading to report.<br><br>
+  <b>Accounts compared per lead:</b> ai-prompt-leak: the Dragos research and three vendor notices (OpenRouter, Novita, Atlas Cloud), primary, plus 2 independent accounts (Ars Technica, Privacy Affairs) &middot; card-cap: 3 independent (AP, Fox Business, The Hill) plus the CRS policy note &middot; contractor-eo: the order text (primary) plus 4 accounts (AP, Politico, Reuters, Crowell &amp; Moring) &middot; proxy-quorum: the opinion (primary) plus 3 accounts (NBC, Washington Post, Washington Sun) &middot; loudoun-pause: the county release (primary) plus 3 independent (Virginia Mercury, Business Insider, Reason) &middot; gulf-oil: 5 independent on Bahrain (Reuters, AFP, ABC, The National, Khaleej Times); Reuters/UKMTO on tankers; Bloomberg and Dow Jones data on prices; AAA&rsquo;s series &middot; cbo-navy: 3 accounts of the CBO report (Navy Times, Guardian, UPI) plus the report listing; the report itself was not reachable &middot; canada-memo: 5 independent (Washington Post, AP, Breaking Defense, CBC, Globe and Mail) &middot; fl-stanton-coal: 1 newsroom (Inside Climate News, republished by WUSF) plus the EDF analysis; OUC and DOE statements as quoted there.<br><br>
+  <b>Disclosure.</b> When the live <code>config.md</code> was loaded, its heading list showed a &ldquo;22 November 2026 &mdash; operational notes&rdquo; section from this morning&rsquo;s Claude run, which I did not read. While reading the watchlist&rsquo;s thread column I also saw the opening lines of four watchlist rows Claude added this morning (immigration case volumes, the Consolidated Audit Trail, the National Popular Vote compact, Florida Amendment 3 budgets). None of those subjects was used for selection or appears below. NPR&rsquo;s Electoral College piece was on its front page and was left out for that reason. Claude&rsquo;s edition was not opened until this draft was finished.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#ai-prompt-leak">Two million planted secrets show AI prompts leaking from the inference market: three hosts breached, one Chinese lab scraping, and OpenRouter cuts three providers</a></li>
+    <li><a href="#card-cap">Trump says he would work with the incoming Democratic Congress on a credit-card interest cap; Warren and Hawley both say their bills are ready</a></li>
+    <li><a href="#contractor-eo">An executive order tells every federal contractor to notify the White House of any congressional inquiry and withhold what it calls privileged, on pain of losing contracts</a></li>
+    <li><a href="#proxy-quorum">The Fifth Circuit rules 9&ndash;8 that the House passed the $1.7tn 2022 spending law unconstitutionally by counting proxies toward a quorum</a></li>
+    <li><a href="#loudoun-pause">Loudoun County, the world&rsquo;s biggest data-centre market, pauses decisions on new data centres and substations for up to a year</a></li>
+    <li><a href="#gulf-oil">Iran says it hit US Patriot radars in Bahrain and Bahrain says it hit a civilian plant; two tankers were struck off Oman, and oil and gasoline kept falling anyway</a></li>
+    <li><a href="#cbo-navy">CBO says the Navy&rsquo;s shipbuilding plan costs $54bn a year, 18% more than the Navy says, and the 15 &ldquo;Trump-class&rdquo; battleships drive much of the gap</a></li>
+    <li><a href="#canada-memo">A classified Hegseth memo limits informal US&ndash;Canada military contacts; Ottawa says it has seen no change, and NORAD and intelligence sharing are exempt</a></li>
+    <li><a href="#fl-stanton-coal">Florida &amp; Tampa Bay: Washington&rsquo;s orders to keep an Orlando coal unit running have cost ratepayers about $25.6m, by one count; the current order expires 30 November</a></li>
+    <li><a href="#also-today">Also today (11)</a> &mdash; ranked below the line, each one opens.</li>
+  </ol>
+</nav>
+
+<article id="ai-prompt-leak">
+  <h2>Two million planted secrets show AI prompts leaking from the inference market: three hosts breached, one Chinese lab scraping, and OpenRouter cuts three providers</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>From July to November, the security firm Dragos sent about two million prompts to AI services. Each one carried a unique, traceable secret: a live-looking AWS key, a private URL, or a git repository name. Then it watched where the secrets turned up. Its research chief, HD Moore, published the results on Thursday. Attackers were copying traffic at three hosting providers, and none of them knew until Dragos told them. In one breach, every request sent during several late-October windows was stolen, including requests the provider rejected before a model ever ran. The planted AWS keys were used for tens of thousands of API calls. One key was still in use three weeks after it was seeded.</p>
+  <p>The second finding is about privacy settings. Dragos says one Chinese AI lab fetched the secret links from more than half the prompts sent to its models. That included about two-thirds of the prompts marked &ldquo;zero data retention&rdquo;, and prompts sent through US resellers of its models. On Sunday OpenRouter, one of the largest routers, said it had dropped three providers and removed 125 endpoints from its zero-retention list. Novita, one of those hosts, confirmed that a misrouted setting sent MiniMax requests to MiniMax&rsquo;s own API from 28 May to 11 November.</p>
+  <p>Why it matters: companies are putting code, credentials and customer data into prompts. The cheapest routes to a model can pass through several firms, and the prompt is readable at every hop. A customer who picks a US host to keep data at home may not get that.</p>
+  <p><b>What to watch:</b> whether MiniMax answers publicly, whether US regulators or the incoming Congress take this up, and whether the big US labs publish audits of their own resellers.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; a breach, a scraper, or &ldquo;content review&rdquo;?</span>
+    <p><b>What is disputed.</b> This is mostly a <b>significance</b> dispute, with one open <b>fact</b>. Dragos calls the lab&rsquo;s behaviour scraping that ignored privacy flags. It adds that a git client later tried to clone the private repositories named in those prompts. Novita says the pattern suggests &ldquo;automated content review may have been involved.&rdquo; OpenRouter says its own systems were not breached and puts the problem on MiniMax and the hosts that forwarded to it. The open fact is the lab&rsquo;s name. Dragos does not name it. OpenRouter&rsquo;s customer emails and Novita&rsquo;s notice name MiniMax, but neither says MiniMax is the lab in Dragos&rsquo;s report.</p>
+    <p><b>Why they differ.</b> Each party is describing its own liability. Novita and the other resellers want this to look like a routing bug plus a third party&rsquo;s moderation. OpenRouter is a marketplace, so it wants the fault to sit with sellers. Dragos sells security services and has an interest in alarm. But Dragos also controlled the bait infrastructure, so it is the only party that can see what was done with the secrets. Timing matters too: MiniMax&rsquo;s explanation reportedly points to a setting changed before 22 October, yet one customer notice runs to 12 November.</p>
+    <p><b>What it means for you.</b> Believe the core finding. Planted credentials were used by outsiders, and the vendors have confirmed it in their own notices. &ldquo;Content review&rdquo; does not explain an attempt to clone private repositories. Until MiniMax says otherwise, treat prompts sent to its models, or through resellers of them, as read by a third party, and rotate any secrets in them. A MiniMax statement, or Dragos naming the lab, would settle the open fact.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; how the market works, and what to do about it</summary>
+    <div class="exp">
+      <p>An AI &ldquo;router&rdquo; gives a developer one account and one API that can reach hundreds of models. It reads each prompt in plain text to decide where to send it, often to the cheapest seller in a pool, and sometimes on to another router first. Each hop can log the prompt. The privacy flags customers set are instructions that are only as good as the weakest seller&rsquo;s compliance. Dragos also notes a shadier tier where inference is paid for with stolen cloud keys.</p>
+      <p>The three breaches matter more than the scraper. An attacker sitting at a provider&rsquo;s front door sees every customer&rsquo;s prompts, not just one lab&rsquo;s. Dragos says one adversary appeared to be inside two providers at once and used secrets from both together. It also says the attacker tried to plant its own cloud users and enable hosted AI models on the stolen accounts.</p>
+      <p>Yesterday&rsquo;s short item on OpenAI tightening its rules for resellers (<a href="2026-11-21-grok.html#a-openai">21 November</a>) now reads as part of the same story: the big labs are starting to police who resells their models.</p>
+      <p>Practical reading for anyone using these services: assume a prompt is a disclosure. Keep credentials out of prompts. Use first-party APIs or contractually bound hosts for sensitive work, and treat &ldquo;zero data retention&rdquo; as a policy claim, not a technical guarantee, until a provider can show independent testing like this.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens">Dragos research (HD Moore, 19 Nov)</a> &middot;
+    <a href="https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/">OpenRouter incident post, 22 Nov</a> &middot;
+    <a href="https://novita.ai/blog/minimax-requests-privacy-notice/">Novita privacy notice</a> &middot;
+    <a href="https://www.atlascloud.ai/blog/ai-updates/security-and-privacy-commitment">Atlas Cloud statement</a> &middot;
+    <a href="https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/">Ars Technica</a> &middot;
+    <a href="https://www.privacyaffairs.com/openrouter-minimax-prompts/">Privacy Affairs (OpenRouter email)</a>
+  </p>
+  <div class="fb">
+    <p>Do you want AI security research like this as a lead?</p>
+    <label><input type="radio" name="fb-ai-prompt-leak" value="yes"> Yes, when vendors confirm it</label>
+    <label><input type="radio" name="fb-ai-prompt-leak" value="short"> Short item unless policy follows</label>
+    <label><input type="radio" name="fb-ai-prompt-leak" value="follow"> Follow this thread</label>
+  </div>
+</article>
+
+<article id="card-cap">
+  <h2>Trump says he would work with the incoming Democratic Congress on a credit-card interest cap; Warren and Hawley both say their bills are ready</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Trump said on Saturday he would work with Democrats, who take both chambers in January, to cap credit-card interest rates. Asked on Fox News&rsquo;s &ldquo;Saturday in America&rdquo; whether he could agree on a one-year cap, he said &ldquo;I would do it&rdquo; and complained that card companies charge too much. He first called for a one-year, 10% cap in January but did not push it through a Republican Congress.</p>
+  <p>Both parties answered within hours. Sen. Elizabeth Warren, who is in line to chair the Senate Banking Committee, said this month she has a bill &ldquo;ready to go&rdquo; and welcomed the remarks. Sen. Josh Hawley urged passage of his own bill. The best-known version, the Sanders&ndash;Hawley bill (S. 381), would cap card APRs at 10% until January 2031. A cap needs legislation. There is no federal limit on card rates today.</p>
+  <p>This lands on the reader&rsquo;s standing beat. JPMorgan is one of the largest US card issuers, and card interest is one of the most profitable lines for it, Capital One, Citi and the rest. The New York Fed says card balances rose $22bn in the third quarter. The Hill cites $1.28tn in card debt overall and Bankrate&rsquo;s 19.71% average rate.</p>
+  <p><b>What to watch:</b> whether Warren files in the first week of the new Congress, whether the White House endorses a specific bill and term, and bank share prices on Monday. A 10% ceiling would roughly halve the average card rate.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; help for borrowers, or less credit?</span>
+    <p><b>What is disputed.</b> This is a <b>significance</b> dispute. Supporters (Trump, Warren, Hawley) describe a direct saving for households carrying balances. The bank trade groups said earlier this year that a 10% cap would be &ldquo;devastating&rdquo;, because lenders would cut credit lines and approvals for lower-score borrowers and push them to costlier products. Congress&rsquo;s own researchers (CRS) say both effects are plausible: cheaper credit for some, and less access plus new fees for others. There is also a smaller <b>fact</b> gap. In the quotes published, Trump did not name a number on Saturday. The &ldquo;10%&rdquo; in the headlines comes from his January post and the Democratic bills.</p>
+    <p><b>Why they differ.</b> Each side is arguing from its interest. Banks earn heavily on revolving balances, and populists in both parties gain from attacking them. The CRS note, written in March, is the neutral source. It says the result depends on where the cap is set and how long it lasts. A one-year cap and a cap through 2031 are very different policies.</p>
+    <p><b>What it means for you.</b> Both readings are right about different people. Borrowers who keep access would pay far less. Marginal borrowers would likely lose cards. For the banks, the size and term of the cap matter more than whether one passes. Watch which bill the White House endorses: a one-year 10% cap is a revenue hit, while a cap through 2031 changes the business model.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://apnews.com/article/trump-credit-cards-interest-rates-warren-banks-098a69b520e520e535eebe595cd0c64a">AP</a> &middot;
+    <a href="https://www.foxbusiness.com/politics/trump-opens-door-bipartisan-deal-credit-card-rates-americans-face-record-debt">Fox Business</a> &middot;
+    <a href="https://thehill.com/business/6235394-trump-calls-credit-card-cap/">The Hill</a> &middot;
+    <a href="https://www.congress.gov/crs-product/IF12861">Congressional Research Service IF12861</a>
+  </p>
+  <div class="fb">
+    <p>Follow the card-cap bill into the new Congress?</p>
+    <label><input type="radio" name="fb-card-cap" value="yes"> Yes, on every filing and vote</label>
+    <label><input type="radio" name="fb-card-cap" value="decision"> Only if a bill moves</label>
+    <label><input type="radio" name="fb-card-cap" value="no"> No</label>
+  </div>
+</article>
+
+<article id="contractor-eo">
+  <h2>An executive order tells every federal contractor to notify the White House of any congressional inquiry and withhold what it calls privileged, on pain of losing contracts</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Executive Order 14438, signed and published late on Friday 20 November, requires every federal contractor and subcontractor to tell the White House and its contracting agency &ldquo;immediately&rdquo; about any pending or future request from Congress concerning its work or communications with the executive branch. Contractors must then follow White House instructions to withhold anything the White House or the agency decides is covered by executive privilege. Agencies are told to write this into contracts. OMB is to issue guidance. Contractors that fail to comply may lose contracts or be suspended or debarred.</p>
+  <p>The order cites procurement law and says Congress cannot obtain privileged material before the executive has a chance to assert privilege. It is aimed at the new Democratic majorities, which have promised oversight of defence, AI, immigration and spending contractors from January.</p>
+  <p>Why it matters: much of the government&rsquo;s work, including weapons, AI systems, detention and IT, is done by contractors. Defence companies, Palantir, the big consultancies and the AI labs with federal deals now face two branches making competing demands. The order sets no deadlines and creates no safe harbour if a contractor defies a subpoena.</p>
+  <p><b>What to watch:</b> the OMB guidance; the first contract clauses; the first subpoena that tests the order after 3 January; and lawsuits, which contracting lawyers expect.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; routine coordination, or a gag on contractors?</span>
+    <p><b>What is disputed.</b> This is a <b>significance</b> dispute about an agreed text. The White House presents it as efficiency and protection of privileged communications. Politico&rsquo;s headline says it &ldquo;seeks to block federal contractors from talking to Congress.&rdquo; AP describes it in the order&rsquo;s own terms. The law firm Crowell &amp; Moring says it creates no blanket privilege and no protection against contempt. It points to the D.C. Circuit&rsquo;s ruling in the Navarro case that only the President can assert executive privilege, so relying on an agency&rsquo;s privilege call could expose a contractor to legal risk.</p>
+    <p><b>Why they differ.</b> The White House is describing its own action. Politico covers Congress, where the target audience sits. Crowell advises contractors, so its job is to spell out their legal risk, not to take sides. All three published within a day of the text, so timing does not explain the difference.</p>
+    <p><b>What it means for you.</b> The text supports a narrower reading than &ldquo;gag&rdquo;. It requires notice and coordination, and its enforcement is commercial, not criminal. But in practice the contracting lever is strong. A contractor that thinks it could lose its federal business will slow-walk Congress. What would settle it: OMB&rsquo;s guidance, and the first court ruling on whether a contract term can override a subpoena. Until then, expect contractors to notify the White House and then appear before Congress anyway, as Crowell advises.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.whitehouse.gov/presidential-actions/2026/11/protecting-the-executives-privileges-and-enhancing-efficiencies-in-federal-contracting/">Executive Order 14438 (White House)</a> &middot;
+    <a href="https://apnews.com/article/trump-executive-order-congress-oversight-investigation-contractors-9546e1d7acdf3e65b654d1c5162cb0bd">AP</a> &middot;
+    <a href="https://www.politico.com/news/2026/11/21/trump-executive-order-01179540">Politico</a> &middot;
+    <a href="https://www.crowell.com/en/insights/client-alerts/new-executive-order-protecting-the-executives-privileges-and-enhancing-efficiencies-in-federal-contracting">Crowell &amp; Moring alert</a> &middot;
+    <a href="https://www.investing.com/news/politics-news/trump-order-says-contractors-must-notify-white-house-of-congressional-probes-5043101">Reuters via Investing.com</a>
+  </p>
+  <div class="fb">
+    <p>Track oversight-versus-executive fights as a thread?</p>
+    <label><input type="radio" name="fb-contractor-eo" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-contractor-eo" value="court"> Only court rulings</label>
+    <label><input type="radio" name="fb-contractor-eo" value="no"> No</label>
+  </div>
+</article>
+
+<article id="proxy-quorum">
+  <h2>The Fifth Circuit rules 9&ndash;8 that the House passed the $1.7tn 2022 spending law unconstitutionally by counting proxies toward a quorum</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>On Friday the full Fifth Circuit held that the Consolidated Appropriations Act of 2023, the $1.7tn package passed in December 2022, was not validly passed by the House. The House reached its quorum by counting 226 absent members as present by proxy under its pandemic rule. The bill passed 225&ndash;201. Judge Cory Wilson wrote for nine judges that the Constitution&rsquo;s Quorum Clause requires members to be physically present. He rejected the government&rsquo;s argument that courts may not look behind a signed, enrolled bill.</p>
+  <p>The relief is narrow. Texas asked only that federal agencies be barred from enforcing one part of the law against it: the Pregnant Workers Fairness Act, which requires employers to accommodate pregnant workers. The court upheld that injunction. The rest of the act still stands. Judge James Graves&rsquo;s dissent called the ruling &ldquo;illogical, inexplicable, and invalid.&rdquo;</p>
+  <p>Why it matters: the reasoning reaches further than the remedy. The House used the proxy rule from May 2020 to January 2023, and it passed major laws during that time. The opinion gives any state or litigant in the Fifth Circuit a template to challenge a provision of a law passed when proxies were needed for a quorum. That could include spending and tax provisions.</p>
+  <p><b>What to watch:</b> a Justice Department petition to the Supreme Court, which is widely expected; and copycat suits against other laws from that period.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; a narrow injunction, or a ruling that a law is void?</span>
+    <p><b>What is disputed.</b> This is a <b>significance</b> dispute. Some headlines say a &ldquo;Biden-era spending law found unconstitutional&rdquo; (CNN&rsquo;s front page). Others focus on the pregnant-workers protections. NBC and the Washington Sun stress that the court did not invalidate the rest of the package and granted relief only to Texas. Both are accurate. The court did hold that the act&rsquo;s passage was unconstitutional, and it did grant relief only on one provision for one state.</p>
+    <p><b>Why they differ.</b> Headline writers go for the holding. Lawyers go for the remedy. The narrow remedy comes from what Texas asked for. It chose one provision it objected to, which kept the case manageable and the remedy hard to call sweeping.</p>
+    <p><b>What it means for you.</b> Read the holding as the news and the remedy as the current limit. Nothing changes for federal spending already made. The risk is that other litigants use the same holding against other parts of laws passed by proxy. The Supreme Court&rsquo;s decision whether to take the case is what to watch. If it declines, the template stays live in Texas, Louisiana and Mississippi.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://law.justia.com/cases/federal/appellate-courts/ca5/24-10386/24-10386-2026-11-20.html">Opinion, Texas v. Blanche, No. 24-10386 (Justia)</a> &middot;
+    <a href="https://www.nbcnews.com/politics/congress/house-unconstitutionally-passed-spending-bill-2022-appeals-court-rules-rcna610529">NBC News</a> &middot;
+    <a href="https://www.washingtonpost.com/business/2026/11/21/pandemic-era-law-passed-unconstitutionally-because-proxy-voting-appeals-court-rules/">Washington Post</a> &middot;
+    <a href="https://www.washingtonsun.com/legal/fifth-circuit-ruling-federal-pregnant-workers-law">Washington Sun</a>
+  </p>
+  <div class="fb">
+    <p>Is a structural court ruling like this lead material for you?</p>
+    <label><input type="radio" name="fb-proxy-quorum" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-proxy-quorum" value="short"> Short item until SCOTUS acts</label>
+    <label><input type="radio" name="fb-proxy-quorum" value="no"> No</label>
+  </div>
+</article>
+
+<article id="loudoun-pause">
+  <h2>Loudoun County, the world&rsquo;s biggest data-centre market, pauses decisions on new data centres and substations for up to a year</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Loudoun County&rsquo;s board voted 7&ndash;1&ndash;1 on Tuesday to stop taking final action on new data-centre and electrical-substation applications for up to 12 months. During that time it will rewrite siting and zoning standards, expected around July 2027. Applications can still be filed and reviewed by staff. Only the board&rsquo;s hearings and votes are paused. County staff estimate 33 active applications are affected. Projects in the Route 28 tax district and substations needed for grid reliability are exempt.</p>
+  <p>The scale explains why this matters. The county counts about 245 data-centre buildings built or under construction, 58 million square feet in all, with another 55 million approved or under review. Data centres brought the county more than $1bn in tax revenue this year. Board member Juli Briskman, who led the push, said the pause lets the county &ldquo;take back control.&rdquo; The Data Center Coalition argued it invites lawsuits and disrupts investment made under existing rules.</p>
+  <p>Why it matters: this is the AI build-out meeting local permission in the place it has relied on most. It comes the same week as Trump&rsquo;s threat to tax US companies that build AI data centres abroad, and as the Senate&rsquo;s permitting bill heads to the House. The sites need land, power and approval, and the most important county just slowed the last of those.</p>
+  <p><b>What to watch:</b> lawsuits from applicants; whether neighbouring Prince William and Fairfax follow; and whether Dominion&rsquo;s substation plans slip.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; a brake on the AI build-out, or a paperwork pause?</span>
+    <p><b>What is disputed.</b> This is a <b>significance</b> dispute. Business Insider frames it as &ldquo;America&rsquo;s data center capital&rdquo; putting the brakes on new projects. The county&rsquo;s own release and the Virginia Mercury describe something narrower: filing and staff review continue, only board action stops, and there are exemptions for one tax district and for reliability substations. The facts in the accounts agree.</p>
+    <p><b>Why they differ.</b> National business outlets write for investors, who care about pipeline signals. The county is writing for residents and developers and wants to show it has not closed the door. The industry coalition, which testified against the pause, has the strongest interest in calling it a moratorium.</p>
+    <p><b>What it means for you.</b> The narrower reading is correct about the mechanics. The national reading is correct about the signal. Projects already approved, and there are many, are not affected. The real cost is time for the 33 pending applications, at a moment when power and permits are the binding constraints. What would settle it: whether applicants move to other counties or states in the next quarter, which Dominion&rsquo;s interconnection queue will show.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.loudoun.gov/DocumentCenter/View/223074/Release---Loudoun-Board-Formally-Adopts-Data-Center-Pause">Loudoun County release</a> &middot;
+    <a href="https://virginiamercury.com/2026/11/20/loudoun-county-pauses-new-data-center-applications-for-a-year/">Virginia Mercury</a> &middot;
+    <a href="https://www.businessinsider.com/loudoun-county-virginia-data-center-alley-ai-boom-pause-2026-11">Business Insider</a> &middot;
+    <a href="https://reason.com/2026/11/18/loudon-county-is-the-data-center-capital-of-the-world-now-its-paused-building-new-ones/">Reason</a>
+  </p>
+  <div class="fb">
+    <p>Do local data-centre fights belong in the lead tier?</p>
+    <label><input type="radio" name="fb-loudoun" value="yes"> Yes, the big markets</label>
+    <label><input type="radio" name="fb-loudoun" value="short"> Short items</label>
+    <label><input type="radio" name="fb-loudoun" value="follow"> Follow Loudoun specifically</label>
+  </div>
+</article>
+
+<article id="gulf-oil">
+  <h2>Iran says it hit US Patriot radars in Bahrain and Bahrain says it hit a civilian plant; two tankers were struck off Oman, and oil and gasoline kept falling anyway</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p><b>Correction to yesterday&rsquo;s edition.</b> The 21 November oil lead said Brent &ldquo;ended the week near $91, down about 5%.&rdquo; Dow Jones Market Data shows the front-month Brent contract settled Friday at <b>$92.57, down 3.41% on the week</b>, its third weekly fall. WTI settled at $83.98. The direction was right; the level and the size of the fall were wrong. The error is corrected here and in the footer.</p>
+  <p>This is one causal chain. On Saturday Iran&rsquo;s Revolutionary Guard said its missiles and drones hit two US Army Patriot radars at Bahraini bases. Bahrain is home to the US Fifth Fleet. Bahrain says the strike hit a civilian industrial site, causing a fire. On Sunday its Interior Ministry said two people were injured, one critically. Residents told AFP they saw smoke over Sitra island, home to Bapco&rsquo;s refinery. Bahrain reserved its right to self-defence under Article 51. The same day, UK Maritime Trade Operations reported two incidents of a tanker hit by a projectile near Khasab at the mouth of the strait; it is not clear whether they involved the same ship. Iran said a tanker hit a mine. That claim has not been verified.</p>
+  <p>Prices went the other way again. AAA&rsquo;s national average for regular is $3.645 on Sunday, against $3.824 a week ago and $4.270 a month ago. Diesel is $5.845. Florida is $3.467. Supply is outrunning the attacks: Bloomberg reports US sour crude has gone from a record premium to a discount, and Treasury officials this week pressed Singapore and Malaysia to stop Iranian ship-to-ship transfers.</p>
+  <p><b>What to watch:</b> any US confirmation of damage or casualties in Bahrain, which would make this a direct strike on US forces; and Monday&rsquo;s EIA weekly retail price for the trend.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; what did Iran hit in Bahrain?</span>
+    <p><b>What is disputed.</b> This is a <b>facts</b> dispute. The IRGC says it struck two US Patriot radars at the al-Riffa and Awali bases. ABC, citing IRNA, gives the second site as Sakhir air base. Bahrain says the only thing hit was a civilian industrial facility. Casualty reports also changed: AFP&rsquo;s first report said no casualties, and the Interior Ministry later said two people were injured.</p>
+    <p><b>Why they differ.</b> Iran wants to show it is hitting US forces, not Gulf civilians. Bahrain wants to show the attack was aimed at it, which supports its Article 51 language and its standing with the US. The casualty change is timing: the first statements came before the injured were counted. Neither the Pentagon nor CENTCOM has said anything in the sources read.</p>
+    <p><b>What it means for you.</b> Evidence favours Bahrain&rsquo;s account of what was damaged. A fire on Sitra is visible and reported by residents. No image or independent report shows a radar hit, and the IRGC&rsquo;s claims about this war have often run ahead of evidence. Iran could have aimed at the bases and missed. Believe that a Bahraini industrial site was hit and two people were hurt, and treat the radar claim as unconfirmed. A CENTCOM statement or commercial satellite imagery of the named bases would settle it.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.khaleejtimes.com/world/gulf/bahrain-denies-irgc-claim-attack-us-bases-civilian-facility-catches-fire">Khaleej Times</a> &middot;
+    <a href="https://www.thenationalnews.com/news/gulf/2026/11/22/two-injured-one-critically-in-iranian-attack-on-industrial-plant-in-bahrain/">The National</a> &middot;
+    <a href="https://www.reuters.com/5f374b32b07b/world/middle-east/bahrain-warns-residents-potential-threat-iran-conflict-persists-2026-11-21/">Reuters</a> &middot;
+    <a href="https://www.afp.com/en/bahrain-says-iran-struck-industrial-site-tankers-hit-hormuz">AFP</a> &middot;
+    <a href="https://abcnews.com/International/live-updates/iran-live-updates-tanker-attacked-strait-hormuz-ukmto/?id=138171071">ABC News live</a> &middot;
+    <a href="https://gcaptain.com/two-tanker-incidents-reported-near-oman-vessel-hit-mine-east-of-hormuz/">Reuters via gCaptain (UKMTO tankers)</a> &middot;
+    <a href="https://gcaptain.com/iran-war-oil-premium-evaporates-as-global-crude-supplies-surge/">Bloomberg via gCaptain (Mars crude)</a> &middot;
+    <a href="https://gcaptain.com/us-treasury-presses-singapore-and-malaysia-on-iran-sanctions-compliance/">Reuters via gCaptain (Treasury in Singapore)</a> &middot;
+    <a href="https://www.morningstar.com/news/dow-jones/202611207288/front-month-ice-brent-crude-fell-341-this-week-to-settle-at-9257-data-talk">Dow Jones Market Data via Morningstar (Brent)</a> &middot;
+    <a href="https://gasprices.aaa.com/">AAA national averages</a>
+  </p>
+  <div class="fb">
+    <p>The correction above: is this how you want errors handled?</p>
+    <label><input type="radio" name="fb-gulf-oil" value="yes"> Yes, at the top of the story</label>
+    <label><input type="radio" name="fb-gulf-oil" value="louder"> Louder: a separate lead</label>
+    <label><input type="radio" name="fb-gulf-oil" value="quieter"> Footer is enough for small ones</label>
+  </div>
+</article>
+
+<article id="cbo-navy">
+  <h2>CBO says the Navy&rsquo;s shipbuilding plan costs $54bn a year, 18% more than the Navy says, and the 15 &ldquo;Trump-class&rdquo; battleships drive much of the gap</h2>
+  <div class="meta">
+    <span class="chip">US debt &amp; fiscal</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The Congressional Budget Office&rsquo;s analysis of the Navy&rsquo;s 2027 shipbuilding plan, released on Thursday, puts the cost at about $54bn a year over 30 years in 2026 dollars. That is 18% above the Navy&rsquo;s own estimate and 41% more than Congress has appropriated on average over the past five years. New construction alone would average $48.9bn a year against the Navy&rsquo;s $41.1bn. The plan buys 371 combat and logistics ships, 72 medium unmanned surface vessels and 15 nuclear-powered guided-missile battleships, the &ldquo;Trump class&rdquo;. CBO puts those at about $23.4bn for the first ship and $18bn for each of the rest, roughly $275bn in all.</p>
+  <p>CBO says much of the extra cost comes from the battleships, which concentrate firepower in a few large ships. It notes this conflicts with the Navy&rsquo;s stated aim of spreading it across many. It also says some earlier ship estimates were &ldquo;unrealistically low&rdquo;. Senate appropriators have already proposed cutting to zero the $1bn the Navy wanted this year for advance purchases for the battleships.</p>
+  <p>Why it matters for the fiscal beat: the plan only works if shipbuilding budgets rise by about two-fifths and stay there for decades, starting with a Congress that is about to change hands. The Iran war is wearing ships out faster. Deployments are running past 300 days and maintenance is being deferred.</p>
+  <p><b>What to watch:</b> the battleship line in the final FY2027 defence appropriation, and whether the Navy revises the class after the new Congress is seated.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how big is the planned fleet?</span>
+    <p><b>What is disputed.</b> This is a small <b>facts</b> dispute. Navy Times, reporting CBO, says the fleet would grow from 286 to 398 ships by 2056. The Guardian, reporting the same report, says from 286 battle-force ships to 381 over 30 years. The cost figures in the two accounts match.</p>
+    <p><b>Why they differ.</b> This is probably a counting difference, not a disagreement. CBO reports several fleet totals: battle-force ships, and totals that include auxiliaries and unmanned vessels. Each outlet may have picked a different line. Neither outlet has an interest in the gap. CBO&rsquo;s site refused automated access this morning, so the report&rsquo;s own table could not be checked.</p>
+    <p><b>What it means for you.</b> Rely on the cost numbers, which agree. Treat the fleet size as roughly 380&ndash;400 depending on what is counted. The fleet-size table in CBO&rsquo;s report would settle it. It does not change the fiscal point.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.navytimes.com/news/your-navy/2026/11/20/navys-2027-shipbuilding-plan-would-cost-54b-a-year-federal-agency-says/">Navy Times</a> &middot;
+    <a href="https://www.theguardian.com/us-news/2026/nov/21/trump-class-warships">The Guardian</a> &middot;
+    <a href="https://ideas.repec.org/p/cbo/report/62550.html">CBO report listing (RePEc)</a> &middot;
+    <a href="https://www.upi.com/Top_News/US/2026/11/21/navy-costs-trump-class/1041795298220/">UPI</a>
+  </p>
+  <div class="fb">
+    <p>More defence-budget arithmetic on the fiscal beat?</p>
+    <label><input type="radio" name="fb-cbo-navy" value="more"> More</label>
+    <label><input type="radio" name="fb-cbo-navy" value="right"> About right</label>
+    <label><input type="radio" name="fb-cbo-navy" value="less"> Less</label>
+  </div>
+</article>
+
+<article id="canada-memo">
+  <h2>A classified Hegseth memo limits informal US&ndash;Canada military contacts; Ottawa says it has seen no change, and NORAD and intelligence sharing are exempt</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The Washington Post reported late Friday that Defense Secretary Pete Hegseth signed a classified memo restricting the US&ndash;Canada defence relationship. Sen. Mike Rounds confirmed it on Saturday at the Halifax International Security Forum. He said US officials, in uniform and civilian, now need permission to attend social events and think-tank conferences with Canadians, and that meetings with Canadian generals and admirals must advance US defence objectives. He said it was drafted months ago and signed recently.</p>
+  <p>The Pentagon&rsquo;s chief spokesman, Sean Parnell, told Breaking Defense that the guidance does not affect intelligence cooperation, NORAD or work through NATO. He said the aim is engagements that advance &ldquo;tangible US defense objectives.&rdquo; Canada&rsquo;s defence minister, David McGuinty, said Ottawa has not seen the document and has seen no change in cooperation. Three Canadian defence officials told CBC the same.</p>
+  <p>Why it matters: Canada is the US&rsquo;s partner in continental air defence and in Golden Dome planning, and the US wants Canada to spend more. Rounds made that link himself. The memo uses access as leverage over Canada&rsquo;s defence budget during an already sour trade relationship.</p>
+  <p><b>What to watch:</b> whether the restrictions extend to procurement or exercises; Canada&rsquo;s next defence-spending announcement; and whether the Pentagon makes the memo public.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; a downgrade of the alliance, or a protocol memo?</span>
+    <p><b>What is disputed.</b> This is a <b>significance</b> dispute. The Post&rsquo;s framing is a restriction of the relationship. Rounds and Parnell describe limits on socialising and flag-officer meetings, with operations, NORAD and intelligence exempt. The Canadians say they have seen nothing in practice. On the facts, the accounts largely agree.</p>
+    <p><b>Why they differ.</b> The Post&rsquo;s sources are US officials who leaked a classified memo, and people usually leak because they think it matters. Rounds is a Republican defending the administration&rsquo;s purpose while playing down the effect. Parnell speaks for Hegseth. Ottawa wants to calm a domestic audience. Timing also matters. Rounds says the memo was signed only recently, so Ottawa&rsquo;s &ldquo;no change&rdquo; may just mean nothing has happened yet.</p>
+    <p><b>What it means for you.</b> The memo as described is narrow, and the core of the alliance is exempt. Its purpose is pressure, and Rounds tied it to Canadian defence spending. Believe that it exists and is limited for now. What would show whether it is more than protocol: cancelled exercises, delayed procurement, or Canada being shut out of Golden Dome planning.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.washingtonpost.com/national-security/2026/11/20/secret-hegseth-memo-restricts-us-canada-defense-relationship/">Washington Post</a> &middot;
+    <a href="https://apnews.com/article/pentagon-canada-halifax-security-forum-think-tanks-1959fff46997c899f3c2bc2df7220ec6">AP</a> &middot;
+    <a href="https://breakingdefense.com/2026/11/canada-hasnt-seen-changes-to-defense-relationship-with-us-says-mcguinty/">Breaking Defense</a> &middot;
+    <a href="https://www.cbc.ca/news/politics/canada-us-pentagon-restrictions-hegseth-9.7431302">CBC News</a> &middot;
+    <a href="https://www.theglobeandmail.com/world/us-politics/article-no-change-to-canada-us-defence-co-operation-military-sources-say-amid/">Globe and Mail</a>
+  </p>
+  <div class="fb">
+    <p>Is US&ndash;Canada friction worth a lead?</p>
+    <label><input type="radio" name="fb-canada-memo" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-canada-memo" value="short"> Short item</label>
+    <label><input type="radio" name="fb-canada-memo" value="no"> No</label>
+  </div>
+</article>
+
+<article id="fl-stanton-coal">
+  <h2>Florida &amp; Tampa Bay: Washington&rsquo;s orders to keep an Orlando coal unit running have cost ratepayers about $25.6m, by one count; the current order expires 30 November</h2>
+  <div class="meta">
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>The Energy Department has used emergency powers twice, in June and September, to stop the Orlando Utilities Commission from mothballing Stanton Energy Center Unit 1. OUC had planned to put the unit into extended cold shutdown by the end of May. An Environmental Defense Fund analysis, reported by Inside Climate News and republished by WUSF on Sunday, puts the cost to ratepayers so far at about $25.6m, or about $6.2m a month. It says the orders at six coal plants nationwide have cost about $593m. The current Stanton order expires on 30 November, so a renewal decision is due by then.</p>
+  <p>The Energy Department says Florida faces an emergency from too few power plants, growing data-centre demand and February&rsquo;s cold snap. OUC, the state&rsquo;s second-largest municipal utility with more than 288,000 customers in Orange and Osceola counties, says EDF&rsquo;s numbers rest on assumptions that do not match its own analysis. Its board will consider a fuel-rate cut in December worth about $5 a month per customer.</p>
+  <p>Why it clears the local bar: this is the first Florida test of the federal practice of ordering coal plants to keep running, and it is justified by data-centre load. The same data-centre rationale could be applied to any Florida utility&rsquo;s plant retirements, including those serving Tampa Bay. In September the D.C. Circuit found no emergency in a parallel case over a Michigan plant.</p>
+  <p><b>What to watch:</b> whether DOE renews the Stanton order by 30 November, and the ruling on the challenge Earthjustice filed in July for Florida Rising.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; what has keeping Stanton open cost?</span>
+    <p><b>What is disputed.</b> This is a <b>facts</b> dispute with a significance layer. EDF says about $25.6m so far and $6.2m a month, using SEC and FERC filings and consultants&rsquo; estimates. OUC says the claims do not reflect its own analysis but gives no number of its own. DOE says the cost question misses the point: keeping coal plants open saved lives at peak demand.</p>
+    <p><b>Why they differ.</b> EDF is a party to the legal challenge, so its estimate is advocacy built from public filings. OUC has to defend both its compliance and its customers&rsquo; bills. It cannot criticise a federal order much while it is subject to it. DOE is defending its own orders. The reporting comes from one newsroom (Inside Climate News; WUSF republished it), so this item is marked single-sourced.</p>
+    <p><b>What it means for you.</b> Treat $25.6m as an upper-end, advocate&rsquo;s estimate of the right order of magnitude. OUC&rsquo;s own reports show coal is its most expensive fuel per megawatt-hour, so the cost is real. Its size is disputed. OUC&rsquo;s next filing on the cost of running Unit 1, or a ruling in the challenge, would settle it.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://insideclimatenews.org/news/19112026/florida-stanton-coal-plant-trump-emergency-orders/">Inside Climate News</a> &middot;
+    <a href="https://wusf.org/text/environment/2026-11-22/trump-orders-keep-florida-coal-plant-running-cost-ratepayers-millions">WUSF (republished, 22 Nov)</a> &middot;
+    <a href="https://library.edf.org/AssetLink/220wvckk2kl3x0828641e7g43ntc6221.pdf">EDF analysis (PDF)</a>
+  </p>
+  <div class="fb">
+    <p>Florida energy bills and federal orders: more of this?</p>
+    <label><input type="radio" name="fb-fl-stanton" value="more"> More</label>
+    <label><input type="radio" name="fb-fl-stanton" value="right"> About right</label>
+    <label><input type="radio" name="fb-fl-stanton" value="less"> Less</label>
+  </div>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">11 things I saw and ranked below the line. Each one opens &mdash; the line is my judgement, what is behind it is the substance.</p>
+
+<div class="also-list">
+
+<details class="short" id="a-servers">
+  <summary><span class="chip">AI &amp; tech industry</span> Dell, HPE, Lenovo and Supermicro are asking AI-server buyers to pay 25&ndash;45% more on contracts already signed, the FT reports, as memory costs soar.</summary>
+  <div class="exp">
+    <p>The Financial Times reports that the big server makers are going back to customers months after signing and asking 25&ndash;45% more for Nvidia-based machines. Relays of the FT piece say memory prices are up more than 400% since early 2024, GPU servers 20&ndash;30%, and some CPU nodes have tripled. Trading firms such as Jane Street, Optiver and Hudson River Trading are named as buyers who are mostly paying, because there is no other supply. The same week, CNBC reported that data-centre construction costs are up 13% this year, and The Register reported an industry warning about a coming shortage of circuit boards.</p>
+    <p>For the reader&rsquo;s AI beat, this is the cost side of the build-out squeeze. Spending budgets buy less hardware just as investors are questioning the returns.</p>
+    <p class="btl"><b>Below the line because</b> it rests on one paywalled report seen through relays, and no server maker has commented on the record.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.ft.com/data-centres">Financial Times (data centres)</a> &middot; <a href="https://startupfortune.com/dell-hpe-lenovo-and-supermicro-raise-ai-server-prices-up-to-45-after-signing/">Startup Fortune relay</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-bitcoin">
+  <summary><span class="chip">Macro &amp; markets</span> Bitcoin fell below $57,000 on Saturday for the first time in two years, then rebounded above $60,000. It is the only big market that traded through the weekend after Friday&rsquo;s correction.</summary>
+  <div class="exp">
+    <p>CoinDesk reports that Saturday&rsquo;s fall wiped out about $1.8bn of leveraged positions, mostly bets on rising prices, before a rebound of about 9% from the low. XRP fell 10% and ether-treasury companies are under pressure. One of them, BTCS, warned the SEC that a $54m loan could be liquidated.</p>
+    <p>Crypto has been trading with tech stocks this week. A weekend rebound says little about Monday by itself, but a renewed break below $57,000 before the open would suggest selling continues.</p>
+    <p class="btl"><b>Below the line because</b> it is a weekend price signal, not a policy or earnings event, and one outlet carried the detail.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.coindesk.com/markets/2026/11/21/bitcoin-bounces-9-from-two-year-low-to-retake-usd60-000-as-traders-eye-monday-s-stock-open">CoinDesk (rebound)</a> &middot; <a href="https://www.coindesk.com/markets/2026/11/21/bitcoin-tanks-below-usd57-000-for-the-first-time-in-two-years-and-its-not-alone">CoinDesk (two-year low)</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-cop31">
+  <summary><span class="chip">Geopolitics</span> The COP31 climate talks in Antalya ended on Sunday with no adopted decision after the EU rejected a final text that dropped any commitment to move away from fossil fuels.</summary>
+  <div class="exp">
+    <p>The summit president declared there was no consensus. Handelsblatt, DW, Le Monde and Le Figaro all led with the collapse, and France called the last draft an unacceptable step backwards. The United States was absent for the second year after leaving the Paris Agreement and the UN climate convention.</p>
+    <p>For a US reader the main effect is indirect: no new global fossil-fuel language for US exporters to argue over, and a widening gap between Europe and the oil producers.</p>
+    <p class="btl"><b>Below the line because</b> there is no direct US channel this year; Washington was not in the room.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.rappler.com/world/global-affairs/cop31-outcomes-november-22-2026/">Rappler</a> &middot; <a href="https://www.bbc.co.uk/news/live/crly5w901n20t">BBC live</a> &middot; <a href="https://www.cnbc.com/2026/11/21/cop31-climate-summit-risks-failure-as-talks-go-deep-into-overtime.html">CNBC</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-ukraine">
+  <summary><span class="chip">Geopolitics</span> The White House wants a Russia&ndash;Ukraine deal by early January, before Democrats take Congress. A European official told the FT that Kyiv may be pushed into major concessions.</summary>
+  <div class="exp">
+    <p>Witkoff and Kushner are pairing an end-of-war agreement with security guarantees and a post-war European security framework, according to the Jerusalem Post and the FT as relayed by Meduza. Kyiv fears the deadline. Moscow is in no hurry. Russia struck Zelensky&rsquo;s home city of Kryvyi Rih on Saturday, and a Russia-bound cargo ship burned after a drone strike in the Gulf of Finland.</p>
+    <p>The US channel is the deadline itself. A deal before 3 January would come before a Congress likely to vote more aid.</p>
+    <p class="btl"><b>Below the line because</b> there is no text and no date for talks, and the reader asked for the current Ukraine balance, not more.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.jpost.com/international/internationalrussia-ukraine-war/article-915625">Jerusalem Post</a> &middot; <a href="https://meduza.io/en/news/2026/11/20/european-official-fears-ukraine-may-have-to-make-major-concessions-as-trump-pushes-for-a-peace-deal-by-early-january-before-democrats-take-control-of-congress-ft-reports">Meduza (FT report)</a> &middot; <a href="https://www.dw.com/en/">DW</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-fcc">
+  <summary><span class="chip">AI &amp; tech industry</span> The FCC voted on Thursday to bar China Mobile, China Telecom and China Unicom from getting US phone numbers directly, hours after the Trump&ndash;Xi meeting.</summary>
+  <div class="exp">
+    <p>The rule also covers internet-calling providers that use equipment from firms on the FCC&rsquo;s Covered List, such as Huawei and ZTE, and adds national-security certifications for anyone seeking numbers. The FCC cited security and illegal robocalls. Beijing&rsquo;s commerce ministry called it malicious suppression and promised to defend its companies&rsquo; interests.</p>
+    <p>It is a small but concrete sign that the summit truce does not extend to telecoms.</p>
+    <p class="btl"><b>Below the line because</b> it closes a narrow channel, and the carriers were already barred from operating in the US.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.investing.com/news/stock-market-news/fcc-votes-to-ban-chinese-telecoms-from-direct-access-to-us-phone-numbers-5039586">Reuters via Investing.com</a> &middot; <a href="https://www.scmp.com/news/china/diplomacy/article/3375128/fcc-votes-ban-chinese-telecoms-direct-access-us-phone-numbers">SCMP</a> &middot; <a href="https://www.lightreading.com/regulatory-politics/fcc-tightens-grip-on-chinese-telcos-blocks-direct-access-to-us-phone-numbers">Light Reading</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-deathbets">
+  <summary><span class="chip">US financials</span> The Senate passed the DEATH BETS Act by voice vote. It would bar CFTC-registered exchanges from listing contracts on war, terrorism, assassination, US military operations or a person&rsquo;s death.</summary>
+  <div class="exp">
+    <p>S. 4035 passed on 19 November and now goes to the House, where the companion bill (H.R. 7942) sits in an Agriculture subcommittee. It would hit Kalshi and Polymarket&rsquo;s US arm. Semafor counted more than 90 live markets on Jensen Huang alone. This sits beside the fight over state power, in which New York is seeking an order that Kalshi says could shut it down (<a href="2026-11-21-grok.html#kalshi-ny">21 November</a>).</p>
+    <p>A voice vote means no senator objected, which says something about the House&rsquo;s chances in the lame duck.</p>
+    <p class="btl"><b>Below the line because</b> it has passed one chamber only, and the House calendar is short.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.congress.gov/bill/119th-congress/senate-bill/4035/all-info">Congress.gov, S. 4035</a> &middot; <a href="https://news.bloomberglaw.com/banking-law/senate-passes-bill-to-ban-bets-on-war-death-assassinations">Bloomberg Law</a> &middot; <a href="https://www.theverge.com/policy/1038516/senate-votes-to-ban-prediction-market-bets-on-death-and-war">The Verge</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-waymo">
+  <summary><span class="chip">AI &amp; tech industry</span> Waymo filed two federal recalls after California declared its driverless freeway operation an &ldquo;imminent hazard&rdquo;. The fix for closed freeway lanes is not ready, and freeway rides stay paused nationwide.</summary>
+  <div class="exp">
+    <p>The filings, dated 19 November, cover cars that may enter and keep driving in closed freeway lanes, and how cars respond to police hand signals at intersections. The second was already fixed by a 6 November software update. Waymo continues supervised freeway testing.</p>
+    <p>The first recall puts the national pause on the federal record and leaves the restart date open.</p>
+    <p class="btl"><b>Below the line because</b> it extends a story already reported (California&rsquo;s ban) and changes no rules.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.investing.com/news/stock-market-news/waymo-recalls-selfdriving-cars-over-closed-freeway-lanes-manual-traffic-control-5042522">Reuters via Investing.com</a> &middot; <a href="https://www.foxbusiness.com/technology/waymo-issues-double-safety-recall-days-after-california-bans-robotaxis-from-freeways">Fox Business</a> &middot; <a href="https://apnews.com/article/waymo-driverless-vehicle-california-freeway-ban-37bcd5371a4699a1850b7666b271946b">AP</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-roundup">
+  <summary><span class="chip">US politics &amp; policy</span> A St. Louis judge gave final approval to Bayer&rsquo;s $7.25bn class settlement covering current and future claims that Roundup causes non-Hodgkin lymphoma.</summary>
+  <div class="exp">
+    <p>Judge Timothy Boyer approved the deal on 20 November. Bayer will pay in declining annual instalments for up to 21 years. Individual awards are estimated at $10,000 to $165,000. Including future claimants is the unusual part: it is meant to cap a liability that has hung over Bayer since it bought Monsanto.</p>
+    <p>Appeals by objectors are still possible.</p>
+    <p class="btl"><b>Below the line because</b> it settles a corporate liability; it does not change pesticide rules.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.bayer.com/media/en-us/court-grants-final-approval-to-roundup-class-settlement/">Bayer statement</a> &middot; <a href="https://apnews.com/article/bayer-monsanto-roundup-weedkiller-cancer-settlement-075b547ed70802082466ce1fb08773d0">AP</a> &middot; <a href="https://www.stlpr.org/news-briefs/2026-11-20/final-approval-roundup-settlement">St. Louis Public Radio</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-nyt">
+  <summary><span class="chip">US politics &amp; policy</span> A federal judge in Tampa let Trump&rsquo;s $15bn defamation suit against the New York Times and Penguin Random House go forward, dismissing two of six counts.</summary>
+  <div class="exp">
+    <p>Judge Steven Merryday&rsquo;s order keeps the claims about tax-fraud allegations in the book <i>Lucky Loser</i> and an October 2024 article. It drops the counts over a September 2024 article. Discovery comes next.</p>
+  <div class="div">
+      <span class="t">Divergence &mdash; a win for Trump, or a partial loss?</span>
+      <p><b>What is disputed.</b> This is a <b>significance</b> dispute. The Guardian and Bloomberg Law headline that the suit proceeds. Other legal coverage leads with the two counts dismissed. The order supports both.</p>
+      <p><b>Why they differ.</b> Each outlet chose which half of the result to put in the headline. The Times is also a competitor of every outlet covering the case.</p>
+      <p><b>What it means for you.</b> Read it as procedural survival for most of the case. The real test is discovery and summary judgment, where the actual-malice standard applies.</p>
+    </div>
+    <p class="btl"><b>Below the line because</b> it is a pleading-stage ruling; nothing has been decided on the merits.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.courthousenews.com/wp-content/uploads/2026/11/trump-v-nyt-deny-motion-to-dismiss.pdf">Order (Courthouse News PDF)</a> &middot; <a href="https://www.politico.com/news/2026/11/19/donald-trump-lawsuit-new-york-times">Politico</a> &middot; <a href="https://www.theguardian.com/us-news/2026/nov/19/trump-lawsuit-new-york-times">The Guardian</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-fl-citizens">
+  <summary><span class="chip">Florida &amp; Tampa Bay</span> Citizens Property Insurance chief Tim Cerio will step down in January. His successor needs Florida Senate confirmation, just as every Citizens homeowner policy with wind cover must add flood insurance.</summary>
+  <div class="exp">
+    <p>Citizens announced on 20 November that Cerio will return to the private sector. No successor or interim leader has been named. The Board of Governors will choose one, subject to confirmation. Cerio oversaw the drive to shrink Citizens&rsquo; policy count. The flood requirement from 1 January (<a href="2026-11-21-grok.html#fl-citizens-flood">21 November</a>) will be carried out under new leadership.</p>
+    <p class="btl"><b>Below the line because</b> a leadership change is not a policy change, and the flood mandate is unchanged.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.citizensfla.com/-/20261120-cerio-to-step-down-in-january">Citizens release</a> &middot; <a href="https://www.floridatoday.com/story/news/state/2026/11/20/tim-cerio-leaving-citizens-property-insurance/92881152007/">Florida Today</a> &middot; <a href="https://www.insurancejournal.com/news/southeast/2026/11/20/893311.htm">Insurance Journal</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-fl-workcomp">
+  <summary><span class="chip">Florida &amp; Tampa Bay</span> Florida&rsquo;s insurance commissioner ordered workers&rsquo; compensation rates cut by an average 7.4% from 1 January, the 11th annual cut in a row.</summary>
+  <div class="exp">
+    <p>The Office of Insurance Regulation&rsquo;s final order of 16 November adopts NCCI&rsquo;s filing for new and renewal voluntary-market policies. It is a direct cost cut for every Florida employer, including small businesses in Pasco and Pinellas.</p>
+    <p class="btl"><b>Below the line because</b> it was ordered six days ago and is a routine annual filing, though a welcome one.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://floir.gov/newsroom/archives/item-details/2026/11/16/insurance-commissioner-mike-yaworsky-approves-7.4--workers--compensation-rate-cut--marking-11th-straight-year-of-reductions">Florida OIR</a> &middot; <a href="https://floridaphoenix.com/2026/11/16/workers-compensation-rates-ordered-lowered-by-average-7-4-in-2027/">Florida Phoenix</a> &middot; <a href="https://www.insurancejournal.com/news/southeast/2026/11/18/892926.htm">Insurance Journal</a></p>
+  </div>
+</details>
+
+</div>
+
+<div class="fb" style="border-top:1px solid var(--rule); padding-top:1rem; margin-top:1.5rem;">
+  <p><b>One question about this whole section:</b> were the right things ranked below the line?</p>
+  <label><input type="radio" name="fb-also" value="right"> About right</label>
+  <label><input type="radio" name="fb-also" value="promote"> Some of these should have led</label>
+  <label><input type="radio" name="fb-also" value="drop"> Some should have been dropped entirely</label>
+  <label><input type="radio" name="fb-also" value="fewer"> Fewer short items, more depth up top</label>
+</div>
+
+<button class="submit" id="send">Send my feedback &rarr;</button>
+<p class="sources" style="text-align:center">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+
+<footer>
+  <h4>Sources checked this run &mdash; 94, of which 73 outside the watchlist</h4>
+  <p><b>Not pointed at by any thread (73):</b> text.npr.org &middot; france24.com &middot; cbc.ca &middot; aljazeera.com &middot; lite.cnn.com &middot; theguardian.com &middot; bbci.co.uk &middot; lefigaro.fr &middot; en.wikipedia.org &middot; handelsblatt.com &middot; theguardian.com &middot; dw.com &middot; bbci.co.uk &middot; bbci.co.uk &middot; scmp.com &middot; lemonde.fr &middot; nhk.or.jp &middot; bbci.co.uk &middot; abc.net.au &middot; freightwaves.com &middot; techcrunch.com &middot; straitstimes.com &middot; arstechnica.com &middot; pymnts.com &middot; haaretz.com &middot; statnews.com &middot; coindesk.com &middot; insurancejournal.com &middot; elpais.com &middot; cbsnews.com &middot; nbcnews.com &middot; abcnews.go.com &middot; latimes.com &middot; theverge.com &middot; semafor.com &middot; warontherocks.com &middot; breakingdefense.com &middot; pbs.org &middot; theregister.com &middot; yle.fi &middot; spiegel.de &middot; foxnews.com &middot; rollcall.com &middot; content.dowjones.io &middot; techmeme.com &middot; thedebrief.org &middot; foxbusiness.com &middot; cnbc.com &middot; businessinsider.com &middot; cnbc.com &middot; defenseone.com &middot; finance.yahoo.com &middot; ft.com &middot; asia.nikkei.com &middot; nypost.com &middot; X news search: general sweep (connector) &middot; dragos.com (primary research) &middot; openrouter.ai (incident post) &middot; novita.ai (notice) &middot; khaleejtimes.com &middot; thenationalnews.com &middot; virginiamercury.com &middot; loudoun.gov &middot; navytimes.com &middot; insideclimatenews.org &middot; crowell.com &middot; morningstar.com (Dow Jones Market Data) &middot; floir.gov &middot; citizensfla.com &middot; jpost.com &middot; meduza.io &middot; rappler.com &middot; congress.gov (CRS and S. 4035, via search).</p>
+  <p><b>Pointed at by a thread (21):</b> gcaptain.com &middot; datacenterdynamics.com &middot; americanbanker.com &middot; gasprices.aaa.com &middot; federalreserve.gov &middot; ofac.treasury.gov &middot; cftc.gov &middot; home.treasury.gov &middot; oilprice.com &middot; scotusblog.com &middot; whitehouse.gov &middot; fdic.gov &middot; nhc.noaa.gov &middot; fox13news.com &middot; floridaphoenix.com &middot; tampabay.com &middot; wusf.org &middot; Treasury Fiscal Data API (Debt to the Penny, 19 Nov) &middot; home.treasury.gov daily par yield curve CSV &middot; whitehouse.gov (Executive Order 14438 text) &middot; X news search: UAP sweep (connector).</p>
+  <p>Article pages fetched to stand stories up are cited under each story and are not counted again unless they are the only page reached on that outlet. The Federal Register does not publish on weekends, and the public-inspection list is offline on Sundays, so there is no view of Monday&rsquo;s documents.</p>
+
+  <h4>The negative check</h4>
+  <p><i>What is the biggest story today that is not on my list, and why is it not?</i> The Dragos research on prompt theft and privacy failures in the AI inference market. No thread covers AI-market security; the threads cover lab safety, chips and power. It leads. Runners-up that became leads: the Fifth Circuit ruling and the Hegseth memo. Front-page stories excluded: the capture of the Sinaloa cartel leader &ldquo;El Chapo Isidro&rdquo; (crime and enforcement, no new US policy), ICE arrests at Seattle&rsquo;s airport and a Princeton student&rsquo;s detention (individual cases), GTA VI&rsquo;s record launch, the death of Fiona the hippo, the Palisades arson verdict, and COP31, which runs as a short item because the US was absent.</p>
+
+  <h4>Confidence markers and divergence boxes</h4>
+  <p>20 stories, 20 markers (Independent corroboration: 9 &middot; Primary source: 8 &middot; Single-sourced: 3); 10 divergence boxes. Every lead carries a box. Short items without a box had accounts that agreed on the facts and their weight.</p>
+
+  <h4>Accountability to earlier issues</h4>
+  <p><b>Correction, 21 November, oil lead:</b> said Brent &ldquo;ended the week near $91, down about 5%.&rdquo; It settled at $92.57, down 3.41% on the week (Dow Jones Market Data; EnergyNow gives the same settlement). The headline&rsquo;s &ldquo;Brent fell 5% on the week&rdquo; was wrong. The direction and the pump figures were right. The correction runs at the top of today&rsquo;s oil lead. <b>21 November, pump:</b> AAA regular $3.659 Saturday; $3.645 Sunday, still falling as described. <b>21 November, Kalshi:</b> the New York hearing is Monday. The Senate&rsquo;s DEATH BETS Act (short item) adds a federal track. <b>21 November, Citizens flood mandate:</b> unchanged; its CEO is leaving (short item). <b>21 November, Nvidia and markets:</b> no new trading or filings over the weekend, so no follow-up; Bitcoin&rsquo;s weekend low runs as a short item. <b>21 November, UAP:</b> the eighth release was the last; the UAP sweep found no new paperwork.</p>
+
+  <h4>Could not reach</h4>
+  <p>utilitydive.com (403) &middot; politico.com (403) &middot; axios.com (403) &middot; thehill.com (403) &middot; lawfaremedia.org (403) &middot; washingtonpost.com (timeout) &middot; sec.gov (403) &middot; cbo.gov (403) &middot; nrc.gov (403) &middot; ferc.gov (403) &middot; wfla.com (403) &middot; occ.gov (404). CBO&rsquo;s site refused automated access, so the shipbuilding figures come from three accounts of the report, not the report itself. AFP, Politico, UPI, The Hill and Justia article pages returned 403. Their text was read through search extracts and is cited where used. The FT server-price story is paywalled and was read through relays.</p>
+
+  <h4>Seen, not run</h4>
+  <p>Jensen Huang&rsquo;s Senate Banking testimony (agreed earlier in the week; no date) &middot; Musalem and other Fed speakers (this brief runs prints and decisions only) &middot; national debt: Treasury&rsquo;s own figure is $40.71tn on 19 November, so a &ldquo;nears $40 trillion&rdquo; headline seen today is out of date &middot; Toyota/Lexus Takata airbag recall (checked: it does not cover the Highlander) &middot; the Army&rsquo;s halted Iowa detonation (no new fact since the injunction) &middot; Japan&rsquo;s third-quarter contraction &middot; Meta revisiting its 2030 net-zero goal &middot; Hormuz endurance swim &middot; NATO and private military tech (France 24 feature).</p>
+
+  <h4>About this issue</h4>
+  <ul>
+    <li>Grok edition for 22 November, produced by the scheduled morning routine. Layout built from Issue 10 (2026-09-10b.html), not from any previous Grok edition.</li>
+    <li>9 lead stories including Florida, 11 short items. 8 leads are new subjects; 1 is a follow-up.</li>
+    <li>Every quotation is under fifteen words and attributed; everything else is paraphrase.</li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n  → " + i.value + "");
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on Issue No. 79-grok — 22 November 2026 (Grok edition)\n\n" + lines.join("\n")
+      + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-11-22-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
