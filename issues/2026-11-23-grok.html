@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Monday, 23 November 2026 (Grok edition, Issue 80-grok)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  /* short-item tier */
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list summary .chip { vertical-align:.05rem; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 80-grok &middot; Monday, 23 November 2026 &middot; Grok edition</div>
+  <h1>Markets bounce while the Fed hike stays priced in, Nvidia&rsquo;s server makers halt Southeast Asia shipments, and OpenAI proposes an industry-wide limit on how far AI training goes</h1>
+  <p class="sub">10 stories at length, 9 in brief. A Monday of futures, filings and a lab-safety proposal; Wednesday&rsquo;s PCE and GDP prints are the next hard data. Built on the Issue 10 (2026-09-10b) layout. Claude&rsquo;s edition for today is at <a href="2026-11-23.html">2026-11-23</a>.</p>
+  <p class="prov"><b>91 sources checked, 68 of them outside the watchlist</b> (13 front pages refused or failed; listed in the footer). Wires, foreign front pages (Handelsblatt, Le Monde, El Pa&iacute;s, Le Figaro, Spiegel, Nikkei, SCMP, Yle, Straits Times, ABC Australia, CBC, France 24, DW) and trade outlets (DCD, Insurance Journal, FreightWaves, gCaptain, American Banker, The Register) were read before the document sources the threads point at. The last two Grok editions were opened only afterwards, for accountability. <b>6 of 10 leads are new subjects; 4 continue threads</b> (markets, Nvidia, CrowdStrike&ndash;Zscaler, Hormuz-to-pump), which is the cap. <b>Biggest story not on my list:</b> PJM&rsquo;s Fast Energization filing. It was filed a week ago, no thread points at PJM, and it surfaced only on DCD&rsquo;s front page. It leads, as the clearest link from AI capex to power bills. The negative check also turned up the OpenAI essay (Insurance Journal carried the Bloomberg piece) and the Labor Department rule. Together they pushed a stand-alone Fed-speaker item and the Iowa detonation out of the edition.<br><br>
+  <b>Accounts compared per lead:</b> markets-rebound: 4 independent (Reuters, CNBC, Handelsblatt, Semafor) plus Treasury&rsquo;s own yield series &middot; nvidia-sea: 2 independent on shipments (Nikkei Asia, Digitimes); FT and NYT reports read through Handelsblatt and AFP; CNBC on the stock &middot; openai-limits: the essay (primary) plus 3 accounts (Bloomberg, TechCrunch, Silicon Report), and Al Jazeera on Wang &middot; crowdstrike-zscaler: the joint announcement (primary) plus Dow Jones; Reuters and FT headlines &middot; pjm-fast-energization: the filing (primary) plus 3 independent (DCD, Load Factor News, The Duck Curve) &middot; pentagon-iran-deal: 1 newsroom on the talks (CNN); NBC on the House count; no second account of the talks found &middot; dol-contractor-rule: 1 wire account (Reuters); the department&rsquo;s page refused automated access &middot; sec-cat: 1 account (Bloomberg); sec.gov refused automated access &middot; hormuz-oil-pump: 4 independent (AP, Reuters, Fox News, gCaptain) plus AAA&rsquo;s series &middot; fl-leapfrog: 1 newsroom (WUSF), quoting the AG&rsquo;s release and the March federal ruling.<br><br>
+  <b>Disclosure.</b> Before selection, a <code>git show --stat</code> on the repo&rsquo;s newest commit (to check which files Claude&rsquo;s run had changed in <code>config.md</code>) printed that commit&rsquo;s message. That message summarises Claude&rsquo;s eight leads for today, so I saw their subjects before choosing mine. I did not open Claude&rsquo;s edition or its config notes for today. Selection was made on this run&rsquo;s own sweep and bar. Three of Claude&rsquo;s subjects appear here only as short items (COP31, the Benghazi strike, Delta&rsquo;s outage), each on its own sourcing; the rest do not appear. The live <code>config.md</code> heading list also showed a &ldquo;23 November 2026 &mdash; operational notes&rdquo; section, which I did not read. Claude&rsquo;s edition was opened only after this draft was finished.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#markets-rebound">Futures jump about 3% after the worst week since 2020, but traders now price a December Fed hike as near-certain, and Bessent is warning the Fed off it</a></li>
+    <li><a href="#nvidia-sea">Nvidia&rsquo;s server makers halt shipments to Southeast Asia under the new US rules, as reporting ties the woman in the Huang affair to China&rsquo;s spy agency and a chip-smuggling network</a></li>
+    <li><a href="#openai-limits">OpenAI&rsquo;s chief scientist proposes that AI labs agree to stop training past a shared limit until safety monitoring catches up, and Altman backs it; no limit or date is named</a></li>
+    <li><a href="#crowdstrike-zscaler">CrowdStrike agrees to buy Zscaler for $43.9bn in stock, the largest cybersecurity deal yet, after weeks of outages and breaches</a></li>
+    <li><a href="#pjm-fast-energization">PJM asks regulators to cut grid hookups for data centres and power plants from two years to one, with data centres billed for the upgrades; the first fast cycle would end in 2029</a></li>
+    <li><a href="#pentagon-iran-deal">Senate leaders discuss a deal to refill the Pentagon&rsquo;s war chest only if future offensive operations against Iran are cut off; without it, the money may wait for a Democratic Congress</a></li>
+    <li><a href="#dol-contractor-rule">The Labor Department finalises a rule that makes it easier to classify workers as independent contractors, replacing the 2024 test, effective in January</a></li>
+    <li><a href="#sec-cat">The SEC proposes taking direct control of the Consolidated Audit Trail, the trade database Wall Street sued over, and says Congress should pay for it</a></li>
+    <li><a href="#hormuz-oil-pump">Iran vows &ldquo;all available means&rdquo; against the US blockade and may send a tanker convoy, but Brent slips under $92 and the US pump average falls to $3.64 before Thanksgiving</a></li>
+    <li><a href="#fl-leapfrog">Florida &amp; Tampa Bay: the attorney general sues Leapfrog, the hospital-grading group, saying its safety grades misled patients; a federal judge has already found its method unfair</a></li>
+    <li><a href="#also-today">Also today (9)</a> &mdash; ranked below the line, each one opens.</li>
+  </ol>
+</nav>
+
+<article id="markets-rebound">
+  <h2>Futures jump about 3% after the worst week since 2020, but traders now price a December Fed hike as near-certain, and Bessent is warning the Fed off it</h2>
+  <div class="meta">
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>US stock futures rose sharply before Monday&rsquo;s open. At 5:17am ET, S&amp;P 500 futures were up 2.7%, Dow futures 1.9% and Nasdaq-100 futures 3.5%, Reuters reported. Chips led. Nvidia was up about 8.7% before the bell and Anthropic about 4.5% in its third day of trading. Friday left the S&amp;P 500 and the Dow more than 10% below their records, which is a correction. The Nasdaq-100 was 19.8% off its 6 October high, just short of a bear market.</p>
+  <p>Asia did not get the memo. South Korea&rsquo;s Kospi fell more than 5% intraday and closed down 3.3%, Handelsblatt reported; Tokyo was shut for a holiday after Friday&rsquo;s 5% drop. Taiwan, home to the chipmakers, rose more than 2%.</p>
+  <p>The bigger change is in rates. CME futures now price about a 96% chance that the Fed raises its rate by a quarter point at its December meeting, up from about 92% on Friday (CNBC, Reuters). Treasury&rsquo;s own series had the 10-year at 4.92% on Friday, down from 5.04% on Thursday as money ran to bonds. It was rising again early Monday. On Sunday, Treasury Secretary Scott Bessent warned that the Fed risks hurting the economy by tightening too far, Semafor reported.</p>
+  <p>Why it matters: this reader&rsquo;s borrowing costs are set by the Fed and the bond market, not by Monday&rsquo;s bounce. The Treasury Secretary is now publicly at odds with a central bank that is expected to hike into a falling market.</p>
+  <p><b>What to watch:</b> New York Fed President John Williams speaks today. On Wednesday come October core PCE (forecast +0.3%) and revised third-quarter GDP (forecast 3.4%). Those are the last big prints before the decision.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is the market betting on a half-point or a quarter-point?</span>
+    <p><b>What is disputed.</b> A <b>facts</b> question that turns out to be a <b>timing</b> one. Semafor wrote on Sunday that traders &ldquo;pared back&rdquo; bets on a half-point hike on 9 December. CNBC and Reuters on Monday say the odds of a quarter-point hike went <i>up</i>, to 96%. Read quickly, those look like opposite calls on the Fed.</p>
+    <p><b>Why they differ.</b> They measure different things. Semafor was describing the tail: the chance of a bigger, 50-point move faded as stocks fell. CNBC and Reuters quote CME FedWatch&rsquo;s headline probability for the most likely outcome, a 25-point move. Both can be true at once, and they are. Semafor was writing from Sunday&rsquo;s Bessent remarks; the wires were writing from Monday&rsquo;s futures screen.</p>
+    <p><b>What it means for you.</b> Believe both. The market has stopped betting on a bigger hike, but it still expects a hike. Bessent&rsquo;s warning has not moved that pricing yet. What would settle it: if Williams sounds dovish today or core PCE comes in soft on Wednesday, the 96% should fall. If it does not fall, the Fed is about to tighten against the Treasury&rsquo;s stated wishes.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.streetinsider.com/Reuters/Wall+Street+futures+rebound+as+battered+AI+stocks+gain+ground/27383308.html">Reuters (via StreetInsider), futures</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/23/treasury-yields-bonds-fed.html">CNBC, Treasury yields</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/23/anthropic-nvidia-shares.html">CNBC, Anthropic and Nvidia premarket</a> &middot;
+    <a href="https://www.handelsblatt.com/finanzen/maerkte/kospi-taiex-hang-seng-ausverkauf-von-ki-aktien-setzt-sich-in-asien-fort/100271898.html">Handelsblatt, Asia (German)</a> &middot;
+    <a href="https://www.semafor.com/article/11/22/2026/bessent-warns-on-fed-hike-as-ai-bubble-fears-mount">Semafor, Bessent</a> &middot;
+    <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value=2026">Treasury daily par yield curve</a>
+  </p>
+  <div class="fb">
+    <p>Rates and the stock selloff in one story: right call?</p>
+    <label><input type="radio" name="fb-markets" value="one"> Yes, keep them together</label>
+    <label><input type="radio" name="fb-markets" value="split"> Split rates from stocks</label>
+    <label><input type="radio" name="fb-markets" value="less"> Less market detail</label>
+  </div>
+</article>
+
+<article id="nvidia-sea">
+  <h2>Nvidia&rsquo;s server makers halt shipments to Southeast Asia under the new US rules, as reporting ties the woman in the Huang affair to China&rsquo;s spy agency and a chip-smuggling network</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>At least two of Nvidia&rsquo;s server partners have stopped shipping to customers in Southeast Asia, Nikkei Asia reported on Monday. The trade outlet Digitimes separately reported the same thing, and said Nvidia&rsquo;s stricter checks on who ends up with its chips are making shipments to the region harder. The pause follows the new US export rules. Southeast Asia has been one of the fastest-growing places to build AI data centres, much of it serving Chinese demand.</p>
+  <p>The scandal behind the rules moved too. The New York Times reported that Alice Huang stayed in contact with China&rsquo;s main spy agency during her affair with Jensen Huang, who quit as Nvidia&rsquo;s chief executive. The FT reported on Sunday that US investigators are looking at whether she was linked to a network that moved billions of dollars of Nvidia chips to China around export controls. She was an executive at the cloud provider Megaspeed. Beijing calls the spy claim slander. Jensen Huang is to be questioned by three House committees.</p>
+  <p>Why it matters: Southeast Asia is where much of the chip demand that the export rules block was going. If server makers stop shipping there, it cuts into Nvidia sales just as the stock has lost more than 40% in a month. It also shows the rules are being enforced through the supply chain, not only at the border.</p>
+  <p><b>What to watch:</b> whether Commerce issues guidance or licences for Malaysian, Thai and Singaporean buyers; the dates for Huang&rsquo;s House testimony; and whether Nvidia&rsquo;s board answers Trump&rsquo;s call to rehire him.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; what did Jensen Huang know?</span>
+    <p><b>What is disputed.</b> A <b>facts</b> dispute that is still open. Trump has publicly defended Huang, saying he knew nothing of any spying, and he wants the board to rehire him. The FT, citing more than a dozen people plus company records and trade data, says it is unknown what Huang knew. The NYT reports that her contacts with the spy agency continued into recent months.</p>
+    <p><b>Why they differ.</b> Trump wants a US champion back in charge, and a falling Nvidia stock hurts his market. The newspapers&rsquo; sources are investigators and people near the case. They can see the contacts, but not necessarily what Huang was told. Nobody on the record has said Huang was briefed or took part. Huang left after admitting the affair, which is a much lower bar than complicity.</p>
+    <p><b>What it means for you.</b> There is no public evidence that Huang knew. There is solid reporting that the person close to him was in contact with Chinese intelligence. Treat &ldquo;he knew nothing&rdquo; as a claim, not a finding. What would settle it: his House testimony under oath, or charging documents in the Megaspeed inquiry.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://asia.nikkei.com/business/technology/artificial-intelligence/nvidia-server-suppliers-halt-southeast-asia-shipments-over-us-curbs">Nikkei Asia</a> &middot;
+    <a href="https://www.digitimes.com/news/a20261123VL212.html">Digitimes</a> &middot;
+    <a href="https://www.handelsblatt.com/technik/ki/nvidia-skandal-hatte-alice-huang-kontakte-zu-chipschmugglern/100271827.html">Handelsblatt on the FT report (German)</a> &middot;
+    <a href="https://www.france24.com/en/live-news/20261123-alice-huang-had-contact-with-china-spy-agency-during-nvidia-boss-affair-nyt">France 24/AFP on the NYT report</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/23/anthropic-nvidia-shares.html">CNBC, Nvidia premarket</a>
+  </p>
+  <div class="fb">
+    <p>Should the export-rule fallout be tracked separately from the Huang scandal?</p>
+    <label><input type="radio" name="fb-nvidia" value="sep"> Yes, separate threads</label>
+    <label><input type="radio" name="fb-nvidia" value="one"> No, one thread</label>
+    <label><input type="radio" name="fb-nvidia" value="less"> Less on the scandal</label>
+  </div>
+</article>
+
+<article id="openai-limits">
+  <h2>OpenAI&rsquo;s chief scientist proposes that AI labs agree to stop training past a shared limit until safety monitoring catches up, and Altman backs it; no limit or date is named</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>On Sunday, OpenAI&rsquo;s chief scientist, Jakub Pachocki, published an essay proposing that frontier AI developers agree on &ldquo;common limits&rdquo; to how far they push model training. Labs would commit not to go past a limit until the ability to understand and monitor AI behaviour reaches a set milestone. His example milestone is a successor to chain-of-thought monitors. The limit would be measured mainly by perplexity, a standard score of how well a model predicts text, where lower is stronger. Sam Altman called the essay &ldquo;the most important thing OpenAI has published in awhile.&rdquo;</p>
+  <p>OpenAI also published, for the first time, its internal perplexity scores by model, from GPT-3.5 (about 0.99) to GPT-6 Astra in September (0.783). Pachocki writes that AI-driven research could cause a sudden jump in training methods as soon as 2027. He also says progress on monitoring will probably be too slow to keep up.</p>
+  <p>On the same day, Meta&rsquo;s chief AI officer, Alexandr Wang, said superintelligence is close and that humans are unlikely to control AI that can improve itself without limits. He was reacting to the Anthropic Riemann-hypothesis result.</p>
+  <p>Why it matters: two of the biggest US labs are publicly saying the main danger is the speed of progress, just as a Democratic Congress arrives that is ready to regulate. A voluntary limit set by the industry itself is now on the table. Senator Booker has already called for Congress to rein in AI that improves itself.</p>
+  <p><b>What to watch:</b> whether Anthropic, Google DeepMind and Meta sign on to any number; whether anyone proposes who would check compliance; and how this comes up at the first AI hearings of the new Congress.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; did OpenAI name a stopping point?</span>
+    <p><b>What is disputed.</b> A <b>facts</b> dispute, settled by the document. One trade write-up (Silicon Report) says Pachocki suggested stopping before a log-perplexity of about 0.68&ndash;0.70. Bloomberg and TechCrunch say he named no limit and no date.</p>
+    <p><b>Why they differ.</b> The essay does mention 0.68&ndash;0.70, but as a forecast: Pachocki says further &ldquo;transformative capabilities&rdquo; should be expected as models get there. Separately, he proposes that labs agree on a first limit. He never says the limit should be that range. The shaded band on OpenAI&rsquo;s chart probably made the two look like one thing to a fast reader. Bloomberg quoted the actual text.</p>
+    <p><b>What it means for you.</b> There is no committed number. Read 0.68&ndash;0.70 as OpenAI&rsquo;s forecast of the next capability jump, about 0.1 below its September model. It is not a pledge. What would settle it: a joint statement from several labs that puts a figure on the limit and names who checks it.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; what the published numbers show</summary>
+    <div class="exp">
+      <p>OpenAI&rsquo;s chart puts its released models on one line: GPT-4 at 0.913 (March 2023), GPT-5 at 0.893 (August 2025), GPT-5.5 at 0.848 (April 2026), GPT-5.6 at 0.828 (July 2026) and GPT-6 Astra at 0.783 (September 2026). The score fell more in the last ten months than in the three years before. That is the speed-up the essay is about.</p>
+      <p>Pachocki admits the disclosure has a cost: competitors can now see where OpenAI stands. He argues the need for shared safety measures outweighs it. The score is measured on an internal OpenAI dataset, so other labs&rsquo; numbers cannot be compared directly yet. A shared limit would first need a shared test set, and the essay does not propose one.</p>
+      <p>For this brief&rsquo;s lab-safety thread, the new fact is that a lab has proposed a pause mechanism. The essay is not an industry agreement, and nothing in it binds OpenAI.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://openai.com/index/perplexity-and-intelligence/">OpenAI, &ldquo;Perplexity and Intelligence&rdquo; (primary)</a> &middot;
+    <a href="https://www.insurancejournal.com/news/national/2026/11/23/893408.htm">Bloomberg via Insurance Journal</a> &middot;
+    <a href="https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/">TechCrunch</a> &middot;
+    <a href="https://www.aljazeera.com/economy/2026/11/23/ai-superintelligence-arriving-warns-top-meta-executive">Al Jazeera, Wang</a> &middot;
+    <a href="https://www.siliconreport.com/openai-chief-scientist-proposes-perplexity-as-shared-safety-metric">Silicon Report</a>
+  </p>
+  <div class="fb">
+    <p>Lab-safety proposals like this at lead length?</p>
+    <label><input type="radio" name="fb-oai" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-oai" value="short"> Shorter</label>
+    <label><input type="radio" name="fb-oai" value="wait"> Only once labs agree to something</label>
+  </div>
+</article>
+
+<article id="crowdstrike-zscaler">
+  <h2>CrowdStrike agrees to buy Zscaler for $43.9bn in stock, the largest cybersecurity deal yet, after weeks of outages and breaches</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>CrowdStrike and Zscaler announced on Monday that CrowdStrike will buy Zscaler in an all-stock deal valuing it at about $43.9bn. Zscaler holders get 1.135 CrowdStrike shares for each share. At Friday&rsquo;s price that is $260.41, a premium of almost 34% over Zscaler&rsquo;s $194.82 close, Dow Jones reported. CrowdStrike holders will own about 84% of the combined company. The deal is expected to close in the second half of CrowdStrike&rsquo;s 2028 fiscal year, which starts on 1 February 2027. Before the open, Zscaler was up about 12% and CrowdStrike down 7%.</p>
+  <p>CrowdStrike sells endpoint security, the software on laptops and servers. Zscaler sells network security in the cloud, which replaces firewalls and VPNs. The companies say the combined business will have more than $10bn of annual recurring revenue. CrowdStrike gets a route to Zscaler&rsquo;s roughly 8,000 customers. The talks were reported on Friday and ran as a short item here; Monday&rsquo;s announcement makes it a lead.</p>
+  <p>Why it matters: banks, agencies and hospitals would buy more of their security from one vendor. That is simpler to run, but it means more depends on that vendor. CrowdStrike&rsquo;s faulty update in July 2024 took down millions of Windows machines, and this month&rsquo;s US outages have made concentration a live issue.</p>
+  <p><b>What to watch:</b> antitrust review (FTC or DOJ, plus the EU); whether the outage findings due from the administration bear on vendor concentration; and the price CrowdStrike pays in its own falling stock.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.zscaler.com/press/crowdstrike-acquire-zscaler-bringing-network-security-and-zero-trust-falcon-platform">Joint announcement (Zscaler press page, primary)</a> &middot;
+    <a href="https://www.morningstar.com/news/dow-jones/202611232973/crowdstrike-to-buy-zscaler-in-439-billion-stock-swap-update">Dow Jones via Morningstar</a> &middot;
+    <a href="https://www.reuters.com/legal/transactional/crowdstrike-buy-zscaler-439-billion-2026-11-23/">Reuters</a> &middot;
+    <a href="https://www.ft.com/content/762bd05d-8e20-4abf-9bc5-4e6f9bf628cb">FT</a>
+  </p>
+  <div class="fb">
+    <p>Was moving this from a short item to a lead the right call?</p>
+    <label><input type="radio" name="fb-crwd" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-crwd" value="short"> Should have stayed short</label>
+  </div>
+</article>
+
+<article id="pjm-fast-energization">
+  <h2>PJM asks regulators to cut grid hookups for data centres and power plants from two years to one, with data centres billed for the upgrades; the first fast cycle would end in 2029</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>PJM runs the largest US grid, covering 13 states from Illinois to Virginia. On 16 November it filed a plan with the Federal Energy Regulatory Commission (FERC), docket ER27-531, which it calls the &ldquo;Fast Energization Process.&rdquo; New power plants and large electricity users would be studied together in one 12-month process. Today generation is studied separately in three rounds, and the full process takes about two years. A &ldquo;large load&rdquo; is defined as 50 megawatts or more at one site, which covers big data centres. They would have to stay connected through routine grid disturbances. In July, about 3.9 gigawatts of data-centre load dropped off at once.</p>
+  <p>Cost is the other half. PJM would publish the upgrade costs caused by each large load. In a companion filing (ER27-520), the transmission owners propose that large loads sign cost-recovery agreements of at least ten years and pay a minimum of 80&ndash;100% of a firm-service benchmark, with upgrade charges assigned to the zones where the data centres are, over 15 years.</p>
+  <p>Why it matters: this is where AI spending turns into household power bills. The plan aims to make data centres, not every ratepayer, pay for the wires they need, and to bring new power plants online sooner.</p>
+  <p><b>What to watch:</b> PJM has asked for an extended 60-day comment period. Watch state regulators&rsquo; responses, data-centre developers&rsquo; objections to the minimum charges, and FERC&rsquo;s ruling.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how fast is &ldquo;fast&rdquo;?</span>
+    <p><b>What is disputed.</b> A <b>significance</b> dispute. PJM&rsquo;s own summary and DCD lead with the cut from two years to one. Load Factor News, reading the same filing, leads with the start date. The new process cannot begin until the current Cycle 01 clears its second decision point, which PJM expects in late November 2027. Applications close in August 2028, so the first fast cycle ends in 2029.</p>
+    <p><b>Why they differ.</b> Both are accurate. PJM is describing how long the process takes once it runs; the specialist outlet is describing when anyone first benefits. PJM wants the headline about speed to reach states that are angry about prices. A trade reader who builds projects cares about the date they can plug in.</p>
+    <p><b>What it means for you.</b> For bills over the next two years, this filing changes little. The cost-allocation half, in which data centres pay by zone, could matter sooner if FERC accepts the transmission owners&rsquo; filing on its own schedule. What would settle it: FERC&rsquo;s order, and whether it lets the cost rules start before the new study process does.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.pjm.com/-/media/DotCom/documents/ferc/filings/2026/20261116-er27-531-000.pdf">PJM filing, ER27-531 (primary)</a> &middot;
+    <a href="https://insidelines.pjm.com/pjm-proposal-would-cut-interconnection-process-time-in-half/">PJM Inside Lines</a> &middot;
+    <a href="https://www.datacenterdynamics.com/en/news/pjm-plan-could-cut-data-center-and-power-plant-grid-connection-times-to-12-months/">DatacenterDynamics</a> &middot;
+    <a href="https://loadfactornews.com/readings/2026/11/18/pjm-er27-531-fast-energization-large-load-cost-recovery-agreement/">Load Factor News</a> &middot;
+    <a href="https://theduckcurve.com/posts/pjm-fast-energization-ferc-filing">The Duck Curve</a>
+  </p>
+  <div class="fb">
+    <p>Grid filings like this: worth a lead?</p>
+    <label><input type="radio" name="fb-pjm" value="yes"> Yes, this is the power story I want</label>
+    <label><input type="radio" name="fb-pjm" value="short"> Shorter</label>
+    <label><input type="radio" name="fb-pjm" value="follow"> Follow this docket</label>
+  </div>
+</article>
+
+<article id="pentagon-iran-deal">
+  <h2>Senate leaders discuss a deal to refill the Pentagon&rsquo;s war chest only if future offensive operations against Iran are cut off; without it, the money may wait for a Democratic Congress</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>Senior Senate Democrats and Republicans are in early talks on a trade, CNN reported on Monday, citing lawmakers and aides in both parties. Congress would provide the tens of billions of dollars the Pentagon says it urgently needs to replace what the Iran war has used. In return, money for future offensive operations against Iran would be cut off. What the limits would say, and whether Ukraine aid joins the package, is open.</p>
+  <p>Time matters. Republicans hold both chambers only until January. Democrats won at least 258 House seats, NBC News projects after Sunday&rsquo;s North Carolina recount. That is the largest majority either party has held this century. Every House Democrat voted earlier this month to impeach Defense Secretary Pete Hegseth. If there is no deal before January, the Pentagon has to ask that House. Armed Services Chairman Roger Wicker told CNN he thinks Democrats can make their point &ldquo;without tying the hands&rdquo; of the president. The Senate rejected an Iran war-powers resolution 48&ndash;51 last week.</p>
+  <p>Why it matters: Congress controls the money, which is the one sure check on the war. A funding limit binds the president in a way a war-powers vote he can veto does not.</p>
+  <p><b>What to watch:</b> a text with a dollar figure; whether the White House threatens a veto; and whether the deal becomes the vehicle for year-end spending. The label is Single-sourced: one newsroom has the talks, and no second account was found.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnn.com/2026/11/23/politics/republicans-deal-iran-war">CNN</a> &middot;
+    <a href="https://www.nbcnews.com/politics/congress/house-democrats-win-largest-house-majority-hubbard-north-carolina-rcna610708">NBC News, House majority</a> &middot;
+    <a href="https://rollcall.com/">Roll Call, war-powers vote</a>
+  </p>
+  <div class="fb">
+    <p>Single-sourced Hill talks like this: run them or wait?</p>
+    <label><input type="radio" name="fb-iranfund" value="run"> Run with the label</label>
+    <label><input type="radio" name="fb-iranfund" value="wait"> Wait for a second source</label>
+  </div>
+</article>
+
+<article id="dol-contractor-rule">
+  <h2>The Labor Department finalises a rule that makes it easier to classify workers as independent contractors, replacing the 2024 test, effective in January</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>On Thursday, the Labor Department released a final rule replacing the Biden-era test for deciding whether a worker is an employee or an independent contractor under federal wage law, Reuters reported. Under the 2024 rule, any one of several factors could tip a worker into employee status. The new test, favoured by business groups, puts the weight on core factors, starting with whether the company controls the work. It takes effect 60 days after formal publication, in January.</p>
+  <p>Labor Secretary Keith Sonderling said rules must keep up with how Americans now choose to work. The department called the 2024 rule legally flawed.</p>
+  <p>Why it matters: employees get the minimum wage and overtime; contractors do not. Trucking, home health care, retail sales, and app-based ride and delivery companies all rely on contractors. These firms face constant lawsuits over misclassification, and a looser federal test makes those suits harder to win. State laws with stricter tests, such as California&rsquo;s, are untouched.</p>
+  <p><b>What to watch:</b> lawsuits from labor groups once the rule is published; whether the new Democratic Congress tries to overturn it under the Congressional Review Act, which needs the president&rsquo;s signature; and how many workers the department estimates will be reclassified. The label is Single-sourced: one wire account, because the department&rsquo;s press page refused automated access.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.insurancejournal.com/news/national/2026/11/20/893207.htm">Reuters via Insurance Journal</a>
+  </p>
+  <div class="fb">
+    <p>Labor-rule stories at this length?</p>
+    <label><input type="radio" name="fb-dol" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-dol" value="short"> Short item is enough</label>
+  </div>
+</article>
+
+<article id="sec-cat">
+  <h2>The SEC proposes taking direct control of the Consolidated Audit Trail, the trade database Wall Street sued over, and says Congress should pay for it</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>On Friday the SEC proposed changing how the Consolidated Audit Trail is run and paid for, Bloomberg reported. The CAT is the huge database that brokers and exchanges must report every US stock and options trade to. Under the plan, firms would report directly to the SEC or to an entity it names. Today an exchange-run operator holds the data. Chairman Paul Atkins said the aim is to put the CAT on a &ldquo;sustainable footing.&rdquo; Funding would have to be appropriated by Congress.</p>
+  <p>The background is cost and litigation. The CAT was built after the 2010 flash crash to help regulators trace trading abuse. Atkins put projected costs at about $250m a year before changes he says have cut operating costs by more than $100m. Under the Biden-era SEC, brokers were made to pay much of the bill. Citadel Securities and an industry group sued, and a 2025 court ruling struck down the funding model.</p>
+  <p>Why it matters: the SEC would be the direct keeper of a record of nearly all US trading. That raises privacy and security questions after this month&rsquo;s breach of the FBI&rsquo;s crime database. It also asks a new Democratic Congress to pay for a database the Republican SEC chair is reshaping.</p>
+  <p><b>What to watch:</b> the comment period; how much of the cost brokers still carry while Congress decides; and whether appropriators take it up.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.insurancejournal.com/news/national/2026/11/23/893402.htm">Bloomberg via Insurance Journal</a>
+  </p>
+  <div class="fb">
+    <p>More market-plumbing stories like this?</p>
+    <label><input type="radio" name="fb-cat" value="more"> More</label>
+    <label><input type="radio" name="fb-cat" value="same"> Same</label>
+    <label><input type="radio" name="fb-cat" value="less"> Less</label>
+  </div>
+</article>
+
+<article id="hormuz-oil-pump">
+  <h2>Iran vows &ldquo;all available means&rdquo; against the US blockade and may send a tanker convoy, but Brent slips under $92 and the US pump average falls to $3.64 before Thanksgiving</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>This is one causal chain, from the strait to the pump. On Monday Iran&rsquo;s foreign ministry spokesman, Esmaeil Baqaei, said Iran will use all means at its disposal against the US naval blockade of its ports, AP reported via CBS. He called the sanctions and blockade military aggression that gives Iran a right of self-defence under Article 51 of the UN Charter. Iran says Hormuz could be open within two days if Washington meets its demands, including lifting the blockade. Fox News reported that Iran is preparing a convoy of more than a dozen tankers to run the blockade from Kharg Island. Trump said that if they try, they will end up &ldquo;at the bottom of the sea.&rdquo;</p>
+  <p>Over the weekend, UKMTO reported several attacks on shipping in the Gulf and near the strait. The Houthis said they hit a Saudi refinery, Reuters reported. Prices still fell. Brent was down 60 cents to $91.97 by 3:44am ET, and WTI was at $82.92. Brent has fallen three weeks running.</p>
+  <p>The pump: AAA&rsquo;s national average for regular is $3.637 on Monday, down from $3.645 on Sunday and $3.72 a week ago. AAA says Thanksgiving Day could still come in under the $3.58 record from 2022, if the decline continues.</p>
+  <p>Why it matters: the reader&rsquo;s fuel bill is falling even as the war at sea gets worse. That holds only while tankers keep getting through. A real convoy confrontation is the one event that could reverse it within days.</p>
+  <p><b>What to watch:</b> whether any tanker leaves Kharg; US Navy statements; and Wednesday&rsquo;s EIA weekly data.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is the strait getting more dangerous or less?</span>
+    <p><b>What is disputed.</b> A <b>significance</b> dispute. The security reporting (UKMTO counts, Iran&rsquo;s threats, the convoy) says risk is rising. The oil market says supply is fine. A PVM analyst told Reuters the pressure on prices is coming from the supply side, and Brent has fallen three weeks running.</p>
+    <p><b>Why they differ.</b> Both are looking at real things. Ship attacks raise insurance costs and delay single voyages, but oil is still arriving, through rerouted cargoes and record US exports. Traders price barrels delivered, not incidents. The convoy report rests on unnamed sources reported by Fox, and a UANI adviser it quoted called the plan &ldquo;farcical.&rdquo;</p>
+    <p><b>What it means for you.</b> Trust the price for now. Barrels are getting through, and your pump price should keep easing into Thursday. Treat the convoy as a tail risk, not a forecast. What would settle it: tankers actually leaving Kharg, or a US interception. Either would show up in Brent within hours.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cbsnews.com/live-updates/iran-war-us-trump-blockade-strait-of-hormuz-ship-attacks/">AP via CBS News live updates</a> &middot;
+    <a href="https://finance.yahoo.com/news/oil-prices-fall-amid-equity-022442236.html">Reuters via Yahoo Finance, oil</a> &middot;
+    <a href="https://www.foxnews.com/world/trump-dares-iran-breach-us-port-blockade-tehran-reportedly-readies-14-oil-tankers">Fox News, convoy</a> &middot;
+    <a href="https://gasprices.aaa.com/">AAA national average</a> &middot;
+    <a href="https://gasprices.aaa.com/gas-prices-keep-dropping-as-thanksgiving-approaches/">AAA weekly release, 19 Nov</a> &middot;
+    <a href="https://gcaptain.com/">gCaptain</a>
+  </p>
+  <div class="fb">
+    <p>Is the strait-to-pump chain still the right frame?</p>
+    <label><input type="radio" name="fb-oil" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-oil" value="pump"> Just the pump number</label>
+    <label><input type="radio" name="fb-oil" value="more"> More on the naval side</label>
+  </div>
+</article>
+
+<article id="fl-leapfrog">
+  <h2>Florida &amp; Tampa Bay: the attorney general sues Leapfrog, the hospital-grading group, saying its safety grades misled patients; a federal judge has already found its method unfair</h2>
+  <div class="meta">
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>Florida Attorney General James Uthmeier sued The Leapfrog Group and its chief executive, Leah Binder, on Friday in Seminole County, WUSF reported. Leapfrog is a nonprofit whose letter grades for hospital safety are widely quoted in hospital marketing and local news. The suit says Leapfrog called its grades expert-backed and peer-reviewed when they were not. It says hospitals that refused Leapfrog&rsquo;s voluntary survey were given the worst scores without data. It also says the group used the ratings to raise donations without proper registration in Florida. Uthmeier says patients turned down surgery because of the grades.</p>
+  <p>Uthmeier is not starting from scratch. In March, after a five-day trial, US District Judge Donald Middlebrooks ruled for five Tenet hospitals in Palm Beach County. He found that Leapfrog penalised hospitals that skipped the survey by giving them the lowest scores on some measures, and that this was deceptive and unfair under Florida&rsquo;s consumer law. Two days before the suit, 43 Florida hospitals had been given straight-A grades by Leapfrog.</p>
+  <p>Why it matters locally: Pasco and Pinellas families use these grades to choose hospitals, often for planned surgery. If the state wins, the grades could be limited or carry warnings in Florida. Hospitals that skip the survey are the most likely to see their grades change.</p>
+  <p><b>What to watch:</b> Leapfrog&rsquo;s response, which was not in the account read; whether Bayfront, AdventHealth or BayCare hospitals are named; and any injunction request. The label is Single-sourced: one newsroom, quoting the AG&rsquo;s release and the March ruling.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.wusf.org/health-news-florida/2026-11-23/uthmeier-sues-leapfrog-misleading-hospital-safety-grades-influenced-patient-decisions">WUSF / Health News Florida</a> &middot;
+    <a href="https://www.wusf.org/health-news-florida/2026-11-20/43-florida-hospitals-leapfrog-straight-a-recognition-patient-safety-fall-2026">WUSF, fall 2026 grades</a>
+  </p>
+  <div class="fb">
+    <p>Is this the right kind of Florida lead?</p>
+    <label><input type="radio" name="fb-fl" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-fl" value="no"> No, too narrow</label>
+    <label><input type="radio" name="fb-fl" value="more"> More health-care stories from Florida</label>
+  </div>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">9 things I saw and ranked below the line. Each one opens &mdash; the line is my judgement, what is behind it is the substance.</p>
+
+<div class="also-list">
+
+<details class="short" id="cop31-collapse">
+  <summary><span class="chip">Geopolitics</span> The COP31 climate talks in Antalya ended without an agreed text, the first such collapse since 2009. The US channel is thin, so it sits below the line.</summary>
+  <div class="exp">
+    <p>The talks failed on Sunday after countries could not agree whether the final text should include a statement on phasing out fossil fuels, Reuters reported. BBC called them the longest-ever UN climate talks, and DW and Le Monde both reported that money for poorer countries to adapt was the other dividing line. Pacific island states said they had been let down on all sides, France 24 reported.</p>
+    <p>For a US reader the direct effects are small. The US did not take part in the talks, as this brief noted on Sunday. The failure makes no change to US rules or oil supply, and Brent fell on Monday anyway. The indirect effect is that the EU loses a global reason to justify its own carbon border charge on imports, which US exporters pay. That fight continues in Brussels, not at COP.</p>
+    <p class="btl"><b>Below the line because</b> nothing changes for US policy, prices or companies this week; it matters only through EU trade measures already covered elsewhere.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://feeds.bbci.co.uk/news/world/rss.xml">BBC</a> &middot; <a href="https://finance.yahoo.com/news/oil-prices-fall-amid-equity-022442236.html">Reuters via Yahoo</a> &middot; <a href="https://www.dw.com/en/">DW</a> &middot; <a href="https://www.france24.com/en/rss">France 24</a></p>
+  </div>
+</details>
+
+<details class="short" id="merkury-benghazi">
+  <summary><span class="chip">Geopolitics</span> Ukraine says its sea drones sank the Russian corvette Merkury at Benghazi in eastern Libya; satellite images show it underwater. That puts the war&rsquo;s naval front in the Mediterranean, where the US Sixth Fleet operates.</summary>
+  <div class="exp">
+    <p>Zelensky said on Monday that seven sea drones, launched from a &ldquo;mothership&rdquo;, hit the 344-foot Merkury, destroying a helicopter on board, and also disabled the cargo ship MV Angara, which he said was carrying weapons for Russia, CNN reported. Images from the satellite firm Vantor show the corvette sunk at the dock. Russia said only that it had &ldquo;taken note.&rdquo; Benghazi is held by Khalifa Haftar&rsquo;s forces, and Russia uses it as a Mediterranean foothold.</p>
+    <p>The US channel: a Ukrainian strike in a port controlled by a US-courted Libyan faction, close to Sixth Fleet waters and European energy routes. Separately, a Russia-bound cargo ship burned in the Gulf of Finland after a suspected drone attack, gCaptain and Yle reported.</p>
+  <div class="div">
+      <span class="t">Divergence &mdash; sunk or damaged?</span>
+      <p><b>What is disputed.</b> A <b>facts</b> question. Early reports from gCaptain and Al Jazeera spoke of a suspected drone attack causing an explosion; Zelensky says the ship sank.</p>
+      <p><b>Why they differ.</b> Early reports came before any imagery, and Kyiv has a clear interest in claiming the bigger result.</p>
+      <p><b>What it means for you.</b> Vantor&rsquo;s satellite images show the vessel submerged at the dock, which supports &ldquo;sunk&rdquo;. Whether it can be raised and repaired is unknown.</p>
+    </div>
+    <p class="btl"><b>Below the line because</b> there is no direct US policy decision; per the reader&rsquo;s settled preference, the current level of Ukraine coverage holds.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.cnn.com/2026/11/22/africa/russian-vessel-libya-suspected-drone-attack-intl">CNN</a> &middot; <a href="https://gcaptain.com/">gCaptain</a> &middot; <a href="https://feeds.bbci.co.uk/news/world/rss.xml">BBC</a> &middot; <a href="https://www.ft.com/">FT</a></p>
+  </div>
+</details>
+
+<details class="short" id="delta-weight-balance">
+  <summary><span class="chip">AI &amp; tech industry</span> Delta&rsquo;s system for calculating aircraft weight and balance failed on Sunday, delaying well over half its flights; the FAA says its own systems were not involved.</summary>
+  <div class="exp">
+    <p>The system checks that each aircraft is not too heavy to fly safely. When it failed, crews used manual workarounds, the Los Angeles Times reported. By Sunday afternoon about 1,000 Delta flights were delayed; ABC counted more than 1,600 over the day. The FAA ordered an hour-long ground stop for some flights into Atlanta and said the delays were not related to air traffic systems. Delta says the system was restored hours later.</p>
+    <p>It is another failure in a month of US tech outages. Ars Technica reports the administration will soon announce the root cause of the FAA&rsquo;s nationwide ground stop earlier in the month.</p>
+    <p class="btl"><b>Below the line because</b> there is no sign of an attack or a common cause; it is a disruption until the federal outage findings say otherwise.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.latimes.com/world-nation/story/2026-11-22/automation-system-issue-causes-delta-flight-delays">Los Angeles Times</a> &middot; <a href="https://www.nbcnews.com/">NBC News</a> &middot; <a href="https://abcnews.go.com/">ABC News</a> &middot; <a href="https://arstechnica.com/feed/">Ars Technica</a></p>
+  </div>
+</details>
+
+<details class="short" id="seatac-ice">
+  <summary><span class="chip">US politics &amp; policy</span> Masked ICE agents arrested a father and daughter on a SeaTac jet bridge as they boarded an Alaska Airlines flight. Washington&rsquo;s governor is asking airlines to tell ICE to keep out of airports.</summary>
+  <div class="exp">
+    <p>The video, filmed by other passengers on Saturday, spread widely. Protesters marched through the airport on Sunday, the Guardian reported. Their lawyer says Ricardo Larrondo Mendoza and his daughter are asylum seekers and were flying to a family baptism in California (NBC, El Pa&iacute;s). Governor Bob Ferguson said he would ask every airline at SeaTac to call on ICE to leave. Seattle&rsquo;s mayor called the tactics un-American. DHS and Democratic officials argued publicly, Fox News reported.</p>
+    <p>The governor&rsquo;s request has no legal force over federal agents; it is pressure on the airlines, not a rule.</p>
+    <p class="btl"><b>Below the line because</b> it is one enforcement case with no policy change behind it so far; it would rise if DHS sets a new airport policy or an airline acts.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.theguardian.com/us-news/2026/nov/23/father-daughter-ice-arrests-video-sparks-protests-seattle-airport">Guardian</a> &middot; <a href="https://www.nbcnews.com/news/us-news/father-daughter-detained-ice-seattle-airport-traveling-family-baptism-rcna610824">NBC News</a> &middot; <a href="https://www.cbsnews.com/news/ice-arrest-alaska-airlines-flight-seattle/">CBS News</a> &middot; <a href="https://elpais.com/us/migracion/2026-11-23/el-padre-y-la-hija-detenidos-por-el-ice-en-seattle-son-solicitantes-de-asilo-segun-la-abogada.html">El Pa&iacute;s (Spanish)</a></p>
+  </div>
+</details>
+
+<details class="short" id="cftc-states">
+  <summary><span class="chip">US financials</span> The CFTC has sued Louisiana and Arkansas to stop them from shutting down federally regulated prediction markets. Louisiana is the 12th state it has sued.</summary>
+  <div class="exp">
+    <p>A Louisiana state court on Thursday ordered more than 30 companies linked to trading CFTC-regulated contracts to stop operating in the state, without a hearing, the CFTC says. Chairman Michael Selig called the state&rsquo;s emergency suit &ldquo;naked lawfare.&rdquo; Arkansas is bringing a state enforcement case against Kalshi that could carry hundreds of millions of dollars in penalties. The CFTC says federal law preempts both.</p>
+    <p>This is the same fight this brief followed in New York last week, now spreading. The Senate&rsquo;s DEATH BETS Act, which bars contracts on war and death, is a separate federal track.</p>
+    <p class="btl"><b>Below the line because</b> the outcome rests with the federal courts, and these suits are one step in a process already being tracked.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.cftc.gov/PressRoom/PressReleases/9326-26">CFTC release, Louisiana</a> &middot; <a href="https://www.cftc.gov/PressRoom/PressReleases/9325-26">CFTC release, Arkansas</a></p>
+  </div>
+</details>
+
+<details class="short" id="house-258">
+  <summary><span class="chip">US politics &amp; policy</span> Democrats are projected to hold at least 258 House seats after Chuck Hubbard beat Rep. Virginia Foxx in a North Carolina recount, the biggest majority either party has held this century.</summary>
+  <div class="exp">
+    <p>NBC projects Hubbard won North Carolina&rsquo;s 5th district by a fraction of a point. Trump carried the district by almost 18 points in 2024. Foxx conceded on Sunday. Four races were still uncalled when NBC published, so the final count may be higher. The number matches the Democrats&rsquo; 1992 total, NBC says, citing the House Historian. Al Jazeera and CBS reported the same result.</p>
+    <p>The size matters for policy because it can absorb defections on spending, oversight and impeachment. Overriding a veto would still need Republican votes.</p>
+    <p class="btl"><b>Below the line because</b> it is a result, not a new policy; its consequences run through the leads on Pentagon funding and Fed-Treasury politics.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.nbcnews.com/politics/congress/house-democrats-win-largest-house-majority-hubbard-north-carolina-rcna610708">NBC News</a> &middot; <a href="https://www.aljazeera.com/news/2026/11/22/democrats-win-largest-house-majority-since-1992-with-north-carolina-seat">Al Jazeera</a> &middot; <a href="https://www.cbsnews.com/">CBS News</a></p>
+  </div>
+</details>
+
+<details class="short" id="meme-coin-dinner">
+  <summary><span class="chip">US politics &amp; policy</span> Trump spoke on Sunday at a private dinner at his Virginia golf club for the biggest holders of his $TRUMP meme coin, with VIP access and gold watches for the top holders.</summary>
+  <div class="exp">
+    <p>The event was run by Trump Organization affiliates CIC Digital and Fight Fight Fight LLC, CNN reported. The top 29 holders were promised a VIP reception and the top four an 18-karat gold Trump watch. The White House sent questions to the hosts. Trump&rsquo;s public schedule listed only the golf club. Al Jazeera also reported the dinner. CoinMarketCap counts about 224,000 holders.</p>
+    <p>The policy hook: buying the coin bought access to a sitting president, while his administration writes crypto rules. Bitcoin, meanwhile, recovered above $61,000 on Monday after a two-year low, CoinDesk reported.</p>
+    <p class="btl"><b>Below the line because</b> there is no new rule, filing or enforcement action; it is a conflict-of-interest fact already known in outline.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.cnn.com/2026/11/22/politics/trump-headlines-exclusive-dinner-to-promote-his-meme-coin">CNN</a> &middot; <a href="https://www.aljazeera.com/news/">Al Jazeera</a> &middot; <a href="https://www.coindesk.com/arc/outboundfeeds/rss/">CoinDesk</a></p>
+  </div>
+</details>
+
+<details class="short" id="fl-cat-fund">
+  <summary><span class="chip">Florida &amp; Tampa Bay</span> Florida&rsquo;s Cabinet approved rewording of what the state Hurricane Catastrophe Fund will repay insurers for living expenses after a storm. Some in the industry fear it narrows coverage; the fund says it does not.</summary>
+  <div class="exp">
+    <p>The Cabinet voted on 17 November to define &ldquo;additional living expenses&rdquo; as reasonable temporary costs, beyond normal spending, when a covered event makes a home unlivable or a civil authority bars its use, Insurance Journal reported. The contract would drop its explicit wording on the 40%-of-insured-value cap and point to the statute that sets the cap instead. The fund&rsquo;s legal director, Mary Linzee Branham, said the change only adds a definition.</p>
+    <p>The Cat Fund backs much of Florida&rsquo;s private and Citizens market, so its reimbursement terms feed into reinsurance costs and, in the end, premiums in Pasco and Pinellas.</p>
+    <p class="btl"><b>Below the line because</b> the fund says nothing changes in practice, and no insurer has yet put a number on it.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.insurancejournal.com/news/southeast/2026/11/20/893226.htm">Insurance Journal</a></p>
+  </div>
+</details>
+
+<details class="short" id="grusch-foia">
+  <summary><span class="chip">UAP disclosure</span> A specialist UAP news log reports that Judge Leonie Brinkema has granted the Pentagon summary judgment, closing a FOIA case for records tied to David Grusch.</summary>
+  <div class="exp">
+    <p>The weekly digest at ufouap.com for 16&ndash;22 November lists the ruling. If accurate, the court accepted the Defense Department&rsquo;s searches and withholdings, and no more records will come out of that case. The same log notes that the eighth PURSUE release, reported here on 21 November, was the week&rsquo;s main disclosure, and that the Pentagon says a ninth is being prepared.</p>
+    <p>The docket itself was not reached on this run, and no general newsroom has reported the ruling.</p>
+    <p class="btl"><b>Below the line because</b> it could not be checked against the court record today; it moves up if the docket confirms it.</p>
+    <p class="sources"><span class="chip">Unconfirmed</span> <a href="https://www.ufouap.com/news/">UFOUAP weekly news</a> &middot; <a href="https://www.war.gov/News/Releases/Release/Article/4655441/department-of-war-publishes-eighth-release-of-unidentified-anomalous-phenomena/">war.gov, eighth release</a></p>
+  </div>
+</details>
+
+</div>
+
+<div class="fb" style="border-top:1px solid var(--rule); padding-top:1rem; margin-top:1.5rem;">
+  <p><b>One question about this whole section:</b> were the right things ranked below the line?</p>
+  <label><input type="radio" name="fb-also" value="right"> About right</label>
+  <label><input type="radio" name="fb-also" value="promote"> Some of these should have led</label>
+  <label><input type="radio" name="fb-also" value="drop"> Some should have been dropped entirely</label>
+  <label><input type="radio" name="fb-also" value="fewer"> Fewer short items, more depth up top</label>
+</div>
+
+<button class="submit" id="send">Send my feedback &rarr;</button>
+<p class="sources" style="text-align:center">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+
+<footer>
+  <h4>Sources checked this run &mdash; 91, of which 68 outside the watchlist</h4>
+  <p><b>Not pointed at by any thread (68):</b> en.wikipedia.org &middot; nhk.or.jp &middot; pymnts.com &middot; abc.net.au &middot; techcrunch.com &middot; lite.cnn.com &middot; scmp.com &middot; theguardian.com &middot; france24.com &middot; cbc.ca &middot; bbci.co.uk &middot; theverge.com &middot; text.npr.org &middot; aljazeera.com &middot; statnews.com &middot; lefigaro.fr &middot; arstechnica.com &middot; bbci.co.uk &middot; bbci.co.uk &middot; content.dowjones.io &middot; nbcnews.com &middot; cnbc.com &middot; bbci.co.uk &middot; cbsnews.com &middot; coindesk.com &middot; semafor.com &middot; theguardian.com &middot; freightwaves.com &middot; straitstimes.com &middot; warontherocks.com &middot; lemonde.fr &middot; foxnews.com &middot; yle.fi &middot; businessinsider.com &middot; cnbc.com &middot; pbs.org &middot; latimes.com &middot; defenseone.com &middot; abcnews.go.com &middot; insurancejournal.com &middot; elpais.com &middot; dw.com &middot; thedebrief.org &middot; rollcall.com &middot; finance.yahoo.com &middot; spiegel.de &middot; breakingdefense.com &middot; handelsblatt.com &middot; ft.com &middot; foxbusiness.com &middot; techmeme.com &middot; theregister.com &middot; asia.nikkei.com &middot; nypost.com &middot; openai.com (Pachocki essay, primary) &middot; zscaler.com (joint deal announcement, primary) &middot; morningstar.com (Dow Jones Newswires) &middot; streetinsider.com (Reuters futures report) &middot; semafor.com (Bessent) &middot; digitimes.com &middot; insurancejournal.com article pages (Bloomberg/Reuters) &middot; techcrunch.com (via search) &middot; siliconreport.com (via search) &middot; loadfactornews.com (via search) &middot; theduckcurve.com (via search) &middot; dowjones.com morning briefing (via search) &middot; finance.yahoo.com live markets (via search) &middot; realitytea.com (checked, not cited).</p>
+  <p><b>Pointed at by a thread (23):</b> americanbanker.com &middot; gcaptain.com &middot; federalreserve.gov &middot; datacenterdynamics.com &middot; gasprices.aaa.com &middot; cftc.gov &middot; home.treasury.gov &middot; wusf.org &middot; nhc.noaa.gov &middot; ofac.treasury.gov &middot; floridaphoenix.com &middot; whitehouse.gov &middot; fdic.gov &middot; fox13news.com &middot; oilprice.com &middot; scotusblog.com &middot; tampabay.com &middot; home.treasury.gov daily par yield curve CSV (20 Nov) &middot; gasprices.aaa.com national average (23 Nov) &middot; cftc.gov press releases 9325-26 and 9326-26 &middot; pjm.com (ER27-531 filing) and PJM Inside Lines &middot; war.gov (eighth PURSUE release notice, via search) &middot; ufouap.com weekly log (UAP sweep).</p>
+  <p>Article pages fetched to stand stories up are cited under each story and are not counted again unless they are the only page reached on that outlet.</p>
+
+  <h4>Could not reach</h4>
+  <p>lawfaremedia.org (403) &middot; politico.com (403) &middot; haaretz.com (403) &middot; axios.com (403) &middot; thehill.com (403) &middot; washingtonpost.com (timeout) &middot; utilitydive.com (403) &middot; nrc.gov (403) &middot; ferc.gov (403) &middot; cbo.gov (403) &middot; sec.gov (403) &middot; wfla.com (403) &middot; occ.gov (404). The Labor Department and SEC pages refused automated access, so those two leads rest on one wire account each and say so. The FT and Le Monde article pages are paywalled; FT reporting is cited through Handelsblatt&rsquo;s write-up.</p>
+
+  <h4>Seen, not run</h4>
+  <p>The Army&rsquo;s Iowa lead-azide detonation, now moved to Wednesday (accounts conflict on the court order, and nothing structural moves) &middot; Musalem and other Fed speakers (prints and decisions only; Williams speaks today) &middot; Japan&rsquo;s third-quarter contraction (run as &ldquo;seen&rdquo; on Sunday; no new print) &middot; Trump&rsquo;s threat to tax or ban US data centres abroad (no new fact since 20 November) &middot; the White House contractor order (Sunday&rsquo;s lead; no new fact) &middot; DNC debate rules (horse race) &middot; GTA VI sales &middot; the Bayer Roundup settlement (Sunday&rsquo;s short item).</p>
+
+  <h4>The negative check</h4>
+  <p><i>What is the biggest story today that is not on my list, and why is it not?</i> PJM&rsquo;s 16 November FERC filing. No thread points at grid-operator dockets, and the front pages did not carry it. It leads. Runners-up that became leads: the OpenAI limits essay and the Labor Department rule. Front-page stories excluded: COP31 and the Benghazi strike (short items, thin US channel), the Seattle airport arrests (short item, no policy change), the Iowa detonation, the meme-coin dinner (short item), and sports and celebrity items.</p>
+
+  <h4>Confidence markers and divergence boxes</h4>
+  <p>19 stories, 19 markers (Independent corroboration: 9 &middot; Primary source: 4 &middot; Single-sourced: 5 &middot; Unconfirmed: 1); 6 divergence boxes. Leads without a box (CrowdStrike, Pentagon talks, Labor rule, SEC, Leapfrog) had either one account or accounts that agreed. Most short items without a box had accounts that agreed on the facts and their weight.</p>
+
+  <h4>Accountability to earlier issues</h4>
+  <p><b>22 November, oil:</b> Brent&rsquo;s Friday settlement of $92.57 is consistent with Reuters putting Monday&rsquo;s price 60 cents lower at $91.97. The pump has kept falling, to $3.637, as described. <b>22 November, COP31:</b> reported as ending with no adopted decision; that held. <b>21 November, CrowdStrike:</b> reported as talks; the deal was signed Monday, on the terms reported (all stock, about $44bn). <b>21 November, markets:</b> the correction framing held through Friday&rsquo;s close; Monday&rsquo;s rebound so far is futures only. <b>21 November, Nvidia:</b> the SEC accounting question has no new filing; today&rsquo;s new facts are the shipment halts and the intelligence reporting. No corrections are owed to earlier Grok editions today.</p>
+
+  <h4>About this issue</h4>
+  <ul>
+    <li>Grok edition for 23 November, produced by the scheduled morning routine. Layout built from Issue 10 (2026-09-10b.html), not from any previous Grok edition.</li>
+    <li>10 lead stories including Florida, 9 short items. 6 leads are new subjects; 4 are follow-ups.</li>
+    <li>Every quotation is under fifteen words and attributed; everything else is paraphrase. Non-English sources (Handelsblatt, El Pa&iacute;s, Yle) are paraphrased in translation.</li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n  → " + i.value + "");
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on Issue No. 80-grok — 23 November 2026 (Grok edition)\n\n" + lines.join("\n")
+      + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-11-23-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
