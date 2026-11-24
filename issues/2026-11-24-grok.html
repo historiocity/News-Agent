@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Tuesday, 24 November 2026 (Grok edition, Issue 81-grok)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  /* short-item tier */
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list summary .chip { vertical-align:.05rem; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 81-grok &middot; Tuesday, 24 November 2026 &middot; Grok edition</div>
+  <h1>Nvidia takes Huang back at Trump&rsquo;s urging, Medicare proposes a $107bn cut to private-plan bonuses, and Labor moves to shut ESG out of 401(k)s</h1>
+  <p class="sub">9 stories at length, 11 in brief. A day of rules and reversals ahead of Wednesday&rsquo;s PCE and GDP prints. Built on the Issue 10 (2026-09-10b) layout. Claude&rsquo;s edition for today is at <a href="2026-11-24.html">2026-11-24</a>.</p>
+  <p class="prov"><b>103 sources checked, 82 of them outside the watchlist</b> (22 pages refused or failed; listed in the footer). Wires, foreign front pages (Handelsblatt, Le Monde, Le Figaro, Spiegel, Nikkei, SCMP, Yle, Straits Times, ABC Australia, CBC, France 24, DW, NHK, Korea Herald, Times of India, Mexico News Daily) and trade outlets (DCD, Insurance Journal, FreightWaves, gCaptain, American Banker, The Register, STAT) were read before the document sources the threads point at. The last three Grok editions were opened only afterwards, for accountability. <b>6 of 9 leads are new subjects; 3 continue threads</b> (Nvidia, Hormuz-to-pump, prediction markets). <b>Biggest story not on my list:</b> the CMS proposal for 2028 Medicare Advantage payments. It sat on the Federal Register&rsquo;s public-inspection desk, no thread points at CMS, and no front page I read carried it. It runs second, flagged as underreported. The negative check also surfaced China&rsquo;s export-control extension and Kalshi&rsquo;s Utah exit. Together they pushed the cyber-director shuffle and the Grok lawsuits down to short items.<br><br>
+  <b>Accounts compared per lead:</b> nvidia-huang: the board&rsquo;s statement via CBS and Semafor, plus AP, DW and ABC; the BIS rule (primary) on the export side; Mint on the stock &middot; medicare-two-fronts: the proposed rule (primary) and CMS fact sheet, read against AHA and McDermott analyses; STAT and Becker&rsquo;s on the drug-price list &middot; erisa-esg: the rule (primary) plus CNBC &middot; china-minerals: MOFCOM&rsquo;s statement via China Daily, plus Anadolu, SCMP, MLex and Bloomberg Law &middot; hormuz-oil-pump: the Guards&rsquo; claim via CNBC and the Jerusalem Post (one Iranian source); Reuters via gCaptain and Yahoo; NY Post on FinCEN; AAA&rsquo;s series &middot; kalshi-utah: 2 independent Utah newsrooms (Utah News Dispatch, Salt Lake Tribune) plus Reuters via Insurance Journal on the New York ruling &middot; amazon-decart: 2 independent (TechCrunch, Silicon Republic); the price rests on Bloomberg as cited by them &middot; russia-nuclear-sat: 1 reporting consortium (NDR, WDR, S&uuml;ddeutsche Zeitung) read through Ars Technica and the BBC, plus Kremlin and NATO comment &middot; fl-macdill: 2 independent (Stars and Stripes, Tampa Bay 28) plus the plaintiffs&rsquo; release, labelled as an interested party.<br><br>
+  <b>Disclosure.</b> The live <code>config.md</code> heading list showed a &ldquo;24 November 2026 &mdash; operational notes&rdquo; section written by Claude&rsquo;s run. I did not read it; this edition&rsquo;s watchlist was taken from the config as of the Grok commit of 23 November. A directory listing of <code>issues/</code> showed that Claude&rsquo;s file for today exists; I did not open it. The repo was updated with a quiet <code>git pull</code>, and no commit message from Claude&rsquo;s runs was shown or read. Claude&rsquo;s edition was opened only after this draft&rsquo;s selection, order, headlines and copy were finished.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#nvidia-huang">Nvidia reinstates Jensen Huang after Trump joins its board call, Commerce blacklists Megaspeed the same day, and Congress books him for 1 and 3 December</a></li>
+    <li><a href="#medicare-two-fronts">Medicare proposes cutting private-plan bonuses by about $107bn over ten years and testing a mandatory Medicare Advantage model in 12 states, the same week it sets 2028 drug prices</a></li>
+    <li><a href="#erisa-esg">Labor proposes that 401(k) and pension managers may weigh nothing but members&rsquo; money, scrapping the tiebreaker that let ESG funds in; officials expect ESG to qualify &ldquo;very rarely&rdquo;</a></li>
+    <li><a href="#china-minerals">China extends its pause on banning gallium, germanium and antimony exports to the US only to 27 January, hours after the Nvidia reversal and a new US chip blacklist</a></li>
+    <li><a href="#hormuz-oil-pump">Iran says three US-escorted tankers hit mines and Washington probes cyberattacks on up to 50 ships, yet Brent sits at a three-month low and the pump average falls to $3.61</a></li>
+    <li><a href="#kalshi-utah">Kalshi stops new trading for its 177,000 Utah users after losing in federal court, and a Manhattan judge refuses to stop New York&rsquo;s case against it</a></li>
+    <li><a href="#amazon-decart">Amazon buys AI startup Decart&rsquo;s chip-optimisation software and team, reportedly for $7.5bn, to make its Trainium chips an easier switch from Nvidia</a></li>
+    <li><a href="#russia-nuclear-sat">German broadcasters report Western intelligence expects Russia to launch a nuclear-armed satellite within weeks; NATO says it will defend in space, and the Kremlin dismisses the report</a></li>
+    <li><a href="#fl-macdill">Florida &amp; Tampa Bay: the MacDill housing lawsuit grows to 105 families and 454 people, alleging the base&rsquo;s private landlord faked mold repairs, as federal investigators examine the work orders</a></li>
+    <li><a href="#also-today">Also today (11)</a> &mdash; ranked below the line, each one opens.</li>
+  </ol>
+</nav>
+
+<article id="nvidia-huang">
+  <h2>Nvidia reinstates Jensen Huang after Trump joins its board call, Commerce blacklists Megaspeed the same day, and Congress books him for 1 and 3 December</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p><b>Reversal.</b> On 18 November <a href="2026-11-18-grok.html#nvidia">this brief reported</a> the new board chair saying Nvidia &ldquo;does not intend to reinstate&rdquo; Huang. That has now been reversed.</p>
+  <p>Nvidia&rsquo;s board said on Monday that Huang is back as president and chief executive, 11 days after he resigned. Colette Kress returns to chief financial officer (DW). The board said it had &ldquo;input from senior levels of the United States government&rdquo;. On that basis it said his return poses no national security risk (statement, via CBS). Semafor first reported that President Trump dialled into the board&rsquo;s Sunday meeting. Vice President Vance also worked on it. Trump told CNBC he spoke to the board &ldquo;directly and indirectly&rdquo; (AP).</p>
+  <p>The same day, Commerce added seven companies to the Entity List: three Megaspeed entities, Apex Enterprise Solutions (an Alibaba subsidiary in Singapore, per Bloomberg via Mint), MSFusion, Speedmatrix and Swiftdata. The <a href="https://public-inspection.federalregister.gov/2026-23999.pdf">rule</a> requires a licence for every item under US export rules, with a presumption of denial. The reason given is a significant risk of diverting advanced chips.</p>
+  <p>Markets cheered. The S&amp;P 500 rose 4.7%, its best day since 9 April 2025 (MarketWatch). Nvidia gained 31.5% and the Nasdaq 6.5% (AP). Futures pointed lower on Tuesday. Rate traders are again pricing at least two more Fed hikes (Yahoo Finance). Treasury&rsquo;s 10-year closed Monday at 4.92%, unchanged.</p>
+  <p>Why it matters: the White House has stepped into who runs the company at the centre of AI spending and of the stock index.</p>
+  <p><b>What to watch:</b> Huang sits for a closed-door interview with three House committees on 1 December. Nvidia&rsquo;s general counsel follows on 2 December. Huang testifies in public to Senate Banking on 3 December (AP, TechCrunch). The Megaspeed probe is now led by the Justice Department.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; what does &ldquo;no national security risk&rdquo; actually rest on?</span>
+    <p><b>What is disputed.</b> Partly <b>facts</b>, partly <b>significance</b>. Nvidia and Trump say the government sees no security risk. ABC, citing sources, reports a narrower assurance: that Huang was not facing criminal charges. The accounts also differ on the affairs. CBS and TechCrunch describe one with the Megaspeed executive and one with a subordinate. Semafor says two subordinates.</p>
+    <p><b>Why they differ.</b> Vantage and interest. The board&rsquo;s statement is written by a party that wanted him back. Semafor&rsquo;s detail comes from people close to the directors and the White House. ABC&rsquo;s comes from officials who briefed on what was promised. AP reminds readers that US officials believed Alice Huang was a Chinese intelligence asset; Beijing denies it. The mundane reading is that &ldquo;no charges pending&rdquo; was turned into &ldquo;no risk&rdquo; on the way into a press release.</p>
+    <p><b>What it means for you.</b> The evidence supports the narrower reading. On the same day, the same government blacklisted Megaspeed&rsquo;s network for diversion risk, so the agency process still treats that channel as dangerous. Believe meanwhile that Huang is not charged, not that he is cleared. This would be settled by what he says under oath on 3 December, the House transcripts, and any filing in the Justice Department&rsquo;s Megaspeed case.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cbsnews.com/news/nvidia-reinstates-jensen-huang-ceo/">CBS News (board statement)</a> &middot;
+    <a href="https://www.semafor.com/article/11/23/2026/huang-reinstatement-came-at-trumps-behest">Semafor</a> &middot;
+    <a href="https://www.pbs.org/newshour/politics/huangs-reinstatement-at-nvidia-sparks-fury-in-congress-as-lawmakers-move-forward-with-hearings">AP via PBS</a> &middot;
+    <a href="https://www.dw.com/en/nvidia-reinstates-former-ceo-jensen-huang-despite-china-espionage-scandal/a-80021926">DW</a> &middot;
+    <a href="https://public-inspection.federalregister.gov/2026-23999.pdf">BIS Entity List rule (primary)</a> &middot;
+    <a href="https://www.cbsnews.com/news/megaspeed-trade-blacklist-nvidia-jensen-huang/">CBS, Megaspeed</a> &middot;
+    <a href="https://www.livemint.com/companies/news/us-blacklists-alibaba-linked-apex-enterprise-megaspeed-5-others-amid-probe-over-chips-diversion-to-china-full-list-11795491647511.html">Mint (Bloomberg), list</a> &middot;
+    <a href="https://www.latimes.com/business/story/2026-11-23/stocks-surge-recover-half-of-last-weeks-plunge-as-tech-stocks-rebound">AP via LA Times, markets</a> &middot;
+    <a href="https://www.marketwatch.com/story/u-s-stocks-see-best-day-in-more-than-a-year-as-return-of-jensen-huang-revives-ai-enthu">MarketWatch</a> &middot;
+    <a href="https://finance.yahoo.com/economy/policy/article/ai-market-whipsaw-puts-kevin-warshs-rate-hike-strategy-to-the-test-100000273.html">Yahoo Finance, rate bets</a> &middot;
+    <a href="https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/">TechCrunch, Senate date</a> &middot;
+    <a href="https://abcnews.com/Politics/made-deal-trump-convinced-nvidia-board-reinstate-jensen/story?id=138373104">ABC News</a> &middot;
+    <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value=2026">Treasury par yield curve</a>
+  </p>
+  <div class="fb">
+    <p>Nvidia has led several days running. Keep it at the top?</p>
+    <label><input type="radio" name="fb-nvidia" value="top"> Yes, it is the story</label>
+    <label><input type="radio" name="fb-nvidia" value="lower"> Lower it unless facts move</label>
+    <label><input type="radio" name="fb-nvidia" value="short"> Short item only</label>
+  </div>
+</article>
+
+<article id="medicare-two-fronts">
+  <h2>Medicare proposes cutting private-plan bonuses by about $107bn over ten years and testing a mandatory Medicare Advantage model in 12 states, the same week it sets 2028 drug prices</h2>
+  <div class="meta">
+    <span class="chip">US debt &amp; fiscal</span>
+    <span class="chip new">New today</span>
+    <span class="chip">Primary source</span> <span class="chip">Underreported</span>
+  </div>
+  <p>The Medicare agency&rsquo;s proposed rule for Medicare Advantage in 2028 went on public inspection at the Federal Register today and will be published on 25 November. Comments are due 60 days after that. The rule cuts the star-rating system that sets plan bonuses to 15 measures and drops the &ldquo;reward factor.&rdquo; It also limits the improvement hold-harmless to plans rated 4.5 stars or higher. The agency&rsquo;s own estimate is a net saving to the Medicare trust fund of <b>$106.96bn over 2028&ndash;2037</b>, or 1.17% of payments to private plans. The savings start in 2031 at $11.5bn and reach $18.9bn in 2037.</p>
+  <p>The rule would also create the first <i>mandatory</i> Medicare Advantage model. It is a ten-year test from 2029 in 12 randomly chosen states, where &ldquo;Diamond Ratings&rdquo; would replace stars (CMS fact sheet, AHA, McDermott). The states will be named in the final rule, which is due around April 2027. Set fees for insurance agents and brokers would give way to disclosure rules.</p>
+  <p>On Monday the agency also set negotiated prices for 13 drugs from 1 January 2028. For the first time they include four doctor-administered Part B drugs: Cosentyx, Orencia, Entyvio and Cimzia (STAT, Becker&rsquo;s). Trulicity falls from $965 to $150 a month. That brings the total to 37 drugs. Botox is out under a court order.</p>
+  <p>Why it matters: the bonus money is revenue for the big private Medicare insurers. UnitedHealth sued this month over downgraded star ratings (STAT headline), and this is one of the few large federal spending levers moving this year.</p>
+  <p><b>What to watch:</b> the comment deadline in late January, the insurers&rsquo; response (not read today), and whether Florida is among the 12 states.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; $9.2bn or $5.5bn in drug savings?</span>
+    <p><b>What is disputed.</b> A <b>significance</b> dispute inside one agency&rsquo;s numbers. STAT, Endpoints and most headlines lead with $9.2bn, or 45%. The same agency release says the saving is $5.5bn, or 33%, once the existing manufacturer discount programme is counted.</p>
+    <p><b>Why they differ.</b> The press release puts the larger number first and newsrooms followed. Both figures are what 2025 spending would have been at the new prices. Neither is a budget score for 2028.</p>
+    <p><b>What it means for you.</b> Use the $5.5bn when asking what the negotiation adds beyond current law. Use the $9.2bn only as the gap between list-based and negotiated prices. The $107bn figure for plan bonuses is also the agency&rsquo;s own estimate, and insurers will dispute it in comments. An independent Congressional Budget Office or Medicare Trustees estimate would settle both.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; how the plan-bonus cut works</summary>
+    <div class="exp">
+      <p>Plans rated 4.0 stars or higher get a quality bonus that raises their benchmark. Separately, the share of savings they keep as &ldquo;rebate&rdquo; for extra benefits rises with rating: 50%, 65% or 70%. Removing the reward factor and narrowing the hold-harmless lowers ratings for many contracts. Fewer plans then clear 4.0, and fewer reach the higher rebate tiers. That is where the agency&rsquo;s $107bn comes from. Because ratings lag measurement by two years, the effect does not reach payments until 2031.</p>
+      <p>In the 12 model states, plans that operate across several states would be split into separate contracts for each state. Dual-eligible plans would be rated separately. The bonus would scale smoothly from 0% to 5% instead of the current all-or-nothing step at four stars (McDermott). For a reader in Pasco, the near-term effect is none. The long-term effect depends on whether Florida is drawn, and on how plans trim extra benefits if bonus income falls.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://public-inspection.federalregister.gov/2026-23960.pdf">Federal Register public inspection, CMS-4214-P2 (primary)</a> &middot;
+    <a href="https://www.cms.gov/newsroom/fact-sheets/contract-year-2028-policy-technical-changes-medicare-advantage-program-medicare-prescription-drug">CMS fact sheet</a> &middot;
+    <a href="https://www.aha.org/news/headline/2026-11-23-cms-proposes-2028-medicare-advantage-part-d-policies">AHA News</a> &middot;
+    <a href="https://www.mcdermottlaw.com/insights/a-tale-of-two-quality-programs-cms-proposes-to-test-different-quality-payment-models-across-states/">McDermott Will &amp; Schulte</a> &middot;
+    <a href="https://www.statnews.com/2026/11/23/medicare-drug-price-negotiations-announcement-third-round/">STAT</a> &middot;
+    <a href="https://www.beckershospitalreview.com/pharmacy/cms-cuts-medicare-prices-on-13-costly-drugs-8-things-to-know/">Becker&rsquo;s</a> &middot;
+    <a href="https://www.cms.gov/initiatives/medicare-prescription-drug-affordability/overview/medicare-drug-price-negotiation-program/selected-drugs-negotiated-prices">CMS negotiated prices page</a>
+  </p>
+  <div class="fb">
+    <p>A Federal Register find with no front-page coverage: more of these?</p>
+    <label><input type="radio" name="fb-medicare" value="more"> More</label>
+    <label><input type="radio" name="fb-medicare" value="same"> About right</label>
+    <label><input type="radio" name="fb-medicare" value="less"> Less</label>
+  </div>
+</article>
+
+<article id="erisa-esg">
+  <h2>Labor proposes that 401(k) and pension managers may weigh nothing but members&rsquo; money, scrapping the tiebreaker that let ESG funds in; officials expect ESG to qualify &ldquo;very rarely&rdquo;</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip new">New today</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The Labor Department&rsquo;s proposed rule (RIN 1210-AC37) is published today. Comments are open for 60 days. It rewrites the investment-duties rule for plans covered by ERISA, the federal pension law, and would make three changes:</p>
+  <p>First, it adds an explicit duty of loyalty. A fiduciary may not start with &ldquo;an ulterior motive&rdquo; or weigh any factor beyond members&rsquo; financial interests at any stage of choosing investments. Second, it removes the &ldquo;tiebreaker&rdquo; test and the provisions on participant preferences. The department says these are open to abuse as a pretext. Third, it strips ESG terms from the regulation and applies the same duty to proxy voting and engagement with companies. The text cites Executive Order 14366 on proxy advisers and builds on a March proposal on choosing plan investments.</p>
+  <p>Labor Secretary Keith Sonderling said choices must serve workers&rsquo; finances, &ldquo;not to advance political or social agendas&rdquo; (CNBC). An official told reporters ESG funds would be appropriate &ldquo;very rarely.&rdquo; About 5% of 401(k) plans offered an ESG fund in 2025, holding under 1% of assets (Plan Sponsor Council of America, via CNBC).</p>
+  <p>Why it matters: few savers hold ESG funds, so the bigger target is how pension plans vote their shares. That reaches the large asset managers and the proxy-advice firms the executive order targets.</p>
+  <p><b>What to watch:</b> comments close in late January, and the final text.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; neutral rule or ESG ban?</span>
+    <p><b>What is disputed.</b> A <b>significance</b> dispute. The rule&rsquo;s preamble says ERISA &ldquo;neither favors nor disfavors&rdquo; any investment strategy and calls the change depoliticising. CNBC reports that officials expect it to &ldquo;severely cripple&rdquo; ESG investing in 401(k)s.</p>
+    <p><b>Why they differ.</b> Different audiences. The preamble is written to survive review by a court, which favours neutral language. The press briefing was aimed at a political audience.</p>
+    <p><b>What it means for you.</b> Both are accurate about different layers. The operative change is the &ldquo;no collateral factor at any stage&rdquo; test. Under it, a manager who picks an ESG fund must show the choice was purely financial, which makes such picks legally riskier even though they are not banned. Expect few new ESG options and more cautious proxy voting. What would settle it is the final rule&rsquo;s text and the first enforcement case or lawsuit under it.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://public-inspection.federalregister.gov/2026-23936.pdf">Federal Register public inspection, RIN 1210-AC37 (primary)</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/23/labor-department-esg-401k-rule.html">CNBC</a>
+  </p>
+  <div class="fb">
+    <p>Retirement-plan rules like this one: worth a lead?</p>
+    <label><input type="radio" name="fb-erisa" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-erisa" value="short"> Short item</label>
+    <label><input type="radio" name="fb-erisa" value="no"> Skip</label>
+  </div>
+</article>
+
+<article id="china-minerals">
+  <h2>China extends its pause on banning gallium, germanium and antimony exports to the US only to 27 January, hours after the Nvidia reversal and a new US chip blacklist</h2>
+  <div class="meta">
+    <span class="chip">World economy</span>
+    <span class="chip new">New today</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>China&rsquo;s Commerce Ministry published a notice on Tuesday, dated Monday. It extends the suspension of the key clause of its Announcement No. 46 of December 2024 from 28 November to 27 January 2027 (China Daily, Anadolu, SCMP, MLex). That clause says exports to the US of dual-use items made from gallium, germanium, antimony and superhard materials are &ldquo;not permitted in principle.&rdquo; It also tightens checks on graphite. The pause was due to lapse on Friday. A separate ban on dual-use exports to US military users stays in force (MLex).</p>
+  <p>The legal half: the ban is suspended, not repealed, and this time for two months. The first suspension ran from 9 November 2025 to 27 November 2026, about a year. Beijing has shortened the leash.</p>
+  <p>The market half: these metals go into products from semiconductors to satellites and military equipment (Bloomberg). US buyers keep access through January. No price data for the metals was reached today, and none of the accounts reported a move.</p>
+  <p>Why it matters: these are the inputs where China&rsquo;s leverage over US defence supply is clearest. The new deadline falls three weeks after a Democratic Congress takes office and just after Washington&rsquo;s latest chip curbs.</p>
+  <p><b>What to watch:</b> any Chinese answer to the Megaspeed and Alibaba-subsidiary listings, and whether the pause is renewed before 27 January.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; truce maintenance or retaliation held in reserve?</span>
+    <p><b>What is disputed.</b> A <b>significance</b> dispute. China Daily and Anadolu present a routine extension amid easing tensions under the Busan truce of October 2025. Bloomberg calls it Xi holding back retaliation for the new US chip curbs, hours after Trump restored Huang.</p>
+    <p><b>Why they differ.</b> Vantage and timing. State media reports the government&rsquo;s own framing. Bloomberg reads it against the same-day Entity List action. Both published on Tuesday from the same notice.</p>
+    <p><b>What it means for you.</b> The evidence leans toward leverage kept in reserve. The suspension shrank from about a year to two months, and the military-user ban was left in place. Believe meanwhile that supply is safe only to late January. Two things would settle it: whether Beijing answers the Apex and Megaspeed listings, and whether January brings another short extension or a long one.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.chinadaily.com.cn/a/202611/24/WS6b0569ade4b03ebf8519e6c2.html">China Daily</a> &middot;
+    <a href="https://www.aa.com.tr/en/asia-pacific/china-extends-suspension-of-some-export-curbs-on-us-for-2-months/4135639">Anadolu</a> &middot;
+    <a href="https://www.scmp.com/economy/global-economy/article/3375609/china-approves-2-month-extension-select-us-export-restrictions">SCMP</a> &middot;
+    <a href="https://www.mlex.com/mlex/articles/2559003/china-extends-suspension-of-tighter-us-bound-dual-use-export-controls-until-jan-2027">MLex</a> &middot;
+    <a href="https://news.bloomberglaw.com/environment-and-energy/china-extends-pause-on-us-minerals-ban-to-maintain-truce-1">Bloomberg Law (summary visible)</a>
+  </p>
+  <div class="fb">
+    <p>Trade stories with both the legal and market half: is the market half thin enough to skip when no prices exist?</p>
+    <label><input type="radio" name="fb-minerals" value="keep"> Keep the section, even if thin</label>
+    <label><input type="radio" name="fb-minerals" value="skip"> Skip it when no data</label>
+  </div>
+</article>
+
+<article id="hormuz-oil-pump">
+  <h2>Iran says three US-escorted tankers hit mines and Washington probes cyberattacks on up to 50 ships, yet Brent sits at a three-month low and the pump average falls to $3.61</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Iran&rsquo;s Revolutionary Guards said on Monday that three &ldquo;violating&rdquo; tankers caught fire after hitting mines in the Strait of Hormuz, one near the southern coast and two in the east. They said the ships had US air cover and escort (IRNA, via CNBC and The Jerusalem Post). The Guards named no ships. US Central Command had not responded. Ships reported more than 30 attacks to the UK&rsquo;s maritime agency in October and at least 22 in November through Sunday (CNN data, via the Post).</p>
+  <p>Separately, the US is investigating Iran as the main suspect in cyberattacks on as many as 50 tankers carrying oil, LPG and chemicals, some with bomb threats, the Wall Street Journal reported (via Reuters and gCaptain). Russia is also a suspect. Treasury sanctioned more than two dozen Iranian exchange houses and front companies. Its financial-crimes unit, FinCEN, reported nearly $15bn moving through possible Iranian shadow-banking channels since January 2025. Much of it ran from banks in China, Singapore and the UK to the UAE (NY Post on the FinCEN report; CNBC).</p>
+  <p>The chain runs the other way at the pump. Brent was $89.17 on Tuesday morning after its lowest price since 27 August, and WTI was $79.95 (Reuters). Releases from strategic reserves, Libya&rsquo;s reopened Sharara pipeline and record Chinese and Indian buying of Russian oil under US waivers outweigh the attacks. AAA&rsquo;s national average for regular is $3.6149 today, down from $3.6366 yesterday. Diesel is $5.80.</p>
+  <p>Why it matters: the record Thanksgiving pump price is $3.58, set in 2022 (AAA). Today&rsquo;s average is 3.5 cents above it, with two days to go.</p>
+  <p><b>What to watch:</b> any Central Command or shipowner confirmation of the mine strikes, EIA&rsquo;s weekly data on Wednesday, and Thursday&rsquo;s pump average against $3.58.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; did three escorted tankers really hit mines?</span>
+    <p><b>What is disputed.</b> A <b>facts</b> question. The Guards say three tankers hit mines under US escort. No shipowner, insurer, UK maritime advisory or US statement confirming it was found. Reuters reports the claim via Iran&rsquo;s Press TV and CNBC via IRNA, so both are one Iranian source.</p>
+    <p><b>Why they differ.</b> Interest and access. The Guards want ships to keep to the northern lane Tehran approves, and a claim that US escorts failed serves that aim. Central Command&rsquo;s silence may reflect its usual delay rather than a denial. Timing matters too: the claim came hours after Treasury&rsquo;s new sanctions.</p>
+    <p><b>What it means for you.</b> Treat it as an unconfirmed claim. Oil prices fell on Tuesday, which suggests traders discount it too. The rise in reported attacks, though, is independently counted. Ship names, an advisory from the UK maritime agency, or a war-risk insurance notice would settle it.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnbc.com/2026/11/24/iran-trump-hormuz-crude-.html">CNBC</a> &middot;
+    <a href="https://www.jpost.com/middle-east/iran-news/article-915899">Jerusalem Post</a> &middot;
+    <a href="https://gcaptain.com/u-s-probes-suspected-iranian-cyberattacks-on-up-to-50-ships-wsj-reports/">Reuters via gCaptain (WSJ cyber report)</a> &middot;
+    <a href="https://finance.yahoo.com/news/oil-prices-near-three-month-051343862.html">Reuters via Yahoo Finance, oil</a> &middot;
+    <a href="https://nypost.com/2026/11/23/us-news/treasury-uncovers-nearly-15-billion-in-possible-iranian-shadow-banking-networks/">NY Post, FinCEN report</a> &middot;
+    <a href="https://gasprices.aaa.com/">AAA national average</a> &middot;
+    <a href="https://gasprices.aaa.com/gas-prices-keep-dropping-as-thanksgiving-approaches/">AAA, 19 Nov release</a>
+  </p>
+  <div class="fb">
+    <p>Oil, sanctions and the pump as one chain: still right?</p>
+    <label><input type="radio" name="fb-oil" value="chain"> Yes</label>
+    <label><input type="radio" name="fb-oil" value="split"> Split the security story from prices</label>
+  </div>
+</article>
+
+<article id="kalshi-utah">
+  <h2>Kalshi stops new trading for its 177,000 Utah users after losing in federal court, and a Manhattan judge refuses to stop New York&rsquo;s case against it</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The prediction market Kalshi paused operations in Utah on Monday. Users can close positions and withdraw money but cannot open new contracts, and the block will be enforced by GPS (Utah News Dispatch, Salt Lake Tribune). Kalshi blamed the &ldquo;adverse final judgment&rdquo; in its suit against the state. In August, Judge Robert Shelby ruled Utah may enforce its gambling ban on Kalshi&rsquo;s event contracts. The CFTC&rsquo;s own suit against Utah is not yet decided. At a hearing on Friday, Shelby said the federal side faces a &ldquo;steep hill&rdquo; (Tribune, citing FOX 13).</p>
+  <p>In New York on Friday, US District Judge Lorna Schofield denied the CFTC&rsquo;s request to block Attorney General Letitia James from enforcing state gaming law against Kalshi. She said the agency had not shown it was likely to win (Reuters, via Insurance Journal). Three federal appeals courts have said states may regulate Kalshi, and one has said New Jersey may not. The CFTC has sued 12 states.</p>
+  <p>Utah&rsquo;s attorney general also filed criminal charges in October. The accounts differ on who is charged; see the box.</p>
+  <p>Why it matters: the question is who regulates a fast-growing US market. The CFTC treats event contracts as federally regulated swaps; states treat them as gambling. A split among appeals courts makes Supreme Court review likely.</p>
+  <p><b>What to watch:</b> Shelby&rsquo;s ruling on the CFTC suit, any petition to the Supreme Court, and whether other platforms leave Utah. This continues the CFTC thread from <a href="2026-11-23-grok.html#cftc-states">yesterday&rsquo;s short item</a>.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is the company charged, or its founders?</span>
+    <p><b>What is disputed.</b> A <b>facts</b> dispute. Utah News Dispatch, citing the charging documents, lists 12 felony counts of online gambling promotion, one felony pattern of unlawful activity and one misdemeanour against Kalshi. The Salt Lake Tribune says co-founders Tarek Mansour and Luana Lopes Lara face 14 charges, including 13 felonies.</p>
+    <p><b>Why they differ.</b> The totals match: 14 counts, 13 of them felonies. Neither outlet links the filing. The likeliest explanation is that the October filing names the company and its founders, and each outlet summarised one side.</p>
+    <p><b>What it means for you.</b> Believe the count, and treat the list of defendants as unsettled. The charging document on the Utah court docket would settle it, and it matters: individual felony exposure for the founders is a different risk from a corporate case.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://utahnewsdispatch.com/2026/11/23/kalshi-blocks-operations-in-utah-legal-challenges-ongoing/">Utah News Dispatch</a> &middot;
+    <a href="https://www.sltrib.com/news/2026/11/23/kalshi-pauses-operations-utah-amid/">Salt Lake Tribune</a> &middot;
+    <a href="https://www.insurancejournal.com/news/east/2026/11/24/893387.htm">Reuters via Insurance Journal, New York ruling</a>
+  </p>
+  <div class="fb">
+    <p>Prediction-market jurisdiction: follow it?</p>
+    <label><input type="radio" name="fb-kalshi" value="follow"> Follow it</label>
+    <label><input type="radio" name="fb-kalshi" value="rulings"> Only rulings</label>
+    <label><input type="radio" name="fb-kalshi" value="no"> Stop</label>
+  </div>
+</article>
+
+<article id="amazon-decart">
+  <h2>Amazon buys AI startup Decart&rsquo;s chip-optimisation software and team, reportedly for $7.5bn, to make its Trainium chips an easier switch from Nvidia</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip new">New today</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Amazon said it will take over the Decart Optimization Stack, the startup&rsquo;s founding team and its researchers (Amazon, quoted by TechCrunch and Silicon Republic). It is buying the technology and the people, not the whole company. Terms were not disclosed. Bloomberg, citing one person familiar with the deal, put the value at about $7.5bn; that figure is single-sourced. Silicon Republic says Anthropic was in talks to buy Decart for about $6bn before pulling back in September.</p>
+  <p>Decart is best known for real-time world models and AI video. The software Amazon wants helps AI models run efficiently on Nvidia, Amazon and Google chips (TechCrunch). Amazon has used its own Trainium chips in its data centres and is preparing to sell them to outside customers. Peter DeSantis, who runs Amazon&rsquo;s custom silicon, framed the deal as &ldquo;getting more out of every chip.&rdquo;</p>
+  <p>Founded in 2023, the company is based in California (Silicon Republic). Its founders are brothers Dean and Orian Leitersdorf and Moshe Shalev, all former Israeli military intelligence soldiers. Haaretz calls it a record price for an Israeli AI company.</p>
+  <p>Why it matters: Nvidia&rsquo;s hold rests as much on software that makes its chips easy to use as on the chips. A tool that lets customers move work onto Trainium attacks that hold directly, on the same day Nvidia&rsquo;s leadership became a White House matter.</p>
+  <p><b>What to watch:</b> when Trainium goes on sale to outside customers and at what price, and whether antitrust agencies look at this tech-plus-team structure.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/">TechCrunch</a> &middot;
+    <a href="https://www.siliconrepublic.com/business/amazon-acquires-decart-ai-tech-and-team">Silicon Republic</a> &middot;
+    <a href="https://www.haaretz.com/israel-news/business/economy-finance/2026-11-23/ty-article/.premium/amazon-to-acquire-israeli-ai-company-decart-in-record-7-5-billion-deal/000001a2-08eb-d3ee-a7b7-9cff80590000">Haaretz (headline; paywalled)</a>
+  </p>
+  <div class="fb">
+    <p>Challenges to Nvidia&rsquo;s software hold: follow as a thread?</p>
+    <label><input type="radio" name="fb-decart" value="follow"> Follow</label>
+    <label><input type="radio" name="fb-decart" value="big"> Only big moves</label>
+    <label><input type="radio" name="fb-decart" value="no"> No</label>
+  </div>
+</article>
+
+<article id="russia-nuclear-sat">
+  <h2>German broadcasters report Western intelligence expects Russia to launch a nuclear-armed satellite within weeks; NATO says it will defend in space, and the Kremlin dismisses the report</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip new">New today</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>Public broadcasters NDR and WDR and the newspaper S&uuml;ddeutsche Zeitung, which report jointly, said on Monday that Russia is preparing to launch a satellite armed with a nuclear warhead. They cited German military and intelligence sources. The satellite is called &ldquo;Sputnik-S&rdquo; and has been in storage near Moscow (Ars Technica, BBC). German Space Command thinks it could go up as early as December (Ars). Intelligence pointing to a launch within 60 days was shared among NATO countries this month (BBC).</p>
+  <p>NATO&rsquo;s Mark Rutte said the alliance will defend &ldquo;every inch of Nato territory&rdquo;, including in space. Chancellor Merz neither confirmed nor denied the reports. He said such reports are not new but still shocking, and his spokesman warned against &ldquo;excessive nervousness&rdquo; (BBC). The Kremlin said claims from unnamed sources are hardly worth taking seriously. Russia&rsquo;s embassy in Berlin called it propaganda.</p>
+  <p>The US link is direct. A nuclear blast in orbit would knock out or damage thousands of satellites in low orbit, including Starlink and the military Starshield network, US spy satellites and the space station (Ars). US lawmakers first disclosed the programme in early 2024. Deploying it would break the 1967 Outer Space Treaty. Russia vetoed a 2024 UN Security Council resolution reaffirming that ban.</p>
+  <p>Why it matters: US military communications and surveillance depend on satellites in that orbit, as do commercial networks such as Starlink.</p>
+  <p><b>What to watch:</b> any US or second-country confirmation, which was not found today, and Russian launch notices for December.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; imminent, or an old threat re-reported?</span>
+    <p><b>What is disputed.</b> Partly <b>timing</b>, partly <b>significance</b>. The German consortium says a launch is possible as early as December, or within 60 days. Merz calls the reports not new, and his government cautions against nervousness. That the programme exists has been public since 2024. The new claim is the timing.</p>
+    <p><b>Why they differ.</b> One reporting group with anonymous sources (NDR, WDR and SZ share their research, so they count as one). Ars and the BBC relay that group&rsquo;s report. Berlin wants to keep allies alert without causing panic. The Kremlin wants to deny without detail.</p>
+    <p><b>What it means for you.</b> Believe the programme is real, which was established in 2024. Treat the December date as single-sourced. A US government statement, a second allied service on the record, or a Russian launch notice would settle it. Until then the story has a US channel, but not a confirmed date.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://arstechnica.com/space/2026/11/russia-may-launch-a-nuclear-armed-satellite-far-sooner-than-we-thought/">Ars Technica</a> &middot;
+    <a href="https://www.bbc.co.uk/news/articles/c9x2er1ry2mzo">BBC</a> &middot;
+    <a href="https://www.france24.com/en/video/20261124-is-russia-preparing-to-launch-a-nuclear-armed-satellite">France 24 (video, headline)</a>
+  </p>
+  <div class="fb">
+    <p>Space security with a US channel: right altitude for this brief?</p>
+    <label><input type="radio" name="fb-sat" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-sat" value="confirm"> Only when confirmed</label>
+    <label><input type="radio" name="fb-sat" value="no"> No</label>
+  </div>
+</article>
+
+<article id="fl-macdill">
+  <h2>Florida &amp; Tampa Bay: the MacDill housing lawsuit grows to 105 families and 454 people, alleging the base&rsquo;s private landlord faked mold repairs, as federal investigators examine the work orders</h2>
+  <div class="meta">
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip new">New today</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>An expanded complaint was filed on 16 November in federal court in Tampa against The Michaels Organization, AMC East Communities and MMS Air Force. Together they run Harbor Bay, the private housing on MacDill Air Force Base. It now covers 105 families and 454 people over 924 pages (Stars and Stripes, Tampa Bay 28, the families&rsquo; lawyers). The case began with 39 families in September 2025. The Tampa Bay Times reported the expansion on 23 November; its article is paywalled and was not read.</p>
+  <p>Families allege the companies hid mold, called it dust or paint, and closed work orders while the problems remained. The complaint says the operator failed seven straight quarterly performance reviews and the Air Force put it on an improvement plan. Reps. Kathy Castor and Gus Bilirakis say the Defense Department and the Air Force have opened a criminal investigation into whether work orders were faked (Tampa Bay 28). Figures from Bilirakis&rsquo;s office show about 450 open work orders on 15 October, taking 217 days on average to close. Thirty-eight urgent orders had waited more than 90 days.</p>
+  <p>Harbor Bay says residents&rsquo; well-being is its priority. It says it has invested $63m since 2019, $28m of that on damage from Hurricanes Helene and Milton (Stars and Stripes).</p>
+  <p>Why it matters locally: MacDill hosts Central Command and Special Operations Command, and this is military families&rsquo; housing in Tampa under a federal contract. The criminal inquiry is the new element. The lawyers call it the largest military-housing case in the country.</p>
+  <p><b>What to watch:</b> the companies&rsquo; formal answer, any charges from the work-order inquiry, and whether the Air Force changes the contract.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.stripes.com/branches/air_force/2026-11-19/lawsuit-105-families-mold-macdill-housing-23519839.html">Stars and Stripes</a> &middot;
+    <a href="https://www.tampabay28.com/news/local-news/i-team-investigates/macdill-air-force-base-housing-lawsuit-grows-to-105-military-families-alleging-unsafe-conditions-mold">Tampa Bay 28</a> &middot;
+    <a href="https://www.tampabay28.com/news/local-news/i-team-investigates/i-team-feds-open-a-criminal-investigation-as-macdill-afb-housing-contractor-fails-performance-reviews">Tampa Bay 28, criminal inquiry</a> &middot;
+    <a href="https://www.prnewswire.com/news-releases/just-well-law-pllc-military-families-toxic-mold-lawsuit-against-michaels-organization-is-now-largest-known-military-housing-case-302943164.html">Plaintiffs&rsquo; release (interested party)</a> &middot;
+    <a href="https://www.tampabay.com/news/military/2026/11/23/macdill-airforce-tampa-housing-harbor-bay/">Tampa Bay Times (paywalled, headline only)</a>
+  </p>
+  <div class="fb">
+    <p>Is this the right bar for a Florida lead?</p>
+    <label><input type="radio" name="fb-fl" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-fl" value="higher"> Higher bar</label>
+    <label><input type="radio" name="fb-fl" value="more"> More local</label>
+  </div>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">11 things I saw and ranked below the line. Each one opens &mdash; the line is my judgement, what is behind it is the substance.</p>
+
+<div class="also-list">
+
+<details class="short" id="cyber-director">
+  <summary><span class="chip">US politics &amp; policy</span> The White House now says DNI Jay Clayton will run the national cyber office for now, while Pentagon CIO Kirsten Davies is nominated for the permanent job. Last week she was described as taking over immediately.</summary>
+  <div class="exp">
+    <p>A White House official told Nextgov/FCW on Monday that Clayton will lead the Office of the National Cyber Director on an interim basis. Davies will be a senior adviser there while the Senate considers her nomination. Clayton already oversees the spy agencies and coordinates AI policy. Sean Cairncross was removed on Thursday. A source close to the White House said he lacked cyber credentials (CyberScoop, ABC). Clayton and others told a House committee last week that the outages hitting airlines, banks, Microsoft and the NSA came from technical faults and patches, not attacks.</p>
+  <div class="div">
+      <span class="t">Divergence &mdash; acting director, or nominee?</span>
+      <p><b>What is disputed.</b> A <b>facts</b> dispute that is really about <b>timing</b>. Late last week, Breaking Defense and CyberScoop reported that Davies had taken the job, acting or outright. On Monday a White House official said Clayton is interim and Davies is the nominee.</p>
+      <p><b>Why they differ.</b> The plan changed over the weekend. Clayton&rsquo;s own statement now says she will take the role &ldquo;upon her confirmation.&rdquo;</p>
+      <p><b>What it means for you.</b> Go with Monday&rsquo;s version: Clayton is in charge until the Senate votes. A formal nomination sent to the Senate would settle it.</p>
+    </div>
+    <p class="btl"><b>Below the line because</b> it is a staffing change; the policy question is whether the outage explanation holds, which is covered in the thread.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.govexec.com/management/2026/11/intelligence-chief-jay-clayton-lead-white-house-cyber-office-interim-capacity/417407/">Nextgov/FCW via Government Executive</a> &middot; <a href="https://breakingdefense.com/2026/11/pentagon-cio-davies-tapped-as-acting-national-cyber-director/">Breaking Defense</a> &middot; <a href="https://cyberscoop.com/sean-cairncross-out-national-cyber-director/">CyberScoop</a> &middot; <a href="https://abcnews.com/Politics/white-house-replaces-national-cyber-director-amid-widespread/story?id=138310514">ABC News</a></p>
+  </div>
+</details>
+
+<details class="short" id="usda-breach">
+  <summary><span class="chip">US politics &amp; policy</span> The Agriculture Department took many applications offline over several days after a security breach, hitting tools used to pay farmers.</summary>
+  <div class="exp">
+    <p>An internal email on Monday said the department&rsquo;s security centre found an incident. Its IT staff then had to reset all database passwords and restart applications, which caused the outages (Nextgov/FCW and Government Executive, from three people and the email). The affected tools handle payments such as crop insurance and disaster losses. It is not known who broke in or whether data was taken. This lands days after a GAO report on cyber risk in the food and farm sector, a thread opened here on 23 November.</p>
+    <p class="btl"><b>Below the line because</b> one newsroom has it, and the scale of any data loss is unknown.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.govexec.com/technology/2026/11/usda-grapples-security-breach-it-staff-take-multiple-systems-offline/417354/">Government Executive / Nextgov</a></p>
+  </div>
+</details>
+
+<details class="short" id="grok-suits">
+  <summary><span class="chip">AI &amp; tech industry</span> Virginia and Oregon became the first states to sue over Grok&rsquo;s image tool, alleging that its &ldquo;spicy mode&rdquo; made sexual images of children and adults from real photos.</summary>
+  <div class="exp">
+    <p>The suits, filed in state courts under consumer-protection law, target SpaceX, which now owns X and Grok. They allege the company misled consumers about safety and failed to put safeguards in place. The states seek damages, penalties and court orders. X&rsquo;s safety team said it had blocked such prompts but did not address the suits (NBC; Reuters via Insurance Journal). Several other attorneys general have open investigations. <i>Disclosure: this edition is produced by an assistant that carries the Grok name. The story is reported straight and was ranked on the same bar as any other.</i></p>
+    <p class="btl"><b>Below the line because</b> state consumer suits are an early step; it moves up if more states join or a court orders changes.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.nbcnews.com/tech/tech-news/virginia-oregon-sue-musks-spacex-grok-ais-creation-child-sexual-abuse-rcna610923">NBC News</a> &middot; <a href="https://www.insurancejournal.com/news/east/2026/11/24/893581.htm">Reuters via Insurance Journal</a></p>
+  </div>
+</details>
+
+<details class="short" id="ny-ai-toys">
+  <summary><span class="chip">AI &amp; tech industry</span> Governor Hochul is expected to sign a five-year ban on making and selling chatbot-powered toys in New York today, the second state after California.</summary>
+  <div class="exp">
+    <p>Her office told NBC News the law would take effect in February. The bill follows tests in which AI toys produced sexual content and other harmful replies. Retailers pulled some products earlier this month. State AI laws are a standing thread for this reader.</p>
+    <p class="btl"><b>Below the line because</b> it is one state law on a narrow product, and the signing had not happened at press time.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.nbcnews.com/tech/tech-news/new-york-governor-kathy-hochul-sign-ai-toy-ban-law-rcna610962">NBC News</a></p>
+  </div>
+</details>
+
+<details class="short" id="sanofi-insmed">
+  <summary><span class="chip">US financials</span> France&rsquo;s Sanofi agreed to buy US drugmaker Insmed for about $41bn in cash, $175 a share, the biggest biotech deal in nearly three years (MarketWatch).</summary>
+  <div class="exp">
+    <p>The offer is a 17.4% premium to Monday&rsquo;s close. Insmed rose more than 14% before the US open, and Sanofi hit its highest price in over a year (Investing.com via Yahoo). The deal adds lung-disease medicines (STAT headline; MarketWatch; Le Monde and Handelsblatt headlines). For US investors it removes one of the larger mid-cap biotechs from the market.</p>
+    <p class="btl"><b>Below the line because</b> it is a large corporate deal with no policy change attached.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://finance.yahoo.com/news/sanofi-agrees-acquire-drugmaker-insmed-071944533.html">Investing.com via Yahoo Finance</a> &middot; <a href="https://www.lemonde.fr/en/france/article/2026/11/24/french-pharma-giant-sanofi-set-to-buy-us-group-insmed-for-41-billion_6787651_7.html">Le Monde (headline)</a> &middot; <a href="https://www.handelsblatt.com/unternehmen/industrie/pharma-sanofi-kauft-biotech-firma-insmed-fuer-41-milliarden-dollar/100272269.html">Handelsblatt (German)</a></p>
+  </div>
+</details>
+
+<details class="short" id="ai-agent-blocks">
+  <summary><span class="chip">US financials</span> Signal will block screenshots and screen-reading by phone AI assistants, joining JPMorgan, Schwab and United in limiting outside AI agents.</summary>
+  <div class="exp">
+    <p>Signal&rsquo;s president, Meredith Whittaker, said built-in agents such as Gemini and Siri can scan what is on screen and store it outside Signal&rsquo;s control (CNBC). JPMorgan&rsquo;s Jamie Dimon called outside agents too risky in October, and Morgan Stanley blocks them. A vendor survey cited by CNBC claims 88.4% of firms had an agent-related breach. That figure is from an interested party and is not used here as fact.</p>
+    <p class="btl"><b>Below the line because</b> it is a trend piece; it moves up when a regulator sets rules on who is liable for agent actions.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.cnbc.com/2026/11/24/signal-airlines-banks-ai-limit.html">CNBC</a></p>
+  </div>
+</details>
+
+<details class="short" id="freight-rates">
+  <summary><span class="chip">Macro &amp; markets</span> Container rates from Asia to the US East Coast are about four times last year&rsquo;s, near $10,900 per box. They fell slightly last week as ships added capacity.</summary>
+  <div class="exp">
+    <p>Xeneta data via FreightWaves for the week to 19 November: West Coast $8,203 per 40-foot container, down 1.7%; East Coast $10,901, down 1.9%. Year on year that is up 304% and 298%. Offered capacity rose about 11% on both routes from mid-October. Freight is an input to goods inflation, which the Fed is fighting.</p>
+  <div class="div">
+      <span class="t">Divergence &mdash; rising or falling?</span>
+      <p><b>What is disputed.</b> A <b>significance</b> split inside one outlet. The headline stresses the 300% rise on last year. The data underneath shows rates falling week on week as capacity grows.</p>
+      <p><b>Why they differ.</b> Headlines favour the level. Xeneta&rsquo;s analyst stresses the direction.</p>
+      <p><b>What it means for you.</b> Both are true. For inflation in the next few months, the direction matters more: easing, from a very high level. Another weekly fall would confirm it.</p>
+    </div>
+    <p class="btl"><b>Below the line because</b> it is one data provider through one outlet, and the direction this week is down.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.freightwaves.com/news/asia-us-east-coast-ocean-freight-rates-top-10000-up-300-from-a-year-ago">FreightWaves</a></p>
+  </div>
+</details>
+
+<details class="short" id="army-pacific">
+  <summary><span class="chip">Geopolitics</span> An Army audit obtained by CNN warns that units in Hawaii may not be able to deploy quickly in a no-notice war with China, citing equipment, training and flooded maintenance bays.</summary>
+  <div class="exp">
+    <p>The Army Audit Agency report, finished in April and released under a Freedom of Information request, found unaddressed problems with infrastructure and equipment. It also found confusion over which field-support battalion is responsible for deployments. Hawaii has about 47,000 active-duty troops and is central to US Pacific war plans (CNN).</p>
+    <p class="btl"><b>Below the line because</b> it is a seven-month-old internal audit, and the Army&rsquo;s response is not yet known.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.cnn.com/2026/11/24/politics/army-auditors-concerns-hawaii-pacific-war-scenario">CNN</a></p>
+  </div>
+</details>
+
+<details class="short" id="meta-net-zero">
+  <summary><span class="chip">Energy &amp; grid</span> Meta says it is rethinking its 2030 net-zero goal after a record jump in emissions from building AI data centres.</summary>
+  <div class="exp">
+    <p>Meta&rsquo;s 19 November sustainability report says it is re-evaluating its timelines, interim milestones and the 2030 date, because demand for AI infrastructure grew faster than anyone expected (Ars Technica, quoting the report). Ars says the rise in Meta&rsquo;s emissions was bigger than any Big Tech rival&rsquo;s. It is the clearest admission yet that AI growth is beating the companies&rsquo; own climate targets. That bears on power demand and on local fights over data centres.</p>
+    <p class="btl"><b>Below the line because</b> it is a target being revised, not a change in what gets built.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/">Ars Technica</a></p>
+  </div>
+</details>
+
+<details class="short" id="trump-jr-1789">
+  <summary><span class="chip">US politics &amp; policy</span> House Democrats are widening a probe into 1789 Capital, the venture firm that made Donald Trump Jr. a partner days after the 2024 election, over whether its companies got favourable federal treatment.</summary>
+  <div class="exp">
+    <p>NBC reports that Rep. Jamie Raskin is questioning what he calls the &ldquo;serendipitous timing&rdquo; of investments. NPR reports that the probe asks whether businesses linked to Trump Jr. benefit from access to the government. Democrats take committee gavels in January, when letters can become subpoenas.</p>
+    <p class="btl"><b>Below the line because</b> it is letters and questions for now, with no finding.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.nbcnews.com/politics/congress/democrat-jamie-raskin-probing-venture-capital-donald-trump-jr-rcna610897">NBC News</a> &middot; <a href="https://www.wusf.org/2026-11-24/democrats-probe-whether-trump-jr-aligned-businesses-benefit-from-government-access">NPR via WUSF</a></p>
+  </div>
+</details>
+
+<details class="short" id="fl-amendment3">
+  <summary><span class="chip">Florida &amp; Tampa Bay</span> Amendment 3&rsquo;s property-tax cut could turn into a tax swap, as counties weigh flat fees and higher rates. Lawyers say its five-year wait for newcomers may be unconstitutional.</summary>
+  <div class="exp">
+    <p>FOX 13 reports that local governments are considering dedicated fees for waste, stormwater and fire. Those fees do not shrink with the homestead exemption and hit small homes as hard as large ones. Counties below their rate caps could raise rates. People who are not permanent Florida residents by 31 December must wait five years for the bigger exemption. The state Supreme Court struck down a similar residency wait in 1982. Mortgage escrow payments may not fall until the first lower bill arrives in late 2027. This continues the county-budget thread opened here on 22 November.</p>
+    <p class="btl"><b>Below the line because</b> nothing has been decided yet; it moves up when Pasco or Pinellas votes on a fee or someone sues over the wait.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.fox13news.com/news/amendment-3-property-tax-cut-legal-questions-local-fees-unfinished-rules-watch">FOX 13 Tampa Bay</a></p>
+  </div>
+</details>
+
+</div>
+
+<div class="fb" style="border-top:1px solid var(--rule); padding-top:1rem; margin-top:1.5rem;">
+  <p><b>One question about this whole section:</b> were the right things ranked below the line?</p>
+  <label><input type="radio" name="fb-also" value="right"> About right</label>
+  <label><input type="radio" name="fb-also" value="promote"> Some of these should have led</label>
+  <label><input type="radio" name="fb-also" value="drop"> Some should have been dropped entirely</label>
+  <label><input type="radio" name="fb-also" value="fewer"> Fewer short items, more depth up top</label>
+</div>
+
+<button class="submit" id="send">Send my feedback &rarr;</button>
+<p class="sources" style="text-align:center">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+
+<footer>
+  <h4>Sources checked this run &mdash; 103, of which 82 outside the watchlist</h4>
+  <p><b>Not pointed at by any thread (82):</b> cbc.ca &middot; aljazeera.com &middot; arstechnica.com &middot; breakingdefense.com &middot; cbsnews.com &middot; cnbc.com &middot; lite.cnn.com &middot; france24.com &middot; bbci.co.uk &middot; coindesk.com &middot; cnbc.com &middot; bbci.co.uk &middot; bbci.co.uk &middot; lefigaro.fr &middot; abc.net.au &middot; businessinsider.com &middot; abcnews.go.com &middot; freightwaves.com &middot; foxnews.com &middot; foxbusiness.com &middot; bbci.co.uk &middot; content.dowjones.io &middot; latimes.com &middot; dw.com &middot; nbcnews.com &middot; nhk.or.jp &middot; lemonde.fr &middot; insurancejournal.com &middot; pbs.org &middot; semafor.com &middot; ft.com &middot; asia.nikkei.com &middot; techcrunch.com &middot; statnews.com &middot; theverge.com &middot; haaretz.com &middot; handelsblatt.com &middot; en.wikipedia.org &middot; straitstimes.com &middot; scmp.com &middot; warontherocks.com &middot; theregister.com &middot; pymnts.com &middot; federalnewsnetwork.com &middot; eenews.net &middot; marketwatch.com &middot; govexec.com &middot; americanbanker.com &middot; spiegel.de &middot; breakingdefense.com &middot; defensescoop.com &middot; mexiconewsdaily.com &middot; semianalysis.com &middot; yle.fi &middot; jpost.com &middot; rollcall.com &middot; finance.yahoo.com &middot; text.npr.org &middot; timesofindia.indiatimes.com &middot; techmeme.com &middot; nypost.com &middot; koreaherald.com &middot; cms.gov fact sheet (primary) &middot; aha.org &middot; mcdermottlaw.com &middot; beckershospitalreview.com &middot; chinadaily.com.cn (MOFCOM statement) &middot; aa.com.tr (Anadolu) &middot; mlex.com &middot; news.bloomberglaw.com &middot; stripes.com &middot; tampabay28.com &middot; prnewswire.com (plaintiffs&rsquo; release) &middot; utahnewsdispatch.com &middot; sltrib.com &middot; siliconrepublic.com &middot; cyberscoop.com &middot; breakingdefense.com article &middot; govexec.com / Nextgov article &middot; livemint.com &middot; bbc.co.uk article (Russia satellite) &middot; arstechnica.com.</p>
+  <p><b>Pointed at by a thread (21):</b> gasprices.aaa.com &middot; americanbanker.com &middot; cftc.gov &middot; datacenterdynamics.com &middot; fdic.gov &middot; federalreserve.gov &middot; floridaphoenix.com &middot; gcaptain.com &middot; fox13news.com &middot; nhc.noaa.gov &middot; ofac.treasury.gov &middot; oilprice.com &middot; scotusblog.com &middot; tampabay.com &middot; home.treasury.gov &middot; whitehouse.gov &middot; wusf.org &middot; home.treasury.gov daily par yield curve CSV (23 Nov) &middot; public-inspection.federalregister.gov (EBSA, BIS, CMS and NRC documents) &middot; gasprices.aaa.com 19 Nov release &middot; ufouap.com weekly log (UAP sweep).</p>
+  <p>Article pages fetched to stand stories up are cited under each story and are not counted again unless they are the only page reached on that outlet.</p>
+
+  <h4>Could not reach</h4>
+  <p>axios.com (403) &middot; cbo.gov (403) &middot; ferc.gov (403) &middot; elpais.com (403) &middot; theguardian.com (403) &middot; lawfaremedia.org (403) &middot; theguardian.com (403) &middot; thehill.com (403) &middot; nrc.gov (403) &middot; politico.com (403) &middot; sec.gov (403) &middot; occ.gov (404) &middot; utilitydive.com (403) &middot; washingtonpost.com (timeout) &middot; wfla.com (403) &middot; apnews.com (403) &middot; reuters.com (401) &middot; fierce-network.com (403) &middot; bloomberg.com (403) &middot; theinformation.com (403) &middot; taipeitimes.com (403) &middot; war.gov (403, UAP sweep). Reuters and AP front pages refused automated access, so their reporting is cited through syndicated copies (Yahoo, Insurance Journal, gCaptain). The Tampa Bay Times, Le Monde, Haaretz and FT article pages are paywalled; they are cited for headlines only and not used to verify facts.</p>
+
+  <h4>Seen, not run</h4>
+  <p>The Army&rsquo;s Iowa lead-azide detonation (no structural change) &middot; Williams, Musalem and other Fed speakers (prints and decisions only) &middot; Trump&rsquo;s threat to ban US data centres abroad (no new fact since 20 November) &middot; the Riemann-hypothesis claim (no new fact beyond the Clay Institute&rsquo;s review) &middot; UAP disclosure (no new verifiable fact; the ufouap.com weekly log was checked and war.gov refused access) &middot; Holtec&rsquo;s small-reactor construction-permit application at Palisades, docketed by the NRC (a paperwork step) &middot; Treasury&rsquo;s auto-enrollment rules (a week old) &middot; COP31 (covered Sunday) &middot; DNC debate rules (horse race) &middot; GTA VI sales &middot; the Seattle ICE arrests.</p>
+
+  <h4>The negative check</h4>
+  <p><i>What is the biggest story today that is not on my list, and why is it not?</i> The CMS Medicare Advantage proposal. It is a primary document no thread points at, and the front pages did not carry it. It leads, flagged as underreported. Runners-up that became leads: China&rsquo;s export-control extension and Kalshi&rsquo;s Utah exit. Front-page stories excluded: the Sanofi&ndash;Insmed deal and the Grok suits (short items), the Seattle arrests, the Iowa detonation, and sports and celebrity items.</p>
+
+  <h4>Confidence markers and divergence boxes</h4>
+  <p>20 stories, 20 markers (Independent corroboration: 10 &middot; Primary source: 2 &middot; Single-sourced: 8); 9 divergence boxes. Leads without a box (Amazon&ndash;Decart, MacDill) had accounts that agreed on facts and weight. Most short items without a box were single-sourced or had accounts that agreed. <b>Audit against Claude&rsquo;s No. 81</b>, opened only after this draft was finished: Claude runs 7 leads and 7 divergence boxes. 3 of this edition&rsquo;s 9 leads share a subject with Claude&rsquo;s (Nvidia, Kalshi, the Russian satellite), and the Army Hawaii audit and the tanker cyberattacks appear here in shorter form. No factual conflict was found that needed fixing. Claude&rsquo;s New York Kalshi item is a separate state-court ruling on Monday, not the federal ruling on Friday reported here. Nothing in this edition was changed after reading it.</p>
+
+  <h4>Accountability to earlier issues</h4>
+  <p><b>Correction / reversal, 18 November, Nvidia:</b> that edition reported that the board did not intend to reinstate Jensen Huang. On Monday it did; the reversal is flagged at the top of today&rsquo;s Nvidia lead. The 18 November report described the board&rsquo;s stated position at the time, but the framing that he was out for good did not hold. <b>23 November, oil:</b> Brent under $92 and the pump at $3.64 held; Brent is now near $89 and the pump $3.61. <b>23 November, CFTC v. states:</b> the thread continues with Kalshi&rsquo;s Utah exit and the New York ruling. <b>22 November, Amendment 3:</b> the county-budget thread continues in a short item. No other corrections are owed.</p>
+
+  <h4>About this issue</h4>
+  <ul>
+    <li>Grok edition for 24 November, produced by the scheduled morning routine. Layout built from Issue 10 (2026-09-10b.html), not from any previous Grok edition.</li>
+    <li>9 lead stories including Florida, 11 short items. 6 leads are new subjects; 3 are follow-ups.</li>
+    <li>Every quotation is under fifteen words and attributed; everything else is paraphrase. Non-English sources (Handelsblatt, Spiegel, Le Figaro) are paraphrased in translation.</li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n  → " + i.value + "");
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on Issue No. 81-grok — 24 November 2026 (Grok edition)\n\n" + lines.join("\n")
+      + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-11-24-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
