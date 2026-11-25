@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Wednesday, 25 November 2026 (Grok edition, Issue 82-grok)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  /* short-item tier */
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list summary .chip { vertical-align:.05rem; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 82-grok &middot; Wednesday, 25 November 2026 &middot; Grok edition</div>
+  <h1>Washington readies tariffs on up to 16 economies, hackers get into FinCEN, and chip stocks slide into a heavy data morning before Thanksgiving</h1>
+  <p class="sub">10 stories at length, 10 in brief. GDP, PCE inflation, durable goods and new-home sales are due today; this edition went to press before them and uses none. Built on the Issue 10 (2026-09-10b) layout.</p>
+  <p class="prov"><b>137 sources checked, 108 of them outside the watchlist</b> (27 pages refused or failed; listed in the footer). Wires, foreign front pages (Handelsblatt, Le Monde, Le Figaro, Spiegel, Nikkei, SCMP, Yle, Straits Times, Taipei Times, Korea Herald, ABC Australia, CBC, France 24, DW, NHK, Times of India, Jerusalem Post, Mexico News Daily) and trade outlets (The Register, FreightWaves, Insurance Journal, Coindesk, PYMNTS, STAT, DefenseScoop, Breaking Defense, E&amp;E News) were read before the document sources the threads point at. X news searches were used to find stories, never to confirm them. The last two Grok editions were read for accountability only, not as the menu. <b>6 of 10 leads are new subjects; 4 continue threads</b> (markets, Nvidia, Hormuz-to-pump, the 1789 Capital probe), which is the cap. <b>Biggest story not on my list:</b> the Section 301 tariff plan. No thread pointed at USTR, and it now leads. The negative check also surfaced three things no thread points at: the FinCEN breach, Amazon&rsquo;s AI-agent report and the FDIC&rsquo;s quarterly profile. Together they pushed the Russia-deals report, Abrego Garcia and the Iowa detonation into short items.<br><br>
+  <b>Accounts compared per lead:</b> tariffs-301: 3 independent (Reuters, AP, BBC) plus DW and BusinessLine rewrites; no USTR document yet &middot; markets-data-day: Reuters closes via NBC, CNBC, MarketWatch, Reuters futures; Treasury, BEA and Census pages (primary) &middot; fincen-cia-breach: FinCEN notice (primary) plus The Verge, The Record, ABC; CIA via AP (Federal News Network) and The Verge &middot; nvidia-briefing: NYT briefing report read via Fortune and Quartz (one source); ABC and Washington Post on Blanche (2 independent); The Atlantic via IBTimes and Mediaite (one source, with Commerce response) &middot; huawei-verdict: 3 independent (AP, BBC, NBC) &middot; hormuz-oil-pump: gCaptain (UKMTO/JMIC); DW and Al Jazeera on Ras Tanura (Houthi vs Saudi accounts); Reuters via CNBC on prices; AAA series (primary); NY Post interview &middot; ai-agents-zero-day: Amazon report (primary) plus Ars Technica &middot; fdic-qbp: FDIC release (primary) plus American Banker headline; Treasury curve &middot; hadrian-loan: ProPublica (one source) plus the Pentagon and White House responses via ProPublica and Hindustan Times &middot; fl-snap-errors: Florida Phoenix (one source, citing DCF reports) plus USDA&rsquo;s published 2025 rate as cited.<br><br>
+  <b>Disclosure.</b> A <code>git pull</code> showed that Claude&rsquo;s run had changed <code>config.md</code> (15 lines), <code>index.html</code> and added <code>issues/2026-11-25.html</code>. I did not read the config change; this edition&rsquo;s watchlist and weights come from <code>config.md</code> as of the Grok commit of 24 November. <b>One accidental exposure:</b> while checking how the archive index is built, a line-number search of <code>index.html</code> printed the one-line summary of Claude&rsquo;s No. 82, before this draft was written. That summary names the FAA ground-stop investigation, Nvidia and the attorney general, hacked commercial ships, and Alaska&rsquo;s voter roll. My lead list was already fixed from my own sweep. I added nothing from that line: the FAA and Alaska items are not in this edition, and the ship-hacking figure from Tuesday&rsquo;s Grok edition is not repeated. The Nvidia lead was already chosen. No Claude commit message was read. Claude&rsquo;s edition itself was opened only after selection, order, headlines and copy were finished.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#tariffs-301">The White House is about to rebuild Trump&rsquo;s struck-down global tariffs: new Section 301 duties on up to 16 economies, held to the caps in existing trade deals</a></li>
+    <li><a href="#markets-data-day">Chip stocks fall 7.9% in a day and Nasdaq futures are down about 2%, with Anthropic below its IPO price, as GDP and PCE land at 8:30</a></li>
+    <li><a href="#fincen-cia-breach">Hackers got into FinCEN, the Treasury office that holds banks&rsquo; suspicious-activity reports, hours after an unclassified CIA system was breached</a></li>
+    <li><a href="#nvidia-briefing">Intelligence officials tell Congress the woman in the Huang affair did pass information to China; the attorney general won&rsquo;t say what he cleared; and export agents were guarding Lutnick</a></li>
+    <li><a href="#huawei-verdict">A Brooklyn jury convicts Huawei of trade-secret theft, bank fraud and sanctions evasion, but acquits it of racketeering, the charge that tied the case together</a></li>
+    <li><a href="#hormuz-oil-pump">Ten tankers hit in a week at Hormuz and Houthi drones over Ras Tanura, yet Brent sits near $91 and the pump average falls to $3.59 on Thanksgiving eve</a></li>
+    <li><a href="#ai-agents-zero-day">Amazon says Chinese-linked hackers set AI agents loose with one instruction, &ldquo;obtain shell access&rdquo;, and the agents found and used a zero-day on their own</a></li>
+    <li><a href="#fdic-qbp">Bank profits fell 5.9% in the third quarter to $84.8bn as losses on bond holdings rose; the FDIC says capital and liquidity stay strong</a></li>
+    <li><a href="#hadrian-loan">The Pentagon is weighing a loan of up to $15bn, about twice the company&rsquo;s value, to a factory startup backed by Donald Trump Jr.&rsquo;s fund</a></li>
+    <li><a href="#fl-snap-errors">Florida &amp; Tampa Bay: Florida&rsquo;s SNAP error rate is rising despite a $4m AI fix, and from October 2027 a high rate could put the state on the hook for 15% of food costs</a></li>
+    <li><a href="#also-today">Also today (10)</a> &mdash; ranked below the line, each one opens.</li>
+  </ol>
+</nav>
+
+<article id="tariffs-301">
+  <h2>The White House is about to rebuild Trump&rsquo;s struck-down global tariffs: new Section 301 duties on up to 16 economies, held to the caps in existing trade deals</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>The Trade Representative is expected to release the findings of a Section 301 probe into &ldquo;excess industrial capacity&rdquo; and propose new import duties, three people told Reuters. The BBC says the announcement could come as early as today. The duties would come on top of tariffs already in place.</p>
+  <p>The probe covers China, the EU, India, Japan, South Korea, Mexico, Vietnam, Taiwan, Thailand, Malaysia, Indonesia, Switzerland, Norway, Singapore, Bangladesh and Cambodia (Reuters). Rates would be set country by country. One source said existing deal ceilings would hold: 15% for the EU, Japan and South Korea, 19% for Malaysia, and the 20% cap on China while the truce lasts. That truce&rsquo;s interim deal expires on 10 January (BBC). Mexico and Norway are unlikely to face immediate duties.</p>
+  <p>How it is known: AP and Reuters each had their own sources, and the BBC its own briefing. The White House and USTR did not comment. There is no document yet.</p>
+  <p>Why it matters: this is the legal replacement for the &ldquo;Liberation Day&rdquo; tariffs the Supreme Court struck down in February. It runs alongside a forced-labour probe of 59 countries plus the EU, which already produced 10% and 12.5% duties in July (Reuters via BusinessLine). Section 301 has held up in court before, so these duties would be harder to undo. The reports landed during Tuesday&rsquo;s selloff (next story).</p>
+  <p><b>What to watch:</b> the USTR notice itself, with rates, exemptions and an effective date. Also any Chinese retaliation before the 10 January truce date.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is it 14 economies or 16, and is it today?</span>
+    <p><b>What is disputed.</b> A <b>facts</b> dispute, small but real. Reuters and AP say <b>16</b>. The BBC says &ldquo;at least 14&rdquo;. The BBC says &ldquo;as early as Wednesday&rdquo;; AP says &ldquo;in the coming days&rdquo; and stressed the timing could change.</p>
+    <p><b>Why they differ.</b> Reuters names 16 economies in the probe but says Mexico and Norway are unlikely to face immediate duties. That leaves 14 actually hit. The two counts measure different things. On timing, each outlet reports what its sources expect, and none has a document.</p>
+    <p><b>What it means for you.</b> Read it as 16 investigated, about 14 tariffed at first. Expect it this week rather than on a fixed day. The USTR notice settles both points.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; how the caps would work</summary>
+    <div class="exp">
+      <p>Reuters&rsquo; source said the White House would honour the ceilings in finalised trade deals. That would leave most allies roughly where they are now, at least at first. The open question is China. Its rate stays at the 20% cap only &ldquo;as long as&rdquo; the truce is extended; if it lapses, a higher excess-capacity rate would apply.</p>
+      <p>The probe also targets Chinese investment in Vietnam, Indonesia and Cambodia, which builds goods for the US market and avoids earlier tariffs (Reuters). The Taipei Times expects Taiwan&rsquo;s rate to stay capped at 15%.</p>
+      <p>For US buyers, the July forced-labour duties are already in place, and these would come on top. The legal mechanism matters as much as the rate. A Section 301 action follows notice and comment, which makes it slower to impose and harder to challenge than the emergency-powers tariffs the Court rejected.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.investing.com/news/commodities-news/trump-administration-set-to-unveil-new-tariffs-after-probeon-excess-factory-capacity-sources-say-5048724">Reuters via Investing.com</a> &middot;
+    <a href="https://apnews.com/article/trump-tariffs-china-european-union-d97ed6f4017152ca4c18de5517db6d51">AP</a> &middot;
+    <a href="https://www.bbc.com/news/articles/c893r9ke5p97o">BBC</a> &middot;
+    <a href="https://www.thehindubusinessline.com/news/us-weighs-new-import-duties-on-india-china-and-14-other-trading-partners/article71739874.ece">Reuters via BusinessLine</a> &middot;
+    <a href="https://www.dw.com/en/india-news-us-prepares-new-tariffs-after-trade-probe/live-80042306">DW India live</a>
+  </p>
+  <div class="fb">
+    <p>New thread. Follow the Section 301 duties until the rates are final?</p>
+    <label><input type="radio" name="fb-tariffs-301" value="yes"> Yes, track it</label>
+    <label><input type="radio" name="fb-tariffs-301" value="lead"> Only when rates or a court move</label>
+    <label><input type="radio" name="fb-tariffs-301" value="no"> No</label>
+  </div>
+</article>
+
+<article id="markets-data-day">
+  <h2>Chip stocks fall 7.9% in a day and Nasdaq futures are down about 2%, with Anthropic below its IPO price, as GDP and PCE land at 8:30</h2>
+  <div class="meta">
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Monday&rsquo;s Nvidia rally reversed on Tuesday. The S&amp;P 500 fell 0.50% to 7,201.09 and the Nasdaq 1.48% to 23,733.54. The Dow rose 0.85% to 50,018.70. Tech fell 2.8% and a semiconductor index 7.9%. Nvidia lost 5.9% (Reuters via NBC). Anthropic closed below its $83 IPO price for the first time, four sessions after listing (CNBC, MarketWatch).</p>
+  <p>Before the open, futures were down further. Nasdaq contracts were off about 2% (MarketWatch, Reuters), and chip maker Ambarella was down almost 40% premarket after weak guidance. SoftBank fell as much as 15% in Tokyo (CNBC).</p>
+  <p>Treasury&rsquo;s 10-year closed Tuesday at 4.91%, down from 4.92% (Treasury par curve). The 30-year was 5.30%.</p>
+  <p>Why it matters: this is a heavy data day before Thanksgiving. At 8:30 ET the Commerce Department publishes the second estimate of third-quarter GDP and corporate profits, and October personal income and spending, which includes PCE inflation, the Fed&rsquo;s preferred gauge (BEA schedule). Census&rsquo;s October durable-goods orders are also due today. September orders rose 1.8%. So is October new-home sales, after September&rsquo;s 676,000 annual rate (Census). This edition went to press before those prints, so none is used here.</p>
+  <p><b>What to watch:</b> the PCE print against a market already pricing more Fed hikes, and whether the tariff notice (lead 1) lands during trading.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; what is driving the selloff: tariffs or doubts about AI?</span>
+    <p><b>What is disputed.</b> A <b>significance</b> dispute. Reuters&rsquo; morning futures story has a web address that blames &ldquo;fresh US tariff concerns&rdquo;. Its current headline says &ldquo;AI losses deepen&rdquo;. A Cetera strategist called Tuesday ordinary profit-taking after the biggest rally in months (via NBC). CNBC points to &ldquo;key-man risk&rdquo; at Nvidia after Huang said he still sees no need for a succession plan.</p>
+    <p><b>Why they differ.</b> The causes are timed together. The tariff reports landed Tuesday, the same day Nvidia gave back gains. Headline writers pick the newest catalyst. Strategists who own the stocks lean towards profit-taking.</p>
+    <p><b>What it means for you.</b> The evidence favours AI doubts as the main driver. Chips fell 7.9% while the Dow rose, and a broad tariff shock would hit industrials too. Ambarella and Anthropic fell on their own news. The tariff notice is the test: if industrials and importers sell off once rates are public, tariffs become the second leg.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.nbcnews.com/business/markets/stocks-lower-after-nvidia-fueled-gains-rcna611211">Reuters via NBC News (closes)</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/25/futures-sink-further-into-the-red-as-tech-worries-resurge.html">CNBC Morning Squawk</a> &middot;
+    <a href="https://www.investing.com/news/economy-news/nasdaq-futures-slide-over-2-on-fresh-us-tariff-concerns-inflation-data-in-focus-5050138">Reuters via Investing.com (futures)</a> &middot;
+    <a href="https://www.marketwatch.com/story/anthropics-stock-just-broke-below-its-ipo-price-for-the-first-time-5dc82668">MarketWatch</a> &middot;
+    <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202611">Treasury par yield curve (primary)</a> &middot;
+    <a href="https://www.bea.gov/news/schedule">BEA release schedule (primary)</a> &middot;
+    <a href="https://www.census.gov/economic-indicators/">Census economic indicators (primary)</a>
+  </p>
+  <div class="fb">
+    <p>This went out before the 8:30 prints. On data days, would you rather wait for them?</p>
+    <label><input type="radio" name="fb-markets" value="wait"> Wait for the prints</label>
+    <label><input type="radio" name="fb-markets" value="ontime"> Publish on time, as now</label>
+    <label><input type="radio" name="fb-markets" value="update"> Publish on time, add the prints later in the day</label>
+  </div>
+</article>
+
+<article id="fincen-cia-breach">
+  <h2>Hackers got into FinCEN, the Treasury office that holds banks&rsquo; suspicious-activity reports, hours after an unclassified CIA system was breached</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip new">New</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>FinCEN says it is investigating &ldquo;unauthorized access to a limited subset of its systems.&rdquo; It has taken some systems offline. The notice sits at the top of the Bank Secrecy Act e-filing site, the portal banks use to file suspicious-activity and large-cash reports. Filing still works, but some services may be unavailable. FinCEN is extending deadlines for affected filers and pointing urgent reports to a phone hotline (FinCEN notice).</p>
+  <p>The Verge first reported the notice on Tuesday, and The Record dates it to Tuesday evening. Neither Treasury nor FinCEN has said what was reached or who did it. The Record notes that Chinese state-backed hackers broke into Treasury in 2024.</p>
+  <p>Earlier on Tuesday, The New York Times reported a breach of an unclassified CIA system that handles open-source intelligence. A person familiar told AP that no classified information was involved and the problem was fixed. The Verge reports that the National Geospatial-Intelligence Agency was also hit; the Pentagon declined to comment. The administration has said this month&rsquo;s outages were not a coordinated attack (AP).</p>
+  <p>Why it matters: FinCEN holds the most sensitive financial data in government: every suspicious-activity report a bank files. If those were reached, the exposure covers named customers and live investigations.</p>
+  <p><b>What to watch:</b> whether FinCEN says filed reports were accessed, and how long the deadline extension runs. Also whether the CIA, NGA and FinCEN incidents are tied to one actor.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://bsaefiling.fincen.gov/">FinCEN BSA E-Filing notice (primary)</a> &middot;
+    <a href="https://www.theverge.com/policy/1041957/fincen-treasury-cybersecurity-incident">The Verge</a> &middot;
+    <a href="https://therecord.media/treasury-fincen-takes-systems-offline-after-cyber-incident">The Record</a> &middot;
+    <a href="https://abcnews.com/US/treasurys-fincen-cybersecurity-incident-includes-unauthorized-access-systems/story?id=138432822">ABC News</a> &middot;
+    <a href="https://federalnewsnetwork.com/cybersecurity/2026/11/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/">AP via Federal News Network (CIA)</a>
+  </p>
+  <div class="fb">
+    <p>Breaches of financial infrastructure: lead or short item?</p>
+    <label><input type="radio" name="fb-fincen" value="lead"> Lead when a regulator is hit</label>
+    <label><input type="radio" name="fb-fincen" value="short"> Short item unless data loss is confirmed</label>
+  </div>
+</article>
+
+<article id="nvidia-briefing">
+  <h2>Intelligence officials tell Congress the woman in the Huang affair did pass information to China; the attorney general won&rsquo;t say what he cleared; and export agents were guarding Lutnick</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>On Tuesday, FBI, CIA and ODNI officials briefed House and Senate intelligence committee staff on the case. That was the day after Nvidia reinstated Jensen Huang (<a href="2026-11-24-grok.html#nvidia-huang">yesterday&rsquo;s lead</a>). The briefers found no evidence China&rsquo;s Ministry of State Security told Alice Huang to start the affair. They did not dispute that she passed it information afterwards. They said the man introduced as her husband, Kang Wei, was the more significant asset. Staff were not shown a classified 30 March memo both committees have asked for (New York Times, via Fortune and Quartz).</p>
+  <p>At a news conference, Attorney General Todd Blanche declined to say whether Huang had ever been investigated. Asked about the export-control probe, he first said he did not know what the reporter meant, then called it &ldquo;not new information&rdquo; (ABC). Twelve days earlier he had called that probe ongoing. He called Nvidia &ldquo;a good corporate citizen.&rdquo;</p>
+  <p>The Atlantic reports that Commerce Secretary Howard Lutnick used agents from the Bureau of Industry and Security, the chip-export enforcers, as bodyguards on his jet and at his homes. Usually three or four were on duty at a time, out of fewer than 200 (via IBTimes, Mediaite). Commerce says the details were temporary and followed record threats.</p>
+  <p>Why it matters: Huang&rsquo;s reinstatement rested on official assurances. The intelligence picture is murkier than those assurances, and the office meant to stop chip smuggling is thin.</p>
+  <p><b>What to watch:</b> Huang&rsquo;s closed-door House interview on 1 December and his Senate Banking testimony on 3 December.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is there an open investigation touching Huang or not?</span>
+    <p><b>What is disputed.</b> A <b>facts</b> dispute. Blanche now plays down any investigation, and the White House told Nvidia&rsquo;s board Huang faced no charges (ABC, citing sources). But on 12 November Blanche himself said the export-control probe was ongoing. The Justice Department leads the Megaspeed criminal case, and Alice Huang ran Megaspeed.</p>
+    <p><b>Why they differ.</b> These are not the same claim. &ldquo;Huang faces no charges&rdquo; is about one person. &ldquo;The export probe is ongoing&rdquo; is about Megaspeed and chip diversion. Blanche stood with a president who had vouched for Huang a day earlier. That explains the hedging better than any change in the facts. Separately, Commerce says the agents were a temporary emergency detail, while The Atlantic&rsquo;s five sources describe a standing arrangement.</p>
+    <p><b>What it means for you.</b> The evidence supports this reading: the Megaspeed probe is live, and nothing public shows Huang is a target. A filing in the Megaspeed case, or Huang&rsquo;s answers under oath on 3 December, would settle it. On the agents, the number and dates are unknown. Commerce could settle that by publishing them.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://fortune.com/2026/11/25/congress-briefed-links-jensen-huang-nvidia-affair-china-intelligence/">Fortune (NYT briefing report)</a> &middot;
+    <a href="https://qz.com/officials-brief-congress-nvidia-affair-intelligence-112426">Quartz</a> &middot;
+    <a href="https://abcnews.com/US/trump-administration-assured-nvidia-huang-facing-criminal-charges/story?id=138405808">ABC News (Blanche)</a> &middot;
+    <a href="https://www.washingtonpost.com/national-security/2026/11/24/blanche-downplays-nvidia-scrutiny-after-trumps-move-back-jensen-huang/">Washington Post</a> &middot;
+    <a href="https://www.ibtimes.com/lutnick-reassigned-bis-agents-personal-security-3810155">IBTimes (Atlantic report)</a> &middot;
+    <a href="https://www.mediaite.com/media/news/bombshell-report-says-lutnick-reassigned-agents-safeguarding-us-computer-chips-to-his-personal-security/">Mediaite</a>
+  </p>
+  <div class="fb">
+    <p>Nvidia has led or run high for a week. Keep it up top?</p>
+    <label><input type="radio" name="fb-nvidia" value="top"> Yes, while facts move</label>
+    <label><input type="radio" name="fb-nvidia" value="lower"> Lower it unless something is under oath</label>
+    <label><input type="radio" name="fb-nvidia" value="short"> Short item</label>
+  </div>
+</article>
+
+<article id="huawei-verdict">
+  <h2>A Brooklyn jury convicts Huawei of trade-secret theft, bank fraud and sanctions evasion, but acquits it of racketeering, the charge that tied the case together</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>After a two-month trial, jurors found Huawei and three subsidiaries guilty on 10 of 12 counts on Tuesday (BBC). These include conspiracy to steal trade secrets, bank and wire fraud, money laundering, conspiracy to defraud the United States and conspiracy to violate US sanctions on Iran (NBC, AP). Huawei was acquitted of racketeering conspiracy and conspiracy to obstruct justice. Sentencing is set for 14 September; the company faces fines, forfeiture and restitution (NBC).</p>
+  <p>Prosecutors said the technology taken included source code, router manuals, antenna and robot-testing technology. The companies named as victims include T-Mobile, Cisco, Quintel and CNEX (NBC). Attorney General Todd Blanche said Huawei ran its US business &ldquo;on the basis of lies and theft&rdquo; (BBC). Huawei says it will appeal.</p>
+  <p>How it is known: AP, the BBC and NBC each covered the verdict and agree on the counts.</p>
+  <p>Why it matters: the case dates from the 2019 indictment and Meng Wanzhou&rsquo;s 2018 arrest in Canada. It ends with a criminal judgment against China&rsquo;s national champion, in the week the US readies new tariffs and fights chip diversion. Huawei is already barred from selling to US carriers, so the direct commercial effect is small. The legal record is what matters for sanctions and allies&rsquo; procurement.</p>
+  <p><b>What to watch:</b> the size of the fine at sentencing and whether Beijing ties the verdict to trade talks before 10 January.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; a sweeping win, or a rejection of the government&rsquo;s theory?</span>
+    <p><b>What is disputed.</b> A <b>significance</b> dispute; the counts are agreed. Prosecutors call it proof of two decades of &ldquo;fraud, theft and deception&rdquo; (Assistant AG Duva, via NBC). Huawei&rsquo;s lawyer says acquittal on racketeering, the one count tying the allegations together, &ldquo;repudiated the central government narrative&rdquo; (AP).</p>
+    <p><b>Why they differ.</b> Each side is describing the part of the verdict that helps it. Racketeering required the jury to find Huawei operated as a criminal enterprise. Jurors convicted on the specific schemes but would not go that far.</p>
+    <p><b>What it means for you.</b> Both are partly right. The specific crimes, including sanctions evasion, are now established in a US court, which is what affects banks and regulators. The company-as-criminal-enterprise claim is not. The appeal is the next test; the convictions stand meanwhile.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.pbs.org/newshour/nation/u-s-jury-finds-chinese-tech-giant-huawei-guilty-of-conspiracy-to-steal-trade-secrets-bank-fraud">AP via PBS</a> &middot;
+    <a href="https://www.bbc.co.uk/news/articles/cmy49ngydqzpo">BBC</a> &middot;
+    <a href="https://www.nbcnews.com/news/us-news/chinese-tech-company-huawei-convicted-federal-charges-rcna611189">NBC News</a>
+  </p>
+  <div class="fb">
+    <p>Court outcomes in US–China tech cases: worth a lead?</p>
+    <label><input type="radio" name="fb-huawei" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-huawei" value="short"> Short item</label>
+    <label><input type="radio" name="fb-huawei" value="no"> Skip</label>
+  </div>
+</article>
+
+<article id="hormuz-oil-pump">
+  <h2>Ten tankers hit in a week at Hormuz and Houthi drones over Ras Tanura, yet Brent sits near $91 and the pump average falls to $3.59 on Thanksgiving eve</h2>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>This runs as one causal chain: strikes, crude, the pump. In the strait, the Joint Maritime Information Center counted seven tankers struck since 16 November. Three more reported since bring it to ten in a week; all kept sailing. A bulk carrier at anchor off Khor Fakkan caught fire. Iran has listed 26 tugboats as non-compliant for serving ships it objects to. Its claims that tankers hit mines are not independently confirmed (gCaptain).</p>
+  <p>On land, Yemen&rsquo;s Houthis say they set fires at Saudi Arabia&rsquo;s Ras Tanura refinery and export terminal and hit Riyadh&rsquo;s financial district again. Saudi officials say they downed four drones at Ras Tanura and fragments fell. Eleven people were hurt on Tuesday when the tower housing the sovereign wealth fund was hit (DW, Al Jazeera).</p>
+  <p>Crude barely moved. Brent was $90.97 and WTI $81.58 early Wednesday, slightly lower on the day (Reuters via CNBC). That is up from $89.17 Tuesday morning, when <a href="2026-11-24-grok.html#hormuz-oil-pump">this brief</a> noted a three-month low. Traders cite the IEA&rsquo;s forecast of a fourth-quarter surplus. OPEC+ sets 2027 output on 29 November.</p>
+  <p>At the pump, AAA&rsquo;s regular average is $3.5866, down from $3.6149 yesterday and $4.2892 a month ago. Diesel is $5.76. Trump told the New York Post the war is &ldquo;funded&rdquo; until about the end of January.</p>
+  <p><b>What to watch:</b> Thursday&rsquo;s AAA print against the $3.58 Thanksgiving record (below), and the OPEC+ decision.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; was Ras Tanura hit?</span>
+    <p><b>What is disputed.</b> A <b>facts</b> dispute. The Houthis say their strikes &ldquo;caused fires&rdquo; at the refinery (spokesman Saree, via DW). The Saudi-led coalition says air defences destroyed four drones over Ras Tanura and only fragments fell, with no casualties (Al Jazeera).</p>
+    <p><b>Why they differ.</b> Both sides have reasons to inflate or minimise, and neither has shown imagery. The Saudi account is more specific. Saudi Arabia has an interest in calm export markets; the Houthis want to show reach.</p>
+    <p><b>What it means for you.</b> Believe the narrow version for now: drones intercepted, debris, no confirmed damage to processing units. Brent&rsquo;s flat response fits that. Satellite imagery of flaring at the site, or an Aramco notice to buyers, would settle it.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://gcaptain.com/four-more-ships-attacked-as-iran-widens-hormuz-crackdown-to-tugboats/">gCaptain (UKMTO, JMIC)</a> &middot;
+    <a href="https://www.dw.com/en/houthis-claim-attacks-on-saudi-refinery-financial-district/a-80043632">DW</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/25/saudi-led-coalition-intercepts-houthi-attacks-after-hodeidah-strike">Al Jazeera</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/25/oil-wti-brent-hormuz-middle-east.html">Reuters via CNBC (prices)</a> &middot;
+    <a href="https://gasprices.aaa.com/">AAA national average (primary)</a> &middot;
+    <a href="https://nypost.com/2026/11/24/us-news/trump-says-iran-war-funded-through-january-and-addresses-israels-goal-of-tehran-regime-change/">New York Post interview</a>
+  </p>
+  <div class="fb">
+    <p>Is the strike-to-pump chain still worth a daily lead?</p>
+    <label><input type="radio" name="fb-oil" value="daily"> Yes, daily</label>
+    <label><input type="radio" name="fb-oil" value="moves"> Only when the pump or Brent moves 2%+</label>
+    <label><input type="radio" name="fb-oil" value="short"> Short item</label>
+  </div>
+</article>
+
+<article id="ai-agents-zero-day">
+  <h2>Amazon says Chinese-linked hackers set AI agents loose with one instruction, &ldquo;obtain shell access&rdquo;, and the agents found and used a zero-day on their own</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip new">New</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>Amazon&rsquo;s threat-intelligence team published the case on its security blog. On 10 September it found a public, password-free server running Cairn, an open-source AI penetration-testing framework. Its project files, prompts and AI output were visible to anyone. The prompts were in simplified Chinese, and script timestamps were set to China Standard Time.</p>
+  <p>Over about 48 hours from 8 September, the operator gave the agents a list of IP addresses at East Asian universities, outside mainland China, and the goal of getting a shell. The agents planned, ran and adjusted their own attacks. In one case they found an unknown flaw in an open-source medical-imaging AI application and took full control of the server (Amazon).</p>
+  <p>Ars Technica adds that Cairn is model-agnostic and runs on back ends including Claude Code and Codex. Palo Alto Networks has seen it used with Chinese models GLM and DeepSeek. Earlier this month Palo Alto reported 25 autonomous operations against at least 19 organisations in semiconductors, defence and civil society.</p>
+  <p>Why it matters: it is a documented case of AI agents finding and exploiting a new vulnerability with minimal human direction. That is the capability lab safety teams have warned about, now in criminal use with commercial and open models. It lands in a month of US government breaches (lead 3), though nothing links this campaign to them.</p>
+  <p><b>What to watch:</b> whether labs whose models were used say anything about detection or account bans.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://aws.amazon.com/blogs/security/chinese-nexus-actors-cairn-ai-agents-found-a-zero-day-on-their-own/">Amazon Threat Intelligence (primary)</a> &middot;
+    <a href="https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/">Ars Technica</a>
+  </p>
+  <div class="fb">
+    <p>Lab-safety thread: should attacker use of AI agents count?</p>
+    <label><input type="radio" name="fb-agents" value="yes"> Yes, track it with lab safety</label>
+    <label><input type="radio" name="fb-agents" value="sep"> Separate thread</label>
+    <label><input type="radio" name="fb-agents" value="no"> No</label>
+  </div>
+</article>
+
+<article id="fdic-qbp">
+  <h2>Bank profits fell 5.9% in the third quarter to $84.8bn as losses on bond holdings rose; the FDIC says capital and liquidity stay strong</h2>
+  <div class="meta">
+    <span class="chip">US financials</span>
+    <span class="chip new">New</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The FDIC&rsquo;s Quarterly Banking Profile, released on Tuesday, covers 4,205 insured banks and thrifts. Third-quarter net income was $84.8bn, down $5.3bn (5.9%) from the second quarter but up 7.0% on the year. Return on assets was 1.28%.</p>
+  <p>Margins widened. The industry&rsquo;s net interest margin rose 7 basis points to 3.39%. Deposits grew 0.9%, a ninth straight quarterly rise. Loans grew 1.9% on the quarter and 7.5% on the year. Past-due and nonaccrual rates edged up while net charge-offs edged down. The deposit-insurance fund&rsquo;s reserve ratio rose 2 basis points to 1.50%.</p>
+  <p>The weak spot is bonds. The FDIC says unrealized losses on securities rose but remain well below the 2023 peak; it gives the figure in its charts, not the release. American Banker&rsquo;s headline puts the rise at 48%. With the 10-year near 4.9% (Treasury), the bonds banks bought when rates were low are worth less, the same exposure that sank Silicon Valley Bank in 2023.</p>
+  <p>Why it matters: this is the regulator&rsquo;s own scorecard for the core financial beat. Lending is growing fast while bond losses rise. More Fed hikes would make that pairing worse.</p>
+  <p><b>What to watch:</b> the FDIC&rsquo;s chart pack for the dollar figure, and whether any bank reports deposit outflows tied to unrealized losses.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; strong system, or growing hole?</span>
+    <p><b>What is disputed.</b> A <b>significance</b> dispute about the same data. The FDIC leads with strong capital and liquidity and calls asset quality stable. American Banker leads with lower earnings and a 48% jump in unrealized losses.</p>
+    <p><b>Why they differ.</b> The FDIC&rsquo;s release is written to reassure depositors, and it measures losses against the 2023 peak. A trade paper for bankers measures them against last quarter. Both are accurate.</p>
+    <p><b>What it means for you.</b> Read it as stable today, more exposed if rates rise again. The number that would change the picture is unrealized losses as a share of capital at mid-sized banks. That is in the FDIC&rsquo;s data tables, which this brief has not yet read.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.fdic.gov/news/press-releases/2026/fdic-insured-institutions-reported-return-assets-128-percent-and-net">FDIC press release (primary)</a> &middot;
+    <a href="https://www.americanbanker.com/news/bank-earnings-dip-as-unrealized-losses-rise-by-48-in-q3">American Banker</a> &middot;
+    <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202611">Treasury par yield curve (primary)</a>
+  </p>
+  <div class="fb">
+    <p>Quarterly regulator data: worth a lead when nothing breaks?</p>
+    <label><input type="radio" name="fb-fdic" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-fdic" value="short"> Short item</label>
+    <label><input type="radio" name="fb-fdic" value="no"> Skip</label>
+  </div>
+</article>
+
+<article id="hadrian-loan">
+  <h2>The Pentagon is weighing a loan of up to $15bn, about twice the company&rsquo;s value, to a factory startup backed by Donald Trump Jr.&rsquo;s fund</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>ProPublica reports, from interviews and Pentagon documents, that the Defense Department is considering lending up to $15bn to Hadrian Automation. The California startup uses robots and AI to make precision parts. The money would build a dozen automated factories for munitions, drones and other equipment. That would be about ten times the Pentagon&rsquo;s largest loan in its recent lending push, and nearly double Hadrian&rsquo;s value at its summer funding round.</p>
+  <p>1789 Capital, where Trump Jr. has been a partner since late 2024, took part in that round and holds what it calls a minority stake. Pentagon staff raised concerns about whether Hadrian can hire and expand fast enough. Former officials say the government would end up lending a contractor money to repay with Pentagon contracts.</p>
+  <p>The Pentagon says political connections play &ldquo;absolutely no role&rdquo; in funding decisions, the talks are early, and the figure is not $15bn. A White House official says Hadrian approached the Pentagon (via ProPublica and Hindustan Times).</p>
+  <p>Why it matters: this follows Monday&rsquo;s letters from Rep. Jamie Raskin to four 1789-backed firms, Hadrian among them (<a href="2026-11-24-grok.html#trump-jr-1789">yesterday&rsquo;s short item</a>). It would be a very large taxpayer exposure to a young contractor, decided weeks before Democrats take both chambers.</p>
+  <p><b>What to watch:</b> any term sheet or approval before 3 January, and whether the new House majority subpoenas the loan file.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is it a $15bn loan or not?</span>
+    <p><b>What is disputed.</b> A <b>facts</b> dispute. ProPublica cites Pentagon documents laying out financing terms and risks for up to $15bn. The Pentagon disputes the figure, calls the talks &ldquo;early stages,&rdquo; and says multibillion-dollar deals with other firms have been agreed but not announced.</p>
+    <p><b>Why they differ.</b> ProPublica has the documents; the Pentagon has the decision and an interest in making the loan look routine. Both can be true: a $15bn ceiling in planning papers, with no figure yet agreed.</p>
+    <p><b>What it means for you.</b> Treat $15bn as the size under consideration, not a decision. Publication of the other unannounced multibillion deals would show whether this one is unusual. So would a signed term sheet.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.propublica.org/article/donald-trump-jr-hadrian-pentagon-loan">ProPublica</a> &middot;
+    <a href="https://www.hindustantimes.com/world-news/us-news/pentagon-denies-favouritism-after-reports-of-15-billion-loan-to-trump-jr-linked-startup-101795583477929.html">Hindustan Times (Pentagon response)</a>
+  </p>
+  <div class="fb">
+    <p>Trump-family business and federal money: lead or short item?</p>
+    <label><input type="radio" name="fb-hadrian" value="lead"> Lead when money is at stake</label>
+    <label><input type="radio" name="fb-hadrian" value="short"> Short item</label>
+    <label><input type="radio" name="fb-hadrian" value="no"> Skip</label>
+  </div>
+</article>
+
+<article id="fl-snap-errors">
+  <h2>Florida &amp; Tampa Bay: Florida&rsquo;s SNAP error rate is rising despite a $4m AI fix, and from October 2027 a high rate could put the state on the hook for 15% of food costs</h2>
+  <div class="meta">
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip new">New</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>Preliminary monthly reports obtained by the Florida Phoenix show SNAP payment errors rising. This year the Legislature gave the Department of Children and Families $4m to hire a vendor and use machine learning to cut errors. DCF signed with Executive Information Solutions on 11 September, according to the department&rsquo;s October report.</p>
+  <p>The stakes come from the 2025 federal tax-and-spending law. From October 2027, states with error rates of 6% or more must pay part of food benefits. Florida&rsquo;s official 2025 rate was 12.97% (USDA), which would mean about 15% of benefit costs. The state already pays more for administration, about $50m a year, $38m of it budgeted this year. DCF&rsquo;s request for 2027&ndash;28 has a $1 placeholder for food costs (Phoenix).</p>
+  <p>There is a twist. States above 13.3% get a delay to 2030, so a slightly worse 2026 rate could postpone the bill. On Friday, USDA let states recalculate error rates after a September court ruling (Phoenix).</p>
+  <p>Why it matters locally: 2.2 million Floridians were on SNAP in July, down 22% on the year. Pasco and Pinellas households feel any benefit cuts, and Tallahassee will fight over the cost-share.</p>
+  <p><b>What to watch:</b> the 2026 rate, final in June, and whether the January session budgets for the cost-share.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is the state fixing SNAP errors or not?</span>
+    <p><b>What is disputed.</b> A <b>significance</b> dispute. Governor-elect Byron Donalds says the state is doing the work to remove waste and fraud (via Phoenix). The Phoenix says the monthly data show the opposite trend.</p>
+    <p><b>Why they differ.</b> Donalds is describing intent and the new vendor contract. The Phoenix is describing preliminary numbers that are not final until June. Enrolment fell 22% in a year, which changes what errors are measured against.</p>
+    <p><b>What it means for you.</b> The data on record favour the Phoenix: the rate is rising for now. Because preliminary rates are revised, the June final figure settles it. Under the 13.3% rule, a higher rate could even delay what the state owes.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://floridaphoenix.com/2026/11/25/florida-snap-error-rates-are-on-the-rise/">Florida Phoenix</a>
+  </p>
+  <div class="fb">
+    <p>Florida fiscal exposure from federal law: right local bar?</p>
+    <label><input type="radio" name="fb-fl" value="yes"> Yes</label>
+    <label><input type="radio" name="fb-fl" value="more"> Want more of this</label>
+    <label><input type="radio" name="fb-fl" value="no"> Too far from Pasco</label>
+  </div>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">10 things I saw and ranked below the line. Each one opens &mdash; the line is my judgement, what is behind it is the substance.</p>
+
+<div class="also-list">
+
+<details class="short" id="russia-deals">
+  <summary><span class="chip">Geopolitics</span> The FT reports the US has dropped business deals with Russia, such as Nord Stream, oil and titanium, as its lever for a Ukraine settlement. A US official calls that &ldquo;not accurate.&rdquo;</summary>
+  <div class="exp">
+    <p>Five officials told the Financial Times that envoys Steve Witkoff and Jared Kushner told European counterparts the corporate tie-ups were no longer central to the US pitch. Russian interest had cooled, and Moscow still insists on territory. The proposals had included US participation in the Nord Stream pipelines and US investment in Russian oil and titanium (FT via The Independent and Reuters).</p>
+    <p>The US channel: sanctions relief and US corporate exposure were on the table; if they are off, talks turn to territory and security, where the Kremlin welcomes a US offer to discuss postwar European security.</p>
+  <div class="div">
+      <span class="t">Divergence &mdash; shelved, or just reorganised?</span>
+      <p><b>What is disputed.</b> A <b>facts</b> dispute. The FT&rsquo;s five officials say the deals are no longer central. A US official says the report is &ldquo;not accurate&rdquo; and the deals remain &ldquo;an element&rdquo; while negotiating tracks are organised.</p>
+      <p><b>Why they differ.</b> The FT&rsquo;s sources are European-briefed officials describing what they were told; the US official speaks for a White House that wants to keep leverage. The two statements can both be true: demoted, not abandoned.</p>
+      <p><b>What it means for you.</b> Read it as demoted. The announcement of the negotiating tracks the US official promised will show whether business deals are in them.</p>
+    </div>
+    <p class="btl"><b>Below the line because</b> Single-sourced reporting, rewritten widely, on a negotiating posture rather than an enacted change.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.independent.co.uk/news/world/europe/trump-putin-business-russia-ukraine-war-b3091204.html">The Independent (FT report)</a> &middot; <a href="https://www.investing.com/news/world-news/us-shelves-proposals-to-use-business-deals-with-russia-to-end-ukraine-war-ft-reports-5049739">Reuters via Investing.com</a></p>
+  </div>
+</details>
+
+<details class="short" id="iowa-detonation">
+  <summary><span class="chip">US politics &amp; policy</span> The Army plans to detonate about five tons of degraded lead azide at the Iowa Army Ammunition Plant at 9 a.m. local time today, after an appeals court let it proceed.</summary>
+  <div class="exp">
+    <p>The material, about 68 barrels, recrystallised over some 20 years in storage and can explode from friction, the EPA says. Environmental groups sued over the EPA&rsquo;s emergency permit and won a pause last week, but the 8th Circuit cleared the plan. Army maps released Tuesday show the dust could travel as far as 100 miles, with the heaviest effects within about 30 square miles of Middletown (CBS). The plume is expected over southeastern Iowa and northeastern Missouri. Iowa&rsquo;s governor issued an emergency proclamation for three counties (ABC).</p>
+    <p class="btl"><b>Below the line because</b> A one-off disposal with a local health risk and no national policy change; it matters again only if lead readings come back high.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.cbsnews.com/news/iowa-army-ammunition-plant-unstable-explosives-detonation/">CBS News</a> &middot; <a href="https://www.cnn.com/2026/11/24/us/iowa-lead-detonation-army">CNN</a> &middot; <a href="https://abcnews.com/US/iowa-detonation-lead-azide-army/story?id=138425051">ABC News</a></p>
+  </div>
+</details>
+
+<details class="short" id="abrego-garcia">
+  <summary><span class="chip">US politics &amp; policy</span> Kilmar Abrego Garcia, the Salvadoran wrongly deported in 2025 and brought back, left the US for Spain on Tuesday, ending a fight of nearly two years.</summary>
+  <div class="exp">
+    <p>His lawyer said he left on a commercial flight to a country he chose, instead of an ICE flight to Liberia, and called it a temporary departure. He has a US-citizen wife and child. His lawyers expect a future administration to let him return to Maryland (NPR). Administration officials confirmed the departure (NPR, NBC).</p>
+    <p class="btl"><b>Below the line because</b> It closes a symbolic case without changing deportation law or any court precedent.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://text.npr.org/nx-s1-6053203">NPR</a> &middot; <a href="https://www.nbcnews.com/news/us-news/kilmar-abrego-garcia-rcna611215">NBC News</a></p>
+  </div>
+</details>
+
+<details class="short" id="fulton-ballots">
+  <summary><span class="chip">US politics &amp; policy</span> A Georgia judge ordered Fulton County to give the Trump-aligned State Election Board digital copies of the 2020 ballots the FBI seized, by 5 p.m. today.</summary>
+  <div class="exp">
+    <p>Superior Court Judge Kelly Lee Ellerbe set a protective order limiting who may see the unredacted records; the board pays $500. The FBI took about 600 boxes of 2020 ballots and records from the county&rsquo;s election hub in January. The board first subpoenaed the ballots in 2024 (NBC, CNN).</p>
+    <p class="btl"><b>Below the line because</b> A records fight over an election certified six years ago; it matters only if the board uses the files to change rules or certification practice.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.nbcnews.com/politics/elections/judge-orders-fulton-county-turn-copies-2020-ballots-ga-election-board-rcna611220">NBC News</a> &middot; <a href="https://www.cnn.com/2026/11/24/politics/judge-orders-fulton-county-election-records-state-board">CNN</a></p>
+  </div>
+</details>
+
+<details class="short" id="shein-ftc">
+  <summary><span class="chip">US financials</span> Shein agreed to pay $100m to settle FTC charges that it misled US shoppers about delivery times, reviews, supplier standards and where its cotton came from.</summary>
+  <div class="exp">
+    <p>The FTC&rsquo;s complaint, filed in federal court in Los Angeles, says Shein accounts for nearly half of US fast-fashion sales. It also alleges Shein made customer service extremely hard to reach. The FTC&rsquo;s consumer-protection director said the company misled millions (LA Times, CBS).</p>
+    <p class="btl"><b>Below the line because</b> A consumer-protection settlement with no change to tariff or de minimis rules, the policy levers that matter more for Shein&rsquo;s US prices.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.latimes.com/business/story/2026-11-25/shein-to-pay-100-million-to-settle-claims-it-deceived-u-s-shoppers">Los Angeles Times</a> &middot; <a href="https://www.cbsnews.com/news/shein-100-million-ftc-deceptive-practices-settlement/">CBS News</a></p>
+  </div>
+</details>
+
+<details class="short" id="trump-accounts">
+  <summary><span class="chip">US debt &amp; fiscal</span> Treasury says family and friends have put more than $1bn into children&rsquo;s Trump Accounts since the 4 July launch, from more than 3 million people.</summary>
+  <div class="exp">
+    <p>Including the government&rsquo;s $1,000 seed deposits and philanthropic gifts, total deposits exceed $9bn (Treasury statement via CNBC and Fox Business).</p>
+    <p class="btl"><b>Below the line because</b> A participation milestone, not a fiscal change; the federal cost is the seed money already budgeted.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.cnbc.com/2026/11/25/futures-sink-further-into-the-red-as-tech-worries-resurge.html">CNBC (Treasury statement)</a> &middot; <a href="https://www.foxbusiness.com/politics/trump-accounts-hit-major-milestone-family-contributions-surpass-1-billion">Fox Business</a></p>
+  </div>
+</details>
+
+<details class="short" id="kalshi-utah-charges">
+  <summary><span class="chip">US financials</span> Utah moved to drop its criminal gambling case against Kalshi and two executives after the company halted trading there, but says the charges come back if Kalshi returns.</summary>
+  <div class="exp">
+    <p>Attorney General Derek Brown&rsquo;s one-sentence motion, filed Tuesday, cites a &ldquo;change in circumstance.&rdquo; The case had 13 gambling counts plus a charge of profiting from illegal activity (AP via ABC). It follows Kalshi&rsquo;s Utah exit reported in <a href="2026-11-24-grok.html#kalshi-utah">yesterday&rsquo;s lead</a>. Litigation over who regulates prediction markets now spans more than 20 states, and analysts expect the Supreme Court to settle it.</p>
+    <p class="btl"><b>Below the line because</b> A procedural end to one state case; the federal-preemption fight that matters is unresolved.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://abcnews.com/Business/wireStory/utah-asks-drop-charges-kalshi-founders-after-kalshi-138416910">AP via ABC News</a> &middot; <a href="https://www.cnn.com/2026/11/24/politics/utah-criminal-charges-kalshi-dropped">CNN</a> &middot; <a href="https://www.coindesk.com/policy/2026/11/24/utah-moves-to-drop-criminal-pursuit-of-kalshi-after-the-firm-halted-services-there">CoinDesk</a></p>
+  </div>
+</details>
+
+<details class="short" id="measles-14">
+  <summary><span class="chip">Science &amp; public health</span> US measles deaths this year reached 14 after Wisconsin reported its third and Pennsylvania its ninth; cases are near 6,000, the most since 1991.</summary>
+  <div class="exp">
+    <p>Forty-seven states and jurisdictions have cases; 43 outbreaks account for 96% of them, and nearly 650 people have been hospitalised. Pennsylvania leads with 1,638 cases. International health authorities said last week that the US has lost its measles-elimination status (Ars Technica, compiling state reports).</p>
+    <p class="btl"><b>Below the line because</b> Grim and rising, but the elimination finding was last week&rsquo;s news and no federal policy moved today.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://arstechnica.com/health/2026/11/measles-death-toll-rises-to-14-as-national-case-tally-nears-6000/">Ars Technica</a></p>
+  </div>
+</details>
+
+<details class="short" id="nasa-anomaly">
+  <summary><span class="chip">US debt &amp; fiscal</span> The White House&rsquo;s list of stopgap &ldquo;anomalies&rdquo; asks Congress for a $2bn higher annual rate for NASA&rsquo;s Artemis Moon programme, the largest non-defence item.</summary>
+  <div class="exp">
+    <p>That would lift Artemis&rsquo;s annualised rate from about $7.8bn to $9.8bn under the continuing resolution, roughly 25% more. The government has run on a continuing resolution since 1 October (Ars Technica, citing the White House list). Defence items, led by Golden Dome, dominate the request.</p>
+    <p class="btl"><b>Below the line because</b> One line in a request already covered on Tuesday; it matters if appropriators write the anomalies into the next stopgap.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://arstechnica.com/space/2026/11/nasa-may-get-2-billion-boost-as-white-house-seeks-to-accelerate-artemis/">Ars Technica</a></p>
+  </div>
+</details>
+
+<details class="short" id="fl-snap-suit">
+  <summary><span class="chip">Florida &amp; Tampa Bay</span> A class action in Washington challenges the SNAP food restrictions in 18 states, including Florida&rsquo;s ban on buying soda, energy drinks, candy and prepared desserts with benefits.</summary>
+  <div class="exp">
+    <p>The National Center for Law and Economic Justice argues USDA had no authority to invite the waivers. Florida&rsquo;s took effect on 20 April. A Tallahassee plaintiff says she can no longer buy dark chocolate. In an earlier suit over five other states, a court ordered USDA to vacate the waivers (WUSF).</p>
+    <p class="btl"><b>Below the line because</b> Filed, not decided; it changes nothing at Florida checkouts until a ruling, and the error-rate story (lead) is the bigger fiscal exposure.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.wusf.org/politics-issues/2026-11-25/lawsuit-challenges-florida-snap-restrictions-candy-soda-energy-drinks">WUSF</a></p>
+  </div>
+</details>
+
+</div>
+
+<div class="fb" style="border-top:1px solid var(--rule); padding-top:1rem; margin-top:1.5rem;">
+  <p><b>One question about this whole section:</b> were the right things ranked below the line?</p>
+  <label><input type="radio" name="fb-also" value="right"> About right</label>
+  <label><input type="radio" name="fb-also" value="promote"> Some of these should have led</label>
+  <label><input type="radio" name="fb-also" value="drop"> Some should have been dropped entirely</label>
+  <label><input type="radio" name="fb-also" value="fewer"> Fewer short items, more depth up top</label>
+</div>
+
+<button class="submit" id="send">Send my feedback &rarr;</button>
+<p class="sources" style="text-align:center">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+
+<footer>
+  <h4>Sources checked this run &mdash; 137, of which 108 outside the watchlist</h4>
+  <p><b>Not pointed at by any thread (108):</b> france24.com (f24) &middot; lite.cnn.com &middot; cbsnews.com &middot; cnbc.com (cnbc) &middot; breakingdefense.com &middot; freightwaves.com &middot; lefigaro.fr (figaro) &middot; coindesk.com (coindesk) &middot; aljazeera.com (aljaz) &middot; arstechnica.com (ars) &middot; bbci.co.uk (bbctech) &middot; cnbc.com (cnbcmk) &middot; businessinsider.com &middot; content.dowjones.io (mw) &middot; cbc.ca (cbc) &middot; latimes.com &middot; foxnews.com &middot; nhk.or.jp (nhk) &middot; techcrunch.com (tc) &middot; abc.net.au (abcau) &middot; statnews.com &middot; bbci.co.uk (bbcbiz) &middot; bbci.co.uk (bbcw) &middot; lemonde.fr &middot; foxbusiness.com &middot; theverge.com (verge) &middot; semafor.com &middot; federalnewsnetwork.com &middot; en.wikipedia.org (wiki) &middot; bbci.co.uk (bbcus) &middot; eenews.net &middot; warontherocks.com &middot; govexec.com &middot; straitstimes.com &middot; pymnts.com &middot; pbs.org (pbs) &middot; defensescoop.com &middot; mexiconewsdaily.com &middot; dw.com (dw) &middot; semianalysis.com &middot; marketwatch.com (marketwatch) &middot; taipeitimes.com &middot; jpost.com &middot; insurancejournal.com (ij) &middot; scmp.com (scmp) &middot; content.dowjones.io (wsjrss) &middot; abcnews.go.com &middot; content.dowjones.io (wsjmk) &middot; nytimes.com (nytrss) &middot; nbcnews.com (nbcrss) &middot; rollcall.com &middot; yle.fi (yle) &middot; cnbc.com (cnbctech) &middot; politico.com (politicorss) &middot; finance.yahoo.com &middot; dw.com (dwrss) &middot; aljazeera.com (ajrss) &middot; semafor.com (semaforrss) &middot; ft.com (ft) &middot; thehill.com (hillrss) &middot; axios.com (axiosrss) &middot; spiegel.de (spiegel) &middot; foxnews.com (foxpolrss) &middot; timesofindia.indiatimes.com &middot; nbcnews.com &middot; bbci.co.uk (bbcsci) &middot; dailywire.com (dailywire) &middot; techmeme.com &middot; text.npr.org &middot; theregister.com &middot; handelsblatt.com &middot; koreaherald.com &middot; asia.nikkei.com &middot; nypost.com &middot; X news search: tariffs (24h) &middot; X news search: general (12h) &middot; Reuters via Investing.com (tariffs; futures; Russia) &middot; AP tariffs story (via search index) &middot; thehindubusinessline.com (Reuters) &middot; theverge.com &middot; therecord.media &middot; federalnewsnetwork.com (AP) &middot; nypost.com articles (CIA; Trump interview) &middot; pbs.org (AP Huawei) &middot; fortune.com &middot; qz.com &middot; washingtonpost.com (search excerpt) &middot; ibtimes.com &middot; mediaite.com &middot; timesof.ai (Atlantic summary) &middot; propublica.org &middot; hindustantimes.com &middot; independent.co.uk &middot; aws.amazon.com security blog (primary) &middot; arstechnica.com articles &middot; dw.com articles &middot; aljazeera.com article &middot; cnbc.com articles &middot; marketwatch.com article &middot; latimes.com article &middot; cbsnews.com articles &middot; nbcnews.com articles &middot; text.npr.org article &middot; abcnews.com articles &middot; coindesk.com article &middot; disclosuremonitor.com and theepochtimes.com (UAP sweep) &middot; floridaphoenix.com article &middot; wusf.org article.</p>
+  <p><b>Pointed at by a thread (29):</b> cftc.gov (cftc) &middot; gasprices.aaa.com &middot; datacenterdynamics.com (dcd) &middot; americanbanker.com &middot; federalreserve.gov (fedpr) &middot; fdic.gov (fdic) &middot; floridaphoenix.com &middot; gcaptain.com &middot; ofac.treasury.gov (ofac) &middot; nhc.noaa.gov (nhc) &middot; fox13news.com &middot; scotusblog.com &middot; oilprice.com &middot; whitehouse.gov (wh) &middot; home.treasury.gov (tsy) &middot; bea.gov (bea) &middot; wusf.org &middot; census.gov (census) &middot; newyorkfed.org (nyfed) &middot; wfla.com (wflarss) &middot; tampabay.com (tbtrss) &middot; tampabay.com &middot; federalregister.gov API (25 Nov documents: BIS Entity List, CDC quarantine extension, NCUA rules) &middot; federalregister.gov public-inspection list &middot; home.treasury.gov daily par yield curve CSV (24 Nov) &middot; bsaefiling.fincen.gov notice (primary) &middot; fdic.gov QBP release (primary) &middot; fincen.gov &middot; war.gov/UFO release 08 page (via search index; direct fetch 403).</p>
+  <p>Article pages fetched to stand stories up are cited under each story; each outlet&rsquo;s article pages are counted once.</p>
+
+  <h4>Could not reach</h4>
+  <p>Reuters, AP, Bloomberg, Politico, The Hill, Axios, Lawfare, Haaretz, El Pa&iacute;s, the SEC, BLS, CBO, FERC, NRC, OCC and the Labor Department refused automated access or failed. Reuters and AP reporting is cited through syndicated copies (Investing.com, NBC, PBS, Federal News Network, CNBC) or a search index, and is labelled that way. FT, NYT and The Atlantic articles were not read directly. Their reports are attributed to them through the outlets that rewrote them, and they count as one source each.</p>
+
+  <h4>Seen, not run</h4>
+  <p>UAP disclosure: no new verifiable fact. The Pentagon&rsquo;s eighth PURSUE release, with three Central Command videos, came out on 20 November, and today&rsquo;s BBC clip is a repackaging. &middot; CDC&rsquo;s extension of its foreign-quarantine interim rule and BIS&rsquo;s formal publication of the seven Entity List additions: both are paperwork for earlier actions. &middot; Microsoft&rsquo;s internal &ldquo;Code Red&rdquo; after its 12&ndash;13 November outage: a memo about an old event. &middot; Trump&rsquo;s &ldquo;always an option&rdquo; remark on pardoning Huang: comment, not action. &middot; Fed speakers: prints and decisions only. &middot; Citi&rsquo;s reported $35bn undercount at a UK unit: WSJ only, paywalled. &middot; China&rsquo;s purge of Shanghai chief Chen Jining: no US channel. &middot; Ukraine&rsquo;s strikes on Russian ships off Libya and in the Baltic: no new US channel. &middot; Sports, celebrity and crime items.</p>
+
+  <h4>The negative check</h4>
+  <p><i>What is the biggest story today that is not on my list, and why is it not?</i> The Section 301 tariff plan. No watchlist thread points at USTR, because the old tariff threads followed the Supreme Court case and the Canada duties. It leads. Runners-up that became leads: FinCEN, Amazon&rsquo;s AI-agent report, the FDIC profile and the Huawei verdict. None sits on a thread. Front-page stories left out: the Mississippi plane crash, Thomas Markle&rsquo;s indictment, the Windsor burglary and Thanksgiving travel.</p>
+
+  <h4>Confidence markers and divergence boxes</h4>
+  <p>20 stories, 20 markers (Independent corroboration: 10 &middot; Primary source: 3 &middot; Single-sourced: 7); 9 divergence boxes. Two leads have no box. In FinCEN/CIA and the AI-agent report, the accounts agreed on facts and weight, and the only uncertainty is what the agencies have not said. Short items without a box are single-sourced or had accounts that agreed. <b>Audit against Claude&rsquo;s No. 82</b>, opened only after this draft was finished: Claude runs 8 leads, 10 short items and 8 divergence boxes. The Issue 10 benchmark ran 9 leads and 3 boxes. 3 of this edition&rsquo;s 10 leads share a subject with Claude&rsquo;s: Nvidia, Hormuz and Huawei. Abrego Garcia and the Iowa detonation lead there and are short items here. No factual conflict was found: the Huawei counts, sentencing date, tanker and tugboat figures and AAA prices agree. Nothing in this edition was changed after reading it.</p>
+
+  <h4>Accountability to earlier issues</h4>
+  <p><b>24 November, oil and the pump:</b> that edition said Brent was $89.17 near a three-month low and the pump $3.61. It also said the average was 3.5 cents above the $3.58 Thanksgiving record with two days to go. Brent has since edged up to about $91 and the pump fell to $3.5866, now 0.7 cents above the record. That framing held. Thursday&rsquo;s print decides whether the record falls. <b>24 November, Nvidia:</b> that edition said the government&rsquo;s &ldquo;no security risk&rdquo; assurance needed explaining. Tuesday&rsquo;s briefing and Blanche&rsquo;s answers bear that out; no correction is owed. <b>24 November, Kalshi:</b> the Utah thread moved to dismissal (short item). <b>24 November, 1789 Capital:</b> the short item on Raskin&rsquo;s letters is now a lead with the Hadrian loan. <b>24 November, Megaspeed blacklist:</b> the rule is now in the Federal Register as seven entities in Malaysia, Singapore and Thailand, effective 23 November, consistent with what was reported. No corrections are owed.</p>
+
+  <h4>About this issue</h4>
+  <ul>
+    <li>Grok edition for 25 November, Issue No. 82-grok. Layout built from Issue 10 (2026-09-10b.html), not from any previous Grok edition.</li>
+    <li>10 lead stories including Florida, 10 short items. 6 leads are new subjects; 4 are follow-ups.</li>
+    <li>Every quotation is under fifteen words and attributed; everything else is paraphrase.</li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n  → " + i.value + "");
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on Issue No. 82-grok — 25 November 2026 (Grok edition)\n\n" + lines.join("\n")
+      + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-11-25-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
