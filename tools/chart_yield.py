@@ -20,7 +20,16 @@ have fifteen with it at twelve, the series having gained a 1.5-month tenor in
 18 September 2026 correction came to retract a story that was true.
 
 Usage:  python3 -I tools/chart_yield.py FILE.csv [FILE.csv ...] \
-            [--col "10 Yr"] [--mark YYYY-MM-DD] ... > chart.svg
+            [--col "10 Yr"] [--mark YYYY-MM-DD] ... \
+            [--weekly] [--title TEXT] [--unit TEXT] [--hline VALUE|none] > chart.svg
+
+Any CSV with a header row and %m/%d/%Y in its first column works, not only
+Treasury's: --col names the series, --title/--unit/--hline relabel the frame.
+--weekly swaps the >=100-observation floor for >=40 AND asserts the median gap
+between observations is seven days, so the lower floor cannot be borrowed by a
+daily file whose parse went wrong. Added 27 November 2026, after four issues ran
+without a figure because a 47-point weekly series could not clear a floor
+written for daily sessions; the floor was never the thing to delete.
 
 Several CSVs concatenate into one series, so a multi-year chart is just the year
 files listed together. --mark labels a named session; with none given, the first
@@ -33,15 +42,28 @@ import sys
 
 args = sys.argv[1:]
 COL, marks, files = "10 Yr", [], []
+WEEKLY = False
+TITLE, UNIT, HLINE = None, "per cent", 5.00
 while args:
     a = args.pop(0)
     if a == "--col":
         COL = args.pop(0)
     elif a == "--mark":
         marks.append(datetime.date.fromisoformat(args.pop(0)))
+    elif a == "--weekly":
+        WEEKLY = True
+    elif a == "--title":
+        TITLE = args.pop(0)
+    elif a == "--unit":
+        UNIT = args.pop(0)
+    elif a == "--hline":
+        v = args.pop(0)
+        HLINE = None if v == "none" else float(v)
     else:
         files.append(a)
 assert files, "no CSV given; see the module docstring"
+if TITLE is None:
+    TITLE = "%s Treasury par yield" % COL
 
 
 def _d(r):
@@ -60,7 +82,18 @@ for f in files:
 pts.sort(key=lambda x: x[0])
 assert len({d for d, _ in pts}) == len(pts), "the files overlap: duplicate sessions"
 n = len(pts)
-assert n >= 100, f"only {n} sessions parsed -- suspect the parser"
+# Two floors, because a weekly series cannot reach the daily one and silently
+# lowering the daily floor would hide a broken parser on a daily file. --weekly
+# is an explicit declaration by the caller, asserted on its own terms: a year of
+# weekly observations is ~52, so 40 catches a parser that dropped most of them.
+FLOOR = 40 if WEEKLY else 100
+assert n >= FLOOR, (f"only {n} observations parsed with "
+                    f"{'--weekly' if WEEKLY else 'the daily floor'} "
+                    f"(floor {FLOOR}) -- suspect the parser")
+if WEEKLY:
+    gaps = sorted((pts[k + 1][0] - pts[k][0]).days for k in range(n - 1))
+    assert gaps[len(gaps) // 2] == 7, \
+        f"--weekly given but the median gap is {gaps[len(gaps) // 2]} days"
 
 # geometry: derived, then asserted
 X0, X1 = 46.0, 686.0            # plot box inside a 700-wide viewBox
@@ -98,7 +131,8 @@ if marks:
         assert m in index, f"--mark {m} is not a session in these files"
         picks.append(index[m])
 else:
-    c = next((k for k, (_, v) in enumerate(pts) if v >= 5.00), None)
+    c = (next((k for k, (_, v) in enumerate(pts) if v >= HLINE), None)
+         if HLINE is not None else None)
     picks = [c] if c is not None else []
 
 SPAN = pts[-1][0].year - pts[0][0].year
@@ -106,14 +140,13 @@ TICK = "%Y" if SPAN >= 3 else "%b"
 
 out = []
 A = out.append
-A('<svg viewBox="0 0 700 272" role="img" aria-label="%s Treasury par yield by '
-  'session, with the 5 per cent line">' % COL)
-A("<title>%s Treasury par yield</title>" % COL)
+A('<svg viewBox="0 0 700 272" role="img" aria-label="%s">' % TITLE)
+A("<title>%s</title>" % TITLE)
 step = 0.5 if (VMAX - VMIN) > 3 else 0.25
 g = math.ceil(VMIN / step) * step
 while g < VMAX - 1e-9:
     if g > VMIN + 1e-9:
-        yy, em = y(g), abs(g - 5.00) < 1e-9
+        yy, em = y(g), (HLINE is not None and abs(g - HLINE) < 1e-9)
         A('<line x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" stroke="%s" '
           'stroke-width="%s"%s/>' % (X0, yy, X1, yy, "currentColor" if em else "#9aa0a6",
                                      "1.1" if em else "0.5",
@@ -176,8 +209,8 @@ for k, v, lab, dy, anc in labels:
     A('<text x="%.1f" y="%.1f" font-size="%s" fill="currentColor" text-anchor="%s">%s</text>'
       % (x(k) + off, y(v) + dy, FS, anc, lab))
 A('<circle cx="%.1f" cy="%.1f" r="3.1" fill="currentColor"/>' % (x(n - 1), y(pts[-1][1])))
-A('<text x="%.1f" y="%.1f" font-size="10" fill="currentColor" opacity="0.6">per cent</text>'
-  % (X0 - 4, 12))
+A('<text x="%.1f" y="%.1f" font-size="10" fill="currentColor" opacity="0.6">%s</text>'
+  % (X0 - 4, 12, UNIT))
 A("</svg>")
 print("\n".join(out))
 sys.stderr.write("OK n=%d range %.2f-%.2f pxpy=%.4f pxpx=%.5f first=%s last=%s\n"
