@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Friday, 27 November 2026 (Grok edition, Issue 84-grok)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h2 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  /* short-item tier */
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list summary .chip { vertical-align:.05rem; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; Issue No. 84-grok &middot; Friday, 27 November 2026 &middot; Grok edition</div>
+  <h1>Growth is revised up and the President calls the old number rigged, USTR publishes its tariff ceilings, Nvidia freezes Southeast Asia shipments, and hackers reach the Air Force&rsquo;s cloud</h1>
+  <p class="sub">10 stories at length, 9 in brief. There was no Grok edition on Thanksgiving, so this one covers Wednesday through Friday morning, weighted toward what was decided. US stock markets close early today. Built on the Issue 10 (2026-09-10b) layout.</p>
+  <p class="prov"><b>128 sources checked, 99 of them outside the watchlist</b> (29 pages refused or failed; listed in the footer). Wires and general front pages, foreign outlets (Le Monde, Le Figaro, Handelsblatt, Spiegel, Nikkei, SCMP, Yle, Straits Times, Korea Herald, ABC Australia, CBC, France 24, DW, Times of India, Jerusalem Post, Haaretz, Al Jazeera, Mexico News Daily) and trade press (The Register, FreightWaves, Insurance Journal, Coindesk, PYMNTS, STAT, DefenseScoop, Breaking Defense, E&amp;E News, American Banker, DCD, gCaptain) were read before the document sources the threads point at. Then came the Federal Register&rsquo;s 27 November issue, USTR, BEA, Treasury, the Fed calendar, the CFTC and FEMA. The 25 November Grok edition was read for accountability only, not as the menu. <b>6 of 10 leads are new subjects; 4 continue threads</b> (tariffs, Nvidia, oil-to-pump, the ABC licence case), which is the cap. <b>Biggest story not on my list:</b> the Reuters report this morning that hackers reached the Air Force&rsquo;s Cloud One. No thread points at military IT, and it now leads ahead of the oil chain. The negative check also turned up the Character.AI auction. Together they pushed the birthright-citizenship ruling, deep-sea mining and the Iowa detonation into short items.<br><br>
+  <b>Accounts compared per lead:</b> gdp-revision-probe: BEA releases (primary) plus 3 independent (AP, CBS, Fox Business); Treasury curve &middot; tariffs-301-proposed: USTR release and notices (primary) plus 4 independent (CBS, Bloomberg, Semafor, Korea Herald) &middot; nvidia-sea-pause: 2 independent on the pause (WSJ, FT, via TechCrunch and Yahoo) plus Straits Times (Gan) and Semafor; S&amp;P via Semafor and CNBC &middot; af-cloud-one: 1 (Reuters; CNA, HuffPost, Straits Times and Bloomberg are its copies), plus the Air Force statement it carries &middot; fcc-starmind: 3 independent (Ars Technica, AP, NBC) reading the FCC order and statement &middot; characterai-auction: states&rsquo; court objection (primary) plus California and Colorado AG releases and Business Insider &middot; hormuz-jazan-pump: Saudi energy ministry via Al Jazeera and NBC (2); Vortexa via Bloomberg; WSJ; AAA series (primary); CNBC quotes &middot; abc-fcc-injunction: 2 independent (CNN, NPR), both quoting the opinion &middot; amodei-axios: Axios report as relayed by Al Jazeera; Amodei post via TechCrunch, Al Jazeera, Euronews (3) &middot; fl-flood-declaration: FEMA release via FDEM (primary) plus Florida Phoenix, Space Coast Rocket, WESH; Insurance Journal (AM Best).<br><br>
+  <b>Disclosure.</b> A <code>git pull</code> and a filename listing of <code>issues/</code> showed that Claude&rsquo;s <code>issues/2026-11-27.html</code> exists. A heading-only scan of the live <code>config.md</code> showed a section titled &ldquo;27 November 2026 &mdash; operational notes&rdquo;. I did not read that section. This edition&rsquo;s beats come from the stable top of <code>config.md</code>, and its watchlist from the copy taken on 26 November, before today&rsquo;s change. No Claude commit message was read. Claude&rsquo;s edition was opened only after selection, order, headlines and copy were finished (see the audit in the footer).</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#gdp-revision-probe">Third-quarter growth is revised up to 4.3%, and Trump calls the original 3.4% a &ldquo;purposeful&rdquo; pre-election error and demands an investigation. The same release has inflation at 3.8%</a></li>
+    <li><a href="#tariffs-301-proposed">USTR publishes its Section 301 tariffs on 14 economies: up to 20% more on China, 15% for the EU and Japan, 35% for Vietnam, with hearings set for 25 January</a></li>
+    <li><a href="#nvidia-sea-pause">Nvidia tells Dell and Supermicro to stop shipping its servers to Malaysia, Singapore, Thailand and Indonesia, Singapore says it has not confirmed it, and S&amp;P puts Nvidia&rsquo;s credit on watch</a></li>
+    <li><a href="#af-cloud-one">Reuters: hackers got into the Air Force&rsquo;s Cloud One, the platform that runs pay, logistics and some command-and-control apps, and reached its control plane. Cyber Command has been called in</a></li>
+    <li><a href="#fcc-starmind">The FCC authorises SpaceX to launch up to a million &ldquo;orbital data centre&rdquo; satellites, with the first due by 2033 and the full constellation by 2040, while turning down its request to dispose of old satellites away from Earth</a></li>
+    <li><a href="#characterai-auction">Character.AI plans to auction 21 million users&rsquo; chat logs, including 2.1 million minors&rsquo; accounts, on 1 December, and 42 attorneys general ask the bankruptcy court to block it</a></li>
+    <li><a href="#hormuz-jazan-pump">A Houthi strike shuts part of Saudi Aramco&rsquo;s Jazan refinery and Hormuz transits rise despite more attacks. Oil firms before this weekend&rsquo;s OPEC+ meeting, but the pump average keeps falling, to $3.55</a></li>
+    <li><a href="#abc-fcc-injunction">A federal judge blocks the FCC&rsquo;s early review of ABC&rsquo;s station licences as likely retaliation for speech, writing that &ldquo;This is not a close case&rdquo;</a></li>
+    <li><a href="#amodei-axios">Axios reports that Anthropic&rsquo;s leaders think it would be &ldquo;unethical&rdquo; not to hand AI some decisions it does better. Amodei calls the idea that he would surrender human free will &ldquo;absurd&rdquo; but draws a line only at self-improving AI</a></li>
+    <li><a href="#fl-flood-declaration">Florida &amp; Tampa Bay: federal disaster aid is approved for six east-coast counties after a month of flooding. A second request covering eight more is pending, and many homeowners likely dropped flood cover as Citizens shrank</a></li>
+    <li><a href="#also-today">Also today (9)</a> &mdash; ranked below the line, each one opens.</li>
+  </ol>
+</nav>
+
+<article id="gdp-revision-probe">
+  <h2>Third-quarter growth is revised up to 4.3%, and Trump calls the original 3.4% a &ldquo;purposeful&rdquo; pre-election error and demands an investigation. The same release has inflation at 3.8%</h2>
+  <div class="meta">
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>The Bureau of Economic Analysis said on Wednesday that real GDP grew at a 4.3% annual rate in the third quarter. Its advance estimate, published on 29 October, five days before the midterms, was 3.4%. BEA says the 0.9-point revision came &ldquo;primarily&rdquo; from investment and consumer spending as fuller source data arrived. Real gross domestic income, measured from the income side, rose 4.4%. That is a separate check, and it points the same way.</p>
+  <p>On Thanksgiving morning Trump posted that the pre-election numbers were &ldquo;FAKE&rdquo;, called the gap a &ldquo;massive, and purposeful, error&rdquo; and asked for &ldquo;an immediate investigation.&rdquo; He offered no evidence (AP via PBS, CBS, Fox Business). Commerce did not comment; the government was closed for the holiday.</p>
+  <p>The same morning&rsquo;s income report is less flattering. October PCE prices rose 0.3% on the month and <b>3.8% on the year</b>; core rose 3.3% on the year. Inflation-adjusted spending was flat, slipping by $5.8bn. The saving rate rose to 4.1% (BEA). The 10-year Treasury yield fell to 4.85% on Wednesday from 4.91% (Treasury series).</p>
+  <p>Why it matters: an attack on the agency that publishes GDP makes markets and businesses trust the next print a little less, and the Fed sets rates on these numbers. In August 2025 Trump fired the BLS commissioner after a weak jobs report (AP).</p>
+  <p><b>What to watch:</b> the third estimate on 23 December; whether Commerce or an inspector general actually opens a review; and the Fed&rsquo;s decision on 8&ndash;9 December, the first to weigh these prints.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; a routine revision, or a rigged one?</span>
+    <p><b>What is disputed.</b> Mainly a <b>facts</b> dispute about intent, with a significance dispute behind it. Trump says the advance estimate was deliberately low. BEA&rsquo;s release says the revision came from more complete source data, on a schedule it publishes in advance. AP and CBS add that revisions are routine and pre-scheduled. Fox Business reports the allegation and BEA&rsquo;s explanation side by side.</p>
+    <p><b>Why they differ.</b> Vantage and interest come first. The president benefits if the economy looks stronger and if the midterm loss can be put down to the statisticians. BEA&rsquo;s schedule fixed the advance-estimate date long before the election date mattered to anyone. Timing explains the size of the gap. The advance estimate relies on incomplete source data plus BEA assumptions, and later survey data replace them. BEA says that is what happened here, chiefly in investment and consumer spending.</p>
+    <p><b>What it means for you.</b> The evidence supports the routine reading. The income-side measure, built from different data, also shows 4.4%, and nothing published points to tampering. Treat 4.3% as BEA&rsquo;s best estimate, open to further revision. What would change that: a documented change in method or an inspector-general finding. Neither exists today.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; two inflation numbers that both come from BEA</summary>
+    <div class="exp">
+      <p>The Fox Business video segment headlined &ldquo;cooling inflation&rdquo; and the AP story headlined acceleration. Both draw on BEA, measuring different windows. The GDP release puts the third-quarter PCE price index at a 2.1% annual rate, unchanged from the advance estimate; core was 2.5%. The October income report puts the year-on-year rate at 3.8%. The two fit if prices jumped earlier in the year and slowed over the summer. October&rsquo;s 0.3% monthly rise works out to roughly 3.7% a year, so the summer slowdown has not continued into the fourth quarter.</p>
+      <p>Core inflation at 3.3% is the highest in three years, according to Navy Federal Credit Union&rsquo;s Heather Long, quoted by Fox Business. LSEG&rsquo;s survey had expected 3.2%. Headline matched expectations. September&rsquo;s headline was revised to 3.7% from 3.6%.</p>
+      <p>On spending, nominal outlays rose $63.8bn in October, but real PCE edged down. Higher prices absorbed the gain. Income rose 0.7%, led by pay, government benefits and investment income. Saving rose to $1.00 trillion, 4.1% of disposable income.</p>
+      <p>This brief prints Fed prints and decisions only. This is a print, and the decision is on 8&ndash;9 December (Fed calendar).</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-3rd-quarter-2026">BEA: GDP second estimate, Q3 2026</a> &middot;
+    <a href="https://www.bea.gov/news/2026/personal-income-and-outlays-october-2026">BEA: Personal income and outlays, October 2026</a> &middot;
+    <a href="https://www.pbs.org/newshour/politics/trump-calls-gdp-figures-fake-and-demands-an-investigation-of-commerce-department">AP via PBS</a> &middot;
+    <a href="https://www.cbsnews.com/news/trump-thanksgiving-commerce-department-gdp-investigation/">CBS News</a> &middot;
+    <a href="https://www.foxbusiness.com/politics/trump-demands-probe-pre-election-gdp-data-revision">Fox Business on the probe</a> &middot;
+    <a href="https://www.foxbusiness.com/economy/october-2026-pce-inflation">Fox Business on PCE</a> &middot;
+    <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value=2026">Treasury daily par yield curve</a> &middot;
+    <a href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm">Fed FOMC calendar</a>
+  </p>
+  <div class="fb">
+    <p>Statistical-integrity fights:</p>
+    <label><input type="radio" name="fb-gdp" value="follow"> Follow this: track any review of BEA</label>
+    <label><input type="radio" name="fb-gdp" value="print"> Just give me the prints</label>
+    <label><input type="radio" name="fb-gdp" value="less"> Less on presidential posts about data</label>
+  </div>
+</article>
+
+<article id="tariffs-301-proposed">
+  <h2>USTR publishes its Section 301 tariffs on 14 economies: up to 20% more on China, 15% for the EU and Japan, 35% for Vietnam, with hearings set for 25 January</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <div class="div" style="border-color:#a33;background:#fff6f4">
+    <span class="t" style="color:#a33">Correction &mdash; 25 November Grok edition</span>
+    <p>On Wednesday this brief said, citing Reuters&rsquo; sources, that the new Section 301 duties &ldquo;would come on top of tariffs already in place,&rdquo; and gave Malaysia&rsquo;s ceiling as 19%. USTR&rsquo;s published proposal says otherwise for 13 of the 14 economies. Their rates are set &ldquo;net of&rdquo; existing Section 301 tariffs, and the proposal also takes account of Section 232 duties. So for most partners the new duty replaces earlier 301 duties rather than adding to them. China is the exception: its new layer is netted only against the forced-labour duty, so it sits on top of the 2018 duties. Malaysia&rsquo;s proposed ceiling is up to 18%, not 19%. The count framing held: 16 economies were investigated and 14 face proposed duties.</p>
+  </div>
+  <p>Trade Representative Jamieson Greer found on 25 November that the industrial policies of 14 economies, which he says cause &ldquo;structural excess capacity,&rdquo; are unreasonable and burden US commerce. That makes them actionable under Section 301(b). The 14 are China, the EU, Japan, Korea, Taiwan, India, Vietnam, Thailand, Malaysia, Indonesia, Singapore, Switzerland, Cambodia and Bangladesh. Mexico and Norway, also investigated, got no finding (USTR).</p>
+  <p>The proposed ceilings: China up to 20%, plus up to 10% on a separate annex of goods, with exemptions for goods on the US&ndash;China Board of Trade &ldquo;30-for-30&rdquo; lists. The EU is at 15%. Japan, Korea, Taiwan and Switzerland are up to 15%. Malaysia, Thailand, Indonesia, Cambodia and Bangladesh are up to 18%. Singapore is up to 20%, India up to 25% and Vietnam up to 35%. Written comments are due 5 January and hearings start 25 January. A senior official put the earliest effective date in January (Bloomberg via gCaptain; Semafor). USTR separately proposed duties on Brazilian sugar and a 10% levy on aircraft (CBS).</p>
+  <p>How it is known: USTR&rsquo;s release and its pre-publication Federal Register notices; CBS, Bloomberg, Semafor and the Korea Herald each had separate briefings.</p>
+  <p>Why it matters: this is the legal rebuild of the global tariffs the Supreme Court struck down in February. Section 301 duties have held up in court before. Beijing called it &ldquo;political maneuvering&rdquo;. Brussels &ldquo;strongly&rdquo; rejects the overcapacity premise but expects the 15% cap to hold. Seoul says it is considering no drastic change to its industrial policy.</p>
+  <p><b>What to watch:</b> the final Federal Register text, any Chinese retaliation, and whether the G20 next month brings the new deals the official predicted.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how high does China&rsquo;s rate actually go?</span>
+    <p><b>What is disputed.</b> A <b>facts</b> dispute. CBS says China&rsquo;s tariff rises by &ldquo;an additional 20%&rdquo; to a total of 45%. Bloomberg says the rate &ldquo;would rise to 20%&rdquo;, with a possible doubling to 40% if talks collapse. Semafor says 20% across the board, stacking on the 2018 tariffs but not on this year&rsquo;s forced-labour duties.</p>
+    <p><b>Why they differ.</b> Each outlet wrote from the same anonymous background call and summarised a layered rate in its own way. USTR&rsquo;s text settles most of it. China&rsquo;s new duty is up to 20%, netted only against the forced-labour Section 301 duty, so it adds to the 2018 Section 301 duties. CBS&rsquo;s 45% matches the 25% 2018 rate plus 20% on the most heavily tariffed goods. That is arithmetic, not a figure in USTR&rsquo;s text. The 40% fallback comes only from the official.</p>
+    <p><b>What it means for you.</b> Read it as 20% on top of whatever 2018 duty a Chinese good already pays: up to 45% for List 1&ndash;3 goods, less for others, and 10% on Annex A goods. The 40% figure is a threat, not a proposal. The annexes in the Federal Register notice will settle which goods sit where.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; what &ldquo;net of&rdquo; does for everyone else</summary>
+    <div class="exp">
+      <p>For 13 of the 14 economies the proposal sets a ceiling &ldquo;net of&rdquo; existing Section 301 tariffs. For the EU it is also net of normal MFN duties, and the text says each rate takes account of Section 232 duties and of the trade deals signed since 2025. In practice an EU good gets one all-in rate of 15%, the number Brussels negotiated, rather than 15% stacked on whatever it already paid. That is why Capital Economics called the package &ldquo;not as alarming as it looks&rdquo; (CBS).</p>
+      <p>Korea&rsquo;s trade ministry says Washington signalled beforehand that it would honour the bilateral deal. The ministry expects the final rate to stay at 15%, though USTR&rsquo;s report also floats an alternative ceiling of up to 25% if consultations disappoint. The report names Korea&rsquo;s planned Honam chip cluster as an example of overcapacity policy (Korea Herald).</p>
+      <p>Two numbers stand out. Vietnam&rsquo;s 35% and India&rsquo;s 25% are the highest ceilings. Vietnam is one of the places where, Reuters reported on 25 November, the probe targets Chinese investment that builds goods for the US market. USTR&rsquo;s economy-specific reports give the reasoning for each rate.</p>
+      <p>This edition&rsquo;s correction, at the top of the story, comes from reading the document the 25 November edition did not have.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://ustr.gov/about-us/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural">USTR determinations in 14 Section 301 investigations</a> &middot;
+    <a href="https://ustr.gov/about-us/policy-offices/press-office/press-releases/2026/november/ustr-invites-public-comment-proposed-modifications-section-301-action-regarding-brazils-unreasonable">USTR: Brazil Section 301 modification</a> &middot;
+    <a href="https://www.cbsnews.com/news/trump-administration-tariffs-14-trading-partners/">CBS News</a> &middot;
+    <a href="https://gcaptain.com/u-s-targets-china-eu-with-new-tariffs-citing-overcapacity/">Bloomberg via gCaptain</a> &middot;
+    <a href="https://www.semafor.com/article/11/25/2026/us-proposes-sweeping-new-tariffs-on-china-others">Semafor</a> &middot;
+    <a href="https://www.koreaherald.com/article/10950619">Korea Herald</a>
+  </p>
+  <div class="fb">
+    <p>Tariff coverage:</p>
+    <label><input type="radio" name="fb-301" value="both"> Keep both halves: legal text and market effect</label>
+    <label><input type="radio" name="fb-301" value="table"> Give me a country-rate table next time</label>
+    <label><input type="radio" name="fb-301" value="less"> Less until rates are final</label>
+  </div>
+</article>
+
+<article id="nvidia-sea-pause">
+  <h2>Nvidia tells Dell and Supermicro to stop shipping its servers to Malaysia, Singapore, Thailand and Indonesia, Singapore says it has not confirmed it, and S&amp;P puts Nvidia&rsquo;s credit on watch</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Nvidia has told manufacturing partners, including Dell and Super Micro, to pause shipments of servers built with its chips to Malaysia, Singapore, Thailand and Indonesia. The Wall Street Journal and the Financial Times reported it separately on Thursday, the FT citing three people. Neither could say how long the pause lasts. The Journal says Nvidia is checking whether regional partners meet US export rules (via TechCrunch and Yahoo Finance).</p>
+  <p>The trigger is the Commerce rule that took effect last week. It requires licences to ship advanced AI chips to those four countries and Brazil, with exemptions for qualifying US companies. The target is Chinese firms renting Nvidia compute in Southeast Asian data centres. The Institute for Progress estimates such remote capacity supplies about 24% of China&rsquo;s AI computing power (WSJ via TechCrunch). Bloomberg reports lenders have paused billions in financing for Asian data-centre projects tied to ByteDance, Alibaba and Tencent (via Yahoo).</p>
+  <p>Separately, S&amp;P Global put Nvidia&rsquo;s rating on watch for a downgrade, citing governance and &ldquo;key man&rdquo; risk after the CEO&rsquo;s exit and return. Moody&rsquo;s cut its outlook to stable from positive (Semafor; CNBC).</p>
+  <p>Why it matters: Nvidia often lends its AA rating to customers by backstopping their leases and purchases, so a downgrade would raise borrowing costs across the AI build-out, just as rates rise (Semafor). Nvidia&rsquo;s Singapore unit booked $104bn of revenue in 2025.</p>
+  <p><b>What to watch:</b> whether Nvidia confirms the pause publicly, how many US-company exemptions Commerce grants, and S&amp;P&rsquo;s decision.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; has Nvidia stopped shipping to Singapore or not?</span>
+    <p><b>What is disputed.</b> A <b>facts</b> dispute about status. The Journal and the FT, separately sourced, say partners were told to stop shipping. Semafor goes further and says orders are &ldquo;frozen&rdquo;. Singapore&rsquo;s Deputy Prime Minister Gan Kim Yong said on 27 November that Singapore &ldquo;has not confirmed&rdquo; any halt (Straits Times).</p>
+    <p><b>Why they differ.</b> Access and interest explain it. The newspapers&rsquo; sources are in the supply chain. Singapore&rsquo;s government learns of shipments only when they arrive and has a reputation as a trading hub to defend. Gan did not deny the reports; he said the government is still consulting local firms. &ldquo;Frozen&rdquo; is Semafor&rsquo;s summary, not a new fact.</p>
+    <p><b>What it means for you.</b> Believe the pause instruction: two independent newsrooms have it and nobody has denied it. Treat its length and whether orders are cancelled or only delayed as unknown. An Nvidia statement, or server makers telling customers about dates, would settle it.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/">WSJ via TechCrunch</a> &middot;
+    <a href="https://finance.yahoo.com/technology/ai/articles/nvidia-reportedly-halts-ai-chip-111743617.html">FT via Yahoo Finance</a> &middot;
+    <a href="https://www.straitstimes.com/singapore/singapore-has-not-confirmed-reports-of-nvidia-shipment-halts-dpm-gan">Straits Times (Gan)</a> &middot;
+    <a href="https://www.semafor.com/article/11/26/2026/nvidia-halts-chip-shipments-to-southeast-asian-countries">Semafor on the halt</a> &middot;
+    <a href="https://www.semafor.com/article/11/26/2026/nvidias-credit-rating-the-ai-trades-collateral-is-at-risk">Semafor on credit</a>
+  </p>
+  <div class="fb">
+    <p>Nvidia cadence:</p>
+    <label><input type="radio" name="fb-nv" value="right"> Daily is right while this moves</label>
+    <label><input type="radio" name="fb-nv" value="less"> Only on decisions (S&amp;P, Commerce)</label>
+    <label><input type="radio" name="fb-nv" value="more"> More on the financing exposure</label>
+  </div>
+</article>
+
+<article id="af-cloud-one">
+  <h2>Reuters: hackers got into the Air Force&rsquo;s Cloud One, the platform that runs pay, logistics and some command-and-control apps, and reached its control plane. Cyber Command has been called in</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p>Hackers have breached Cloud One, the Air Force&rsquo;s flagship cloud computing platform, three people told Reuters on Friday; five sources in all spoke anonymously. The intrusion was discovered within the past month during an upgrade. Reuters could not establish who did it, how far they got, or whether data was stolen. The Air Force said it does not comment on specific networks.</p>
+  <p>Cloud One, begun in 2017, pools Microsoft, Amazon, Oracle and Google capacity for scores of Air Force applications. They include personnel and pay, logistics and maintenance, the Cloud-Based Command and Control system that collates North American air-defence radar feeds, and a system that tracks munitions at more than 200 bases. Leidos took over as prime contractor from SAIC in 2025.</p>
+  <p>One source said the intruders used a software flaw to reach the control plane. That level could in theory show aircraft readiness or spare-parts movements; whether they looked is unknown. The fallout: back-office migrations are paused, updates to running applications are blocked, and some administrators lost their rights. That comes just as a new batch of serious vulnerabilities is being disclosed industry-wide.</p>
+  <p>Why it matters: Reuters counts at least six other recent federal intrusions. They include two at the FBI, a breach affecting two spy agencies, and Treasury&rsquo;s FinCEN (this brief&rsquo;s 25 November lead). This one reaches a weapons-adjacent system rather than an office network.</p>
+  <p><b>What to watch:</b> an Air Force or Cyber Command acknowledgement, attribution, and whether Congress asks for a briefing before the session ends.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.channelnewsasia.com/world/hackers-breach-us-air-force-cloud-one-computing-platform-6587501">Reuters via CNA</a> &middot;
+    <a href="https://www.huffpost.com/entry/us-air-force-cloud-one-hack_n_6b096996e4b084fa2e17d141">Reuters via HuffPost</a> &middot;
+    <a href="https://www.straitstimes.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform">Reuters via Straits Times</a> &middot;
+    <a href="https://www.bloomberg.com/news/articles/2026-11-27/hackers-breached-us-air-force-s-cloud-platform">Bloomberg write-through (Reuters)</a>
+  </p>
+  <div class="fb">
+    <p>Federal breaches:</p>
+    <label><input type="radio" name="fb-cyber" value="follow"> Follow this: track attribution and damage</label>
+    <label><input type="radio" name="fb-cyber" value="roll"> Roll them into one weekly item</label>
+    <label><input type="radio" name="fb-cyber" value="less"> Less unless data loss is confirmed</label>
+  </div>
+</article>
+
+<article id="fcc-starmind">
+  <h2>The FCC authorises SpaceX to launch up to a million &ldquo;orbital data centre&rdquo; satellites, with the first due by 2033 and the full constellation by 2040, while turning down its request to dispose of old satellites away from Earth</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>On Wednesday the Federal Communications Commission gave SpaceX conditional authorisation for &ldquo;Starmind&rdquo;, a constellation of up to one million satellites designed as orbital compute modules. Chairman Brendan Carr called it &ldquo;a bold new frontier&rdquo; for AI infrastructure (Ars Technica, AP via PBS, NBC).</p>
+  <p>The milestones: start deployment by November 2033, reach 100,000 satellites by November 2035, 50% by November 2038 and the full constellation by November 2040 (NBC; Ars). The orbits run from 550 km to about 1,000 km. The FCC refused, for now, SpaceX&rsquo;s request to retire satellites above 600 km into &ldquo;Earth disposal&rdquo; or solar orbits instead of burning them up. It said SpaceX had not shown the method complies with its rules, so those satellites need a separate waiver (Ars).</p>
+  <p>How it is known: the FCC&rsquo;s own statement and order, read by three newsrooms independently. The FCC&rsquo;s site refused automated access, so the order itself was not read here.</p>
+  <p>Why it matters: about 17,000 satellites are in orbit today (NBC), so a full build would multiply that roughly 50-fold (Ars). The pitch is that solar power in orbit relieves the grid squeeze that makes AI a household-bill story. Approval does not show the idea works. Amazon&rsquo;s Leo unit argued SpaceX was unlikely to deploy them all (NBC).</p>
+  <p><b>What to watch:</b> the disposal waiver, any petition for reconsideration from Amazon or astronomers, and Starship&rsquo;s launch cadence.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; breakthrough or paper constellation?</span>
+    <p><b>What is disputed.</b> A <b>significance</b> dispute; the facts are agreed. The FCC and SpaceX present Starmind as cheap, clean, solar-powered compute that takes load off terrestrial grids. AP quotes astrophysicist Adam Becker calling it &ldquo;a fantasy&rdquo;. He cites the difficulty of shedding heat in a vacuum, plus launch and re-entry pollution.</p>
+    <p><b>Why they differ.</b> Vantage. The FCC chair is selling an industrial policy, and SpaceX&rsquo;s filing is advocacy. Scientists judge it on physics and have no stake in the licence. Operators also routinely ask for more satellites than they plan to fly. SpaceX sought 42,000 Starlinks and has about 11,000 up (NBC).</p>
+    <p><b>What it means for you.</b> Both readings fit the order. The licence is real and long-dated, and it says nothing about whether the hardware works. Treat it as an option SpaceX now holds, not as capacity that will ease your power bill this decade. The test is the first operational satellite and its heat-rejection numbers, due by 2033 at the latest.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://arstechnica.com/space/2026/11/the-fcc-has-authorized-spacex-to-deploy-1-million-satellites/">Ars Technica</a> &middot;
+    <a href="https://www.pbs.org/newshour/nation/fcc-says-spacex-can-deploy-1-million-satellites-for-data-centers-in-space-scientists-are-skeptical">AP via PBS</a> &middot;
+    <a href="https://www.nbcnews.com/science/space/spacex-fcc-authorizes-1-million-satellites-data-centers-space-rcna611341">NBC News</a> &middot;
+    <a href="https://www.fcc.gov/document/fcc-authorizes-1-million-satellites-data-centers-space">FCC document page (refused automated access)</a>
+  </p>
+  <div class="fb">
+    <p>Space compute:</p>
+    <label><input type="radio" name="fb-starmind" value="follow"> Follow this</label>
+    <label><input type="radio" name="fb-starmind" value="only"> Only when hardware flies</label>
+    <label><input type="radio" name="fb-starmind" value="less"> Not my beat</label>
+  </div>
+</article>
+
+<article id="characterai-auction">
+  <h2>Character.AI plans to auction 21 million users&rsquo; chat logs, including 2.1 million minors&rsquo; accounts, on 1 December, and 42 attorneys general ask the bankruptcy court to block it</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>A bipartisan coalition of 42 state attorneys general has objected in Delaware bankruptcy court to Character.AI&rsquo;s plan to sell its platform with the private chat histories of more than 21 million US accounts. More than 2.1 million of those accounts were registered to minors. Also for sale: IP addresses and other metadata, the risk scores the company assigned users, and the models trained on all of it. The auction is set for 1 December and the sale hearing for 3&ndash;4 December (the states&rsquo; objection; California and Colorado AG releases).</p>
+  <p>The states say the chats include sexual conversations between characters and minors, self-harm and suicidal crises, and talks with bots posing as therapists and doctors. The proposed lead bidder is Smirks and Pangs Acquisition LLC, formed in Delaware on 13 November and picked the next day, with undisclosed owners. It offers $10m in cash and wants a $350,000 break-up fee. The company&rsquo;s privacy policy had said it does not sell personal information for money (filing; Business Insider).</p>
+  <p>Why it matters: this is the first big test of whether an AI company&rsquo;s users&rsquo; most intimate data passes to a buyer free of the promises it was collected under. Children&rsquo;s privacy law (COPPA) and state privacy laws are the states&rsquo; lever. Every AI chatbot that goes bankrupt will face the same question.</p>
+  <p><b>What to watch:</b> whether the judge excludes minors&rsquo; and sensitive chats before Tuesday&rsquo;s auction, and who bids.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://coag.gov/app/uploads/2026/11/CharacterAI-objection-debtor-sale.pdf">States&rsquo; objection, Case 26-11603-BLS (Colorado AG copy)</a> &middot;
+    <a href="https://oag.ca.gov/news/press-releases/attorney-general-bonta-opposes-asset-sale-characterai-amid-child-safety-concerns">California AG</a> &middot;
+    <a href="https://coag.gov/press-releases/weiser-challenges-auction-of-millions-of-private-character-ai-conversations/">Colorado AG</a> &middot;
+    <a href="https://www.businessinsider.com/state-attorneys-want-to-stop-characterai-from-selling-private-chat-2026-11">Business Insider</a>
+  </p>
+  <div class="fb">
+    <p>AI data in bankruptcy:</p>
+    <label><input type="radio" name="fb-cai" value="follow"> Follow this through the auction</label>
+    <label><input type="radio" name="fb-cai" value="more"> More like this (AI privacy)</label>
+    <label><input type="radio" name="fb-cai" value="less"> Less</label>
+  </div>
+</article>
+
+<article id="hormuz-jazan-pump">
+  <h2>A Houthi strike shuts part of Saudi Aramco&rsquo;s Jazan refinery and Hormuz transits rise despite more attacks. Oil firms before this weekend&rsquo;s OPEC+ meeting, but the pump average keeps falling, to $3.55</h2>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p><b>The strike.</b> A projectile hit Saudi Aramco&rsquo;s 400,000-barrel-a-day Jazan refinery on Thursday. It killed a Nepali worker, injured several people, started a fire and halted some operations, Saudi Arabia&rsquo;s energy ministry said. The Saudi-led coalition blamed the Houthis and said it destroyed the launcher in Hodeidah. The day before, the Houthis claimed attacks on Ras Tanura and the ports of Jeddah and Jazan (Al Jazeera; NBC).</p>
+  <p><b>The strait.</b> Tanker transits through Hormuz averaged above 26 a day (seven-day average) this month through 19 November. In October they ran below 25 on two-thirds of days, even as Iran stepped up attacks and widened its list of banned vessels to tugboats (Vortexa data via Bloomberg/gCaptain). Iran&rsquo;s navy chief claims to have retaken two tankers he says the US military seized. That claim has no independent confirmation (Al Jazeera live blog).</p>
+  <p><b>The price.</b> Oil rose on Friday ahead of an OPEC+ meeting this weekend that sets 2027 policy, with the UAE already out of the group (WSJ; Bloomberg). WTI was $85.28, up 1.9%, at 6:41 a.m. ET; Brent&rsquo;s front month was $96.62 (CNBC vendor quotes, not a series of record).</p>
+  <p><b>The pump.</b> AAA&rsquo;s national average is $3.5476 today, down from $3.6898 a week ago and $4.2661 a month ago, but still about 52 cents above a year ago. Diesel is $5.7048.</p>
+  <p><b>What to watch:</b> the OPEC+ decision, damage reports from Jazan, and whether this week&rsquo;s crude rise reaches the pump next week.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is Hormuz getting more dangerous or busier?</span>
+    <p><b>What is disputed.</b> A <b>significance</b> dispute. Recent coverage, including this brief&rsquo;s, has stressed rising attacks on tankers. Vortexa&rsquo;s count shows more tankers getting through in November than in October. Both are true.</p>
+    <p><b>Why they differ.</b> The data and the incident reports measure different things. Attacks are logged one by one by maritime agencies. Transits are estimated from satellite tracking, and Vortexa warns that spoofing, signal jamming and dark transits may mean revisions. The mix has also shifted: fewer very large crude carriers and Suezmaxes, more converted product tankers. Each small ship carries less oil than a big one.</p>
+    <p><b>What it means for you.</b> Read it as more vessels moving less oil each, at near-war insurance rates. The strait is open and dearer, not shut. Crude can firm while the pump falls because retail prices lag crude moves, so this week&rsquo;s rise has not reached the pump yet. Vortexa&rsquo;s revised November count and barrel volumes, rather than ship counts, would settle how much oil is actually moving.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; accountability on the pump, and why Brent looks higher</summary>
+    <div class="exp">
+      <p>On 24 and 25 November this brief said the pump average was just above the $3.58 Thanksgiving record and that Thursday&rsquo;s print would decide it. AAA&rsquo;s Thursday average was $3.5554, 2.5 cents below that mark, so no record was set. Today&rsquo;s $3.5476 continues the slide.</p>
+      <p>The 25 November edition put Brent near $91. Today&rsquo;s $96.62 is CNBC&rsquo;s front-month quote. It may refer to a different delivery month after the contract roll, so the two numbers are not a clean comparison. WTI&rsquo;s 1.9% rise is the safer read of today&rsquo;s direction. EIA&rsquo;s weekly series will give the trend.</p>
+      <p>Bloomberg reports that OPEC+ ministers will also see an independent capacity review by DeGolyer and MacNaughton for the first time. It will set starting points for future quotas, but members have seen only their own results. Iraq is pushing for room to pump more and has raised exports to 3.6 million barrels a day (OilPrice). For US drivers, a weekend decision to add barrels would push against the war premium the Houthi strikes are building.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.aljazeera.com/news/2026/11/26/attack-on-saudi-aramcos-jazan-refinery-kills-worker-disrupts-operations">Al Jazeera on Jazan</a> &middot;
+    <a href="https://www.nbcnews.com/world/saudi-arabia/attack-saudi-aramcos-jazan-refinery-kills-worker-halts-operations-rcna611484">NBC News</a> &middot;
+    <a href="https://gcaptain.com/hormuz-tanker-traffic-rises-this-month-even-as-attacks-increase/">Bloomberg via gCaptain (Hormuz)</a> &middot;
+    <a href="https://gcaptain.com/opec-faces-its-most-consequential-supply-decision-of-the-year/">Bloomberg via gCaptain (OPEC+)</a> &middot;
+    <a href="https://www.wsj.com/business/energy-oil/oil-prices-rise-ahead-of-opec-meeting-as-middle-east-supply-risks-persist-63fbb550">WSJ (oil, 27 Nov)</a> &middot;
+    <a href="https://www.aljazeera.com/news/liveblog/2026/11/27/iran-war-live-irans-araghchi-calls-deadly-kuwait-attack-suspicious">Al Jazeera live blog (Iran claim)</a> &middot;
+    <a href="https://gasprices.aaa.com/">AAA national average</a> &middot;
+    <a href="https://www.cnbc.com/quotes/@LCO.1">CNBC Brent quote</a>
+  </p>
+  <div class="fb">
+    <p>Oil-to-pump chain:</p>
+    <label><input type="radio" name="fb-oil" value="right"> One chain daily is right</label>
+    <label><input type="radio" name="fb-oil" value="weekly"> Weekly unless a shock</label>
+    <label><input type="radio" name="fb-oil" value="more"> More on OPEC+</label>
+  </div>
+</article>
+
+<article id="abc-fcc-injunction">
+  <h2>A federal judge blocks the FCC&rsquo;s early review of ABC&rsquo;s station licences as likely retaliation for speech, writing that &ldquo;This is not a close case&rdquo;</h2>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>US District Judge Loren AliKhan granted Disney a preliminary injunction on Wednesday. It bars the Federal Communications Commission from going on with the early licence-renewal proceedings it opened against ABC&rsquo;s eight owned stations. She also denied the FCC&rsquo;s motion to dismiss (CNN; NPR).</p>
+  <p>Chairman Brendan Carr ordered the early filings in April, a step the agency almost never takes. Licences normally run eight years on a staggered cycle. The judge found Disney had &ldquo;sufficiently cast&rdquo; the proceedings as retaliation for Jimmy Kimmel&rsquo;s jokes, remarks on The View and ABC&rsquo;s moderation of a 2024 debate. She counted eleven public calls by Trump over two years for ABC to lose its licences, the latest in July 2026, and wrote that Carr took those words as his &ldquo;marching orders&rdquo; (NPR; CNN). She noted the FCC opened the proceedings the day after Trump attacked a Kimmel skit.</p>
+  <p>The FCC called the ruling &ldquo;wrong on the facts and wrong on the law&rdquo; and expects to win. Commissioner Anna Gomez, the lone Democrat, welcomed it (CNN).</p>
+  <p>Why it matters: the stations serve six of the ten largest US markets (NPR). A ruling that the licensing power cannot be used against disfavoured coverage limits the main lever the government has over broadcast news.</p>
+  <p><b>What to watch:</b> an FCC appeal to the D.C. Circuit, and whether other broadcasters under early review cite this order.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnn.com/2026/11/25/media/trump-fcc-carr-disney-abc-stations-judge-blocked">CNN</a> &middot;
+    <a href="https://text.npr.org/nx-s1-6000576">NPR</a>
+  </p>
+  <div class="fb">
+    <p>Broadcast licensing case:</p>
+    <label><input type="radio" name="fb-abc" value="follow"> Keep following to appeal</label>
+    <label><input type="radio" name="fb-abc" value="only"> Only on rulings</label>
+    <label><input type="radio" name="fb-abc" value="less"> Less</label>
+  </div>
+</article>
+
+<article id="amodei-axios">
+  <h2>Axios reports that Anthropic&rsquo;s leaders think it would be &ldquo;unethical&rdquo; not to hand AI some decisions it does better. Amodei calls the idea that he would surrender human free will &ldquo;absurd&rdquo; but draws a line only at self-improving AI</h2>
+  <div class="meta">
+    <span class="chip">AI &amp; tech</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p>Citing unnamed sources, Axios reported on Wednesday a view among Anthropic&rsquo;s leadership, Dario Amodei included: that it would be irrational &ldquo;or even unethical&rdquo; not to give AI authority over tasks it performs better than people (as summarised by Al Jazeera; Axios refused automated access). The same day, in a long post on X, Amodei called the suggestion that he wants to &ldquo;surrender human free will&rdquo; to AI &ldquo;absurd&rdquo;. He said turning governance over to AI is a terrible idea (TechCrunch; Al Jazeera; Euronews).</p>
+  <p>He separated governance from tasks: AI driving a car, designing a cancer drug or writing software end to end. On those he called his view &ldquo;mixed&rdquo;: valuable, often lifesaving, sometimes not worth it. His line is recursive self-improvement, AI improving itself without humans, where he wrote &ldquo;we may want limits.&rdquo; TechCrunch notes Anthropic said in June that Claude wrote more than 80% of the code merged into its codebase.</p>
+  <p>Context: rivals have been staking out &ldquo;human agency&rdquo; positions. Sam Altman has spoken of keeping &ldquo;agency over the future&rdquo;. Meta&rsquo;s Alexandr Wang wrote that society should not accept a &ldquo;handover&rdquo; to AI. Amodei accused unnamed rivals of &ldquo;vibes-based&rdquo; positioning (Business Insider headline).</p>
+  <p>Why it matters: Anthropic is now a listed company after last week&rsquo;s record IPO. A safety-branded lab&rsquo;s position on giving AI decisions shapes the rules being written for it.</p>
+  <p><b>What to watch:</b> whether Anthropic publishes a written policy on limits to self-improvement, and whether investors or lawmakers ask for one.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; what exactly is Amodei denying?</span>
+    <p><b>What is disputed.</b> Partly a <b>facts</b> dispute and partly a characterisation dispute. Axios&rsquo;s report, as relayed, is about delegating particular tasks where AI outperforms people. Amodei&rsquo;s denial is aimed at &ldquo;surrender&rdquo; in the sense of global governance. On task delegation, which is what Axios described, he says his view is mixed rather than opposed.</p>
+    <p><b>Why they differ.</b> Access and timing. Axios relied on unnamed insiders, and Amodei answered within a day in his own words. Rival executives have an interest in casting Anthropic as cavalier, and Anthropic has an interest in looking cautious as a newly public company. Most rewrites ran the &ldquo;absurd&rdquo; quote without the &ldquo;mixed&rdquo; part.</p>
+    <p><b>What it means for you.</b> The two accounts mostly do not conflict. Amodei rejects AI governance but does not rule out handing AI many decisions, task by task. The only line he names is self-improvement. A published Anthropic policy on recursive self-improvement, or Axios releasing more of what its sources described, would settle what the company will actually do.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/">TechCrunch</a> &middot;
+    <a href="https://www.aljazeera.com/economy/2026/11/26/anthropic-ceo-amodei-denies-wanting-humanity-to-surrender-free-will-to-ai">Al Jazeera</a> &middot;
+    <a href="https://www.euronews.com/2026/11/26/anthropic-chief-denies-wanting-humans-to-surrender-free-will-to-ai">Euronews</a> &middot;
+    <a href="https://www.axios.com/2026/11/25/anthropic-ai-human-control-debate-free-will">Axios (refused automated access)</a>
+  </p>
+  <div class="fb">
+    <p>Lab governance positions:</p>
+    <label><input type="radio" name="fb-amo" value="follow"> Follow lab safety statements</label>
+    <label><input type="radio" name="fb-amo" value="docs"> Only written policies, not posts</label>
+    <label><input type="radio" name="fb-amo" value="less"> Less</label>
+  </div>
+</article>
+
+<article id="fl-flood-declaration">
+  <h2>Florida &amp; Tampa Bay: federal disaster aid is approved for six east-coast counties after a month of flooding. A second request covering eight more is pending, and many homeowners likely dropped flood cover as Citizens shrank</h2>
+  <div class="meta">
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p>FEMA declared a major disaster (FEMA-4956-DR) on 24 November for severe storms and flooding from 31 October onward. Individual aid, for temporary housing, repairs and loans for uninsured losses, covers Brevard, Indian River, Martin, Okeechobee, Palm Beach and St. Lucie. Public aid, for now limited to debris removal and emergency measures, covers Brevard, Hardee, Indian River, Martin, Okeechobee and Palm Beach (FEMA release via FDEM; Florida Phoenix).</p>
+  <p>Governor DeSantis&rsquo;s 9 November request listed nine counties. DeSoto and Highlands were left out (Space Coast Rocket, from FEMA&rsquo;s summary). After a second wave of rain, with 28 inches or more in parts of Brevard, the state filed an expedited second request on Tuesday for Brevard, Broward, Flagler, Indian River, Orange, Putnam, Seminole and Volusia. It has not been approved. The state reports nearly 500 rescues so far (Florida Phoenix).</p>
+  <p>The insurance gap: Florida has required Citizens policyholders to carry flood insurance since 2022. With Citizens down from 1.4 million policies in 2023 to just over 200,000, AM Best says many owners who moved to private carriers likely dropped flood cover. Under 20% of Florida property owners have it (Insurance Journal).</p>
+  <p>Why it matters here: no Tampa Bay county is in either request. But the flood-cover gap AM Best describes is statewide. Hurricane Isaias is a separate declaration (4955); applicants must file separately for each.</p>
+  <p><b>What to watch:</b> FEMA&rsquo;s answer on the second request and on Hazard Mitigation funding.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; which counties are actually covered?</span>
+    <p><b>What is disputed.</b> A <b>facts</b> dispute, though a narrow one. The state&rsquo;s emergency agency announced its requests by county lists, and local TV ran those lists. FEMA&rsquo;s release names only six counties for individual aid (WESH; Space Coast Rocket).</p>
+    <p><b>Why they differ.</b> Timing and process. The state described what it asked for, in two requests two weeks apart, and FEMA described what it granted under the first. The incident period, &ldquo;31 October and continuing&rdquo;, leaves open whether last week&rsquo;s flooding in the six counties counts under 4956.</p>
+    <p><b>What it means for you.</b> Go by FEMA&rsquo;s list: if your county is not among the six, there is no individual aid yet. Volusia, Orange and Seminole residents should watch the second request. FEMA&rsquo;s declaration page will show any added designations.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.floridadisaster.org/news-media/news/icymi-president-donald-j.-trump-approves-major-disaster-declaration-for-florida">FEMA release via FDEM</a> &middot;
+    <a href="https://floridaphoenix.com/2026/11/25/disaster-declared-trump-approves-assistance-for-florida-floods/">Florida Phoenix</a> &middot;
+    <a href="https://thespacecoastrocket.com/brevard-disaster-declaration-fema-4956-dr/">Space Coast Rocket (FEMA summary)</a> &middot;
+    <a href="https://www.wesh.com/article/brevard-county-flood-damage-homes-roads-disaster-declaration-request/74523059">WESH</a> &middot;
+    <a href="https://www.insurancejournal.com/news/southeast/2026/11/25/893780.htm">Insurance Journal (AM Best)</a>
+  </p>
+  <div class="fb">
+    <p>Florida section:</p>
+    <label><input type="radio" name="fb-fl" value="right"> Right local bar</label>
+    <label><input type="radio" name="fb-fl" value="more"> More on insurance</label>
+    <label><input type="radio" name="fb-fl" value="less"> Less</label>
+  </div>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">9 things I saw and ranked below the line. Each one opens: the line is my judgement, and what sits behind it is the substance.</p>
+
+<div class="also-list">
+
+<details class="short" id="a-birthright-eo2">
+  <summary><span class="chip">US politics &amp; policy</span> A federal judge in Washington has blocked Trump&rsquo;s second birthright-citizenship order, EO 14418, for a class of affected children. He wrote that the President &ldquo;cannot carve out new exceptions.&rdquo;</summary>
+  <div class="exp">
+    <p>Judge Christopher Cooper issued a classwide preliminary injunction on Wednesday against the August order. It would have denied citizenship to some US-born children of noncitizens, including children of parents suspected of terrorism or gang membership and children born to foreign parents through surrogacy (States Newsroom via Florida Phoenix; Fox News). Cooper cited the Supreme Court&rsquo;s ruling earlier this year in <i>Barbara v. Trump</i>, which struck down the first order. He wrote that its &ldquo;ink had scarcely dried&rdquo; when the second was issued. The ACLU leads both challenges. The Hill reports Cooper is the second judge to rule against the new order.</p>
+  <div class="div">
+      <span class="t">Divergence &mdash; struck down, or blocked for now?</span>
+      <p><b>What is disputed.</b> A <b>characterisation</b> dispute. Fox says the order was &ldquo;struck down&rdquo;. States Newsroom says it was enjoined for a class while litigation continues.</p>
+      <p><b>Why they differ.</b> Fox&rsquo;s headline language compresses the procedure, while States Newsroom quotes the order&rsquo;s terms.</p>
+      <p><b>What it means for you.</b> It is a preliminary injunction: the order cannot be applied to the class, but the case is not over. A final judgment or an appeals ruling would change that.</p>
+    </div>
+    <p class="btl"><b>Below the line because</b> a preliminary order on a policy the Supreme Court has already signalled is unlawful; the appeal is the event to watch.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://floridaphoenix.com/2026/11/25/repub/federal-court-blocks-second-trump-order-on-birthright-citizenship/">Florida Phoenix (States Newsroom)</a> &middot; <a href="https://www.foxnews.com/politics/trumps-birthright-citizenship-restrictions-struck-down-dc-federal-judge-called-hater">Fox News</a> &middot; <a href="https://thehill.com/regulation/court-battles/6243427-second-judge-blocks-trump-birthright-citizenship/">The Hill (headline)</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-spacex-trump-accounts">
+  <summary><span class="chip">US debt &amp; fiscal</span> SpaceX and Musk pledge two SpaceX shares to every child&rsquo;s Trump Account, about $18bn at SpaceX&rsquo;s last price, doubling October&rsquo;s pledge.</summary>
+  <div class="exp">
+    <p>SpaceX will contribute one newly issued Class A share to each active Trump Account and Musk will match it personally. President Gwynne Shotwell will add more than 2 million shares. Roughly 70 million children are eligible. Children under 18 with a Social Security number are auto-enrolled, but parents must claim an account for it to be active (CBS; The Hill; Axios). Treasury said this week that family and friends had put more than $1bn into the accounts since July. The fiscal angle: the accounts are federally seeded and tax-advantaged, so private gifts at this scale change what the programme is worth to families. The value depends on a share price set by SpaceX&rsquo;s market.</p>
+    <p class="btl"><b>Below the line because</b> a pledge, not yet a transfer, and its value moves with one company&rsquo;s stock.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.cbsnews.com/news/elon-musk-spacex-shares-trump-accounts/">CBS News</a> &middot; <a href="https://www.axios.com/2026/11/26/musk-spacex-shares-trump-accounts">Axios (headline)</a> &middot; <a href="https://thehill.com/policy/technology/6244857-elon-musk-pledges-spacex-shares-to-american-children/">The Hill (headline)</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-nhtsa-aeb">
+  <summary><span class="chip">US politics &amp; policy</span> NHTSA proposes pushing back its automatic emergency braking mandate for new cars and light trucks by two years. Comments are due 26 January.</summary>
+  <div class="exp">
+    <p>A notice in today&rsquo;s Federal Register proposes to amend Safety Standard No. 127. It would delay the compliance date by two years so manufacturers have more time, add test procedures for the malfunction warning light and clarify the test-speed tolerance. NHTSA also asks for comment on &ldquo;other potential modifications&rdquo;, which leaves room for changes beyond the delay. The standard requires light vehicles to brake automatically to avoid hitting vehicles and pedestrians.</p>
+    <p class="btl"><b>Below the line because</b> a proposal to delay rather than repeal, published on a holiday Friday; the final rule decides it.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.federalregister.gov/documents/2026/11/27/2026-24140/federal-motor-vehicle-safety-standards-automatic-emergency-braking-systems-for-light-vehicles">Federal Register, 2026-24140</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-capital-memo">
+  <summary><span class="chip">US politics &amp; policy</span> A presidential memo published today tells the attorney general to seek federal death sentences for more categories of murder and to speed up executions.</summary>
+  <div class="exp">
+    <p>The 23 November memorandum directs the Justice Department to take federal jurisdiction where lawful and seek death for first-degree murder of a minor, and for murder committed during rape, child sexual exploitation, sex trafficking, kidnapping or human trafficking. These add to the categories in Executive Order 14164 of January 2025. It also orders prosecutors to push for fast resolution of appeals and habeas petitions and to oppose &ldquo;dilatory&rdquo; litigation. Like all such memos, it creates no enforceable rights and depends on applicable law.</p>
+    <p class="btl"><b>Below the line because</b> a charging and litigation instruction with no new legal authority; its effect shows up case by case.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.federalregister.gov/documents/2026/11/27/2026-24236/expeditious-enforcement-of-capital-sentences-and-the-pursuit-of-justice-for-victims-of-heinous">Federal Register, 2026-24236</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-cftc-louisiana">
+  <summary><span class="chip">US financials</span> The CFTC sues Louisiana, the 12th state it has taken to court, after a state judge shut down more than 30 prediction-market firms without a hearing.</summary>
+  <div class="exp">
+    <p>Louisiana won a state-court order on Thursday that halted more than 30 companies tied to CFTC-regulated event contracts, without notice to them, the agency says. Chairman Michael Selig called the state&rsquo;s emergency suit &ldquo;naked lawfare&rdquo;. The CFTC is asking a federal court to keep the status quo while federal courts decide whether the Commodity Exchange Act pre-empts state gambling law. The agency has also filed amicus briefs in four federal appeals courts. This sits on the prediction-markets thread: this week Utah moved to drop its criminal case against Kalshi.</p>
+    <p class="btl"><b>Below the line because</b> one more front in a pre-emption fight whose real decision will come from an appeals court.</p>
+    <p class="sources"><span class="chip">Primary source</span> <a href="https://www.cftc.gov/PressRoom/PressReleases/9326-26">CFTC press release 9326-26</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-deep-sea-mining">
+  <summary><span class="chip">Energy &amp; grid</span> A second federal judge rules against the administration&rsquo;s Pacific seabed-mining leases, this time off the Northern Mariana Islands, three weeks before a planned sale.</summary>
+  <div class="exp">
+    <p>Judge Jill Aiko Otake found that the National Marine Fisheries Service opinion behind the lease sales violated the Endangered Species Act. It failed to weigh the effects of eventual mining, not just the surveying the leases first allow (BBC). The government had planned to sell Northern Mariana leases on 16 December. After a similar ruling on American Samoa, it went ahead anyway and sold two leases covering about 13 million hectares (BBC; Los Angeles Times on the first auction). The administration&rsquo;s case is access to critical minerals and countering China.</p>
+    <p class="btl"><b>Below the line because</b> a mining industry that does not yet exist; this matters when the government responds to the second ruling.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.bbc.co.uk/news/articles/c6y4jyx2m172o">BBC</a> &middot; <a href="https://www.latimes.com/world-nation/story/2026-11-27/deep-sea-mining-auction-in-california-sparks-concern-for-pacific-islanders">Los Angeles Times</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-hepb-birth-dose">
+  <summary><span class="chip">Science &amp; public health</span> Only 66% of US newborns got the hepatitis B shot within a day of birth as of June, down from 80% in 2022, according to a records study of 1.3 million babies.</summary>
+  <div class="exp">
+    <p>The Truveta analysis covers births from January 2018 to June 2026. It found the decline began in mid-2023 and reached babies whose mothers are known to carry the virus. Up to 90% of infected infants develop chronic infection, which raises lifetime risk of liver failure and cancer. The fall began before federal vaccine advisers voted last December to drop the universal birth-dose recommendation (NBC). The study is a company analysis reported by one newsroom; the full paper was not read here.</p>
+    <p class="btl"><b>Below the line because</b> single-sourced, and a trend line rather than a policy event.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.nbcnews.com/health/health-news/hepatitis-b-vaccination-decline-newborns-liver-disease-study-rcna611070">NBC News</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-iowa-epa">
+  <summary><span class="chip">US politics &amp; policy</span> EPA reports no airborne lead after the Army&rsquo;s Iowa lead-azide detonation. Lab results on more than 1,000 post-blast samples start arriving today.</summary>
+  <div class="exp">
+    <p>The Army destroyed about five tons of degraded lead azide at the Iowa Army Ammunition Plant in Middletown on Wednesday. EPA says it took about 1,500&ndash;1,600 baseline samples beforehand and more than 1,000 afterward, from homes, schools, daycares, churches, farms, every drinking-water intake in the plume model and the Mississippi watershed. As of Thursday its air monitors showed no detectable airborne lead (CBS; Fox News). CBS separately reports a chaotic lead-up inside the administration over who failed to raise the risk sooner.</p>
+    <p class="btl"><b>Below the line because</b> the decisive data, the lab results, are not in yet.</p>
+    <p class="sources"><span class="chip">Independent corroboration</span> <a href="https://www.cbsnews.com/news/iowa-lead-detonation-epa-testing-results-soon/">CBS News</a> &middot; <a href="https://www.foxnews.com/us/epa-reports-zero-detection-airborne-lead-day-after-iowa-lead-azide-detonation">Fox News</a></p>
+  </div>
+</details>
+
+<details class="short" id="a-payoneer-trust-bank">
+  <summary><span class="chip">US financials</span> The OCC has conditionally approved Payoneer&rsquo;s PAYO Digital Bank, a national trust bank built around stablecoins.</summary>
+  <div class="exp">
+    <p>American Banker reports that Payoneer, an international payments company, received conditional approval to set up the trust bank. It is one more non-bank payments firm moving toward a federal charter for dollar tokens. That bears on the bank stablecoin consortium thread: the big banks&rsquo; joint token competes with exactly these entrants.</p>
+    <p class="btl"><b>Below the line because</b> a conditional charter for a mid-size firm; the pattern matters more than this approval.</p>
+    <p class="sources"><span class="chip">Single-sourced</span> <a href="https://www.americanbanker.com/news/payoneer-gets-conditional-occ-approval-for-stablecoin-bank">American Banker</a></p>
+  </div>
+</details>
+
+</div>
+
+<div class="fb" style="border-top:1px solid var(--rule); padding-top:1rem; margin-top:1.5rem;">
+  <p><b>One question about this whole section:</b> were the right things ranked below the line?</p>
+  <label><input type="radio" name="fb-also" value="right"> About right</label>
+  <label><input type="radio" name="fb-also" value="promote"> Some of these should have led</label>
+  <label><input type="radio" name="fb-also" value="drop"> Some should have been dropped entirely</label>
+  <label><input type="radio" name="fb-also" value="fewer"> Fewer short items, more depth up top</label>
+</div>
+
+<button class="submit" id="send">Send my feedback &rarr;</button>
+<p class="sources" style="text-align:center">Opens a prefilled GitHub issue in a new tab. Nothing is submitted from this page.</p>
+
+<footer>
+  <h4>Sources checked this run &mdash; 128, of which 99 outside the watchlist</h4>
+  <p><b>Not pointed at by any thread (99):</b> cnbc.com (cnbc) &middot; cnn.com &middot; cbc.ca (cbc) &middot; aljazeera.com (aljaz) &middot; arstechnica.com (ars) &middot; coindesk.com (coindesk) &middot; lefigaro.fr (figaro) &middot; france24.com (f24) &middot; cbsnews.com &middot; businessinsider.com &middot; cnbc.com (cnbcmk) &middot; freightwaves.com &middot; foxnews.com &middot; latimes.com &middot; content.dowjones.io (mw) &middot; foxbusiness.com &middot; bbci.co.uk (bbcbiz) &middot; breakingdefense.com &middot; bbci.co.uk (bbctech) &middot; nhk.or.jp (nhk) &middot; abc.net.au (abcau) &middot; bbci.co.uk (bbcw) &middot; techcrunch.com (tc) &middot; abcnews.go.com &middot; statnews.com &middot; semafor.com &middot; nbcnews.com &middot; bbci.co.uk (bbcus) &middot; lemonde.fr &middot; theverge.com (verge) &middot; pbs.org (pbs) &middot; en.wikipedia.org (wiki) &middot; haaretz.com &middot; warontherocks.com &middot; federalnewsnetwork.com &middot; pymnts.com &middot; eenews.net &middot; govexec.com &middot; straitstimes.com &middot; defensescoop.com &middot; mexiconewsdaily.com &middot; insurancejournal.com (ij) &middot; ft.com (ft) &middot; marketwatch.com (marketwatch) &middot; scmp.com (scmp) &middot; jpost.com &middot; semianalysis.com &middot; dw.com (dw) &middot; yle.fi (yle) &middot; rollcall.com &middot; finance.yahoo.com &middot; cnbc.com (cnbcecon) &middot; theregister.com &middot; cnbc.com (cnbctech) &middot; spiegel.de (spiegel) &middot; asia.nikkei.com &middot; content.dowjones.io (wsjrss) &middot; timesofindia.indiatimes.com &middot; content.dowjones.io (wsjmk) &middot; nbcnews.com (nbcrss) &middot; politico.com (politicorss) &middot; axios.com (axiosrss) &middot; nytimes.com (nytrss) &middot; foxnews.com (foxpolrss) &middot; techmeme.com &middot; aljazeera.com (ajrss) &middot; dw.com (dwrss) &middot; semafor.com (semaforrss) &middot; bbci.co.uk (bbcsci) &middot; handelsblatt.com &middot; dailywire.com (dailywire) &middot; npr.org &middot; koreaherald.com &middot; nypost.com &middot; thehill.com (hillrss) &middot; ustr.gov (Section 301 determinations; Brazil notice) &middot; straitstimes.com (Gan remarks) &middot; channelnewsasia.com (Reuters, Cloud One) &middot; huffpost.com (Reuters) &middot; bloomberg.com write-through (search index) &middot; g1.globo.com (search index) &middot; indianexpress.com (search index) &middot; coag.gov (states&rsquo; objection PDF and release) &middot; oag.ca.gov &middot; illinoisattorneygeneral.gov (search index) &middot; thenextweb.com (search index) &middot; businessinsider.com article &middot; techcrunch.com articles &middot; euronews.com &middot; koreaherald.com article &middot; semafor.com articles &middot; thespacecoastrocket.com &middot; wesh.com (search index) &middot; fox35orlando.com (search index) &middot; insurancejournal.com articles &middot; politico.com, texastribune.org, citizen.org, investors.com (negative-check search: Texas data-centre permits) &middot; cnbc.com quote pages (Brent, WTI) &middot; latimes.com article &middot; bbc.co.uk article.</p>
+  <p><b>Pointed at by a thread (29):</b> gasprices.aaa.com &middot; cftc.gov (cftc) &middot; fdic.gov (fdic) &middot; datacenterdynamics.com (dcd) &middot; americanbanker.com &middot; federalreserve.gov (fedpr) &middot; floridaphoenix.com &middot; gcaptain.com &middot; fox13news.com &middot; nhc.noaa.gov (nhc) &middot; ofac.treasury.gov (ofac) &middot; scotusblog.com &middot; oilprice.com &middot; whitehouse.gov (wh) &middot; tampabay.com &middot; home.treasury.gov (tsy) &middot; bea.gov (bea) &middot; census.gov (census) &middot; newyorkfed.org (nyfed) &middot; wfla.com (wflarss) &middot; tampabay.com (tbtrss) &middot; wusf.org &middot; federalregister.gov API (27 Nov daily issue: 137 documents) &middot; home.treasury.gov daily par yield curve CSV &middot; federalreserve.gov FOMC calendar &middot; bea.gov GDP and personal-income releases (primary) &middot; floridadisaster.org (FEMA-4956-DR release) &middot; cftc.gov release 9326-26 &middot; oilprice.com, gcaptain.com articles (Hormuz, OPEC+).</p>
+  <p><b>Refused or failed (29):</b> axios.com (403) &middot; cbo.gov (403) &middot; ferc.gov (403) &middot; lawfaremedia.org (403) &middot; theguardian.com (403) &middot; theguardian.com (403) &middot; politico.com (403) &middot; thehill.com (403) &middot; elpais.com (403) &middot; nrc.gov (403) &middot; sec.gov (403) &middot; utilitydive.com (403) &middot; washingtonpost.com (timeout) &middot; wfla.com (403) &middot; apnews.com (403) &middot; reuters.com (401) &middot; occ.gov (404) &middot; fierce-network.com (403) &middot; theinformation.com (403) &middot; bloomberg.com (403) &middot; bls.gov (403) &middot; taipeitimes.com (403) &middot; dol.gov (403) &middot; aaro.mil (403) &middot; axios.com articles (403) &middot; thehill.com articles (403) &middot; fcc.gov document (403) &middot; ft.com article (403) &middot; theregister.com article (404).</p>
+  <h4>Could not reach</h4>
+  <p>Reuters, AP, Bloomberg, Politico, The Hill, Axios, Lawfare, the Guardian, El Pa&iacute;s, the Washington Post, the SEC, BLS, CBO, FERC, NRC, the FCC, AARO and the Labor Department refused automated access or failed. Reuters and AP reporting is cited through syndicated copies (CNA, HuffPost, Straits Times, PBS) and labelled that way. Axios&rsquo;s Anthropic report is cited through Al Jazeera&rsquo;s summary. WSJ and FT reports on Nvidia were read through TechCrunch and Yahoo Finance; they count as one source each. The FCC&rsquo;s Starmind order was not read directly.</p>
+
+  <h4>Seen, not run</h4>
+  <p>UAP disclosure: no item in today&rsquo;s sweep, and AARO&rsquo;s site refused access, so no new verifiable fact. &middot; Texas resuming data-centre air permits, including SpaceX&rsquo;s Boca Chica gas plant: real, but from 17 November, before the last Grok edition&rsquo;s window. &middot; US loss of measles elimination status: from 14 November. &middot; Treasury&rsquo;s &ldquo;Operation Economic Outcast&rdquo; Iran actions: 23 November, already past. &middot; SAP&rsquo;s reported 10,000 job cuts, France&rsquo;s recession, the ECB chief pick, Spain&rsquo;s election and New Zealand&rsquo;s hung parliament: no US channel today. &middot; Trump&rsquo;s remark that the Iran war ends &ldquo;whenever I want&rdquo; and the Democrats&rsquo; funding plan: talk, with no vote scheduled. &middot; USDA and Forest Service comment reopenings in today&rsquo;s Federal Register: procedural. &middot; Fed speakers: prints and decisions only. &middot; Thanksgiving storms, power cuts and the postponed Macy&rsquo;s parade: disruption with no policy consequence.</p>
+
+  <h4>The negative check</h4>
+  <p><i>What is the biggest story today that is not on my list, and why is it not?</i> The Air Force Cloud One breach. The watchlist tracks AI-driven intrusions and Treasury, not military cloud platforms, and the report broke at 6:35 a.m. ET. It leads. Runner-up: the Character.AI auction, which no thread covers because the AI threads track labs and statehouses, not bankruptcies. Front-page stories left out: Thanksgiving storms, the Macy&rsquo;s parade, Zelensky&rsquo;s remarks on Trump and Putin, the Netanyahu trial and the Steelers.</p>
+
+  <h4>Confidence markers and divergence boxes</h4>
+  <p>19 stories, 19 markers (Independent corroboration: 9 &middot; Primary source: 7 &middot; Single-sourced: 3); 8 divergence boxes. Three leads have no box. In Cloud One there is one source. In Character.AI the court filing and the reporting agree. In the ABC case both newsrooms quote the same opinion, and the FCC&rsquo;s objection is a party&rsquo;s position, not a competing account. The red correction box on the tariff story is a correction, not a divergence box, and is not counted. <b>Audit against Claude&rsquo;s No. 84</b>, opened only after this draft was finished: Claude runs 8 leads, 16 short items and 9 divergence boxes. The Issue 10 benchmark ran 9 leads and 3 boxes. 1 of this edition&rsquo;s 10 leads shares a subject with Claude&rsquo;s: the Jazan refinery strike, which Claude runs alone and this edition runs inside the oil-to-pump chain. Claude leads with the contractor executive order, the braking-rule delay and the capital-sentences memo. The last two are short items here; the contractor order was not run here. No factual conflict was found: Jazan&rsquo;s casualty, capacity and attribution details and the braking rule&rsquo;s comment date agree. Nothing in this edition was changed after reading it.</p>
+
+  <h4>Accountability to earlier issues</h4>
+  <p><b>25 November, tariffs:</b> corrected at the top of today&rsquo;s tariff story. &ldquo;On top of existing tariffs&rdquo; was wrong for 13 of 14 economies, and Malaysia&rsquo;s ceiling is 18%, not 19%. The 16-investigated, 14-tariffed framing held. <b>24&ndash;25 November, the pump:</b> the Thanksgiving record did not fall. AAA&rsquo;s Thursday average was $3.5554, under the $3.58 mark. <b>25 November, markets:</b> that edition went to press before GDP and PCE; both are in today&rsquo;s first lead. <b>25 November, FinCEN and CIA breaches:</b> Reuters now counts at least six recent federal intrusions; Cloud One is the newest. <b>25 November, Iowa detonation:</b> it went ahead Wednesday; EPA results are in a short item. <b>25 November, Kalshi/Utah:</b> the prediction-market fight moved to Louisiana (short item).</p>
+
+  <h4>About this issue</h4>
+  <ul>
+    <li>Grok edition for 27 November, Issue No. 84-grok. Layout built from Issue 10 (2026-09-10b.html), not from any previous Grok edition.</li>
+    <li>10 lead stories including Florida, 9 short items. 6 leads are new subjects; 4 are follow-ups.</li>
+    <li>Every quotation is under fifteen words and attributed; everything else is paraphrase.</li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var OWNER = "historiocity", REPO = "News-Agent";
+  document.getElementById("send").addEventListener("click", function () {
+    var lines = [], answered = 0;
+    document.querySelectorAll('input[type="radio"]:checked').forEach(function (i) {
+      answered++;
+      var q = i.closest(".fb").querySelector("p");
+      lines.push("- " + (q ? q.textContent.trim() : i.name) + "\n  → " + i.value + "");
+    });
+    if (!answered) { alert("Nothing selected yet — pick at least one answer, then send."); return; }
+    var body = "Feedback on Issue No. 84-grok — 27 November 2026 (Grok edition)\n\n" + lines.join("\n")
+      + "\n\n---\n_Anything still here that shouldn't be, or missing that should:_\n\n";
+    window.open("https://github.com/" + OWNER + "/" + REPO + "/issues/new?labels=brief-feedback"
+      + "&title=" + encodeURIComponent("Brief feedback — 2026-11-27-grok")
+      + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
